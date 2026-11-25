@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Add the detail that helps someone choose",
-      "instruction": "Watch the home descriptions, then recommend a place with relevant extra information",
-      "minutes": 4,
-      "video": {
-        "videoId": "kzkEGEjkb30",
-        "startSeconds": 190,
-        "endSeconds": 226,
-        "title": "Talking about your home — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "b2-08.video102.q1",
-          "prompt": "Which rooms and outdoor space appear in the first example?",
-          "hint": "Listen before the description becomes more detailed",
-          "answer": "The house has two bedrooms, a kitchen, a living room and a garden"
-        },
-        {
-          "id": "b2-08.video102.q2",
-          "prompt": "What new detail is added about the kitchen?",
-          "hint": "Listen for the furniture in it",
-          "answer": "The kitchen has a dining table"
-        },
-        {
-          "id": "b2-08.video102.q3",
-          "prompt": "What detail is added about the living room?",
-          "hint": "Listen to the description of the windows",
-          "answer": "The living room has big windows"
-        },
-        {
-          "id": "b2-08.video102.q4",
-          "prompt": "Recommend a flat and add one useful extra detail",
-          "hint": "Use which and explain why the detail matters",
-          "answer": "Example: This flat, which has a balcony, would suit you because you like sitting outside"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The advertised rent wasn’t the total",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Add the detail that helps someone choose",
+      "instruction": "Watch the home descriptions, then recommend a place with relevant extra information",
+      "minutes": 4,
+      "video": {
+        "videoId": "kzkEGEjkb30",
+        "startSeconds": 190,
+        "endSeconds": 226,
+        "title": "Talking about your home — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-08.video102.q1",
+          "prompt": "Which rooms and outdoor space appear in the first example?",
+          "hint": "Listen before the description becomes more detailed",
+          "answer": "The house has two bedrooms, a kitchen, a living room and a garden"
+        },
+        {
+          "id": "b2-08.video102.q2",
+          "prompt": "What new detail is added about the kitchen?",
+          "hint": "Listen for the furniture in it",
+          "answer": "The kitchen has a dining table"
+        },
+        {
+          "id": "b2-08.video102.q3",
+          "prompt": "What detail is added about the living room?",
+          "hint": "Listen to the description of the windows",
+          "answer": "The living room has big windows"
+        },
+        {
+          "id": "b2-08.video102.q4",
+          "prompt": "Recommend a flat and add one useful extra detail",
+          "hint": "Use which and explain why the detail matters",
+          "answer": "Example: This flat, which has a balcony, would suit you because you like sitting outside"
+        }
+      ]
     },
     {
       "id": "s_homework",

@@ -356,47 +356,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "What is he doing now?",
-      "instruction": "Watch Emir use the machine, then compare a usual habit with today",
-      "minutes": 4,
-      "video": {
-        "videoId": "LLvGYEjutWo",
-        "startSeconds": 90,
-        "endSeconds": 130,
-        "title": "Giving instructions — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "a2-01.video102.q1",
-          "prompt": "What is Emir learning to use?",
-          "hint": "Look at the machine and the drink",
-          "answer": "He’s learning to use a coffee machine"
-        },
-        {
-          "id": "a2-01.video102.q2",
-          "prompt": "Who is helping him?",
-          "hint": "Listen to the person giving instructions",
-          "answer": "Vanya is helping him"
-        },
-        {
-          "id": "a2-01.video102.q3",
-          "prompt": "What is he doing before he presses the final button?",
-          "hint": "Follow the instructions about connecting it",
-          "answer": "He’s connecting the coffee holder to the machine"
-        },
-        {
-          "id": "a2-01.video102.q4",
-          "prompt": "What do you usually drink, and what are you drinking today?",
-          "hint": "Contrast usually with today",
-          "answer": "Example: I usually drink coffee, but today I’m drinking tea"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A message from Anna",
@@ -440,6 +399,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What is he doing now?",
+      "instruction": "Watch Emir use the machine, then compare a usual habit with today",
+      "minutes": 4,
+      "video": {
+        "videoId": "LLvGYEjutWo",
+        "startSeconds": 90,
+        "endSeconds": 130,
+        "title": "Giving instructions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-01.video102.q1",
+          "prompt": "What is Emir learning to use?",
+          "hint": "Look at the machine and the drink",
+          "answer": "He’s learning to use a coffee machine"
+        },
+        {
+          "id": "a2-01.video102.q2",
+          "prompt": "Who is helping him?",
+          "hint": "Listen to the person giving instructions",
+          "answer": "Vanya is helping him"
+        },
+        {
+          "id": "a2-01.video102.q3",
+          "prompt": "What is he doing before he presses the final button?",
+          "hint": "Follow the instructions about connecting it",
+          "answer": "He’s connecting the coffee holder to the machine"
+        },
+        {
+          "id": "a2-01.video102.q4",
+          "prompt": "What do you usually drink, and what are you drinking today?",
+          "hint": "Contrast usually with today",
+          "answer": "Example: I usually drink coffee, but today I’m drinking tea"
+        }
+      ]
     },
     {
       "id": "s_homework",

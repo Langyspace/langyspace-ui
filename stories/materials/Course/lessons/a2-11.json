@@ -304,47 +304,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Make a backup travel plan",
-      "instruction": "Watch the cancellation problem, then suggest what to do if plans change",
-      "minutes": 4,
-      "video": {
-        "videoId": "DUqdQjkvElo",
-        "startSeconds": 202,
-        "endSeconds": 233,
-        "title": "Airport English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "a2-11.video102.q1",
-          "prompt": "What causes the cancellation?",
-          "hint": "Listen for due to",
-          "answer": "Bad weather causes the cancellation"
-        },
-        {
-          "id": "a2-11.video102.q2",
-          "prompt": "When does the alternative flight leave?",
-          "hint": "Listen to the new departure time",
-          "answer": "It leaves at seven the next morning"
-        },
-        {
-          "id": "a2-11.video102.q3",
-          "prompt": "Why does that option fit the traveller’s deadline?",
-          "hint": "Compare the arrival with tomorrow afternoon",
-          "answer": "It arrives at ten, before the traveller needs to be in London"
-        },
-        {
-          "id": "a2-11.video102.q4",
-          "prompt": "What will you do if bad weather changes your day out?",
-          "hint": "Use If and a practical alternative",
-          "answer": "Example: If it rains, we’ll visit the museum instead"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Use the backup plan",
@@ -385,6 +344,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Make a backup travel plan",
+      "instruction": "Watch the cancellation problem, then suggest what to do if plans change",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 202,
+        "endSeconds": 233,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a2-11.video102.q1",
+          "prompt": "What causes the cancellation?",
+          "hint": "Listen for due to",
+          "answer": "Bad weather causes the cancellation"
+        },
+        {
+          "id": "a2-11.video102.q2",
+          "prompt": "When does the alternative flight leave?",
+          "hint": "Listen to the new departure time",
+          "answer": "It leaves at seven the next morning"
+        },
+        {
+          "id": "a2-11.video102.q3",
+          "prompt": "Why does that option fit the traveller’s deadline?",
+          "hint": "Compare the arrival with tomorrow afternoon",
+          "answer": "It arrives at ten, before the traveller needs to be in London"
+        },
+        {
+          "id": "a2-11.video102.q4",
+          "prompt": "What will you do if bad weather changes your day out?",
+          "hint": "Use If and a practical alternative",
+          "answer": "Example: If it rains, we’ll visit the museum instead"
+        }
+      ]
     },
     {
       "id": "s_homework",

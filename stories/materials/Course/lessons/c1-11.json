@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Same words, a different message",
-      "instruction": "Watch the pace and pitch examples, then clarify a possible misunderstanding",
-      "minutes": 4,
-      "video": {
-        "videoId": "eIho2S0ZahI",
-        "startSeconds": 381,
-        "endSeconds": 416,
-        "title": "Julian Treasure — How to speak so that people want to listen — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "c1-11.video102.q1",
-          "prompt": "How does the speaker use a slower pace?",
-          "hint": "Listen to the demonstration after the fast delivery",
-          "answer": "He slows down to emphasise a point"
-        },
-        {
-          "id": "c1-11.video102.q2",
-          "prompt": "What sentence does he repeat with a different pitch?",
-          "hint": "Listen to the question about a missing object",
-          "answer": "He repeats, “Where did you leave my keys?”"
-        },
-        {
-          "id": "c1-11.video102.q3",
-          "prompt": "Why might a listener understand the second delivery differently?",
-          "hint": "Consider possible urgency without claiming a universal rule",
-          "answer": "Example: The higher pitch may suggest more urgency or frustration, depending on the context"
-        },
-        {
-          "id": "c1-11.video102.q4",
-          "prompt": "Clarify your meaning after a colleague thinks you were blaming them",
-          "hint": "Reformulate and check with a concrete example",
-          "answer": "Example: To put it another way, I’m asking where to look, not suggesting it’s your fault. Would checking the meeting room be a good first step?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Quick acknowledgement, not unchecked certainty",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Same words, a different message",
+      "instruction": "Watch the pace and pitch examples, then clarify a possible misunderstanding",
+      "minutes": 4,
+      "video": {
+        "videoId": "eIho2S0ZahI",
+        "startSeconds": 381,
+        "endSeconds": 416,
+        "title": "Julian Treasure — How to speak so that people want to listen — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-11.video102.q1",
+          "prompt": "How does the speaker use a slower pace?",
+          "hint": "Listen to the demonstration after the fast delivery",
+          "answer": "He slows down to emphasise a point"
+        },
+        {
+          "id": "c1-11.video102.q2",
+          "prompt": "What sentence does he repeat with a different pitch?",
+          "hint": "Listen to the question about a missing object",
+          "answer": "He repeats, “Where did you leave my keys?”"
+        },
+        {
+          "id": "c1-11.video102.q3",
+          "prompt": "Why might a listener understand the second delivery differently?",
+          "hint": "Consider possible urgency without claiming a universal rule",
+          "answer": "Example: The higher pitch may suggest more urgency or frustration, depending on the context"
+        },
+        {
+          "id": "c1-11.video102.q4",
+          "prompt": "Clarify your meaning after a colleague thinks you were blaming them",
+          "hint": "Reformulate and check with a concrete example",
+          "answer": "Example: To put it another way, I’m asking where to look, not suggesting it’s your fault. Would checking the meeting room be a good first step?"
+        }
+      ]
     },
     {
       "id": "s_homework",

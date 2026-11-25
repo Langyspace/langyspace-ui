@@ -317,47 +317,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Office, home or a mix?",
-      "instruction": "Watch the case for working away from an office, then negotiate a balanced routine",
-      "minutes": 4,
-      "video": {
-        "videoId": "x6fIseKzzH0",
-        "startSeconds": 95,
-        "endSeconds": 127,
-        "title": "Matt Mullenweg — Why working from home is good for business — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "b1-12.video102.q1",
-          "prompt": "What kind of freedom does he want workers to have?",
-          "hint": "Listen for autonomy",
-          "answer": "He wants them to have autonomy over how they work"
-        },
-        {
-          "id": "b1-12.video102.q2",
-          "prompt": "What does he say workers can gain by not commuting?",
-          "hint": "Listen to how the saved time can be used",
-          "answer": "They can use the time for things that matter to them"
-        },
-        {
-          "id": "b1-12.video102.q3",
-          "prompt": "Does he present this as equally suitable for every kind of company?",
-          "hint": "Listen to the technology-company comment and the next question",
-          "answer": "No. He calls it ideal for a technology company and raises the question of other workplaces"
-        },
-        {
-          "id": "b1-12.video102.q4",
-          "prompt": "Negotiate a work routine with one benefit and one drawback",
-          "hint": "Acknowledge a limitation before proposing a compromise",
-          "answer": "Example: Home is quieter, but I miss quick team discussions. How about two office days?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Hybrid works, but the schedule doesn’t",
@@ -398,6 +357,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Office, home or a mix?",
+      "instruction": "Watch the case for working away from an office, then negotiate a balanced routine",
+      "minutes": 4,
+      "video": {
+        "videoId": "x6fIseKzzH0",
+        "startSeconds": 95,
+        "endSeconds": 127,
+        "title": "Matt Mullenweg — Why working from home is good for business — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "b1-12.video102.q1",
+          "prompt": "What kind of freedom does he want workers to have?",
+          "hint": "Listen for autonomy",
+          "answer": "He wants them to have autonomy over how they work"
+        },
+        {
+          "id": "b1-12.video102.q2",
+          "prompt": "What does he say workers can gain by not commuting?",
+          "hint": "Listen to how the saved time can be used",
+          "answer": "They can use the time for things that matter to them"
+        },
+        {
+          "id": "b1-12.video102.q3",
+          "prompt": "Does he present this as equally suitable for every kind of company?",
+          "hint": "Listen to the technology-company comment and the next question",
+          "answer": "No. He calls it ideal for a technology company and raises the question of other workplaces"
+        },
+        {
+          "id": "b1-12.video102.q4",
+          "prompt": "Negotiate a work routine with one benefit and one drawback",
+          "hint": "Acknowledge a limitation before proposing a compromise",
+          "answer": "Example: Home is quieter, but I miss quick team discussions. How about two office days?"
+        }
+      ]
     },
     {
       "id": "s_homework",

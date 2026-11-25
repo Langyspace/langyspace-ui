@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Check what was already paid",
-      "instruction": "Watch the checkout, then explain an unnecessary duplicate payment",
-      "minutes": 4,
-      "video": {
-        "videoId": "FJrRiVjeOMc",
-        "startSeconds": 768,
-        "endSeconds": 788,
-        "title": "Hotel English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "b2-05.video102.q1",
-          "prompt": "What has already been paid?",
-          "hint": "Listen before the receptionist mentions extras",
-          "answer": "The room and tax have already been paid"
-        },
-        {
-          "id": "b2-05.video102.q2",
-          "prompt": "What is the new bill for?",
-          "hint": "Listen for just",
-          "answer": "The new bill is just for extras"
-        },
-        {
-          "id": "b2-05.video102.q3",
-          "prompt": "How does the guest choose to pay those extras?",
-          "hint": "Listen to the final request",
-          "answer": "The guest asks to put them on a credit card"
-        },
-        {
-          "id": "b2-05.video102.q4",
-          "prompt": "Imagine you paid for the room again by mistake. Ask for a correction",
-          "hint": "Use needn’t have and identify only the duplicate amount",
-          "answer": "Example: I needn’t have paid for the room again. Could you refund that duplicate payment and keep the extras separate?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A partial refund is available",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Check what was already paid",
+      "instruction": "Watch the checkout, then explain an unnecessary duplicate payment",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 768,
+        "endSeconds": 788,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-05.video102.q1",
+          "prompt": "What has already been paid?",
+          "hint": "Listen before the receptionist mentions extras",
+          "answer": "The room and tax have already been paid"
+        },
+        {
+          "id": "b2-05.video102.q2",
+          "prompt": "What is the new bill for?",
+          "hint": "Listen for just",
+          "answer": "The new bill is just for extras"
+        },
+        {
+          "id": "b2-05.video102.q3",
+          "prompt": "How does the guest choose to pay those extras?",
+          "hint": "Listen to the final request",
+          "answer": "The guest asks to put them on a credit card"
+        },
+        {
+          "id": "b2-05.video102.q4",
+          "prompt": "Imagine you paid for the room again by mistake. Ask for a correction",
+          "hint": "Use needn’t have and identify only the duplicate amount",
+          "answer": "Example: I needn’t have paid for the room again. Could you refund that duplicate payment and keep the extras separate?"
+        }
+      ]
     },
     {
       "id": "s_homework",

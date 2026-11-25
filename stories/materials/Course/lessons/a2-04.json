@@ -304,47 +304,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Find a plan Jack will enjoy",
-      "instruction": "Watch the friends consider activities, then suggest another plan",
-      "minutes": 4,
-      "video": {
-        "videoId": "E8FM5igDBDI",
-        "startSeconds": 22,
-        "endSeconds": 88,
-        "title": "Making plans — British Council | LearnEnglish Teens",
-        "credit": "British Council | LearnEnglish Teens"
-      },
-      "items": [
-        {
-          "id": "a2-04.video102.q1",
-          "prompt": "Why are they organising a celebration?",
-          "hint": "Listen to the first sentence about Jack",
-          "answer": "It’s Jack’s birthday next week"
-        },
-        {
-          "id": "a2-04.video102.q2",
-          "prompt": "Why don’t they choose the cinema?",
-          "hint": "Listen to what happened last week",
-          "answer": "They already saw the film and didn’t find it very funny"
-        },
-        {
-          "id": "a2-04.video102.q3",
-          "prompt": "What activity does Jack like?",
-          "hint": "Listen after the ice-skating suggestion",
-          "answer": "He likes bowling"
-        },
-        {
-          "id": "a2-04.video102.q4",
-          "prompt": "Invite your teacher to something you both might enjoy",
-          "hint": "Suggest an activity and ask about availability",
-          "answer": "Example: Would you like to go to a café on Saturday?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The opening time is later",
@@ -385,6 +344,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Find a plan Jack will enjoy",
+      "instruction": "Watch the friends consider activities, then suggest another plan",
+      "minutes": 4,
+      "video": {
+        "videoId": "E8FM5igDBDI",
+        "startSeconds": 22,
+        "endSeconds": 88,
+        "title": "Making plans — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a2-04.video102.q1",
+          "prompt": "Why are they organising a celebration?",
+          "hint": "Listen to the first sentence about Jack",
+          "answer": "It’s Jack’s birthday next week"
+        },
+        {
+          "id": "a2-04.video102.q2",
+          "prompt": "Why don’t they choose the cinema?",
+          "hint": "Listen to what happened last week",
+          "answer": "They already saw the film and didn’t find it very funny"
+        },
+        {
+          "id": "a2-04.video102.q3",
+          "prompt": "What activity does Jack like?",
+          "hint": "Listen after the ice-skating suggestion",
+          "answer": "He likes bowling"
+        },
+        {
+          "id": "a2-04.video102.q4",
+          "prompt": "Invite your teacher to something you both might enjoy",
+          "hint": "Suggest an activity and ask about availability",
+          "answer": "Example: Would you like to go to a café on Saturday?"
+        }
+      ]
     },
     {
       "id": "s_homework",

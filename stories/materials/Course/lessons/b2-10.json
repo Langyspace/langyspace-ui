@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Ask for the solution you actually need",
-      "instruction": "Watch the complaint, then negotiate a proportionate solution",
-      "minutes": 4,
-      "video": {
-        "videoId": "FJrRiVjeOMc",
-        "startSeconds": 656,
-        "endSeconds": 719,
-        "title": "Hotel English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "b2-10.video102.q1",
-          "prompt": "What evidence does the guest give about the room?",
-          "hint": "Listen for two cleanliness details",
-          "answer": "There is dust and a hair on the pillow"
-        },
-        {
-          "id": "b2-10.video102.q2",
-          "prompt": "What remedy does the receptionist offer?",
-          "hint": "Listen for complimentary and double-check",
-          "answer": "The receptionist offers a room upgrade and an extra housekeeping check"
-        },
-        {
-          "id": "b2-10.video102.q3",
-          "prompt": "When can the guest move?",
-          "hint": "Listen to the final practical question",
-          "answer": "The guest can move as soon as they are ready"
-        },
-        {
-          "id": "b2-10.video102.q4",
-          "prompt": "The problem is noise, not room size. What would you ask for?",
-          "hint": "Use What I need is and specify the outcome",
-          "answer": "Example: What I need is a quiet room. An upgrade won’t help if it’s beside the same noisy lift"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A specific room-change offer",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Ask for the solution you actually need",
+      "instruction": "Watch the complaint, then negotiate a proportionate solution",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 656,
+        "endSeconds": 719,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-10.video102.q1",
+          "prompt": "What evidence does the guest give about the room?",
+          "hint": "Listen for two cleanliness details",
+          "answer": "There is dust and a hair on the pillow"
+        },
+        {
+          "id": "b2-10.video102.q2",
+          "prompt": "What remedy does the receptionist offer?",
+          "hint": "Listen for complimentary and double-check",
+          "answer": "The receptionist offers a room upgrade and an extra housekeeping check"
+        },
+        {
+          "id": "b2-10.video102.q3",
+          "prompt": "When can the guest move?",
+          "hint": "Listen to the final practical question",
+          "answer": "The guest can move as soon as they are ready"
+        },
+        {
+          "id": "b2-10.video102.q4",
+          "prompt": "The problem is noise, not room size. What would you ask for?",
+          "hint": "Use What I need is and specify the outcome",
+          "answer": "Example: What I need is a quiet room. An upgrade won’t help if it’s beside the same noisy lift"
+        }
+      ]
     },
     {
       "id": "s_homework",

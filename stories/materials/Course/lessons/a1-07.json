@@ -259,47 +259,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Check in for a flight",
-      "instruction": "Watch the airport conversation and practise a useful request",
-      "minutes": 4,
-      "video": {
-        "videoId": "DUqdQjkvElo",
-        "startSeconds": 31,
-        "endSeconds": 79,
-        "title": "Airport English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "a1-07.video102.q1",
-          "prompt": "Where is the passenger flying?",
-          "hint": "Listen to his first answer",
-          "answer": "He’s flying to London"
-        },
-        {
-          "id": "a1-07.video102.q2",
-          "prompt": "What kind of seat would he like?",
-          "hint": "Listen for window or aisle",
-          "answer": "He would like a window seat"
-        },
-        {
-          "id": "a1-07.video102.q3",
-          "prompt": "Where does he have his boarding pass?",
-          "hint": "Listen when he refuses a paper copy",
-          "answer": "He has it on his phone"
-        },
-        {
-          "id": "a1-07.video102.q4",
-          "prompt": "How can you ask for a different seat?",
-          "hint": "Start with Can I",
-          "answer": "Example: Can I have a window seat, please?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A new gate",
@@ -340,6 +299,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Check in for a flight",
+      "instruction": "Watch the airport conversation and practise a useful request",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 31,
+        "endSeconds": 79,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a1-07.video102.q1",
+          "prompt": "Where is the passenger flying?",
+          "hint": "Listen to his first answer",
+          "answer": "He’s flying to London"
+        },
+        {
+          "id": "a1-07.video102.q2",
+          "prompt": "What kind of seat would he like?",
+          "hint": "Listen for window or aisle",
+          "answer": "He would like a window seat"
+        },
+        {
+          "id": "a1-07.video102.q3",
+          "prompt": "Where does he have his boarding pass?",
+          "hint": "Listen when he refuses a paper copy",
+          "answer": "He has it on his phone"
+        },
+        {
+          "id": "a1-07.video102.q4",
+          "prompt": "How can you ask for a different seat?",
+          "hint": "Start with Can I",
+          "answer": "Example: Can I have a window seat, please?"
+        }
+      ]
     },
     {
       "id": "s_homework",

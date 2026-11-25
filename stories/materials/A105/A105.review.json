@@ -407,6 +407,45 @@
       "eyebrow": "Speaking task"
     },
     {
+      "id": "s9",
+      "kind": "listening",
+      "title": "Kim’s shopping request",
+      "instruction": "Listen for what Kim wants and what she doesn’t want",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Can you buy a banana and a mango for me? I don’t want oranges today. The banana is for Jin. She loves fruit. I’ll meet you at the market on Saturday. Thank you!",
+      "audioId": "L81.1",
+      "greeting": "Can you get some fruit for me?",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What fruit does Kim want?",
+          "hint": "She wants … and …",
+          "answer": "Kim wants a banana and a mango"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "What fruit doesn’t Kim want today?",
+          "hint": "She doesn’t want …",
+          "answer": "Kim doesn’t want oranges today"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "Who is the banana for?",
+          "hint": "The banana is for …",
+          "answer": "The banana is for Jin"
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "kind": "activity",
+      "title": "Place Kim’s order",
+      "instruction": "Use the voice note to ask for Kim’s fruit and check the price",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
@@ -446,45 +485,6 @@
           "answer": "Example: I like my coffee with milk and without sugar"
         }
       ]
-    },
-    {
-      "id": "s9",
-      "kind": "listening",
-      "title": "Kim’s shopping request",
-      "instruction": "Listen for what Kim wants and what she doesn’t want",
-      "minutes": 4,
-      "eyebrow": "Listening",
-      "message": "Hi, Ana! Can you buy a banana and a mango for me? I don’t want oranges today. The banana is for Jin. She loves fruit. I’ll meet you at the market on Saturday. Thank you!",
-      "audioId": "L81.1",
-      "greeting": "Can you get some fruit for me?",
-      "items": [
-        {
-          "id": "listen",
-          "prompt": "What fruit does Kim want?",
-          "hint": "She wants … and …",
-          "answer": "Kim wants a banana and a mango"
-        },
-        {
-          "id": "s9.q98.2",
-          "prompt": "What fruit doesn’t Kim want today?",
-          "hint": "She doesn’t want …",
-          "answer": "Kim doesn’t want oranges today"
-        },
-        {
-          "id": "s9.q98.3",
-          "prompt": "Who is the banana for?",
-          "hint": "The banana is for …",
-          "answer": "The banana is for Jin"
-        }
-      ]
-    },
-    {
-      "id": "s91",
-      "kind": "activity",
-      "title": "Place Kim’s order",
-      "instruction": "Use the voice note to ask for Kim’s fruit and check the price",
-      "minutes": 2,
-      "eyebrow": "Your turn"
     },
     {
       "id": "s12",

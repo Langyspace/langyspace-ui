@@ -7,7 +7,7 @@ Pedido de 25/11/2026: uma atividade de vídeo em todas as 60 aulas A1–C1, com 
 - Reutilizar VideoExercise inline + Questions (quatro perguntas específicas, respostas completas, dica progressiva) e o player por trecho já revisado na101
 - Curar fonte original, canal, intervalo e evidência com minutagem; não criar perguntas sobre fatos fora do trecho
 - Pronúncia em contexto, compreensão, interpretação, reação e transferência oral conforme nível; vídeos não substituem vocabulário ou conversa livre
-- Inserir depois de prática pertinente e antes do fechamento; redistribuir minutos mantendo a duração e conversa livre/homework no fim
+- Inserir imediatamente antes de Free conversation, depois das demais práticas; manter a duração e conversa livre/homework no fim (ajuste solicitado na publicação104)
 - Preservar catálogo, capas, áudios, exercícios existentes, Notes e contratos de identidade
 
 ## Sequência

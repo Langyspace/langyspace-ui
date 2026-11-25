@@ -293,47 +293,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "A clue is not proof",
-      "instruction": "Watch the deductions, then separate a strong claim from other possibilities",
-      "minutes": 4,
-      "video": {
-        "videoId": "u6hEQdGGMuc",
-        "startSeconds": 9,
-        "endSeconds": 48,
-        "title": "Modal verbs of deduction — BBC Learning English",
-        "credit": "BBC Learning English"
-      },
-      "items": [
-        {
-          "id": "b1-04.video102.q1",
-          "prompt": "What visible clue does the speaker use about Phil?",
-          "hint": "Look for the detail about his hair",
-          "answer": "Phil’s hair is wet"
-        },
-        {
-          "id": "b1-04.video102.q2",
-          "prompt": "Which word presents rain as an almost certain explanation?",
-          "hint": "Listen to the first example",
-          "answer": "The speaker uses must"
-        },
-        {
-          "id": "b1-04.video102.q3",
-          "prompt": "Does wet hair prove that it is raining? Explain",
-          "hint": "Think of another way someone’s hair can get wet",
-          "answer": "Example: No. He might have just had a shower"
-        },
-        {
-          "id": "b1-04.video102.q4",
-          "prompt": "Someone leaves a bag beside your teacher. What can you conclude?",
-          "hint": "Separate the clue from the person’s identity",
-          "answer": "Example: It might be her bag, but I’d ask before taking it"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A caller gives matching details",
@@ -374,6 +333,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A clue is not proof",
+      "instruction": "Watch the deductions, then separate a strong claim from other possibilities",
+      "minutes": 4,
+      "video": {
+        "videoId": "u6hEQdGGMuc",
+        "startSeconds": 9,
+        "endSeconds": 48,
+        "title": "Modal verbs of deduction — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b1-04.video102.q1",
+          "prompt": "What visible clue does the speaker use about Phil?",
+          "hint": "Look for the detail about his hair",
+          "answer": "Phil’s hair is wet"
+        },
+        {
+          "id": "b1-04.video102.q2",
+          "prompt": "Which word presents rain as an almost certain explanation?",
+          "hint": "Listen to the first example",
+          "answer": "The speaker uses must"
+        },
+        {
+          "id": "b1-04.video102.q3",
+          "prompt": "Does wet hair prove that it is raining? Explain",
+          "hint": "Think of another way someone’s hair can get wet",
+          "answer": "Example: No. He might have just had a shower"
+        },
+        {
+          "id": "b1-04.video102.q4",
+          "prompt": "Someone leaves a bag beside your teacher. What can you conclude?",
+          "hint": "Separate the clue from the person’s identity",
+          "answer": "Example: It might be her bag, but I’d ask before taking it"
+        }
+      ]
     },
     {
       "id": "s_homework",

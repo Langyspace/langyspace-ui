@@ -304,47 +304,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Eight years in the same job",
-      "instruction": "Watch the two examples, then explain how long something has been true",
-      "minutes": 4,
-      "video": {
-        "videoId": "lvoc5vDrb8E",
-        "startSeconds": 81,
-        "endSeconds": 101,
-        "title": "The Grammar Gameshow — present perfect simple and continuous — BBC Learning English",
-        "credit": "BBC Learning English"
-      },
-      "items": [
-        {
-          "id": "a2-09.video102.q1",
-          "prompt": "What job appears in both examples?",
-          "hint": "Listen for the job after as an",
-          "answer": "The person works as an accountant"
-        },
-        {
-          "id": "a2-09.video102.q2",
-          "prompt": "How long has the person done that job?",
-          "hint": "Listen for the duration",
-          "answer": "The person has done it for eight years"
-        },
-        {
-          "id": "a2-09.video102.q3",
-          "prompt": "Do the two examples have the same meaning here?",
-          "hint": "Listen to Leslie’s reply",
-          "answer": "Yes, both examples have the same meaning here"
-        },
-        {
-          "id": "a2-09.video102.q4",
-          "prompt": "How long have you lived in your town?",
-          "hint": "Use for with a duration or since with a starting point",
-          "answer": "Example: I’ve lived here for three years"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "An update to the profile",
@@ -385,6 +344,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Eight years in the same job",
+      "instruction": "Watch the two examples, then explain how long something has been true",
+      "minutes": 4,
+      "video": {
+        "videoId": "lvoc5vDrb8E",
+        "startSeconds": 81,
+        "endSeconds": 101,
+        "title": "The Grammar Gameshow — present perfect simple and continuous — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "a2-09.video102.q1",
+          "prompt": "What job appears in both examples?",
+          "hint": "Listen for the job after as an",
+          "answer": "The person works as an accountant"
+        },
+        {
+          "id": "a2-09.video102.q2",
+          "prompt": "How long has the person done that job?",
+          "hint": "Listen for the duration",
+          "answer": "The person has done it for eight years"
+        },
+        {
+          "id": "a2-09.video102.q3",
+          "prompt": "Do the two examples have the same meaning here?",
+          "hint": "Listen to Leslie’s reply",
+          "answer": "Yes, both examples have the same meaning here"
+        },
+        {
+          "id": "a2-09.video102.q4",
+          "prompt": "How long have you lived in your town?",
+          "hint": "Use for with a duration or since with a starting point",
+          "answer": "Example: I’ve lived here for three years"
+        }
+      ]
     },
     {
       "id": "s_homework",

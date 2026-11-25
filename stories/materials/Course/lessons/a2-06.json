@@ -304,47 +304,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Describe what hurts",
-      "instruction": "Watch the patient describe the symptoms, then practise with a fictional problem",
-      "minutes": 4,
-      "video": {
-        "videoId": "RaB5Bydz8rE",
-        "startSeconds": 51,
-        "endSeconds": 84,
-        "title": "Illness and medicine in English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "a2-06.video102.q1",
-          "prompt": "Where does the patient have pain?",
-          "hint": "Listen to the first description",
-          "answer": "The patient has headaches just behind the eyes"
-        },
-        {
-          "id": "a2-06.video102.q2",
-          "prompt": "How long has the problem been happening?",
-          "hint": "Listen to the answer about time",
-          "answer": "It has been happening for about a week"
-        },
-        {
-          "id": "a2-06.video102.q3",
-          "prompt": "Is the pain constant?",
-          "hint": "Listen for come and go",
-          "answer": "No. The headaches come and go"
-        },
-        {
-          "id": "a2-06.video102.q4",
-          "prompt": "Describe a fictional symptom to your teacher",
-          "hint": "Say what hurts, where and for how long",
-          "answer": "Example: My back hurts on the right side. It started yesterday"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Your appointment time",
@@ -385,6 +344,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Describe what hurts",
+      "instruction": "Watch the patient describe the symptoms, then practise with a fictional problem",
+      "minutes": 4,
+      "video": {
+        "videoId": "RaB5Bydz8rE",
+        "startSeconds": 51,
+        "endSeconds": 84,
+        "title": "Illness and medicine in English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a2-06.video102.q1",
+          "prompt": "Where does the patient have pain?",
+          "hint": "Listen to the first description",
+          "answer": "The patient has headaches just behind the eyes"
+        },
+        {
+          "id": "a2-06.video102.q2",
+          "prompt": "How long has the problem been happening?",
+          "hint": "Listen to the answer about time",
+          "answer": "It has been happening for about a week"
+        },
+        {
+          "id": "a2-06.video102.q3",
+          "prompt": "Is the pain constant?",
+          "hint": "Listen for come and go",
+          "answer": "No. The headaches come and go"
+        },
+        {
+          "id": "a2-06.video102.q4",
+          "prompt": "Describe a fictional symptom to your teacher",
+          "hint": "Say what hurts, where and for how long",
+          "answer": "Example: My back hurts on the right side. It started yesterday"
+        }
+      ]
     },
     {
       "id": "s_homework",

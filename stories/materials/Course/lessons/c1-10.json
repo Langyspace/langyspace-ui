@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Same words, different interpretations",
-      "instruction": "Watch how wording and relationships affect meaning, then make an update’s action clear",
-      "minutes": 4,
-      "video": {
-        "videoId": "gCfzeONu3Mo",
-        "startSeconds": 109,
-        "endSeconds": 161,
-        "title": "How miscommunication happens — Katherine Hampsten — TED-Ed",
-        "credit": "TED-Ed"
-      },
-      "items": [
-        {
-          "id": "c1-10.video102.q1",
-          "prompt": "Does the receiver get an unfiltered copy of the sender’s meaning?",
-          "hint": "Listen for the two interpretations",
-          "answer": "No. People express and interpret messages through their own subjective filters"
-        },
-        {
-          "id": "c1-10.video102.q2",
-          "prompt": "What does the changing lump of clay illustrate?",
-          "hint": "Connect the visual metaphor with interpretation",
-          "answer": "Each participant reshapes the message through their own perceptions"
-        },
-        {
-          "id": "c1-10.video102.q3",
-          "prompt": "How could a relationship change the way a phrase is understood?",
-          "hint": "Consider a friend and a client reading the same casual wording",
-          "answer": "Example: A brief casual phrase may sound friendly to a close friend but dismissive or overly familiar to a client"
-        },
-        {
-          "id": "c1-10.video102.q4",
-          "prompt": "Make a recipient’s next action explicit in a short event update",
-          "hint": "State what to confirm and give an unambiguous deadline",
-          "answer": "Example: The event is now on Monday 7 December. Please confirm by Friday 4 December at 5 pm whether you can attend"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Acknowledgement is not attendance",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Same words, different interpretations",
+      "instruction": "Watch how wording and relationships affect meaning, then make an update’s action clear",
+      "minutes": 4,
+      "video": {
+        "videoId": "gCfzeONu3Mo",
+        "startSeconds": 109,
+        "endSeconds": 161,
+        "title": "How miscommunication happens — Katherine Hampsten — TED-Ed",
+        "credit": "TED-Ed"
+      },
+      "items": [
+        {
+          "id": "c1-10.video102.q1",
+          "prompt": "Does the receiver get an unfiltered copy of the sender’s meaning?",
+          "hint": "Listen for the two interpretations",
+          "answer": "No. People express and interpret messages through their own subjective filters"
+        },
+        {
+          "id": "c1-10.video102.q2",
+          "prompt": "What does the changing lump of clay illustrate?",
+          "hint": "Connect the visual metaphor with interpretation",
+          "answer": "Each participant reshapes the message through their own perceptions"
+        },
+        {
+          "id": "c1-10.video102.q3",
+          "prompt": "How could a relationship change the way a phrase is understood?",
+          "hint": "Consider a friend and a client reading the same casual wording",
+          "answer": "Example: A brief casual phrase may sound friendly to a close friend but dismissive or overly familiar to a client"
+        },
+        {
+          "id": "c1-10.video102.q4",
+          "prompt": "Make a recipient’s next action explicit in a short event update",
+          "hint": "State what to confirm and give an unambiguous deadline",
+          "answer": "Example: The event is now on Monday 7 December. Please confirm by Friday 4 December at 5 pm whether you can attend"
+        }
+      ]
     },
     {
       "id": "s_homework",

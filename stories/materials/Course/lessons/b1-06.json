@@ -317,47 +317,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "If you managed this office…",
-      "instruction": "Watch the trampoline discussion, then give advice about a hypothetical choice",
-      "minutes": 4,
-      "video": {
-        "videoId": "ZveJWidWxgY",
-        "startSeconds": 91,
-        "endSeconds": 159,
-        "title": "Discussing advantages and disadvantages — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "b1-06.video102.q1",
-          "prompt": "What advantage does Noelia connect with having fun?",
-          "hint": "Listen to her reason for the idea",
-          "answer": "She says having fun helps people be creative"
-        },
-        {
-          "id": "b1-06.video102.q2",
-          "prompt": "What safety concern does Yuna raise?",
-          "hint": "Listen to the question about someone getting hurt",
-          "answer": "She worries that someone could hurt themselves"
-        },
-        {
-          "id": "b1-06.video102.q3",
-          "prompt": "Has Yuna agreed by the end of this excerpt?",
-          "hint": "Listen to I’ll think about it and her final reply",
-          "answer": "No. She says she’ll think about it and that she hasn’t said yes"
-        },
-        {
-          "id": "b1-06.video102.q4",
-          "prompt": "If you managed the office, what would you suggest instead?",
-          "hint": "Use If I were and explain one benefit",
-          "answer": "Example: If I were the manager, I’d create a quiet break area instead"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The priority behind the choice",
@@ -398,6 +357,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "If you managed this office…",
+      "instruction": "Watch the trampoline discussion, then give advice about a hypothetical choice",
+      "minutes": 4,
+      "video": {
+        "videoId": "ZveJWidWxgY",
+        "startSeconds": 91,
+        "endSeconds": 159,
+        "title": "Discussing advantages and disadvantages — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b1-06.video102.q1",
+          "prompt": "What advantage does Noelia connect with having fun?",
+          "hint": "Listen to her reason for the idea",
+          "answer": "She says having fun helps people be creative"
+        },
+        {
+          "id": "b1-06.video102.q2",
+          "prompt": "What safety concern does Yuna raise?",
+          "hint": "Listen to the question about someone getting hurt",
+          "answer": "She worries that someone could hurt themselves"
+        },
+        {
+          "id": "b1-06.video102.q3",
+          "prompt": "Has Yuna agreed by the end of this excerpt?",
+          "hint": "Listen to I’ll think about it and her final reply",
+          "answer": "No. She says she’ll think about it and that she hasn’t said yes"
+        },
+        {
+          "id": "b1-06.video102.q4",
+          "prompt": "If you managed the office, what would you suggest instead?",
+          "hint": "Use If I were and explain one benefit",
+          "answer": "Example: If I were the manager, I’d create a quiet break area instead"
+        }
+      ]
     },
     {
       "id": "s_homework",

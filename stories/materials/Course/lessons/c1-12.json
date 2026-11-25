@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Cashless payments: who receives the tip?",
-      "instruction": "Watch an archived report about pooled tips, then recommend a fair policy with conditions",
-      "minutes": 4,
-      "video": {
-        "videoId": "tOxD9PEH8DU",
-        "startSeconds": 205,
-        "endSeconds": 267,
-        "title": "Where do your tips go? — BBC Learning English",
-        "credit": "BBC Learning English"
-      },
-      "items": [
-        {
-          "id": "c1-12.video102.q1",
-          "prompt": "What payment change does the interviewee describe?",
-          "hint": "Listen to how more tips are being paid",
-          "answer": "More tips and service charges are being paid by card"
-        },
-        {
-          "id": "c1-12.video102.q2",
-          "prompt": "What is the intended function of pooling those payments?",
-          "hint": "Listen to the explanation of the shared arrangement",
-          "answer": "The stated aim is to collect the tips and distribute them fairly"
-        },
-        {
-          "id": "c1-12.video102.q3",
-          "prompt": "Does giving a payment to one worker guarantee that worker receives it all?",
-          "hint": "Listen to the explanation after the interview",
-          "answer": "No. The payment may be distributed across the business under its system"
-        },
-        {
-          "id": "c1-12.video102.q4",
-          "prompt": "Recommend a tipping policy that considers both customers and workers",
-          "hint": "Include transparency, an exception and a way to review it",
-          "answer": "Example: The business should publish how tips are divided, offer a cash option where feasible and let staff challenge an unfair distribution"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "An ordinary user loses digital access",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Cashless payments: who receives the tip?",
+      "instruction": "Watch an archived report about pooled tips, then recommend a fair policy with conditions",
+      "minutes": 4,
+      "video": {
+        "videoId": "tOxD9PEH8DU",
+        "startSeconds": 205,
+        "endSeconds": 267,
+        "title": "Where do your tips go? — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "c1-12.video102.q1",
+          "prompt": "What payment change does the interviewee describe?",
+          "hint": "Listen to how more tips are being paid",
+          "answer": "More tips and service charges are being paid by card"
+        },
+        {
+          "id": "c1-12.video102.q2",
+          "prompt": "What is the intended function of pooling those payments?",
+          "hint": "Listen to the explanation of the shared arrangement",
+          "answer": "The stated aim is to collect the tips and distribute them fairly"
+        },
+        {
+          "id": "c1-12.video102.q3",
+          "prompt": "Does giving a payment to one worker guarantee that worker receives it all?",
+          "hint": "Listen to the explanation after the interview",
+          "answer": "No. The payment may be distributed across the business under its system"
+        },
+        {
+          "id": "c1-12.video102.q4",
+          "prompt": "Recommend a tipping policy that considers both customers and workers",
+          "hint": "Include transparency, an exception and a way to review it",
+          "answer": "Example: The business should publish how tips are divided, offer a cash option where feasible and let staff challenge an unfair distribution"
+        }
+      ]
     },
     {
       "id": "s_homework",

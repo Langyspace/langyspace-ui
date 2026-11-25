@@ -480,47 +480,6 @@
       "questionPurpose": "conversation"
     },
     {
-      "id": "s_video_intro",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Meet Vanya",
-      "instruction": "Watch the introductions, then answer the questions",
-      "minutes": 4,
-      "video": {
-        "videoId": "HooNbcbgi9U",
-        "startSeconds": 59,
-        "endSeconds": 93,
-        "title": "Meeting new people — British Council",
-        "credit": "British Council · 0:59–1:33"
-      },
-      "items": [
-        {
-          "id": "video1",
-          "prompt": "What’s the man’s name?",
-          "hint": "Listen for “I’m…” after Vanya asks about Paul",
-          "answer": "His name is Emir"
-        },
-        {
-          "id": "video2",
-          "prompt": "Where are they?",
-          "hint": "Look at the room and listen for the place Emir names",
-          "answer": "They’re at an office"
-        },
-        {
-          "id": "video3",
-          "prompt": "What does Yuna say to welcome Vanya?",
-          "hint": "Listen to Yuna’s last words",
-          "answer": "She says “Welcome to the team”"
-        },
-        {
-          "id": "video4",
-          "prompt": "You meet Vanya. How do you introduce yourself?",
-          "hint": "Start with Hi, then say your name",
-          "answer": "Example: Hi, Vanya! I’m [your name]. Nice to meet you"
-        }
-      ]
-    },
-    {
       "id": "s10",
       "kind": "activity",
       "title": "Meet someone new",
@@ -588,6 +547,47 @@
         }
       ],
       "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_video_intro",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Meet Vanya",
+      "instruction": "Watch the introductions, then answer the questions",
+      "minutes": 4,
+      "video": {
+        "videoId": "HooNbcbgi9U",
+        "startSeconds": 59,
+        "endSeconds": 93,
+        "title": "Meeting new people — British Council",
+        "credit": "British Council · 0:59–1:33"
+      },
+      "items": [
+        {
+          "id": "video1",
+          "prompt": "What’s the man’s name?",
+          "hint": "Listen for “I’m…” after Vanya asks about Paul",
+          "answer": "His name is Emir"
+        },
+        {
+          "id": "video2",
+          "prompt": "Where are they?",
+          "hint": "Look at the room and listen for the place Emir names",
+          "answer": "They’re at an office"
+        },
+        {
+          "id": "video3",
+          "prompt": "What does Yuna say to welcome Vanya?",
+          "hint": "Listen to Yuna’s last words",
+          "answer": "She says “Welcome to the team”"
+        },
+        {
+          "id": "video4",
+          "prompt": "You meet Vanya. How do you introduce yourself?",
+          "hint": "Start with Hi, then say your name",
+          "answer": "Example: Hi, Vanya! I’m [your name]. Nice to meet you"
+        }
+      ]
     },
     {
       "id": "s13",

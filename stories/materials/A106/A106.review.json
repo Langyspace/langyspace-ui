@@ -417,47 +417,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "What rooms does it have?",
-      "instruction": "Watch the house description, then describe the rooms in your home",
-      "minutes": 4,
-      "video": {
-        "videoId": "kzkEGEjkb30",
-        "startSeconds": 190,
-        "endSeconds": 226,
-        "title": "Talking about your home — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "a1-06.video102.q1",
-          "prompt": "How many bedrooms does the example house have?",
-          "hint": "Listen for the number before bedrooms",
-          "answer": "It has two bedrooms"
-        },
-        {
-          "id": "a1-06.video102.q2",
-          "prompt": "Does the house have a garden?",
-          "hint": "Listen to the end of the description",
-          "answer": "Yes, it has a garden"
-        },
-        {
-          "id": "a1-06.video102.q3",
-          "prompt": "What does the living room have?",
-          "hint": "Listen for a detail about the windows",
-          "answer": "It has big windows"
-        },
-        {
-          "id": "a1-06.video102.q4",
-          "prompt": "What does your home have?",
-          "hint": "Say two rooms and one detail",
-          "answer": "Example: My home has two bedrooms and a small kitchen"
-        }
-      ]
-    },
-    {
       "id": "s10",
       "kind": "listening",
       "title": "Mia has moved",
@@ -510,6 +469,47 @@
         }
       ],
       "questionPurpose": "response"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What rooms does it have?",
+      "instruction": "Watch the house description, then describe the rooms in your home",
+      "minutes": 4,
+      "video": {
+        "videoId": "kzkEGEjkb30",
+        "startSeconds": 190,
+        "endSeconds": 226,
+        "title": "Talking about your home — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a1-06.video102.q1",
+          "prompt": "How many bedrooms does the example house have?",
+          "hint": "Listen for the number before bedrooms",
+          "answer": "It has two bedrooms"
+        },
+        {
+          "id": "a1-06.video102.q2",
+          "prompt": "Does the house have a garden?",
+          "hint": "Listen to the end of the description",
+          "answer": "Yes, it has a garden"
+        },
+        {
+          "id": "a1-06.video102.q3",
+          "prompt": "What does the living room have?",
+          "hint": "Listen for a detail about the windows",
+          "answer": "It has big windows"
+        },
+        {
+          "id": "a1-06.video102.q4",
+          "prompt": "What does your home have?",
+          "hint": "Say two rooms and one detail",
+          "answer": "Example: My home has two bedrooms and a small kitchen"
+        }
+      ]
     },
     {
       "id": "s13",

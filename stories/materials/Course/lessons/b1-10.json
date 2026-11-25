@@ -317,47 +317,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Ask a polite follow-up",
-      "instruction": "Watch the hotel questions, then ask for information about a visit",
-      "minutes": 4,
-      "video": {
-        "videoId": "FJrRiVjeOMc",
-        "startSeconds": 481,
-        "endSeconds": 531,
-        "title": "Hotel English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "b1-10.video102.q1",
-          "prompt": "Who can help with restaurant recommendations?",
-          "hint": "Listen for the person across the lobby",
-          "answer": "The concierge can help with restaurant recommendations"
-        },
-        {
-          "id": "b1-10.video102.q2",
-          "prompt": "Which two exercise facilities does the hotel have?",
-          "hint": "Listen to the reply about the corridor",
-          "answer": "It has a gym and a small swimming pool"
-        },
-        {
-          "id": "b1-10.video102.q3",
-          "prompt": "What opening does the guest use before asking about the gym?",
-          "hint": "Listen before what kind of gym facilities",
-          "answer": "The guest says, “I wanted to ask”"
-        },
-        {
-          "id": "b1-10.video102.q4",
-          "prompt": "Ask politely when a museum opens, then ask one follow-up",
-          "hint": "Use Could you tell me and normal statement order",
-          "answer": "Example: Could you tell me when the museum opens? And do I need to book?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The talk has moved",
@@ -398,6 +357,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Ask a polite follow-up",
+      "instruction": "Watch the hotel questions, then ask for information about a visit",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 481,
+        "endSeconds": 531,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b1-10.video102.q1",
+          "prompt": "Who can help with restaurant recommendations?",
+          "hint": "Listen for the person across the lobby",
+          "answer": "The concierge can help with restaurant recommendations"
+        },
+        {
+          "id": "b1-10.video102.q2",
+          "prompt": "Which two exercise facilities does the hotel have?",
+          "hint": "Listen to the reply about the corridor",
+          "answer": "It has a gym and a small swimming pool"
+        },
+        {
+          "id": "b1-10.video102.q3",
+          "prompt": "What opening does the guest use before asking about the gym?",
+          "hint": "Listen before what kind of gym facilities",
+          "answer": "The guest says, “I wanted to ask”"
+        },
+        {
+          "id": "b1-10.video102.q4",
+          "prompt": "Ask politely when a museum opens, then ask one follow-up",
+          "hint": "Use Could you tell me and normal statement order",
+          "answer": "Example: Could you tell me when the museum opens? And do I need to book?"
+        }
+      ]
     },
     {
       "id": "s_homework",

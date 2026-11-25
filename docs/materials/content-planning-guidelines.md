@@ -26,7 +26,7 @@ Decisões atuais para lembrar:
 - Usar VideoExercise com variação inline e adaptador YouTube na UI Library. Registrar vídeo/canal, URL original, início/fim e referência consultada. Repetir o mesmo intervalo reaplicando os limites; ao terminar, preparar novamente esse trecho sem autoplay, para que o replay nativo do YouTube também retome o início escolhido. Loop é opcional, desligado inicialmente, e pode ser interrompido nos controles nativos para conversar. Sem autoplay ao entrar na página; interromper o player ao sair.
 - Não duplicar o canal e a minutagem em um rodapé clicável quando o player já oferece identificação. Manter a referência nos dados/documentação; apresentar o link externo como recuperação apenas se o vídeo falhar.
 - Preservar controles, legendas, identificação e anúncios do YouTube; não baixar, regravar, cobrir ou alterar o áudio do vídeo. O início por keyframe não é um corte exato por quadro. Erros de rede/incorporação devem oferecer a fonte original, sem sucesso simulado. Não aplicar automaticamente a regra de terceira escuta dos áudios WhatsApp a vídeos.
-- Acrescentar variedade substituindo ou redistribuindo tempo de etapas pertinentes, preservando conversa livre penúltima e homework último
+- Colocar o vídeo imediatamente antes de Free conversation: é uma etapa de compreensão mais exigente, depois das práticas guiadas. Preservar conversa livre penúltima e homework ou fechamento de matrícula último, sem alterar os outros exercícios ou sua ordem
 
 ### Expansão102 — vídeo em cada aula da trilha principal
 

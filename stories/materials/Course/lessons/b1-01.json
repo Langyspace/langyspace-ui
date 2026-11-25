@@ -467,47 +467,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Time spent or work finished?",
-      "instruction": "Watch the picture round, then explain the difference using your own week",
-      "minutes": 4,
-      "video": {
-        "videoId": "lvoc5vDrb8E",
-        "startSeconds": 159,
-        "endSeconds": 205,
-        "title": "The Grammar Gameshow — present perfect simple and continuous — BBC Learning English",
-        "credit": "BBC Learning English"
-      },
-      "items": [
-        {
-          "id": "b1-01.video102.q1",
-          "prompt": "What has the person been doing?",
-          "hint": "Listen to the first sentence about the picture",
-          "answer": "He’s been writing letters"
-        },
-        {
-          "id": "b1-01.video102.q2",
-          "prompt": "Which sentence focuses on completed letters?",
-          "hint": "Listen for written rather than been writing",
-          "answer": "“He’s written a number of letters” focuses on completed results"
-        },
-        {
-          "id": "b1-01.video102.q3",
-          "prompt": "Which question fits the continuous example: how many or how long?",
-          "hint": "Listen to Leslie’s contrast at the end",
-          "answer": "How long fits the continuous example"
-        },
-        {
-          "id": "b1-01.video102.q4",
-          "prompt": "What have you been working on, and what have you finished?",
-          "hint": "Give one ongoing activity and one completed result",
-          "answer": "Example: I’ve been studying English this week, and I’ve finished two lessons"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A message from Leo",
@@ -551,6 +510,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Time spent or work finished?",
+      "instruction": "Watch the picture round, then explain the difference using your own week",
+      "minutes": 4,
+      "video": {
+        "videoId": "lvoc5vDrb8E",
+        "startSeconds": 159,
+        "endSeconds": 205,
+        "title": "The Grammar Gameshow — present perfect simple and continuous — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b1-01.video102.q1",
+          "prompt": "What has the person been doing?",
+          "hint": "Listen to the first sentence about the picture",
+          "answer": "He’s been writing letters"
+        },
+        {
+          "id": "b1-01.video102.q2",
+          "prompt": "Which sentence focuses on completed letters?",
+          "hint": "Listen for written rather than been writing",
+          "answer": "“He’s written a number of letters” focuses on completed results"
+        },
+        {
+          "id": "b1-01.video102.q3",
+          "prompt": "Which question fits the continuous example: how many or how long?",
+          "hint": "Listen to Leslie’s contrast at the end",
+          "answer": "How long fits the continuous example"
+        },
+        {
+          "id": "b1-01.video102.q4",
+          "prompt": "What have you been working on, and what have you finished?",
+          "hint": "Give one ongoing activity and one completed result",
+          "answer": "Example: I’ve been studying English this week, and I’ve finished two lessons"
+        }
+      ]
     },
     {
       "id": "s_homework",

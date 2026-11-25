@@ -293,47 +293,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "What did the client actually ask for?",
-      "instruction": "Watch the disagreement and report the request without adding an opinion",
-      "minutes": 4,
-      "video": {
-        "videoId": "fQcga26aoL8",
-        "startSeconds": 49,
-        "endSeconds": 107,
-        "title": "Agreeing and disagreeing — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "b1-05.video102.q1",
-          "prompt": "What does Paul report that the client wanted?",
-          "hint": "Listen after They said",
-          "answer": "He reports that the client wanted a clean, minimal design"
-        },
-        {
-          "id": "b1-05.video102.q2",
-          "prompt": "Does Emir initially agree with Paul’s interpretation?",
-          "hint": "Listen to his reaction to the simple design",
-          "answer": "No. Emir thinks the design is too simple"
-        },
-        {
-          "id": "b1-05.video102.q3",
-          "prompt": "What checking question could resolve the disagreement?",
-          "hint": "Ask for the original message or brief",
-          "answer": "Example: Can we look at the client’s original brief together?"
-        },
-        {
-          "id": "b1-05.video102.q4",
-          "prompt": "Report the client’s request to Kim in one sentence",
-          "hint": "Keep the request separate from whether you like it",
-          "answer": "Example: The client said they wanted a clean, minimal design"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The repair has been rescheduled",
@@ -374,6 +333,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What did the client actually ask for?",
+      "instruction": "Watch the disagreement and report the request without adding an opinion",
+      "minutes": 4,
+      "video": {
+        "videoId": "fQcga26aoL8",
+        "startSeconds": 49,
+        "endSeconds": 107,
+        "title": "Agreeing and disagreeing — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b1-05.video102.q1",
+          "prompt": "What does Paul report that the client wanted?",
+          "hint": "Listen after They said",
+          "answer": "He reports that the client wanted a clean, minimal design"
+        },
+        {
+          "id": "b1-05.video102.q2",
+          "prompt": "Does Emir initially agree with Paul’s interpretation?",
+          "hint": "Listen to his reaction to the simple design",
+          "answer": "No. Emir thinks the design is too simple"
+        },
+        {
+          "id": "b1-05.video102.q3",
+          "prompt": "What checking question could resolve the disagreement?",
+          "hint": "Ask for the original message or brief",
+          "answer": "Example: Can we look at the client’s original brief together?"
+        },
+        {
+          "id": "b1-05.video102.q4",
+          "prompt": "Report the client’s request to Kim in one sentence",
+          "hint": "Keep the request separate from whether you like it",
+          "answer": "Example: The client said they wanted a clean, minimal design"
+        }
+      ]
     },
     {
       "id": "s_homework",

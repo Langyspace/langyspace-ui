@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "One decision, two audiences",
-      "instruction": "Watch the communication problem in a distributed team, then brief two audiences",
-      "minutes": 4,
-      "video": {
-        "videoId": "x6fIseKzzH0",
-        "startSeconds": 126,
-        "endSeconds": 163,
-        "title": "Matt Mullenweg — Why working from home is good for business — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "c1-07.video102.q1",
-          "prompt": "Which conversations can exclude remote colleagues?",
-          "hint": "Listen for the informal office locations",
-          "answer": "Decisions made in the kitchen or hall can exclude colleagues working elsewhere"
-        },
-        {
-          "id": "c1-07.video102.q2",
-          "prompt": "What record does the speaker recommend leaving?",
-          "hint": "Listen for where you were and what you were thinking",
-          "answer": "He recommends documenting decisions and the reasoning behind them"
-        },
-        {
-          "id": "c1-07.video102.q3",
-          "prompt": "Why can this help someone who joins the team later?",
-          "hint": "Connect the record with access to context",
-          "answer": "They can catch up on decisions without having been present for every conversation"
-        },
-        {
-          "id": "c1-07.video102.q4",
-          "prompt": "Brief a new colleague and a manager on the same decision",
-          "hint": "Keep the facts stable but change the emphasis",
-          "answer": "Example: To the colleague: Here’s the decision log and why we chose this approach. To the manager: The log preserves context and reduces repeated explanations"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The supplier date is confirmed",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "One decision, two audiences",
+      "instruction": "Watch the communication problem in a distributed team, then brief two audiences",
+      "minutes": 4,
+      "video": {
+        "videoId": "x6fIseKzzH0",
+        "startSeconds": 126,
+        "endSeconds": 163,
+        "title": "Matt Mullenweg — Why working from home is good for business — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-07.video102.q1",
+          "prompt": "Which conversations can exclude remote colleagues?",
+          "hint": "Listen for the informal office locations",
+          "answer": "Decisions made in the kitchen or hall can exclude colleagues working elsewhere"
+        },
+        {
+          "id": "c1-07.video102.q2",
+          "prompt": "What record does the speaker recommend leaving?",
+          "hint": "Listen for where you were and what you were thinking",
+          "answer": "He recommends documenting decisions and the reasoning behind them"
+        },
+        {
+          "id": "c1-07.video102.q3",
+          "prompt": "Why can this help someone who joins the team later?",
+          "hint": "Connect the record with access to context",
+          "answer": "They can catch up on decisions without having been present for every conversation"
+        },
+        {
+          "id": "c1-07.video102.q4",
+          "prompt": "Brief a new colleague and a manager on the same decision",
+          "hint": "Keep the facts stable but change the emphasis",
+          "answer": "Example: To the colleague: Here’s the decision log and why we chose this approach. To the manager: The log preserves context and reduces repeated explanations"
+        }
+      ]
     },
     {
       "id": "s_homework",

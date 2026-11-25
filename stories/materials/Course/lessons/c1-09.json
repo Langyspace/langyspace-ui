@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "What can a historical trend support?",
-      "instruction": "Watch this 2014 talk’s account of twentieth-century disaster data, then assess a prediction",
-      "minutes": 4,
-      "video": {
-        "videoId": "Sm5xF-UYgdg",
-        "startSeconds": 83,
-        "endSeconds": 140,
-        "title": "Hans and Ola Rosling — How not to be ignorant about the world — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "c1-09.video102.q1",
-          "prompt": "What period is the graph described as covering?",
-          "hint": "Listen for the two years",
-          "answer": "It is described as covering 1900 to 2000"
-        },
-        {
-          "id": "c1-09.video102.q2",
-          "prompt": "How does Rosling contrast the public belief with the data?",
-          "hint": "Listen to doubled and less than half",
-          "answer": "Many respondents thought deaths had doubled, while the data he presents show a fall to less than half"
-        },
-        {
-          "id": "c1-09.video102.q3",
-          "prompt": "Does that establish that every future year will improve?",
-          "hint": "Separate a historical trend from a guaranteed forecast",
-          "answer": "No. A historical pattern alone does not guarantee a future outcome"
-        },
-        {
-          "id": "c1-09.video102.q4",
-          "prompt": "Make a cautious prediction and name a condition that could change it",
-          "hint": "Use may or is likely to and specify the assumption",
-          "answer": "Example: Deaths may continue to fall if protective measures improve, but more severe hazards could alter that trend"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Total capacity is not all-day coverage",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What can a historical trend support?",
+      "instruction": "Watch this 2014 talk’s account of twentieth-century disaster data, then assess a prediction",
+      "minutes": 4,
+      "video": {
+        "videoId": "Sm5xF-UYgdg",
+        "startSeconds": 83,
+        "endSeconds": 140,
+        "title": "Hans and Ola Rosling — How not to be ignorant about the world — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-09.video102.q1",
+          "prompt": "What period is the graph described as covering?",
+          "hint": "Listen for the two years",
+          "answer": "It is described as covering 1900 to 2000"
+        },
+        {
+          "id": "c1-09.video102.q2",
+          "prompt": "How does Rosling contrast the public belief with the data?",
+          "hint": "Listen to doubled and less than half",
+          "answer": "Many respondents thought deaths had doubled, while the data he presents show a fall to less than half"
+        },
+        {
+          "id": "c1-09.video102.q3",
+          "prompt": "Does that establish that every future year will improve?",
+          "hint": "Separate a historical trend from a guaranteed forecast",
+          "answer": "No. A historical pattern alone does not guarantee a future outcome"
+        },
+        {
+          "id": "c1-09.video102.q4",
+          "prompt": "Make a cautious prediction and name a condition that could change it",
+          "hint": "Use may or is likely to and specify the assumption",
+          "answer": "Example: Deaths may continue to fall if protective measures improve, but more severe hazards could alter that trend"
+        }
+      ]
     },
     {
       "id": "s_homework",

@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Optimism needs a test",
-      "instruction": "Watch Teller explain the moonshot approach, then weigh a proposal and its limit",
-      "minutes": 4,
-      "video": {
-        "videoId": "2t13Rq4oc7A",
-        "startSeconds": 89,
-        "endSeconds": 163,
-        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "c1-06.video102.q1",
-          "prompt": "What three elements does the blueprint require?",
-          "hint": "Listen for problem, solution and a reason to believe",
-          "answer": "It requires a major problem, a radical solution and a reason to believe the technology could be built"
-        },
-        {
-          "id": "c1-06.video102.q2",
-          "prompt": "Why does the team try the hardest parts first?",
-          "hint": "Connect skepticism with the survival of a proposal",
-          "answer": "They try to expose reasons a project may fail before committing further"
-        },
-        {
-          "id": "c1-06.video102.q3",
-          "prompt": "Is a large vision alone enough in this account?",
-          "hint": "Distinguish optimism from a testable plan",
-          "answer": "No. The vision is paired with concrete plans and attempts to disprove it"
-        },
-        {
-          "id": "c1-06.video102.q4",
-          "prompt": "Recommend a proposal and say what evidence would change your recommendation",
-          "hint": "Make the trade-off and priority explicit",
-          "answer": "Example: The more I consider the cost, the more I favour a small trial. I’d reconsider if it demonstrated reliable results at scale"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A preference becomes a constraint",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Optimism needs a test",
+      "instruction": "Watch Teller explain the moonshot approach, then weigh a proposal and its limit",
+      "minutes": 4,
+      "video": {
+        "videoId": "2t13Rq4oc7A",
+        "startSeconds": 89,
+        "endSeconds": 163,
+        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-06.video102.q1",
+          "prompt": "What three elements does the blueprint require?",
+          "hint": "Listen for problem, solution and a reason to believe",
+          "answer": "It requires a major problem, a radical solution and a reason to believe the technology could be built"
+        },
+        {
+          "id": "c1-06.video102.q2",
+          "prompt": "Why does the team try the hardest parts first?",
+          "hint": "Connect skepticism with the survival of a proposal",
+          "answer": "They try to expose reasons a project may fail before committing further"
+        },
+        {
+          "id": "c1-06.video102.q3",
+          "prompt": "Is a large vision alone enough in this account?",
+          "hint": "Distinguish optimism from a testable plan",
+          "answer": "No. The vision is paired with concrete plans and attempts to disprove it"
+        },
+        {
+          "id": "c1-06.video102.q4",
+          "prompt": "Recommend a proposal and say what evidence would change your recommendation",
+          "hint": "Make the trade-off and priority explicit",
+          "answer": "Example: The more I consider the cost, the more I favour a small trial. I’d reconsider if it demonstrated reliable results at scale"
+        }
+      ]
     },
     {
       "id": "s_homework",

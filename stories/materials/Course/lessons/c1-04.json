@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Set a boundary and keep a way forward",
-      "instruction": "Watch Paul protect his existing commitments, then negotiate your own boundary",
-      "minutes": 4,
-      "video": {
-        "videoId": "hO98Bjn87KM",
-        "startSeconds": 79,
-        "endSeconds": 135,
-        "title": "Asking a favour — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "c1-04.video102.q1",
-          "prompt": "Which two existing commitments does Paul protect?",
-          "hint": "Listen to his reasons for refusing the afternoon and evening",
-          "answer": "He protects a work deadline and his niece’s birthday cinema trip"
-        },
-        {
-          "id": "c1-04.video102.q2",
-          "prompt": "What makes his refusal more informative than a bare no?",
-          "hint": "Notice the reasons and the conditional phrase",
-          "answer": "He explains the constraints and says he would help if he could"
-        },
-        {
-          "id": "c1-04.video102.q3",
-          "prompt": "What concrete arrangement ends the negotiation?",
-          "hint": "Listen to the final time and compensation discussion",
-          "answer": "They agree on six the next morning after discussing an extra day’s holiday"
-        },
-        {
-          "id": "c1-04.video102.q4",
-          "prompt": "Respond to a late request using I’d rather and offer one viable option",
-          "hint": "Protect a need while recognising the other person’s problem",
-          "answer": "Example: I’d rather we didn’t change tonight’s plans at this stage. I can review the work first thing tomorrow"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A conditional agreement",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Set a boundary and keep a way forward",
+      "instruction": "Watch Paul protect his existing commitments, then negotiate your own boundary",
+      "minutes": 4,
+      "video": {
+        "videoId": "hO98Bjn87KM",
+        "startSeconds": 79,
+        "endSeconds": 135,
+        "title": "Asking a favour — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-04.video102.q1",
+          "prompt": "Which two existing commitments does Paul protect?",
+          "hint": "Listen to his reasons for refusing the afternoon and evening",
+          "answer": "He protects a work deadline and his niece’s birthday cinema trip"
+        },
+        {
+          "id": "c1-04.video102.q2",
+          "prompt": "What makes his refusal more informative than a bare no?",
+          "hint": "Notice the reasons and the conditional phrase",
+          "answer": "He explains the constraints and says he would help if he could"
+        },
+        {
+          "id": "c1-04.video102.q3",
+          "prompt": "What concrete arrangement ends the negotiation?",
+          "hint": "Listen to the final time and compensation discussion",
+          "answer": "They agree on six the next morning after discussing an extra day’s holiday"
+        },
+        {
+          "id": "c1-04.video102.q4",
+          "prompt": "Respond to a late request using I’d rather and offer one viable option",
+          "hint": "Protect a need while recognising the other person’s problem",
+          "answer": "Example: I’d rather we didn’t change tonight’s plans at this stage. I can review the work first thing tomorrow"
+        }
+      ]
     },
     {
       "id": "s_homework",

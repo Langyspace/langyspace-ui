@@ -293,47 +293,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Report the disruption",
-      "instruction": "Watch the flight announcements, then report an incident without inventing a result",
-      "minutes": 4,
-      "video": {
-        "videoId": "DUqdQjkvElo",
-        "startSeconds": 182,
-        "endSeconds": 211,
-        "title": "Airport English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "b1-09.video102.q1",
-          "prompt": "Which announcement uses delayed?",
-          "hint": "Listen to the first travel problem",
-          "answer": "The first announcement says the flight is delayed by at least two hours"
-        },
-        {
-          "id": "b1-09.video102.q2",
-          "prompt": "What is the reason for the cancellation in the next example?",
-          "hint": "Listen for due to",
-          "answer": "The flight is cancelled due to bad weather"
-        },
-        {
-          "id": "b1-09.video102.q3",
-          "prompt": "Does the cancellation statement name a person who cancelled the flight?",
-          "hint": "Notice what the passive sentence focuses on",
-          "answer": "No. It focuses on the flight and the reason"
-        },
-        {
-          "id": "b1-09.video102.q4",
-          "prompt": "Your bike is missing. Report only what you know",
-          "hint": "Say what happened without claiming it was found",
-          "answer": "Example: My bike was stolen outside the station this morning. It hasn’t been found"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A similar bike has been found",
@@ -374,6 +333,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Report the disruption",
+      "instruction": "Watch the flight announcements, then report an incident without inventing a result",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 182,
+        "endSeconds": 211,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b1-09.video102.q1",
+          "prompt": "Which announcement uses delayed?",
+          "hint": "Listen to the first travel problem",
+          "answer": "The first announcement says the flight is delayed by at least two hours"
+        },
+        {
+          "id": "b1-09.video102.q2",
+          "prompt": "What is the reason for the cancellation in the next example?",
+          "hint": "Listen for due to",
+          "answer": "The flight is cancelled due to bad weather"
+        },
+        {
+          "id": "b1-09.video102.q3",
+          "prompt": "Does the cancellation statement name a person who cancelled the flight?",
+          "hint": "Notice what the passive sentence focuses on",
+          "answer": "No. It focuses on the flight and the reason"
+        },
+        {
+          "id": "b1-09.video102.q4",
+          "prompt": "Your bike is missing. Report only what you know",
+          "hint": "Say what happened without claiming it was found",
+          "answer": "Example: My bike was stolen outside the station this morning. It hasn’t been found"
+        }
+      ]
     },
     {
       "id": "s_homework",

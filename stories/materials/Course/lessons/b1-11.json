@@ -293,47 +293,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Which person does he mean?",
-      "instruction": "Watch Bob identify his wife, then describe a person clearly",
-      "minutes": 4,
-      "video": {
-        "videoId": "_3uWwTQJ1Co",
-        "startSeconds": 93,
-        "endSeconds": 120,
-        "title": "Showing interest — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "b1-11.video102.q1",
-          "prompt": "Where did Bob meet his wife?",
-          "hint": "Listen for the place in the story",
-          "answer": "He met her in the hospital"
-        },
-        {
-          "id": "b1-11.video102.q2",
-          "prompt": "What was her job?",
-          "hint": "Listen to the detail that identifies her",
-          "answer": "She was a doctor"
-        },
-        {
-          "id": "b1-11.video102.q3",
-          "prompt": "What did that doctor do for Bob?",
-          "hint": "Listen to the clause starting with who",
-          "answer": "She looked at his injured leg"
-        },
-        {
-          "id": "b1-11.video102.q4",
-          "prompt": "Identify someone at an imaginary party using who",
-          "hint": "Give a visible detail and one fact",
-          "answer": "Example: Leo is the person who’s standing by the door. He’s my friend"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Look for the host",
@@ -374,6 +333,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Which person does he mean?",
+      "instruction": "Watch Bob identify his wife, then describe a person clearly",
+      "minutes": 4,
+      "video": {
+        "videoId": "_3uWwTQJ1Co",
+        "startSeconds": 93,
+        "endSeconds": 120,
+        "title": "Showing interest — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b1-11.video102.q1",
+          "prompt": "Where did Bob meet his wife?",
+          "hint": "Listen for the place in the story",
+          "answer": "He met her in the hospital"
+        },
+        {
+          "id": "b1-11.video102.q2",
+          "prompt": "What was her job?",
+          "hint": "Listen to the detail that identifies her",
+          "answer": "She was a doctor"
+        },
+        {
+          "id": "b1-11.video102.q3",
+          "prompt": "What did that doctor do for Bob?",
+          "hint": "Listen to the clause starting with who",
+          "answer": "She looked at his injured leg"
+        },
+        {
+          "id": "b1-11.video102.q4",
+          "prompt": "Identify someone at an imaginary party using who",
+          "hint": "Give a visible detail and one fact",
+          "answer": "Example: Leo is the person who’s standing by the door. He’s my friend"
+        }
+      ]
     },
     {
       "id": "s_homework",

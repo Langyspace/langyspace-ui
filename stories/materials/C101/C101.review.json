@@ -456,47 +456,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "When certainty sounds like a fact",
-      "instruction": "Watch Julian Treasure discuss speaking habits, then give balanced feedback",
-      "minutes": 4,
-      "video": {
-        "videoId": "eIho2S0ZahI",
-        "startSeconds": 108,
-        "endSeconds": 166,
-        "title": "Julian Treasure — How to speak so that people want to listen — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "c1-01.video102.q1",
-          "prompt": "What behaviour does the blamethrower metaphor describe?",
-          "hint": "Notice where responsibility goes",
-          "answer": "It describes passing responsibility for your actions to other people"
-        },
-        {
-          "id": "c1-01.video102.q2",
-          "prompt": "How does he distinguish dogmatism from a supported claim?",
-          "hint": "Listen to the contrast between facts and opinions",
-          "answer": "He describes dogmatism as presenting opinions as if they were facts"
-        },
-        {
-          "id": "c1-01.video102.q3",
-          "prompt": "Why might exaggeration make a message less credible?",
-          "hint": "Connect the exaggeration example to trust",
-          "answer": "Example: If everything is described as extraordinary, the listener may stop trusting the strength of the claim"
-        },
-        {
-          "id": "c1-01.video102.q4",
-          "prompt": "Give feedback on that habit without labelling the person",
-          "hint": "Use tends to or comes across as, then invite a response",
-          "answer": "Example: The message tends to sound certain before the evidence is clear. Could we make the level of confidence more explicit?"
-        }
-      ]
-    },
-    {
       "id": "s9",
       "kind": "listening",
       "title": "Raj responds to the feedback",
@@ -559,6 +518,47 @@
         }
       ],
       "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "When certainty sounds like a fact",
+      "instruction": "Watch Julian Treasure discuss speaking habits, then give balanced feedback",
+      "minutes": 4,
+      "video": {
+        "videoId": "eIho2S0ZahI",
+        "startSeconds": 108,
+        "endSeconds": 166,
+        "title": "Julian Treasure — How to speak so that people want to listen — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-01.video102.q1",
+          "prompt": "What behaviour does the blamethrower metaphor describe?",
+          "hint": "Notice where responsibility goes",
+          "answer": "It describes passing responsibility for your actions to other people"
+        },
+        {
+          "id": "c1-01.video102.q2",
+          "prompt": "How does he distinguish dogmatism from a supported claim?",
+          "hint": "Listen to the contrast between facts and opinions",
+          "answer": "He describes dogmatism as presenting opinions as if they were facts"
+        },
+        {
+          "id": "c1-01.video102.q3",
+          "prompt": "Why might exaggeration make a message less credible?",
+          "hint": "Connect the exaggeration example to trust",
+          "answer": "Example: If everything is described as extraordinary, the listener may stop trusting the strength of the claim"
+        },
+        {
+          "id": "c1-01.video102.q4",
+          "prompt": "Give feedback on that habit without labelling the person",
+          "hint": "Use tends to or comes across as, then invite a response",
+          "answer": "Example: The message tends to sound certain before the evidence is clear. Could we make the level of confidence more explicit?"
+        }
+      ]
     },
     {
       "id": "s12",

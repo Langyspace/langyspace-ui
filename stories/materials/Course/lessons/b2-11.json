@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Keep the aim, change the proposal",
-      "instruction": "Watch the objections, then propose a compromise that preserves the purpose",
-      "minutes": 4,
-      "video": {
-        "videoId": "ZveJWidWxgY",
-        "startSeconds": 91,
-        "endSeconds": 159,
-        "title": "Discussing advantages and disadvantages — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "b2-11.video102.q1",
-          "prompt": "What purpose is Noelia trying to protect?",
-          "hint": "Listen to her link between fun and the business",
-          "answer": "She wants to encourage creativity at work"
-        },
-        {
-          "id": "b2-11.video102.q2",
-          "prompt": "Which concern involves people outside the team?",
-          "hint": "Listen for clients arriving",
-          "answer": "Yuna worries about clients seeing the staff jumping around"
-        },
-        {
-          "id": "b2-11.video102.q3",
-          "prompt": "What is the difference between thinking about it and saying yes?",
-          "hint": "Listen to Yuna’s last two replies",
-          "answer": "Considering the idea is not the same as approving it"
-        },
-        {
-          "id": "b2-11.video102.q4",
-          "prompt": "Make a counterproposal that keeps the creativity goal",
-          "hint": "Acknowledge the concern and suggest a workable change",
-          "answer": "Example: A break space could help creativity. Having said that, I’d choose quiet activities instead of a trampoline"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A concern about unanswered questions",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Keep the aim, change the proposal",
+      "instruction": "Watch the objections, then propose a compromise that preserves the purpose",
+      "minutes": 4,
+      "video": {
+        "videoId": "ZveJWidWxgY",
+        "startSeconds": 91,
+        "endSeconds": 159,
+        "title": "Discussing advantages and disadvantages — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b2-11.video102.q1",
+          "prompt": "What purpose is Noelia trying to protect?",
+          "hint": "Listen to her link between fun and the business",
+          "answer": "She wants to encourage creativity at work"
+        },
+        {
+          "id": "b2-11.video102.q2",
+          "prompt": "Which concern involves people outside the team?",
+          "hint": "Listen for clients arriving",
+          "answer": "Yuna worries about clients seeing the staff jumping around"
+        },
+        {
+          "id": "b2-11.video102.q3",
+          "prompt": "What is the difference between thinking about it and saying yes?",
+          "hint": "Listen to Yuna’s last two replies",
+          "answer": "Considering the idea is not the same as approving it"
+        },
+        {
+          "id": "b2-11.video102.q4",
+          "prompt": "Make a counterproposal that keeps the creativity goal",
+          "hint": "Acknowledge the concern and suggest a workable change",
+          "answer": "Example: A break space could help creativity. Having said that, I’d choose quiet activities instead of a trampoline"
+        }
+      ]
     },
     {
       "id": "s_homework",

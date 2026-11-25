@@ -168,47 +168,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Where is the hammer?",
-      "instruction": "Watch Bob explain the position, then describe where an object is",
-      "minutes": 4,
-      "video": {
-        "videoId": "K5GJt-CRiFk",
-        "startSeconds": 75,
-        "endSeconds": 105,
-        "title": "Checking understanding — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "a1-09.video102.q1",
-          "prompt": "What container is the hammer in?",
-          "hint": "Listen for the box Bob names",
-          "answer": "It’s in the toolbox"
-        },
-        {
-          "id": "a1-09.video102.q2",
-          "prompt": "Is it on the left or on the right?",
-          "hint": "Listen when Bob repeats the position",
-          "answer": "It’s on the left"
-        },
-        {
-          "id": "a1-09.video102.q3",
-          "prompt": "What is it under?",
-          "hint": "Listen for the other tool",
-          "answer": "It’s under the scissors"
-        },
-        {
-          "id": "a1-09.video102.q4",
-          "prompt": "Where is an object near you?",
-          "hint": "Use on, in, under or next to",
-          "answer": "Example: My phone is on the table, next to my notebook"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Meet me in the park",
@@ -249,6 +208,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 4,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Where is the hammer?",
+      "instruction": "Watch Bob explain the position, then describe where an object is",
+      "minutes": 4,
+      "video": {
+        "videoId": "K5GJt-CRiFk",
+        "startSeconds": 75,
+        "endSeconds": 105,
+        "title": "Checking understanding — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-09.video102.q1",
+          "prompt": "What container is the hammer in?",
+          "hint": "Listen for the box Bob names",
+          "answer": "It’s in the toolbox"
+        },
+        {
+          "id": "a1-09.video102.q2",
+          "prompt": "Is it on the left or on the right?",
+          "hint": "Listen when Bob repeats the position",
+          "answer": "It’s on the left"
+        },
+        {
+          "id": "a1-09.video102.q3",
+          "prompt": "What is it under?",
+          "hint": "Listen for the other tool",
+          "answer": "It’s under the scissors"
+        },
+        {
+          "id": "a1-09.video102.q4",
+          "prompt": "Where is an object near you?",
+          "hint": "Use on, in, under or next to",
+          "answer": "Example: My phone is on the table, next to my notebook"
+        }
+      ]
     },
     {
       "id": "s_homework",

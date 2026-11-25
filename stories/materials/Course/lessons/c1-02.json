@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "A failed project, a useful decision",
-      "instruction": "Watch this 2016 example, then review the outcome without claiming hindsight was a warning",
-      "minutes": 4,
-      "video": {
-        "videoId": "2t13Rq4oc7A",
-        "startSeconds": 176,
-        "endSeconds": 221,
-        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "c1-02.video102.q1",
-          "prompt": "Which project did the team stop?",
-          "hint": "Listen to the type of farming",
-          "answer": "They stopped an automated vertical-farming project"
-        },
-        {
-          "id": "c1-02.video102.q2",
-          "prompt": "What limitation does Teller give as the reason?",
-          "hint": "Distinguish progress from the unresolved obstacle",
-          "answer": "They couldn’t grow staple crops such as grains and rice that way"
-        },
-        {
-          "id": "c1-02.video102.q3",
-          "prompt": "Does this excerpt prove they had been warned about that limitation earlier?",
-          "hint": "Separate what they discovered from what was known in advance",
-          "answer": "No. It reports the limitation but gives no evidence of an earlier warning"
-        },
-        {
-          "id": "c1-02.video102.q4",
-          "prompt": "Review an earlier test they could have prioritised without claiming it guarantees success",
-          "hint": "Use Had we known and make the uncertainty explicit",
-          "answer": "Example: Had we known the staple crops wouldn’t grow, we might have tested that constraint before expanding the project"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "A warning existed, but who owned it?",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A failed project, a useful decision",
+      "instruction": "Watch this 2016 example, then review the outcome without claiming hindsight was a warning",
+      "minutes": 4,
+      "video": {
+        "videoId": "2t13Rq4oc7A",
+        "startSeconds": 176,
+        "endSeconds": 221,
+        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-02.video102.q1",
+          "prompt": "Which project did the team stop?",
+          "hint": "Listen to the type of farming",
+          "answer": "They stopped an automated vertical-farming project"
+        },
+        {
+          "id": "c1-02.video102.q2",
+          "prompt": "What limitation does Teller give as the reason?",
+          "hint": "Distinguish progress from the unresolved obstacle",
+          "answer": "They couldn’t grow staple crops such as grains and rice that way"
+        },
+        {
+          "id": "c1-02.video102.q3",
+          "prompt": "Does this excerpt prove they had been warned about that limitation earlier?",
+          "hint": "Separate what they discovered from what was known in advance",
+          "answer": "No. It reports the limitation but gives no evidence of an earlier warning"
+        },
+        {
+          "id": "c1-02.video102.q4",
+          "prompt": "Review an earlier test they could have prioritised without claiming it guarantees success",
+          "hint": "Use Had we known and make the uncertainty explicit",
+          "answer": "Example: Had we known the staple crops wouldn’t grow, we might have tested that constraint before expanding the project"
+        }
+      ]
     },
     {
       "id": "s_homework",

@@ -304,47 +304,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Have you ever visited him?",
-      "instruction": "Watch Sam talk about visits, then ask about a real experience",
-      "minutes": 4,
-      "video": {
-        "videoId": "4FgU5qqw8-w",
-        "startSeconds": 76,
-        "endSeconds": 106,
-        "title": "Talking about your family — British Council | LearnEnglish Teens",
-        "credit": "British Council | LearnEnglish Teens"
-      },
-      "items": [
-        {
-          "id": "a2-08.video102.q1",
-          "prompt": "How many visits does Sam finally mention?",
-          "hint": "Listen to the correction after twice",
-          "answer": "He finally mentions three visits"
-        },
-        {
-          "id": "a2-08.video102.q2",
-          "prompt": "Why doesn’t he remember the first visit?",
-          "hint": "Listen to his age at the time",
-          "answer": "He was really little"
-        },
-        {
-          "id": "a2-08.video102.q3",
-          "prompt": "Has Sam met Rob’s mother?",
-          "hint": "Listen to his answer to Jack’s question",
-          "answer": "Yes, he has met her"
-        },
-        {
-          "id": "a2-08.video102.q4",
-          "prompt": "Ask your teacher about visiting another country, then follow up",
-          "hint": "Use Have you ever and then a past question",
-          "answer": "Example: Have you ever been to Portugal? When did you go?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "One experience, one plan",
@@ -385,6 +344,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Have you ever visited him?",
+      "instruction": "Watch Sam talk about visits, then ask about a real experience",
+      "minutes": 4,
+      "video": {
+        "videoId": "4FgU5qqw8-w",
+        "startSeconds": 76,
+        "endSeconds": 106,
+        "title": "Talking about your family — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a2-08.video102.q1",
+          "prompt": "How many visits does Sam finally mention?",
+          "hint": "Listen to the correction after twice",
+          "answer": "He finally mentions three visits"
+        },
+        {
+          "id": "a2-08.video102.q2",
+          "prompt": "Why doesn’t he remember the first visit?",
+          "hint": "Listen to his age at the time",
+          "answer": "He was really little"
+        },
+        {
+          "id": "a2-08.video102.q3",
+          "prompt": "Has Sam met Rob’s mother?",
+          "hint": "Listen to his answer to Jack’s question",
+          "answer": "Yes, he has met her"
+        },
+        {
+          "id": "a2-08.video102.q4",
+          "prompt": "Ask your teacher about visiting another country, then follow up",
+          "hint": "Use Have you ever and then a past question",
+          "answer": "Example: Have you ever been to Portugal? When did you go?"
+        }
+      ]
     },
     {
       "id": "s_homework",

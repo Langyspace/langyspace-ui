@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "A claim changes when the source changes",
-      "instruction": "Watch Noelia correct the news, then report it with accurate attribution",
-      "minutes": 4,
-      "video": {
-        "videoId": "sFcWuQzA3DQ",
-        "startSeconds": 89,
-        "endSeconds": 123,
-        "title": "Responding to news — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "c1-03.video102.q1",
-          "prompt": "What source caused Noelia’s initial belief?",
-          "hint": "Listen to her explanation about the email",
-          "answer": "She received an email that led her to think she had won"
-        },
-        {
-          "id": "c1-03.video102.q2",
-          "prompt": "What correction does she make?",
-          "hint": "Listen for the contrast between herself and another person",
-          "answer": "She says the email was wrong and that someone else won"
-        },
-        {
-          "id": "c1-03.video102.q3",
-          "prompt": "Can the original message still support an unqualified claim that she won?",
-          "hint": "Explain what the correction changes",
-          "answer": "No. The corrected information withdraws the basis for that claim"
-        },
-        {
-          "id": "c1-03.video102.q4",
-          "prompt": "Report the update responsibly to someone who heard only the first news",
-          "hint": "Attribute the initial claim and make the correction clear",
-          "answer": "Example: Noelia was initially told she’d won, but she later said the email was incorrect and another person had received the award"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "No reopening date has been set",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A claim changes when the source changes",
+      "instruction": "Watch Noelia correct the news, then report it with accurate attribution",
+      "minutes": 4,
+      "video": {
+        "videoId": "sFcWuQzA3DQ",
+        "startSeconds": 89,
+        "endSeconds": 123,
+        "title": "Responding to news — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-03.video102.q1",
+          "prompt": "What source caused Noelia’s initial belief?",
+          "hint": "Listen to her explanation about the email",
+          "answer": "She received an email that led her to think she had won"
+        },
+        {
+          "id": "c1-03.video102.q2",
+          "prompt": "What correction does she make?",
+          "hint": "Listen for the contrast between herself and another person",
+          "answer": "She says the email was wrong and that someone else won"
+        },
+        {
+          "id": "c1-03.video102.q3",
+          "prompt": "Can the original message still support an unqualified claim that she won?",
+          "hint": "Explain what the correction changes",
+          "answer": "No. The corrected information withdraws the basis for that claim"
+        },
+        {
+          "id": "c1-03.video102.q4",
+          "prompt": "Report the update responsibly to someone who heard only the first news",
+          "hint": "Attribute the initial claim and make the correction clear",
+          "answer": "Example: Noelia was initially told she’d won, but she later said the email was incorrect and another person had received the award"
+        }
+      ]
     },
     {
       "id": "s_homework",

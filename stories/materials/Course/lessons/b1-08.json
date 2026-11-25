@@ -317,47 +317,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Get used to a different workday",
-      "instruction": "Watch the choices a distributed team can make, then describe a change you are adapting to",
-      "minutes": 4,
-      "video": {
-        "videoId": "x6fIseKzzH0",
-        "startSeconds": 95,
-        "endSeconds": 119,
-        "title": "Matt Mullenweg — Why working from home is good for business — TED",
-        "credit": "TED"
-      },
-      "items": [
-        {
-          "id": "b1-08.video102.q1",
-          "prompt": "Who can choose their own schedule in his example?",
-          "hint": "Listen for the exception about specific hours",
-          "answer": "People whose roles don’t require specific hours can choose their schedule"
-        },
-        {
-          "id": "b1-08.video102.q2",
-          "prompt": "Which two examples affect sound in the work environment?",
-          "hint": "Listen for music and its opposite",
-          "answer": "Workers can choose music or silence"
-        },
-        {
-          "id": "b1-08.video102.q3",
-          "prompt": "What travel time can workers save?",
-          "hint": "Listen to the final sentence",
-          "answer": "They can save commuting time"
-        },
-        {
-          "id": "b1-08.video102.q4",
-          "prompt": "What change are you getting used to, and what is already familiar?",
-          "hint": "Contrast getting used to with used to plus a noun or -ing",
-          "answer": "Example: I’m getting used to starting early, but I’m already used to working from home"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "An honest update",
@@ -398,6 +357,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Get used to a different workday",
+      "instruction": "Watch the choices a distributed team can make, then describe a change you are adapting to",
+      "minutes": 4,
+      "video": {
+        "videoId": "x6fIseKzzH0",
+        "startSeconds": 95,
+        "endSeconds": 119,
+        "title": "Matt Mullenweg — Why working from home is good for business — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "b1-08.video102.q1",
+          "prompt": "Who can choose their own schedule in his example?",
+          "hint": "Listen for the exception about specific hours",
+          "answer": "People whose roles don’t require specific hours can choose their schedule"
+        },
+        {
+          "id": "b1-08.video102.q2",
+          "prompt": "Which two examples affect sound in the work environment?",
+          "hint": "Listen for music and its opposite",
+          "answer": "Workers can choose music or silence"
+        },
+        {
+          "id": "b1-08.video102.q3",
+          "prompt": "What travel time can workers save?",
+          "hint": "Listen to the final sentence",
+          "answer": "They can save commuting time"
+        },
+        {
+          "id": "b1-08.video102.q4",
+          "prompt": "What change are you getting used to, and what is already familiar?",
+          "hint": "Contrast getting used to with used to plus a noun or -ing",
+          "answer": "Example: I’m getting used to starting early, but I’m already used to working from home"
+        }
+      ]
     },
     {
       "id": "s_homework",

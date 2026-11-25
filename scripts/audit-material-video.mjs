@@ -31,6 +31,11 @@ for (const entry of catalog) {
   const videos = data.pages.filter((page) => page.kind === 'video')
   assert.equal(videos.length, 1, `${entry.code}: expected one authored video`)
   const page = videos[0]
+  assert.equal(
+    data.pages.at(-2)?.id,
+    page.id,
+    `${entry.code}: video must immediately precede the injected Free conversation and homework ending`,
+  )
   const record = curation.lessons.find((item) => item.code === entry.code)
   assert(record, `${entry.code}: missing source and purpose`)
   assert(record.focus.trim() && record.captionEvidence.sha256)
@@ -68,8 +73,8 @@ for (const entry of catalog) {
     )
     const strip = ({ minutes, ...rest }) => rest
     assert.deepEqual(
-      data.pages.filter((item) => item.id !== 's_video102').map(strip),
-      old.pages.map(strip),
+      data.pages.filter((item) => item.kind !== 'video').map(strip),
+      old.pages.filter((item) => item.kind !== 'video').map(strip),
       `${entry.code}: existing content or order changed`,
     )
     const { pages: _a, ...currentMetadata } = data

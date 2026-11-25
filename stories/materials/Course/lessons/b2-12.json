@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Does phones off work as a policy?",
-      "instruction": "Watch the meeting rule, then test a phone policy against a real exception",
-      "minutes": 4,
-      "video": {
-        "videoId": "dH7LF_bbHu0",
-        "startSeconds": 45,
-        "endSeconds": 66,
-        "title": "Making suggestions — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "b2-12.video102.q1",
-          "prompt": "What restriction do they choose?",
-          "hint": "Listen to the rule before the meeting starts",
-          "answer": "They choose to turn their phones off"
-        },
-        {
-          "id": "b2-12.video102.q2",
-          "prompt": "What specific setting is the rule for?",
-          "hint": "Look at the activity they are about to start",
-          "answer": "It’s for a focused meeting"
-        },
-        {
-          "id": "b2-12.video102.q3",
-          "prompt": "Does this excerpt address emergency calls or accessibility needs?",
-          "hint": "Notice what is and isn’t discussed",
-          "answer": "No. Those exceptions aren’t discussed in the excerpt"
-        },
-        {
-          "id": "b2-12.video102.q4",
-          "prompt": "Adapt the rule for a school without ignoring those needs",
-          "hint": "State the rule, an exception and how it would work",
-          "answer": "Example: Phones stay away during lessons, but students can agree an emergency or accessibility exception with staff"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "An accessibility case was omitted",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Does phones off work as a policy?",
+      "instruction": "Watch the meeting rule, then test a phone policy against a real exception",
+      "minutes": 4,
+      "video": {
+        "videoId": "dH7LF_bbHu0",
+        "startSeconds": 45,
+        "endSeconds": 66,
+        "title": "Making suggestions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b2-12.video102.q1",
+          "prompt": "What restriction do they choose?",
+          "hint": "Listen to the rule before the meeting starts",
+          "answer": "They choose to turn their phones off"
+        },
+        {
+          "id": "b2-12.video102.q2",
+          "prompt": "What specific setting is the rule for?",
+          "hint": "Look at the activity they are about to start",
+          "answer": "It’s for a focused meeting"
+        },
+        {
+          "id": "b2-12.video102.q3",
+          "prompt": "Does this excerpt address emergency calls or accessibility needs?",
+          "hint": "Notice what is and isn’t discussed",
+          "answer": "No. Those exceptions aren’t discussed in the excerpt"
+        },
+        {
+          "id": "b2-12.video102.q4",
+          "prompt": "Adapt the rule for a school without ignoring those needs",
+          "hint": "State the rule, an exception and how it would work",
+          "answer": "Example: Phones stay away during lessons, but students can agree an emergency or accessibility exception with staff"
+        }
+      ]
     },
     {
       "id": "s_homework",

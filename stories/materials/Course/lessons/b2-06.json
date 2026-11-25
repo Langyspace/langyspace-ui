@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Is the repair arranged or finished?",
-      "instruction": "Watch the hotel offer help, then negotiate a service deadline",
-      "minutes": 4,
-      "video": {
-        "videoId": "FJrRiVjeOMc",
-        "startSeconds": 581,
-        "endSeconds": 625,
-        "title": "Hotel English — Oxford Online English",
-        "credit": "Oxford Online English"
-      },
-      "items": [
-        {
-          "id": "b2-06.video102.q1",
-          "prompt": "What does the receptionist promise about the heating?",
-          "hint": "Listen for I’ll send",
-          "answer": "The receptionist promises to send somebody to look at it"
-        },
-        {
-          "id": "b2-06.video102.q2",
-          "prompt": "Does the excerpt show the heating being repaired?",
-          "hint": "Distinguish the promise from a completed repair",
-          "answer": "No. It shows an offer to investigate, not a completed repair"
-        },
-        {
-          "id": "b2-06.video102.q3",
-          "prompt": "Which problem can the receptionist address immediately?",
-          "hint": "Listen to right now",
-          "answer": "The receptionist can make a new key immediately"
-        },
-        {
-          "id": "b2-06.video102.q4",
-          "prompt": "Arrange a phone-screen repair and check the deadline",
-          "hint": "Use get it fixed and ask for a realistic collection time",
-          "answer": "Example: I need to get the screen fixed. Can you confirm whether it will be ready by Thursday?"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Fitted, but still being tested",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Is the repair arranged or finished?",
+      "instruction": "Watch the hotel offer help, then negotiate a service deadline",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 581,
+        "endSeconds": 625,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-06.video102.q1",
+          "prompt": "What does the receptionist promise about the heating?",
+          "hint": "Listen for I’ll send",
+          "answer": "The receptionist promises to send somebody to look at it"
+        },
+        {
+          "id": "b2-06.video102.q2",
+          "prompt": "Does the excerpt show the heating being repaired?",
+          "hint": "Distinguish the promise from a completed repair",
+          "answer": "No. It shows an offer to investigate, not a completed repair"
+        },
+        {
+          "id": "b2-06.video102.q3",
+          "prompt": "Which problem can the receptionist address immediately?",
+          "hint": "Listen to right now",
+          "answer": "The receptionist can make a new key immediately"
+        },
+        {
+          "id": "b2-06.video102.q4",
+          "prompt": "Arrange a phone-screen repair and check the deadline",
+          "hint": "Use get it fixed and ask for a realistic collection time",
+          "answer": "Example: I need to get the screen fixed. Can you confirm whether it will be ready by Thursday?"
+        }
+      ]
     },
     {
       "id": "s_homework",

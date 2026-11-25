@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "A memory or a task still to do?",
-      "instruction": "Watch the two remember examples, then give an instruction with the intended meaning",
-      "minutes": 4,
-      "video": {
-        "videoId": "as9mHpTjMU0",
-        "startSeconds": 17,
-        "endSeconds": 53,
-        "title": "Remember to do versus remember doing — BBC Learning English",
-        "credit": "BBC Learning English"
-      },
-      "items": [
-        {
-          "id": "b2-09.video102.q1",
-          "prompt": "What action must happen after the reminder?",
-          "hint": "Listen to the umbrella example",
-          "answer": "The person must bring an umbrella"
-        },
-        {
-          "id": "b2-09.video102.q2",
-          "prompt": "What does the speaker already remember happening?",
-          "hint": "Listen to the childhood example",
-          "answer": "The speaker remembers meeting a best friend when they were little"
-        },
-        {
-          "id": "b2-09.video102.q3",
-          "prompt": "Why do the two verb forms change the meaning?",
-          "hint": "Compare the order of remembering and acting",
-          "answer": "Remember to do comes before the action; remember doing recalls an earlier action"
-        },
-        {
-          "id": "b2-09.video102.q4",
-          "prompt": "Tell someone to lock a door, then say you remember locking another one",
-          "hint": "Use both forms with different meanings",
-          "answer": "Example: Remember to lock the front door. I remember locking the back door already"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Checked, done and still undecided",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A memory or a task still to do?",
+      "instruction": "Watch the two remember examples, then give an instruction with the intended meaning",
+      "minutes": 4,
+      "video": {
+        "videoId": "as9mHpTjMU0",
+        "startSeconds": 17,
+        "endSeconds": 53,
+        "title": "Remember to do versus remember doing — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-09.video102.q1",
+          "prompt": "What action must happen after the reminder?",
+          "hint": "Listen to the umbrella example",
+          "answer": "The person must bring an umbrella"
+        },
+        {
+          "id": "b2-09.video102.q2",
+          "prompt": "What does the speaker already remember happening?",
+          "hint": "Listen to the childhood example",
+          "answer": "The speaker remembers meeting a best friend when they were little"
+        },
+        {
+          "id": "b2-09.video102.q3",
+          "prompt": "Why do the two verb forms change the meaning?",
+          "hint": "Compare the order of remembering and acting",
+          "answer": "Remember to do comes before the action; remember doing recalls an earlier action"
+        },
+        {
+          "id": "b2-09.video102.q4",
+          "prompt": "Tell someone to lock a door, then say you remember locking another one",
+          "hint": "Use both forms with different meanings",
+          "answer": "Example: Remember to lock the front door. I remember locking the back door already"
+        }
+      ]
     },
     {
       "id": "s_homework",

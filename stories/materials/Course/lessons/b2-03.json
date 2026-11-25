@@ -352,47 +352,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "A past choice, a consequence now",
-      "instruction": "Watch the breakfast example, then connect a past decision to the present",
-      "minutes": 4,
-      "video": {
-        "videoId": "K74ym19xdYE",
-        "startSeconds": 6,
-        "endSeconds": 52,
-        "title": "Mixed conditionals — BBC Learning English",
-        "credit": "BBC Learning English"
-      },
-      "items": [
-        {
-          "id": "b2-03.video102.q1",
-          "prompt": "Did the speaker in the example eat breakfast?",
-          "hint": "Listen when Georgina explains what is true",
-          "answer": "No. The person didn’t eat breakfast"
-        },
-        {
-          "id": "b2-03.video102.q2",
-          "prompt": "What is true about that person now?",
-          "hint": "Separate the imagined result from the real one",
-          "answer": "The person is hungry now"
-        },
-        {
-          "id": "b2-03.video102.q3",
-          "prompt": "Why does the example combine two different conditional forms?",
-          "hint": "Notice the time of the cause and the result",
-          "answer": "The imagined cause is in the past, but the imagined result is in the present"
-        },
-        {
-          "id": "b2-03.video102.q4",
-          "prompt": "Imagine a past travel choice had been different. What might be different now?",
-          "hint": "Make the hypothesis clear and avoid certainty without evidence",
-          "answer": "Example: If I hadn’t moved abroad, I might still be living near my family"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "The unexpected collaboration",
@@ -433,6 +392,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A past choice, a consequence now",
+      "instruction": "Watch the breakfast example, then connect a past decision to the present",
+      "minutes": 4,
+      "video": {
+        "videoId": "K74ym19xdYE",
+        "startSeconds": 6,
+        "endSeconds": 52,
+        "title": "Mixed conditionals — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-03.video102.q1",
+          "prompt": "Did the speaker in the example eat breakfast?",
+          "hint": "Listen when Georgina explains what is true",
+          "answer": "No. The person didn’t eat breakfast"
+        },
+        {
+          "id": "b2-03.video102.q2",
+          "prompt": "What is true about that person now?",
+          "hint": "Separate the imagined result from the real one",
+          "answer": "The person is hungry now"
+        },
+        {
+          "id": "b2-03.video102.q3",
+          "prompt": "Why does the example combine two different conditional forms?",
+          "hint": "Notice the time of the cause and the result",
+          "answer": "The imagined cause is in the past, but the imagined result is in the present"
+        },
+        {
+          "id": "b2-03.video102.q4",
+          "prompt": "Imagine a past travel choice had been different. What might be different now?",
+          "hint": "Make the hypothesis clear and avoid certainty without evidence",
+          "answer": "Example: If I hadn’t moved abroad, I might still be living near my family"
+        }
+      ]
     },
     {
       "id": "s_homework",

@@ -367,47 +367,6 @@
       "eyebrow": "Speaking task"
     },
     {
-      "id": "s_video102",
-      "kind": "video",
-      "eyebrow": "Watch and talk",
-      "title": "Agree to a test, not an unlimited commitment",
-      "instruction": "Watch the challenge to Vanya’s idea, then make a bounded counterproposal",
-      "minutes": 4,
-      "video": {
-        "videoId": "fhSGDAdlAb4",
-        "startSeconds": 104,
-        "endSeconds": 174,
-        "title": "Challenging someone’s ideas — British Council | English",
-        "credit": "British Council | English"
-      },
-      "items": [
-        {
-          "id": "c1-08.video102.q1",
-          "prompt": "What shared business question does Emir raise?",
-          "hint": "Listen for relevant and the type of company",
-          "answer": "He asks how the cat videos are relevant to a branding agency"
-        },
-        {
-          "id": "c1-08.video102.q2",
-          "prompt": "What practical workload question follows?",
-          "hint": "Listen to who will do the work",
-          "answer": "They ask who will find all the videos"
-        },
-        {
-          "id": "c1-08.video102.q3",
-          "prompt": "What limited next step is suggested?",
-          "hint": "Listen for a length of time and a way to evaluate it",
-          "answer": "They suggest trying it for a couple of weeks and checking its impact"
-        },
-        {
-          "id": "c1-08.video102.q4",
-          "prompt": "Make a counterproposal that supports the goal while limiting the commitment",
-          "hint": "Use Much as and state a review condition",
-          "answer": "Example: Much as I’d like to grow our audience, I can’t approve an open-ended campaign. Let’s test a small version and review the results"
-        }
-      ]
-    },
-    {
       "id": "s_listening",
       "kind": "listening",
       "title": "Frequency changes, notice does not",
@@ -448,6 +407,47 @@
       "instruction": "Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Agree to a test, not an unlimited commitment",
+      "instruction": "Watch the challenge to Vanya’s idea, then make a bounded counterproposal",
+      "minutes": 4,
+      "video": {
+        "videoId": "fhSGDAdlAb4",
+        "startSeconds": 104,
+        "endSeconds": 174,
+        "title": "Challenging someone’s ideas — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-08.video102.q1",
+          "prompt": "What shared business question does Emir raise?",
+          "hint": "Listen for relevant and the type of company",
+          "answer": "He asks how the cat videos are relevant to a branding agency"
+        },
+        {
+          "id": "c1-08.video102.q2",
+          "prompt": "What practical workload question follows?",
+          "hint": "Listen to who will do the work",
+          "answer": "They ask who will find all the videos"
+        },
+        {
+          "id": "c1-08.video102.q3",
+          "prompt": "What limited next step is suggested?",
+          "hint": "Listen for a length of time and a way to evaluate it",
+          "answer": "They suggest trying it for a couple of weeks and checking its impact"
+        },
+        {
+          "id": "c1-08.video102.q4",
+          "prompt": "Make a counterproposal that supports the goal while limiting the commitment",
+          "hint": "Use Much as and state a review condition",
+          "answer": "Example: Much as I’d like to grow our audience, I can’t approve an open-ended campaign. Let’s test a small version and review the results"
+        }
+      ]
     },
     {
       "id": "s_homework",
