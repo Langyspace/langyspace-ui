@@ -18,6 +18,8 @@ Decisões atuais para lembrar:
 
 ## Flashcards — mínimo de 20 itens por conjunto
 
+**Atribuir o conjunto existente completo — revisão97.** Antes de criar um conjunto por aula, procurar uma atividade temática já publicada e compatível. Se houver, a prévia e o link devem usar o mesmo ID, título, todos os cartões e mídias dessa atividade; nunca montar uma amostra de seis como se fosse o dever completo. Conferir a disponibilidade para o nível e o ambiente por leitura. Na A1.01, o conjunto correto é `deck-a2-countries` (Countries, 48 cartões), já disponível para A1; o identificador histórico não determina sozinho a trava de nível. Preservar IDs e progressos dos conjuntos antigos e não regenerar mídias válidas para fazer esse vínculo. A prévia embutida registra a fonte verificada e deve ser atualizada no export quando a atividade mudar.
+
 Regra de 25/11/2026: cada conjunto de flashcards precisa ter pelo menos 20 palavras ou expressões úteis, distintas e adequadas à aula e ao nível. Preservar itens válidos, completar o vocabulário realmente trabalhado e usar extensões pertinentes; não inflar a contagem com plurais, flexões ou frases quase iguais. Reaproveitar conjuntos temáticos de TI e outros já existentes quando fizerem sentido, mantendo exemplos, imagens e áudio correspondentes. A quantidade não substitui a curadoria.
 
 Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloco introdutório na aula é uma regra separada. Conjuntos menores já publicados entram no plano de ampliação; não declarar que foram atualizados antes do cadastro e da leitura de confirmação. Ver [inventário e propostas por aula](../epics/dev-first-day95/homework/expansion-plan20.md).

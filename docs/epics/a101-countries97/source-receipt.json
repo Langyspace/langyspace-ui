@@ -1,0 +1,21 @@
+{
+  "sourceActivityId": "deck-a2-countries",
+  "count": 48,
+  "source": "Existing school activity; full cards and media references reused without generation or activity mutation",
+  "readOnly": true,
+  "verifiedEnvironments": {
+    "staging": {
+      "updateTime": "2026-10-30T15:52:11.859552Z",
+      "levels": ["A1", "A2", "B1", "B2"],
+      "status": "active"
+    },
+    "production": {
+      "updateTime": "2026-10-29T14:28:38.604070Z",
+      "levels": ["A1", "A2", "B1", "B2"],
+      "status": "active"
+    }
+  },
+  "media": "Exact native Storage bytes bundled for durable material playback; image variants follow the Student transparent-image resolver. No expiring signed URLs or new generated media.",
+  "cardsSha256": "d37d61d5e2eba58064bbcc8a2d9a1d63a0d403ef9c6586892f6bc74134298fa2",
+  "materialSnapshot": "stories/materials/Practice/lessons/a1-01.json:first"
+}

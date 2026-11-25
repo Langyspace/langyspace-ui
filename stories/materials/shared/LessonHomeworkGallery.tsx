@@ -117,6 +117,7 @@ function PreparedHomework({
   }
   const first = data.first,
     card = first.kind === 'flashcards' ? first.cards[firstIndex] : undefined
+  const firstTitle = first.title ?? data.title
   const question =
       first.kind === 'quiz' ? first.questions[firstIndex] : undefined,
     selected = question ? answers[question.id] : undefined
@@ -158,7 +159,7 @@ function PreparedHomework({
   const firstView =
     first.kind === 'flashcards' && card ? (
       <FlashcardSession
-        aria-label={'Flashcards: ' + data.title}
+        aria-label={'Flashcards: ' + firstTitle}
         backAction={{ label: 'Recomeçar os flashcards', onClick: resetFirst }}
         progress={{
           label: `Progresso ${firstIndex + 1} de ${first.cards.length}`,
@@ -321,7 +322,7 @@ function PreparedHomework({
                 aria-label={
                   (first.kind === 'flashcards' ? 'Flashcards' : 'Quiz') +
                   ' — ' +
-                  data.title
+                  firstTitle
                 }
               >
                 {firstView}

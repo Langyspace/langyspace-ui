@@ -39,8 +39,18 @@ export interface CoursePracticeData {
   /** Only a real published activity receives its Student destination. */
   publishedEnvironments: readonly ('staging' | 'production')[]
   first:
-    | { kind: 'flashcards'; id: string; cards: readonly PracticeCard[] }
-    | { kind: 'quiz'; id: string; questions: readonly PracticeQuestion[] }
+    | {
+        kind: 'flashcards'
+        id: string
+        title?: string
+        cards: readonly PracticeCard[]
+      }
+    | {
+        kind: 'quiz'
+        id: string
+        title?: string
+        questions: readonly PracticeQuestion[]
+      }
   shadowing: {
     id: string
     phrases: readonly PracticePhrase[]
