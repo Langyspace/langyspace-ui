@@ -117,6 +117,28 @@ it('does not load an inactive source and stops/releases the player when leaving 
   expect(screen.getByRole('button', { name: 'Replay excerpt' })).toBeDisabled()
 })
 
+it('re-arms the same paused excerpt on completion so native replay cannot reset to the full video', async () => {
+  render(<VideoExercise title={null} presentation="inline" youtube={clip} />)
+  await ready()
+  act(() => options.events.onStateChange({ data: 0, target: player }))
+  expect(player.cueVideoById).toHaveBeenCalledTimes(2)
+  expect(player.cueVideoById).toHaveBeenLastCalledWith({
+    videoId: clip.videoId,
+    startSeconds: 59,
+    endSeconds: 93,
+  })
+  expect(player.loadVideoById).not.toHaveBeenCalled()
+  // The provider's cue state is not another completion or an autoplay request.
+  act(() => options.events.onStateChange({ data: 5, target: player }))
+  expect(player.cueVideoById).toHaveBeenCalledTimes(2)
+  fireEvent.click(screen.getByRole('button', { name: 'Replay excerpt' }))
+  expect(player.loadVideoById).toHaveBeenCalledWith({
+    videoId: clip.videoId,
+    startSeconds: 59,
+    endSeconds: 93,
+  })
+})
+
 it('keeps an accessible original-source link and explicit error if embedding fails', async () => {
   render(<VideoExercise title={null} presentation="inline" youtube={clip} />)
   await ready()
@@ -128,6 +150,7 @@ it('keeps an accessible original-source link and explicit error if embedding fai
   )
   act(() => options.events.onStateChange({ data: 0, target: player }))
   expect(player.loadVideoById).not.toHaveBeenCalled()
+  expect(player.cueVideoById).toHaveBeenCalledTimes(1)
   expect(screen.getByRole('alert')).toHaveTextContent(
     'The video could not load',
   )

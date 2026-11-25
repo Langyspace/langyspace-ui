@@ -30,6 +30,7 @@ export function VideoExerciseYouTube({
     if (!active || !valid || !host.current) return
     const root = host.current
     let disposed = false
+    let failed = false
     let instance: YouTubePlayer | undefined
     setStatus('loading')
     void loadYouTubeApi()
@@ -83,11 +84,16 @@ export function VideoExerciseYouTube({
               setStatus('ready')
             },
             onStateChange: ({ data, target }) => {
-              if (!disposed && data === 0 && loop.current)
-                target.loadVideoById({ videoId, startSeconds, endSeconds })
+              if (disposed || failed || data !== 0) return
+              const excerpt = { videoId, startSeconds, endSeconds }
+              if (loop.current) target.loadVideoById(excerpt)
+              // Native YouTube replay otherwise starts the full video at 0:00.
+              // Re-cue the bounded excerpt while paused, ready for its native play.
+              else target.cueVideoById(excerpt)
             },
             onError: () => {
               if (!disposed) {
+                failed = true
                 loop.current = false
                 setLooping(false)
                 setStatus('error')

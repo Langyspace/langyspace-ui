@@ -8,4 +8,8 @@ Local browser observed real embedded YouTube playback inside the selected dialog
 
 Preview: http://127.0.0.1:8955/?studentPortalOrigin=https://student.staging.langy.space&page=s_video_intro#a1-01 . DEV-only page query is validated against authored IDs; production still starts normally and saved progress is untouched. Existing local server8955 reused. No push, registry release, Hosting, Teacher/Student adoption or data mutation. CI/deploy not triggered. Owner to review lesson suitability and visual experience locally.
 
+## Native replay follow-up
+
+User reported replay returning to0:00 after the excerpt ended. The adapter only reapplied bounds for its custom replay and enabled loop; the normal completion branch left the full video ready for native replay. Completion now re-cues the exact authored object while paused, or loads it when loop is explicitly enabled. A provider error suppresses further completion re-cues to avoid retry loops. No player controls, layout, source IDs, question content, public props or lesson duration changed. Focused VideoExcerpt file:7/7passed, including normal completion, native cue readiness, custom replay, loop and error isolation. Existing type/API/build evidence applies to the unchanged contract; no broad rebuild or publication requested. Local browser completed a playback, returned to a paused cue, and the next native YouTube play resumed inside the authored range (observed72.31s, playing), then returned to the paused cue after completion.
+
 Visual gate review: pending human
