@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What does a short trend actually establish?",
-          "hint": "The observations show …, but not necessarily …"
+          "hint": "The observations show …, but not necessarily …",
+          "cue": "Bound the observed trend"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What condition would you attach to a forecast?",
-          "hint": "It is likely to … if …"
+          "hint": "It is likely to … if …",
+          "cue": "State a forecast condition"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What observation would make you revise a recommendation?",
-          "hint": "If we observed …, I’d reconsider …"
+          "hint": "If we observed …, I’d reconsider …",
+          "cue": "Define a decision trigger"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

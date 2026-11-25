@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What did you do yesterday?",
-          "hint": "Yesterday I …"
+          "hint": "Yesterday I …",
+          "cue": "Say what you did"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Where did you go?",
-          "hint": "I went to …"
+          "hint": "I went to …",
+          "cue": "Say where you went"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How was it?",
-          "hint": "It was … What about your day?"
+          "hint": "It was … What about your day?",
+          "cue": "Describe how it was"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

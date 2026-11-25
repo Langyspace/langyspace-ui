@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What does cautious wording leave unverified?",
-          "hint": "Saying … doesn’t establish …"
+          "hint": "Saying … doesn’t establish …",
+          "cue": "Identify the unverified claim"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you attribute a claim clearly?",
-          "hint": "According to …, …"
+          "hint": "According to …, …",
+          "cue": "Attribute it to a source"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would a useful correction include?",
-          "hint": "I’d correct …, confirm … and leave … open"
+          "hint": "I’d correct …, confirm … and leave … open",
+          "cue": "Describe a useful correction"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

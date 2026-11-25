@@ -3,6 +3,7 @@ import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { QuestionList } from '../../../src/components/Exercise/QuestionList'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
 import { GapFillExercise } from '../../../src/components/InteractiveMaterial/GapFillExercise'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
@@ -59,35 +60,69 @@ export function ChoiceExercise({
   options,
   correctIndex,
   image,
+  presentation = 'default',
+  counter,
 }: ChoiceExerciseProps) {
   const [selected, setSelected] = useState<number>()
-  return (
-    <Common.Surface>
-      {image ? <Styled.Scene src={image.src} alt={image.alt} /> : null}
-      <Common.Heading $prompt>{question}</Common.Heading>
-      <Common.Stack role="group" aria-label={question}>
-        {options.map((option, index) => (
-          <QuizOption
-            key={`${index}-${option}`}
-            letter={String.fromCharCode(65 + index)}
-            feedbackOutcome={index === correctIndex ? 'correct' : 'wrong'}
-            density="compact"
-            aria-pressed={selected === index}
-            state={
-              selected === undefined
+  const [attempts, setAttempts] = useState<readonly number[]>([])
+  const choices = (
+    <Common.Stack role="group" aria-label={question}>
+      {options.map((option, index) => (
+        <QuizOption
+          key={`${index}-${option}`}
+          letter={String.fromCharCode(65 + index)}
+          feedbackOutcome={index === correctIndex ? 'correct' : 'wrong'}
+          density="compact"
+          aria-pressed={
+            presentation === 'warmup'
+              ? attempts.includes(index)
+              : selected === index
+          }
+          disabled={
+            presentation === 'warmup' && attempts.includes(correctIndex)
+          }
+          state={
+            presentation === 'warmup'
+              ? attempts.includes(index)
+                ? index === correctIndex
+                  ? 'correct'
+                  : 'wrong'
+                : 'default'
+              : selected === undefined
                 ? 'default'
                 : selected === correctIndex && index === correctIndex
                   ? 'correct'
                   : selected === index
                     ? 'wrong'
                     : 'default'
-            }
-            onClick={() => setSelected(index)}
-          >
-            {option}
-          </QuizOption>
-        ))}
-      </Common.Stack>
+          }
+          onClick={() => {
+            setSelected(index)
+            setAttempts((old) => (old.includes(index) ? old : [...old, index]))
+          }}
+        >
+          {option}
+        </QuizOption>
+      ))}
+    </Common.Stack>
+  )
+  const media = image ? (
+    <Styled.Scene src={image.src} alt={image.alt} />
+  ) : undefined
+  return presentation === 'warmup' ? (
+    <ExercisePanel
+      variant="warmup"
+      warmupMediaSizing="presentation"
+      counter={counter}
+      media={media}
+    >
+      {choices}
+    </ExercisePanel>
+  ) : (
+    <Common.Surface>
+      {media}
+      <Common.Heading $prompt>{question}</Common.Heading>
+      {choices}
     </Common.Surface>
   )
 }

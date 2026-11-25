@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What repair or service might you need?",
-          "hint": "I need to get …"
+          "hint": "I need to get …",
+          "cue": "Describe a service you need"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you check whether a deadline is confirmed?",
-          "hint": "Is … confirmed, or …?"
+          "hint": "Is … confirmed, or …?",
+          "cue": "Distinguish an estimate from confirmation"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What temporary solution could you ask about?",
-          "hint": "Would it be possible to … while …?"
+          "hint": "Would it be possible to … while …?",
+          "cue": "Request a temporary alternative"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

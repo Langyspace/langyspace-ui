@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What are you doing this weekend?",
-          "hint": "I’m … on …"
+          "hint": "I’m … on …",
+          "cue": "Describe a weekend plan"
         },
         {
           "id": "s1.q98.2",
           "prompt": "When are you free?",
-          "hint": "I’m free on … at …"
+          "hint": "I’m free on … at …",
+          "cue": "Say when you’re free"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How could you invite me to join you?",
-          "hint": "Would you like to …?"
+          "hint": "Would you like to …?",
+          "cue": "Invite me to join you"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

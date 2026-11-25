@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What must remain unchanged when you change register?",
-          "hint": "The …, … and … must remain clear"
+          "hint": "The …, … and … must remain clear",
+          "cue": "Preserve the commitment"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you make the requested action explicit?",
-          "hint": "Please confirm whether … by …"
+          "hint": "Please confirm whether … by …",
+          "cue": "Make the requested action explicit"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would you change for a more informal recipient?",
-          "hint": "I’d shorten … while preserving …"
+          "hint": "I’d shorten … while preserving …",
+          "cue": "Adapt tone without changing facts"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

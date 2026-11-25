@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What information makes a practical request clear?",
-          "hint": "I’d include … so the person can …"
+          "hint": "I’d include … so the person can …",
+          "cue": "Give actionable information"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you distinguish a memory from a confirmed check?",
-          "hint": "I remember …, but I haven’t confirmed …"
+          "hint": "I remember …, but I haven’t confirmed …",
+          "cue": "Separate memory from verification"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would you ask someone to report back?",
-          "hint": "Please tell me whether … and what …"
+          "hint": "Please tell me whether … and what …",
+          "cue": "Request a specific update"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

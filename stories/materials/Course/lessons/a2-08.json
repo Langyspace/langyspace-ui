@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What rule do you have to follow at home or work?",
-          "hint": "I have to …"
+          "hint": "I have to …",
+          "cue": "Explain one rule"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What is not allowed there?",
-          "hint": "You mustn’t …"
+          "hint": "You mustn’t …",
+          "cue": "Say what isn’t allowed"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What don’t you have to do?",
-          "hint": "You don’t have to …"
+          "hint": "You don’t have to …",
+          "cue": "Describe something optional"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

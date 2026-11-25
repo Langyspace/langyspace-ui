@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What do you usually do in the morning?",
-          "hint": "I usually … in the morning"
+          "hint": "I usually … in the morning",
+          "cue": "Describe your morning routine"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What time do you do that?",
-          "hint": "I usually … at …"
+          "hint": "I usually … at …",
+          "cue": "Add the usual time"
         },
         {
           "id": "s1.q98.3",
           "prompt": "Is your routine different at the weekend?",
-          "hint": "At the weekend, I … instead"
+          "hint": "At the weekend, I … instead",
+          "cue": "Compare it with the weekend"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -113,7 +116,7 @@
       "kind": "dialogue",
       "title": "Dinner today, habits usually",
       "instruction": "Listen for the activity, the result and the follow-up question",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -240,6 +243,107 @@
           "subject": "Ask about the difference",
           "verb": "What do you usually do? / What are you doing?",
           "example": "I usually order food, but today I’m cooking"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the routine and today",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "A2.01.practice99",
+      "lines": [
+        {
+          "id": "a201.dialogue.anna-ben.01",
+          "speaker": "Anna",
+          "text": "Hey! What are you doing?",
+          "audioText": "Hey! What are you doing?",
+          "translation": "Oi! O que você está fazendo?",
+          "parts": [
+            "Hey! What are you ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "doing"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "a201.dialogue.anna-ben.02",
+          "speaker": "Ben",
+          "text": "I'm cooking dinner. What about you?",
+          "audioText": "I'm cooking dinner. What about you?",
+          "translation": "Estou preparando o jantar. E você?",
+          "parts": [
+            "I'm ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "cooking"
+            },
+            " dinner. What about you?"
+          ]
+        },
+        {
+          "id": "a201.dialogue.anna-ben.03",
+          "speaker": "Anna",
+          "text": "I'm watching a movie",
+          "audioText": "I'm watching a movie.",
+          "translation": "Estou assistindo a um filme",
+          "parts": [
+            "I'm ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "watching"
+            },
+            " a movie"
+          ]
+        },
+        {
+          "id": "a201.dialogue.anna-ben.04",
+          "speaker": "Ben",
+          "text": "Nice! Do you usually watch movies at night?",
+          "audioText": "Nice! Do you usually watch movies at night?",
+          "translation": "Legal! Você costuma assistir a filmes à noite?",
+          "parts": [
+            "Nice! Do you ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "usually"
+            },
+            " watch movies at night?"
+          ]
+        },
+        {
+          "id": "a201.dialogue.anna-ben.05",
+          "speaker": "Anna",
+          "text": "Yes, but I usually read before bed. Do you cook every day?",
+          "audioText": "Yes, but I usually read before bed. Do you cook every day?",
+          "translation": "Sim, mas geralmente leio antes de dormir. Você cozinha todos os dias?",
+          "parts": [
+            "Yes, but I usually ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "read"
+            },
+            " before bed. Do you cook every day?"
+          ]
+        },
+        {
+          "id": "a201.dialogue.anna-ben.06",
+          "speaker": "Ben",
+          "text": "Not really. I usually order food, but today I'm making pasta",
+          "audioText": "Not really. I usually order food, but today I'm making pasta.",
+          "translation": "Na verdade, não. Geralmente peço comida, mas hoje estou fazendo macarrão",
+          "parts": [
+            "Not really. I usually order food, but today I'm ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "making"
+            },
+            " pasta"
+          ]
         }
       ]
     },

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What could a traveller check before paying?",
-          "hint": "They could check whether …"
+          "hint": "They could check whether …",
+          "cue": "Suggest a pre-payment check"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you explain an unnecessary payment?",
-          "hint": "We needn’t have … because …"
+          "hint": "We needn’t have … because …",
+          "cue": "Explain an unnecessary payment"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you request clarification politely?",
-          "hint": "Could you confirm whether …?"
+          "hint": "Could you confirm whether …?",
+          "cue": "Ask politely for clarification"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

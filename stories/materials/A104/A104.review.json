@@ -14,20 +14,23 @@
         {
           "id": "review",
           "prompt": "Who’s in your family?",
-          "hint": "This is my … His/Her name is …"
+          "hint": "This is my … His/Her name is …",
+          "cue": "Introduce a family member"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What does that person do?",
-          "hint": "He’s/She’s a …"
+          "hint": "He’s/She’s a …",
+          "cue": "Say their job"
         },
         {
           "id": "s1.q98.3",
           "prompt": "Where is that person from?",
-          "hint": "He’s/She’s from … What about your family?"
+          "hint": "He’s/She’s from … What about your family?",
+          "cue": "Say where they’re from"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -139,7 +142,7 @@
       "kind": "dialogue",
       "title": "Listen for a time to meet",
       "instruction": "Follow Ana’s routine and find the plan she agrees to",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -302,6 +305,107 @@
       "layout": "patterns"
     },
     {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the plan to meet",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "A1.04.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "What time do you get up?",
+          "translation": "A que horas você levanta?",
+          "audioText": "What time do you get up?",
+          "parts": [
+            "What time ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "do"
+            },
+            " you get up?"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "I always get up early, at six. I work in the morning",
+          "translation": "Eu sempre levanto cedo, às seis. Eu trabalho de manhã",
+          "audioText": "I always get up early, at six. I work in the morning.",
+          "parts": [
+            "I always ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "get up"
+            },
+            " early, at six. I work in the morning"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "And in the evening?",
+          "translation": "E à noite?",
+          "audioText": "And in the evening?",
+          "parts": [
+            "And in the ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "evening"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "I study on Monday and Wednesday, after work",
+          "translation": "Eu estudo na segunda e na quarta, depois do trabalho",
+          "audioText": "I study on Monday and Wednesday, after work.",
+          "parts": [
+            "I study ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "on"
+            },
+            " Monday and Wednesday, after work"
+          ]
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "I go to the gym on Tuesday at seven in the evening. Are you free?",
+          "translation": "Eu vou à academia na terça às sete da noite. Você está livre?",
+          "audioText": "I go to the gym on Tuesday at seven in the evening. Are you free?",
+          "parts": [
+            "I go to the gym on Tuesday ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "at"
+            },
+            " seven in the evening. Are you free?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes, I am. Great! See you on Tuesday",
+          "translation": "Sim, estou. Ótimo! Até terça",
+          "audioText": "Yes, I am. Great! See you on Tuesday.",
+          "parts": [
+            "Yes, I ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "am"
+            },
+            ". Great! See you on Tuesday"
+          ]
+        }
+      ]
+    },
+    {
       "id": "s11",
       "kind": "activity",
       "title": "Find a time to meet",
@@ -344,27 +448,30 @@
       "id": "s91",
       "kind": "questions",
       "title": "Reply to Kim",
-      "instruction": "Accept the new time or suggest another one",
+      "instruction": "Reply to the invitation. Agree a time and confirm the place",
       "minutes": 2,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "reply",
           "prompt": "Are you free on Friday at seven?",
-          "hint": "Yes, I am. / No, I’m not"
+          "cue": "Accept or say you’re busy",
+          "hint": "Yes, I am / No, I’m busy then"
         },
         {
           "id": "s91.q98.2",
-          "prompt": "Where can we meet?",
-          "hint": "Let’s meet at …"
+          "prompt": "What time works best for you?",
+          "cue": "Keep the time or suggest another one",
+          "hint": "Friday at seven is good for me / What about … at …?"
         },
         {
           "id": "s91.q98.3",
-          "prompt": "What other time can you suggest?",
-          "hint": "What about … at …? Is that good for you?"
+          "prompt": "Shall we meet at the gym?",
+          "cue": "Confirm the place or suggest another one",
+          "hint": "Yes, let’s meet at the gym / Can we meet at … instead?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s12",

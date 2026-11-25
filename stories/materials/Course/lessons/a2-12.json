@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What is your first plan for a day out?",
-          "hint": "We’ll …"
+          "hint": "We’ll …",
+          "cue": "Describe your first plan"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What will you do if the weather changes?",
-          "hint": "If …, we’ll … instead"
+          "hint": "If …, we’ll … instead",
+          "cue": "Offer a bad-weather alternative"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How will you confirm the new plan with a friend?",
-          "hint": "Does … work for you?"
+          "hint": "Does … work for you?",
+          "cue": "Confirm the changed plan"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

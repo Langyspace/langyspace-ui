@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How do you ask politely for an item?",
-          "hint": "Can I have …, please?"
+          "hint": "Can I have …, please?",
+          "cue": "Ask politely for an item"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How do you check its price?",
-          "hint": "How much is it?"
+          "hint": "How much is it?",
+          "cue": "Ask its price"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How do you choose a colour or size?",
-          "hint": "The … one in …, please"
+          "hint": "The … one in …, please",
+          "cue": "Choose a colour or size"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

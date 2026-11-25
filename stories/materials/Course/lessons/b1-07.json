@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What had happened before someone arrived late?",
-          "hint": "They had … before …"
+          "hint": "They had … before …",
+          "cue": "Explain an earlier event"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How did that affect the next event?",
-          "hint": "By the time …, … had already …"
+          "hint": "By the time …, … had already …",
+          "cue": "Connect it to the consequence"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What could they check before a future trip?",
-          "hint": "They could check …"
+          "hint": "They could check …",
+          "cue": "Suggest a useful travel check"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

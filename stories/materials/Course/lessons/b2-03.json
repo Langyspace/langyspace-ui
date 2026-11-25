@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What past decision would you make differently?",
-          "hint": "If I hadn’t …, I might … now"
+          "hint": "If I hadn’t …, I might … now",
+          "cue": "Reflect on a past decision"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Which consequence do you know actually happened?",
-          "hint": "What I know is that …"
+          "hint": "What I know is that …",
+          "cue": "State a confirmed consequence"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What alternative is possible but uncertain?",
-          "hint": "It’s possible that …, although …"
+          "hint": "It’s possible that …, although …",
+          "cue": "Suggest a possible alternative"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

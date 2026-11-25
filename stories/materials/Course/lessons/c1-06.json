@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What would you verify before recommending a course?",
-          "hint": "I’d verify … rather than assume …"
+          "hint": "I’d verify … rather than assume …",
+          "cue": "Identify the decisive checks"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Which requirement could reverse your initial preference?",
-          "hint": "If …, I’d reconsider …"
+          "hint": "If …, I’d reconsider …",
+          "cue": "State a possible reversal"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you communicate a provisional recommendation?",
-          "hint": "On current information …, subject to …"
+          "hint": "On current information …, subject to …",
+          "cue": "Qualify your recommendation"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

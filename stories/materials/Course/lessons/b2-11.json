@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What change would you support in a group routine?",
-          "hint": "I’d support … because …"
+          "hint": "I’d support … because …",
+          "cue": "Propose a useful change"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What is the strongest concern about it?",
-          "hint": "A reasonable concern is …"
+          "hint": "A reasonable concern is …",
+          "cue": "Acknowledge the strongest concern"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you address that concern without losing the benefit?",
-          "hint": "Having said that, we could …"
+          "hint": "Having said that, we could …",
+          "cue": "Offer a practical adjustment"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

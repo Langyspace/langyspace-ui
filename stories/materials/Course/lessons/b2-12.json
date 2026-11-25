@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What specific problem should a rule address?",
-          "hint": "The concern is …, rather than …"
+          "hint": "The concern is …, rather than …",
+          "cue": "Name the problem to address"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What useful behaviour might a broad ban prevent?",
-          "hint": "A ban could also prevent …"
+          "hint": "A ban could also prevent …",
+          "cue": "Consider a legitimate use"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How could an exception work fairly?",
-          "hint": "A workable exception would …"
+          "hint": "A workable exception would …",
+          "cue": "Design a workable exception"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

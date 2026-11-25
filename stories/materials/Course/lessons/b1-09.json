@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How would you describe an object you own?",
-          "hint": "It’s … and has …"
+          "hint": "It’s … and has …",
+          "cue": "Describe a familiar object"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What detail makes it distinctive?",
-          "hint": "You can recognise it by …"
+          "hint": "You can recognise it by …",
+          "cue": "Add a distinctive detail"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What should be checked before confirming it is yours?",
-          "hint": "We’d need to compare …"
+          "hint": "We’d need to compare …",
+          "cue": "Suggest an ownership check"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What would matter to you in a new job?",
-          "hint": "I’d want …"
+          "hint": "I’d want …",
+          "cue": "Name an important job condition"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What would you need to know before accepting?",
-          "hint": "I’d need to know whether …"
+          "hint": "I’d need to know whether …",
+          "cue": "Identify missing information"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How could you ask the employer for that detail?",
-          "hint": "Could you confirm whether …?"
+          "hint": "Could you confirm whether …?",
+          "cue": "Ask the employer for clarification"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What outcome would help with a noisy room?",
-          "hint": "What I need is …"
+          "hint": "What I need is …",
+          "cue": "State the outcome you need"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you explain the practical impact?",
-          "hint": "It’s … that prevents me from …"
+          "hint": "It’s … that prevents me from …",
+          "cue": "Explain the practical impact"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would you check before accepting another room?",
-          "hint": "Could you confirm whether …?"
+          "hint": "Could you confirm whether …?",
+          "cue": "Check that the alternative helps"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

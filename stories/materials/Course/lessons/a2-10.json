@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What matters to you when choosing a place?",
-          "hint": "I need … I’d like …"
+          "hint": "I need … I’d like …",
+          "cue": "Give a priority for a place"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What experience of a place could you share?",
-          "hint": "I’ve stayed in … It was …"
+          "hint": "I’ve stayed in … It was …",
+          "cue": "Share an experience"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What detail would you ask before booking?",
-          "hint": "Is there …? Is it … enough?"
+          "hint": "Is there …? Is it … enough?",
+          "cue": "Ask for a booking detail"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What have you recently been asked to do?",
-          "hint": "They asked me to …"
+          "hint": "They asked me to …",
+          "cue": "Report a request"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What did you agree to, and under what condition?",
-          "hint": "I agreed to …, provided …"
+          "hint": "I agreed to …, provided …",
+          "cue": "State what you actually agreed"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you correct an inaccurate report of that agreement?",
-          "hint": "I said …; I didn’t promise …"
+          "hint": "I said …; I didn’t promise …",
+          "cue": "Correct an overstated commitment"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

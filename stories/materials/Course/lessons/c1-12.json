@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How would you state a policy preference without overstating it?",
-          "hint": "I’d support …, provided …"
+          "hint": "I’d support …, provided …",
+          "cue": "State a conditional view"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Whose experience might your preference overlook?",
-          "hint": "It could overlook people who …"
+          "hint": "It could overlook people who …",
+          "cue": "Consider whose access is overlooked"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What evidence would make you change your view?",
-          "hint": "I’d revise my view if …"
+          "hint": "I’d revise my view if …",
+          "cue": "Define what would change your view"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

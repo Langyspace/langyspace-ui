@@ -98,6 +98,13 @@ export type ReviewedPage = PageBase &
       }
     | { kind: 'activity' }
     | {
+        kind: 'image-choice'
+        choiceGroup: string
+        image: { src: string; alt: string }
+        options: readonly string[]
+        correctIndex: number
+      }
+    | {
         kind: 'source'
         author: string
         subject: string
@@ -163,6 +170,7 @@ export interface ReviewedPageContentProps {
   active: boolean
   recordings: readonly PreparedRecording[]
   activity?: ReactNode
+  imageChoiceCounter?: string
 }
 export interface ReviewedClipRecord {
   id: string

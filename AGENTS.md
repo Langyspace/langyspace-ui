@@ -106,6 +106,9 @@
   and one progressive bulb centered outside the list at the column end. Do not invent answers for open
   practice or add repetitive questions just to meet the minimum. Live personal practice
   keeps canonical bubbles with at least three meaningful pairs. Names remain visible in compact dialogue.
+  Open review and oral reply pages also use live participant bubbles with first-click response support;
+  do not mistake them for factual comprehension merely because their data contains questions.
+  Preserve useful visual choices, gaps and other task variations when revising a lesson renderer.
   Independent introductory vocabulary groups each contain at least six items; do not combine unrelated
   groups to meet the count. Portal flashcard sets contain at least twenty distinct, useful words or
   expressions tied to their lesson and level; keep the six-item introduction rule separate. Continued dialogues and supplementary references need an explicit purpose.

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What are you doing this weekend?",
-          "hint": "I’m … on …"
+          "hint": "I’m … on …",
+          "cue": "Describe a weekend plan"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What are you planning to do at home?",
-          "hint": "I’m going to …"
+          "hint": "I’m going to …",
+          "cue": "Explain your plan at home"
         },
         {
           "id": "s1.q98.3",
           "prompt": "Would you like any help?",
-          "hint": "Could you help me …? / No, thank you"
+          "hint": "Could you help me …? / No, thank you",
+          "cue": "Accept help or politely decline"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

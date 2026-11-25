@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What did you use to do differently?",
-          "hint": "I used to …"
+          "hint": "I used to …",
+          "cue": "Describe a former habit"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What is your routine now?",
-          "hint": "Now I …"
+          "hint": "Now I …",
+          "cue": "Compare your current routine"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What helped you make the change?",
-          "hint": "… helped me …"
+          "hint": "… helped me …",
+          "cue": "Explain what helped you change"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What were you doing when something interrupted you?",
-          "hint": "I was … when …"
+          "hint": "I was … when …",
+          "cue": "Set the scene and interruption"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What happened next?",
-          "hint": "After that, I …"
+          "hint": "After that, I …",
+          "cue": "Continue the story"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How did the situation end?",
-          "hint": "Eventually, …"
+          "hint": "Eventually, …",
+          "cue": "Explain the outcome"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

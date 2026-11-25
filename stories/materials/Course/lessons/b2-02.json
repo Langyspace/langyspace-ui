@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What can you commit to this week?",
-          "hint": "I can … by …, provided …"
+          "hint": "I can … by …, provided …",
+          "cue": "Make a bounded commitment"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What does that commitment depend on?",
-          "hint": "Before I can …, I need …"
+          "hint": "Before I can …, I need …",
+          "cue": "Identify its dependency"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you communicate a delay?",
-          "hint": "The … has changed, so …"
+          "hint": "The … has changed, so …",
+          "cue": "Communicate a revised timeline"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

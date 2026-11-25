@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What response does the person actually need?",
-          "hint": "They need …, rather than …"
+          "hint": "They need …, rather than …",
+          "cue": "Identify the practical need"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How could one ambiguous word create disagreement?",
-          "hint": "They may interpret … as …"
+          "hint": "They may interpret … as …",
+          "cue": "Explain the ambiguous interpretation"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you check your reformulation?",
-          "hint": "Have I understood correctly that …?"
+          "hint": "Have I understood correctly that …?",
+          "cue": "Check the other person agrees"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

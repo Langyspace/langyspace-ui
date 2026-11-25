@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What have you done recently?",
-          "hint": "I’ve … recently"
+          "hint": "I’ve … recently",
+          "cue": "Describe a recent result"
         },
         {
           "id": "s1.q98.2",
           "prompt": "When did you do it?",
-          "hint": "I … last …"
+          "hint": "I … last …",
+          "cue": "Add a finished past time"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What experience would you like to ask me about?",
-          "hint": "Have you ever …? What was it like?"
+          "hint": "Have you ever …? What was it like?",
+          "cue": "Ask me about an experience"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -126,7 +129,7 @@
       "kind": "dialogue",
       "title": "Welcome back",
       "instruction": "Listen for the activity, the result and the follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
         {
@@ -185,7 +188,7 @@
       "kind": "dialogue",
       "title": "Activities and results",
       "instruction": "Listen for the activity, the result and the follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
         {
@@ -351,6 +354,107 @@
           "subject": "A result can coexist with more work",
           "verb": "result + but + ongoing activity",
           "example": "I’ve finished the living room, but I’m still painting the bedroom"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete Ana’s progress update",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "B1.01.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Hi, Ana! I’m back! Wow… your living room is blue!",
+          "audioText": "Hi, Ana! I’m back! Wow… your living room is blue!",
+          "translation": "Oi, Ana! Voltei! Nossa… a sua sala está azul!",
+          "parts": [
+            "Hi, Ana! I’m ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "back"
+            },
+            "! Wow… your living room is blue!"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Welcome back! Yeah, I’ve been painting all week",
+          "audioText": "Welcome back! Yeah, I’ve been painting all week.",
+          "translation": "Bem-vinda de volta! É, passei a semana toda pintando",
+          "parts": [
+            "Welcome back! Yeah, I’ve ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "been"
+            },
+            " painting all week"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "It’s great! Have you finished?",
+          "audioText": "It’s great! Have you finished?",
+          "translation": "Ficou ótimo! Você terminou?",
+          "parts": [
+            "It’s great! Have you ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "finished"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next",
+          "audioText": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next.",
+          "translation": "Quase. Pintei os dois cômodos, a sala e a cozinha. O quarto é o próximo",
+          "parts": [
+            "Almost. I’ve ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "painted"
+            },
+            " both rooms, the living room and the kitchen. The bedroom is next"
+          ]
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "And your shoes! Have you been running?",
+          "audioText": "And your shoes! Have you been running?",
+          "translation": "E esse tênis! Você anda correndo?",
+          "parts": [
+            "And your shoes! Have you ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "been"
+            },
+            " running?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes! I’ve been running every morning for two weeks",
+          "audioText": "Yes! I’ve been running every morning for two weeks.",
+          "translation": "Sim! Estou correndo toda manhã há duas semanas",
+          "parts": [
+            "Yes! I’ve been running every morning ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "for"
+            },
+            " two weeks"
+          ]
         }
       ]
     },

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What would your friend like to drink?",
-          "hint": "She’d like …, please"
+          "hint": "She’d like …, please",
+          "cue": "Order a drink for a friend"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Would she like any food?",
-          "hint": "She’d like … / No, thank you"
+          "hint": "She’d like … / No, thank you",
+          "cue": "Say if she wants food"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How can you ask the total price?",
-          "hint": "How much is it?"
+          "hint": "How much is it?",
+          "cue": "Ask for the total price"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

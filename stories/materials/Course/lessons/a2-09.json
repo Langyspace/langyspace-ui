@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "Have you ever tried a new hobby?",
-          "hint": "I’ve tried …"
+          "hint": "I’ve tried …",
+          "cue": "Share a hobby experience"
         },
         {
           "id": "s1.q98.2",
           "prompt": "When did you try it?",
-          "hint": "I tried it …"
+          "hint": "I tried it …",
+          "cue": "Add when it happened"
         },
         {
           "id": "s1.q98.3",
           "prompt": "Would you like to do it again?",
-          "hint": "I’d like to … because …"
+          "hint": "I’d like to … because …",
+          "cue": "Say if you’d try it again"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -15,20 +15,23 @@
         {
           "id": "r1",
           "prompt": "What’s your name?",
-          "hint": "My name is … What’s your name?"
+          "hint": "My name is … What’s your name?",
+          "cue": "Say your name and ask back"
         },
         {
           "id": "r2",
           "prompt": "Where are you from?",
-          "hint": "I’m from … What about you?"
+          "hint": "I’m from … What about you?",
+          "cue": "Say where you’re from"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How are you today?",
-          "hint": "I’m … How are you?"
+          "hint": "I’m … How are you?",
+          "cue": "Say how you feel"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -86,7 +89,7 @@
       "kind": "dialogue",
       "title": "A new contact",
       "instruction": "Listen, then check the name and number together",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -204,6 +207,93 @@
           "subject": "About you",
           "verb": "your + name / number",
           "example": "What’s your name? What’s your phone number?"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the contact exchange",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "A1.02.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Hi, Ana! What’s your last name?",
+          "audioText": "Hi, Ana! What’s your last name?",
+          "parts": [
+            "Hi, Ana! What’s your ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "last name"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "My last name is Souza",
+          "audioText": "My last name is Souza.",
+          "parts": [
+            "",
+            {
+              "id": "practice99.gap.2",
+              "answer": "My"
+            },
+            " last name is Souza"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "How do you spell it?",
+          "audioText": "How do you spell it?",
+          "parts": [
+            "How do you ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "spell"
+            },
+            " it?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "S-O-U-Z-A",
+          "audioText": "S-O-U-Z-A."
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "What’s your phone number?",
+          "audioText": "What’s your phone number?",
+          "parts": [
+            "What’s ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "your"
+            },
+            " phone number?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "It’s 984 221 507",
+          "audioText": "It’s 984 221 507.",
+          "parts": [
+            "",
+            {
+              "id": "practice99.gap.6",
+              "answer": "It’s"
+            },
+            " 984 221 507"
+          ]
         }
       ]
     },

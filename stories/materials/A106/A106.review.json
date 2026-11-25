@@ -15,20 +15,23 @@
         {
           "id": "review",
           "prompt": "What food do you like?",
-          "hint": "I like … What about you?"
+          "hint": "I like … What about you?",
+          "cue": "Name food you like"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What food don’t you like?",
-          "hint": "I don’t like …"
+          "hint": "I don’t like …",
+          "cue": "Name food you don’t like"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What fruit does someone in your family like?",
-          "hint": "My … likes …"
+          "hint": "My … likes …",
+          "cue": "Talk about someone’s favourite fruit"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -183,7 +186,7 @@
       "kind": "dialogue",
       "title": "Meet Thor and Mia",
       "instruction": "Listen for the pets’ names and where Mia is",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -307,6 +310,101 @@
           "subject": "Ask",
           "verb": "Do you have …?",
           "example": "Do you have a pet?"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the pet introduction",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "A1.06.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Is this your dog?",
+          "audioText": "Is this your dog?",
+          "parts": [
+            "Is this ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "your"
+            },
+            " dog?"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Yes! This is Thor. He’s three",
+          "audioText": "Yes! This is Thor. He’s three.",
+          "parts": [
+            "Yes! This is Thor. ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "He’s"
+            },
+            " three"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "Hi, Thor! Do you have a cat too?",
+          "audioText": "Hi, Thor! Do you have a cat too?",
+          "parts": [
+            "Hi, Thor! Do you ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "have"
+            },
+            " a cat too?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "Yes, I do. Her name is Mia. Mia! Where’s Mia?",
+          "audioText": "Yes, I do. Her name is Mia. Mia! Where’s Mia?",
+          "parts": [
+            "Yes, I do. ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "Her"
+            },
+            " name is Mia. Mia! Where’s Mia?"
+          ]
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "Is she on the sofa?",
+          "audioText": "Is she on the sofa?",
+          "parts": [
+            "Is she ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "on"
+            },
+            " the sofa?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "No, she isn’t. Look! She’s under the bed",
+          "audioText": "No, she isn’t. Look! She’s under the bed.",
+          "parts": [
+            "No, she isn’t. Look! She’s ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "under"
+            },
+            " the bed"
+          ]
         }
       ]
     },

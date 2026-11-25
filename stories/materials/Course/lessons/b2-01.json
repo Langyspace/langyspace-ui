@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What problem have you had while travelling?",
-          "hint": "I … while I was …"
+          "hint": "I … while I was …",
+          "cue": "Introduce a travel problem"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What had happened before the problem?",
-          "hint": "I’d …, so …"
+          "hint": "I’d …, so …",
+          "cue": "Explain what happened earlier"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What eventually helped you resolve it?",
-          "hint": "I’d been … when …; eventually …"
+          "hint": "I’d been … when …; eventually …",
+          "cue": "Describe the turning point"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -136,7 +139,7 @@
       "kind": "dialogue",
       "title": "How was New York?",
       "instruction": "Listen for the activity, the result and the follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
         {
@@ -195,7 +198,7 @@
       "kind": "dialogue",
       "title": "Looking for help",
       "instruction": "Listen for the activity, the result and the follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
         {
@@ -347,6 +350,91 @@
           "subject": "An earlier ongoing activity",
           "verb": "had been + verb-ing",
           "example": "I’d been using the phone as a map all day"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the background to the problem",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "B2.01.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "So, how was New York?",
+          "audioText": "So, how was New York?",
+          "translation": "E aí, como foi Nova York?",
+          "parts": [
+            "So, how ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "was"
+            },
+            " New York?"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Pretty good, but on the second day, my phone died at four in the afternoon",
+          "audioText": "Pretty good, but on the second day, my phone died at four in the afternoon.",
+          "translation": "Bem bom, mas no segundo dia o meu celular descarregou às quatro da tarde",
+          "parts": [
+            "Pretty good, but on the second day, my phone ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "died"
+            },
+            " at four in the afternoon"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "Oh no! Why?",
+          "audioText": "Oh no! Why?",
+          "translation": "Ah, não! Por quê?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "I’d been using it as a map all day, and I didn’t notice how low the battery was. And I’d left my charger at the hotel",
+          "audioText": "I’d been using it as a map all day, and I didn’t notice how low the battery was. And I’d left my charger at the hotel.",
+          "translation": "Eu vinha usando o celular como mapa o dia todo, e não reparei na bateria. E tinha deixado o carregador no hotel",
+          "parts": [
+            "I’d ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "been using"
+            },
+            " it as a map all day, and I didn’t notice how low the battery was. And I’d left my charger at the hotel"
+          ]
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "Why didn’t you go back to the hotel?",
+          "audioText": "Why didn’t you go back to the hotel?",
+          "translation": "Por que você não voltou para o hotel?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "I tried, but I got lost. And the team dinner was at seven. The address was in a message from Raj!",
+          "audioText": "I tried, but I got lost. And the team dinner was at seven. The address was in a message from Raj!",
+          "translation": "Eu tentei, mas me perdi. E o jantar da equipe era às sete. O endereço estava numa mensagem do Raj!",
+          "parts": [
+            "I tried, but I ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "got lost"
+            },
+            ". And the team dinner was at seven. The address was in a message from Raj!"
+          ]
         }
       ]
     },

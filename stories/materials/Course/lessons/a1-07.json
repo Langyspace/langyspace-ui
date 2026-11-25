@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What’s your last name?",
-          "hint": "My last name is …"
+          "hint": "My last name is …",
+          "cue": "Say your last name"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How do you spell it?",
-          "hint": "That’s …"
+          "hint": "That’s …",
+          "cue": "Spell your last name"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What’s your phone number?",
-          "hint": "My phone number is …"
+          "hint": "My phone number is …",
+          "cue": "Say your phone number"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

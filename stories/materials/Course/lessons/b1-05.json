@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How can you check a day you may have misheard?",
-          "hint": "Did you say … or …?"
+          "hint": "Did you say … or …?",
+          "cue": "Check the day you heard"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How can you confirm the time?",
-          "hint": "So that’s … at …, right?"
+          "hint": "So that’s … at …, right?",
+          "cue": "Confirm the time"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How can you ask someone to repeat a request?",
-          "hint": "Could you repeat what you need us to …?"
+          "hint": "Could you repeat what you need us to …?",
+          "cue": "Ask me to repeat the request"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

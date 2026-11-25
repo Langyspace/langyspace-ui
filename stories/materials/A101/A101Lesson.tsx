@@ -26,20 +26,29 @@ const recordings = [
   if (!src) throw new Error(`Missing prepared A1.01 audio: ${clip.id}`)
   return { id: clip.id, text: clip.text, src }
 })
+const preparedImage = (name: string) => {
+  const src = images[`./assets/${name}.webp`] ?? images[`./assets/${name}.svg`]
+  if (!src) throw new Error(`Missing prepared A1.01 picture: ${name}`)
+  return src
+}
 const pages = (data.pages as readonly ReviewedPage[]).map((page) =>
   page.kind === 'vocabulary'
     ? {
         ...page,
         items: page.items.map((item) => {
           const id = item.imageUrl ?? ''
-          const imageUrl =
-            images[`./assets/${id}.webp`] ?? images[`./assets/${id}.svg`]
-          if (!imageUrl)
-            throw new Error(`Missing prepared A1.01 picture: ${id}`)
-          return { ...item, imageUrl }
+          return { ...item, imageUrl: preparedImage(id) }
         }),
       }
-    : page,
+    : page.kind === 'image-choice'
+      ? {
+          ...page,
+          image: {
+            ...page.image,
+            src: preparedImage(page.image.src),
+          },
+        }
+      : page,
 )
 export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
   return (

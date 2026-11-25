@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What can you actually see in a familiar object?",
-          "hint": "I can see …"
+          "hint": "I can see …",
+          "cue": "Describe an observable detail"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What might a visible detail suggest?",
-          "hint": "It might mean …"
+          "hint": "It might mean …",
+          "cue": "Offer a cautious interpretation"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would you need to check before being certain?",
-          "hint": "We’d need to check …"
+          "hint": "We’d need to check …",
+          "cue": "Identify a useful check"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

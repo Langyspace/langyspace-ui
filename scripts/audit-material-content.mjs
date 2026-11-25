@@ -24,6 +24,7 @@ const report = {
   comprehension: [],
   responses: [],
   nativeAdapters: [],
+  visualChecks: [],
 }
 const minimum = (items, count, label) => {
   assert(
@@ -132,6 +133,29 @@ function reviewed(key, data) {
       )
       if (page.questionPurpose !== 'conversation')
         questionBlock(key, page.id, page.items, page.questionPurpose)
+      assert(
+        page.questionPurpose === 'conversation' ||
+          page.items.every((item) => item.answer?.trim()),
+        `${key}.${page.id}: an open live exchange uses participant bubbles, not a standalone comprehension list`,
+      )
+    }
+    if (page.kind === 'image-choice') {
+      assert(
+        page.choiceGroup && page.image?.src && page.image?.alt,
+        `${key}.${page.id}: visual check needs an image and sequence`,
+      )
+      assert(
+        page.options.length >= 2 &&
+          new Set(page.options).size === page.options.length,
+        `${key}.${page.id}: distinct choices required`,
+      )
+      assert(
+        Number.isInteger(page.correctIndex) &&
+          page.correctIndex >= 0 &&
+          page.correctIndex < page.options.length,
+        `${key}.${page.id}: invalid correct choice`,
+      )
+      report.visualChecks.push({ key, id: page.id, group: page.choiceGroup })
     }
     if (page.kind === 'listening') questionBlock(key, page.id, page.items)
   }
@@ -362,6 +386,17 @@ for (const part of authoredArray(
 }
 // Exact ID/text/file/hash checks prevent restored words from losing their prepared audio.
 const a101 = read('A101/A101.review.json')
+assert.equal(
+  a101.pages.filter((page) => page.kind === 'image-choice').length,
+  6,
+  'a1-01: preserve the six restored visual checks',
+)
+assert(
+  a101.pages.some(
+    (page) => page.kind === 'dialogue' && page.lines.some((line) => line.parts),
+  ),
+  'a1-01: preserve the restored gap practice',
+)
 const restored = read('A101/audio-provenance94.json').items
 for (const page of a101.pages.filter((x) => x.kind === 'vocabulary'))
   for (const item of page.items) {

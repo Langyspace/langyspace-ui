@@ -153,7 +153,7 @@
       "kind": "dialogue",
       "title": "Nice to meet you",
       "instruction": "Listen as Ana and Kim meet, then read together",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -224,38 +224,6 @@
       ]
     },
     {
-      "id": "s15",
-      "kind": "questions",
-      "title": "Introduce yourself",
-      "instruction": "Answer about yourself, then ask your teacher",
-      "minutes": 4,
-      "eyebrow": "Your turn",
-      "items": [
-        {
-          "id": "name",
-          "prompt": "What’s your name?",
-          "cue": "Say your name and ask me",
-          "hint": "My name is … What’s your name?",
-          "answer": "One possible response"
-        },
-        {
-          "id": "country",
-          "prompt": "Where are you from?",
-          "cue": "Say where you’re from",
-          "hint": "I’m from … What about you?",
-          "answer": "One possible response"
-        },
-        {
-          "id": "feelings",
-          "prompt": "How are you today?",
-          "cue": "Say how you feel and ask me",
-          "hint": "I’m …, thanks. How are you?",
-          "answer": "One possible response"
-        }
-      ],
-      "questionPurpose": "conversation"
-    },
-    {
       "id": "s71",
       "kind": "grammar",
       "title": "I’m and you’re",
@@ -290,11 +258,233 @@
       ]
     },
     {
+      "id": "s_visual1",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Tom?",
+      "instruction": "Look at the picture and choose how the person feels",
+      "minutes": 0.5,
+      "eyebrow": "Picture challenge",
+      "image": {
+        "src": "scene-tired-tom",
+        "alt": "A tired person yawning"
+      },
+      "options": ["tired", "cold", "happy"],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_visual2",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Julia?",
+      "instruction": "Look at the picture and choose how the person feels",
+      "minutes": 0.5,
+      "eyebrow": "Picture challenge",
+      "image": {
+        "src": "scene-cold-julia",
+        "alt": "Julia wearing warm clothes because she is cold"
+      },
+      "options": ["hungry", "cold", "happy"],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_visual3",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Josh?",
+      "instruction": "Look at the picture and choose how the person feels",
+      "minutes": 0.5,
+      "eyebrow": "Picture challenge",
+      "image": {
+        "src": "scene-sad-josh",
+        "alt": "Josh looking sad"
+      },
+      "options": ["happy", "tired", "sad"],
+      "correctIndex": 2
+    },
+    {
+      "id": "s_visual4",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Mia?",
+      "instruction": "Look at the picture and choose how the person feels",
+      "minutes": 0.5,
+      "eyebrow": "Picture challenge",
+      "image": {
+        "src": "scene-happy-mia",
+        "alt": "A smiling person celebrating"
+      },
+      "options": ["happy", "cold", "tired"],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_visual5",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Ana?",
+      "instruction": "Look at the picture and choose how the person feels",
+      "minutes": 0.5,
+      "eyebrow": "Picture challenge",
+      "image": {
+        "src": "scene-hungry-ana",
+        "alt": "Ana looking at food because she is hungry"
+      },
+      "options": ["cold", "hungry", "angry"],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_visual6",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Leo?",
+      "instruction": "Look at the picture and choose how the person feels",
+      "minutes": 0.5,
+      "eyebrow": "Picture challenge",
+      "image": {
+        "src": "scene-angry-leo",
+        "alt": "Leo looking angry"
+      },
+      "options": ["hungry", "sad", "angry"],
+      "correctIndex": 2
+    },
+    {
+      "id": "s8",
+      "kind": "dialogue",
+      "title": "Complete the introduction",
+      "instruction": "Read the conversation aloud. Say each missing word, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "lines": [
+        {
+          "id": "R.T1",
+          "speaker": "Kim",
+          "text": "Hi! I’m Kim. I’m from Korea",
+          "audioText": "Hi! I’m Kim. I’m from Korea.",
+          "translation": "Oi! Eu sou a Kim. Eu sou da Coreia",
+          "parts": [
+            "Hi! ",
+            {
+              "id": "introduction.gap.1",
+              "answer": "I’m"
+            },
+            " Kim. I’m from Korea"
+          ]
+        },
+        {
+          "id": "R.T2",
+          "speaker": "Ana",
+          "text": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you",
+          "audioText": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you.",
+          "translation": "Oi, Kim! Eu sou a Ana. Eu sou do Brasil. Prazer em te conhecer",
+          "parts": [
+            "Hi, Kim! I’m Ana. I’m ",
+            {
+              "id": "introduction.gap.2",
+              "answer": "from"
+            },
+            " Brazil. Nice to meet you"
+          ]
+        },
+        {
+          "id": "R.T3",
+          "speaker": "Kim",
+          "text": "Nice to meet you too. How are you?",
+          "audioText": "Nice to meet you too. How are you?",
+          "translation": "O prazer é meu. Como você está?",
+          "parts": [
+            "Nice to meet you too. How ",
+            {
+              "id": "introduction.gap.3",
+              "answer": "are"
+            },
+            " you?"
+          ]
+        },
+        {
+          "id": "R.T4",
+          "speaker": "Ana",
+          "text": "I’m good, thanks. I’m hungry! And you?",
+          "audioText": "I’m good, thanks. I’m hungry! And you?",
+          "translation": "Estou bem, obrigada. Estou com fome! E você?",
+          "parts": [
+            "I’m ",
+            {
+              "id": "introduction.gap.4",
+              "answer": "good"
+            },
+            ", thanks. I’m hungry! And you?"
+          ]
+        },
+        {
+          "id": "R80.5",
+          "speaker": "Kim",
+          "text": "I’m tired, but I’m happy. Welcome, Ana!",
+          "audioText": "I’m tired, but I’m happy. Welcome, Ana!",
+          "translation": "Estou cansada, mas estou feliz. Bem-vinda, Ana!",
+          "parts": [
+            "I’m ",
+            {
+              "id": "introduction.gap.5",
+              "answer": "tired"
+            },
+            ", but I’m happy. Welcome, Ana!"
+          ]
+        },
+        {
+          "id": "R80.6",
+          "speaker": "Ana",
+          "text": "Thank you! It’s nice to be here",
+          "audioText": "Thank you! It’s nice to be here.",
+          "translation": "Obrigada! É bom estar aqui",
+          "parts": [
+            "",
+            {
+              "id": "introduction.gap.6",
+              "answer": "Thank you"
+            },
+            "! It’s nice to be here"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "kind": "questions",
+      "title": "Introduce yourself",
+      "instruction": "Answer about yourself, then ask your teacher",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "name",
+          "prompt": "What’s your name?",
+          "cue": "Say your name and ask me",
+          "hint": "My name is … What’s your name?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "country",
+          "prompt": "Where are you from?",
+          "cue": "Say where you’re from",
+          "hint": "I’m from … What about you?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "feelings",
+          "prompt": "How are you today?",
+          "cue": "Say how you feel and ask me",
+          "hint": "I’m …, thanks. How are you?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
       "id": "s10",
       "kind": "activity",
       "title": "Meet someone new",
       "instruction": "Be the person on the card. Introduce yourself and ask two questions",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
     },
     {
@@ -333,27 +523,30 @@
       "id": "s91",
       "kind": "questions",
       "title": "Say hello to Mia",
-      "instruction": "Greet your new friend and say how you feel",
+      "instruction": "Join Mia at the café. Greet her, react and ask about Kim",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "greet",
-          "prompt": "Hi! How are you?",
-          "hint": "Hi, Mia! I’m …"
+          "prompt": "Hi! I’m Mia. Nice to meet you",
+          "cue": "Greet Mia",
+          "hint": "Hi, Mia! Nice to meet you too"
         },
         {
           "id": "s91.q98.2",
-          "prompt": "What’s your name?",
-          "hint": "My name is … Nice to meet you!"
+          "prompt": "I’m hungry. Are you hungry too?",
+          "cue": "Answer about yourself",
+          "hint": "Yes, I am. I’m hungry too / No, I’m not. I’m …"
         },
         {
           "id": "s91.q98.3",
-          "prompt": "Where are you from?",
-          "hint": "I’m from … What about you?"
+          "prompt": "Kim is here too",
+          "cue": "Ask how Kim feels",
+          "hint": "How is Kim? Is she tired?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s13",

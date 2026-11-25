@@ -12,6 +12,8 @@ export interface ChoiceExerciseProps {
   correctIndex: number
   image?: { src: string; alt: string }
   explanation?: string
+  presentation?: 'default' | 'warmup'
+  counter?: string
 }
 export interface DialogueExerciseProps {
   lines: readonly {

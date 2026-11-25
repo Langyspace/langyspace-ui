@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What help can you offer someone who is busy?",
-          "hint": "I’ll …"
+          "hint": "I’ll …",
+          "cue": "Offer practical help"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What are you going to do later?",
-          "hint": "I’m going to …"
+          "hint": "I’m going to …",
+          "cue": "Describe a later plan"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How can you check a time you didn’t hear?",
-          "hint": "Could you repeat …, please?"
+          "hint": "Could you repeat …, please?",
+          "cue": "Ask me to repeat the time"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

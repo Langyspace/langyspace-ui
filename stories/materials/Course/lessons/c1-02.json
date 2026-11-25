@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How would you separate a fact from a counterfactual?",
-          "hint": "The record confirms …; had …, we might have …"
+          "hint": "The record confirms …; had …, we might have …",
+          "cue": "Separate fact and alternative"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Whose knowledge would matter in that counterfactual?",
-          "hint": "The relevant person would be … because …"
+          "hint": "The relevant person would be … because …",
+          "cue": "Identify whose knowledge matters"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What evidence would you need before assigning responsibility?",
-          "hint": "I’d need to establish whether …"
+          "hint": "I’d need to establish whether …",
+          "cue": "Specify the evidence needed"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

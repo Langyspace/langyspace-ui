@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "Which housing criteria are non-negotiable for you?",
-          "hint": "A place would have to …"
+          "hint": "A place would have to …",
+          "cue": "State a fixed housing need"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Which attractive feature could you compromise on?",
-          "hint": "I’d like …, but I could …"
+          "hint": "I’d like …, but I could …",
+          "cue": "Identify a negotiable preference"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What missing cost would you check?",
-          "hint": "Before comparing, I’d ask whether …"
+          "hint": "Before comparing, I’d ask whether …",
+          "cue": "Ask about a missing cost"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

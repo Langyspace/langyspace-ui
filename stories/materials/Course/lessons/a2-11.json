@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "Which place would you prefer for a short trip?",
-          "hint": "I’d choose …"
+          "hint": "I’d choose …",
+          "cue": "Choose a place for a trip"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What makes it a better option for you?",
-          "hint": "It’s … than …"
+          "hint": "It’s … than …",
+          "cue": "Explain your preference"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would be too far or not comfortable enough?",
-          "hint": "… would be too … / not … enough"
+          "hint": "… would be too … / not … enough",
+          "cue": "Describe an unacceptable trade-off"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

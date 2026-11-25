@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What’s the problem with your room?",
-          "hint": "The … doesn’t work"
+          "hint": "The … doesn’t work",
+          "cue": "Explain a room problem"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What do you need?",
-          "hint": "Can I have …, please?"
+          "hint": "Can I have …, please?",
+          "cue": "Ask for what you need"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What time is good for someone to help?",
-          "hint": "… is good for me. Thank you"
+          "hint": "… is good for me. Thank you",
+          "cue": "Suggest a time for help"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -15,20 +15,23 @@
         {
           "id": "time",
           "prompt": "When are you free?",
-          "hint": "I’m free on … at …"
+          "hint": "I’m free on … at …",
+          "cue": "Say when you’re free"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What do you do in the morning?",
-          "hint": "I … in the morning"
+          "hint": "I … in the morning",
+          "cue": "Describe a morning action"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What days do you study?",
-          "hint": "I study on … What about you?"
+          "hint": "I study on … What about you?",
+          "cue": "Say when you study"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

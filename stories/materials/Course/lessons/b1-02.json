@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What have you been doing lately?",
-          "hint": "I’ve been …"
+          "hint": "I’ve been …",
+          "cue": "Describe a recent activity"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What have you finished?",
-          "hint": "I’ve finished …"
+          "hint": "I’ve finished …",
+          "cue": "Share a completed result"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What are you still working on?",
-          "hint": "I haven’t finished … yet"
+          "hint": "I haven’t finished … yet",
+          "cue": "Explain what is still ongoing"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

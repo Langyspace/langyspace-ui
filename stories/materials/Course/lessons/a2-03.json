@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What did you do last weekend?",
-          "hint": "I … last weekend"
+          "hint": "I … last weekend",
+          "cue": "Name a weekend activity"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What happened first?",
-          "hint": "First I …"
+          "hint": "First I …",
+          "cue": "Start the story"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What happened after that?",
-          "hint": "Then I … Finally, I …"
+          "hint": "Then I … Finally, I …",
+          "cue": "Add the next event"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What can you do to help at home?",
-          "hint": "I can …"
+          "hint": "I can …",
+          "cue": "Say how you can help"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What will you offer to do today?",
-          "hint": "I’ll …"
+          "hint": "I’ll …",
+          "cue": "Make a specific offer"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How can you politely ask someone for help?",
-          "hint": "Could you help me with …?"
+          "hint": "Could you help me with …?",
+          "cue": "Ask politely for help"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

@@ -26,7 +26,7 @@ import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
 import { MaterialSlideDeck } from './MaterialSlideDeck'
-import { PromptExercise } from './LessonExercises'
+import { ChoiceExercise, PromptExercise } from './LessonExercises'
 import { MaterialQuestions } from './MaterialQuestions'
 import { SceneVocabulary } from './SceneVocabulary'
 import {
@@ -154,6 +154,7 @@ function PageContent({
   active,
   recordings,
   activity,
+  imageChoiceCounter,
 }: ReviewedPageContentProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [initial, setInitial] = useState(false)
@@ -163,6 +164,17 @@ function PageContent({
   if (page.kind === 'prompts' || page.kind === 'questions')
     return <Questions items={page.items} purpose={page.questionPurpose} />
   if (page.kind === 'activity') return activity
+  if (page.kind === 'image-choice')
+    return (
+      <ChoiceExercise
+        presentation="warmup"
+        counter={imageChoiceCounter}
+        question={page.title}
+        image={page.image}
+        options={page.options}
+        correctIndex={page.correctIndex}
+      />
+    )
   if (page.kind === 'source')
     return (
       <Common.Surface as="article" aria-label={page.subject}>
@@ -519,6 +531,17 @@ export function ReviewedLesson({
           materialKey,
           pages
             .map((page, index) => {
+              const imageChoices =
+                page.kind === 'image-choice'
+                  ? pages.filter(
+                      (item) =>
+                        item.kind === 'image-choice' &&
+                        item.choiceGroup === page.choiceGroup,
+                    )
+                  : []
+              const imageChoiceCounter = imageChoices.length
+                ? `${imageChoices.findIndex((item) => item.id === page.id) + 1}/${imageChoices.length}`
+                : undefined
               if (index === 0 && hasLessonOpeningReview(materialKey))
                 return {
                   id: page.id,
@@ -577,27 +600,31 @@ export function ReviewedLesson({
                     instruction={page.instruction}
                     density={page.kind === 'dialogue' ? 'compact' : 'regular'}
                     columns={
-                      page.kind === 'dialogue' || page.kind === 'questions'
+                      page.kind === 'dialogue' ||
+                      page.kind === 'questions' ||
+                      page.kind === 'image-choice'
                         ? 1
                         : undefined
                     }
                     width={
-                      page.mediaAspectRatio
-                        ? { mediaAspectRatio: page.mediaAspectRatio }
-                        : (page.kind === 'scene' ||
-                              page.kind === 'scene-vocabulary') &&
-                            page.image.aspectRatio
-                          ? { mediaAspectRatio: page.image.aspectRatio }
-                          : page.kind === 'vocabulary' && page.alignHeading
-                            ? { vocabularyColumns: 3 }
-                            : page.kind === 'vocabulary' ||
-                                page.kind === 'roleplay' ||
-                                page.kind === 'activity' ||
-                                page.kind === 'listening' ||
-                                page.kind === 'scene' ||
-                                page.kind === 'introductions'
-                              ? 'wide'
-                              : 'reading'
+                      page.kind === 'image-choice'
+                        ? 'focused'
+                        : page.mediaAspectRatio
+                          ? { mediaAspectRatio: page.mediaAspectRatio }
+                          : (page.kind === 'scene' ||
+                                page.kind === 'scene-vocabulary') &&
+                              page.image.aspectRatio
+                            ? { mediaAspectRatio: page.image.aspectRatio }
+                            : page.kind === 'vocabulary' && page.alignHeading
+                              ? { vocabularyColumns: 3 }
+                              : page.kind === 'vocabulary' ||
+                                  page.kind === 'roleplay' ||
+                                  page.kind === 'activity' ||
+                                  page.kind === 'listening' ||
+                                  page.kind === 'scene' ||
+                                  page.kind === 'introductions'
+                                ? 'wide'
+                                : 'reading'
                     }
                     titleAudio={
                       lines
@@ -624,6 +651,7 @@ export function ReviewedLesson({
                       active={pageId === page.id}
                       recordings={recordings}
                       activity={activityFor(page.id)}
+                      imageChoiceCounter={imageChoiceCounter}
                     />
                   </SlidePage>
                 ),

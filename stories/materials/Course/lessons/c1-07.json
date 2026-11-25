@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What decision does your listener need to make?",
-          "hint": "This listener needs to decide …"
+          "hint": "This listener needs to decide …",
+          "cue": "Identify the recipient’s decision"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Which facts should come first for that recipient?",
-          "hint": "I’d lead with … because …"
+          "hint": "I’d lead with … because …",
+          "cue": "Prioritise the relevant facts"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What can be omitted without changing the decision?",
-          "hint": "I’d leave out … while preserving …"
+          "hint": "I’d leave out … while preserving …",
+          "cue": "Omit details without distorting meaning"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

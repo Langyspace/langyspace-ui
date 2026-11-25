@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How would you ask for a route?",
-          "hint": "How do I get to …?"
+          "hint": "How do I get to …?",
+          "cue": "Ask for directions"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How would you check a nearby landmark?",
-          "hint": "Is it near …?"
+          "hint": "Is it near …?",
+          "cue": "Check a nearby landmark"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How could you politely ask someone to repeat the directions?",
-          "hint": "Could you repeat …, please?"
+          "hint": "Could you repeat …, please?",
+          "cue": "Ask for repetition politely"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

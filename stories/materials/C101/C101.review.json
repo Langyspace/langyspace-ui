@@ -14,20 +14,23 @@
         {
           "id": "review",
           "prompt": "What concern might someone have about changing a routine?",
-          "hint": "They might worry about …"
+          "hint": "They might worry about …",
+          "cue": "Make a proposal"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How could you acknowledge that concern?",
-          "hint": "I can see why …"
+          "hint": "I can see why …",
+          "cue": "Respond to a concern"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What practical response could you offer?",
-          "hint": "We could …, provided that …"
+          "hint": "We could …, provided that …",
+          "cue": "Suggest a practical next step"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
@@ -491,27 +494,30 @@
       "id": "s91",
       "kind": "questions",
       "title": "Keep the reply constructive",
-      "instruction": "Acknowledge Raj’s point while keeping Laura’s request clear",
+      "instruction": "Your teacher plays Raj. Respond to his concern and agree a workable arrangement",
       "minutes": 2,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "reply",
-          "prompt": "How would you acknowledge Raj’s preference?",
-          "hint": "I can see why you’d like to …"
+          "prompt": "I’d prefer to meet Laura on my own",
+          "cue": "Acknowledge the preference without promising a change",
+          "hint": "I can see why you’d prefer to discuss the feedback privately"
         },
         {
           "id": "s91.q98.2",
-          "prompt": "How would you explain Ana’s attendance?",
-          "hint": "Laura has asked Ana to …"
+          "prompt": "Why does Ana need to be there?",
+          "cue": "Explain Laura’s request without sounding defensive",
+          "hint": "Laura asked Ana to join so we can discuss the presentation together"
         },
         {
           "id": "s91.q98.3",
-          "prompt": "What arrangement could you propose?",
-          "hint": "Could we agree …? Would that work for both of you?"
+          "prompt": "Could we find an arrangement that works for both of us?",
+          "cue": "Propose a specific compromise and check agreement",
+          "hint": "Could Ana join for the presentation feedback, and then give you time alone with Laura? Would that work for you?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s12",

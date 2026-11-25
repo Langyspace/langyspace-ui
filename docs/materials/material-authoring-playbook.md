@@ -30,6 +30,8 @@ Para cada página, declarar também o componente/variação, os arquivos de imag
 
 Cada bloco de perguntas tem no mínimo três perguntas pertinentes. Na compreensão, usar `QuestionList`: rótulo Questions com estrela, lista numerada com borda e respostas em frases completas. Uma lâmpada fora da lista, centralizada no fim da coluna, libera dicas em ordem; dica e resposta ocupam a mesma área, alternando sem deslocar o layout. Não usar balões de participantes para perguntas factuais. Conversas pessoais mantêm seus balões e pelo menos três trocas, com apoio opcional. Um comando isolado não vira um bloco de perguntas por conveniência.
 
+Revisões pessoais e réplicas orais também usam Teacher/You com ajuda progressiva no primeiro clique. Listas ficam para compreender ou analisar uma fonte. Planejar o avanço de cada conversa para não repetir apenas nome, país e sentimentos. Preservar exercícios visuais e lacunas úteis quando mudar o renderer; manter seletores junto à ficha que alteram.
+
 A sequência acompanha a progressão da prática: capa ou revisão anterior → vocabulário contextual → modelo/guiada → prática apoiada → aplicação mais livre → conversa livre sobre o tema → dever de casa. Não impor a mesma quantidade de páginas ou cada tipo de exercício a todas as aulas. Gramática e prática avaliada ficam em páginas diferentes; tabelas entram depois de haver contexto.
 
 ## 3. Escolher o componente existente

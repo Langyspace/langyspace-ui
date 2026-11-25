@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "Where are you staying?",
-          "hint": "I’m staying at …"
+          "hint": "I’m staying at …",
+          "cue": "Name a place to stay"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How long are you staying?",
-          "hint": "For … days"
+          "hint": "For … days",
+          "cue": "Say how many days"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How can you ask someone to repeat a direction?",
-          "hint": "Can you say that again, please?"
+          "hint": "Can you say that again, please?",
+          "cue": "Ask me to repeat the direction"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

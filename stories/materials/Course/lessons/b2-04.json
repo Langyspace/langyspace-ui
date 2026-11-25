@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What clue could suggest someone visited?",
-          "hint": "The … suggests …"
+          "hint": "The … suggests …",
+          "cue": "Identify an observable clue"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What would be another possible explanation?",
-          "hint": "It might also mean …"
+          "hint": "It might also mean …",
+          "cue": "Consider another explanation"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What would you check before drawing a conclusion?",
-          "hint": "I’d check … before saying …"
+          "hint": "I’d check … before saying …",
+          "cue": "Propose an evidence check"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

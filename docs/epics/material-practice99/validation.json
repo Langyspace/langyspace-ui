@@ -1,0 +1,52 @@
+{
+  "materials": 66,
+  "liveOpeningReviews": 59,
+  "oralReplies": 3,
+  "restoredVisualChecks": 6,
+  "restoredGapStages": [
+    {
+      "code": "A1.01",
+      "practiceIds": ["s8"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    },
+    {
+      "code": "A1.02",
+      "practiceIds": ["s_gap99"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    },
+    {
+      "code": "A1.04",
+      "practiceIds": ["s_gap99"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    },
+    {
+      "code": "A1.06",
+      "practiceIds": ["s_gap99"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    },
+    {
+      "code": "A2.01",
+      "practiceIds": ["s_gap99"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    },
+    {
+      "code": "B1.01",
+      "practiceIds": ["s_gap99"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    },
+    {
+      "code": "B2.01",
+      "practiceIds": ["s_gap99"],
+      "exactOriginalAudioText": true,
+      "totalMinutesPreserved": true
+    }
+  ],
+  "changedMediaFiles": 0,
+  "componentContract": "Existing ExercisePanel, QuizOption and MaterialLearningDialogue; no public UI API change"
+}

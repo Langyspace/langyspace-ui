@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "Is there a café near here?",
-          "hint": "Yes, there is. / No, there isn’t"
+          "hint": "Yes, there is. / No, there isn’t",
+          "cue": "Say if there’s a café"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How do I get there?",
-          "hint": "Go straight and turn …"
+          "hint": "Go straight and turn …",
+          "cue": "Give a short direction"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What is next to it?",
-          "hint": "It’s next to …"
+          "hint": "It’s next to …",
+          "cue": "Name a nearby place"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

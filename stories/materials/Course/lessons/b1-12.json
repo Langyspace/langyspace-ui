@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What would change if your work routine changed?",
-          "hint": "If I …, I’d …"
+          "hint": "If I …, I’d …",
+          "cue": "Imagine a changed routine"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What benefit would you want to keep?",
-          "hint": "I’d still want …"
+          "hint": "I’d still want …",
+          "cue": "Identify a benefit to keep"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What concern would you need to discuss?",
-          "hint": "I’d be concerned about …"
+          "hint": "I’d be concerned about …",
+          "cue": "Raise a practical concern"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

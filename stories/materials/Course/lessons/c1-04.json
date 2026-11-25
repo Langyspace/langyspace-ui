@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "How would you describe the impact of a shared-space problem?",
-          "hint": "When …, I find it difficult to …"
+          "hint": "When …, I find it difficult to …",
+          "cue": "Describe impact without assigning motives"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What competing need should be acknowledged?",
-          "hint": "I understand that you need …"
+          "hint": "I understand that you need …",
+          "cue": "Acknowledge the competing need"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What specific boundary could protect both needs?",
-          "hint": "Would you mind …, with … if …?"
+          "hint": "Would you mind …, with … if …?",
+          "cue": "Propose a specific boundary"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",

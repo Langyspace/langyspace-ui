@@ -18,20 +18,23 @@
         {
           "id": "review",
           "prompt": "What shared purpose could help a negotiation?",
-          "hint": "We both want …, although …"
+          "hint": "We both want …, although …",
+          "cue": "Find the shared purpose"
         },
         {
           "id": "s1.q98.2",
           "prompt": "Which condition is a genuine limit rather than a preference?",
-          "hint": "I can compromise on …, but I need …"
+          "hint": "I can compromise on …, but I need …",
+          "cue": "Distinguish a limit from a preference"
         },
         {
           "id": "s1.q98.3",
           "prompt": "How would you offer a concession without implying full acceptance?",
-          "hint": "Much as I’d like to …, I could agree to … provided …"
+          "hint": "Much as I’d like to …, I could agree to … provided …",
+          "cue": "Offer a bounded concession"
         }
       ],
-      "questionPurpose": "review"
+      "questionPurpose": "conversation"
     },
     {
       "id": "s2",
