@@ -103,7 +103,7 @@
   Guided dialogue and comprehension share SlidePage’s two-column questions slot. Comprehension uses
   the canonical QuestionList with at least three meaningful questions per block, full-sentence factual
   answers and hints that replace answers in the same content-sized slot. Use individual equal-width
-  cards with natural height, small pink numbers and medium-weight prompts. Reuse the starred Questions
+  cards with natural height, small white numbers on the same solid brand fill as Play, and medium-weight prompts. Reuse the starred Questions
   eyebrow and one progressive bulb immediately below the last card, aligned right. Do not invent answers for open
   practice or add repetitive questions just to meet the minimum. Live personal practice
   keeps canonical bubbles with at least three meaningful pairs. Names remain visible in compact dialogue.

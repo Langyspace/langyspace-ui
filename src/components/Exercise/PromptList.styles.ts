@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
-import { alpha } from '../../foundations/theme/alpha'
+import { resolveButtonsTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import {
   PromptTrigger,
@@ -69,8 +69,8 @@ export const Number = styled.span`
   width: ${theme.spacing[6]};
   height: ${theme.spacing[6]};
   border-radius: ${theme.radius.circle};
-  background: ${alpha(theme.colors.palette.accent.pink, 0.12)};
-  color: ${theme.colors.palette.accent.pink};
+  background: ${(p) => resolveButtonsTheme(p).brand.background};
+  color: ${(p) => resolveButtonsTheme(p).brand.color};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.medium};
 `
