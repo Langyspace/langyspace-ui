@@ -20,7 +20,7 @@ export function SlideDeck({
   ...props
 }: SlideDeckProps) {
   const sound = useFeedbackSounds()
-  const { viewportRef, index, progress, goToIndex, onKeyDown } =
+  const { viewportRef, index, progress, goToIndex, step, onKeyDown } =
     useSlideNavigation({
       pages,
       pageId,
@@ -36,13 +36,13 @@ export function SlideDeck({
         onKeyDown(event)
       }}
     >
-      <Styled.Navigation aria-label={label}>
+      <Styled.Navigation aria-label={label} data-slide-navigation="true">
         {navigationMode === 'pages' && index > 0 ? (
           <Styled.BackButton
             variant="secondary"
             size="sm"
             onClick={() => {
-              goToIndex(index - 1)
+              step(-1)
               viewportRef.current?.focus({ preventScroll: true })
             }}
             iconStart={

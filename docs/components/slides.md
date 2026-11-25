@@ -21,7 +21,7 @@ not move the slide heading or change its width.
 
 ## SlideDeck
 
-Scrollable sequence of `{ id, label, content }` pages. Give its parent an explicit available height; the deck fills that height and keeps the portal's surrounding shell stationary. Every page occupies at least its viewport and can grow to fit long content. Native scroll snapping supports mouse, touch and keyboard, while mounted pages preserve exercise state.
+Sequence of `{ id, label, content }` pages. Give its parent an explicit available height. In default pages mode, each page occupies that viewport and SlidePageFit measures and fits its complete content. The shared controller owns wheel, touch and keyboard navigation; CSS snapping and nested reading scroll do not compete with it. Pages remain mounted to preserve exercise state. Explicit continuous mode keeps native scrolling and natural content height.
 
 ```tsx
 <SlideDeck
@@ -70,7 +70,7 @@ Controlled free-form notes for an immersive slide deck. Render beside the deck i
 
 The legacy controlled panel remains available with the same props. Canonical material Notes now opens the separate window described below; it does not render an editor inside the presentation. The panel is360px wide/440px high at most, adapts to its material viewport and safe areas, and uses themed surface/border/editor tokens. The reference pencil/Back controls and3px scroll progress retain their measured metrics.
 
-Active-page reporting follows60% viewport coverage, including oversized pages. Progress follows actual scroll distance and reaches100% at the final bottom. Long-page content remains readable before vertical page keys advance; horizontal arrow keys explicitly navigate pages. Resize keeps the current page and reading offset anchored. Native wheel/touch snapping remains browser-owned.
+Active-page reporting follows 60% viewport coverage while progress follows actual scroll distance. All four arrows directly navigate pages; resize keeps the current logical page anchored. Wheel ownership covers the viewport and header, without a document listener or interception of unrelated overlay editors. A fresh vertical gesture advances on its first nonzero packet. Within a continuing trackpad stream, two renewed rising packets after decay recognize another drive without requiring the inertia to stop; no absolute delta/strength threshold is used. Inertia alone does not repeatedly advance. Explicit line/page mouse-wheel ticks and slower equal integer pixel ticks remain responsive. A page change releases focus from a departing page’s field to the viewport, retaining its value and keeping subsequent arrows useful; keyboard editing inside the current field remains native. Continuous mode stays browser-owned.
 
 The standalone material boundary accepts a trusted `langy.material.focus` message (version1, same origin and parent window, exact material key and producer commit). It focuses the deck context after its host reveals the frame, preserving an active editor. This optional message complements the existing pinned ready protocol; untrusted or stale messages do nothing. The library itself installs no document keyboard handler. Canonical materials store separate validated page cursors and notes drafts by material key; unknown saved page ids fall back safely, and explicit initial pages take precedence.
 

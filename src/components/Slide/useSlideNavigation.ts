@@ -21,7 +21,6 @@ export function useSlideNavigation({
   const [progress, setProgress] = useState(0)
   const activeRef = useRef(pages[0]?.id)
   const movementTargetRef = useRef<SlideMovementTarget | undefined>(undefined)
-  const movementRevisionRef = useRef(0)
   const requestedRef = useRef<string | undefined>(undefined)
   const reportedIdsRef = useRef<string[]>([])
   const firstRequestRef = useRef(true)
@@ -43,7 +42,6 @@ export function useSlideNavigation({
       if (!viewport) return
       const target = viewport.children[nextIndex]
       if (!(target instanceof HTMLElement)) return
-      movementRevisionRef.current++
       requestedRef.current = target.dataset.slideId
       // Scroll only this viewport; scrollIntoView could move a surrounding portal/iframe too.
       const top = alignEnd
@@ -61,6 +59,16 @@ export function useSlideNavigation({
         top,
         behavior: behavior ?? (reduced ? 'instant' : 'smooth'),
       })
+      // Leaving a page must not strand keyboard focus in its hidden input.
+      // Header/overlay focus stays with its owner; exercise state stays mounted.
+      const focused = document.activeElement
+      if (
+        focused instanceof Element &&
+        viewport.contains(focused) &&
+        focused.closest('[data-slide-id]')?.getAttribute('data-slide-id') !==
+          target.dataset.slideId
+      )
+        viewport.focus({ preventScroll: true })
     },
     [],
   )
@@ -89,9 +97,6 @@ export function useSlideNavigation({
 
   useSlideGestures({
     viewportRef,
-    activeIdRef: activeRef,
-    movementTargetRef,
-    movementRevisionRef,
     navigationMode,
     idsKey,
     onStep: step,
@@ -118,7 +123,6 @@ export function useSlideNavigation({
         (restoreAnchor && navigationMode === 'pages')
       ) {
         const movement = movementTargetRef.current
-        movementRevisionRef.current++
         movementTargetRef.current = undefined
         // Reveals/fonts can resize a page without resizing the viewport. Keep
         // the same logical page and clamp only its existing content offset.
@@ -195,11 +199,6 @@ export function useSlideNavigation({
     }
     const onScroll = () => update()
     viewport.addEventListener('scroll', onScroll, { passive: true })
-    const cancelRequested = () => {
-      requestedRef.current = undefined
-    }
-    viewport.addEventListener('wheel', cancelRequested, { passive: true })
-    viewport.addEventListener('touchstart', cancelRequested, { passive: true })
     const observer = new ResizeObserver(() => {
       const geometry = readPageGeometry()
       const changed = geometry !== lastPageGeometry
@@ -213,8 +212,6 @@ export function useSlideNavigation({
     update()
     return () => {
       viewport.removeEventListener('scroll', onScroll)
-      viewport.removeEventListener('wheel', cancelRequested)
-      viewport.removeEventListener('touchstart', cancelRequested)
       observer.disconnect()
     }
   }, [idsKey, navigationMode])
@@ -304,5 +301,5 @@ export function useSlideNavigation({
     step(forward ? 1 : -1)
   }
 
-  return { viewportRef, index, progress, goToIndex, onKeyDown }
+  return { viewportRef, index, progress, goToIndex, step, onKeyDown }
 }

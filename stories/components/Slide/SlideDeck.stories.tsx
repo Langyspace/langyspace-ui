@@ -86,6 +86,19 @@ export const Narrow: Story = {
 export const Empty: Story = { args: { pages: [] } }
 export const SinglePage: Story = { args: { pages: [lessonPages[1]!] } }
 
+/** Manual hardware regression: repeat same-direction trackpad passes without waiting for momentum. */
+export const RepeatedPageGestures: Story = {
+  args: {
+    label: 'Consecutive page gestures',
+    pages: Array.from({ length: 8 }, (_, index) => ({
+      ...lessonPages[index % lessonPages.length]!,
+      id: `gesture-page-${index + 1}`,
+      label: `Gesture page ${index + 1}`,
+    })),
+  },
+  tags: ['interaction-regression'],
+}
+
 function ControlledDeck() {
   const [pageId, setPageId] = useState('intro')
   return (

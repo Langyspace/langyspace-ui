@@ -250,6 +250,15 @@ describe('SlideDeck', () => {
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
     expect(viewport).toHaveFocus()
   })
+  it('uses the same logical destination for rapid previous-button clicks during animation', () => {
+    render(<SlideDeck label="Aula" pages={pages} />)
+    const { scroll, scrollTo } = geometry()
+    scroll(1000)
+    scrollTo.mockImplementation(() => undefined)
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
+  })
 
   it('accepts page requests, ignores unknown ids and uses the latest callback', () => {
     const original = vi.fn()

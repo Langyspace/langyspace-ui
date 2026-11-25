@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import type { RefObject } from 'react'
+import { createSlideWheelIntent } from '../../internal/slideWheelIntent'
 import type {
   SlideGestureOptions,
   SlideMovementTarget,
@@ -9,9 +10,6 @@ import type {
 export const SLIDE_EDITABLE_SELECTOR =
   'input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="tablist"],[role="radiogroup"],[role="grid"],[role="tree"],[role="spinbutton"]'
 
-// A burst advances once, on its first vertical packet, independent of strength.
-// Only a quiet interval or a direction change starts another burst; no intensity rearm.
-const WHEEL_GESTURE_IDLE_MS = 120
 const TOUCH_TAP_TOLERANCE_PX = 4
 const TOUCH_SWIPE_INTENT_PX = 16
 
@@ -39,9 +37,6 @@ export function isSlideMovementPending(
 
 export function useSlideGestures({
   viewportRef,
-  activeIdRef,
-  movementTargetRef,
-  movementRevisionRef,
   navigationMode,
   onStep,
   idsKey,
@@ -49,14 +44,22 @@ export function useSlideGestures({
   useEffect(() => {
     const viewport = viewportRef.current
     if (!viewport || navigationMode === 'continuous') return
-    let wheelTime = -Infinity
-    let wheelDirection: 1 | -1 | undefined
-    let wheelAdvanced = false
+    const owner = viewport.closest<HTMLElement>('[data-slide-deck]') ?? viewport
+    const wheelIntent = createSlideWheelIntent()
     let touch: SlideTouchGesture | undefined
     const nativeTarget = (target: EventTarget | null) =>
       target instanceof Element &&
       Boolean(target.closest(SLIDE_EDITABLE_SELECTOR))
     const onWheel = (event: WheelEvent) => {
+      // The deck owns its viewport and header; a separate overlay/editor keeps
+      // its native behavior. No document-wide or competing nested listener.
+      if (
+        event.target instanceof Element &&
+        !viewport.contains(event.target) &&
+        !event.target.closest('[data-slide-navigation]') &&
+        event.target !== owner
+      )
+        return
       if (
         event.defaultPrevented ||
         event.ctrlKey ||
@@ -68,17 +71,8 @@ export function useSlideGestures({
       if (!event.deltaY || Math.abs(event.deltaX) > Math.abs(event.deltaY))
         return
       if (event.cancelable) event.preventDefault()
-      const direction = event.deltaY > 0 ? 1 : -1
-      if (
-        event.timeStamp - wheelTime > WHEEL_GESTURE_IDLE_MS ||
-        direction !== wheelDirection
-      )
-        wheelAdvanced = false
-      wheelTime = event.timeStamp
-      wheelDirection = direction
-      if (wheelAdvanced) return
-      wheelAdvanced = true
-      onStep(direction)
+      const direction = wheelIntent(event)
+      if (direction) onStep(direction)
     }
     const onTouchStart = (event: TouchEvent) => {
       const point = event.touches[0]
@@ -133,7 +127,7 @@ export function useSlideGestures({
     const onTouchCancel = () => {
       touch = undefined
     }
-    viewport.addEventListener('wheel', onWheel, {
+    owner.addEventListener('wheel', onWheel, {
       passive: false,
       capture: true,
     })
@@ -142,19 +136,11 @@ export function useSlideGestures({
     viewport.addEventListener('touchend', onTouchEnd)
     viewport.addEventListener('touchcancel', onTouchCancel)
     return () => {
-      viewport.removeEventListener('wheel', onWheel, true)
+      owner.removeEventListener('wheel', onWheel, true)
       viewport.removeEventListener('touchstart', onTouchStart)
       viewport.removeEventListener('touchmove', onTouchMove)
       viewport.removeEventListener('touchend', onTouchEnd)
       viewport.removeEventListener('touchcancel', onTouchCancel)
     }
-  }, [
-    activeIdRef,
-    idsKey,
-    movementTargetRef,
-    movementRevisionRef,
-    navigationMode,
-    onStep,
-    viewportRef,
-  ])
+  }, [idsKey, navigationMode, onStep, viewportRef])
 }

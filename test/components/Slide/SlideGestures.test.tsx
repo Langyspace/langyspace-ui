@@ -30,6 +30,7 @@ function fixture({
   lastTall = false,
   continuous = false,
   reduced = true,
+  overlay = false,
 } = {}) {
   vi.mocked(window.matchMedia).mockReturnValue({
     matches: reduced,
@@ -39,6 +40,7 @@ function fixture({
       label="Aula"
       navigationMode={continuous ? 'continuous' : 'pages'}
       actions={<button>Notes</button>}
+      overlay={overlay ? <Editor aria-label="Notes editor" /> : undefined}
       pages={[
         {
           id: 'one',
@@ -164,6 +166,55 @@ describe('SlideDeck immediate page gestures', () => {
       behavior: 'instant',
     })
     wheel(-0.1)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+  })
+  it('accepts renewed trackpad waves without requiring a quiet gap, including during animation', () => {
+    const { wheel, scrollTo } = fixture({ reduced: false })
+    scrollTo.mockImplementation(() => undefined)
+    const wave = [1, 8, 25, 60, 45, 25, 12, 5, 2, 1]
+    for (const delta of wave) wheel(delta, { gap: 16 })
+    expect(scrollTo).toHaveBeenCalledTimes(1)
+    for (const delta of wave) wheel(delta, { gap: 16, cancelable: false })
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
+  })
+  it('owns header wheel events but does not take over unrelated overlay editors', () => {
+    const { wheel, scrollTo } = fixture({ overlay: true })
+    wheel(1, { target: screen.getByRole('button', { name: 'Notes' }) })
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(
+      wheel(1, {
+        target: screen.getByRole('textbox', { name: 'Notes editor' }),
+        gap: 121,
+      }).defaultPrevented,
+    ).toBe(false)
+    expect(scrollTo).toHaveBeenCalledTimes(1)
+  })
+  it('moves focus out of a field on the departing page without discarding its value', () => {
+    const { viewport, wheel, scrollTo } = fixture()
+    const input = screen.getByRole('textbox', { name: 'Name' })
+    fireEvent.change(input, { target: { value: 'My own answer' } })
+    input.focus()
+    wheel(1, { target: input })
+    expect(viewport).toHaveFocus()
+    expect(input).toHaveValue('My own answer')
+    fireEvent.keyDown(viewport, { key: 'ArrowDown' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1000,
+      behavior: 'instant',
+    })
+  })
+  it('handles rapid discrete wheel steps and immediate reverse at the last page', () => {
+    const { wheel, scrollTo } = fixture()
+    wheel(3, { deltaMode: 1, gap: 40 })
+    wheel(3, { deltaMode: 1, gap: 40 })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1000,
+      behavior: 'instant',
+    })
+    wheel(3, { deltaMode: 1, gap: 40 })
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    wheel(-3, { deltaMode: 1, gap: 40 })
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
   })
   it.each(['ArrowDown', 'ArrowRight'])(
