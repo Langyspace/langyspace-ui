@@ -70,10 +70,7 @@ export const WarmUpWithAnswerSounds: Story = {
   tags: ['visual-review', 'audio-review'],
 }
 export const Dialogue: Story = { args: { initialPageId: 's6' } }
-export const Grammar: Story = { args: { initialPageId: 's71' } }
-export const MeetSomeone: Story = { args: { initialPageId: 's10' } }
 export const Listening: Story = {
   args: { initialPageId: 's9', learnerName: 'Carla' },
 }
-export const Conversation: Story = { args: { initialPageId: 's15' } }
 export const Homework: Story = { args: { initialPageId: 's13' } }

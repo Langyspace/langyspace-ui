@@ -542,40 +542,6 @@
       ]
     },
     {
-      "id": "s71",
-      "kind": "grammar",
-      "title": "I’m and you’re",
-      "instruction": "Use be for a name, a country or a feeling",
-      "minutes": 2,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "me",
-          "subject": "About me",
-          "verb": "I am → I’m",
-          "example": "I’m Ana. I’m from Brazil. I’m happy."
-        },
-        {
-          "id": "you",
-          "subject": "About you",
-          "verb": "You are → You’re",
-          "example": "You’re Kim. You’re from South Korea."
-        },
-        {
-          "id": "name",
-          "subject": "A name",
-          "verb": "My name is + name",
-          "example": "My name is Ana."
-        }
-      ]
-    },
-    {
       "id": "s8",
       "kind": "dialogue",
       "title": "Complete the introduction",
@@ -676,46 +642,6 @@
       ]
     },
     {
-      "id": "s15",
-      "kind": "questions",
-      "title": "Introduce yourself",
-      "instruction": "Answer about yourself, then ask your teacher",
-      "minutes": 3,
-      "eyebrow": "Your turn",
-      "items": [
-        {
-          "id": "name",
-          "prompt": "What’s your name?",
-          "cue": "Say your name and ask me",
-          "hint": "My name is … What’s your name?",
-          "answer": "One possible response"
-        },
-        {
-          "id": "country",
-          "prompt": "Where are you from?",
-          "cue": "Say where you’re from",
-          "hint": "I’m from … What about you?",
-          "answer": "One possible response"
-        },
-        {
-          "id": "feelings",
-          "prompt": "How are you today?",
-          "cue": "Say how you feel and ask me",
-          "hint": "I’m …, thanks. How are you?",
-          "answer": "One possible response"
-        }
-      ],
-      "questionPurpose": "conversation"
-    },
-    {
-      "id": "s10",
-      "kind": "activity",
-      "title": "Meet someone new",
-      "instruction": "Be the person on the card. Introduce yourself and ask two questions",
-      "minutes": 4,
-      "eyebrow": "Speaking task"
-    },
-    {
       "id": "s9",
       "kind": "listening",
       "title": "A new friend at the café",
@@ -746,35 +672,6 @@
           "answer": "Kim is happy that Ana is there"
         }
       ]
-    },
-    {
-      "id": "s91",
-      "kind": "questions",
-      "title": "Say hello to Mia",
-      "instruction": "Join Mia at the café. Greet her, react and ask about Kim",
-      "minutes": 3,
-      "eyebrow": "Your turn",
-      "items": [
-        {
-          "id": "greet",
-          "prompt": "Hi! I’m Mia. Nice to meet you",
-          "cue": "Greet Mia",
-          "hint": "Hi, Mia! Nice to meet you too"
-        },
-        {
-          "id": "s91.q98.2",
-          "prompt": "I’m hungry. Are you hungry too?",
-          "cue": "Answer about yourself",
-          "hint": "Yes, I am. I’m hungry too / No, I’m not. I’m …"
-        },
-        {
-          "id": "s91.q98.3",
-          "prompt": "Kim is here too",
-          "cue": "Ask how Kim feels",
-          "hint": "How is Kim? Is she tired?"
-        }
-      ],
-      "questionPurpose": "conversation"
     },
     {
       "id": "s_video_intro",

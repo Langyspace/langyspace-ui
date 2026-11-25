@@ -1,6 +1,5 @@
 import { ReviewedLesson } from '../shared/ReviewedLesson'
 import type { ReviewedPage } from '../shared/ReviewedLesson.types'
-import { MeetSomeoneActivity } from './MeetSomeoneActivity'
 import type { A101LessonProps } from './A101.types'
 import data from './A101.review.json'
 import provenance from './audio-provenance.json'
@@ -65,7 +64,6 @@ export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
       initialPageId={initialPageId}
       learnerName={learnerName}
       notesStorageKey="langy-notes:a1-01"
-      activities={{ s10: <MeetSomeoneActivity /> }}
       freeConversationInstruction="Get to know each other: introduce yourself, ask about your teacher and react to her answers"
     />
   )

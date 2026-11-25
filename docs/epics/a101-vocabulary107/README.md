@@ -1,5 +1,9 @@
 # A1.01 — Vocabulary and warm-up
 
+## Current content revision — 25 November
+
+Removed by Margarida's explicit request: grammar “I’m and you’re” (s71), personal “Introduce yourself” (s15), “Meet someone new” (s10), and “Say hello to Mia” (s91). The lesson cover titled Introduce yourself remains. The other 20 authored pages, dialogue, gaps, vocabulary, warm-ups, listening, video and closing content are preserved. Removed-page Storybook shortcuts and the inactive activity binding were removed; reusable activity source and media remain available.
+
 Base: production UI `3bae8b9dc8491366e2a4a5b2143db885f1206194`. Developer-series105 remains isolated on its existing branch.
 
 ## Requested sequence
