@@ -98,6 +98,17 @@ export type ReviewedPage = PageBase &
       }
     | { kind: 'activity' }
     | {
+        kind: 'video'
+        video: {
+          videoId: string
+          startSeconds: number
+          endSeconds: number
+          title: string
+          credit?: string
+        }
+        items: readonly ReviewedPrompt[]
+      }
+    | {
         kind: 'image-choice'
         choiceGroup: string
         image: { src: string; alt: string }

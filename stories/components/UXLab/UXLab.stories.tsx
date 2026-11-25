@@ -117,6 +117,9 @@ export const FreeConversation: Story = {
   render: () => <ConversationDemo level="c2" />,
 }
 export const Video: Story = { render: () => <VideoDemo /> }
+export const VideoInline: Story = {
+  render: () => <VideoDemo presentation="inline" />,
+}
 export const OralAssessment: Story = { render: () => <OralDemo /> }
 export const OralResult: Story = { render: () => <OralResultDemo /> }
 export const Shadowing: Story = { render: () => <ShadowingDemo /> }

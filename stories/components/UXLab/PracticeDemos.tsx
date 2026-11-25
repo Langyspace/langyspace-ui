@@ -439,7 +439,9 @@ export function OralResultDemo() {
     />
   )
 }
-export function VideoDemo() {
+export function VideoDemo({
+  presentation = 'staged',
+}: { presentation?: 'staged' | 'inline' } = {}) {
   const [page, setPage] = useState<'watch' | 'discuss'>('watch'),
     [time, setTime] = useState(0)
   const caption = [...data.V.cap]
@@ -447,6 +449,7 @@ export function VideoDemo() {
     .find((row) => Number(row[0]) <= time)?.[1]
   return (
     <VideoExercise
+      presentation={presentation}
       title="Why is Kim late?"
       page={page}
       onPageChange={setPage}

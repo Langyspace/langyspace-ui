@@ -356,9 +356,11 @@
     "dist/components/InteractiveMaterial/SceneExplorer.types.d.ts": "c42b47ae01dd78d8f8b1ad881e843089a244fb6ad73dd39461bd5ef8a74d3d1c",
     "dist/components/InteractiveMaterial/SimulationIcon.d.ts": "9fa0327b2ad744b4e8b45b7e10c817053bd069efceaef9ab25d1aadfa7f86159",
     "dist/components/InteractiveMaterial/SimulationIcon.types.d.ts": "6a8da20fcf2a848dc4568443e69f92c6d6962772a637ebe924257233edf39d9c",
-    "dist/components/InteractiveMaterial/VideoExercise.d.ts": "ad0e0e1ca16ee60ea8cebed77ac47eab81c250a42e8a2c17d7e72b4412b5daaf",
-    "dist/components/InteractiveMaterial/VideoExercise.styles.d.ts": "aab51f079bbcd013061309290b259a83ca489d88466b2502fc313b30c9d762d5",
-    "dist/components/InteractiveMaterial/VideoExercise.types.d.ts": "2735c5afebdb7b4f1343b5ef3b2d8888ca707b0ed4967f399f94ed8674f04b26",
+    "dist/components/InteractiveMaterial/VideoExercise.d.ts": "b3deefeeca0b30281fbc70dc5d301be1252023d7de02697e5ad35ad33c0ebbd4",
+    "dist/components/InteractiveMaterial/VideoExercise.styles.d.ts": "c6481a12a624a484df3ac2b12e72bae7b4ab82bf9724cb3ac427f42160ec5874",
+    "dist/components/InteractiveMaterial/VideoExercise.types.d.ts": "d22bfe6ac23c2d5a8ba5247a115b2e0a702924e857ae9f261cd93949c406c3e8",
+    "dist/components/InteractiveMaterial/VideoExerciseYouTube.d.ts": "d5ecb928ce6aa6c4acbe65b57581d3ba4c0748e982388b9e73ce4f8e4cdfb8cc",
+    "dist/components/InteractiveMaterial/VideoExerciseYouTube.types.d.ts": "1a469ee8c3c048ead0b75d4d2818c89a3405f2baa380027abd5c631517da8337",
     "dist/components/Message/ConversationRow.d.ts": "62bad7984f3ad6aa04b40b77e4280f7a02415dce13f1c13a327a5fe9565d4270",
     "dist/components/Message/ConversationRow.styles.d.ts": "ae1debdf7744601cfe68b4444349e936e5d5734f2e6ae73b74dc2efb5cea29e6",
     "dist/components/Message/ConversationRow.types.d.ts": "745bef70e7470e6cb0576ba8cb1548cd365673973bf6b22d656c40b358aef6b7",
@@ -629,6 +631,7 @@
     "dist/internal/feedbackSounds.d.ts": "02e20466237bfd05410a75cbe3fc88570c03541f5cf0a98ba85d8463222bcba9",
     "dist/internal/flashcardWordLayout.d.ts": "6d59e959ac70fa9e872465a68ec46f262005c02984f8cd6f6c420aae2f6d403f",
     "dist/internal/focus.d.ts": "0513b12fe3c9e971f6fd2304a8c03c7e5b5e779801b65f6f117ea73d63100d93",
+    "dist/internal/loadYouTubeApi.d.ts": "8018ff8df619129e70923ed1453be29a9e2ce205f5fe18a62e0af67ac53a1639",
     "dist/internal/playPreparedAudio.d.ts": "adf54ded102564ca21b6475ea3f7c9a18a39db0fe3c67625a764faa07f4a6218",
     "dist/internal/playPreparedAudio.types.d.ts": "3d4720b0618a93ae6753ab26f4713c9d2b3c5bef7c76efb2deab3c9fec3f3d32",
     "dist/internal/useCallRingtone.d.ts": "73e78479f38fa0ad44adb444e8787de3f8c5e6191b19cbcc980654d6bebd4fae",
@@ -639,7 +642,8 @@
     "dist/internal/useMergedRef.d.ts": "9f5d59c93a077bdc3b27052f28d118c93d753f73ccf99b050a7991e6f1caa477",
     "dist/internal/usePreparedAudio.d.ts": "9eb0127b4418d2d37735474c3561847bb9b49e0e255703ec71ba4d49248774e4",
     "dist/internal/useRecordedAudio.d.ts": "6fa61dff89eaff3fd3ae749864c50bf7a6b0b24187ed7da68a9212a2bdf496b6",
-    "dist/internal/useRecordedAudio.types.d.ts": "560deae41d74162b2f03467b4543b35857af935ee7314981e7fbc11cd4956713"
+    "dist/internal/useRecordedAudio.types.d.ts": "560deae41d74162b2f03467b4543b35857af935ee7314981e7fbc11cd4956713",
+    "dist/internal/youtubeApi.types.d.ts": "4ac04253aafa41fc4c3ed8e655675400d394bfdcaa02d5be55c923cd84d88ad9"
   },
   "entrypoint": {
     "types": [

@@ -16,6 +16,7 @@ import type { RevealGuidanceLevel } from '../../../src/components/Exercise/Revea
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { VideoExercise } from '../../../src/components/InteractiveMaterial/VideoExercise'
 import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { Avatar } from '../../../src/components/Avatar/Avatar'
@@ -76,9 +77,11 @@ const recordingLine = (line: {
 function Questions({
   items,
   purpose = 'conversation',
+  density = 'regular',
 }: {
   items: readonly ReviewedPrompt[]
   purpose?: 'conversation' | 'comprehension' | 'review' | 'response'
+  density?: 'regular' | 'compact'
 }) {
   return purpose === 'conversation' &&
     items.every((item) => item.cue && item.hint) ? (
@@ -92,6 +95,7 @@ function Questions({
     />
   ) : (
     <PromptExercise
+      density={density}
       items={items.map((item) => ({
         ...item,
         cue: purpose === 'comprehension' ? undefined : item.cue,
@@ -164,6 +168,15 @@ function PageContent({
   if (page.kind === 'prompts' || page.kind === 'questions')
     return <Questions items={page.items} purpose={page.questionPurpose} />
   if (page.kind === 'activity') return activity
+  if (page.kind === 'video')
+    return (
+      <VideoExercise
+        title={null}
+        presentation="inline"
+        youtube={page.video}
+        active={active}
+      />
+    )
   if (page.kind === 'image-choice')
     return (
       <ChoiceExercise
@@ -594,11 +607,21 @@ export function ReviewedLesson({
                           items={page.questions}
                           purpose="comprehension"
                         />
+                      ) : page.kind === 'video' ? (
+                        <Questions
+                          items={page.items}
+                          purpose="comprehension"
+                          density="compact"
+                        />
                       ) : undefined
                     }
                     eyebrow={page.eyebrow}
                     instruction={page.instruction}
-                    density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                    density={
+                      page.kind === 'dialogue' || page.kind === 'video'
+                        ? 'compact'
+                        : 'regular'
+                    }
                     columns={
                       page.kind === 'dialogue' ||
                       page.kind === 'questions' ||

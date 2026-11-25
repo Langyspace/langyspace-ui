@@ -153,7 +153,7 @@
       "kind": "dialogue",
       "title": "Nice to meet you",
       "instruction": "Listen as Ana and Kim meet, then read together",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -228,7 +228,7 @@
       "kind": "grammar",
       "title": "I’m and you’re",
       "instruction": "Use be for a name, a country or a feeling",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Grammar",
       "layout": "patterns",
       "columns": {
@@ -480,11 +480,52 @@
       "questionPurpose": "conversation"
     },
     {
+      "id": "s_video_intro",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Meet Vanya",
+      "instruction": "Watch the introductions, then answer the questions",
+      "minutes": 4,
+      "video": {
+        "videoId": "HooNbcbgi9U",
+        "startSeconds": 59,
+        "endSeconds": 93,
+        "title": "Meeting new people — British Council",
+        "credit": "British Council · 0:59–1:33"
+      },
+      "items": [
+        {
+          "id": "video1",
+          "prompt": "What’s the man’s name?",
+          "hint": "Listen for “I’m…” after Vanya asks about Paul",
+          "answer": "His name is Emir"
+        },
+        {
+          "id": "video2",
+          "prompt": "Where are they?",
+          "hint": "Look at the room and listen for the place Emir names",
+          "answer": "They’re at an office"
+        },
+        {
+          "id": "video3",
+          "prompt": "What does Yuna say to welcome Vanya?",
+          "hint": "Listen to Yuna’s last words",
+          "answer": "She says “Welcome to the team”"
+        },
+        {
+          "id": "video4",
+          "prompt": "You meet Vanya. How do you introduce yourself?",
+          "hint": "Start with Hi, then say your name",
+          "answer": "Example: Hi, Vanya! I’m [your name]. Nice to meet you"
+        }
+      ]
+    },
+    {
       "id": "s10",
       "kind": "activity",
       "title": "Meet someone new",
       "instruction": "Be the person on the card. Introduce yourself and ask two questions",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
     },
     {
@@ -492,7 +533,7 @@
       "kind": "listening",
       "title": "A new friend at the café",
       "instruction": "Listen to Kim, then get ready to say hello",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry",
       "audioText": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry?",
