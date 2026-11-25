@@ -224,7 +224,7 @@
       "kind": "questions",
       "title": "Food you enjoy",
       "instruction": "Talk about your tastes, then ask your teacher",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -403,15 +403,56 @@
       "kind": "activity",
       "title": "Let’s buy some fruit",
       "instruction": "Choose two fruits and ask me the price",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Just how you like it",
+      "instruction": "Watch Emir bring Paul a drink, then say how you like yours",
+      "minutes": 4,
+      "video": {
+        "videoId": "l1herjZq-4M",
+        "startSeconds": 47,
+        "endSeconds": 61,
+        "title": "Talking about personal interests — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-05.video102.q1",
+          "prompt": "What drink does Emir bring?",
+          "hint": "Listen for cup of",
+          "answer": "He brings a cup of tea"
+        },
+        {
+          "id": "a1-05.video102.q2",
+          "prompt": "What does Paul like in his tea?",
+          "hint": "Listen for two ingredients",
+          "answer": "He likes milk and two sugars"
+        },
+        {
+          "id": "a1-05.video102.q3",
+          "prompt": "What does Emir say after Paul thanks him?",
+          "hint": "Listen to the last reply",
+          "answer": "He says, “You’re welcome”"
+        },
+        {
+          "id": "a1-05.video102.q4",
+          "prompt": "How do you like your tea or coffee?",
+          "hint": "Use I like it with or without",
+          "answer": "Example: I like my coffee with milk and without sugar"
+        }
+      ]
     },
     {
       "id": "s9",
       "kind": "listening",
       "title": "Kim’s shopping request",
       "instruction": "Listen for what Kim wants and what she doesn’t want",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana! Can you buy a banana and a mango for me? I don’t want oranges today. The banana is for Jin. She loves fruit. I’ll meet you at the market on Saturday. Thank you!",
       "audioId": "L81.1",

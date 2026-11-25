@@ -155,7 +155,7 @@
       "kind": "questions",
       "title": "Your details, your questions",
       "instruction": "Use a real or made-up name. Ask your teacher for a contact too",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -302,7 +302,7 @@
       "kind": "activity",
       "title": "Save my contact",
       "instruction": "Give your details and check what I type",
-      "minutes": 8,
+      "minutes": 6,
       "eyebrow": "Speaking task"
     },
     {
@@ -310,8 +310,49 @@
       "kind": "activity",
       "title": "Kim checks the contact",
       "instruction": "Answer as Ana. Confirm what is right and correct the number",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Ask to hear it again",
+      "instruction": "Watch how Paul asks Bob to repeat, then practise checking a name",
+      "minutes": 4,
+      "video": {
+        "videoId": "K5GJt-CRiFk",
+        "startSeconds": 50,
+        "endSeconds": 85,
+        "title": "Checking understanding — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-02.video102.q1",
+          "prompt": "What does Bob need?",
+          "hint": "Listen for the tool Bob repeats",
+          "answer": "He needs the hammer"
+        },
+        {
+          "id": "a1-02.video102.q2",
+          "prompt": "Why can’t Paul hear him well?",
+          "hint": "Listen to Paul’s first explanation",
+          "answer": "His ears are blocked"
+        },
+        {
+          "id": "a1-02.video102.q3",
+          "prompt": "How does Paul ask Bob to speak more slowly?",
+          "hint": "Listen for repeat and slowly",
+          "answer": "He says, “Could you repeat that more slowly, please?”"
+        },
+        {
+          "id": "a1-02.video102.q4",
+          "prompt": "Your teacher says a name too quickly. What can you say?",
+          "hint": "Ask for repetition politely",
+          "answer": "Example: Could you say that again more slowly, please?"
+        }
+      ]
     },
     {
       "id": "s17",

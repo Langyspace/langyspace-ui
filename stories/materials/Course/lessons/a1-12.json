@@ -189,7 +189,7 @@
       "kind": "questions",
       "title": "Plan a day out",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -255,8 +255,49 @@
       "kind": "activity",
       "title": "Plan our day out",
       "instruction": "Plan a day out and update the plan together",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Agree on a time and place",
+      "instruction": "Watch the friends finish their plan, then make a simple plan together",
+      "minutes": 4,
+      "video": {
+        "videoId": "E8FM5igDBDI",
+        "startSeconds": 88,
+        "endSeconds": 120,
+        "title": "Making plans — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a1-12.video102.q1",
+          "prompt": "What day do they choose?",
+          "hint": "Listen for the day before afternoon",
+          "answer": "They choose Saturday"
+        },
+        {
+          "id": "a1-12.video102.q2",
+          "prompt": "Where will they meet?",
+          "hint": "Listen for in front of",
+          "answer": "They’ll meet in front of the bowling place at the shopping centre"
+        },
+        {
+          "id": "a1-12.video102.q3",
+          "prompt": "What time do they choose?",
+          "hint": "Listen for the time near the end",
+          "answer": "They choose three o’clock"
+        },
+        {
+          "id": "a1-12.video102.q4",
+          "prompt": "Where and when can you meet your teacher for a day out?",
+          "hint": "Suggest a day, a time and a place",
+          "answer": "Example: Let’s meet on Sunday at ten, in front of the café"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -297,7 +338,7 @@
       "kind": "activity",
       "title": "Tell me the new plan",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

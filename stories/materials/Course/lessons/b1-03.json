@@ -247,7 +247,7 @@
       "kind": "activity",
       "title": "Explain what happened first",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -289,8 +289,49 @@
       "kind": "activity",
       "title": "Reconstruct the evening",
       "instruction": "Explain what happened first and why it mattered",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What happened before the mistake?",
+      "instruction": "Watch Vanya explain her mistake, then reconstruct the order of events",
+      "minutes": 4,
+      "video": {
+        "videoId": "c5TfNZYwLgc",
+        "startSeconds": 81,
+        "endSeconds": 144,
+        "title": "Dealing with a problem — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b1-03.video102.q1",
+          "prompt": "What mistake did Vanya make?",
+          "hint": "Listen for the two different cards",
+          "answer": "She used her company credit card instead of her own"
+        },
+        {
+          "id": "b1-03.video102.q2",
+          "prompt": "What background does she give before explaining the mistake?",
+          "hint": "Listen for the time and how she felt",
+          "answer": "It was late, she was tired and she wasn’t concentrating"
+        },
+        {
+          "id": "b1-03.video102.q3",
+          "prompt": "What did she buy?",
+          "hint": "Listen to the end of the explanation",
+          "answer": "She bought a weekend break at a hotel"
+        },
+        {
+          "id": "b1-03.video102.q4",
+          "prompt": "Summarise the sequence using had and then the past simple",
+          "hint": "Separate what had happened earlier from the purchase",
+          "answer": "Example: She’d used the company card before she told Yuna about it. She wasn’t concentrating when she made the purchase"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -331,7 +372,7 @@
       "kind": "activity",
       "title": "Correct the misunderstanding",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Your turn"
     },
     {

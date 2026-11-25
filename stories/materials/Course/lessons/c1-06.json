@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The course brief",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Learner profile · simulated source",
       "subject": "A practical project, not a certificate alone",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Explain your trade-off",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Make the case, then rethink it",
       "instruction": "Recommend an option and explain what could change your mind",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Optimism needs a test",
+      "instruction": "Watch Teller explain the moonshot approach, then weigh a proposal and its limit",
+      "minutes": 4,
+      "video": {
+        "videoId": "2t13Rq4oc7A",
+        "startSeconds": 89,
+        "endSeconds": 163,
+        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-06.video102.q1",
+          "prompt": "What three elements does the blueprint require?",
+          "hint": "Listen for problem, solution and a reason to believe",
+          "answer": "It requires a major problem, a radical solution and a reason to believe the technology could be built"
+        },
+        {
+          "id": "c1-06.video102.q2",
+          "prompt": "Why does the team try the hardest parts first?",
+          "hint": "Connect skepticism with the survival of a proposal",
+          "answer": "They try to expose reasons a project may fail before committing further"
+        },
+        {
+          "id": "c1-06.video102.q3",
+          "prompt": "Is a large vision alone enough in this account?",
+          "hint": "Distinguish optimism from a testable plan",
+          "answer": "No. The vision is paired with concrete plans and attempts to disprove it"
+        },
+        {
+          "id": "c1-06.video102.q4",
+          "prompt": "Recommend a proposal and say what evidence would change your recommendation",
+          "hint": "Make the trade-off and priority explicit",
+          "answer": "Example: The more I consider the cost, the more I favour a small trial. I’d reconsider if it demonstrated reliable results at scale"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "A preference becomes a constraint",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. Course A has changed its live session from Wednesday to Tuesday, still seven to nine. The person on our brief has a regular Tuesday commitment and cannot attend live then. The provider also says the practical feedback is only given during that live class, not on a recording afterwards. The price and eight-week length are unchanged. This turns attendance from a flexible preference into a serious constraint. Course B’s Friday check-in still fits, but we should confirm whether its feedback covers the person’s project before accepting the higher cost. Could you explain how the balance has changed rather than simply saying the more expensive course is now better? There may also be a later run of A worth asking about",
       "audioText": "Hi, Ana. Course A has changed its live session from Wednesday to Tuesday, still seven to nine. The person on our brief has a regular Tuesday commitment and cannot attend live then. The provider also says the practical feedback is only given during that live class, not on a recording afterwards. The price and eight-week length are unchanged. This turns attendance from a flexible preference into a serious constraint. Course B’s Friday check-in still fits, but we should confirm whether its feedback covers the person’s project before accepting the higher cost. Could you explain how the balance has changed rather than simply saying the more expensive course is now better? There may also be a later run of A worth asking about.",

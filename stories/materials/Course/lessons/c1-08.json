@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The proposal’s purpose",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Group organiser · simulated source",
       "subject": "More regular contact",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Negotiate what you can accept",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Negotiate a workable change",
       "instruction": "Respond to the proposal and negotiate conditions that could work",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Agree to a test, not an unlimited commitment",
+      "instruction": "Watch the challenge to Vanya’s idea, then make a bounded counterproposal",
+      "minutes": 4,
+      "video": {
+        "videoId": "fhSGDAdlAb4",
+        "startSeconds": 104,
+        "endSeconds": 174,
+        "title": "Challenging someone’s ideas — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-08.video102.q1",
+          "prompt": "What shared business question does Emir raise?",
+          "hint": "Listen for relevant and the type of company",
+          "answer": "He asks how the cat videos are relevant to a branding agency"
+        },
+        {
+          "id": "c1-08.video102.q2",
+          "prompt": "What practical workload question follows?",
+          "hint": "Listen to who will do the work",
+          "answer": "They ask who will find all the videos"
+        },
+        {
+          "id": "c1-08.video102.q3",
+          "prompt": "What limited next step is suggested?",
+          "hint": "Listen for a length of time and a way to evaluate it",
+          "answer": "They suggest trying it for a couple of weeks and checking its impact"
+        },
+        {
+          "id": "c1-08.video102.q4",
+          "prompt": "Make a counterproposal that supports the goal while limiting the commitment",
+          "hint": "Use Much as and state a review condition",
+          "answer": "Example: Much as I’d like to grow our audience, I can’t approve an open-ended campaign. Let’s test a small version and review the results"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "Frequency changes, notice does not",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I’ve thought about the group-session proposal. I can accept two live sessions a month instead of four, and I’m happy to try short written updates between them. I still need the dates confirmed at least seven days ahead; reducing the frequency doesn’t remove that planning need. Could we treat the two-session arrangement as a four-week trial and review whether the updates cover the gaps? We seem to agree on regular contact and a trial. The sticking point is not willingness to participate, but the notice required to make participation feasible. Please could you confirm that part explicitly before we tell the group the whole proposal has been accepted?",
       "audioText": "Hi, Ana. I’ve thought about the group-session proposal. I can accept two live sessions a month instead of four, and I’m happy to try short written updates between them. I still need the dates confirmed at least seven days ahead; reducing the frequency doesn’t remove that planning need. Could we treat the two-session arrangement as a four-week trial and review whether the updates cover the gaps? We seem to agree on regular contact and a trial. The sticking point is not willingness to participate, but the notice required to make participation feasible. Please could you confirm that part explicitly before we tell the group the whole proposal has been accepted?",

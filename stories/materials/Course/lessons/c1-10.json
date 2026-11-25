@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The shared factual brief",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Event update card · simulated source",
       "subject": "Fictional dates: December 2026",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Adapt the message to its reader",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Same news, different audience",
       "instruction": "Give the same update to two people in an appropriate way",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Same words, different interpretations",
+      "instruction": "Watch how wording and relationships affect meaning, then make an update’s action clear",
+      "minutes": 4,
+      "video": {
+        "videoId": "gCfzeONu3Mo",
+        "startSeconds": 109,
+        "endSeconds": 161,
+        "title": "How miscommunication happens — Katherine Hampsten — TED-Ed",
+        "credit": "TED-Ed"
+      },
+      "items": [
+        {
+          "id": "c1-10.video102.q1",
+          "prompt": "Does the receiver get an unfiltered copy of the sender’s meaning?",
+          "hint": "Listen for the two interpretations",
+          "answer": "No. People express and interpret messages through their own subjective filters"
+        },
+        {
+          "id": "c1-10.video102.q2",
+          "prompt": "What does the changing lump of clay illustrate?",
+          "hint": "Connect the visual metaphor with interpretation",
+          "answer": "Each participant reshapes the message through their own perceptions"
+        },
+        {
+          "id": "c1-10.video102.q3",
+          "prompt": "How could a relationship change the way a phrase is understood?",
+          "hint": "Consider a friend and a client reading the same casual wording",
+          "answer": "Example: A brief casual phrase may sound friendly to a close friend but dismissive or overly familiar to a client"
+        },
+        {
+          "id": "c1-10.video102.q4",
+          "prompt": "Make a recipient’s next action explicit in a short event update",
+          "hint": "State what to confirm and give an unambiguous deadline",
+          "answer": "Example: The event is now on Monday 7 December. Please confirm by Friday 4 December at 5 pm whether you can attend"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "Acknowledgement is not attendance",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I’ve read the event update, but I’m not sure what you need from me. When you say “please acknowledge”, do you only want me to confirm I’ve seen the message, or do you need to know whether I can attend on Monday? I can send either, but they aren’t the same commitment. Could you also give the response deadline as a day and time rather than “tomorrow”? I sometimes read messages after the day they were sent. The new date, same ten o’clock start and room two are clear. It’s the requested action that needs clarification, so there’s no need to rewrite every factual detail or make the wording more elaborate",
       "audioText": "Hi, Ana. I’ve read the event update, but I’m not sure what you need from me. When you say “please acknowledge”, do you only want me to confirm I’ve seen the message, or do you need to know whether I can attend on Monday? I can send either, but they aren’t the same commitment. Could you also give the response deadline as a day and time rather than “tomorrow”? I sometimes read messages after the day they were sent. The new date, same ten o’clock start and room two are clear. It’s the requested action that needs clarification, so there’s no need to rewrite every factual detail or make the wording more elaborate.",

@@ -214,7 +214,7 @@
       "kind": "questions",
       "title": "Tell me about your routine",
       "instruction": "Talk about your day and ask your teacher about hers",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -410,15 +410,56 @@
       "kind": "activity",
       "title": "Find a time to meet",
       "instruction": "Use the example week to arrange a visit to the gym",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "How often do they do it?",
+      "instruction": "Watch the conversation about meditation, then describe one of your habits",
+      "minutes": 4,
+      "video": {
+        "videoId": "l1herjZq-4M",
+        "startSeconds": 65,
+        "endSeconds": 104,
+        "title": "Talking about personal interests — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-04.video102.q1",
+          "prompt": "What activity do they both do?",
+          "hint": "Listen for the hobby Paul has started",
+          "answer": "They both do meditation"
+        },
+        {
+          "id": "a1-04.video102.q2",
+          "prompt": "When does Paul usually practise?",
+          "hint": "Listen for a part of the day",
+          "answer": "He usually practises in the mornings"
+        },
+        {
+          "id": "a1-04.video102.q3",
+          "prompt": "How often does Emir meditate?",
+          "hint": "Listen for a number followed by a week",
+          "answer": "He normally meditates once or twice a week"
+        },
+        {
+          "id": "a1-04.video102.q4",
+          "prompt": "What do you do every morning?",
+          "hint": "Use I usually and a morning activity",
+          "answer": "Example: I usually have breakfast at eight"
+        }
+      ]
     },
     {
       "id": "s9",
       "kind": "listening",
       "title": "Kim needs to change the plan",
       "instruction": "Listen, find the new time and get ready to reply",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "I’m not free on Thursday evening. I work until eight. Are you free on Friday at seven? Let’s go to the gym then. We can meet there. Please tell me if Friday is good for you",
       "audioId": "L79.1",

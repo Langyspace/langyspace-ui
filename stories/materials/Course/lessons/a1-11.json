@@ -189,7 +189,7 @@
       "kind": "questions",
       "title": "Choose your size and colour",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -255,8 +255,49 @@
       "kind": "activity",
       "title": "Find a gift",
       "instruction": "Ask for the gift you want and choose an alternative",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "This one in another colour",
+      "instruction": "Watch the customer choose a dress, then ask for an alternative",
+      "minutes": 4,
+      "video": {
+        "videoId": "d8BR6hsvzoY",
+        "startSeconds": 50,
+        "endSeconds": 111,
+        "title": "Clothes shopping in English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a1-11.video102.q1",
+          "prompt": "What is the customer looking for?",
+          "hint": "Listen for the type of clothing",
+          "answer": "She’s looking for a dress"
+        },
+        {
+          "id": "a1-11.video102.q2",
+          "prompt": "Which colour does she want to try?",
+          "hint": "Listen after I’d like to try",
+          "answer": "She wants to try the blue one"
+        },
+        {
+          "id": "a1-11.video102.q3",
+          "prompt": "Why does she ask for another size?",
+          "hint": "Listen for smaller or bigger",
+          "answer": "She wants a smaller size"
+        },
+        {
+          "id": "a1-11.video102.q4",
+          "prompt": "How can you ask for another colour?",
+          "hint": "Start with Do you have this",
+          "answer": "Example: Do you have this in green?"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -297,7 +338,7 @@
       "kind": "activity",
       "title": "Buy the gift she wants",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

@@ -26,7 +26,17 @@ Decisões atuais para lembrar:
 - Usar VideoExercise com variação inline e adaptador YouTube na UI Library. Registrar vídeo/canal, URL original, início/fim e referência consultada. Repetir o mesmo intervalo reaplicando os limites; ao terminar, preparar novamente esse trecho sem autoplay, para que o replay nativo do YouTube também retome o início escolhido. Loop é opcional, desligado inicialmente, e pode ser interrompido nos controles nativos para conversar. Sem autoplay ao entrar na página; interromper o player ao sair.
 - Não duplicar o canal e a minutagem em um rodapé clicável quando o player já oferece identificação. Manter a referência nos dados/documentação; apresentar o link externo como recuperação apenas se o vídeo falhar.
 - Preservar controles, legendas, identificação e anúncios do YouTube; não baixar, regravar, cobrir ou alterar o áudio do vídeo. O início por keyframe não é um corte exato por quadro. Erros de rede/incorporação devem oferecer a fonte original, sem sucesso simulado. Não aplicar automaticamente a regra de terceira escuta dos áudios WhatsApp a vídeos.
-- Acrescentar variedade substituindo ou redistribuindo tempo de etapas pertinentes, preservando conversa livre penúltima e homework último. Uma aprovação de formato não autoriza expandi-lo automaticamente a todas as aulas.
+- Acrescentar variedade substituindo ou redistribuindo tempo de etapas pertinentes, preservando conversa livre penúltima e homework último
+
+### Expansão102 — vídeo em cada aula da trilha principal
+
+- Pedido explícito de 25/11: todas as 60 aulas A1–C1 recebem uma atividade de vídeo. Esta decisão de conteúdo não autoriza publicação em staging ou produção
+- Curar por objetivo, não por uma palavra no título: identificação e linguagem cotidiana no A1; situações, sequência e reações no A2/B1; intenção, evidência, negociação, tom e reformulação no B2/C1. Pronúncia usa uma dificuldade ou um efeito de sentido observável, com aplicação oral
+- Quatro perguntas autorais sobre o intervalo selecionado. Distinguir o que foi visto/ouvido, uma interpretação justificável e uma nova situação hipotética. Exemplos de respostas abertas são identificados como `Example`, nunca tratados como o único gabarito
+- Um vídeo pode voltar em outra aula quando o trecho ou o objetivo muda de forma útil. Não repetir o mesmo questionário nem substituir a curadoria por um vídeo genérico em todo o nível
+- Conferir a minutagem nas legendas e incluir a fala necessária para responder. Legendas automáticas podem errar nomes e palavras: conferir detalhes ambíguos com a fonte do publicador. Não copiar a transcrição integral para a aula
+- Notícias e palestras com dados históricos mantêm o recorte temporal explícito. Uma afirmação do entrevistado não se transforma em fato atual ou previsão garantida; perguntas de análise podem justamente examinar essa distinção
+- A autoria fica no JSON ativo da lição; o inventário em `docs/epics/material-video102/curation.json` registra fonte, intervalo, objetivo e evidência. Os cinco planos por nível facilitam a revisão. O player e Questions continuam sendo os componentes canônicos, sem estilos ou controles por aula
 
 ## Flashcards — mínimo de 20 itens por conjunto
 

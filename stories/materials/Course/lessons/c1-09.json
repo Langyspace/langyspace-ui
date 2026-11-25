@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "What has been observed",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Fictional city data note · simulated source",
       "subject": "Three months of trips",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Calibrate the prediction",
       "instruction": "Use the reference to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Your turn"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Forecast without overstating",
       "instruction": "Explain your prediction and say what could make it wrong",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What can a historical trend support?",
+      "instruction": "Watch this 2014 talk’s account of twentieth-century disaster data, then assess a prediction",
+      "minutes": 4,
+      "video": {
+        "videoId": "Sm5xF-UYgdg",
+        "startSeconds": 83,
+        "endSeconds": 140,
+        "title": "Hans and Ola Rosling — How not to be ignorant about the world — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-09.video102.q1",
+          "prompt": "What period is the graph described as covering?",
+          "hint": "Listen for the two years",
+          "answer": "It is described as covering 1900 to 2000"
+        },
+        {
+          "id": "c1-09.video102.q2",
+          "prompt": "How does Rosling contrast the public belief with the data?",
+          "hint": "Listen to doubled and less than half",
+          "answer": "Many respondents thought deaths had doubled, while the data he presents show a fall to less than half"
+        },
+        {
+          "id": "c1-09.video102.q3",
+          "prompt": "Does that establish that every future year will improve?",
+          "hint": "Separate a historical trend from a guaranteed forecast",
+          "answer": "No. A historical pattern alone does not guarantee a future outcome"
+        },
+        {
+          "id": "c1-09.video102.q4",
+          "prompt": "Make a cautious prediction and name a condition that could change it",
+          "hint": "Use may or is likely to and specify the assumption",
+          "answer": "Example: Deaths may continue to fall if protective measures improve, but more severe hazards could alter that trend"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "Total capacity is not all-day coverage",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”",
       "audioText": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”.",

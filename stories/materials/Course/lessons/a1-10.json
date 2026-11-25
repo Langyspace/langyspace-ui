@@ -189,7 +189,7 @@
       "kind": "questions",
       "title": "Place your order",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -255,8 +255,49 @@
       "kind": "activity",
       "title": "Check your order",
       "instruction": "Order some food, then check what arrives",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Order simply and politely",
+      "instruction": "Watch the shorter order, then order something you would like",
+      "minutes": 4,
+      "video": {
+        "videoId": "6kFPbviccj4",
+        "startSeconds": 94,
+        "endSeconds": 114,
+        "title": "myClass scenario — ordering food — British Council Malaysia",
+        "credit": "British Council Malaysia"
+      },
+      "items": [
+        {
+          "id": "a1-10.video102.q1",
+          "prompt": "What sauce does the customer not want?",
+          "hint": "Listen for no followed by the sauce",
+          "answer": "The customer doesn’t want ketchup"
+        },
+        {
+          "id": "a1-10.video102.q2",
+          "prompt": "Will the customer eat there or take the food away?",
+          "hint": "Listen to the answer after eating in",
+          "answer": "The customer will take the food away"
+        },
+        {
+          "id": "a1-10.video102.q3",
+          "prompt": "Can the customer pay by card?",
+          "hint": "Listen to the last payment question",
+          "answer": "Yes, the customer can pay by card"
+        },
+        {
+          "id": "a1-10.video102.q4",
+          "prompt": "What would you order at a café?",
+          "hint": "Use Can I have and one useful detail",
+          "answer": "Example: Can I have a coffee with milk to take away, please?"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -297,7 +338,7 @@
       "kind": "activity",
       "title": "Order for your friend",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

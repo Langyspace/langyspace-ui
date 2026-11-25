@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "What I need is a quiet room",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Ask for a quieter room",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Reach a workable solution",
       "instruction": "Explain the problem and negotiate a solution that helps",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Ask for the solution you actually need",
+      "instruction": "Watch the complaint, then negotiate a proportionate solution",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 656,
+        "endSeconds": 719,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-10.video102.q1",
+          "prompt": "What evidence does the guest give about the room?",
+          "hint": "Listen for two cleanliness details",
+          "answer": "There is dust and a hair on the pillow"
+        },
+        {
+          "id": "b2-10.video102.q2",
+          "prompt": "What remedy does the receptionist offer?",
+          "hint": "Listen for complimentary and double-check",
+          "answer": "The receptionist offers a room upgrade and an extra housekeeping check"
+        },
+        {
+          "id": "b2-10.video102.q3",
+          "prompt": "When can the guest move?",
+          "hint": "Listen to the final practical question",
+          "answer": "The guest can move as soon as they are ready"
+        },
+        {
+          "id": "b2-10.video102.q4",
+          "prompt": "The problem is noise, not room size. What would you ask for?",
+          "hint": "Use What I need is and specify the outcome",
+          "answer": "Example: What I need is a quiet room. An upgrade won’t help if it’s beside the same noisy lift"
+        }
+      ]
     },
     {
       "id": "s_listening",

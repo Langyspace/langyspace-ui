@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "We needn’t have paid in advance",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Explain an unnecessary cost",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Check what was included",
       "instruction": "Use the booking details to explain the extra charge",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Check what was already paid",
+      "instruction": "Watch the checkout, then explain an unnecessary duplicate payment",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 768,
+        "endSeconds": 788,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-05.video102.q1",
+          "prompt": "What has already been paid?",
+          "hint": "Listen before the receptionist mentions extras",
+          "answer": "The room and tax have already been paid"
+        },
+        {
+          "id": "b2-05.video102.q2",
+          "prompt": "What is the new bill for?",
+          "hint": "Listen for just",
+          "answer": "The new bill is just for extras"
+        },
+        {
+          "id": "b2-05.video102.q3",
+          "prompt": "How does the guest choose to pay those extras?",
+          "hint": "Listen to the final request",
+          "answer": "The guest asks to put them on a credit card"
+        },
+        {
+          "id": "b2-05.video102.q4",
+          "prompt": "Imagine you paid for the room again by mistake. Ask for a correction",
+          "hint": "Use needn’t have and identify only the duplicate amount",
+          "answer": "Example: I needn’t have paid for the room again. Could you refund that duplicate payment and keep the extras separate?"
+        }
+      ]
     },
     {
       "id": "s_listening",

@@ -247,7 +247,7 @@
       "kind": "questions",
       "title": "Your neighbourhood, then and now",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -313,8 +313,49 @@
       "kind": "activity",
       "title": "Show me your old neighbourhood",
       "instruction": "Show me what has changed and ask about my neighbourhood",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A place from the past",
+      "instruction": "Watch Bob talk about Spain, then compare a place before and now",
+      "minutes": 4,
+      "video": {
+        "videoId": "BB7PJl3souA",
+        "startSeconds": 106,
+        "endSeconds": 142,
+        "title": "Keeping a conversation going — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b1-02.video102.q1",
+          "prompt": "Where is Noelia from?",
+          "hint": "Listen to the city she names",
+          "answer": "She’s from Santander"
+        },
+        {
+          "id": "b1-02.video102.q2",
+          "prompt": "What did Bob use to have in Spain?",
+          "hint": "Listen after I used to live in Spain",
+          "answer": "He used to have a small bar on the Costa Brava"
+        },
+        {
+          "id": "b1-02.video102.q3",
+          "prompt": "How does Noelia keep the conversation going?",
+          "hint": "Listen to the question about language",
+          "answer": "She asks whether he speaks Spanish"
+        },
+        {
+          "id": "b1-02.video102.q4",
+          "prompt": "Describe one change in your neighbourhood and ask a follow-up",
+          "hint": "Use used to and a present contrast",
+          "answer": "Example: There used to be a cinema here, but now it’s a supermarket. Has your street changed too?"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -355,7 +396,7 @@
       "kind": "activity",
       "title": "Explain the newly confirmed change",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Your turn"
     },
     {

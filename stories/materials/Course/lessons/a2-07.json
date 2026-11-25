@@ -234,7 +234,7 @@
       "kind": "activity",
       "title": "Check the house rules",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -276,8 +276,49 @@
       "kind": "activity",
       "title": "Plan it within the rules",
       "instruction": "Ask about the rules and plan an activity",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Phones away for a focused meeting",
+      "instruction": "Watch the meeting rule, then agree on a rule for a shared space",
+      "minutes": 4,
+      "video": {
+        "videoId": "dH7LF_bbHu0",
+        "startSeconds": 45,
+        "endSeconds": 66,
+        "title": "Making suggestions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-07.video102.q1",
+          "prompt": "What do they decide to turn off?",
+          "hint": "Listen to the first instruction",
+          "answer": "They decide to turn their phones off"
+        },
+        {
+          "id": "a2-07.video102.q2",
+          "prompt": "Where does the phone go?",
+          "hint": "Listen to the reply about the bag",
+          "answer": "It goes in a bag"
+        },
+        {
+          "id": "a2-07.video102.q3",
+          "prompt": "How much time do they have?",
+          "hint": "Listen for the length of the meeting",
+          "answer": "They have half an hour"
+        },
+        {
+          "id": "a2-07.video102.q4",
+          "prompt": "What rule would help in a shared study room?",
+          "hint": "Use have to or can’t and explain why",
+          "answer": "Example: We have to use headphones so other people can concentrate"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -318,7 +359,7 @@
       "kind": "activity",
       "title": "Tell your guests what changed",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

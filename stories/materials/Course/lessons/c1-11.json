@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The sender’s need",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Message A · simulated source",
       "subject": "A quick reply",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Check your interpretation",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Help them understand each other",
       "instruction": "Explain both views and check that I understood them correctly",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Same words, a different message",
+      "instruction": "Watch the pace and pitch examples, then clarify a possible misunderstanding",
+      "minutes": 4,
+      "video": {
+        "videoId": "eIho2S0ZahI",
+        "startSeconds": 381,
+        "endSeconds": 416,
+        "title": "Julian Treasure — How to speak so that people want to listen — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-11.video102.q1",
+          "prompt": "How does the speaker use a slower pace?",
+          "hint": "Listen to the demonstration after the fast delivery",
+          "answer": "He slows down to emphasise a point"
+        },
+        {
+          "id": "c1-11.video102.q2",
+          "prompt": "What sentence does he repeat with a different pitch?",
+          "hint": "Listen to the question about a missing object",
+          "answer": "He repeats, “Where did you leave my keys?”"
+        },
+        {
+          "id": "c1-11.video102.q3",
+          "prompt": "Why might a listener understand the second delivery differently?",
+          "hint": "Consider possible urgency without claiming a universal rule",
+          "answer": "Example: The higher pitch may suggest more urgency or frustration, depending on the context"
+        },
+        {
+          "id": "c1-11.video102.q4",
+          "prompt": "Clarify your meaning after a colleague thinks you were blaming them",
+          "hint": "Reformulate and check with a concrete example",
+          "answer": "Example: To put it another way, I’m asking where to look, not suggesting it’s your fault. Would checking the meeting room be a good first step?"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "Quick acknowledgement, not unchecked certainty",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position",
       "audioText": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position.",

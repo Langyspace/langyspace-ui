@@ -176,7 +176,7 @@
       "kind": "dialogue",
       "title": "Who’s this?",
       "instruction": "Listen as Ana introduces Leo and her parents",
-      "minutes": 6,
+      "minutes": 5,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -248,7 +248,7 @@
       "kind": "questions",
       "title": "Someone in your life",
       "instruction": "Choose a real person or use Ana’s family. Ask me about someone too",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -308,7 +308,7 @@
       "kind": "dialogue",
       "title": "Meet Bia",
       "instruction": "Say the missing words, then introduce Bia",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Guided conversation",
       "lines": [
         {
@@ -500,11 +500,52 @@
       "teacherNotes": "The learner speaks as Ana. Choose Leo, Bia and the parents in any order; the facts are always visible. Ask for an introduction and one detail. The optional model combines the same facts, without a secret goal or guessing. No new personal information is required."
     },
     {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Who sent the game?",
+      "instruction": "Watch Sam talk about his brother, then introduce someone in your family",
+      "minutes": 4,
+      "video": {
+        "videoId": "4FgU5qqw8-w",
+        "startSeconds": 27,
+        "endSeconds": 54,
+        "title": "Talking about your family — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a1-03.video102.q1",
+          "prompt": "Who sent Sam the game?",
+          "hint": "Listen for a family word",
+          "answer": "His brother sent him the game"
+        },
+        {
+          "id": "a1-03.video102.q2",
+          "prompt": "Does that brother live in New York?",
+          "hint": "Listen for the city after the United States",
+          "answer": "Yes, he lives in New York"
+        },
+        {
+          "id": "a1-03.video102.q3",
+          "prompt": "Is Sam talking about Charlie?",
+          "hint": "Listen when Jack guesses the name",
+          "answer": "No, he’s talking about his other brother, Rob"
+        },
+        {
+          "id": "a1-03.video102.q4",
+          "prompt": "How can you introduce a relative or a friend?",
+          "hint": "Say the relationship and one fact",
+          "answer": "Example: This is my sister. She’s a student"
+        }
+      ]
+    },
+    {
       "id": "s10",
       "kind": "listening",
       "title": "A photo from Kim",
       "instruction": "Look at Kim’s photo, listen and find out who Jin is",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "This is my sister, Jin. She’s a doctor. She’s from Korea. And this is my friend Tom. He’s a young cook",
       "items": [

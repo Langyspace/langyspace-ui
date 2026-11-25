@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The event record",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Operations timeline · simulated source",
       "subject": "Opening and sound check",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Judge what was foreseeable",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Run a useful review",
       "instruction": "Review what happened and agree on one change for next time",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A failed project, a useful decision",
+      "instruction": "Watch this 2016 example, then review the outcome without claiming hindsight was a warning",
+      "minutes": 4,
+      "video": {
+        "videoId": "2t13Rq4oc7A",
+        "startSeconds": 176,
+        "endSeconds": 221,
+        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-02.video102.q1",
+          "prompt": "Which project did the team stop?",
+          "hint": "Listen to the type of farming",
+          "answer": "They stopped an automated vertical-farming project"
+        },
+        {
+          "id": "c1-02.video102.q2",
+          "prompt": "What limitation does Teller give as the reason?",
+          "hint": "Distinguish progress from the unresolved obstacle",
+          "answer": "They couldn’t grow staple crops such as grains and rice that way"
+        },
+        {
+          "id": "c1-02.video102.q3",
+          "prompt": "Does this excerpt prove they had been warned about that limitation earlier?",
+          "hint": "Separate what they discovered from what was known in advance",
+          "answer": "No. It reports the limitation but gives no evidence of an earlier warning"
+        },
+        {
+          "id": "c1-02.video102.q4",
+          "prompt": "Review an earlier test they could have prioritised without claiming it guarantees success",
+          "hint": "Use Had we known and make the uncertainty explicit",
+          "answer": "Example: Had we known the staple crops wouldn’t grow, we might have tested that constraint before expanding the project"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "A warning existed, but who owned it?",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I found the missing message record. A warning that the sound test was incomplete was sent before the planned opening time, but it went to a shared group without a named person responsible for responding. There’s no acknowledgement in the record. That makes a communication failure more plausible than simply saying nobody noticed a problem. It still doesn’t establish whether enough testing time had been scheduled, or whether a recipient read the warning and chose not to act. Could you revise the review to reflect that distinction? I’d like one preventive action linked to what we can actually establish, rather than a general instruction to be more careful. If you use “Had we known”, please make clear whose knowledge you mean",
       "audioText": "Hi, Ana. I found the missing message record. A warning that the sound test was incomplete was sent before the planned opening time, but it went to a shared group without a named person responsible for responding. There’s no acknowledgement in the record. That makes a communication failure more plausible than simply saying nobody noticed a problem. It still doesn’t establish whether enough testing time had been scheduled, or whether a recipient read the warning and chose not to act. Could you revise the review to reflect that distinction? I’d like one preventive action linked to what we can actually establish, rather than a general instruction to be more careful. If you use “Had we known”, please make clear whose knowledge you mean.",

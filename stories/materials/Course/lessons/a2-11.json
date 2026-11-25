@@ -234,7 +234,7 @@
       "kind": "questions",
       "title": "Make a backup plan",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -300,8 +300,49 @@
       "kind": "activity",
       "title": "Make a plan B",
       "instruction": "Make a plan and agree what to do if it changes",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Make a backup travel plan",
+      "instruction": "Watch the cancellation problem, then suggest what to do if plans change",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 202,
+        "endSeconds": 233,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a2-11.video102.q1",
+          "prompt": "What causes the cancellation?",
+          "hint": "Listen for due to",
+          "answer": "Bad weather causes the cancellation"
+        },
+        {
+          "id": "a2-11.video102.q2",
+          "prompt": "When does the alternative flight leave?",
+          "hint": "Listen to the new departure time",
+          "answer": "It leaves at seven the next morning"
+        },
+        {
+          "id": "a2-11.video102.q3",
+          "prompt": "Why does that option fit the traveller’s deadline?",
+          "hint": "Compare the arrival with tomorrow afternoon",
+          "answer": "It arrives at ten, before the traveller needs to be in London"
+        },
+        {
+          "id": "a2-11.video102.q4",
+          "prompt": "What will you do if bad weather changes your day out?",
+          "hint": "Use If and a practical alternative",
+          "answer": "Example: If it rains, we’ll visit the museum instead"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -342,7 +383,7 @@
       "kind": "activity",
       "title": "Confirm the weather and transport plan",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

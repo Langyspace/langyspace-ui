@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "I need to get the screen fixed",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Arrange a repair",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Get the service sorted",
       "instruction": "Ask for the repair and confirm when it will be ready",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Is the repair arranged or finished?",
+      "instruction": "Watch the hotel offer help, then negotiate a service deadline",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 581,
+        "endSeconds": 625,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-06.video102.q1",
+          "prompt": "What does the receptionist promise about the heating?",
+          "hint": "Listen for I’ll send",
+          "answer": "The receptionist promises to send somebody to look at it"
+        },
+        {
+          "id": "b2-06.video102.q2",
+          "prompt": "Does the excerpt show the heating being repaired?",
+          "hint": "Distinguish the promise from a completed repair",
+          "answer": "No. It shows an offer to investigate, not a completed repair"
+        },
+        {
+          "id": "b2-06.video102.q3",
+          "prompt": "Which problem can the receptionist address immediately?",
+          "hint": "Listen to right now",
+          "answer": "The receptionist can make a new key immediately"
+        },
+        {
+          "id": "b2-06.video102.q4",
+          "prompt": "Arrange a phone-screen repair and check the deadline",
+          "hint": "Use get it fixed and ask for a realistic collection time",
+          "answer": "Example: I need to get the screen fixed. Can you confirm whether it will be ready by Thursday?"
+        }
+      ]
     },
     {
       "id": "s_listening",

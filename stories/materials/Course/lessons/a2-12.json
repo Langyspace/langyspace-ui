@@ -234,7 +234,7 @@
       "kind": "questions",
       "title": "Suggest another time",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -300,8 +300,49 @@
       "kind": "activity",
       "title": "Plan the whole evening",
       "instruction": "Invite me, agree on a place and confirm the plan",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Turn a suggestion into an agreement",
+      "instruction": "Watch them agree on help and next steps, then agree on a social plan",
+      "minutes": 4,
+      "video": {
+        "videoId": "dH7LF_bbHu0",
+        "startSeconds": 79,
+        "endSeconds": 118,
+        "title": "Making suggestions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-12.video102.q1",
+          "prompt": "Who will they ask for help?",
+          "hint": "Listen for the name after ask",
+          "answer": "They’ll ask Vanya for help"
+        },
+        {
+          "id": "a2-12.video102.q2",
+          "prompt": "What do they suggest doing together?",
+          "hint": "Listen for Shall we",
+          "answer": "They suggest presenting the plan at the next team meeting together"
+        },
+        {
+          "id": "a2-12.video102.q3",
+          "prompt": "Who needs to see the plan first?",
+          "hint": "Listen to the last request",
+          "answer": "Paul needs to see it first"
+        },
+        {
+          "id": "a2-12.video102.q4",
+          "prompt": "Agree on a Friday plan and say who will confirm it",
+          "hint": "Suggest a time and make one clear commitment",
+          "answer": "Example: How about Friday at six? I’ll check with Jo and let you know"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -342,7 +383,7 @@
       "kind": "activity",
       "title": "Confirm the complete plan",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

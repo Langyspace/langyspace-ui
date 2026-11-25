@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "She insisted on paying",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Clarify what was agreed",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Give me the accurate version",
       "instruction": "Tell me what they said without changing what they meant",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Report the agreement accurately",
+      "instruction": "Watch the negotiation, then report what Paul does and does not agree to",
+      "minutes": 4,
+      "video": {
+        "videoId": "hO98Bjn87KM",
+        "startSeconds": 79,
+        "endSeconds": 135,
+        "title": "Asking a favour — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b2-07.video102.q1",
+          "prompt": "Why can’t Paul take on the work that afternoon?",
+          "hint": "Listen to his existing deadline",
+          "answer": "He’s finishing a social media campaign due that day"
+        },
+        {
+          "id": "b2-07.video102.q2",
+          "prompt": "Why does he refuse to work late that night?",
+          "hint": "Listen to the plan involving his niece",
+          "answer": "He’s taking his niece to the cinema for her birthday"
+        },
+        {
+          "id": "b2-07.video102.q3",
+          "prompt": "What time do they finally agree on?",
+          "hint": "Follow the five, seven and six o’clock negotiation",
+          "answer": "They agree that he’ll come in at six the next morning"
+        },
+        {
+          "id": "b2-07.video102.q4",
+          "prompt": "Report his final commitment without calling the earlier refusal an agreement",
+          "hint": "Use agreed and keep the timing accurate",
+          "answer": "Example: Paul refused to work late, but he agreed to come in at six the next morning"
+        }
+      ]
     },
     {
       "id": "s_listening",

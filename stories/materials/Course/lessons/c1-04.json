@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The need for quiet",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Home-working perspective · simulated source",
       "subject": "Predictability, not silence at all costs",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Raise a difficult issue",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Agree on a boundary",
       "instruction": "Raise the issue and try to agree on a workable boundary",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Set a boundary and keep a way forward",
+      "instruction": "Watch Paul protect his existing commitments, then negotiate your own boundary",
+      "minutes": 4,
+      "video": {
+        "videoId": "hO98Bjn87KM",
+        "startSeconds": 79,
+        "endSeconds": 135,
+        "title": "Asking a favour — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-04.video102.q1",
+          "prompt": "Which two existing commitments does Paul protect?",
+          "hint": "Listen to his reasons for refusing the afternoon and evening",
+          "answer": "He protects a work deadline and his niece’s birthday cinema trip"
+        },
+        {
+          "id": "c1-04.video102.q2",
+          "prompt": "What makes his refusal more informative than a bare no?",
+          "hint": "Notice the reasons and the conditional phrase",
+          "answer": "He explains the constraints and says he would help if he could"
+        },
+        {
+          "id": "c1-04.video102.q3",
+          "prompt": "What concrete arrangement ends the negotiation?",
+          "hint": "Listen to the final time and compensation discussion",
+          "answer": "They agree on six the next morning after discussing an extra day’s holiday"
+        },
+        {
+          "id": "c1-04.video102.q4",
+          "prompt": "Respond to a late request using I’d rather and offer one viable option",
+          "hint": "Protect a need while recognising the other person’s problem",
+          "answer": "Example: I’d rather we didn’t change tonight’s plans at this stage. I can review the work first thing tomorrow"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "A conditional agreement",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I can make the regular family call before ten thirty, using the smaller room and headphones. I’m willing to keep the shared room quiet after nine, provided we allow a brief exception for an urgent call and I message you if that happens. I’m not asking for unlimited late calls; I just don’t want us to treat an emergency as a broken routine agreement. Could you tell me whether that protects the concentration time you need? If the sound still carries, we can review the room arrangement rather than turn it into a judgement about either person’s consideration for others",
       "audioText": "Hi, Ana. I can make the regular family call before ten thirty, using the smaller room and headphones. I’m willing to keep the shared room quiet after nine, provided we allow a brief exception for an urgent call and I message you if that happens. I’m not asking for unlimited late calls; I just don’t want us to treat an emergency as a broken routine agreement. Could you tell me whether that protects the concentration time you need? If the sound still carries, we can review the room arrangement rather than turn it into a judgement about either person’s consideration for others.",

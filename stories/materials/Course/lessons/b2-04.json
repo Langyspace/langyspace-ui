@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "Someone must have been here",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Separate clues from guesses",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Find the most plausible explanation",
       "instruction": "Give an explanation and say what evidence would confirm it",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Which explanation does the evidence support?",
+      "instruction": "Watch the guesses about Sam, then evaluate possible explanations for a past event",
+      "minutes": 4,
+      "video": {
+        "videoId": "u6hEQdGGMuc",
+        "startSeconds": 26,
+        "endSeconds": 48,
+        "title": "Modal verbs of deduction — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-04.video102.q1",
+          "prompt": "What do they actually know about Sam?",
+          "hint": "Separate the observation from the guesses",
+          "answer": "They know she is late for work"
+        },
+        {
+          "id": "b2-04.video102.q2",
+          "prompt": "Which three possible explanations are offered?",
+          "hint": "Listen for could, might and may",
+          "answer": "Her car could be broken, she might be asleep, or there may be traffic"
+        },
+        {
+          "id": "b2-04.video102.q3",
+          "prompt": "Is any one explanation confirmed?",
+          "hint": "Notice whether the speaker supplies proof",
+          "answer": "No. The speaker presents them as possibilities"
+        },
+        {
+          "id": "b2-04.video102.q4",
+          "prompt": "Sam later says she arrived at noon. Give two possible earlier explanations",
+          "hint": "Use might have and say what you would check",
+          "answer": "Example: She might have missed her bus, or her car might have broken down. I’d ask what happened"
+        }
+      ]
     },
     {
       "id": "s_listening",

@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The initial account",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Traveller’s account · simulated source",
       "subject": "Noticed missing on the train",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Choose when to reveal a detail",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Tell a story worth following",
       "instruction": "Tell the story so I can follow why the ending matters",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Let the listener feel the turning point",
+      "instruction": "Watch the contrast between a flat story and a tense one, then reshape an opening",
+      "minutes": 4,
+      "video": {
+        "videoId": "m04lQ5BUAn0",
+        "startSeconds": 474,
+        "endSeconds": 565,
+        "title": "How to tell a story in English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "c1-05.video102.q1",
+          "prompt": "Why does the speaker reject the short monster story?",
+          "hint": "Look at how easily the goal is reached",
+          "answer": "The problem is solved immediately, so there is little tension"
+        },
+        {
+          "id": "c1-05.video102.q2",
+          "prompt": "Which details make the mountain journey difficult before the storm?",
+          "hint": "Listen for physical conditions and what the traveller carries",
+          "answer": "The thin air and heavy pack make it difficult before the weather changes"
+        },
+        {
+          "id": "c1-05.video102.q3",
+          "prompt": "What information is withheld after the storm arrives?",
+          "hint": "Notice the questions left open",
+          "answer": "The excerpt leaves open whether the traveller crossed the pass or was hurt"
+        },
+        {
+          "id": "c1-05.video102.q4",
+          "prompt": "Recast the turning point using an emphatic opening",
+          "hint": "Use Little did I know without inventing the story’s ending",
+          "answer": "Example: Little did I know that a storm was about to arrive just as I approached the top"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "The photograph changes the timeline",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want",
       "audioText": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want.",

@@ -126,7 +126,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "Dead phone, no charger",
@@ -316,7 +316,7 @@
       "kind": "activity",
       "title": "Reconstruct the evening",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -443,8 +443,49 @@
       "kind": "activity",
       "title": "Explain how the trip unfolded",
       "instruction": "Use the timeline to tell me the story and explain the turning point",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "The moment the trip changed",
+      "instruction": "Watch the mountain story, then retell the background and turning point",
+      "minutes": 4,
+      "video": {
+        "videoId": "m04lQ5BUAn0",
+        "startSeconds": 518,
+        "endSeconds": 551,
+        "title": "How to tell a story in English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "b2-01.video102.q1",
+          "prompt": "What was the traveller trying to cross?",
+          "hint": "Listen for the height and the landform",
+          "answer": "The traveller was trying to cross a mountain pass almost four thousand metres high"
+        },
+        {
+          "id": "b2-01.video102.q2",
+          "prompt": "Why was progress already difficult before the storm?",
+          "hint": "Listen for the air and the equipment",
+          "answer": "The air was thin and the traveller was carrying a heavy pack"
+        },
+        {
+          "id": "b2-01.video102.q3",
+          "prompt": "What changed just as the traveller got near the top?",
+          "hint": "Listen to the interruption in the story",
+          "answer": "A storm arrived, with lightning all around"
+        },
+        {
+          "id": "b2-01.video102.q4",
+          "prompt": "Retell the lead-up and turning point in two or three sentences",
+          "hint": "Use background, an earlier action and the sudden event",
+          "answer": "Example: The traveller had been climbing with a heavy pack. As they approached the top, a storm hit"
+        }
+      ]
     },
     {
       "id": "s_listening",

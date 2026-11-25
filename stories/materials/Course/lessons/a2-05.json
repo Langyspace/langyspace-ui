@@ -234,7 +234,7 @@
       "kind": "questions",
       "title": "Offer some help",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -300,8 +300,49 @@
       "kind": "activity",
       "title": "Help with the move",
       "instruction": "Offer some help and agree who will do what",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "I’ll show you",
+      "instruction": "Watch Vanya offer help, then offer help in a new situation",
+      "minutes": 4,
+      "video": {
+        "videoId": "LLvGYEjutWo",
+        "startSeconds": 49,
+        "endSeconds": 89,
+        "title": "Giving instructions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-05.video102.q1",
+          "prompt": "What problem does Emir have?",
+          "hint": "Listen to his question about the machine",
+          "answer": "He doesn’t know how to use the coffee machine"
+        },
+        {
+          "id": "a2-05.video102.q2",
+          "prompt": "What does Vanya offer to do?",
+          "hint": "Listen for I’ll",
+          "answer": "She offers to show him how to use it"
+        },
+        {
+          "id": "a2-05.video102.q3",
+          "prompt": "What is the first step?",
+          "hint": "Follow the first instruction",
+          "answer": "He has to put the correct amount of coffee in the holder"
+        },
+        {
+          "id": "a2-05.video102.q4",
+          "prompt": "Your teacher is carrying several bags. What do you offer?",
+          "hint": "Use I’ll to offer immediate help",
+          "answer": "Example: I’ll carry those bags for you"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -342,7 +383,7 @@
       "kind": "activity",
       "title": "Agree on the help",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

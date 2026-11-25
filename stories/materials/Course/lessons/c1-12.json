@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "The operational case",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Venue manager · simulated source",
       "subject": "A digital-first proposal",
@@ -321,7 +321,7 @@
       "kind": "activity",
       "title": "Consider who may be excluded",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -363,15 +363,56 @@
       "kind": "activity",
       "title": "Reach a balanced recommendation",
       "instruction": "Compare the views and agree on a recommendation with conditions",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Cashless payments: who receives the tip?",
+      "instruction": "Watch an archived report about pooled tips, then recommend a fair policy with conditions",
+      "minutes": 4,
+      "video": {
+        "videoId": "tOxD9PEH8DU",
+        "startSeconds": 205,
+        "endSeconds": 267,
+        "title": "Where do your tips go? — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "c1-12.video102.q1",
+          "prompt": "What payment change does the interviewee describe?",
+          "hint": "Listen to how more tips are being paid",
+          "answer": "More tips and service charges are being paid by card"
+        },
+        {
+          "id": "c1-12.video102.q2",
+          "prompt": "What is the intended function of pooling those payments?",
+          "hint": "Listen to the explanation of the shared arrangement",
+          "answer": "The stated aim is to collect the tips and distribute them fairly"
+        },
+        {
+          "id": "c1-12.video102.q3",
+          "prompt": "Does giving a payment to one worker guarantee that worker receives it all?",
+          "hint": "Listen to the explanation after the interview",
+          "answer": "No. The payment may be distributed across the business under its system"
+        },
+        {
+          "id": "c1-12.video102.q4",
+          "prompt": "Recommend a tipping policy that considers both customers and workers",
+          "hint": "Include transparency, an exception and a way to review it",
+          "answer": "Example: The business should publish how tips are divided, offer a cash option where feasible and let staff challenge an unfair distribution"
+        }
+      ]
     },
     {
       "id": "s_listening",
       "kind": "listening",
       "title": "An ordinary user loses digital access",
       "instruction": "Listen for the new information and decide how to respond",
-      "minutes": 5,
+      "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I wanted to add an experience to the payment-policy discussion. I normally pay by card, but last week my phone battery died while I was out. At the next place, the payment connection also stopped working for a while. I had some cash with me, but their digital-only process didn’t allow it, so I couldn’t complete the purchase then. I’m not saying that one incident proves digital payment is always unreliable. It does show that temporary loss of access can affect people who usually use it comfortably. Could your recommendation say what happens in that situation, including how staff explain the fallback without embarrassing the customer? I’d also want to know whether a transaction fee changes between the normal process and the fallback. A policy can aim for convenience while still making a specific plan for the moment the convenient route fails",
       "audioText": "Hi, Ana. I wanted to add an experience to the payment-policy discussion. I normally pay by card, but last week my phone battery died while I was out. At the next place, the payment connection also stopped working for a while. I had some cash with me, but their digital-only process didn’t allow it, so I couldn’t complete the purchase then. I’m not saying that one incident proves digital payment is always unreliable. It does show that temporary loss of access can affect people who usually use it comfortably. Could your recommendation say what happens in that situation, including how staff explain the fallback without embarrassing the customer? I’d also want to know whether a transaction fee changes between the normal process and the fallback. A policy can aim for convenience while still making a specific plan for the moment the convenient route fails.",

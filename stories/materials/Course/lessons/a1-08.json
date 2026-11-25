@@ -189,7 +189,7 @@
       "kind": "questions",
       "title": "Explain a room problem",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -255,8 +255,49 @@
       "kind": "activity",
       "title": "Can you help me?",
       "instruction": "Tell reception the problem and ask for help",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "There’s a problem with my room",
+      "instruction": "Watch the guest ask for help, then explain a simple hotel problem",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 581,
+        "endSeconds": 625,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a1-08.video102.q1",
+          "prompt": "Is the room too hot or too cold?",
+          "hint": "Listen to the heating problem",
+          "answer": "The room is too hot"
+        },
+        {
+          "id": "a1-08.video102.q2",
+          "prompt": "What else doesn’t always work?",
+          "hint": "Listen for the item used to open the door",
+          "answer": "The key doesn’t always work"
+        },
+        {
+          "id": "a1-08.video102.q3",
+          "prompt": "What does the receptionist offer to make?",
+          "hint": "Listen to the last solution",
+          "answer": "The receptionist offers to make a new key"
+        },
+        {
+          "id": "a1-08.video102.q4",
+          "prompt": "Your room is too cold. What can you say?",
+          "hint": "Say the problem and ask for help",
+          "answer": "Example: My room is too cold. Can you help me, please?"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -297,7 +338,7 @@
       "kind": "activity",
       "title": "Confirm the new time",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

@@ -234,7 +234,7 @@
       "kind": "questions",
       "title": "Tell a weekend story",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -300,8 +300,49 @@
       "kind": "activity",
       "title": "Build your weekend story",
       "instruction": "Use three pictures to tell me about a weekend",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A story with an unexpected ending",
+      "instruction": "Watch Bob tell his story, then react to someone else’s news",
+      "minutes": 4,
+      "video": {
+        "videoId": "_3uWwTQJ1Co",
+        "startSeconds": 59,
+        "endSeconds": 118,
+        "title": "Showing interest — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-02.video102.q1",
+          "prompt": "What happened to Bob in Canada?",
+          "hint": "Listen for the accident on the ice",
+          "answer": "He fell on the ice and broke his leg"
+        },
+        {
+          "id": "a2-02.video102.q2",
+          "prompt": "Where did he meet his wife?",
+          "hint": "Listen to the positive turn in the story",
+          "answer": "He met her in the hospital"
+        },
+        {
+          "id": "a2-02.video102.q3",
+          "prompt": "How does Noelia react to the good news?",
+          "hint": "Listen after Bob describes meeting his wife",
+          "answer": "She says, “That’s brilliant!”"
+        },
+        {
+          "id": "a2-02.video102.q4",
+          "prompt": "Tell your teacher one good thing about your weekend",
+          "hint": "Use the past simple and add a detail",
+          "answer": "Example: I saw a friend on Saturday. We had lunch together"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -342,7 +383,7 @@
       "kind": "activity",
       "title": "Ask about the change",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

@@ -234,7 +234,7 @@
       "kind": "activity",
       "title": "Compare two places to stay",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -276,8 +276,49 @@
       "kind": "activity",
       "title": "Choose our place",
       "instruction": "Compare the two places and tell me which works better",
-      "minutes": 7,
+      "minutes": 5,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Which home would suit you?",
+      "instruction": "Watch the comparison of house types, then explain your priorities",
+      "minutes": 4,
+      "video": {
+        "videoId": "kzkEGEjkb30",
+        "startSeconds": 79,
+        "endSeconds": 109,
+        "title": "Talking about your home — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a2-10.video102.q1",
+          "prompt": "Which type of house stands by itself?",
+          "hint": "Listen for the type with no house joined to it",
+          "answer": "A detached house stands by itself"
+        },
+        {
+          "id": "a2-10.video102.q2",
+          "prompt": "Which type is usually larger and more expensive?",
+          "hint": "Listen to the first comparison",
+          "answer": "A detached house is usually larger and more expensive"
+        },
+        {
+          "id": "a2-10.video102.q3",
+          "prompt": "Which type is usually smaller and cheaper?",
+          "hint": "Listen to the second comparison",
+          "answer": "A terraced house is usually smaller and cheaper"
+        },
+        {
+          "id": "a2-10.video102.q4",
+          "prompt": "Would you choose more space or a lower price? Explain",
+          "hint": "Compare the benefits and say what matters to you",
+          "answer": "Example: I’d choose a smaller home because it’s cheaper and easier to look after"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -318,7 +359,7 @@
       "kind": "activity",
       "title": "Reconsider before booking",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "If I hadn’t gone to Toronto",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Connect a past choice to today",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Two possible paths",
       "instruction": "Explain how a past choice affects the present",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A past choice, a consequence now",
+      "instruction": "Watch the breakfast example, then connect a past decision to the present",
+      "minutes": 4,
+      "video": {
+        "videoId": "K74ym19xdYE",
+        "startSeconds": 6,
+        "endSeconds": 52,
+        "title": "Mixed conditionals — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-03.video102.q1",
+          "prompt": "Did the speaker in the example eat breakfast?",
+          "hint": "Listen when Georgina explains what is true",
+          "answer": "No. The person didn’t eat breakfast"
+        },
+        {
+          "id": "b2-03.video102.q2",
+          "prompt": "What is true about that person now?",
+          "hint": "Separate the imagined result from the real one",
+          "answer": "The person is hungry now"
+        },
+        {
+          "id": "b2-03.video102.q3",
+          "prompt": "Why does the example combine two different conditional forms?",
+          "hint": "Notice the time of the cause and the result",
+          "answer": "The imagined cause is in the past, but the imagined result is in the present"
+        },
+        {
+          "id": "b2-03.video102.q4",
+          "prompt": "Imagine a past travel choice had been different. What might be different now?",
+          "hint": "Make the hypothesis clear and avoid certainty without evidence",
+          "answer": "Example: If I hadn’t moved abroad, I might still be living near my family"
+        }
+      ]
     },
     {
       "id": "s_listening",

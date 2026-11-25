@@ -234,7 +234,7 @@
       "kind": "questions",
       "title": "Explain an interruption",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
@@ -300,7 +300,7 @@
       "kind": "activity",
       "title": "What happened first?",
       "instruction": "Order the pictures using Ana’s story",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Speaking task"
     },
     {
@@ -308,8 +308,49 @@
       "kind": "activity",
       "title": "Explain the delay",
       "instruction": "Use the three time anchors to explain what happened",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your story"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "When travel plans go wrong",
+      "instruction": "Watch two travel problems, then explain a delay politely",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 182,
+        "endSeconds": 232,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a2-03.video102.q1",
+          "prompt": "How long is the first delay?",
+          "hint": "Listen for at least",
+          "answer": "The flight is delayed by at least two hours"
+        },
+        {
+          "id": "a2-03.video102.q2",
+          "prompt": "Why is the flight in the next example cancelled?",
+          "hint": "Listen to the employee’s explanation",
+          "answer": "It’s cancelled because of bad weather"
+        },
+        {
+          "id": "a2-03.video102.q3",
+          "prompt": "How does the traveller avoid blaming the employee?",
+          "hint": "Listen to the reply after the apology",
+          "answer": "The traveller says it isn’t the employee’s fault"
+        },
+        {
+          "id": "a2-03.video102.q4",
+          "prompt": "You arrived late because your train stopped. What can you say?",
+          "hint": "Apologise, then explain what happened",
+          "answer": "Example: Sorry I’m late. My train stopped and I had to wait"
+        }
+      ]
     },
     {
       "id": "s_listening",
@@ -350,7 +391,7 @@
       "kind": "activity",
       "title": "Update the lunch plan",
       "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 4,
+      "minutes": 3,
       "eyebrow": "Your turn"
     },
     {

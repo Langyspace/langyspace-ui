@@ -116,7 +116,7 @@
       "kind": "source",
       "title": "Read the situation",
       "instruction": "Read for the facts and the different priorities",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Reading",
       "author": "Scenario briefing · fictional",
       "subject": "By Friday I’ll have finished it",
@@ -306,7 +306,7 @@
       "kind": "activity",
       "title": "Check what will be ready",
       "instruction": "Use the case to explain your view and ask a follow-up question",
-      "minutes": 3,
+      "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
@@ -348,8 +348,49 @@
       "kind": "activity",
       "title": "Agree on a realistic deadline",
       "instruction": "Ask about priorities and agree on a realistic deadline",
-      "minutes": 6,
+      "minutes": 4,
       "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What will be finished by the deadline?",
+      "instruction": "Watch the work plan, then make a realistic commitment with one dependency",
+      "minutes": 4,
+      "video": {
+        "videoId": "iISY9FgeYpU",
+        "startSeconds": 54,
+        "endSeconds": 86,
+        "title": "Future perfect or future perfect continuous? — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-02.video102.q1",
+          "prompt": "What does the future perfect focus on here?",
+          "hint": "Listen for completed and a future time",
+          "answer": "It focuses on actions completed before a future time"
+        },
+        {
+          "id": "b2-02.video102.q2",
+          "prompt": "How many people will the speaker have emailed?",
+          "hint": "Look at the to-do-list example",
+          "answer": "He will have emailed seven people"
+        },
+        {
+          "id": "b2-02.video102.q3",
+          "prompt": "What other two tasks will he have completed?",
+          "hint": "Listen after the emails",
+          "answer": "He will have had three meetings and finished a project"
+        },
+        {
+          "id": "b2-02.video102.q4",
+          "prompt": "Promise a result by Friday without hiding a dependency",
+          "hint": "Use will have and explain what you need first",
+          "answer": "Example: I’ll have finished the slides by Friday if I receive the figures on Thursday"
+        }
+      ]
     },
     {
       "id": "s_listening",
