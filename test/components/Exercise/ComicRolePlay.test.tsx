@@ -15,18 +15,26 @@ const context = vi.hoisted(() => ({
 vi.mock('../../../stories/materials/shared/MaterialLearnerContext', () => ({
   useMaterialLearner: () => context.learner,
 }))
-vi.mock('../../../stories/materials/shared/MaterialTeacherContext', () => ({
-  useMaterialTeacher: () => ({
-    name: 'Adriana Nogueira',
-    avatarUrl: '/teacher.webp',
-  }),
-}))
+vi.mock(
+  '../../../stories/materials/shared/MaterialTeacherContext',
+  async () => {
+    const { resolveMaterialTeacherIdentity } =
+      await import('../../../stories/materials/shared/materialTeacherIdentity')
+    return {
+      useMaterialTeacher: () =>
+        resolveMaterialTeacherIdentity({
+          name: 'Adriana Nogueira',
+          avatarUrl: '/teacher.webp',
+        }),
+    }
+  },
+)
 beforeEach(() => {
   context.learner = undefined
 })
 const participants = [
   { id: 'learner', name: 'You' },
-  { id: 'teacher', name: 'Your teacher' },
+  { id: 'teacher', name: 'Teacher' },
 ]
 function Interactive() {
   const [hints, setHints] = useState<string[]>([])
@@ -80,19 +88,19 @@ it('reveals hints and examples in order with keyboard activation, replacing rath
     screen.getByRole('button', { name: 'Show next speaking tip' }),
   )
   expect(
-    screen.getByRole('group', { name: 'Your teacher, turn 2' }),
+    screen.getByRole('group', { name: 'Teacher, turn 2' }),
   ).toHaveTextContent('Pergunte o nome')
   for (let i = 1; i < 8; i++)
     await user.click(screen.getByRole('button', { name: 'Show next example' }))
   expect(
-    screen.getByRole('group', { name: 'Your teacher, turn 8' }),
+    screen.getByRole('group', { name: 'Teacher, turn 8' }),
   ).toHaveTextContent('Bye! See you!')
   await user.click(screen.getByRole('button', { name: 'Hide examples' }))
   expect(screen.getByRole('group', { name: 'You, turn 1' })).toHaveTextContent(
     'Cumprimente',
   )
   expect(
-    screen.getByRole('group', { name: 'Your teacher, turn 2' }),
+    screen.getByRole('group', { name: 'Teacher, turn 2' }),
   ).toHaveTextContent('Pergunte o nome')
 })
 

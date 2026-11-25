@@ -11,9 +11,17 @@ const identity = vi.hoisted(() => ({
   },
   learner: undefined as { firstName: string; avatarUrl: string } | undefined,
 }))
-vi.mock('../../../stories/materials/shared/MaterialTeacherContext', () => ({
-  useMaterialTeacher: () => identity.teacher,
-}))
+vi.mock(
+  '../../../stories/materials/shared/MaterialTeacherContext',
+  async () => {
+    const { resolveMaterialTeacherIdentity } =
+      await import('../../../stories/materials/shared/materialTeacherIdentity')
+    return {
+      useMaterialTeacher: () =>
+        resolveMaterialTeacherIdentity(identity.teacher),
+    }
+  },
+)
 vi.mock('../../../stories/materials/shared/MaterialLearnerContext', () => ({
   useMaterialLearner: () => identity.learner,
 }))

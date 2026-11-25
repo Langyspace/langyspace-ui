@@ -39,10 +39,6 @@ const portraits: Readonly<Record<string, string>> = {
 function DevOralPractice({ turns }: { turns: readonly DevOralTurn[] }) {
   const [step, setStep] = useState(0)
   const teacher = useMaterialTeacher()
-  const teacherName =
-    teacher.name === 'Your teacher'
-      ? 'Teacher'
-      : teacher.name.trim().split(/\s+/u)[0] || 'Teacher'
   const totalSteps = turns.length * 2
   const supportControl = (
     <VocabularyControls
@@ -71,7 +67,7 @@ function DevOralPractice({ turns }: { turns: readonly DevOralTurn[] }) {
             ? [
                 {
                   id: turn.id + '-question',
-                  speaker: teacherName,
+                  speaker: teacher.name,
                   avatarUrl: teacher.avatarUrl,
                   side: 'start' as const,
                   content: turn.question,

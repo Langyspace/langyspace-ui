@@ -10,10 +10,7 @@ export function MaterialQuestions({
   fictionalContact = false,
 }: MaterialQuestionsProps) {
   const teacher = useMaterialTeacher()
-  const speaker = fictionalContact
-    ? 'Kim'
-    : teacher.name.trim().split(/\s+/u)[0] || 'Your teacher'
-  const teacherName = teacher.name === 'Your teacher' ? teacher.name : speaker
+  const speaker = fictionalContact ? 'Kim' : teacher.name
   const [hintedLineIds, setHints] = useState<readonly string[]>([])
   return (
     <MaterialLearningDialogue
@@ -26,7 +23,7 @@ export function MaterialQuestions({
       lines={items.flatMap((item) => [
         {
           id: item.id + '-question',
-          speaker: fictionalContact ? speaker : teacherName,
+          speaker,
           initials: speaker.slice(0, 1),
           avatarUrl: fictionalContact
             ? characterPortrait('Kim')

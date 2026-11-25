@@ -114,6 +114,11 @@
   Reuse them first; add semantic variations to their canonical owners before consuming them.
   New reusable visual or interaction patterns belong in `src/components`, not copied lesson markup.
 
+- Material participant labels consume `useMaterialTeacher()` directly: its shared resolver supplies
+  the first name/photo or `Teacher`, plus `identified` for real-name introductions. Do not split
+  teacher names or repeat role fallbacks in individual lessons. Natural instruction copy such as
+  “Ask your teacher” and recorded character identities keep their own meaning.
+
 - Apply reusable exercise changes in canonical components and shared lesson helpers, then adopt
   them in every maintained material, the UX Lab and its originals. Do not fix one exported HTML
   while leaving the source component with the old behavior.

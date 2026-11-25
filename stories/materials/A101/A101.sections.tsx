@@ -1,4 +1,5 @@
 import { LessonPracticePlan } from '../shared/LessonBookends'
+import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { PromptExercise } from '../shared/LessonExercises'
 import { useEffect, useRef, useState } from 'react'
@@ -346,9 +347,10 @@ export function AgeSection() {
   )
 }
 export function TwoTruthsAndALie() {
+  const teacher = useMaterialTeacher()
   return (
     <Styled.TwoColumns>
-      {['You', 'Your teacher'].map((person) => (
+      {['You', teacher.name].map((person) => (
         <Styled.TruthsPanel key={person}>
           <h3>{person}</h3>
           <PromptExercise

@@ -14,7 +14,7 @@ import { theme } from '../../../src/foundations/theme/theme'
 const meta = {
   component: MeetingFrame,
   title: 'Device/MeetingFrame',
-  args: { main: { name: 'Your teacher' }, inset: { name: 'You' } },
+  args: { main: { name: 'Teacher' }, inset: { name: 'You' } },
   decorators: [
     (Story) => (
       <MaterialTheme>

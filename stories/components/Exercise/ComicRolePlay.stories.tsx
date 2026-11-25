@@ -36,7 +36,7 @@ const meta = {
     panels: comicPanels,
     participants: [
       { id: 'learner', name: 'You' },
-      { id: 'teacher', name: 'Your teacher' },
+      { id: 'teacher', name: 'Teacher' },
     ],
     guidance: {
       hintedTurnIds: [],

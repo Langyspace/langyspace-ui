@@ -15,9 +15,17 @@ const identity = vi.hoisted(() => ({
   } as { name: string; avatarUrl?: string },
   learner: undefined as { firstName: string; avatarUrl: string } | undefined,
 }))
-vi.mock('../../../stories/materials/shared/MaterialTeacherContext', () => ({
-  useMaterialTeacher: () => identity.teacher,
-}))
+vi.mock(
+  '../../../stories/materials/shared/MaterialTeacherContext',
+  async () => {
+    const { resolveMaterialTeacherIdentity } =
+      await import('../../../stories/materials/shared/materialTeacherIdentity')
+    return {
+      useMaterialTeacher: () =>
+        resolveMaterialTeacherIdentity(identity.teacher),
+    }
+  },
+)
 vi.mock('../../../stories/materials/shared/MaterialLearnerContext', () => ({
   useMaterialLearner: () => identity.learner,
 }))
@@ -114,9 +122,9 @@ it('uses the learner photo and first name and falls back to You if the photo fai
 it('keeps a neutral teacher fallback without inventing a name or biography', () => {
   identity.teacher = { name: 'Your teacher' }
   render(<TrialIntroduction prompts={c1.introduction.prompts} />)
-  expect(screen.getAllByText('Your teacher', { exact: true })).toHaveLength(3)
+  expect(screen.getAllByText('Teacher', { exact: true })).toHaveLength(3)
   expect(screen.getByText(c1.introduction.prompts[0]!.question)).toBeVisible()
-  expect(screen.queryByText(/I’m Your teacher/)).toBeNull()
+  expect(screen.queryByText(/I’m (?:Your teacher|Teacher)/)).toBeNull()
 })
 
 it('preserves the A1 greeting text, translation and progressive support through the same adapter', () => {

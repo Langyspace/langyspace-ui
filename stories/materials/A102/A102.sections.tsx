@@ -383,9 +383,8 @@ export function OutgoingCall({ active }: { active: boolean }) {
   useEffect(() => {
     if (!active) setState('idle')
   }, [active])
-  const firstName =
-    teacher.name === 'Your teacher' ? '' : teacher.name.split(/\s+/)[0]
-  const contactName = firstName || 'Your teacher'
+  const firstName = teacher.identified ? teacher.name : undefined
+  const contactName = teacher.name
   return (
     <ThemeProvider theme={callTheme}>
       <CallSimulation

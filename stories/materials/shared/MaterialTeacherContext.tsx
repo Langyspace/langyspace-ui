@@ -1,12 +1,14 @@
 import { createContext, useContext, useEffect, useState } from 'react'
+import { resolveMaterialTeacherIdentity } from './materialTeacherIdentity'
 import type {
   MaterialTeacherIdentity,
   MaterialTeacherProviderProps,
 } from './MaterialTeacherContext.types'
 
-const fallback: MaterialTeacherIdentity = { name: 'Your teacher' }
+const fallback = resolveMaterialTeacherIdentity()
 const Context = createContext<MaterialTeacherIdentity>(fallback)
-export const useMaterialTeacher = () => useContext(Context)
+export const useMaterialTeacher = () =>
+  resolveMaterialTeacherIdentity(useContext(Context))
 
 /** Only the matching same-origin product frame can supply its current signed-in teacher. */
 export function MaterialTeacherProvider({

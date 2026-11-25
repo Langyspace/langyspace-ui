@@ -10,10 +10,6 @@ export function TrialA1Comic() {
   const [failedLearnerPhoto, setFailedLearnerPhoto] = useState<string>()
   const [hintedTurnIds, setHints] = useState<string[]>([])
   const [revealedTurnIds, setModels] = useState<string[]>([])
-  const teacherName =
-    teacher.name === 'Your teacher'
-      ? teacher.name
-      : teacher.name.trim().split(/\s+/u)[0] || 'Your teacher'
   const learnerWithPhoto = learner && learner.avatarUrl !== failedLearnerPhoto
   return (
     <ComicRolePlay
@@ -25,7 +21,7 @@ export function TrialA1Comic() {
           name: learnerWithPhoto ? learner.firstName : 'You',
           avatarUrl: learnerWithPhoto ? learner.avatarUrl : undefined,
         },
-        { id: 'teacher', name: teacherName, avatarUrl: teacher.avatarUrl },
+        { id: 'teacher', name: teacher.name, avatarUrl: teacher.avatarUrl },
       ]}
       onParticipantImageError={(id, url) => {
         if (id === 'learner') setFailedLearnerPhoto(url)

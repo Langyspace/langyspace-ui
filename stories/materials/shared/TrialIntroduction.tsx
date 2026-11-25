@@ -7,8 +7,7 @@ import type { TrialIntroductionProps } from './TrialIntroduction.types'
 /** Real-participant data adapter; bubbles, identity and progressive support stay canonical. */
 export function TrialIntroduction({ prompts }: TrialIntroductionProps) {
   const teacher = useMaterialTeacher()
-  const firstName = teacher.name.trim().split(/\s+/u)[0] || 'Your teacher'
-  const speaker = teacher.name === 'Your teacher' ? teacher.name : firstName
+  const speaker = teacher.name
   const [translated, setTranslated] = useState<string[]>([])
   const [hintedLineIds, setHints] = useState<string[]>([])
   const [revealedLineIds, setModels] = useState<string[]>([])
@@ -37,7 +36,7 @@ export function TrialIntroduction({ prompts }: TrialIntroductionProps) {
           avatarUrl: teacher.avatarUrl,
           side: 'start' as const,
           content:
-            prompt.introduceTeacher && speaker !== 'Your teacher'
+            prompt.introduceTeacher && teacher.identified
               ? `Hi, I’m ${speaker}. ${prompt.question}`
               : prompt.question,
           translation: prompt.translation,

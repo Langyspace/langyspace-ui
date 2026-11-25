@@ -9,16 +9,12 @@ export function TrialA1LiveConversation({
   independent = false,
 }: TrialA1LiveConversationProps) {
   const teacher = useMaterialTeacher()
-  const firstName =
-    teacher.name === 'Your teacher'
-      ? teacher.name
-      : teacher.name.trim().split(/\s+/u)[0]!
   const [hintedLineIds, setHints] = useState<string[]>([])
   const [revealedLineIds, setModels] = useState<string[]>([])
   const teacherIdentity = {
-    speaker: firstName,
+    speaker: teacher.name,
     avatarUrl: teacher.avatarUrl,
-    initials: firstName.slice(0, 1),
+    initials: teacher.name.slice(0, 1),
   }
   const learnerIdentity = { speaker: 'You', participant: 'learner' as const }
   return (

@@ -59,7 +59,7 @@ As props acima foram conferidas na fonte atual. Antes da adoção em outro produ
 - A resposta da aluna é ao vivo, sem gravação dela, temporizador obrigatório ou avanço automático. O áudio seguinte não pode fingir saber qual foi a resposta livre anterior.
 - Modelos de diálogo e conversação guiada completos têm pelo menos seis falas significativas. Prática pessoal completa tem pelo menos três pares pertinentes. Não inflar uma apresentação ou uma tarefa aberta para cumprir uma contagem de diálogo.
 - Perguntas de compreensão usam lista numerada/revelação factual, não uma segunda conversa de balões. Modelo, compreensão e transferência não competem na mesma tela quando isso deixa a tarefa confusa.
-- Nome e foto usam a identidade canônica. Professora: primeiro nome/foto do contexto, com fallback Teacher. Aluna: primeiro nome/foto válidos vindos do produto; na ausência de ambos, You. Não presumir aula, pessoa ou foto por um nome no roteiro.
+- Nome e foto usam a identidade canônica. Professora: usar `useMaterialTeacher()` diretamente; o contexto já resolve primeiro nome/foto ou `Teacher`, sem cortar nomes nem repetir fallbacks na aula. `identified` permite apresentar somente um nome real. Aluna: primeiro nome/foto válidos vindos do produto; na ausência de ambos, You. Não presumir aula, pessoa ou foto por um nome no roteiro.
 - Textos autorados em balões não terminam com ponto final; manter pontuação interna e interrogações. Preservar separadamente o texto exato da gravação. Não remover pontuação em tempo de renderização.
 
 ## 5. Usar imagens que expliquem a tarefa
