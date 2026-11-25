@@ -79,6 +79,7 @@ it('cues without autoplay; replay and optional loop always reapply both excerpt 
     endSeconds: 93,
   })
   expect(player.loadVideoById).not.toHaveBeenCalled()
+  expect(screen.queryByRole('link', { name: 'British Council' })).toBeNull()
   const frame = screen.getByTitle(clip.title)
   expect(frame).toHaveAttribute(
     'referrerpolicy',

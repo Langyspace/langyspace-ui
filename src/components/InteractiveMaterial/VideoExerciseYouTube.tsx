@@ -134,9 +134,11 @@ export function VideoExerciseYouTube({
         <Common.Hint role="status">{labels.loading}</Common.Hint>
       ) : null}
       <Styled.PlayerFooter>
-        <Styled.Source href={source} target="_blank" rel="noreferrer noopener">
-          {credit ?? labels.openSource}
-        </Styled.Source>
+        {!valid || status === 'error' ? (
+          <Styled.Source href={source} target="_blank" rel="noreferrer noopener">
+            {credit ?? labels.openSource}
+          </Styled.Source>
+        ) : null}
         <Common.Row>
           <IconButton
             variant="neutral"

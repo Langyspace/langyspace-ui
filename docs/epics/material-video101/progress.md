@@ -12,4 +12,8 @@ Preview: http://127.0.0.1:8955/?studentPortalOrigin=https://student.staging.lang
 
 User reported replay returning to0:00 after the excerpt ended. The adapter only reapplied bounds for its custom replay and enabled loop; the normal completion branch left the full video ready for native replay. Completion now re-cues the exact authored object while paused, or loads it when loop is explicitly enabled. A provider error suppresses further completion re-cues to avoid retry loops. No player controls, layout, source IDs, question content, public props or lesson duration changed. Focused VideoExcerpt file:7/7passed, including normal completion, native cue readiness, custom replay, loop and error isolation. Existing type/API/build evidence applies to the unchanged contract; no broad rebuild or publication requested. Local browser completed a playback, returned to a paused cue, and the next native YouTube play resumed inside the authored range (observed72.31s, playing), then returned to the paused cue after completion.
 
+## Credit footer follow-up
+
+Removed the duplicate clickable channel/time footer in normal playback. Native YouTube identification remains intact. The source URL/credit stay in authored metadata; the external link only appears as explicit recovery for invalid/unavailable embeds. Replay/loop remain right-aligned through the shared footer styles. Two focused normal/error-state checks verify absence of the normal link and preservation of failure recovery. Local refinement only; no push or deployment.
+
 Visual gate review: pending human
