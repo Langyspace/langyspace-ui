@@ -52,9 +52,13 @@ concealed answers remain inert and inaccessible. Omit it for the existing layout
 
 A shared capsule with optional heading, counter and media slots. It supplies the measured compact exercise layout, without owning options, media playback or scoring.
 
+In a warm-up, `mediaBadge={{ src, alt }}` places a secondary visual cue at the upper-right of the main image. Flags keep their natural proportions without a white frame; the sequence counter stays at the upper-left. Omitting the prop preserves existing exercises. A1.01 supplies its official flag as the evidence for a country answer.
+
 ## VocabularyGrid
 
 Receives semantic image/word/translation items, controlled `revealedIds`, `showAll`, `showInitial` and `onReveal`. Hover/focus previews the label; native button activation delegates the stable id and optional `onPlay`. Touch and keyboard do not depend on hover. Image descriptions come from the consumer; decorative images do not duplicate the spoken description.
+
+An item's `badgePosition="end"` puts its existing native `badge` at the upper-right, as in the four time labels in Greetings. Omit it for the original upper-left placement. Badge text is independent of the concealed vocabulary label; the same typography and inset apply throughout the grid.
 
 `imageVariant="scene"` gives contextual illustrations a full-card frame whose height follows the material viewport. The default `isolated` keeps icon framing. Optional `columns={3}` keeps the reference's three columns even on a phone; omit it for the responsive three/two-column grid. `density="regular"` provides taller vocabulary cards. `revealVariant="tooltip"` uses a hover/focus translation tooltip, a persistent word caption after activation/show-all and an initial-letter hint. The default overlay reveal remains available. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
 

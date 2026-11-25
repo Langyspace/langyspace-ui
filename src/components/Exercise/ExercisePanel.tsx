@@ -73,6 +73,7 @@ export function ExercisePanel({
   workstationMeta,
   media,
   layout = 'stacked',
+  mediaBadge,
   monitorLayout = 'flow',
   screenAspectRatio,
   screenTextAlign,
@@ -176,6 +177,13 @@ export function ExercisePanel({
               $presentation={warmupMediaSizing === 'presentation'}
             >
               {media}
+              {mediaBadge ? (
+                <Styled.MediaBadge
+                  data-exercise-media-badge
+                  src={mediaBadge.src}
+                  alt={mediaBadge.alt}
+                />
+              ) : null}
               {progress ? (
                 <Styled.MediaCounter>{progress}</Styled.MediaCounter>
               ) : null}

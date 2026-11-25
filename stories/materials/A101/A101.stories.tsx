@@ -14,7 +14,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A1.01 replanejada: seis alvos em dois grupos, conversa, apresentação pessoal, fichas de encontro, escuta e reação. Os exemplos isolados antigos não fazem parte da sequência nova.\n\n' +
+          'A1.01: Greetings, seis sentimentos com prática visual, seis países com bandeiras e prática visual, conversa, gramática, escuta, vídeo e apresentação pessoal.\n\n' +
           fluentLicense +
           '\n\nBandeiras: flag-icons 7.5.0\n\n' +
           flagsLicense,
@@ -26,8 +26,24 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
+export const Greetings: Story = {
+  args: { initialPageId: 's_greetings' },
+  tags: ['visual-review', 'audio-review'],
+}
 export const Countries: Story = { args: { initialPageId: 's1' } }
 export const Feelings: Story = { args: { initialPageId: 's4' } }
+export const FeelingsWarmup: Story = {
+  args: { initialPageId: 's_visual1' },
+  tags: ['visual-review'],
+}
+export const CountriesWarmup: Story = {
+  args: { initialPageId: 's_country107_1' },
+  tags: ['visual-review'],
+}
+export const GreetingsNarrow: Story = {
+  ...Greetings,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+}
 export const WarmUpWithAnswerSounds: Story = {
   render: () => (
     <MaterialSlideDeck

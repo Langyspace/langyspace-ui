@@ -128,7 +128,7 @@ export const WarmupMedia = styled.div<{ $presentation?: boolean }>`
   max-width: ${(p) => (p.$presentation ? `calc(${theme.exercises.mediaHeight} * 1.5)` : undefined)};
   margin-inline: ${(p) => (p.$presentation ? 'auto' : undefined)};
   /* Scene at the slot root or in a simple stack; nested speaker avatars retain their sizes. */
-  > img,
+  > img:not([data-exercise-media-badge]),
   > div > img:first-child {
     display: block;
     width: 100%;
@@ -153,6 +153,18 @@ export const MediaCounter = styled.span`
   font-size: ${theme.typography.fontSize.sm};
   font-variant-numeric: tabular-nums;
   line-height: 1.4;
+  pointer-events: none;
+`
+
+/** Secondary image evidence keeps its natural proportions, independently of the main scene. */
+export const MediaBadge = styled.img`
+  position: absolute;
+  top: ${theme.spacing[3]};
+  right: ${theme.spacing[3]};
+  width: clamp(${theme.spacing[16]}, 10cqw, ${theme.spacing[20]});
+  height: auto;
+  object-fit: contain;
+  border-radius: ${theme.radius.sm};
   pointer-events: none;
 `
 

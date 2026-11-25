@@ -129,7 +129,9 @@ export function VocabularyGrid({
                 />
               )}
               {item.badge ? (
-                <Styled.WordBadge>{item.badge}</Styled.WordBadge>
+                <Styled.WordBadge $position={item.badgePosition}>
+                  {item.badge}
+                </Styled.WordBadge>
               ) : null}
               {(interaction === 'reveal' && revealVariant === 'overlay') ||
               (markRevealed && revealedIds.includes(item.id)) ? (

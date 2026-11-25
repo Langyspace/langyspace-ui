@@ -112,6 +112,7 @@ export type ReviewedPage = PageBase &
         kind: 'image-choice'
         choiceGroup: string
         image: { src: string; alt: string }
+        imageBadge?: { src: string; alt: string }
         options: readonly string[]
         correctIndex: number
       }

@@ -11,6 +11,7 @@ export interface ChoiceExerciseProps {
   options: readonly string[]
   correctIndex: number
   image?: { src: string; alt: string }
+  imageBadge?: { src: string; alt: string }
   explanation?: string
   presentation?: 'default' | 'warmup'
   counter?: string

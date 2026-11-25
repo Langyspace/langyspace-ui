@@ -15,6 +15,8 @@ export interface ExercisePanelProps extends Omit<
   /** Illustrative desktop chrome; labels are supplied by the exercise, never a simulated save. */
   workstationMeta?: { appLabel?: string; clock?: string; date?: string }
   media?: ReactNode
+  /** Secondary visual cue over a warm-up image, such as the flag in a country question. */
+  mediaBadge?: { src: string; alt: string }
   layout?: 'stacked' | 'split'
   /** Flow content by default in monitor mode; workstation keeps its compact form grid. */
   monitorLayout?: 'flow' | 'form'

@@ -133,14 +133,15 @@ export const QuestionMark = styled.span<{ $completed?: boolean }>`
   color: ${(p) => (p.$completed ? theme.colors.palette.white : recipe(p).canvas)};
   font-size: ${theme.typography.fontSize.sm};
 `
-export const WordBadge = styled.span`
+export const WordBadge = styled.span<{ $position?: 'start' | 'end' }>`
   position: absolute;
   top: ${theme.spacing[2]};
-  left: ${theme.spacing[2]};
+  inset-inline-start: ${(p) => (p.$position === 'end' ? 'auto' : theme.spacing[2])};
+  inset-inline-end: ${(p) => (p.$position === 'end' ? theme.spacing[2] : 'auto')};
   padding: ${theme.spacing[1]} ${theme.spacing[2]};
   border-radius: ${theme.radius.pill};
   background: ${(p) => recipe(p).surface};
-  color: ${(p) => recipe(p).muted};
+  color: ${(p) => (p.$position === 'end' ? recipe(p).foreground : recipe(p).muted)};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
 `

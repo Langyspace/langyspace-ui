@@ -15,6 +15,8 @@ export interface VocabularyItem {
   initialHint?: string
   /** Optional source-level or review badge, supplied by the lesson. */
   badge?: string
+  /** Logical horizontal position of the image badge; existing badges keep the start edge. */
+  badgePosition?: 'start' | 'end'
 }
 export interface VocabularyGridProps extends Omit<
   ComponentPropsWithRef<'div'>,

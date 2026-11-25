@@ -6,9 +6,261 @@
   "freeConversationMinutes": 12,
   "pages": [
     {
+      "id": "s_greetings",
+      "kind": "vocabulary",
+      "title": "Greetings",
+      "instruction": "Algumas palavras para cumprimentar as pessoas.",
+      "minutes": 2,
+      "eyebrow": "Vocabulary",
+      "alignHeading": true,
+      "items": [
+        {
+          "id": "greeting107.0",
+          "word": "Hello!",
+          "translation": "Olá!",
+          "imageUrl": "greeting-hello107",
+          "imageAlt": "Ana waving hello",
+          "audioId": "G107.0",
+          "audioText": "Hello!"
+        },
+        {
+          "id": "greeting107.1",
+          "word": "Good morning!",
+          "translation": "Bom dia!",
+          "imageUrl": "greeting-morning107",
+          "imageAlt": "Ana waving beside a window at sunrise",
+          "audioId": "G107.1",
+          "audioText": "Good morning!",
+          "badge": "07:00 a.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.2",
+          "word": "Good afternoon!",
+          "translation": "Boa tarde!",
+          "imageUrl": "greeting-afternoon107",
+          "imageAlt": "Ana waving in bright afternoon daylight",
+          "audioId": "G107.2",
+          "audioText": "Good afternoon!",
+          "badge": "12:00 p.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.3",
+          "word": "Good evening!",
+          "translation": "Boa noite! (ao chegar)",
+          "imageUrl": "greeting-evening107",
+          "imageAlt": "Ana and Kim greeting each other at dusk",
+          "audioId": "G107.3",
+          "audioText": "Good evening!",
+          "badge": "06:00 p.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.4",
+          "word": "Good night!",
+          "translation": "Boa noite! (ao se despedir para dormir)",
+          "imageUrl": "greeting-night107",
+          "imageAlt": "Kim saying good night to Ana as Ana goes to bed",
+          "audioId": "G107.4",
+          "audioText": "Good night!",
+          "badge": "10:00 p.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.5",
+          "word": "Nice to meet you!",
+          "translation": "Prazer em conhecer você!",
+          "imageUrl": "greeting-meeting107",
+          "imageAlt": "Ana and Kim smiling and shaking right hands",
+          "audioId": "G107.5",
+          "audioText": "Nice to meet you!"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "kind": "vocabulary",
+      "title": "How do you feel?",
+      "instruction": "Name the feelings, then click to check and listen",
+      "minutes": 3,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "vocab80.3",
+          "word": "Happy",
+          "translation": "feliz",
+          "imageUrl": "scene-happy-mia",
+          "imageAlt": "A smiling person celebrating",
+          "audioId": "ph_happy",
+          "audioText": "happy"
+        },
+        {
+          "id": "vocab80.4",
+          "word": "Tired",
+          "translation": "cansado(a)",
+          "imageUrl": "scene-tired-tom",
+          "imageAlt": "A tired person yawning",
+          "audioId": "ph_tired",
+          "audioText": "tired"
+        },
+        {
+          "id": "vocab80.5",
+          "word": "Hungry",
+          "translation": "com fome",
+          "imageUrl": "scene-hungry-ana",
+          "imageAlt": "Ana looking at food because she is hungry",
+          "audioId": "ph_hungry",
+          "audioText": "hungry"
+        },
+        {
+          "id": "vocab94.3",
+          "word": "Sad",
+          "translation": "triste",
+          "imageUrl": "scene-sad-josh",
+          "imageAlt": "Josh looking sad",
+          "audioId": "ph_sad",
+          "audioText": "sad"
+        },
+        {
+          "id": "vocab94.4",
+          "word": "Cold",
+          "translation": "com frio",
+          "imageUrl": "scene-cold-julia",
+          "imageAlt": "Julia wearing warm clothes because she is cold",
+          "audioId": "ph_cold",
+          "audioText": "cold"
+        },
+        {
+          "id": "vocab94.5",
+          "word": "Angry",
+          "translation": "com raiva",
+          "imageUrl": "scene-angry-leo",
+          "imageAlt": "Leo looking angry",
+          "audioId": "ph_angry",
+          "audioText": "angry"
+        }
+      ],
+      "alignHeading": true
+    },
+    {
+      "id": "s_visual1",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Tom?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-tired-tom",
+        "alt": "A tired person yawning"
+      },
+      "options": [
+        "He’s tired.",
+        "He’s cold.",
+        "He’s happy."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_visual2",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Julia?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-cold-julia",
+        "alt": "Julia wearing warm clothes because she is cold"
+      },
+      "options": [
+        "She’s hungry.",
+        "She’s cold.",
+        "She’s happy."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_visual3",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Josh?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-sad-josh",
+        "alt": "Josh looking sad"
+      },
+      "options": [
+        "He’s happy.",
+        "He’s tired.",
+        "He’s sad."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s_visual4",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Mia?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-happy-mia",
+        "alt": "A smiling person celebrating"
+      },
+      "options": [
+        "She’s happy.",
+        "She’s cold.",
+        "She’s tired."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_visual5",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Ana?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-hungry-ana",
+        "alt": "Ana looking at food because she is hungry"
+      },
+      "options": [
+        "She’s cold.",
+        "She’s hungry.",
+        "She’s angry."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_visual6",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Leo?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-angry-leo",
+        "alt": "Leo looking angry"
+      },
+      "options": [
+        "He’s hungry.",
+        "He’s sad.",
+        "He’s angry."
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "s1",
       "kind": "vocabulary",
-      "title": "Where are you from?",
+      "title": "Countries",
       "instruction": "Name the countries, then click to check and listen",
       "minutes": 2,
       "eyebrow": "Vocabulary",
@@ -74,79 +326,145 @@
           "audioText": "France. I’m from France."
         }
       ],
-      "isolated": true,
       "alignHeading": true
     },
     {
-      "id": "s4",
-      "kind": "vocabulary",
-      "title": "How do you feel?",
-      "instruction": "Name the feelings, then click to check and listen",
-      "minutes": 3,
-      "eyebrow": "Vocabulary",
-      "items": [
-        {
-          "id": "vocab80.3",
-          "word": "happy",
-          "translation": "feliz",
-          "imageUrl": "scene-happy-mia",
-          "imageAlt": "A smiling person celebrating",
-          "example": "I’m happy",
-          "audioId": "FS80.3",
-          "audioText": "happy. I’m happy."
-        },
-        {
-          "id": "vocab80.4",
-          "word": "tired",
-          "translation": "cansado(a)",
-          "imageUrl": "scene-tired-tom",
-          "imageAlt": "A tired person yawning",
-          "example": "I’m tired",
-          "audioId": "FS80.4",
-          "audioText": "tired. I’m tired."
-        },
-        {
-          "id": "vocab80.5",
-          "word": "hungry",
-          "translation": "com fome",
-          "imageUrl": "scene-hungry-ana",
-          "imageAlt": "Ana looking at food because she is hungry",
-          "example": "I’m hungry",
-          "audioId": "FS80.5",
-          "audioText": "hungry. I’m hungry."
-        },
-        {
-          "id": "vocab94.3",
-          "word": "sad",
-          "translation": "triste",
-          "imageUrl": "scene-sad-josh",
-          "imageAlt": "Josh looking sad",
-          "example": "I’m sad",
-          "audioId": "FS94.3",
-          "audioText": "sad. I’m sad."
-        },
-        {
-          "id": "vocab94.4",
-          "word": "cold",
-          "translation": "com frio",
-          "imageUrl": "scene-cold-julia",
-          "imageAlt": "Julia wearing warm clothes because she is cold",
-          "example": "I’m cold",
-          "audioId": "FS94.4",
-          "audioText": "cold. I’m cold."
-        },
-        {
-          "id": "vocab94.5",
-          "word": "angry",
-          "translation": "com raiva",
-          "imageUrl": "scene-angry-leo",
-          "imageAlt": "Leo looking angry",
-          "example": "I’m angry",
-          "audioId": "FS94.5",
-          "audioText": "angry. I’m angry."
-        }
+      "id": "s_country107_1",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Ana from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-brazil-ana107",
+        "alt": "Ana wearing a Brazilian football jersey"
+      },
+      "imageBadge": {
+        "src": "flag-br",
+        "alt": "Flag of Brazil"
+      },
+      "options": [
+        "She’s from Japan.",
+        "She’s from France.",
+        "She’s from Brazil."
       ],
-      "alignHeading": true
+      "correctIndex": 2
+    },
+    {
+      "id": "s_country107_2",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Jiwoo from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-korea-jiwoo",
+        "alt": "Jiwoo wearing a Korean hanbok"
+      },
+      "imageBadge": {
+        "src": "flag-kr",
+        "alt": "Flag of South Korea"
+      },
+      "options": [
+        "She’s from South Korea.",
+        "She’s from Germany.",
+        "She’s from Brazil."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_country107_3",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Hiro from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-japan-hiro",
+        "alt": "Hiro wearing a Japanese kimono and haori"
+      },
+      "imageBadge": {
+        "src": "flag-jp",
+        "alt": "Flag of Japan"
+      },
+      "options": [
+        "He’s from the United States.",
+        "He’s from Japan.",
+        "He’s from France."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_country107_4",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Lukas from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-germany-lukas",
+        "alt": "Lukas wearing Bavarian traditional clothing"
+      },
+      "imageBadge": {
+        "src": "flag-de",
+        "alt": "Flag of Germany"
+      },
+      "options": [
+        "He’s from Brazil.",
+        "He’s from South Korea.",
+        "He’s from Germany."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s_country107_5",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Chloé from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-france-chloe",
+        "alt": "Chloé wearing Breton stripes and a beret"
+      },
+      "imageBadge": {
+        "src": "flag-fr",
+        "alt": "Flag of France"
+      },
+      "options": [
+        "She’s from France.",
+        "She’s from Japan.",
+        "She’s from the United States."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_country107_6",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Jake from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-usa-jake",
+        "alt": "Jake wearing Western clothing and a cowboy hat"
+      },
+      "imageBadge": {
+        "src": "flag-us",
+        "alt": "Flag of the United States"
+      },
+      "options": [
+        "He’s from Germany.",
+        "He’s from the United States.",
+        "He’s from South Korea."
+      ],
+      "correctIndex": 1
     },
     {
       "id": "s6",
@@ -256,96 +574,6 @@
           "example": "My name is Ana."
         }
       ]
-    },
-    {
-      "id": "s_visual1",
-      "kind": "image-choice",
-      "choiceGroup": "feelings",
-      "title": "How is Tom?",
-      "instruction": "Look at the picture and choose how the person feels",
-      "minutes": 0.5,
-      "eyebrow": "Picture challenge",
-      "image": {
-        "src": "scene-tired-tom",
-        "alt": "A tired person yawning"
-      },
-      "options": ["tired", "cold", "happy"],
-      "correctIndex": 0
-    },
-    {
-      "id": "s_visual2",
-      "kind": "image-choice",
-      "choiceGroup": "feelings",
-      "title": "How is Julia?",
-      "instruction": "Look at the picture and choose how the person feels",
-      "minutes": 0.5,
-      "eyebrow": "Picture challenge",
-      "image": {
-        "src": "scene-cold-julia",
-        "alt": "Julia wearing warm clothes because she is cold"
-      },
-      "options": ["hungry", "cold", "happy"],
-      "correctIndex": 1
-    },
-    {
-      "id": "s_visual3",
-      "kind": "image-choice",
-      "choiceGroup": "feelings",
-      "title": "How is Josh?",
-      "instruction": "Look at the picture and choose how the person feels",
-      "minutes": 0.5,
-      "eyebrow": "Picture challenge",
-      "image": {
-        "src": "scene-sad-josh",
-        "alt": "Josh looking sad"
-      },
-      "options": ["happy", "tired", "sad"],
-      "correctIndex": 2
-    },
-    {
-      "id": "s_visual4",
-      "kind": "image-choice",
-      "choiceGroup": "feelings",
-      "title": "How is Mia?",
-      "instruction": "Look at the picture and choose how the person feels",
-      "minutes": 0.5,
-      "eyebrow": "Picture challenge",
-      "image": {
-        "src": "scene-happy-mia",
-        "alt": "A smiling person celebrating"
-      },
-      "options": ["happy", "cold", "tired"],
-      "correctIndex": 0
-    },
-    {
-      "id": "s_visual5",
-      "kind": "image-choice",
-      "choiceGroup": "feelings",
-      "title": "How is Ana?",
-      "instruction": "Look at the picture and choose how the person feels",
-      "minutes": 0.5,
-      "eyebrow": "Picture challenge",
-      "image": {
-        "src": "scene-hungry-ana",
-        "alt": "Ana looking at food because she is hungry"
-      },
-      "options": ["cold", "hungry", "angry"],
-      "correctIndex": 1
-    },
-    {
-      "id": "s_visual6",
-      "kind": "image-choice",
-      "choiceGroup": "feelings",
-      "title": "How is Leo?",
-      "instruction": "Look at the picture and choose how the person feels",
-      "minutes": 0.5,
-      "eyebrow": "Picture challenge",
-      "image": {
-        "src": "scene-angry-leo",
-        "alt": "Leo looking angry"
-      },
-      "options": ["hungry", "sad", "angry"],
-      "correctIndex": 2
     },
     {
       "id": "s8",

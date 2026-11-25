@@ -1,5 +1,7 @@
 # Personagens Langy
 
+**A1.01, revisão107:** Ana e Kim representam cumprimentos, encontro e despedida antes de dormir; são cenas pedagógicas, sem novos horários ou hábitos biográficos. Ana veste uma camisa brasileira na prática de países. A bandeira identifica o país; a roupa não determina nacionalidade. Jiwoo, Hiro, Lukas, Chloé e Jake mantêm as identidades de exercício já registradas.
+
 Documento inicial de continuidade · fonte-base `c771184` · 14 aulas ativas. Campos sem confirmação: **a definir**. Exemplos de aula e reuso de arte não estabelecem identidade nem cronologia.
 
 | Pessoa           | Profissão / papel explícito                                    | Origem    | Relações e preferências                                                                            |

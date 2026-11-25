@@ -16,6 +16,13 @@ Decisões atuais para lembrar:
 - Deveres preparados junto com a aula; link só depois de cadastro e mídia confirmados no ambiente correto. Revisão local, exercício no Student e material publicado são estados distintos.
 - Reutilizar evidências válidas e fazer verificações focadas. Não reconstruir nem publicar todo o catálogo a cada feedback.
 
+## Vocabulário seguido de prática visual — revisão107
+
+- Quando o objetivo for reconhecer o vocabulário recém-apresentado, colocar sua sequência de múltipla escolha visual imediatamente depois do respectivo bloco. Reutilizar a mesma imagem e variar a posição correta. Pergunta, nome, pronome e resposta completa precisam corresponder ao personagem da cena.
+- Quando a apresentação pedir apenas a palavra, omitir o exemplo também do áudio acionado pelo card, reutilizando a gravação isolada válida. Essa variação não remove os exemplos das outras atividades.
+- Em cumprimentos por período, distinguir chegada à noite (`Good evening`) de despedida antes de dormir (`Good night`) pela ação e pelo cenário. Horários são texto nativo padronizado no canto superior direito, não texto gerado dentro da ilustração.
+- Em perguntas de origem, a bandeira é a referência para a resposta. Roupa contextual não comprova nacionalidade. Usar as bandeiras oficiais com proporção preservada; não exigir que a aluna deduza um país só pela aparência física ou roupa.
+
 ## Referências visuais e vídeo — revisão101
 
 - A aluna participa com a fala e a observação da tela compartilhada. A professora opera poucos controles simples: avançar, play/repetir e ajuda opcional. Não planejar participação obrigatória por arrastar, preencher, navegar ou revelar vários painéis; textos, imagens e áudio servem de evidência ou assunto para a conversa.

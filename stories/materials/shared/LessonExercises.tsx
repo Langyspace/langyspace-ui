@@ -60,6 +60,7 @@ export function ChoiceExercise({
   options,
   correctIndex,
   image,
+  imageBadge,
   presentation = 'default',
   counter,
 }: ChoiceExerciseProps) {
@@ -115,6 +116,7 @@ export function ChoiceExercise({
       warmupMediaSizing="presentation"
       counter={counter}
       media={media}
+      mediaBadge={imageBadge}
     >
       {choices}
     </ExercisePanel>

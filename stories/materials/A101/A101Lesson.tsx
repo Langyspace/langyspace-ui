@@ -6,6 +6,7 @@ import data from './A101.review.json'
 import provenance from './audio-provenance.json'
 import additions from './audio-provenance80.json'
 import restored from './audio-provenance94.json'
+import greetings from './audio-provenance107.json'
 
 const images = import.meta.glob('./assets/*.{webp,png,svg}', {
   eager: true,
@@ -21,6 +22,7 @@ const recordings = [
   ...provenance.items,
   ...additions.items,
   ...restored.items,
+  ...greetings.items,
 ].map((clip) => {
   const src = audio['./' + clip.file]
   if (!src) throw new Error(`Missing prepared A1.01 audio: ${clip.id}`)
@@ -47,6 +49,9 @@ const pages = (data.pages as readonly ReviewedPage[]).map((page) =>
             ...page.image,
             src: preparedImage(page.image.src),
           },
+          imageBadge: page.imageBadge
+            ? { ...page.imageBadge, src: preparedImage(page.imageBadge.src) }
+            : undefined,
         }
       : page,
 )

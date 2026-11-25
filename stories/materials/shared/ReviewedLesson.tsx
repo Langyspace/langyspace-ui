@@ -184,6 +184,7 @@ function PageContent({
         counter={imageChoiceCounter}
         question={page.title}
         image={page.image}
+        imageBadge={page.imageBadge}
         options={page.options}
         correctIndex={page.correctIndex}
       />
