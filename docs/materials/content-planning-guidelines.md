@@ -1,6 +1,8 @@
 # Planejamento dos materiais Langy
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
+
+**Navegação e encaixe — revisão108:** a apresentação usa um único controlador. Direita/baixo avançam; esquerda/cima voltam, já na primeira tecla. O primeiro evento vertical de um novo gesto de scroll navega sem exigir força mínima; não consumir primeiro a rolagem de um conteúdo alto. Agrupar os eventos de inércia evita saltar várias páginas. Páginas se ajustam ao espaço disponível e a conversas expandidas, sem rolagem aninhada. Imagem e alternativas do Warm-up compartilham a mesma largura e margens; preservar a imagem inteira e todas as opções. Se uma página densa exigir redução excessiva para caber, dividir o conteúdo em vez de usar esse ajuste como justificativa para poluição.
 Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
 ## Comece aqui para criar o próximo material

@@ -26,6 +26,10 @@ export const Phone = styled.div`
   flex-direction: column;
   color: ${theme.voiceMessage.foreground};
   box-sizing: border-box;
+  :where([data-slide-fit]) & {
+    height: auto;
+    min-height: 540px;
+  }
 `
 export const Header = styled.div`
   display: flex;
@@ -49,6 +53,10 @@ export const Header = styled.div`
 export const Chat = styled.div`
   flex: 1;
   overflow-y: auto;
+  :where([data-slide-fit]) & {
+    overflow-y: visible;
+    min-height: max-content;
+  }
   overscroll-behavior: contain;
   display: flex;
   flex-direction: column;

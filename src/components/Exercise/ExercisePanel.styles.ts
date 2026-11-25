@@ -125,18 +125,17 @@ export const WarmupMedia = styled.div<{ $presentation?: boolean }>`
   gap: ${theme.spacing[3]};
   width: 100%;
   min-width: 0;
-  max-width: ${(p) => (p.$presentation ? `calc(${theme.exercises.mediaHeight} * 1.5)` : undefined)};
   margin-inline: ${(p) => (p.$presentation ? 'auto' : undefined)};
   /* Scene at the slot root or in a simple stack; nested speaker avatars retain their sizes. */
   > img:not([data-exercise-media-badge]),
   > div > img:first-child {
     display: block;
     width: 100%;
-    height: ${(p) => (p.$presentation ? theme.exercises.mediaHeight : 'auto')};
+    height: auto;
     min-height: 0;
     max-width: 100%;
     max-height: none;
-    aspect-ratio: ${(p) => (p.$presentation ? 'auto' : '3 / 2')};
+    aspect-ratio: 3 / 2;
     object-fit: contain;
     border-radius: ${(p) => recipe(p).panelRadius};
   }

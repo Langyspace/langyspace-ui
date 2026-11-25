@@ -300,33 +300,6 @@ export function useSlideNavigation({
     const forward = ['PageDown', 'ArrowDown', 'ArrowRight'].includes(event.key)
     const backward = ['PageUp', 'ArrowUp', 'ArrowLeft'].includes(event.key)
     if (!forward && !backward) return
-    const viewport = viewportRef.current
-    const page = viewport?.children[index]
-    if (!viewport || !(page instanceof HTMLElement)) return
-    const view = viewport.getBoundingClientRect()
-    const rect = page.getBoundingClientRect()
-    // Native page scrolling must expose all of an oversized slide before changing pages.
-    if (
-      ((event.key === 'PageDown' || event.key === 'ArrowDown') &&
-        rect.bottom > view.bottom + 2) ||
-      ((event.key === 'PageUp' || event.key === 'ArrowUp') &&
-        rect.top < view.top - 2)
-    ) {
-      // Expose the remaining content before a native step can snap past it.
-      event.preventDefault()
-      const distance = event.key.startsWith('Page') ? viewport.clientHeight : 40
-      const pageTop = viewport.scrollTop + rect.top - view.top
-      const pageBottom = pageTop + rect.height - viewport.clientHeight
-      movementRevisionRef.current++
-      movementTargetRef.current = undefined
-      viewport.scrollTo({
-        top: forward
-          ? Math.min(viewport.scrollTop + distance, pageBottom)
-          : Math.max(viewport.scrollTop - distance, pageTop),
-        behavior: 'instant',
-      })
-      return
-    }
     event.preventDefault()
     step(forward ? 1 : -1)
   }

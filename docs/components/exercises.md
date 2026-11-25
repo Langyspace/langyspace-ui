@@ -26,6 +26,8 @@ product choices, not clinically optimized frequencies or a retention guarantee.
 
 ## ExercisePanel
 
+Warm-up images occupy the same complete column as the choices, with a contained 3:2 canvas. Presentation pages fit the entire exercise to the viewport when necessary; the image is no longer independently narrowed by a height-derived width cap.
+
 `LearningDialogue.footerAction` centers a consumer-owned action at the bottom of
 a stretched conversation column, outside the bubbles. Compose it with
 `SlidePage columnAlignment="stretch"` or the equivalent voice-message layout.

@@ -46,6 +46,10 @@ export const Root = styled.div.withConfig({
       )
       calc(${theme.spacing[3]} + env(safe-area-inset-bottom, 0px));
   }
+  /* The deck reserves the fixed navigation bar outside the fitted content. */
+  :where([data-slide-fit]) && {
+    padding-block-start: ${theme.spacing[2]};
+  }
 `
 
 export const Content = styled.div<{

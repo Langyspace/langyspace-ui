@@ -62,6 +62,10 @@ export const Phone = styled.div`
   background: ${(p) => recipe(p).canvas};
   overflow: hidden;
   box-sizing: border-box;
+  :where([data-slide-fit]) && {
+    height: auto;
+    min-height: ${(p) => recipe(p).phoneHeight};
+  }
 `
 
 export const Contact = styled.div`
@@ -82,6 +86,10 @@ export const Conversation = styled.div`
   gap: ${theme.voiceMessage.conversationInset};
   padding: ${theme.spacing[2]} ${theme.voiceMessage.conversationInset};
   overflow-y: auto;
+  :where([data-slide-fit]) & {
+    overflow-y: visible;
+    min-height: max-content;
+  }
   overscroll-behavior: contain;
   &:focus-visible {
     outline: 2px solid ${(p) => recipe(p).accent};

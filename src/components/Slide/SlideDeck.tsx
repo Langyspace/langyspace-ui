@@ -1,4 +1,5 @@
 import { useSlideNavigation } from './useSlideNavigation'
+import { SlidePageFit } from './SlidePageFit'
 import * as Styled from './SlideDeck.styles'
 import type { SlideDeckProps } from './SlideDeck.types'
 import { useFeedbackSounds } from '../Quiz/useFeedbackSounds'
@@ -112,13 +113,18 @@ export function SlideDeck({
       >
         {pages.map((page, pageIndex) => (
           <Styled.Page
+            $paged={navigationMode === 'pages'}
             key={page.id}
             data-slide-id={page.id}
             data-current={pageIndex === index ? 'true' : undefined}
             aria-label={page.label}
             aria-roledescription="slide"
           >
-            {page.content}
+            {navigationMode === 'pages' ? (
+              <SlidePageFit>{page.content}</SlidePageFit>
+            ) : (
+              page.content
+            )}
           </Styled.Page>
         ))}
       </Styled.Viewport>

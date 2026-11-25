@@ -173,7 +173,7 @@ describe('SlideDeck', () => {
     scroll(0)
     expect(screen.getByRole('textbox')).toHaveValue('Minha resposta')
     expect(
-      screen.queryByRole('button', { name: /Voltar/ }),
+      screen.queryByRole('button', { name: 'Voltar', exact: true }),
     ).not.toBeInTheDocument()
   })
 
@@ -199,7 +199,7 @@ describe('SlideDeck', () => {
   })
 
   it.each(['viewport', 'header'] as const)(
-    'exposes a short page remainder before advancing from the %s',
+    'advances on the first key without exposing a scroll remainder from the %s',
     (focus) => {
       render(
         <SlideDeck
@@ -229,30 +229,16 @@ describe('SlideDeck', () => {
       target.focus()
       expect(fireEvent.keyDown(target, { key: 'PageDown' })).toBe(false)
       expect(scrollTo).toHaveBeenLastCalledWith({
-        top: 113,
-        behavior: 'instant',
+        top: 613,
+        behavior: 'smooth',
       })
       fireEvent.scroll(viewport)
-      expect(screen.getByRole('region', { name: 'Primeira' })).toHaveAttribute(
+      expect(screen.getByRole('region', { name: 'Segunda' })).toHaveAttribute(
         'data-current',
         'true',
       )
       fireEvent.keyDown(target, { key: 'ArrowUp' })
-      expect(scrollTo).toHaveBeenLastCalledWith({
-        top: 73,
-        behavior: 'instant',
-      })
-      fireEvent.keyDown(target, { key: 'PageUp' })
-      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'instant' })
-      for (const top of [40, 80, 113]) {
-        fireEvent.keyDown(target, { key: 'ArrowDown' })
-        expect(scrollTo).toHaveBeenLastCalledWith({ top, behavior: 'instant' })
-      }
-      fireEvent.keyDown(target, { key: 'PageDown' })
-      expect(scrollTo).toHaveBeenLastCalledWith({
-        top: 613,
-        behavior: 'smooth',
-      })
+      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
     },
   )
 
@@ -260,7 +246,7 @@ describe('SlideDeck', () => {
     render(<SlideDeck label="Aula" pages={pages} />)
     const { scroll, scrollTo, viewport } = geometry()
     scroll(500)
-    fireEvent.click(screen.getByRole('button', { name: /Voltar/ }))
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar', exact: true }))
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
     expect(viewport).toHaveFocus()
   })

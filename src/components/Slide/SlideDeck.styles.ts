@@ -179,11 +179,26 @@ export const Viewport = styled.div<{ $continuous: boolean }>`
   }
 `
 
-export const Page = styled.section`
+export const Page = styled.section<{ $paged?: boolean }>`
+  box-sizing: border-box;
+  overflow: ${(p) => (p.$paged ? 'clip' : 'visible')};
+  padding-top: ${(p) => (p.$paged ? recipe(p).headerHeight : '0')};
   display: flex;
   flex-direction: column;
-  min-height: 100cqh;
+  height: ${(p) => (p.$paged ? '100cqh' : 'auto')};
+  min-height: ${(p) => (p.$paged ? '0' : '100cqh')};
+  flex-shrink: 0;
   min-width: 0;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+`
+
+export const FitContent = styled.div<{ $scale: number }>`
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: calc(100cqh - ${(p) => recipe(p).headerHeight});
+  width: 100%;
+  transform: scale(${(p) => p.$scale});
+  transform-origin: top center;
 `
