@@ -4,7 +4,17 @@ export interface DialogueGapStyleProps {
 }
 export interface LearningDialogueGap {
   id: string
+  kind?: 'reveal'
   answer: string
+}
+export interface LearningDialogueOpenGap {
+  id: string
+  kind: 'open'
+  /** Accessible purpose, without suggesting a correct personal answer. */
+  label: string
+}
+export interface DialogueOpenGapStyleProps {
+  $characters: number
 }
 export interface LearningDialogueLine {
   id: string
@@ -21,7 +31,7 @@ export interface LearningDialogueLine {
   /** Accessible context for this line’s support controls. */
   guidanceLabel?: string
   /** Inline answers retain their width before and after a click. */
-  parts?: readonly (string | LearningDialogueGap)[]
+  parts?: readonly (string | LearningDialogueGap | LearningDialogueOpenGap)[]
   translation?: ReactNode
   audioLabel?: string
   /** Makes this line a controlled learner-response action. */
@@ -65,6 +75,9 @@ export interface LearningDialogueProps extends Omit<
   onPlay?: (id: string) => void
   revealedGapIds?: readonly string[]
   onRevealGap?: (gapId: string, lineId: string) => void
+  /** Open responses are controlled by the consumer and are never graded or played. */
+  gapValues?: Readonly<Record<string, string>>
+  onGapChange?: (gapId: string, value: string, lineId: string) => void
   completedIds?: readonly string[]
   onComplete?: (id: string) => void
 }

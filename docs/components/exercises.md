@@ -70,6 +70,8 @@ Scene cards also honor the existing `density="regular"`: a 3:2 frame capped by t
 
 Receives stable line ids, speaker names/avatars, start/end alignment and React content. Translation visibility, playing id and playback/translation actions are controlled by the product. Content slots permit the existing dialogue to contain exercise blanks without cloning the chat. No speech engine or microphone service is bundled.
 
+For personal information, an inline part `{ id, kind: 'open', label }` renders a native, labelled text field in the same bubble. Supply `gapValues` and `onGapChange(gapId, value, lineId)` to own responses. Answers are free text, without a correct option, reveal action, grading or automatic audio. Values expand the underline within the available space. Existing `{ id, answer }` parts retain their reveal interaction. MaterialPersonalDialogue binds the existing Teacher/learner identity contexts; response state stays in the current material session and clears when participants change. Names remain below avatars and both sides keep the standard compact dialogue layout.
+
 ## RevealCard
 
 Controlled native button with a numbered marker, prompt, hidden answer and expanded state. The product supplies `revealed`, `answer` and the click action. This supports turning statements into questions and checking answers without an evaluator inside the library.

@@ -693,7 +693,7 @@
   },
   "publishedEnvironments": ["staging", "production"],
   "voice": {
-    "prompt": "Send me a voice note with your name, where you’re from and how you feel",
+    "prompt": "Send me a voice note introducing yourself.",
     "duration": "20–30 seconds",
     "starters": ["I’m…", "I’m from…", "My name is…"],
     "closing": "Finish with one question for your teacher"

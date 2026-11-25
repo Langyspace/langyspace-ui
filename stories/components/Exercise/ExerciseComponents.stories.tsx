@@ -580,6 +580,43 @@ export const ProportionalDialogueGaps: Story = {
   ),
 }
 
+function OpenPersonalDialoguePreview() {
+  const [values, setValues] = useState<Record<string, string>>({})
+  return (
+    <Styled.Preview>
+      <LearningDialogue
+        density="compact"
+        gapValues={values}
+        onGapChange={(id, value) =>
+          setValues((old) => ({ ...old, [id]: value }))
+        }
+        lines={[
+          {
+            id: 'question',
+            speaker: 'Teacher',
+            side: 'start',
+            content: 'Where are you from?',
+          },
+          {
+            id: 'answer',
+            speaker: 'You',
+            participant: 'learner',
+            side: 'end',
+            content: 'I’m from …',
+            parts: [
+              'I’m from ',
+              { id: 'country', kind: 'open', label: 'Country' },
+            ],
+          },
+        ]}
+      />
+    </Styled.Preview>
+  )
+}
+export const OpenPersonalDialogue: Story = {
+  render: () => <OpenPersonalDialoguePreview />,
+}
+
 function CompleteAlphabetPreview() {
   const [pronunciation, setPronunciation] = useState(false)
   const speech = useAlphabetSpeech()

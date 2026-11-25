@@ -75,6 +75,8 @@ export function LearningDialogue({
   onPlay,
   revealedGapIds = [],
   onRevealGap,
+  gapValues,
+  onGapChange,
   completedIds,
   onComplete,
   ...props
@@ -164,6 +166,24 @@ export function LearningDialogue({
             line.parts.map((part, index) =>
               typeof part === 'string' ? (
                 <Fragment key={index}>{part}</Fragment>
+              ) : part.kind === 'open' ? (
+                <Gap.DialogueOpenGap
+                  key={part.id}
+                  size="sm"
+                  type="text"
+                  value={gapValues?.[part.id] ?? ''}
+                  $characters={Math.max(
+                    7,
+                    Math.min(24, (gapValues?.[part.id]?.length ?? 0) + 2),
+                  )}
+                  aria-label={`${speaker}: ${part.label}`}
+                  autoComplete="off"
+                  spellCheck={false}
+                  readOnly={!onGapChange}
+                  onChange={(event) =>
+                    onGapChange?.(part.id, event.target.value, line.id)
+                  }
+                />
               ) : (
                 <Gap.DialogueGap
                   key={part.id}

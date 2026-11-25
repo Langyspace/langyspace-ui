@@ -1,0 +1,97 @@
+import { useState } from 'react'
+import { fireEvent, render, screen } from '@testing-library/react'
+import { expect, it, vi } from 'vitest'
+import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { MaterialPersonalDialogue } from '../../../stories/materials/shared/MaterialPersonalDialogue'
+import conversation from '../../../stories/materials/A101/A101.personal-conversations.json'
+import type { MaterialPersonalDialogueTurn } from '../../../stories/materials/shared/MaterialPersonalDialogue.types'
+
+const identities = vi.hoisted(() => ({
+  teacher: {
+    name: 'Adriana',
+    avatarUrl: 'https://example.test/teacher.jpg',
+    identified: true,
+  },
+  learner: {
+    firstName: 'Maria',
+    avatarUrl: 'https://example.test/learner.jpg',
+  },
+}))
+vi.mock('../../../stories/materials/shared/MaterialTeacherContext', () => ({
+  useMaterialTeacher: () => identities.teacher,
+}))
+vi.mock('../../../stories/materials/shared/MaterialLearnerContext', () => ({
+  useMaterialLearner: () => identities.learner,
+}))
+
+function OpenExample() {
+  const [gapValues, setGaps] = useState<Record<string, string>>({})
+  return (
+    <LearningDialogue
+      lines={[
+        {
+          id: 'line',
+          speaker: 'You',
+          side: 'end',
+          content: 'I’m from …',
+          parts: [
+            'I’m from ',
+            { kind: 'open', id: 'country', label: 'Country' },
+            '!',
+            { id: 'fixed', answer: 'Brazil' },
+          ],
+        },
+      ]}
+      gapValues={gapValues}
+      onGapChange={(id, value) => setGaps((old) => ({ ...old, [id]: value }))}
+    />
+  )
+}
+it('accepts arbitrary personal answers and keeps fixed reveal gaps as a separate interaction', () => {
+  render(<OpenExample />)
+  const input = screen.getByRole('textbox', { name: 'You: Country' })
+  for (const value of [
+    'Brazil',
+    'the United States',
+    'São Paulo',
+    'somewhere else',
+  ]) {
+    fireEvent.change(input, { target: { value } })
+    expect(input).toHaveValue(value)
+    expect(input).not.toHaveAttribute('aria-invalid')
+  }
+  expect(
+    screen.getByRole('button', { name: 'Reveal answer 4' }),
+  ).toHaveAttribute('aria-expanded', 'false')
+  expect(screen.queryByRole('status')).toBeNull()
+  expect(screen.queryByRole('audio')).toBeNull()
+})
+it('binds both participant identities, preserves independent gaps and clears answers on participant replacement', () => {
+  const lines = conversation.aboutYou as readonly MaterialPersonalDialogueTurn[]
+  const view = render(<MaterialPersonalDialogue lines={lines} />)
+  expect(screen.getAllByText('Adriana')).toHaveLength(5)
+  expect(screen.getAllByText('Maria')).toHaveLength(4)
+  expect(view.container.querySelector('img')).toHaveAttribute(
+    'src',
+    identities.teacher.avatarUrl,
+  )
+  const teacherGreeting = screen.getByRole('textbox', {
+    name: 'Adriana: Greeting',
+  })
+  fireEvent.change(teacherGreeting, { target: { value: 'afternoon' } })
+  fireEvent.change(screen.getByRole('textbox', { name: 'Maria: Greeting' }), {
+    target: { value: 'evening' },
+  })
+  expect(teacherGreeting).toHaveValue('afternoon')
+  expect(screen.getByRole('textbox', { name: 'Maria: Greeting' })).toHaveValue(
+    'evening',
+  )
+  identities.learner = {
+    firstName: 'Bia',
+    avatarUrl: 'https://example.test/bia.jpg',
+  }
+  view.rerender(<MaterialPersonalDialogue lines={lines} />)
+  expect(screen.getByRole('textbox', { name: 'Bia: Greeting' })).toHaveValue('')
+  expect(teacherGreeting).toHaveValue('')
+  expect(view.container.querySelector('audio')).toBeNull()
+})

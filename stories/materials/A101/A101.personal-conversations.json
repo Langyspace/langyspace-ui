@@ -1,0 +1,183 @@
+{
+  "aboutYou": [
+    {
+      "id": "you111.1",
+      "participant": "teacher",
+      "content": "Good ______! Nice to meet you",
+      "parts": [
+        "Good ",
+        {
+          "id": "teacher.greeting111",
+          "kind": "open",
+          "label": "Greeting"
+        },
+        "! Nice to meet you"
+      ]
+    },
+    {
+      "id": "you111.2",
+      "participant": "learner",
+      "content": "Good ______! ______, too",
+      "parts": [
+        "Good ",
+        {
+          "id": "learner.greeting111",
+          "kind": "open",
+          "label": "Greeting"
+        },
+        "! ",
+        {
+          "id": "learner.meet111",
+          "kind": "open",
+          "label": "Meeting response"
+        },
+        ", too"
+      ]
+    },
+    {
+      "id": "you111.3",
+      "participant": "teacher",
+      "content": "How are you today?"
+    },
+    {
+      "id": "you111.4",
+      "participant": "learner",
+      "content": "I'm ______, but I'm ______. And you?",
+      "parts": [
+        "I'm ",
+        {
+          "id": "learner.feeling111",
+          "kind": "open",
+          "label": "First feeling"
+        },
+        ", but I'm ",
+        {
+          "id": "learner.feeling2.111",
+          "kind": "open",
+          "label": "Second feeling"
+        },
+        ". And you?"
+      ]
+    },
+    {
+      "id": "you111.5",
+      "participant": "teacher",
+      "content": "I'm ______. Where are you from?",
+      "parts": [
+        "I'm ",
+        {
+          "id": "teacher.feeling111",
+          "kind": "open",
+          "label": "Feeling"
+        },
+        ". Where are you from?"
+      ]
+    },
+    {
+      "id": "you111.6",
+      "participant": "learner",
+      "content": "I'm from ______. And you?",
+      "parts": [
+        "I'm from ",
+        {
+          "id": "learner.country111",
+          "kind": "open",
+          "label": "Country"
+        },
+        ". And you?"
+      ]
+    },
+    {
+      "id": "you111.7",
+      "participant": "teacher",
+      "content": "I'm from ______",
+      "parts": [
+        "I'm from ",
+        {
+          "id": "teacher.country111",
+          "kind": "open",
+          "label": "Country"
+        }
+      ]
+    },
+    {
+      "id": "you111.8",
+      "participant": "learner",
+      "content": "Bye! See you later"
+    },
+    {
+      "id": "you111.9",
+      "participant": "teacher",
+      "content": "______!",
+      "parts": [
+        {
+          "id": "teacher.bye111",
+          "kind": "open",
+          "label": "Goodbye"
+        },
+        "!"
+      ]
+    }
+  ],
+  "someone": [
+    {
+      "id": "someone111.1",
+      "participant": "teacher",
+      "content": "Hi! Who is this?"
+    },
+    {
+      "id": "someone111.2",
+      "participant": "learner",
+      "content": "This is my friend ______",
+      "parts": [
+        "This is my friend ",
+        {
+          "id": "friend.name111",
+          "kind": "open",
+          "label": "Friend’s name"
+        }
+      ]
+    },
+    {
+      "id": "someone111.3",
+      "participant": "teacher",
+      "content": "How is he/she?"
+    },
+    {
+      "id": "someone111.4",
+      "participant": "learner",
+      "content": "He/she is ______",
+      "parts": [
+        "He/she is ",
+        {
+          "id": "friend.feeling111",
+          "kind": "open",
+          "label": "Friend’s feeling"
+        }
+      ]
+    },
+    {
+      "id": "someone111.5",
+      "participant": "teacher",
+      "content": "Where is he/she from?"
+    },
+    {
+      "id": "someone111.6",
+      "participant": "learner",
+      "content": "He/she is from ______",
+      "parts": [
+        "He/she is from ",
+        {
+          "id": "friend.country111",
+          "kind": "open",
+          "label": "Friend’s country"
+        }
+      ]
+    },
+    {
+      "id": "someone111.7",
+      "participant": "teacher",
+      "content": "Interesting!"
+    }
+  ]
+}

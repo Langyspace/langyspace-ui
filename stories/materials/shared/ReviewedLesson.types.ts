@@ -4,6 +4,7 @@ import type { GrammarTableProps } from '../../../src/components/InteractiveMater
 import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
 import type { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
 import type { ReactNode } from 'react'
+import type { SlideColumns } from '../../../src/foundations/layout/slideColumns'
 
 export interface ReviewedTurn {
   id: string
@@ -30,6 +31,8 @@ interface PageBase {
   eyebrow: string
   instruction: string
   minutes: number
+  /** Authored semantic span for custom compositions; defaults remain unchanged. */
+  columns?: SlideColumns
   /** A continued model is counted across its explicitly linked parts. */
   dialogueGroup?: string
   /** Factual checks and short replies are not fictional two-person conversations. */

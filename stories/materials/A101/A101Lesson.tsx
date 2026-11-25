@@ -1,6 +1,9 @@
 import { ReviewedLesson } from '../shared/ReviewedLesson'
 import type { ReviewedPage } from '../shared/ReviewedLesson.types'
 import { CountryFeelingRoleplay } from './CountryFeelingRoleplay'
+import { MaterialPersonalDialogue } from '../shared/MaterialPersonalDialogue'
+import type { MaterialPersonalDialogueTurn } from '../shared/MaterialPersonalDialogue.types'
+import personalConversations from './A101.personal-conversations.json'
 import type { A101LessonProps } from './A101.types'
 import data from './A101.review.json'
 import provenance from './audio-provenance.json'
@@ -68,10 +71,24 @@ export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
       learnerName={learnerName}
       notesStorageKey="langy-notes:a1-01"
       activities={{
+        s_personal111: (
+          <MaterialPersonalDialogue
+            lines={
+              personalConversations.aboutYou as readonly MaterialPersonalDialogueTurn[]
+            }
+          />
+        ),
+        s_introducing111: (
+          <MaterialPersonalDialogue
+            lines={
+              personalConversations.someone as readonly MaterialPersonalDialogueTurn[]
+            }
+          />
+        ),
         s10: <CountryFeelingRoleplay />,
         s_roleplay_challenge110: <CountryFeelingRoleplay challenge />,
       }}
-      freeConversationInstruction="Get to know each other: introduce yourself, ask about your teacher and react to her answers"
+      freeConversationInstruction="Get to know each other: introduce yourself"
     />
   )
 }

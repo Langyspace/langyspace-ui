@@ -440,5 +440,7 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 ### 25/11/2026 — Identidades visuais para roleplay
 
+- Conversas sobre informações reais usam lacunas abertas no `LearningDialogue`, sem respostas únicas, avaliação automática ou áudio gravado como se fosse dos participantes. Campos de saudação, sentimento, nome e origem aceitam texto livre; a professora pode preencher durante a fala da aluna na tela compartilhada. Alternar os balões e usar as identidades dos contextos compartilhados, com nomes abaixo dos avatares. Não persistir respostas pessoais entre participantes ou em storage. Conversa-modelo com gabarito e conversa pessoal editável mantêm contratos distintos no mesmo componente.
+
 - Para combinar países e sentimentos, apresentar os seis personagens juntos, com bandeiras oficiais e expressões claras. São seis identidades visuais, não 36 combinações. A emoção é circunstancial e nunca uma característica atribuída à nacionalidade.
 - Escolher mentalmente uma identidade, sem clicar e revelar a escolha ao outro participante. A tela explicita quem pergunta, quem responde e a troca de papéis. Perguntas curtas visíveis apoiam a fala; o desafio de apresentar todos como amigos fica em página própria para não sobrecarregar o jogo.

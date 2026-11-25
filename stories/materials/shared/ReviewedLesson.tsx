@@ -624,11 +624,12 @@ export function ReviewedLesson({
                         : 'regular'
                     }
                     columns={
-                      page.kind === 'dialogue' ||
+                      page.columns ??
+                      (page.kind === 'dialogue' ||
                       page.kind === 'questions' ||
                       page.kind === 'image-choice'
                         ? 1
-                        : undefined
+                        : undefined)
                     }
                     width={
                       page.kind === 'image-choice'
