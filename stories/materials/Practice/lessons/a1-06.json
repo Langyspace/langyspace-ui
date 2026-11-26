@@ -191,16 +191,7 @@
         "audioId": "flashcard124-a-chair.front",
         "backAudioId": "flashcard124-a-chair.back",
         "visualLabel": "a chair",
-        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/8e3a0a4f6a0eb9a8fc2fb097ba1dd0f3a8905fc181e3a4f9efdc172a44b0a705/image.webp",
-        "imageRegion": {
-          "columns": 100,
-          "rows": 100,
-          "column": 17,
-          "row": 39,
-          "columnSpan": 18,
-          "rowSpan": 44,
-          "sourceAspectRatio": 1.5
-        }
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/47c5597773f0fad03568dd37a543644eccec4e2df529aab129a7701e8e401106/image.webp"
       },
       {
         "word": "a door",
@@ -211,16 +202,7 @@
         "audioId": "flashcard124-a-door.front",
         "backAudioId": "flashcard124-a-door.back",
         "visualLabel": "a door",
-        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/8e3a0a4f6a0eb9a8fc2fb097ba1dd0f3a8905fc181e3a4f9efdc172a44b0a705/image.webp",
-        "imageRegion": {
-          "columns": 100,
-          "rows": 100,
-          "column": 0,
-          "row": 10,
-          "columnSpan": 21,
-          "rowSpan": 56,
-          "sourceAspectRatio": 1.5
-        }
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/d88ac761134375832ffc242a4e232c88731422d1da9f1322ea53dac57bef7488/image.webp"
       },
       {
         "word": "a window",
@@ -231,16 +213,7 @@
         "audioId": "flashcard124-a-window.front",
         "backAudioId": "flashcard124-a-window.back",
         "visualLabel": "a window",
-        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/8e3a0a4f6a0eb9a8fc2fb097ba1dd0f3a8905fc181e3a4f9efdc172a44b0a705/image.webp",
-        "imageRegion": {
-          "columns": 100,
-          "rows": 100,
-          "column": 32,
-          "row": 0,
-          "columnSpan": 36,
-          "rowSpan": 43,
-          "sourceAspectRatio": 1.5
-        }
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/a94e952f68f045d0c82013c63c32f58ced53ee67b6069062ab9041b3d6cacf3c/image.webp"
       },
       {
         "word": "a desk",
@@ -313,11 +286,18 @@
       }
     ]
   },
-  "publishedEnvironments": ["staging", "production"],
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
   "voice": {
     "prompt": "Tell me about a real or imaginary pet. Say its name and two things it has",
     "duration": "20–30 seconds",
-    "starters": ["I have a…", "My… has…", "Do you have…?"],
+    "starters": [
+      "I have a…",
+      "My… has…",
+      "Do you have…?"
+    ],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

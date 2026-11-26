@@ -54,6 +54,7 @@ import expanded124Asset26 from '../assets/flashcards124/b746b1a23759110d8e260c2c
 import expanded124Asset27 from '../assets/flashcards124/13217f065a472290acf7c87a6d57e667f42917dc7a5aa2249341f6581ab2631e.webp'
 import expanded124Asset28 from '../assets/flashcards124/c2df6f087f1d64a76ccdc264c268a3ddfac5a2a43b890c5b7311e472bf5258c1.webp'
 import expanded124Asset29 from '../assets/flashcards124/bedf7066bb99b2081415f676f223fc2f7bedaa014facc22c62bcf3328b47c9af.webp'
+import region131Asset0 from '../assets/homework131/regionExports/region-2a341d175232b68c48692cada9f7f31c25f5a450c3de63a7d951204baced0c01.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -241,6 +242,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/homework-media131/a94e952f68f045d0c82013c63c32f58ced53ee67b6069062ab9041b3d6cacf3c/image.webp':
+      region131Asset0,
     ...homeworkMediaImages('a2-05'),
     '/flashcards-transparent/a1/verbs/help/image.webp': expanded124Asset18,
     '/flashcards-transparent/a1/verbs/bring/image.webp': expanded124Asset19,

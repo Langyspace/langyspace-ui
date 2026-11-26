@@ -266,16 +266,7 @@
         "audioId": "flashcard124-a-window.front",
         "backAudioId": "flashcard124-a-window.back",
         "visualLabel": "a window",
-        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/8e3a0a4f6a0eb9a8fc2fb097ba1dd0f3a8905fc181e3a4f9efdc172a44b0a705/image.webp",
-        "imageRegion": {
-          "columns": 100,
-          "rows": 100,
-          "column": 32,
-          "row": 0,
-          "columnSpan": 36,
-          "rowSpan": 43,
-          "sourceAspectRatio": 1.5
-        }
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/a94e952f68f045d0c82013c63c32f58ced53ee67b6069062ab9041b3d6cacf3c/image.webp"
       }
     ]
   },
@@ -349,11 +340,18 @@
       }
     ]
   },
-  "publishedEnvironments": ["staging", "production"],
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
   "voice": {
     "prompt": "Send me a voice note: offer practical help and distinguish it from an earlier plan",
     "duration": "45–60 seconds",
-    "starters": ["I’ll… for you", "I’m going to…", "Could you…?"],
+    "starters": [
+      "I’ll… for you",
+      "I’m going to…",
+      "Could you…?"
+    ],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

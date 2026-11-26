@@ -188,16 +188,7 @@
         "audioId": "flashcard124-an-umbrella.front",
         "backAudioId": "flashcard124-an-umbrella.back",
         "visualLabel": "an umbrella",
-        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/8e3a0a4f6a0eb9a8fc2fb097ba1dd0f3a8905fc181e3a4f9efdc172a44b0a705/image.webp",
-        "imageRegion": {
-          "columns": 100,
-          "rows": 100,
-          "column": 4,
-          "row": 65,
-          "columnSpan": 23,
-          "rowSpan": 22,
-          "sourceAspectRatio": 1.5
-        }
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/c9a3807987a15b65f82d65cf552c2bd0f98dfd6f9317bbc12edf5a21c5a73149/image.webp"
       },
       {
         "word": "a shelter",
@@ -405,11 +396,18 @@
       }
     ]
   },
-  "publishedEnvironments": ["staging", "production"],
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
   "voice": {
     "prompt": "Send me a voice note: agree on a realistic backup plan for a day out",
     "duration": "45–60 seconds",
-    "starters": ["If it…, we’ll…", "We’ll… if…", "If…, we can…"],
+    "starters": [
+      "If it…, we’ll…",
+      "We’ll… if…",
+      "If…, we can…"
+    ],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

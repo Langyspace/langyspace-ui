@@ -53,6 +53,7 @@ import expanded124Asset25 from '../assets/flashcards124/d7c400091e24223c011f9fc0
 import expanded124Asset26 from '../assets/flashcards124/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8.webp'
 import expanded124Asset27 from '../assets/flashcards124/6855ddac4f7f103138cbfc2ef41bf4b08fc9ab179e6e5aee94d99715f193f967.webp'
 import expanded124Asset28 from '../assets/flashcards124/9bb0f4002481625cc5fed0753ca638f82942e1cde1159a05ffb12cdc5f4245e5.webp'
+import region131Asset0 from '../assets/homework131/regionExports/region-553b93484616e746e049d060307922a586055b2adb1c1e1f2abafb478511b748.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -243,6 +244,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/homework-media131/c9a3807987a15b65f82d65cf552c2bd0f98dfd6f9317bbc12edf5a21c5a73149/image.webp':
+      region131Asset0,
     ...homeworkMediaImages('a2-11'),
     '/flashcards-transparent/course-practice/homework-media131/d7c400091e24223c011f9fc051bb9b06ac3a6f477b8ebfdafe856c2a71ceeb8a/image.webp':
       expanded124Asset25,

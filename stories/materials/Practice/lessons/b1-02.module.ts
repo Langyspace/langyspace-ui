@@ -52,6 +52,8 @@ import expanded124Asset24 from '../assets/flashcards124/944ddb3ecc3da7be23fae8c8
 import expanded124Asset25 from '../assets/flashcards124/69c57a183d3a7986e6b5a3371e239cae849fd66b456cc89907e3055ffd5dcdb0.mp3'
 import expanded124Asset26 from '../assets/flashcards124/dc8ce70f5e0f643731dc28ef378e42fe4013c6cf08687e38591c22138ad6e973.mp3'
 import expanded124Asset27 from '../assets/flashcards124/eaa215ac0b11b6aff68cdb5557f019a6ee08bb8bcb193f59f9b5dab161ce8eee.webp'
+import region131Asset0 from '../assets/homework131/regionExports/region-0ce861140ef9ccee11e653b807aec2e9265ec19f858932220c5c8e964e2a450d.webp'
+import region131Asset1 from '../assets/homework131/regionExports/region-476542d54927e44ec6890363b2b997c4a579ba0e1fa13c4306974eacd3bfd4cf.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -276,6 +278,10 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/homework-media131/8d52a324e2fa71303712b9264e751dc86cc1cfa4cdee89258b4b97135682021d/image.webp':
+      region131Asset0,
+    '/flashcards-transparent/course-practice/homework-media131/0a6e19094b74a781de5610f97a4196090638fb07211e957935775fc2f20d5b76/image.webp':
+      region131Asset1,
     ...homeworkMediaImages('b1-02'),
     '/flashcards-transparent/a2/travel/bus-stop/image.webp': expanded124Asset27,
     '/flashcards/course-characters/evelyn-carter/image.webp': asset20,
