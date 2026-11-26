@@ -8,6 +8,7 @@ import {
 } from 'react'
 import { IconButton } from '../IconButton/IconButton'
 import { theme } from '../../foundations/theme/theme'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 import * as Common from './Material.shared.styles'
 import * as Styled from './SceneExplorer.styles'
 import {
@@ -353,7 +354,10 @@ export function SceneExplorer(options: SceneExplorerProps) {
                 type="button"
                 variant="secondary"
                 aria-expanded={answerVisible}
-                onClick={onAnswerToggle}
+                onClick={() => {
+                  onAnswerToggle?.()
+                  playFeedbackSound('question')
+                }}
               >
                 {answerVisible ? text.hide : text.show}
               </Common.Action>

@@ -37,11 +37,11 @@ export function QuestionList({
               $numbered={numbered}
               $compact={density === 'compact'}
             >
-              {item.answer ? (
+              {item.answer || item.hint ? (
                 <RevealCard
                   presentation="prompt"
                   marker={marker}
-                  answer={item.answer}
+                  answer={item.answer || item.hint}
                   answerMinLines={answerMinLines}
                   revealed={level === 'full'}
                   aria-label={item.prompt}
@@ -50,7 +50,14 @@ export function QuestionList({
                     level,
                     hint: item.hint,
                     onChange: (next) =>
-                      setLevels((old) => ({ ...old, [item.id]: next })),
+                      setLevels((old) => ({
+                        ...old,
+                        [item.id]: item.answer
+                          ? next
+                          : level === 'cue'
+                            ? 'hint'
+                            : 'cue',
+                      })),
                   }}
                 >
                   {item.prompt}
@@ -63,11 +70,6 @@ export function QuestionList({
               )}
               {item.cue ? (
                 <S.Guidance $numbered={numbered}>{item.cue}</S.Guidance>
-              ) : null}
-              {!item.answer && level === 'hint' ? (
-                <S.Guidance $numbered={numbered} role="status">
-                  {item.hint}
-                </S.Guidance>
               ) : null}
             </S.Prompt>
           )

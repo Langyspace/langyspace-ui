@@ -84,8 +84,9 @@ async function play(
     !window.AudioContext
   )
     return
-  const quiet = outcome === 'hint' || outcome === 'question'
-  if (quiet && mediaIsPlaying()) return
+  // A deliberate question click still acknowledges while listening; it never controls the recording.
+  const deferToMedia = outcome === 'hint'
+  if (deferToMedia && mediaIsPlaying()) return
   stopFeedbackSounds()
   const request = revision
   try {
@@ -107,7 +108,7 @@ async function play(
       document.hidden
     )
       return
-    if (quiet && mediaIsPlaying()) return
+    if (deferToMedia && mediaIsPlaying()) return
     const bus = audio.createGain()
     bus.gain.value =
       design.volume *

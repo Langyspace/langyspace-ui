@@ -2,6 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { IconButton } from '../../src/components/IconButton/IconButton'
 import { VocabularyControls } from '../../src/components/Exercise/VocabularyControls'
+import { OralReview } from '../../src/components/InteractiveMaterial/OralReview'
+import { VoiceMessageExercise } from '../../src/components/VoiceMessage/VoiceMessageExercise'
 import { QuestionList } from '../../src/components/Exercise/QuestionList'
 import { RevealCard } from '../../src/components/Exercise/RevealCard'
 import { AudioSequenceControls } from '../../src/components/InteractiveMaterial/AudioSequenceControls'
@@ -217,7 +219,8 @@ describe('Shared hint earcon', () => {
     )
     fireEvent.click(screen.getByRole('button', { name: 'Answer' }))
     expect(onChange).toHaveBeenLastCalledWith('full')
-    expect(latest().oscillators).toHaveLength(4)
+    expect(latest().oscillators).toHaveLength(2)
+    expect(latest().sources).toHaveLength(1)
     rerender(
       <AudioSequenceControls
         index={0}
@@ -234,10 +237,10 @@ describe('Shared hint earcon', () => {
     )
     fireEvent.click(screen.getByRole('button', { name: 'Speaking tip' }))
     expect(support).toHaveBeenCalledOnce()
-    expect(latest().oscillators).toHaveLength(6)
+    expect(latest().oscillators).toHaveLength(4)
     fireEvent.click(screen.getByRole('button', { name: 'Tocar de novo' }))
     expect(onReplay).toHaveBeenCalledOnce()
-    expect(latest().oscillators).toHaveLength(6)
+    expect(latest().oscillators).toHaveLength(4)
   })
 
   it('discards an awaited AudioContext resume if sound is muted before it finishes', async () => {
@@ -324,4 +327,123 @@ it('applies mute immediately, acknowledges only the switch itself and enables or
   expect(context.oscillators).toHaveLength(4)
   playFeedbackSound('hint')
   expect(context.oscillators).toHaveLength(6)
+})
+
+it('lets a hint-only question reveal optional support on click, without inventing a fixed answer', () => {
+  render(
+    <QuestionList
+      items={[
+        {
+          id: 'personal',
+          prompt: 'What do you usually eat?',
+          hint: 'I usually have … for breakfast',
+        },
+      ]}
+    />,
+  )
+  const question = screen.getByRole('button', {
+    name: 'What do you usually eat?',
+  })
+  fireEvent.click(question)
+  expect(question).toHaveAttribute('aria-expanded', 'true')
+  expect(
+    screen.getByText('I usually have … for breakfast', {
+      selector: 'p[aria-hidden="false"]',
+    }),
+  ).toBeVisible()
+  expect(latest().sources).toHaveLength(1)
+  fireEvent.click(question)
+  expect(question).toHaveAttribute('aria-expanded', 'false')
+  expect(latest().sources).toHaveLength(2)
+  fireEvent.click(screen.getByRole('button', { name: 'Show next hint' }))
+  expect(question).toHaveAttribute('aria-expanded', 'true')
+  fireEvent.click(question)
+  expect(question).toHaveAttribute('aria-expanded', 'false')
+})
+
+it('acknowledges legacy question cards and oral-review examples with the same texture', () => {
+  const reveal = vi.fn()
+  const { rerender } = render(
+    <RevealCard answer="She’s from Korea" revealed={false} onClick={reveal}>
+      Where is Kim from?
+    </RevealCard>,
+  )
+  fireEvent.click(screen.getByRole('button', { name: /Where is Kim from/ }))
+  expect(reveal).toHaveBeenCalledOnce()
+  expect(latest().sources).toHaveLength(1)
+  rerender(
+    <OralReview
+      questions={[
+        {
+          id: 'q',
+          level: 'A1',
+          prompt: 'Introduce yourself',
+          example: 'My name is …',
+        },
+      ]}
+      ratings={{}}
+      onRate={() => undefined}
+      onReveal={reveal}
+    />,
+  )
+  fireEvent.click(screen.getByRole('button', { name: 'Mostrar exemplo' }))
+  expect(reveal).toHaveBeenLastCalledWith('q')
+  expect(latest().sources).toHaveLength(2)
+})
+
+it('acknowledges a listening choice neutrally while preserving explicit correctness sounds', () => {
+  const pause = vi
+    .spyOn(HTMLMediaElement.prototype, 'pause')
+    .mockImplementation(() => undefined)
+  const load = vi
+    .spyOn(HTMLMediaElement.prototype, 'load')
+    .mockImplementation(() => undefined)
+  const answer = vi.fn()
+  const { unmount } = render(
+    <VoiceMessageExercise
+      contact={{ name: 'Kim' }}
+      audio={{ id: 'voice', transcript: 'A message', timestamp: '10:00' }}
+      questions={[
+        {
+          id: 'q',
+          prompt: 'What did Kim say?',
+          choices: [
+            { id: 'neutral', label: 'Check this choice' },
+            {
+              id: 'right',
+              label: 'Correct choice',
+              feedbackOutcome: 'correct',
+            },
+          ],
+        },
+      ]}
+      onAnswer={answer}
+    />,
+  )
+  fireEvent.click(screen.getByRole('button', { name: 'Check this choice' }))
+  expect(answer).toHaveBeenCalledWith('q', 'neutral')
+  expect(latest().sources).toHaveLength(1)
+  fireEvent.click(screen.getByRole('button', { name: 'Correct choice' }))
+  expect(answer).toHaveBeenLastCalledWith('q', 'right')
+  expect(latest().oscillators).toHaveLength(4)
+  unmount()
+  pause.mockRestore()
+  load.mockRestore()
+})
+
+it('acknowledges a deliberate question click during listening without pausing or resetting the recording', () => {
+  const media = document.createElement('audio')
+  let paused = false
+  Object.defineProperty(media, 'paused', { get: () => paused })
+  media.currentTime = 3
+  const pause = vi.spyOn(media, 'pause')
+  observeFeedbackMedia(media)
+  media.dispatchEvent(new Event('play'))
+  playFeedbackSound('question')
+  expect(latest().sources).toHaveLength(1)
+  expect(pause).not.toHaveBeenCalled()
+  expect(media.currentTime).toBe(3)
+  paused = true
+  media.dispatchEvent(new Event('ended'))
+  pause.mockRestore()
 })

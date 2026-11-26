@@ -494,3 +494,9 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Pontos de `SceneExplorer` ficam para uma cena contínua em que posição, ambiente ou relações são pistas: família, parque, rotina e ambiente de trabalho
 - Uma prancha com várias ilustrações não vira uma cena por estar em um único arquivo. Declarar as regiões de cada item (`imageRegion`) e reutilizar os mesmos bytes, áudio e controles do vocabulário. Preservar transparência, proporção e separação entre regiões; a grade e seu título compartilham a largura da composição
 - Não classificar automaticamente pelo nome do item ou por palavras-chave. O autor escolhe o formato conforme a evidência visual
+
+### Som consistente nas perguntas — revisão129
+
+- Toda pergunta que revela resposta, exemplo ou apoio usa o mesmo feedback suave de QuestionList/RevealCard, independentemente de estar no diálogo, listening, vídeo ou tarefa visual. Perguntas abertas com dica podem abrir essa dica no próprio card; não transformar um exemplo em gabarito único
+- Revisões e respostas de missão usam o mesmo canal. Escolhas do listening sem avaliação explícita recebem a confirmação neutra; sons de acerto/erro continuam sendo usados quando a avaliação os declara
+- O clique deliberado na pergunta é confirmado também durante a escuta, sem controlar ou interromper a gravação. O mute do header continua valendo. Não duplicar handlers por página nem usar reconhecimento de texto/labels para disparar sons

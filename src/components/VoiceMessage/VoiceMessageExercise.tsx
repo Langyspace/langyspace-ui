@@ -199,8 +199,7 @@ function VoiceMessageContent({
                     }
                     onClick={() => {
                       onAnswer(question.id, choice.id)
-                      if (choice.feedbackOutcome)
-                        playFeedbackSound(choice.feedbackOutcome)
+                      playFeedbackSound(choice.feedbackOutcome ?? 'question')
                     }}
                   >
                     {choice.label}

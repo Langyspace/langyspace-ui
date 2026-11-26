@@ -45,7 +45,7 @@ export function RevealCard({
             onClick?.(event)
             if (!event.defaultPrevented) {
               guidance.onChange(next)
-              playFeedbackSound('hint')
+              playFeedbackSound(next === 'hint' ? 'hint' : 'question')
             }
           }}
         >
@@ -132,7 +132,7 @@ export function RevealCard({
       {...props}
       onClick={(event) => {
         onClick?.(event)
-        if (!event.defaultPrevented) playFeedbackSound('hint')
+        if (!event.defaultPrevented) playFeedbackSound('question')
       }}
       type={type}
       aria-expanded={revealed}

@@ -2,6 +2,7 @@ import { EMPTY_LIST } from './Material.constants'
 import * as Common from './Material.shared.styles'
 import * as Styled from './OralReview.styles'
 import type { OralReviewProps } from './OralReview.types'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 export function OralReview({
   questions,
   ratings,
@@ -52,8 +53,10 @@ export function OralReview({
               type="button"
               variant="text"
               aria-expanded={revealedIds.includes(question.id)}
+              disabled={disabled}
               onClick={() => {
                 onReveal(question.id)
+                playFeedbackSound('question')
               }}
             >
               {revealedIds.includes(question.id) ? text.hide : text.show}

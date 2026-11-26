@@ -29,3 +29,15 @@ A preferência estava habilitada, o documento visível e o audio nativo pausado.
 ## Ajuste após retorno de som duro
 
 A tentativa anterior continuou sendo percebida como uma batida. O question cue passa a uma textura de ar filtrado de 180 ms, banda 180–900 Hz, sem oscilador tonal. Uma janela suave em sino cobre toda a subida/descida, com bordas próximas de zero. O gerador privado produz PCM determinístico por sample rate; o canal, volume, mute, substituição de cliques e prioridade da fala são os mesmos. Não altera layout, animações ou demais sons. Os testes medem reprodução única, fade inicial/final, sinal não nulo, mute e preservação dos outros earcons; aprovação de timbre continua com a usuária.
+
+## Cobertura global das perguntas — revisão129
+
+O mesmo efeito aprovado é aplicado em todos os caminhos canônicos de pergunta interativa: RevealCard em lista, modo legado e orientação progressiva (resposta/ocultar); QuestionList com resposta ou apenas dica; OralReview ao mostrar exemplo; SceneExplorer ao conferir resposta da missão; escolhas nativas de VoiceMessageExercise sem feedback avaliativo explícito. Sons de acerto/erro declarados continuam distintos. MaterialVideoPage, ListeningActivity, TrialA1Listening, listening da Influencer e adaptador Course já delegam a QuestionList/RevealCard; não receberam handlers por aula.
+
+Perguntas pessoais que só têm dica passam a poder abrir/fechar essa ajuda pelo próprio card, usando o mesmo estado do rodapé. Não se inventa uma resposta factual para uma pergunta aberta. Rótulos sem resposta ou ajuda e falas puramente orais continuam sendo conteúdo, sem criar ação sem propósito.
+
+O efeito discreto de pergunta também confirma o clique durante a escuta. Ele não pausa, reinicia nem reduz o volume da gravação. Mute continua silenciando todas as perguntas; as dicas da lâmpada preservam a prioridade anterior de mídia.
+
+Verificação: 25 testes passaram nos três arquivos focados. Três testes antigos de SceneExplorer falharam (duas expectativas de geometria e uma de autoplay ao selecionar objeto). A execução isolada desses mesmos três casos contra o componente HEAD anterior reproduziu as três falhas; o resultado está em .local/question-feedback129-baseline.txt. Não foram alteradas geometria, seleção ou essas expectativas para esconder falhas. TypeScript, declarações e API passaram (184/307/652). A entrega continua em draft; não há merge ou publicação.
+
+Na prévia local foram conferidos três contextos fora do guided conversation: pergunta factual do listening com a gravação ativa (o player permaneceu em reprodução), pergunta do vídeo e pergunta aberta de tarefa visual com apenas dica. Cada clique criou um AudioBufferSource do efeito aprovado; capturas e resumo dos eventos estão em evidence/global-question-routing.json e nas três novas imagens. O teste de dica isolada também confere a alternância pelo card depois de abrir a ajuda pelo rodapé.
