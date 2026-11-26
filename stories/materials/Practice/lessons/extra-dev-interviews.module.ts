@@ -16,7 +16,7 @@ const prepared: PreparedPractice = {
     key: source.materialKey,
     code: source.code,
     title: source.title,
-    publishedEnvironments: [],
+    publishedEnvironments: ['staging'],
     homeworkCopy: {
       title: 'Entrevistas para desenvolvedores',
       first: 'Revisar as vinte expressões de entrevista nos flashcards',

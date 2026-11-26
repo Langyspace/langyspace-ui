@@ -147,7 +147,7 @@ const modulePath = resolve(
   'stories/materials/Practice/lessons/extra-dev-interviews.module.ts',
 )
 const moduleText = await readFile(modulePath, 'utf8')
-assert.match(moduleText, /publishedEnvironments:\s*\[\]/)
+assert.match(moduleText, /publishedEnvironments:\s*\['staging'\]/)
 assert.match(
   moduleText,
   /\/flashcards-transparent\/course-practice\/dev-interviews131\/[a-f0-9]{64}\/image\.webp/,
