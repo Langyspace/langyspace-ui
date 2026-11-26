@@ -55,3 +55,42 @@ export const HomeIndicator = styled.div`
   border-radius: ${theme.radius.pill};
   background: ${(p) => resolveSlideTheme(p).muted};
 `
+
+/** A physical image frame shares the MobileFrame content contract without drawing a second bezel. */
+export const IllustratedRoot = styled.section.withConfig({
+  componentId: 'lsui-sc-mobile-frame-illustrated',
+})<{ $aspectRatio: number }>`
+  position: relative;
+  width: min(
+    100%,
+    calc(
+      min(${presentationMedia.maximumHeight}, 68cqh) * ${(p) => p.$aspectRatio}
+    )
+  );
+  aspect-ratio: ${(p) => p.$aspectRatio};
+  min-width: 0;
+  margin-inline: auto;
+  font-family: ${theme.typography.fontFamily.sans};
+  color: ${(p) => resolveSlideTheme(p).foreground};
+`
+export const Illustration = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+`
+export const IllustratedScreen = styled.div<{
+  $screen: { x: number; y: number; width: number; height: number }
+  $hasTitle: boolean
+}>`
+  position: absolute;
+  inset-inline-start: ${(p) => p.$screen.x}%;
+  top: ${(p) => p.$screen.y}%;
+  width: ${(p) => p.$screen.width}%;
+  height: ${(p) => p.$screen.height}%;
+  display: grid;
+  grid-template-rows: ${(p) => (p.$hasTitle ? 'auto minmax(0,1fr)' : 'minmax(0,1fr)')};
+  min-width: 0;
+  min-height: 0;
+  overflow: clip;
+  border-radius: ${theme.radius.sm};
+`

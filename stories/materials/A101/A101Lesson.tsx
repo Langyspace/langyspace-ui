@@ -86,7 +86,9 @@ export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
           />
         ),
         s10: <CountryFeelingRoleplay />,
-        s_roleplay_challenge110: <CountryFeelingRoleplay challenge />,
+        s_roleplay_challenge110: ({ active }) => (
+          <CountryFeelingRoleplay challenge active={active} />
+        ),
       }}
       freeConversationInstruction="Get to know each other: introduce yourself"
     />

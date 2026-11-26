@@ -20,6 +20,7 @@ Decisões atuais para lembrar:
 
 - Contexto e ação precisam ficar claros pelo título, subtítulo e evidência visual. A aluna participa oralmente pela tela compartilhada; a professora tem sua pergunta pronta.
 - Balões no topo; em colunas pareadas, uma lâmpada fora deles, centralizada no rodapé da coluna. Na reunião, ajuda junto à navegação. Dica → exemplo completo → orientação, substituindo o texto em cada etapa.
+- Em transferência oral, um estímulo sorteado pode ser suficiente para aprofundar a apresentação; o mínimo de seis itens do vocabulário não obriga repetir todos em cada roleplay. Sortear ao começar e manter o estímulo estável durante a tarefa. Nome, bandeira e imagem devem fornecer evidências suficientes para o que se pede.
 - Cena contextual e hotspots quando ajudarem a entender o vocabulário; molduras e controles da UI Library. Telas claras, retratos inteiros e sem rótulos duplicados.
 - Pelo menos 6 itens no bloco introdutório e 20 no conjunto de flashcards, com exemplos e áudio correspondentes. São mínimos de atividades diferentes.
 - Deveres preparados junto com a aula; link só depois de cadastro e mídia confirmados no ambiente correto. Revisão local, exercício no Student e material publicado são estados distintos.

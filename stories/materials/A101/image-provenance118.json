@@ -1,0 +1,34 @@
+{
+  "provider": "built-in image_gen",
+  "requestId": null,
+  "generations": 1,
+  "references": 0,
+  "transparent_background": true,
+  "styleSource": "docs/materials/prompts/langy-illustration-v1.8.txt",
+  "styleSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "literalPrefix": true,
+  "promptFile": "docs/epics/a101-friend-phone118/image-prompt.txt",
+  "promptSha256": "474550bc9095b0875705e1f236d4ef91557c7ac9c7a8ced81982ba32d02b9d3c",
+  "original": {
+    "sha256": "793fd38788a3c7e7231e123b993bc88d89d48f45755a56aaee12e17aadf15db5",
+    "width": 1024,
+    "height": 1536,
+    "hasAlpha": true
+  },
+  "asset": {
+    "file": "assets/handheld-phone118.webp",
+    "sha256": "9ebdf2c34a8d4fa1e31faa150f42a2327a336f65157ee45b50e9529acb22da2b",
+    "width": 768,
+    "height": 1152,
+    "hasAlpha": true
+  },
+  "processing": "proportional resize and WebP export only; no background edits or composite bitmap",
+  "screenPercent": {
+    "x": 19.34,
+    "y": 10.03,
+    "width": 52.34,
+    "height": 63.74
+  },
+  "photos": "six unchanged roleplay110 images; displayed natively inside screen",
+  "notes": "Native preview showed soft translucent edges; final dark-material rendering was checked at829x775,507x775 and1280x720. No anatomy defect or broad halo was visible in those captures; this is not a claim of perfect cutout."
+}

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
+import { FriendPhotoChallenge } from '../../materials/A101/FriendPhotoChallenge'
 import { MobileFrame } from '../../../src/components/Device/MobileFrame'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -72,5 +73,11 @@ export const Application: Story = {
       </Common.Stack>
     ),
   },
+  tags: ['visual-review'],
+}
+
+/** Native photo/name/flag sit inside the one generated physical frame. */
+export const HandheldPhoto: Story = {
+  render: () => <FriendPhotoChallenge active personId="ana" />,
   tags: ['visual-review'],
 }

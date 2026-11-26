@@ -55,3 +55,27 @@ it('grows with content, uses the presentation theme and does not create a nested
     sheet.seal()
   }
 })
+
+it('maps native content into an illustrated screen without duplicating the device controls', () => {
+  const ref = createRef<HTMLElement>()
+  render(
+    <MobileFrame
+      ref={ref}
+      aria-label="Photo preview"
+      illustration={{
+        src: '/phone.png',
+        alt: 'One hand holding a phone',
+        aspectRatio: 2 / 3,
+        screen: { x: 20, y: 10, width: 50, height: 65 },
+      }}
+    >
+      <button type="button">Native action</button>
+    </MobileFrame>,
+  )
+  expect(
+    screen.getByRole('img', { name: 'One hand holding a phone' }),
+  ).toHaveAttribute('src', '/phone.png')
+  expect(screen.getByRole('button', { name: 'Native action' })).toBeEnabled()
+  expect(ref.current).toHaveAttribute('data-device-illustration', 'true')
+  expect(screen.queryByRole('heading')).toBeNull()
+})

@@ -7,8 +7,27 @@ export function MobileFrame({
   title,
   children,
   screenMode = 'content',
+  illustration,
   ...props
 }: MobileFrameProps) {
+  if (illustration)
+    return (
+      <Styled.IllustratedRoot
+        {...props}
+        $aspectRatio={illustration.aspectRatio}
+        data-device-frame="mobile"
+        data-device-illustration="true"
+      >
+        <Styled.Illustration src={illustration.src} alt={illustration.alt} />
+        <Styled.IllustratedScreen
+          $screen={illustration.screen}
+          $hasTitle={Boolean(title)}
+        >
+          {title ? <Styled.Title>{title}</Styled.Title> : null}
+          {children}
+        </Styled.IllustratedScreen>
+      </Styled.IllustratedRoot>
+    )
   return (
     <Styled.Root
       {...props}
