@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { PromptExercise } from '../shared/LessonExercises'
@@ -44,6 +45,7 @@ export function TrialA1Listening({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Speed',
           transcript: 'Transcript',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen',
           audioUnavailable: 'Audio is not available',
           audioError: 'The audio could not play',

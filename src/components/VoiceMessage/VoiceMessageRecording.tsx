@@ -1,27 +1,14 @@
 import { useId, useRef, useState } from 'react'
 import { Avatar } from '../Avatar/Avatar'
 import { Button } from '../Button/Button'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 import { useVoiceMessageAudio } from './useVoiceMessageAudio'
 import * as Styled from './VoiceMessageExercise.styles'
 import type {
-  VoiceMessageAudio,
-  VoiceMessageExerciseProps,
-  VoiceMessageLabels,
-} from './VoiceMessageExercise.types'
+  RecordingProps,
+  TranscriptOverride,
+} from './VoiceMessageRecording.types'
 
-interface RecordingProps {
-  audio: VoiceMessageAudio
-  contact: VoiceMessageExerciseProps['contact']
-  active: boolean
-  media: ReturnType<typeof useVoiceMessageAudio>
-  labels: VoiceMessageLabels
-  transcriptReveal: NonNullable<VoiceMessageExerciseProps['transcriptReveal']>
-  followUpStarted: boolean
-  showTranscript: boolean
-  onToggleTranscript: () => void
-  id: string
-  onPlaybackStart?: (element: HTMLAudioElement) => void
-}
 const wave = [
   { id: 'a', height: 10 },
   { id: 'b', height: 26 },
@@ -62,13 +49,14 @@ export function VoiceMessageRecording({
   media,
   labels,
   transcriptReveal,
+  transcriptToggle,
   followUpStarted,
-  showTranscript,
-  onToggleTranscript,
   id,
   onPlaybackStart,
 }: RecordingProps) {
   const playRef = useRef<HTMLButtonElement>(null)
+  const [transcriptOverride, setTranscriptOverride] =
+    useState<TranscriptOverride>()
   const duration = media.duration || audio.duration || 0
   const progress = duration > 0 ? Math.min(1, media.elapsed / duration) : 0
   const playing =
@@ -82,8 +70,19 @@ export function VoiceMessageRecording({
   const transcriptPass = transcriptReveal === 'third-listen' ? 3 : 2
   const transcriptUnlocked =
     media.playCount >= transcriptPass && (!manualTranscript || followUpStarted)
+  const automaticReveal = transcriptUnlocked && !manualTranscript
+  // A manual hide before the threshold never cancels the scheduled automatic reveal.
+  // Once it has opened automatically, a teacher's Hide remains in effect on later plays.
   const transcriptVisible =
-    transcriptUnlocked && (!manualTranscript || showTranscript)
+    transcriptOverride &&
+    !(automaticReveal && transcriptOverride.beforeAutomaticReveal)
+      ? transcriptOverride.visible
+      : automaticReveal
+  const canToggleTranscript =
+    transcriptToggle || (manualTranscript && transcriptUnlocked)
+  const transcriptAction = transcriptVisible
+    ? labels.hideTranscript
+    : labels.showTranscript
   const playLabel = playing
     ? labels.pause
     : media.status === 'ended'
@@ -159,18 +158,22 @@ export function VoiceMessageRecording({
         </span>
         <time>{audio.timestamp}</time>
       </Styled.Meta>
-      {manualTranscript && transcriptUnlocked ? (
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-expanded={showTranscript}
+      {canToggleTranscript ? (
+        <Styled.TranscriptToggle
+          aria-expanded={transcriptVisible}
+          aria-pressed={transcriptVisible}
           aria-controls={`${id}-transcript`}
+          disabled={!active}
           onClick={() => {
-            onToggleTranscript()
+            setTranscriptOverride({
+              visible: !transcriptVisible,
+              beforeAutomaticReveal: !automaticReveal,
+            })
+            playFeedbackSound('hint')
           }}
         >
-          {showTranscript ? labels.hideTranscript : labels.showTranscript}
-        </Button>
+          {transcriptAction}
+        </Styled.TranscriptToggle>
       ) : null}
       <Styled.Transcript
         $visible={transcriptVisible}
@@ -211,6 +214,7 @@ export function AdditionalVoiceMessage({
   active,
   labels,
   transcriptReveal,
+  transcriptToggle,
   onPlaybackStart,
 }: Pick<
   RecordingProps,
@@ -219,11 +223,11 @@ export function AdditionalVoiceMessage({
   | 'active'
   | 'labels'
   | 'transcriptReveal'
+  | 'transcriptToggle'
   | 'onPlaybackStart'
 >) {
   const id = useId()
   const media = useVoiceMessageAudio(active)
-  const [showTranscript, setShowTranscript] = useState(false)
   return (
     <VoiceMessageRecording
       audio={audio}
@@ -232,9 +236,8 @@ export function AdditionalVoiceMessage({
       media={media}
       labels={labels}
       transcriptReveal={transcriptReveal}
+      transcriptToggle={transcriptToggle}
       followUpStarted={media.playCount >= 2}
-      showTranscript={showTranscript}
-      onToggleTranscript={() => setShowTranscript((old) => !old)}
       id={id}
       onPlaybackStart={onPlaybackStart}
     />

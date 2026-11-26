@@ -18,6 +18,7 @@ export const order = [
   's4',
   's5',
   's_video_comedy',
+  'free-conversation',
   'next-steps',
 ] as const
 export const pictures = {

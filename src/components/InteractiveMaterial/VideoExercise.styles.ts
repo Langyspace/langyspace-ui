@@ -38,12 +38,17 @@ export const PlayerHost = styled.div`
 export const PlayerFooter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: ${theme.spacing[3]};
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: ${theme.spacing[2]};
   min-width: 0;
 `
+export const Caption = styled.span`
+  color: ${(p) => Common.recipe(p).foreground};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.4;
+`
 export const Source = styled.a`
-  margin-inline-end: auto;
   color: ${(p) => Common.recipe(p).muted};
   font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};

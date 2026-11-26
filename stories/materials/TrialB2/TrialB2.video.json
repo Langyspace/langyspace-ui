@@ -1,37 +1,37 @@
 {
-  "title": "Too busy to stop talking?",
-  "instruction": "Watch the waiter explain his workload. Discuss the pressure, the irony and a more useful response",
+  "title": "When do I get my life back?",
+  "instruction": "Watch the office proposal. Discuss its promises and contradictions, then negotiate a healthier arrangement",
   "video": {
-    "videoId": "Pm0M4s5hPl4",
-    "startSeconds": 33,
-    "endSeconds": 67,
-    "title": "He didn’t expect it to get this busy",
-    "credit": "That’s a Bad Idea"
+    "videoId": "LCaMguF7PYY",
+    "startSeconds": 114.7,
+    "endSeconds": 154,
+    "title": "The First Guy To Ever Work In An Office",
+    "credit": "Ryan George"
   },
   "items": [
     {
       "id": "work-pressure",
-      "prompt": "Why is the restaurant suddenly so busy?",
-      "hint": "Think about the event across the street",
-      "answer": "A local play has just finished, and the audience has come to the restaurant at once"
+      "prompt": "What is ironic about the suggestion to display a family photograph?",
+      "hint": "Notice what the photograph is supposed to remind the employee of",
+      "answer": "The photograph is presented as decoration, but it reminds the employee that work keeps him away from his family for most of his waking hours"
     },
     {
       "id": "work-irony",
-      "prompt": "What is ironic about his complaint about the long shift?",
-      "hint": "Compare what he asked his boss for with how he feels now",
-      "answer": "He had been asking his boss for longer shifts, but now he is overwhelmed by the extra work"
+      "prompt": "Why don’t the proposed mornings and evenings resolve his concern?",
+      "hint": "Compare the available time with the energy he expects to have",
+      "answer": "He expects to be tired early in the morning and tired again after working all day, so available hours do not necessarily mean meaningful time with family and friends"
     },
     {
       "id": "work-boundary",
-      "prompt": "How does the customer’s response change as the waiter keeps talking?",
-      "hint": "Compare the early reassurance with the final instruction",
-      "answer": "The customer first reassures him, then directly tells him to go because continuing the conversation is not helping"
+      "prompt": "How does the sketch undermine the promise of two days off?",
+      "hint": "Listen to how much activity and recovery the speaker predicts",
+      "answer": "The speaker suggests he will have energy for about one activity and then need to recover before repeating the working week"
     },
     {
       "id": "work-response",
-      "prompt": "How could the waiter acknowledge the delay and set a clear expectation?",
-      "hint": "Keep the apology brief, give a next step and avoid making the customer manage his stress",
-      "answer": "Example: I’m sorry for the delay. We’re short-staffed tonight. I’ll check my other tables and come back to take your order"
+      "prompt": "How would you challenge this proposal constructively and protect time outside work?",
+      "hint": "Name one concern and negotiate a concrete change, such as hours, commuting or availability",
+      "answer": "Example: I’m interested in the role, but the schedule leaves little energy for life outside work. Could we agree on flexible hours and clear limits on availability?"
     }
   ]
 }

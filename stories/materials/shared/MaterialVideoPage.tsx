@@ -16,6 +16,8 @@ export function MaterialVideoPage({ content, active }: MaterialVideoPageProps) {
       <VideoExercise
         title={null}
         presentation="inline"
+        playbackControls="replay-only"
+        labels={{ replay: 'Recomeçar' }}
         youtube={content.video}
         active={active}
       />

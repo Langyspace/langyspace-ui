@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { QuestionList } from '../../../src/components/Exercise/QuestionList'
@@ -53,6 +54,7 @@ export function InterviewVoiceNote({
           loading: 'Loading audio',
           speed: 'Speed',
           transcript: 'Transcript',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'Transcript after three complete listens',
           audioUnavailable: 'This recording is not available',
           audioError: 'Audio could not play. Please retry',

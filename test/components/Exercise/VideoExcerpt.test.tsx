@@ -105,6 +105,35 @@ it('cues without autoplay; replay and optional loop always reapply both excerpt 
   expect(player.loadVideoById).toHaveBeenCalledTimes(2)
 })
 
+it('shows a static title and excerpt with only restart when authored for lesson playback', async () => {
+  render(
+    <VideoExercise
+      title={null}
+      presentation="inline"
+      youtube={clip}
+      playbackControls="replay-only"
+      labels={{ replay: 'Recomeçar' }}
+    />,
+  )
+  await ready()
+  expect(screen.getByText(`${clip.title} · 0:59–1:33`)).toBeVisible()
+  expect(screen.queryByRole('link')).toBeNull()
+  expect(screen.queryByRole('button', { name: /loop/i })).toBeNull()
+  fireEvent.click(screen.getByRole('button', { name: 'Recomeçar' }))
+  expect(player.loadVideoById).toHaveBeenLastCalledWith({
+    videoId: clip.videoId,
+    startSeconds: 59,
+    endSeconds: 93,
+  })
+  act(() => options.events.onStateChange({ data: 0, target: player }))
+  expect(player.loadVideoById).toHaveBeenCalledTimes(1)
+  expect(player.cueVideoById).toHaveBeenLastCalledWith({
+    videoId: clip.videoId,
+    startSeconds: 59,
+    endSeconds: 93,
+  })
+})
+
 it('does not load an inactive source and stops/releases the player when leaving the page', async () => {
   const props = { title: null, presentation: 'inline' as const, youtube: clip }
   const { rerender } = render(<VideoExercise {...props} active={false} />)
@@ -194,6 +223,8 @@ it('adopts the standard Questions column with four authored items, progressive h
     container.querySelector('[data-slide-id="s_video_intro"]') as HTMLElement,
   )
   expect(slide.getByRole('heading', { name: /Questions/i })).toBeVisible()
+  expect(slide.getByRole('button', { name: 'Recomeçar' })).toBeInTheDocument()
+  expect(slide.queryByRole('button', { name: /loop/i })).toBeNull()
   const list = container.querySelector('[data-question-list]')!
   expect(
     within(list as HTMLElement).getAllByRole('button', { expanded: false }),

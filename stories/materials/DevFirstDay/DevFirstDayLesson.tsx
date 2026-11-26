@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
@@ -31,6 +32,7 @@ const voiceLabels = {
   loading: 'Loading audio',
   speed: 'Speed',
   transcript: 'Transcript',
+  ...voiceMessageTranscriptLabels,
   transcriptHidden: 'Transcript after three complete listens',
   audioUnavailable: 'This recording is not available',
   audioError: 'Audio could not play. Please retry',

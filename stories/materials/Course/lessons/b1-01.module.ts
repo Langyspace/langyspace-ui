@@ -20,6 +20,7 @@ import a15 from '../assets/audio/legacy-B101-D.10.mp3'
 import a16 from '../assets/audio/legacy-B101-D.11.mp3'
 import a17 from '../assets/audio/B101-L81.1.mp3'
 import i0 from '../assets/b1-01-vocabulary81.webp'
+import workOut136 from '../assets/b1-01-work-out136.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
@@ -102,6 +103,6 @@ const prepared: PreparedCourseData = {
       src: a17,
     },
   ],
-  images: { 'b1-01-vocabulary81': i0 },
+  images: { 'b1-01-vocabulary81': i0, 'b1-01-work-out136': workOut136 },
 }
 export default prepared

@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -202,6 +203,7 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
                 replay: 'Replay',
                 loading: 'Loading audio',
                 transcript: 'Transcript',
+                ...voiceMessageTranscriptLabels,
                 transcriptHidden: 'The transcript appears on the third listen',
                 conversation: 'Your study session',
                 questions: 'Questions about Kim’s notes',

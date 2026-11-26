@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ana, kim, leo } from '../shared/characterPortraits'
 import { useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
@@ -129,6 +130,7 @@ export function Listening({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen.',
           audioError: 'Could not play the message. Try again.',
           retry: 'Try again',

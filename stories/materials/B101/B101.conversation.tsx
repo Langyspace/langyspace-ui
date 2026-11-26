@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { GuidedScenario } from '../shared/GuidedScenario'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
@@ -124,6 +125,7 @@ export function ListeningSection({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen.',
           audioUnavailable: 'Audio unavailable',
           audioError: 'Could not play the message. Try again.',

@@ -78,4 +78,6 @@ export interface VoiceMessageExerciseProps extends Omit<
   replayActionLabel?: string
   /** Defaults to automatic third-listen reveal. Earlier/manual modes are explicit variations. */
   transcriptReveal?: 'second-listen' | 'third-listen' | 'manual-after-replay'
+  /** Allow Show/Hide before playback; defaults to true for third-listen. Automatic reveal still applies. */
+  transcriptToggle?: boolean
 }

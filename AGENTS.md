@@ -153,9 +153,10 @@
   intentional color sequences on speaking activity markers; do not normalize them globally.
 - Reuse prepared ElevenLabs recordings and native players; preload before the click and retain
   buffers between plays. Do not replace recordings with browser speech or regenerate valid media.
-- New listening pages use the native phone play control and automatic third-listen transcript
-  reveal, without duplicate replay/transcript buttons. Count real playback passes rather than
-  pauses/resumes. Keep phone proportions consistent and resolve transcript sizing from its theme.
+- New listening pages use the native phone play control, automatic third-listen transcript reveal,
+  and one canonical manual show/hide transcript control per recording. Do not duplicate replay or
+  transcript controls in lesson markup. Count real playback passes rather than pauses/resumes.
+  Keep phone proportions consistent and resolve transcript sizing from its theme.
 - Keep flag assets at their natural proportions, without added white frames or backgrounds.
   Preserve white that is part of an official flag. Single-round timers omit the round label and
   the numeric suffix on Start.

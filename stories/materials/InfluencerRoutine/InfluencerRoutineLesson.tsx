@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
@@ -181,6 +182,7 @@ export function InfluencerRoutineLesson({
                 replay: 'Replay',
                 speed: 'Speed',
                 transcript: 'Transcript',
+                ...voiceMessageTranscriptLabels,
                 transcriptHidden: 'The transcript appears on the third listen',
                 audioUnavailable: 'Audio unavailable',
                 audioError: 'Audio could not play',

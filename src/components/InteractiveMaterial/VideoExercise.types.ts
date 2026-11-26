@@ -22,6 +22,8 @@ export interface VideoExerciseProps extends Omit<
   }
   /** Inactive lesson pages release the external player and stop playback. */
   active?: boolean
+  /** Lessons can expose just restart while retaining bounded replay. */
+  playbackControls?: 'replay-only' | 'replay-and-loop'
   /** Prepare a neighbouring page without autoplay; keep its ready player on entry. */
   preload?: boolean
   page?: 'watch' | 'discuss'

@@ -9,6 +9,7 @@ export function VideoExercise({
   media,
   youtube,
   active = true,
+  playbackControls = 'replay-and-loop',
   preload = false,
   presentation = 'staged',
   page,
@@ -39,6 +40,7 @@ export function VideoExercise({
   const video = youtube ? (
     <VideoExerciseYouTube
       clip={youtube}
+      playbackControls={playbackControls}
       preload={preload}
       active={active && (presentation === 'inline' || currentPage === 'watch')}
       labels={text}

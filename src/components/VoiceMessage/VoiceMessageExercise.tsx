@@ -28,10 +28,10 @@ function VoiceMessageContent({
   replyAction,
   replayActionLabel,
   transcriptReveal = 'third-listen',
+  transcriptToggle = transcriptReveal === 'third-listen',
   labels: overrides,
   ...props
 }: VoiceMessageExerciseProps) {
-  const [showTranscript, setShowTranscript] = useState(false)
   const [followUpStarted, setFollowUpStarted] = useState(false)
   const id = useId()
   const conversationRef = useRef<HTMLDivElement>(null)
@@ -71,6 +71,8 @@ function VoiceMessageContent({
           pause: `${labels.pause} (${index + 1}/${additionalAudios.length + 1})`,
           replay: `${labels.replay} (${index + 1}/${additionalAudios.length + 1})`,
           transcript: `${labels.transcript} (${index + 1}/${additionalAudios.length + 1})`,
+          showTranscript: `${labels.showTranscript} (${index + 1}/${additionalAudios.length + 1})`,
+          hideTranscript: `${labels.hideTranscript} (${index + 1}/${additionalAudios.length + 1})`,
           speed: `${labels.speed} (${index + 1}/${additionalAudios.length + 1})`,
         }
       : labels
@@ -150,9 +152,8 @@ function VoiceMessageContent({
             media={media}
             labels={trackLabels(0)}
             transcriptReveal={transcriptReveal}
+            transcriptToggle={transcriptToggle}
             followUpStarted={followUpStarted}
-            showTranscript={showTranscript}
-            onToggleTranscript={() => setShowTranscript((old) => !old)}
             id={id}
             onPlaybackStart={pauseSiblings}
           />
@@ -164,6 +165,7 @@ function VoiceMessageContent({
               active={active}
               labels={trackLabels(index + 1)}
               transcriptReveal={transcriptReveal}
+              transcriptToggle={transcriptToggle}
               onPlaybackStart={pauseSiblings}
             />
           ))}

@@ -73,6 +73,29 @@ export const AutomaticThirdListen: Story = {
   args: { transcriptReveal: 'third-listen' },
   tags: ['visual-review'],
 }
+export const ManualTranscriptBeforePlayback: Story = {
+  args: { transcriptReveal: 'third-listen' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Mostrar transcrição' }),
+    )
+    await expect(
+      canvas.getByRole('button', { name: 'Esconder transcrição' }),
+    ).toHaveAttribute('aria-pressed', 'true')
+    await expect(
+      canvas.getByRole('region', { name: 'Transcrição' }),
+    ).toHaveTextContent(initial.audio.transcript)
+    await expect(canvasElement.querySelector('[data-listens]')).toHaveAttribute(
+      'data-listens',
+      '0',
+    )
+  },
+}
+export const AutomaticOnly: Story = {
+  args: { transcriptReveal: 'third-listen', transcriptToggle: false },
+}
 export const Inactive: Story = { args: { active: false } }
 export const MissingRecording: Story = {
   args: { audio: { ...initial.audio, src: undefined } },

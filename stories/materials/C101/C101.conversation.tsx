@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
@@ -112,6 +113,7 @@ export function Listening({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen.',
           questions: 'Did Raj say this?',
           correct: 'Correct',

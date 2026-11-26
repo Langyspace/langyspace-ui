@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { PromptExercise } from '../shared/LessonExercises'
@@ -43,6 +44,7 @@ export function ListeningSection({ active }: ListeningProps) {
           replay: 'Listen again',
           speed: 'Speed',
           transcript: 'Transcript',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen.',
           audioUnavailable: 'Audio is not available yet.',
           audioError: 'The audio could not play.',

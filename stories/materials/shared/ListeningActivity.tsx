@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from './voiceMessageLabels'
 import { useState } from 'react'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { PromptExercise } from './LessonExercises'
@@ -41,6 +42,7 @@ export function ListeningActivity({
       labels={{
         play: 'Listen',
         pause: 'Pause',
+        ...voiceMessageTranscriptLabels,
         transcriptHidden: 'The transcript appears on the third listen.',
         questions: 'Questions',
         conversation: 'Conversation',

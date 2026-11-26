@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from './voiceMessageLabels'
 import {
   withLessonOpeningPages,
   withLessonOpeningPageIds,
@@ -174,6 +175,8 @@ function PageContent({
       <VideoExercise
         title={null}
         presentation="inline"
+        playbackControls="replay-only"
+        labels={{ replay: 'Recomeçar' }}
         youtube={page.video}
         active={active}
         preload={preloadVideo}
@@ -396,6 +399,7 @@ function PageContent({
             replay: 'Listen again',
             speed: 'Speed',
             transcript: 'Transcript',
+            ...voiceMessageTranscriptLabels,
             transcriptHidden: 'The transcript appears on the third listen.',
             audioUnavailable: 'Audio is unavailable.',
             audioError: 'The audio could not play.',

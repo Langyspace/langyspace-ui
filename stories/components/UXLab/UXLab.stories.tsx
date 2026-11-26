@@ -118,6 +118,23 @@ export const FreeConversation: Story = {
   render: () => <ConversationDemo level="c2" />,
 }
 export const Video: Story = { render: () => <VideoDemo /> }
+export const VideoRestartOnly: Story = {
+  render: () => (
+    <VideoExercise
+      title={null}
+      presentation="inline"
+      playbackControls="replay-only"
+      active={false}
+      labels={{ replay: 'Recomeçar' }}
+      youtube={{
+        videoId: 'HooNbcbgi9U',
+        startSeconds: 59,
+        endSeconds: 93,
+        title: 'Meeting new people — British Council',
+      }}
+    />
+  ),
+}
 export const VideoInline: Story = {
   render: () => <VideoDemo presentation="inline" />,
 }

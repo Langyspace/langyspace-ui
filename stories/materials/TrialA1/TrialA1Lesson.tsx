@@ -9,6 +9,7 @@ import {
   listeningInstruction,
 } from './TrialA1Listening'
 import { TrialNextSteps } from '../shared/LessonBookends'
+import { FreeConversationPage } from '../shared/FreeConversationPage'
 import { TrialA1LiveConversation } from './TrialA1LiveConversation'
 import { TrialA1DialoguePage } from './TrialA1DialoguePage'
 import { MaterialTheme } from '../shared/MaterialTheme'
@@ -139,6 +140,14 @@ export function TrialA1Lesson({
                       content={video}
                       active={activeId === id}
                     />
+                  ),
+                }
+              if (id === 'free-conversation')
+                return {
+                  id,
+                  label: 'Free conversation',
+                  content: (
+                    <FreeConversationPage instruction="Talk freely about people you know and things you like. Ask each other questions and share more about yourselves" />
                   ),
                 }
               if (id === 'next-steps')

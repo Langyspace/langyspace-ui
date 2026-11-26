@@ -1,37 +1,37 @@
 {
-  "title": "Just a coffee?",
-  "instruction": "Watch his coffee order. Answer, then say how you like your coffee",
+  "title": "What food do you like?",
+  "instruction": "Watch Neil and Beth talk about food. Answer, then tell your teacher what you like",
   "video": {
-    "videoId": "piLiE7FNHcs",
-    "startSeconds": 0,
-    "endSeconds": 33,
-    "title": "Ordering Coffee these days be like…",
-    "credit": "That’s a Bad Idea"
+    "videoId": "4C4wlOAscvY",
+    "startSeconds": 69.5,
+    "endSeconds": 143.5,
+    "title": "Talking about food — Real Easy English",
+    "credit": "BBC Learning English"
   },
   "items": [
     {
       "id": "coffee-drink",
-      "prompt": "What drink does he want?",
-      "hint": "Listen to his first order",
-      "answer": "He wants a coffee"
+      "prompt": "What food does Neil like?",
+      "hint": "Listen after Beth asks about his favourite food",
+      "answer": "Neil likes fish"
     },
     {
       "id": "coffee-size",
-      "prompt": "Does he want a small or a large coffee?",
-      "hint": "Listen after the question about milk",
-      "answer": "He wants a small coffee"
+      "prompt": "Does Beth like seafood?",
+      "hint": "Listen for I really love…",
+      "answer": "Yes, she does. Beth loves seafood"
     },
     {
       "id": "coffee-sugar",
-      "prompt": "How many sugars does he choose?",
-      "hint": "Listen at the end of the clip",
-      "answer": "He chooses two sugars"
+      "prompt": "Does Beth like baked beans?",
+      "hint": "Listen to her answer about her least favourite food",
+      "answer": "No, she doesn’t. Beth hates baked beans"
     },
     {
       "id": "coffee-you",
-      "prompt": "Do you like coffee? How do you like it?",
-      "hint": "Say yes or no, then add milk, sugar or another drink",
-      "answer": "Example: Yes, I do. I like coffee with milk and no sugar"
+      "prompt": "What food do you like? What food don’t you like? Ask your teacher, too",
+      "hint": "Use I like… and I don’t like… Then ask What about you?",
+      "answer": "Example: I like pizza. I don’t like fish. What about you?"
     }
   ]
 }

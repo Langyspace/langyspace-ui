@@ -172,6 +172,17 @@ export const Meta = styled.div`
   font-size: ${theme.voiceMessage.metaFontSize};
   font-variant-numeric: tabular-nums;
 `
+export const TranscriptToggle = styled(DeviceControl)`
+  min-height: ${theme.sizes.control.sm};
+  max-width: 100%;
+  margin-top: ${theme.spacing[2]};
+  padding: ${theme.spacing[1]} ${theme.spacing[3]};
+  color: ${(p) => recipe(p).foreground};
+  background: ${(p) => recipe(p).controlSurface};
+  border-color: ${(p) => recipe(p).border};
+  font-size: ${theme.typography.fontSize.sm};
+  overflow-wrap: anywhere;
+`
 export const Time = styled.time`
   display: block;
   text-align: right;

@@ -1,6 +1,7 @@
 import type { VideoExerciseProps } from './VideoExercise.types'
 export interface VideoExerciseYouTubeProps {
   clip: NonNullable<VideoExerciseProps['youtube']>
+  playbackControls: NonNullable<VideoExerciseProps['playbackControls']>
   active: boolean
   preload: boolean
   labels: {

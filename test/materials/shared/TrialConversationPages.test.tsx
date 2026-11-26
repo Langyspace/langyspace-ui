@@ -34,7 +34,7 @@ const visibleLayer = (text: string) =>
   screen.getByText(text).closest('[aria-hidden]')
 
 describe('separate TrialA1 conversation stages', () => {
-  it('keeps both conversation stages and replaces the three pair pages with one likes board', () => {
+  it('keeps both guided stages and places the video immediately before the penultimate free conversation', () => {
     expect(order).toEqual([
       's1',
       's2',
@@ -43,6 +43,8 @@ describe('separate TrialA1 conversation stages', () => {
       's3-independent',
       's4',
       's5',
+      's_video_comedy',
+      'free-conversation',
       'next-steps',
     ])
   })

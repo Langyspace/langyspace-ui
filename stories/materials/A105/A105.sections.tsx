@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { LessonPracticePlan } from '../shared/LessonBookends'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
@@ -176,6 +177,7 @@ export function Listening({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Speed',
           transcript: 'Transcript',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen.',
           audioUnavailable: 'Audio is not available.',
           audioError: 'The audio could not play.',

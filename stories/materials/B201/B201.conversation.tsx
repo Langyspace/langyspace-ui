@@ -1,3 +1,4 @@
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
@@ -91,6 +92,7 @@ export function ListeningSection({ active }: ListeningProps) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
+          ...voiceMessageTranscriptLabels,
           transcriptHidden: 'The transcript appears on the third listen.',
           audioError: 'Audio unavailable. Try again.',
           retry: 'Try again',
