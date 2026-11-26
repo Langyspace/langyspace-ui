@@ -30,6 +30,10 @@ describe('Homework flashcard minimum', () => {
       if (lesson.first.kind !== 'flashcards') continue
       const cards = lesson.first.cards
       expect(cards.length, lesson.key).toBeGreaterThanOrEqual(20)
+      for (const card of cards) {
+        expect(card.example.trim(), card.id).not.toBe('')
+        expect(card.exampleTranslation.trim(), card.id).not.toBe('')
+      }
       expect(new Set(cards.map((card) => card.id)).size, lesson.key).toBe(
         cards.length,
       )
