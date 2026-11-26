@@ -1,0 +1,577 @@
+{
+  "materialKey": "extra-dev-study",
+  "code": "DEV.01",
+  "title": "Build your path into tech",
+  "level": "A2 / B1",
+  "instruction": "Talk about what you’re learning, explain a small project and ask for useful help",
+  "minutes": 50,
+  "vocabulary": [
+    {
+      "id": "dev-study131.0",
+      "word": "a tutorial",
+      "translation": "um tutorial",
+      "example": "I use a tutorial to learn one new feature.",
+      "exampleTranslation": "Eu uso um tutorial para aprender uma funcionalidade nova.",
+      "visualLabel": "a tutorial",
+      "audioId": "V.0",
+      "backAudioId": "VE.0",
+      "classAudioId": "VS.0",
+      "classAudioText": "a tutorial. I use a tutorial to learn one new feature.",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 0,
+        "row": 0,
+        "sourceAspectRatio": 1.5
+      },
+      "initialHint": "t…"
+    },
+    {
+      "id": "dev-study131.1",
+      "word": "documentation",
+      "translation": "documentação",
+      "example": "I check the documentation when I need an explanation.",
+      "exampleTranslation": "Eu consulto a documentação quando preciso de uma explicação.",
+      "visualLabel": "documentation",
+      "audioId": "V.1",
+      "backAudioId": "VE.1",
+      "classAudioId": "VS.1",
+      "classAudioText": "documentation. I check the documentation when I need an explanation.",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 1,
+        "row": 0,
+        "sourceAspectRatio": 1.5
+      },
+      "initialHint": "d…"
+    },
+    {
+      "id": "dev-study131.2",
+      "word": "an error message",
+      "translation": "uma mensagem de erro",
+      "example": "The error message tells me what went wrong.",
+      "exampleTranslation": "A mensagem de erro me diz o que deu errado.",
+      "visualLabel": "an error message",
+      "audioId": "V.2",
+      "backAudioId": "VE.2",
+      "classAudioId": "VS.2",
+      "classAudioText": "an error message. The error message tells me what went wrong.",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 2,
+        "row": 0,
+        "sourceAspectRatio": 1.5
+      },
+      "initialHint": "e…"
+    },
+    {
+      "id": "dev-study131.3",
+      "word": "a practice project",
+      "translation": "um projeto de prática",
+      "example": "My practice project is a task-list app.",
+      "exampleTranslation": "Meu projeto de prática é um aplicativo de lista de tarefas.",
+      "visualLabel": "a practice project",
+      "audioId": "V.3",
+      "backAudioId": "VE.3",
+      "classAudioId": "VS.3",
+      "classAudioText": "a practice project. My practice project is a task-list app.",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 0,
+        "row": 1,
+        "sourceAspectRatio": 1.5
+      },
+      "initialHint": "p…"
+    },
+    {
+      "id": "dev-study131.4",
+      "word": "a study plan",
+      "translation": "um plano de estudos",
+      "example": "My study plan has three short sessions this week.",
+      "exampleTranslation": "Meu plano de estudos tem três sessões curtas nesta semana.",
+      "visualLabel": "a study plan",
+      "audioId": "V.4",
+      "backAudioId": "VE.4",
+      "classAudioId": "VS.4",
+      "classAudioText": "a study plan. My study plan has three short sessions this week.",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 1,
+        "row": 1,
+        "sourceAspectRatio": 1.5
+      },
+      "initialHint": "s…"
+    },
+    {
+      "id": "dev-study131.5",
+      "word": "a portfolio",
+      "translation": "um portfólio",
+      "example": "My portfolio shows projects I can explain.",
+      "exampleTranslation": "Meu portfólio mostra projetos que eu consigo explicar.",
+      "visualLabel": "a portfolio",
+      "audioId": "V.5",
+      "backAudioId": "VE.5",
+      "classAudioId": "VS.5",
+      "classAudioText": "a portfolio. My portfolio shows projects I can explain.",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 2,
+        "row": 1,
+        "sourceAspectRatio": 1.5
+      },
+      "initialHint": "p…"
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "D.1",
+      "speaker": "Kim",
+      "text": "What are you learning at the moment?",
+      "translation": "O que você está aprendendo no momento?",
+      "displayText": "What are you learning at the moment?"
+    },
+    {
+      "id": "D.2",
+      "speaker": "Ana",
+      "text": "I’m learning to build small web applications. I’m working on a task-list app.",
+      "translation": "Estou aprendendo a desenvolver pequenos aplicativos web. Estou trabalhando em um aplicativo de lista de tarefas",
+      "displayText": "I’m learning to build small web applications. I’m working on a task-list app"
+    },
+    {
+      "id": "D.3",
+      "speaker": "Kim",
+      "text": "What can someone do with your app?",
+      "translation": "O que uma pessoa consegue fazer com o seu aplicativo?",
+      "displayText": "What can someone do with your app?"
+    },
+    {
+      "id": "D.4",
+      "speaker": "Ana",
+      "text": "They can add tasks and mark them as complete. I want the tasks to stay there after a refresh.",
+      "translation": "As pessoas podem adicionar tarefas e marcá-las como concluídas. Eu quero que as tarefas continuem lá depois de atualizar a página",
+      "displayText": "They can add tasks and mark them as complete. I want the tasks to stay there after a refresh"
+    },
+    {
+      "id": "D.5",
+      "speaker": "Kim",
+      "text": "How will you practice this week?",
+      "translation": "Como você vai praticar nesta semana?",
+      "displayText": "How will you practice this week?"
+    },
+    {
+      "id": "D.6",
+      "speaker": "Ana",
+      "text": "I’ll build one small feature, test it and write down anything I don’t understand.",
+      "translation": "Vou desenvolver uma pequena funcionalidade, testá-la e anotar tudo o que eu não entender",
+      "displayText": "I’ll build one small feature, test it and write down anything I don’t understand"
+    }
+  ],
+  "dialogueQuestions": [
+    {
+      "id": "guided.q1",
+      "prompt": "What is Ana building?",
+      "hint": "Think about the purpose of her practice project",
+      "answer": "She is building a task-list app"
+    },
+    {
+      "id": "guided.q2",
+      "prompt": "What should happen after a page refresh?",
+      "hint": "Think about keeping the tasks",
+      "answer": "The tasks should still be there after a refresh"
+    },
+    {
+      "id": "guided.q3",
+      "prompt": "What three actions does Ana plan for this week?",
+      "hint": "Listen to her final answer",
+      "answer": "She plans to build one feature, test it and write down what she does not understand"
+    }
+  ],
+  "listening": {
+    "title": "A change to your study session",
+    "instruction": "Listen to both notes. Questions 1–3 refer to the first note; questions 4–6 refer to the second",
+    "greeting": "A quick change for our next study session",
+    "notes": [
+      {
+        "id": "L.1",
+        "text": "A quick update about our next study session. We’ll use audio only, so we won’t share screens or code. Choose one feature from your practice project. Explain what it does and who would use it.",
+        "timestamp": "18:01"
+      },
+      {
+        "id": "L.2",
+        "text": "One more thing: tell me what you tested and what you still want to improve. Send me a short voice note before we meet. If you’re stuck, include the error message and one thing you’ve already tried.",
+        "timestamp": "18:02"
+      }
+    ],
+    "questions": [
+      {
+        "id": "listening.q1",
+        "prompt": "How will the next session work?",
+        "hint": "Listen for what people can hear and see",
+        "answer": "It will be audio only, without screen sharing or code"
+      },
+      {
+        "id": "listening.q2",
+        "prompt": "What should you choose from your practice project?",
+        "hint": "Choose something small enough to explain",
+        "answer": "You should choose one feature"
+      },
+      {
+        "id": "listening.q3",
+        "prompt": "Which two things about the feature should you explain?",
+        "hint": "Think about its purpose and its users",
+        "answer": "You should explain what it does and who would use it"
+      },
+      {
+        "id": "listening.q4",
+        "prompt": "What should you say about your progress?",
+        "hint": "Think about testing and the next improvement",
+        "answer": "You should say what you tested and what you still want to improve"
+      },
+      {
+        "id": "listening.q5",
+        "prompt": "What does Kim ask you to send before the session?",
+        "hint": "Think about the message format",
+        "answer": "She asks for a short voice note"
+      },
+      {
+        "id": "listening.q6",
+        "prompt": "If you are stuck, which two details should you include?",
+        "hint": "Explain the problem and an action you have already taken",
+        "answer": "You should include the error message and one thing you have already tried"
+      }
+    ]
+  },
+  "freeConversationInstruction": "Talk about learning something new, projects you enjoy and asking for help. Follow each other’s ideas",
+  "oralPages": [
+    {
+      "id": "study-week",
+      "title": "Make time to build something",
+      "instruction": "Use the example week to plan one realistic study session with your teacher",
+      "minutes": 4,
+      "reference": "week",
+      "turns": [
+        {
+          "id": "week.1",
+          "question": "When could you fit a short study session into your week?",
+          "cue": "Choose a realistic time in your own routine",
+          "hint": "I could study… / I have time…",
+          "model": "I could study for thirty minutes after work on Wednesday"
+        },
+        {
+          "id": "week.2",
+          "question": "What would you work on during that session?",
+          "cue": "Choose one small task",
+          "hint": "I’d work on…",
+          "model": "I’d work on keeping the tasks after a refresh"
+        },
+        {
+          "id": "week.3",
+          "question": "How would you know you had made progress?",
+          "cue": "Name a result you could show",
+          "hint": "I’d be able to…",
+          "model": "I’d be able to refresh the page and still see the tasks"
+        }
+      ]
+    },
+    {
+      "id": "your-learning",
+      "title": "Tell me what you’re working on",
+      "instruction": "Explain your own learning goal, project and next step. Use the task-list example if you prefer",
+      "minutes": 4,
+      "turns": [
+        {
+          "id": "personal.1",
+          "question": "What are you learning at the moment?",
+          "cue": "Explain your current focus",
+          "hint": "I’m learning…",
+          "model": "I’m learning how to build and test small web applications"
+        },
+        {
+          "id": "personal.2",
+          "question": "What are you building to practice it?",
+          "cue": "Name a project and explain its purpose",
+          "hint": "I’m building… / It helps…",
+          "model": "I’m building a task-list app to help people organise their day"
+        },
+        {
+          "id": "personal.3",
+          "question": "What is one small goal for your next study session?",
+          "cue": "Choose a realistic next step",
+          "hint": "Next time, I’ll…",
+          "model": "Next time, I’ll save the task list and test it after a refresh"
+        }
+      ]
+    },
+    {
+      "id": "small-project",
+      "title": "Turn a tutorial into a small project",
+      "instruction": "Use the task-list example. Choose one feature to build, explain how someone uses it and suggest a test",
+      "minutes": 4,
+      "reference": "project",
+      "turns": [
+        {
+          "id": "project.1",
+          "question": "What is one useful feature you could build first?",
+          "cue": "Choose one small feature",
+          "hint": "I’d start with…",
+          "model": "I’d start with adding a task"
+        },
+        {
+          "id": "project.2",
+          "question": "How would someone use that feature?",
+          "cue": "Explain an action and its result",
+          "hint": "They would… / Then…",
+          "model": "They would enter a title and select Add task. The new task would appear in the list"
+        },
+        {
+          "id": "project.3",
+          "question": "How could you check that it works?",
+          "cue": "Describe one simple test",
+          "hint": "I’d try… / I’d expect…",
+          "model": "I’d add a new task and check that it appears only once"
+        }
+      ]
+    },
+    {
+      "id": "describe-problem",
+      "title": "Describe the problem before asking for help",
+      "instruction": "Compare the task list before and after refresh. Explain the expected result, the problem and a useful next step",
+      "minutes": 4,
+      "reference": "problem",
+      "turns": [
+        {
+          "id": "problem.1",
+          "question": "What did you expect to happen after refreshing the page?",
+          "cue": "Describe the expected result",
+          "hint": "I expected… to…",
+          "model": "I expected the tasks to stay in the list"
+        },
+        {
+          "id": "problem.2",
+          "question": "What actually happened?",
+          "cue": "Describe the result you can see",
+          "hint": "After I…, …",
+          "model": "After I refreshed the page, the list was empty"
+        },
+        {
+          "id": "problem.3",
+          "question": "What could you try before asking for help?",
+          "cue": "Suggest one check, then ask a specific question",
+          "hint": "I could check… / Could you help me…?",
+          "model": "I could check how the app saves tasks. Could you help me understand why they disappear?"
+        }
+      ]
+    },
+    {
+      "id": "mentor-check-in",
+      "title": "Check in with your mentor",
+      "instruction": "Look at another small practice project: a Login screen. Ask your teacher to check what should happen and how to test it",
+      "minutes": 4,
+      "reference": "mentor",
+      "turns": [
+        {
+          "id": "mentor.1",
+          "question": "What should this form do when the details are correct?",
+          "cue": "Explain the purpose of the form and its button",
+          "hint": "The user enters… / The button…",
+          "model": "The user enters an email address and a password. The button should sign them in"
+        },
+        {
+          "id": "mentor.2",
+          "question": "How could you check the error message safely?",
+          "cue": "Use a test account rather than real personal details",
+          "hint": "I’d use… / I’d try…",
+          "model": "I’d use a test account and try an incorrect password"
+        },
+        {
+          "id": "mentor.3",
+          "question": "What feedback would help you improve this project?",
+          "cue": "Ask one clear question about the layout or message",
+          "hint": "Could you check…? / Is… clear?",
+          "model": "Could you check the layout? Is the error message clear enough to explain what went wrong?"
+        }
+      ]
+    },
+    {
+      "id": "portfolio",
+      "title": "Choose something you can explain",
+      "instruction": "Use the portfolio draft or your own project. Explain what works, what you built and one improvement",
+      "minutes": 3,
+      "reference": "portfolio",
+      "turns": [
+        {
+          "id": "portfolio.1",
+          "question": "Which project would you choose to show someone?",
+          "cue": "Choose one project and give a reason",
+          "hint": "I’d choose… because…",
+          "model": "I’d choose the task-list app because I can explain how someone uses it"
+        },
+        {
+          "id": "portfolio.2",
+          "question": "What could you show them in your repository or demo?",
+          "cue": "Point to something you can demonstrate",
+          "hint": "I can show… / The frontend…",
+          "model": "I can show the frontend adding a task and the files in my repository"
+        },
+        {
+          "id": "portfolio.3",
+          "question": "What would you improve before sharing it?",
+          "cue": "Name one useful next step",
+          "hint": "Before I share it, I’ll…",
+          "model": "Before I share it, I’ll test what happens after a refresh and add a short explanation"
+        }
+      ]
+    },
+    {
+      "id": "reply",
+      "title": "Reply without showing your screen",
+      "instruction": "Answer your teacher aloud as if the next study session had started. Explain one feature and ask for useful help",
+      "minutes": 2,
+      "turns": [
+        {
+          "id": "reply.1",
+          "question": "Which feature did you choose, and who is it for?",
+          "cue": "Explain a feature and its users",
+          "hint": "My feature… / It helps…",
+          "model": "My feature saves tasks. It helps people organise their day"
+        },
+        {
+          "id": "reply.2",
+          "question": "What have you tested, and what do you still want to improve?",
+          "cue": "Describe a result and one next step",
+          "hint": "I tested… / I still want to…",
+          "model": "I tested adding a task. I still want to keep the tasks after a refresh"
+        },
+        {
+          "id": "reply.3",
+          "question": "What help do you need from me?",
+          "cue": "Give useful context and ask a question",
+          "hint": "I tried… / Could you help me…?",
+          "model": "I checked the error message. Could you help me understand why the list is not saved?"
+        }
+      ]
+    }
+  ],
+  "studyWeek": [
+    {
+      "id": "monday",
+      "title": "Monday · 20 min",
+      "cards": [
+        {
+          "id": "read",
+          "title": "Check documentation and write one question"
+        }
+      ]
+    },
+    {
+      "id": "wednesday",
+      "title": "Wednesday · 30 min",
+      "cards": [
+        {
+          "id": "build",
+          "title": "Build one small task-list feature"
+        }
+      ]
+    },
+    {
+      "id": "friday",
+      "title": "Friday · deadline",
+      "cards": [
+        {
+          "id": "test",
+          "title": "Test the feature and ask for feedback"
+        }
+      ]
+    }
+  ],
+  "portfolioFacts": [
+    {
+      "id": "purpose",
+      "label": "Purpose",
+      "value": "Organise a short daily task list"
+    },
+    {
+      "id": "demo",
+      "label": "Working frontend",
+      "value": "Add a task · mark it complete"
+    },
+    {
+      "id": "next",
+      "label": "Next test",
+      "value": "Keep the list after a page refresh"
+    },
+    {
+      "id": "repository",
+      "label": "Repository",
+      "value": "task-list-practice · code + short explanation"
+    },
+    {
+      "id": "stack",
+      "label": "Possible next step",
+      "value": "Use an API to connect the frontend to a backend"
+    }
+  ],
+  "pagePlan": [
+    {
+      "id": "cover",
+      "minutes": 1
+    },
+    {
+      "id": "vocabulary",
+      "minutes": 4
+    },
+    {
+      "id": "study-week",
+      "minutes": 4
+    },
+    {
+      "id": "guided",
+      "minutes": 5
+    },
+    {
+      "id": "your-learning",
+      "minutes": 4
+    },
+    {
+      "id": "small-project",
+      "minutes": 4
+    },
+    {
+      "id": "describe-problem",
+      "minutes": 4
+    },
+    {
+      "id": "mentor-check-in",
+      "minutes": 4
+    },
+    {
+      "id": "portfolio",
+      "minutes": 3
+    },
+    {
+      "id": "listening",
+      "minutes": 5
+    },
+    {
+      "id": "reply",
+      "minutes": 2
+    },
+    {
+      "id": "video",
+      "minutes": 3
+    },
+    {
+      "id": "free-conversation",
+      "minutes": 6
+    },
+    {
+      "id": "homework",
+      "minutes": 1
+    }
+  ]
+}

@@ -1,4 +1,14 @@
 import { lazy } from 'react'
+const DevStudy = lazy(() =>
+  import('../DevStudy131/DevStudy131Lesson').then((m) => ({
+    default: m.DevStudy131Lesson,
+  })),
+)
+const DevInterviews = lazy(() =>
+  import('../DevInterviews131/DevInterviews131Lesson').then((m) => ({
+    default: m.DevInterviews131Lesson,
+  })),
+)
 const DevFirstDay = lazy(() =>
   import('../DevFirstDay/DevFirstDayLesson').then((m) => ({
     default: m.DevFirstDayLesson,
@@ -67,6 +77,8 @@ export function MaterialView({
   materialKey,
   studentPortalOrigin,
 }: MaterialViewProps) {
+  if (materialKey === 'extra-dev-study') return <DevStudy />
+  if (materialKey === 'extra-dev-interviews') return <DevInterviews />
   if (materialKey === 'extra-dev-first-day') return <DevFirstDay />
   if (materialKey === 'extra-influencer-routine') return <InfluencerRoutine />
   if (materialKey === 'trial-b1') return <TrialB1 />

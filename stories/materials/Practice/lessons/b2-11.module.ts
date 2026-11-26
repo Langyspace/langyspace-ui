@@ -251,15 +251,15 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards/course-practice/expanded124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp':
+    '/flashcards-transparent/course-practice/homework-media131/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c/image.webp':
       expanded124Asset19,
     '/flashcards-transparent/b2/business/priority/image.webp':
       expanded124Asset20,
     '/flashcards-transparent/course-images/4ee65c2f7d887bdc2b0a4a8bc1634311c12f99f3a3f001d9f75d36300793bac2/image.webp':
       expanded124Asset21,
-    '/flashcards/course-practice/expanded124/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f.webp':
+    '/flashcards-transparent/course-practice/homework-media131/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f/image.webp':
       expanded124Asset22,
-    '/flashcards/course-practice/expanded124/87c382f072ed1fb19aa4ee86097801903ae06d61aa46f2a7fb2fae2dffe8c877.webp':
+    '/flashcards-transparent/course-practice/homework-media131/87c382f072ed1fb19aa4ee86097801903ae06d61aa46f2a7fb2fae2dffe8c877/image.webp':
       expanded124Asset23,
     '/flashcards/course-characters/kim/image.webp': asset24,
     '/flashcards/course-characters/ana/image.webp': asset25,

@@ -199,7 +199,17 @@
         "id": "flashcard124-a-wheel",
         "audioId": "flashcard124-a-wheel.front",
         "backAudioId": "flashcard124-a-wheel.back",
-        "visualLabel": "a wheel"
+        "visualLabel": "a wheel",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/2cb100ad85fe3ad58e26b227bd34313d64e8ee3fab87369fdade4817e2a6317a/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 32,
+          "columnSpan": 36,
+          "rowSpan": 62,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "word": "a handlebar",
@@ -209,7 +219,17 @@
         "id": "flashcard124-a-handlebar",
         "audioId": "flashcard124-a-handlebar.front",
         "backAudioId": "flashcard124-a-handlebar.back",
-        "visualLabel": "a handlebar"
+        "visualLabel": "a handlebar",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/2cb100ad85fe3ad58e26b227bd34313d64e8ee3fab87369fdade4817e2a6317a/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 51,
+          "row": 0,
+          "columnSpan": 25,
+          "rowSpan": 29,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "word": "a frame",
@@ -219,7 +239,17 @@
         "id": "flashcard124-a-frame",
         "audioId": "flashcard124-a-frame.front",
         "backAudioId": "flashcard124-a-frame.back",
-        "visualLabel": "a frame"
+        "visualLabel": "a frame",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/2cb100ad85fe3ad58e26b227bd34313d64e8ee3fab87369fdade4817e2a6317a/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 25,
+          "row": 27,
+          "columnSpan": 47,
+          "rowSpan": 50,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "word": "a security camera",
@@ -229,7 +259,15 @@
         "id": "flashcard124-a-security-camera",
         "audioId": "flashcard124-a-security-camera.front",
         "backAudioId": "flashcard124-a-security-camera.back",
-        "visualLabel": "a security camera"
+        "visualLabel": "a security camera",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/bde0052ca2e0cd8db0ebce577e6e7a5eb31ee3c17d1f56561cbd45100fc16a96/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "word": "a police station",
@@ -239,7 +277,15 @@
         "id": "flashcard124-a-police-station",
         "audioId": "flashcard124-a-police-station.front",
         "backAudioId": "flashcard124-a-police-station.back",
-        "visualLabel": "a police station"
+        "visualLabel": "a police station",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/bde0052ca2e0cd8db0ebce577e6e7a5eb31ee3c17d1f56561cbd45100fc16a96/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "word": "a description",
@@ -249,7 +295,8 @@
         "id": "flashcard124-a-description",
         "audioId": "flashcard124-a-description.front",
         "backAudioId": "flashcard124-a-description.back",
-        "visualLabel": "a description"
+        "visualLabel": "a description",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/2cb100ad85fe3ad58e26b227bd34313d64e8ee3fab87369fdade4817e2a6317a/image.webp"
       },
       {
         "word": "an incident number",
@@ -259,7 +306,15 @@
         "id": "flashcard124-an-incident-number",
         "audioId": "flashcard124-an-incident-number.front",
         "backAudioId": "flashcard124-an-incident-number.back",
-        "visualLabel": "an incident number"
+        "visualLabel": "an incident number",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/bde0052ca2e0cd8db0ebce577e6e7a5eb31ee3c17d1f56561cbd45100fc16a96/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
       }
     ]
   },
@@ -333,10 +388,7 @@
       }
     ]
   },
-  "publishedEnvironments": [
-    "staging",
-    "production"
-  ],
+  "publishedEnvironments": ["staging", "production"],
   "voice": {
     "prompt": "Send me a voice note: report a missing bike precisely without claiming it has been found",
     "duration": "60–90 seconds",

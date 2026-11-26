@@ -11,6 +11,8 @@ export interface InterviewSimulationProps extends Omit<
   learnerAvatarUrl?: string
   /** Guided call has one compact transport and no simulated meeting toggles. */
   presentation?: 'interview' | 'guided-call'
+  /** Fit supplied portraits without changing the default framing of existing calls. */
+  imageFit?: MeetingFrameProps['imageFit']
   participants?: MeetingFrameProps['participants']
   activeParticipantId?: string
   sharedContent?: ReactNode

@@ -2,10 +2,7 @@
   "key": "tema-frontend",
   "code": "B1 Tech",
   "title": "Tech · Frontend",
-  "publishedEnvironments": [
-    "staging",
-    "production"
-  ],
+  "publishedEnvironments": ["staging", "production"],
   "first": {
     "id": "course-practice-tema-frontend-flashcards",
     "kind": "flashcards",
@@ -16,7 +13,7 @@
         "translation": "botão",
         "example": "I click the button",
         "exampleTranslation": "Clico no botão",
-        "imageSrc": "/course-practice/frontend/v_bt.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/22d4ad9635452551662e6c97932980e492fa8f7a3b73a42aa0952118aa369e20/image.webp",
         "visualLabel": "a button",
         "audioId": "course-tema-frontend-v1.front",
         "backAudioId": "course-tema-frontend-v1.back"
@@ -27,7 +24,7 @@
         "translation": "formulário",
         "example": "I’ve filled in the form",
         "exampleTranslation": "Preenchi o formulário",
-        "imageSrc": "/course-practice/frontend/v_fm.svg",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/5d5300dab993c74871618ff662b74f988a8cbae98fd312ab7f93ebffb5a2e931/image.webp",
         "visualLabel": "a form",
         "audioId": "course-tema-frontend-v2.front",
         "backAudioId": "course-tema-frontend-v2.back"
@@ -38,7 +35,7 @@
         "translation": "menu (o ≡)",
         "example": "The menu doesn’t open on mobile",
         "exampleTranslation": "O menu não abre no celular",
-        "imageSrc": "/course-practice/frontend/v_mn.svg",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/f9de5e5974f29eefa43d151cda8521495d5090a9c8e841c4c1e9975451829b76/image.webp",
         "visualLabel": "a menu",
         "audioId": "course-tema-frontend-v3.front",
         "backAudioId": "course-tema-frontend-v3.back"
@@ -49,7 +46,7 @@
         "translation": "barra de busca",
         "example": "I can’t see the search bar",
         "exampleTranslation": "Não consigo ver a barra de busca",
-        "imageSrc": "/course-practice/frontend/v_sb.svg",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/beb969615a1c2a2b26cf45e49780efb5027944f4e7a282d1fa7dbcfc7897a589/image.webp",
         "visualLabel": "a search bar",
         "audioId": "course-tema-frontend-v4.front",
         "backAudioId": "course-tema-frontend-v4.back"
@@ -60,7 +57,7 @@
         "translation": "janela que abre por cima",
         "example": "The pop-up covers the button",
         "exampleTranslation": "A janela cobre o botão",
-        "imageSrc": "/course-practice/frontend/v_pp.svg",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/bee0448ffa641004692b79c4f6306ba0e0df80e54fdec6af2ba8178be70e8b75/image.webp",
         "visualLabel": "a pop-up",
         "audioId": "course-tema-frontend-v5.front",
         "backAudioId": "course-tema-frontend-v5.back"
@@ -71,7 +68,7 @@
         "translation": "caixa de marcar",
         "example": "Tick the checkbox before continuing",
         "exampleTranslation": "Marque a caixa antes de continuar",
-        "imageSrc": "/course-practice/frontend/v_cb.svg",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/3da8c5289e8f17348fd805a6381d1db9d8b6c6e8f2b18a829711c7f3001370a1/image.webp",
         "visualLabel": "a checkbox",
         "audioId": "course-tema-frontend-v6.front",
         "backAudioId": "course-tema-frontend-v6.back"
@@ -82,7 +79,7 @@
         "translation": "lista que abre",
         "example": "Choose an option from the dropdown",
         "exampleTranslation": "Escolha uma opção na lista",
-        "imageSrc": "/course-practice/frontend/v_dd.svg",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/258b50f10b4388e415b9345cc680bd384ca514e1a76abbdb5b25dbcd32883c1d/image.webp",
         "visualLabel": "a dropdown",
         "audioId": "course-tema-frontend-v7.front",
         "backAudioId": "course-tema-frontend-v7.back"
@@ -95,7 +92,17 @@
         "exampleTranslation": "Minha primeira tarefa é criar a tela de login",
         "visualLabel": "task",
         "audioId": "V.0.front",
-        "backAudioId": "V.0.back"
+        "backAudioId": "V.0.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 52,
+          "columnSpan": 39,
+          "rowSpan": 48,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "V.1",
@@ -105,7 +112,17 @@
         "exampleTranslation": "Preciso de acesso ao repositório",
         "visualLabel": "access",
         "audioId": "V.1.front",
-        "backAudioId": "V.1.back"
+        "backAudioId": "V.1.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 37,
+          "row": 64,
+          "columnSpan": 27,
+          "rowSpan": 34,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "V.2",
@@ -115,7 +132,17 @@
         "exampleTranslation": "A falta de acesso é um impedimento",
         "visualLabel": "blocker",
         "audioId": "V.2.front",
-        "backAudioId": "V.2.back"
+        "backAudioId": "V.2.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 31,
+          "row": 0,
+          "columnSpan": 42,
+          "rowSpan": 61,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "V.3",
@@ -125,7 +152,17 @@
         "exampleTranslation": "O prazo é sexta-feira",
         "visualLabel": "deadline",
         "audioId": "V.3.front",
-        "backAudioId": "V.3.back"
+        "backAudioId": "V.3.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 8,
+          "columnSpan": 32,
+          "rowSpan": 45,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "V.4",
@@ -135,7 +172,17 @@
         "exampleTranslation": "Aqui vai uma atualização rápida",
         "visualLabel": "update",
         "audioId": "V.4.front",
-        "backAudioId": "V.4.back"
+        "backAudioId": "V.4.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 73,
+          "row": 5,
+          "columnSpan": 25,
+          "rowSpan": 49,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "V.5",
@@ -145,7 +192,17 @@
         "exampleTranslation": "Obrigada pelos comentários",
         "visualLabel": "feedback",
         "audioId": "V.5.front",
-        "backAudioId": "V.5.back"
+        "backAudioId": "V.5.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 64,
+          "row": 53,
+          "columnSpan": 36,
+          "rowSpan": 47,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "HW.6",
@@ -155,7 +212,15 @@
         "exampleTranslation": "Os arquivos do projeto estão no repositório",
         "visualLabel": "a repository",
         "audioId": "HW.6.front",
-        "backAudioId": "HW.6.back"
+        "backAudioId": "HW.6.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.7",
@@ -165,7 +230,15 @@
         "exampleTranslation": "Estou trabalhando na parte visual do portal do cliente",
         "visualLabel": "frontend",
         "audioId": "HW.7.front",
-        "backAudioId": "HW.7.back"
+        "backAudioId": "HW.7.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.8",
@@ -175,7 +248,15 @@
         "exampleTranslation": "Priya está conectando a tela de login ao backend",
         "visualLabel": "backend",
         "audioId": "HW.8.front",
-        "backAudioId": "HW.8.back"
+        "backAudioId": "HW.8.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.9",
@@ -185,7 +266,8 @@
         "exampleTranslation": "A tela de login tem campos de e-mail e senha",
         "visualLabel": "a login screen",
         "audioId": "HW.9.front",
-        "backAudioId": "HW.9.back"
+        "backAudioId": "HW.9.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/5d5300dab993c74871618ff662b74f988a8cbae98fd312ab7f93ebffb5a2e931/image.webp"
       },
       {
         "id": "HW.11",
@@ -195,7 +277,8 @@
         "exampleTranslation": "A senha está incorreta — tente novamente",
         "visualLabel": "a password",
         "audioId": "HW.11.front",
-        "backAudioId": "HW.11.back"
+        "backAudioId": "HW.11.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/e482baeb6853332459574a975008557cd6d4c9278f9b49b5f475688f3735f028/image.webp"
       },
       {
         "id": "HW.12",
@@ -205,7 +288,15 @@
         "exampleTranslation": "Use seu e-mail de trabalho para pedir acesso",
         "visualLabel": "an email address",
         "audioId": "HW.12.front",
-        "backAudioId": "HW.12.back"
+        "backAudioId": "HW.12.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.14",
@@ -215,7 +306,8 @@
         "exampleTranslation": "A mensagem de erro explica o que deu errado",
         "visualLabel": "an error message",
         "audioId": "HW.14.front",
-        "backAudioId": "HW.14.back"
+        "backAudioId": "HW.14.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/e482baeb6853332459574a975008557cd6d4c9278f9b49b5f475688f3735f028/image.webp"
       },
       {
         "id": "HW.15",
@@ -225,7 +317,15 @@
         "exampleTranslation": "A redefinição de senha ajuda as pessoas a recuperar o acesso às suas contas",
         "visualLabel": "a password reset",
         "audioId": "HW.15.front",
-        "backAudioId": "HW.15.back"
+        "backAudioId": "HW.15.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.16",
@@ -235,7 +335,15 @@
         "exampleTranslation": "Preciso de uma conta de teste ativa para a demonstração",
         "visualLabel": "a test account",
         "audioId": "HW.16.front",
-        "backAudioId": "HW.16.back"
+        "backAudioId": "HW.16.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.17",
@@ -245,7 +353,17 @@
         "exampleTranslation": "O layout está pronto, mas ainda falta a conexão com a API",
         "visualLabel": "a layout",
         "audioId": "HW.17.front",
-        "backAudioId": "HW.17.back"
+        "backAudioId": "HW.17.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 52,
+          "columnSpan": 39,
+          "rowSpan": 48,
+          "sourceAspectRatio": 1.7768331562167907
+        }
       },
       {
         "id": "HW.18",
@@ -255,7 +373,15 @@
         "exampleTranslation": "A API verifica o endereço de e-mail e a senha",
         "visualLabel": "an API",
         "audioId": "HW.18.front",
-        "backAudioId": "HW.18.back"
+        "backAudioId": "HW.18.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/20fd7898cacd20f717e5fa9dd86c869d13e0c74e0d8dccd7640593e82a0fe99d/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       },
       {
         "id": "HW.19",
@@ -265,7 +391,15 @@
         "exampleTranslation": "Vou mostrar a tela de login na demonstração de sexta-feira",
         "visualLabel": "a demo",
         "audioId": "HW.19.front",
-        "backAudioId": "HW.19.back"
+        "backAudioId": "HW.19.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/20fd7898cacd20f717e5fa9dd86c869d13e0c74e0d8dccd7640593e82a0fe99d/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
       }
     ]
   },
@@ -353,11 +487,7 @@
   "voice": {
     "prompt": "Tell me about a website or app you have worked on. Explain one problem, what you have fixed and what you still need to do",
     "duration": "60–90 seconds",
-    "starters": [
-      "The problem is…",
-      "I’ve already…",
-      "I haven’t… yet"
-    ],
+    "starters": ["The problem is…", "I’ve already…", "I haven’t… yet"],
     "closing": "Finish by asking your teacher to check one thing"
   },
   "homeworkCopy": {

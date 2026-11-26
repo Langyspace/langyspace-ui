@@ -1,0 +1,51 @@
+{
+  "check": "one focused static source composition/syntax check",
+  "pageCount": 14,
+  "durationMinutes": 50,
+  "pageIds": [
+    "cover",
+    "vocabulary",
+    "study-week",
+    "guided",
+    "your-learning",
+    "small-project",
+    "describe-problem",
+    "mentor-check-in",
+    "portfolio",
+    "listening",
+    "reply",
+    "video",
+    "free-conversation",
+    "homework"
+  ],
+  "vocabularyCount": 6,
+  "modelTurns": 6,
+  "guidedQuestions": 3,
+  "livePracticePages": 7,
+  "livePairsPerPage": 3,
+  "whatsappConversations": 1,
+  "whatsappNotes": 2,
+  "whatsappQuestions": 6,
+  "videoSeconds": 59,
+  "videoQuestions": 4,
+  "homeworkCards": 20,
+  "homeworkImages": 20,
+  "shadowingAccentDistribution": {
+    "kim": 4,
+    "owen": 1,
+    "niamh": 1
+  },
+  "narratedIds": 60,
+  "frozenSha256": "d63bb1e0cb9ed89b133543796d80f0a4e132c434bb5c8a2ff8b5c28c506b8298",
+  "syntaxFiles": [
+    "DevStudy131.practice.ts",
+    "DevStudy131.recordings.ts",
+    "DevStudy131.stories.tsx",
+    "DevStudy131.types.ts",
+    "DevStudy131Exercises.tsx",
+    "DevStudy131Lesson.tsx"
+  ],
+  "publication": "not provisioned; links guarded",
+  "runtime": "not checked; MP3 assets adopted by root after generation",
+  "rootOwns": "catalog/route/Notes export/media sync/provision/build/review"
+}

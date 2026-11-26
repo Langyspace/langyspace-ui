@@ -4,6 +4,10 @@ import ana from './assets/ana-profile-soft-v2.webp'
 import kim from './assets/kim-profile-approved.webp'
 import leo from './assets/leo-profile-soft-v2.webp'
 import raj from './assets/raj-profile-v1.webp'
+import owen from '../Practice/assets/characters/owen-harris.webp'
+import priya from '../Practice/assets/characters/priya-nair.webp'
+import niamh from '../Practice/assets/characters/niamh-murphy.webp'
+import ruby from '../Practice/assets/characters/ruby-bennett.webp'
 
 export { ana, kim, leo, raj, anna, ben }
 
@@ -15,6 +19,10 @@ const characterPortraits: Readonly<Record<string, string>> = {
   Kim: kim,
   Leo: leo,
   Raj: raj,
+  Owen: owen,
+  Priya: priya,
+  Niamh: niamh,
+  Ruby: ruby,
 }
 export const characterPortrait = (speaker: string) =>
   characterPortraits[speaker.replace(/^Teacher:\s*/, '').trim()]

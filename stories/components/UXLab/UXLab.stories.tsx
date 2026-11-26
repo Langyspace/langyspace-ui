@@ -29,6 +29,7 @@ import { OralReview } from '../../../src/components/InteractiveMaterial/OralRevi
 import { OralReviewResult } from '../../../src/components/InteractiveMaterial/OralReviewResult'
 import { CallDemo } from './CallDemo'
 import { InterviewDemo } from './InterviewDemo'
+import interviewPortrait from '../../materials/UXLab/assets/jun.png'
 import { ConversationDemo } from './ConversationDemo'
 import {
   GrammarDemo,
@@ -360,6 +361,24 @@ export const MapReference: Story = {
         { id: 'first', from: { x: 20, y: 70 }, to: { x: 85, y: 70 } },
         { id: 'second', from: { x: 20, y: 35 }, to: { x: 85, y: 35 } },
       ]}
+    />
+  ),
+}
+
+/** Whole-portrait framing for guided calls; the established default remains cover. */
+export const GuidedCallWholePortrait: Story = {
+  render: () => (
+    <InterviewSimulation
+      title="Hiring-manager interview"
+      presentation="guided-call"
+      imageFit="contain"
+      interviewer={{ name: 'Jun', imageUrl: interviewPortrait }}
+      learnerName="You"
+      turnIndex={0}
+      turnCount={6}
+      onNext={() => {}}
+      onPrevious={() => {}}
+      onReplay={() => {}}
     />
   ),
 }

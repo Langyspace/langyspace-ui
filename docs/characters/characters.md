@@ -92,3 +92,10 @@ Alex and Nina in B1.11 are fictional celebration roles: Alex is the host in gree
 Kim retains her established identity. Owen Harris, Priya Nair, Niamh Murphy and Ruby Bennett reuse their existing Student practice portraits and accent/voice mappings. In this exercise only, Owen is the senior proposing autosave, Priya handles the API, Niamh checks unsaved changes and Ruby builds the password-reset screen. These roles are scenario assignments; no age, employer, nationality or permanent career is inferred from the voice or portrait. The learner is the sixth participant and speaks live, without a recorded voice.
 
 The current customer-portal scenario assigns registration to Owen, backend/account APIs to Priya, password reset to Ruby, testing to Niamh and the Login screen to the learner. Ruby replaces the initial Noah casting so the team is visually distinct. This does not modify either canonical portrait elsewhere. Demo accounts customer@example.com / test@example.com are fictional UI evidence, not new characters or real credentials.
+
+
+## Developer English — estudos e entrevistas (revisão 131)
+
+DEV.01 usa Ana como exemplo de pessoa estudando programação e Kim como interlocutora de apoio. DEV.02 usa Kim no papel de entrevistadora de gestão e Priya no papel de entrevistadora técnica. As contribuições no portal do cliente, problemas do Login e exemplos de projeto são fatos das simulações, não histórico profissional permanente dos personagens. A aluna responde com sua própria experiência ou com um projeto de prática.
+
+Owen, Niamh, Priya e Ruby mantêm os retratos já aprovados do time. As práticas de shadowing identificam nome, rosto e variante de inglês: Kim (US), Owen (GB), Niamh (IE), Priya (IN) e Ruby (AU). Sotaque/voz não determina nacionalidade, idade ou uma nova biografia. As duas notas de WhatsApp de cada aula vêm da mesma Kim e formam uma continuação natural.

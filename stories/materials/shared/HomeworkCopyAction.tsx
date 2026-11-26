@@ -39,8 +39,8 @@ export function HomeworkCopyAction({
   return (
     <>
       <S.Footer>
-        <S.CopyStatus role="status" aria-live="polite">
-          {status === 'copied' ? 'Dever de casa copiado' : ''}
+        <S.CopyStatus role="status" aria-live="polite" aria-atomic="true">
+          {active && status === 'copied' ? 'Dever de casa copiado' : ''}
         </S.CopyStatus>
         <Button
           ref={button}
@@ -48,9 +48,11 @@ export function HomeworkCopyAction({
           size="sm"
           disabled={!message}
           title={
-            message
-              ? 'Copiar as três tarefas para enviar pelo WhatsApp'
-              : 'Este dever ainda não está disponível para envio'
+            active && status === 'copied'
+              ? 'Dever de casa copiado'
+              : message
+                ? 'Copiar as três tarefas para enviar pelo WhatsApp'
+                : 'Este dever ainda não está disponível para envio'
           }
           onClick={() => void copy()}
           iconStart={
@@ -61,7 +63,13 @@ export function HomeworkCopyAction({
               viewBox="0 0 24 24"
               fill="currentColor"
             >
-              <path d="M7 7h13v15H7V7Zm2 2v11h9V9H9ZM3 2h13v3H5v13H3V2Z" />
+              <path
+                d={
+                  active && status === 'copied'
+                    ? 'M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4Z'
+                    : 'M7 7h13v15H7V7Zm2 2v11h9V9H9ZM3 2h13v3H5v13H3V2Z'
+                }
+              />
             </svg>
           }
         >

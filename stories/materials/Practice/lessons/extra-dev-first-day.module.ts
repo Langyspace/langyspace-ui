@@ -3,7 +3,8 @@ import { devRecordings } from '../../DevFirstDay/DevFirstDay.recordings'
 import source from '../../DevFirstDay/DevFirstDay.content.json'
 import homeworkVocabulary from '../../DevFirstDay/homework-vocabulary95.json'
 import { devHomeworkRecordings } from '../../DevFirstDay/DevHomework.recordings'
-import { characterPortrait } from '../../shared/characterPortraits'
+import kim from '../assets/characters/kim.webp'
+import { homeworkCardMedia, homeworkMediaImages } from '../homeworkMedia131'
 const translations = [
   'Você poderia repetir?',
   'Você poderia me dar acesso ao repositório?',
@@ -15,7 +16,7 @@ const translations = [
 const prepared: PreparedPractice = {
   data: {
     key: source.materialKey,
-    code: 'DEV.02',
+    code: 'DEV.03',
     homeworkCopy: {
       title: 'Primeiro dia no time',
       first: 'Estudar o vocabulário de trabalho e tecnologia nos flashcards',
@@ -37,12 +38,14 @@ const prepared: PreparedPractice = {
           example: item.example,
           exampleTranslation: item.exampleTranslation,
           visualLabel: item.word,
+          ...homeworkCardMedia(source.materialKey, item.word),
           audioId: item.id,
           backAudioId: index === 0 ? 'ACCOUNT.EX.0' : 'EX.' + index,
         })),
         ...homeworkVocabulary.map((item) => ({
           ...item,
           visualLabel: item.word,
+          ...homeworkCardMedia(source.materialKey, item.word),
         })),
       ],
     },
@@ -52,7 +55,7 @@ const prepared: PreparedPractice = {
         {
           id: 'kim',
           name: 'Kim',
-          avatarUrl: characterPortrait('Kim')!,
+          avatarUrl: '/flashcards/course-characters/kim/image.webp',
           accentLabel: 'American English',
         },
       ],
@@ -72,6 +75,9 @@ const prepared: PreparedPractice = {
     },
   },
   recordings: [...devRecordings, ...devHomeworkRecordings],
-  images: {},
+  images: {
+    ...homeworkMediaImages(source.materialKey),
+    '/flashcards/course-characters/kim/image.webp': kim,
+  },
 }
 export default prepared

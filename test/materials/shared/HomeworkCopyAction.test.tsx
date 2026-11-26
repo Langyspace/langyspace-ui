@@ -12,15 +12,26 @@ it('copies only on request and keeps the action label stable after success', asy
   const write = vi.fn().mockResolvedValue(undefined)
   clipboard(write)
   render(<HomeworkCopyAction message={message} active />)
+  const button = screen.getByRole('button', { name: 'Copy homework' })
+  const status = screen.getByRole('status')
+  expect(status).toHaveStyle({ position: 'absolute', pointerEvents: 'none' })
+  expect(status.parentElement).toHaveStyle({ position: 'relative' })
+  expect(status).toHaveAttribute('aria-live', 'polite')
+  expect(status).toHaveAttribute('aria-atomic', 'true')
   expect(write).not.toHaveBeenCalled()
-  fireEvent.click(screen.getByRole('button', { name: 'Copy homework' }))
+  fireEvent.click(button)
   await waitFor(() =>
     expect(screen.getByRole('status')).toHaveTextContent(
       'Dever de casa copiado',
     ),
   )
   expect(write).toHaveBeenCalledExactlyOnceWith(message)
-  expect(screen.getByRole('button', { name: 'Copy homework' })).toBeEnabled()
+  expect(screen.getByRole('button', { name: 'Copy homework' })).toBe(button)
+  expect(button).toBeEnabled()
+  expect(button).toHaveAttribute('title', 'Dever de casa copiado')
+  expect(button.querySelector('svg')).toHaveAttribute('width', '18')
+  expect(button.querySelector('svg')).toHaveAttribute('height', '18')
+  expect(status).toHaveStyle({ position: 'absolute', pointerEvents: 'none' })
 })
 it('offers the exact selectable text when browser clipboard access is denied', async () => {
   clipboard(vi.fn().mockRejectedValue(new Error('Denied')))
@@ -38,22 +49,26 @@ it('offers the exact selectable text when browser clipboard access is denied', a
   expect(text.selectionEnd - text.selectionStart).toBe(message.length)
   expect(screen.getByRole('status')).toBeEmptyDOMElement()
 })
-it('ignores a pending result from a page that is no longer active', async () => {
-  let reject!: (reason: Error) => void
-  clipboard(
-    vi.fn().mockImplementation(
-      () =>
-        new Promise((_, no) => {
-          reject = no
-        }),
-    ),
-  )
-  const { rerender } = render(<HomeworkCopyAction message={message} active />)
-  fireEvent.click(screen.getByRole('button', { name: 'Copy homework' }))
-  rerender(<HomeworkCopyAction message={message} active={false} />)
-  await act(async () => reject(new Error('Delayed denial')))
-  expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
-  expect(screen.getByRole('status')).toBeEmptyDOMElement()
-  rerender(<HomeworkCopyAction active />)
-  expect(screen.getByRole('button', { name: 'Copy homework' })).toBeDisabled()
-})
+it.each(['success', 'denial'] as const)(
+  'ignores a pending %s from a page that is no longer active',
+  async (result) => {
+    let finish!: () => void
+    clipboard(
+      vi.fn().mockImplementation(
+        () =>
+          new Promise<void>((yes, no) => {
+            finish = () =>
+              result === 'success' ? yes() : no(new Error('Delayed denial'))
+          }),
+      ),
+    )
+    const { rerender } = render(<HomeworkCopyAction message={message} active />)
+    fireEvent.click(screen.getByRole('button', { name: 'Copy homework' }))
+    rerender(<HomeworkCopyAction message={message} active={false} />)
+    await act(async () => finish())
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+    expect(screen.getByRole('status')).toBeEmptyDOMElement()
+    rerender(<HomeworkCopyAction active />)
+    expect(screen.getByRole('button', { name: 'Copy homework' })).toBeDisabled()
+  },
+)

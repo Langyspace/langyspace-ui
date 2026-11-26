@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './tema-frontend.json'
 import extraAsset0 from '../../Frontend/assets/audio/V.0.mp3'
@@ -18,12 +19,12 @@ import extraAsset14 from '../../Frontend/assets/audio/D.8.mp3'
 import extraAsset15 from '../../Frontend/assets/audio/D.9.mp3'
 import extraAsset16 from '../../Frontend/assets/audio/D.10.mp3'
 import extraAsset17 from '../../Frontend/assets/v_bt.webp'
-import extraAsset18 from '../../Frontend/assets/v_fm.svg'
-import extraAsset19 from '../../Frontend/assets/v_mn.svg'
-import extraAsset20 from '../../Frontend/assets/v_sb.svg'
-import extraAsset21 from '../../Frontend/assets/v_pp.svg'
-import extraAsset22 from '../../Frontend/assets/v_cb.svg'
-import extraAsset23 from '../../Frontend/assets/v_dd.svg'
+import extraAsset18 from '../assets/homework131/raster-715fe82af950f60415fb3fcab14fa6f5dc8c08f65a37243244e8bfdd7cb22aa3.webp'
+import extraAsset19 from '../assets/homework131/raster-20b193c1990dc6d959ad0d56cc9b5ae0a883d6507ac8aea06a29dffb6ac7a452.webp'
+import extraAsset20 from '../assets/homework131/raster-04217e71707cc9c26a5603ef2fd62b85608d1d38159606d1298a0de41a499962.webp'
+import extraAsset21 from '../assets/homework131/raster-79e38bc572f28877bcb067012795e39f560ab11b835c059f61b676bb2daa8dad.webp'
+import extraAsset22 from '../assets/homework131/raster-7bad10480db8eae6a5a980cbbcb434c80344ba67b4cab1f8d1e2adfb3d8b918a.webp'
+import extraAsset23 from '../assets/homework131/raster-62718616ac08b3043310e3c5a937ad44bea6ce3060bf7ef6f61546141ff6b6c1.webp'
 import extraAsset24 from '../assets/characters/ana.webp'
 import extraAsset25 from '../assets/characters/kim.webp'
 import expanded124Asset0 from '../assets/flashcards124/b16c59ee06c571ea29ac561db738dff3e84489d3db55f89b564bdb9cc29a2f4b.mp3'
@@ -255,13 +256,21 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/course-practice/frontend/v_bt.webp': extraAsset17,
-    '/course-practice/frontend/v_fm.svg': extraAsset18,
-    '/course-practice/frontend/v_mn.svg': extraAsset19,
-    '/course-practice/frontend/v_sb.svg': extraAsset20,
-    '/course-practice/frontend/v_pp.svg': extraAsset21,
-    '/course-practice/frontend/v_cb.svg': extraAsset22,
-    '/course-practice/frontend/v_dd.svg': extraAsset23,
+    ...homeworkMediaImages('tema-frontend'),
+    '/flashcards-transparent/course-practice/homework-media131/22d4ad9635452551662e6c97932980e492fa8f7a3b73a42aa0952118aa369e20/image.webp':
+      extraAsset17,
+    '/flashcards-transparent/course-practice/homework-media131/5d5300dab993c74871618ff662b74f988a8cbae98fd312ab7f93ebffb5a2e931/image.webp':
+      extraAsset18,
+    '/flashcards-transparent/course-practice/homework-media131/f9de5e5974f29eefa43d151cda8521495d5090a9c8e841c4c1e9975451829b76/image.webp':
+      extraAsset19,
+    '/flashcards-transparent/course-practice/homework-media131/beb969615a1c2a2b26cf45e49780efb5027944f4e7a282d1fa7dbcfc7897a589/image.webp':
+      extraAsset20,
+    '/flashcards-transparent/course-practice/homework-media131/bee0448ffa641004692b79c4f6306ba0e0df80e54fdec6af2ba8178be70e8b75/image.webp':
+      extraAsset21,
+    '/flashcards-transparent/course-practice/homework-media131/3da8c5289e8f17348fd805a6381d1db9d8b6c6e8f2b18a829711c7f3001370a1/image.webp':
+      extraAsset22,
+    '/flashcards-transparent/course-practice/homework-media131/258b50f10b4388e415b9345cc680bd384ca514e1a76abbdb5b25dbcd32883c1d/image.webp':
+      extraAsset23,
     '/flashcards/course-characters/ana/image.webp': extraAsset24,
     '/flashcards/course-characters/kim/image.webp': extraAsset25,
   },

@@ -123,7 +123,7 @@
         "visualLabel": "a trade-off",
         "audioId": "C106-FS81.0",
         "backAudioId": "C106-FS81.0",
-        "imageSrc": "/flashcards/course-practice/expanded124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -152,7 +152,7 @@
         "visualLabel": "a deal-breaker",
         "audioId": "C106-FS81.4",
         "backAudioId": "C106-FS81.4",
-        "imageSrc": "/flashcards/course-practice/expanded124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -170,7 +170,7 @@
         "visualLabel": "reconsider a decision",
         "audioId": "C106-FS81.5",
         "backAudioId": "C106-FS81.5",
-        "imageSrc": "/flashcards/course-practice/expanded124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -278,7 +278,7 @@
         "visualLabel": "a counterproposal",
         "audioId": "C108-FS81.2",
         "backAudioId": "C108-FS81.2",
-        "imageSrc": "/flashcards/course-practice/expanded124/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -296,7 +296,7 @@
         "visualLabel": "a feasible option",
         "audioId": "C108-FS81.3",
         "backAudioId": "C108-FS81.3",
-        "imageSrc": "/flashcards/course-practice/expanded124/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -314,7 +314,7 @@
         "visualLabel": "a shared interest",
         "audioId": "C108-FS81.4",
         "backAudioId": "C108-FS81.4",
-        "imageSrc": "/flashcards/course-practice/expanded124/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -332,7 +332,7 @@
         "visualLabel": "a sticking point",
         "audioId": "C108-FS81.5",
         "backAudioId": "C108-FS81.5",
-        "imageSrc": "/flashcards/course-practice/expanded124/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -350,7 +350,7 @@
         "visualLabel": "a fallback option",
         "audioId": "C112-FS81.4",
         "backAudioId": "C112-FS81.4",
-        "imageSrc": "/flashcards/course-practice/expanded124/87c382f072ed1fb19aa4ee86097801903ae06d61aa46f2a7fb2fae2dffe8c877.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/87c382f072ed1fb19aa4ee86097801903ae06d61aa46f2a7fb2fae2dffe8c877/image.webp",
         "imageRegion": {
           "columns": 3,
           "rows": 2,
@@ -455,18 +455,11 @@
       }
     ]
   },
-  "publishedEnvironments": [
-    "staging",
-    "production"
-  ],
+  "publishedEnvironments": ["staging", "production"],
   "voice": {
     "prompt": "Send me a voice note: propose a change, acknowledge an objection and preserve the purpose while adapting the plan",
     "duration": "90–120 seconds",
-    "starters": [
-      "I’d suggest…",
-      "That’s a fair point",
-      "Having said that,…"
-    ],
+    "starters": ["I’d suggest…", "That’s a fair point", "Having said that,…"],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

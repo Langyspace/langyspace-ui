@@ -260,13 +260,13 @@ const prepared: PreparedPractice = {
       expanded124Asset19,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':
       expanded124Asset20,
-    '/flashcards/course-practice/expanded124/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552.webp':
+    '/flashcards-transparent/course-practice/homework-media131/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552/image.webp':
       expanded124Asset21,
-    '/flashcards/course-practice/expanded124/ea1dedf32108c92b3dd1e0f852d2b9b3866019b83c6e0c2b892e0949693c19bd.webp':
+    '/flashcards-transparent/course-practice/homework-media131/ea1dedf32108c92b3dd1e0f852d2b9b3866019b83c6e0c2b892e0949693c19bd/image.webp':
       expanded124Asset22,
-    '/flashcards/course-practice/expanded124/ab56839474636e324af9a3a0c1d830d57340a74e5a61656ee025e82d74da4b27.webp':
+    '/flashcards-transparent/course-practice/homework-media131/ab56839474636e324af9a3a0c1d830d57340a74e5a61656ee025e82d74da4b27/image.webp':
       expanded124Asset23,
-    '/flashcards/course-practice/expanded124/9c8ecfa7bde2b78584d079a7733aa4f8e41ed44844574947f215ad241cc61bce.webp':
+    '/flashcards-transparent/course-practice/homework-media131/9c8ecfa7bde2b78584d079a7733aa4f8e41ed44844574947f215ad241cc61bce/image.webp':
       expanded124Asset24,
     '/flashcards/course-characters/niamh-murphy/image.webp': asset24,
     '/flashcards/course-characters/cian-walsh/image.webp': asset25,

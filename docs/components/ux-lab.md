@@ -16,6 +16,8 @@ A demonstração A1 usa Bella Pizza; a avançada usa Fibrenet. O consumidor cont
 
 Videochamada com entrevistadora, aluna, legenda, controles de mic/câmera/mão e sequência de áudios. Recebe `interviewer`, `learnerName`, `caption`, `turnIndex`, `turnCount` e callbacks de navegação. Cada toggle recebe valor e callback; `ended` bloqueia a reprodução e os controles da chamada. `loading` bloqueia o transporte.
 
+`presentation="guided-call"` reutiliza MeetingFrame. `imageFit="contain"` preserva retratos inteiros; o padrão `cover` das chamadas existentes continua igual.
+
 Os controles representam estados da simulação. O componente não solicita dispositivos nem transmite vídeo. O portal fornece eventuais permissões, mídia e comportamento real.
 
 ## AudioSequenceControls
@@ -211,13 +213,11 @@ A reusable native map for location and direction tasks. `places` and `streets` s
 
 `SceneExplorer presentation="vocabulary"` keeps a learned word attached to its original hotspot after the callout closes. The same hit target and image geometry serve exploration and reference. Short label/example callouts use their natural height; playback remains controlled by the consumer. `labels` and `explore` retain their existing behaviour.
 
-
 ## VideoExercise inline and YouTube excerpts
 
 Use `presentation="inline"` when the host already pairs the media with its Questions column. Pass `title={null}` to avoid repeating the slide heading. Existing staged `media`, `page`, `onPageChange` and chapter behavior remain supported; omitted page state is uncontrolled.
 
 `youtube={{ videoId, startSeconds, endSeconds, title, credit }}` uses the official IFrame API with native controls, bounded cue/replay and optional loop, initially off. `active={false}` does not load the provider and stops/releases an existing player. Provide the host's four questions outside this frame. Source metadata is retained without a duplicate clickable credit footer. On failure, a link to the original remains available; failures never count as successful playback. No autoplay or copied media. A1.01's first excerpt is British Council HooNbcbgi9U,59–93seconds; browser captions were consulted to select the dialogue boundaries. Exact cuts depend on provider keyframes. Only the user can judge pedagogical/visual suitability.
-
 
 ## Revisão114 — lacunas, imagens plain e preparação do vídeo
 

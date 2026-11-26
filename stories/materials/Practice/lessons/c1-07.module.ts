@@ -233,19 +233,19 @@ const prepared: PreparedPractice = {
   ],
   images: {
     '/flashcards-transparent/b2/business/update/image.webp': expanded124Asset14,
-    '/flashcards/course-practice/expanded124/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e.webp':
+    '/flashcards-transparent/course-practice/homework-media131/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e/image.webp':
       expanded124Asset15,
-    '/flashcards/course-practice/expanded124/ab56839474636e324af9a3a0c1d830d57340a74e5a61656ee025e82d74da4b27.webp':
+    '/flashcards-transparent/course-practice/homework-media131/ab56839474636e324af9a3a0c1d830d57340a74e5a61656ee025e82d74da4b27/image.webp':
       expanded124Asset16,
-    '/flashcards/course-practice/expanded124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp':
+    '/flashcards-transparent/course-practice/homework-media131/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c/image.webp':
       expanded124Asset17,
     '/flashcards-transparent/b2/business/priority/image.webp':
       expanded124Asset18,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':
       expanded124Asset19,
-    '/flashcards/course-practice/expanded124/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552.webp':
+    '/flashcards-transparent/course-practice/homework-media131/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552/image.webp':
       expanded124Asset20,
-    '/flashcards/course-practice/expanded124/f63451846301546345841ba8ec2c418ed74e426f1f911ccf9ab66b97e1d37403.webp':
+    '/flashcards-transparent/course-practice/homework-media131/f63451846301546345841ba8ec2c418ed74e426f1f911ccf9ab66b97e1d37403/image.webp':
       expanded124Asset21,
     '/flashcards/course-characters/kim/image.webp': asset24,
     '/flashcards/course-characters/ana/image.webp': asset25,

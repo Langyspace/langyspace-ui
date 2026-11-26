@@ -12,6 +12,7 @@ import { useLessonPage } from '../shared/useLessonPage'
 import { PromptExercise } from '../shared/LessonExercises'
 import { RoutineHomework } from './RoutineHomework'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
+import { MaterialVideoPage } from '../shared/MaterialVideoPage'
 import { characterPortrait } from '../shared/characterPortraits'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
 import { RoutineDialogue } from './RoutineDialogue'
@@ -19,6 +20,7 @@ import { RoutineScene } from './RoutineScene'
 import { RoutinePersonal } from './RoutinePersonal'
 import { routineRecordings } from './InfluencerRoutine.recordings'
 import source from './InfluencerRoutine.content.json'
+import video from './InfluencerRoutine.video.json'
 import cover from './assets/catalog-cover40.webp'
 import type { InfluencerRoutineLessonProps } from './InfluencerRoutine.types'
 
@@ -39,6 +41,7 @@ export const routinePageIds = [
   'night-personal',
   'bedtime-message',
   'reply',
+  's_video131',
   'free-conversation',
   'homework',
 ] as const
@@ -204,6 +207,13 @@ export function InfluencerRoutineLesson({
         >
           <RoutinePersonal prompts={source.reply.prompts} fictionalContact />
         </SlidePage>
+      ),
+    },
+    {
+      id: 's_video131',
+      label: video.title,
+      content: (
+        <MaterialVideoPage content={video} active={pageId === 's_video131'} />
       ),
     },
     {

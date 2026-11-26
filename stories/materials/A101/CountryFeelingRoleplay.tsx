@@ -18,7 +18,9 @@ export function CountryFeelingRoleplay({
         <Common.Row $justify="center" aria-label="Questions you can ask">
           {['How are you?', 'Where are you from?', 'Are you …?'].map(
             (question) => (
-              <Common.Chip key={question}>{question}</Common.Chip>
+              <Common.SpokenPrompt key={question}>
+                {question}
+              </Common.SpokenPrompt>
             ),
           )}
         </Common.Row>

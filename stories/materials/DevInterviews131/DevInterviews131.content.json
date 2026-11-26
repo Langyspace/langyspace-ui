@@ -1,0 +1,478 @@
+{
+  "materialKey": "extra-dev-interviews",
+  "code": "DEV.02",
+  "levels": ["B1", "B2"],
+  "title": "Your developer job interviews",
+  "instruction": "Explain your experience, meet a hiring manager and think aloud in a technical interview",
+  "vocabulary": [
+    {
+      "id": "dev-interviews-word-01",
+      "word": "recruiter",
+      "translation": "recrutador ou recrutadora",
+      "example": "The recruiter explained the next interview steps.",
+      "exampleTranslation": "A recrutadora explicou as próximas etapas da entrevista.",
+      "visualLabel": "recruiter",
+      "audioId": "HW.0.front",
+      "backAudioId": "HW.0.back"
+    },
+    {
+      "id": "dev-interviews-word-02",
+      "word": "a job description",
+      "translation": "descrição de uma vaga",
+      "example": "I read the job description before the interview.",
+      "exampleTranslation": "Eu li a descrição da vaga antes da entrevista.",
+      "visualLabel": "a job description",
+      "audioId": "HW.1.front",
+      "backAudioId": "HW.1.back"
+    },
+    {
+      "id": "dev-interviews-word-03",
+      "word": "experience",
+      "translation": "experiência",
+      "example": "I have experience building web applications.",
+      "exampleTranslation": "Tenho experiência em desenvolver aplicações web.",
+      "visualLabel": "experience",
+      "audioId": "HW.2.front",
+      "backAudioId": "HW.2.back"
+    },
+    {
+      "id": "dev-interviews-word-04",
+      "word": "skills",
+      "translation": "habilidades",
+      "example": "My strongest skills are React and problem solving.",
+      "exampleTranslation": "Minhas principais habilidades são React e resolução de problemas.",
+      "visualLabel": "skills",
+      "audioId": "HW.3.front",
+      "backAudioId": "HW.3.back"
+    },
+    {
+      "id": "dev-interviews-word-05",
+      "word": "a coding task",
+      "translation": "desafio de programação",
+      "example": "The coding task is to improve a login form.",
+      "exampleTranslation": "O desafio de programação é melhorar um formulário de login.",
+      "visualLabel": "a coding task",
+      "audioId": "HW.4.front",
+      "backAudioId": "HW.4.back"
+    },
+    {
+      "id": "dev-interviews-word-06",
+      "word": "feedback",
+      "translation": "retorno para melhorar",
+      "example": "Could you give me feedback on my approach?",
+      "exampleTranslation": "Você poderia me dar um retorno sobre minha abordagem?",
+      "visualLabel": "feedback",
+      "audioId": "HW.5.front",
+      "backAudioId": "HW.5.back"
+    }
+  ],
+  "homeworkVocabulary": [
+    {
+      "id": "dev-interviews-word-01",
+      "word": "recruiter",
+      "translation": "recrutador ou recrutadora",
+      "example": "The recruiter explained the next interview steps.",
+      "exampleTranslation": "A recrutadora explicou as próximas etapas da entrevista.",
+      "visualLabel": "recruiter",
+      "audioId": "HW.0.front",
+      "backAudioId": "HW.0.back"
+    },
+    {
+      "id": "dev-interviews-word-02",
+      "word": "a job description",
+      "translation": "descrição de uma vaga",
+      "example": "I read the job description before the interview.",
+      "exampleTranslation": "Eu li a descrição da vaga antes da entrevista.",
+      "visualLabel": "a job description",
+      "audioId": "HW.1.front",
+      "backAudioId": "HW.1.back"
+    },
+    {
+      "id": "dev-interviews-word-03",
+      "word": "experience",
+      "translation": "experiência",
+      "example": "I have experience building web applications.",
+      "exampleTranslation": "Tenho experiência em desenvolver aplicações web.",
+      "visualLabel": "experience",
+      "audioId": "HW.2.front",
+      "backAudioId": "HW.2.back"
+    },
+    {
+      "id": "dev-interviews-word-04",
+      "word": "skills",
+      "translation": "habilidades",
+      "example": "My strongest skills are React and problem solving.",
+      "exampleTranslation": "Minhas principais habilidades são React e resolução de problemas.",
+      "visualLabel": "skills",
+      "audioId": "HW.3.front",
+      "backAudioId": "HW.3.back"
+    },
+    {
+      "id": "dev-interviews-word-05",
+      "word": "a coding task",
+      "translation": "desafio de programação",
+      "example": "The coding task is to improve a login form.",
+      "exampleTranslation": "O desafio de programação é melhorar um formulário de login.",
+      "visualLabel": "a coding task",
+      "audioId": "HW.4.front",
+      "backAudioId": "HW.4.back"
+    },
+    {
+      "id": "dev-interviews-word-06",
+      "word": "feedback",
+      "translation": "retorno para melhorar",
+      "example": "Could you give me feedback on my approach?",
+      "exampleTranslation": "Você poderia me dar um retorno sobre minha abordagem?",
+      "visualLabel": "feedback",
+      "audioId": "HW.5.front",
+      "backAudioId": "HW.5.back"
+    },
+    {
+      "id": "dev-interviews-word-07",
+      "word": "a contribution",
+      "translation": "contribuição",
+      "example": "I was responsible for the login form.",
+      "exampleTranslation": "Eu fui responsável pelo formulário de login.",
+      "visualLabel": "a contribution",
+      "audioId": "HW.6.front",
+      "backAudioId": "HW.6.back"
+    },
+    {
+      "id": "dev-interviews-word-08",
+      "word": "a challenge",
+      "translation": "desafio",
+      "example": "Let me give you a specific example.",
+      "exampleTranslation": "Deixe-me dar um exemplo específico.",
+      "visualLabel": "a challenge",
+      "audioId": "HW.7.front",
+      "backAudioId": "HW.7.back"
+    },
+    {
+      "id": "dev-interviews-word-09",
+      "word": "an approach",
+      "translation": "abordagem",
+      "example": "I’d start by checking the error response.",
+      "exampleTranslation": "Eu começaria verificando a resposta de erro.",
+      "visualLabel": "an approach",
+      "audioId": "HW.8.front",
+      "backAudioId": "HW.8.back"
+    },
+    {
+      "id": "dev-interviews-word-10",
+      "word": "a requirement",
+      "translation": "requisito",
+      "example": "A clear error message is one requirement.",
+      "exampleTranslation": "Uma mensagem de erro clara é um dos requisitos.",
+      "visualLabel": "a requirement",
+      "audioId": "HW.9.front",
+      "backAudioId": "HW.9.back"
+    },
+    {
+      "id": "dev-interviews-word-11",
+      "word": "a test case",
+      "translation": "caso de teste",
+      "example": "An incorrect password is one useful test case.",
+      "exampleTranslation": "Uma senha incorreta é um caso de teste útil.",
+      "visualLabel": "a test case",
+      "audioId": "HW.10.front",
+      "backAudioId": "HW.10.back"
+    },
+    {
+      "id": "dev-interviews-word-12",
+      "word": "an assumption",
+      "translation": "suposição",
+      "example": "Let me check one assumption before I start.",
+      "exampleTranslation": "Deixe-me confirmar uma suposição antes de começar.",
+      "visualLabel": "an assumption",
+      "audioId": "HW.11.front",
+      "backAudioId": "HW.11.back"
+    },
+    {
+      "id": "dev-interviews-word-13",
+      "word": "to clarify",
+      "translation": "esclarecer",
+      "example": "Could you clarify the expected behavior?",
+      "exampleTranslation": "Você poderia esclarecer o comportamento esperado?",
+      "visualLabel": "to clarify",
+      "audioId": "HW.12.front",
+      "backAudioId": "HW.12.back"
+    },
+    {
+      "id": "dev-interviews-word-14",
+      "word": "to walk someone through",
+      "translation": "explicar passo a passo",
+      "example": "Let me walk you through my solution.",
+      "exampleTranslation": "Deixe-me explicar minha solução passo a passo.",
+      "visualLabel": "to walk someone through",
+      "audioId": "HW.13.front",
+      "backAudioId": "HW.13.back"
+    },
+    {
+      "id": "dev-interviews-word-15",
+      "word": "to troubleshoot",
+      "translation": "investigar e resolver um problema",
+      "example": "I reproduced the issue before I changed the code.",
+      "exampleTranslation": "Eu reproduzi o problema antes de alterar o código.",
+      "visualLabel": "to troubleshoot",
+      "audioId": "HW.14.front",
+      "backAudioId": "HW.14.back"
+    },
+    {
+      "id": "dev-interviews-word-16",
+      "word": "a trade-off",
+      "translation": "escolha com vantagens e limitações",
+      "example": "This solution is simpler, but it needs another test.",
+      "exampleTranslation": "Esta solução é mais simples, mas precisa de outro teste.",
+      "visualLabel": "a trade-off",
+      "audioId": "HW.15.front",
+      "backAudioId": "HW.15.back"
+    },
+    {
+      "id": "dev-interviews-word-17",
+      "word": "an edge case",
+      "translation": "caso limite",
+      "example": "An empty email field is an edge case to check.",
+      "exampleTranslation": "Um campo de email vazio é um caso limite a verificar.",
+      "visualLabel": "an edge case",
+      "audioId": "HW.16.front",
+      "backAudioId": "HW.16.back"
+    },
+    {
+      "id": "dev-interviews-word-18",
+      "word": "a follow-up",
+      "translation": "próxima conversa de acompanhamento",
+      "example": "Could we arrange a follow-up next week?",
+      "exampleTranslation": "Poderíamos marcar uma próxima conversa na semana que vem?",
+      "visualLabel": "a follow-up",
+      "audioId": "HW.17.front",
+      "backAudioId": "HW.17.back"
+    },
+    {
+      "id": "dev-interviews-word-19",
+      "word": "availability",
+      "translation": "disponibilidade",
+      "example": "Thursday at ten works for me.",
+      "exampleTranslation": "Quinta-feira às dez funciona para mim.",
+      "visualLabel": "availability",
+      "audioId": "HW.18.front",
+      "backAudioId": "HW.18.back"
+    },
+    {
+      "id": "dev-interviews-word-20",
+      "word": "onboarding",
+      "translation": "integração ao novo trabalho",
+      "example": "How do you support new developers?",
+      "exampleTranslation": "Como vocês apoiam novos desenvolvedores?",
+      "visualLabel": "onboarding",
+      "audioId": "HW.19.front",
+      "backAudioId": "HW.19.back"
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "D.1",
+      "speaker": "Kim",
+      "text": "Tell me about a project you know well.",
+      "displayText": "Tell me about a project you know well"
+    },
+    {
+      "id": "D.2",
+      "speaker": "Ana",
+      "text": "I built a customer portal. It helps customers sign in and check their orders.",
+      "displayText": "I built a customer portal. It helps customers sign in and check their orders"
+    },
+    {
+      "id": "D.3",
+      "speaker": "Kim",
+      "text": "What was your own contribution to that project?",
+      "displayText": "What was your own contribution to that project?"
+    },
+    {
+      "id": "D.4",
+      "speaker": "Ana",
+      "text": "I built the login form and its error messages. A teammate built the API.",
+      "displayText": "I built the login form and its error messages. A teammate built the API"
+    },
+    {
+      "id": "D.5",
+      "speaker": "Kim",
+      "text": "What challenge did you face, and how did you handle it?",
+      "displayText": "What challenge did you face, and how did you handle it?"
+    },
+    {
+      "id": "D.6",
+      "speaker": "Ana",
+      "text": "The page opened even when the password was wrong. I reproduced the issue, checked the error response and fixed the navigation. Then I tested correct and incorrect passwords.",
+      "displayText": "The page opened even when the password was wrong. I reproduced the issue, checked the error response and fixed the navigation. Then I tested correct and incorrect passwords"
+    }
+  ],
+  "hiringCall": [
+    {
+      "id": "HM.1",
+      "speaker": "Kim",
+      "text": "Thanks for joining. Could you introduce yourself and tell me what kind of development work interests you?",
+      "cue": "Introduce yourself and connect your interests to the role",
+      "hint": "I’m… / I work with… / I’m interested in…",
+      "example": "I’m a frontend developer, and I’m interested in building useful, accessible web applications",
+      "displayText": "Thanks for joining. Could you introduce yourself and tell me what kind of development work interests you?"
+    },
+    {
+      "id": "HM.2",
+      "speaker": "Kim",
+      "text": "Choose a real or practice project. What does it do, and who uses it?",
+      "cue": "Explain the purpose and users of a project you know",
+      "hint": "It helps… / People use it to…",
+      "example": "My customer portal helps customers sign in and check their orders",
+      "displayText": "Choose a real or practice project. What does it do, and who uses it?"
+    },
+    {
+      "id": "HM.3",
+      "speaker": "Kim",
+      "text": "What was your own contribution, and what did other people work on?",
+      "cue": "Separate your contribution from the team’s work",
+      "hint": "I was responsible for… / My teammate…",
+      "example": "I built the login form and error messages, and a teammate built the API",
+      "displayText": "What was your own contribution, and what did other people work on?"
+    },
+    {
+      "id": "HM.4",
+      "speaker": "Kim",
+      "text": "Describe a challenge you faced. What did you do, and what was the result?",
+      "cue": "Give a specific problem, your action and the result",
+      "hint": "The problem was… / I checked… / After that…",
+      "example": "The page opened with an incorrect password, so I checked the response and fixed the navigation. After that, only successful logins opened the portal",
+      "displayText": "Describe a challenge you faced. What did you do, and what was the result?"
+    },
+    {
+      "id": "HM.5",
+      "speaker": "Kim",
+      "text": "How do you handle feedback or a request that is not clear?",
+      "cue": "Explain how you clarify and use feedback",
+      "hint": "I ask… / I check… / Then I…",
+      "example": "I ask for an example, confirm the requirement and test the change before asking for more feedback",
+      "displayText": "How do you handle feedback or a request that is not clear?"
+    },
+    {
+      "id": "HM.6",
+      "speaker": "Kim",
+      "text": "What would you like to ask me about the role or the team?",
+      "cue": "Ask a useful question about the job",
+      "hint": "How do you…? / What would…?",
+      "example": "How do you review code and support new developers during onboarding?",
+      "displayText": "What would you like to ask me about the role or the team?"
+    }
+  ],
+  "technicalCall": [
+    {
+      "id": "TECH.1",
+      "speaker": "Priya",
+      "text": "This login form opens the portal after an incorrect password. What would you clarify before changing the code?",
+      "cue": "Ask about the expected success and error behavior",
+      "hint": "What should happen if…? / Does the API…?",
+      "example": "What should happen after an incorrect password, and how does the API report that error?",
+      "displayText": "This login form opens the portal after an incorrect password. What would you clarify before changing the code?"
+    },
+    {
+      "id": "TECH.2",
+      "speaker": "Priya",
+      "text": "The API returns a session for valid credentials and a four-oh-one error for invalid credentials. Explain how you would investigate the problem.",
+      "cue": "Describe your first checks before proposing a fix",
+      "hint": "First, I’d reproduce… / Then I’d inspect…",
+      "example": "First, I’d reproduce the issue with a test account. Then I’d inspect the API response and check when the page navigates",
+      "displayText": "The API returns a session for valid credentials and a four-oh-one error for invalid credentials. Explain how you would investigate the problem"
+    },
+    {
+      "id": "TECH.3",
+      "speaker": "Priya",
+      "text": "What would you change, and why? You do not need to write code.",
+      "cue": "Explain when the portal should open and when the form should stay visible",
+      "hint": "I’d only… if… / Otherwise…",
+      "example": "I’d only open the portal after a successful response with a session. Otherwise, I’d keep the form visible and show a clear error",
+      "displayText": "What would you change, and why? You do not need to write code"
+    },
+    {
+      "id": "TECH.4",
+      "speaker": "Priya",
+      "text": "How would you test the successful login, an incorrect password and an empty field?",
+      "cue": "Explain the expected result for each test case",
+      "hint": "With valid details… / With a wrong password… / If a field is empty…",
+      "example": "With valid details, the portal opens. With an incorrect password, an error appears. With an empty field, the form asks for the missing information",
+      "displayText": "How would you test the successful login, an incorrect password and an empty field?"
+    },
+    {
+      "id": "TECH.5",
+      "speaker": "Priya",
+      "text": "What should happen if the network is unavailable? Explain one trade-off in your approach.",
+      "cue": "Handle the network problem and explain a choice",
+      "hint": "I’d show… / I’d let the user… / This is simpler, but…",
+      "example": "I’d show a network message and let the user retry. A simple message is easier to build, but it should still explain the next step",
+      "displayText": "What should happen if the network is unavailable? Explain one trade-off in your approach"
+    },
+    {
+      "id": "TECH.6",
+      "speaker": "Priya",
+      "text": "Imagine I have not seen your code. Walk me through your solution and tell me what you would check next.",
+      "cue": "Summarise the fix and one further check",
+      "hint": "The form… / It only… / Next, I’d…",
+      "example": "The form only opens the portal after a successful response. It explains errors without losing the email. Next, I’d check keyboard access and the mobile layout",
+      "displayText": "Imagine I have not seen your code. Walk me through your solution and tell me what you would check next"
+    }
+  ],
+  "whatsappMessage": "Your interview is on Thursday at 10 a.m. Dublin time. Here are two notes to help you prepare.",
+  "notes": [
+    {
+      "id": "NOTE.1",
+      "speaker": "Kim",
+      "text": "For the technical interview, we’ll use a customer portal login. A customer enters an email and password. With a wrong password, the form should stay open and show a clear error. Please explain how you would investigate and test that behavior."
+    },
+    {
+      "id": "NOTE.2",
+      "speaker": "Kim",
+      "text": "You don’t need to prepare slides or write code during the call. Bring one real or practice project and explain your own contribution. We’ll leave time for your questions about the team, and I’ll send feedback by Friday."
+    }
+  ],
+  "shadowing": [
+    {
+      "id": "SH.1",
+      "text": "Let me give you a specific example.",
+      "translation": "Deixe-me dar um exemplo específico.",
+      "speaker": "Kim"
+    },
+    {
+      "id": "SH.2",
+      "text": "I was responsible for the login form.",
+      "translation": "Eu fui responsável pelo formulário de login.",
+      "speaker": "Kim"
+    },
+    {
+      "id": "SH.3",
+      "text": "Could you clarify the expected behavior?",
+      "translation": "Você poderia esclarecer o comportamento esperado?",
+      "speaker": "Kim"
+    },
+    {
+      "id": "SH.4",
+      "text": "I’d start by checking the error response.",
+      "translation": "Eu começaria verificando a resposta de erro.",
+      "speaker": "Kim"
+    },
+    {
+      "id": "SH.5",
+      "text": "Let me walk you through my solution.",
+      "translation": "Deixe-me explicar minha solução passo a passo.",
+      "speaker": "Priya"
+    },
+    {
+      "id": "SH.6",
+      "text": "How do you support new developers?",
+      "translation": "Como vocês apoiam novos desenvolvedores?",
+      "speaker": "Ruby"
+    }
+  ],
+  "homework": {
+    "flashcardsId": "dev-interviews-flashcards",
+    "shadowingId": "dev-interviews-shadowing",
+    "ownerTags": ["dev-track131", "extra-dev-interviews"],
+    "publishedEnvironments": []
+  }
+}

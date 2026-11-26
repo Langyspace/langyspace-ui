@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-09.json'
 import asset0 from '../../Course/assets/audio/B109-D81.1.mp3'
@@ -245,6 +246,7 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    ...homeworkMediaImages('b1-09'),
     '/flashcards-transparent/b2/legal-english/theft/image.webp':
       expanded124Asset21,
     '/flashcards-transparent/b2/legal-english/crime/image.webp':

@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-02.json'
 import asset0 from '../assets/audio/902e90a9eaee6c73f041d97fdd6f16a4b6b7ef31723d411ab90bfdce866ee15d.mp3'
@@ -275,6 +276,7 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    ...homeworkMediaImages('b1-02'),
     '/flashcards-transparent/a2/travel/bus-stop/image.webp': expanded124Asset27,
     '/flashcards/course-characters/evelyn-carter/image.webp': asset20,
     '/flashcards/course-characters/owen-harris/image.webp': asset21,

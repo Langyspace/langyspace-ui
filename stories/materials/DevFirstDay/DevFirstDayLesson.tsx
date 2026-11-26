@@ -4,6 +4,7 @@ import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/Voice
 import * as Shell from '../shared/Lesson.styles'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
+import { MaterialVideoPage } from '../shared/MaterialVideoPage'
 import { LessonHomeworkGallery } from '../shared/LessonHomeworkGallery'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
@@ -21,6 +22,7 @@ import {
 import { RepositoryScreen, DailyBoard, TransferBoard } from './DevWork'
 import { devRecordings } from './DevFirstDay.recordings'
 import source from './DevFirstDay.content.json'
+import video from './DevFirstDay.video.json'
 import cover from './assets/cover95.png'
 const voiceLabels = {
   play: 'Play voice note',
@@ -48,6 +50,7 @@ export const devPageIds = [
   'demo',
   'feedback',
   'new-situation',
+  's_video131',
   'free-conversation',
   'homework',
 ] as const
@@ -69,7 +72,7 @@ export function DevFirstDayLesson({
       label: source.title,
       content: (
         <SlidePage
-          eyebrow="B1 · Developer English · 02"
+          eyebrow="B1 · Developer English · 03"
           title={source.title}
           instruction={source.instruction}
           cover={{
@@ -248,6 +251,13 @@ export function DevFirstDayLesson({
         >
           <TransferBoard />
         </SlidePage>
+      ),
+    },
+    {
+      id: 's_video131',
+      label: video.title,
+      content: (
+        <MaterialVideoPage content={video} active={pageId === 's_video131'} />
       ),
     },
     {

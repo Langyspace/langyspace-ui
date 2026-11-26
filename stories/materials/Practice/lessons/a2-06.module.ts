@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a2-06.json'
 import asset0 from '../../Course/assets/audio/A206-D81.1.mp3'
@@ -262,6 +263,7 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    ...homeworkMediaImages('a2-06'),
     '/flashcards-transparent/course-images/65abc2f356592b9593cca24e0ffbd1ea7613e76bde300b9916b45143bd6126e6/image.webp':
       expanded124Asset28,
     '/flashcards-transparent/course-images/e9d561807a1d71f0aab6fcf841f8c96748ee79c9512bacfaf5f90a35cfc2fc1a/image.webp':

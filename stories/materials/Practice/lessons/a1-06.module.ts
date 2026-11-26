@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-06.json'
 import asset0 from '../../A106/assets/audio/D.1.mp3'
@@ -205,6 +206,7 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    ...homeworkMediaImages('a1-06'),
     '/flashcards-transparent/a2/travel/behind/image.webp': expanded124Asset11,
     '/flashcards-transparent/a2/travel/in-front-of/image.webp':
       expanded124Asset12,

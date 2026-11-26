@@ -199,19 +199,19 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards/course-practice/expanded124/65890b00df0bea98727d89ea93b50ba65b445e0bd51087beae228f1c0c735dc6.webp':
+    '/flashcards-transparent/course-practice/homework-media131/65890b00df0bea98727d89ea93b50ba65b445e0bd51087beae228f1c0c735dc6/image.webp':
       expanded124Asset13,
-    '/flashcards/course-practice/expanded124/23e0fc66f8ba2b3c7f53e025700b88b0445902f44fb0619b86470ed2c98405bf.webp':
+    '/flashcards-transparent/course-practice/homework-media131/23e0fc66f8ba2b3c7f53e025700b88b0445902f44fb0619b86470ed2c98405bf/image.webp':
       expanded124Asset14,
-    '/flashcards/course-practice/expanded124/6314a93dd6b71c9bd04465bdc028f0bbf22ec47d300716393afc7459e12a2325.webp':
+    '/flashcards-transparent/course-practice/homework-media131/6314a93dd6b71c9bd04465bdc028f0bbf22ec47d300716393afc7459e12a2325/image.webp':
       expanded124Asset15,
-    '/flashcards/course-practice/expanded124/af905bde63e9c1e44f75a6d5c5536502b4b4e1b8e3b286edfedb2fbbbe5bae9b.webp':
+    '/flashcards-transparent/course-practice/homework-media131/af905bde63e9c1e44f75a6d5c5536502b4b4e1b8e3b286edfedb2fbbbe5bae9b/image.webp':
       expanded124Asset16,
     '/flashcards-transparent/a2/travel/map/image.webp': expanded124Asset17,
-    '/flashcards/course-practice/expanded124/5ea13e3278a61887347909a8999675f32cdb4fd756a7f43e107aeb95da1a9814.webp':
+    '/flashcards-transparent/course-practice/homework-media131/5ea13e3278a61887347909a8999675f32cdb4fd756a7f43e107aeb95da1a9814/image.webp':
       expanded124Asset18,
     '/flashcards-transparent/a2/travel/delay/image.webp': expanded124Asset19,
-    '/flashcards/course-practice/expanded124/30448539aa54d99758b30ce2318f4fa4f399b9d4132915f623ec283f57833f00.webp':
+    '/flashcards-transparent/course-practice/homework-media131/30448539aa54d99758b30ce2318f4fa4f399b9d4132915f623ec283f57833f00/image.webp':
       expanded124Asset20,
     '/flashcards-transparent/a2/travel/airport/image.webp': expanded124Asset21,
     '/flashcards-transparent/a2/travel/flight/image.webp': expanded124Asset22,

@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-08.json'
 import asset0 from '../assets/audio/77ee37088a95c8dd95293f1f2d4b547981c2464f071c65f14ba43f613bcbbc87.mp3'
@@ -288,6 +289,7 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    ...homeworkMediaImages('b1-08'),
     '/flashcards/course-characters/ruby-bennett/image.webp': asset20,
     '/flashcards/course-characters/noah-ellis/image.webp': asset21,
     '/flashcards-transparent/course-images/9b9aceb3d484aa083558642a9dc7b6fb29a52572ff574c9d37551ea735ef4fa6/image.webp':

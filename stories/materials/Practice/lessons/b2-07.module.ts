@@ -228,7 +228,7 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards/course-practice/expanded124/ab56839474636e324af9a3a0c1d830d57340a74e5a61656ee025e82d74da4b27.webp':
+    '/flashcards-transparent/course-practice/homework-media131/ab56839474636e324af9a3a0c1d830d57340a74e5a61656ee025e82d74da4b27/image.webp':
       expanded124Asset15,
     '/flashcards-transparent/course-images/117b5924965ff82abeb8eddedfc33818ffd105ad60437af7bcde5a4743ce0f37/image.webp':
       expanded124Asset16,
@@ -237,7 +237,7 @@ const prepared: PreparedPractice = {
     '/flashcards-transparent/b2/academy/clarify/image.webp': expanded124Asset18,
     '/flashcards-transparent/b2/business/request/image.webp':
       expanded124Asset19,
-    '/flashcards/course-practice/expanded124/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e.webp':
+    '/flashcards-transparent/course-practice/homework-media131/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e/image.webp':
       expanded124Asset20,
     '/flashcards/course-characters/kim/image.webp': asset24,
     '/flashcards/course-characters/ana/image.webp': asset25,

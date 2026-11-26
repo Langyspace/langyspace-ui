@@ -73,6 +73,30 @@ describe('opt-in guided call', () => {
       screen.getByRole('button', { name: 'Play current part' }),
     ).toBeEnabled()
   })
+  it('fits complete portraits when requested and preserves cover as the default', () => {
+    const props = {
+      title: 'Interview',
+      interviewer: { name: 'Kim', imageUrl: '/kim.webp' },
+      learnerName: 'You',
+      presentation: 'guided-call' as const,
+      turnIndex: 0,
+      turnCount: 6,
+      onNext: vi.fn(),
+      onPrevious: vi.fn(),
+      onReplay: vi.fn(),
+    }
+    const contained = render(
+      <InterviewSimulation {...props} imageFit="contain" />,
+    )
+    expect(
+      getComputedStyle(screen.getByRole('img', { name: 'Kim' })).objectFit,
+    ).toBe('contain')
+    contained.unmount()
+    render(<InterviewSimulation {...props} />)
+    expect(
+      getComputedStyle(screen.getByRole('img', { name: 'Kim' })).objectFit,
+    ).toBe('cover')
+  })
   it('retains native vocabulary context and the shared playback callback', () => {
     const play = vi.fn()
     render(

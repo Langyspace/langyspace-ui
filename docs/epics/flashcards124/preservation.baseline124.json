@@ -142,6 +142,10 @@
   {
     "key": "tema-frontend",
     "beforeCount": 7,
-    "cardsSha256": "31f301a9f84048aa9635171e9635ee53d93219cd3395214ceb166f3dcd85e3c0"
+    "cardsSha256": "b246d9a426e12e364f15bbcc58f7fa39889b080cac305375710536dd40f35933",
+    "mediaRevision131": {
+      "previousCardsSha256": "31f301a9f84048aa9635171e9635ee53d93219cd3395214ceb166f3dcd85e3c0",
+      "reason": "Intentional SVG-to-WebP media/path correction; all non-media exercise fields remain checked against baseline130 by HomeworkMedia131.test.ts"
+    }
   }
 ]

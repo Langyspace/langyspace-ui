@@ -9,6 +9,7 @@ export function InterviewSimulation({
   learnerName,
   learnerAvatarUrl,
   presentation = 'interview',
+  imageFit = 'cover',
   participants,
   activeParticipantId,
   sharedContent,
@@ -74,7 +75,7 @@ export function InterviewSimulation({
           sharedContent={sharedContent}
           sharedContentLabel={sharedContentLabel}
           stageTone="sky"
-          imageFit="cover"
+          imageFit={imageFit}
           caption={captionsEnabled ? caption : undefined}
           learnerCaption={learnerCaption}
         />

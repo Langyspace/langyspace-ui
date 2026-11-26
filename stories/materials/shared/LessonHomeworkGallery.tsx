@@ -16,6 +16,7 @@ import { HomeworkVoiceNote } from './HomeworkVoiceNote'
 import { usePracticePlayback } from './usePracticePlayback'
 import { useMaterialPracticeOrigin } from './MaterialPracticeContext'
 import type { PreparedPractice } from '../Practice/Practice.types'
+import { resolvePracticeImage } from '../Practice/resolvePracticeImage'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import * as S from './LessonHomeworkGallery.styles'
 
@@ -91,6 +92,7 @@ function PreparedHomework({
   const first = data.first,
     card = first.kind === 'flashcards' ? first.cards[firstIndex] : undefined
   const firstTitle = first.title ?? data.title
+  const cardImage = resolvePracticeImage(card?.imageSrc, images)
   const question =
       first.kind === 'quiz' ? first.questions[firstIndex] : undefined,
     selected = question ? answers[question.id] : undefined
@@ -146,9 +148,12 @@ function PreparedHomework({
           translation: card.translation,
           example: card.example,
           backExample: card.exampleTranslation,
-          image:
-            card.imageSrc && images[card.imageSrc]
-              ? { src: images[card.imageSrc]!, region: card.imageRegion }
+          image: cardImage
+            ? { src: cardImage, region: card.imageRegion }
+            : undefined,
+          emoji:
+            !cardImage && /^[A-Z0-9]$/.test(card.visualLabel)
+              ? card.visualLabel
               : undefined,
         }}
         flipped={flipped}
@@ -339,7 +344,10 @@ function PreparedHomework({
                       speaker
                         ? {
                             name: speaker.name,
-                            imageUrl: images[speaker.avatarUrl],
+                            imageUrl: resolvePracticeImage(
+                              speaker.avatarUrl,
+                              images,
+                            ),
                             accentLabel: speaker.accentLabel,
                           }
                         : undefined

@@ -453,7 +453,6 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Para combinar países e sentimentos, apresentar os seis personagens juntos, com bandeiras oficiais e expressões claras. São seis identidades visuais, não 36 combinações. A emoção é circunstancial e nunca uma característica atribuída à nacionalidade.
 - Escolher mentalmente uma identidade, sem clicar e revelar a escolha ao outro participante. A tela explicita quem pergunta, quem responde e a troca de papéis. Perguntas curtas visíveis apoiam a fala; o desafio de apresentar todos como amigos fica em página própria para não sobrecarregar o jogo.
 
-
 ### 26/11/2026 — Copiar o dever para WhatsApp
 
 - O encerramento com homework mantém as três prévias canônicas e oferece uma única ação **Copy homework**, abaixo delas, para copiar o dever completo. Não criar um botão Open por atividade
@@ -462,13 +461,11 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Os dois links vêm dos IDs reais das atividades e da origem validada do portal Student do ambiente atual. Não inventar destinos nem oferecer cópia com links ausentes ou não publicados naquele ambiente
 - Copiar somente por clique, com confirmação discreta. Se o navegador bloquear o clipboard, exibir o mesmo texto selecionável para cópia manual. Essa ação prepara a mensagem, sem enviar WhatsApp
 
-
 ### 26/11/2026 — Alternância de tema na apresentação
 
 - O header comum oferece sol/lua imediatamente antes do controle de som. Toda apresentação começa no tema escuro atual; a professora pode escolher o tema claro e voltar sem perder a página, as respostas ou as revelações
 - Consumir os tokens claros/escuros canônicos e o estado compartilhado do material, inclusive nos wrappers aninhados e nas experimentais. Não codificar cor de texto/fundo por página para acompanhar o botão
 - Fotos, ilustrações e a aparência própria de dispositivos/conteúdos incorporados mantêm suas cores; o controle troca o tema da apresentação
-
 
 ## Evidência visual, dicas e movimento — revisão123
 
@@ -478,7 +475,6 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Usar o prompt canônico de imagem literalmente, anexando apenas assunto e composição. Texto, números, rótulos e controles pertencem à UI, não ao bitmap. Registrar pedidos, originais e hashes; reutilizar imagens válidas.
 - Dica, olho, perguntas com resposta e troca de tema reutilizam o som compartilhado, breve e discreto, respeitando o mute do header e sem competir com gravações nativas. O próprio controle de mutar/desmutar confirma seu clique com um único som, sem habilitar outros sons quando estiver mutado. Não usar sons de acerto para pedir ajuda e não duplicar handlers por aula. Ver [contrato do som de dica](../components/hint-feedback-sound.md).
 - Dicas e falas podem entrar com fade de 150 ms; respostas de RevealCard entram com opacidade e deslocamento visual de 4px em 200 ms, sem alterar a geometria do layout. Respeitar movimento reduzido; não animar altura, navegação ou scroll, nem mover o play. Vocabulário revelado permanece estático. Ver [contrato de animação](../components/reveal-motion.md).
-
 
 ## Instruções concentradas no cabeçalho — revisão124
 
@@ -500,3 +496,14 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Toda pergunta que revela resposta, exemplo ou apoio usa o mesmo feedback suave de QuestionList/RevealCard, independentemente de estar no diálogo, listening, vídeo ou tarefa visual. Perguntas abertas com dica podem abrir essa dica no próprio card; não transformar um exemplo em gabarito único
 - Revisões e respostas de missão usam o mesmo canal. Escolhas do listening sem avaliação explícita recebem a confirmação neutra; sons de acerto/erro continuam sendo usados quando a avaliação os declara
 - O clique deliberado na pergunta é confirmado também durante a escuta, sem controlar ou interromper a gravação. O mute do header continua valendo. Não duplicar handlers por página nem usar reconhecimento de texto/labels para disparar sons
+
+## Entrega completa e referências legíveis — revisão 131
+
+- Conferir curso, experimentais e extras como grupos explícitos. Um inventário de aulas do curso não comprova cobertura dos extras. Distinguir aula planejada, implementada, presente no catálogo e publicada; registrar pendências sem tratá-las como concluídas. Ao regenerar catálogo, preservar decisões anteriores de retirada e a sequência da trilha.
+- O trecho de vídeo fica perto do final, imediatamente antes da conversa livre, também nos extras. Usar o player compartilhado com início/fim fixos e quatro perguntas do componente Questions. Cada pergunta factual corresponde à transcrição do trecho; a pergunta de transferência admite respostas pessoais. Reunião ilustrada interativa não é evidência de vídeo externo incluído.
+- Todo card de flashcard tem referência visual real e pertinente. Letras e dígitos podem usar a própria letra ou número como referência; não cair em emoji genérico. Reutilizar imagens coerentes e regiões nativas de atlas sem mostrar o atlas inteiro. Não associar imagem enganosa só para preencher um campo nem inventar uma nova imagem quando a fonte válida já existe.
+- Todo personagem de shadowing tem nome, sotaque e retrato correto. Distinguir chave lógica de mídia, URL já resolvida pelo bundler e caminho publicado; o resolver aceita os formatos previstos sem perder uma imagem válida. Conferir os bytes e o caminho que o consumidor consegue resolver, não apenas a existência de um arquivo local ou entrada no JSON.
+- Dados do homework e prévia usam os mesmos alvos, exemplos, ordem, imagens, regiões e áudios. Manter caminhos lógicos compatíveis com o contrato de assinatura do portal; alias de mídia preserva bytes e proveniência. Não regenerar áudio para corrigir apenas endereço ou nome de arquivo.
+- Confirmar Copy homework com feedback temporário e acessível fora do fluxo de layout. O botão mantém rótulo, posição e tamanho antes/depois; falha de clipboard oferece cópia manual do mesmo texto. Nenhuma ação envia WhatsApp automaticamente.
+- Apoios orais que precisam ser lidos na tela compartilhada têm hierarquia própria: fundo branco, texto preto, tamanho de referência de 20px e peso semibold no Guess who. São apoios de conteúdo, não instruções extras ou novos botões. Manter contraste em ambos os temas e permitir quebra de linha sem cortar a grade.
+- Abrir material por link nativo em novo contexto, sem opções de popup, dimensões ou janela nomeada. Preservar Ctrl/Meta, segurança de opener e URLs de Notes. A escolha final de aba ou janela pertence ao navegador; não declarar esse comportamento garantido sem reprodução na sessão correspondente.

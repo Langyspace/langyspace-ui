@@ -279,11 +279,11 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards/course-practice/expanded124/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e.webp':
+    '/flashcards-transparent/course-practice/homework-media131/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e/image.webp':
       expanded124Asset20,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':
       expanded124Asset21,
-    '/flashcards/course-practice/expanded124/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552.webp':
+    '/flashcards-transparent/course-practice/homework-media131/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552/image.webp':
       expanded124Asset22,
     '/flashcards-transparent/course-images/491e9411ed01a85d5a63b172b44fa98b4d21a06607e76dcd1b99587e2f298768/image.webp':
       expanded124Asset23,

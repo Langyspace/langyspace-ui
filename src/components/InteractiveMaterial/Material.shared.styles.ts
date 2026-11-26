@@ -79,6 +79,17 @@ export const Chip = styled.span`
   font-size: ${theme.typography.fontSize.sm};
   background: ${(p) => recipe(p).canvas};
 `
+/** Spoken reference prompts need screen-share contrast independently of the slide theme. */
+export const SpokenPrompt = styled(Chip)`
+  background: ${theme.colors.palette.white};
+  color: ${theme.colors.palette.black};
+  border-color: ${theme.colors.palette.white};
+  padding: ${theme.spacing[3]} ${theme.spacing[4]};
+  font-size: ${theme.typography.fontSize.xl};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
+  text-align: center;
+`
 export const Action = styled(Button)`
   font-family: ${theme.typography.fontFamily.sans};
 `

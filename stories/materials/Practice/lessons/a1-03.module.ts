@@ -1,3 +1,4 @@
+import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-03.json'
 import asset0 from '../../A103/assets/audio/D.1.mp3'
@@ -218,6 +219,7 @@ const prepared: PreparedPractice = {
     { id: 'course-a1-03-cook.back', text: 'My sister is a cook', src: asset22 },
   ],
   images: {
+    ...homeworkMediaImages('a1-03'),
     '/flashcards/course-characters/kim/image.webp': asset23,
     '/flashcards/course-characters/ana/image.webp': asset24,
     '/flashcards-transparent/course-images/4e32abdc754e5a4a049b08d811bd363c96891d4a8423244c778dfade8212eb49/image.webp':
