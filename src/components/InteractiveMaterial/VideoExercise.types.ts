@@ -22,6 +22,8 @@ export interface VideoExerciseProps extends Omit<
   }
   /** Inactive lesson pages release the external player and stop playback. */
   active?: boolean
+  /** Prepare a neighbouring page without autoplay; keep its ready player on entry. */
+  preload?: boolean
   page?: 'watch' | 'discuss'
   onPageChange?: (page: 'watch' | 'discuss') => void
   chapters?: readonly VideoChapter[]

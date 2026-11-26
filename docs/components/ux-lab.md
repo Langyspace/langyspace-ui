@@ -217,3 +217,10 @@ A reusable native map for location and direction tasks. `places` and `streets` s
 Use `presentation="inline"` when the host already pairs the media with its Questions column. Pass `title={null}` to avoid repeating the slide heading. Existing staged `media`, `page`, `onPageChange` and chapter behavior remain supported; omitted page state is uncontrolled.
 
 `youtube={{ videoId, startSeconds, endSeconds, title, credit }}` uses the official IFrame API with native controls, bounded cue/replay and optional loop, initially off. `active={false}` does not load the provider and stops/releases an existing player. Provide the host's four questions outside this frame. Source metadata is retained without a duplicate clickable credit footer. On failure, a link to the original remains available; failures never count as successful playback. No autoplay or copied media. A1.01's first excerpt is British Council HooNbcbgi9U,59–93seconds; browser captions were consulted to select the dialogue boundaries. Exact cuts depend on provider keyframes. Only the user can judge pedagogical/visual suitability.
+
+
+## Revisão114 — lacunas, imagens plain e preparação do vídeo
+
+- LearningDialogue `kind: 'open'`: campo livre com sublinhado contínuo e margem interna. O consumer controla valores e fatos dos participantes; sem correção automática ou síntese de respostas pessoais.
+- VocabularyGrid `surface="plain"`: somente a imagem, sem borda, fundo, padding nem raio. Usar `imageFit="contain"` para preservar a imagem inteira, inclusive os cantos de uma bandeira. Cards de cenas continuam com sua moldura padrão quando authored como card.
+- VideoExercise `preload`: prepara o YouTube enquanto `active=false`, sem autoplay. Entrada em active conserva o player já pronto; ao sair da região preparada, ele pausa/libera. Replay e loop mantêm os limites do trecho. O adaptador ReviewedLesson prepara apenas o vídeo seguinte, não o catálogo inteiro.

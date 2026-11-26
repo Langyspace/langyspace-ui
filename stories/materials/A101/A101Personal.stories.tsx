@@ -16,3 +16,9 @@ export const Narrow: Story = {
   ...AboutYou,
   globals: { viewport: { value: 'mobile1', isRotated: false } },
 }
+
+/** The neighbouring listening page prepares Meet Vanya without starting playback. */
+export const BeforeVideo: Story = { args: { initialPageId: 's9' } }
+export const VideoReadyOnEntry: Story = {
+  args: { initialPageId: 's_video_intro' },
+}

@@ -159,6 +159,7 @@ function PageContent({
   recordings,
   activity,
   imageChoiceCounter,
+  preloadVideo,
 }: ReviewedPageContentProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [initial, setInitial] = useState(false)
@@ -175,6 +176,7 @@ function PageContent({
         presentation="inline"
         youtube={page.video}
         active={active}
+        preload={preloadVideo}
       />
     )
   if (page.kind === 'image-choice')
@@ -213,7 +215,7 @@ function PageContent({
         revealLabel="Reveal and listen"
         imageVariant={page.isolated ? 'isolated' : 'scene'}
         imageFit="contain"
-        surface={page.isolated ? 'plain' : 'card'}
+        surface={page.surface ?? (page.isolated ? 'plain' : 'card')}
         revealOnHover={false}
         revealVariant="tooltip"
         density="regular"
@@ -677,6 +679,7 @@ export function ReviewedLesson({
                       recordings={recordings}
                       activity={activityFor(page.id)}
                       imageChoiceCounter={imageChoiceCounter}
+                      preloadVideo={pages[index - 1]?.id === pageId}
                     />
                   </SlidePage>
                 ),

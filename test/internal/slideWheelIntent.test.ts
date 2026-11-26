@@ -37,8 +37,8 @@ describe('slide wheel intent across uninterrupted streams', () => {
   it('accepts a tiny fresh gesture and immediate direction changes independently of the preceding peak', () => {
     const read = createSlideWheelIntent()
     expect(read({ deltaY: 1000, deltaMode: 0, timeStamp: 0 })).toBe(1)
-    expect(read({ deltaY: 0.001, deltaMode: 0, timeStamp: 121 })).toBe(1)
-    expect(read({ deltaY: -0.001, deltaMode: 0, timeStamp: 122 })).toBe(-1)
+    expect(read({ deltaY: 0.001, deltaMode: 0, timeStamp: 241 })).toBe(1)
+    expect(read({ deltaY: -0.001, deltaMode: 0, timeStamp: 242 })).toBe(-1)
   })
   it.each([1, 2])(
     'treats explicit line/page wheel units as discrete steps (%s)',
@@ -71,4 +71,59 @@ describe('slide wheel intent across uninterrupted streams', () => {
       expect(read({ deltaY, deltaMode: 0, timeStamp: 0 })).toBeUndefined()
     expect(read({ deltaY: 1, deltaMode: 0, timeStamp: 1 })).toBe(1)
   })
+})
+
+// A trackpad tail can grow twice while still being tiny relative to its drive.
+it.each([0.001, 1, 100])(
+  'does not skip a page for residual tail rebounds at scale %s',
+  (scale) => {
+    const read = createSlideWheelIntent()
+    const tail = [
+      1, 8, 25, 60, 45, 25, 12, 5, 2, 0.4, 0.8, 1.2, 0.6, 0.2, 0.7, 1.4, 0.8,
+    ]
+    expect(
+      tail.flatMap(
+        (value, index) =>
+          read({
+            deltaY: value * scale,
+            deltaMode: 0,
+            timeStamp: index * 16,
+          }) ?? [],
+      ),
+    ).toEqual([1])
+  },
+)
+it('does not interpret repeated slow integer tail packets as pixel mouse notches', () => {
+  const read = createSlideWheelIntent()
+  const packets = [
+    [0, 60],
+    [16, 30],
+    [32, 10],
+    [48, 1],
+    [108, 1],
+    [168, 1],
+  ]
+  expect(
+    packets.flatMap(
+      ([timeStamp, deltaY]) =>
+        read({ deltaY: deltaY!, deltaMode: 0, timeStamp: timeStamp! }) ?? [],
+    ),
+  ).toEqual([1])
+})
+
+it('keeps sparse late momentum packets in the same gesture rather than treating a 140ms tail gap as finger-up', () => {
+  const read = createSlideWheelIntent()
+  expect(
+    [
+      [0, 60],
+      [16, 45],
+      [32, 25],
+      [48, 12],
+      [188, 6],
+      [328, 2],
+    ].flatMap(
+      ([timeStamp, deltaY]) =>
+        read({ timeStamp: timeStamp!, deltaY: deltaY!, deltaMode: 0 }) ?? [],
+    ),
+  ).toEqual([1])
 })

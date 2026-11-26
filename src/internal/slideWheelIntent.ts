@@ -1,11 +1,12 @@
 import type { SlideWheelSample } from './slideWheelIntent.types'
 
-const QUIET_MS = 120
+const QUIET_MS = 240
 const DISCRETE_TICK_GAP_MS = 50
 
 /** One step per drive wave, not per uninterrupted stream of momentum events.
  * WheelEvent has no portable finger-up/momentum phase. Confirm renewed input
- * with two rising packets after decay; never require an absolute delta strength.
+ * with two rising packets after decay and relative to its drive peak, so tiny
+ * tail rebounds are not new gestures. The first packet after quiet stays immediate.
  */
 export function createSlideWheelIntent() {
   let lastTime = -Infinity
@@ -51,18 +52,29 @@ export function createSlideWheelIntent() {
       deltaMode !== 0 ||
       (gap >= DISCRETE_TICK_GAP_MS &&
         Number.isInteger(magnitude) &&
-        magnitude === lastMagnitude)
+        magnitude === lastMagnitude &&
+        !tail)
     )
       return accept()
 
     if (tail && rising !== undefined) {
-      if (magnitude > rising && magnitude >= valley * 2) return accept()
+      if (
+        magnitude > rising &&
+        magnitude >= valley * 2 &&
+        magnitude >= peak * 0.35
+      )
+        return accept()
       rising = undefined
       // A solitary momentum spike is not a new drive. Forget its old trough
       // so later tail jitter cannot keep retrying against an obsolete minimum.
       valley = magnitude
     }
-    if (tail && magnitude > lastMagnitude && magnitude >= valley * 2)
+    if (
+      tail &&
+      magnitude > lastMagnitude &&
+      magnitude >= valley * 2 &&
+      magnitude >= peak * 0.35
+    )
       rising = magnitude
 
     falling =

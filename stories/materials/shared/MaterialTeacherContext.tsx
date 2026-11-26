@@ -59,7 +59,18 @@ export function MaterialTeacherProvider({
           /* The name remains usable without an image. */
         }
       }
-      setTeacher({ name: identity.name.trim().slice(0, 120), avatarUrl })
+      setTeacher({
+        name: identity.name.trim().slice(0, 120),
+        avatarUrl,
+        timeZone:
+          'timeZone' in identity && typeof identity.timeZone === 'string'
+            ? identity.timeZone
+            : undefined,
+        countryCode:
+          'countryCode' in identity && typeof identity.countryCode === 'string'
+            ? identity.countryCode
+            : undefined,
+      })
     }
     window.addEventListener('message', receive)
     window.parent.postMessage(

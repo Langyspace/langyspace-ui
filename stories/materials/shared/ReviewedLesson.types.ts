@@ -53,6 +53,7 @@ export type ReviewedPage = PageBase &
           audioId?: string
           audioText?: string
         })[]
+        surface?: 'plain' | 'card'
         isolated?: boolean
         alignHeading?: boolean
       }
@@ -180,6 +181,7 @@ export interface ReviewedDialogueProps {
   guidance?: boolean
 }
 export interface ReviewedPageContentProps {
+  preloadVideo?: boolean
   page: ReviewedPage
   speech: ReviewedSpeech
   active: boolean

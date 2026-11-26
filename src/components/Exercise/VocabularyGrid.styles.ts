@@ -79,10 +79,9 @@ export const Word = styled(Pressable)<{
         ? p.$imageAspectRatio
         : '3 / 2'
       : 'auto'};
-  padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
-  border: 1px solid
-    ${(p) => (p.$plain ? 'transparent' : p.$completed ? theme.semantic.status.success.foreground : recipe(p).border)};
-  border-radius: ${theme.radius.lg};
+  padding: ${(p) => (p.$scene || p.$plain ? '0' : theme.spacing[2])};
+  border: ${(p) => (p.$plain ? '0' : `1px solid ${p.$completed ? theme.semantic.status.success.foreground : recipe(p).border}`)};
+  border-radius: ${(p) => (p.$plain ? '0' : theme.radius.lg)};
   background: ${(p) => (p.$plain ? 'transparent' : recipe(p).surface)};
   color: ${(p) => recipe(p).foreground};
   margin: 0;

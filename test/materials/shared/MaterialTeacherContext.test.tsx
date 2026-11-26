@@ -1,6 +1,9 @@
 import { act, cleanup, render, screen } from '@testing-library/react'
 import { afterEach, expect, it, vi } from 'vitest'
-import { MaterialTeacherProvider } from '../../../stories/materials/shared/MaterialTeacherContext'
+import {
+  MaterialTeacherProvider,
+  useMaterialTeacher,
+} from '../../../stories/materials/shared/MaterialTeacherContext'
 import { resolveMaterialTeacherIdentity } from '../../../stories/materials/shared/materialTeacherIdentity'
 import { HomeworkVoiceNote } from '../../../stories/materials/shared/HomeworkVoiceNote'
 import { TrialIntroduction } from '../../../stories/materials/shared/TrialIntroduction'
@@ -89,4 +92,50 @@ it('uses the same first name and photo across a live conversation and homework p
   send({ name: 'Your teacher' })
   expect(screen.getAllByText('Teacher', { exact: true })).toHaveLength(4)
   expect(screen.queryByText(/I’m Teacher/)).toBeNull()
+})
+
+it('receives only matching teacher timezone/country facts and clears them when the profile changes', () => {
+  vi.stubGlobal('__MATERIAL_SOURCE_COMMIT__', 'facts114')
+  hostFrame = document.createElement('iframe')
+  document.body.append(hostFrame)
+  const host = hostFrame.contentWindow!
+  vi.spyOn(window, 'parent', 'get').mockReturnValue(host)
+  function Profile() {
+    const teacher = useMaterialTeacher()
+    return (
+      <output>
+        {teacher.timeZone ?? 'device'} / {teacher.countryCode ?? 'unknown'}
+      </output>
+    )
+  }
+  render(
+    <MaterialTeacherProvider materialKey="a1-01">
+      <Profile />
+    </MaterialTeacherProvider>,
+  )
+  const send = (teacher: object, source: Window = host) =>
+    act(() => {
+      window.dispatchEvent(
+        new MessageEvent('message', {
+          source,
+          origin: window.location.origin,
+          data: {
+            type: 'langy.material.teacher-context',
+            version: 1,
+            materialKey: 'a1-01',
+            sourceCommit: 'facts114',
+            teacher,
+          },
+        }),
+      )
+    })
+  send(
+    { name: 'Adriana', timeZone: 'America/Sao_Paulo', countryCode: 'BR' },
+    window,
+  )
+  expect(screen.getByText('device / unknown')).toBeVisible()
+  send({ name: 'Adriana', timeZone: 'America/Sao_Paulo', countryCode: 'BR' })
+  expect(screen.getByText('America/Sao_Paulo / BR')).toBeVisible()
+  send({ name: 'Margarida' })
+  expect(screen.getByText('device / unknown')).toBeVisible()
 })

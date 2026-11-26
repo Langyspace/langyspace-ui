@@ -3,16 +3,8 @@
     {
       "id": "you111.1",
       "participant": "teacher",
-      "content": "Good ______! Nice to meet you",
-      "parts": [
-        "Good ",
-        {
-          "id": "teacher.greeting111",
-          "kind": "open",
-          "label": "Greeting"
-        },
-        "! Nice to meet you"
-      ]
+      "content": "Good morning! Nice to meet you",
+      "personalisation": "greeting"
     },
     {
       "id": "you111.2",
@@ -62,16 +54,7 @@
     {
       "id": "you111.5",
       "participant": "teacher",
-      "content": "I'm ______. Where are you from?",
-      "parts": [
-        "I'm ",
-        {
-          "id": "teacher.feeling111",
-          "kind": "open",
-          "label": "Feeling"
-        },
-        ". Where are you from?"
-      ]
+      "content": "I'm good, thanks! Where are you from?"
     },
     {
       "id": "you111.6",
@@ -90,15 +73,8 @@
     {
       "id": "you111.7",
       "participant": "teacher",
-      "content": "I'm from ______",
-      "parts": [
-        "I'm from ",
-        {
-          "id": "teacher.country111",
-          "kind": "open",
-          "label": "Country"
-        }
-      ]
+      "content": "Let me tell you about my hometown",
+      "personalisation": "origin"
     },
     {
       "id": "you111.8",
@@ -108,15 +84,7 @@
     {
       "id": "you111.9",
       "participant": "teacher",
-      "content": "______!",
-      "parts": [
-        {
-          "id": "teacher.bye111",
-          "kind": "open",
-          "label": "Goodbye"
-        },
-        "!"
-      ]
+      "content": "Bye! See you later"
     }
   ],
   "someone": [

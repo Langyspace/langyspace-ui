@@ -14,16 +14,17 @@ export const DialogueOpenGap = styled(TextInput)<DialogueOpenGapStyleProps>`
     box-sizing: border-box;
     display: inline-block;
     width: ${(p) => p.$characters}ch;
-    max-width: 100%;
+    max-width: calc(100% - ${theme.spacing[2]});
+    margin: ${theme.spacing[1]};
     min-height: ${theme.sizes.control.sm};
     padding: 0 ${theme.spacing[1]};
     border: 0;
-    border-bottom: 1px dashed ${(p) => recipe(p).muted};
+    border-bottom: ${theme.borders.width.medium} solid currentColor;
     border-radius: 0;
     background: transparent;
     color: ${(p) => recipe(p).foreground};
     font: inherit;
-    vertical-align: baseline;
+    vertical-align: middle;
     &:focus-visible {
       border-color: ${(p) => recipe(p).accent};
       outline: 2px solid ${(p) => recipe(p).accent};

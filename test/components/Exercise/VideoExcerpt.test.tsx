@@ -177,7 +177,7 @@ it('ignores late API resolution after the owning page unmounts', async () => {
   expect(construct).not.toHaveBeenCalled()
 })
 
-it('adopts the standard Questions column with four authored items, progressive hints and a 50-minute lesson', () => {
+it('adopts the standard Questions column with four authored items, progressive hints and the authored bounded excerpt', () => {
   const page = source.pages.find(
     (p) => p.id === 's_video_intro',
   ) as ReviewedPage
@@ -207,11 +207,11 @@ it('adopts the standard Questions column with four authored items, progressive h
   ).toBeVisible()
   fireEvent.click(slide.getByRole('button', { name: 'What’s the man’s name?' }))
   expect(slide.getByText('His name is Emir')).toBeVisible()
-  expect(
-    source.pages.reduce((n, p) => n + p.minutes, 0) +
-      source.openingMinutes +
-      source.freeConversationMinutes,
-  ).toBe(50)
+  expect(page.kind === 'video' && page.video).toMatchObject({
+    videoId: clip.videoId,
+    startSeconds: 59,
+    endSeconds: 93,
+  })
 })
 
 it('preserves the existing staged media flow', () => {
@@ -229,4 +229,20 @@ it('preserves the existing staged media flow', () => {
   expect(screen.getByText('Prepared media')).toBeVisible()
   fireEvent.click(screen.getByRole('button', { name: '2 · Talk about it' }))
   expect(change).toHaveBeenCalledWith('discuss')
+})
+
+it('prepares the next page without autoplay and retains the ready bounded player on entry', async () => {
+  const props = { title: null, presentation: 'inline' as const, youtube: clip }
+  const { rerender } = render(
+    <VideoExercise {...props} active={false} preload />,
+  )
+  await ready()
+  expect(player.loadVideoById).not.toHaveBeenCalled()
+  expect(screen.getByRole('button', { name: 'Replay excerpt' })).toBeDisabled()
+  rerender(<VideoExercise {...props} active preload={false} />)
+  expect(construct).toHaveBeenCalledTimes(1)
+  expect(player.destroy).not.toHaveBeenCalled()
+  expect(screen.getByRole('button', { name: 'Replay excerpt' })).toBeEnabled()
+  rerender(<VideoExercise {...props} active={false} preload={false} />)
+  expect(player.destroy).toHaveBeenCalledOnce()
 })

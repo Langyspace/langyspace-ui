@@ -10,10 +10,13 @@ import * as Styled from './VideoExercise.styles'
 export function VideoExerciseYouTube({
   clip,
   active,
+  preload,
   labels,
 }: VideoExerciseYouTubeProps) {
   const host = useRef<HTMLDivElement>(null)
   const player = useRef<YouTubePlayer | null>(null)
+  const activeRef = useRef(active)
+  const prepare = active || preload
   const loop = useRef(false)
   const [looping, setLooping] = useState(false)
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading')
@@ -27,7 +30,7 @@ export function VideoExerciseYouTube({
     endSeconds > startSeconds
   const bounds = { videoId, startSeconds, endSeconds }
   useEffect(() => {
-    if (!active || !valid || !host.current) return
+    if (!prepare || !valid || !host.current) return
     const root = host.current
     let disposed = false
     let failed = false
@@ -84,7 +87,12 @@ export function VideoExerciseYouTube({
               setStatus('ready')
             },
             onStateChange: ({ data, target }) => {
-              if (disposed || failed || data !== 0) return
+              if (disposed || failed) return
+              if (!activeRef.current) {
+                if (data === 1) target.pauseVideo()
+                return
+              }
+              if (data !== 0) return
               const excerpt = { videoId, startSeconds, endSeconds }
               if (loop.current) target.loadVideoById(excerpt)
               // Native YouTube replay otherwise starts the full video at 0:00.
@@ -121,9 +129,14 @@ export function VideoExerciseYouTube({
       }
       root.replaceChildren()
     }
-  }, [active, valid, videoId, startSeconds, endSeconds, title])
+  }, [prepare, valid, videoId, startSeconds, endSeconds, title])
   useEffect(() => {
-    if (!active) setLooping(false)
+    activeRef.current = active
+    if (!active) {
+      loop.current = false
+      setLooping(false)
+      player.current?.pauseVideo()
+    }
   }, [active])
   return (
     <Common.Stack>
@@ -135,7 +148,11 @@ export function VideoExerciseYouTube({
       ) : null}
       <Styled.PlayerFooter>
         {!valid || status === 'error' ? (
-          <Styled.Source href={source} target="_blank" rel="noreferrer noopener">
+          <Styled.Source
+            href={source}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             {credit ?? labels.openSource}
           </Styled.Source>
         ) : null}

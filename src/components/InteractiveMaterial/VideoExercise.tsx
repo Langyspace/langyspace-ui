@@ -9,6 +9,7 @@ export function VideoExercise({
   media,
   youtube,
   active = true,
+  preload = false,
   presentation = 'staged',
   page,
   onPageChange,
@@ -38,6 +39,7 @@ export function VideoExercise({
   const video = youtube ? (
     <VideoExerciseYouTube
       clip={youtube}
+      preload={preload}
       active={active && (presentation === 'inline' || currentPage === 'watch')}
       labels={text}
     />

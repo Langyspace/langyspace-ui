@@ -7,12 +7,18 @@ const meta = {
   title: 'Materials/A1.01/Visual roleplay',
   component: CountryFeelingRoleplay,
   decorators: [
-    (Story) => (
+    (Story, context) => (
       <MaterialTheme>
         <SlidePage
-          title="Who are you today?"
+          title={
+            context.args.challenge ? 'Introduce your friends' : 'Guess who'
+          }
           eyebrow="Roleplay"
-          instruction="Choose a person in your mind. Teacher asks and guesses. Then swap roles"
+          instruction={
+            context.args.challenge
+              ? 'Introduce all six people as your friends. Say their names, where they’re from and how they feel'
+              : 'Choose a person secretly. Teacher asks questions and guesses who you are. Then swap roles'
+          }
           columns={2}
         >
           <Story />

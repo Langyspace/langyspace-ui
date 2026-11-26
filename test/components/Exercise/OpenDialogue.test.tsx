@@ -75,14 +75,13 @@ it('binds both participant identities, preserves independent gaps and clears ans
     'src',
     identities.teacher.avatarUrl,
   )
-  const teacherGreeting = screen.getByRole('textbox', {
-    name: 'Adriana: Greeting',
-  })
-  fireEvent.change(teacherGreeting, { target: { value: 'afternoon' } })
+  expect(
+    screen.queryByRole('textbox', { name: 'Adriana: Greeting' }),
+  ).toBeNull()
+  expect(screen.getAllByRole('textbox')).toHaveLength(5)
   fireEvent.change(screen.getByRole('textbox', { name: 'Maria: Greeting' }), {
     target: { value: 'evening' },
   })
-  expect(teacherGreeting).toHaveValue('afternoon')
   expect(screen.getByRole('textbox', { name: 'Maria: Greeting' })).toHaveValue(
     'evening',
   )
@@ -92,6 +91,5 @@ it('binds both participant identities, preserves independent gaps and clears ans
   }
   view.rerender(<MaterialPersonalDialogue lines={lines} />)
   expect(screen.getByRole('textbox', { name: 'Bia: Greeting' })).toHaveValue('')
-  expect(teacherGreeting).toHaveValue('')
   expect(view.container.querySelector('audio')).toBeNull()
 })

@@ -3,6 +3,7 @@ import type { LearningDialogueLine } from '../../../src/components/Exercise/Lear
 export interface MaterialPersonalDialogueTurn {
   id: string
   participant: 'teacher' | 'learner'
+  personalisation?: 'greeting' | 'origin'
   content: string
   parts?: LearningDialogueLine['parts']
 }
