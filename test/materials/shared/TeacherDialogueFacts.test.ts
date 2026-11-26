@@ -44,7 +44,7 @@ it('uses the profile/phone country supplied by the host without exposing or gues
     }),
   ).toEqual({ name: 'Teacher', identified: false, avatarUrl: undefined })
 })
-it('keeps all teacher turns ready, leaving only learner responses open', () => {
+it('keeps teacher turns ready and personal responses oral, without inputs', () => {
   expect(
     lines.filter((l) => l.participant === 'teacher').some((l) => l.parts),
   ).toBe(false)
@@ -53,5 +53,5 @@ it('keeps all teacher turns ready, leaving only learner responses open', () => {
       .filter((l) => l.participant === 'learner')
       .flatMap((l) => l.parts ?? [])
       .filter((p) => typeof p !== 'string'),
-  ).toHaveLength(5)
+  ).toHaveLength(0)
 })

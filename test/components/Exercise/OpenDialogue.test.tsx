@@ -67,10 +67,10 @@ it('accepts arbitrary personal answers and keeps fixed reveal gaps as a separate
   expect(screen.queryByRole('audio')).toBeNull()
 })
 it('binds both participant identities, preserves independent gaps and clears answers on participant replacement', () => {
-  const lines = conversation.aboutYou as readonly MaterialPersonalDialogueTurn[]
+  const lines = conversation.someone as readonly MaterialPersonalDialogueTurn[]
   const view = render(<MaterialPersonalDialogue lines={lines} />)
-  expect(screen.getAllByText('Adriana')).toHaveLength(5)
-  expect(screen.getAllByText('Maria')).toHaveLength(4)
+  expect(screen.getAllByText('Adriana')).toHaveLength(4)
+  expect(screen.getAllByText('Maria')).toHaveLength(3)
   expect(view.container.querySelector('img')).toHaveAttribute(
     'src',
     identities.teacher.avatarUrl,
@@ -78,18 +78,23 @@ it('binds both participant identities, preserves independent gaps and clears ans
   expect(
     screen.queryByRole('textbox', { name: 'Adriana: Greeting' }),
   ).toBeNull()
-  expect(screen.getAllByRole('textbox')).toHaveLength(5)
-  fireEvent.change(screen.getByRole('textbox', { name: 'Maria: Greeting' }), {
-    target: { value: 'evening' },
-  })
-  expect(screen.getByRole('textbox', { name: 'Maria: Greeting' })).toHaveValue(
-    'evening',
+  expect(screen.getAllByRole('textbox')).toHaveLength(3)
+  fireEvent.change(
+    screen.getByRole('textbox', { name: 'Maria: Friend’s country' }),
+    {
+      target: { value: 'Brazil' },
+    },
   )
+  expect(
+    screen.getByRole('textbox', { name: 'Maria: Friend’s country' }),
+  ).toHaveValue('Brazil')
   identities.learner = {
     firstName: 'Bia',
     avatarUrl: 'https://example.test/bia.jpg',
   }
   view.rerender(<MaterialPersonalDialogue lines={lines} />)
-  expect(screen.getByRole('textbox', { name: 'Bia: Greeting' })).toHaveValue('')
+  expect(
+    screen.getByRole('textbox', { name: 'Bia: Friend’s country' }),
+  ).toHaveValue('')
   expect(view.container.querySelector('audio')).toBeNull()
 })

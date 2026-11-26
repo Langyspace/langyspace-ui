@@ -9,22 +9,7 @@
     {
       "id": "you111.2",
       "participant": "learner",
-      "content": "Good ______! ______, too",
-      "parts": [
-        "Good ",
-        {
-          "id": "learner.greeting111",
-          "kind": "open",
-          "label": "Greeting"
-        },
-        "! ",
-        {
-          "id": "learner.meet111",
-          "kind": "open",
-          "label": "Meeting response"
-        },
-        ", too"
-      ]
+      "content": "Good ...! ..., too"
     },
     {
       "id": "you111.3",
@@ -34,22 +19,7 @@
     {
       "id": "you111.4",
       "participant": "learner",
-      "content": "I'm ______, but I'm ______. And you?",
-      "parts": [
-        "I'm ",
-        {
-          "id": "learner.feeling111",
-          "kind": "open",
-          "label": "First feeling"
-        },
-        ", but I'm ",
-        {
-          "id": "learner.feeling2.111",
-          "kind": "open",
-          "label": "Second feeling"
-        },
-        ". And you?"
-      ]
+      "content": "I'm ..., but I'm ... And you?"
     },
     {
       "id": "you111.5",
@@ -59,16 +29,7 @@
     {
       "id": "you111.6",
       "participant": "learner",
-      "content": "I'm from ______. And you?",
-      "parts": [
-        "I'm from ",
-        {
-          "id": "learner.country111",
-          "kind": "open",
-          "label": "Country"
-        },
-        ". And you?"
-      ]
+      "content": "I'm from ... And you?"
     },
     {
       "id": "you111.7",

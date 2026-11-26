@@ -29,3 +29,10 @@ Uma invocação de pnpm encaminhou os argumentos de filtro incorretamente e inic
 Prévia real em507×775: antes/depois de Countries, Introduce someone e Talk about yourself; vídeo pronto ao chegar. Também1280×720 com resposta longa, preservada ao sair/voltar. O wrapper de automação fill centralizou o input e deslocou o viewport; reteste por navegação nativa restaurou a âncora correta, sem mudança de código por esse artefato.
 
 Os dois arquivos preexistentes de stories/epic107 permanecem sem stage. Ponte Teacher preparada em worktree independente teacher-facts114, base93a4c031 (ponte já existente); origin/staging local ainda não contém essa cadeia. Nenhuma publicação foi presumida.
+
+
+## Experimento115 — Talk about yourself oral
+
+A pedido da dona, somente este diálogo troca os cinco campos da aluna por `...` literais nos textos, sem criar prop, CSS ou lógica de substituição. Subtítulo orienta praticar com informações próprias. Falas prontas da professora preservadas. Introduce someone continua com seus três campos e respostas em memória; a navegação local usou seta, sem recarregar nem descartar os valores que a usuária estava testando nessa outra página. Não virou regra global, pois é um experimento para revisão.
+
+Sete testes focados passaram (reaproveitando a cobertura do diálogo com campos em Introduce someone). Conferência no navegador: Talk about yourself sem inputs, nove falas, cinco pontos de resposta oral; captura personal-oral115-after.jpg. Sem build, API change, Teacher change ou deploy.
