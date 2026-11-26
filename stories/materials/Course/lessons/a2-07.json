@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Shared spaces",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-07-vocabulary81",
-        "alt": "Six illustrated situations for House rules",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A207-V81.0",
-          "label": "building",
-          "prompt": "",
+          "word": "building",
+          "translation": "",
           "example": "I’m new to this building",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-07-vocabulary81",
+          "imageAlt": "building",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A207-FS81.0",
           "audioText": "building. I’m new to this building."
         },
         {
           "id": "A207-V81.1",
-          "label": "pool",
-          "prompt": "",
+          "word": "pool",
+          "translation": "",
           "example": "The pool closes at eight",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-07-vocabulary81",
+          "imageAlt": "pool",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A207-FS81.1",
           "audioText": "pool. The pool closes at eight."
         },
         {
           "id": "A207-V81.2",
-          "label": "garage",
-          "prompt": "",
+          "word": "garage",
+          "translation": "",
           "example": "Leave your bike in the garage",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-07-vocabulary81",
+          "imageAlt": "garage",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A207-FS81.2",
           "audioText": "garage. Leave your bike in the garage."
         },
         {
           "id": "A207-V81.3",
-          "label": "grill",
-          "prompt": "",
+          "word": "grill",
+          "translation": "",
           "example": "Do I have to book the grill?",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-07-vocabulary81",
+          "imageAlt": "grill",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A207-FS81.3",
           "audioText": "grill. Do I have to book the grill?"
         },
         {
           "id": "A207-V81.4",
-          "label": "trash",
-          "prompt": "",
+          "word": "trash",
+          "translation": "",
           "example": "Please take the trash downstairs",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-07-vocabulary81",
+          "imageAlt": "trash",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A207-FS81.4",
           "audioText": "trash. Please take the trash downstairs."
         },
         {
           "id": "A207-V81.5",
-          "label": "bike",
-          "prompt": "",
+          "word": "bike",
+          "translation": "",
           "example": "You can’t take a bike in the lift",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-07-vocabulary81",
+          "imageAlt": "bike",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A207-FS81.5",
           "audioText": "bike. You can’t take a bike in the lift."
         }

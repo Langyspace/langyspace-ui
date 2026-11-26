@@ -119,6 +119,25 @@ export const WordImage = styled.img<{
   object-position: ${(p) => (p.$scene && !p.$regular ? 'center 25%' : 'center')};
   border-radius: inherit;
 `
+/** Contain an atlas cell without stretching it or exposing its neighbouring cells. */
+export const WordImageRegion = styled.span<{
+  $scene: boolean
+  $regular: boolean
+  $aspect: number
+}>`
+  position: ${(p) => (p.$scene ? 'absolute' : 'relative')};
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: ${(p) => (p.$scene ? '100%' : p.$regular ? `calc(${theme.exercises.vocabularyRegularHeight} - ${theme.spacing[4]})` : theme.exercises.vocabularyImageHeight)};
+  container-type: size;
+  border-radius: inherit;
+  > * {
+    width: min(100cqw, calc(100cqh * ${(p) => p.$aspect}));
+    border-radius: inherit;
+  }
+`
 export const QuestionMark = styled.span<{ $completed?: boolean }>`
   position: absolute;
   top: ${theme.spacing[2]};

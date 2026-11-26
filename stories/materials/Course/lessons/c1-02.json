@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Learning from an outcome",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-02-vocabulary81",
-        "alt": "Six illustrated situations for Had we known…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C102-V81.0",
-          "label": "an assumption",
-          "prompt": "",
+          "word": "an assumption",
+          "translation": "",
           "example": "We should make the assumption explicit",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-02-vocabulary81",
+          "imageAlt": "an assumption",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C102-FS81.0",
           "audioText": "an assumption. We should make the assumption explicit."
         },
         {
           "id": "C102-V81.1",
-          "label": "a warning sign",
-          "prompt": "",
+          "word": "a warning sign",
+          "translation": "",
           "example": "A warning sign is useful only if someone can act",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-02-vocabulary81",
+          "imageAlt": "a warning sign",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C102-FS81.1",
           "audioText": "a warning sign. A warning sign is useful only if someone can act."
         },
         {
           "id": "C102-V81.2",
-          "label": "a contingency plan",
-          "prompt": "",
+          "word": "a contingency plan",
+          "translation": "",
           "example": "The contingency plan needs a decision owner",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-02-vocabulary81",
+          "imageAlt": "a contingency plan",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C102-FS81.2",
           "audioText": "a contingency plan. The contingency plan needs a decision owner."
         },
         {
           "id": "C102-V81.3",
-          "label": "an oversight",
-          "prompt": "",
+          "word": "an oversight",
+          "translation": "",
           "example": "The missing check may have been an oversight",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-02-vocabulary81",
+          "imageAlt": "an oversight",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C102-FS81.3",
           "audioText": "an oversight. The missing check may have been an oversight."
         },
         {
           "id": "C102-V81.4",
-          "label": "a root cause",
-          "prompt": "",
+          "word": "a root cause",
+          "translation": "",
           "example": "One symptom does not establish the root cause",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-02-vocabulary81",
+          "imageAlt": "a root cause",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C102-FS81.4",
           "audioText": "a root cause. One symptom does not establish the root cause."
         },
         {
           "id": "C102-V81.5",
-          "label": "a lesson learned",
-          "prompt": "",
+          "word": "a lesson learned",
+          "translation": "",
           "example": "A lesson learned should lead to a testable action",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-02-vocabulary81",
+          "imageAlt": "a lesson learned",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C102-FS81.5",
           "audioText": "a lesson learned. A lesson learned should lead to a testable action."
         }

@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Everyday actions",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-01-vocabulary81",
-        "alt": "Six illustrated situations for What are you doing?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A201-V81.0",
-          "label": "make coffee",
-          "prompt": "",
+          "word": "make coffee",
+          "translation": "",
           "example": "I’m making coffee right now",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-01-vocabulary81",
+          "imageAlt": "make coffee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A201-FS81.0",
           "audioText": "make coffee. I’m making coffee right now."
         },
         {
           "id": "A201-V81.1",
-          "label": "cook lunch",
-          "prompt": "",
+          "word": "cook lunch",
+          "translation": "",
           "example": "They’re cooking lunch in the kitchen",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-01-vocabulary81",
+          "imageAlt": "cook lunch",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A201-FS81.1",
           "audioText": "cook lunch. They’re cooking lunch in the kitchen."
         },
         {
           "id": "A201-V81.2",
-          "label": "watch TV",
-          "prompt": "",
+          "word": "watch TV",
+          "translation": "",
           "example": "My sister is watching TV",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-01-vocabulary81",
+          "imageAlt": "watch TV",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A201-FS81.2",
           "audioText": "watch TV. My sister is watching TV."
         },
         {
           "id": "A201-V81.3",
-          "label": "listen to music",
-          "prompt": "",
+          "word": "listen to music",
+          "translation": "",
           "example": "I’m listening to music at home",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-01-vocabulary81",
+          "imageAlt": "listen to music",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A201-FS81.3",
           "audioText": "listen to music. I’m listening to music at home."
         },
         {
           "id": "A201-V81.4",
-          "label": "work from home",
-          "prompt": "",
+          "word": "work from home",
+          "translation": "",
           "example": "She usually works from home on Fridays",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-01-vocabulary81",
+          "imageAlt": "work from home",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A201-FS81.4",
           "audioText": "work from home. She usually works from home on Fridays."
         },
         {
           "id": "A201-V81.5",
-          "label": "go for a walk",
-          "prompt": "",
+          "word": "go for a walk",
+          "translation": "",
           "example": "We’re going for a walk this afternoon",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-01-vocabulary81",
+          "imageAlt": "go for a walk",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A201-FS81.5",
           "audioText": "go for a walk. We’re going for a walk this afternoon."
         }

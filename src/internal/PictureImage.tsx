@@ -5,15 +5,24 @@ import type { PictureImageProps } from './PictureImage.types'
 export function PictureImage({ src, alt, region }: PictureImageProps) {
   const valid =
     region &&
-    [region.columns, region.rows, region.column, region.row].every(
-      Number.isInteger,
-    ) &&
+    [
+      region.columns,
+      region.rows,
+      region.column,
+      region.row,
+      region.columnSpan ?? 1,
+      region.rowSpan ?? 1,
+    ].every(Number.isInteger) &&
     region.columns > 0 &&
     region.rows > 0 &&
     region.column >= 0 &&
     region.row >= 0 &&
     region.column < region.columns &&
     region.row < region.rows &&
+    (region.columnSpan ?? 1) > 0 &&
+    (region.rowSpan ?? 1) > 0 &&
+    region.column + (region.columnSpan ?? 1) <= region.columns &&
+    region.row + (region.rowSpan ?? 1) <= region.rows &&
     Number.isFinite(region.sourceAspectRatio) &&
     region.sourceAspectRatio > 0
   return region && valid ? (

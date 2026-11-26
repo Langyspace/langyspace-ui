@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for i should have taken the direct flight",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-07-vocabulary81",
-        "alt": "Six illustrated situations for I should have taken the direct flight",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B107-V81.0",
-          "label": "a direct flight",
-          "prompt": "",
+          "word": "a direct flight",
+          "translation": "",
           "example": "The direct flight cost more",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-07-vocabulary81",
+          "imageAlt": "a direct flight",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B107-FS81.0",
           "audioText": "a direct flight. The direct flight cost more."
         },
         {
           "id": "B107-V81.1",
-          "label": "a connecting flight",
-          "prompt": "",
+          "word": "a connecting flight",
+          "translation": "",
           "example": "We missed the connecting flight",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-07-vocabulary81",
+          "imageAlt": "a connecting flight",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B107-FS81.1",
           "audioText": "a connecting flight. We missed the connecting flight."
         },
         {
           "id": "B107-V81.2",
-          "label": "a delay",
-          "prompt": "",
+          "word": "a delay",
+          "translation": "",
           "example": "There was a fifty-minute delay",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-07-vocabulary81",
+          "imageAlt": "a delay",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B107-FS81.2",
           "audioText": "a delay. There was a fifty-minute delay."
         },
         {
           "id": "B107-V81.3",
-          "label": "a boarding gate",
-          "prompt": "",
+          "word": "a boarding gate",
+          "translation": "",
           "example": "Check the boarding gate again",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-07-vocabulary81",
+          "imageAlt": "a boarding gate",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B107-FS81.3",
           "audioText": "a boarding gate. Check the boarding gate again."
         },
         {
           "id": "B107-V81.4",
-          "label": "a refund",
-          "prompt": "",
+          "word": "a refund",
+          "translation": "",
           "example": "A refund has not been confirmed",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-07-vocabulary81",
+          "imageAlt": "a refund",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B107-FS81.4",
           "audioText": "a refund. A refund has not been confirmed."
         },
         {
           "id": "B107-V81.5",
-          "label": "travel insurance",
-          "prompt": "",
+          "word": "travel insurance",
+          "translation": "",
           "example": "We need to check the travel insurance",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-07-vocabulary81",
+          "imageAlt": "travel insurance",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B107-FS81.5",
           "audioText": "travel insurance. We need to check the travel insurance."
         }

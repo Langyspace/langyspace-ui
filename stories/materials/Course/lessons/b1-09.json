@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for my bike was stolen!",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-09-vocabulary81",
-        "alt": "Six illustrated situations for My bike was stolen!",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B109-V81.0",
-          "label": "a bicycle lock",
-          "prompt": "",
+          "word": "a bicycle lock",
+          "translation": "",
           "example": "The bicycle lock was beside the rack",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-09-vocabulary81",
+          "imageAlt": "a bicycle lock",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B109-FS81.0",
           "audioText": "a bicycle lock. The bicycle lock was beside the rack."
         },
         {
           "id": "B109-V81.1",
-          "label": "a serial number",
-          "prompt": "",
+          "word": "a serial number",
+          "translation": "",
           "example": "The serial number hasn’t been checked",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-09-vocabulary81",
+          "imageAlt": "a serial number",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B109-FS81.1",
           "audioText": "a serial number. The serial number hasn’t been checked."
         },
         {
           "id": "B109-V81.2",
-          "label": "a helmet",
-          "prompt": "",
+          "word": "a helmet",
+          "translation": "",
           "example": "The helmet is still at home",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-09-vocabulary81",
+          "imageAlt": "a helmet",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B109-FS81.2",
           "audioText": "a helmet. The helmet is still at home."
         },
         {
           "id": "B109-V81.3",
-          "label": "a bike rack",
-          "prompt": "",
+          "word": "a bike rack",
+          "translation": "",
           "example": "The bike was taken from the bike rack",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-09-vocabulary81",
+          "imageAlt": "a bike rack",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B109-FS81.3",
           "audioText": "a bike rack. The bike was taken from the bike rack."
         },
         {
           "id": "B109-V81.4",
-          "label": "a report",
-          "prompt": "",
+          "word": "a report",
+          "translation": "",
           "example": "An update has been added to the report",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-09-vocabulary81",
+          "imageAlt": "a report",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B109-FS81.4",
           "audioText": "a report. An update has been added to the report."
         },
         {
           "id": "B109-V81.5",
-          "label": "lost property",
-          "prompt": "",
+          "word": "lost property",
+          "translation": "",
           "example": "Ask at lost property before assuming it was stolen",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-09-vocabulary81",
+          "imageAlt": "lost property",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B109-FS81.5",
           "audioText": "lost property. Ask at lost property before assuming it was stolen."
         }

@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for the show had already started",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-03-vocabulary81",
-        "alt": "Six illustrated situations for The show had already started",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B103-V81.0",
-          "label": "a ticket",
-          "prompt": "",
+          "word": "a ticket",
+          "translation": "",
           "example": "Keep the digital ticket on your phone",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-03-vocabulary81",
+          "imageAlt": "a ticket",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B103-FS81.0",
           "audioText": "a ticket. Keep the digital ticket on your phone."
         },
         {
           "id": "B103-V81.1",
-          "label": "a wristband",
-          "prompt": "",
+          "word": "a wristband",
+          "translation": "",
           "example": "She had left her wristband at home",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-03-vocabulary81",
+          "imageAlt": "a wristband",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B103-FS81.1",
           "audioText": "a wristband. She had left her wristband at home."
         },
         {
           "id": "B103-V81.2",
-          "label": "the entrance",
-          "prompt": "",
+          "word": "the entrance",
+          "translation": "",
           "example": "The entrance was still open",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-03-vocabulary81",
+          "imageAlt": "the entrance",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B103-FS81.2",
           "audioText": "the entrance. The entrance was still open."
         },
         {
           "id": "B103-V81.3",
-          "label": "the queue",
-          "prompt": "",
+          "word": "the queue",
+          "translation": "",
           "example": "We joined the queue outside",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-03-vocabulary81",
+          "imageAlt": "the queue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B103-FS81.3",
           "audioText": "the queue. We joined the queue outside."
         },
         {
           "id": "B103-V81.4",
-          "label": "the venue",
-          "prompt": "",
+          "word": "the venue",
+          "translation": "",
           "example": "The venue was easy to find",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-03-vocabulary81",
+          "imageAlt": "the venue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B103-FS81.4",
           "audioText": "the venue. The venue was easy to find."
         },
         {
           "id": "B103-V81.5",
-          "label": "an opening act",
-          "prompt": "",
+          "word": "an opening act",
+          "translation": "",
           "example": "We missed the opening act",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-03-vocabulary81",
+          "imageAlt": "an opening act",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B103-FS81.5",
           "audioText": "an opening act. We missed the opening act."
         }

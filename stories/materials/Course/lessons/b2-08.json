@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Reading an apartment listing",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-08-vocabulary81",
-        "alt": "Six illustrated situations for The apartment, which has a balcony",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B208-V81.0",
-          "label": "a balcony",
-          "prompt": "",
+          "word": "a balcony",
+          "translation": "",
           "example": "The apartment has a balcony",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-08-vocabulary81",
+          "imageAlt": "a balcony",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B208-FS81.0",
           "audioText": "a balcony. The apartment has a balcony."
         },
         {
           "id": "B208-V81.1",
-          "label": "a viewing",
-          "prompt": "",
+          "word": "a viewing",
+          "translation": "",
           "example": "I’d arrange a viewing before deciding",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-08-vocabulary81",
+          "imageAlt": "a viewing",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B208-FS81.1",
           "audioText": "a viewing. I’d arrange a viewing before deciding."
         },
         {
           "id": "B208-V81.2",
-          "label": "a neighbourhood",
-          "prompt": "",
+          "word": "a neighbourhood",
+          "translation": "",
           "example": "The neighbourhood is close to the metro",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-08-vocabulary81",
+          "imageAlt": "a neighbourhood",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B208-FS81.2",
           "audioText": "a neighbourhood. The neighbourhood is close to the metro."
         },
         {
           "id": "B208-V81.3",
-          "label": "a listing",
-          "prompt": "",
+          "word": "a listing",
+          "translation": "",
           "example": "The listing doesn’t confirm the full cost",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-08-vocabulary81",
+          "imageAlt": "a listing",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B208-FS81.3",
           "audioText": "a listing. The listing doesn’t confirm the full cost."
         },
         {
           "id": "B208-V81.4",
-          "label": "a landlord",
-          "prompt": "",
+          "word": "a landlord",
+          "translation": "",
           "example": "Ask the landlord about the fee",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-08-vocabulary81",
+          "imageAlt": "a landlord",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B208-FS81.4",
           "audioText": "a landlord. Ask the landlord about the fee."
         },
         {
           "id": "B208-V81.5",
-          "label": "a maintenance fee",
-          "prompt": "",
+          "word": "a maintenance fee",
+          "translation": "",
           "example": "The maintenance fee is added to the rent",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-08-vocabulary81",
+          "imageAlt": "a maintenance fee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B208-FS81.5",
           "audioText": "a maintenance fee. The maintenance fee is added to the rent."
         }

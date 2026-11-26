@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Plan A and Plan B",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-11-vocabulary81",
-        "alt": "Six illustrated situations for If it rains, we’ll…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A211-V81.0",
-          "label": "a hike",
-          "prompt": "",
+          "word": "a hike",
+          "translation": "",
           "example": "We’re planning a hike on Sunday",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-11-vocabulary81",
+          "imageAlt": "a hike",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A211-FS81.0",
           "audioText": "a hike. We’re planning a hike on Sunday."
         },
         {
           "id": "A211-V81.1",
-          "label": "a trail",
-          "prompt": "",
+          "word": "a trail",
+          "translation": "",
           "example": "This trail goes through the trees",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-11-vocabulary81",
+          "imageAlt": "a trail",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A211-FS81.1",
           "audioText": "a trail. This trail goes through the trees."
         },
         {
           "id": "A211-V81.2",
-          "label": "a museum",
-          "prompt": "",
+          "word": "a museum",
+          "translation": "",
           "example": "We’ll go to a museum if it rains",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-11-vocabulary81",
+          "imageAlt": "a museum",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A211-FS81.2",
           "audioText": "a museum. We’ll go to a museum if it rains."
         },
         {
           "id": "A211-V81.3",
-          "label": "a raincoat",
-          "prompt": "",
+          "word": "a raincoat",
+          "translation": "",
           "example": "I’ll bring a raincoat",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-11-vocabulary81",
+          "imageAlt": "a raincoat",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A211-FS81.3",
           "audioText": "a raincoat. I’ll bring a raincoat."
         },
         {
           "id": "A211-V81.4",
-          "label": "a forecast",
-          "prompt": "",
+          "word": "a forecast",
+          "translation": "",
           "example": "Let’s check the forecast",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-11-vocabulary81",
+          "imageAlt": "a forecast",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A211-FS81.4",
           "audioText": "a forecast. Let’s check the forecast."
         },
         {
           "id": "A211-V81.5",
-          "label": "a backup plan",
-          "prompt": "",
+          "word": "a backup plan",
+          "translation": "",
           "example": "The museum is our backup plan",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-11-vocabulary81",
+          "imageAlt": "a backup plan",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A211-FS81.5",
           "audioText": "a backup plan. The museum is our backup plan."
         }

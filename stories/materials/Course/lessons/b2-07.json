@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "How people express intentions",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-07-vocabulary81",
-        "alt": "Six illustrated situations for She insisted on paying",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B207-V81.0",
-          "label": "insist on",
-          "prompt": "",
+          "word": "insist on",
+          "translation": "",
           "example": "She didn’t insist on that date",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-07-vocabulary81",
+          "imageAlt": "insist on",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B207-FS81.0",
           "audioText": "insist on. She didn’t insist on that date."
         },
         {
           "id": "B207-V81.1",
-          "label": "refuse to",
-          "prompt": "",
+          "word": "refuse to",
+          "translation": "",
           "example": "One guest refused to pay yet",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-07-vocabulary81",
+          "imageAlt": "refuse to",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B207-FS81.1",
           "audioText": "refuse to. One guest refused to pay yet."
         },
         {
           "id": "B207-V81.2",
-          "label": "admit that",
-          "prompt": "",
+          "word": "admit that",
+          "translation": "",
           "example": "The host admitted that the summary was wrong",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-07-vocabulary81",
+          "imageAlt": "admit that",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B207-FS81.2",
           "audioText": "admit that. The host admitted that the summary was wrong."
         },
         {
           "id": "B207-V81.3",
-          "label": "deny doing",
-          "prompt": "",
+          "word": "deny doing",
+          "translation": "",
           "example": "She denied promising advance payment",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-07-vocabulary81",
+          "imageAlt": "deny doing",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B207-FS81.3",
           "audioText": "deny doing. She denied promising advance payment."
         },
         {
           "id": "B207-V81.4",
-          "label": "suggest doing",
-          "prompt": "",
+          "word": "suggest doing",
+          "translation": "",
           "example": "They suggested meeting on Saturday",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-07-vocabulary81",
+          "imageAlt": "suggest doing",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B207-FS81.4",
           "audioText": "suggest doing. They suggested meeting on Saturday."
         },
         {
           "id": "B207-V81.5",
-          "label": "promise to",
-          "prompt": "",
+          "word": "promise to",
+          "translation": "",
           "example": "The host promised to check availability",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-07-vocabulary81",
+          "imageAlt": "promise to",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B207-FS81.5",
           "audioText": "promise to. The host promised to check availability."
         }

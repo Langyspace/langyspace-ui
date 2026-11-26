@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Progress and delivery",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-02-vocabulary81",
-        "alt": "Six illustrated situations for By Friday I’ll have finished it",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B202-V81.0",
-          "label": "a deadline",
-          "prompt": "",
+          "word": "a deadline",
+          "translation": "",
           "example": "We shouldn’t promise a deadline before checking dependencies",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a deadline",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B202-FS81.0",
           "audioText": "a deadline. We shouldn’t promise a deadline before checking dependencies."
         },
         {
           "id": "B202-V81.1",
-          "label": "a progress update",
-          "prompt": "",
+          "word": "a progress update",
+          "translation": "",
           "example": "Please send a short progress update",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a progress update",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B202-FS81.1",
           "audioText": "a progress update. Please send a short progress update."
         },
         {
           "id": "B202-V81.2",
-          "label": "a draft",
-          "prompt": "",
+          "word": "a draft",
+          "translation": "",
           "example": "The draft is ready for review",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a draft",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B202-FS81.2",
           "audioText": "a draft. The draft is ready for review."
         },
         {
           "id": "B202-V81.3",
-          "label": "a final version",
-          "prompt": "",
+          "word": "a final version",
+          "translation": "",
           "example": "This is not the final version yet",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a final version",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B202-FS81.3",
           "audioText": "a final version. This is not the final version yet."
         },
         {
           "id": "B202-V81.4",
-          "label": "a delay",
-          "prompt": "",
+          "word": "a delay",
+          "translation": "",
           "example": "A review delay affects the next task",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a delay",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B202-FS81.4",
           "audioText": "a delay. A review delay affects the next task."
         },
         {
           "id": "B202-V81.5",
-          "label": "a handover",
-          "prompt": "",
+          "word": "a handover",
+          "translation": "",
           "example": "We need to agree a staged handover",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a handover",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B202-FS81.5",
           "audioText": "a handover. We need to agree a staged handover."
         }

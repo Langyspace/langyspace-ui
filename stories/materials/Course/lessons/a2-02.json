@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Weekend moments",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-02-vocabulary81",
-        "alt": "Six illustrated situations for How was your weekend?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A202-V81.0",
-          "label": "visited a museum",
-          "prompt": "",
+          "word": "visited a museum",
+          "translation": "",
           "example": "I visited a museum on Sunday",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "visited a museum",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A202-FS81.0",
           "audioText": "visited a museum. I visited a museum on Sunday."
         },
         {
           "id": "A202-V81.1",
-          "label": "went to a market",
-          "prompt": "",
+          "word": "went to a market",
+          "translation": "",
           "example": "We went to a market in the morning",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "went to a market",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A202-FS81.1",
           "audioText": "went to a market. We went to a market in the morning."
         },
         {
           "id": "A202-V81.2",
-          "label": "had coffee",
-          "prompt": "",
+          "word": "had coffee",
+          "translation": "",
           "example": "I had coffee with a friend",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "had coffee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A202-FS81.2",
           "audioText": "had coffee. I had coffee with a friend."
         },
         {
           "id": "A202-V81.3",
-          "label": "took photos",
-          "prompt": "",
+          "word": "took photos",
+          "translation": "",
           "example": "We took photos by the river",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "took photos",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A202-FS81.3",
           "audioText": "took photos. We took photos by the river."
         },
         {
           "id": "A202-V81.4",
-          "label": "walked on the beach",
-          "prompt": "",
+          "word": "walked on the beach",
+          "translation": "",
           "example": "She walked on the beach for an hour",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "walked on the beach",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A202-FS81.4",
           "audioText": "walked on the beach. She walked on the beach for an hour."
         },
         {
           "id": "A202-V81.5",
-          "label": "stayed at home",
-          "prompt": "",
+          "word": "stayed at home",
+          "translation": "",
           "example": "I stayed at home and watched a film",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "stayed at home",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A202-FS81.5",
           "audioText": "stayed at home. I stayed at home and watched a film."
         }

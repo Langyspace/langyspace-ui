@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Helping with a move",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-05-vocabulary81",
-        "alt": "Six illustrated situations for I’ll carry that!",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A205-V81.0",
-          "label": "carry a box",
-          "prompt": "",
+          "word": "carry a box",
+          "translation": "",
           "example": "I’ll carry the smaller box",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "carry a box",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A205-FS81.0",
           "audioText": "carry a box. I’ll carry the smaller box."
         },
         {
           "id": "A205-V81.1",
-          "label": "open the door",
-          "prompt": "",
+          "word": "open the door",
+          "translation": "",
           "example": "Can you open the door?",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "open the door",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A205-FS81.1",
           "audioText": "open the door. Can you open the door?"
         },
         {
           "id": "A205-V81.2",
-          "label": "take the stairs",
-          "prompt": "",
+          "word": "take the stairs",
+          "translation": "",
           "example": "We have to take the stairs",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "take the stairs",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A205-FS81.2",
           "audioText": "take the stairs. We have to take the stairs."
         },
         {
           "id": "A205-V81.3",
-          "label": "move a chair",
-          "prompt": "",
+          "word": "move a chair",
+          "translation": "",
           "example": "I’ll move this chair",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "move a chair",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A205-FS81.3",
           "audioText": "move a chair. I’ll move this chair."
         },
         {
           "id": "A205-V81.4",
-          "label": "paint a wall",
-          "prompt": "",
+          "word": "paint a wall",
+          "translation": "",
           "example": "I’m going to paint a wall tomorrow",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "paint a wall",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A205-FS81.4",
           "audioText": "paint a wall. I’m going to paint a wall tomorrow."
         },
         {
           "id": "A205-V81.5",
-          "label": "unpack a bag",
-          "prompt": "",
+          "word": "unpack a bag",
+          "translation": "",
           "example": "I want to unpack my bags today",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "unpack a bag",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A205-FS81.5",
           "audioText": "unpack a bag. I want to unpack my bags today."
         }

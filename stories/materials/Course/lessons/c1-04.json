@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Boundaries and expectations",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-04-vocabulary81",
-        "alt": "Six illustrated situations for I’d rather you didn’t",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C104-V81.0",
-          "label": "set a boundary",
-          "prompt": "",
+          "word": "set a boundary",
+          "translation": "",
           "example": "A clear request can help set a boundary",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "set a boundary",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C104-FS81.0",
           "audioText": "set a boundary. A clear request can help set a boundary."
         },
         {
           "id": "C104-V81.1",
-          "label": "bring something up",
-          "prompt": "",
+          "word": "bring something up",
+          "translation": "",
           "example": "Bring it up before resentment grows",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "bring something up",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C104-FS81.1",
           "audioText": "bring something up. Bring it up before resentment grows."
         },
         {
           "id": "C104-V81.2",
-          "label": "a shared space",
-          "prompt": "",
+          "word": "a shared space",
+          "translation": "",
           "example": "We both use the shared space",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "a shared space",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C104-FS81.2",
           "audioText": "a shared space. We both use the shared space."
         },
         {
           "id": "C104-V81.3",
-          "label": "an expectation",
-          "prompt": "",
+          "word": "an expectation",
+          "translation": "",
           "example": "The expectation needs to be explicit",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "an expectation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C104-FS81.3",
           "audioText": "an expectation. The expectation needs to be explicit."
         },
         {
           "id": "C104-V81.4",
-          "label": "a compromise",
-          "prompt": "",
+          "word": "a compromise",
+          "translation": "",
           "example": "A compromise should protect both needs",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "a compromise",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C104-FS81.4",
           "audioText": "a compromise. A compromise should protect both needs."
         },
         {
           "id": "C104-V81.5",
-          "label": "a recurring issue",
-          "prompt": "",
+          "word": "a recurring issue",
+          "translation": "",
           "example": "The late calls have become a recurring issue",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "a recurring issue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C104-FS81.5",
           "audioText": "a recurring issue. The late calls have become a recurring issue."
         }

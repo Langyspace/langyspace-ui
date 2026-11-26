@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "When plans go wrong",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-03-vocabulary81",
-        "alt": "Six illustrated situations for Sorry I’m late!",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A203-V81.0",
-          "label": "wait for the bus",
-          "prompt": "",
+          "word": "wait for the bus",
+          "translation": "",
           "example": "I was waiting for the bus",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "wait for the bus",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A203-FS81.0",
           "audioText": "wait for the bus. I was waiting for the bus."
         },
         {
           "id": "A203-V81.1",
-          "label": "miss the bus",
-          "prompt": "",
+          "word": "miss the bus",
+          "translation": "",
           "example": "I missed the bus when I went into the shop",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "miss the bus",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A203-FS81.1",
           "audioText": "miss the bus. I missed the bus when I went into the shop."
         },
         {
           "id": "A203-V81.2",
-          "label": "drop a phone",
-          "prompt": "",
+          "word": "drop a phone",
+          "translation": "",
           "example": "She dropped her phone outside",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "drop a phone",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A203-FS81.2",
           "audioText": "drop a phone. She dropped her phone outside."
         },
         {
           "id": "A203-V81.3",
-          "label": "get stuck in traffic",
-          "prompt": "",
+          "word": "get stuck in traffic",
+          "translation": "",
           "example": "He got stuck in traffic near the station",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "get stuck in traffic",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A203-FS81.3",
           "audioText": "get stuck in traffic. He got stuck in traffic near the station."
         },
         {
           "id": "A203-V81.4",
-          "label": "start raining",
-          "prompt": "",
+          "word": "start raining",
+          "translation": "",
           "example": "It started raining at twelve",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "start raining",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A203-FS81.4",
           "audioText": "start raining. It started raining at twelve."
         },
         {
           "id": "A203-V81.5",
-          "label": "arrive late",
-          "prompt": "",
+          "word": "arrive late",
+          "translation": "",
           "example": "I arrived late for lunch",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "arrive late",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A203-FS81.5",
           "audioText": "arrive late. I arrived late for lunch."
         }

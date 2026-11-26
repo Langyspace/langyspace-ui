@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Booking costs and conditions",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-05-vocabulary81",
-        "alt": "Six illustrated situations for We needn’t have paid in advance",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B205-V81.0",
-          "label": "a deposit",
-          "prompt": "",
+          "word": "a deposit",
+          "translation": "",
           "example": "The deposit has a separate condition",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-05-vocabulary81",
+          "imageAlt": "a deposit",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B205-FS81.0",
           "audioText": "a deposit. The deposit has a separate condition."
         },
         {
           "id": "B205-V81.1",
-          "label": "an extra charge",
-          "prompt": "",
+          "word": "an extra charge",
+          "translation": "",
           "example": "There’s an extra charge for breakfast",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-05-vocabulary81",
+          "imageAlt": "an extra charge",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B205-FS81.1",
           "audioText": "an extra charge. There’s an extra charge for breakfast."
         },
         {
           "id": "B205-V81.2",
-          "label": "a cancellation fee",
-          "prompt": "",
+          "word": "a cancellation fee",
+          "translation": "",
           "example": "Check whether a cancellation fee applies",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-05-vocabulary81",
+          "imageAlt": "a cancellation fee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B205-FS81.2",
           "audioText": "a cancellation fee. Check whether a cancellation fee applies."
         },
         {
           "id": "B205-V81.3",
-          "label": "a refund",
-          "prompt": "",
+          "word": "a refund",
+          "translation": "",
           "example": "We can request a refund for the duplicate charge",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-05-vocabulary81",
+          "imageAlt": "a refund",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B205-FS81.3",
           "audioText": "a refund. We can request a refund for the duplicate charge."
         },
         {
           "id": "B205-V81.4",
-          "label": "an advance payment",
-          "prompt": "",
+          "word": "an advance payment",
+          "translation": "",
           "example": "The advance payment was optional",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-05-vocabulary81",
+          "imageAlt": "an advance payment",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B205-FS81.4",
           "audioText": "an advance payment. The advance payment was optional."
         },
         {
           "id": "B205-V81.5",
-          "label": "an included service",
-          "prompt": "",
+          "word": "an included service",
+          "translation": "",
           "example": "Breakfast was an included service",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-05-vocabulary81",
+          "imageAlt": "an included service",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B205-FS81.5",
           "audioText": "an included service. Breakfast was an included service."
         }

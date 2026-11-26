@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Changes in life",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-09-vocabulary81",
-        "alt": "Six illustrated situations for Long time no see!",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A209-V81.0",
-          "label": "move to a new city",
-          "prompt": "",
+          "word": "move to a new city",
+          "translation": "",
           "example": "She moved to a new city in 2023",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-09-vocabulary81",
+          "imageAlt": "move to a new city",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A209-FS81.0",
           "audioText": "move to a new city. She moved to a new city in 2023."
         },
         {
           "id": "A209-V81.1",
-          "label": "start a job",
-          "prompt": "",
+          "word": "start a job",
+          "translation": "",
           "example": "He started a job last month",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-09-vocabulary81",
+          "imageAlt": "start a job",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A209-FS81.1",
           "audioText": "start a job. He started a job last month."
         },
         {
           "id": "A209-V81.2",
-          "label": "finish a course",
-          "prompt": "",
+          "word": "finish a course",
+          "translation": "",
           "example": "I’ve finished an online course",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-09-vocabulary81",
+          "imageAlt": "finish a course",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A209-FS81.2",
           "audioText": "finish a course. I’ve finished an online course."
         },
         {
           "id": "A209-V81.3",
-          "label": "get married",
-          "prompt": "",
+          "word": "get married",
+          "translation": "",
           "example": "They got married in June",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-09-vocabulary81",
+          "imageAlt": "get married",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A209-FS81.3",
           "audioText": "get married. They got married in June."
         },
         {
           "id": "A209-V81.4",
-          "label": "have a baby",
-          "prompt": "",
+          "word": "have a baby",
+          "translation": "",
           "example": "My friend had a baby last year",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-09-vocabulary81",
+          "imageAlt": "have a baby",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A209-FS81.4",
           "audioText": "have a baby. My friend had a baby last year."
         },
         {
           "id": "A209-V81.5",
-          "label": "take up a hobby",
-          "prompt": "",
+          "word": "take up a hobby",
+          "translation": "",
           "example": "I’ve taken up a new hobby",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-09-vocabulary81",
+          "imageAlt": "take up a hobby",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A209-FS81.5",
           "audioText": "take up a hobby. I’ve taken up a new hobby."
         }

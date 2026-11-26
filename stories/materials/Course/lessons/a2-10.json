@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Describing a place",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-10-vocabulary81",
-        "alt": "Six illustrated situations for It’s too far",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A210-V81.0",
-          "label": "cheap",
-          "prompt": "",
+          "word": "cheap",
+          "translation": "",
           "example": "This room is cheap for the area",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-10-vocabulary81",
+          "imageAlt": "cheap",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A210-FS81.0",
           "audioText": "cheap. This room is cheap for the area."
         },
         {
           "id": "A210-V81.1",
-          "label": "expensive",
-          "prompt": "",
+          "word": "expensive",
+          "translation": "",
           "example": "That apartment is more expensive",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-10-vocabulary81",
+          "imageAlt": "expensive",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A210-FS81.1",
           "audioText": "expensive. That apartment is more expensive."
         },
         {
           "id": "A210-V81.2",
-          "label": "spacious",
-          "prompt": "",
+          "word": "spacious",
+          "translation": "",
           "example": "The living room is spacious",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-10-vocabulary81",
+          "imageAlt": "spacious",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A210-FS81.2",
           "audioText": "spacious. The living room is spacious."
         },
         {
           "id": "A210-V81.3",
-          "label": "small",
-          "prompt": "",
+          "word": "small",
+          "translation": "",
           "example": "This bedroom is too small for two beds",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-10-vocabulary81",
+          "imageAlt": "small",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A210-FS81.3",
           "audioText": "small. This bedroom is too small for two beds."
         },
         {
           "id": "A210-V81.4",
-          "label": "quiet",
-          "prompt": "",
+          "word": "quiet",
+          "translation": "",
           "example": "We’d like a quiet room",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-10-vocabulary81",
+          "imageAlt": "quiet",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A210-FS81.4",
           "audioText": "quiet. We’d like a quiet room."
         },
         {
           "id": "A210-V81.5",
-          "label": "noisy",
-          "prompt": "",
+          "word": "noisy",
+          "translation": "",
           "example": "The street is noisy at night",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-10-vocabulary81",
+          "imageAlt": "noisy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A210-FS81.5",
           "audioText": "noisy. The street is noisy at night."
         }

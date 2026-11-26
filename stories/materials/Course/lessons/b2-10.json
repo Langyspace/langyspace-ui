@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "A complaint with a clear purpose",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-10-vocabulary81",
-        "alt": "Six illustrated situations for What I need is a quiet room",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B210-V81.0",
-          "label": "a disturbance",
-          "prompt": "",
+          "word": "a disturbance",
+          "translation": "",
           "example": "The lift caused a disturbance at night",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-10-vocabulary81",
+          "imageAlt": "a disturbance",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B210-FS81.0",
           "audioText": "a disturbance. The lift caused a disturbance at night."
         },
         {
           "id": "B210-V81.1",
-          "label": "a complaint",
-          "prompt": "",
+          "word": "a complaint",
+          "translation": "",
           "example": "The complaint explains the impact clearly",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-10-vocabulary81",
+          "imageAlt": "a complaint",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B210-FS81.1",
           "audioText": "a complaint. The complaint explains the impact clearly."
         },
         {
           "id": "B210-V81.2",
-          "label": "a room change",
-          "prompt": "",
+          "word": "a room change",
+          "translation": "",
           "example": "A room change might solve the noise problem",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-10-vocabulary81",
+          "imageAlt": "a room change",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B210-FS81.2",
           "audioText": "a room change. A room change might solve the noise problem."
         },
         {
           "id": "B210-V81.3",
-          "label": "a refund",
-          "prompt": "",
+          "word": "a refund",
+          "translation": "",
           "example": "A refund alone may not meet the immediate need",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-10-vocabulary81",
+          "imageAlt": "a refund",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B210-FS81.3",
           "audioText": "a refund. A refund alone may not meet the immediate need."
         },
         {
           "id": "B210-V81.4",
-          "label": "an inconvenience",
-          "prompt": "",
+          "word": "an inconvenience",
+          "translation": "",
           "example": "Moving rooms is an inconvenience too",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-10-vocabulary81",
+          "imageAlt": "an inconvenience",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B210-FS81.4",
           "audioText": "an inconvenience. Moving rooms is an inconvenience too."
         },
         {
           "id": "B210-V81.5",
-          "label": "a suitable alternative",
-          "prompt": "",
+          "word": "a suitable alternative",
+          "translation": "",
           "example": "We need a suitable alternative",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-10-vocabulary81",
+          "imageAlt": "a suitable alternative",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B210-FS81.5",
           "audioText": "a suitable alternative. We need a suitable alternative."
         }

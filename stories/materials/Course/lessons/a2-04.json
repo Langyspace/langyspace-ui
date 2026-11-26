@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Plans for the weekend",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-04-vocabulary81",
-        "alt": "Six illustrated situations for Are you doing anything on Saturday?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A204-V81.0",
-          "label": "a food festival",
-          "prompt": "",
+          "word": "a food festival",
+          "translation": "",
           "example": "There’s a food festival this weekend",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a food festival",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A204-FS81.0",
           "audioText": "a food festival. There’s a food festival this weekend."
         },
         {
           "id": "A204-V81.1",
-          "label": "a concert",
-          "prompt": "",
+          "word": "a concert",
+          "translation": "",
           "example": "We’re going to a concert on Friday",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a concert",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A204-FS81.1",
           "audioText": "a concert. We’re going to a concert on Friday."
         },
         {
           "id": "A204-V81.2",
-          "label": "a barbecue",
-          "prompt": "",
+          "word": "a barbecue",
+          "translation": "",
           "example": "Would you like to come to a barbecue?",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a barbecue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A204-FS81.2",
           "audioText": "a barbecue. Would you like to come to a barbecue?"
         },
         {
           "id": "A204-V81.3",
-          "label": "a birthday party",
-          "prompt": "",
+          "word": "a birthday party",
+          "translation": "",
           "example": "I’m going to a birthday party tonight",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a birthday party",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A204-FS81.3",
           "audioText": "a birthday party. I’m going to a birthday party tonight."
         },
         {
           "id": "A204-V81.4",
-          "label": "a yoga class",
-          "prompt": "",
+          "word": "a yoga class",
+          "translation": "",
           "example": "My yoga class is at two",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a yoga class",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A204-FS81.4",
           "audioText": "a yoga class. My yoga class is at two."
         },
         {
           "id": "A204-V81.5",
-          "label": "a picnic",
-          "prompt": "",
+          "word": "a picnic",
+          "translation": "",
           "example": "How about a picnic on Sunday?",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a picnic",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A204-FS81.5",
           "audioText": "a picnic. How about a picnic on Sunday?"
         }

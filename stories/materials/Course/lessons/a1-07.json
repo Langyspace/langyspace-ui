@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Airport essentials",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a1-07-vocabulary81",
-        "alt": "Six illustrated situations for At the airport",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A107-V81.0",
-          "label": "passport",
-          "prompt": "",
+          "word": "passport",
+          "translation": "",
           "example": "Keep your passport with you",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "passport",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A107-FS81.0",
           "audioText": "passport. Keep your passport with you."
         },
         {
           "id": "A107-V81.1",
-          "label": "suitcase",
-          "prompt": "",
+          "word": "suitcase",
+          "translation": "",
           "example": "This is my suitcase",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "suitcase",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A107-FS81.1",
           "audioText": "suitcase. This is my suitcase."
         },
         {
           "id": "A107-V81.2",
-          "label": "plane",
-          "prompt": "",
+          "word": "plane",
+          "translation": "",
           "example": "The plane is over there",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "plane",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A107-FS81.2",
           "audioText": "plane. The plane is over there."
         },
         {
           "id": "A107-V81.3",
-          "label": "taxi",
-          "prompt": "",
+          "word": "taxi",
+          "translation": "",
           "example": "I need a taxi to the hotel",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "taxi",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A107-FS81.3",
           "audioText": "taxi. I need a taxi to the hotel."
         },
         {
           "id": "A107-V81.4",
-          "label": "bus",
-          "prompt": "",
+          "word": "bus",
+          "translation": "",
           "example": "The bus is outside",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "bus",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A107-FS81.4",
           "audioText": "bus. The bus is outside."
         },
         {
           "id": "A107-V81.5",
-          "label": "gate",
-          "prompt": "",
+          "word": "gate",
+          "translation": "",
           "example": "Our gate is next to the café",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "gate",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A107-FS81.5",
           "audioText": "gate. Our gate is next to the café."
         }

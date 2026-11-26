@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Choices and consequences",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-03-vocabulary81",
-        "alt": "Six illustrated situations for If I hadn’t gone to Toronto",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B203-V81.0",
-          "label": "a turning point",
-          "prompt": "",
+          "word": "a turning point",
+          "translation": "",
           "example": "The course became a turning point",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a turning point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B203-FS81.0",
           "audioText": "a turning point. The course became a turning point."
         },
         {
           "id": "B203-V81.1",
-          "label": "take a chance",
-          "prompt": "",
+          "word": "take a chance",
+          "translation": "",
           "example": "They decided to take a chance on it",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "take a chance",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B203-FS81.1",
           "audioText": "take a chance. They decided to take a chance on it."
         },
         {
           "id": "B203-V81.2",
-          "label": "miss an opportunity",
-          "prompt": "",
+          "word": "miss an opportunity",
+          "translation": "",
           "example": "Missing one opportunity doesn’t close every path",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "miss an opportunity",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B203-FS81.2",
           "audioText": "miss an opportunity. Missing one opportunity doesn’t close every path."
         },
         {
           "id": "B203-V81.3",
-          "label": "a consequence",
-          "prompt": "",
+          "word": "a consequence",
+          "translation": "",
           "example": "The collaboration was an unexpected consequence",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a consequence",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B203-FS81.3",
           "audioText": "a consequence. The collaboration was an unexpected consequence."
         },
         {
           "id": "B203-V81.4",
-          "label": "a setback",
-          "prompt": "",
+          "word": "a setback",
+          "translation": "",
           "example": "A setback may change the route",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a setback",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B203-FS81.4",
           "audioText": "a setback. A setback may change the route."
         },
         {
           "id": "B203-V81.5",
-          "label": "a fresh start",
-          "prompt": "",
+          "word": "a fresh start",
+          "translation": "",
           "example": "The move offered a fresh start",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a fresh start",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B203-FS81.5",
           "audioText": "a fresh start. The move offered a fresh start."
         }

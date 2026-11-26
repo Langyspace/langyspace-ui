@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Clues and explanations",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-04-vocabulary81",
-        "alt": "Six illustrated situations for Someone must have been here",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B204-V81.0",
-          "label": "a clue",
-          "prompt": "",
+          "word": "a clue",
+          "translation": "",
           "example": "A clue is not always proof",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a clue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B204-FS81.0",
           "audioText": "a clue. A clue is not always proof."
         },
         {
           "id": "B204-V81.1",
-          "label": "a footprint",
-          "prompt": "",
+          "word": "a footprint",
+          "translation": "",
           "example": "A footprint may support more than one story",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a footprint",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B204-FS81.1",
           "audioText": "a footprint. A footprint may support more than one story."
         },
         {
           "id": "B204-V81.2",
-          "label": "a receipt",
-          "prompt": "",
+          "word": "a receipt",
+          "translation": "",
           "example": "We don’t know who left the receipt",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a receipt",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B204-FS81.2",
           "audioText": "a receipt. We don’t know who left the receipt."
         },
         {
           "id": "B204-V81.3",
-          "label": "a spare key",
-          "prompt": "",
+          "word": "a spare key",
+          "translation": "",
           "example": "The neighbour had a spare key",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a spare key",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B204-FS81.3",
           "audioText": "a spare key. The neighbour had a spare key."
         },
         {
           "id": "B204-V81.4",
-          "label": "a security camera",
-          "prompt": "",
+          "word": "a security camera",
+          "translation": "",
           "example": "Check the security camera only if needed",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a security camera",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B204-FS81.4",
           "audioText": "a security camera. Check the security camera only if needed."
         },
         {
           "id": "B204-V81.5",
-          "label": "an explanation",
-          "prompt": "",
+          "word": "an explanation",
+          "translation": "",
           "example": "An explanation should fit the evidence",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "an explanation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B204-FS81.5",
           "audioText": "an explanation. An explanation should fit the evidence."
         }

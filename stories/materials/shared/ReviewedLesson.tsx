@@ -215,6 +215,8 @@ function PageContent({
         revealLabel="Reveal and listen"
         imageVariant={page.isolated ? 'isolated' : 'scene'}
         imageFit="contain"
+        imageAspectRatio={page.imageAspectRatio}
+        columns={page.columns}
         surface={page.surface ?? (page.isolated ? 'plain' : 'card')}
         revealOnHover={false}
         revealVariant="tooltip"
@@ -643,7 +645,7 @@ export function ReviewedLesson({
                               page.image.aspectRatio
                             ? { mediaAspectRatio: page.image.aspectRatio }
                             : page.kind === 'vocabulary' && page.alignHeading
-                              ? { vocabularyColumns: 3 }
+                              ? { vocabularyColumns: page.columns ?? 3 }
                               : page.kind === 'vocabulary' ||
                                   page.kind === 'roleplay' ||
                                   page.kind === 'activity' ||

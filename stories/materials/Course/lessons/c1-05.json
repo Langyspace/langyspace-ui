@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "A story with a turning point",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-05-vocabulary81",
-        "alt": "Six illustrated situations for Little did I know…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C105-V81.0",
-          "label": "at first",
-          "prompt": "",
+          "word": "at first",
+          "translation": "",
           "example": "At first, I assumed it had disappeared on the train",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "at first",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C105-FS81.0",
           "audioText": "at first. At first, I assumed it had disappeared on the train."
         },
         {
           "id": "C105-V81.1",
-          "label": "to my surprise",
-          "prompt": "",
+          "word": "to my surprise",
+          "translation": "",
           "example": "To my surprise, the photograph told another story",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "to my surprise",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C105-FS81.1",
           "audioText": "to my surprise. To my surprise, the photograph told another story."
         },
         {
           "id": "C105-V81.2",
-          "label": "as it turned out",
-          "prompt": "",
+          "word": "as it turned out",
+          "translation": "",
           "example": "As it turned out, it was still at the café",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "as it turned out",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C105-FS81.2",
           "audioText": "as it turned out. As it turned out, it was still at the café."
         },
         {
           "id": "C105-V81.3",
-          "label": "a turning point",
-          "prompt": "",
+          "word": "a turning point",
+          "translation": "",
           "example": "That earlier photograph was the turning point",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "a turning point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C105-FS81.3",
           "audioText": "a turning point. That earlier photograph was the turning point."
         },
         {
           "id": "C105-V81.4",
-          "label": "looking back",
-          "prompt": "",
+          "word": "looking back",
+          "translation": "",
           "example": "Looking back, I’d confused noticing with losing",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "looking back",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C105-FS81.4",
           "audioText": "looking back. Looking back, I’d confused noticing with losing."
         },
         {
           "id": "C105-V81.5",
-          "label": "the last thing I expected",
-          "prompt": "",
+          "word": "the last thing I expected",
+          "translation": "",
           "example": "Finding it on that chair was the last thing I expected",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "the last thing I expected",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C105-FS81.5",
           "audioText": "the last thing I expected. Finding it on that chair was the last thing I expected."
         }

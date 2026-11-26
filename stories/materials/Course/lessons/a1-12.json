@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Weather and travel",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a1-12-vocabulary81",
-        "alt": "Six illustrated situations for A day trip",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A112-V81.0",
-          "label": "sunny",
-          "prompt": "",
+          "word": "sunny",
+          "translation": "",
           "example": "It’s sunny at the park",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "sunny",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A112-FS81.0",
           "audioText": "sunny. It’s sunny at the park."
         },
         {
           "id": "A112-V81.1",
-          "label": "rainy",
-          "prompt": "",
+          "word": "rainy",
+          "translation": "",
           "example": "It’s rainy today",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "rainy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A112-FS81.1",
           "audioText": "rainy. It’s rainy today."
         },
         {
           "id": "A112-V81.2",
-          "label": "cloudy",
-          "prompt": "",
+          "word": "cloudy",
+          "translation": "",
           "example": "It’s cloudy this morning",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "cloudy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A112-FS81.2",
           "audioText": "cloudy. It’s cloudy this morning."
         },
         {
           "id": "A112-V81.3",
-          "label": "windy",
-          "prompt": "",
+          "word": "windy",
+          "translation": "",
           "example": "It’s windy outside",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "windy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A112-FS81.3",
           "audioText": "windy. It’s windy outside."
         },
         {
           "id": "A112-V81.4",
-          "label": "train",
-          "prompt": "",
+          "word": "train",
+          "translation": "",
           "example": "We can take the train",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "train",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A112-FS81.4",
           "audioText": "train. We can take the train."
         },
         {
           "id": "A112-V81.5",
-          "label": "ticket",
-          "prompt": "",
+          "word": "ticket",
+          "translation": "",
           "example": "Bring your ticket",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "ticket",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A112-FS81.5",
           "audioText": "ticket. Bring your ticket."
         }

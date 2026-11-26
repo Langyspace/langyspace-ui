@@ -33,12 +33,20 @@ function PreparedLesson({
           }
         : page
     const media =
-      'image' in identified && identified.image
+      identified.kind === 'vocabulary'
         ? {
             ...identified,
-            image: { ...identified.image, src: image(identified.image.src) },
+            items: identified.items.map((item) => ({
+              ...item,
+              imageUrl: item.imageUrl ? image(item.imageUrl) : undefined,
+            })),
           }
-        : identified
+        : 'image' in identified && identified.image
+          ? {
+              ...identified,
+              image: { ...identified.image, src: image(identified.image.src) },
+            }
+          : identified
     return activity?.type === 'map' && !activity.questions.length
       ? { ...media, mediaAspectRatio: 1.5 }
       : media

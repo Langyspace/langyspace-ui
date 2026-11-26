@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Food and drinks",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a1-10-vocabulary81",
-        "alt": "Six illustrated situations for At the café",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A110-V81.0",
-          "label": "coffee",
-          "prompt": "",
+          "word": "coffee",
+          "translation": "",
           "example": "I’d like a coffee, please",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a1-10-vocabulary81",
+          "imageAlt": "coffee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A110-FS81.0",
           "audioText": "coffee. I’d like a coffee, please."
         },
         {
           "id": "A110-V81.1",
-          "label": "tea",
-          "prompt": "",
+          "word": "tea",
+          "translation": "",
           "example": "Can I have some tea?",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a1-10-vocabulary81",
+          "imageAlt": "tea",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A110-FS81.1",
           "audioText": "tea. Can I have some tea?"
         },
         {
           "id": "A110-V81.2",
-          "label": "water",
-          "prompt": "",
+          "word": "water",
+          "translation": "",
           "example": "Some water, please",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a1-10-vocabulary81",
+          "imageAlt": "water",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A110-FS81.2",
           "audioText": "water. Some water, please."
         },
         {
           "id": "A110-V81.3",
-          "label": "juice",
-          "prompt": "",
+          "word": "juice",
+          "translation": "",
           "example": "I’d like an orange juice",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a1-10-vocabulary81",
+          "imageAlt": "juice",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A110-FS81.3",
           "audioText": "juice. I’d like an orange juice."
         },
         {
           "id": "A110-V81.4",
-          "label": "sandwich",
-          "prompt": "",
+          "word": "sandwich",
+          "translation": "",
           "example": "This sandwich is for my friend",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a1-10-vocabulary81",
+          "imageAlt": "sandwich",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A110-FS81.4",
           "audioText": "sandwich. This sandwich is for my friend."
         },
         {
           "id": "A110-V81.5",
-          "label": "cake",
-          "prompt": "",
+          "word": "cake",
+          "translation": "",
           "example": "Can I have a piece of cake?",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a1-10-vocabulary81",
+          "imageAlt": "cake",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A110-FS81.5",
           "audioText": "cake. Can I have a piece of cake?"
         }

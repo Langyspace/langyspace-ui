@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Clothes and accessories",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a1-11-vocabulary81",
-        "alt": "Six illustrated situations for This one, please",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A111-V81.0",
-          "label": "T-shirt",
-          "prompt": "",
+          "word": "T-shirt",
+          "translation": "",
           "example": "This T-shirt is green",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a1-11-vocabulary81",
+          "imageAlt": "T-shirt",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A111-FS81.0",
           "audioText": "T-shirt. This T-shirt is green."
         },
         {
           "id": "A111-V81.1",
-          "label": "shoes",
-          "prompt": "",
+          "word": "shoes",
+          "translation": "",
           "example": "These shoes are small",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a1-11-vocabulary81",
+          "imageAlt": "shoes",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A111-FS81.1",
           "audioText": "shoes. These shoes are small."
         },
         {
           "id": "A111-V81.2",
-          "label": "jacket",
-          "prompt": "",
+          "word": "jacket",
+          "translation": "",
           "example": "That jacket is blue",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a1-11-vocabulary81",
+          "imageAlt": "jacket",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A111-FS81.2",
           "audioText": "jacket. That jacket is blue."
         },
         {
           "id": "A111-V81.3",
-          "label": "bag",
-          "prompt": "",
+          "word": "bag",
+          "translation": "",
           "example": "How much is this bag?",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a1-11-vocabulary81",
+          "imageAlt": "bag",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A111-FS81.3",
           "audioText": "bag. How much is this bag?"
         },
         {
           "id": "A111-V81.4",
-          "label": "glasses",
-          "prompt": "",
+          "word": "glasses",
+          "translation": "",
           "example": "I like those glasses",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a1-11-vocabulary81",
+          "imageAlt": "glasses",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A111-FS81.4",
           "audioText": "glasses. I like those glasses."
         },
         {
           "id": "A111-V81.5",
-          "label": "dress",
-          "prompt": "",
+          "word": "dress",
+          "translation": "",
           "example": "Can I see this dress?",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a1-11-vocabulary81",
+          "imageAlt": "dress",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A111-FS81.5",
           "audioText": "dress. Can I see this dress?"
         }

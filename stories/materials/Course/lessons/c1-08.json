@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Concessions and counterproposals",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-08-vocabulary81",
-        "alt": "Six illustrated situations for Much as I’d like to…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C108-V81.0",
-          "label": "a non-negotiable",
-          "prompt": "",
+          "word": "a non-negotiable",
+          "translation": "",
           "example": "Seven days’ notice is a non-negotiable for this person",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a non-negotiable",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C108-FS81.0",
           "audioText": "a non-negotiable. Seven days’ notice is a non-negotiable for this person."
         },
         {
           "id": "C108-V81.1",
-          "label": "a concession",
-          "prompt": "",
+          "word": "a concession",
+          "translation": "",
           "example": "Reducing frequency is one concession",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a concession",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C108-FS81.1",
           "audioText": "a concession. Reducing frequency is one concession."
         },
         {
           "id": "C108-V81.2",
-          "label": "a counterproposal",
-          "prompt": "",
+          "word": "a counterproposal",
+          "translation": "",
           "example": "The counterproposal keeps regular contact",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a counterproposal",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C108-FS81.2",
           "audioText": "a counterproposal. The counterproposal keeps regular contact."
         },
         {
           "id": "C108-V81.3",
-          "label": "a feasible option",
-          "prompt": "",
+          "word": "a feasible option",
+          "translation": "",
           "example": "We need a feasible option, not a vague agreement",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a feasible option",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C108-FS81.3",
           "audioText": "a feasible option. We need a feasible option, not a vague agreement."
         },
         {
           "id": "C108-V81.4",
-          "label": "a shared interest",
-          "prompt": "",
+          "word": "a shared interest",
+          "translation": "",
           "example": "Useful contact is the shared interest",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a shared interest",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C108-FS81.4",
           "audioText": "a shared interest. Useful contact is the shared interest."
         },
         {
           "id": "C108-V81.5",
-          "label": "a sticking point",
-          "prompt": "",
+          "word": "a sticking point",
+          "translation": "",
           "example": "Notice remains the sticking point",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a sticking point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C108-FS81.5",
           "audioText": "a sticking point. Notice remains the sticking point."
         }

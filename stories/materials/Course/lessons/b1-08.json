@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for i’m getting used to the cold",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-08-vocabulary81",
-        "alt": "Six illustrated situations for I’m getting used to the cold",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B108-V81.0",
-          "label": "settle in",
-          "prompt": "",
+          "word": "settle in",
+          "translation": "",
           "example": "It takes time to settle in",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "settle in",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B108-FS81.0",
           "audioText": "settle in. It takes time to settle in."
         },
         {
           "id": "B108-V81.1",
-          "label": "commute",
-          "prompt": "",
+          "word": "commute",
+          "translation": "",
           "example": "My commute is easier now",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "commute",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B108-FS81.1",
           "audioText": "commute. My commute is easier now."
         },
         {
           "id": "B108-V81.2",
-          "label": "dress in layers",
-          "prompt": "",
+          "word": "dress in layers",
+          "translation": "",
           "example": "I’m getting used to dressing in layers",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "dress in layers",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B108-FS81.2",
           "audioText": "dress in layers. I’m getting used to dressing in layers."
         },
         {
           "id": "B108-V81.3",
-          "label": "feel homesick",
-          "prompt": "",
+          "word": "feel homesick",
+          "translation": "",
           "example": "It’s normal to feel homesick sometimes",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "feel homesick",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B108-FS81.3",
           "audioText": "feel homesick. It’s normal to feel homesick sometimes."
         },
         {
           "id": "B108-V81.4",
-          "label": "make friends",
-          "prompt": "",
+          "word": "make friends",
+          "translation": "",
           "example": "The weekly group helped me make friends",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "make friends",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B108-FS81.4",
           "audioText": "make friends. The weekly group helped me make friends."
         },
         {
           "id": "B108-V81.5",
-          "label": "adjust your routine",
-          "prompt": "",
+          "word": "adjust your routine",
+          "translation": "",
           "example": "You may need to adjust your routine",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "adjust your routine",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B108-FS81.5",
           "audioText": "adjust your routine. You may need to adjust your routine."
         }

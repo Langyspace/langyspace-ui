@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for there used to be a cinema here",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-02-vocabulary81",
-        "alt": "Six illustrated situations for There used to be a cinema here",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B102-V81.0",
-          "label": "a cinema",
-          "prompt": "",
+          "word": "a cinema",
+          "translation": "",
           "example": "There used to be a cinema on this corner",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a cinema",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B102-FS81.0",
           "audioText": "a cinema. There used to be a cinema on this corner."
         },
         {
           "id": "B102-V81.1",
-          "label": "a playground",
-          "prompt": "",
+          "word": "a playground",
+          "translation": "",
           "example": "The playground still has its old swings",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a playground",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B102-FS81.1",
           "audioText": "a playground. The playground still has its old swings."
         },
         {
           "id": "B102-V81.2",
-          "label": "a corner shop",
-          "prompt": "",
+          "word": "a corner shop",
+          "translation": "",
           "example": "I used to buy bread at the corner shop",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a corner shop",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B102-FS81.2",
           "audioText": "a corner shop. I used to buy bread at the corner shop."
         },
         {
           "id": "B102-V81.3",
-          "label": "a square",
-          "prompt": "",
+          "word": "a square",
+          "translation": "",
           "example": "The factory was beside the square",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a square",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B102-FS81.3",
           "audioText": "a square. The factory was beside the square."
         },
         {
           "id": "B102-V81.4",
-          "label": "a factory",
-          "prompt": "",
+          "word": "a factory",
+          "translation": "",
           "example": "My neighbour used to work at the factory",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a factory",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B102-FS81.4",
           "audioText": "a factory. My neighbour used to work at the factory."
         },
         {
           "id": "B102-V81.5",
-          "label": "an apartment block",
-          "prompt": "",
+          "word": "an apartment block",
+          "translation": "",
           "example": "There’s an apartment block on the old site now",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "an apartment block",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B102-FS81.5",
           "audioText": "an apartment block. There’s an apartment block on the old site now."
         }

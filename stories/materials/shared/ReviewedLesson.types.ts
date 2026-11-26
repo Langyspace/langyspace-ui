@@ -56,6 +56,8 @@ export type ReviewedPage = PageBase &
         surface?: 'plain' | 'card'
         isolated?: boolean
         alignHeading?: boolean
+        imageAspectRatio?: number
+        columns?: 2 | 3 | 4
       }
     | {
         kind: 'words' | 'calendar'

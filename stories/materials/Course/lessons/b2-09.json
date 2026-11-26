@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Before leaving home",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-09-vocabulary81",
-        "alt": "Six illustrated situations for I don’t remember locking the door",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B209-V81.0",
-          "label": "lock the door",
-          "prompt": "",
+          "word": "lock the door",
+          "translation": "",
           "example": "I don’t remember locking the door",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-09-vocabulary81",
+          "imageAlt": "lock the door",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B209-FS81.0",
           "audioText": "lock the door. I don’t remember locking the door."
         },
         {
           "id": "B209-V81.1",
-          "label": "turn off the stove",
-          "prompt": "",
+          "word": "turn off the stove",
+          "translation": "",
           "example": "I remember turning off the stove",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-09-vocabulary81",
+          "imageAlt": "turn off the stove",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B209-FS81.1",
           "audioText": "turn off the stove. I remember turning off the stove."
         },
         {
           "id": "B209-V81.2",
-          "label": "unplug the iron",
-          "prompt": "",
+          "word": "unplug the iron",
+          "translation": "",
           "example": "Did you remember to unplug the iron?",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-09-vocabulary81",
+          "imageAlt": "unplug the iron",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B209-FS81.2",
           "audioText": "unplug the iron. Did you remember to unplug the iron?"
         },
         {
           "id": "B209-V81.3",
-          "label": "close the window",
-          "prompt": "",
+          "word": "close the window",
+          "translation": "",
           "example": "Please close the window if it’s open",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-09-vocabulary81",
+          "imageAlt": "close the window",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B209-FS81.3",
           "audioText": "close the window. Please close the window if it’s open."
         },
         {
           "id": "B209-V81.4",
-          "label": "water the plants",
-          "prompt": "",
+          "word": "water the plants",
+          "translation": "",
           "example": "Wait before you water the plants",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-09-vocabulary81",
+          "imageAlt": "water the plants",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B209-FS81.4",
           "audioText": "water the plants. Wait before you water the plants."
         },
         {
           "id": "B209-V81.5",
-          "label": "leave a spare key",
-          "prompt": "",
+          "word": "leave a spare key",
+          "translation": "",
           "example": "I left a spare key with a trusted friend",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-09-vocabulary81",
+          "imageAlt": "leave a spare key",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B209-FS81.5",
           "audioText": "leave a spare key. I left a spare key with a trusted friend."
         }

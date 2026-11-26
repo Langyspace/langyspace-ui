@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Reformulating without distorting",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-11-vocabulary81",
-        "alt": "Six illustrated situations for To put it another way…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C111-V81.0",
-          "label": "in other words",
-          "prompt": "",
+          "word": "in other words",
+          "translation": "",
           "example": "In other words, acknowledgement is not the final answer",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "in other words",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C111-FS81.0",
           "audioText": "in other words. In other words, acknowledgement is not the final answer."
         },
         {
           "id": "C111-V81.1",
-          "label": "what I mean is",
-          "prompt": "",
+          "word": "what I mean is",
+          "translation": "",
           "example": "What I mean is a realistic response time",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "what I mean is",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C111-FS81.1",
           "audioText": "what I mean is. What I mean is a realistic response time."
         },
         {
           "id": "C111-V81.2",
-          "label": "to put it another way",
-          "prompt": "",
+          "word": "to put it another way",
+          "translation": "",
           "example": "To put it another way, imagine a short receipt message",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "to put it another way",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C111-FS81.2",
           "audioText": "to put it another way. To put it another way, imagine a short receipt message."
         },
         {
           "id": "C111-V81.3",
-          "label": "a misunderstanding",
-          "prompt": "",
+          "word": "a misunderstanding",
+          "translation": "",
           "example": "The misunderstanding concerns the meaning of quick",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "a misunderstanding",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C111-FS81.3",
           "audioText": "a misunderstanding. The misunderstanding concerns the meaning of quick."
         },
         {
           "id": "C111-V81.4",
-          "label": "a clarification",
-          "prompt": "",
+          "word": "a clarification",
+          "translation": "",
           "example": "A clarification should make the action concrete",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "a clarification",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C111-FS81.4",
           "audioText": "a clarification. A clarification should make the action concrete."
         },
         {
           "id": "C111-V81.5",
-          "label": "common ground",
-          "prompt": "",
+          "word": "common ground",
+          "translation": "",
           "example": "Accuracy and predictability are common ground",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "common ground",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C111-FS81.5",
           "audioText": "common ground. Accuracy and predictability are common ground."
         }

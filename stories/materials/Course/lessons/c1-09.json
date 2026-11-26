@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Trends, projections and scenarios",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-09-vocabulary81",
-        "alt": "Six illustrated situations for It’s bound to get worse",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C109-V81.0",
-          "label": "a trend",
-          "prompt": "",
+          "word": "a trend",
+          "translation": "",
           "example": "Three observations suggest a trend, not a certainty",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a trend",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C109-FS81.0",
           "audioText": "a trend. Three observations suggest a trend, not a certainty."
         },
         {
           "id": "C109-V81.1",
-          "label": "a projection",
-          "prompt": "",
+          "word": "a projection",
+          "translation": "",
           "example": "The projection depends on stated assumptions",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a projection",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C109-FS81.1",
           "audioText": "a projection. The projection depends on stated assumptions."
         },
         {
           "id": "C109-V81.2",
-          "label": "a likely outcome",
-          "prompt": "",
+          "word": "a likely outcome",
+          "translation": "",
           "example": "A likely outcome is not a guaranteed one",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a likely outcome",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C109-FS81.2",
           "audioText": "a likely outcome. A likely outcome is not a guaranteed one."
         },
         {
           "id": "C109-V81.3",
-          "label": "a worst-case scenario",
-          "prompt": "",
+          "word": "a worst-case scenario",
+          "translation": "",
           "example": "A worst-case scenario should be labelled as a scenario",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a worst-case scenario",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C109-FS81.3",
           "audioText": "a worst-case scenario. A worst-case scenario should be labelled as a scenario."
         },
         {
           "id": "C109-V81.4",
-          "label": "an early sign",
-          "prompt": "",
+          "word": "an early sign",
+          "translation": "",
           "example": "This could be an early sign of a gap",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "an early sign",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C109-FS81.4",
           "audioText": "an early sign. This could be an early sign of a gap."
         },
         {
           "id": "C109-V81.5",
-          "label": "a contributing factor",
-          "prompt": "",
+          "word": "a contributing factor",
+          "translation": "",
           "example": "Service timing is a contributing factor",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a contributing factor",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C109-FS81.5",
           "audioText": "a contributing factor. Service timing is a contributing factor."
         }

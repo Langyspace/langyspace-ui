@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Choices with a real trade-off",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-06-vocabulary81",
-        "alt": "Six illustrated situations for The more I think about it…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C106-V81.0",
-          "label": "a trade-off",
-          "prompt": "",
+          "word": "a trade-off",
+          "translation": "",
           "example": "This is a trade-off between cost and flexibility",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a trade-off",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C106-FS81.0",
           "audioText": "a trade-off. This is a trade-off between cost and flexibility."
         },
         {
           "id": "C106-V81.1",
-          "label": "a priority",
-          "prompt": "",
+          "word": "a priority",
+          "translation": "",
           "example": "Attendance may become the main priority",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a priority",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C106-FS81.1",
           "audioText": "a priority. Attendance may become the main priority."
         },
         {
           "id": "C106-V81.2",
-          "label": "a long-term benefit",
-          "prompt": "",
+          "word": "a long-term benefit",
+          "translation": "",
           "example": "The long-term benefit depends on applying the skills",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a long-term benefit",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C106-FS81.2",
           "audioText": "a long-term benefit. The long-term benefit depends on applying the skills."
         },
         {
           "id": "C106-V81.3",
-          "label": "a short-term cost",
-          "prompt": "",
+          "word": "a short-term cost",
+          "translation": "",
           "example": "The higher fee is a short-term cost",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a short-term cost",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C106-FS81.3",
           "audioText": "a short-term cost. The higher fee is a short-term cost."
         },
         {
           "id": "C106-V81.4",
-          "label": "a deal-breaker",
-          "prompt": "",
+          "word": "a deal-breaker",
+          "translation": "",
           "example": "A fixed timetable conflict could be a deal-breaker",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a deal-breaker",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C106-FS81.4",
           "audioText": "a deal-breaker. A fixed timetable conflict could be a deal-breaker."
         },
         {
           "id": "C106-V81.5",
-          "label": "reconsider a decision",
-          "prompt": "",
+          "word": "reconsider a decision",
+          "translation": "",
           "example": "We should reconsider the decision when the conditions change",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "reconsider a decision",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C106-FS81.5",
           "audioText": "reconsider a decision. We should reconsider the decision when the conditions change."
         }

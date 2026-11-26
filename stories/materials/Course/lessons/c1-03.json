@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Claims, sources and verification",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-03-vocabulary81",
-        "alt": "Six illustrated situations for The company is said to be…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C103-V81.0",
-          "label": "reportedly",
-          "prompt": "",
+          "word": "reportedly",
+          "translation": "",
           "example": "Reportedly does not identify a source by itself",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "reportedly",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C103-FS81.0",
           "audioText": "reportedly. Reportedly does not identify a source by itself."
         },
         {
           "id": "C103-V81.1",
-          "label": "an allegation",
-          "prompt": "",
+          "word": "an allegation",
+          "translation": "",
           "example": "An allegation should not become a fact in the summary",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "an allegation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C103-FS81.1",
           "audioText": "an allegation. An allegation should not become a fact in the summary."
         },
         {
           "id": "C103-V81.2",
-          "label": "a reliable source",
-          "prompt": "",
+          "word": "a reliable source",
+          "translation": "",
           "example": "Check whether this is a reliable source for the particular claim",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "a reliable source",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C103-FS81.2",
           "audioText": "a reliable source. Check whether this is a reliable source for the particular claim."
         },
         {
           "id": "C103-V81.3",
-          "label": "an unconfirmed report",
-          "prompt": "",
+          "word": "an unconfirmed report",
+          "translation": "",
           "example": "This is still an unconfirmed report",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "an unconfirmed report",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C103-FS81.3",
           "audioText": "an unconfirmed report. This is still an unconfirmed report."
         },
         {
           "id": "C103-V81.4",
-          "label": "an official statement",
-          "prompt": "",
+          "word": "an official statement",
+          "translation": "",
           "example": "The official statement has a narrower scope",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "an official statement",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C103-FS81.4",
           "audioText": "an official statement. The official statement has a narrower scope."
         },
         {
           "id": "C103-V81.5",
-          "label": "verify a claim",
-          "prompt": "",
+          "word": "verify a claim",
+          "translation": "",
           "example": "We need to verify the claim before sharing it",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "verify a claim",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C103-FS81.5",
           "audioText": "verify a claim. We need to verify the claim before sharing it."
         }

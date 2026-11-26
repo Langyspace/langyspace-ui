@@ -1,8 +1,11 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 import type { VocabularyControlsProps } from './VocabularyControls.types'
+import type { PictureRegion } from '../../internal/PictureImage.types'
 export interface VocabularyItem {
   id: string
   imageUrl?: string
+  /** One independent illustration in an unchanged atlas; the whole card stays clickable. */
+  imageRegion?: PictureRegion
   /** Noninteractive native visual for concepts represented by an app or diagram. */
   visual?: ReactNode
   /** Native letters/numerals, with the same reveal and playback contract as images. */

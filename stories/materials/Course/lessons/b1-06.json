@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for if i took the job",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-06-vocabulary81",
-        "alt": "Six illustrated situations for If I took the job",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B106-V81.0",
-          "label": "a job offer",
-          "prompt": "",
+          "word": "a job offer",
+          "translation": "",
           "example": "I’d compare both job offers first",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-06-vocabulary81",
+          "imageAlt": "a job offer",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B106-FS81.0",
           "audioText": "a job offer. I’d compare both job offers first."
         },
         {
           "id": "B106-V81.1",
-          "label": "a salary",
-          "prompt": "",
+          "word": "a salary",
+          "translation": "",
           "example": "The salary is the same in both offers",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-06-vocabulary81",
+          "imageAlt": "a salary",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B106-FS81.1",
           "audioText": "a salary. The salary is the same in both offers."
         },
         {
           "id": "B106-V81.2",
-          "label": "a commute",
-          "prompt": "",
+          "word": "a commute",
+          "translation": "",
           "example": "A longer commute would affect my routine",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-06-vocabulary81",
+          "imageAlt": "a commute",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B106-FS81.2",
           "audioText": "a commute. A longer commute would affect my routine."
         },
         {
           "id": "B106-V81.3",
-          "label": "working hours",
-          "prompt": "",
+          "word": "working hours",
+          "translation": "",
           "example": "I’d ask about flexible working hours",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-06-vocabulary81",
+          "imageAlt": "working hours",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B106-FS81.3",
           "audioText": "working hours. I’d ask about flexible working hours."
         },
         {
           "id": "B106-V81.4",
-          "label": "relocate",
-          "prompt": "",
+          "word": "relocate",
+          "translation": "",
           "example": "Would you relocate for the job?",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-06-vocabulary81",
+          "imageAlt": "relocate",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B106-FS81.4",
           "audioText": "relocate. Would you relocate for the job?"
         },
         {
           "id": "B106-V81.5",
-          "label": "a career opportunity",
-          "prompt": "",
+          "word": "a career opportunity",
+          "translation": "",
           "example": "It could be a useful career opportunity",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-06-vocabulary81",
+          "imageAlt": "a career opportunity",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B106-FS81.5",
           "audioText": "a career opportunity. It could be a useful career opportunity."
         }

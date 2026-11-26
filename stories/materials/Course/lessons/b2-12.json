@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "A rule with a reason and exceptions",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-12-vocabulary81",
-        "alt": "Six illustrated situations for Should phones be banned at school?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B212-V81.0",
-          "label": "a distraction",
-          "prompt": "",
+          "word": "a distraction",
+          "translation": "",
           "example": "Social notifications are a distraction in this case",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "a distraction",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B212-FS81.0",
           "audioText": "a distraction. Social notifications are a distraction in this case."
         },
         {
           "id": "B212-V81.1",
-          "label": "an exception",
-          "prompt": "",
+          "word": "an exception",
+          "translation": "",
           "example": "An exception needs a workable process",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "an exception",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B212-FS81.1",
           "audioText": "an exception. An exception needs a workable process."
         },
         {
           "id": "B212-V81.2",
-          "label": "accessibility",
-          "prompt": "",
+          "word": "accessibility",
+          "translation": "",
           "example": "Accessibility use supports participation",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "accessibility",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B212-FS81.2",
           "audioText": "accessibility. Accessibility use supports participation."
         },
         {
           "id": "B212-V81.3",
-          "label": "screen time",
-          "prompt": "",
+          "word": "screen time",
+          "translation": "",
           "example": "Screen time alone doesn’t explain the purpose of use",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "screen time",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B212-FS81.3",
           "audioText": "screen time. Screen time alone doesn’t explain the purpose of use."
         },
         {
           "id": "B212-V81.4",
-          "label": "a restriction",
-          "prompt": "",
+          "word": "a restriction",
+          "translation": "",
           "example": "The restriction should target the stated problem",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "a restriction",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B212-FS81.4",
           "audioText": "a restriction. The restriction should target the stated problem."
         },
         {
           "id": "B212-V81.5",
-          "label": "a shared responsibility",
-          "prompt": "",
+          "word": "a shared responsibility",
+          "translation": "",
           "example": "Clear expectations are a shared responsibility",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "a shared responsibility",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B212-FS81.5",
           "audioText": "a shared responsibility. Clear expectations are a shared responsibility."
         }

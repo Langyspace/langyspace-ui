@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Organising a get-together",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-12-vocabulary81",
-        "alt": "Six illustrated situations for How about Friday?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A212-V81.0",
-          "label": "book a table",
-          "prompt": "",
+          "word": "book a table",
+          "translation": "",
           "example": "I’ll book a table for four",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-12-vocabulary81",
+          "imageAlt": "book a table",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A212-FS81.0",
           "audioText": "book a table. I’ll book a table for four."
         },
         {
           "id": "A212-V81.1",
-          "label": "send an invitation",
-          "prompt": "",
+          "word": "send an invitation",
+          "translation": "",
           "example": "Can you send the invitation?",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-12-vocabulary81",
+          "imageAlt": "send an invitation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A212-FS81.1",
           "audioText": "send an invitation. Can you send the invitation?"
         },
         {
           "id": "A212-V81.2",
-          "label": "bring a gift",
-          "prompt": "",
+          "word": "bring a gift",
+          "translation": "",
           "example": "Would you like to bring a gift?",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-12-vocabulary81",
+          "imageAlt": "bring a gift",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A212-FS81.2",
           "audioText": "bring a gift. Would you like to bring a gift?"
         },
         {
           "id": "A212-V81.3",
-          "label": "split the bill",
-          "prompt": "",
+          "word": "split the bill",
+          "translation": "",
           "example": "Let’s split the bill",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-12-vocabulary81",
+          "imageAlt": "split the bill",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A212-FS81.3",
           "audioText": "split the bill. Let’s split the bill."
         },
         {
           "id": "A212-V81.4",
-          "label": "cancel a booking",
-          "prompt": "",
+          "word": "cancel a booking",
+          "translation": "",
           "example": "We need to cancel the booking",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-12-vocabulary81",
+          "imageAlt": "cancel a booking",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A212-FS81.4",
           "audioText": "cancel a booking. We need to cancel the booking."
         },
         {
           "id": "A212-V81.5",
-          "label": "change the date",
-          "prompt": "",
+          "word": "change the date",
+          "translation": "",
           "example": "Could we change the date to Saturday?",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-12-vocabulary81",
+          "imageAlt": "change the date",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A212-FS81.5",
           "audioText": "change the date. Could we change the date to Saturday?"
         }

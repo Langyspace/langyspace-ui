@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for office or home?",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-12-vocabulary81",
-        "alt": "Six illustrated situations for Office or home?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B112-V81.0",
-          "label": "a commute",
-          "prompt": "",
+          "word": "a commute",
+          "translation": "",
           "example": "A long commute changes the working day",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-12-vocabulary81",
+          "imageAlt": "a commute",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B112-FS81.0",
           "audioText": "a commute. A long commute changes the working day."
         },
         {
           "id": "B112-V81.1",
-          "label": "a distraction",
-          "prompt": "",
+          "word": "a distraction",
+          "translation": "",
           "example": "Noise can be a distraction",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-12-vocabulary81",
+          "imageAlt": "a distraction",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B112-FS81.1",
           "audioText": "a distraction. Noise can be a distraction."
         },
         {
           "id": "B112-V81.2",
-          "label": "a flexible schedule",
-          "prompt": "",
+          "word": "a flexible schedule",
+          "translation": "",
           "example": "A flexible schedule needs clear expectations",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-12-vocabulary81",
+          "imageAlt": "a flexible schedule",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B112-FS81.2",
           "audioText": "a flexible schedule. A flexible schedule needs clear expectations."
         },
         {
           "id": "B112-V81.3",
-          "label": "teamwork",
-          "prompt": "",
+          "word": "teamwork",
+          "translation": "",
           "example": "Regular contact can support teamwork",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-12-vocabulary81",
+          "imageAlt": "teamwork",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B112-FS81.3",
           "audioText": "teamwork. Regular contact can support teamwork."
         },
         {
           "id": "B112-V81.4",
-          "label": "a workspace",
-          "prompt": "",
+          "word": "a workspace",
+          "translation": "",
           "example": "I need a quiet workspace for this task",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-12-vocabulary81",
+          "imageAlt": "a workspace",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B112-FS81.4",
           "audioText": "a workspace. I need a quiet workspace for this task."
         },
         {
           "id": "B112-V81.5",
-          "label": "a work-life balance",
-          "prompt": "",
+          "word": "a work-life balance",
+          "translation": "",
           "example": "A predictable routine helps my work-life balance",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-12-vocabulary81",
+          "imageAlt": "a work-life balance",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B112-FS81.5",
           "audioText": "a work-life balance. A predictable routine helps my work-life balance."
         }

@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Help at the hotel",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a1-08-vocabulary81",
-        "alt": "Six illustrated situations for At the hotel",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A108-V81.0",
-          "label": "room",
-          "prompt": "",
+          "word": "room",
+          "translation": "",
           "example": "My room is on the left",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "room",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A108-FS81.0",
           "audioText": "room. My room is on the left."
         },
         {
           "id": "A108-V81.1",
-          "label": "key",
-          "prompt": "",
+          "word": "key",
+          "translation": "",
           "example": "Can I have my key, please?",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "key",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A108-FS81.1",
           "audioText": "key. Can I have my key, please?"
         },
         {
           "id": "A108-V81.2",
-          "label": "shower",
-          "prompt": "",
+          "word": "shower",
+          "translation": "",
           "example": "The shower doesn’t work",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "shower",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A108-FS81.2",
           "audioText": "shower. The shower doesn’t work."
         },
         {
           "id": "A108-V81.3",
-          "label": "light",
-          "prompt": "",
+          "word": "light",
+          "translation": "",
           "example": "Can you check the light?",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "light",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A108-FS81.3",
           "audioText": "light. Can you check the light?"
         },
         {
           "id": "A108-V81.4",
-          "label": "towel",
-          "prompt": "",
+          "word": "towel",
+          "translation": "",
           "example": "I need a clean towel",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "towel",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A108-FS81.4",
           "audioText": "towel. I need a clean towel."
         },
         {
           "id": "A108-V81.5",
-          "label": "reception",
-          "prompt": "",
+          "word": "reception",
+          "translation": "",
           "example": "Please call reception",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "reception",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A108-FS81.5",
           "audioText": "reception. Please call reception."
         }

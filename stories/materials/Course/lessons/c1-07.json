@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "A briefing with a purpose",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-07-vocabulary81",
-        "alt": "Six illustrated situations for Having talked to the team…",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C107-V81.0",
-          "label": "a key takeaway",
-          "prompt": "",
+          "word": "a key takeaway",
+          "translation": "",
           "example": "The key takeaway is the postponement",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-07-vocabulary81",
+          "imageAlt": "a key takeaway",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C107-FS81.0",
           "audioText": "a key takeaway. The key takeaway is the postponement."
         },
         {
           "id": "C107-V81.1",
-          "label": "a constraint",
-          "prompt": "",
+          "word": "a constraint",
+          "translation": "",
           "example": "The budget is a constraint",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-07-vocabulary81",
+          "imageAlt": "a constraint",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C107-FS81.1",
           "audioText": "a constraint. The budget is a constraint."
         },
         {
           "id": "C107-V81.2",
-          "label": "an outcome",
-          "prompt": "",
+          "word": "an outcome",
+          "translation": "",
           "example": "Separate an intended outcome from a confirmed decision",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-07-vocabulary81",
+          "imageAlt": "an outcome",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C107-FS81.2",
           "audioText": "an outcome. Separate an intended outcome from a confirmed decision."
         },
         {
           "id": "C107-V81.3",
-          "label": "an action point",
-          "prompt": "",
+          "word": "an action point",
+          "translation": "",
           "example": "Each action point needs a recipient",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-07-vocabulary81",
+          "imageAlt": "an action point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C107-FS81.3",
           "audioText": "an action point. Each action point needs a recipient."
         },
         {
           "id": "C107-V81.4",
-          "label": "a supporting detail",
-          "prompt": "",
+          "word": "a supporting detail",
+          "translation": "",
           "example": "Keep the supporting detail that explains the decision",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-07-vocabulary81",
+          "imageAlt": "a supporting detail",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C107-FS81.4",
           "audioText": "a supporting detail. Keep the supporting detail that explains the decision."
         },
         {
           "id": "C107-V81.5",
-          "label": "an executive summary",
-          "prompt": "",
+          "word": "an executive summary",
+          "translation": "",
           "example": "An executive summary should preserve the uncertainty",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-07-vocabulary81",
+          "imageAlt": "an executive summary",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C107-FS81.5",
           "audioText": "an executive summary. An executive summary should preserve the uncertainty."
         }

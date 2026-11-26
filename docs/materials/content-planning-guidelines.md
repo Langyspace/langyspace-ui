@@ -487,3 +487,10 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Preservar rótulos e dados que fazem parte da atividade: tamanho M, preço, horário, Before/Now, nome da pessoa, item do menu, legenda e identificação da fonte. Uma instrução retirada não deve levar embora o orçamento, destino ou outra condição necessária para responder.
 - Perguntas, falas de personagens, mensagens do WhatsApp, enunciados do exercício do portal e apoios linguísticos por turno são o conteúdo a praticar ou interpretar; não são frases soltas da moldura da página. Preservar esses conteúdos e suas dicas sob demanda. Explicações gramaticais também permanecem na tabela ou no bloco de explicação.
 - Componentes que oferecem instruções próprias devem permitir que o cabeçalho do consumidor as assuma sem duplicação. No ImageSortBoard, `instructions=""` não renderiza parágrafo vazio nem deixa uma referência ARIA inexistente; os rótulos das colunas e dos controles permanecem.
+
+### Vocabulário por imagem inteira — revisão125
+
+- Objetos isolados e vinhetas independentes usam `VocabularyGrid`: clicar em qualquer parte do card revela o nome e toca o áudio correspondente. Não substituir essa área por um pequeno ponto de cena
+- Pontos de `SceneExplorer` ficam para uma cena contínua em que posição, ambiente ou relações são pistas: família, parque, rotina e ambiente de trabalho
+- Uma prancha com várias ilustrações não vira uma cena por estar em um único arquivo. Declarar as regiões de cada item (`imageRegion`) e reutilizar os mesmos bytes, áudio e controles do vocabulário. Preservar transparência, proporção e separação entre regiões; a grade e seu título compartilham a largura da composição
+- Não classificar automaticamente pelo nome do item ou por palavras-chave. O autor escolhe o formato conforme a evidência visual

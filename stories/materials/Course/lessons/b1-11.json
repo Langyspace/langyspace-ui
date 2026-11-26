@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for the woman who’s dancing with leo",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-11-vocabulary81",
-        "alt": "Six illustrated situations for The woman who’s dancing with Leo",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B111-V81.0",
-          "label": "a guest",
-          "prompt": "",
+          "word": "a guest",
+          "translation": "",
           "example": "Nina is a guest at the party",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-11-vocabulary81",
+          "imageAlt": "a guest",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B111-FS81.0",
           "audioText": "a guest. Nina is a guest at the party."
         },
         {
           "id": "B111-V81.1",
-          "label": "a host",
-          "prompt": "",
+          "word": "a host",
+          "translation": "",
           "example": "Alex is the host in the green shirt",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-11-vocabulary81",
+          "imageAlt": "a host",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B111-FS81.1",
           "audioText": "a host. Alex is the host in the green shirt."
         },
         {
           "id": "B111-V81.2",
-          "label": "a couple",
-          "prompt": "",
+          "word": "a couple",
+          "translation": "",
           "example": "A couple is dancing near the table",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-11-vocabulary81",
+          "imageAlt": "a couple",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B111-FS81.2",
           "audioText": "a couple. A couple is dancing near the table."
         },
         {
           "id": "B111-V81.3",
-          "label": "a speech",
-          "prompt": "",
+          "word": "a speech",
+          "translation": "",
           "example": "Let’s wait until the speech finishes",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-11-vocabulary81",
+          "imageAlt": "a speech",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B111-FS81.3",
           "audioText": "a speech. Let’s wait until the speech finishes."
         },
         {
           "id": "B111-V81.4",
-          "label": "a dance floor",
-          "prompt": "",
+          "word": "a dance floor",
+          "translation": "",
           "example": "The drinks table is beside the dance floor",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-11-vocabulary81",
+          "imageAlt": "a dance floor",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B111-FS81.4",
           "audioText": "a dance floor. The drinks table is beside the dance floor."
         },
         {
           "id": "B111-V81.5",
-          "label": "a celebration",
-          "prompt": "",
+          "word": "a celebration",
+          "translation": "",
           "example": "It’s a celebration with friends",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-11-vocabulary81",
+          "imageAlt": "a celebration",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B111-FS81.5",
           "audioText": "a celebration. It’s a celebration with friends."
         }

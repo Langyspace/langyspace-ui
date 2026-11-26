@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Words for he said he’d come on thursday",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b1-05-vocabulary81",
-        "alt": "Six illustrated situations for He said he’d come on Thursday",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B105-V81.0",
-          "label": "a leak",
-          "prompt": "",
+          "word": "a leak",
+          "translation": "",
           "example": "There’s a leak under the sink",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b1-05-vocabulary81",
+          "imageAlt": "a leak",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B105-FS81.0",
           "audioText": "a leak. There’s a leak under the sink."
         },
         {
           "id": "B105-V81.1",
-          "label": "a tap",
-          "prompt": "",
+          "word": "a tap",
+          "translation": "",
           "example": "He needs to check the tap",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b1-05-vocabulary81",
+          "imageAlt": "a tap",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B105-FS81.1",
           "audioText": "a tap. He needs to check the tap."
         },
         {
           "id": "B105-V81.2",
-          "label": "a repair",
-          "prompt": "",
+          "word": "a repair",
+          "translation": "",
           "example": "The repair may take an hour",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b1-05-vocabulary81",
+          "imageAlt": "a repair",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B105-FS81.2",
           "audioText": "a repair. The repair may take an hour."
         },
         {
           "id": "B105-V81.3",
-          "label": "a spare key",
-          "prompt": "",
+          "word": "a spare key",
+          "translation": "",
           "example": "Leave a spare key at reception",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b1-05-vocabulary81",
+          "imageAlt": "a spare key",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B105-FS81.3",
           "audioText": "a spare key. Leave a spare key at reception."
         },
         {
           "id": "B105-V81.4",
-          "label": "an appointment",
-          "prompt": "",
+          "word": "an appointment",
+          "translation": "",
           "example": "The appointment has changed to Friday",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b1-05-vocabulary81",
+          "imageAlt": "an appointment",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B105-FS81.4",
           "audioText": "an appointment. The appointment has changed to Friday."
         },
         {
           "id": "B105-V81.5",
-          "label": "a building manager",
-          "prompt": "",
+          "word": "a building manager",
+          "translation": "",
           "example": "Please pass the message to the building manager",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b1-05-vocabulary81",
+          "imageAlt": "a building manager",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B105-FS81.5",
           "audioText": "a building manager. Please pass the message to the building manager."
         }

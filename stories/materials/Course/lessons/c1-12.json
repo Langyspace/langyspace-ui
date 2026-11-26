@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Payments, access and unintended effects",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "c1-12-vocabulary81",
-        "alt": "Six illustrated situations for A world without cash",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "C112-V81.0",
-          "label": "financial inclusion",
-          "prompt": "",
+          "word": "financial inclusion",
+          "translation": "",
           "example": "Financial inclusion concerns who can actually participate",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "c1-12-vocabulary81",
+          "imageAlt": "financial inclusion",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C112-FS81.0",
           "audioText": "financial inclusion. Financial inclusion concerns who can actually participate."
         },
         {
           "id": "C112-V81.1",
-          "label": "privacy",
-          "prompt": "",
+          "word": "privacy",
+          "translation": "",
           "example": "The process should make privacy implications clear",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "c1-12-vocabulary81",
+          "imageAlt": "privacy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C112-FS81.1",
           "audioText": "privacy. The process should make privacy implications clear."
         },
         {
           "id": "C112-V81.2",
-          "label": "a transaction fee",
-          "prompt": "",
+          "word": "a transaction fee",
+          "translation": "",
           "example": "Check whether a transaction fee changes",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "c1-12-vocabulary81",
+          "imageAlt": "a transaction fee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C112-FS81.2",
           "audioText": "a transaction fee. Check whether a transaction fee changes."
         },
         {
           "id": "C112-V81.3",
-          "label": "digital access",
-          "prompt": "",
+          "word": "digital access",
+          "translation": "",
           "example": "Digital access can be temporarily lost",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "c1-12-vocabulary81",
+          "imageAlt": "digital access",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C112-FS81.3",
           "audioText": "digital access. Digital access can be temporarily lost."
         },
         {
           "id": "C112-V81.4",
-          "label": "a fallback option",
-          "prompt": "",
+          "word": "a fallback option",
+          "translation": "",
           "example": "A fallback option must be usable in practice",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "c1-12-vocabulary81",
+          "imageAlt": "a fallback option",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C112-FS81.4",
           "audioText": "a fallback option. A fallback option must be usable in practice."
         },
         {
           "id": "C112-V81.5",
-          "label": "an unintended consequence",
-          "prompt": "",
+          "word": "an unintended consequence",
+          "translation": "",
           "example": "A convenient policy can have an unintended consequence",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "c1-12-vocabulary81",
+          "imageAlt": "an unintended consequence",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "C112-FS81.5",
           "audioText": "an unintended consequence. A convenient policy can have an unintended consequence."
         }

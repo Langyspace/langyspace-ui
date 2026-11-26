@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Arranging a service",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "b2-06-vocabulary81",
-        "alt": "Six illustrated situations for I need to get the screen fixed",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "B206-V81.0",
-          "label": "get a screen fixed",
-          "prompt": "",
+          "word": "get a screen fixed",
+          "translation": "",
           "example": "I need to get my screen fixed",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "b2-06-vocabulary81",
+          "imageAlt": "get a screen fixed",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B206-FS81.0",
           "audioText": "get a screen fixed. I need to get my screen fixed."
         },
         {
           "id": "B206-V81.1",
-          "label": "have a jacket altered",
-          "prompt": "",
+          "word": "have a jacket altered",
+          "translation": "",
           "example": "She wants to have her jacket altered",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "b2-06-vocabulary81",
+          "imageAlt": "have a jacket altered",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B206-FS81.1",
           "audioText": "have a jacket altered. She wants to have her jacket altered."
         },
         {
           "id": "B206-V81.2",
-          "label": "get a haircut",
-          "prompt": "",
+          "word": "get a haircut",
+          "translation": "",
           "example": "I’m going to get a haircut",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "b2-06-vocabulary81",
+          "imageAlt": "get a haircut",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B206-FS81.2",
           "audioText": "get a haircut. I’m going to get a haircut."
         },
         {
           "id": "B206-V81.3",
-          "label": "a repair shop",
-          "prompt": "",
+          "word": "a repair shop",
+          "translation": "",
           "example": "The repair shop will confirm the status",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "b2-06-vocabulary81",
+          "imageAlt": "a repair shop",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B206-FS81.3",
           "audioText": "a repair shop. The repair shop will confirm the status."
         },
         {
           "id": "B206-V81.4",
-          "label": "a quote",
-          "prompt": "",
+          "word": "a quote",
+          "translation": "",
           "example": "The quote is eighty dollars",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "b2-06-vocabulary81",
+          "imageAlt": "a quote",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B206-FS81.4",
           "audioText": "a quote. The quote is eighty dollars."
         },
         {
           "id": "B206-V81.5",
-          "label": "a collection date",
-          "prompt": "",
+          "word": "a collection date",
+          "translation": "",
           "example": "The collection date is still an estimate",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "b2-06-vocabulary81",
+          "imageAlt": "a collection date",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "B206-FS81.5",
           "audioText": "a collection date. The collection date is still an estimate."
         }

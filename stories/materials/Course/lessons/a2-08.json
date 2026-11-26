@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "Experiences in Lisbon",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-08-vocabulary81",
-        "alt": "Six illustrated situations for Have you ever been to Lisbon?",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A208-V81.0",
-          "label": "take a tram",
-          "prompt": "",
+          "word": "take a tram",
+          "translation": "",
           "example": "Have you ever taken a tram?",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "take a tram",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A208-FS81.0",
           "audioText": "take a tram. Have you ever taken a tram?"
         },
         {
           "id": "A208-V81.1",
-          "label": "visit a castle",
-          "prompt": "",
+          "word": "visit a castle",
+          "translation": "",
           "example": "I visited a castle last year",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "visit a castle",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A208-FS81.1",
           "audioText": "visit a castle. I visited a castle last year."
         },
         {
           "id": "A208-V81.2",
-          "label": "try a pastel de nata",
-          "prompt": "",
+          "word": "try a pastel de nata",
+          "translation": "",
           "example": "You should try a pastel de nata",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "try a pastel de nata",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A208-FS81.2",
           "audioText": "try a pastel de nata. You should try a pastel de nata."
         },
         {
           "id": "A208-V81.3",
-          "label": "see the tiles",
-          "prompt": "",
+          "word": "see the tiles",
+          "translation": "",
           "example": "We saw beautiful tiles in the city",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "see the tiles",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A208-FS81.3",
           "audioText": "see the tiles. We saw beautiful tiles in the city."
         },
         {
           "id": "A208-V81.4",
-          "label": "watch the sunset",
-          "prompt": "",
+          "word": "watch the sunset",
+          "translation": "",
           "example": "I’d like to watch the sunset",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "watch the sunset",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A208-FS81.4",
           "audioText": "watch the sunset. I’d like to watch the sunset."
         },
         {
           "id": "A208-V81.5",
-          "label": "visit the aquarium",
-          "prompt": "",
+          "word": "visit the aquarium",
+          "translation": "",
           "example": "I haven’t visited the aquarium yet",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "visit the aquarium",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A208-FS81.5",
           "audioText": "visit the aquarium. I haven’t visited the aquarium yet."
         }

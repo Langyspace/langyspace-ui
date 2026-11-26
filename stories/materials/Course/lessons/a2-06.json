@@ -38,74 +38,115 @@
     },
     {
       "id": "s2",
-      "kind": "scene-vocabulary",
       "title": "How do you feel?",
-      "instruction": "Describe each picture, then click to check and hear an example",
       "minutes": 5,
       "eyebrow": "Vocabulary",
-      "image": {
-        "src": "a2-06-vocabulary81",
-        "alt": "Six illustrated situations for My back hurts",
-        "aspectRatio": 1.5
-      },
-      "hotspots": [
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
         {
           "id": "A206-V81.0",
-          "label": "a headache",
-          "prompt": "",
+          "word": "a headache",
+          "translation": "",
           "example": "I have a headache",
-          "xPercent": 20,
-          "yPercent": 46,
+          "imageUrl": "a2-06-vocabulary81",
+          "imageAlt": "a headache",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A206-FS81.0",
           "audioText": "a headache. I have a headache."
         },
         {
           "id": "A206-V81.1",
-          "label": "a sore throat",
-          "prompt": "",
+          "word": "a sore throat",
+          "translation": "",
           "example": "My friend has a sore throat",
-          "xPercent": 50,
-          "yPercent": 46,
+          "imageUrl": "a2-06-vocabulary81",
+          "imageAlt": "a sore throat",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A206-FS81.1",
           "audioText": "a sore throat. My friend has a sore throat."
         },
         {
           "id": "A206-V81.2",
-          "label": "a fever",
-          "prompt": "",
+          "word": "a fever",
+          "translation": "",
           "example": "I have a fever today",
-          "xPercent": 80,
-          "yPercent": 46,
+          "imageUrl": "a2-06-vocabulary81",
+          "imageAlt": "a fever",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A206-FS81.2",
           "audioText": "a fever. I have a fever today."
         },
         {
           "id": "A206-V81.3",
-          "label": "a cough",
-          "prompt": "",
+          "word": "a cough",
+          "translation": "",
           "example": "I’ve had a cough since yesterday",
-          "xPercent": 20,
-          "yPercent": 88,
+          "imageUrl": "a2-06-vocabulary81",
+          "imageAlt": "a cough",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A206-FS81.3",
           "audioText": "a cough. I’ve had a cough since yesterday."
         },
         {
           "id": "A206-V81.4",
-          "label": "a stomachache",
-          "prompt": "",
+          "word": "a stomachache",
+          "translation": "",
           "example": "She has a stomachache",
-          "xPercent": 50,
-          "yPercent": 88,
+          "imageUrl": "a2-06-vocabulary81",
+          "imageAlt": "a stomachache",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A206-FS81.4",
           "audioText": "a stomachache. She has a stomachache."
         },
         {
           "id": "A206-V81.5",
-          "label": "a backache",
-          "prompt": "",
+          "word": "a backache",
+          "translation": "",
           "example": "I’d like an appointment for my backache",
-          "xPercent": 80,
-          "yPercent": 88,
+          "imageUrl": "a2-06-vocabulary81",
+          "imageAlt": "a backache",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
           "audioId": "A206-FS81.5",
           "audioText": "a backache. I’d like an appointment for my backache."
         }

@@ -1,5 +1,6 @@
 import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
+import { PictureImage } from '../../internal/PictureImage'
 import * as Styled from './VocabularyGrid.styles'
 import { formatVocabularyHint } from './VocabularyGrid.utils'
 import type { VocabularyGridProps } from './VocabularyGrid.types'
@@ -86,7 +87,9 @@ export function VocabularyGrid({
                 interaction === 'listen'
                   ? `${playLabel} ${item.imageAlt}${showAll ? `: ${item.word}` : ''}`
                   : revealed
-                    ? `${item.word}: ${item.translation}`
+                    ? item.translation
+                      ? `${item.word}: ${item.translation}`
+                      : item.word
                     : `${revealLabel} ${index + 1}: ${item.imageAlt}`
               }
               aria-expanded={
@@ -119,6 +122,24 @@ export function VocabularyGrid({
                 <Styled.WordSymbol aria-hidden="true">
                   {item.symbol}
                 </Styled.WordSymbol>
+              ) : item.imageRegion && item.imageUrl ? (
+                <Styled.WordImageRegion
+                  $scene={imageVariant === 'scene'}
+                  $regular={density === 'regular'}
+                  $aspect={
+                    (item.imageRegion.sourceAspectRatio *
+                      item.imageRegion.rows *
+                      (item.imageRegion.columnSpan ?? 1)) /
+                    (item.imageRegion.columns * (item.imageRegion.rowSpan ?? 1))
+                  }
+                  aria-hidden="true"
+                >
+                  <PictureImage
+                    src={item.imageUrl}
+                    alt=""
+                    region={item.imageRegion}
+                  />
+                </Styled.WordImageRegion>
               ) : (
                 <Styled.WordImage
                   $fit={imageFit}
