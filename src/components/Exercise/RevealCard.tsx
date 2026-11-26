@@ -81,7 +81,7 @@ export function RevealCard({
             onClick?.(event)
             if (!event.defaultPrevented) {
               guidance?.onChange(guidance.level === 'full' ? 'cue' : 'full')
-              playFeedbackSound('hint')
+              playFeedbackSound('question')
             }
           }}
           type={type}

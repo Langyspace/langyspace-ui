@@ -7,7 +7,7 @@ Base: 8e01481dc14395ae42ecc74bd389d3290136a1a3. Pedido: som no olho, no mute/unm
 - VocabularyControls opta o olho no mesmo earcon neutro já usado pela lâmpada. LearningDialogue, cenas, vocabulários e modelos que compõem esse controle recebem a mudança sem handlers por aula
 - RevealCard confirma o clique na pergunta, a abertura/ocultação da resposta e as etapas da ajuda progressiva. O consumidor continua dono da resposta e da avaliação. Disabled/loading/preventDefault continuam respeitados
 - SlideDeck dá feedback ao mudar tema. O mute/unmute aplica a preferência imediatamente e confirma apenas seu próprio clique com um som breve; não é um desmute temporário nem uma segunda engine. Depois de mutar, perguntas/olho/tema permanecem silenciosos
-- Reutiliza o som neutro de 150 ms, com o mesmo volume baixo. Repetições substituem o som anterior; áudio nativo tem prioridade; não há fila, downloads, timers de estado ou modificação das gravações
+- Reutiliza o som neutro de 150 ms nos controles. Após revisão da usuária, perguntas usam uma variante ainda mais sutil de 120 ms, ganho 0.18 contra 0.38 da dica (aproximadamente 6.5 dB abaixo), sem mudar os outros controles. Repetições substituem o som anterior; áudio nativo tem prioridade; não há fila, downloads, timers de estado ou modificação das gravações
 - Na prévia anterior, a resposta tinha animation de 0.15s e movimento reduzido estava desligado. Era um fade pouco perceptível, não ausência de CSS. RevealCard agora usa entrada de 200 ms, opacidade e transformação vertical de 4px, com tokens existentes. Não anima altura, margem, scroll ou a pergunta. Ocultação continua imediata; a entrada reinicia ao reabrir. Movimento reduzido remove a animação
 
 ## Verificação

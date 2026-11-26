@@ -266,6 +266,11 @@ it('acknowledges each question click once and keeps answer interaction working w
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'true')
   expect(latest().oscillators).toHaveLength(2)
+  expect(latest().gains[0]?.gain.value).toBe(
+    design.volume * design.questionGain,
+  )
+  expect(design.questionGain).toBeLessThan(design.hintGain / 2)
+  expect(latest().oscillators[0]?.stop).toHaveBeenCalledWith(10.12)
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'false')
   expect(latest().oscillators).toHaveLength(4)

@@ -12,6 +12,9 @@ export const feedbackSoundDesign = {
   /** Quiet neutral acknowledgement: one soft note, no success/failure contour. */
   hintGain: 0.38,
   hint: [{ frequency: 587.33, start: 0, duration: 0.15 }],
+  /** Less prominent acknowledgement for frequently opened questions. */
+  questionGain: 0.18,
+  question: [{ frequency: 587.33, start: 0, duration: 0.12 }],
   wrong: [
     { frequency: 440, start: 0, duration: 0.095 },
     { frequency: 392, start: 0.105, duration: 0.12 },

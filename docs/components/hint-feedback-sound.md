@@ -1,6 +1,6 @@
 # Hint feedback sound
 
-Hint controls use a single shared Web Audio earcon: a quiet, 150 ms sine note (587.33 Hz, with a second harmonic at 10%). Its gain is 38% of the existing answer-sound bus, approximately 8.4 dB below an equivalent answer note. It acknowledges an explicit UI action without suggesting a right or wrong answer. These values are product sound choices, not a claim of improved learning or a clinically optimal frequency.
+Hint controls use a single shared Web Audio earcon: a quiet, 150 ms sine note (587.33 Hz, with a second harmonic at 10%). Its gain is 38% of the existing answer-sound bus, approximately 8.4 dB below an equivalent answer note. Question clicks use a still quieter 120 ms variant: 18% of the answer bus, versus 38% for hints and other controls (about 6.5 dB less amplitude than the hint cue). Both acknowledge an explicit UI action without suggesting a right or wrong answer. These values are product sound choices, not a claim of improved learning or a clinically optimal frequency.
 
 The header's existing sound toggle mutes hints and answer sounds together. Repeated clicks replace the current earcon; nothing queues. Disabling sound stops the previous earcon immediately. The sound switch alone plays one brief acknowledgement of its own mute/unmute click; ordinary interactions stay silent while muted. Hiding the document or a new native recording starting stops active feedback. Hints remain visually usable when sound is muted, unavailable or suppressed during recorded speech. The recording is never paused or attenuated by a hint.
 

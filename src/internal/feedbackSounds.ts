@@ -19,7 +19,8 @@ export function observeFeedbackMedia(media: HTMLMediaElement) {
   const clear = () => playingMedia.delete(media)
   media.addEventListener('play', () => {
     playingMedia.add(media)
-    if (current?.kind === 'hint') stopFeedbackSounds()
+    if (current?.kind === 'hint' || current?.kind === 'question')
+      stopFeedbackSounds()
   })
   for (const event of ['pause', 'ended', 'error', 'emptied']) {
     media.addEventListener(event, clear)
@@ -78,7 +79,8 @@ async function play(
     !window.AudioContext
   )
     return
-  if (outcome === 'hint' && mediaIsPlaying()) return
+  const quiet = outcome === 'hint' || outcome === 'question'
+  if (quiet && mediaIsPlaying()) return
   stopFeedbackSounds()
   const request = revision
   try {
@@ -100,9 +102,15 @@ async function play(
       document.hidden
     )
       return
-    if (outcome === 'hint' && mediaIsPlaying()) return
+    if (quiet && mediaIsPlaying()) return
     const bus = audio.createGain()
-    bus.gain.value = design.volume * (outcome === 'hint' ? design.hintGain : 1)
+    bus.gain.value =
+      design.volume *
+      (outcome === 'question'
+        ? design.questionGain
+        : outcome === 'hint'
+          ? design.hintGain
+          : 1)
     bus.connect(audio.destination)
     const active = {
       gain: bus,
