@@ -369,25 +369,29 @@
           "id": "tea",
           "label": "Tea",
           "price": 2,
-          "group": "drink"
+          "group": "drink",
+          "pictureIndex": 1
         },
         {
           "id": "coffee",
           "label": "Coffee",
           "price": 3,
-          "group": "drink"
+          "group": "drink",
+          "pictureIndex": 0
         },
         {
           "id": "cake",
           "label": "Cake",
           "price": 4,
-          "group": "food"
+          "group": "food",
+          "pictureIndex": 5
         },
         {
           "id": "sandwich",
           "label": "Sandwich",
           "price": 5,
-          "group": "food"
+          "group": "food",
+          "pictureIndex": 4
         }
       ],
       "questions": [
@@ -407,7 +411,8 @@
           "hint": "Yes, thank you. / Sorry, I’d like …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "a1-10-vocabulary81"
     },
     "s_reply": {
       "type": "facts",

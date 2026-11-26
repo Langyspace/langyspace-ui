@@ -1,3 +1,4 @@
+import { observeFeedbackMedia } from './feedbackSounds'
 import type { PreparedAudioPlaybackOptions } from './playPreparedAudio.types'
 
 // A newer play/resume call on the same element invalidates the previous promise as well.
@@ -8,6 +9,7 @@ export function playPreparedAudio(
   audio: HTMLAudioElement,
   { isCurrent, onFailure, onStarted }: PreparedAudioPlaybackOptions,
 ) {
+  observeFeedbackMedia(audio)
   const owner = {}
   owners.set(audio, owner)
   let attempt = 0

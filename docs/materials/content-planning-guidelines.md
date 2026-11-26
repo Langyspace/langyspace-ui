@@ -468,3 +468,13 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - O header comum oferece sol/lua imediatamente antes do controle de som. Toda apresentação começa no tema escuro atual; a professora pode escolher o tema claro e voltar sem perder a página, as respostas ou as revelações
 - Consumir os tokens claros/escuros canônicos e o estado compartilhado do material, inclusive nos wrappers aninhados e nas experimentais. Não codificar cor de texto/fundo por página para acompanhar o botão
 - Fotos, ilustrações e a aparência própria de dispositivos/conteúdos incorporados mantêm suas cores; o controle troca o tema da apresentação
+
+
+## Evidência visual, dicas e movimento — revisão123
+
+- Se a pergunta depende de observar uma cena, objeto ou diferença, mostrar a ilustração correspondente. Não substituir a evidência por uma ficha que já descreve a resposta. Antes/depois aparece lado a lado, com o mesmo enquadramento e rótulos nativos. Manter mapas para orientação espacial e texto para mensagens, horários, preços, reservas, decisões e fontes que precisam ser lidos.
+- Imagens de opções acompanham a opção selecionada e seus metadados. O atlas inteiro não deve aparecer quando só uma região é relevante. A variante compacta de PictureStrip reserva espaço para preços e tamanhos sem deformar ou cortar os objetos.
+- Não criar uma pista nova para deixar a cena mais bonita. Informação revelada pelo listening só aparece depois dele. Foto de referência do objeto perdido não é prova de que o objeto encontrado é o mesmo.
+- Usar o prompt canônico de imagem literalmente, anexando apenas assunto e composição. Texto, números, rótulos e controles pertencem à UI, não ao bitmap. Registrar pedidos, originais e hashes; reutilizar imagens válidas.
+- O ícone de dica reutiliza o som compartilhado, breve e discreto, respeitando o mute do header e sem competir com gravações nativas. Não usar sons de acerto para pedir ajuda e não duplicar handlers por aula. Ver [contrato do som de dica](../components/hint-feedback-sound.md).
+- Respostas e dicas podem entrar com fade de 150 ms. Respeitar movimento reduzido; não animar altura, navegação ou scroll, nem mover o play. Vocabulário revelado permanece estático. Ver [contrato de animação](../components/reveal-motion.md).

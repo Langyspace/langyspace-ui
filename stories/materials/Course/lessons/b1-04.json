@@ -398,23 +398,7 @@
     "s_mission": {
       "type": "facts",
       "title": "Observed clues",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Visible objects",
-          "value": "Charger · boarding pass · notebook"
-        },
-        {
-          "id": "1",
-          "label": "Distinctive detail",
-          "value": "Silver star on black notebook"
-        },
-        {
-          "id": "2",
-          "label": "Distinctive detail",
-          "value": "Red fish key ring"
-        }
-      ],
+      "facts": [],
       "questions": [
         {
           "id": "task",
@@ -432,26 +416,34 @@
           "hint": "I’d ask the caller to describe …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b1-04-lost-property123",
+      "pictures": [
+        {
+          "id": "found-items",
+          "index": 0,
+          "label": "Found at reception"
+        }
+      ],
+      "pictureGrid": {
+        "columns": 1,
+        "rows": 1,
+        "sourceAspectRatio": 1.5
+      }
     },
     "s_reply": {
       "type": "facts",
       "title": "Compare the caller’s claim",
       "facts": [
         {
-          "id": "0",
-          "label": "Notebook described",
-          "value": "Black · silver star · matches"
+          "id": "claim",
+          "label": "Caller’s description",
+          "value": "Black notebook with a silver star · red fish key ring"
         },
         {
-          "id": "1",
-          "label": "Key ring described",
-          "value": "Red fish · matches"
-        },
-        {
-          "id": "2",
-          "label": "Still required",
-          "value": "Reception’s collection procedure"
+          "id": "procedure",
+          "label": "Before collection",
+          "value": "Follow reception’s collection procedure"
         }
       ],
       "questions": [
@@ -471,28 +463,13 @@
           "hint": "Reception still needs to …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b1-04-lost-property123"
     },
     "s_personal": {
       "type": "facts",
       "title": "Situation reference",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Visible objects",
-          "value": "Charger · boarding pass · notebook"
-        },
-        {
-          "id": "1",
-          "label": "Distinctive detail",
-          "value": "Silver star on black notebook"
-        },
-        {
-          "id": "2",
-          "label": "Distinctive detail",
-          "value": "Red fish key ring"
-        }
-      ],
+      "facts": [],
       "questions": [
         {
           "id": "0",
@@ -516,7 +493,20 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "image": "b1-04-lost-property123",
+      "pictures": [
+        {
+          "id": "found-items",
+          "index": 0,
+          "label": "Found at reception"
+        }
+      ],
+      "pictureGrid": {
+        "columns": 1,
+        "rows": 1,
+        "sourceAspectRatio": 1.5
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { observeFeedbackMedia } from '../../internal/feedbackSounds'
 
 /** Count native playing events for new listening passes, never clicks or resumes. */
 export function useVoiceMessageAudio(active: boolean) {
@@ -46,6 +47,7 @@ export function useVoiceMessageAudio(active: boolean) {
   const toggle = async () => {
     const audio = audioRef.current
     if (!audio || !active) return
+    observeFeedbackMedia(audio)
     if (intentRef.current) {
       intentRef.current = false
       attemptRef.current += 1

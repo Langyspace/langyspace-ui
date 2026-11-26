@@ -22,6 +22,7 @@ export function VocabularyControls({
         disabled={hintDisabled}
         aria-pressed={interaction === 'toggle' ? showInitial : undefined}
         onClick={onToggleInitial}
+        feedbackSound="hint"
       >
         <svg
           aria-hidden="true"

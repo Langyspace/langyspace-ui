@@ -9,6 +9,9 @@ export const feedbackSoundDesign = {
     { frequency: 523.25, start: 0, duration: 0.13 },
     { frequency: 659.25, start: 0.11, duration: 0.17 },
   ],
+  /** Quiet neutral acknowledgement: one soft note, no success/failure contour. */
+  hintGain: 0.38,
+  hint: [{ frequency: 587.33, start: 0, duration: 0.15 }],
   wrong: [
     { frequency: 440, start: 0, duration: 0.095 },
     { frequency: 392, start: 0.105, duration: 0.12 },

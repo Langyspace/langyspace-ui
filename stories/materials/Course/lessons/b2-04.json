@@ -469,9 +469,9 @@
           "value": "Receipt · 5:20 pm · owner unknown"
         },
         {
-          "id": "2",
-          "label": "Current state",
-          "value": "Window closed · plant moved"
+          "id": "movement",
+          "label": "Reported change",
+          "value": "Plant moved from the windowsill"
         }
       ],
       "questions": [
@@ -491,7 +491,8 @@
           "hint": "I’d check … to find out whether …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b2-04-flat-evidence123"
     },
     "s_reply": {
       "type": "facts",
@@ -547,9 +548,9 @@
           "value": "Receipt · 5:20 pm · owner unknown"
         },
         {
-          "id": "2",
-          "label": "Current state",
-          "value": "Window closed · plant moved"
+          "id": "movement",
+          "label": "Reported change",
+          "value": "Plant moved from the windowsill"
         }
       ],
       "questions": [
@@ -575,7 +576,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "image": "b2-04-flat-evidence123"
     }
   }
 }

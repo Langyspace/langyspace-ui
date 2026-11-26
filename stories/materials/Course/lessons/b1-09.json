@@ -397,13 +397,8 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Report reference",
+      "title": "Owner’s reference photo",
       "facts": [
-        {
-          "id": "0",
-          "label": "Description",
-          "value": "Blue · black basket · yellow sticker"
-        },
         {
           "id": "1",
           "label": "Last seen",
@@ -432,7 +427,8 @@
           "hint": "The serial number should be …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b1-09-bicycle123"
     },
     "s_reply": {
       "type": "facts",
@@ -475,13 +471,8 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Owner’s reference photo",
       "facts": [
-        {
-          "id": "0",
-          "label": "Description",
-          "value": "Blue · black basket · yellow sticker"
-        },
         {
           "id": "1",
           "label": "Last seen",
@@ -516,7 +507,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "image": "b1-09-bicycle123"
     }
   }
 }

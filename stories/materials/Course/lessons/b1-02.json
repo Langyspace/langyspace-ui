@@ -312,7 +312,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Show me your old neighbourhood",
-      "instruction": "Show me what has changed and ask about my neighbourhood",
+      "instruction": "Compare the two pictures. Describe what has changed and ask about the past",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -420,164 +420,38 @@
   ],
   "activities": {
     "s_mission": {
-      "type": "map",
-      "title": "Same places, two moments",
+      "type": "comparison",
+      "title": "The same corner, before and now",
+      "image": "b1-02-neighbourhood123",
+      "pictureGrid": {
+        "columns": 2,
+        "rows": 1,
+        "sourceAspectRatio": 2
+      },
       "options": [
         {
           "id": "before",
           "title": "Before",
-          "facts": [
+          "facts": [],
+          "pictures": [
             {
-              "id": "0",
-              "label": "Corner",
-              "value": "Cinema"
-            },
-            {
-              "id": "1",
-              "label": "Playground",
-              "value": "Swings · fewer trees"
-            },
-            {
-              "id": "2",
-              "label": "Beside the square",
-              "value": "Factory"
+              "id": "view0",
+              "index": 0,
+              "label": ""
             }
-          ],
-          "map": {
-            "label": "Illustrated neighbourhood · schematic, not a route map",
-            "places": [
-              {
-                "id": "corner",
-                "label": "Cinema",
-                "symbol": "C",
-                "xPercent": 20,
-                "yPercent": 25
-              },
-              {
-                "id": "playground",
-                "label": "Playground · swings",
-                "symbol": "P",
-                "xPercent": 78,
-                "yPercent": 25
-              },
-              {
-                "id": "square",
-                "label": "Square",
-                "symbol": "S",
-                "xPercent": 20,
-                "yPercent": 78
-              },
-              {
-                "id": "site",
-                "label": "Factory",
-                "symbol": "F",
-                "xPercent": 60,
-                "yPercent": 78
-              }
-            ],
-            "streets": [
-              {
-                "id": "cross",
-                "from": {
-                  "x": 20,
-                  "y": 25
-                },
-                "to": {
-                  "x": 78,
-                  "y": 25
-                }
-              },
-              {
-                "id": "vertical",
-                "from": {
-                  "x": 20,
-                  "y": 25
-                },
-                "to": {
-                  "x": 20,
-                  "y": 78
-                }
-              }
-            ]
-          }
+          ]
         },
         {
           "id": "now",
           "title": "Now",
-          "facts": [
+          "facts": [],
+          "pictures": [
             {
-              "id": "0",
-              "label": "Corner",
-              "value": "Pharmacy"
-            },
-            {
-              "id": "1",
-              "label": "Playground",
-              "value": "Same swings · more trees"
-            },
-            {
-              "id": "2",
-              "label": "Beside the square",
-              "value": "Check the new message"
+              "id": "view1",
+              "index": 1,
+              "label": ""
             }
-          ],
-          "map": {
-            "label": "Illustrated neighbourhood · schematic, not a route map",
-            "places": [
-              {
-                "id": "corner",
-                "label": "Pharmacy",
-                "symbol": "P",
-                "xPercent": 20,
-                "yPercent": 25
-              },
-              {
-                "id": "playground",
-                "label": "Same swings · more trees",
-                "symbol": "P",
-                "xPercent": 78,
-                "yPercent": 25
-              },
-              {
-                "id": "square",
-                "label": "Square",
-                "symbol": "S",
-                "xPercent": 20,
-                "yPercent": 78
-              },
-              {
-                "id": "site",
-                "label": "New use? Listen later",
-                "symbol": "?",
-                "xPercent": 60,
-                "yPercent": 78
-              }
-            ],
-            "streets": [
-              {
-                "id": "cross",
-                "from": {
-                  "x": 20,
-                  "y": 25
-                },
-                "to": {
-                  "x": 78,
-                  "y": 25
-                }
-              },
-              {
-                "id": "vertical",
-                "from": {
-                  "x": 20,
-                  "y": 25
-                },
-                "to": {
-                  "x": 20,
-                  "y": 78
-                }
-              }
-            ]
-          }
+          ]
         }
       ],
       "questions": [
@@ -597,85 +471,11 @@
           "hint": "Did you use to …? What do you miss about …?"
         }
       ],
-      "map": {
-        "label": "Illustrated neighbourhood · schematic, not a route map",
-        "places": [
-          {
-            "id": "corner",
-            "label": "Cinema",
-            "symbol": "C",
-            "xPercent": 20,
-            "yPercent": 25
-          },
-          {
-            "id": "playground",
-            "label": "Playground · swings",
-            "symbol": "P",
-            "xPercent": 78,
-            "yPercent": 25
-          },
-          {
-            "id": "square",
-            "label": "Square",
-            "symbol": "S",
-            "xPercent": 20,
-            "yPercent": 78
-          },
-          {
-            "id": "site",
-            "label": "Factory",
-            "symbol": "F",
-            "xPercent": 60,
-            "yPercent": 78
-          }
-        ],
-        "streets": [
-          {
-            "id": "cross",
-            "from": {
-              "x": 20,
-              "y": 25
-            },
-            "to": {
-              "x": 78,
-              "y": 25
-            }
-          },
-          {
-            "id": "vertical",
-            "from": {
-              "x": 20,
-              "y": 25
-            },
-            "to": {
-              "x": 20,
-              "y": 78
-            }
-          }
-        ]
-      },
       "questionPurpose": "response"
     },
     "s_reply": {
-      "type": "facts",
+      "type": "comparison",
       "title": "The former factory site",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Before",
-          "value": "Factory beside the square"
-        },
-        {
-          "id": "1",
-          "label": "Now",
-          "value": "Apartment block · garden in front"
-        },
-        {
-          "id": "2",
-          "label": "Former resident",
-          "value": "Misses working there · likes the cleaner street"
-        }
-      ],
       "questions": [
         {
           "id": "task",
@@ -693,7 +493,39 @@
           "hint": "What did you use to …? What do you remember about …?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b1-02-vocabulary81",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 2,
+        "sourceAspectRatio": 1.5
+      },
+      "options": [
+        {
+          "id": "before",
+          "title": "Before",
+          "facts": [],
+          "pictures": [
+            {
+              "id": "view4",
+              "index": 4,
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "now",
+          "title": "Now",
+          "facts": [],
+          "pictures": [
+            {
+              "id": "view5",
+              "index": 5,
+              "label": ""
+            }
+          ]
+        }
+      ]
     }
   }
 }

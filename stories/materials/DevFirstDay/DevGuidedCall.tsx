@@ -259,6 +259,7 @@ function RecordedMeeting({
               ? 'Show example answer'
               : 'Hide speaking support',
         icon: <SimulationIcon name="hint" />,
+        feedbackSound: 'hint',
         pressed: supportStep > 0,
         disabled: !reply,
         onClick: () => setSupportStep((step) => (step + 1) % 3),

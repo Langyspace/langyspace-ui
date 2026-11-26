@@ -471,11 +471,13 @@
               "id": "1",
               "label": "Location",
               "value": "Near the metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Compact · separate work corner"
+              "id": "view0",
+              "index": 0,
+              "label": ""
             }
           ]
         },
@@ -492,11 +494,13 @@
               "id": "1",
               "label": "Location",
               "value": "Twenty-minute walk to metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Largest · separate room"
+              "id": "view1",
+              "index": 1,
+              "label": ""
             }
           ]
         },
@@ -513,11 +517,13 @@
               "id": "1",
               "label": "Location",
               "value": "Ten-minute walk to metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Balcony · separate work corner"
+              "id": "view2",
+              "index": 2,
+              "label": ""
             }
           ]
         }
@@ -539,7 +545,13 @@
           "hint": "Before deciding, I’d confirm …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b2-08-apartments123",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 1,
+        "sourceAspectRatio": 3
+      }
     },
     "s_reply": {
       "type": "choices",
@@ -558,11 +570,13 @@
               "id": "1",
               "label": "Location",
               "value": "Near the metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Compact · separate work corner"
+              "id": "view0",
+              "index": 0,
+              "label": ""
             }
           ]
         },
@@ -579,11 +593,13 @@
               "id": "1",
               "label": "Location",
               "value": "Twenty-minute walk to metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Largest · separate room"
+              "id": "view1",
+              "index": 1,
+              "label": ""
             }
           ]
         }
@@ -605,7 +621,13 @@
           "hint": "I’d check whether … would be suitable for …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "b2-08-apartments123",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 1,
+        "sourceAspectRatio": 3
+      }
     },
     "s_personal": {
       "type": "choices",
@@ -647,11 +669,13 @@
               "id": "1",
               "label": "Location",
               "value": "Near the metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Compact · separate work corner"
+              "id": "view0",
+              "index": 0,
+              "label": ""
             }
           ]
         },
@@ -668,11 +692,13 @@
               "id": "1",
               "label": "Location",
               "value": "Twenty-minute walk to metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Largest · separate room"
+              "id": "view1",
+              "index": 1,
+              "label": ""
             }
           ]
         },
@@ -689,16 +715,24 @@
               "id": "1",
               "label": "Location",
               "value": "Ten-minute walk to metro"
-            },
+            }
+          ],
+          "pictures": [
             {
-              "id": "2",
-              "label": "Space",
-              "value": "Balcony · separate work corner"
+              "id": "view2",
+              "index": 2,
+              "label": ""
             }
           ]
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "image": "b2-08-apartments123",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 1,
+        "sourceAspectRatio": 3
+      }
     }
   }
 }

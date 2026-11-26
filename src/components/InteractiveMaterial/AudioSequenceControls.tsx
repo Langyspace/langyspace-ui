@@ -1,3 +1,4 @@
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 import { SimulationIcon } from './SimulationIcon'
 import * as Common from './Material.shared.styles'
 import * as Styled from './AudioSequenceControls.styles'
@@ -37,6 +38,11 @@ export function AudioSequenceControls({
     : text.replay
   const compact = density === 'compact'
   const total = Math.max(0, Math.floor(count))
+  const onSupportClick = () => {
+    supportAction?.onClick()
+    if (supportAction?.feedbackSound)
+      playFeedbackSound(supportAction.feedbackSound)
+  }
   return (
     <Styled.Root {...props} $compact={compact} aria-busy={loading}>
       {density === 'compact' ? (
@@ -94,7 +100,7 @@ export function AudioSequenceControls({
               title={supportAction.label}
               aria-pressed={supportAction.pressed}
               disabled={disabled || supportAction.disabled}
-              onClick={supportAction.onClick}
+              onClick={onSupportClick}
             >
               {supportAction.icon}
             </Styled.Playback>
@@ -136,7 +142,7 @@ export function AudioSequenceControls({
                 title={supportAction.label}
                 aria-pressed={supportAction.pressed}
                 disabled={disabled || supportAction.disabled}
-                onClick={supportAction.onClick}
+                onClick={onSupportClick}
               >
                 {supportAction.icon}
               </Styled.Playback>

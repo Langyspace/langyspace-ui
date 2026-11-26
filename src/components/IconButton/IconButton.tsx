@@ -1,3 +1,4 @@
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 import { IconSlot } from '../../internal/IconSlot/IconSlot'
 import { Spinner } from '../Spinner/Spinner'
 import * as Styled from './IconButton.styles'
@@ -16,6 +17,8 @@ const actionVariants = {
 export function IconButton({
   children,
   loading = false,
+  feedbackSound,
+  onClick,
   shape = 'circle',
   size = 'md',
   type = 'button',
@@ -25,6 +28,11 @@ export function IconButton({
   return (
     <Styled.IconButton
       {...props}
+      onClick={(event) => {
+        onClick?.(event)
+        if (!event.defaultPrevented && feedbackSound)
+          playFeedbackSound(feedbackSound)
+      }}
       {...(loading && { 'aria-busy': true, disabled: true })}
       type={type}
       $density="regular"

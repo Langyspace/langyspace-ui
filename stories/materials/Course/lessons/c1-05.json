@@ -510,13 +510,8 @@
     },
     "s_reply": {
       "type": "facts",
-      "title": "The ending in three facts",
+      "title": "Photograph taken before departure",
       "facts": [
-        {
-          "id": "0",
-          "label": "Evidence",
-          "value": "Earlier photograph · scarf on café chair"
-        },
         {
           "id": "1",
           "label": "What it rules out",
@@ -545,7 +540,8 @@
           "hint": "The staff …, and later …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "c1-05-scarf-photo123"
     },
     "s_personal": {
       "type": "facts",

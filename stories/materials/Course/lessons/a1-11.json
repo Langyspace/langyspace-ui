@@ -370,11 +370,6 @@
           "title": "Blue T-shirt",
           "facts": [
             {
-              "id": "0",
-              "label": "Colour",
-              "value": "Blue"
-            },
-            {
               "id": "1",
               "label": "Size",
               "value": "L"
@@ -384,17 +379,19 @@
               "label": "Price",
               "value": "$12"
             }
+          ],
+          "pictures": [
+            {
+              "id": "view0",
+              "index": 0,
+              "label": ""
+            }
           ]
         },
         {
           "id": "green-medium",
           "title": "Green T-shirt",
           "facts": [
-            {
-              "id": "0",
-              "label": "Colour",
-              "value": "Green"
-            },
             {
               "id": "1",
               "label": "Size",
@@ -405,17 +402,19 @@
               "label": "Price",
               "value": "$12"
             }
+          ],
+          "pictures": [
+            {
+              "id": "view1",
+              "index": 1,
+              "label": ""
+            }
           ]
         },
         {
           "id": "jacket",
           "title": "Blue jacket",
           "facts": [
-            {
-              "id": "0",
-              "label": "Colour",
-              "value": "Blue"
-            },
             {
               "id": "1",
               "label": "Size",
@@ -425,6 +424,13 @@
               "id": "2",
               "label": "Price",
               "value": "$25"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view2",
+              "index": 2,
+              "label": ""
             }
           ]
         }
@@ -446,7 +452,13 @@
           "hint": "Can I see the … one, please?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "a1-11-gift-options123",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 1,
+        "sourceAspectRatio": 3
+      }
     },
     "s_reply": {
       "type": "choices",
@@ -457,11 +469,6 @@
           "title": "Blue T-shirt",
           "facts": [
             {
-              "id": "0",
-              "label": "Colour",
-              "value": "Blue"
-            },
-            {
               "id": "1",
               "label": "Size",
               "value": "L"
@@ -471,17 +478,19 @@
               "label": "Price",
               "value": "$12"
             }
+          ],
+          "pictures": [
+            {
+              "id": "view0",
+              "index": 0,
+              "label": ""
+            }
           ]
         },
         {
           "id": "green-medium",
           "title": "Green T-shirt",
           "facts": [
-            {
-              "id": "0",
-              "label": "Colour",
-              "value": "Green"
-            },
             {
               "id": "1",
               "label": "Size",
@@ -492,17 +501,19 @@
               "label": "Price",
               "value": "$12"
             }
+          ],
+          "pictures": [
+            {
+              "id": "view1",
+              "index": 1,
+              "label": ""
+            }
           ]
         },
         {
           "id": "jacket",
           "title": "Blue jacket",
           "facts": [
-            {
-              "id": "0",
-              "label": "Colour",
-              "value": "Blue"
-            },
             {
               "id": "1",
               "label": "Size",
@@ -512,6 +523,13 @@
               "id": "2",
               "label": "Price",
               "value": "$25"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view2",
+              "index": 2,
+              "label": ""
             }
           ]
         }
@@ -533,7 +551,13 @@
           "hint": "How much is this …, please?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "a1-11-gift-options123",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 1,
+        "sourceAspectRatio": 3
+      }
     }
   }
 }

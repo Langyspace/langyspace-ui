@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { PictureStrip } from '../../../src/components/Exercise/PictureStrip'
 import { MaterialTheme } from '../../materials/shared/MaterialTheme'
 import atlas from '../../materials/Course/assets/a2-02-vocabulary81.webp'
+import neighbourhood from '../../materials/Course/assets/b1-02-neighbourhood123.webp'
 
 const meta = {
   title: 'Exercise/PictureStrip',
@@ -47,6 +48,22 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Weekend: Story = { tags: ['visual-review'] }
+export const BeforeAndAfter: Story = {
+  tags: ['visual-review'],
+  args: {
+    items: ['Before', 'Now'].map((caption, column) => ({
+      id: caption,
+      src: neighbourhood,
+      alt: caption,
+      caption,
+      region: { columns: 2, rows: 1, column, row: 0, sourceAspectRatio: 2 },
+    })),
+  },
+}
+export const Compact: Story = {
+  tags: ['visual-review', 'layout-boundary'],
+  args: { density: 'compact', items: meta.args.items.slice(0, 1) },
+}
 export const Narrow: Story = {
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['visual-review', 'layout-boundary'],

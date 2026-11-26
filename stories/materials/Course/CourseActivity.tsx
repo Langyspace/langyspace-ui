@@ -126,7 +126,10 @@ export function CourseActivity({
       completedIds={[]}
       onStepToggle={() => undefined}
       image={
-        image && !pictures && activity.type !== 'comparison'
+        image &&
+        !pictures &&
+        activity.type !== 'comparison' &&
+        activity.type !== 'menu'
           ? { src: image, alt: activity.title }
           : undefined
       }
@@ -154,6 +157,12 @@ export function CourseActivity({
       }
     >
       <Common.Stack>
+        {pictures &&
+        image &&
+        activity.options?.length &&
+        activity.type !== 'comparison' ? (
+          <Common.Hint>{activity.title}</Common.Hint>
+        ) : null}
         {activity.options?.length && activity.type !== 'comparison' ? (
           <Common.Row $justify="center">
             {activity.options.map((option, i) => (
@@ -185,11 +194,12 @@ export function CourseActivity({
           />
         ) : pictures && image ? (
           <PictureStrip
+            density={activity.options?.length ? 'compact' : 'regular'}
             aria-label={activity.title}
             items={pictures.map((p) => ({
               id: p.id,
               src: image,
-              alt: p.label,
+              alt: p.label || selected?.title || activity.title,
               region: region(p.index),
               caption: p.label,
             }))}
@@ -203,9 +213,9 @@ export function CourseActivity({
           </Common.Surface>
         ) : activity.type === 'menu' ? (
           <Common.Surface>
-            <Common.Heading>
-              {delivered ? 'Check your order' : activity.title}
-            </Common.Heading>
+            {!delivered ? (
+              <Common.Heading>{activity.title}</Common.Heading>
+            ) : null}
             {!delivered ? (
               <>
                 <KeyValueList
@@ -263,25 +273,36 @@ export function CourseActivity({
               {delivered ? 'Order again' : 'Check the tray'}
             </Common.Action>
             {delivered ? (
-              <KeyValueList
-                density="compact"
-                tone="material"
-                items={[
-                  {
-                    id: 'requested',
-                    label: 'You ordered',
-                    value: `${drink} and ${food}`,
-                  },
-                  {
-                    id: 'arrived',
-                    label: 'On the tray',
-                    value: `${drink === 'tea' ? 'coffee' : 'tea'} and ${food}`,
-                  },
-                ]}
-              />
+              <>
+                <Common.Hint>
+                  You ordered {drink} and {food}
+                </Common.Hint>
+                {image &&
+                menu.every((item) => item.pictureIndex !== undefined) ? (
+                  <PictureStrip
+                    aria-label="What arrived on your tray"
+                    items={[drink === 'tea' ? 'coffee' : 'tea', food].map(
+                      (id) => {
+                        const item = menu.find((entry) => entry.id === id)!
+                        return {
+                          id,
+                          src: image,
+                          alt: item.label,
+                          region: region(item.pictureIndex!),
+                          caption: '',
+                        }
+                      },
+                    )}
+                  />
+                ) : (
+                  <Common.Hint>
+                    On the tray: {drink === 'tea' ? 'coffee' : 'tea'} and {food}
+                  </Common.Hint>
+                )}
+              </>
             ) : null}
           </Common.Surface>
-        ) : (
+        ) : facts.length ? (
           <Common.Surface>
             <Common.Heading>{selected?.title ?? activity.title}</Common.Heading>
             <KeyValueList
@@ -291,7 +312,15 @@ export function CourseActivity({
               items={facts}
             />
           </Common.Surface>
-        )}
+        ) : null}
+        {pictures && image && facts.length ? (
+          <KeyValueList
+            tone="material"
+            density="compact"
+            layout="stacked"
+            items={facts}
+          />
+        ) : null}
       </Common.Stack>
     </RolePlayExercise>
   )

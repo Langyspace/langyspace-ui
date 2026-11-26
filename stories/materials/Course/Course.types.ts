@@ -40,6 +40,7 @@ export interface CourseActivity {
     }[]
   }
   menu?: readonly {
+    pictureIndex?: number
     id: string
     label: string
     price: number

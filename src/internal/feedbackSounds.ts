@@ -1,10 +1,37 @@
 import { feedbackSoundDesign as design } from '../foundations/audio/feedbackSoundDesign'
-import type { FeedbackSoundOutcome } from '../components/Quiz/useFeedbackSounds.types'
+import type { FeedbackSoundKind } from './feedbackSounds.types'
 
 let enabled = true
 const listeners = new Set<() => void>()
 let context: AudioContext | undefined
-let current: { gain: GainNode; oscillators: OscillatorNode[] } | undefined
+let current:
+  | { gain: GainNode; oscillators: OscillatorNode[]; kind: FeedbackSoundKind }
+  | undefined
+const observedMedia = new WeakSet<HTMLMediaElement>()
+const playingMedia = new Set<HTMLMediaElement>()
+
+/** Observe detached prepared recordings as well as visible native players. */
+export function observeFeedbackMedia(media: HTMLMediaElement) {
+  // Optional feedback must never block a consumer's minimal media adapter.
+  if (observedMedia.has(media) || typeof media.addEventListener !== 'function')
+    return
+  observedMedia.add(media)
+  const clear = () => playingMedia.delete(media)
+  media.addEventListener('play', () => {
+    playingMedia.add(media)
+    if (current?.kind === 'hint') stopFeedbackSounds()
+  })
+  for (const event of ['pause', 'ended', 'error', 'emptied']) {
+    media.addEventListener(event, clear)
+  }
+}
+
+function mediaIsPlaying() {
+  for (const media of playingMedia) {
+    if (media.paused || media.ended || media.error) playingMedia.delete(media)
+  }
+  return playingMedia.size > 0
+}
 let revision = 0
 let visibilityListenerAdded = false
 
@@ -41,8 +68,9 @@ export function setFeedbackSoundsEnabled(value: boolean) {
   for (const listener of listeners) listener()
 }
 
-async function play(outcome: FeedbackSoundOutcome) {
+async function play(outcome: FeedbackSoundKind) {
   if (!enabled || typeof window === 'undefined' || !window.AudioContext) return
+  if (outcome === 'hint' && mediaIsPlaying()) return
   stopFeedbackSounds()
   const request = revision
   try {
@@ -64,10 +92,15 @@ async function play(outcome: FeedbackSoundOutcome) {
       document.hidden
     )
       return
+    if (outcome === 'hint' && mediaIsPlaying()) return
     const bus = audio.createGain()
-    bus.gain.value = design.volume
+    bus.gain.value = design.volume * (outcome === 'hint' ? design.hintGain : 1)
     bus.connect(audio.destination)
-    const active = { gain: bus, oscillators: [] as OscillatorNode[] }
+    const active = {
+      gain: bus,
+      oscillators: [] as OscillatorNode[],
+      kind: outcome,
+    }
     current = active
     const start = audio.currentTime
     const notes = design[outcome]
@@ -109,6 +142,6 @@ async function play(outcome: FeedbackSoundOutcome) {
   }
 }
 
-export function playFeedbackSound(outcome: FeedbackSoundOutcome) {
+export function playFeedbackSound(outcome: FeedbackSoundKind) {
   void play(outcome)
 }

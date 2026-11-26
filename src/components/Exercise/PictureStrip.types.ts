@@ -12,4 +12,6 @@ export interface PictureStripItem {
 }
 export interface PictureStripProps extends ComponentPropsWithRef<'section'> {
   items: readonly PictureStripItem[]
+  /** Leave room for accompanying metadata while preserving the complete picture. */
+  density?: 'regular' | 'compact'
 }

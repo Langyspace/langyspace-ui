@@ -3,6 +3,7 @@ import { Button } from '../Button/Button'
 import { TextInput } from '../Form/TextInput'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { theme } from '../../foundations/theme/theme'
+import { revealContentMotion } from '../../foundations/motion/reveal'
 import { recipe } from '../InteractiveMaterial/Material.shared.styles'
 import type {
   DialogueGapStyleProps,
@@ -73,4 +74,5 @@ export const DialogueGap = styled(Button)<DialogueGapStyleProps>`
 `
 export const DialogueGapAnswer = styled.span<DialogueGapStyleProps>`
   visibility: ${(p) => (p.$revealed ? 'visible' : 'hidden')};
+  ${(p) => p.$revealed && revealContentMotion}
 `

@@ -375,14 +375,16 @@
               "value": "204"
             },
             {
-              "id": "1",
-              "label": "Problem",
-              "value": "The shower doesn’t work"
-            },
-            {
               "id": "2",
               "label": "You need",
               "value": "Two towels"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view0",
+              "index": 0,
+              "label": ""
             }
           ]
         },
@@ -396,14 +398,16 @@
               "value": "204"
             },
             {
-              "id": "1",
-              "label": "Problem",
-              "value": "The light doesn’t work"
-            },
-            {
               "id": "2",
               "label": "You need",
               "value": "Help this evening"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view1",
+              "index": 1,
+              "label": ""
             }
           ]
         }
@@ -425,7 +429,13 @@
           "hint": "Can I have …, please?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "image": "a1-08-hotel-problems123",
+      "pictureGrid": {
+        "columns": 2,
+        "rows": 1,
+        "sourceAspectRatio": 2
+      }
     },
     "s_reply": {
       "type": "facts",

@@ -13,6 +13,8 @@ export interface AudioSequenceControlsProps extends ComponentPropsWithRef<'div'>
     label: string
     icon: ReactNode
     onClick: () => void
+    /** Opt in when this contextual action reveals a speaking hint. */
+    feedbackSound?: 'hint'
     pressed?: boolean
     disabled?: boolean
   }

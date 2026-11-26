@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { revealContentMotion } from '../../foundations/motion/reveal'
 import { resolveButtonsTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import {
@@ -80,6 +81,9 @@ export const Guidance = styled.p<{ $numbered: boolean }>`
   color: ${(p) => recipe(p).muted};
   font-size: ${theme.typography.fontSize.sm};
   line-height: ${theme.typography.lineHeight.normal};
+  &[role='status'] {
+    ${revealContentMotion}
+  }
 `
 
 export const Footer = styled.div`

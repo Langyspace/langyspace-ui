@@ -1,4 +1,5 @@
 import { useId } from 'react'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 import * as Styled from './RevealCard.styles'
 import type { RevealCardProps } from './RevealCard.types'
 export function RevealCard({
@@ -42,7 +43,10 @@ export function RevealCard({
           aria-expanded={guidance.level !== 'cue'}
           onClick={(event) => {
             onClick?.(event)
-            if (!event.defaultPrevented) guidance.onChange(next)
+            if (!event.defaultPrevented) {
+              guidance.onChange(next)
+              if (next === 'hint') playFeedbackSound('hint')
+            }
           }}
         >
           {label}

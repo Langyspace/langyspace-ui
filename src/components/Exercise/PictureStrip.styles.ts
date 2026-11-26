@@ -23,9 +23,12 @@ export const Figure = styled.figure`
   border: 1px solid ${(p) => resolveSlideTheme(p).border};
   background: ${(p) => resolveSlideTheme(p).surface};
 `
-export const Media = styled.div`
+export const Media = styled.div<{ $compact: boolean }>`
   position: relative;
   min-width: 0;
+  width: 100%;
+  max-width: ${(p) => (p.$compact ? 'clamp(10rem, 28cqh, 16rem)' : 'none')};
+  margin-inline: auto;
 `
 export const Badge = styled.img`
   position: absolute;

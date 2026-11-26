@@ -1,5 +1,6 @@
 import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { revealContentMotion } from '../../foundations/motion/reveal'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
@@ -118,6 +119,7 @@ export const RichTranslate = styled.div`
   ${textAction}
 `
 export const Translation = styled.div`
+  ${revealContentMotion}
   grid-column: 1;
   grid-row: 2;
   min-width: 0;
@@ -148,6 +150,10 @@ export const GuidedLayer = styled.span<{
   min-width: 0;
   visibility: ${(p) => (p.$visible ? 'visible' : 'hidden')};
   pointer-events: ${(p) => (p.$visible ? 'auto' : 'none')};
+  /* The first layer is the initial cue; only hints and answers enter on reveal. */
+  &:not(:first-child) {
+    ${(p) => p.$visible && revealContentMotion}
+  }
 `
 
 export const LineControls = styled.div<{ $afterAudio: boolean }>`
