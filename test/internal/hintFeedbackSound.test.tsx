@@ -265,19 +265,24 @@ it('acknowledges each question click once and keeps answer interaction working w
   const question = screen.getByRole('button', { name: 'Where is Kim from?' })
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'true')
-  expect(latest().oscillators).toHaveLength(2)
+  expect(latest().oscillators).toHaveLength(1)
   expect(latest().gains[0]?.gain.value).toBe(
     design.volume * design.questionGain,
   )
   expect(design.questionGain).toBeLessThan(design.hintGain / 2)
-  expect(latest().oscillators[0]?.stop).toHaveBeenCalledWith(10.12)
+  expect(latest().oscillators[0]?.frequency.value).toBe(220)
+  expect(latest().oscillators[0]?.stop).toHaveBeenCalledWith(10.09)
+  expect(latest().gains[1]?.gain.linearRampToValueAtTime).toHaveBeenCalledWith(
+    design.peak,
+    10.018,
+  )
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'false')
-  expect(latest().oscillators).toHaveLength(4)
+  expect(latest().oscillators).toHaveLength(2)
   setFeedbackSoundsEnabled(false)
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'true')
-  expect(latest().oscillators).toHaveLength(4)
+  expect(latest().oscillators).toHaveLength(2)
 })
 
 it('applies mute immediately, acknowledges only the switch itself and enables ordinary feedback again on unmute', () => {

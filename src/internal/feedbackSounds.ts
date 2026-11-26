@@ -120,9 +120,14 @@ async function play(
     current = active
     const start = audio.currentTime
     const notes = design[outcome]
-    let remaining = notes.length * 2
+    const harmonics = outcome === 'question' ? [1] : [1, 2]
+    const attack =
+      outcome === 'question'
+        ? design.questionAttackSeconds
+        : design.attackSeconds
+    let remaining = notes.length * harmonics.length
     for (const note of notes) {
-      for (const harmonic of [1, 2]) {
+      for (const harmonic of harmonics) {
         const oscillator = audio.createOscillator()
         const envelope = audio.createGain()
         const at = start + note.start
@@ -131,7 +136,7 @@ async function play(
         oscillator.type = 'sine'
         oscillator.frequency.value = note.frequency * harmonic
         envelope.gain.setValueAtTime(0, at)
-        envelope.gain.linearRampToValueAtTime(peak, at + design.attackSeconds)
+        envelope.gain.linearRampToValueAtTime(peak, at + attack)
         envelope.gain.exponentialRampToValueAtTime(
           peak * 0.35,
           end - design.releaseSeconds,
