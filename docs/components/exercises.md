@@ -162,3 +162,10 @@ The page containing regular scene vocabulary can select `SlidePage width={{ voca
 ### Compreensão ao lado de diálogo
 
 Compor `RevealCard presentation="prompt"` numa lista numerada para perguntas factuais. A pergunta clicável revela a resposta abaixo; `VocabularyControls` oferece a lâmpada inferior quando há apoios graduais. Essa composição não reutiliza os participantes e balões do diálogo. A interação pessoal continua usando `LearningDialogue` com pistas e, normalmente, pelo menos três pares de fala. Os adaptadores dos materiais escolhem a finalidade; o componente não infere pedagogia a partir do título.
+
+
+### Slide appearance control
+
+`SlideDeck themeToggle={{ mode, onToggle }}` adds a controlled sun/moon icon immediately before the answer-sound control. `mode` is `dark` or `light`; `onToggle` belongs to the consumer, which also supplies the matching ThemeProvider. Omit the prop to preserve the existing generic deck. The button is named “Tema claro”, exposes its state with aria-pressed and names its next action in the tooltip. It does not change navigation, audio or exercise state.
+
+Maintained materials bind this control in their shared MaterialTheme/MaterialSlideDeck and experimental LessonShell. Presentations start dark; nested wrappers inherit the same session choice. The light theme reuses the canonical UI Library theme; it does not add a second color palette.

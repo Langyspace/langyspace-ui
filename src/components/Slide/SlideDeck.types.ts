@@ -50,6 +50,11 @@ export interface SlideDeckProps extends Omit<
   /** Show the shared answer-sound toggle; spoken lesson audio is independent. */
   feedbackSounds?: boolean
   feedbackSoundsLabel?: string
+  /** Optional controlled appearance switch, placed immediately before the sound control. */
+  themeToggle?: {
+    mode: 'dark' | 'light'
+    onToggle: () => void
+  }
   /** Nonmodal material overlays, such as controlled notes, within the deck's viewport. */
   overlay?: ReactNode
 }

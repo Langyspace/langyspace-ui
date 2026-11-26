@@ -6,7 +6,7 @@ import { IconButton } from '../IconButton/IconButton'
 
 const recipe = resolveSlideTheme
 
-export const SoundButton = styled(IconButton)`
+export const HeaderIconButton = styled(IconButton)`
   flex-shrink: 0;
   color: ${(p) => recipe(p).muted};
   background: transparent;

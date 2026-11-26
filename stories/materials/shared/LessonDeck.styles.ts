@@ -63,5 +63,5 @@ export const ExerciseProgressLabel = styled.span`
 `
 
 export const MaterialDeck = styled(SlideDeck)`
-  color-scheme: dark;
+  color-scheme: inherit;
 `

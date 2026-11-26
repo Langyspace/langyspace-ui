@@ -1,11 +1,11 @@
 import { styled } from 'styled-components'
 import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
-export const MaterialRoot = styled.div`
+export const MaterialRoot = styled.div<{ $mode: 'dark' | 'light' }>`
   width: 100%;
   min-width: 0;
   min-height: 100%;
   height: 100%;
-  color-scheme: dark;
+  color-scheme: ${(p) => p.$mode};
   &,
   & * {
     scrollbar-width: none;

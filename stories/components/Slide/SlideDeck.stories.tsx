@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
 import { useState } from 'react'
+import { ThemeProvider } from 'styled-components'
+import { theme } from '../../../src/foundations/theme/theme'
+import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { Button } from '../../../src/components/Button/Button'
 import { lessonPages, longPage } from './Slide.fixtures'
@@ -135,5 +138,37 @@ export const Controlled: Story = {
     await waitFor(() =>
       expect(canvas.getByRole('progressbar')).toHaveAttribute('value', '0'),
     )
+  },
+}
+
+function AppearanceDeck() {
+  const [mode, setMode] = useState<'dark' | 'light'>('dark')
+  return (
+    <ThemeProvider theme={mode === 'dark' ? materialDarkTheme : theme}>
+      <SlideDeck
+        label="Lesson appearance"
+        pages={lessonPages}
+        feedbackSounds
+        themeToggle={{
+          mode,
+          onToggle: () =>
+            setMode((current) => (current === 'dark' ? 'light' : 'dark')),
+        }}
+      />
+    </ThemeProvider>
+  )
+}
+export const ThemeToggle: Story = {
+  render: () => <AppearanceDeck />,
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const control = within(canvasElement).getByRole('button', {
+      name: 'Tema claro',
+    })
+    await expect(control).toHaveAttribute('aria-pressed', 'false')
+    await userEvent.click(control)
+    await expect(control).toHaveAttribute('aria-pressed', 'true')
+    await userEvent.click(control)
+    await expect(control).toHaveAttribute('aria-pressed', 'false')
   },
 }

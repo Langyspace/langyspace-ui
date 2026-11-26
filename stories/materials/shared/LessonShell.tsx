@@ -8,6 +8,7 @@ import { LessonNotes } from './LessonNotes'
 import type { LessonShellProps, LessonIntroProps } from './Lesson.types'
 import * as S from './Lesson.styles'
 import { withFreeConversationEnding } from './freeConversationEnding'
+import { useMaterialThemeToggle } from './MaterialAppearanceContext'
 export function LessonIntro({
   level,
   lesson,
@@ -49,10 +50,12 @@ export function LessonShell({
   const notePopup = useLessonNotesPopup('langy-notes:' + materialKey)
 
   const speech = useLessonSpeech()
+  const themeToggle = useMaterialThemeToggle()
 
   return (
     <S.Stage>
       <SlideDeck
+        themeToggle={themeToggle}
         navigationMode={navigationMode}
         tabIndex={-1}
         label={label}

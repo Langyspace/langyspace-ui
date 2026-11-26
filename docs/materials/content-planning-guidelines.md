@@ -461,3 +461,10 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Manter a copy autoral junto aos dados de prática da aula (`homeworkCopy`). Atualizá-la quando as atividades mudarem; não derivar a instrução de um slug nem usar a mesma tarefa genérica para todos os níveis
 - Os dois links vêm dos IDs reais das atividades e da origem validada do portal Student do ambiente atual. Não inventar destinos nem oferecer cópia com links ausentes ou não publicados naquele ambiente
 - Copiar somente por clique, com confirmação discreta. Se o navegador bloquear o clipboard, exibir o mesmo texto selecionável para cópia manual. Essa ação prepara a mensagem, sem enviar WhatsApp
+
+
+### 26/11/2026 — Alternância de tema na apresentação
+
+- O header comum oferece sol/lua imediatamente antes do controle de som. Toda apresentação começa no tema escuro atual; a professora pode escolher o tema claro e voltar sem perder a página, as respostas ou as revelações
+- Consumir os tokens claros/escuros canônicos e o estado compartilhado do material, inclusive nos wrappers aninhados e nas experimentais. Não codificar cor de texto/fundo por página para acompanhar o botão
+- Fotos, ilustrações e a aparência própria de dispositivos/conteúdos incorporados mantêm suas cores; o controle troca o tema da apresentação
