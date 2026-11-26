@@ -3,6 +3,7 @@ import { SlidePageFit } from './SlidePageFit'
 import * as Styled from './SlideDeck.styles'
 import type { SlideDeckProps } from './SlideDeck.types'
 import { useFeedbackSounds } from '../Quiz/useFeedbackSounds'
+import { setFeedbackSoundsEnabledFromControl } from '../../internal/feedbackSounds'
 
 export function SlideDeck({
   pages,
@@ -80,6 +81,7 @@ export function SlideDeck({
                     : 'Voltar ao tema escuro'
                 }
                 onClick={themeToggle.onToggle}
+                feedbackSound="hint"
               >
                 <svg
                   aria-hidden="true"
@@ -111,7 +113,9 @@ export function SlideDeck({
                 aria-label={feedbackSoundsLabel}
                 title={feedbackSoundsLabel}
                 aria-pressed={sound.enabled}
-                onClick={() => sound.setEnabled(!sound.enabled)}
+                onClick={() =>
+                  setFeedbackSoundsEnabledFromControl(!sound.enabled)
+                }
               >
                 <svg
                   aria-hidden="true"

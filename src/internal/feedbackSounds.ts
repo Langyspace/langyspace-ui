@@ -68,8 +68,16 @@ export function setFeedbackSoundsEnabled(value: boolean) {
   for (const listener of listeners) listener()
 }
 
-async function play(outcome: FeedbackSoundKind) {
-  if (!enabled || typeof window === 'undefined' || !window.AudioContext) return
+async function play(
+  outcome: FeedbackSoundKind,
+  acknowledgeMuteControl = false,
+) {
+  if (
+    (!enabled && !acknowledgeMuteControl) ||
+    typeof window === 'undefined' ||
+    !window.AudioContext
+  )
+    return
   if (outcome === 'hint' && mediaIsPlaying()) return
   stopFeedbackSounds()
   const request = revision
@@ -86,7 +94,7 @@ async function play(outcome: FeedbackSoundKind) {
     const audio = context
     if (audio.state !== 'running') await audio.resume()
     if (
-      !enabled ||
+      (!enabled && !acknowledgeMuteControl) ||
       request !== revision ||
       audio.state !== 'running' ||
       document.hidden
@@ -144,4 +152,11 @@ async function play(outcome: FeedbackSoundKind) {
 
 export function playFeedbackSound(outcome: FeedbackSoundKind) {
   void play(outcome)
+}
+
+/** Only the explicit sound switch acknowledges its own change after applying mute immediately. */
+export function setFeedbackSoundsEnabledFromControl(value: boolean) {
+  if (enabled === value) return
+  setFeedbackSoundsEnabled(value)
+  void play('hint', true)
 }

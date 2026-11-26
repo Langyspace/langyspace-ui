@@ -2,12 +2,15 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { IconButton } from '../../src/components/IconButton/IconButton'
 import { VocabularyControls } from '../../src/components/Exercise/VocabularyControls'
+import { QuestionList } from '../../src/components/Exercise/QuestionList'
 import { RevealCard } from '../../src/components/Exercise/RevealCard'
 import { AudioSequenceControls } from '../../src/components/InteractiveMaterial/AudioSequenceControls'
 import {
   observeFeedbackMedia,
   playFeedbackSound,
   setFeedbackSoundsEnabled,
+  setFeedbackSoundsEnabledFromControl,
+  feedbackSoundsEnabled,
   stopFeedbackSounds,
 } from '../../src/internal/feedbackSounds'
 import { feedbackSoundDesign as design } from '../../src/foundations/audio/feedbackSoundDesign'
@@ -73,7 +76,7 @@ afterEach(() => {
 const latest = () => AudioContextFixture.all.at(-1)!
 
 describe('Shared hint earcon', () => {
-  it('plays once for the canonical hint action, never hover, model eye or a disabled hint', () => {
+  it('plays once for the canonical hint action, never hover or a disabled hint, and acknowledges the model eye too', () => {
     const onHint = vi.fn()
     const onModel = vi.fn()
     const { rerender } = render(
@@ -91,7 +94,7 @@ describe('Shared hint earcon', () => {
     expect(latest().oscillators).toHaveLength(2)
     fireEvent.click(screen.getByRole('button', { name: 'Show all words' }))
     expect(onModel).toHaveBeenCalledOnce()
-    expect(latest().oscillators).toHaveLength(2)
+    expect(latest().oscillators).toHaveLength(4)
     rerender(
       <VocabularyControls
         showInitial={false}
@@ -195,7 +198,7 @@ describe('Shared hint earcon', () => {
     )
     fireEvent.click(screen.getByRole('button', { name: 'Answer' }))
     expect(onChange).toHaveBeenLastCalledWith('full')
-    expect(latest().oscillators).toHaveLength(2)
+    expect(latest().oscillators).toHaveLength(4)
     rerender(
       <AudioSequenceControls
         index={0}
@@ -212,10 +215,10 @@ describe('Shared hint earcon', () => {
     )
     fireEvent.click(screen.getByRole('button', { name: 'Speaking tip' }))
     expect(support).toHaveBeenCalledOnce()
-    expect(latest().oscillators).toHaveLength(4)
+    expect(latest().oscillators).toHaveLength(6)
     fireEvent.click(screen.getByRole('button', { name: 'Tocar de novo' }))
     expect(onReplay).toHaveBeenCalledOnce()
-    expect(latest().oscillators).toHaveLength(4)
+    expect(latest().oscillators).toHaveLength(6)
   })
 
   it('discards an awaited AudioContext resume if sound is muted before it finishes', async () => {
@@ -249,4 +252,40 @@ describe('Shared hint earcon', () => {
       design.correct[1].frequency,
     )
   })
+})
+
+it('acknowledges each question click once and keeps answer interaction working while muted', () => {
+  render(
+    <QuestionList
+      items={[
+        { id: 'q', prompt: 'Where is Kim from?', answer: 'She’s from Korea' },
+      ]}
+    />,
+  )
+  const question = screen.getByRole('button', { name: 'Where is Kim from?' })
+  fireEvent.click(question)
+  expect(question).toHaveAttribute('aria-expanded', 'true')
+  expect(latest().oscillators).toHaveLength(2)
+  fireEvent.click(question)
+  expect(question).toHaveAttribute('aria-expanded', 'false')
+  expect(latest().oscillators).toHaveLength(4)
+  setFeedbackSoundsEnabled(false)
+  fireEvent.click(question)
+  expect(question).toHaveAttribute('aria-expanded', 'true')
+  expect(latest().oscillators).toHaveLength(4)
+})
+
+it('applies mute immediately, acknowledges only the switch itself and enables ordinary feedback again on unmute', () => {
+  setFeedbackSoundsEnabledFromControl(false)
+  expect(feedbackSoundsEnabled()).toBe(false)
+  const context = latest()
+  expect(context.oscillators).toHaveLength(2)
+  playFeedbackSound('hint')
+  playFeedbackSound('correct')
+  expect(context.oscillators).toHaveLength(2)
+  setFeedbackSoundsEnabledFromControl(true)
+  expect(feedbackSoundsEnabled()).toBe(true)
+  expect(context.oscillators).toHaveLength(4)
+  playFeedbackSound('hint')
+  expect(context.oscillators).toHaveLength(6)
 })

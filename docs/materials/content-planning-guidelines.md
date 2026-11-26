@@ -476,8 +476,8 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Imagens de opções acompanham a opção selecionada e seus metadados. O atlas inteiro não deve aparecer quando só uma região é relevante. A variante compacta de PictureStrip reserva espaço para preços e tamanhos sem deformar ou cortar os objetos.
 - Não criar uma pista nova para deixar a cena mais bonita. Informação revelada pelo listening só aparece depois dele. Foto de referência do objeto perdido não é prova de que o objeto encontrado é o mesmo.
 - Usar o prompt canônico de imagem literalmente, anexando apenas assunto e composição. Texto, números, rótulos e controles pertencem à UI, não ao bitmap. Registrar pedidos, originais e hashes; reutilizar imagens válidas.
-- O ícone de dica reutiliza o som compartilhado, breve e discreto, respeitando o mute do header e sem competir com gravações nativas. Não usar sons de acerto para pedir ajuda e não duplicar handlers por aula. Ver [contrato do som de dica](../components/hint-feedback-sound.md).
-- Respostas e dicas podem entrar com fade de 150 ms. Respeitar movimento reduzido; não animar altura, navegação ou scroll, nem mover o play. Vocabulário revelado permanece estático. Ver [contrato de animação](../components/reveal-motion.md).
+- Dica, olho, perguntas com resposta e troca de tema reutilizam o som compartilhado, breve e discreto, respeitando o mute do header e sem competir com gravações nativas. O próprio controle de mutar/desmutar confirma seu clique com um único som, sem habilitar outros sons quando estiver mutado. Não usar sons de acerto para pedir ajuda e não duplicar handlers por aula. Ver [contrato do som de dica](../components/hint-feedback-sound.md).
+- Dicas e falas podem entrar com fade de 150 ms; respostas de RevealCard entram com opacidade e deslocamento visual de 4px em 200 ms, sem alterar a geometria do layout. Respeitar movimento reduzido; não animar altura, navegação ou scroll, nem mover o play. Vocabulário revelado permanece estático. Ver [contrato de animação](../components/reveal-motion.md).
 
 
 ## Instruções concentradas no cabeçalho — revisão124

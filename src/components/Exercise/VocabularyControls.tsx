@@ -52,6 +52,7 @@ export function VocabularyControls({
           }
           aria-pressed={interaction === 'toggle' ? showAll : undefined}
           onClick={onToggleAll}
+          feedbackSound="hint"
         >
           <svg
             aria-hidden="true"

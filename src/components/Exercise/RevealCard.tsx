@@ -45,7 +45,7 @@ export function RevealCard({
             onClick?.(event)
             if (!event.defaultPrevented) {
               guidance.onChange(next)
-              if (next === 'hint') playFeedbackSound('hint')
+              playFeedbackSound('hint')
             }
           }}
         >
@@ -79,8 +79,10 @@ export function RevealCard({
           {...props}
           onClick={(event) => {
             onClick?.(event)
-            if (guidance && !event.defaultPrevented)
-              guidance.onChange(guidance.level === 'full' ? 'cue' : 'full')
+            if (!event.defaultPrevented) {
+              guidance?.onChange(guidance.level === 'full' ? 'cue' : 'full')
+              playFeedbackSound('hint')
+            }
           }}
           type={type}
           aria-expanded={guidance ? guidance.level !== 'cue' : revealed}
@@ -128,7 +130,10 @@ export function RevealCard({
   return (
     <Styled.Reveal
       {...props}
-      onClick={onClick}
+      onClick={(event) => {
+        onClick?.(event)
+        if (!event.defaultPrevented) playFeedbackSound('hint')
+      }}
       type={type}
       aria-expanded={revealed}
     >

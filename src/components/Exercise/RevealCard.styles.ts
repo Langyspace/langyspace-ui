@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
-import { revealContentMotion } from '../../foundations/motion/reveal'
+import { answerRevealMotion } from '../../foundations/motion/reveal'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
 import { Button } from '../Button/Button'
@@ -88,7 +88,7 @@ export const PromptAnswer = styled.p<{ $revealed: boolean; $minLines: number }>`
   min-block-size: calc(1.4em * ${(p) => Math.max(1, p.$minLines)});
   visibility: ${(p) => (p.$revealed ? 'visible' : 'hidden')};
   pointer-events: ${(p) => (p.$revealed ? 'auto' : 'none')};
-  ${(p) => p.$revealed && revealContentMotion}
+  ${(p) => p.$revealed && answerRevealMotion}
 `
 
 export const GuidedQuestion = styled.p`
