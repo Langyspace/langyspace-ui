@@ -1,0 +1,92 @@
+{
+  "cursor": 441,
+  "events": [
+    {
+      "sequence": 423,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.audioNodeCreated",
+      "params": {
+        "node": {
+          "channelCount": 2,
+          "channelCountMode": "explicit",
+          "channelInterpretation": "speakers",
+          "contextId": "c0e7ae8c-01a8-4e06-9e3b-10be28877b4d",
+          "nodeId": "3264efc8-9067-4ef0-8586-5d2fe46a0daa",
+          "nodeType": "AudioDestination",
+          "numberOfInputs": 1,
+          "numberOfOutputs": 0
+        }
+      }
+    },
+    {
+      "sequence": 435,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.audioNodeCreated",
+      "params": {
+        "node": {
+          "channelCount": 2,
+          "channelCountMode": "max",
+          "channelInterpretation": "speakers",
+          "contextId": "c0e7ae8c-01a8-4e06-9e3b-10be28877b4d",
+          "nodeId": "4dd889d0-0223-4871-816a-951f72c12d7f",
+          "nodeType": "Gain",
+          "numberOfInputs": 1,
+          "numberOfOutputs": 1
+        }
+      }
+    },
+    {
+      "sequence": 437,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.nodesConnected",
+      "params": {
+        "contextId": "c0e7ae8c-01a8-4e06-9e3b-10be28877b4d",
+        "destinationId": "3264efc8-9067-4ef0-8586-5d2fe46a0daa",
+        "destinationInputIndex": 0,
+        "sourceId": "4dd889d0-0223-4871-816a-951f72c12d7f",
+        "sourceOutputIndex": 0
+      }
+    },
+    {
+      "sequence": 438,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.audioNodeCreated",
+      "params": {
+        "node": {
+          "channelCount": 2,
+          "channelCountMode": "max",
+          "channelInterpretation": "speakers",
+          "contextId": "c0e7ae8c-01a8-4e06-9e3b-10be28877b4d",
+          "nodeId": "500e7ebf-f321-4930-a8b4-24d48043cb5c",
+          "nodeType": "AudioBufferSource",
+          "numberOfInputs": 0,
+          "numberOfOutputs": 1
+        }
+      }
+    },
+    {
+      "sequence": 441,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.nodesConnected",
+      "params": {
+        "contextId": "c0e7ae8c-01a8-4e06-9e3b-10be28877b4d",
+        "destinationId": "4dd889d0-0223-4871-816a-951f72c12d7f",
+        "destinationInputIndex": 0,
+        "sourceId": "500e7ebf-f321-4930-a8b4-24d48043cb5c",
+        "sourceOutputIndex": 0
+      }
+    }
+  ],
+  "hasMore": false,
+  "truncated": false
+}

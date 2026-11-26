@@ -25,3 +25,7 @@ Refino do timbre: nove testes focados passaram, incluindo frequência, oscilador
 ## Verificação dirigida de clique sem som
 
 A preferência estava habilitada, o documento visível e o audio nativo pausado. O olhinho gerou os dois osciladores esperados. Cada uma das três perguntas gerou um oscilador conectado à saída; o relógio realtime do AudioContext avançava. A evidência comprova o encaminhamento de cada clique, sem provar a audibilidade física. A tentativa de 220 Hz/ganho 0.10/90 ms foi considerada fraca demais após o relato e foi substituída pela configuração acima. Todos os outros sons e comportamentos de mute/áudio nativo permaneceram iguais.
+
+## Ajuste após retorno de som duro
+
+A tentativa anterior continuou sendo percebida como uma batida. O question cue passa a uma textura de ar filtrado de 180 ms, banda 180–900 Hz, sem oscilador tonal. Uma janela suave em sino cobre toda a subida/descida, com bordas próximas de zero. O gerador privado produz PCM determinístico por sample rate; o canal, volume, mute, substituição de cliques e prioridade da fala são os mesmos. Não altera layout, animações ou demais sons. Os testes medem reprodução única, fade inicial/final, sinal não nulo, mute e preservação dos outros earcons; aprovação de timbre continua com a usuária.

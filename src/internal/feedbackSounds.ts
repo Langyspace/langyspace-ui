@@ -1,11 +1,16 @@
 import { feedbackSoundDesign as design } from '../foundations/audio/feedbackSoundDesign'
 import type { FeedbackSoundKind } from './feedbackSounds.types'
+import { questionFeedbackSamples } from './questionFeedbackSamples'
 
 let enabled = true
 const listeners = new Set<() => void>()
 let context: AudioContext | undefined
 let current:
-  | { gain: GainNode; oscillators: OscillatorNode[]; kind: FeedbackSoundKind }
+  | {
+      gain: GainNode
+      sources: AudioScheduledSourceNode[]
+      kind: FeedbackSoundKind
+    }
   | undefined
 const observedMedia = new WeakSet<HTMLMediaElement>()
 const playingMedia = new Set<HTMLMediaElement>()
@@ -53,9 +58,9 @@ export function stopFeedbackSounds() {
   const end = context.currentTime + 0.008
   active.gain.gain.cancelScheduledValues(context.currentTime)
   active.gain.gain.setTargetAtTime(0, context.currentTime, 0.002)
-  for (const oscillator of active.oscillators) {
+  for (const source of active.sources) {
     try {
-      oscillator.stop(end)
+      source.stop(end)
     } catch {
       /* Already ended. */
     }
@@ -114,17 +119,30 @@ async function play(
     bus.connect(audio.destination)
     const active = {
       gain: bus,
-      oscillators: [] as OscillatorNode[],
+      sources: [] as AudioScheduledSourceNode[],
       kind: outcome,
     }
     current = active
     const start = audio.currentTime
+    if (outcome === 'question') {
+      const samples = questionFeedbackSamples(audio.sampleRate)
+      const buffer = audio.createBuffer(1, samples.length, audio.sampleRate)
+      buffer.getChannelData(0).set(samples)
+      const source = audio.createBufferSource()
+      source.buffer = buffer
+      source.connect(bus)
+      active.sources.push(source)
+      source.onended = () => {
+        source.disconnect()
+        bus.disconnect()
+        if (current === active) current = undefined
+      }
+      source.start(start)
+      source.stop(start + buffer.duration)
+      return
+    }
     const notes = design[outcome]
-    const harmonics = outcome === 'question' ? [1] : [1, 2]
-    const attack =
-      outcome === 'question'
-        ? design.questionAttackSeconds
-        : design.attackSeconds
+    const harmonics = [1, 2]
     let remaining = notes.length * harmonics.length
     for (const note of notes) {
       for (const harmonic of harmonics) {
@@ -136,7 +154,7 @@ async function play(
         oscillator.type = 'sine'
         oscillator.frequency.value = note.frequency * harmonic
         envelope.gain.setValueAtTime(0, at)
-        envelope.gain.linearRampToValueAtTime(peak, at + attack)
+        envelope.gain.linearRampToValueAtTime(peak, at + design.attackSeconds)
         envelope.gain.exponentialRampToValueAtTime(
           peak * 0.35,
           end - design.releaseSeconds,
@@ -144,7 +162,7 @@ async function play(
         envelope.gain.linearRampToValueAtTime(0, end)
         oscillator.connect(envelope)
         envelope.connect(bus)
-        active.oscillators.push(oscillator)
+        active.sources.push(oscillator)
         oscillator.onended = () => {
           oscillator.disconnect()
           envelope.disconnect()

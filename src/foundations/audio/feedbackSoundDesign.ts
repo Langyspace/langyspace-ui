@@ -12,10 +12,9 @@ export const feedbackSoundDesign = {
   /** Quiet neutral acknowledgement: one soft note, no success/failure contour. */
   hintGain: 0.38,
   hint: [{ frequency: 587.33, start: 0, duration: 0.15 }],
-  /** Muted low tap: no upper harmonic, a rounded onset and a short tail. */
+  /** Filtered air with a full bell-shaped fade, rather than a percussive note. */
   questionGain: 0.16,
-  questionAttackSeconds: 0.02,
-  question: [{ frequency: 330, start: 0, duration: 0.11 }],
+  question: { duration: 0.18, highPassHz: 180, lowPassHz: 900 },
   wrong: [
     { frequency: 440, start: 0, duration: 0.095 },
     { frequency: 392, start: 0.105, duration: 0.12 },

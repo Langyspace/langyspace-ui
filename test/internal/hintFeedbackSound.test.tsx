@@ -36,14 +36,24 @@ const createOscillatorFixture = () => ({
   stop: vi.fn(),
   onended: null as (() => void) | null,
 })
+const createBufferSourceFixture = () => ({
+  buffer: null as AudioBuffer | null,
+  connect: vi.fn(),
+  disconnect: vi.fn(),
+  start: vi.fn(),
+  stop: vi.fn(),
+  onended: null as (() => void) | null,
+})
 
 class AudioContextFixture {
   static all: AudioContextFixture[] = []
   state = 'running'
   currentTime = 10
+  sampleRate = 48000
   destination = {}
   gains: ReturnType<typeof createGainFixture>[] = []
   oscillators: ReturnType<typeof createOscillatorFixture>[] = []
+  sources: ReturnType<typeof createBufferSourceFixture>[] = []
   resume = vi.fn(() => {
     this.state = 'running'
     return Promise.resolve()
@@ -57,6 +67,15 @@ class AudioContextFixture {
     const node = createOscillatorFixture()
     this.oscillators.push(node)
     return node
+  }
+  createBuffer(_channels: number, length: number, sampleRate: number) {
+    const samples = new Float32Array(length)
+    return { duration: length / sampleRate, getChannelData: () => samples }
+  }
+  createBufferSource() {
+    const source = createBufferSourceFixture()
+    this.sources.push(source)
+    return source
   }
   constructor() {
     AudioContextFixture.all.push(this)
@@ -265,24 +284,31 @@ it('acknowledges each question click once and keeps answer interaction working w
   const question = screen.getByRole('button', { name: 'Where is Kim from?' })
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'true')
-  expect(latest().oscillators).toHaveLength(1)
+  expect(latest().oscillators).toHaveLength(0)
+  expect(latest().sources).toHaveLength(1)
   expect(latest().gains[0]?.gain.value).toBe(
     design.volume * design.questionGain,
   )
   expect(design.questionGain).toBeLessThan(design.hintGain / 2)
-  expect(latest().oscillators[0]?.frequency.value).toBe(330)
-  expect(latest().oscillators[0]?.stop).toHaveBeenCalledWith(10.11)
-  expect(latest().gains[1]?.gain.linearRampToValueAtTime).toHaveBeenCalledWith(
-    design.peak,
-    10.02,
-  )
+  expect(latest().sources[0]?.stop).toHaveBeenCalledWith(10.18)
+  const samples = latest().sources[0]!.buffer!.getChannelData(0)
+  const rms = (part: Float32Array) =>
+    Math.sqrt(part.reduce((sum, value) => sum + value * value, 0) / part.length)
+  const middle = rms(samples.slice(3000, 5600))
+  expect(middle).toBeGreaterThan(0.01)
+  expect(rms(samples.slice(0, 480))).toBeLessThan(middle / 5)
+  expect(rms(samples.slice(-480))).toBeLessThan(middle / 5)
+  expect(Math.abs(samples[0]!)).toBeLessThan(0.000001)
+  expect(Math.abs(samples[samples.length - 1]!)).toBeLessThan(0.000001)
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'false')
-  expect(latest().oscillators).toHaveLength(2)
+  expect(latest().sources).toHaveLength(2)
+  expect(latest().sources[0]?.stop).toHaveBeenLastCalledWith(10.008)
   setFeedbackSoundsEnabled(false)
+  expect(latest().sources[1]?.stop).toHaveBeenLastCalledWith(10.008)
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'true')
-  expect(latest().oscillators).toHaveLength(2)
+  expect(latest().sources).toHaveLength(2)
 })
 
 it('applies mute immediately, acknowledges only the switch itself and enables ordinary feedback again on unmute', () => {
