@@ -155,7 +155,11 @@
         "src": "scene-tired-tom",
         "alt": "A tired person yawning"
       },
-      "options": ["He’s tired.", "He’s cold.", "He’s happy."],
+      "options": [
+        "He’s tired.",
+        "He’s cold.",
+        "He’s happy."
+      ],
       "correctIndex": 0
     },
     {
@@ -170,7 +174,11 @@
         "src": "scene-cold-julia",
         "alt": "Julia wearing warm clothes because she is cold"
       },
-      "options": ["She’s hungry.", "She’s cold.", "She’s happy."],
+      "options": [
+        "She’s hungry.",
+        "She’s cold.",
+        "She’s happy."
+      ],
       "correctIndex": 1
     },
     {
@@ -185,7 +193,11 @@
         "src": "scene-sad-josh",
         "alt": "Josh looking sad"
       },
-      "options": ["He’s happy.", "He’s tired.", "He’s sad."],
+      "options": [
+        "He’s happy.",
+        "He’s tired.",
+        "He’s sad."
+      ],
       "correctIndex": 2
     },
     {
@@ -200,7 +212,11 @@
         "src": "scene-happy-mia",
         "alt": "A smiling person celebrating"
       },
-      "options": ["She’s happy.", "She’s cold.", "She’s tired."],
+      "options": [
+        "She’s happy.",
+        "She’s cold.",
+        "She’s tired."
+      ],
       "correctIndex": 0
     },
     {
@@ -215,7 +231,11 @@
         "src": "scene-hungry-ana",
         "alt": "Ana looking at food because she is hungry"
       },
-      "options": ["She’s cold.", "She’s hungry.", "She’s angry."],
+      "options": [
+        "She’s cold.",
+        "She’s hungry.",
+        "She’s angry."
+      ],
       "correctIndex": 1
     },
     {
@@ -230,7 +250,11 @@
         "src": "scene-angry-leo",
         "alt": "Leo looking angry"
       },
-      "options": ["He’s hungry.", "He’s sad.", "He’s angry."],
+      "options": [
+        "He’s hungry.",
+        "He’s sad.",
+        "He’s angry."
+      ],
       "correctIndex": 2
     },
     {
@@ -620,7 +644,7 @@
       "kind": "activity",
       "columns": 1,
       "title": "Talk about yourself",
-      "instruction": "Use your own information and practise the conversation with Teacher",
+      "instruction": "Complete your answers, then practise the conversation with Teacher",
       "eyebrow": "Guided conversation",
       "minutes": 4
     },

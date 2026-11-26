@@ -36,3 +36,8 @@ Os dois arquivos preexistentes de stories/epic107 permanecem sem stage. Ponte Te
 A pedido da dona, somente este diálogo troca os cinco campos da aluna por `...` literais nos textos, sem criar prop, CSS ou lógica de substituição. Subtítulo orienta praticar com informações próprias. Falas prontas da professora preservadas. Introduce someone continua com seus três campos e respostas em memória; a navegação local usou seta, sem recarregar nem descartar os valores que a usuária estava testando nessa outra página. Não virou regra global, pois é um experimento para revisão.
 
 Sete testes focados passaram (reaproveitando a cobertura do diálogo com campos em Introduce someone). Conferência no navegador: Talk about yourself sem inputs, nove falas, cinco pontos de resposta oral; captura personal-oral115-after.jpg. Sem build, API change, Teacher change ou deploy.
+
+
+## Decisão117 — voltar aos inputs
+
+A dona encerrou o experimento de reticências e pediu a volta dos inputs. Restaurados os cinco campos só da aluna a partir da autoria114, mantendo a professora pronta e o traço contínuo com margem. Introduce someone preservado. Ajuste tipográfico116 foi descartado antes de qualquer commit/push. Modelo de campos reutiliza as evidências funcionais e de layout114; teste de fatos direcionado passou. Captura117 mostra cinco campos em1280×720. Sem deploy, novo componente ou alteração de API.
