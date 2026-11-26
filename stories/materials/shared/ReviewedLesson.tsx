@@ -429,7 +429,7 @@ function PageContent({
                   onChange: setHelpLevel,
                 }}
               >
-                Introduce them. Add a job or a city.
+                Speaking support
               </RevealCard>
               <Common.Surface>
                 <Common.Heading>{choice.label}</Common.Heading>

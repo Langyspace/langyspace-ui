@@ -299,7 +299,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Help with the move",
-      "instruction": "Offer some help and agree who will do what",
+      "instruction": "Offer help with one action at a time and agree who will do what",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -408,7 +408,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Offer one useful action at a time",
+      "title": "Moving-day situations",
       "image": "a2-05-vocabulary81",
       "options": [
         {
@@ -529,7 +529,8 @@
           "hint": "I can come at … Shall I bring anything?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "This afternoon’s needs"
     }
   }
 }

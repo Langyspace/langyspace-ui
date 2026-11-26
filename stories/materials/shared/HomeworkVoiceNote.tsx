@@ -4,12 +4,13 @@ import { MessagePhoneFrame } from '../../../src/components/Device/MessagePhoneFr
 import { MessageBubble } from '../../../src/components/Message/MessageBubble'
 import { useMaterialTeacher } from './MaterialTeacherContext'
 import { withVoiceMessageLayout } from './deviceTheme'
+import { applicationPhone } from '../../../src/foundations/layout/applicationPhone'
 import type { HomeworkVoiceNoteProps } from './HomeworkVoiceNote.types'
 import * as S from './HomeworkVoiceNote.styles'
 const messageTheme = withVoiceMessageLayout({
   contentWidth: '100%',
-  phoneWidth: '18rem',
-  phoneHeight: 'clamp(24rem, calc(100cqh - 15.625rem), 33.75rem)',
+  phoneWidth: applicationPhone.maximumWidth,
+  phoneHeight: applicationPhone.height,
 })
 
 export function HomeworkVoiceNote({
@@ -22,6 +23,7 @@ export function HomeworkVoiceNote({
   return (
     <ThemeProvider theme={messageTheme}>
       <MessagePhoneFrame
+        contentSizing="fit"
         aria-label="Voice-note assignment for your teacher"
         time="20:30"
         contact={

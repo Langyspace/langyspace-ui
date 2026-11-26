@@ -299,7 +299,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Recommend something I’ll enjoy",
-      "instruction": "Ask about an experience, then choose a useful follow-up",
+      "instruction": "Choose an experience, ask about it and give a useful follow-up",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -408,7 +408,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Choose an experience to ask about",
+      "title": "Experience options",
       "image": "a2-08-vocabulary81",
       "options": [
         {
@@ -531,7 +531,8 @@
           "hint": "She could check … / Have you checked …?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "What Kim wants to know"
     }
   }
 }

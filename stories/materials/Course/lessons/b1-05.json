@@ -330,7 +330,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Relay the updated message",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Pass on the updated message and replace the earlier booking",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -432,11 +432,12 @@
           "hint": "He said about …, but …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Original message"
     },
     "s_reply": {
       "type": "facts",
-      "title": "Replace the earlier booking",
+      "title": "Updated booking",
       "facts": [
         {
           "id": "0",
@@ -516,7 +517,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

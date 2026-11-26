@@ -428,7 +428,8 @@
         }
       ],
       "questionPurpose": "response",
-      "image": "b1-09-bicycle123"
+      "image": "b1-09-bicycle123",
+      "referenceLabel": "Owner’s reference photo"
     },
     "s_reply": {
       "type": "facts",
@@ -467,7 +468,8 @@
           "hint": "Has the … been checked yet?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Confirmed versus pending"
     },
     "s_personal": {
       "type": "facts",
@@ -508,7 +510,8 @@
         }
       ],
       "questionPurpose": "conversation",
-      "image": "b1-09-bicycle123"
+      "image": "b1-09-bicycle123",
+      "referenceLabel": "Owner’s reference photo"
     }
   }
 }

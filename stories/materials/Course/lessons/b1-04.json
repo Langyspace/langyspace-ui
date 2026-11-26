@@ -330,7 +330,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Recommend the next check",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Compare the caller’s description with the objects and recommend the next check",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -433,7 +433,7 @@
     },
     "s_reply": {
       "type": "facts",
-      "title": "Compare the caller’s claim",
+      "title": "Caller’s description",
       "facts": [
         {
           "id": "claim",

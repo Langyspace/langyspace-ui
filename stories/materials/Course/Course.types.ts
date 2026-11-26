@@ -22,6 +22,8 @@ export interface CourseActivity {
     | 'timeline'
     | 'chart'
   title: string
+  /** Optional noun/metadata label for the reference, never task instructions. */
+  referenceLabel?: string
   vocabulary?: Readonly<Record<string, { id: string; text: string }>>
   image?: string
   pictureGrid?: { columns: number; rows: number; sourceAspectRatio: number }

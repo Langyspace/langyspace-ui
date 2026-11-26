@@ -506,7 +506,8 @@
           "hint": "If …, please … so that …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Two needs in a shared space"
     },
     "s_reply": {
       "type": "facts",
@@ -545,7 +546,8 @@
           "hint": "If sound still …, let’s review … rather than …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "What is and isn’t agreed"
     },
     "s_personal": {
       "type": "facts",
@@ -590,7 +592,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

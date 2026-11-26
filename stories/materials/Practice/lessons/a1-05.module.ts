@@ -35,9 +35,86 @@ import asset31 from '../../A105/assets/scene-watermelon.webp'
 import asset32 from '../../A105/assets/scene-carrot.webp'
 import asset33 from '../../A105/assets/scene-onion.webp'
 import asset34 from '../../A105/assets/scene-tomato.webp'
+import expanded124Asset0 from '../assets/flashcards124/0492c593afed3dab14960a90e825298eb20759be88ac27980bed02218543240b.mp3'
+import expanded124Asset1 from '../assets/flashcards124/47ffc65e0fba920c043d2171468d65e9030261ec39e5b91647c6a897658b5cf8.mp3'
+import expanded124Asset2 from '../assets/flashcards124/771b1b32861cc8455abc0db62c53f192b8a364acd9674860e235dded5920619c.mp3'
+import expanded124Asset3 from '../assets/flashcards124/6f536dc6097c532c892c834cbd0e915266b12c2aabbd4116a67ff00fec0b1e5e.mp3'
+import expanded124Asset4 from '../assets/flashcards124/379a90eeca6db291c183f9ff9873d09dd95f798340333714a548e648f7ae236a.mp3'
+import expanded124Asset5 from '../assets/flashcards124/f427f113585439b330d323543bbe0a3f415f96ee22067f33bbaf71c03bf98a12.mp3'
+import expanded124Asset6 from '../assets/flashcards124/2c0b16e266574141b3c2c16c2e1e4766bbe816a0804eaa8892e2860f51f1c12a.mp3'
+import expanded124Asset7 from '../assets/flashcards124/9241adbac4bb7cd22b1ad106575d189134d0522a196fc9662e48b8e98705bedf.mp3'
+import expanded124Asset8 from '../assets/flashcards124/42bb2a246e74ede7f8d05129d18a9863ce43324b0f08668b4ccceb6609953085.mp3'
+import expanded124Asset9 from '../assets/flashcards124/fc3f14e16f98020a9a485b382d2d56b01a42f3d26c54a921183f1e2b756a0c23.mp3'
+import expanded124Asset10 from '../assets/flashcards124/868673f647ba6473e93b9499c083603e1104ccb7ac30b0cdd9a842ca124221d4.mp3'
+import expanded124Asset11 from '../assets/flashcards124/ad8147469d086c544280ec28530ed13a7b72887368d8d2610e29ab242466e7c9.webp'
+import expanded124Asset12 from '../assets/flashcards124/e6351306c8c43c874eebb69a0887ae4c6eb006d1ac2cfe158edd654e3604407e.webp'
+import expanded124Asset13 from '../assets/flashcards124/cc8a0aa2913fba2e26d7c7807ca7f345064d1c2442d92822aaa02c64cea2a381.webp'
+import expanded124Asset14 from '../assets/flashcards124/302bd5e558e3284ced68c57648a35b9386aa036ee752d30f3a1883dec73e4844.webp'
+import expanded124Asset15 from '../assets/flashcards124/d300e99a26f20681cb8beb2318683d378595ac277f38a6cd36f5a76fa2d84d4c.webp'
+import expanded124Asset16 from '../assets/flashcards124/f549dc55996b19b257fa548b5e22ba182b7f24d4b5fe49f4853120fd24ef5bf4.webp'
+import expanded124Asset17 from '../assets/flashcards124/a0fe18ad82d8acf46257eda257850a0fb19dcc30e4789f978434e1fc754a3af7.webp'
+import expanded124Asset18 from '../assets/flashcards124/b171ee064800df195625fee62cd013ebdf4441de5f692ba71edec6cd79e5c2c6.webp'
+import expanded124Asset19 from '../assets/flashcards124/31120d118412909a943a7031f935196c0b413bcab9c05245c2f51a0cdc97af73.webp'
+import expanded124Asset20 from '../assets/flashcards124/89bd466a9cba45d0af5727da4b36e72f69c377be23a7344dea774e9c6abbeebf.webp'
+import expanded124Asset21 from '../assets/flashcards124/b0f79d7756455865985b90a08da2cc49cb5a0e43bdaf9eebaf80e32dde980628.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'deck-a1-vegetables-potato.front',
+      text: 'potato. I eat potatoes for lunch.',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'deck-a1-vegetables-lettuce.front',
+      text: 'lettuce. I put lettuce in my sandwich.',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'deck-a1-vegetables-corn.front',
+      text: 'corn. I eat corn with butter.',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'deck-a1-fruits-grape.front',
+      text: 'grape. I eat grapes.',
+      src: expanded124Asset3,
+    },
+    {
+      id: 'deck-a1-fruits-lemon.front',
+      text: 'lemon. I make lemonade with lemon.',
+      src: expanded124Asset4,
+    },
+    {
+      id: 'deck-a1-fruits-strawberry.front',
+      text: 'strawberry. I eat strawberries.',
+      src: expanded124Asset5,
+    },
+    {
+      id: 'deck-a1-fruits-pear.front',
+      text: 'pear. I eat a pear.',
+      src: expanded124Asset6,
+    },
+    {
+      id: 'deck-a1-fruits-peach.front',
+      text: 'peach. I eat a peach.',
+      src: expanded124Asset7,
+    },
+    {
+      id: 'deck-a1-vegetables-cucumber.front',
+      text: 'cucumber. I put cucumber in my salad.',
+      src: expanded124Asset8,
+    },
+    {
+      id: 'deck-a1-vegetables-bell-pepper.front',
+      text: 'bell pepper. I cook with bell pepper.',
+      src: expanded124Asset9,
+    },
+    {
+      id: 'deck-a1-vegetables-broccoli.front',
+      text: 'broccoli. I eat broccoli with rice.',
+      src: expanded124Asset10,
+    },
     {
       id: 'a1-05.shadowing.01',
       text: 'This market is great! Do you like mangoes?',
@@ -108,6 +185,23 @@ const prepared: PreparedPractice = {
     { id: 'course-a1-05-tomato.back', text: 'I like tomatoes', src: asset23 },
   ],
   images: {
+    '/flashcards-transparent/a1/vegetables/potato/image.webp':
+      expanded124Asset11,
+    '/flashcards-transparent/a1/vegetables/lettuce/image.webp':
+      expanded124Asset12,
+    '/flashcards-transparent/a1/vegetables/corn/image.webp': expanded124Asset13,
+    '/flashcards-transparent/a1/fruits/grape/image.webp': expanded124Asset14,
+    '/flashcards-transparent/a1/fruits/lemon/image.webp': expanded124Asset15,
+    '/flashcards-transparent/a1/fruits/strawberry/image.webp':
+      expanded124Asset16,
+    '/flashcards-transparent/a1/fruits/pear/image.webp': expanded124Asset17,
+    '/flashcards-transparent/a1/fruits/peach/image.webp': expanded124Asset18,
+    '/flashcards-transparent/a1/vegetables/cucumber/image.webp':
+      expanded124Asset19,
+    '/flashcards-transparent/a1/vegetables/bell-pepper/image.webp':
+      expanded124Asset20,
+    '/flashcards-transparent/a1/vegetables/broccoli/image.webp':
+      expanded124Asset21,
     '/flashcards/course-characters/kim/image.webp': asset24,
     '/flashcards/course-characters/ana/image.webp': asset25,
     '/flashcards-transparent/course-images/bdf6717331ee02da3f57872ff9338da4d9bd18fdd90fc004426881551c54d19f/image.webp':

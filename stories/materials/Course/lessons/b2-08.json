@@ -347,7 +347,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Find a place that meets the brief",
-      "instruction": "Ask about the options and recommend one for the brief",
+      "instruction": "Compare the apartments and recommend a work-friendly place with a total cost below $1,000",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -627,7 +627,8 @@
         "columns": 3,
         "rows": 1,
         "sourceAspectRatio": 3
-      }
+      },
+      "referenceLabel": "C now costs $1,100 · A and B unchanged"
     },
     "s_personal": {
       "type": "choices",

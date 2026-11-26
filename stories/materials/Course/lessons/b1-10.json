@@ -421,7 +421,7 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Plan your visit",
+      "title": "Visitor information",
       "facts": [
         {
           "id": "0",
@@ -495,7 +495,8 @@
           "hint": "We need to find out … before …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Changed room, unchanged time"
     }
   }
 }

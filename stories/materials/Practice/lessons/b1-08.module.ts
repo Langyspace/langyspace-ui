@@ -23,9 +23,177 @@ import asset19 from '../../Course/assets/audio/B108-FE81.5.mp3'
 import asset20 from '../assets/characters/ruby-bennett.webp'
 import asset21 from '../assets/characters/noah-ellis.webp'
 import asset22 from '../../Course/assets/b1-08-vocabulary81.webp'
+import expanded124Asset0 from '../assets/flashcards124/8f417d058a7eee3cf74bb113e634bfcb00ae9acc7572c0f12af85bb06689a34a.mp3'
+import expanded124Asset1 from '../assets/flashcards124/857f735e4736eead4997fb69f296956cd6606109d65490ff7bfb437d163e9b2e.mp3'
+import expanded124Asset2 from '../assets/flashcards124/6e7e6430928098cb72f2adccaa06e35d2c255a37c492910826954fbaeae58213.mp3'
+import expanded124Asset3 from '../assets/flashcards124/b15e2e40e751efa5c2d96b701f5e679d59dbbb7e2cdb88f4b532600efc531d4e.mp3'
+import expanded124Asset4 from '../assets/flashcards124/2ce602346d8e91e02664d710a213863e7031df4658555f1044ca878e5f53e1fe.mp3'
+import expanded124Asset5 from '../assets/flashcards124/5410ac7e4ae401b11e6fe71cd92a90ec5a632390945583e651ff0cc11b9ab667.mp3'
+import expanded124Asset6 from '../assets/flashcards124/5f7999d3cac574229db10ac60ac1ed98389bcf99356bcfca74681c6733a13288.mp3'
+import expanded124Asset7 from '../assets/flashcards124/e5e9705f13f0f7bcfe2ea6d5344a6760b2f42e7d141efa4ce864c3699975ec43.mp3'
+import expanded124Asset8 from '../assets/flashcards124/5ede39e403c4e55c78d309c2839ca21aab1a14f007b8bb43ac26397c4a916a94.mp3'
+import expanded124Asset9 from '../assets/flashcards124/e1dc0fb5ceedd5d0c4c47ee7726141149f68bbebcfcc4ed7380aa212bb1d4390.mp3'
+import expanded124Asset10 from '../assets/flashcards124/8e344021ee3c204ac5b0937752825df01746dc27fa9a64ffe5e8f46b611233a5.mp3'
+import expanded124Asset11 from '../assets/flashcards124/9c688f002315957e6b622c922c571c515cdcb706fb6d2cf17422474de6d08441.mp3'
+import expanded124Asset12 from '../assets/flashcards124/d26d4a540eb3985d9294578c558c0848a94632b718d28873f42e850df5f53383.mp3'
+import expanded124Asset13 from '../assets/flashcards124/7a9b5009fa791f80673a794cc2f6c0b5e99a640ca37f5a05b054591024030b16.mp3'
+import expanded124Asset14 from '../assets/flashcards124/c45393341e4163570d82e16375f6e960581b134aa422218b7c02818466559aa1.mp3'
+import expanded124Asset15 from '../assets/flashcards124/7dfce405475d44049f577224db3bcd2977fd3d1ae4f36048e4f3c552176d3aa4.mp3'
+import expanded124Asset16 from '../assets/flashcards124/26e9063ff8cbbfee970827ed9db5429e34298f1bfb0fea4805d4702b340aa2a2.mp3'
+import expanded124Asset17 from '../assets/flashcards124/df7a12cf888be4dc144437b87973f74cb552d785e1c40229f99dd6b4caf5463e.mp3'
+import expanded124Asset18 from '../assets/flashcards124/e933cca60ee1f58419b4a02491129cccd0204d978114d4c88068a192a80942c2.mp3'
+import expanded124Asset19 from '../assets/flashcards124/f28513e9fbb15a541c1aa7b6bd5df8200e04f79cdcaa0d92ba0dac424813fd78.mp3'
+import expanded124Asset20 from '../assets/flashcards124/90f0b09a37f1a1782b0d3f9a822fbf30966d24bbec84d19f79dfbad8e0853f12.mp3'
+import expanded124Asset21 from '../assets/flashcards124/e8deb60434ecaeba20df152dbda1d75ffff4ef8a3a29f65b214362821e442200.mp3'
+import expanded124Asset22 from '../assets/flashcards124/6867ff8a7623df002a22aa4a10cc69ef65fb6d2754c75adbb1c1a38fbbeb5052.mp3'
+import expanded124Asset23 from '../assets/flashcards124/a7290cb2413faedc170ccf8f5ed0e1833c2df08cd223d1464e88bf6b8ffca54f.mp3'
+import expanded124Asset24 from '../assets/flashcards124/c5f1300470623b8ebb4932ebf7734b285bc92c5c5cd82d433e7e4eddc65e59c9.mp3'
+import expanded124Asset25 from '../assets/flashcards124/9b94c48baceb35074e413251f17f1b5e2c5deb640269ff013ec225e2cf7d68c3.mp3'
+import expanded124Asset26 from '../assets/flashcards124/9f09a3ad0f2e5dd3d96220a65930b12dd2732ec4a91c795eddf6c7ea98dd3d66.mp3'
+import expanded124Asset27 from '../assets/flashcards124/38e636bfb8fa939fc1c13a3aa7b8f022c4a1e4ca2e1af3553288e0ba8cee8c5e.mp3'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'flashcard124-get-used-to.front',
+      text: 'get used to',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'flashcard124-get-used-to.back',
+      text: 'It takes time to get used to a new routine',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'flashcard124-a-new-environment.front',
+      text: 'a new environment',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'flashcard124-a-new-environment.back',
+      text: 'I am learning to work in a new environment',
+      src: expanded124Asset3,
+    },
+    {
+      id: 'flashcard124-a-time-difference.front',
+      text: 'a time difference',
+      src: expanded124Asset4,
+    },
+    {
+      id: 'flashcard124-a-time-difference.back',
+      text: 'The time difference makes our calls difficult',
+      src: expanded124Asset5,
+    },
+    {
+      id: 'flashcard124-culture-shock.front',
+      text: 'culture shock',
+      src: expanded124Asset6,
+    },
+    {
+      id: 'flashcard124-culture-shock.back',
+      text: 'Culture shock can make the first weeks difficult',
+      src: expanded124Asset7,
+    },
+    {
+      id: 'flashcard124-local-customs.front',
+      text: 'local customs',
+      src: expanded124Asset8,
+    },
+    {
+      id: 'flashcard124-local-customs.back',
+      text: 'Learning about local customs helps me settle in',
+      src: expanded124Asset9,
+    },
+    {
+      id: 'flashcard124-a-support-network.front',
+      text: 'a support network',
+      src: expanded124Asset10,
+    },
+    {
+      id: 'flashcard124-a-support-network.back',
+      text: 'It helps to build a support network',
+      src: expanded124Asset11,
+    },
+    {
+      id: 'flashcard124-keep-in-touch.front',
+      text: 'keep in touch',
+      src: expanded124Asset12,
+    },
+    {
+      id: 'flashcard124-keep-in-touch.back',
+      text: 'I keep in touch with friends back home',
+      src: expanded124Asset13,
+    },
+    {
+      id: 'flashcard124-belong.front',
+      text: 'belong',
+      src: expanded124Asset14,
+    },
+    {
+      id: 'flashcard124-belong.back',
+      text: 'I am starting to feel that I belong here',
+      src: expanded124Asset15,
+    },
+    {
+      id: 'flashcard124-fit-in.front',
+      text: 'fit in',
+      src: expanded124Asset16,
+    },
+    {
+      id: 'flashcard124-fit-in.back',
+      text: 'You do not have to change everything to fit in',
+      src: expanded124Asset17,
+    },
+    {
+      id: 'flashcard124-independence.front',
+      text: 'independence',
+      src: expanded124Asset18,
+    },
+    {
+      id: 'flashcard124-independence.back',
+      text: 'Living abroad has given me more independence',
+      src: expanded124Asset19,
+    },
+    {
+      id: 'flashcard124-practical-skills.front',
+      text: 'practical skills',
+      src: expanded124Asset20,
+    },
+    {
+      id: 'flashcard124-practical-skills.back',
+      text: 'I have learned useful practical skills',
+      src: expanded124Asset21,
+    },
+    {
+      id: 'flashcard124-a-language-barrier.front',
+      text: 'a language barrier',
+      src: expanded124Asset22,
+    },
+    {
+      id: 'flashcard124-a-language-barrier.back',
+      text: 'The language barrier made simple tasks harder',
+      src: expanded124Asset23,
+    },
+    {
+      id: 'flashcard124-a-social-circle.front',
+      text: 'a social circle',
+      src: expanded124Asset24,
+    },
+    {
+      id: 'flashcard124-a-social-circle.back',
+      text: 'It takes time to build a new social circle',
+      src: expanded124Asset25,
+    },
+    {
+      id: 'flashcard124-feel-at-home.front',
+      text: 'feel at home',
+      src: expanded124Asset26,
+    },
+    {
+      id: 'flashcard124-feel-at-home.back',
+      text: 'I finally feel at home in this city',
+      src: expanded124Asset27,
+    },
     {
       id: 'b1-08.shadowing.01',
       text: 'How are you finding your first winter here?',

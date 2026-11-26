@@ -27,9 +27,131 @@ import asset23 from '../../Course/assets/audio/B203-FE81.5.mp3'
 import asset24 from '../assets/characters/evelyn-carter.webp'
 import asset25 from '../assets/characters/owen-harris.webp'
 import asset26 from '../../Course/assets/b2-03-vocabulary81.webp'
+import expanded124Asset0 from '../assets/flashcards124/7e278892cf445783c3fc38dd8aaccff9b7bec2360ffe7601e9190a1ff27cc034.mp3'
+import expanded124Asset1 from '../assets/flashcards124/d8ae4d4c0cb2ce1462adf87c508f05eeae48396aedf1b702a6a13cb3e6ab6d3c.mp3'
+import expanded124Asset2 from '../assets/flashcards124/c7ee87777c5d49c4fc9ca21668df068ede9fd1e37e5ba299042951beebcabc9e.mp3'
+import expanded124Asset3 from '../assets/flashcards124/90ecc9d633caa9ad5e9862eca2c3afc221107bf078c2c03e1e9c5d758bbc1e56.mp3'
+import expanded124Asset4 from '../assets/flashcards124/227e3a5d19b51c966c44f6645869e7a7dbc74a705af27524115cdf4da1b43e22.mp3'
+import expanded124Asset5 from '../assets/flashcards124/cb6d9b8b637e637c7f310012cb04b3973c17e904a5d6069fe5039dd27438c8ec.mp3'
+import expanded124Asset6 from '../assets/flashcards124/f5ecff96fbb2d3c9445fef0edd12900ba69cc2179471d9792be2d5c7398c91d6.mp3'
+import expanded124Asset7 from '../assets/flashcards124/7ef473ade8d98fa88b63460eab5dc1616b03424290dd62050ba001b636530fcc.mp3'
+import expanded124Asset8 from '../assets/flashcards124/39cddd063b8c6e1b627073cd193e57e3cc2b7dd073537b91e2321148239e4f56.mp3'
+import expanded124Asset9 from '../assets/flashcards124/3c11938d4e8f490a12ec2ef51f7e2a016dc388358a3c407af7da18ac7672a6b8.mp3'
+import expanded124Asset10 from '../assets/flashcards124/d9ee458c82b524c1beace1b1e6adb5ef41f8ad7c48cb44f6510e8975fad98cb6.mp3'
+import expanded124Asset11 from '../assets/flashcards124/0b94f68855d78a4d4268547d2e46acbc6cfd3f05ea41280f65526dae2f60f305.mp3'
+import expanded124Asset12 from '../assets/flashcards124/ec8f230067f84fd2dd38dee368b192b63abd496f860e86f2380a2f6f985b5dc7.mp3'
+import expanded124Asset13 from '../assets/flashcards124/5c85e3faa8974dfda6ea8a7fc0d9126bd7f538ec03ee8f839826a547f4c4914e.mp3'
+import expanded124Asset14 from '../assets/flashcards124/60740f0e20ac164673eded06e1b7e15c966c6d6315a2157ad965ebada9c6cdab.mp3'
+import expanded124Asset15 from '../assets/flashcards124/fceb562f7ef857931ef70d1000f2420d24c7e46528b0b3908c2753d24e39baf9.mp3'
+import expanded124Asset16 from '../assets/flashcards124/96684b02d691043218642c4eb03cde78294983fe1d36977170d5655b38f9a921.mp3'
+import expanded124Asset17 from '../assets/flashcards124/6e87f887705f2baef59f32a194eeaf558de14639f800792817b7a949f6a555e7.mp3'
+import expanded124Asset18 from '../assets/flashcards124/106abccd7f7f6e8dc94995fc415e255c861c5936fc621ab8c6e315cc0f48b751.mp3'
+import expanded124Asset19 from '../assets/flashcards124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp'
+import expanded124Asset20 from '../assets/flashcards124/82ad3983780cd59c5bdb8376c0690d0c34a001b4af1391e02f561847d21feca9.webp'
+import expanded124Asset21 from '../assets/flashcards124/7432e9d9d31ef5bce3c8344028154fe4aa9d144d9b02234b80fa6469afa98950.webp'
+import expanded124Asset22 from '../assets/flashcards124/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552.webp'
+import expanded124Asset23 from '../assets/flashcards124/4ee65c2f7d887bdc2b0a4a8bc1634311c12f99f3a3f001d9f75d36300793bac2.webp'
+import expanded124Asset24 from '../assets/flashcards124/0c36eb20b300ad81daf62af4ede5b14d6bada254453e6cbf6805ebaef92796c7.webp'
+import expanded124Asset25 from '../assets/flashcards124/93945c0d43bcf9c7230f42f186d98211f7ff1fee888007d56b40c7f43e396183.webp'
+import expanded124Asset26 from '../assets/flashcards124/7cf6caad8ed25f7eda6a66c0c44ee1432263dad859fa1242d081187252c29282.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'C106-FS81.0',
+      text: 'a trade-off. This is a trade-off between cost and flexibility.',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'deck-b2-business-priority.front',
+      text: 'priority. This project is our top priority.',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'C106-FS81.4',
+      text: 'a deal-breaker. A fixed timetable conflict could be a deal-breaker.',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'C106-FS81.5',
+      text: 'reconsider a decision. We should reconsider the decision when the conditions change.',
+      src: expanded124Asset3,
+    },
+    {
+      id: 'deck-b2-software-development-vocabulary-assumption.front',
+      text: 'assumption. The estimate relies on the assumption that the API contract will not change.',
+      src: expanded124Asset4,
+    },
+    {
+      id: 'C102-FS81.5',
+      text: 'a lesson learned. A lesson learned should lead to a testable action.',
+      src: expanded124Asset5,
+    },
+    {
+      id: 'C102-FS81.2',
+      text: 'a contingency plan. The contingency plan needs a decision owner.',
+      src: expanded124Asset6,
+    },
+    {
+      id: 'course-c1-07-outcome.front',
+      text: 'an outcome',
+      src: expanded124Asset7,
+    },
+    {
+      id: 'course-c1-07-outcome.back',
+      text: 'Separate an intended outcome from a confirmed decision.',
+      src: expanded124Asset8,
+    },
+    {
+      id: 'course-b2-11-benefit.front',
+      text: 'a benefit',
+      src: expanded124Asset9,
+    },
+    {
+      id: 'course-b2-11-benefit.back',
+      text: 'A possible benefit is more useful live time.',
+      src: expanded124Asset10,
+    },
+    {
+      id: 'course-b2-11-drawback.front',
+      text: 'a drawback',
+      src: expanded124Asset11,
+    },
+    {
+      id: 'course-b2-11-drawback.back',
+      text: 'A drawback is that updates may not be read.',
+      src: expanded124Asset12,
+    },
+    {
+      id: 'course-b2-11-alternative.front',
+      text: 'an alternative',
+      src: expanded124Asset13,
+    },
+    {
+      id: 'course-b2-11-alternative.back',
+      text: 'What alternative would preserve the purpose?',
+      src: expanded124Asset14,
+    },
+    {
+      id: 'course-b2-11-compromise.front',
+      text: 'a compromise',
+      src: expanded124Asset15,
+    },
+    {
+      id: 'course-b2-11-compromise.back',
+      text: 'The compromise keeps a short live discussion.',
+      src: expanded124Asset16,
+    },
+    {
+      id: 'deck-b2-business-decision.front',
+      text: 'decision. We need to make a decision today.',
+      src: expanded124Asset17,
+    },
+    {
+      id: 'deck-b2-business-risk.front',
+      text: 'risk. There is a risk of delay.',
+      src: expanded124Asset18,
+    },
     {
       id: 'b2-03.shadowing.01',
       text: 'Do you ever wonder what life would be like if you’d stayed?',
@@ -144,6 +266,21 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards/course-practice/expanded124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp':
+      expanded124Asset19,
+    '/flashcards-transparent/b2/business/priority/image.webp':
+      expanded124Asset20,
+    '/flashcards/b2/software-development-vocabulary/assumption/image.webp':
+      expanded124Asset21,
+    '/flashcards/course-practice/expanded124/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552.webp':
+      expanded124Asset22,
+    '/flashcards-transparent/course-images/4ee65c2f7d887bdc2b0a4a8bc1634311c12f99f3a3f001d9f75d36300793bac2/image.webp':
+      expanded124Asset23,
+    '/flashcards-transparent/course-images/0c36eb20b300ad81daf62af4ede5b14d6bada254453e6cbf6805ebaef92796c7/image.webp':
+      expanded124Asset24,
+    '/flashcards-transparent/b2/business/decision/image.webp':
+      expanded124Asset25,
+    '/flashcards-transparent/b2/business/risk/image.webp': expanded124Asset26,
     '/flashcards/course-characters/evelyn-carter/image.webp': asset24,
     '/flashcards/course-characters/owen-harris/image.webp': asset25,
     '/flashcards-transparent/course-images/b1347b85db089ab5cf7769b1a69c035121ad5fe63cb1fa5d8c5ca9cb64048712/image.webp':

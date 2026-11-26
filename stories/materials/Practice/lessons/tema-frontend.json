@@ -86,6 +86,186 @@
         "visualLabel": "a dropdown",
         "audioId": "course-tema-frontend-v7.front",
         "backAudioId": "course-tema-frontend-v7.back"
+      },
+      {
+        "id": "V.0",
+        "word": "task",
+        "translation": "tarefa",
+        "example": "My first task is to build the login screen",
+        "exampleTranslation": "Minha primeira tarefa é criar a tela de login",
+        "visualLabel": "task",
+        "audioId": "V.0.front",
+        "backAudioId": "V.0.back"
+      },
+      {
+        "id": "V.1",
+        "word": "access",
+        "translation": "acesso",
+        "example": "I need access to the repository",
+        "exampleTranslation": "Preciso de acesso ao repositório",
+        "visualLabel": "access",
+        "audioId": "V.1.front",
+        "backAudioId": "V.1.back"
+      },
+      {
+        "id": "V.2",
+        "word": "blocker",
+        "translation": "impedimento",
+        "example": "Missing access is a blocker",
+        "exampleTranslation": "A falta de acesso é um impedimento",
+        "visualLabel": "blocker",
+        "audioId": "V.2.front",
+        "backAudioId": "V.2.back"
+      },
+      {
+        "id": "V.3",
+        "word": "deadline",
+        "translation": "prazo",
+        "example": "The deadline is Friday",
+        "exampleTranslation": "O prazo é sexta-feira",
+        "visualLabel": "deadline",
+        "audioId": "V.3.front",
+        "backAudioId": "V.3.back"
+      },
+      {
+        "id": "V.4",
+        "word": "update",
+        "translation": "atualização de andamento",
+        "example": "Here is a quick update",
+        "exampleTranslation": "Aqui vai uma atualização rápida",
+        "visualLabel": "update",
+        "audioId": "V.4.front",
+        "backAudioId": "V.4.back"
+      },
+      {
+        "id": "V.5",
+        "word": "feedback",
+        "translation": "comentários para melhorar o trabalho",
+        "example": "Thanks for the feedback",
+        "exampleTranslation": "Obrigada pelos comentários",
+        "visualLabel": "feedback",
+        "audioId": "V.5.front",
+        "backAudioId": "V.5.back"
+      },
+      {
+        "id": "HW.6",
+        "word": "a repository",
+        "translation": "repositório",
+        "example": "The project files are in the repository",
+        "exampleTranslation": "Os arquivos do projeto estão no repositório",
+        "visualLabel": "a repository",
+        "audioId": "HW.6.front",
+        "backAudioId": "HW.6.back"
+      },
+      {
+        "id": "HW.7",
+        "word": "frontend",
+        "translation": "parte visual da aplicação",
+        "example": "I’m working on the frontend of the customer portal",
+        "exampleTranslation": "Estou trabalhando na parte visual do portal do cliente",
+        "visualLabel": "frontend",
+        "audioId": "HW.7.front",
+        "backAudioId": "HW.7.back"
+      },
+      {
+        "id": "HW.8",
+        "word": "backend",
+        "translation": "parte do sistema que processa os dados",
+        "example": "Priya is connecting the login screen to the backend",
+        "exampleTranslation": "Priya está conectando a tela de login ao backend",
+        "visualLabel": "backend",
+        "audioId": "HW.8.front",
+        "backAudioId": "HW.8.back"
+      },
+      {
+        "id": "HW.9",
+        "word": "a login screen",
+        "translation": "tela de login",
+        "example": "The login screen has email and password fields",
+        "exampleTranslation": "A tela de login tem campos de e-mail e senha",
+        "visualLabel": "a login screen",
+        "audioId": "HW.9.front",
+        "backAudioId": "HW.9.back"
+      },
+      {
+        "id": "HW.11",
+        "word": "a password",
+        "translation": "senha",
+        "example": "The password is incorrect — please try again",
+        "exampleTranslation": "A senha está incorreta — tente novamente",
+        "visualLabel": "a password",
+        "audioId": "HW.11.front",
+        "backAudioId": "HW.11.back"
+      },
+      {
+        "id": "HW.12",
+        "word": "an email address",
+        "translation": "endereço de e-mail",
+        "example": "Use your work email address to request access",
+        "exampleTranslation": "Use seu e-mail de trabalho para pedir acesso",
+        "visualLabel": "an email address",
+        "audioId": "HW.12.front",
+        "backAudioId": "HW.12.back"
+      },
+      {
+        "id": "HW.14",
+        "word": "an error message",
+        "translation": "mensagem de erro",
+        "example": "The error message explains what went wrong",
+        "exampleTranslation": "A mensagem de erro explica o que deu errado",
+        "visualLabel": "an error message",
+        "audioId": "HW.14.front",
+        "backAudioId": "HW.14.back"
+      },
+      {
+        "id": "HW.15",
+        "word": "a password reset",
+        "translation": "redefinição de senha",
+        "example": "The password reset helps users get back into their accounts",
+        "exampleTranslation": "A redefinição de senha ajuda as pessoas a recuperar o acesso às suas contas",
+        "visualLabel": "a password reset",
+        "audioId": "HW.15.front",
+        "backAudioId": "HW.15.back"
+      },
+      {
+        "id": "HW.16",
+        "word": "a test account",
+        "translation": "conta de teste",
+        "example": "I need an active test account for the demo",
+        "exampleTranslation": "Preciso de uma conta de teste ativa para a demonstração",
+        "visualLabel": "a test account",
+        "audioId": "HW.16.front",
+        "backAudioId": "HW.16.back"
+      },
+      {
+        "id": "HW.17",
+        "word": "a layout",
+        "translation": "organização visual da tela",
+        "example": "The layout is ready, but the API connection is still missing",
+        "exampleTranslation": "O layout está pronto, mas ainda falta a conexão com a API",
+        "visualLabel": "a layout",
+        "audioId": "HW.17.front",
+        "backAudioId": "HW.17.back"
+      },
+      {
+        "id": "HW.18",
+        "word": "an API",
+        "translation": "interface de comunicação entre sistemas",
+        "example": "The API checks the email address and password",
+        "exampleTranslation": "A API verifica o endereço de e-mail e a senha",
+        "visualLabel": "an API",
+        "audioId": "HW.18.front",
+        "backAudioId": "HW.18.back"
+      },
+      {
+        "id": "HW.19",
+        "word": "a demo",
+        "translation": "demonstração do trabalho",
+        "example": "I’ll show the login screen during Friday’s demo",
+        "exampleTranslation": "Vou mostrar a tela de login na demonstração de sexta-feira",
+        "visualLabel": "a demo",
+        "audioId": "HW.19.front",
+        "backAudioId": "HW.19.back"
       }
     ]
   },

@@ -491,7 +491,8 @@
           "hint": "What I need is …, rather than …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Fact, impact, request"
     },
     "s_reply": {
       "type": "facts",
@@ -530,7 +531,8 @@
           "hint": "Could you confirm … before …?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "The new offer"
     },
     "s_personal": {
       "type": "facts",
@@ -575,7 +577,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

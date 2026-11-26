@@ -46,11 +46,17 @@ export function ImageSortBoard({
     <S.Root
       {...props}
       $sequence={layout === 'sequence'}
-      aria-describedby={[describedBy, id + '-instructions']
-        .filter(Boolean)
-        .join(' ')}
+      aria-describedby={
+        [describedBy, instructions ? id + '-instructions' : undefined]
+          .filter(Boolean)
+          .join(' ') || undefined
+      }
     >
-      <S.Instructions id={id + '-instructions'}>{instructions}</S.Instructions>
+      {instructions ? (
+        <S.Instructions id={id + '-instructions'}>
+          {instructions}
+        </S.Instructions>
+      ) : null}
       <S.Board>
         {groups.map((group, index) => {
           const groupKey = group.id ?? 'pictures'

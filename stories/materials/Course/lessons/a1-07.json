@@ -399,7 +399,8 @@
           "hint": "Where is gate …, please?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Your travel card"
     },
     "s_reply": {
       "type": "facts",
@@ -438,7 +439,8 @@
           "hint": "Can you say that again, please?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Updated departure"
     }
   }
 }

@@ -23,9 +23,107 @@ import asset19 from '../../Course/assets/audio/A202-FE81.5.mp3'
 import asset20 from '../assets/characters/kim.webp'
 import asset21 from '../assets/characters/ana.webp'
 import asset22 from '../../Course/assets/a2-02-vocabulary81.webp'
+import expanded124Asset0 from '../assets/flashcards124/bac05b8dc1d648c7f7c4cc3fc8a313e89974ac34ac91b48d7b94a83de199cef6.mp3'
+import expanded124Asset1 from '../assets/flashcards124/221594683669ff5fb14a5ad413c80410c4d19c00e1f47de0e8bc7b5fa1f7a795.mp3'
+import expanded124Asset2 from '../assets/flashcards124/f8f2ceb0b000b6fadcad5b8549fb096af16ad3344afda185a1384bab014e6363.mp3'
+import expanded124Asset3 from '../assets/flashcards124/1e95ae6f0ed35ebdd117cd29599a88314406f1f0b172a82de642f98264efa1bc.mp3'
+import expanded124Asset4 from '../assets/flashcards124/07586788ae58367e0770c75cd4628244ed8e789a2d2af94d2967ca7253720227.mp3'
+import expanded124Asset5 from '../assets/flashcards124/1ab8f77c92d8a387a7a6b50304c9e87c4b30a045a4bc27608c56c2a4bdd3f625.mp3'
+import expanded124Asset6 from '../assets/flashcards124/eb0e0fcf2334070856e2541e9e7b167b2ae8c4c28d8c8ce85b3e202354b29598.mp3'
+import expanded124Asset7 from '../assets/flashcards124/873f84ac62ef971d593c2fb6d7e14e7339bcbd61f771ba013f52d45b27b509d2.mp3'
+import expanded124Asset8 from '../assets/flashcards124/726c4e4e3bbd1951519a0ce98b806c617f0f49cbaf7da4f2782d320c8fcb5c49.mp3'
+import expanded124Asset9 from '../assets/flashcards124/6733fa59b4d3c8cb48385011e68c3683b17c7693061b05ec56f6849154c4b403.mp3'
+import expanded124Asset10 from '../assets/flashcards124/8f6ecc1735d0ec8ab30cfd0594a274e2a3efa13641f669ac89af52a8260fb324.mp3'
+import expanded124Asset11 from '../assets/flashcards124/0c04e75bb8cee6aae2c7854b5798bbd0f6cfd10b9c26feba4c97188a6402c690.mp3'
+import expanded124Asset12 from '../assets/flashcards124/316da1f198c163d3e33e64dccd01bea6cfe24a9d93430630451ff440fc6219d2.mp3'
+import expanded124Asset13 from '../assets/flashcards124/245225ec058602d8e34a63a77252c34a0f483403c879ab9325c8cfb108b02343.mp3'
+import expanded124Asset14 from '../assets/flashcards124/091d2884feb9d54f596320a8b70a06d833573a1e598950a80a20a63b5e5b0dd2.webp'
+import expanded124Asset15 from '../assets/flashcards124/c5db208979e7c5cf3971ec6a43c4643a4475c0f81a0dd36e99d467f8f71c63e4.webp'
+import expanded124Asset16 from '../assets/flashcards124/6f131f822943040ceab0a5d98615e37062fd190c9987b035e35e7d909e8b7345.webp'
+import expanded124Asset17 from '../assets/flashcards124/508e16ea029478df05d4eedaeeeba6d6f80aadb8801ce09b0ecaa4da51335c99.webp'
+import expanded124Asset18 from '../assets/flashcards124/17ce60c6db781fcf463c469a13899ac8f244f3bf7fcd2967963d2b86111d2d4e.webp'
+import expanded124Asset19 from '../assets/flashcards124/68481da8817411de12897d4b6d091a0f989440c8de48b4faa72bc001cc15d6ba.webp'
+import expanded124Asset20 from '../assets/flashcards124/408069fa78d9fcf85d46023bff3538a70c3bc5fea38d7130882fbfb4b899bda2.webp'
+import expanded124Asset21 from '../assets/flashcards124/eada43b92b642651addf52fa848b7c19101f0e2fa51b1d87107db16ad0e63980.webp'
+import expanded124Asset22 from '../assets/flashcards124/0dd8fb906372f9de3de8e74d62cc7c7366d68a3ac913bc9df84e6e95ffe0b3ec.webp'
+import expanded124Asset23 from '../assets/flashcards124/1c7b9fe41ac4243a60c455d7aefdc5f48d34c4a665ea38eb0ff935a38684ff04.webp'
+import expanded124Asset24 from '../assets/flashcards124/6f59a227afc0bb9f5e4d59ea95b2eee37fb1e988d34a2bb97c0d367642f399d1.webp'
+import expanded124Asset25 from '../assets/flashcards124/87724a316803ec3ceff499400d5a54bf9eef0fb7ca39f5e4d7673c19b18b74e9.webp'
+import expanded124Asset26 from '../assets/flashcards124/c623cca2e6e285af73f1992518a53e8f16b8e7f02fcc8be105e886c2fdd2d7e9.webp'
+import expanded124Asset27 from '../assets/flashcards124/5af1306f1e1a5b52b4c2bd5d4d0beadd9b82ca1f107c2e6db489da5ed0414312.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'deck-b1-conversation-starters-i-went-out.front',
+      text: 'I went out.. I went out with my friends.',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-had-a-great-time.front',
+      text: 'I had a great time.. A: How was your weekend? B: I had a great time.',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-broke-my-phone.front',
+      text: 'I broke my phone.. I broke my phone yesterday.',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-couldnt-sleep.front',
+      text: "I couldn't sleep.. I couldn't sleep last night.",
+      src: expanded124Asset3,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-didnt-like-it.front',
+      text: "I didn't like it.. A: How was the food? B: I didn't like it.",
+      src: expanded124Asset4,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-got-home-late.front',
+      text: 'I got home late.. I got home late yesterday.',
+      src: expanded124Asset5,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-had-lunch.front',
+      text: 'I had lunch.. I had lunch at home.',
+      src: expanded124Asset6,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-had-a-busy-day.front',
+      text: 'I had a busy day.. I had a busy day at work.',
+      src: expanded124Asset7,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-went-to-work.front',
+      text: 'I went to work.. I went to work by bus.',
+      src: expanded124Asset8,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-woke-up-early.front',
+      text: 'I woke up early.. I woke up early today.',
+      src: expanded124Asset9,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-went-to-bed-late.front',
+      text: 'I went to bed late.. I went to bed late last night.',
+      src: expanded124Asset10,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-really-enjoyed-it.front',
+      text: 'I really enjoyed it.. A: How was the movie? B: I really enjoyed it.',
+      src: expanded124Asset11,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-was-surprised.front',
+      text: 'I was surprised.. When I saw the price, I was surprised.',
+      src: expanded124Asset12,
+    },
+    {
+      id: 'deck-b1-conversation-starters-i-learned-a-lot.front',
+      text: 'I learned a lot.. A: How was the course? B: I learned a lot.',
+      src: expanded124Asset13,
+    },
     {
       id: 'a2-02.shadowing.01',
       text: 'How was your weekend? Did you go anywhere?',
@@ -120,6 +218,34 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/b1/conversation-starters/i-went-out/image.webp':
+      expanded124Asset14,
+    '/flashcards-transparent/b1/conversation-starters/i-had-a-great-time/image.webp':
+      expanded124Asset15,
+    '/flashcards-transparent/b1/conversation-starters/i-broke-my-phone/image.webp':
+      expanded124Asset16,
+    '/flashcards-transparent/b1/conversation-starters/i-couldnt-sleep/image.webp':
+      expanded124Asset17,
+    '/flashcards-transparent/b1/conversation-starters/i-didnt-like-it/image.webp':
+      expanded124Asset18,
+    '/flashcards-transparent/b1/conversation-starters/i-got-home-late/image.webp':
+      expanded124Asset19,
+    '/flashcards-transparent/b1/conversation-starters/i-had-lunch/image.webp':
+      expanded124Asset20,
+    '/flashcards-transparent/b1/conversation-starters/i-had-a-busy-day/image.webp':
+      expanded124Asset21,
+    '/flashcards-transparent/b1/conversation-starters/i-went-to-work/image.webp':
+      expanded124Asset22,
+    '/flashcards-transparent/b1/conversation-starters/i-woke-up-early/image.webp':
+      expanded124Asset23,
+    '/flashcards-transparent/b1/conversation-starters/i-went-to-bed-late/image.webp':
+      expanded124Asset24,
+    '/flashcards-transparent/b1/conversation-starters/i-really-enjoyed-it/image.webp':
+      expanded124Asset25,
+    '/flashcards-transparent/b1/conversation-starters/i-was-surprised/image.webp':
+      expanded124Asset26,
+    '/flashcards-transparent/b1/conversation-starters/i-learned-a-lot/image.webp':
+      expanded124Asset27,
     '/flashcards/course-characters/kim/image.webp': asset20,
     '/flashcards/course-characters/ana/image.webp': asset21,
     '/flashcards-transparent/course-images/01faec4807a65385bc18d25a97a19bfd785559d4aa92827da3d5d424211a1a1d/image.webp':

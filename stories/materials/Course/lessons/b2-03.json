@@ -491,7 +491,8 @@
           "hint": "They could have …, but we can’t know …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Fact and possible alternative"
     },
     "s_reply": {
       "type": "facts",
@@ -530,7 +531,8 @@
           "hint": "We can say …, but not assume …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "An unexpected, ongoing result"
     },
     "s_personal": {
       "type": "facts",
@@ -575,7 +577,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

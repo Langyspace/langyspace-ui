@@ -299,7 +299,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Make a plan B",
-      "instruction": "Make a plan and agree what to do if it changes",
+      "instruction": "Agree on Plan A and Plan B, including what you’ll do if something changes",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -408,7 +408,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Agree on Plan A and Plan B",
+      "title": "Weekend alternatives",
       "options": [
         {
           "id": "hike",
@@ -509,7 +509,8 @@
           "hint": "If it’s late, we’ll …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Sunday’s updated plan"
     }
   }
 }

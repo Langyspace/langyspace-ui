@@ -121,7 +121,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Ask about the town",
-      "instruction": "Use the reference to explain your view and ask a follow-up question",
+      "instruction": "Start at the hotel, ask for directions and check the route with your teacher",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -272,7 +272,7 @@
   "activities": {
     "s_mission": {
       "type": "map",
-      "title": "Start at the hotel",
+      "title": "Town map",
       "map": {
         "label": "A small town · start at the hotel facing the bank",
         "startId": "hotel",
@@ -598,7 +598,7 @@
     },
     "s_personal": {
       "type": "map",
-      "title": "Start at the hotel",
+      "title": "Town map",
       "map": {
         "label": "A small town · start at the hotel facing the bank",
         "startId": "hotel",

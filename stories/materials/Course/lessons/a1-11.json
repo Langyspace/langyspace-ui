@@ -254,7 +254,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Find a gift",
-      "instruction": "Ask for the gift you want and choose an alternative",
+      "instruction": "Ask for a blue T-shirt in size M, then choose an available alternative",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -296,7 +296,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Buy the gift she wants",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Use your friend’s message to choose the gift, then check its size and price",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -462,7 +462,7 @@
     },
     "s_reply": {
       "type": "choices",
-      "title": "Use your friend’s message",
+      "title": "Available gifts",
       "options": [
         {
           "id": "blue-large",

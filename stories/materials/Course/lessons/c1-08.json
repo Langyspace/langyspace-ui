@@ -506,7 +506,8 @@
           "hint": "Even with that change, I would still need …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "The proposal and the constraints"
     },
     "s_reply": {
       "type": "facts",
@@ -545,7 +546,8 @@
           "hint": "After four weeks, we’d check whether …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "A partial agreement"
     },
     "s_personal": {
       "type": "facts",
@@ -590,7 +592,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

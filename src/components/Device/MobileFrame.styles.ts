@@ -2,14 +2,15 @@ import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { presentationMedia } from '../../foundations/layout/presentationMedia'
+import { applicationPhone } from '../../foundations/layout/applicationPhone'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-mobile-frame',
 })<{ $application?: boolean }>`
   display: flex;
   flex-direction: column;
-  width: ${(p) => (p.$application ? 'min(100%, 18rem)' : 'min(100%, 22rem, calc(74cqh * 0.7))')};
-  height: ${(p) => (p.$application ? 'clamp(24rem, calc(100cqh - 15.625rem), 33.75rem)' : undefined)};
+  width: ${(p) => (p.$application ? `min(100%, ${applicationPhone.maximumWidth})` : 'min(100%, 22rem, calc(74cqh * 0.7))')};
+  height: ${(p) => (p.$application ? applicationPhone.height : undefined)};
   min-height: ${(p) => (p.$application ? '0' : `min(${presentationMedia.maximumHeight}, 74cqh)`)};
   min-width: 0;
   box-sizing: border-box;

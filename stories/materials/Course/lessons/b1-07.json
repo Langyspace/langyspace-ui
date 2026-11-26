@@ -432,7 +432,8 @@
           "hint": "They couldn’t have known …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "What went wrong"
     },
     "s_reply": {
       "type": "choices",
@@ -543,7 +544,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

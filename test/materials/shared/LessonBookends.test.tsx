@@ -92,7 +92,7 @@ it.each(['trial-a1-a2', 'trial-b1', 'trial-b2'])(
       }),
     ).toBeInTheDocument()
     const actionHeading = screen.getByRole('heading', {
-      name: 'Mande uma mensagem para a Langy',
+      name: 'WhatsApp · Langy',
     })
     expect(actionHeading).toHaveStyle({ textAlign: 'center' })
     const phone = screen.getByRole('region', {

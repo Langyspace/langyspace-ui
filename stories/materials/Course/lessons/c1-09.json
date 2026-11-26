@@ -478,19 +478,25 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [100]
+            "values": [
+              100
+            ]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [120]
+            "values": [
+              120
+            ]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [140]
+            "values": [
+              140
+            ]
           }
         ]
       },
@@ -511,7 +517,8 @@
           "hint": "If … in the affected time slot, we would …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Observed daily trips · fictional example"
     },
     "s_reply": {
       "type": "facts",
@@ -550,7 +557,8 @@
           "hint": "I’d recommend … pending …, with a review if …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "A limitation in the capacity assumption"
     },
     "s_personal": {
       "type": "chart",
@@ -561,19 +569,25 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [100]
+            "values": [
+              100
+            ]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [120]
+            "values": [
+              120
+            ]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [140]
+            "values": [
+              140
+            ]
           }
         ]
       },
@@ -600,7 +614,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Observed daily trips · fictional example"
     }
   }
 }

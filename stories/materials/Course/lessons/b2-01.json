@@ -442,7 +442,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Explain how the trip unfolded",
-      "instruction": "Use the timeline to tell me the story and explain the turning point",
+      "instruction": "Use the four time anchors in order to tell the story and explain the turning point",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -554,7 +554,7 @@
   "activities": {
     "s_mission": {
       "type": "timeline",
-      "title": "Keep the four anchors in order",
+      "title": "Travel timeline",
       "facts": [
         {
           "id": "0",
@@ -628,7 +628,8 @@
           "hint": "I’m … now, so please …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Different points in the same evening"
     },
     "s_personal": {
       "type": "facts",
@@ -670,7 +671,8 @@
           "hint": "By the time she …, they’d been … What would you have done?"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   },
   "notesStorageKey": "langy-notes:b2-01"

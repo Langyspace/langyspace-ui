@@ -55,7 +55,6 @@ export function LessonOpening({
     : review
       ? `Review: ${review.title}`
       : undefined
-  const sideInstruction = closing ? instruction : review?.instruction
   const entry = catalog.find((item) => item.key === materialKey)
   if (!entry) throw new Error(`Missing lesson cover: ${materialKey}`)
   const src =
@@ -72,8 +71,9 @@ export function LessonOpening({
       }
       instruction={
         closing
-          ? 'Vamos continuar? Fale com a equipe da Langy para começar seu curso de inglês'
-          : goals[materialKey]
+          ? (instruction ??
+            'Fale com a equipe da Langy para começar seu curso de inglês. Você pode usar a mensagem abaixo')
+          : (review?.instruction ?? goals[materialKey])
       }
       cover={{ src, alt: `Illustration for ${entry.title}` }}
       coverPlacement="after-heading"
@@ -86,9 +86,6 @@ export function LessonOpening({
           <Common.Heading $align={closing ? 'center' : undefined}>
             {sideTitle}
           </Common.Heading>
-          {sideInstruction ? (
-            <Common.Hint>{sideInstruction}</Common.Hint>
-          ) : null}
           {sideContent}
         </Common.Stack>
       ) : null}
@@ -128,7 +125,7 @@ export function TrialNextSteps({ materialKey }: { materialKey: string }) {
   return (
     <LessonOpening
       materialKey={materialKey}
-      reviewTitle="Mande uma mensagem para a Langy"
+      reviewTitle="WhatsApp · Langy"
       closing
     >
       <MessagePhoneFrame

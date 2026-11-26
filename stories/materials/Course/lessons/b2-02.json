@@ -491,7 +491,8 @@
           "hint": "The draft …; the final pack …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Original delivery plan"
     },
     "s_reply": {
       "type": "facts",
@@ -530,7 +531,8 @@
           "hint": "If …, we’ll need to estimate … again"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "A revised plan"
     },
     "s_personal": {
       "type": "facts",
@@ -575,7 +577,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

@@ -362,7 +362,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Decide what to share",
-      "instruction": "Compare the sources and tell me what you would share",
+      "instruction": "Separate confirmed facts, unsupported claims and unknowns, then decide what to share",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -471,7 +471,7 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Separate three categories",
+      "title": "Source categories",
       "facts": [
         {
           "id": "0",
@@ -545,7 +545,8 @@
           "hint": "We know …, but a … is not yet …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "A useful correction"
     },
     "s_personal": {
       "type": "facts",
@@ -590,7 +591,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

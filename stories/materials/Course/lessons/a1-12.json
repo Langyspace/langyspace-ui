@@ -254,7 +254,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Plan our day out",
-      "instruction": "Plan a day out and update the plan together",
+      "instruction": "Choose a place and agree on a plan for our day out",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -363,7 +363,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Choose a place and agree on a plan",
+      "title": "Day-out options",
       "options": [
         {
           "id": "park",
@@ -464,7 +464,8 @@
           "hint": "We can take the … Don’t forget your …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "The rainy-day plan"
     }
   }
 }

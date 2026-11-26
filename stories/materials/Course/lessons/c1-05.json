@@ -506,7 +506,8 @@
           "hint": "We still need to know whether …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "The factual story, not a theft claim"
     },
     "s_reply": {
       "type": "facts",
@@ -541,7 +542,8 @@
         }
       ],
       "questionPurpose": "response",
-      "image": "c1-05-scarf-photo123"
+      "image": "c1-05-scarf-photo123",
+      "referenceLabel": "Photograph taken before departure"
     },
     "s_personal": {
       "type": "facts",
@@ -586,7 +588,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

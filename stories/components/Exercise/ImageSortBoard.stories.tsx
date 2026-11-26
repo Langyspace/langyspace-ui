@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ImageSortBoard } from '../../../src/components/Exercise/ImageSortBoard'
 import type { ImageSortBoardProps } from '../../../src/components/Exercise/ImageSortBoard.types'
 import { MaterialTheme } from '../../materials/shared/MaterialTheme'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { likeItems } from '../../materials/TrialA1/TrialA1.data'
 
 function Preview(args: ImageSortBoardProps) {
@@ -46,6 +47,18 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Unsorted: Story = { tags: ['visual-review'] }
+export const HeaderInstructions: Story = {
+  args: { instructions: '' },
+  render: (args) => (
+    <SlidePage
+      title="Talk about what you like"
+      instruction="Choose a picture, say whether you like it and place it in a column with your teacher"
+    >
+      <Preview {...args} />
+    </SlidePage>
+  ),
+  tags: ['visual-review'],
+}
 export const AllLiked: Story = {
   args: {
     assignments: Object.fromEntries(likeItems.map((item) => [item.id, 'like'])),

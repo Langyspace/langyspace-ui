@@ -491,7 +491,8 @@
           "hint": "If … isn’t ready, could you …?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Service agreement"
     },
     "s_reply": {
       "type": "facts",
@@ -530,7 +531,8 @@
           "hint": "Please confirm … separately from …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Two separate confirmations"
     },
     "s_personal": {
       "type": "facts",
@@ -575,7 +577,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

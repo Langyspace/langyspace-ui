@@ -362,7 +362,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Run a useful review",
-      "instruction": "Review what happened and agree on one change for next time",
+      "instruction": "Review what was knowable at the time and agree one change for next time",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -471,7 +471,7 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Review, not hindsight",
+      "title": "Information available at the time",
       "facts": [
         {
           "id": "0",
@@ -545,7 +545,8 @@
           "hint": "I’d assign … to …, with authority to …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "New evidence, bounded conclusion"
     },
     "s_personal": {
       "type": "facts",
@@ -590,7 +591,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

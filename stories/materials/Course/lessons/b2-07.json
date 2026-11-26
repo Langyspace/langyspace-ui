@@ -347,7 +347,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Give me the accurate version",
-      "instruction": "Tell me what they said without changing what they meant",
+      "instruction": "Consult the original messages and tell me what they meant without changing their meaning",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -389,7 +389,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Send a faithful summary",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Use the update to correct the group’s understanding without adding new facts",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -456,7 +456,7 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Consult the original messages",
+      "title": "Original messages",
       "facts": [
         {
           "id": "0",
@@ -495,7 +495,7 @@
     },
     "s_reply": {
       "type": "facts",
-      "title": "Correct the group’s understanding",
+      "title": "Updated group information",
       "facts": [
         {
           "id": "0",
@@ -575,7 +575,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

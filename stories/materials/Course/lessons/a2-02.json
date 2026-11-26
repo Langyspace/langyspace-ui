@@ -299,7 +299,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Build your weekend story",
-      "instruction": "Use three pictures to tell me about a weekend",
+      "instruction": "Choose a weekend and use three pictures to tell its story",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -408,7 +408,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Choose a weekend to describe",
+      "title": "Weekend pictures",
       "image": "a2-02-vocabulary81",
       "options": [
         {
@@ -544,7 +544,8 @@
           "hint": "I … too. / My weekend was different: I …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Plan and reality"
     }
   }
 }

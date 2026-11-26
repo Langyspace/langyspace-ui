@@ -491,7 +491,8 @@
           "hint": "The deposit is separate: …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Booking versus receipt"
     },
     "s_reply": {
       "type": "facts",
@@ -530,7 +531,8 @@
           "hint": "The … can be requested now; the … still depends on …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "What can be requested now?"
     },
     "s_personal": {
       "type": "facts",
@@ -575,7 +577,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

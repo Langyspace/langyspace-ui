@@ -21,9 +21,109 @@ import asset17 from '../../Course/assets/audio/A108-FE81.5.mp3'
 import asset18 from '../assets/characters/evelyn-carter.webp'
 import asset19 from '../assets/characters/owen-harris.webp'
 import asset20 from '../../Course/assets/a1-08-vocabulary81.webp'
+import expanded124Asset0 from '../assets/flashcards124/f979dfa6bc0a69b28f57c333ef666451e7c87cd6f60e030bce792d2a1a942272.mp3'
+import expanded124Asset1 from '../assets/flashcards124/35164302abc1e2f34fe5253db1a77044fef4ff198bdea9b1410993f0bacd90df.mp3'
+import expanded124Asset2 from '../assets/flashcards124/cb1cfb731584cfaea8be5356c875d80e31c8d1fa24b5e5ba47722f682a46595b.mp3'
+import expanded124Asset3 from '../assets/flashcards124/f5bd7762caa5eaff53bd9cc6de728719ebf4fc402a18c94a67591d6a4912d5d5.mp3'
+import expanded124Asset4 from '../assets/flashcards124/a4ef52b69362ae7f1bfc2d44ef500503a8f098af1862ac56c66f319b5ebcf1a9.mp3'
+import expanded124Asset5 from '../assets/flashcards124/795e66f914ca6109f528b4d0212aed651a0b226954e99faca28f5c1354c0152f.mp3'
+import expanded124Asset6 from '../assets/flashcards124/2775455f74e33c73e6079d0954d3f393681877134e3ab712c9e2766e0c488628.mp3'
+import expanded124Asset7 from '../assets/flashcards124/9a960eb34a9a134a12933f01aea80069171d68846882e9f1f44dfb50ca9d9bb8.mp3'
+import expanded124Asset8 from '../assets/flashcards124/f590cbe9fc16fef397f149f5fc9fcbb7c7ffde4bf27a9c6bd68cd96ca78102ce.mp3'
+import expanded124Asset9 from '../assets/flashcards124/b5e3f0dbae20d657fb2477551bf155f7ed95636e3c77dabecdc0d532d763d18d.mp3'
+import expanded124Asset10 from '../assets/flashcards124/2cad36d0e1b3c3e555763eb3f60f4d7a21b07f557b367028aec0c49627b50779.mp3'
+import expanded124Asset11 from '../assets/flashcards124/1ecf25bad524d3f9ed339a7148f390a9c68122a5a8e583cb4b9814828164ea03.mp3'
+import expanded124Asset12 from '../assets/flashcards124/d854d1881b291e094c190ad1b2abeb4861a0220ce29f6c44d2ee29346d5c806c.mp3'
+import expanded124Asset13 from '../assets/flashcards124/dd5df59cbe9f599d702d29be50e53708102d05d6ac74478c2212a9de5687fb6c.mp3'
+import expanded124Asset14 from '../assets/flashcards124/9e7aa9719258560267ee9007b25e90adc942e86b1da40d843d071a3ca5f27378.mp3'
+import expanded124Asset15 from '../assets/flashcards124/79a39a8b347b1aba22062065673f4f6bba286531f3f82b4d36cf3019bd3ab97a.webp'
+import expanded124Asset16 from '../assets/flashcards124/381d4cc7900770be83211055025ca52e1878dd51a8f455b1babb407cea767500.webp'
+import expanded124Asset17 from '../assets/flashcards124/5e30bdabea679657e036560fb024bdf783880f3dbef1b427734608aff512ed16.webp'
+import expanded124Asset18 from '../assets/flashcards124/471b84ba5a66606165a90a6ac3f6cd357501426ac05cd4cd295eb00202abcd3f.webp'
+import expanded124Asset19 from '../assets/flashcards124/718f16c05e1c0b3a344e72b0b1636bf84e198b21ab7d32a52eb8003f37f1a9a7.webp'
+import expanded124Asset20 from '../assets/flashcards124/a8152e8780e16d93685ead729a69648a70e3e06aa26334103270686034ae10fa.webp'
+import expanded124Asset21 from '../assets/flashcards124/8ded125a7b77a5fdf05d94ead7a22c5b3e65f2021720af383a2629aeb318f33f.webp'
+import expanded124Asset22 from '../assets/flashcards124/5d37d141f215ef8d84fa455a603de75fecc00155736a8830937c17539b5e7701.webp'
+import expanded124Asset23 from '../assets/flashcards124/58903dc8e1423f21064eda98e86cc4ebc7e57e18f6399c858a7337432680f776.webp'
+import expanded124Asset24 from '../assets/flashcards124/07bc7a04a95976d7fea6e005d087689637233856868b60867cf1df6aa26863ac.webp'
+import expanded124Asset25 from '../assets/flashcards124/042ca946f47af5815daee2e1f65c89e2deaee1867127fb505026e33e1bfe597a.webp'
+import expanded124Asset26 from '../assets/flashcards124/86a94aedc8c6af631dea9518d037cd688340e7bf3f0ab4fd30a26434b932efe2.webp'
+import expanded124Asset27 from '../assets/flashcards124/f733a2d33b8545d6f933d84c7b9da10ba3378e5fb106050c514e9e8e9fc942a3.webp'
+import expanded124Asset28 from '../assets/flashcards124/82f7638800239a66f08e4bfda794eedee51f93a549cd62fe05a0e6fde095cf54.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'deck-a2-travel-reservation.front',
+      text: 'reservation. I made a reservation.',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'deck-a2-travel-single-room.front',
+      text: 'single room. I booked a single room.',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'deck-a2-travel-double-room.front',
+      text: 'double room. We booked a double room.',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'deck-a2-travel-check-in.front',
+      text: 'check in. I checked in at three.',
+      src: expanded124Asset3,
+    },
+    {
+      id: 'deck-a2-travel-check-out.front',
+      text: 'check out. I checked out in the morning.',
+      src: expanded124Asset4,
+    },
+    {
+      id: 'deck-a2-travel-breakfast-included.front',
+      text: 'breakfast included. Breakfast was included.',
+      src: expanded124Asset5,
+    },
+    {
+      id: 'deck-a2-travel-room-service.front',
+      text: 'room service. I ordered room service.',
+      src: expanded124Asset6,
+    },
+    { id: 'course-a1-06-bed.front', text: 'a bed', src: expanded124Asset7 },
+    {
+      id: 'course-a1-06-bed.back',
+      text: 'The cat is under the bed',
+      src: expanded124Asset8,
+    },
+    {
+      id: 'deck-a2-travel-elevator.front',
+      text: 'elevator. I took the elevator.',
+      src: expanded124Asset9,
+    },
+    {
+      id: 'deck-a2-travel-floor.front',
+      text: 'floor. My room was on the second floor.',
+      src: expanded124Asset10,
+    },
+    {
+      id: 'deck-a2-travel-wifi-password.front',
+      text: 'wifi password. I asked for the wifi password.',
+      src: expanded124Asset11,
+    },
+    {
+      id: 'deck-a2-travel-receptionist.front',
+      text: 'receptionist. The receptionist was helpful.',
+      src: expanded124Asset12,
+    },
+    {
+      id: 'deck-a2-travel-clean-room.front',
+      text: 'clean room. The room was clean.',
+      src: expanded124Asset13,
+    },
+    {
+      id: 'deck-a2-travel-cheap-hotel.front',
+      text: 'cheap hotel. We found a cheap hotel.',
+      src: expanded124Asset14,
+    },
     {
       id: 'a1-08.shadowing.01',
       text: 'Hello. My room key doesn’t work',
@@ -84,6 +184,31 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/a2/travel/reservation/image.webp':
+      expanded124Asset15,
+    '/flashcards-transparent/a2/travel/single-room/image.webp':
+      expanded124Asset16,
+    '/flashcards-transparent/a2/travel/double-room/image.webp':
+      expanded124Asset17,
+    '/flashcards-transparent/a2/travel/check-in/image.webp': expanded124Asset18,
+    '/flashcards-transparent/a2/travel/check-out/image.webp':
+      expanded124Asset19,
+    '/flashcards-transparent/a2/travel/breakfast-included/image.webp':
+      expanded124Asset20,
+    '/flashcards-transparent/a2/travel/room-service/image.webp':
+      expanded124Asset21,
+    '/flashcards-transparent/course-images/5d37d141f215ef8d84fa455a603de75fecc00155736a8830937c17539b5e7701/image.webp':
+      expanded124Asset22,
+    '/flashcards-transparent/a2/travel/elevator/image.webp': expanded124Asset23,
+    '/flashcards-transparent/a2/travel/floor/image.webp': expanded124Asset24,
+    '/flashcards-transparent/a2/travel/wifi-password/image.webp':
+      expanded124Asset25,
+    '/flashcards-transparent/a2/travel/receptionist/image.webp':
+      expanded124Asset26,
+    '/flashcards-transparent/a2/travel/clean-room/image.webp':
+      expanded124Asset27,
+    '/flashcards-transparent/a2/travel/cheap-hotel/image.webp':
+      expanded124Asset28,
     '/flashcards/course-characters/evelyn-carter/image.webp': asset18,
     '/flashcards/course-characters/owen-harris/image.webp': asset19,
     '/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp':

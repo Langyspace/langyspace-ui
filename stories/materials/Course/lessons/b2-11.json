@@ -347,7 +347,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Pitch a useful change",
-      "instruction": "Propose a useful change and respond to one objection",
+      "instruction": "Explain how your proposed change would work and respond to one objection",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -389,7 +389,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Revise the proposal and its review",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Keep the purpose, adjust the mechanism and agree how to review the change",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -456,7 +456,7 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Explain the change, not a slogan",
+      "title": "Change proposal",
       "facts": [
         {
           "id": "0",
@@ -495,7 +495,7 @@
     },
     "s_reply": {
       "type": "facts",
-      "title": "Keep the purpose, adjust the mechanism",
+      "title": "Revised proposal",
       "facts": [
         {
           "id": "0",
@@ -575,7 +575,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

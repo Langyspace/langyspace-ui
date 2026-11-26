@@ -492,7 +492,8 @@
         }
       ],
       "questionPurpose": "response",
-      "image": "b2-04-flat-evidence123"
+      "image": "b2-04-flat-evidence123",
+      "referenceLabel": "Evidence before explanation"
     },
     "s_reply": {
       "type": "facts",
@@ -531,7 +532,8 @@
           "hint": "The receipt remains …; it doesn’t establish …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Confirmation and remaining uncertainty"
     },
     "s_personal": {
       "type": "facts",
@@ -577,7 +579,8 @@
         }
       ],
       "questionPurpose": "conversation",
-      "image": "b2-04-flat-evidence123"
+      "image": "b2-04-flat-evidence123",
+      "referenceLabel": "Situation reference"
     }
   }
 }

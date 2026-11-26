@@ -33,9 +33,93 @@ import asset29 from '../../A104/assets/scene-bedtime79.webp'
 import asset30 from '../../A104/assets/scene-morning42.webp'
 import asset31 from '../../A104/assets/scene-afternoon42.webp'
 import asset32 from '../../A104/assets/scene-evening42.webp'
+import expanded124Asset0 from '../assets/flashcards124/a9c5985fd4ac48607643a556d3c4e17f92a2a5df2e17b183043e80314eed7d3e.mp3'
+import expanded124Asset1 from '../assets/flashcards124/64d681ce17260dd328c49198c2db3a29d907b95d0fce80130ac4703d47a00a15.mp3'
+import expanded124Asset2 from '../assets/flashcards124/a16efa5590db9c44372ec278614ba322053983fd963144d49d7de0d92883e0e4.mp3'
+import expanded124Asset3 from '../assets/flashcards124/31713b431d112299be9c33b85a0585c9a9a4dad2260c5e409dfd565782749542.mp3'
+import expanded124Asset4 from '../assets/flashcards124/6abd3498773e945fb40d51c394d327394178a7d64631db8b7fd5f3d4935f9b29.mp3'
+import expanded124Asset5 from '../assets/flashcards124/236b0d58f080b550d9345c81740f539c3dd296d8e6301aef6cf3b23afb82f942.mp3'
+import expanded124Asset6 from '../assets/flashcards124/28976bfb59fcae4bdc82a4fc1b1fc7bc3915d4897cbf41990e76e33f21ae3224.mp3'
+import expanded124Asset7 from '../assets/flashcards124/da9d14ff3db60a2020efaf3a07f5406d8a5cb47a09358f37f52205e01534d907.mp3'
+import expanded124Asset8 from '../assets/flashcards124/b3154dac307db4c88f81241a7703b0fd9081e4311d7fa33fcc92bf036983da66.mp3'
+import expanded124Asset9 from '../assets/flashcards124/fa44a92984baf84d62996857be4b2985fa0d8be954e143f50bc31fa981c0b71e.mp3'
+import expanded124Asset10 from '../assets/flashcards124/43c431d508d8fc278ad59161c6e0cf8204d1e8a13be8489d8c3f52725afa3272.mp3'
+import expanded124Asset11 from '../assets/flashcards124/b961e7e33f79ca700b6ce49011cca9aa836d5692742e74e6ea76b0b95cc849e7.mp3'
+import expanded124Asset12 from '../assets/flashcards124/132e3a939153e3b52e4be8f626c66dc44a774ab349b8026ad76d257b9c0c5656.webp'
+import expanded124Asset13 from '../assets/flashcards124/352aff537d3111630e3dd8823f649796f600b6eb645cb9067aee8405bc01c22b.webp'
+import expanded124Asset14 from '../assets/flashcards124/1f55b8824c8c942a1ec6b8dab342b06cdce9c31ae2ab5feb8b74253e57b843d3.webp'
+import expanded124Asset15 from '../assets/flashcards124/8c8360a3ab14425d8d026789ae1d1f72aad591bde7f2d621bbe605af9f16660b.webp'
+import expanded124Asset16 from '../assets/flashcards124/4562c25823dcedf443a71f3e45aadf5e74ddd6058fcda32fa05a5cdb14b5600f.webp'
+import expanded124Asset17 from '../assets/flashcards124/ef3be618cf70ffd96f050b6c55b9ed432eceec73fe4e892103047747c8375899.webp'
+import expanded124Asset18 from '../assets/flashcards124/073dfa46f391bdb54895e797ea6361a58168ea0032685a5cb015a85af6389d24.webp'
+import expanded124Asset19 from '../assets/flashcards124/ae72a43dd8405cfc16cfb3ba976486a6997e28ad83e0e9f32e9993cc5fe3ca7c.webp'
+import expanded124Asset20 from '../assets/flashcards124/6c544ff42b8e1fb8d1d311361eaf87a517d7a6a9dada2d1c01ae72fa2c2f4233.webp'
+import expanded124Asset21 from '../assets/flashcards124/a5550baa035bdc106086102513e46f5f1cef456fc345ddb9fa4ca30d473bdd21.webp'
+import expanded124Asset22 from '../assets/flashcards124/ea4b036d606526b6946a0f4916b3dc85b54719971f59320a9ca08d57be9a7fbb.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'deck-a1-verbs-brush.front',
+      text: 'brush. I brush my teeth.',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'deck-a1-verbs-wash.front',
+      text: 'wash. He washes his hands.',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'deck-a1-verbs-eat.front',
+      text: 'eat. I eat bread.',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'deck-a1-verbs-drink.front',
+      text: 'drink. She drinks water.',
+      src: expanded124Asset3,
+    },
+    {
+      id: 'deck-a1-verbs-read.front',
+      text: 'read. I read a book.',
+      src: expanded124Asset4,
+    },
+    {
+      id: 'deck-a1-verbs-watch.front',
+      text: 'watch. She watches TV.',
+      src: expanded124Asset5,
+    },
+    {
+      id: 'deck-a1-verbs-sleep.front',
+      text: 'sleep. She sleeps at night.',
+      src: expanded124Asset6,
+    },
+    { id: 'course-a1-03-cook.front', text: 'a cook', src: expanded124Asset7 },
+    {
+      id: 'course-a1-03-cook.back',
+      text: 'My sister is a cook',
+      src: expanded124Asset8,
+    },
+    {
+      id: 'deck-a1-verbs-make.front',
+      text: 'make. I make a cake.',
+      src: expanded124Asset9,
+    },
+    {
+      id: 'course-extra-influencer-routine-v8.front',
+      text: 'get dressed. I get dressed after breakfast',
+      src: expanded124Asset10,
+    },
+    {
+      id: 'course-extra-influencer-routine-v8.back',
+      text: 'get dressed. I get dressed after breakfast',
+      src: expanded124Asset10,
+    },
+    {
+      id: 'deck-a1-verbs-call.front',
+      text: 'call. I call my mom.',
+      src: expanded124Asset11,
+    },
     {
       id: 'a1-04.shadowing.01',
       text: 'What time do you wake up?',
@@ -130,6 +214,19 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/a1/verbs/brush/image.webp': expanded124Asset12,
+    '/flashcards-transparent/a1/verbs/wash/image.webp': expanded124Asset13,
+    '/flashcards-transparent/a1/verbs/eat/image.webp': expanded124Asset14,
+    '/flashcards-transparent/a1/verbs/drink/image.webp': expanded124Asset15,
+    '/flashcards-transparent/a1/verbs/read/image.webp': expanded124Asset16,
+    '/flashcards-transparent/a1/verbs/watch/image.webp': expanded124Asset17,
+    '/flashcards-transparent/a1/verbs/sleep/image.webp': expanded124Asset18,
+    '/flashcards-transparent/course-images/ae72a43dd8405cfc16cfb3ba976486a6997e28ad83e0e9f32e9993cc5fe3ca7c/image.webp':
+      expanded124Asset19,
+    '/flashcards-transparent/a1/verbs/make/image.webp': expanded124Asset20,
+    '/flashcards-transparent/course-images/a5550baa035bdc106086102513e46f5f1cef456fc345ddb9fa4ca30d473bdd21/image.webp':
+      expanded124Asset21,
+    '/flashcards-transparent/a1/verbs/call/image.webp': expanded124Asset22,
     '/flashcards/course-characters/priya-nair/image.webp': asset22,
     '/flashcards/course-characters/arjun-mehta/image.webp': asset23,
     '/flashcards-transparent/course-images/53a934819e2f31d96e726eca9408dfae4984898f63649ad3bb28f349d9df5caf/image.webp':

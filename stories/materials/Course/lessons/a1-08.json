@@ -254,7 +254,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Can you help me?",
-      "instruction": "Tell reception the problem and ask for help",
+      "instruction": "Choose a room problem, tell reception your room number and ask for help",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -363,7 +363,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Choose one problem",
+      "title": "Room problems",
       "options": [
         {
           "id": "shower",
@@ -474,7 +474,8 @@
           "hint": "I’m in room … Thank you"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Reception’s offer"
     }
   }
 }

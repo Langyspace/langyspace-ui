@@ -404,7 +404,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Strengthen one condition in the recommendation",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Test the fallback in practice and strengthen one condition in the recommendation",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -506,11 +506,12 @@
           "hint": "I’d examine who …, what … and whether …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Three criteria for the recommendation"
     },
     "s_reply": {
       "type": "facts",
-      "title": "Test the fallback in practice",
+      "title": "Fallback conditions",
       "facts": [
         {
           "id": "0",
@@ -590,7 +591,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

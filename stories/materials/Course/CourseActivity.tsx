@@ -60,8 +60,8 @@ export function CourseActivity({
         assignments={assignments}
         selectedId={picture}
         onSelect={selectPicture}
-        instructions="Choose a picture, then choose its place in the story"
-        emptyLabel="Place a picture here"
+        instructions=""
+        emptyLabel="—"
         onAssign={(id, category) =>
           assign((old) => {
             const next = { ...old }
@@ -161,7 +161,9 @@ export function CourseActivity({
         image &&
         activity.options?.length &&
         activity.type !== 'comparison' ? (
-          <Common.Hint>{activity.title}</Common.Hint>
+          activity.referenceLabel ? (
+            <Common.Hint>{activity.referenceLabel}</Common.Hint>
+          ) : null
         ) : null}
         {activity.options?.length && activity.type !== 'comparison' ? (
           <Common.Row $justify="center">
@@ -208,13 +210,17 @@ export function CourseActivity({
           mapView
         ) : activity.type === 'chart' && activity.chart ? (
           <Common.Surface>
-            <Common.Heading>{activity.title}</Common.Heading>
+            {activity.referenceLabel ? (
+              <Common.Heading>{activity.referenceLabel}</Common.Heading>
+            ) : null}
             <GroupedBarChart {...activity.chart} />
           </Common.Surface>
         ) : activity.type === 'menu' ? (
           <Common.Surface>
             {!delivered ? (
-              <Common.Heading>{activity.title}</Common.Heading>
+              activity.referenceLabel ? (
+                <Common.Heading>{activity.referenceLabel}</Common.Heading>
+              ) : null
             ) : null}
             {!delivered ? (
               <>
@@ -304,7 +310,11 @@ export function CourseActivity({
           </Common.Surface>
         ) : facts.length ? (
           <Common.Surface>
-            <Common.Heading>{selected?.title ?? activity.title}</Common.Heading>
+            {selected?.title || activity.referenceLabel ? (
+              <Common.Heading>
+                {selected?.title ?? activity.referenceLabel}
+              </Common.Heading>
+            ) : null}
             <KeyValueList
               tone="material"
               density="compact"

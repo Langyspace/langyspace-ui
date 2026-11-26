@@ -47,9 +47,70 @@ import asset43 from '../../A106/assets/scene-cat-on.webp'
 import asset44 from '../../A106/assets/scene-cat-in.webp'
 import asset45 from '../../A106/assets/scene-cat-under.webp'
 import asset46 from '../../A106/assets/scene-cat-next.webp'
+import expanded124Asset0 from '../assets/flashcards124/600bcd9ef59fe0656f7c734c73c83e5882ba433fb059d1a7f59080965d1af41e.mp3'
+import expanded124Asset1 from '../assets/flashcards124/09895285bcbe64c85fed818c12bff2472103fcc7251905994a823725bbeecd2a.mp3'
+import expanded124Asset2 from '../assets/flashcards124/891e5e56a79aea3c836e72987f9351ffd378335f4b37a2f9732db46cabcfd422.mp3'
+import expanded124Asset3 from '../assets/flashcards124/3758aebb4354fb2df3856ed08c825785ccd5d9c6908f4acfb8556f0d8a8d2480.mp3'
+import expanded124Asset4 from '../assets/flashcards124/e34d13731bb5c1bf5319d4bc3ff60d8222d8e944096532bbf9daa683d4cee270.mp3'
+import expanded124Asset5 from '../assets/flashcards124/b5d1d530bc23fb33e3d347e02290d670db2a87e73c51eebf48c706c89e3aa818.mp3'
+import expanded124Asset6 from '../assets/flashcards124/37192f745a361965569c470597e1124d6fe2b8a65aa44f9c70eb576485d3f196.mp3'
+import expanded124Asset7 from '../assets/flashcards124/772c54a9d2837a9159beadbc78c227133acf97abb7e47c564e0dada3320d7664.mp3'
+import expanded124Asset8 from '../assets/flashcards124/f6d3a88d46389654e353f5b24d53545712b46c77c9a2cf8e6de01dafa5a9f5b8.mp3'
+import expanded124Asset9 from '../assets/flashcards124/057fc760e5fb09f8c959767a208df196a17a2056c169c254667198db3a37130f.mp3'
+import expanded124Asset10 from '../assets/flashcards124/718118b45219ecffc27bf271edaa01661ae5954408b3d124e4ee656eeb5da73e.mp3'
+import expanded124Asset11 from '../assets/flashcards124/c66171d06e57377868ea24597f2f8f536243ef67aa8f7f959f44d71e1a6cb6de.webp'
+import expanded124Asset12 from '../assets/flashcards124/04b3d3e22d2901a0fc1dc56fd822397b13a701a84f2cec7df689a111c69a9818.webp'
+import expanded124Asset13 from '../assets/flashcards124/f798fcf073bfcd102c3972febec5c6f62293ccac908291cf9b73d5ff4b2efb0a.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'deck-a2-travel-behind.front',
+      text: 'behind. The station is behind the hotel.',
+      src: expanded124Asset0,
+    },
+    {
+      id: 'deck-a2-travel-in-front-of.front',
+      text: 'in front of. The taxi stopped in front of the hotel.',
+      src: expanded124Asset1,
+    },
+    {
+      id: 'deck-a2-travel-between.front',
+      text: 'between. The café is between two shops.',
+      src: expanded124Asset2,
+    },
+    {
+      id: 'flashcard124-a-chair.front',
+      text: 'a chair',
+      src: expanded124Asset3,
+    },
+    {
+      id: 'flashcard124-a-chair.back',
+      text: 'The chair is next to the table',
+      src: expanded124Asset4,
+    },
+    { id: 'flashcard124-a-door.front', text: 'a door', src: expanded124Asset5 },
+    {
+      id: 'flashcard124-a-door.back',
+      text: 'The cat is behind the door',
+      src: expanded124Asset6,
+    },
+    {
+      id: 'flashcard124-a-window.front',
+      text: 'a window',
+      src: expanded124Asset7,
+    },
+    {
+      id: 'flashcard124-a-window.back',
+      text: 'The bird is near the window',
+      src: expanded124Asset8,
+    },
+    { id: 'flashcard124-a-desk.front', text: 'a desk', src: expanded124Asset9 },
+    {
+      id: 'flashcard124-a-desk.back',
+      text: 'The book is on the desk',
+      src: expanded124Asset10,
+    },
     { id: 'a1-06.shadowing.01', text: 'Is this your dog?', src: asset0 },
     {
       id: 'a1-06.shadowing.02',
@@ -144,6 +205,10 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/a2/travel/behind/image.webp': expanded124Asset11,
+    '/flashcards-transparent/a2/travel/in-front-of/image.webp':
+      expanded124Asset12,
+    '/flashcards-transparent/a2/travel/between/image.webp': expanded124Asset13,
     '/flashcards/course-characters/kim/image.webp': asset32,
     '/flashcards/course-characters/ana/image.webp': asset33,
     '/flashcards-transparent/course-images/4cab8640207fa0a8e02ecbcebadcddd318cc11d8c0910ace074d2b49c3af5b61/image.webp':

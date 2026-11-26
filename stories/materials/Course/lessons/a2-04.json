@@ -299,7 +299,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Find a plan that works",
-      "instruction": "Invite me and find a time that works for both of us",
+      "instruction": "Invite me to the food festival and find a time that works for both of us",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -408,7 +408,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Find a time for the food festival",
+      "title": "Festival availability",
       "options": [
         {
           "id": "sat",
@@ -509,7 +509,8 @@
           "hint": "How about Saturday …?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Updated invitation"
     }
   }
 }

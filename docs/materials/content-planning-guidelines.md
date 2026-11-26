@@ -478,3 +478,12 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Usar o prompt canônico de imagem literalmente, anexando apenas assunto e composição. Texto, números, rótulos e controles pertencem à UI, não ao bitmap. Registrar pedidos, originais e hashes; reutilizar imagens válidas.
 - O ícone de dica reutiliza o som compartilhado, breve e discreto, respeitando o mute do header e sem competir com gravações nativas. Não usar sons de acerto para pedir ajuda e não duplicar handlers por aula. Ver [contrato do som de dica](../components/hint-feedback-sound.md).
 - Respostas e dicas podem entrar com fade de 150 ms. Respeitar movimento reduzido; não animar altura, navegação ou scroll, nem mover o play. Vocabulário revelado permanece estático. Ver [contrato de animação](../components/reveal-motion.md).
+
+
+## Instruções concentradas no cabeçalho — revisão124
+
+- A instrução global da página fica no título e no único subtítulo: o que fazer, com quem e usando qual referência. Não repetir frases de procedimento acima ou abaixo da cena, tabela, ficha, diálogo ou exercício (ex.: “Use your friend’s message”). Incorporar a informação necessária ao cabeçalho, sem mudar a tarefa.
+- Separar explicitamente os campos na autoria: `page.instruction` contém a instrução; `activity.referenceLabel` é opcional e contém apenas o nome curto da referência ou seus dados. `activity.title` não é reutilizado automaticamente como instrução visível no corpo. Não filtrar ou apagar frases por palavras-chave em runtime; corrigir o texto e sua localização na fonte.
+- Preservar rótulos e dados que fazem parte da atividade: tamanho M, preço, horário, Before/Now, nome da pessoa, item do menu, legenda e identificação da fonte. Uma instrução retirada não deve levar embora o orçamento, destino ou outra condição necessária para responder.
+- Perguntas, falas de personagens, mensagens do WhatsApp, enunciados do exercício do portal e apoios linguísticos por turno são o conteúdo a praticar ou interpretar; não são frases soltas da moldura da página. Preservar esses conteúdos e suas dicas sob demanda. Explicações gramaticais também permanecem na tabela ou no bloco de explicação.
+- Componentes que oferecem instruções próprias devem permitir que o cabeçalho do consumidor as assuma sem duplicação. No ImageSortBoard, `instructions=""` não renderiza parágrafo vazio nem deixa uma referência ARIA inexistente; os rótulos das colunas e dos controles permanecem.

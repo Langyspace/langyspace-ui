@@ -233,7 +233,7 @@ export function Interview({ media }: AudioProps) {
     <RolePlayExercise
       presentation="tracker"
       density="compact"
-      situation="CloudNest is looking for a frontend developer. Talk about your real work. No tech job yet? Talk about a course project, or invent."
+      situation=""
       steps={content.steps.map((label, i) => ({ id: String(i), label }))}
       completedIds={steps}
       onStepToggle={(id) => setSteps((old) => toggle(old, id))}

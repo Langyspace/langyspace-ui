@@ -279,10 +279,7 @@ export function Corrections({ media }: AudioProps) {
       })}
       <S.Correction>
         <S.Number>{own ? '✓' : 6}</S.Number>
-        <div>
-          One from today
-          <S.Hint>Your teacher says one of your sentences from today.</S.Hint>
-        </div>
+        <div>One from today</div>
         <Button
           size="sm"
           variant="secondary"

@@ -506,7 +506,8 @@
           "hint": "Received; I’ll … and reply by …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Two needs behind one word"
     },
     "s_reply": {
       "type": "facts",
@@ -545,7 +546,8 @@
           "hint": "Does that reflect …, or have I missed …?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "A workable distinction"
     },
     "s_personal": {
       "type": "facts",
@@ -590,7 +592,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

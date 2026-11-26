@@ -254,7 +254,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Check your order",
-      "instruction": "Order some food, then check what arrives",
+      "instruction": "Order a drink and some food, then check what arrives",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -363,7 +363,7 @@
   "activities": {
     "s_mission": {
       "type": "menu",
-      "title": "Choose a drink and some food",
+      "title": "Café menu",
       "menu": [
         {
           "id": "tea",
@@ -412,7 +412,8 @@
         }
       ],
       "questionPurpose": "response",
-      "image": "a1-10-vocabulary81"
+      "image": "a1-10-vocabulary81",
+      "referenceLabel": "Menu"
     },
     "s_reply": {
       "type": "facts",
@@ -451,7 +452,8 @@
           "hint": "How much is it? She has … dollars"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Your friend’s order"
     }
   }
 }

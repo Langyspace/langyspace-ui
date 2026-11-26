@@ -14,6 +14,7 @@ export function LikesBoardSection() {
   return (
     <ImageSortBoard
       aria-label="My likes and dislikes"
+      instructions=""
       items={likeItems}
       categories={[
         { id: 'like', label: 'I like' },
@@ -28,7 +29,7 @@ export function LikesBoardSection() {
       footer={
         <>
           <Common.Heading $prompt aria-live="polite">
-            {activeItem?.question ?? 'Choose a picture to start'}
+            {activeItem?.question ?? 'Do you like …?'}
           </Common.Heading>
           {support === 'hint' ? (
             <Common.Hint>{content.p4.hint}</Common.Hint>

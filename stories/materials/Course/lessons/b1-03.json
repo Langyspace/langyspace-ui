@@ -397,7 +397,7 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Reconstruct the evening",
+      "title": "Evening timeline",
       "facts": [
         {
           "id": "0",
@@ -471,7 +471,8 @@
           "hint": "They could … After that …, but … had already …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Confirmed at the help desk"
     },
     "s_personal": {
       "type": "facts",
@@ -516,7 +517,8 @@
           "answer": "One possible response"
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
     }
   }
 }

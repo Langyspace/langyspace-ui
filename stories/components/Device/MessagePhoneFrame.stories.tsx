@@ -48,3 +48,24 @@ export const LongMessage: Story = {
   },
   tags: ['visual-review', 'layout-boundary'],
 }
+export const FittedConversation: Story = {
+  args: {
+    contentSizing: 'fit',
+    contact: 'Teacher',
+    children: (
+      <>
+        <MessageBubble side="incoming" appearance="messaging" timestamp="20:30">
+          Send me a voice note comparing your neighbourhood’s past and present
+        </MessageBubble>
+        <MessageBubble side="outgoing" appearance="messaging" timestamp="">
+          <strong>Your voice note · 60–90 seconds</strong>
+          <p>I used to…</p>
+          <p>There used to be…</p>
+          <p>Did you use to…?</p>
+          <p>Finish with a question for your teacher</p>
+        </MessageBubble>
+      </>
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}

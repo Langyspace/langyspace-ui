@@ -112,16 +112,9 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       eyebrow = 'Dialogue'
       instruction = index
         ? 'The talk goes on. Listen and read along.'
-        : 'Listen to Kim and Ana plan a fix before Friday’s launch.'
+        : 'Listen to Kim and Ana plan a fix before Friday’s launch. Select a line to read its translation'
       titleAction = dialogueTool(index)
-      element = (
-        <S.Stack>
-          {!index ? (
-            <S.Hint>Select a line to read its translation.</S.Hint>
-          ) : null}
-          <Dialogue index={index} media={media} />
-        </S.Stack>
-      )
+      element = <Dialogue index={index} media={media} />
     } else if (id === 's61') {
       title = 'Questions'
       eyebrow = 'Dialogue'
@@ -150,12 +143,14 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
     } else if (id === 's10') {
       title = 'Right or wrong?'
       eyebrow = 'Review'
-      instruction = 'Is the sentence right? If not, say it the right way.'
+      instruction =
+        'Judge each sentence and correct any mistakes, then check one sentence from your teacher'
       element = <Corrections media={media} />
     } else if (id === 's11') {
-      title = 'The interview'
+      title = 'Frontend interview at CloudNest'
       eyebrow = 'Role play'
-      instruction = 'Press play. Answer Jun’s question. Then press play again.'
+      instruction =
+        'Answer Jun with examples, handle a surprise and ask two questions. Then swap roles and ask three'
       element = <Interview media={media} />
     } else {
       return {

@@ -299,7 +299,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "What happened first?",
-      "instruction": "Order the pictures using Ana’s story",
+      "instruction": "Choose a picture and its place to retell Ana’s story in order",
       "minutes": 2,
       "eyebrow": "Speaking task"
     },
@@ -416,7 +416,7 @@
   "activities": {
     "s_mission": {
       "type": "sequence",
-      "title": "Order the pictures",
+      "title": "Ana’s story pictures",
       "image": "a2-03-vocabulary81",
       "questions": [],
       "pictures": [
@@ -489,11 +489,12 @@
           "hint": "See you at … Is that right?"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "Leo’s message"
     },
     "s_mission_story": {
       "type": "timeline",
-      "title": "Three moments · tell the story",
+      "title": "Three moments",
       "facts": [
         {
           "id": "0",

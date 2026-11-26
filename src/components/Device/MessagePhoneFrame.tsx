@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from 'react'
 import * as Phone from '../VoiceMessage/VoiceMessageExercise.styles'
 import * as Styled from './MessagePhoneFrame.styles'
 import type { MessagePhoneFrameProps } from './MessagePhoneFrame.types'
@@ -7,19 +8,42 @@ export function MessagePhoneFrame({
   contact,
   children,
   size = 'default',
+  contentSizing = 'natural',
   time = '9:41',
   composerPlaceholder = 'Message',
   conversationProps,
   composerAction,
   ...props
 }: MessagePhoneFrameProps) {
+  const viewport = useRef<HTMLDivElement>(null)
+  const messages = useRef<HTMLDivElement>(null)
+  const [contentScale, setContentScale] = useState(1)
+  useLayoutEffect(() => {
+    const host = viewport.current
+    const body = messages.current
+    if (contentSizing !== 'fit' || !host || !body) return
+    const measure = () => {
+      const height = host.clientHeight
+      const contentHeight = body.scrollHeight
+      if (height > 0 && contentHeight > 0)
+        setContentScale(Math.min(1, height / contentHeight))
+    }
+    measure()
+    if (typeof ResizeObserver === 'undefined') return
+    const observer = new ResizeObserver(measure)
+    observer.observe(host)
+    observer.observe(body)
+    return () => observer.disconnect()
+  }, [contentSizing, children])
   return (
     <Styled.Root
       as="section"
       $size={size}
+      $fit={contentSizing === 'fit'}
       aria-label="Message preview"
       {...props}
       data-device-frame="message-phone"
+      data-content-sizing={contentSizing}
     >
       <Phone.StatusBar aria-hidden="true">
         <span>{time}</span>
@@ -55,7 +79,21 @@ export function MessagePhoneFrame({
         <Phone.Back aria-hidden="true">‹</Phone.Back>
         {contact}
       </Phone.Contact>
-      <Phone.Conversation {...conversationProps}>{children}</Phone.Conversation>
+      <Phone.Conversation {...conversationProps}>
+        {contentSizing === 'fit' ? (
+          <Styled.FitViewport ref={viewport} data-message-fit="true">
+            <Styled.FitMessages
+              ref={messages}
+              $scale={contentScale}
+              data-message-fit-content="true"
+            >
+              {children}
+            </Styled.FitMessages>
+          </Styled.FitViewport>
+        ) : (
+          children
+        )}
+      </Phone.Conversation>
       <Phone.Composer aria-hidden={composerAction ? undefined : true}>
         <Phone.MessagePlaceholder>
           {composerPlaceholder}

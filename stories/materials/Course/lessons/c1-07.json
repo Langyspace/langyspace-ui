@@ -362,7 +362,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Brief someone who wasn’t there",
-      "instruction": "Brief someone who missed the meeting and confirm the next step",
+      "instruction": "Choose who needs the brief, explain the decision they face and confirm the next step",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -471,7 +471,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Choose the recipient’s decision",
+      "title": "Briefing audiences",
       "options": [
         {
           "id": "funding",

@@ -389,7 +389,7 @@
       "id": "s_reply",
       "kind": "activity",
       "title": "Revise one condition, not the whole purpose",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "instruction": "Test the exception process and revise one condition without changing the policy’s purpose",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -543,7 +543,7 @@
     },
     "s_reply": {
       "type": "facts",
-      "title": "Test the exception process",
+      "title": "Exception process",
       "facts": [
         {
           "id": "0",

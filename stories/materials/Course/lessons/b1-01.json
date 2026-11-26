@@ -462,7 +462,7 @@
       "id": "s_mission",
       "kind": "activity",
       "title": "Catch up with a friend",
-      "instruction": "Catch up with me and ask about my recent activities",
+      "instruction": "Choose a topic, share recent activities and ask about mine",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -574,7 +574,7 @@
   "activities": {
     "s_mission": {
       "type": "choices",
-      "title": "Practice updates · choose a topic, then ask me",
+      "title": "Recent activities",
       "options": [
         {
           "id": "paint",
@@ -696,7 +696,8 @@
           "hint": "Carla needs …, while Leo prefers …; perhaps …"
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "response",
+      "referenceLabel": "The result and the ongoing task"
     }
   },
   "notesStorageKey": "langy-notes:b1-01"
