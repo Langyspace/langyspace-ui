@@ -36,6 +36,13 @@ export interface CoursePracticeData {
   code: string
   title: string
   voice: HomeworkVoiceNoteProps
+  /** Authored Portuguese assignment for the teacher to copy into WhatsApp. Links come from the live destination contract. */
+  homeworkCopy: {
+    title: string
+    first: string
+    shadowing: string
+    voice: string
+  }
   /** Only a real published activity receives its Student destination. */
   publishedEnvironments: readonly ('staging' | 'production')[]
   first:

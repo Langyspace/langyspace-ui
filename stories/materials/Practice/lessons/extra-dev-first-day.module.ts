@@ -16,6 +16,14 @@ const prepared: PreparedPractice = {
   data: {
     key: source.materialKey,
     code: 'DEV.02',
+    homeworkCopy: {
+      title: 'Primeiro dia no time',
+      first: 'Estudar o vocabulário de trabalho e tecnologia nos flashcards',
+      shadowing:
+        'Ouvir e repetir as frases para pedir ajuda e combinar entregas',
+      voice:
+        'Mandar um áudio em inglês para a teacher contando qual tela você está desenvolvendo, o que está bloqueando o trabalho e de que ajuda precisa',
+    },
     title: source.title,
     publishedEnvironments: ['staging', 'production'],
     first: {

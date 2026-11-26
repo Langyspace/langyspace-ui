@@ -14,7 +14,7 @@ export function LessonHomeworkClosing({
       density="compact"
       eyebrow="After class"
       title="Class complete — your homework"
-      instruction="Open the two activities in your student portal, then send your teacher a voice note about today’s topic"
+      instruction="Complete the two activities, then send Teacher a voice note about today’s topic"
     >
       <LessonHomeworkGallery materialKey={materialKey} active={active} />
     </SlidePage>

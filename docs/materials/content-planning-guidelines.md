@@ -452,3 +452,12 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Para combinar países e sentimentos, apresentar os seis personagens juntos, com bandeiras oficiais e expressões claras. São seis identidades visuais, não 36 combinações. A emoção é circunstancial e nunca uma característica atribuída à nacionalidade.
 - Escolher mentalmente uma identidade, sem clicar e revelar a escolha ao outro participante. A tela explicita quem pergunta, quem responde e a troca de papéis. Perguntas curtas visíveis apoiam a fala; o desafio de apresentar todos como amigos fica em página própria para não sobrecarregar o jogo.
+
+
+### 26/11/2026 — Copiar o dever para WhatsApp
+
+- O encerramento com homework mantém as três prévias canônicas e oferece uma única ação **Copy homework**, abaixo delas, para copiar o dever completo. Não criar um botão Open por atividade
+- Escrever o texto em português, curto e específico da aula, como tarefa escolar: título “Lição de casa”, item 1 para flashcards ou quiz, item 2 para ouvir e repetir e item 3 para mandar um áudio em inglês para a teacher explicando o que falar
+- Manter a copy autoral junto aos dados de prática da aula (`homeworkCopy`). Atualizá-la quando as atividades mudarem; não derivar a instrução de um slug nem usar a mesma tarefa genérica para todos os níveis
+- Os dois links vêm dos IDs reais das atividades e da origem validada do portal Student do ambiente atual. Não inventar destinos nem oferecer cópia com links ausentes ou não publicados naquele ambiente
+- Copiar somente por clique, com confirmação discreta. Se o navegador bloquear o clipboard, exibir o mesmo texto selecionável para cópia manual. Essa ação prepara a mensagem, sem enviar WhatsApp

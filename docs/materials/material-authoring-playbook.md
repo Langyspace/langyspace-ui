@@ -86,7 +86,7 @@ Cada aula regular/extra termina com duas práticas ligadas ao conteúdo e uma or
 - **Quiz, quando pertinente:** praticar a gramática ensinada, variar lacunas/julgamentos/escolhas e narrar os enunciados relevantes. Explicação em português claro. Não oferecer a resposta pronta no enunciado nem fazer todas as questões com a mesma mecânica.
 - **Áudio à professora:** pedir uma produção útil sobre o tema; orientar duração e começos de fala. A tela de WhatsApp é uma orientação, não um envio ou uma terceira atividade salva no portal.
 
-Planejar os IDs e os destinos antes da entrega. Uma prévia funcionando localmente não significa atividade cadastrada. O [plano de ampliação dos conjuntos antigos](../epics/dev-first-day95/homework/expansion-plan20.md) registra separadamente o que ainda falta cumprir no mínimo de 20.
+Planejar os IDs e os destinos antes da entrega. Escrever `homeworkCopy` com três tarefas curtas em português; o encerramento usa uma única ação Copy homework, com dois links resolvidos desses IDs e a orientação de áudio para a teacher. Uma prévia funcionando localmente não significa atividade cadastrada. O [plano de ampliação dos conjuntos antigos](../epics/dev-first-day95/homework/expansion-plan20.md) registra separadamente o que ainda falta cumprir no mínimo de 20.
 
 ## 7. Reutilizar e conferir a mídia certa
 

@@ -10,7 +10,8 @@ import { PracticeResultPanel } from '../../../src/components/PracticeResultPanel
 import { Button } from '../../../src/components/Button/Button'
 import { QuizBlank } from '../../../src/components/Quiz/QuizBlank'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
-import { ActionLink } from '../../../src/components/ActionLink/ActionLink'
+import { HomeworkCopyAction } from './HomeworkCopyAction'
+import { homeworkMessage } from './homeworkMessage'
 import { HomeworkVoiceNote } from './HomeworkVoiceNote'
 import { usePracticePlayback } from './usePracticePlayback'
 import { useMaterialPracticeOrigin } from './MaterialPracticeContext'
@@ -85,34 +86,6 @@ function PreparedHomework({
           <path d="M4 9v6h4l5 4V5L8 9H4zm12-2v10a7 7 0 0 0 0-10z" />
         </svg>
       </IconButton>
-    )
-  }
-  const destination = (
-    id: string,
-    kind: 'flashcards' | 'quiz' | 'shadowing',
-  ) => {
-    if (!origin) return null
-    const environment = [
-      'student.staging.langy.space',
-      'langyspace-student-staging.web.app',
-    ].includes(new URL(origin).hostname)
-      ? 'staging'
-      : 'production'
-    if (!data.publishedEnvironments.includes(environment)) return null
-    const search = new URLSearchParams({
-      tab: kind,
-      [kind === 'flashcards' ? 'deck' : 'activity']: id,
-    })
-    return (
-      <ActionLink
-        href={new URL('/licoes?' + search, origin).href}
-        target="_blank"
-        rel="noreferrer"
-        size="sm"
-        variant="brand"
-      >
-        Open {kind}
-      </ActionLink>
     )
   }
   const first = data.first,
@@ -308,107 +281,114 @@ function PreparedHomework({
     ) : null
   const voice = data.voice
   return (
-    <DeviceGallery
-      selectionLabel="Choose your homework"
-      onActiveIdChange={stop}
-      items={[
-        {
-          id: 'first',
-          label: '1 · ' + (first.kind === 'flashcards' ? 'Flashcards' : 'Quiz'),
-          content: (
-            <S.Item>
-              <MobileFrame
-                screenMode="application"
-                aria-label={
-                  (first.kind === 'flashcards' ? 'Flashcards' : 'Quiz') +
-                  ' — ' +
-                  firstTitle
-                }
-              >
-                {firstView}
-              </MobileFrame>
-              {destination(first.id, first.kind)}
-            </S.Item>
-          ),
-        },
-        {
-          id: 'shadowing',
-          label: '2 · Shadowing',
-          content: (
-            <S.Item>
-              <MobileFrame
-                screenMode="application"
-                aria-label={'Shadowing — ' + data.title}
-              >
-                <ShadowingSession
-                  aria-label={'Shadowing: ' + data.title}
-                  backAction={{
-                    label: 'Recomeçar o shadowing',
-                    onClick: () => {
-                      stop()
-                      setPhrase(0)
-                      repeat(0)
-                    },
-                  }}
-                  name={data.title}
-                  counter={`Frase ${phraseIndex + 1}/${data.shadowing.phrases.length}`}
-                  progress={
-                    (phraseIndex + repetitions / 3) /
-                    data.shadowing.phrases.length
+    <Common.Stack>
+      <DeviceGallery
+        selectionLabel="Choose your homework"
+        onActiveIdChange={stop}
+        items={[
+          {
+            id: 'first',
+            label:
+              '1 · ' + (first.kind === 'flashcards' ? 'Flashcards' : 'Quiz'),
+            content: (
+              <S.Item>
+                <MobileFrame
+                  screenMode="application"
+                  aria-label={
+                    (first.kind === 'flashcards' ? 'Flashcards' : 'Quiz') +
+                    ' — ' +
+                    firstTitle
                   }
-                  phraseKey={phrase.id}
-                  previous={
-                    data.shadowing.phrases[phraseIndex - 1]?.displayText
-                  }
-                  next={data.shadowing.phrases[phraseIndex + 1]?.displayText}
-                  speaker={
-                    speaker
-                      ? {
-                          name: speaker.name,
-                          imageUrl: images[speaker.avatarUrl],
-                          accentLabel: speaker.accentLabel,
-                        }
-                      : undefined
-                  }
-                  phrase={phrase.displayText.split(' ').map((word, i) => (
-                    <span key={i}>
-                      <ShadowingWord>{word}</ShadowingWord>{' '}
-                    </span>
-                  ))}
-                  translation={translation ? phrase.translation : undefined}
-                  repetitions={{
-                    total: 3,
-                    value: repetitions,
-                    label: `${repetitions}/3 escutas`,
-                  }}
-                  controls={{
-                    playing: shadowPlaying,
-                    playLabel: shadowPlaying ? 'Pausar frase' : 'Tocar frase',
-                    onPlay: playShadow,
-                    speed,
-                    speedOptions: ['0.75x', '1x'],
-                    onSpeedChange: (value) => {
-                      stop()
-                      setSpeed(value)
-                    },
-                    translationVisible: translation,
-                    onTranslationToggle: () => translate(!translation),
-                  }}
                 >
-                  {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
-                </ShadowingSession>
-              </MobileFrame>
-              {destination(data.shadowing.id, 'shadowing')}
-            </S.Item>
-          ),
-        },
-        {
-          id: 'voice',
-          label: '3 · Voice note',
-          content: <HomeworkVoiceNote {...voice} />,
-        },
-      ]}
-    />
+                  {firstView}
+                </MobileFrame>
+              </S.Item>
+            ),
+          },
+          {
+            id: 'shadowing',
+            label: '2 · Shadowing',
+            content: (
+              <S.Item>
+                <MobileFrame
+                  screenMode="application"
+                  aria-label={'Shadowing — ' + data.title}
+                >
+                  <ShadowingSession
+                    aria-label={'Shadowing: ' + data.title}
+                    backAction={{
+                      label: 'Recomeçar o shadowing',
+                      onClick: () => {
+                        stop()
+                        setPhrase(0)
+                        repeat(0)
+                      },
+                    }}
+                    name={data.title}
+                    counter={`Frase ${phraseIndex + 1}/${data.shadowing.phrases.length}`}
+                    progress={
+                      (phraseIndex + repetitions / 3) /
+                      data.shadowing.phrases.length
+                    }
+                    phraseKey={phrase.id}
+                    previous={
+                      data.shadowing.phrases[phraseIndex - 1]?.displayText
+                    }
+                    next={data.shadowing.phrases[phraseIndex + 1]?.displayText}
+                    speaker={
+                      speaker
+                        ? {
+                            name: speaker.name,
+                            imageUrl: images[speaker.avatarUrl],
+                            accentLabel: speaker.accentLabel,
+                          }
+                        : undefined
+                    }
+                    phrase={phrase.displayText.split(' ').map((word, i) => (
+                      <span key={i}>
+                        <ShadowingWord>{word}</ShadowingWord>{' '}
+                      </span>
+                    ))}
+                    translation={translation ? phrase.translation : undefined}
+                    repetitions={{
+                      total: 3,
+                      value: repetitions,
+                      label: `${repetitions}/3 escutas`,
+                    }}
+                    controls={{
+                      playing: shadowPlaying,
+                      playLabel: shadowPlaying ? 'Pausar frase' : 'Tocar frase',
+                      onPlay: playShadow,
+                      speed,
+                      speedOptions: ['0.75x', '1x'],
+                      onSpeedChange: (value) => {
+                        stop()
+                        setSpeed(value)
+                      },
+                      translationVisible: translation,
+                      onTranslationToggle: () => translate(!translation),
+                    }}
+                  >
+                    {audio.error && (
+                      <S.Error role="alert">{audio.error}</S.Error>
+                    )}
+                  </ShadowingSession>
+                </MobileFrame>
+              </S.Item>
+            ),
+          },
+          {
+            id: 'voice',
+            label: '3 · Voice note',
+            content: <HomeworkVoiceNote {...voice} />,
+          },
+        ]}
+      />
+      <HomeworkCopyAction
+        message={homeworkMessage(data, origin)}
+        active={active}
+      />
+    </Common.Stack>
   )
 }
 const loaders = import.meta.glob<{ default: PreparedPractice }>(
