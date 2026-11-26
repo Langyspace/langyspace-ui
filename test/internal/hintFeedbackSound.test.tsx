@@ -270,11 +270,11 @@ it('acknowledges each question click once and keeps answer interaction working w
     design.volume * design.questionGain,
   )
   expect(design.questionGain).toBeLessThan(design.hintGain / 2)
-  expect(latest().oscillators[0]?.frequency.value).toBe(220)
-  expect(latest().oscillators[0]?.stop).toHaveBeenCalledWith(10.09)
+  expect(latest().oscillators[0]?.frequency.value).toBe(330)
+  expect(latest().oscillators[0]?.stop).toHaveBeenCalledWith(10.11)
   expect(latest().gains[1]?.gain.linearRampToValueAtTime).toHaveBeenCalledWith(
     design.peak,
-    10.018,
+    10.02,
   )
   fireEvent.click(question)
   expect(question).toHaveAttribute('aria-expanded', 'false')

@@ -13,9 +13,9 @@ export const feedbackSoundDesign = {
   hintGain: 0.38,
   hint: [{ frequency: 587.33, start: 0, duration: 0.15 }],
   /** Muted low tap: no upper harmonic, a rounded onset and a short tail. */
-  questionGain: 0.1,
-  questionAttackSeconds: 0.018,
-  question: [{ frequency: 220, start: 0, duration: 0.09 }],
+  questionGain: 0.16,
+  questionAttackSeconds: 0.02,
+  question: [{ frequency: 330, start: 0, duration: 0.11 }],
   wrong: [
     { frequency: 440, start: 0, duration: 0.095 },
     { frequency: 392, start: 0.105, duration: 0.12 },
