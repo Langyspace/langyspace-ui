@@ -324,34 +324,44 @@
       "text": "France. I’m from France.",
       "file": "assets/audio/FS94.2.mp3",
       "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "requestId": null,
-      "sourceRequestIds": [
-        "eVSsdq0E8hMC9FdNwPMk",
-        "fX86DPQVImzIL0fKwgfZ"
-      ],
-      "sources": [
-        {
-          "leadingQuietFrames": 1320,
-          "trailingQuietFrames": 2646,
-          "trimStartFrames": 0,
-          "trimEndFrames": 5110,
-          "sourceSha256": "c90fe12f2a3e1fd3a48b937acba83accd2a65214239cd3d477a4fae6b5ba8f19"
-        },
-        {
-          "leadingQuietFrames": 880,
-          "trailingQuietFrames": 1428,
-          "trimStartFrames": 0,
-          "trimEndFrames": 0,
-          "sourceSha256": "231bb62994775b24a4208a3534003900b870734012a9c8f2b068d76d62da4ad9"
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "France. I'm from France.",
+      "requestBody": {
+        "text": "France. I'm from France.",
+        "model_id": "eleven_multilingual_v2",
+        "language_code": "en",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
         }
-      ],
-      "insertedSilenceFrames": 11909,
-      "boundaryQuietMilliseconds": 350.0,
-      "phonemeInteriorsModified": false,
-      "bytes": 31807,
-      "sha256": "87b2539dc0110d88c1b25c722cf93a3f48b306af42e5ea314774bd3fab225c18",
-      "durationSeconds": 1.918889
+      },
+      "requestId": "QLm5121BxxHCBrCtYObZ",
+      "status": "ready",
+      "disposition": "generated_corrective_replacement",
+      "providerHeaders": {
+        "request-id": "QLm5121BxxHCBrCtYObZ",
+        "character-cost": "10",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 27628,
+      "sha256": "b2d07d3a29979f3b7a4e69a5a5d55d4f5af6ab6f39faa5f01fd2ffcdf57829e8",
+      "durationSeconds": 1.671837,
+      "replacesSha256": "87b2539dc0110d88c1b25c722cf93a3f48b306af42e5ea314774bd3fab225c18",
+      "processing": "Original provider MP3; one continuous synthesis; no trimming, composition or crossfade",
+      "generationReceipt": "outputs/triage133/france-correction/provider-receipt.json"
     },
     {
       "material": "A101",

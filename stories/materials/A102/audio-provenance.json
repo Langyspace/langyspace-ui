@@ -1,5 +1,5 @@
 {
-  "revision": 40,
+  "revision": 134,
   "provider": "elevenlabs",
   "items": [
     {
@@ -211,7 +211,9 @@
       "phoneticControl": {
         "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
         "alphabet": "cmu-arpabet",
-        "letters": ["A"],
+        "letters": [
+          "A"
+        ],
         "phonemeRules": [
           {
             "letter": "A",
@@ -247,56 +249,119 @@
     {
       "id": "A.C",
       "text": "C",
+      "file": "assets/audio/A.C.mp3",
+      "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 0.557279,
-      "sha256": "77571a73a52413752b06fd1db2e91fd8a761137792de935878bc1e6e4c49ec21",
-      "synthesisInput": "see.",
-      "phoneticIntent": "Isolated American English name of uppercase letter C: see. Not a word, article, acronym, or phrase; Z is zee and W is double-you.",
-      "file": "assets/audio/A.C.mp3",
-      "baselineFile": "assets/audio/A.C.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.C.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.C.mp3"
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S IY1\">C</phoneme>.",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "S IY1"
+      },
+      "sha256": "83581d0a6d5cfb43f5819f1f355fd1ce65b7c1b9828df34376a9f86e8838d9fc",
+      "bytes": 10910,
+      "historicalReplacedSha256": "77571a73a52413752b06fd1db2e91fd8a761137792de935878bc1e6e4c49ec21",
+      "generationAttempts": 1,
+      "processing": "None; raw provider MP3 bytes, no trim, concatenation, crossfade or gain",
+      "generatedAt": "2026-11-26T22:06:24.504708+00:00",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "ESC9vPhQdh6jlRPBK7sM",
+        "character-cost": "1",
+        "content-type": "audio/mpeg"
+      },
+      "requestId": "ESC9vPhQdh6jlRPBK7sM",
+      "durationSeconds": 0.603719,
+      "sampleRate": 44100,
+      "channels": 1,
+      "disposition": "generated_corrective_replacement",
+      "preservation": "Display text and file binding unchanged; previous bytes preserved in corrective delivery history"
     },
     {
       "id": "A.D",
       "text": "D",
+      "file": "assets/audio/A.D.mp3",
+      "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"D IY1\">D</phoneme>.",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "D IY1"
+      },
+      "sha256": "43de164fa5f6b8d049342eb47bd2c3cd74eee9481e841f363e56f221f9087775",
+      "bytes": 11327,
+      "historicalReplacedSha256": "8b6e918517bf1fe4e3d00dbe407af645f9894069100c0174a951fc2719d68d7d",
+      "generationAttempts": 1,
+      "processing": "None; raw provider MP3 bytes, no trim, concatenation, crossfade or gain",
+      "generatedAt": "2026-11-26T22:06:24.516169+00:00",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "EZthwEtyDzjyfqLzi0j0",
+        "character-cost": "1",
+        "content-type": "audio/mpeg"
+      },
+      "requestId": "EZthwEtyDzjyfqLzi0j0",
       "durationSeconds": 0.650159,
-      "sha256": "8b6e918517bf1fe4e3d00dbe407af645f9894069100c0174a951fc2719d68d7d",
-      "synthesisInput": "dee.",
-      "phoneticIntent": "Isolated American English name of uppercase letter D: dee. Not a word, article, acronym, or phrase; Z is zee and W is double-you.",
-      "file": "assets/audio/A.D.mp3",
-      "baselineFile": "assets/audio/A.D.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.D.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.D.mp3"
+      "sampleRate": 44100,
+      "channels": 1,
+      "disposition": "generated_corrective_replacement",
+      "preservation": "Display text and file binding unchanged; previous bytes preserved in corrective delivery history"
     },
     {
       "id": "A.E",
       "text": "E",
+      "file": "assets/audio/A.E.mp3",
+      "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 0.464399,
-      "sha256": "6a643dd1267061687f1ebef1264807b553b06078a020191d5628f17aaa9da5fc",
-      "synthesisInput": "ee.",
-      "phoneticIntent": "Isolated American English name of uppercase letter E: ee. Not a word, article, acronym, or phrase; Z is zee and W is double-you.",
-      "file": "assets/audio/A.E.mp3",
-      "baselineFile": "assets/audio/A.E.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.E.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.E.mp3"
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"IY1\">E</phoneme>.",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "IY1"
+      },
+      "sha256": "2b2cdc30e902965c45d5349515d333824df360321a87e9845ae1175368c7f758",
+      "bytes": 10074,
+      "historicalReplacedSha256": "6a643dd1267061687f1ebef1264807b553b06078a020191d5628f17aaa9da5fc",
+      "generationAttempts": 1,
+      "processing": "None; raw provider MP3 bytes, no trim, concatenation, crossfade or gain",
+      "generatedAt": "2026-11-26T22:06:24.522578+00:00",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "FBBDP4AExA3cXsEwo4dJ",
+        "character-cost": "0",
+        "content-type": "audio/mpeg"
+      },
+      "requestId": "FBBDP4AExA3cXsEwo4dJ",
+      "durationSeconds": 0.557279,
+      "sampleRate": 44100,
+      "channels": 1,
+      "disposition": "generated_corrective_replacement",
+      "preservation": "Display text and file binding unchanged; previous bytes preserved in corrective delivery history"
     },
     {
       "id": "A.F",
@@ -319,20 +384,41 @@
     {
       "id": "A.G",
       "text": "G",
+      "file": "assets/audio/A.G.mp3",
+      "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 0.650159,
-      "sha256": "7dd608f576f9fde1e3340f6f9bfd173f5601a1667ac440244ebd0cbb404d65c5",
-      "synthesisInput": "jee.",
-      "phoneticIntent": "Isolated American English name of uppercase letter G: jee. Not a word, article, acronym, or phrase; Z is zee and W is double-you.",
-      "file": "assets/audio/A.G.mp3",
-      "baselineFile": "assets/audio/A.G.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.G.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.G.mp3"
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"JH IY1\">G</phoneme>.",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "JH IY1"
+      },
+      "sha256": "1107c63d73a7a8f3f3d02583b59c63ab27d04f41ef99dba5128c26596898455f",
+      "bytes": 9238,
+      "historicalReplacedSha256": "7dd608f576f9fde1e3340f6f9bfd173f5601a1667ac440244ebd0cbb404d65c5",
+      "generationAttempts": 1,
+      "processing": "None; raw provider MP3 bytes, no trim, concatenation, crossfade or gain",
+      "generatedAt": "2026-11-26T22:06:24.514413+00:00",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "fvuGX1dTHC99D2aQDH5g",
+        "character-cost": "1",
+        "content-type": "audio/mpeg"
+      },
+      "requestId": "fvuGX1dTHC99D2aQDH5g",
+      "durationSeconds": 0.510839,
+      "sampleRate": 44100,
+      "channels": 1,
+      "disposition": "generated_corrective_replacement",
+      "preservation": "Display text and file binding unchanged; previous bytes preserved in corrective delivery history"
     },
     {
       "id": "A.H",
@@ -565,20 +651,41 @@
     {
       "id": "A.T",
       "text": "T",
+      "file": "assets/audio/A.T.mp3",
+      "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 0.743039,
-      "sha256": "17da3c339a5dff4f304428b4d22f8c76e979b1cfcc4534af7a6db88eb61e5da4",
-      "synthesisInput": "tee.",
-      "phoneticIntent": "Isolated American English name of uppercase letter T: tee. Not a word, article, acronym, or phrase; Z is zee and W is double-you.",
-      "file": "assets/audio/A.T.mp3",
-      "baselineFile": "assets/audio/A.T.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.T.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/A.T.mp3"
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"T IY1\">T</phoneme>.",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "T IY1"
+      },
+      "sha256": "373a390391fd3896e362e679727055e267cf65cca5b596578b9ee65190645a47",
+      "bytes": 10910,
+      "historicalReplacedSha256": "17da3c339a5dff4f304428b4d22f8c76e979b1cfcc4534af7a6db88eb61e5da4",
+      "generationAttempts": 1,
+      "processing": "None; raw provider MP3 bytes, no trim, concatenation, crossfade or gain",
+      "generatedAt": "2026-11-26T22:06:24.520536+00:00",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "O0Sl0vgaZRev3Hr0tSor",
+        "character-cost": "1",
+        "content-type": "audio/mpeg"
+      },
+      "requestId": "O0Sl0vgaZRev3Hr0tSor",
+      "durationSeconds": 0.603719,
+      "sampleRate": 44100,
+      "channels": 1,
+      "disposition": "generated_corrective_replacement",
+      "preservation": "Display text and file binding unchanged; previous bytes preserved in corrective delivery history"
     },
     {
       "id": "A.U",
@@ -737,7 +844,10 @@
       "modelId": null,
       "requestId": null,
       "synthesisInput": null,
-      "sourceModelIds": ["eleven_multilingual_v2", "eleven_flash_v2"],
+      "sourceModelIds": [
+        "eleven_multilingual_v2",
+        "eleven_flash_v2"
+      ],
       "sourceRequestIds": [
         "2sSfSOM3fkT8fJxk58vf",
         "iZfcenmDt9LoDEQvhQJz",
@@ -1097,7 +1207,10 @@
       "text": "My last name is Souza.",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "segments": ["D.2-prefix.en", "D.2-surname.pt-BR"],
+      "segments": [
+        "D.2-prefix.en",
+        "D.2-surname.pt-BR"
+      ],
       "file": "assets/audio/D.2.mp3",
       "durationSeconds": 1.568413,
       "sampleRate": 44100,
@@ -1109,11 +1222,23 @@
       "isDerived": true,
       "voiceName": "Jessica - Playful, Bright, Warm",
       "modelId": null,
-      "sourceModelIds": ["eleven_multilingual_v2", "eleven_flash_v2_5"],
-      "languageCodes": ["en", "pt"],
-      "localeIntents": ["en-US", "pt-BR"],
+      "sourceModelIds": [
+        "eleven_multilingual_v2",
+        "eleven_flash_v2_5"
+      ],
+      "languageCodes": [
+        "en",
+        "pt"
+      ],
+      "localeIntents": [
+        "en-US",
+        "pt-BR"
+      ],
       "requestId": null,
-      "sourceRequestIds": ["jPzhMQHejzZU346kNMgm", "CZjXkmOo3cU3CRh8YL3T"],
+      "sourceRequestIds": [
+        "jPzhMQHejzZU346kNMgm",
+        "CZjXkmOo3cU3CRh8YL3T"
+      ],
       "sources": [
         {
           "id": "D.2-prefix.en",
@@ -1240,66 +1365,104 @@
     {
       "id": "D.4",
       "text": "S-O-U-Z-A.",
-      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+      "file": "assets/audio/D.4.mp3",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
       "provider": "elevenlabs",
-      "modelId": "eleven_flash_v2",
-      "voiceSettings": {
-        "stability": 0.5,
-        "similarity_boost": 0.75,
-        "speed": 0.92
+      "kind": "derived-speech",
+      "isDerived": true,
+      "requestId": null,
+      "sourceRequestIds": [
+        "5booMlPgtGoAJamWRgAL",
+        "YKArvq4vO3PDcziQQVDk",
+        "zQ5igN5PvOZug0FSO96C",
+        "CKbPKj1Wnw7vDhQLTR0G",
+        "iqAFNPOHC38owdEQmar2"
+      ],
+      "modelId": null,
+      "sourceModelIds": [
+        "eleven_flash_v2",
+        "eleven_multilingual_v2"
+      ],
+      "sha256": "263c5d690b4c72c507ae522b4b266450fda4f16780b01b0103192c1b40d712d2",
+      "bytes": 56049,
+      "historicalReplacedSha256": "60f82af700c2116821527e7f09f64eb126ad1af8395621790fe52f36b5c36ade",
+      "sources": [
+        {
+          "id": "A.S",
+          "text": "S",
+          "file": "assets/audio/A.S.mp3",
+          "sha256": "a685f71fbb23df67398d7c7ba01c619964cac53f4ad7011d06a7367e29f16a5d",
+          "bytes": 7566,
+          "voiceId": "cgSgspJ2msm6clMCkdW9",
+          "modelId": "eleven_multilingual_v2",
+          "synthesisInput": "ess.",
+          "requestId": "5booMlPgtGoAJamWRgAL"
+        },
+        {
+          "id": "A.O",
+          "text": "O",
+          "file": "assets/audio/A.O.mp3",
+          "sha256": "be129e03f0bb404be5668a01b75000d5391839679462e9320023cd89cb8c5cef",
+          "bytes": 10910,
+          "voiceId": "cgSgspJ2msm6clMCkdW9",
+          "modelId": "eleven_multilingual_v2",
+          "synthesisInput": "oh.",
+          "requestId": "YKArvq4vO3PDcziQQVDk"
+        },
+        {
+          "id": "A.U",
+          "text": "U",
+          "file": "assets/audio/A.U.mp3",
+          "sha256": "b9557b2129cf3e3158b20ef5a0a34058aa7e815b6a9bdb50226b951ca6899bd8",
+          "bytes": 12163,
+          "voiceId": "cgSgspJ2msm6clMCkdW9",
+          "modelId": "eleven_multilingual_v2",
+          "synthesisInput": "you.",
+          "requestId": "zQ5igN5PvOZug0FSO96C"
+        },
+        {
+          "id": "A.Z",
+          "text": "Z",
+          "file": "assets/audio/A.Z.mp3",
+          "sha256": "eb263c40af22cbf4735b16b52b4527a9371d77b19f72b16360ec7886e2cded37",
+          "bytes": 11327,
+          "voiceId": "cgSgspJ2msm6clMCkdW9",
+          "modelId": "eleven_multilingual_v2",
+          "synthesisInput": "zee.",
+          "requestId": "CKbPKj1Wnw7vDhQLTR0G"
+        },
+        {
+          "id": "A.A",
+          "text": "A",
+          "file": "assets/audio/A.A.mp3",
+          "sha256": "06a330c84874900a57c941bd615123683d4e8be9794859f5ecc55567d0e20792",
+          "bytes": 8402,
+          "voiceId": "cgSgspJ2msm6clMCkdW9",
+          "modelId": "eleven_flash_v2",
+          "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+          "requestId": "iqAFNPOHC38owdEQmar2"
+        }
+      ],
+      "derivation": {
+        "pcmFrames": 151388,
+        "pcmDurationSeconds": 3.4328344671201814,
+        "pcmMasterSha256": "ff4422f616270ca75ea1ff2a7c1731550202fc385276d36a57be3174d6297724",
+        "gapFrames": 6615,
+        "gapSeconds": 0.15,
+        "trim": false,
+        "crossfade": false,
+        "gain": false,
+        "naturalQuietRetained": true,
+        "method": "Use each complete decoded source, in order; insert150ms digital silence between; no trimming, crossfade or gain; one final MP3encode128kbps"
       },
-      "languageCode": "en",
-      "file": "assets/audio/D.4.mp3",
-      "sha256": "60f82af700c2116821527e7f09f64eb126ad1af8395621790fe52f36b5c36ade",
-      "bytes": 42674,
-      "durationSeconds": 2.600635,
-      "requestId": "Zp9HluBn9suHKvMzuFq1",
-      "providerHeaders": {
-        "request-id": "Zp9HluBn9suHKvMzuFq1",
-        "character-cost": "10",
-        "history-item-id": "DSUY35usuMrZ8RVoXBne",
-        "content-type": "audio/mpeg"
-      },
-      "phoneticControl": {
-        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
-        "alphabet": "cmu-arpabet",
-        "letters": ["S", "O", "U", "Z", "A"],
-        "phonemeRules": [
-          {
-            "letter": "S",
-            "cmu": "EH1 S",
-            "ipa": "ɛs"
-          },
-          {
-            "letter": "O",
-            "cmu": "OW1",
-            "ipa": "oʊ"
-          },
-          {
-            "letter": "U",
-            "cmu": "Y UW1",
-            "ipa": "juː"
-          },
-          {
-            "letter": "Z",
-            "cmu": "Z IY1",
-            "ipa": "ziː"
-          },
-          {
-            "letter": "A",
-            "cmu": "EY1",
-            "ipa": "eɪ"
-          }
-        ],
-        "tagCount": 5,
-        "interLetterBreakSeconds": 0.18,
-        "textNormalization": "off",
-        "noDuplicatedE": null,
-        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
-      }
+      "generatedAt": "2026-11-26T22:06:25.066178+00:00",
+      "durationSeconds": 3.432834,
+      "sampleRate": 44100,
+      "channels": 1,
+      "disposition": "derived_complete_letters",
+      "preservation": "Display text and file binding unchanged; previous bytes preserved in corrective delivery history"
     },
     {
       "id": "D.5",
@@ -1456,7 +1619,11 @@
       "phoneticControl": {
         "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
         "alphabet": "cmu-arpabet",
-        "letters": ["E", "N", "A"],
+        "letters": [
+          "E",
+          "N",
+          "A"
+        ],
         "phonemeRules": [
           {
             "letter": "E",
@@ -1510,7 +1677,13 @@
       "phoneticControl": {
         "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
         "alphabet": "cmu-arpabet",
-        "letters": ["S", "O", "U", "Z", "A"],
+        "letters": [
+          "S",
+          "O",
+          "U",
+          "Z",
+          "A"
+        ],
         "phonemeRules": [
           {
             "letter": "S",
@@ -1709,7 +1882,13 @@
   "sourceDelta40": {
     "manifest": "audio-corrections40-provenance.json",
     "sha256": "814daa8e97d4fdf8a027331594105f127383277d99bfdff0c860df64cd4b3890",
-    "ids": ["A.A", "S.1", "D.4", "C.2", "C.3"],
+    "ids": [
+      "A.A",
+      "S.1",
+      "D.4",
+      "C.2",
+      "C.3"
+    ],
     "mechanism": "Flash v2 official SSML CMU Arpabet; exact display text, no voice change",
     "review": "User-owned perceptual review; no playback QA performed."
   },
