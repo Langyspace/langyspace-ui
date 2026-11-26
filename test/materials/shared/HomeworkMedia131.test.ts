@@ -85,17 +85,13 @@ it('resolves real card imagery and the correct speaker portraits for every curre
       visualLabelCount = 0
     for (const card of cards) {
       const image = resolvePracticeImage(card.imageSrc, images)
-      if (image) {
-        expect(card.imageSrc, `${material.key}/${card.id} signer path`).toMatch(
-          /^\/flashcards(?:-transparent)?\/.+\/image\.webp$/,
-        )
-        expectImage(image, `${material.key}/${card.id}`)
-        imageCount++
-      } else {
-        expect(material.key, card.id).toBe('a1-02')
-        expect(card.visualLabel, card.id).toMatch(/^[A-Z0-9]$/)
+      expect(card.imageSrc, `${material.key}/${card.id} signer path`).toMatch(
+        /^\/flashcards(?:-transparent)?\/.+\/image\.webp$/,
+      )
+      expectImage(image, `${material.key}/${card.id}`)
+      imageCount++
+      if (material.key === 'a1-02' && /^[A-Z0-9]$/.test(card.visualLabel))
         visualLabelCount++
-      }
       const r = card.imageRegion
       if (r) {
         expect(r.column + (r.columnSpan ?? 1), card.id).toBeLessThanOrEqual(
@@ -147,6 +143,7 @@ it('resolves real card imagery and the correct speaker portraits for every curre
   ).toBeUndefined()
   expect(rows.filter((row) => row.homework)).toHaveLength(65)
   expect(rows.reduce((n, row) => n + (row.cards ?? 0), 0)).toBe(733)
+  expect(rows.reduce((n, row) => n + (row.imageCount ?? 0), 0)).toBe(733)
   expect(rows.reduce((n, row) => n + (row.visualLabelCount ?? 0), 0)).toBe(36)
   if (process.env.HOMEWORK_MEDIA131_REPORT)
     writeFileSync(

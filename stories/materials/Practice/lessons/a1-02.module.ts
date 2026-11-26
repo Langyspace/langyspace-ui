@@ -54,6 +54,42 @@ import expanded124Asset22 from '../assets/flashcards124/010a22a4d0b47553c68cbe53
 import expanded124Asset23 from '../assets/flashcards124/0fb4277bfb922858a743016ee604ceb7849d8c0697fa621aa0c21a50029d215d.mp3'
 import expanded124Asset24 from '../assets/flashcards124/127a0cb4f5687ef3d52398a66f7404ac7375a5717104fbc575b357bcd8623295.mp3'
 import expanded124Asset25 from '../assets/flashcards124/eb263c40af22cbf4735b16b52b4527a9371d77b19f72b16360ec7886e2cded37.mp3'
+import alphabet131Asset0 from '../assets/homework131/alphabet/glyph-0.webp'
+import alphabet131Asset1 from '../assets/homework131/alphabet/glyph-1.webp'
+import alphabet131Asset2 from '../assets/homework131/alphabet/glyph-2.webp'
+import alphabet131Asset3 from '../assets/homework131/alphabet/glyph-3.webp'
+import alphabet131Asset4 from '../assets/homework131/alphabet/glyph-4.webp'
+import alphabet131Asset5 from '../assets/homework131/alphabet/glyph-5.webp'
+import alphabet131Asset6 from '../assets/homework131/alphabet/glyph-6.webp'
+import alphabet131Asset7 from '../assets/homework131/alphabet/glyph-7.webp'
+import alphabet131Asset8 from '../assets/homework131/alphabet/glyph-8.webp'
+import alphabet131Asset9 from '../assets/homework131/alphabet/glyph-9.webp'
+import alphabet131Asset10 from '../assets/homework131/alphabet/glyph-a.webp'
+import alphabet131Asset11 from '../assets/homework131/alphabet/glyph-b.webp'
+import alphabet131Asset12 from '../assets/homework131/alphabet/glyph-c.webp'
+import alphabet131Asset13 from '../assets/homework131/alphabet/glyph-d.webp'
+import alphabet131Asset14 from '../assets/homework131/alphabet/glyph-e.webp'
+import alphabet131Asset15 from '../assets/homework131/alphabet/glyph-f.webp'
+import alphabet131Asset16 from '../assets/homework131/alphabet/glyph-g.webp'
+import alphabet131Asset17 from '../assets/homework131/alphabet/glyph-h.webp'
+import alphabet131Asset18 from '../assets/homework131/alphabet/glyph-i.webp'
+import alphabet131Asset19 from '../assets/homework131/alphabet/glyph-j.webp'
+import alphabet131Asset20 from '../assets/homework131/alphabet/glyph-k.webp'
+import alphabet131Asset21 from '../assets/homework131/alphabet/glyph-l.webp'
+import alphabet131Asset22 from '../assets/homework131/alphabet/glyph-m.webp'
+import alphabet131Asset23 from '../assets/homework131/alphabet/glyph-n.webp'
+import alphabet131Asset24 from '../assets/homework131/alphabet/glyph-o.webp'
+import alphabet131Asset25 from '../assets/homework131/alphabet/glyph-p.webp'
+import alphabet131Asset26 from '../assets/homework131/alphabet/glyph-q.webp'
+import alphabet131Asset27 from '../assets/homework131/alphabet/glyph-r.webp'
+import alphabet131Asset28 from '../assets/homework131/alphabet/glyph-s.webp'
+import alphabet131Asset29 from '../assets/homework131/alphabet/glyph-t.webp'
+import alphabet131Asset30 from '../assets/homework131/alphabet/glyph-u.webp'
+import alphabet131Asset31 from '../assets/homework131/alphabet/glyph-v.webp'
+import alphabet131Asset32 from '../assets/homework131/alphabet/glyph-w.webp'
+import alphabet131Asset33 from '../assets/homework131/alphabet/glyph-x.webp'
+import alphabet131Asset34 from '../assets/homework131/alphabet/glyph-y.webp'
+import alphabet131Asset35 from '../assets/homework131/alphabet/glyph-z.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -155,6 +191,42 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/homework-media131/a8642dd093ac4138a9400ef740545c7788a46c0d03ff2cde19383c83fccab210/image.webp': alphabet131Asset0,
+    '/flashcards-transparent/course-practice/homework-media131/06413b1f1a8f4c53454994a27075f9cc86ac8979fad5f6b53367081bf4ec6d84/image.webp': alphabet131Asset1,
+    '/flashcards-transparent/course-practice/homework-media131/a6b26318539d26e728eff370afeb2e45110120088756181e035394be0b4f3232/image.webp': alphabet131Asset2,
+    '/flashcards-transparent/course-practice/homework-media131/483357a7291e28ee4312f368b956232143a81cf7694b279b5aef4ce32d3a0b55/image.webp': alphabet131Asset3,
+    '/flashcards-transparent/course-practice/homework-media131/3b40062162a48db89149d03421fbec26af6cfcadf792296f0e563586e58ac39b/image.webp': alphabet131Asset4,
+    '/flashcards-transparent/course-practice/homework-media131/5b791934f4de25d185fe2459e50af1c1152714e8e634c1d29a58c3acd67e7ac0/image.webp': alphabet131Asset5,
+    '/flashcards-transparent/course-practice/homework-media131/550047997fbf0b7ac54563af726571f4697446493e9d387b058eae336266569f/image.webp': alphabet131Asset6,
+    '/flashcards-transparent/course-practice/homework-media131/cf25879b89fa7f8f0f0a904f2d8ba7e37104e82a82e9a444c5de528fc1977bfb/image.webp': alphabet131Asset7,
+    '/flashcards-transparent/course-practice/homework-media131/d42411bbd4428a227c2e4bb815c392931bd8ba65d66e273aad7fbfa4faedc8cc/image.webp': alphabet131Asset8,
+    '/flashcards-transparent/course-practice/homework-media131/8d3285a85a1a9866ef6d863041e3e28c0d7d88bfb56f33f4b79864bb17c8ca37/image.webp': alphabet131Asset9,
+    '/flashcards-transparent/course-practice/homework-media131/3931b6b1ceea563425e641f0beab8e3390f4bbdb1b6c788969e1850973905a3d/image.webp': alphabet131Asset10,
+    '/flashcards-transparent/course-practice/homework-media131/4ed3d840cbb6483b8d73cc44866ad7a84bd8fbafbcc1d8c7c37e52fb31c1c12f/image.webp': alphabet131Asset11,
+    '/flashcards-transparent/course-practice/homework-media131/5518ac3abb5fef8046c9d969d064ed9e11c9adb96022c2dd9739e21211a9cdc2/image.webp': alphabet131Asset12,
+    '/flashcards-transparent/course-practice/homework-media131/d242b61f40c5c95263c37fe8e68be7f440c1f31c04dc372c270c983689d866e5/image.webp': alphabet131Asset13,
+    '/flashcards-transparent/course-practice/homework-media131/50faf97c2680384bfcc00467f893560bc1136ab10e8e5f9fde6de4a783b38a37/image.webp': alphabet131Asset14,
+    '/flashcards-transparent/course-practice/homework-media131/4b49b2c89814f9d6848b5e0489435d453d48d6af221ff1bc2a209bb9fec2e544/image.webp': alphabet131Asset15,
+    '/flashcards-transparent/course-practice/homework-media131/9f290f7ac3f131197978f33ece7b063fb979d979f2644954eb4fe2aaab40278d/image.webp': alphabet131Asset16,
+    '/flashcards-transparent/course-practice/homework-media131/d097c3cd5627dafff18dda172534a79de316a06fc250c6d876d00554d916f1f1/image.webp': alphabet131Asset17,
+    '/flashcards-transparent/course-practice/homework-media131/52930374e7223d5d8f762e0ec3fe8e8722d6b36fd2e37b33887318816cc5d47a/image.webp': alphabet131Asset18,
+    '/flashcards-transparent/course-practice/homework-media131/c9430c83c4fe5877b54e3267e43c8a78386a638c45644ccf05c4f49a9716fecf/image.webp': alphabet131Asset19,
+    '/flashcards-transparent/course-practice/homework-media131/6b8466a0a5ca7f048dc60d60ff00c8f2fa398f98e34f3a4092ff113e9cde1ea1/image.webp': alphabet131Asset20,
+    '/flashcards-transparent/course-practice/homework-media131/61baaa9acd331f389bd9e92a9b4b90feba84bf5f739c35037b30b582ff7629e3/image.webp': alphabet131Asset21,
+    '/flashcards-transparent/course-practice/homework-media131/6db0d1dbbd1fec662b1aa7f10b68449c6556d6e9ee9dcce9878291c56e4aa4af/image.webp': alphabet131Asset22,
+    '/flashcards-transparent/course-practice/homework-media131/ca091c927464622e46f4c91ad100b57b803a6714841caaa59f876015280a4933/image.webp': alphabet131Asset23,
+    '/flashcards-transparent/course-practice/homework-media131/95f5f8c8d6c0c1b1910c94e01ecc14ef5bd8a682fc7f93350681e7428cfbbf9e/image.webp': alphabet131Asset24,
+    '/flashcards-transparent/course-practice/homework-media131/90ad7db4084813b36de5bfffece8acd11ddd275ef4f39d179f631bc82ab001e7/image.webp': alphabet131Asset25,
+    '/flashcards-transparent/course-practice/homework-media131/c9ccf42ea5ee58be663eb6c1e4a962527cd2725eacdf6d7fba10afcaef5db3de/image.webp': alphabet131Asset26,
+    '/flashcards-transparent/course-practice/homework-media131/7943b7910b5085f7ea504f6659e02a4e84876c53c62d34f5a1e3f8270cc98025/image.webp': alphabet131Asset27,
+    '/flashcards-transparent/course-practice/homework-media131/95a7ce83412625fba8117396cbd4dda0946a2625417324abb8a8ae7413292d3c/image.webp': alphabet131Asset28,
+    '/flashcards-transparent/course-practice/homework-media131/7c8f8ec6c753f735fba58e17d3579c11d2ae716a34364b1bc74ff16a201fee46/image.webp': alphabet131Asset29,
+    '/flashcards-transparent/course-practice/homework-media131/169827ef4474f0486e1fe51438adb4999a1128251a43c3802cd53dc56d11de36/image.webp': alphabet131Asset30,
+    '/flashcards-transparent/course-practice/homework-media131/1202243722597f021e8e8002a1221b128530674c0d116654024bdae6540c34b0/image.webp': alphabet131Asset31,
+    '/flashcards-transparent/course-practice/homework-media131/f3a2ff9b8c5a0e5c4e746a82c222b3e13b5fb60913c7a5c676df007617dba6c8/image.webp': alphabet131Asset32,
+    '/flashcards-transparent/course-practice/homework-media131/a6c6497e260275e7bf84ce7974461065830821133de9ab111bdc2d8165753e02/image.webp': alphabet131Asset33,
+    '/flashcards-transparent/course-practice/homework-media131/5e00a1d55efa2e4399c13802c144b1bb0274e7b06cd7ceb43d1f06da1ab51a95/image.webp': alphabet131Asset34,
+    '/flashcards-transparent/course-practice/homework-media131/0ce27734d0ee76858bcf3158e8a91145fec50c3b858de7146d48886a7d8b521e/image.webp': alphabet131Asset35,
     '/flashcards/course-characters/kim/image.webp': asset26,
     '/flashcards/course-characters/ana/image.webp': asset27,
   },
