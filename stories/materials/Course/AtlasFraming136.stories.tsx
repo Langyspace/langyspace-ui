@@ -42,3 +42,12 @@ export const ClothesNarrow: Story = {
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['visual-review', 'layout-boundary'],
 }
+export const GetTogether: Story = {
+  args: { materialKey: 'a2-12' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const GetTogetherNarrow: Story = {
+  args: { materialKey: 'a2-12' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}
