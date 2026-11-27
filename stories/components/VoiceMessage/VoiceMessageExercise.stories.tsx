@@ -78,12 +78,18 @@ export const ManualTranscriptBeforePlayback: Story = {
   tags: ['visual-review'],
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
+    await expect(
+      canvas.getByRole('button', { name: 'Mostrar transcrição' }),
+    ).toHaveTextContent('Transcrição')
     await userEvent.click(
       canvas.getByRole('button', { name: 'Mostrar transcrição' }),
     )
     await expect(
       canvas.getByRole('button', { name: 'Esconder transcrição' }),
     ).toHaveAttribute('aria-pressed', 'true')
+    await expect(
+      canvas.getByRole('button', { name: 'Esconder transcrição' }),
+    ).toHaveTextContent('Transcrição')
     await expect(
       canvas.getByRole('region', { name: 'Transcrição' }),
     ).toHaveTextContent(initial.audio.transcript)

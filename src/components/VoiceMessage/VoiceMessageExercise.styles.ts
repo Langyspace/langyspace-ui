@@ -173,15 +173,23 @@ export const Meta = styled.div`
   font-variant-numeric: tabular-nums;
 `
 export const TranscriptToggle = styled(DeviceControl)`
+  width: 100%;
   min-height: ${theme.sizes.control.sm};
   max-width: 100%;
-  margin-top: ${theme.spacing[2]};
-  padding: ${theme.spacing[1]} ${theme.spacing[3]};
-  color: ${(p) => recipe(p).foreground};
-  background: ${(p) => recipe(p).controlSurface};
-  border-color: ${(p) => recipe(p).border};
+  justify-content: flex-start;
+  margin-top: ${theme.spacing[1]};
+  padding: ${theme.spacing[1]} 0;
+  border: 0;
+  border-radius: ${theme.radius.sm};
+  color: ${(p) => recipe(p).muted};
+  background: transparent;
   font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
+  text-align: left;
   overflow-wrap: anywhere;
+  &:hover:not(:disabled) {
+    text-decoration: underline;
+  }
 `
 export const Time = styled.time`
   display: block;

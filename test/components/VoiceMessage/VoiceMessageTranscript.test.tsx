@@ -55,6 +55,7 @@ it('shows a single named keyboard-operable toggle before any playback without pl
   const user = userEvent.setup()
   const { container } = render(<VoiceMessageExercise {...fixture} />)
   const toggle = screen.getByRole('button', { name: 'Show transcript' })
+  expect(toggle).toHaveTextContent(/^Transcript$/)
   expect(toggle).toHaveAttribute('aria-pressed', 'false')
   expect(toggle).toHaveAttribute('aria-expanded', 'false')
   expect(screen.queryByText(fixture.audio.transcript)).not.toBeInTheDocument()
@@ -68,6 +69,7 @@ it('shows a single named keyboard-operable toggle before any playback without pl
     screen.getByRole('button', { name: 'Hide transcript', pressed: true }),
   ).toHaveFocus()
   expect(screen.getByText(fixture.audio.transcript)).toBeVisible()
+  expect(toggle).toHaveTextContent(/^Transcript$/)
   expect(feedback.playFeedbackSound).toHaveBeenCalledWith('hint')
   await user.keyboard(' ')
   expect(

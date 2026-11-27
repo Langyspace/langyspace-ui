@@ -160,6 +160,7 @@ export function VoiceMessageRecording({
       </Styled.Meta>
       {canToggleTranscript ? (
         <Styled.TranscriptToggle
+          aria-label={transcriptAction}
           aria-expanded={transcriptVisible}
           aria-pressed={transcriptVisible}
           aria-controls={`${id}-transcript`}
@@ -172,7 +173,7 @@ export function VoiceMessageRecording({
             playFeedbackSound('hint')
           }}
         >
-          {transcriptAction}
+          {labels.transcript}
         </Styled.TranscriptToggle>
       ) : null}
       <Styled.Transcript
