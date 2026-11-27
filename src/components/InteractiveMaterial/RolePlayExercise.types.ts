@@ -17,6 +17,8 @@ export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> 
   /** Consumer-owned summary or task information before the checklist. */
   tracker?: ReactNode
   density?: 'regular' | 'compact'
+  /** Split references keep two usable columns whenever both fit, independent of viewport breakpoints. */
+  layout?: 'split' | 'stacked'
   /** Plain scene with support beside the checklist and an outlined next step. */
   presentation?: 'default' | 'tracker' | 'instructions'
   labels?: Partial<{

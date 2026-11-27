@@ -126,6 +126,7 @@ export function CourseActivity({
   return (
     <RolePlayExercise
       density="compact"
+      layout={activity.type === 'map' ? 'split' : undefined}
       presentation="instructions"
       situation=""
       steps={[]}

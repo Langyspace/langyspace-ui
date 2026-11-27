@@ -121,7 +121,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Ask about the town",
-      "instruction": "Start at the hotel, ask for directions and check the route with your teacher",
+      "instruction": "Start at the hotel. Ask me how to reach the café, then ask me to repeat one direction",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -818,24 +818,21 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "Is there a café near the hotel?",
-          "cue": "Look at the map and answer",
-          "hint": "Yes, there is. It’s …",
-          "answer": "One possible response"
+          "prompt": "Hi! Can I help you?",
+          "cue": "Ask if there’s a café near the hotel",
+          "hint": "Is there a café near the hotel?"
         },
         {
           "id": "1",
-          "prompt": "How do I get to the park?",
-          "cue": "Start at the hotel",
-          "hint": "Go straight, then …",
-          "answer": "One possible response"
+          "prompt": "Yes. There’s a café on First Avenue, next to the pharmacy",
+          "cue": "Ask how to get there from the hotel",
+          "hint": "How do I get there from the hotel?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Can you ask me to repeat one direction?",
-          "cue": "Ask me to repeat the part you didn’t hear",
-          "hint": "Sorry, can you say that again?",
-          "answer": "One possible response"
+          "prompt": "Go straight and turn right at the first street",
+          "cue": "Ask me to repeat the direction",
+          "hint": "Sorry, can you say that again?"
         }
       ],
       "questionPurpose": "conversation"

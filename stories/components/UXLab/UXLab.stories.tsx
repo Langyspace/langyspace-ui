@@ -3,6 +3,7 @@ import { conversationRouletteTopics } from '../Exercise/QuestionRoulette.fixture
 import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
 import townMap152 from '../../materials/Course/assets/a1-09-town-map152.png'
 import townMapData152 from '../../materials/Course/lessons/a1-09.json'
+import { CourseActivity } from '../../materials/Course/CourseActivity'
 import airportVocabulary81 from '../../materials/Course/assets/a1-07-vocabulary81.webp'
 import { A102Lesson } from '../../materials/A102/A102Lesson'
 import { A101Lesson } from '../../materials/A101/A101Lesson'
@@ -383,6 +384,25 @@ export const MapVocabulary: Story = {
       }}
       revealedIds={['hotel']}
       selectedId="hotel"
+    />
+  ),
+}
+
+export const MapWithConversation: Story = {
+  render: () => (
+    <CourseActivity
+      activity={{
+        ...townMapData152.activities.s_personal,
+        type: 'map',
+        questionPurpose: 'conversation',
+        map: {
+          ...townMapData152.activities.s_personal.map,
+          image: {
+            ...townMapData152.activities.s_personal.map.image,
+            src: townMap152,
+          },
+        },
+      }}
     />
   ),
 }

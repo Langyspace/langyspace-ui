@@ -4,11 +4,26 @@ import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
+import type { RolePlayExerciseProps } from './RolePlayExercise.types'
+const splitTracks = css`
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+`
 export const Root = styled(Common.Columns).withConfig({
   componentId: 'lsui-sc-role-play-exercise',
-})`
+})<{ $layout?: RolePlayExerciseProps['layout'] }>`
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => Common.recipe(p).foreground};
+  ${(p) =>
+    p.$layout === 'split'
+      ? splitTracks
+      : p.$layout === 'stacked'
+        ? css`
+            grid-template-columns: minmax(0, 1fr);
+          `
+        : null}
+  @media (max-width: ${theme.breakpoints.md}) {
+    ${(p) => (p.$layout === 'split' ? splitTracks : null)}
+  }
 `
 export const Scene = styled(Common.Surface)<{
   $plain?: boolean
@@ -30,7 +45,7 @@ export const Scene = styled(Common.Surface)<{
           background: transparent;
         `
       : undefined}
-  img {
+  > img {
     width: 100%;
     max-height: ${(p) => (p.$compact ? 'clamp(8rem, 24cqh, 12rem)' : '300px')};
     object-fit: ${(p) => p.$imageFit};
