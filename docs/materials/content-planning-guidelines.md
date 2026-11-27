@@ -540,3 +540,6 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 - Imagem recebida sustenta o assunto; não adicionar detalhes visuais obrigatórios que contradigam a gravação. Preferir mídia já aprovada. Preservar as fotos de Jin/Tom, a mensagem de Leo, as notas da Ana no parque e outros exemplos válidos.
 - A prévia de YouTube no celular abre a página de vídeo já preparada na mesma aula, com o trecho limitado e suas quatro perguntas. Não criar um player minúsculo extra nem abrir outro navegador. Pausar as notas ao navegar. Continuam proibidos Shorts; vídeo externo não toca sozinho.
 - Manter o mesmo VoiceMessageExercise: contato, imagem opcional, videoAttachment e additionalAudios são dados/props, não versões paralelas de celular. Transcript, erro/repetição, um áudio por vez, perguntas canônicas e navegação continuam no componente compartilhado.
+
+
+**Protótipo A1.08 — legenda compartilhada de vocabulário:** quando a frase no card encobrir a ilustração ou aumentar duas fileiras, usar a variação opcional `examplePlacement="footer"` do VocabularyGrid: etiqueta curta com a palavra na imagem e uma única faixa com palavra/exemplo ao lado dos controles. A faixa acompanha a seleção e mantém os mesmos seis quadros; não criar uma legenda alta por card nem reduzir a frase a texto ilegível. Validar este protótipo antes de adotar em outros materiais.

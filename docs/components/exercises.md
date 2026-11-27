@@ -169,3 +169,8 @@ Compor `RevealCard presentation="prompt"` numa lista numerada para perguntas fac
 `SlideDeck themeToggle={{ mode, onToggle }}` adds a controlled sun/moon icon immediately before the answer-sound control. `mode` is `dark` or `light`; `onToggle` belongs to the consumer, which also supplies the matching ThemeProvider. Omit the prop to preserve the existing generic deck. The button is named “Tema claro”, exposes its state with aria-pressed and names its next action in the tooltip. It does not change navigation, audio or exercise state.
 
 Maintained materials bind this control in their shared MaterialTheme/MaterialSlideDeck and experimental LessonShell. Presentations start dark; nested wrappers inherit the same session choice. The light theme reuses the canonical UI Library theme; it does not add a second color palette.
+
+
+## Shared vocabulary example
+
+`VocabularyGrid examplePlacement="footer"` opts click-to-reveal vocabulary into one shared example alongside the existing controls. Image labels keep only their word; the selected word/example stay in the footer until another picture is clicked. The selected picture uses the existing focus outline and references the caption for accessibility. The footer reserves the control row height from the start, matches the grid width, and wraps long text on narrow screens. Show-all reveals words, while the example remains tied to the last selected picture. The default `label` placement and static/listen-only interactions retain their existing behavior. A1.08 vocabulary s2 is the local review example; other materials have not opted in.

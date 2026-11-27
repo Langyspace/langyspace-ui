@@ -57,6 +57,7 @@ export type ReviewedPage = PageBase &
         isolated?: boolean
         alignHeading?: boolean
         imageAspectRatio?: number
+        examplePlacement?: 'label' | 'footer'
         columns?: 2 | 3 | 4
       }
     | {

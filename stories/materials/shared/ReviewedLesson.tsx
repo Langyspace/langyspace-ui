@@ -220,6 +220,7 @@ function PageContent({
         imageVariant={page.isolated ? 'isolated' : 'scene'}
         imageFit="contain"
         imageAspectRatio={page.imageAspectRatio}
+        examplePlacement={page.examplePlacement}
         columns={page.columns}
         surface={page.surface ?? (page.isolated ? 'plain' : 'card')}
         revealOnHover={false}

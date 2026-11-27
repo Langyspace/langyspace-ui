@@ -1,5 +1,5 @@
 import { VocabularyControls } from './VocabularyControls'
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { PictureImage } from '../../internal/PictureImage'
 import * as Styled from './VocabularyGrid.styles'
 import { formatVocabularyHint } from './VocabularyGrid.utils'
@@ -21,6 +21,7 @@ export function VocabularyGrid({
   imageAspectRatio,
   columns,
   density = 'compact',
+  examplePlacement = 'label',
   revealVariant = 'overlay',
   revealLabel = 'Mostrar palavra',
   playLabel = 'Listen to',
@@ -29,6 +30,17 @@ export function VocabularyGrid({
   ...props
 }: VocabularyGridProps) {
   const [hovered, setHovered] = useState<string>()
+  const [selectedExampleId, setSelectedExampleId] = useState<string>()
+  const captionId = useId()
+  const sharedExample =
+    examplePlacement === 'footer' && interaction === 'reveal'
+  const selectedExample = sharedExample
+    ? items.find(
+        (item) =>
+          item.id === selectedExampleId &&
+          (showAll || revealedIds.includes(item.id)),
+      )
+    : undefined
   return (
     <Styled.VocabularySection>
       <Styled.Vocabulary
@@ -82,6 +94,12 @@ export function VocabularyGrid({
               $regular={density === 'regular'}
               $imageAspectRatio={imageAspectRatio}
               key={item.id}
+              data-selected-example={
+                selectedExample?.id === item.id || undefined
+              }
+              aria-describedby={
+                selectedExample?.id === item.id ? captionId : undefined
+              }
               type={interaction === 'static' ? undefined : 'button'}
               aria-label={
                 interaction === 'listen'
@@ -111,6 +129,7 @@ export function VocabularyGrid({
                 interaction === 'static'
                   ? undefined
                   : () => {
+                      if (sharedExample) setSelectedExampleId(item.id)
                       if (interaction === 'reveal') onReveal?.(item.id)
                       onPlay?.(item.id)
                     }
@@ -172,10 +191,12 @@ export function VocabularyGrid({
                   $native={item.visual !== undefined}
                   $revealed={revealed}
                   $reference={layout === 'reference'}
-                  $hasExample={revealed && Boolean(item.example)}
+                  $hasExample={
+                    !sharedExample && revealed && Boolean(item.example)
+                  }
                 >
                   <b>{revealed ? item.word : hint}</b>
-                  {revealed && item.example ? (
+                  {!sharedExample && revealed && item.example ? (
                     <Styled.WordExample>{item.example}</Styled.WordExample>
                   ) : null}
                   <small>{item.translation}</small>
@@ -185,7 +206,33 @@ export function VocabularyGrid({
           )
         })}
       </Styled.Vocabulary>
-      {controls ? <VocabularyControls {...controls} /> : null}
+      {sharedExample ? (
+        <Styled.ExampleFooter
+          $columns={columns}
+          $regularScene={imageVariant === 'scene' && density === 'regular'}
+        >
+          <Styled.SelectedExample
+            id={captionId}
+            role="status"
+            aria-live="polite"
+          >
+            {selectedExample ? (
+              <>
+                <b>{selectedExample.word}</b>
+                {selectedExample.example ? (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>{selectedExample.example}</span>
+                  </>
+                ) : null}
+              </>
+            ) : null}
+          </Styled.SelectedExample>
+          {controls ? <VocabularyControls {...controls} /> : null}
+        </Styled.ExampleFooter>
+      ) : controls ? (
+        <VocabularyControls {...controls} />
+      ) : null}
     </Styled.VocabularySection>
   )
 }
