@@ -38,9 +38,6 @@ export const StreetLabel = styled.span<{
     rotate(${(p) => (p.$vertical ? '-90deg' : '0deg')});
   padding: 0;
   color: ${theme.slides.foreground};
-  text-shadow:
-    0 0 2px ${theme.slides.canvas},
-    0 1px 2px ${theme.slides.canvas};
   font-size: clamp(
     ${theme.typography.fontSize.xs},
     1.8cqw,
