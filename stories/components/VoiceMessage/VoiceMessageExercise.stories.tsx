@@ -89,7 +89,7 @@ export const ManualTranscriptBeforePlayback: Story = {
     ).toHaveAttribute('aria-pressed', 'true')
     await expect(
       canvas.getByRole('button', { name: 'Esconder transcrição' }),
-    ).toHaveTextContent('Transcrição')
+    ).toHaveTextContent(initial.audio.transcript)
     await expect(
       canvas.getByRole('region', { name: 'Transcrição' }),
     ).toHaveTextContent(initial.audio.transcript)

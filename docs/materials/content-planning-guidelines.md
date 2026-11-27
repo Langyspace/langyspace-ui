@@ -14,7 +14,7 @@ Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou rep
 
 **Voltar à biblioteca:** o botão “Voltar” do cabeçalho aparece em todas as páginas, inclusive capa e encerramento, e tenta ativar a aba original da biblioteca, sem recarregar nem perder filtros. Se ela estiver fechada, em outra rota/origem ou o navegador impedir o foco, abre a listagem na aba atual. Somente links internos de apresentação mantêm a referência à aba original; links externos continuam isolados. Setas e gestos continuam navegando pelas páginas da aula. A biblioteca local abre os materiais da própria prévia, sem exigir login no portal.
 
-**Transcript no WhatsApp:** cada áudio oferece uma área clicável discreta com o texto “Transcript” em cinza dentro do balão, sem botão preenchido nem ícone. O mesmo texto mostra/esconde a transcrição; manter foco visível, acesso por teclado e a abertura automática na terceira escuta.
+**Transcript no WhatsApp:** cada áudio oferece “Transcript” pequeno, cinza-claro e com espaçamento mínimo dentro do balão, sem fundo, borda, ícone ou hover. O clique substitui esse rótulo pela transcrição em tamanho normal de leitura; clicar no próprio texto fecha e restaura o rótulo. Manter foco visível, acesso por teclado e a abertura automática na terceira escuta.
 
 
 Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.

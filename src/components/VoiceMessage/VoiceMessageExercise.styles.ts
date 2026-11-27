@@ -217,22 +217,25 @@ export const Meta = styled.div`
   font-variant-numeric: tabular-nums;
 `
 export const TranscriptToggle = styled(DeviceControl)`
+  display: block;
   width: 100%;
-  min-height: ${theme.sizes.control.sm};
+  min-height: ${theme.spacing[6]};
   max-width: 100%;
-  justify-content: flex-start;
-  margin-top: ${theme.spacing[1]};
-  padding: ${theme.spacing[1]} 0;
+  margin-top: calc(${theme.spacing[1]} / 2);
+  padding: 0;
   border: 0;
   border-radius: ${theme.radius.sm};
-  color: ${(p) => recipe(p).muted};
+  color: ${(p) => `color-mix(in srgb, ${recipe(p).muted} 94%, ${recipe(p).surface})`};
   background: transparent;
-  font-size: ${theme.typography.fontSize.sm};
-  font-weight: ${theme.typography.fontWeight.medium};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.regular};
   text-align: left;
   overflow-wrap: anywhere;
-  &:hover:not(:disabled) {
-    text-decoration: underline;
+  white-space: pre-wrap;
+  &[aria-expanded='true'] {
+    color: ${(p) => recipe(p).foreground};
+    font-size: ${(p) => recipe(p).transcriptFontSize};
+    line-height: 1.4;
   }
 `
 export const Time = styled.time`
@@ -248,6 +251,11 @@ export const Transcript = styled.div<{ $visible: boolean }>`
   font-size: ${(p) => recipe(p).transcriptFontSize};
   line-height: 1.4;
   white-space: pre-wrap;
+  &[data-transcript-interactive] {
+    border: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
   p {
     margin: 0;
   }

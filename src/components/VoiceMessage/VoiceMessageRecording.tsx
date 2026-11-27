@@ -110,7 +110,9 @@ export function VoiceMessageRecording({
           aria-busy={loading || undefined}
           title={loading ? labels.loading : playLabel}
           aria-controls={`${id}-transcript`}
-          aria-describedby={transcriptVisible ? undefined : `${id}-transcript`}
+          aria-describedby={
+            transcriptVisible ? undefined : `${id}-transcript-hint`
+          }
           disabled={!audio.src || !active}
           onClick={() => {
             void media.toggle()
@@ -158,35 +160,51 @@ export function VoiceMessageRecording({
         </span>
         <time>{audio.timestamp}</time>
       </Styled.Meta>
-      {canToggleTranscript ? (
-        <Styled.TranscriptToggle
-          aria-label={transcriptAction}
-          aria-expanded={transcriptVisible}
-          aria-pressed={transcriptVisible}
-          aria-controls={`${id}-transcript`}
-          disabled={!active}
-          onClick={() => {
-            setTranscriptOverride({
-              visible: !transcriptVisible,
-              beforeAutomaticReveal: !automaticReveal,
-            })
-            playFeedbackSound('hint')
-          }}
-        >
-          {labels.transcript}
-        </Styled.TranscriptToggle>
-      ) : null}
       <Styled.Transcript
-        $visible={transcriptVisible}
+        $visible={canToggleTranscript || transcriptVisible}
+        data-transcript-interactive={canToggleTranscript || undefined}
         id={`${id}-transcript`}
         aria-live="polite"
         role="region"
         aria-label={labels.transcript}
       >
-        {transcriptVisible ? (
+        {canToggleTranscript ? (
+          <>
+            <Styled.TranscriptToggle
+              aria-label={transcriptAction}
+              aria-expanded={transcriptVisible}
+              aria-pressed={transcriptVisible}
+              aria-controls={`${id}-transcript`}
+              aria-describedby={
+                transcriptVisible ? `${id}-transcript-text` : undefined
+              }
+              disabled={!active}
+              onClick={() => {
+                setTranscriptOverride({
+                  visible: !transcriptVisible,
+                  beforeAutomaticReveal: !automaticReveal,
+                })
+                playFeedbackSound('hint')
+              }}
+            >
+              {transcriptVisible ? (
+                <span id={`${id}-transcript-text`}>{audio.transcript}</span>
+              ) : (
+                labels.transcript
+              )}
+            </Styled.TranscriptToggle>
+            {!transcriptVisible ? (
+              <span hidden id={`${id}-transcript-hint`}>
+                {labels.transcriptHidden}
+              </span>
+            ) : null}
+          </>
+        ) : transcriptVisible ? (
           <p>{audio.transcript}</p>
         ) : (
-          <Styled.Hint>{labels.transcriptHidden}</Styled.Hint>
+          <Styled.Hint id={`${id}-transcript-hint`}>
+            {labels.transcriptHidden}
+          </Styled.Hint>
         )}
       </Styled.Transcript>
       {!audio.src ? <Styled.Hint>{labels.audioUnavailable}</Styled.Hint> : null}

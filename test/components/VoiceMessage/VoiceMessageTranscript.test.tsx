@@ -69,9 +69,11 @@ it('shows a single named keyboard-operable toggle before any playback without pl
     screen.getByRole('button', { name: 'Hide transcript', pressed: true }),
   ).toHaveFocus()
   expect(screen.getByText(fixture.audio.transcript)).toBeVisible()
-  expect(toggle).toHaveTextContent(/^Transcript$/)
+  expect(toggle).toHaveTextContent(fixture.audio.transcript)
+  expect(toggle).toHaveAccessibleDescription(fixture.audio.transcript)
   expect(feedback.playFeedbackSound).toHaveBeenCalledWith('hint')
   await user.keyboard(' ')
+  expect(toggle).toHaveTextContent(/^Transcript$/)
   expect(
     screen.getByRole('button', { name: 'Show transcript', pressed: false }),
   ).toHaveFocus()
@@ -81,6 +83,17 @@ it('shows a single named keyboard-operable toggle before any playback without pl
     '0',
   )
   expect(HTMLMediaElement.prototype.play).not.toHaveBeenCalled()
+})
+
+it('replaces the label with the transcript and closes when the transcript text is clicked', () => {
+  render(<VoiceMessageExercise {...fixture} />)
+  const toggle = screen.getByRole('button', { name: 'Show transcript' })
+  fireEvent.click(toggle)
+  expect(toggle).toHaveTextContent(fixture.audio.transcript)
+  expect(toggle).not.toHaveTextContent(/^Transcript$/)
+  fireEvent.click(screen.getByText(fixture.audio.transcript))
+  expect(toggle).toHaveTextContent(/^Transcript$/)
+  expect(screen.queryByText(fixture.audio.transcript)).not.toBeInTheDocument()
 })
 
 it('still reveals on the third successful pass after an early manual Show/Hide, and permits hiding afterwards', async () => {
