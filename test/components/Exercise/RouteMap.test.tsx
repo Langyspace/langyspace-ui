@@ -72,7 +72,7 @@ it('uses finished artwork without drawing sketch roads over it, while retaining 
     <RouteMap
       {...map}
       image={{ ...map.image, src: '/town.png' }}
-      revealedIds={['cafe']}
+      revealedIds={['cafe', 'hotel']}
       selectedId="cafe"
       onSelect={select}
     />,
@@ -80,6 +80,9 @@ it('uses finished artwork without drawing sketch roads over it, while retaining 
   expect(cafe).toHaveFocus()
   expect(cafe).toHaveAttribute('aria-pressed', 'true')
   expect(within(cafe).getByText('café')).toBeVisible()
+  const hotel = screen.getByRole('button', { name: 'hotel' })
+  expect(within(hotel).getByRole('img', { name: 'Start' })).toBeVisible()
+  expect(within(hotel).queryByText('Start')).toBeNull()
 })
 
 it('keeps the same six landmarks and two ordered right turns across all A1.09 map activities', () => {

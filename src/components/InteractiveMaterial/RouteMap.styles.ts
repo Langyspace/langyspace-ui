@@ -123,31 +123,35 @@ export const Label = styled.span<{
   ${(p) =>
     p.$illustrated
       ? css`
-          padding: calc(${theme.spacing[1]} / 2) ${theme.spacing[1]};
-          border-radius: ${theme.radius.pill};
+          display: inline-flex;
+          align-items: center;
+          gap: ${theme.spacing[1]};
+          padding: calc(${theme.spacing[1]} / 4) calc(${theme.spacing[1]} / 2);
+          border-radius: ${theme.radius.sm};
           background: ${Common.recipe(p).canvas};
           color: ${Common.recipe(p).foreground};
+          font-weight: ${theme.typography.fontWeight.medium};
+          line-height: 1.15;
           white-space: nowrap;
           overflow-wrap: normal;
           word-break: normal;
           font-size: clamp(
             ${theme.typography.fontSize.xs},
-            2.5cqw,
-            ${theme.typography.fontSize.md}
+            2cqw,
+            ${theme.typography.fontSize.sm}
           );
         `
       : null}
 `
-export const Start = styled.span<{ $illustrated?: boolean }>`
+export const Origin = styled.span`
+  flex: none;
+  width: ${theme.spacing[1]};
+  height: ${theme.spacing[1]};
+  border-radius: ${theme.radius.pill};
+  background: ${(p) => Common.recipe(p).accent};
+`
+export const Start = styled.span`
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   color: ${(p) => Common.recipe(p).accent};
-  ${(p) =>
-    p.$illustrated
-      ? css`
-          padding: ${theme.spacing[1]} ${theme.spacing[2]};
-          border-radius: ${theme.radius.pill};
-          background: ${Common.recipe(p).canvas};
-        `
-      : null}
 `

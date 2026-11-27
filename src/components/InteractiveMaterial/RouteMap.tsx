@@ -77,12 +77,17 @@ export function RouteMap({
                 $illustrated={Boolean(image)}
                 aria-hidden={concealed || undefined}
               >
+                {image && startId === place.id ? (
+                  <Styled.Origin
+                    role="img"
+                    aria-label={startLabel}
+                    title={startLabel}
+                  />
+                ) : null}
                 {place.label}
               </Styled.Label>
-              {startId === place.id ? (
-                <Styled.Start $illustrated={Boolean(image)}>
-                  {startLabel}
-                </Styled.Start>
+              {!image && startId === place.id ? (
+                <Styled.Start>{startLabel}</Styled.Start>
               ) : null}
             </Styled.Place>
           )
