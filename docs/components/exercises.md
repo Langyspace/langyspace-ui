@@ -173,3 +173,8 @@ Maintained materials bind this control in their shared MaterialTheme/MaterialSli
 VocabularyControls accepts optional `onReset` and `labels.reset` for a third neutral reset icon. The controlled consumer clears its revealed IDs, first-letter hints, show-all flag and active playback; VocabularyGrid also clears its hover preview. The callback stays optional for other activities that use the bulb/eye controls without a vocabulary reset.
 
 `ExercisePanel variant="reading"` apresenta um título e parágrafos diretos, com tipografia maior de leitura e espaçamento natural. Não cria From/Subject, controles extras, altura fixa ou scroll interno. O consumidor compõe Questions na segunda coluna de SlidePage e usa seu play no título para a narração.
+
+
+### Quiz dentro de prévias de dispositivo
+
+MobileFrame screenMode="application-responsive" usa o espaço real da tela, sem reduzir fontes por transform. Compor QuizSession presentation="preview" para chrome compacto e revisão da resposta. Após feedback, somente a opção selecionada é repetida; em viewport abaixo de22rem de altura útil, a explicação e Próxima substituem a área da pergunta/opções. O header de progresso e a explicação permanecem. A apresentação session, padrão, mantém todas as alternativas e o comportamento existente. Application continua sendo o viewport360×640 legado para os demais exercícios.

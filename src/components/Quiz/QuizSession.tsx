@@ -10,13 +10,25 @@ import * as S from './QuizSession.styles'
 
 /** One Student quiz surface shared by the real portal, teacher simulation and lesson previews. */
 export function QuizSession({
+  presentation = 'session',
   header,
   question,
   children,
   ...props
 }: QuizSessionProps) {
+  const reviewing = presentation === 'preview' && Boolean(question?.feedback)
+  const selectedOptions = question?.options.filter(
+    (option) => option.state === 'correct' || option.state === 'wrong',
+  )
+  const visibleOptions =
+    reviewing && selectedOptions?.length ? selectedOptions : question?.options
   return (
-    <S.Root {...props} data-ui-quiz-session="true">
+    <S.Root
+      {...props}
+      $preview={presentation === 'preview'}
+      $reviewing={reviewing}
+      data-ui-quiz-session="true"
+    >
       <QuizSessionHeader {...header} />
       {question && (
         <S.Card>
@@ -36,10 +48,12 @@ export function QuizSession({
             </QuizQuestion>
           </S.Prompt>
           <S.Options>
-            {question.options.map((option, index) => (
+            {visibleOptions?.map((option) => (
               <QuizOption
                 key={option.id}
-                letter={String.fromCharCode(65 + index)}
+                letter={String.fromCharCode(
+                  65 + question.options.indexOf(option),
+                )}
                 state={option.state}
                 feedbackOutcome={option.feedbackOutcome}
                 disabled={option.disabled}

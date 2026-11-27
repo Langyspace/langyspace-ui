@@ -25,6 +25,8 @@ export interface QuizSessionQuestion {
 
 /** Controlled Student presentation; scoring, audio, keyboard and persistence stay with the consumer. */
 export interface QuizSessionProps extends ComponentPropsWithRef<'section'> {
+  /** Device previews keep readable type and summarize the selected option while showing feedback. */
+  presentation?: 'session' | 'preview'
   header: QuizSessionHeaderProps
   question?: QuizSessionQuestion
 }

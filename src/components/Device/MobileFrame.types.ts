@@ -6,8 +6,8 @@ export interface MobileFrameProps extends Omit<
 > {
   /** App/screen heading supplied by the consumer; the frame does not invent app actions. */
   title?: ReactNode
-  /** Isolated light mobile viewport for the same components used in the Student app. */
-  screenMode?: 'content' | 'application'
+  /** Application retains a scaled mobile document; application-responsive uses the real screen size. */
+  screenMode?: 'content' | 'application' | 'application-responsive'
   /** A prepared physical-phone illustration; native content is mapped into its blank screen.
    * Coordinates are percentages of the full, uncropped source image. */
   illustration?: {

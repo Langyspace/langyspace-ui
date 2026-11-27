@@ -7,14 +7,15 @@ export const Root = styled.div`
   min-height: 0;
   overflow: hidden;
 `
-export const Viewport = styled.iframe<{ $scale: number }>`
+export const Viewport = styled.iframe<{ $scale: number | null }>`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 360px;
-  height: 640px;
+  top: ${(p) => (p.$scale === null ? '0' : '50%')};
+  left: ${(p) => (p.$scale === null ? '0' : '50%')};
+  width: ${(p) => (p.$scale === null ? '100%' : '360px')};
+  height: ${(p) => (p.$scale === null ? '100%' : '640px')};
   border: 0;
-  transform: translate(-50%, -50%) scale(${(p) => p.$scale});
+  transform: ${(p) =>
+    p.$scale === null ? 'none' : `translate(-50%, -50%) scale(${p.$scale})`};
   transform-origin: center;
   background: ${theme.colors.surface.canvas};
 `

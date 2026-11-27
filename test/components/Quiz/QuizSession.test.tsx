@@ -100,4 +100,58 @@ describe('QuizSession controlled Student surface', () => {
     expect(html).toContain('Had I known')
     expect(html).not.toContain('<audio')
   })
+  it('keeps all preview choices initially, then summarizes the selected answer without changing regular sessions', () => {
+    const next = vi.fn()
+    const options = [
+      { id: 'a', label: 'go', state: 'dim' as const, disabled: true },
+      { id: 'b', label: 'going', state: 'wrong' as const, disabled: true },
+    ]
+    const question = {
+      level: 'A1',
+      counter: 'Questão 1 de 6',
+      detail: 'Gramática',
+      prompt: 'Complete the sentence',
+      context: 'Let’s ___ to the park',
+      options,
+      onSelect: vi.fn(),
+    }
+    const { rerender } = render(
+      <QuizSession
+        presentation="preview"
+        header={header}
+        question={question}
+      />,
+    )
+    expect(screen.getByRole('button', { name: /^A go$/ })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /^B going$/ }),
+    ).toBeInTheDocument()
+    const answered = {
+      ...question,
+      feedback: {
+        tone: 'wrong' as const,
+        content: 'Depois de let’s, usamos go',
+      },
+      nextAction: { label: 'Próxima', onClick: next },
+    }
+    rerender(
+      <QuizSession
+        presentation="preview"
+        header={header}
+        question={answered}
+      />,
+    )
+    expect(
+      screen.queryByRole('button', { name: /^A go$/ }),
+    ).not.toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /^B going$/ })).toBeDisabled()
+    expect(screen.getByText('Depois de let’s, usamos go')).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: 'Próxima' }))
+    expect(next).toHaveBeenCalledOnce()
+    rerender(<QuizSession header={header} question={answered} />)
+    expect(screen.getByRole('button', { name: /^A go$/ })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /^B going$/ }),
+    ).toBeInTheDocument()
+  })
 })

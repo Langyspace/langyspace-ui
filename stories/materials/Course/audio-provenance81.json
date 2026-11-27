@@ -3448,46 +3448,75 @@
       "durationSeconds": 1.346757
     },
     {
-      "material": "Course",
-      "lesson": "A1.11",
       "id": "A111-V81.3",
+      "material": "Course",
       "text": "bag",
       "speaker": "Ana",
-      "file": "assets/audio/A111-V81.3.mp3",
-      "provider": "elevenlabs",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "modelId": "eleven_multilingual_v2",
+      "baselineSha256": "7ec9cafdb7d67353c1ad954114f3a3fcb999fb473093fd78dd1f68dd3a91946c",
+      "baselineFile": "assets/audio/A111-V81.3.mp3",
+      "sourceProvenance": "stories/materials/Course/audio-provenance81.json",
+      "modelId": "eleven_flash_v2",
       "voiceSettings": {
         "stability": 0.5,
         "similarity_boost": 0.75,
-        "style": 0.1,
-        "use_speaker_boost": true,
         "speed": 0.92
       },
-      "status": "ready",
-      "requestId": "49VhIufzlWTnPXhk3uJl",
-      "synthesisInput": "bag",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AE1 G\">bag</phoneme>.",
       "requestBody": {
-        "text": "bag",
-        "model_id": "eleven_multilingual_v2",
+        "text": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AE1 G\">bag</phoneme>.",
+        "model_id": "eleven_flash_v2",
         "voice_settings": {
           "stability": 0.5,
           "similarity_boost": 0.75,
-          "style": 0.1,
-          "use_speaker_boost": true,
           "speed": 0.92
-        }
+        },
+        "language_code": "en",
+        "apply_text_normalization": "off"
       },
-      "disposition": "generated_missing",
+      "file": "assets/audio/A111-V81.3.mp3",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "B AE1 G"
+      },
+      "configurationDelta": {
+        "model": {
+          "from": "eleven_multilingual_v2",
+          "to": "eleven_flash_v2"
+        },
+        "omittedUnsupportedFields": [
+          "style",
+          "use_speaker_boost"
+        ]
+      },
+      "provider": "elevenlabs",
+      "requestId": "NoNb0D6HHVJPWx2aLZSz",
       "providerHeaders": {
-        "request-id": "49VhIufzlWTnPXhk3uJl",
+        "request-id": "NoNb0D6HHVJPWx2aLZSz",
         "character-cost": "1",
-        "content-type": "audio/mpeg"
+        "content-type": "audio/mpeg",
+        "history-item-id": "k0IWue2qgN41C7QyWatr"
       },
       "httpStatus": 200,
-      "sha256": "7ec9cafdb7d67353c1ad954114f3a3fcb999fb473093fd78dd1f68dd3a91946c",
-      "bytes": 7566,
-      "durationSeconds": 0.417959
+      "sha256": "7dfa43e38dd26336ea00bd65002ded7c34dd29b55fd9fa43178a0b872a19812e",
+      "bytes": 11327,
+      "processing": "Raw provider MP3; no trim, cut, gain, crossfade or composition",
+      "generationAttempts": 1,
+      "generatedAt": "2026-11-27T17:09:17.499Z",
+      "pcmAnalysis": {
+        "thresholdDbFS": -45,
+        "method": "first/last PCM sample with absolute amplitude above threshold; measurement only",
+        "leadingQuietFrames": 3298,
+        "trailingQuietFrames": 10558,
+        "totalFrames": 28672
+      },
+      "durationSeconds": 0.6501587301587302,
+      "sampleRate": 44100,
+      "channels": 1,
+      "correctiveRevision": 156,
+      "replacesSha256": "7ec9cafdb7d67353c1ad954114f3a3fcb999fb473093fd78dd1f68dd3a91946c",
+      "lesson": "A1.11",
+      "status": "ready"
     },
     {
       "material": "Course",
@@ -13444,14 +13473,14 @@
       "durationSeconds": 4.736871
     },
     {
-      "material": "Course",
-      "lesson": "A2.11",
       "id": "A211-D81.6",
+      "material": "Course",
       "text": "All right. I’ll bring a raincoat. What about lunch?",
       "speaker": "Ana",
-      "file": "assets/audio/A211-D81.6.mp3",
-      "provider": "elevenlabs",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "baselineSha256": "9f6fdbfeb4790ea97d588411e700f5fc00b9da18ef8f7faf65fa81e30f4ab995",
+      "baselineFile": "assets/audio/A211-D81.6.mp3",
+      "sourceProvenance": "stories/materials/Course/audio-provenance81.json",
       "modelId": "eleven_multilingual_v2",
       "voiceSettings": {
         "stability": 0.5,
@@ -13460,8 +13489,6 @@
         "use_speaker_boost": true,
         "speed": 0.92
       },
-      "status": "ready",
-      "requestId": "wbaRwl1pd8lMF0a8yNvt",
       "synthesisInput": "All right. I'll bring a raincoat. What about lunch?",
       "requestBody": {
         "text": "All right. I'll bring a raincoat. What about lunch?",
@@ -13474,16 +13501,37 @@
           "speed": 0.92
         }
       },
-      "disposition": "generated_missing",
+      "file": "assets/audio/A211-D81.6.mp3",
+      "phoneticControl": null,
+      "configurationDelta": {},
+      "provider": "elevenlabs",
+      "requestId": "4lSbgBZvsZAIIUzejUb5",
       "providerHeaders": {
-        "request-id": "wbaRwl1pd8lMF0a8yNvt",
+        "request-id": "4lSbgBZvsZAIIUzejUb5",
         "character-cost": "20",
-        "content-type": "audio/mpeg"
+        "content-type": "audio/mpeg",
+        "history-item-id": "ineycmwj23sCDUSOIv5C"
       },
       "httpStatus": 200,
-      "sha256": "9f6fdbfeb4790ea97d588411e700f5fc00b9da18ef8f7faf65fa81e30f4ab995",
-      "bytes": 47690,
-      "durationSeconds": 2.925714
+      "sha256": "22cce3421cd61079482bb6f04a5f27ff8e964624d0ecc01f6d558d2875ec4a77",
+      "bytes": 57721,
+      "processing": "Raw provider MP3; no trim, cut, gain, crossfade or composition",
+      "generationAttempts": 1,
+      "generatedAt": "2026-11-27T17:09:17.912Z",
+      "pcmAnalysis": {
+        "thresholdDbFS": -45,
+        "method": "first/last PCM sample with absolute amplitude above threshold; measurement only",
+        "leadingQuietFrames": 2789,
+        "trailingQuietFrames": 14091,
+        "totalFrames": 155648
+      },
+      "durationSeconds": 3.5294331065759637,
+      "sampleRate": 44100,
+      "channels": 1,
+      "correctiveRevision": 156,
+      "replacesSha256": "9f6fdbfeb4790ea97d588411e700f5fc00b9da18ef8f7faf65fa81e30f4ab995",
+      "lesson": "A2.11",
+      "status": "ready"
     },
     {
       "material": "Course",
@@ -14410,14 +14458,14 @@
       "durationSeconds": 3.065034
     },
     {
-      "material": "Course",
-      "lesson": "A2.12",
       "id": "A212-D81.8",
+      "material": "Course",
       "text": "Great. Let’s split the bill so it’s simple for everyone.",
       "speaker": "Ana",
-      "file": "assets/audio/A212-D81.8.mp3",
-      "provider": "elevenlabs",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "baselineSha256": "e60fbeba11b1e14be6e747bfb9116efe07326b4a2cad63513636aea65f77c6bf",
+      "baselineFile": "assets/audio/A212-D81.8.mp3",
+      "sourceProvenance": "stories/materials/Course/audio-provenance81.json",
       "modelId": "eleven_multilingual_v2",
       "voiceSettings": {
         "stability": 0.5,
@@ -14426,8 +14474,6 @@
         "use_speaker_boost": true,
         "speed": 0.92
       },
-      "status": "ready",
-      "requestId": "6LFwZOHnNi1mpguQMcP3",
       "synthesisInput": "Great. Let's split the bill so it's simple for everyone.",
       "requestBody": {
         "text": "Great. Let's split the bill so it's simple for everyone.",
@@ -14440,16 +14486,37 @@
           "speed": 0.92
         }
       },
-      "disposition": "generated_missing",
+      "file": "assets/audio/A212-D81.8.mp3",
+      "phoneticControl": null,
+      "configurationDelta": {},
+      "provider": "elevenlabs",
+      "requestId": "j52ygxBGEN0uMKiP6ztl",
       "providerHeaders": {
-        "request-id": "6LFwZOHnNi1mpguQMcP3",
+        "request-id": "j52ygxBGEN0uMKiP6ztl",
         "character-cost": "22",
-        "content-type": "audio/mpeg"
+        "content-type": "audio/mpeg",
+        "history-item-id": "4c07ne1puAhdkXpY0ZJ5"
       },
       "httpStatus": 200,
-      "sha256": "e60fbeba11b1e14be6e747bfb9116efe07326b4a2cad63513636aea65f77c6bf",
-      "bytes": 49362,
-      "durationSeconds": 3.018594
+      "sha256": "fdc29604048e8a03a8c4ad869d906ecc5267d0565f7921137a1665e8f9a1be8c",
+      "bytes": 53123,
+      "processing": "Raw provider MP3; no trim, cut, gain, crossfade or composition",
+      "generationAttempts": 1,
+      "generatedAt": "2026-11-27T17:09:18.356Z",
+      "pcmAnalysis": {
+        "thresholdDbFS": -45,
+        "method": "first/last PCM sample with absolute amplitude above threshold; measurement only",
+        "leadingQuietFrames": 4328,
+        "trailingQuietFrames": 15978,
+        "totalFrames": 143360
+      },
+      "durationSeconds": 3.250793650793651,
+      "sampleRate": 44100,
+      "channels": 1,
+      "correctiveRevision": 156,
+      "replacesSha256": "e60fbeba11b1e14be6e747bfb9116efe07326b4a2cad63513636aea65f77c6bf",
+      "lesson": "A2.12",
+      "status": "ready"
     },
     {
       "material": "Course",
@@ -49607,39 +49674,69 @@
       "durationSeconds": 1.971451
     },
     {
-      "material": "Course",
-      "lesson": "A1.11",
       "id": "A111-FS81.3",
+      "material": "Course",
       "text": "bag. How much is this bag?",
-      "labelId": "A111-V81.3",
-      "exampleId": "A111-FE81.3",
       "file": "assets/audio/A111-FS81.3.mp3",
       "provider": "elevenlabs",
-      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "kind": "derived-speech",
+      "isDerived": true,
       "requestId": null,
-      "sourceRequestIds": ["49VhIufzlWTnPXhk3uJl", "moE4eeheuLEvuMxTkVwC"],
-      "sources": [
-        {
-          "leadingQuietFrames": 2646,
-          "trailingQuietFrames": 832,
-          "trimStartFrames": 6154,
-          "trimEndFrames": 0,
-          "sourceSha256": "7ec9cafdb7d67353c1ad954114f3a3fcb999fb473093fd78dd1f68dd3a91946c"
-        },
-        {
-          "leadingQuietFrames": 3300,
-          "trailingQuietFrames": 2646,
-          "trimStartFrames": 0,
-          "trimEndFrames": 11274,
-          "sourceSha256": "e485b3ce27e37ad0b3cb093aabb321cca36d3c6adf54a5708815c47d94624a59"
-        }
+      "sourceRequestIds": [
+        "NoNb0D6HHVJPWx2aLZSz",
+        "moE4eeheuLEvuMxTkVwC"
       ],
-      "insertedSilenceFrames": 11303,
-      "boundaryQuietMilliseconds": 350.0,
-      "phonemeInteriorsModified": false,
-      "sha256": "fb9076884ba5cc997427adf1c66cb4203d5635634fd8b8925c0cce3b849f93a1",
-      "bytes": 28046,
-      "durationSeconds": 1.672902
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "modelId": null,
+      "sourceModelIds": [
+        "eleven_flash_v2",
+        "eleven_multilingual_v2"
+      ],
+      "sha256": "2a70cea43468ef12e9437e94af92f220dc450ac70d2add1e4b0dd44dc60270a8",
+      "bytes": 34315,
+      "durationSeconds": 2.0661678004535147,
+      "sampleRate": 44100,
+      "channels": 1,
+      "derivation": {
+        "method": "Concatenate complete decoded new controlled label and original example with measured quiet plus only remaining silence to350ms; no trimming/crossfade/gain/time-stretch",
+        "sourceLabel": {
+          "id": "A111-V81.3",
+          "sha256": "7dfa43e38dd26336ea00bd65002ded7c34dd29b55fd9fa43178a0b872a19812e",
+          "requestId": "NoNb0D6HHVJPWx2aLZSz",
+          "file": "assets/audio/A111-V81.3.mp3",
+          "frames": 28672,
+          "leadingQuietFrames": 3298,
+          "trailingQuietFrames": 10558
+        },
+        "sourceExample": {
+          "id": "A111-FE81.3",
+          "text": "How much is this bag?",
+          "sha256": "e485b3ce27e37ad0b3cb093aabb321cca36d3c6adf54a5708815c47d94624a59",
+          "requestId": "moE4eeheuLEvuMxTkVwC",
+          "file": "assets/audio/A111-FE81.3.mp3",
+          "frames": 61440,
+          "leadingQuietFrames": 3871,
+          "trailingQuietFrames": 14467
+        },
+        "pauseTargetFrames": 15435,
+        "naturalEdgeQuietFrames": 14429,
+        "insertedSilenceFrames": 1006,
+        "boundaryQuietFrames": 15435,
+        "boundaryQuietMilliseconds": 350.0,
+        "quietMeasurementMethod": "first/last PCM sample with absolute amplitude above threshold; measurement only",
+        "quietThresholdDbFS": -45,
+        "trim": false,
+        "crossfade": false,
+        "gain": false,
+        "timeStretch": false,
+        "pcmFrames": 91118,
+        "pcmMasterSha256": "a30dabc11ac5b6210b6e2d6d73a842103a6e0d93550eebd73430c8e90fd47673",
+        "newPhonemesGeneratedForExample": false
+      },
+      "correctiveRevision": 156,
+      "replacesSha256": "fb9076884ba5cc997427adf1c66cb4203d5635634fd8b8925c0cce3b849f93a1",
+      "lesson": "A1.11",
+      "status": "ready"
     },
     {
       "material": "Course",
@@ -59826,5 +59923,15 @@
       "bytes": 61065,
       "durationSeconds": 3.737438
     }
-  ]
+  ],
+  "feedback156": {
+    "scope": "Only newly reported high-priority audio; existing completed corrections preserved",
+    "ids": [
+      "A111-V81.3",
+      "A211-D81.6",
+      "A212-D81.8",
+      "A111-FS81.3"
+    ],
+    "deltaSha256": "0c5c38f2372a129b5bbf0755f3d5b8270973923716b8519fd540e0883b36c6bb"
+  }
 }

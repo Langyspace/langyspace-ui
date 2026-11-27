@@ -10,6 +10,7 @@ export function MobileFrame({
   illustration,
   ...props
 }: MobileFrameProps) {
+  const application = screenMode !== 'content'
   if (illustration)
     return (
       <Styled.IllustratedRoot
@@ -31,14 +32,17 @@ export function MobileFrame({
   return (
     <Styled.Root
       {...props}
-      $application={screenMode === 'application'}
+      $application={application}
       data-device-frame="mobile"
     >
       <Styled.Camera aria-hidden="true" />
       {title ? <Styled.Title>{title}</Styled.Title> : null}
-      <Styled.Content $application={screenMode === 'application'}>
-        {screenMode === 'application' ? (
+      <Styled.Content $application={application}>
+        {application ? (
           <ApplicationViewport
+            sizing={
+              screenMode === 'application-responsive' ? 'responsive' : 'scaled'
+            }
             title={
               typeof title === 'string'
                 ? title

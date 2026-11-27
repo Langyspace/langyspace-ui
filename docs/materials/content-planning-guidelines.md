@@ -557,3 +557,10 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 - Na roleta, manter as cores dos setores após o sorteio. Para oito opções com tamanhos variados e simetria, repetir os quatro pesos nos setores opostos (ex.: 6/5/4/3/6/5/4/3). Manter a geometria durante toda a rodada, sem encolher ou retirar setores; temas esgotados não voltam ao sorteio antes de reiniciar. Pesos explícitos controlam a área e a chance do tema, com sorteio uniforme entre suas perguntas ainda disponíveis. O controle central deve ser compacto, preservando um alvo clicável adequado.
 
 - Na roleta, tema/estado e progresso ficam no mesmo cabeçalho fixo durante o giro e a revelação. Usar um estado curto como “Spinning”, mantendo “Spin” no botão central durante o giro, sem recentralizar o painel. O som do giro acompanha a desaceleração, com volume discreto, usando o mute compartilhado e sem competir com as gravações da aula; não tratar o efeito como benefício cognitivo comprovado.
+
+
+## Prévias de homework legíveis — feedback156
+
+Não resolver a legibilidade de um Quiz encolhendo todo o documento com transform. Usar o modo application-responsive de MobileFrame e a apresentação preview de QuizSession: mesma superfície canônica, menos espaçamento/chrome auxiliar, texto sem escala. A sessão normal do Student mantém seu comportamento. Depois de responder, a prévia resume a opção selecionada; em tela útil abaixo de22rem, concentra a explicação e Próxima sem repetir enunciado/opções. Preservar explicação completa em português.
+
+Flashcards e Shadowing mantêm application até sua adaptação específica: trocar o viewport global pode cortar os controles. Uma mudança de preview não comprova adoção do renderer pelo Student implantado. Conferir o estado inicial e o de correção, sem afirmar encaixe universal sem revisão visual.
