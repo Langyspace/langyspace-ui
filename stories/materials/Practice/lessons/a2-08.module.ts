@@ -1,3 +1,9 @@
+import scene161_0 from '../assets/native-scene161/213532505b466b0aabef512d7a673bb0d2cc8cea9aaf816e5110599fd7865257.webp'
+import scene161_1 from '../assets/native-scene161/1bb3653973bf73a2968d4fd1677e2815fcc5afb42e47c75faad97757e04ce5b2.webp'
+import scene161_2 from '../assets/native-scene161/d14ee7dc6ac5fa253a30e9d002e626a00136510b8d7eac533d04a440f547b6a6.webp'
+import scene161_3 from '../assets/native-scene161/553502d30900eb3ed0017688835e07903f59ba17180285e2bd625a12a38d6260.webp'
+import scene161_4 from '../assets/native-scene161/0612bc94257614a1540b8e6baf43b7f555359fdba982d5796bc0004b2401bfe1.webp'
+import scene161_5 from '../assets/native-scene161/7389b97541fff63e1f737ca1c705d6c4fcebe75ba4882634033e0fd8d3efa338.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a2-08.json'
 import asset0 from '../assets/audio/0314975da11907a1c9eef0685a9c87019f990f44829e7bceeff074aaed7efa0c.mp3'
@@ -222,6 +228,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene161/213532505b466b0aabef512d7a673bb0d2cc8cea9aaf816e5110599fd7865257/image.webp':
+      scene161_0,
+    '/flashcards-transparent/course-practice/native-scene161/1bb3653973bf73a2968d4fd1677e2815fcc5afb42e47c75faad97757e04ce5b2/image.webp':
+      scene161_1,
+    '/flashcards-transparent/course-practice/native-scene161/d14ee7dc6ac5fa253a30e9d002e626a00136510b8d7eac533d04a440f547b6a6/image.webp':
+      scene161_2,
+    '/flashcards-transparent/course-practice/native-scene161/553502d30900eb3ed0017688835e07903f59ba17180285e2bd625a12a38d6260/image.webp':
+      scene161_3,
+    '/flashcards-transparent/course-practice/native-scene161/0612bc94257614a1540b8e6baf43b7f555359fdba982d5796bc0004b2401bfe1/image.webp':
+      scene161_4,
+    '/flashcards-transparent/course-practice/native-scene161/7389b97541fff63e1f737ca1c705d6c4fcebe75ba4882634033e0fd8d3efa338/image.webp':
+      scene161_5,
     '/flashcards-transparent/b1/conversation-starters/ive-been-there/image.webp':
       expanded124Asset14,
     '/flashcards-transparent/b1/conversation-starters/ive-never-tried-it/image.webp':

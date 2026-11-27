@@ -1,0 +1,4020 @@
+{
+  "baseline": "922d17c2c84758b6226b5ca7736983f51d64dab2",
+  "provider": "built-in image_gen",
+  "mode": "background restoration edit",
+  "calls": 20,
+  "retries": 0,
+  "canonicalStyleSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "assets": [
+    {
+      "lesson": "a1-12",
+      "asset": "stories/materials/Course/assets/a1-12-vocabulary161.webp",
+      "assetSha256": "e342aab6ff222fe3df6cc357c0fc4edc5bf6e10851733241d4b4714a0b9f41f2",
+      "assetBytes": 249898,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a1-12-vocabulary81.webp",
+      "sourceAtlasSha256": "2ffbf4a0fd45df33e7f027ebadd0cafcc55e413796f15e96974c5f0bf76f735d",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A112-vocabulary.png",
+      "editTargetSha256": "113c617d59ce575cbfe03c78b8cf41dac76422f3e307850c7faac7144e37d5c0",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-8eaffd6e-9471-4c09-b20c-152f500d594e.png",
+      "generatedOriginalSha256": "b712b93e6ff011062d10fb2bfc771624cebddcaf5f6e0c1015fa305c399ddbd6",
+      "workspaceOriginal": ".local/scene161/originals/a1-12.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a1-12.txt",
+      "promptSha256": "71b33070d2b8f4e88eae330034ca56dc0516298a8eb4f387af6f18191d581b98",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "windows": [
+        {
+          "lesson": "a1-12",
+          "index": 0,
+          "word": "sunny",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a1-12",
+          "index": 1,
+          "word": "rainy",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a1-12",
+          "index": 2,
+          "word": "cloudy",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a1-12",
+          "index": 3,
+          "word": "windy",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a1-12-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-02",
+      "asset": "stories/materials/Course/assets/a2-02-vocabulary161.webp",
+      "assetSha256": "5edeba08558ae96ed04c02b95a989d5d9e62da4e8efd406147939314a884ee05",
+      "assetBytes": 216946,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-02-vocabulary81.webp",
+      "sourceAtlasSha256": "01faec4807a65385bc18d25a97a19bfd785559d4aa92827da3d5d424211a1a1d",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A202-vocabulary.png",
+      "editTargetSha256": "10381ca2b07d94342bcfda99e860fa397f8dbfa0c2b1b303a2c6545691a9949a",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-e4c9c81c-e324-450c-9cb1-9426051fb390.png",
+      "generatedOriginalSha256": "69eb9d5b09a43abd342e6aec58633458538d5450a1fe699de777f82c18f48219",
+      "workspaceOriginal": ".local/scene161/originals/a2-02.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-02.txt",
+      "promptSha256": "744fabc61f97835bb8cbede80ccef862a899efd5fef84d2793cdd787439fc871",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-02",
+          "index": 0,
+          "word": "visited a museum",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-02",
+          "index": 1,
+          "word": "went to a market",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-02",
+          "index": 2,
+          "word": "had coffee",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-02",
+          "index": 3,
+          "word": "took photos",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-02",
+          "index": 4,
+          "word": "walked on the beach",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-02",
+          "index": 5,
+          "word": "stayed at home",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-02-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-04",
+      "asset": "stories/materials/Course/assets/a2-04-vocabulary161.webp",
+      "assetSha256": "402f934945057346d7994b5158465ac34becc5022a6f630977980f69a8fc935b",
+      "assetBytes": 259678,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-04-vocabulary81.webp",
+      "sourceAtlasSha256": "d7c400091e24223c011f9fc051bb9b06ac3a6f477b8ebfdafe856c2a71ceeb8a",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A204-vocabulary.png",
+      "editTargetSha256": "e5dace693f76d749b53b47aa01f2420152a35766b452cbc128585ff6c9482418",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-d3e2f551-ec17-4b7d-baf1-54d32d5d5f78.png",
+      "generatedOriginalSha256": "81cd29dea08535a807f9ad2728c57dba92a64f7530f5fa011348aee61353a64b",
+      "workspaceOriginal": ".local/scene161/originals/a2-04.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-04.txt",
+      "promptSha256": "430619696aee534f911410b56d55aed7c6788aa65dfa9f00a203d6ba5aaaf1c7",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-04",
+          "index": 0,
+          "word": "a food festival",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 46,
+            "row": 48,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-04",
+          "index": 1,
+          "word": "a concert",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 417,
+            "row": 50,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-04",
+          "index": 2,
+          "word": "a barbecue",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 790,
+            "row": 52,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-04",
+          "index": 3,
+          "word": "a birthday party",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 41,
+            "row": 395,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-04",
+          "index": 4,
+          "word": "a yoga class",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 412,
+            "row": 409,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-04",
+          "index": 5,
+          "word": "a picnic",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 790,
+            "row": 409,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-04-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-07",
+      "asset": "stories/materials/Course/assets/a2-07-vocabulary161.webp",
+      "assetSha256": "de9122a624aefb2ac0aa2920332fda3184137bd53e79d1552058749611db94c1",
+      "assetBytes": 257242,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-07-vocabulary81.webp",
+      "sourceAtlasSha256": "10e14d80bc153c828ad7628bfbcfafb13b5cc1e67d512124516529c45af55764",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A207-vocabulary.png",
+      "editTargetSha256": "7ea077b2e26cee5f7b4399f1f281ee0949c63dfb86c941c486ed7bef38e2170a",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-ce74b8d5-d681-4e54-84c0-96e39dd088b2.png",
+      "generatedOriginalSha256": "9f094619e02db536938464697407f1aef0f72d1e44c274a40e41ec8e3ba0d5f9",
+      "workspaceOriginal": ".local/scene161/originals/a2-07.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-07.txt",
+      "promptSha256": "3ee2356f9baeca3d521ce19256dd1c5bb62a50aec60ec9ea72fea90949fa210b",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-07",
+          "index": 0,
+          "word": "building",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-07",
+          "index": 1,
+          "word": "pool",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-07",
+          "index": 2,
+          "word": "garage",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-07",
+          "index": 3,
+          "word": "grill",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-07",
+          "index": 4,
+          "word": "trash",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-07",
+          "index": 5,
+          "word": "bike",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-07-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-08",
+      "asset": "stories/materials/Course/assets/a2-08-vocabulary161.webp",
+      "assetSha256": "565febae47aec6843d2afba897c83e55ac9934d8032ed2da01bd4be2fce06184",
+      "assetBytes": 350236,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-08-vocabulary81.webp",
+      "sourceAtlasSha256": "1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A208-vocabulary.png",
+      "editTargetSha256": "420de362f078c6ff84d4529dc31966cd96938082468c61b4cc10ea83069eed1a",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-8b207f33-7854-41af-bb7a-c9c57dbfaaa3.png",
+      "generatedOriginalSha256": "a509292f8b2b722be428304885e7bca52c7614947b677f9d865bf4c1edbfa0ac",
+      "workspaceOriginal": ".local/scene161/originals/a2-08.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-08.txt",
+      "promptSha256": "88700ce6cd866cc2eab4ff13b94ab3ce8e68f037a3e708f9e2b8c53e975be956",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-08",
+          "index": 0,
+          "word": "take a tram",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-08",
+          "index": 1,
+          "word": "visit a castle",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-08",
+          "index": 2,
+          "word": "try a pastel de nata",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-08",
+          "index": 3,
+          "word": "see the tiles",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-08",
+          "index": 4,
+          "word": "watch the sunset",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-08",
+          "index": 5,
+          "word": "visit the aquarium",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-08-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-09",
+      "asset": "stories/materials/Course/assets/a2-09-vocabulary161.webp",
+      "assetSha256": "cc170409a1abe7cab9dc25781e8433ac91befd59c6f3c347ab5fa99b4ddcacc7",
+      "assetBytes": 210136,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-09-vocabulary81.webp",
+      "sourceAtlasSha256": "b82ec094985b19f2ec8c9be9c01275bc576b61747ae010249d4e54dafdd3b7b2",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A209-vocabulary.png",
+      "editTargetSha256": "b392eeddaa37a3ce8166e8a944f98f84a830d2e834b903bca05f416dfeaf1eca",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-b6581ece-3bde-4eb8-8e09-7c97af23d431.png",
+      "generatedOriginalSha256": "57202876912b1858596f58b58e108b41b3c0e4dc25c9c85acbc7165a4176b397",
+      "workspaceOriginal": ".local/scene161/originals/a2-09.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-09.txt",
+      "promptSha256": "727bd5892367d1bf9c5a71df44a6251d4174831a469303cda74447c7571aaa5e",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-09",
+          "index": 0,
+          "word": "move to a new city",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-09-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-09",
+          "index": 1,
+          "word": "start a job",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-09-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-09",
+          "index": 2,
+          "word": "finish a course",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-09-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-09",
+          "index": 3,
+          "word": "get married",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-09-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-09",
+          "index": 4,
+          "word": "have a baby",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-09-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-09",
+          "index": 5,
+          "word": "take up a hobby",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-09-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-10",
+      "asset": "stories/materials/Course/assets/a2-10-vocabulary161.webp",
+      "assetSha256": "3a06718ee70dd5fc97a9a593901628638afce7637856e9979fd3f4a05eb33317",
+      "assetBytes": 217402,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-10-vocabulary81.webp",
+      "sourceAtlasSha256": "80d9fb0bfa10a4f1994fd54841499041cdccdf26d0c75b45d2e5a86b0b39a87b",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A210-vocabulary.png",
+      "editTargetSha256": "5b80e6c7ac284277091e3422808a3ee35cf739664f81bc4ea8d96578c8d1f385",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-ed790809-99eb-4c44-bade-5ba0eddcdac9.png",
+      "generatedOriginalSha256": "12ae574eb8b70264e0268c3df947a12f503828f50c7156e25c9b04f31d69ad34",
+      "workspaceOriginal": ".local/scene161/originals/a2-10.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-10.txt",
+      "promptSha256": "3a240b45e9dfe2ef24d821cdbdcbd1a66fe94f4cb968ec95c5e574443d1e86d1",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-10",
+          "index": 0,
+          "word": "cheap",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-10",
+          "index": 1,
+          "word": "expensive",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-10",
+          "index": 2,
+          "word": "spacious",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-10",
+          "index": 3,
+          "word": "small",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-10",
+          "index": 4,
+          "word": "quiet",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-10",
+          "index": 5,
+          "word": "noisy",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-10-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-11",
+      "asset": "stories/materials/Course/assets/a2-11-vocabulary161.webp",
+      "assetSha256": "d5aae0fceb37c62d3ba21517519ef3f445d979e597b44af79652cd51642b8bcf",
+      "assetBytes": 272882,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-11-vocabulary81.webp",
+      "sourceAtlasSha256": "80081312d320aa4209466a8619a3303a5c709133048f04f5ad85447687c8edd9",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A211-vocabulary.png",
+      "editTargetSha256": "d96d2a4656d20b78bd2f4ce38a00af183b54d039011cfd5fe1c1fcaf1293db5d",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-b9a2eba8-69f5-44c0-838e-6b01cbda5c69.png",
+      "generatedOriginalSha256": "ebb0a588a9abaf0add16e6120b38b7c4c10f257eb27131be72f7b601eea42bac",
+      "workspaceOriginal": ".local/scene161/originals/a2-11.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-11.txt",
+      "promptSha256": "206bb08d7817c36ae518ae915ffca0a4efb4208d627e77484668a6a2269d204f",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-11",
+          "index": 0,
+          "word": "a hike",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-11",
+          "index": 1,
+          "word": "a trail",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-11",
+          "index": 2,
+          "word": "a museum",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-11",
+          "index": 4,
+          "word": "a forecast",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-11",
+          "index": 5,
+          "word": "a backup plan",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-11-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "a2-12",
+      "asset": "stories/materials/Course/assets/a2-12-vocabulary161.webp",
+      "assetSha256": "986c1345f04273143808b3d7cf16e4a44901f4f6daeb374413613df295c2bf0b",
+      "assetBytes": 207898,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/a2-12-vocabulary81.webp",
+      "sourceAtlasSha256": "05490eadfcad29906feaf53395eafde4559b1a175ff8c7ea666de8481c0a34d4",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/A212-vocabulary.png",
+      "editTargetSha256": "be881335c898355d21b930d36541c97dd0ffe1b48c827aa6baec247c5eb00184",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-ade1a0d4-31bd-4e02-ab95-43bb7b3f6363.png",
+      "generatedOriginalSha256": "5cef23497161ccecba81154acf0b0eaee0e55d7d5001bfedb34ec2d4ab7140a2",
+      "workspaceOriginal": ".local/scene161/originals/a2-12.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/a2-12.txt",
+      "promptSha256": "eccd32f38776d091feeea2d24c1d8ac8a0e0745c5e1f2cb1acd9c97ca4984c14",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "a2-12",
+          "index": 0,
+          "word": "book a table",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-12",
+          "index": 1,
+          "word": "send an invitation",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-12",
+          "index": 2,
+          "word": "bring a gift",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/a2-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-12",
+          "index": 3,
+          "word": "split the bill",
+          "sourceRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 15,
+            "row": 399,
+            "columnSpan": 400,
+            "rowSpan": 400,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-12",
+          "index": 4,
+          "word": "cancel a booking",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "a2-12",
+          "index": 5,
+          "word": "change the date",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/a2-12-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b1-02",
+      "asset": "stories/materials/Course/assets/b1-02-vocabulary161.webp",
+      "assetSha256": "2e7062347bd6de8938db2fe51231919271029e687d0e177bd33fa20151a9386b",
+      "assetBytes": 313788,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b1-02-vocabulary81.webp",
+      "sourceAtlasSha256": "984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B102-vocabulary.png",
+      "editTargetSha256": "0ccb0ad66bd82e7732393bfbde249fef881e7768203d2ee480ad79bd10529edd",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-785f7ecc-30fb-4766-ac8d-4717d7dfd519.png",
+      "generatedOriginalSha256": "c6b975ce74c96d7aef0b2cc9fffc7533adbaba96686a4b891c9c452813bb5a6c",
+      "workspaceOriginal": ".local/scene161/originals/b1-02.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b1-02.txt",
+      "promptSha256": "f4dda285faaf411fd5f805d140e6fd1f663819f174e2f3f70b46137f107a9395",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b1-02",
+          "index": 0,
+          "word": "a cinema",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-02",
+          "index": 1,
+          "word": "a playground",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-02",
+          "index": 2,
+          "word": "a corner shop",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-02",
+          "index": 3,
+          "word": "a square",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-02",
+          "index": 4,
+          "word": "a factory",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-02-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-02",
+          "index": 5,
+          "word": "an apartment block",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-02-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b1-07",
+      "asset": "stories/materials/Course/assets/b1-07-vocabulary161.webp",
+      "assetSha256": "d81ffaeab56fe3ec48117fcbdbe9da72ba3434003845d302cc228f84b4e64da1",
+      "assetBytes": 181556,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b1-07-vocabulary81.webp",
+      "sourceAtlasSha256": "40f8d8e6030aacaec32de36dd3a237d20bcfec87f85397b6d93dd2c74f0bd232",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B107-vocabulary.png",
+      "editTargetSha256": "1bf529d4a71535f7e3045a363dda3d9e2555552162b2e09a8dc417739a7e108c",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-d2edddb4-6931-4c22-bf87-d0905cc6e675.png",
+      "generatedOriginalSha256": "bcd5aa0b6f9dd6c3f1aea3cad75768e1ae54d38078df03e3e2ab3f04bbefe46e",
+      "workspaceOriginal": ".local/scene161/originals/b1-07.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b1-07.txt",
+      "promptSha256": "ce693ee4fc9663ecfd865ae372604b508fb6c9ddced0bfd6870fdd6beba60530",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b1-07",
+          "index": 0,
+          "word": "a direct flight",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-07",
+          "index": 1,
+          "word": "a connecting flight",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-07",
+          "index": 2,
+          "word": "a delay",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-07",
+          "index": 3,
+          "word": "a boarding gate",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-07",
+          "index": 4,
+          "word": "a refund",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-07-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-07",
+          "index": 5,
+          "word": "travel insurance",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-07-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b1-08",
+      "asset": "stories/materials/Course/assets/b1-08-vocabulary161.webp",
+      "assetSha256": "4d87f1ab7a762bd9e4d829ee69e07d169d94796ac703bcbe52d10625e5e259aa",
+      "assetBytes": 223388,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b1-08-vocabulary81.webp",
+      "sourceAtlasSha256": "9b9aceb3d484aa083558642a9dc7b6fb29a52572ff574c9d37551ea735ef4fa6",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B108-vocabulary.png",
+      "editTargetSha256": "5f6521a99e41fdd8b3e3d53bbb4b9f1c23a64e345a13cde24f822586e968d9f8",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-f31702ec-d424-4ef5-82ae-2b792cbf9861.png",
+      "generatedOriginalSha256": "de1e8e3c691d813d9cbafc5ebbbff1e56da8721404b784a9c1a9e22dea0256d6",
+      "workspaceOriginal": ".local/scene161/originals/b1-08.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b1-08.txt",
+      "promptSha256": "677e4aec1ad6d9ad5b64578e8894e72fb6d45bdf1e61f68b625f0d70ddfb4cae",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b1-08",
+          "index": 0,
+          "word": "settle in",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-08",
+          "index": 1,
+          "word": "commute",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-08",
+          "index": 2,
+          "word": "dress in layers",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-08",
+          "index": 3,
+          "word": "feel homesick",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-08",
+          "index": 4,
+          "word": "make friends",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-08",
+          "index": 5,
+          "word": "adjust your routine",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-08-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b1-10",
+      "asset": "stories/materials/Course/assets/b1-10-vocabulary161.webp",
+      "assetSha256": "ff82a80d2d974bcfa9d7f9815911f2423184f589d20f027f1453f0b213322606",
+      "assetBytes": 149278,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b1-10-vocabulary81.webp",
+      "sourceAtlasSha256": "821087d86bd463593533429eba275516dfc780e559eb103ba20e96f5af7f10b9",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B110-vocabulary.png",
+      "editTargetSha256": "c521e7982ed456122dc27af942de2d6bf51023c5cda8be32478022b543bdff5f",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-c5b3afaf-c416-4a87-b6ea-89997d606b8e.png",
+      "generatedOriginalSha256": "c2b4c50e0da8e60fa1f6e90b6925c28fd43267e77b70cce1e5af75380d3189a4",
+      "workspaceOriginal": ".local/scene161/originals/b1-10.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b1-10.txt",
+      "promptSha256": "d0c72deb207d9c8548767e7adccfd624a56e987cbffb811e6562dd31b94f6f62",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b1-10",
+          "index": 0,
+          "word": "a reception desk",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-10",
+          "index": 1,
+          "word": "a cloakroom",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-10",
+          "index": 2,
+          "word": "a timetable",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-10",
+          "index": 3,
+          "word": "an entrance fee",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-10",
+          "index": 4,
+          "word": "a guided tour",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-10",
+          "index": 5,
+          "word": "an information point",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-10-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b1-11",
+      "asset": "stories/materials/Course/assets/b1-11-vocabulary161.webp",
+      "assetSha256": "0a09eeb80df836b06a5fbf4b66c39804fec3b2ba580212fc817c2361f844c04d",
+      "assetBytes": 267062,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b1-11-vocabulary81.webp",
+      "sourceAtlasSha256": "946ca35107a8ef6e370c9fbc783b493b955ee84fb5f2e947dc471a9cd7736c3f",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B111-vocabulary.png",
+      "editTargetSha256": "eddf845881b9f82af511884e9cdb868764c9d0a5d25cd3fbd26a56064a131fa3",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-dd25e69a-6992-4f71-af57-839e989bb9cd.png",
+      "generatedOriginalSha256": "2fbe397c667422c1eb986229decdec08a98d69e6743648e918479fc5fa192fbb",
+      "workspaceOriginal": ".local/scene161/originals/b1-11.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b1-11.txt",
+      "promptSha256": "eb54239b3fbf9cde945bca57702a4f00abb1a26a350f0798810429ae6f90e52d",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b1-11",
+          "index": 0,
+          "word": "a guest",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-11",
+          "index": 1,
+          "word": "a host",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-11",
+          "index": 2,
+          "word": "a couple",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-11",
+          "index": 3,
+          "word": "a speech",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-11",
+          "index": 4,
+          "word": "a dance floor",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-11",
+          "index": 5,
+          "word": "a celebration",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-11-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b1-12",
+      "asset": "stories/materials/Course/assets/b1-12-vocabulary161.webp",
+      "assetSha256": "3973d500ce9aafd5074f342008e2a17d0a75d47c7dfb07e2a8800742f4c129c6",
+      "assetBytes": 196504,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b1-12-vocabulary81.webp",
+      "sourceAtlasSha256": "5bbeb43d64a2c61216d25aac1471f5f24f2690b2126220246e922c2c6fb1bea2",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B112-vocabulary.png",
+      "editTargetSha256": "31aebc06f0d2729234b62a3e80c9bde0a664285d9fe5fdbaae86a53a78d4d254",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-6d7877c2-8088-43ac-b270-cdd4c289e8fa.png",
+      "generatedOriginalSha256": "ac841c9144082c8b6c22d8931520fd79fabe1b05e31baef7f2f08db8d31a143b",
+      "workspaceOriginal": ".local/scene161/originals/b1-12.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b1-12.txt",
+      "promptSha256": "77ae9a71ed7e4107381c944375a7e96d3b6c81da2f11a5daa8336cfbc3e98a25",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b1-12",
+          "index": 0,
+          "word": "a commute",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-12",
+          "index": 1,
+          "word": "a distraction",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-12",
+          "index": 2,
+          "word": "a flexible schedule",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-12",
+          "index": 3,
+          "word": "teamwork",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-12",
+          "index": 4,
+          "word": "a workspace",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-12-vocabulary161.webp"
+        },
+        {
+          "lesson": "b1-12",
+          "index": 5,
+          "word": "a work-life balance",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b1-12-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b2-01",
+      "asset": "stories/materials/Course/assets/b2-01-vocabulary161.webp",
+      "assetSha256": "4b3e6ebbd2725634124527199d9e68d812622ef0f3acbe01a030b345e4025474",
+      "assetBytes": 230360,
+      "width": 1672,
+      "height": 941,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b2-01-vocabulary81.webp",
+      "sourceAtlasSha256": "216271f46ef70098d16579db117992d867ea32a6df5ce53bec840672d43351b7",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B201-vocabulary.png",
+      "editTargetSha256": "245a3d9a8246c852e828056e57fbf1ea58658cf88bb7a42822a088eb56699c09",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-cd9a6f0b-a272-45cb-be2a-e8a369af55f6.png",
+      "generatedOriginalSha256": "ab6f47a73e7d3379304f5a3159b4583ab78b6f111464d4021b4d888b039f448b",
+      "workspaceOriginal": ".local/scene161/originals/b2-01.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b2-01.txt",
+      "promptSha256": "eb1d843b9a74037c6292a2d3078f7fb6f2b3b0508fbe825508ee5d6b37744cd1",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "windows": [
+        {
+          "lesson": "b2-01",
+          "index": 0,
+          "word": "run out of battery",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 0,
+            "row": 0,
+            "columnSpan": 320,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 416,
+            "rowSpan": 467,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            1,
+            1,
+            417,
+            468
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-01",
+          "index": 1,
+          "word": "get lost",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 320,
+            "row": 0,
+            "columnSpan": 305,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 420,
+            "row": 1,
+            "columnSpan": 415,
+            "rowSpan": 467,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            420,
+            1,
+            835,
+            468
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-01",
+          "index": 2,
+          "word": "borrow",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 625,
+            "row": 0,
+            "columnSpan": 320,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 838,
+            "row": 1,
+            "columnSpan": 414,
+            "rowSpan": 467,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            838,
+            1,
+            1252,
+            468
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-01",
+          "index": 3,
+          "word": "lend",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 945,
+            "row": 0,
+            "columnSpan": 335,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 1255,
+            "row": 1,
+            "columnSpan": 416,
+            "rowSpan": 467,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            1255,
+            1,
+            1671,
+            468
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-01",
+          "index": 4,
+          "word": "an address",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 0,
+            "row": 360,
+            "columnSpan": 427,
+            "rowSpan": 361,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 1,
+            "row": 471,
+            "columnSpan": 540,
+            "rowSpan": 469,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            1,
+            471,
+            541,
+            940
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-01",
+          "index": 5,
+          "word": "by then",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 427,
+            "row": 360,
+            "columnSpan": 426,
+            "rowSpan": 361,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 544,
+            "row": 471,
+            "columnSpan": 551,
+            "rowSpan": 469,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            544,
+            471,
+            1095,
+            940
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-01",
+          "index": 6,
+          "word": "eventually",
+          "sourceRegion": {
+            "columns": 1280,
+            "rows": 721,
+            "column": 853,
+            "row": 360,
+            "columnSpan": 427,
+            "rowSpan": 361,
+            "sourceAspectRatio": 1.7753120665742026
+          },
+          "outputRegion": {
+            "columns": 1672,
+            "rows": 941,
+            "column": 1098,
+            "row": 471,
+            "columnSpan": 573,
+            "rowSpan": 469,
+            "sourceAspectRatio": 1.7768331562167907
+          },
+          "bounds": [
+            1098,
+            471,
+            1671,
+            940
+          ],
+          "target": "stories/materials/Course/assets/b2-01-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b2-08",
+      "asset": "stories/materials/Course/assets/b2-08-vocabulary161.webp",
+      "assetSha256": "a930b8c23d402814d985c3b035a8475813c6b1e6dbd62c72d801c2a1033061ff",
+      "assetBytes": 252610,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b2-08-vocabulary81.webp",
+      "sourceAtlasSha256": "2774f318885ad44c2377e954b765ec6da78efd3ee10cc0c35aec8fac42091fc4",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B208-vocabulary.png",
+      "editTargetSha256": "7e483de5e2c48e626f32b06d1f75850a553d160b90ae0bf639d158e9e21e22ff",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-61d82d82-2f32-41a0-a992-4061f24b1b24.png",
+      "generatedOriginalSha256": "c045180538e9da42a7f3f5c213214cf00b8c6c4dbf0bf47a05203abcab0103a8",
+      "workspaceOriginal": ".local/scene161/originals/b2-08.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b2-08.txt",
+      "promptSha256": "8a56b760fdb0c5652456b9429a5f6534c4311f19b0a6e58e142ad77da2a9ed1c",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b2-08",
+          "index": 0,
+          "word": "a balcony",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-08",
+          "index": 1,
+          "word": "a viewing",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-08",
+          "index": 2,
+          "word": "a neighbourhood",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-08",
+          "index": 3,
+          "word": "a listing",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-08",
+          "index": 4,
+          "word": "a landlord",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b2-08-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-08",
+          "index": 5,
+          "word": "a maintenance fee",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b2-08-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "b2-10",
+      "asset": "stories/materials/Course/assets/b2-10-vocabulary161.webp",
+      "assetSha256": "1260190a1515cc9dc9157b62db0f697e8a880e19e09042d468bdc04c86c924d8",
+      "assetBytes": 175864,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/b2-10-vocabulary81.webp",
+      "sourceAtlasSha256": "7543f57d42866d270ca2ee7341ad5beb872b34a8f8c346c1c11d58c105dfe25c",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/B210-vocabulary.png",
+      "editTargetSha256": "bb1d63f8325c54079ac6cee95fc6aa5e7f89ee559baa38b69b6572a08467ab5f",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-d7c2d3c2-754e-4413-83ac-184aaa4a6aa2.png",
+      "generatedOriginalSha256": "4de4c654701e1ba30093671ed216560d356c09b4bf9ba3c61371b1f16a279dee",
+      "workspaceOriginal": ".local/scene161/originals/b2-10.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/b2-10.txt",
+      "promptSha256": "46d9414aa1321755ac5947a8f893aa20b7f04895c2d04ab6ed1922028a72ae85",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "b2-10",
+          "index": 0,
+          "word": "a disturbance",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-10",
+          "index": 1,
+          "word": "a complaint",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-10",
+          "index": 2,
+          "word": "a room change",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/b2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-10",
+          "index": 3,
+          "word": "a refund",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-10",
+          "index": 4,
+          "word": "an inconvenience",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b2-10-vocabulary161.webp"
+        },
+        {
+          "lesson": "b2-10",
+          "index": 5,
+          "word": "a suitable alternative",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/b2-10-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "c1-04",
+      "asset": "stories/materials/Course/assets/c1-04-vocabulary161.webp",
+      "assetSha256": "0241177060beec8003e667ec0ee5eeb83244e3091712eb8a5c0349662e38dc67",
+      "assetBytes": 216234,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/c1-04-vocabulary81.webp",
+      "sourceAtlasSha256": "491e9411ed01a85d5a63b172b44fa98b4d21a06607e76dcd1b99587e2f298768",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/C104-vocabulary.png",
+      "editTargetSha256": "535d483564a91e8133d5d898dc6bdd5277b88ae930752d64fa38727d10491789",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-4179f0b8-821c-42d2-8056-bd505128b736.png",
+      "generatedOriginalSha256": "04839caf4050357020882c6357fa0f9e1d4d609690f76eea23f450f5b770aa43",
+      "workspaceOriginal": ".local/scene161/originals/c1-04.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/c1-04.txt",
+      "promptSha256": "d4149dfd39b9014d4c98f8a4b02b4cd5a1e8a49d5f7e76cb86310c27bbde8e77",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "c1-04",
+          "index": 0,
+          "word": "set a boundary",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/c1-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-04",
+          "index": 1,
+          "word": "bring something up",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/c1-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-04",
+          "index": 2,
+          "word": "a shared space",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/c1-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-04",
+          "index": 3,
+          "word": "an expectation",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/c1-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-04",
+          "index": 4,
+          "word": "a compromise",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/c1-04-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-04",
+          "index": 5,
+          "word": "a recurring issue",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/c1-04-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    },
+    {
+      "lesson": "c1-11",
+      "asset": "stories/materials/Course/assets/c1-11-vocabulary161.webp",
+      "assetSha256": "e430fe73d5dccf751eaafd0c6b7e8c0cda815ac1b18b91b0f08bc97edee6d1b7",
+      "assetBytes": 192458,
+      "width": 1536,
+      "height": 1024,
+      "alphaExtrema": [
+        255,
+        255
+      ],
+      "sourceAtlas": "stories/materials/Course/assets/c1-11-vocabulary81.webp",
+      "sourceAtlasSha256": "e36eb40175cb97472e5df748c2d39bc60601186371a2d627a7a7e9449fa39d53",
+      "editTarget": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-continuous81-20261123/images/originals/C111-vocabulary.png",
+      "editTargetSha256": "99285590a396b46e4514b9d96cdde2e64908e0f6f93f37058efb2ecaf67fc978",
+      "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-91c4418b-0cef-4a5e-ac51-94902101e6f7.png",
+      "generatedOriginalSha256": "c0e7dbf0e6a109ac368207d53167cffd32a09333e20d18e5ac82990780959d27",
+      "workspaceOriginal": ".local/scene161/originals/c1-11.png",
+      "prompt": "docs/materials/prompts/scene-backgrounds161/c1-11.txt",
+      "promptSha256": "dc80daaf1195af907a14da827c9cdb6bab89cab702c445e3f869e479c9693225",
+      "calls": 1,
+      "references": 1,
+      "selectedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "windows": [
+        {
+          "lesson": "c1-11",
+          "index": 0,
+          "word": "in other words",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            1,
+            511,
+            511
+          ],
+          "target": "stories/materials/Course/assets/c1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-11",
+          "index": 1,
+          "word": "what I mean is",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            1,
+            1023,
+            511
+          ],
+          "target": "stories/materials/Course/assets/c1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-11",
+          "index": 2,
+          "word": "to put it another way",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            1,
+            1535,
+            511
+          ],
+          "target": "stories/materials/Course/assets/c1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-11",
+          "index": 3,
+          "word": "a misunderstanding",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1,
+            513,
+            511,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/c1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-11",
+          "index": 4,
+          "word": "a clarification",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            513,
+            513,
+            1023,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/c1-11-vocabulary161.webp"
+        },
+        {
+          "lesson": "c1-11",
+          "index": 5,
+          "word": "common ground",
+          "sourceRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "outputRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
+            "sourceAspectRatio": 1.5
+          },
+          "bounds": [
+            1025,
+            513,
+            1535,
+            1023
+          ],
+          "target": "stories/materials/Course/assets/c1-11-vocabulary161.webp"
+        }
+      ],
+      "processing": "full-size RGB WebP quality92; viewport excludes only panel-divider edge pixels; no background extraction or repaint"
+    }
+  ]
+}

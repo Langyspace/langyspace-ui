@@ -3,10 +3,12 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import baseline from '../../../docs/epics/flashcards124/preservation.baseline124.json'
-import nativeViews from '../../../stories/materials/Practice/native-views159.provenance.json'
+import nativeViews159 from '../../../stories/materials/Practice/native-views159.provenance.json'
+import nativeScenes161 from '../../../stories/materials/Practice/native-scenes161.provenance.json'
 import type { CoursePracticeData } from '../../../stories/materials/Practice/Practice.types'
 
 const directory = resolve('stories/materials/Practice/lessons')
+const nativeViews = [...nativeScenes161.views, ...nativeViews159.views]
 const lessons = readdirSync(directory)
   .filter((name) => name.endsWith('.json'))
   .map(
@@ -23,11 +25,13 @@ const concept = (word: string) =>
     .replace(/[.?!]+$/u, '')
     .replace(/^(a |an |the )/u, '')
 
-// These authored image replacements preserve each original viewport as a whole
-// bitmap. Restore only their documented old media fields for the content baseline;
+// Authored whole-view replacements include the background-restored scene artwork.
+// Restore only their documented old media fields for the content baseline;
 // HomeworkMedia131 still checks the actual current image bindings.
-function withBaselineMedia(card: Record<string, unknown>) {
-  const view = nativeViews.views.find((item) => item.cardId === card.id)
+function withBaselineMedia(lesson: string, card: Record<string, unknown>) {
+  const view = nativeViews.find(
+    (item) => item.lesson === lesson && item.cardId === card.id,
+  )
   if (!view) return card
   expect(card.imageSrc, view.cardId).toBe(view.storagePath)
   expect(card.imageRegion, view.cardId).toBeUndefined()
@@ -39,10 +43,11 @@ function withBaselineMedia(card: Record<string, unknown>) {
     ...card,
     imageSrc: view.previousMedia.imageSrc,
   })
-  entries.splice(view.previousRegionIndex, 0, [
-    'imageRegion',
-    view.previousMedia.imageRegion,
-  ])
+  if (view.previousRegionIndex >= 0 && 'imageRegion' in view.previousMedia)
+    entries.splice(view.previousRegionIndex, 0, [
+      'imageRegion',
+      view.previousMedia.imageRegion,
+    ])
   return Object.fromEntries(entries)
 }
 
@@ -79,7 +84,10 @@ describe('Homework flashcard minimum', () => {
             first.cards
               .slice(0, row.beforeCount)
               .map((card) =>
-                withBaselineMedia(card as unknown as Record<string, unknown>),
+                withBaselineMedia(
+                  row.key,
+                  card as unknown as Record<string, unknown>,
+                ),
               ),
           ),
         )
