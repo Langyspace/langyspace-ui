@@ -112,7 +112,7 @@ export function MaterialStudentSelectionMenu() {
           ? [
               {
                 id: 'none',
-                label: 'Sem aluna · rascunho',
+                label: 'Rascunho',
                 onSelect: () => context.select(null),
               },
               ...context.options.map((option) => ({

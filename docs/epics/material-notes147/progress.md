@@ -11,3 +11,5 @@ Local fixture: UI `.local/notes147/server.mjs`, http://127.0.0.1:8897/notes-revi
 Prepared for a feature-branch draft review. Comparable before screenshots and a logged-in portal walkthrough are still pending; the PR remains draft. Teacher feature must consume the matching new neutral material export before a deployment; current static published assets are intentionally unchanged. No package release, neutral export, merge or deployment was triggered by this change.
 
 Visual gate review: pending human
+
+Copy refinement: the clear-selection menu item now reads Rascunho. Local fixture names are Ana, Bia and Clara, without test-case suffixes; the surrounding fixture notice continues to identify fictitious data. Verified in the native menu; copy-only change, no behavioral test repeated.
