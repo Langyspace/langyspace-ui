@@ -113,3 +113,5 @@ For a single bounded scene, `SlidePage width={{mediaAspectRatio: imageWidth / im
 The column remains centered, respects available horizontal space and the existing expanded width ceiling. Invalid/zero/non-finite ratios fall back to the standard wide column. Existing width presets remain compatible. Question grids retain their full-width heading above the composition. Split introductions retain their intentionally separate heading column beside the exercise. Media fitting does not alter either layout. The TrialA1 park page is the first adoption; no unrelated page migration is implied.
 
 `SlideAudioAction contentKind="audio"` usa Play/Pause/Continue audio para narração de leitura. O padrão dialogue preserva os rótulos existentes e os mesmos estados/controle de reprodução.
+
+`SlideAudioAction.onRestart` adds an optional neutral restart icon beside play/pause. The consumer restarts the full recording or sequence from zero; this action never toggles pause/resume. Both controls share the same disabled state. ReviewedLesson provides it for its recorded title audio.

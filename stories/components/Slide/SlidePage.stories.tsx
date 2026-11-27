@@ -275,3 +275,19 @@ export const CenteredConversationColumns: Story = {
   args: { ...TwoColumnConversation.args, columnAlignment: 'center' },
   tags: ['layout-boundary', 'visual-review'],
 }
+
+export const ReadingWithRestart: Story = {
+  tags: ['visual-review'],
+  args: {
+    title: 'Listen and read Ana’s update',
+    eyebrow: 'Reading',
+    instruction: 'Listen first, then read and answer the questions',
+    titleAudio: {
+      context: 'Ana’s update',
+      contentKind: 'audio',
+      status: 'paused',
+      onClick: () => undefined,
+      onRestart: () => undefined,
+    },
+  },
+}

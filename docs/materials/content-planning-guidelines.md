@@ -536,3 +536,5 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 **Anatomia em ações com objetos:** conferir a ligação contínua de cada braço ao respectivo ombro, além da contagem de membros e mãos. Um braço de cada lado do tronco; evitar sobreposições ambíguas que pareçam dois braços saindo do mesmo lado. Corrigir a imagem antes de adotá-la, mantendo o prompt de estilo canônico intacto.
 
 **Leitura com contexto:** usar título e parágrafos legíveis, sem metadados de email quando o gênero não for email. No B1, elaborar o episódio com linguagem acessível e exemplos da gramática em contexto; oferecer narração pelo play canônico do título. Colocar ao menos três perguntas factuais/inferenciais na coluna de Questions e ligar a prática pessoal seguinte ao tema, sem repetir o questionário nem misturar outra tarefa no rodapé.
+
+**Recomeçar a escuta:** áudios no título precisam permitir reiniciar desde o começo, além de pausar e retomar. Usar o ícone canônico ao lado do play e reutilizar a mesma gravação; reinício não pode simplesmente continuar do ponto pausado.

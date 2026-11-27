@@ -8,4 +8,6 @@ export interface SlideAudioActionProps {
   disabled?: boolean
   describedBy?: string
   onClick: () => void
+  /** Start the complete recording/sequence from the beginning, independently of pause/resume. */
+  onRestart?: () => void
 }

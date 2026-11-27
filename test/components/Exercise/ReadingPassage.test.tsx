@@ -102,6 +102,29 @@ it('places three interpretation questions beside the B1 reading and binds the wh
     .mocked(HTMLMediaElement.prototype.play)
     .mock.instances.at(-1) as HTMLAudioElement
   expect(media.src).toContain('B101-R145.1.mp3')
+  media.currentTime = 12
+  await act(async () =>
+    fireEvent.click(
+      slide.getByRole('button', { name: `Restart audio: ${page.title}` }),
+    ),
+  )
+  expect(media.currentTime).toBe(0)
+  expect(vi.mocked(HTMLMediaElement.prototype.play).mock.instances.at(-1)).toBe(
+    media,
+  )
+  fireEvent.click(
+    slide.getByRole('button', { name: `Pause audio: ${page.title}` }),
+  )
+  media.currentTime = 18
+  await act(async () =>
+    fireEvent.click(
+      slide.getByRole('button', { name: `Restart audio: ${page.title}` }),
+    ),
+  )
+  expect(media.currentTime).toBe(0)
+  expect(
+    slide.getByRole('button', { name: `Pause audio: ${page.title}` }),
+  ).toHaveAttribute('aria-pressed', 'true')
   fireEvent.click(
     slide.getByRole('button', { name: `Pause audio: ${page.title}` }),
   )

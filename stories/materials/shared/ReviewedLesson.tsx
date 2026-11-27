@@ -702,6 +702,7 @@ export function ReviewedLesson({
                               playing
                                 ? speech.togglePause()
                                 : speech.speak(lines),
+                            onRestart: () => speech.speak(lines),
                           }
                         : undefined
                     }
