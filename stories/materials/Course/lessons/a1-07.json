@@ -321,7 +321,7 @@
       "message": "Hi, Ana! Your gate is different now. Please go to gate eight, not gate six. It’s next to the café. You have time for some water. Keep your passport with you. I’m near the gate. See you there!",
       "audioText": "Hi, Ana! Your gate is different now. Please go to gate eight, not gate six. It’s next to the café. You have time for some water. Keep your passport with you. I’m near the gate. See you there!",
       "audioId": "A107-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "The gate has changed — here’s the terminal",
       "items": [
         {
           "id": "listen",
@@ -343,7 +343,14 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "a1-07-cover81",
+        "alt": "An airport terminal, shared as context for the gate change"
+      }
     },
     {
       "id": "s_reply",

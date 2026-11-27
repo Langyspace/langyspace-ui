@@ -362,7 +362,7 @@
       "message": "Hi, Ana. Leo just called me. He was driving to the café when he got stuck in traffic. There’s a lot of traffic near the station, so he’s running late too. He thinks he can be here at one thirty. He’s fine, and he says we should order our food now. Shall we get a table?",
       "audioText": "Hi, Ana. Leo just called me. He was driving to the café when he got stuck in traffic. There’s a lot of traffic near the station, so he’s running late too. He thinks he can be here at one thirty. He’s fine, and he says we should order our food now. Shall we get a table?",
       "audioId": "A203-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I’ve heard from Leo about the traffic",
       "items": [
         {
           "id": "listen",
@@ -384,7 +384,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

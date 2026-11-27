@@ -133,6 +133,8 @@ it('keeps transcript overrides independent per recording and resets only a repla
   const secondary = screen.getByRole('button', {
     name: 'Show transcript (2/2)',
   })
+  expect(primary).toHaveTextContent(/^Transcript$/)
+  expect(secondary).toHaveTextContent(/^Transcript$/)
   expect(primary.getAttribute('aria-controls')).not.toBe(
     secondary.getAttribute('aria-controls'),
   )

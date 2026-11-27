@@ -14,7 +14,7 @@ Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou rep
 
 **Voltar à biblioteca:** o botão “Voltar” do cabeçalho aparece em todas as páginas, inclusive capa e encerramento, e tenta ativar a aba original da biblioteca, sem recarregar nem perder filtros. Se ela estiver fechada, em outra rota/origem ou o navegador impedir o foco, abre a listagem na aba atual. Somente links internos de apresentação mantêm a referência à aba original; links externos continuam isolados. Setas e gestos continuam navegando pelas páginas da aula. A biblioteca local abre os materiais da própria prévia, sem exigir login no portal.
 
-**Transcript no WhatsApp:** cada áudio oferece “Transcript” pequeno, cinza-claro e com espaçamento mínimo dentro do balão, sem fundo, borda, ícone ou hover. O clique substitui esse rótulo pela transcrição em tamanho normal de leitura; clicar no próprio texto fecha e restaura o rótulo. Manter foco visível, acesso por teclado e a abertura automática na terceira escuta.
+**Transcript no WhatsApp:** cada áudio oferece “Transcript” pequeno, cinza-claro e com espaçamento mínimo dentro do balão, sem fundo, borda, ícone ou hover. O clique substitui esse rótulo pela transcrição em tamanho normal de leitura; clicar no próprio texto fecha e restaura o rótulo. Manter foco visível, acesso por teclado e a abertura automática na terceira escuta. Não exibir contadores 1/2 ou 2/2 no rótulo; identificar os controles de cada gravação apenas nos nomes acessíveis.
 
 
 Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
@@ -539,3 +539,12 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 **Leitura com contexto:** usar título e parágrafos legíveis, sem metadados de email quando o gênero não for email. No B1, elaborar o episódio com linguagem acessível e exemplos da gramática em contexto; oferecer narração pelo play canônico do título. Colocar ao menos três perguntas factuais/inferenciais na coluna de Questions e ligar a prática pessoal seguinte ao tema, sem repetir o questionário nem misturar outra tarefa no rodapé.
 
 **Recomeçar a escuta:** áudios no título precisam permitir reiniciar desde o começo, além de pausar e retomar. Usar o ícone canônico ao lado do play e reutilizar a mesma gravação; reinício não pode simplesmente continuar do ponto pausado.
+
+## Variação dos chats de WhatsApp — revisão141
+
+- Distribuir personagens e formatos entre aulas; a versão de uma aula é estável ao reabrir. Nunca sortear um áudio sem suas próprias perguntas e referências. Reutilizar o [registro de personagens](../characters/character-media.json): nome, retrato, ID de voz/sotaque, prompt/hash e estilo de conversa. Persona editorial não inventa nacionalidade, idade ou história anterior.
+- Variar com propósito: uma nota objetiva; duas notas em continuidade da mesma pessoa; uma imagem pertinente com áudio; ou um link de vídeo compartilhado com áudio. Não incluir todos os formatos no mesmo chat. Uma mensagem escrita curta contextualiza cada conversa; evitar repetir “I have an update for you” em todas as aulas.
+- Duas notas dividem informação nova em pontos naturais, sem saudação repetida. Preservar fatos, gramática, nível e as respostas das perguntas. Trocar o contato exige voz e retrato correspondentes; nunca renomear a gravação de Kim como Priya. Usar IDs únicos por aula e correspondência exata de ID+texto.
+- Imagem recebida sustenta o assunto; não adicionar detalhes visuais obrigatórios que contradigam a gravação. Preferir mídia já aprovada. Preservar as fotos de Jin/Tom, a mensagem de Leo, as notas da Ana no parque e outros exemplos válidos.
+- A prévia de YouTube no celular abre a página de vídeo já preparada na mesma aula, com o trecho limitado e suas quatro perguntas. Não criar um player minúsculo extra nem abrir outro navegador. Pausar as notas ao navegar. Continuam proibidos Shorts; vídeo externo não toca sozinho.
+- Manter o mesmo VoiceMessageExercise: contato, imagem opcional, videoAttachment e additionalAudios são dados/props, não versões paralelas de celular. Transcript, erro/repetição, um áudio por vez, perguntas canônicas e navegação continuam no componente compartilhado.

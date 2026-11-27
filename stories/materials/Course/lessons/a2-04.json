@@ -348,13 +348,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "The opening time is later",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen and answer, then open the video shared in the chat",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! I checked the food festival. It opens at eleven on Sunday, not ten. Would eleven thirty work for you? We could meet at the main entrance and have lunch there. I’m still free in the afternoon. If Sunday is difficult, the festival is also open on Saturday until six. What do you think?",
       "audioText": "Hi, Ana! I checked the food festival. It opens at eleven on Sunday, not ten. Would eleven thirty work for you? We could meet at the main entrance and have lunch there. I’m still free in the afternoon. If Sunday is difficult, the festival is also open on Saturday until six. What do you think?",
       "audioId": "A204-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "This clip gave me another idea for making plans",
       "items": [
         {
           "id": "listen",
@@ -376,7 +376,11 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "videoPageId": "s_video102"
     },
     {
       "id": "s_reply",

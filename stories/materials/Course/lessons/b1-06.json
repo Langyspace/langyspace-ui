@@ -367,7 +367,7 @@
       "message": "Hi, Ana. I’m most concerned about having time for an afternoon course. A higher salary would be welcome, but it isn’t the main reason I’m thinking of changing jobs. I’d accept a longer commute on some days if the flexible hours were real. Before I choose offer B, could you help me decide what to ask the employer? They haven’t confirmed whether I can keep my afternoons free. I’d like to check that before accepting",
       "audioText": "Hi, Ana. I’m most concerned about having time for an afternoon course. A higher salary would be welcome, but it isn’t the main reason I’m thinking of changing jobs. I’d accept a longer commute on some days if the flexible hours were real. Before I choose offer B, could you help me decide what to ask the employer? They haven’t confirmed whether I can keep my afternoons free. I’d like to check that before accepting.",
       "audioId": "B106-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I’ve been thinking about what matters most to me",
       "items": [
         {
           "id": "listen",
@@ -389,7 +389,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

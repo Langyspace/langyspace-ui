@@ -17,9 +17,15 @@ import a12 from '../assets/audio/A206-D81.7.mp3'
 import a13 from '../assets/audio/A206-D81.8.mp3'
 import a14 from '../assets/audio/A206-L81.1.mp3'
 import i0 from '../assets/a2-06-vocabulary81.webp'
+import w141clip0 from '../assets/audio/A206-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'A206-W141.1',
+      text: 'Hello, Ana. This is a message about your appointment at the Green Clinic. The time is now four o’clock this afternoon, not three. The address is the same. Please come to reception ten minutes before your appointment. You don’t need to reply if four is OK. If you need another time, please call reception. Thank you.',
+      src: w141clip0,
+    },
     { id: 'A206-FS81.0', text: 'a headache. I have a headache.', src: a0 },
     {
       id: 'A206-FS81.1',

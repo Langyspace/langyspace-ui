@@ -417,7 +417,7 @@
       "message": "Hi, Ana. Course A has changed its live session from Wednesday to Tuesday, still seven to nine. The person on our brief has a regular Tuesday commitment and cannot attend live then. The provider also says the practical feedback is only given during that live class, not on a recording afterwards. The price and eight-week length are unchanged. This turns attendance from a flexible preference into a serious constraint. Course B’s Friday check-in still fits, but we should confirm whether its feedback covers the person’s project before accepting the higher cost. Could you explain how the balance has changed rather than simply saying the more expensive course is now better? There may also be a later run of A worth asking about",
       "audioText": "Hi, Ana. Course A has changed its live session from Wednesday to Tuesday, still seven to nine. The person on our brief has a regular Tuesday commitment and cannot attend live then. The provider also says the practical feedback is only given during that live class, not on a recording afterwards. The price and eight-week length are unchanged. This turns attendance from a flexible preference into a serious constraint. Course B’s Friday check-in still fits, but we should confirm whether its feedback covers the person’s project before accepting the higher cost. Could you explain how the balance has changed rather than simply saying the more expensive course is now better? There may also be a later run of A worth asking about.",
       "audioId": "C106-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "One more detail before we draw a conclusion",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

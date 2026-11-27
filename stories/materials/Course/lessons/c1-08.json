@@ -417,7 +417,7 @@
       "message": "Hi, Ana. I’ve thought about the group-session proposal. I can accept two live sessions a month instead of four, and I’m happy to try short written updates between them. I still need the dates confirmed at least seven days ahead; reducing the frequency doesn’t remove that planning need. Could we treat the two-session arrangement as a four-week trial and review whether the updates cover the gaps? We seem to agree on regular contact and a trial. The sticking point is not willingness to participate, but the notice required to make participation feasible. Please could you confirm that part explicitly before we tell the group the whole proposal has been accepted?",
       "audioText": "Hi, Ana. I’ve thought about the group-session proposal. I can accept two live sessions a month instead of four, and I’m happy to try short written updates between them. I still need the dates confirmed at least seven days ahead; reducing the frequency doesn’t remove that planning need. Could we treat the two-session arrangement as a four-week trial and review whether the updates cover the gaps? We seem to agree on regular contact and a trial. The sticking point is not willingness to participate, but the notice required to make participation feasible. Please could you confirm that part explicitly before we tell the group the whole proposal has been accepted?",
       "audioId": "C108-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I checked what is possible and what isn’t",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

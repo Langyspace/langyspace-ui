@@ -347,36 +347,47 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "What Kim actually did",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "What Niamh actually did",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
-      "message": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead. I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?",
-      "audioText": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead. I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?",
-      "audioId": "A202-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead",
+      "audioText": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead.",
+      "audioId": "A202-W141.1",
+      "greeting": "Here’s what I ended up doing on Sunday",
       "items": [
         {
           "id": "listen",
-          "prompt": "Where did Kim go instead of the museum?",
+          "prompt": "Where did Niamh go instead of the museum?",
           "hint": "She went to …",
-          "answer": "Kim went to the beach"
+          "answer": "Niamh went to the beach"
         },
         {
           "id": "s_listening.q98.2",
           "prompt": "Why did she change her plan?",
           "hint": "The weather was …",
-          "answer": "Kim changed her plan because the weather was beautiful"
+          "answer": "Niamh changed her plan because the weather was beautiful"
         },
         {
           "id": "s_listening.q98.3",
           "prompt": "What did she do after her walk?",
           "hint": "She took … and had …",
-          "answer": "Kim took photos and had lunch with a friend"
+          "answer": "Niamh took photos and had lunch with a friend"
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Niamh"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "A202-W141.2",
+          "audioText": "I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?",
+          "message": "I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?",
+          "timestamp": "10:02"
+        }
+      ]
     },
     {
       "id": "s_reply",

@@ -1,3 +1,9 @@
+import evelyn from '../Practice/assets/characters/evelyn-carter.webp'
+import cian from '../Practice/assets/characters/cian-walsh.webp'
+import noah from '../Practice/assets/characters/noah-ellis.webp'
+import arjun from '../Practice/assets/characters/arjun-mehta.webp'
+import zanele from '../Practice/assets/characters/zanele-dlamini.webp'
+import theo from '../Practice/assets/characters/theo-jacobs.webp'
 import anna from './assets/anna-profile81.webp'
 import ben from './assets/ben-profile81.webp'
 import ana from './assets/ana-profile-soft-v2.webp'
@@ -23,6 +29,12 @@ const characterPortraits: Readonly<Record<string, string>> = {
   Priya: priya,
   Niamh: niamh,
   Ruby: ruby,
+  Evelyn: evelyn,
+  Cian: cian,
+  Noah: noah,
+  Arjun: arjun,
+  Zanele: zanele,
+  Theo: theo,
 }
 export const characterPortrait = (speaker: string) =>
   characterPortraits[speaker.replace(/^Teacher:\s*/, '').trim()]

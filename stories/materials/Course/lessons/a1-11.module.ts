@@ -16,9 +16,15 @@ import a11 from '../assets/audio/A111-D81.6.mp3'
 import a12 from '../assets/audio/A111-L81.1.mp3'
 import i0 from '../assets/a1-11-vocabulary81.webp'
 import evidence123 from '../assets/a1-11-gift-options123.webp'
+import w141clip0 from '../assets/audio/A111-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'A111-W141.1',
+      text: 'Hi, Ana! Thank you for looking for my gift. I like the green T-shirt. Medium is right for me. I don’t need a jacket. Twelve dollars is OK. Can you bring the T-shirt on Friday? We can meet at the café. Thank you!',
+      src: w141clip0,
+    },
     { id: 'A111-FS81.0', text: 'T-shirt. This T-shirt is green.', src: a0 },
     { id: 'A111-FS81.1', text: 'shoes. These shoes are small.', src: a1 },
     { id: 'A111-FS81.2', text: 'jacket. That jacket is blue.', src: a2 },

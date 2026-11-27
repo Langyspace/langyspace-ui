@@ -402,7 +402,7 @@
       "message": "Hi, Ana. There’s a case our draft policy hasn’t addressed. A learner uses a phone to read material aloud and communicate when speaking is difficult. Asking for permission publicly every lesson would draw attention to private information and could delay participation. The learner isn’t asking to use social media. Could you reconsider how the exception works, rather than treating this as a choice between no rules and unlimited phone use? A private agreement, clear permitted use and a way to review problems might be worth discussing. The main classroom concern remains repeated social-message checking, so we still need a rule that addresses that specific problem",
       "audioText": "Hi, Ana. There’s a case our draft policy hasn’t addressed. A learner uses a phone to read material aloud and communicate when speaking is difficult. Asking for permission publicly every lesson would draw attention to private information and could delay participation. The learner isn’t asking to use social media. Could you reconsider how the exception works, rather than treating this as a choice between no rules and unlimited phone use? A private agreement, clear permitted use and a way to review problems might be worth discussing. The main classroom concern remains repeated social-message checking, so we still need a rule that addresses that specific problem.",
       "audioId": "B212-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I’ve thought about the options a little more",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

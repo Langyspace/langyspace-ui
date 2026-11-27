@@ -343,7 +343,7 @@
       "message": "Hi, Ana. There’s an update about the bicycle report. A blue bike with a black basket has been found near the station. The yellow sticker hasn’t been confirmed, and the serial number hasn’t been checked yet. It may be the missing bike, but it hasn’t been identified as yours. Reception will contact you when the identifying details have been compared. Could you tell the other person what has actually been confirmed, and what you still need to ask?",
       "audioText": "Hi, Ana. There’s an update about the bicycle report. A blue bike with a black basket has been found near the station. The yellow sticker hasn’t been confirmed, and the serial number hasn’t been checked yet. It may be the missing bike, but it hasn’t been identified as yours. Reception will contact you when the identifying details have been compared. Could you tell the other person what has actually been confirmed, and what you still need to ask?",
       "audioId": "B109-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s a bike picture to go with the update",
       "items": [
         {
           "id": "listen",
@@ -365,7 +365,14 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "b1-09-cover81",
+        "alt": "A bicycle scene, shared as context for the missing-bike update"
+      }
     },
     {
       "id": "s_reply",

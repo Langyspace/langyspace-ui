@@ -16,9 +16,15 @@ import a11 from '../assets/audio/A108-D81.6.mp3'
 import a12 from '../assets/audio/A108-L81.1.mp3'
 import i0 from '../assets/a1-08-vocabulary81.webp'
 import evidence123 from '../assets/a1-08-hotel-problems123.webp'
+import w141clip0 from '../assets/audio/A108-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'A108-W141.1',
+      text: 'Hello, Ana. This is reception. Someone can come to your room at seven this evening, not six. We have two towels for you here. You can collect them now, or we can bring them at seven. Please tell us what you need. Thank you!',
+      src: w141clip0,
+    },
     { id: 'A108-FS81.0', text: 'room. My room is on the left.', src: a0 },
     { id: 'A108-FS81.1', text: 'key. Can I have my key, please?', src: a1 },
     { id: 'A108-FS81.2', text: 'shower. The shower doesn’t work.', src: a2 },

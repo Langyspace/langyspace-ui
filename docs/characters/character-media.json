@@ -1,0 +1,460 @@
+{
+  "version": 141,
+  "characters": [
+    {
+      "id": "ana",
+      "name": "Ana",
+      "fullName": "Ana",
+      "accentCode": "en-US",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/ana.webp",
+        "sha256": "9657b07ba2d91040e131711972c8029d702d3c84b3ea1955e86e9065c920f276",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": null,
+        "archivedOriginalPrompt": null,
+        "promptAvailability": "original_prompt_not_yet_located",
+        "promptSha256": null,
+        "stylePrefixSha256": null
+      },
+      "voice": {
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "source": "stories/materials/A103/audio-provenance.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Warm, curious and encouraging; invites personal examples",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null,
+      "materialPortrait": {
+        "file": "stories/materials/shared/assets/ana-profile-soft-v2.webp",
+        "sha256": "9657b07ba2d91040e131711972c8029d702d3c84b3ea1955e86e9065c920f276",
+        "source": "stories/materials/shared/characterPortraits.ts"
+      }
+    },
+    {
+      "id": "kim",
+      "name": "Kim",
+      "fullName": "Kim",
+      "accentCode": "en-US",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/kim.webp",
+        "sha256": "22b936311d5bf6fa2c61fe958871eccbb98e5e69808229a61fba9d8eda0732a0",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": null,
+        "archivedOriginalPrompt": null,
+        "promptAvailability": "original_prompt_not_yet_located",
+        "promptSha256": null,
+        "stylePrefixSha256": null
+      },
+      "voice": {
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "source": "stories/materials/DevFirstDay/audio-provenance95-active.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Practical and friendly; gives concrete requests and useful updates",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null,
+      "materialPortrait": {
+        "file": "stories/materials/shared/assets/kim-profile-approved.webp",
+        "sha256": "22b936311d5bf6fa2c61fe958871eccbb98e5e69808229a61fba9d8eda0732a0",
+        "source": "stories/materials/shared/characterPortraits.ts"
+      }
+    },
+    {
+      "id": "anna",
+      "name": "Anna",
+      "fullName": "Anna",
+      "accentCode": "en-US",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/anna.webp",
+        "sha256": "596164c6b36ca4425b0ab273b0ad0ed588ec9a7efd3e06e22abece4a6b597336",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": null,
+        "archivedOriginalPrompt": null,
+        "promptAvailability": "original_prompt_not_yet_located",
+        "promptSha256": null,
+        "stylePrefixSha256": null
+      },
+      "voice": {
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "source": "stories/materials/A201/audio-provenance.json",
+        "continuityEvidence": "Practice portrait is byte-identical to the approved A201 shared portrait; the recorded A201 speaker supplies the voice identity",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Relaxed and observant; shares everyday details",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "ben",
+      "name": "Ben",
+      "fullName": "Ben",
+      "accentCode": "en-US",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/ben.webp",
+        "sha256": "d88388410e50097caf72bafbffab1b3cbabf5fb0ba0b3d6a68fbd793cc06db70",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": null,
+        "archivedOriginalPrompt": null,
+        "promptAvailability": "original_prompt_not_yet_located",
+        "promptSha256": null,
+        "stylePrefixSha256": null
+      },
+      "voice": {
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "source": "stories/materials/A201/audio-provenance.json",
+        "continuityEvidence": "Practice portrait is byte-identical to the approved A201 shared portrait; the recorded A201 speaker supplies the voice identity",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Direct and approachable; asks short follow-up questions",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "evelyn-carter",
+      "name": "Evelyn",
+      "fullName": "Evelyn Carter",
+      "accentCode": "en-GB",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/evelyn-carter.webp",
+        "sha256": "74a0ef8b36ec7166573d9f964fc96adb885bf6fbfcf70936bfb1093f02d90979",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-evelyn-carter.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/evelyn-carter.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "cdd4c16c215647f007bfc51fdd6e3a59ea298b6daac95f7bb14327a4c897533c",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
+        "sourceName": "Alice - Clear, Engaging Educator",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Clear and organised; explains changes without jargon",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "owen-harris",
+      "name": "Owen",
+      "fullName": "Owen Harris",
+      "accentCode": "en-GB",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/owen-harris.webp",
+        "sha256": "9704a7ec89e8f12faa742c91252964179abbfd5b0c173ab4883d8ff27dd6371c",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-owen-harris.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/owen-harris.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "ed1a1427f38071bcaed7ff9e5bea0a29bd603305790e1a60c312067dbef00001",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+        "sourceName": "George - Warm, Captivating Storyteller",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Practical and reflective; explains reasons and trade-offs",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "niamh-murphy",
+      "name": "Niamh",
+      "fullName": "Niamh Murphy",
+      "accentCode": "en-IE",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/niamh-murphy.webp",
+        "sha256": "8f7e6613c71880ca6bfafd388affba26f437be6e2b21e56fd21fca063b291d76",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-niamh-murphy.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/niamh-murphy.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "c52f248082afc63e7450fab1ffc44118d1132015fe9b155760994ec3b770b8a0",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "t6WJWTYTryhcQnrBHdCr",
+        "sourceName": "Louisamay - Warm and Engaging",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Conversational and curious; shares details and invites a reply",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "cian-walsh",
+      "name": "Cian",
+      "fullName": "Cian Walsh",
+      "accentCode": "en-IE",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/cian-walsh.webp",
+        "sha256": "519d1d93c04e10c6f5e582a1126ce19ee479bc68b001f4cfc04083b8c1323222",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-cian-walsh.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/cian-walsh.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "ea2f2b61772aa7be18a1033d844746407af6f4ec2238e570de2cc2661d2cf1ce",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "qwaVDEGNsBllYcZO1ZOJ",
+        "sourceName": "Patrick - Engaging and Warm",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Friendly and concise; asks an open follow-up",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "ruby-bennett",
+      "name": "Ruby",
+      "fullName": "Ruby Bennett",
+      "accentCode": "en-AU",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/ruby-bennett.webp",
+        "sha256": "702df9a7643ad47bec8ee07214bd5c3720c6367c24701dd0556b435cb49ea515",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-ruby-bennett.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/ruby-bennett.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "e0d40cb638c6a8360511f0bc31d9986459857ac34edce2dd1385b5d7482dc9d7",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "56bWURjYFHyYyVf490Dp",
+        "sourceName": "Emma",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Upbeat and resourceful; suggests a concrete next step",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "noah-ellis",
+      "name": "Noah",
+      "fullName": "Noah Ellis",
+      "accentCode": "en-AU",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/noah-ellis.webp",
+        "sha256": "c93c4d8b919a1ed2f18767113067b6d665ceefaa1513a59d3d80f4c29d0eb451",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-noah-ellis.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/noah-ellis.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "b167ecb78384f574a4e4231e65982cfabdd73af38fd61a65dad2975fa316943b",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "IKne3meq5aSn9XLyUdCD",
+        "sourceName": "Charlie - Deep, Confident, Energetic",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Easy-going and clear; connects an example with a question",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "priya-nair",
+      "name": "Priya",
+      "fullName": "Priya Nair",
+      "accentCode": "en-IN",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/priya-nair.webp",
+        "sha256": "b3e56bd94744e0d27e257e20b2e40431bedb695d99cec3b2a269e2ca8abafe7e",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-priya-nair.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/priya-nair.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "42e50cc57c2adf3121cd13668dcff17b4ade8901fcce23bc4035c077e4f45ed2",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "2zRM7PkgwBPiau2jvVXc",
+        "sourceName": "Monika Sogam - Deep and Natural",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Thoughtful and collaborative; explains a problem and checks understanding",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "arjun-mehta",
+      "name": "Arjun",
+      "fullName": "Arjun Mehta",
+      "accentCode": "en-IN",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/arjun-mehta.webp",
+        "sha256": "73253e723aba15bd32f242860566a81f95e9fa56d5445f8c98d02eb36bd49032",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-arjun-mehta.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/arjun-mehta.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "d7045b4a9bca50f836664cfd8c923d3628eeb279058602170a1d8e10b82fbf54",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "2iAXJEMO2o0PqUHzvZwQ",
+        "sourceName": "Ranbir - Neutral and Clean",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Calm and precise; separates what is known from the next action",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "zanele-dlamini",
+      "name": "Zanele",
+      "fullName": "Zanele Dlamini",
+      "accentCode": "en-ZA",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/zanele-dlamini.webp",
+        "sha256": "7894117e699bb78aca604039bcd5f9121d7f44432041cd75a23bb513c72792e1",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-zanele-dlamini.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/zanele-dlamini.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "26ba0df780e95719b002f161b32672bc86a8975d52d41c0e130fc128528ee419",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "BcpjRWrYhDBHmOnetmBl",
+        "sourceName": "Thandi - Clear and Engaging Narrator",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Warm and expressive; offers a useful perspective",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "theo-jacobs",
+      "name": "Theo",
+      "fullName": "Theo Jacobs",
+      "accentCode": "en-ZA",
+      "portrait": {
+        "file": "stories/materials/Practice/assets/characters/theo-jacobs.webp",
+        "sha256": "f792227dd3666d556ef62b5c15f03b1fc1be713d7575542db3b977affa465a0c",
+        "source": "stories/materials/Practice/portrait-provenance85.json",
+        "promptFile": "docs/characters/prompts/practice85-theo-jacobs.txt",
+        "archivedOriginalPrompt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/homework85-20261123/prompts/theo-jacobs.txt",
+        "promptAvailability": "repository_snapshot",
+        "promptSha256": "bd4e2cc4f9f352f622aed8d339df21dd0d1fb57f7b2b854cde4821be59e6645f",
+        "stylePrefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489"
+      },
+      "voice": {
+        "voiceId": "ddNwxTGW1Qc7ZuSevaHF",
+        "sourceName": "Sekou - Friendly and Confident",
+        "source": "stories/materials/Practice/voice-provenance85.json",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Reflective and direct; compares options clearly",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "fullName": "Leo",
+      "accentCode": null,
+      "portrait": {
+        "file": "stories/materials/shared/assets/leo-profile-soft-v2.webp",
+        "sha256": "2559e3c4309072106618e864b9c50196cf33901b62aa63280e7248414c063775",
+        "source": "stories/materials/shared/characterPortraits.ts",
+        "promptFile": null,
+        "promptAvailability": "approved_existing_asset; original prompt not located in this delivery"
+      },
+      "voice": {
+        "voiceId": "iP95p4xoKVk53GoZ742B",
+        "source": "stories/materials/Course/audio-provenance81.json",
+        "castingNote": "Shared historical voice actor; preserved valid recordings, not a new generation",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Friendly and reflective; shares progress and asks for input",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    },
+    {
+      "id": "raj",
+      "name": "Raj",
+      "fullName": "Raj",
+      "accentCode": null,
+      "portrait": {
+        "file": "stories/materials/shared/assets/raj-profile-v1.webp",
+        "sha256": "7981098f601fca15a6bdad66f6d46d4196167b6e94bc4e65af972f311954c62b",
+        "source": "stories/materials/shared/characterPortraits.ts",
+        "promptFile": null,
+        "promptAvailability": "approved_existing_asset; original prompt not located in this delivery"
+      },
+      "voice": {
+        "voiceId": "iP95p4xoKVk53GoZ742B",
+        "source": "stories/materials/B201/audio-provenance.json; stories/materials/C101/audio-provenance.json",
+        "castingNote": "Shared historical voice actor; preserved valid recordings, not a new generation",
+        "provider": "elevenlabs"
+      },
+      "conversationStyle": "Direct and reflective; offers a perspective and responds to feedback",
+      "styleStatus": "editorial writing direction, not a historical biography",
+      "biographySource": "docs/characters/characters.md",
+      "age": null,
+      "nationality": null
+    }
+  ],
+  "continuity": "Names, portraits, voices and prompts are separate from lesson-specific roles. Accent is not nationality. Canonical image prompt remains unchanged. Ruby uses Emma 56bWURjYFHyYyVf490Dp as proven by the active Dev95 account narrative; historical Noah/Charlie casting is not the active Ruby voice.",
+  "audioAuthoringDefaults": {
+    "provider": "elevenlabs",
+    "modelId": "eleven_multilingual_v2",
+    "voiceSettings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.1,
+      "use_speaker_boost": true,
+      "speed": 0.92
+    },
+    "languageCode": "en",
+    "outputFormat": "mp3_44100_128",
+    "scope": "Defaults for new natural-speech recordings. Preserve per-utterance model/language/settings overrides and existing valid files; no phoneme-spelling migration is implied."
+  },
+  "imageStylePrompt": {
+    "file": "docs/materials/prompts/langy-illustration-v1.8.txt",
+    "sha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+    "bytes": 1909,
+    "policy": "Use full literal prompt unchanged. Character/composition details are additions, never rewrites of the canonical style."
+  }
+}

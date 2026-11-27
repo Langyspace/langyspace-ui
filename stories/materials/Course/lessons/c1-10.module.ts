@@ -21,9 +21,15 @@ import a16 from '../assets/audio/C110-D81.11.mp3'
 import a17 from '../assets/audio/C110-D81.12.mp3'
 import a18 from '../assets/audio/C110-L81.1.mp3'
 import i0 from '../assets/c1-10-vocabulary81.webp'
+import w141clip0 from '../assets/audio/C110-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'C110-W141.1',
+      text: 'Hi, Ana. I’ve read the event update, but I’m not sure what you need from me. When you say “please acknowledge”, do you only want me to confirm I’ve seen the message, or do you need to know whether I can attend on Monday? I can send either, but they aren’t the same commitment. Could you also give the response deadline as a day and time rather than “tomorrow”? I sometimes read messages after the day they were sent. The new date, same ten o’clock start and room two are clear. It’s the requested action that needs clarification, so there’s no need to rewrite every factual detail or make the wording more elaborate.',
+      src: w141clip0,
+    },
     {
       id: 'C110-FS81.0',
       text: 'an update. The update keeps the time and room unchanged.',

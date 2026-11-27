@@ -354,7 +354,7 @@
       "message": "Hi, Ana! Here’s the update for our fictional profile. I moved to Porto in 2023, and I’ve lived here since then. I started the photography group in 2025, and I still go on Sundays. I haven’t changed jobs, but I’ve finished an online course. I’m really enjoying the city now. What would you like to ask about my new routine?",
       "audioText": "Hi, Ana! Here’s the update for our fictional profile. I moved to Porto in 2023, and I’ve lived here since then. I started the photography group in 2025, and I still go on Sundays. I haven’t changed jobs, but I’ve finished an online course. I’m really enjoying the city now. What would you like to ask about my new routine?",
       "audioId": "A209-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I’ve checked the details for our practice profile",
       "items": [
         {
           "id": "listen",
@@ -376,7 +376,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

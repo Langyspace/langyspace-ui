@@ -354,7 +354,7 @@
       "message": "Hi, Ana! A quick update from Lisbon. I’ve tried a pastel de nata now, and I loved it. I had one at a small café this morning. I haven’t visited the aquarium yet. I’m thinking of going tomorrow, but I haven’t booked a ticket. Have you ever been? I’d love to know what you thought of it before I decide",
       "audioText": "Hi, Ana! A quick update from Lisbon. I’ve tried a pastel de nata now, and I loved it. I had one at a small café this morning. I haven’t visited the aquarium yet. I’m thinking of going tomorrow, but I haven’t booked a ticket. Have you ever been? I’d love to know what you thought of it before I decide.",
       "audioId": "A208-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "A little update from Lisbon",
       "items": [
         {
           "id": "listen",
@@ -376,7 +376,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

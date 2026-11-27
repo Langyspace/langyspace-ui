@@ -402,7 +402,7 @@
       "message": "Hi, Ana. The landlord has confirmed that apartment C has a maintenance fee of one hundred and fifty dollars a month, on top of the nine hundred and fifty rent. That takes the total to eleven hundred, above the profile’s firm thousand-dollar limit. The balcony is still appealing, but it doesn’t remove the budget constraint. A and B haven’t changed. Could you revise the recommendation, explain which detail changes it and ask which of the remaining trade-offs matters more? We still need to see whether the work corner in A is comfortable enough for two home-working days a week",
       "audioText": "Hi, Ana. The landlord has confirmed that apartment C has a maintenance fee of one hundred and fifty dollars a month, on top of the nine hundred and fifty rent. That takes the total to eleven hundred, above the profile’s firm thousand-dollar limit. The balcony is still appealing, but it doesn’t remove the budget constraint. A and B haven’t changed. Could you revise the recommendation, explain which detail changes it and ask which of the remaining trade-offs matters more? We still need to see whether the work corner in A is comfortable enough for two home-working days a week.",
       "audioId": "B208-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "There’s one condition we still need to check",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

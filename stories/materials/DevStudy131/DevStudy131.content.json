@@ -197,14 +197,16 @@
     "greeting": "A quick change for our next study session",
     "notes": [
       {
-        "id": "L.1",
+        "id": "W141.1",
         "text": "A quick update about our next study session. We’ll use audio only, so we won’t share screens or code. Choose one feature from your practice project. Explain what it does and who would use it.",
-        "timestamp": "18:01"
+        "timestamp": "18:01",
+        "speaker": "Owen"
       },
       {
-        "id": "L.2",
+        "id": "W141.2",
         "text": "One more thing: tell me what you tested and what you still want to improve. Send me a short voice note before we meet. If you’re stuck, include the error message and one thing you’ve already tried.",
-        "timestamp": "18:02"
+        "timestamp": "18:02",
+        "speaker": "Owen"
       }
     ],
     "questions": [
@@ -234,9 +236,9 @@
       },
       {
         "id": "listening.q5",
-        "prompt": "What does Kim ask you to send before the session?",
+        "prompt": "What does Owen ask you to send before the session?",
         "hint": "Think about the message format",
-        "answer": "She asks for a short voice note"
+        "answer": "He asks for a short voice note"
       },
       {
         "id": "listening.q6",
@@ -244,7 +246,10 @@
         "hint": "Explain the problem and an action you have already taken",
         "answer": "You should include the error message and one thing you have already tried"
       }
-    ]
+    ],
+    "contact": {
+      "name": "Owen"
+    }
   },
   "freeConversationInstruction": "Talk about learning something new, projects you enjoy and asking for help. Follow each other’s ideas",
   "oralPages": [

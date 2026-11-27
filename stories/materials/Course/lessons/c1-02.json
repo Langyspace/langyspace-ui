@@ -417,7 +417,7 @@
       "message": "Hi, Ana. I found the missing message record. A warning that the sound test was incomplete was sent before the planned opening time, but it went to a shared group without a named person responsible for responding. There’s no acknowledgement in the record. That makes a communication failure more plausible than simply saying nobody noticed a problem. It still doesn’t establish whether enough testing time had been scheduled, or whether a recipient read the warning and chose not to act. Could you revise the review to reflect that distinction? I’d like one preventive action linked to what we can actually establish, rather than a general instruction to be more careful. If you use “Had we known”, please make clear whose knowledge you mean",
       "audioText": "Hi, Ana. I found the missing message record. A warning that the sound test was incomplete was sent before the planned opening time, but it went to a shared group without a named person responsible for responding. There’s no acknowledgement in the record. That makes a communication failure more plausible than simply saying nobody noticed a problem. It still doesn’t establish whether enough testing time had been scheduled, or whether a recipient read the warning and chose not to act. Could you revise the review to reflect that distinction? I’d like one preventive action linked to what we can actually establish, rather than a general instruction to be more careful. If you use “Had we known”, please make clear whose knowledge you mean.",
       "audioId": "C102-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "There’s a useful distinction in the update",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

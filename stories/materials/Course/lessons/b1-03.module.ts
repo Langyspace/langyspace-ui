@@ -17,9 +17,21 @@ import a12 from '../assets/audio/B103-D81.7.mp3'
 import a13 from '../assets/audio/B103-D81.8.mp3'
 import a14 from '../assets/audio/B103-L81.1.mp3'
 import i0 from '../assets/b1-03-vocabulary81.webp'
+import w141clip0 from '../assets/audio/B103-W141.1.mp3'
+import w141clip1 from '../assets/audio/B103-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B103-W141.1',
+      text: 'Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem.',
+      src: w141clip0,
+    },
+    {
+      id: 'B103-W141.2',
+      text: 'The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?',
+      src: w141clip1,
+    },
     {
       id: 'B103-FS81.0',
       text: 'a ticket. Keep the digital ticket on your phone.',

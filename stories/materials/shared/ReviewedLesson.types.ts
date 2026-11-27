@@ -100,6 +100,14 @@ export type ReviewedPage = PageBase &
         greetingTimestamp?: string
         voiceTimestamp?: string
         image?: { src: string; alt: string }
+        /** Existing prepared lesson video opened from a received preview in the chat. */
+        videoPageId?: string
+        additionalAudios?: readonly {
+          audioId: string
+          audioText?: string
+          message: string
+          timestamp: string
+        }[]
         items: readonly ReviewedPrompt[]
       }
     | { kind: 'activity' }
@@ -186,6 +194,7 @@ export interface ReviewedDialogueProps {
   guidance?: boolean
 }
 export interface ReviewedPageContentProps {
+  sharedVideo?: { title: string; imageUrl: string; onOpen: () => void }
   preloadVideo?: boolean
   page: ReviewedPage
   speech: ReviewedSpeech

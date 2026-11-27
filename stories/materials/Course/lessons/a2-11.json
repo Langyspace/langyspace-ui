@@ -348,19 +348,19 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "Use the backup plan",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
-      "message": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside. We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?",
-      "audioText": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside. We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?",
-      "audioId": "A211-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside",
+      "audioText": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside.",
+      "audioId": "A211-W141.1",
+      "greeting": "Let’s use our rainy-day plan",
       "items": [
         {
           "id": "listen",
-          "prompt": "Which plan does Kim suggest using?",
+          "prompt": "Which plan does Priya suggest using?",
           "hint": "She suggests …",
-          "answer": "Kim suggests using the museum backup plan"
+          "answer": "Priya suggests using the museum backup plan"
         },
         {
           "id": "s_listening.q98.2",
@@ -376,7 +376,18 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Priya"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "A211-W141.2",
+          "audioText": "We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?",
+          "message": "We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?",
+          "timestamp": "10:02"
+        }
+      ]
     },
     {
       "id": "s_reply",

@@ -21,9 +21,15 @@ import a16 from '../assets/audio/B209-D81.11.mp3'
 import a17 from '../assets/audio/B209-D81.12.mp3'
 import a18 from '../assets/audio/B209-L81.1.mp3'
 import i0 from '../assets/b2-09-vocabulary81.webp'
+import w141clip0 from '../assets/audio/B209-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B209-W141.1',
+      text: 'Hi, Ana. I’ve checked the flat. The door is locked, the stove is off, and the iron is unplugged. The window was open, so I’ve closed it as you asked. I haven’t watered the plants yet because you wanted to decide the timing first. Would you like me to water them today or come back on Saturday? I can do either. Please send that one instruction when you have a moment. Everything else on the list has been checked, so there’s no need to ask me to repeat the whole routine.',
+      src: w141clip0,
+    },
     {
       id: 'B209-FS81.0',
       text: 'lock the door. I don’t remember locking the door.',

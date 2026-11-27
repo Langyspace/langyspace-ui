@@ -315,13 +315,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "One more order",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen and answer, then open the video shared in the chat",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! Can you order something for me? I’d like some tea and a piece of cake, please. No milk in the tea. I’m outside the café, near the door. I have six dollars. Thank you! I’ll see you in a minute",
       "audioText": "Hi, Ana! Can you order something for me? I’d like some tea and a piece of cake, please. No milk in the tea. I’m outside the café, near the door. I have six dollars. Thank you! I’ll see you in a minute.",
       "audioId": "A110-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s a short café-ordering clip for our practice",
       "items": [
         {
           "id": "listen",
@@ -343,7 +343,11 @@
         }
       ],
       "greetingTimestamp": "12:10",
-      "voiceTimestamp": "12:11"
+      "voiceTimestamp": "12:11",
+      "contact": {
+        "name": "Kim"
+      },
+      "videoPageId": "s_video102"
     },
     {
       "id": "s_reply",

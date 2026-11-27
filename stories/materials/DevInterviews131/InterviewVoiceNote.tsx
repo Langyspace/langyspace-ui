@@ -23,8 +23,8 @@ export function InterviewVoiceNote({
         active={active}
         layout="balanced"
         contact={{
-          name: 'Kim',
-          avatarUrl: characterPortrait('Kim'),
+          name: note.speaker,
+          avatarUrl: characterPortrait(note.speaker),
           status: 'online',
         }}
         greeting={
@@ -62,7 +62,7 @@ export function InterviewVoiceNote({
           correct: 'Correct',
           incorrect: 'Try again',
           questions: 'Questions',
-          conversation: 'Conversation with Kim',
+          conversation: `Conversation with ${note.speaker}`,
         }}
       />
     </ThemeProvider>

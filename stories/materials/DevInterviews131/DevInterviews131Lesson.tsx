@@ -193,9 +193,9 @@ export function DevInterviews131Lesson({
       label: 'Prepare for the technical interview',
       content: (
         <SlidePage
-          eyebrow="A message from Kim"
+          eyebrow={`A message from ${source.notes[0]!.speaker}`}
           title="Prepare for the technical interview"
-          instruction="Read Kim’s message and listen to her first note. Explain the task and the expected behavior"
+          instruction={`Read ${source.notes[0]!.speaker}’s message and listen to her first note. Explain the task and the expected behavior`}
           columns={2}
           density="compact"
         >
@@ -208,9 +208,9 @@ export function DevInterviews131Lesson({
       label: 'Know the next steps',
       content: (
         <SlidePage
-          eyebrow="Kim’s next voice note"
+          eyebrow={`${source.notes[1]!.speaker}’s next voice note`}
           title="Know the next steps"
-          instruction="Listen to Kim’s second note. Explain what to prepare and when to expect feedback"
+          instruction={`Listen to ${source.notes[1]!.speaker}’s second note. Explain what to prepare and when to expect feedback`}
           columns={2}
           density="compact"
         >

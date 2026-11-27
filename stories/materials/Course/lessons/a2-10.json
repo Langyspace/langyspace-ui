@@ -330,7 +330,7 @@
       "message": "Hi, Ana! I asked about apartment A. There’s a busy road outside, and it can be noisy at night. The price, two beds and distance are the same. Apartment B is on a quiet street. I still want my own bed, but I also need to sleep well. Does this change your choice? We could ask A about a quieter room before we book",
       "audioText": "Hi, Ana! I asked about apartment A. There’s a busy road outside, and it can be noisy at night. The price, two beds and distance are the same. Apartment B is on a quiet street. I still want my own bed, but I also need to sleep well. Does this change your choice? We could ask A about a quieter room before we book.",
       "audioId": "A210-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s the apartment visit we talked about",
       "items": [
         {
           "id": "listen",
@@ -352,7 +352,14 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "a2-10-cover81",
+        "alt": "The apartment visit, shared as context for the noise update"
+      }
     },
     {
       "id": "s_reply",

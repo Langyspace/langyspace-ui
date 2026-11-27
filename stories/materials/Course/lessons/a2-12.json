@@ -354,7 +354,7 @@
       "message": "Hi, Ana! I heard from our friends. One of them can’t come on Friday, but everyone is free on Saturday at eight. We still need step-free access, and twenty dollars each is OK. Could you change the date before you book? The Garden Table has a table on Saturday. Let me know what you decide, and I’ll send the invitation",
       "audioText": "Hi, Ana! I heard from our friends. One of them can’t come on Friday, but everyone is free on Saturday at eight. We still need step-free access, and twenty dollars each is OK. Could you change the date before you book? The Garden Table has a table on Saturday. Let me know what you decide, and I’ll send the invitation.",
       "audioId": "A212-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I’ve checked when everyone can come",
       "items": [
         {
           "id": "listen",
@@ -376,7 +376,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

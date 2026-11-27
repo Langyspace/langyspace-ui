@@ -121,6 +121,50 @@ export const PhotoBubble = styled(Bubble)`
     border-radius: ${theme.radius.lg};
   }
 `
+export const VideoPreview = styled(Pressable)`
+  width: 86%;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: ${theme.radius.lg};
+  text-align: left;
+  background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
+  box-shadow: ${theme.shadows.xs};
+`
+export const VideoThumbnail = styled.span`
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  background: ${(p) => recipe(p).controlSurface};
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`
+export const VideoPreviewIcon = styled.span`
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: ${theme.sizes.control.sm};
+  height: ${theme.sizes.control.sm};
+  border-radius: ${theme.radius.pill};
+  background: ${(p) => recipe(p).accent};
+  color: ${(p) => recipe(p).onAccent};
+`
+export const VideoCaption = styled.span`
+  display: grid;
+  gap: ${theme.spacing[1]};
+  padding: ${theme.spacing[2]};
+  font-size: ${theme.typography.fontSize.xs};
+  line-height: 1.4;
+  strong {
+    font-weight: ${theme.typography.fontWeight.semibold};
+  }
+`
 export const Player = styled.div`
   display: flex;
   align-items: center;

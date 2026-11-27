@@ -402,7 +402,7 @@
       "message": "Hi, Ana. The neighbour has confirmed that she used the spare key at five to water the plants. She says she moved the plant away from the closed window before leaving. That supports the explanation of an authorised visit. She doesn’t recognise the receipt from five twenty, though, so we still don’t know who left it or when it came into the flat. Could you update the explanation without making the receipt fit by inventing another visit? We have confirmation for the key and the plant, but only an unresolved clue for the receipt",
       "audioText": "Hi, Ana. The neighbour has confirmed that she used the spare key at five to water the plants. She says she moved the plant away from the closed window before leaving. That supports the explanation of an authorised visit. She doesn’t recognise the receipt from five twenty, though, so we still don’t know who left it or when it came into the flat. Could you update the explanation without making the receipt fit by inventing another visit? We have confirmation for the key and the plant, but only an unresolved clue for the receipt.",
       "audioId": "B204-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I checked what the message actually means",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

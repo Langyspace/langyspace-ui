@@ -21,9 +21,15 @@ import a16 from '../assets/audio/B205-D81.11.mp3'
 import a17 from '../assets/audio/B205-D81.12.mp3'
 import a18 from '../assets/audio/B205-L81.1.mp3'
 import i0 from '../assets/b2-05-vocabulary81.webp'
+import w141clip0 from '../assets/audio/B205-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B205-W141.1',
+      text: 'Hi, Ana. Reception checked the booking and agrees that breakfast was already included in the room price. They can return the twenty-dollar breakfast charge if we provide the receipt reference; it may take three business days. The fifty-dollar deposit is different. It will be assessed after the room check at departure, so it hasn’t been approved for return yet. Could you explain which amount we can request now and which condition still applies to the deposit? We don’t need to give any bank details in this practice conversation.',
+      src: w141clip0,
+    },
     {
       id: 'B205-FS81.0',
       text: 'a deposit. The deposit has a separate condition.',

@@ -361,13 +361,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "An honest update",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
-      "message": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day. I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience",
-      "audioText": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day. I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience.",
-      "audioId": "B108-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day",
+      "audioText": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day.",
+      "audioId": "B108-W141.1",
+      "greeting": "I’m getting used to some things here",
       "items": [
         {
           "id": "listen",
@@ -389,7 +389,18 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Niamh"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "B108-W141.2",
+          "audioText": "I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience.",
+          "message": "I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience",
+          "timestamp": "10:02"
+        }
+      ]
     },
     {
       "id": "s_reply",

@@ -21,9 +21,21 @@ import a16 from '../assets/audio/C103-D81.11.mp3'
 import a17 from '../assets/audio/C103-D81.12.mp3'
 import a18 from '../assets/audio/C103-L81.1.mp3'
 import i0 from '../assets/c1-03-vocabulary81.webp'
+import w141clip0 from '../assets/audio/C103-W141.1.mp3'
+import w141clip1 from '../assets/audio/C103-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'C103-W141.1',
+      text: 'Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact?',
+      src: w141clip0,
+    },
+    {
+      id: 'C103-W141.2',
+      text: 'Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently.',
+      src: w141clip1,
+    },
     {
       id: 'C103-FS81.0',
       text: 'reportedly. Reportedly does not identify a source by itself.',
