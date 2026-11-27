@@ -2,14 +2,25 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { useNotesCapability } from './NotesHostContext'
 import { launchNotesWindow } from './notesWindow'
 import { mountNotesPreview } from './NotesPreviewWindow'
-export function useLessonNotesPopup(storageKey: string) {
+export function useLessonNotesPopup(storageKey: string, pageId = '') {
+  const draftKey = JSON.stringify([storageKey, pageId])
   const capability = useNotesCapability()
+  const popupUrl =
+    capability.mode === 'teacher-popup'
+      ? (() => {
+          const url = new URL(capability.popupUrl)
+          url.searchParams.set('draftKey', draftKey)
+          return url.href
+        })()
+      : undefined
   const popup = useRef<Window | null>(null),
     triggerRef = useRef<HTMLButtonElement>(null)
   const trigger = useCallback((element: HTMLButtonElement | null) => {
     triggerRef.current = element
   }, [])
-  const disposePreview = useRef<(() => void) | null>(null)
+  const previewEditor = useRef<ReturnType<typeof mountNotesPreview> | null>(
+    null,
+  )
   const [isOpen, setIsOpen] = useState(false),
     [error, setError] = useState('')
   const [popupWindow, setPopupWindow] = useState<Window | null>(null)
@@ -24,18 +35,21 @@ export function useLessonNotesPopup(storageKey: string) {
     }
     if (capability.mode !== 'teacher-popup') return
     popupWindow.postMessage(
-      { type: 'langy.notes.navigate', version: 1, url: capability.popupUrl },
+      { type: 'langy.notes.navigate', version: 1, url: popupUrl },
       window.location.origin,
     )
-  }, [capability, popupWindow])
+  }, [capability, popupWindow, popupUrl])
+  useEffect(() => {
+    previewEditor.current?.update(draftKey)
+  }, [draftKey])
   const close = useCallback(() => {
     popup.current?.close()
     const remainsOpen = !!popup.current && !popup.current.closed
     setIsOpen(remainsOpen)
     if (!remainsOpen) {
       setPopupWindow(null)
-      disposePreview.current?.()
-      disposePreview.current = null
+      previewEditor.current?.dispose()
+      previewEditor.current = null
       triggerRef.current?.focus()
     }
   }, [])
@@ -45,8 +59,8 @@ export function useLessonNotesPopup(storageKey: string) {
       if (popup.current?.closed) {
         setIsOpen(false)
         setPopupWindow(null)
-        disposePreview.current?.()
-        disposePreview.current = null
+        previewEditor.current?.dispose()
+        previewEditor.current = null
         triggerRef.current?.focus()
       }
     }, 500)
@@ -59,7 +73,7 @@ export function useLessonNotesPopup(storageKey: string) {
       return
     }
     if (capability.mode === 'teacher-popup') {
-      const result = launchNotesWindow({ url: capability.popupUrl })
+      const result = launchNotesWindow({ url: popupUrl! })
       if (result.kind !== 'opened') {
         setError(
           result.kind === 'blocked'
@@ -93,7 +107,7 @@ export function useLessonNotesPopup(storageKey: string) {
     preview.document.close()
     popup.current = preview
     setPopupWindow(preview)
-    disposePreview.current = mountNotesPreview(preview, storageKey, close)
+    previewEditor.current = mountNotesPreview(preview, draftKey, close)
     preview.focus()
     setIsOpen(true)
   }

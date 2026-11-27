@@ -27,13 +27,14 @@ import { order, content, review, yourWork } from './Frontend.data'
 import type { FrontendLessonProps } from './Frontend.types'
 import * as S from './Frontend.styles'
 export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
-  const notePopup = useLessonNotesPopup('langy-notes:tema-frontend')
   const [pageId, setPageId] = useLessonPage(
       initialPageId,
       'tema-frontend',
       withLessonOpeningPageIds('tema-frontend', order),
     ),
     { audioRef, events, ...media } = useFrontendAudio()
+
+  const notePopup = useLessonNotesPopup('langy-notes:tema-frontend', pageId)
 
   const dialogueTool = (part?: number) => {
     const ids = (

@@ -8,10 +8,18 @@ import { GlobalStyles } from '../../../src/foundations/theme/GlobalStyles'
 import { FontStyles } from '../Standalone/Standalone.styles'
 import type { NotesProps } from './Lesson.types'
 
-const scratchpads = new Map<string, string>()
+const scratchKey = (key: string) => 'langy-preview-scratch:v1:' + key
+const readScratch = (key: string) => {
+  try {
+    return localStorage.getItem(scratchKey(key)) ?? ''
+  } catch {
+    return ''
+  }
+}
 
 function LocalNotesEditor({ storageKey, popupWindow, onClose }: NotesProps) {
-  const [value, setValue] = useState(() => scratchpads.get(storageKey) ?? '')
+  const [value, setValue] = useState(() => readScratch(storageKey))
+  const [error, setError] = useState('')
   if (!popupWindow) return null
   return (
     <StyleSheetManager target={popupWindow.document.head}>
@@ -22,10 +30,19 @@ function LocalNotesEditor({ storageKey, popupWindow, onClose }: NotesProps) {
           value={value}
           onClose={onClose}
           contextLabel="Rascunho"
-          statusLabel="Só na memória desta apresentação. Nenhuma aula vinculada."
+          placeholder="Anote ideias, dúvidas ou lembretes…"
+          error={error}
           onChange={(next) => {
             setValue(next)
-            scratchpads.set(storageKey, next)
+            try {
+              if (next) localStorage.setItem(scratchKey(storageKey), next)
+              else localStorage.removeItem(scratchKey(storageKey))
+              setError('')
+            } catch {
+              setError(
+                'Não foi possível salvar o rascunho neste navegador. Copie o texto antes de fechar.',
+              )
+            }
           }}
         />
       </ThemeProvider>
@@ -40,19 +57,23 @@ export function mountNotesPreview(
   onClose: () => void,
 ) {
   const target = popupWindow.document.getElementById('notes-root')
-  if (!target) return () => {}
+  if (!target) return { update: (_key: string) => {}, dispose: () => {} }
   const root = createRoot(target)
-  flushSync(() =>
+  const update = (key: string) =>
     root.render(
       <LocalNotesEditor
-        storageKey={storageKey}
+        key={key}
+        storageKey={key}
         popupWindow={popupWindow}
         open
         onClose={onClose}
       />,
-    ),
-  )
-  return () => {
-    queueMicrotask(() => root.unmount())
+    )
+  flushSync(() => update(storageKey))
+  return {
+    update,
+    dispose: () => {
+      queueMicrotask(() => root.unmount())
+    },
   }
 }

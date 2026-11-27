@@ -556,7 +556,7 @@ export function ReviewedLesson({
     ),
   )
   const speech = useRecordedAudio(recordings)
-  const notes = useLessonNotesPopup(notesStorageKey)
+  const notes = useLessonNotesPopup(notesStorageKey, pageId)
   const activityFor = (id: string) => {
     const activity = activities?.[id]
     return typeof activity === 'function'

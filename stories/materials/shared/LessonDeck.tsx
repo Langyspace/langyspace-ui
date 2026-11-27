@@ -34,7 +34,10 @@ export function LessonDeck({
     materialKey,
     lesson.pages.map((page) => page.id),
   )
-  const notePopup = useLessonNotesPopup('langy-material-notes-' + lesson.code)
+  const notePopup = useLessonNotesPopup(
+    'langy-material-notes-' + lesson.code,
+    pageId,
+  )
 
   const changePage = useCallback(
     (next: string) => {

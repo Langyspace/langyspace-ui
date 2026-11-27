@@ -66,7 +66,7 @@ export function DevFirstDayLesson({
     source.materialKey,
     devPageIds,
   )
-  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey)
+  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey, pageId)
   const feedback = devRecordings.find((item) => item.id === source.feedback.id)!
   const pages = [
     {

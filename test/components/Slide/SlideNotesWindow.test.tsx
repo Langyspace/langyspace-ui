@@ -100,3 +100,33 @@ it('server-renders a controlled window with the shared dark theme and no browser
   expect(html).toContain('Somente leitura')
   expect(html).toMatch(/readonly=/i)
 })
+
+it('uses the contextual placeholder and leaves out an empty status row', () => {
+  const props = {
+    value: '',
+    onChange: vi.fn(),
+    onClose: vi.fn(),
+    contextLabel: 'Rascunho',
+    statusLabel: '',
+  }
+  const { rerender } = render(
+    <SlideNotesWindow
+      {...props}
+      placeholder="Anote ideias, dúvidas ou lembretes…"
+    />,
+  )
+  expect(
+    screen.getByPlaceholderText('Anote ideias, dúvidas ou lembretes…'),
+  ).toBe(screen.getByRole('textbox'))
+  expect(screen.queryByRole('status')).toBeNull()
+  rerender(
+    <SlideNotesWindow
+      {...props}
+      placeholder="Anote o desempenho da aluna e os próximos passos…"
+    />,
+  )
+  expect(screen.getByRole('textbox')).toHaveAttribute(
+    'placeholder',
+    'Anote o desempenho da aluna e os próximos passos…',
+  )
+})

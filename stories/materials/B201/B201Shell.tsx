@@ -15,7 +15,7 @@ export function B201Shell({
   pages,
 }: B201ShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
-  const notePopup = useLessonNotesPopup('langy-notes:' + materialKey)
+  const notePopup = useLessonNotesPopup('langy-notes:' + materialKey, pageId)
 
   const root = useRef<HTMLDivElement>(null)
   useEffect(() => {

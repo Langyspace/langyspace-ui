@@ -6,6 +6,7 @@ export interface SlideNotesWindowProps {
   onClose: () => void
   contextLabel?: string
   statusLabel?: string
+  placeholder?: string
   error?: string
   readOnly?: boolean
   saving?: boolean

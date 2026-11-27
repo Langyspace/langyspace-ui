@@ -55,7 +55,7 @@ export function InfluencerRoutineLesson({
     source.materialKey,
     routinePageIds,
   )
-  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey)
+  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey, pageId)
   const message = routineRecordings.find(
     (clip) => clip.id === 'L.1' && clip.text === source.listening.text,
   )!

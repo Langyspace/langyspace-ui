@@ -47,7 +47,7 @@ export function LessonShell({
   navigationMode,
 }: LessonShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
-  const notePopup = useLessonNotesPopup('langy-notes:' + materialKey)
+  const notePopup = useLessonNotesPopup('langy-notes:' + materialKey, pageId)
 
   const speech = useLessonSpeech()
   const themeToggle = useMaterialThemeToggle()

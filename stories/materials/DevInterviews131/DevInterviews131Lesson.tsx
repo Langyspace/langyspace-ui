@@ -52,7 +52,7 @@ export function DevInterviews131Lesson({
     source.materialKey,
     devInterviewPageIds,
   )
-  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey)
+  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey, pageId)
   const pages = [
     {
       id: 'cover',

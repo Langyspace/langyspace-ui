@@ -55,7 +55,7 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
     devStudyPageIds,
   )
   const speech = useRecordedAudio(devStudyRecordings)
-  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey)
+  const notes = useLessonNotesPopup('langy-notes:' + source.materialKey, pageId)
   useEffect(() => speech.stop, [speech.stop])
   const oralPage = (id: string) => {
     const activity = source.oralPages.find((page) => page.id === id)!

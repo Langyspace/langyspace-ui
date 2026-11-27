@@ -11,6 +11,7 @@ export function SlideNotesWindow({
   onClose,
   contextLabel,
   statusLabel,
+  placeholder = 'Como o aluno foi? Onde travou? Próximos passos…',
   error,
   readOnly = false,
   saving = false,
@@ -52,14 +53,16 @@ export function SlideNotesWindow({
         aria-describedby={error || statusLabel ? statusId : undefined}
         value={value}
         readOnly={readOnly}
-        placeholder="Como o aluno foi? Onde travou? Próximos passos…"
+        placeholder={placeholder}
         onChange={(event) => {
           onChange(event.target.value)
         }}
       />
-      <S.Status id={statusId} role={error ? 'alert' : 'status'}>
-        {error || statusLabel || ''}
-      </S.Status>
+      {error || statusLabel ? (
+        <S.Status id={statusId} role={error ? 'alert' : 'status'}>
+          {error || statusLabel}
+        </S.Status>
+      ) : null}
       <S.Actions>
         <Notes.Action
           size="sm"

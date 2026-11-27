@@ -68,6 +68,8 @@ export function MaterialNotesEditor({ materialKey }: MaterialNotesEditorProps) {
         next.editRevision < 0 ||
         typeof next.contextLabel !== 'string' ||
         typeof next.statusLabel !== 'string' ||
+        (next.placeholder !== undefined &&
+          typeof next.placeholder !== 'string') ||
         typeof next.readOnly !== 'boolean' ||
         typeof next.saving !== 'boolean' ||
         typeof next.canSave !== 'boolean' ||

@@ -7,6 +7,7 @@ export interface MaterialNotesEditorModel {
   editRevision: number
   contextLabel: string
   statusLabel: string
+  placeholder?: string
   error?: string
   readOnly: boolean
   saving: boolean
