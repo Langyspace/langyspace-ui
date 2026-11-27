@@ -747,3 +747,12 @@ export type {
 } from './components/Flashcard/FlashcardSession.types'
 export { ShadowingSession } from './components/Shadowing/ShadowingSession'
 export type { ShadowingSessionProps } from './components/Shadowing/ShadowingSession.types'
+
+export { QuestionRoulette } from './components/Exercise/QuestionRoulette'
+export type {
+  QuestionRouletteProps,
+  QuestionRouletteQuestion,
+  QuestionRouletteTopic,
+  QuestionRouletteSelection,
+  QuestionRouletteLabels,
+} from './components/Exercise/QuestionRoulette.types'

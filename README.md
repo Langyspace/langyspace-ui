@@ -194,3 +194,5 @@ dialogue, matching and reveal contracts. Lesson content stays in catalog fixture
 the official package release.
 
 `Materials/B1.01` adds the 17-screen “What have you been doing?” catalog composition, contextual scenes and progressive clue cards. Its content, speech and controlled exercise state remain outside the package. See [the B1.01 review handoff](docs/epics/b101-material/release.md). This feature requires a new approved library release before consumer adoption.
+
+`QuestionRoulette` draws oral prompts without repeats, with a topic wheel and optional speaking support. Consumers own the question bank and level; see [the contract](docs/components/question-roulette.md).

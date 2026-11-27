@@ -15,6 +15,16 @@ export const feedbackSoundDesign = {
   /** Filtered air with a full bell-shaped fade, rather than a percussive note. */
   questionGain: 0.16,
   question: { duration: 0.18, highPassHz: 180, lowPassHz: 900 },
+  /** Muted tactile detents, without a bell-like overtone or musical landing chord. */
+  roulette: {
+    gain: 0.36,
+    tickSeconds: 0.028,
+    highPassHz: 180,
+    lowPassHz: 1_150,
+    bodyHz: 240,
+    bodyGain: 0.24,
+    landingSeconds: 0.07,
+  },
   wrong: [
     { frequency: 440, start: 0, duration: 0.095 },
     { frequency: 392, start: 0.105, duration: 0.12 },
