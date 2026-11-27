@@ -41,7 +41,7 @@ Each third-listen recording also has one subtle, full-width clickable text area 
 
 Automatic third-listen reveal remains scheduled even after an early manual Show/Hide. After that automatic reveal, Hide remains in effect across later plays until Show is chosen. `transcriptToggle={false}` opts into automatic-only behavior for third-listen. Explicit `second-listen` and `manual-after-replay` variants retain their existing timing; `transcriptToggle` can explicitly allow early access in those variants. The legacy manual-after-replay toggle remains available after replay.
 
-Materials share English transcript action labels through `stories/materials/shared/voiceMessageLabels.ts`; the library retains its Portuguese defaults. Each recording gets ordinal accessible action names in a multi-message conversation.
+Materials share English transcript action labels through `stories/materials/shared/voiceMessageLabels.ts`; the library retains its Portuguese defaults. Each recording gets ordinal accessible action names in a multi-message conversation; the visible Transcript label has no 1/2 or 2/2 counter.
 
 Set `active` from the deck's page-change state to pause a departing page; returning retains transcript/listen state. Unmount pauses media and invalidates pending play requests. Product pages own this orchestration, file availability and recording authorization.
 

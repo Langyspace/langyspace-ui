@@ -71,7 +71,6 @@ function VoiceMessageContent({
           play: `${labels.play} (${index + 1}/${additionalAudios.length + 1})`,
           pause: `${labels.pause} (${index + 1}/${additionalAudios.length + 1})`,
           replay: `${labels.replay} (${index + 1}/${additionalAudios.length + 1})`,
-          transcript: `${labels.transcript} (${index + 1}/${additionalAudios.length + 1})`,
           showTranscript: `${labels.showTranscript} (${index + 1}/${additionalAudios.length + 1})`,
           hideTranscript: `${labels.hideTranscript} (${index + 1}/${additionalAudios.length + 1})`,
           speed: `${labels.speed} (${index + 1}/${additionalAudios.length + 1})`,
