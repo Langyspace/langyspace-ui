@@ -13,6 +13,21 @@ export function useLessonNotesPopup(storageKey: string) {
   const [isOpen, setIsOpen] = useState(false),
     [error, setError] = useState('')
   const [popupWindow, setPopupWindow] = useState<Window | null>(null)
+  useEffect(() => {
+    if (!popupWindow || popupWindow.closed) return
+    if (capability.mode === 'pending') {
+      popupWindow.postMessage(
+        { type: 'langy.notes.pending', version: 1 },
+        window.location.origin,
+      )
+      return
+    }
+    if (capability.mode !== 'teacher-popup') return
+    popupWindow.postMessage(
+      { type: 'langy.notes.navigate', version: 1, url: capability.popupUrl },
+      window.location.origin,
+    )
+  }, [capability, popupWindow])
   const close = useCallback(() => {
     popup.current?.close()
     const remainsOpen = !!popup.current && !popup.current.closed

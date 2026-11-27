@@ -1,6 +1,7 @@
 import * as StoryLayout from './ActionMenu.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, waitFor, within } from 'storybook/test'
+import { Avatar } from '../../../src/components/Avatar/Avatar'
 import { ActionMenu } from '../../../src/components/ActionMenu/ActionMenu'
 import type { ActionMenuItem } from '../../../src/components/ActionMenu/ActionMenu.types'
 
@@ -188,4 +189,11 @@ export const StressLongLabels: Story = {
       />
     </StoryLayout.MenuStage>
   ),
+}
+
+export const AvatarTrigger: Story = {
+  args: {
+    triggerLabel: 'Selecionar participante',
+    triggerContent: <Avatar size="sm" initials="AM" />,
+  },
 }

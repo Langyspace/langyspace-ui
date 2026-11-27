@@ -27,6 +27,7 @@ export function ActionMenu({
   ref,
   size = 'md',
   triggerLabel,
+  triggerContent,
   ...nativeProps
 }: ActionMenuProps) {
   const {
@@ -81,7 +82,7 @@ export function ActionMenu({
         }}
         onKeyDown={handleTriggerKeyDown}
       >
-        <EllipsisGlyph />
+        {triggerContent ?? <EllipsisGlyph />}
       </IconButton>
 
       {isMenuOpen

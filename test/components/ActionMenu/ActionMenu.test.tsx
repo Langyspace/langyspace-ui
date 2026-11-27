@@ -540,3 +540,21 @@ describe('getActionMenuPosition', () => {
     ).toEqual({ left: 8, maxHeight: 186, placement: 'top', top: 8 })
   })
 })
+
+it('uses an avatar trigger without losing menu keyboard or return focus behavior', async () => {
+  const user = userEvent.setup()
+  const selected = vi.fn()
+  render(
+    <ActionMenu
+      triggerLabel="Selecionar aluna"
+      triggerContent={<span>AM</span>}
+      items={[{ id: 'a', label: 'Ana Martins', onSelect: selected }]}
+    />,
+  )
+  const trigger = screen.getByRole('button', { name: 'Selecionar aluna' })
+  expect(trigger).toHaveTextContent('AM')
+  trigger.focus()
+  await user.keyboard('{ArrowDown}{Enter}')
+  expect(selected).toHaveBeenCalledOnce()
+  expect(trigger).toHaveFocus()
+})

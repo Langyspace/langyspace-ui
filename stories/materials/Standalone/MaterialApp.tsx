@@ -1,4 +1,5 @@
 import { MaterialLearnerProvider } from '../shared/MaterialLearnerContext'
+import { MaterialStudentSelectionProvider } from '../shared/MaterialStudentSelection'
 import { MaterialTeacherProvider } from '../shared/MaterialTeacherContext'
 import { NotesHostProvider } from '../shared/NotesHostContext'
 import { MaterialTheme } from '../shared/MaterialTheme'
@@ -68,10 +69,12 @@ export function MaterialApp({
               key={materialKey}
               materialKey={materialKey}
             >
-              <MaterialView
-                materialKey={materialKey}
-                studentPortalOrigin={studentPortalOrigin}
-              />
+              <MaterialStudentSelectionProvider materialKey={materialKey}>
+                <MaterialView
+                  materialKey={materialKey}
+                  studentPortalOrigin={studentPortalOrigin}
+                />
+              </MaterialStudentSelectionProvider>
             </MaterialLearnerProvider>
           </MaterialTeacherProvider>
         </NotesHostProvider>

@@ -4,6 +4,7 @@ import { useMaterialThemeToggle } from './MaterialAppearanceContext'
 import * as Styled from './LessonDeck.styles'
 import { returnToMaterialCatalog } from './materialCatalogNavigation'
 import { withFreeConversationEnding } from './freeConversationEnding'
+import { MaterialStudentSelectionMenu } from './MaterialStudentSelection'
 
 function ThemedDeck(props: SlideDeckProps) {
   const themeToggle = useMaterialThemeToggle()
@@ -12,6 +13,12 @@ function ThemedDeck(props: SlideDeckProps) {
       tabIndex={-1}
       feedbackSounds
       {...props}
+      actions={
+        <>
+          <MaterialStudentSelectionMenu />
+          {props.actions}
+        </>
+      }
       onBack={props.onBack ?? returnToMaterialCatalog}
       pages={withFreeConversationEnding(props.pages)}
       themeToggle={themeToggle}

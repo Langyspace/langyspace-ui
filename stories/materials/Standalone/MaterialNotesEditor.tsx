@@ -120,7 +120,7 @@ export function MaterialNotesEditor({ materialKey }: MaterialNotesEditorProps) {
           setModel((previous) => ({ ...previous, value, editRevision }))
           send('change', { value, editRevision })
         }}
-        onSave={() => send('save')}
+        onSave={model.showSave === false ? undefined : () => send('save')}
         onReload={model.canReload ? () => send('reload') : undefined}
         onChoose={(id) => send('choose', { id })}
         onClose={() => send('close')}

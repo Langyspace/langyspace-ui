@@ -44,6 +44,8 @@ export function NotesHostProvider({
         return
       if ('mode' in value && value.mode === 'preview-local')
         setCapability({ mode: 'preview-local' })
+      if ('mode' in value && value.mode === 'pending')
+        setCapability({ mode: 'pending' })
       if (
         'mode' in value &&
         value.mode === 'teacher-popup' &&

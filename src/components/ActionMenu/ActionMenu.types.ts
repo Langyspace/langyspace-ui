@@ -27,6 +27,8 @@ export interface ActionMenuProps extends Omit<
   open?: boolean
   size?: ActionMenuSize
   triggerLabel: string
+  /** Optional content inside the canonical accessible menu trigger, e.g. an Avatar. */
+  triggerContent?: ReactNode
 }
 
 export type ActionMenuPlacement = 'bottom' | 'top'

@@ -11,6 +11,7 @@ export interface MaterialNotesEditorModel {
   readOnly: boolean
   saving: boolean
   canSave: boolean
+  showSave?: boolean
   canReload: boolean
   choices: { id: string; label: string }[]
 }

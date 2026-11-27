@@ -8,16 +8,10 @@ import { GlobalStyles } from '../../../src/foundations/theme/GlobalStyles'
 import { FontStyles } from '../Standalone/Standalone.styles'
 import type { NotesProps } from './Lesson.types'
 
+const scratchpads = new Map<string, string>()
+
 function LocalNotesEditor({ storageKey, popupWindow, onClose }: NotesProps) {
-  const key = 'langy-preview-notes:v1:' + storageKey
-  const [value, setValue] = useState(() => {
-    try {
-      return localStorage.getItem(key) ?? ''
-    } catch {
-      return ''
-    }
-  })
-  const [localSaved, setLocalSaved] = useState(true)
+  const [value, setValue] = useState(() => scratchpads.get(storageKey) ?? '')
   if (!popupWindow) return null
   return (
     <StyleSheetManager target={popupWindow.document.head}>
@@ -27,20 +21,11 @@ function LocalNotesEditor({ storageKey, popupWindow, onClose }: NotesProps) {
         <SlideNotesWindow
           value={value}
           onClose={onClose}
-          contextLabel="Prévia · rascunho local"
-          statusLabel={
-            localSaved
-              ? 'Rascunho neste navegador. Não vinculado a uma aula.'
-              : 'Rascunho só nesta janela. Copie antes de fechar.'
-          }
+          contextLabel="Rascunho"
+          statusLabel="Só na memória desta apresentação. Nenhuma aula vinculada."
           onChange={(next) => {
             setValue(next)
-            try {
-              localStorage.setItem(key, next)
-              setLocalSaved(true)
-            } catch {
-              setLocalSaved(false)
-            }
+            scratchpads.set(storageKey, next)
           }}
         />
       </ThemeProvider>
