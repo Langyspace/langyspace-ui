@@ -10,6 +10,7 @@ export function SlideDeck({
   pageId,
   onPageChange,
   label,
+  onBack,
   previousPageLabel = 'Voltar',
   firstPageLabel = 'Voltar à primeira página',
   navigationMode = 'pages',
@@ -39,13 +40,16 @@ export function SlideDeck({
       }}
     >
       <Styled.Navigation aria-label={label} data-slide-navigation="true">
-        {navigationMode === 'pages' && index > 0 ? (
+        {onBack || (navigationMode === 'pages' && index > 0) ? (
           <Styled.BackButton
             variant="secondary"
             size="sm"
             onClick={() => {
-              step(-1)
-              viewportRef.current?.focus({ preventScroll: true })
+              if (onBack) onBack()
+              else {
+                step(-1)
+                viewportRef.current?.focus({ preventScroll: true })
+              }
             }}
             iconStart={
               <svg

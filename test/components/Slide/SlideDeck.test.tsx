@@ -87,6 +87,29 @@ function geometry() {
 }
 
 describe('SlideDeck', () => {
+  it('keeps the product Back action visible on the first, middle and last page without stepping back', () => {
+    const onBack = vi.fn()
+    const onPageChange = vi.fn()
+    render(
+      <SlideDeck
+        label="Aula"
+        pages={pages}
+        onBack={onBack}
+        onPageChange={onPageChange}
+      />,
+    )
+    const { scroll, scrollTo } = geometry()
+    for (const top of [0, 500, 1000]) {
+      scroll(top)
+      onPageChange.mockClear()
+      scrollTo.mockClear()
+      fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+      expect(onPageChange).not.toHaveBeenCalled()
+      expect(scrollTo).not.toHaveBeenCalled()
+    }
+    expect(onBack).toHaveBeenCalledTimes(3)
+  })
+
   it('does not turn a delayed controlled scroll echo into a new navigation request', () => {
     function Controlled() {
       const [pageId, setPageId] = useState('one')

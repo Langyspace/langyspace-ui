@@ -11,6 +11,9 @@ Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou rep
 - Quando um relato mencionar apenas “esse botão” ou “essa imagem” e o print estiver omitido, registrar a identificação pendente e pedir o título/ícone/palavra. Continuar os outros pontos em paralelo, sem marcar o item desconhecido como corrigido.
 
 **Navegação e encaixe — revisão112:** a apresentação usa um único controlador. Direita/baixo avançam; esquerda/cima voltam, já na primeira tecla. O primeiro evento vertical de um novo gesto de scroll navega sem exigir força mínima; não consumir primeiro a rolagem de um conteúdo alto. Agrupar a inércia evita saltos, mas uma pausa completa não pode ser a única forma de reconhecer novas passadas. O controlador compartilhado precisa aceitar novos impulsos consecutivos, inclusive durante a animação, sem exigir força absoluta mínima. Testar a sequência de regressão de passadas sem intervalo de silêncio, além de teclado, mouse, mudança de direção e foco após sair de campos. A roda funciona também sobre o cabeçalho. Não adicionar handlers por aula. Páginas se ajustam ao espaço disponível e a conversas expandidas, sem rolagem aninhada. Imagem e alternativas do Warm-up compartilham a mesma largura e margens; preservar a imagem inteira e todas as opções. Se uma página densa exigir redução excessiva para caber, dividir o conteúdo em vez de usar esse ajuste como justificativa para poluição.
+
+**Voltar à biblioteca:** o botão “Voltar” do cabeçalho aparece em todas as páginas, inclusive capa e encerramento, e abre a listagem de materiais. Setas e gestos continuam navegando pelas páginas da aula. A biblioteca local abre os materiais da própria prévia, sem exigir login no portal.
+
 Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
 ## Instruções e personalização — revisão114

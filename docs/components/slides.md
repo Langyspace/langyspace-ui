@@ -46,6 +46,8 @@ Sequence of `{ id, label, content }` pages. Give its parent an explicit availabl
 
 `pageId` requests navigation to an existing id; `onPageChange` reports the page reached by navigation or native scrolling. Stable ids are required and must be unique. Products own URL state, persistence and media cleanup; there is no implicit storage or autoplay.
 
+`onBack` supplies a product-owned exit action: when provided, the header Back button stays visible on every page and calls that action instead of stepping to the previous page. The library does not decide the destination. MaterialSlideDeck uses it to return to the materials library, including a local catalog in the standalone preview. Without this prop, existing previous-page behavior is preserved.
+
 The previous-page button returns focus to the scroll region. PageDown/PageUp, arrow keys and Home/End are handled inside the deck, including after a toolbar or exercise button receives focus; editable fields and widgets keep their native keyboard behavior. Consumer key handlers can prevent navigation. No document-level handler is installed. An initial controlled `pageId` positions directly on its target to avoid intermediate snap pages feeding back into the consumer. Later controlled changes and navigation animate smoothly unless reduced motion is requested. No document-level scroll/keyboard behavior is installed.
 
 The 56px navigation bar overlays the deck viewport, so each page retains the complete available height. `SlidePage` reserves that header space in its own padding. The progress indicator has a transparent track, and actions remain at the right edge, including on the first page. Product-specific page counters are optional consumer content; A1.01 follows the reference with Notes and Back only.

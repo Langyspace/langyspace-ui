@@ -1,4 +1,5 @@
 export interface MaterialsCatalogProps {
+  materials?: readonly MaterialCatalogEntry[]
   initialLevel?: string
   initialQuery?: string
 }
@@ -10,6 +11,7 @@ export interface MaterialCatalogEntry {
   title: string
   description: string
   review: boolean
+  href?: string
   storyId?: string
   storySource?: string
 }

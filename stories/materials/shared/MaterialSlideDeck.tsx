@@ -2,6 +2,7 @@ import type { SlideDeckProps } from '../../../src/components/Slide/SlideDeck.typ
 import { MaterialTheme } from './MaterialTheme'
 import { useMaterialThemeToggle } from './MaterialAppearanceContext'
 import * as Styled from './LessonDeck.styles'
+import { returnToMaterialCatalog } from './materialCatalogNavigation'
 import { withFreeConversationEnding } from './freeConversationEnding'
 
 function ThemedDeck(props: SlideDeckProps) {
@@ -11,6 +12,7 @@ function ThemedDeck(props: SlideDeckProps) {
       tabIndex={-1}
       feedbackSounds
       {...props}
+      onBack={props.onBack ?? returnToMaterialCatalog}
       pages={withFreeConversationEnding(props.pages)}
       themeToggle={themeToggle}
       data-material-theme={themeToggle?.mode}

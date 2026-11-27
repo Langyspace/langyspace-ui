@@ -40,6 +40,8 @@ export interface SlideDeckProps extends Omit<
   pageId?: string
   onPageChange?: (pageId: string) => void
   label: string
+  /** Product-owned exit action. When supplied, Back stays visible on every page. */
+  onBack?: () => void
   previousPageLabel?: string
   /** Accessible name for the persistent control that returns to the first page. */
   firstPageLabel?: string

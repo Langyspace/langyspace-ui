@@ -64,6 +64,16 @@ export const WarmUp: Story = {
   tags: ['visual-review'],
 }
 
+export const PersistentBack: Story = {
+  args: { onBack: () => undefined },
+  tags: ['visual-review'],
+}
+
+export const PersistentBackLastPage: Story = {
+  args: { onBack: () => undefined, pageId: lessonPages.at(-1)!.id },
+  tags: ['visual-review'],
+}
+
 export const AnswerSoundControl: Story = {
   args: { pageId: 'warm-up', feedbackSounds: true },
   tags: ['visual-review', 'audio-review'],
