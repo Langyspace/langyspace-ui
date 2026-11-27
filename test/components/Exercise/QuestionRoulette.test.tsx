@@ -73,9 +73,12 @@ describe('QuestionRoulette', () => {
     const onDraw = vi.fn()
     render(<QuestionRoulette topics={topics} onDraw={onDraw} />)
     fireEvent.click(screen.getByRole('button', { name: 'Spin' }))
-    expect(screen.getByRole('button', { name: 'Spinning…' })).toHaveAttribute(
+    expect(screen.getByRole('button', { name: 'Spinning' })).toHaveAttribute(
       'aria-disabled',
       'true',
+    )
+    expect(screen.getByRole('button', { name: 'Spinning' })).toHaveTextContent(
+      /^Spin$/,
     )
     expect(screen.getByRole('status')).not.toHaveTextContent(
       topics[0]!.questions[0]!.prompt,
@@ -106,7 +109,7 @@ describe('QuestionRoulette', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Spin' }))
     expect(screen.getByLabelText('Questions drawn')).toBe(progress)
     expect(progress.parentElement).toBe(header)
-    expect(header).toHaveTextContent('Spinning…')
+    expect(header).toHaveTextContent('Spinning')
     expect(progress).toHaveTextContent('1 / 4')
     finishSpin()
     expect(progress.parentElement).toBe(header)

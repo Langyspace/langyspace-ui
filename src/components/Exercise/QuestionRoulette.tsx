@@ -38,7 +38,7 @@ function RouletteRound({
   const stopSoundRef = useRef<(() => void) | undefined>(undefined)
   const text = {
     spin: 'Spin',
-    spinning: 'Spinning…',
+    spinning: 'Spinning',
     newRound: 'New round',
     ready: 'Your next question',
     unavailable: 'No questions available',
@@ -159,7 +159,7 @@ function RouletteRound({
               pending ? text.spinning : exhausted ? text.newRound : text.spin
             }
           >
-            {pending ? '…' : exhausted ? text.newRound : text.spin}
+            {exhausted && !pending ? text.newRound : text.spin}
           </S.Spin>
         </S.Wheel>
         <S.Panel>

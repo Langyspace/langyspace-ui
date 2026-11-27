@@ -1,3 +1,9 @@
+# Refinement: muted tactile timbre and stable Spin label
+
+Baseline 20f0e1e5f8890ac432b66f1fcec32fc23f38d477. Owner approved synchronization with the wheel and requested a different sound plus removal of loading dots. Boundary timing, easing and draw behavior are unchanged. The new sound replaces pitched 720Hz ticks/overtones and the ending chord with smooth band-limited taps (180–1150Hz), a damped 240Hz body and a soft 70ms final tap. Relative gain is reduced from 0.45 to 0.36. No other earcon recipe changed. The center keeps “Spin” while drawing; the state header reads “Spinning” without an ellipsis.
+
+The local browser completed the draw and showed the literal Spin label while pending; evidence/timbre-v5/spinning.jpg matches the previous pending state and width. Existing mute, recording priority and request-scoped cancellation are reused. Seventeen component and sixteen shared-feedback cases passed across the targeted runs; two stale ellipsis assertions were updated and only those two were rerun. Declaration generation and API compatibility checks passed. Perceptual timbre/volume approval remains with the owner; no broad gate, package publication, merge or deployment.
+
 # Refinement: stable header and dedicated spin sound
 
 Baseline 9ba99fa9d5b655638f3dc2243d4416c0ecd5eef9. Panel centering moved the topic/progress row when the question and optional support disappeared. The metadata is now anchored at the top; a flexible question region takes the remaining space. The shorter “Spinning…” state reuses that same header. In the actual local preview, the progress anchor stayed at x487.068/y451.612 in ready, selected, pending and final states at the unchanged default width. Current ready/spinning/final JPEG evidence is in evidence/sound-v4.
