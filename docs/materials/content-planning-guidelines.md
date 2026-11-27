@@ -2,6 +2,12 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Continuidade de voz em nomes próprios — revisão151
+
+- Uma frase em inglês com cidade ou nome brasileiro precisa soar como uma única pessoa falando. Priorizar uma geração contínua da frase completa, com controle de pronúncia do nome compatível com o modelo. Preservar o texto de exibição e registrar separadamente o input fonético.
+- O mesmo voiceId não garante continuidade perceptiva quando trechos são sintetizados em modelos ou idiomas distintos e depois unidos. Não apresentar essa montagem como voz contínua apenas porque os IDs coincidem. A correção de Recife substitui essa montagem nos quatro bindings afetados, preservando as gravações válidas das demais falas.
+- Guardar modelo, voz, input, request-id e bytes reais. Validar inglês, pronúncia local e continuidade por escuta antes de tratar o resultado como aprovado. Uma transcrição correta ou HTTP200 não comprovam timbre e naturalidade. Pausas pedagógicas entre palavra e exemplo são diferentes de uma emenda no meio da frase.
+
 ## Legibilidade e controles de escuta — revisão136
 
 - Dicas curtas de fala precisam ser legíveis na tela compartilhada sem disputar espaço com a atividade. Reutilizar `SpokenPrompt`: fundo branco, texto preto e tokens de tamanho médio e peso médio, com padding compacto. A revisão substitui o tamanho grande que a dona do curso considerou excessivo em Guess who; não ampliar todos os textos da aula.
