@@ -98,7 +98,7 @@ The current customer-portal scenario assigns registration to Owen, backend/accou
 
 DEV.01 usa Ana como exemplo de pessoa estudando programação e Kim como interlocutora de apoio. DEV.02 usa Kim no papel de entrevistadora de gestão e Priya no papel de entrevistadora técnica. As contribuições no portal do cliente, problemas do Login e exemplos de projeto são fatos das simulações, não histórico profissional permanente dos personagens. A aluna responde com sua própria experiência ou com um projeto de prática.
 
-Owen, Niamh, Priya e Ruby mantêm os retratos já aprovados do time. As práticas de shadowing identificam nome, rosto e variante de inglês: Kim (US), Owen (GB), Niamh (IE), Priya (IN) e Ruby (AU). Sotaque/voz não determina nacionalidade, idade ou uma nova biografia. As duas notas de WhatsApp de cada aula vêm da mesma Kim e formam uma continuação natural.
+Owen, Niamh, Priya e Ruby mantêm os retratos já aprovados do time. As práticas de shadowing identificam nome, rosto e variante de inglês: Kim (US), Owen (GB), Niamh (IE), Priya (IN) e Ruby (AU). Sotaque/voz não determina nacionalidade, idade ou uma nova biografia. Quando uma aula tem duas notas de WhatsApp, elas vêm da mesma personagem e formam uma continuação natural.
 
 **B1.01, leitura145:** a semana de pintura, corrida e bolos continua sendo um episódio. Ana conta que prepara café e guarda uma fatia de bolo para a visita de Kim; o desejo de descansar no fim de semana não estabelece profissão, agenda permanente ou um novo hobby fixo.
 
