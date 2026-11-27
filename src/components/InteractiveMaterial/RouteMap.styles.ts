@@ -36,10 +36,11 @@ export const StreetLabel = styled.span<{
   top: ${(p) => p.$y}%;
   transform: translate(-50%, -50%)
     rotate(${(p) => (p.$vertical ? '-90deg' : '0deg')});
-  padding: ${theme.spacing[1]} ${theme.spacing[2]};
-  border-radius: ${theme.radius.sm};
-  background: ${theme.slides.canvas};
+  padding: 0;
   color: ${theme.slides.foreground};
+  text-shadow:
+    0 0 2px ${theme.slides.canvas},
+    0 1px 2px ${theme.slides.canvas};
   font-size: clamp(
     ${theme.typography.fontSize.xs},
     1.8cqw,
@@ -125,7 +126,7 @@ export const Label = styled.span<{
   ${(p) =>
     p.$illustrated
       ? css`
-          padding: ${theme.spacing[1]} ${theme.spacing[2]};
+          padding: calc(${theme.spacing[1]} / 2) ${theme.spacing[1]};
           border-radius: ${theme.radius.pill};
           background: ${Common.recipe(p).canvas};
           color: ${Common.recipe(p).foreground};
