@@ -15,6 +15,7 @@ export const Root = styled.div.withConfig({
   align-items: center;
   align-self: center;
   justify-content: center;
+  container-type: size;
   overflow: hidden;
   border: 1px solid var(--fc-line);
   border-radius: 1rem;

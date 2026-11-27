@@ -44,8 +44,8 @@ export const BackButton = styled(Pressable)`
 export const Picture = styled.img`
   position: relative;
   z-index: 1;
-  width: var(--fc-card-image-size);
-  height: var(--fc-card-image-size);
+  width: min(var(--fc-card-image-size), 100cqw, 100cqh);
+  height: min(var(--fc-card-image-size), 100cqw, 100cqh);
   object-fit: contain;
   filter: drop-shadow(0 8px 14px ${alpha(theme.colors.palette.black, 0.1)});
   pointer-events: none;
@@ -54,8 +54,8 @@ export const Picture = styled.img`
 export const RegionPicture = styled.div`
   position: relative;
   z-index: 1;
-  width: var(--fc-card-image-size);
-  height: var(--fc-card-image-size);
+  width: min(var(--fc-card-image-size), 100cqw, 100cqh);
+  height: min(var(--fc-card-image-size), 100cqw, 100cqh);
   pointer-events: none;
   user-select: none;
   > * {
