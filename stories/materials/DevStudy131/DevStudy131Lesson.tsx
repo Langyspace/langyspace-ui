@@ -198,7 +198,7 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
                 />
               }
               labels={{
-                play: 'Listen to Kim',
+                play: `Listen to ${source.listening.contact.name}`,
                 pause: 'Pause',
                 replay: 'Replay',
                 loading: 'Loading audio',
@@ -206,7 +206,7 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
                 ...voiceMessageTranscriptLabels,
                 transcriptHidden: 'The transcript appears on the third listen',
                 conversation: 'Your study session',
-                questions: 'Questions about Kim’s notes',
+                questions: `Questions about ${source.listening.contact.name}’s notes`,
               }}
             />
           </ThemeProvider>
