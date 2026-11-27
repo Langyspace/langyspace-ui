@@ -1,6 +1,10 @@
 import { feedbackSoundDesign as design } from '../foundations/audio/feedbackSoundDesign'
-import type { FeedbackSoundKind } from './feedbackSounds.types'
+import type {
+  FeedbackSoundKind,
+  RouletteFeedbackSequence,
+} from './feedbackSounds.types'
 import { questionFeedbackSamples } from './questionFeedbackSamples'
+import { rouletteFeedbackSamples } from './rouletteFeedbackSamples'
 
 let enabled = true
 const listeners = new Set<() => void>()
@@ -24,7 +28,11 @@ export function observeFeedbackMedia(media: HTMLMediaElement) {
   const clear = () => playingMedia.delete(media)
   media.addEventListener('play', () => {
     playingMedia.add(media)
-    if (current?.kind === 'hint' || current?.kind === 'question')
+    if (
+      current?.kind === 'hint' ||
+      current?.kind === 'question' ||
+      current?.kind === 'roulette'
+    )
       stopFeedbackSounds()
   })
   for (const event of ['pause', 'ended', 'error', 'emptied']) {
@@ -77,15 +85,17 @@ export function setFeedbackSoundsEnabled(value: boolean) {
 async function play(
   outcome: FeedbackSoundKind,
   acknowledgeMuteControl = false,
+  sequence?: RouletteFeedbackSequence,
 ) {
   if (
     (!enabled && !acknowledgeMuteControl) ||
     typeof window === 'undefined' ||
-    !window.AudioContext
+    !window.AudioContext ||
+    (outcome === 'roulette' && !sequence)
   )
     return
   // A deliberate question click still acknowledges while listening; it never controls the recording.
-  const deferToMedia = outcome === 'hint'
+  const deferToMedia = outcome === 'hint' || outcome === 'roulette'
   if (deferToMedia && mediaIsPlaying()) return
   stopFeedbackSounds()
   const request = revision
@@ -116,7 +126,9 @@ async function play(
         ? design.questionGain
         : outcome === 'hint'
           ? design.hintGain
-          : 1)
+          : outcome === 'roulette'
+            ? design.roulette.gain
+            : 1)
     bus.connect(audio.destination)
     const active = {
       gain: bus,
@@ -125,8 +137,19 @@ async function play(
     }
     current = active
     const start = audio.currentTime
-    if (outcome === 'question') {
-      const samples = questionFeedbackSamples(audio.sampleRate)
+    if (outcome === 'question' || outcome === 'roulette') {
+      const elapsed =
+        outcome === 'roulette'
+          ? Math.max(0, (performance.now() - sequence!.requestedAt) / 1_000)
+          : 0
+      if (sequence && elapsed >= sequence.duration) {
+        stopFeedbackSounds()
+        return
+      }
+      const samples =
+        outcome === 'question'
+          ? questionFeedbackSamples(audio.sampleRate)
+          : rouletteFeedbackSamples(audio.sampleRate, sequence!)
       const buffer = audio.createBuffer(1, samples.length, audio.sampleRate)
       buffer.getChannelData(0).set(samples)
       const source = audio.createBufferSource()
@@ -138,8 +161,9 @@ async function play(
         bus.disconnect()
         if (current === active) current = undefined
       }
-      source.start(start)
-      source.stop(start + buffer.duration)
+      if (outcome === 'roulette') source.start(start, elapsed)
+      else source.start(start)
+      source.stop(start + buffer.duration - elapsed)
       return
     }
     const notes = design[outcome]
@@ -184,6 +208,23 @@ async function play(
 
 export function playFeedbackSound(outcome: FeedbackSoundKind) {
   void play(outcome)
+}
+
+/** Cancellation belongs to this draw only; it must not stop a later, unrelated earcon. */
+export function playRouletteSpinSound(
+  ticks: readonly number[],
+  duration: number,
+) {
+  const before = revision
+  void play('roulette', false, {
+    ticks,
+    duration,
+    requestedAt: performance.now(),
+  })
+  const request = revision
+  return () => {
+    if (request !== before && revision === request) stopFeedbackSounds()
+  }
 }
 
 /** Only the explicit sound switch acknowledges its own change after applying mute immediately. */

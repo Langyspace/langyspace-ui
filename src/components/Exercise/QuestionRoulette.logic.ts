@@ -141,6 +141,44 @@ export function rouletteAngle(previous: number, center: number): number {
   )
 }
 
+/** A soft tick for each sector boundary passing the pointer, using the visual easing token. */
+export function rouletteTickTimes(
+  from: number,
+  to: number,
+  segments: readonly RouletteSegment[],
+): number[] {
+  const easing = theme.exercises.rouletteSpinEasing
+  const [x1, y1, x2, y2] = easing.match(/[\d.]+/g)!.map(Number) as [
+    number,
+    number,
+    number,
+    number,
+  ]
+  const bezier = (t: number, a: number, b: number) =>
+    3 * (1 - t) ** 2 * t * a + 3 * (1 - t) * t ** 2 * b + t ** 3
+  const angles: number[] = []
+  for (const segment of segments) {
+    let crossing = Math.floor((from + segment.start) / 360) + 1
+    while (crossing * 360 - segment.start < to) {
+      angles.push(crossing * 360 - segment.start)
+      crossing++
+    }
+  }
+  return angles
+    .sort((a, b) => a - b)
+    .map((angle) => {
+      const progress = (angle - from) / (to - from)
+      let low = 0
+      let high = 1
+      for (let i = 0; i < 24; i++) {
+        const mid = (low + high) / 2
+        if (bezier(mid, y1, y2) < progress) low = mid
+        else high = mid
+      }
+      return (bezier((low + high) / 2, x1, x2) * rouletteSpinDuration) / 1_000
+    })
+}
+
 export function rouletteSector(start: number, end: number): string {
   const arc = end - start
   if (arc >= 360 - 0.000001)

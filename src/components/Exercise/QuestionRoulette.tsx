@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useReducer } from 'react'
-import { playFeedbackSound } from '../../internal/feedbackSounds'
+import { playRouletteSpinSound } from '../../internal/feedbackSounds'
 import { VocabularyControls } from './VocabularyControls'
 import {
   initialRouletteRound,
@@ -10,6 +10,7 @@ import {
   rouletteSector,
   rouletteSegments,
   rouletteSpinDuration,
+  rouletteTickTimes,
 } from './QuestionRoulette.logic'
 import type { QuestionRouletteProps } from './QuestionRoulette.types'
 import * as S from './QuestionRoulette.styles'
@@ -34,9 +35,10 @@ function RouletteRound({
   )
   const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const drawingRef = useRef(false)
+  const stopSoundRef = useRef<(() => void) | undefined>(undefined)
   const text = {
     spin: 'Spin',
-    spinning: 'Drawing a question',
+    spinning: 'Spinning…',
     newRound: 'New round',
     ready: 'Your next question',
     unavailable: 'No questions available',
@@ -51,6 +53,8 @@ function RouletteRound({
     clearTimeout(timerRef.current)
     timerRef.current = undefined
     drawingRef.current = false
+    stopSoundRef.current?.()
+    stopSoundRef.current = undefined
   }, [])
   useEffect(() => clearPending, [clearPending])
   useEffect(() => {
@@ -71,8 +75,15 @@ function RouletteRound({
     )
     if (!targetSegment) return
     drawingRef.current = true
-    playFeedbackSound('hint')
     const finalRotation = rouletteAngle(rotation, targetSegment.center)
+    const reducedMotion = window.matchMedia(
+      '(prefers-reduced-motion: reduce)',
+    ).matches
+    if (!reducedMotion)
+      stopSoundRef.current = playRouletteSpinSound(
+        rouletteTickTimes(rotation, finalRotation, segments),
+        rouletteSpinDuration / 1_000,
+      )
     dispatch({ type: 'spin', entry: next, rotation: finalRotation })
     const reveal = () => {
       const nextUsed = new Set([...usedKeys, next.key])
@@ -90,7 +101,7 @@ function RouletteRound({
         drawNumber: nextUsed.size,
       })
     }
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) reveal()
+    if (reducedMotion) reveal()
     else timerRef.current = setTimeout(reveal, rouletteSpinDuration)
   }
   return (
@@ -160,7 +171,7 @@ function RouletteRound({
               {used.size} / {bank.length}
             </span>
           </S.Meta>
-          <div role="status" aria-live="polite" aria-atomic="true">
+          <S.Content role="status" aria-live="polite" aria-atomic="true">
             {selected && !pending ? (
               <S.Prompt>{selected.question.prompt}</S.Prompt>
             ) : (
@@ -168,7 +179,7 @@ function RouletteRound({
                 {bank.length ? '?' : text.unavailable}
               </S.Placeholder>
             )}
-          </div>
+          </S.Content>
           {!pending && selected?.question.hint && hint ? (
             <S.Hint>{selected.question.hint}</S.Hint>
           ) : null}

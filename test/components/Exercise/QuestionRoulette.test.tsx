@@ -8,6 +8,7 @@ import {
   rouletteBank,
   rouletteSegments,
   rouletteSpinDuration,
+  rouletteTickTimes,
 } from '../../../src/components/Exercise/QuestionRoulette.logic'
 import type { QuestionRouletteTopic } from '../../../src/components/Exercise/QuestionRoulette.types'
 import * as feedback from '../../../src/internal/feedbackSounds'
@@ -45,6 +46,7 @@ beforeEach(() => {
   )
   vi.spyOn(Math, 'random').mockReturnValue(0)
   vi.spyOn(feedback, 'playFeedbackSound').mockImplementation(() => undefined)
+  vi.spyOn(feedback, 'playRouletteSpinSound').mockReturnValue(vi.fn())
 })
 afterEach(() => {
   vi.useRealTimers()
@@ -71,9 +73,10 @@ describe('QuestionRoulette', () => {
     const onDraw = vi.fn()
     render(<QuestionRoulette topics={topics} onDraw={onDraw} />)
     fireEvent.click(screen.getByRole('button', { name: 'Spin' }))
-    expect(
-      screen.getByRole('button', { name: 'Drawing a question' }),
-    ).toHaveAttribute('aria-disabled', 'true')
+    expect(screen.getByRole('button', { name: 'Spinning…' })).toHaveAttribute(
+      'aria-disabled',
+      'true',
+    )
     expect(screen.getByRole('status')).not.toHaveTextContent(
       topics[0]!.questions[0]!.prompt,
     )
@@ -92,6 +95,42 @@ describe('QuestionRoulette', () => {
       question: topics[0]!.questions[0],
       drawNumber: 1,
     })
+  })
+
+  it('keeps the same header and progress mounted while drawing the next question', () => {
+    render(<QuestionRoulette topics={topics} />)
+    spin()
+    const progress = screen.getByLabelText('Questions drawn')
+    const header = progress.parentElement
+    expect(header).toHaveTextContent('Work')
+    fireEvent.click(screen.getByRole('button', { name: 'Spin' }))
+    expect(screen.getByLabelText('Questions drawn')).toBe(progress)
+    expect(progress.parentElement).toBe(header)
+    expect(header).toHaveTextContent('Spinning…')
+    expect(progress).toHaveTextContent('1 / 4')
+    finishSpin()
+    expect(progress.parentElement).toBe(header)
+    expect(header).toHaveTextContent('Work')
+    expect(progress).toHaveTextContent('2 / 4')
+  })
+
+  it('times the spin texture to boundary crossings and the same easing as the wheel', () => {
+    const bank = rouletteBank(
+      Array.from({ length: 8 }, (_, index) => ({
+        id: `topic-${index}`,
+        label: `Topic ${index}`,
+        weight: [6, 5, 4, 3][index % 4]!,
+        questions: [{ id: 'one', prompt: 'A question?' }],
+      })),
+    )
+    const segments = rouletteSegments(bank)
+    const times = rouletteTickTimes(0, rouletteAngle(0, 0), segments)
+    expect(times).toHaveLength(48)
+    expect(times[0]).toBeGreaterThan(0)
+    expect(times.at(-1)).toBeLessThan(rouletteSpinDuration / 1_000)
+    for (let i = 1; i < times.length; i++)
+      expect(times[i]).toBeGreaterThan(times[i - 1]!)
+    expect(times.at(-1)! - times.at(-5)!).toBeGreaterThan(times[4]! - times[0]!)
   })
 
   it('keeps the previous question hidden throughout the next suspenseful spin', () => {
@@ -167,6 +206,9 @@ describe('QuestionRoulette', () => {
     rerender(<QuestionRoulette topics={topics} onDraw={onDraw} disabled />)
     finishSpin()
     expect(onDraw).not.toHaveBeenCalled()
+    expect(
+      vi.mocked(feedback.playRouletteSpinSound).mock.results[0]!.value,
+    ).toHaveBeenCalledOnce()
     expect(screen.getByLabelText('Questions drawn')).toHaveTextContent('0 / 4')
     rerender(<QuestionRoulette topics={topics} onDraw={onDraw} />)
     spin()
@@ -229,6 +271,7 @@ describe('QuestionRoulette', () => {
       topics[0]!.questions[0]!.prompt,
     )
     expect(vi.getTimerCount()).toBe(0)
+    expect(feedback.playRouletteSpinSound).not.toHaveBeenCalled()
   })
 
   it('handles empty and invalid banks and recovers when valid questions arrive', () => {

@@ -10,6 +10,7 @@ import { AudioSequenceControls } from '../../src/components/InteractiveMaterial/
 import {
   observeFeedbackMedia,
   playFeedbackSound,
+  playRouletteSpinSound,
   setFeedbackSoundsEnabled,
   setFeedbackSoundsEnabledFromControl,
   feedbackSoundsEnabled,
@@ -446,4 +447,77 @@ it('acknowledges a deliberate question click during listening without pausing or
   paused = true
   media.dispatchEvent(new Event('ended'))
   pause.mockRestore()
+})
+
+describe('Roulette spin texture', () => {
+  it('plays a bounded soft buffer, cancels on mute and does not let stale draw cleanup stop a later hint', () => {
+    const cancel = playRouletteSpinSound(
+      [0.01, 0.04, 0.1, 0.4, 1, 2.4, 3.5],
+      3.8,
+    )
+    const context = latest()
+    const source = context.sources[0]!
+    expect(context.gains[0]!.gain.value).toBe(
+      design.volume * design.roulette.gain,
+    )
+    expect(source.buffer!.duration).toBeCloseTo(
+      3.8 + design.roulette.landingSeconds,
+    )
+    const samples = source.buffer!.getChannelData(0)
+    let peak = 0
+    let finite = true
+    for (const value of samples) {
+      finite &&= Number.isFinite(value)
+      peak = Math.max(peak, Math.abs(value))
+    }
+    expect(finite).toBe(true)
+    expect(peak).toBeGreaterThan(0.01)
+    expect(peak).toBeLessThanOrEqual(design.peak + 0.000001)
+    expect(Math.abs(samples[0]!)).toBeLessThan(0.000001)
+    expect(Math.abs(samples.at(-1)!)).toBeLessThan(0.000001)
+    setFeedbackSoundsEnabled(false)
+    expect(source.stop).toHaveBeenLastCalledWith(10.008)
+    playRouletteSpinSound([0.1], 3.8)
+    expect(context.sources).toHaveLength(1)
+    setFeedbackSoundsEnabled(true)
+    playFeedbackSound('hint')
+    const stopCount = context.oscillators[0]!.stop.mock.calls.length
+    cancel()
+    expect(context.oscillators[0]!.stop).toHaveBeenCalledTimes(stopCount)
+  })
+
+  it('defers to lesson recordings and stops its own texture when a recording starts', () => {
+    const media = document.createElement('audio')
+    let paused = true
+    Object.defineProperty(media, 'paused', { get: () => paused })
+    observeFeedbackMedia(media)
+    playRouletteSpinSound([0.1, 1, 3], 3.8)
+    const context = latest()
+    paused = false
+    media.dispatchEvent(new Event('play'))
+    expect(context.sources[0]!.stop).toHaveBeenLastCalledWith(10.008)
+    playRouletteSpinSound([0.1, 1, 3], 3.8)
+    expect(context.sources).toHaveLength(1)
+    paused = true
+    media.dispatchEvent(new Event('ended'))
+  })
+
+  it('discards a spin cancelled while AudioContext resume is pending', async () => {
+    playFeedbackSound('hint')
+    const context = latest()
+    context.state = 'suspended'
+    let resume!: () => void
+    context.resume.mockImplementationOnce(
+      () =>
+        new Promise<void>((resolve) => {
+          resume = resolve
+        }),
+    )
+    const cancel = playRouletteSpinSound([0.1, 1, 3], 3.8)
+    cancel()
+    context.state = 'running'
+    resume()
+    await Promise.resolve()
+    expect(context.sources).toHaveLength(0)
+  })
 })

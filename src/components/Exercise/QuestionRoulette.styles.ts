@@ -140,7 +140,7 @@ export const Panel = styled.div`
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  justify-content: center;
+  justify-content: flex-start;
   min-width: 0;
   min-height: 15rem;
   gap: ${theme.spacing[4]};
@@ -162,6 +162,18 @@ export const Meta = styled.div`
   font-size: ${theme.typography.fontSize.sm};
   font-weight: ${theme.typography.fontWeight.medium};
   font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  span:last-child {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+`
+export const Content = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
 `
 const revealQuestion = keyframes`
   from { opacity: 0; transform: translateY(${theme.spacing[2]}); }
