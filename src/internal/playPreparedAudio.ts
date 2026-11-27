@@ -4,7 +4,7 @@ import type { PreparedAudioPlaybackOptions } from './playPreparedAudio.types'
 // A newer play/resume call on the same element invalidates the previous promise as well.
 const owners = new WeakMap<HTMLMediaElement, object>()
 
-/** Native media only. Recover once from a failed preload without replaying cancelled requests. */
+/** Recover failed preload once; never rewind speech that already started. */
 export function playPreparedAudio(
   audio: HTMLAudioElement,
   { isCurrent, onFailure, onStarted }: PreparedAudioPlaybackOptions,
@@ -15,6 +15,7 @@ export function playPreparedAudio(
   let attempt = 0
   let retried = false
   let failed = false
+  let started = false
   const owns = () => !failed && owners.get(audio) === owner && isCurrent()
   const fail = (reason?: unknown) => {
     if (!owns()) return
@@ -23,13 +24,18 @@ export function playPreparedAudio(
         ? reason.name
         : undefined
     // pause(), page changes and load() can reject an older play; these are not media failures.
-    if (name === 'AbortError') return
+    if (name === 'AbortError') {
+      failed = true
+      return
+    }
     const recoverable =
       name !== 'NotAllowedError' &&
       ([2, 3, 4].includes(audio.error?.code ?? 0) ||
         name === 'NetworkError' ||
         name === 'NotSupportedError')
-    if (recoverable && !retried) {
+    // load() resets currentTime. A late error must not replay an already heard prefix,
+    // including when the play promise has not settled yet or this is a paused resume.
+    if (recoverable && !retried && !started && audio.currentTime === 0) {
       retried = true
       ++attempt
       try {
@@ -52,7 +58,10 @@ export function playPreparedAudio(
     try {
       void audio.play().then(
         () => {
-          if (transport === attempt && owns()) onStarted?.()
+          if (transport === attempt && owns()) {
+            started = true
+            onStarted?.()
+          }
         },
         (reason: unknown) => {
           if (transport === attempt) fail(reason)

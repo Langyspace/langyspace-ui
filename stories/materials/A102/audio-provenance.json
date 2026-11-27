@@ -112,21 +112,73 @@
     },
     {
       "id": "V.6",
+      "material": "A102",
       "text": "six",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 0.417959,
-      "sha256": "48208eca19afb7eb1dd1f0e1001a18f4403b0808260a3fdace5ee75dda610817",
-      "synthesisInput": "six",
-      "phoneticIntent": "Isolated number word six.",
-      "file": "assets/audio/V.6.mp3",
+      "baselineSha256": "48208eca19afb7eb1dd1f0e1001a18f4403b0808260a3fdace5ee75dda610817",
       "baselineFile": "assets/audio/V.6.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/V.6.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/V.6.mp3"
+      "sourceProvenance": "stories/materials/A102/audio-provenance.json",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S IH1 K S\">six</phoneme>.",
+      "requestBody": {
+        "text": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S IH1 K S\">six</phoneme>.",
+        "model_id": "eleven_flash_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "speed": 0.92
+        },
+        "language_code": "en",
+        "apply_text_normalization": "off"
+      },
+      "file": "assets/audio/V.6.mp3",
+      "phoneticControl": {
+        "alphabet": "cmu-arpabet",
+        "phoneme": "S IH1 K S"
+      },
+      "configurationDelta": {
+        "model": {
+          "from": "eleven_multilingual_v2",
+          "to": "eleven_flash_v2"
+        },
+        "omittedUnsupportedFields": [
+          "style",
+          "use_speaker_boost"
+        ]
+      },
+      "provider": "elevenlabs",
+      "requestId": "v4HwHt7v7aLAh4cOwCqQ",
+      "providerHeaders": {
+        "request-id": "v4HwHt7v7aLAh4cOwCqQ",
+        "character-cost": "1",
+        "content-type": "audio/mpeg",
+        "history-item-id": "bYPwK7PUGqOAvn3ZbFTa"
+      },
+      "httpStatus": 200,
+      "sha256": "6679668f8567d037c2afae091e4f95067f51f559cba5cd8e245a00faee8f6443",
+      "bytes": 12163,
+      "processing": "Raw provider MP3; no trim, cut, gain, crossfade or composition",
+      "generationAttempts": 1,
+      "generatedAt": "2026-11-27T17:09:18.536Z",
+      "pcmAnalysis": {
+        "thresholdDbFS": -45,
+        "method": "first/last PCM sample with absolute amplitude above threshold; measurement only",
+        "leadingQuietFrames": 841,
+        "trailingQuietFrames": 5649,
+        "totalFrames": 30720
+      },
+      "durationSeconds": 0.6965986394557823,
+      "sampleRate": 44100,
+      "channels": 1,
+      "correctiveRevision": 156,
+      "replacesSha256": "48208eca19afb7eb1dd1f0e1001a18f4403b0808260a3fdace5ee75dda610817",
+      "status": "ready"
     },
     {
       "id": "V.7",
@@ -1897,5 +1949,12 @@
     "deltaManifest": "docs/epics/material-refinements42/A102-audio-delta.json",
     "preserveOtherItems": true,
     "perceptualReview": "pending human"
+  },
+  "feedback156": {
+    "scope": "Only newly reported high-priority audio; existing completed corrections preserved",
+    "ids": [
+      "V.6"
+    ],
+    "deltaSha256": "0c5c38f2372a129b5bbf0755f3d5b8270973923716b8519fd540e0883b36c6bb"
   }
 }

@@ -1,12 +1,18 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { alpha } from '../../foundations/theme/alpha'
+import { applicationPhone } from '../../foundations/layout/applicationPhone'
 import { Button } from '../Button/Button'
+import * as HeaderStyles from './QuizSessionHeader.styles'
+import * as PromptHeaderStyles from './QuizPromptHeader.styles'
+import * as QuestionStyles from './QuizQuestion.styles'
+import * as OptionStyles from './QuizOption.styles'
+import * as FeedbackStyles from './QuizFeedback.styles'
 
 /** Same session recipes as the Student quiz, now owned once by the UI Library. */
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-quiz-session',
-})`
+})<{ $preview?: boolean; $reviewing?: boolean }>`
   --quiz-ink: ${theme.colors.palette.neutral[900]};
   --quiz-muted: ${theme.colors.palette.neutral[600]};
   --quiz-muted-2: ${theme.colors.palette.neutral[500]};
@@ -23,6 +29,70 @@ export const Root = styled.section.withConfig({
   gap: ${theme.spacing[3]};
   margin: 0 auto;
   color: var(--quiz-ink);
+  ${({ $preview, $reviewing }) =>
+    $preview &&
+    css`
+      gap: ${theme.spacing[1]};
+      ${HeaderStyles.Header} {
+        padding: ${theme.spacing[1]};
+        gap: ${theme.spacing[2]};
+      }
+      ${HeaderStyles.BackButton} {
+        width: ${theme.spacing[8]};
+        height: ${theme.spacing[8]};
+      }
+      ${Card} {
+        padding: ${theme.spacing[2]};
+        gap: ${theme.spacing[2]};
+        border-radius: ${theme.radius.lg};
+        box-shadow: none;
+      }
+      ${PromptHeaderStyles.Root} {
+        display: none;
+      }
+      ${QuestionStyles.Root} {
+        font-size: ${theme.typography.fontSize.md};
+      }
+      ${QuestionStyles.Context} {
+        margin-bottom: ${theme.spacing[1]};
+      }
+      ${Options} {
+        gap: ${theme.spacing[1]};
+      }
+      ${OptionStyles.Option} {
+        min-height: ${theme.sizes.control.md};
+        padding: ${theme.spacing[1]} ${theme.spacing[2]};
+        gap: ${theme.spacing[2]};
+      }
+      ${OptionStyles.Letter} {
+        width: ${theme.spacing[6]};
+        height: ${theme.spacing[6]};
+      }
+      ${FeedbackStyles.Feedback} {
+        padding: ${theme.spacing[2]};
+        gap: ${theme.spacing[1]};
+        font-size: ${theme.typography.fontSize.sm};
+      }
+      ${Action} {
+        padding-top: 0;
+        .hint {
+          display: none;
+        }
+      }
+      ${
+        $reviewing &&
+        css`
+          ${PromptHeaderStyles.Root}, ${QuestionStyles.PromptLine} {
+            display: none;
+          }
+          @media (max-height: ${applicationPhone.compactScreenHeight}) {
+            ${Prompt}, ${Options} {
+              display: none;
+            }
+          }
+        `
+      }
+    `}
 `
 export const Card = styled.div`
   display: flex;

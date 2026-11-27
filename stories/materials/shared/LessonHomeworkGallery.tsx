@@ -184,6 +184,7 @@ function PreparedHomework({
       </FlashcardSession>
     ) : first.kind === 'quiz' && question ? (
       <QuizSession
+        presentation="preview"
         aria-label={'Quiz: ' + data.title}
         header={{
           name: data.title,
@@ -264,6 +265,7 @@ function PreparedHomework({
       </QuizSession>
     ) : first.kind === 'quiz' ? (
       <QuizSession
+        presentation="preview"
         aria-label={'Quiz: ' + data.title}
         header={{
           name: data.title,
@@ -298,7 +300,11 @@ function PreparedHomework({
             content: (
               <S.Item>
                 <MobileFrame
-                  screenMode="application"
+                  screenMode={
+                    first.kind === 'quiz'
+                      ? 'application-responsive'
+                      : 'application'
+                  }
                   aria-label={
                     (first.kind === 'flashcards' ? 'Flashcards' : 'Quiz') +
                     ' — ' +

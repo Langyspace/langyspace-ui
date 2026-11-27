@@ -9,6 +9,7 @@ import type { ApplicationViewportProps } from './ApplicationViewport.types'
 export function ApplicationViewport({
   title,
   children,
+  sizing = 'scaled',
 }: ApplicationViewportProps) {
   const root = useRef<HTMLDivElement>(null)
   const frame = useRef<HTMLIFrameElement>(null)
@@ -18,10 +19,17 @@ export function ApplicationViewport({
   useEffect(() => {
     const host = root.current
     if (!host) return
-    const observer = new ResizeObserver(() => {
+    if (sizing !== 'scaled') return
+    const measure = () =>
       setScale(Math.min(host.clientWidth / 360, host.clientHeight / 640))
-    })
+    measure()
+    const observer = new ResizeObserver(measure)
     observer.observe(host)
+    return () => observer.disconnect()
+  }, [sizing])
+  useEffect(() => {
+    const host = root.current
+    if (!host) return
     // Fonts only: no host layout, theme, user data or cross-origin stylesheet is copied.
     const faces: string[] = []
     for (const sheet of Array.from(host.ownerDocument.styleSheets)) {
@@ -33,14 +41,13 @@ export function ApplicationViewport({
       }
     }
     setFontFaces(faces.join('\n'))
-    return () => observer.disconnect()
   }, [])
   return (
     <S.Root ref={root}>
       <S.Viewport
         ref={frame}
         title={title}
-        $scale={scale}
+        $scale={sizing === 'scaled' ? scale : null}
         srcDoc="<!doctype html><html lang='en'><head></head><body></body></html>"
         onLoad={() => setDocument(frame.current?.contentDocument ?? undefined)}
       />

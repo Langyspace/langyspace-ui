@@ -1,6 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
+import { useState } from 'react'
 import { QuizSession } from '../../../src/components/Quiz/QuizSession'
+import { MobileFrame } from '../../../src/components/Device/MobileFrame'
+import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { PracticeResultPanel } from '../../../src/components/PracticeResultPanel/PracticeResultPanel'
+import homework from '../../materials/Practice/lessons/a1-12.json'
 const meta = {
   component: QuizSession,
   title: 'Quiz/QuizSession',
@@ -65,4 +69,83 @@ export const Result: Story = {
     ),
   },
   tags: ['visual-review'],
+}
+
+function HomeworkPreview() {
+  const [selected, setSelected] = useState<string>()
+  const question = homework.first.questions[0]!
+  const feedback = selected
+    ? selected === question.correctOptionId
+      ? question.feedback.correct
+      : question.feedback.wrong
+    : undefined
+  return (
+    <MobileFrame screenMode="application-responsive" aria-label="Homework quiz">
+      <QuizSession
+        presentation="preview"
+        header={{
+          ...meta.args.header,
+          name: homework.title,
+          onBack: () => setSelected(undefined),
+        }}
+        question={{
+          level: 'A1',
+          counter: 'Questão 1 de 6',
+          detail: 'Gramática',
+          prompt: question.prompt,
+          context: question.context,
+          narrationAction: (
+            <IconButton
+              variant="brand"
+              size="sm"
+              aria-label="Ouvir o enunciado"
+            >
+              <svg
+                aria-hidden="true"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </IconButton>
+          ),
+          options: question.options.map((option) => ({
+            id: option.id,
+            label: option.text,
+            disabled: Boolean(selected),
+            state: !selected
+              ? 'default'
+              : selected === option.id
+                ? option.id === question.correctOptionId
+                  ? 'correct'
+                  : 'wrong'
+                : 'dim',
+          })),
+          onSelect: setSelected,
+          feedback: feedback
+            ? {
+                tone:
+                  selected === question.correctOptionId ? 'correct' : 'wrong',
+                content: feedback.title + ' ' + feedback.message,
+              }
+            : undefined,
+          nextAction: selected
+            ? { label: 'Próxima', onClick: () => setSelected(undefined) }
+            : undefined,
+        }}
+      />
+    </MobileFrame>
+  )
+}
+
+export const HomeworkPhonePreview: Story = {
+  render: () => <HomeworkPreview />,
+  tags: ['visual-review'],
+}
+export const ShortHomeworkPhonePreview: Story = {
+  ...HomeworkPhonePreview,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary', 'visual-review'],
 }

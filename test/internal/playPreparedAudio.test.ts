@@ -2,11 +2,13 @@ import { describe, expect, it, vi } from 'vitest'
 import { playPreparedAudio } from '../../src/internal/playPreparedAudio'
 const fixture = () => {
   const audio = {
+    currentTime: 0,
     error: null as { code: number } | null,
     onerror: null as (() => void) | null,
     play: vi.fn(() => Promise.resolve()),
     load: vi.fn(() => {
       audio.error = null
+      audio.currentTime = 0
     }),
   }
   const onFailure = vi.fn(),
@@ -47,6 +49,65 @@ describe('Owned native media recovery', () => {
     f.audio.onerror?.()
     expect(f.audio.load).toHaveBeenCalledOnce()
     expect(f.audio.play).toHaveBeenCalledTimes(2)
+    expect(f.onFailure).toHaveBeenCalledOnce()
+  })
+  it('reports a late media error once instead of reloading already heard speech', async () => {
+    const f = fixture()
+    playPreparedAudio(f.element, f)
+    await settle()
+    f.audio.currentTime = 1.25
+    f.audio.error = { code: 2 }
+    f.audio.onerror?.()
+    f.audio.onerror?.()
+    expect(f.audio.load).not.toHaveBeenCalled()
+    expect(f.audio.play).toHaveBeenCalledOnce()
+    expect(f.audio.currentTime).toBe(1.25)
+    expect(f.onFailure).toHaveBeenCalledOnce()
+  })
+  it('does not rewind progressed playback while its first play promise is still pending', async () => {
+    const f = fixture()
+    let reject!: (e: Error) => void
+    f.audio.play.mockImplementationOnce(
+      () =>
+        new Promise((_, r) => {
+          reject = r
+        }),
+    )
+    playPreparedAudio(f.element, f)
+    f.audio.currentTime = 0.08
+    reject(
+      new DOMException(
+        'network failed after playback advanced',
+        'NetworkError',
+      ),
+    )
+    await settle()
+    expect(f.audio.load).not.toHaveBeenCalled()
+    expect(f.audio.play).toHaveBeenCalledOnce()
+    expect(f.audio.currentTime).toBe(0.08)
+    expect(f.onFailure).toHaveBeenCalledOnce()
+  })
+  it('does not reload an acknowledged start even if the timeline still reports zero', async () => {
+    const f = fixture()
+    playPreparedAudio(f.element, f)
+    await settle()
+    f.audio.error = { code: 3 }
+    f.audio.onerror?.()
+    expect(f.audio.load).not.toHaveBeenCalled()
+    expect(f.audio.play).toHaveBeenCalledOnce()
+    expect(f.onFailure).toHaveBeenCalledOnce()
+  })
+  it('keeps the paused resume position when native resume fails', async () => {
+    const f = fixture()
+    f.audio.currentTime = 2.5
+    f.audio.play.mockRejectedValueOnce(
+      new DOMException('resume failed', 'NetworkError'),
+    )
+    playPreparedAudio(f.element, f)
+    await settle()
+    expect(f.audio.load).not.toHaveBeenCalled()
+    expect(f.audio.play).toHaveBeenCalledOnce()
+    expect(f.audio.currentTime).toBe(2.5)
     expect(f.onFailure).toHaveBeenCalledOnce()
   })
   it('ignores queued old media errors after load cleared MediaError', () => {
@@ -107,7 +168,10 @@ describe('Owned native media recovery', () => {
     f.audio.play.mockRejectedValueOnce(new DOMException('paused', 'AbortError'))
     playPreparedAudio(f.element, f)
     await settle()
+    f.audio.error = { code: 2 }
+    f.audio.onerror?.()
     expect(f.audio.load).not.toHaveBeenCalled()
+    expect(f.audio.play).toHaveBeenCalledOnce()
     expect(f.onFailure).not.toHaveBeenCalled()
   })
   it('reports permission denial honestly without repeated autoplay attempts', async () => {
