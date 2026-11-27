@@ -24,3 +24,21 @@ export const CafeNarrow: Story = {
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['visual-review', 'layout-boundary'],
 }
+export const WeekendPlans: Story = {
+  args: { materialKey: 'a2-04' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const Clothes: Story = {
+  args: { materialKey: 'a1-11' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const WeekendPlansNarrow: Story = {
+  args: { materialKey: 'a2-04' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const ClothesNarrow: Story = {
+  args: { materialKey: 'a1-11' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}
