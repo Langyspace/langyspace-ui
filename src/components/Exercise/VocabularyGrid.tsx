@@ -185,7 +185,19 @@ export function VocabularyGrid({
           )
         })}
       </Styled.Vocabulary>
-      {controls ? <VocabularyControls {...controls} /> : null}
+      {controls ? (
+        <VocabularyControls
+          {...controls}
+          onReset={
+            controls.onReset
+              ? () => {
+                  setHovered(undefined)
+                  controls.onReset?.()
+                }
+              : undefined
+          }
+        />
+      ) : null}
     </Styled.VocabularySection>
   )
 }

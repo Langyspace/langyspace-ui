@@ -145,26 +145,20 @@ export function VocabularyDemo() {
         onPlay={(id) => speech.play(data.FR[Number(id)]?.[1] ?? '')}
         showAll={all}
         showInitial={initial}
+        controls={{
+          showAll: all,
+          showInitial: initial,
+          onToggleAll: () => setAll(!all),
+          onToggleInitial: () => setInitial(!initial),
+          onReset: () => {
+            setIds([])
+            setAll(false)
+            setInitial(false)
+            speech.stop()
+          },
+        }}
         revealVariant="tooltip"
       />
-      <Common.Row>
-        <Common.Action
-          type="button"
-          variant="secondary"
-          aria-pressed={initial}
-          onClick={() => setInitial(!initial)}
-        >
-          Dica
-        </Common.Action>
-        <Common.Action
-          type="button"
-          variant="secondary"
-          aria-pressed={all}
-          onClick={() => setAll(!all)}
-        >
-          Mostrar todas
-        </Common.Action>
-      </Common.Row>
     </Common.Stack>
   )
 }

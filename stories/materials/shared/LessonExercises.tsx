@@ -25,7 +25,7 @@ export function VocabularyExercise({ items, note }: VocabularyExerciseProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [all, setAll] = useState(false)
   const [hint, setHint] = useState(false)
-  const { speak, error } = useMaterialSpeech()
+  const { speak, stop, error } = useMaterialSpeech()
   return (
     <Common.Stack>
       <VocabularyGrid
@@ -48,6 +48,12 @@ export function VocabularyExercise({ items, note }: VocabularyExerciseProps) {
         showAll={all}
         onToggleInitial={() => setHint(!hint)}
         onToggleAll={() => setAll(!all)}
+        onReset={() => {
+          setRevealed([])
+          setAll(false)
+          setHint(false)
+          stop()
+        }}
       />
       {note ? <Common.Hint>{note}</Common.Hint> : null}
       {error ? <Common.Hint role="status">{error}</Common.Hint> : null}

@@ -232,6 +232,12 @@ function PageContent({
           showInitial: initial,
           onToggleAll: () => setAll(!all),
           onToggleInitial: () => setInitial(!initial),
+          onReset: () => {
+            setRevealed([])
+            setAll(false)
+            setInitial(false)
+            speech.stop()
+          },
         }}
         onReveal={(id) =>
           setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))

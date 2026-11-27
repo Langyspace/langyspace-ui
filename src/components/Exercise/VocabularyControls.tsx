@@ -11,6 +11,7 @@ export function VocabularyControls({
   showAll,
   onToggleInitial,
   onToggleAll,
+  onReset,
 }: VocabularyControlsProps) {
   return (
     <S.Controls>
@@ -65,6 +66,26 @@ export function VocabularyControls({
           >
             <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
             <circle cx="12" cy="12" r="3" />
+          </svg>
+        </IconButton>
+      ) : null}
+      {onReset ? (
+        <IconButton
+          size={density === 'compact' ? 'sm' : 'md'}
+          variant="neutral"
+          aria-label={labels?.reset ?? 'Reset vocabulary'}
+          title={labels?.reset ?? 'Reset vocabulary'}
+          onClick={onReset}
+          feedbackSound="hint"
+        >
+          <svg
+            aria-hidden="true"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M12 5a7 7 0 1 1-6.6 9.3l1.9-.6A5 5 0 1 0 12 7H7.8l2.6 2.6L9 11 4 6l5-5 1.4 1.4L7.8 5H12Z" />
           </svg>
         </IconButton>
       ) : null}
