@@ -1,6 +1,7 @@
 import data from './b1-01.json'
 import type { PreparedCourseData } from '../Course.types'
 import type { CourseLessonData } from '../Course.types'
+import reading145 from '../assets/audio/B101-R145.1.mp3'
 import a0 from '../assets/audio/B101-FS81.0.mp3'
 import a1 from '../assets/audio/B101-FS81.1.mp3'
 import a2 from '../assets/audio/B101-FS81.2.mp3'
@@ -25,6 +26,11 @@ import decorateRoom143 from '../assets/b1-01-decorate-room143-v2.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B101-R145.1',
+      text: 'Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.\n\nI’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.\n\nIt’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend.',
+      src: reading145,
+    },
     {
       id: 'B101-FS81.0',
       text: 'work overtime. I’ve been working overtime this week.',

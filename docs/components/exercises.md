@@ -171,3 +171,5 @@ Compor `RevealCard presentation="prompt"` numa lista numerada para perguntas fac
 Maintained materials bind this control in their shared MaterialTheme/MaterialSlideDeck and experimental LessonShell. Presentations start dark; nested wrappers inherit the same session choice. The light theme reuses the canonical UI Library theme; it does not add a second color palette.
 
 VocabularyControls accepts optional `onReset` and `labels.reset` for a third neutral reset icon. The controlled consumer clears its revealed IDs, first-letter hints, show-all flag and active playback; VocabularyGrid also clears its hover preview. The callback stays optional for other activities that use the bulb/eye controls without a vocabulary reset.
+
+`ExercisePanel variant="reading"` apresenta um título e parágrafos diretos, com tipografia maior de leitura e espaçamento natural. Não cria From/Subject, controles extras, altura fixa ou scroll interno. O consumidor compõe Questions na segunda coluna de SlidePage e usa seu play no título para a narração.

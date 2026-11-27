@@ -3,6 +3,7 @@ import type { SlideAudioActionProps } from './SlideAudioAction.types'
 
 export function SlideAudioAction({
   context,
+  contentKind = 'dialogue',
   status,
   disabled,
   describedBy,
@@ -10,16 +11,16 @@ export function SlideAudioAction({
 }: SlideAudioActionProps) {
   const action =
     status === 'playing'
-      ? 'Pause dialogue'
+      ? `Pause ${contentKind}`
       : status === 'paused'
-        ? 'Continue dialogue'
+        ? `Continue ${contentKind}`
         : status === 'loading'
           ? 'Cancel audio'
           : status === 'ended'
             ? 'Play again'
             : status === 'error'
               ? 'Retry audio'
-              : 'Play dialogue'
+              : `Play ${contentKind}`
   const label = `${action}: ${context}`
   return (
     <IconButton

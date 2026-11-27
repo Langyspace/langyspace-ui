@@ -9,6 +9,17 @@ export const warmupMaxWidth = theme.slides.focusedWidth
 export const Stack = styled(SharedStack)`
   gap: ${theme.exercises.compactOptionGap};
 `
+/** Larger prose for shared-screen reading; no fixed height or nested scrolling. */
+export const Prose = styled(SharedStack)`
+  gap: ${theme.spacing[4]};
+  > p {
+    margin: 0;
+    color: inherit;
+    font-family: ${theme.typography.fontFamily.sans};
+    font-size: ${theme.typography.fontSize.lg};
+    line-height: ${theme.typography.lineHeight.relaxed};
+  }
+`
 export const Navigation = styled.nav`
   display: flex;
   align-items: center;

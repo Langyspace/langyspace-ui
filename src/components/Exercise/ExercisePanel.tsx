@@ -196,14 +196,22 @@ export function ExercisePanel({
           {media ? <div data-exercise-media="true">{media}</div> : null}
           <Styled.Stack>
             {heading}
-            {children}
+            {variant === 'reading' ? (
+              <Styled.Prose>{children}</Styled.Prose>
+            ) : (
+              children
+            )}
           </Styled.Stack>
         </Styled.Split>
       ) : (
         <>
           {heading}
           {media ? <Styled.Media>{media}</Styled.Media> : null}
-          <Styled.Stack>{children}</Styled.Stack>
+          {variant === 'reading' ? (
+            <Styled.Prose>{children}</Styled.Prose>
+          ) : (
+            <Styled.Stack>{children}</Styled.Stack>
+          )}
         </>
       )}
       {controls}

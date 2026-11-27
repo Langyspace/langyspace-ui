@@ -16,6 +16,7 @@ import {
 import type { RevealGuidanceLevel } from '../../../src/components/Exercise/RevealCard.types'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { VideoExercise } from '../../../src/components/InteractiveMaterial/VideoExercise'
 import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
@@ -194,7 +195,20 @@ function PageContent({
         correctIndex={page.correctIndex}
       />
     )
-  if (page.kind === 'source')
+  if (page.kind === 'source') {
+    if (page.presentation === 'article')
+      return (
+        <ExercisePanel
+          variant="reading"
+          role="article"
+          title={page.subject}
+          aria-label={page.subject}
+        >
+          {page.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </ExercisePanel>
+      )
     return (
       <Common.Surface as="article" aria-label={page.subject}>
         <KeyValueList
@@ -202,7 +216,9 @@ function PageContent({
           layout="stacked"
           density="compact"
           items={[
-            { id: 'author', label: 'From', value: page.author },
+            ...(page.author
+              ? [{ id: 'author', label: 'From', value: page.author }]
+              : []),
             { id: 'subject', label: 'Subject', value: page.subject },
           ]}
         />
@@ -211,6 +227,7 @@ function PageContent({
         ))}
       </Common.Surface>
     )
+  }
   if (page.kind === 'vocabulary')
     return (
       <VocabularyGrid
@@ -617,7 +634,8 @@ export function ReviewedLesson({
                     layout={page.kind === 'homework' ? 'split' : 'stacked'}
                     title={page.title}
                     questions={
-                      page.kind === 'dialogue' && page.questions ? (
+                      (page.kind === 'dialogue' || page.kind === 'source') &&
+                      page.questions ? (
                         <Questions
                           items={page.questions}
                           purpose="comprehension"
@@ -633,7 +651,9 @@ export function ReviewedLesson({
                     eyebrow={page.eyebrow}
                     instruction={page.instruction}
                     density={
-                      page.kind === 'dialogue' || page.kind === 'video'
+                      page.kind === 'dialogue' ||
+                      page.kind === 'video' ||
+                      (page.kind === 'source' && page.questions)
                         ? 'compact'
                         : 'regular'
                     }
@@ -669,6 +689,8 @@ export function ReviewedLesson({
                       lines
                         ? {
                             context: page.title,
+                            contentKind:
+                              page.kind === 'source' ? 'audio' : undefined,
                             status: playing
                               ? speech.paused
                                 ? 'paused'

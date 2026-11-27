@@ -141,14 +141,42 @@
     {
       "id": "s_source0",
       "kind": "source",
-      "title": "Read the situation",
-      "instruction": "Read for the facts and the different priorities",
-      "minutes": 1,
+      "title": "Listen and read Ana’s update",
+      "instruction": "Listen to Ana first, then read her update and answer the questions",
+      "minutes": 5,
       "eyebrow": "Reading",
-      "author": "Scenario briefing · fictional",
-      "subject": "What have you been doing?",
+      "subject": "A busy week at home",
       "paragraphs": [
-        "Ana has been painting all week. The living room and kitchen are finished; the bedroom is next. She has been running for two weeks and has baked three cakes this week. Kim has returned from visiting family in Korea. These are episode facts, not new occupations."
+        "Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.",
+        "I’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.",
+        "It’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend."
+      ],
+      "presentation": "article",
+      "titleAudio": [
+        {
+          "id": "B101-R145.1",
+          "text": "Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.\n\nI’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.\n\nIt’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend."
+        }
+      ],
+      "questions": [
+        {
+          "id": "reading145.1",
+          "prompt": "Which rooms has Ana finished, and which one is next?",
+          "hint": "Two rooms are finished; one room is still waiting",
+          "answer": "She has finished the living room and the kitchen. The bedroom is next."
+        },
+        {
+          "id": "reading145.2",
+          "prompt": "How often does Ana run, and how long has she been doing it?",
+          "hint": "Look for a daily habit and a period of time",
+          "answer": "She has been running every morning for two weeks."
+        },
+        {
+          "id": "reading145.3",
+          "prompt": "Why does Ana want to take a break this weekend?",
+          "hint": "Think about her busy week and the time she has had for herself",
+          "answer": "She has been busy painting, running and baking, and she has not had much time for herself. She wants to catch up with Kim."
+        }
       ]
     },
     {
@@ -324,28 +352,28 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Catch up on recent weeks",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Talk about your week",
+      "instruction": "Compare your week with Ana’s, then ask your teacher about theirs",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
-          "prompt": "What have you been doing lately?",
-          "cue": "Describe a recent activity and ask about your teacher",
-          "hint": "I’ve been … lately. How about you?"
+          "prompt": "What have you been busy with this week?",
+          "cue": "Share an activity you have been working on, then ask me",
+          "hint": "I’ve been … this week. How about you?"
         },
         {
           "id": "1",
-          "prompt": "Have you finished anything recently?",
-          "cue": "Explain one result and how you got there",
-          "hint": "I’ve finished … I’ve been working on it for …"
+          "prompt": "What have you finished, and what are you still working on?",
+          "cue": "Describe one result and something that is still in progress",
+          "hint": "I’ve finished …, but I’m still working on …"
         },
         {
           "id": "recent.questions.3",
-          "prompt": "How long have you been working on a goal?",
-          "cue": "Describe your progress and ask about a goal of mine",
-          "hint": "I’ve been … for … I’ve already … What about you?"
+          "prompt": "Have you had enough time for yourself lately?",
+          "cue": "Tell me how you take a break, then ask about my week",
+          "hint": "I’ve been quite busy, but I’ve made time for … What about you?"
         }
       ],
       "questionPurpose": "conversation"

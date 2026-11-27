@@ -1,0 +1,51 @@
+{
+  "id": "B101-R145.1",
+  "material": "b1-01",
+  "page": "s_source0",
+  "speaker": "Ana",
+  "voiceId": "cgSgspJ2msm6clMCkdW9",
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "text": "Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.\n\nI’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.\n\nIt’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend.",
+  "synthesisInput": "Kim has just come back from visiting her family in Korea. Tomorrow, she's coming over for coffee. I've been painting my flat all week, so I have a lot to show her. I've finished the living room and the kitchen, but I haven't started the bedroom yet.\n\nI've also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I've been baking. I've made three cakes this week, and I'm saving a slice for Kim.\n\nIt's been a productive week, but I haven't had much time for myself. This weekend, I want to take a break from painting and catch up with my friend.",
+  "file": "assets/audio/B101-R145.1.mp3",
+  "outputFormat": "mp3_44100_128",
+  "paragraphs": [
+    "Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.",
+    "I’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.",
+    "It’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend."
+  ],
+  "wordCount": 116,
+  "configSource": "stories/materials/B101/audio-provenance.json",
+  "configSourceId": "D.2",
+  "sourceCommit": "995524048b5c32411513a809f611e8bbc231c6d0",
+  "language": "English; no language override is sent because multilingual_v2 ignores language_code",
+  "status": "ready",
+  "attempts": 1,
+  "startedAt": "2026-11-27T10:08:01.438316+00:00",
+  "httpStatus": 200,
+  "providerHeaders": {
+    "request-id": "kaEOwiWwQ88TAZ5ysocD",
+    "character-cost": "243",
+    "content-length": "575572",
+    "content-type": "audio/mpeg"
+  },
+  "requestId": "kaEOwiWwQ88TAZ5ysocD",
+  "bytes": 575572,
+  "sha256": "155eb59ac0b63676d9c4cfd4d3b27f0616cbc5ee539279d8f2ce50cd1f7fc7df",
+  "durationSeconds": 35.89805,
+  "completedAt": "2026-11-27T10:08:03.956506+00:00",
+  "processing": "Original provider MP3, no trimming, concatenation, crossfade or time stretching",
+  "lookup": {
+    "manifestsCompared": 75,
+    "exactTextMatches": []
+  },
+  "apiReference": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert"
+}

@@ -27,7 +27,7 @@ export interface ExercisePanelProps extends Omit<
   /** Bound a warm-up illustration to the presentation media scale; natural preserves its full-width framing. */
   warmupMediaSizing?: 'natural' | 'presentation'
   /** Warm-up keeps media above choices in one centered column, regardless of layout. */
-  variant?: 'default' | 'warmup' | 'workstation' | 'monitor'
+  variant?: 'default' | 'warmup' | 'workstation' | 'monitor' | 'reading'
 }
 
 export type ExerciseMonitorProps = Pick<

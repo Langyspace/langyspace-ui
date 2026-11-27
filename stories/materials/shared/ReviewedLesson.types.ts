@@ -124,9 +124,12 @@ export type ReviewedPage = PageBase &
       }
     | {
         kind: 'source'
-        author: string
+        author?: string
         subject: string
         paragraphs: readonly string[]
+        /** Plain reading passage instead of email-style From/Subject metadata. */
+        presentation?: 'message' | 'article'
+        questions?: readonly ReviewedPrompt[]
       }
     | {
         kind: 'introductions'

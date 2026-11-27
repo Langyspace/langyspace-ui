@@ -17,6 +17,7 @@ import { TextInput } from '../../../src/components/Form/TextInput'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
 import { feelings, image } from '../../materials/A101/A101.data'
 import * as Styled from './ExerciseComponents.stories.styles'
+import readingLesson from '../../materials/Course/lessons/b1-01.json'
 const isolatedFeelings = feelings.slice(0, 3).map((item, index) => ({
   ...item,
   imageUrl: image(
@@ -839,4 +840,19 @@ export const PatternGrammar: Story = {
       />
     </Styled.Preview>
   ),
+}
+
+export const Reading: Story = {
+  render: () => {
+    const page = readingLesson.pages.find((page) => page.id === 's_source0')!
+    return (
+      <Styled.Preview>
+        <ExercisePanel variant="reading" title={page.subject}>
+          {page.paragraphs?.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </ExercisePanel>
+      </Styled.Preview>
+    )
+  },
 }

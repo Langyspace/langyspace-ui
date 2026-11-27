@@ -19,3 +19,11 @@ Focused evidence reused: transcript26tests and image framing2tests passed. Root 
 The local server is port8851, not the older8832 preview. Review shared-surface layout, excerpt playback and Portuguese pronunciation there before further publication. GitHub PR remains draft because current before/after story screenshots and owner approval are pending.
 
 Visual gate review: pending human
+
+## B1 reading145 — local review
+
+The formerly editorial s_source0 now offers Ana’s first-person update in three paragraphs, a plain reading panel and three comprehension cards in SlidePage’s Questions column. No From/Subject metadata in this opt-in article presentation; existing message sources retain theirs. One 36s Jessica recording uses the approved B101 Ana voice/settings, generated once after 75 known provenance manifests had no exact-text reuse. Provider bytes/request-id and unchanged display/synthesis text are in Course/reading-b101145-provenance.json. No edits to prior clips. The existing s_personal page now connects the episode to the participants’ own week; all 14 IDs and their order remain unchanged.
+
+Shared contract: ExercisePanel variant=reading uses 18px tokenized prose without fixed height or nested scrolling. SlideAudioAction contentKind=audio labels narration while preserving dialogue defaults. Three reading-focused tests pass (SSR, real adapter/comprehension/play-pause-resume, unchanged message metadata), along with typecheck and generated API verification. The broader ExerciseComponents file has three vocabulary-translation visibility failures; they were reproduced unchanged in the isolated committed 99552404 baseline, so they are not reported as passing or changed in this task.
+
+Browser proof: local play/pause and an interpretation answer observed; desktop CSS viewport 1138×640 has 18px prose and equal article scroll/client heights 426px. Narrow panel stacks and scales the material, so no claim of universal fit or acoustic approval. Temporary viewport override restored. Preview: port8851?page=s_source0#b1-01. No export, Hosting, Teacher adoption or production deployment; PR stays draft for human review. Next: owner reviews the reading and narration locally before authorizing publication.

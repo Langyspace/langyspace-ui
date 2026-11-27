@@ -111,3 +111,5 @@ not establish it.
 For a single bounded scene, `SlidePage width={{mediaAspectRatio: imageWidth / imageHeight}}` constrains the common header/body column to the media’s fitted width. Use intrinsic asset dimensions and `SceneExplorer imageSizing="presentation"`. Both components consume the same presentationMedia height bounds from foundations; heading and image therefore share a width before the image loads, without DOM measurements or local margin adjustments.
 
 The column remains centered, respects available horizontal space and the existing expanded width ceiling. Invalid/zero/non-finite ratios fall back to the standard wide column. Existing width presets remain compatible. Question grids retain their full-width heading above the composition. Split introductions retain their intentionally separate heading column beside the exercise. Media fitting does not alter either layout. The TrialA1 park page is the first adoption; no unrelated page migration is implied.
+
+`SlideAudioAction contentKind="audio"` usa Play/Pause/Continue audio para narração de leitura. O padrão dialogue preserva os rótulos existentes e os mesmos estados/controle de reprodução.
