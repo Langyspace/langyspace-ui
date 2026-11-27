@@ -1,5 +1,7 @@
+import hotel from '../../../stories/materials/Course/lessons/a1-08.json'
+import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
 import { useState } from 'react'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, within } from '@testing-library/react'
 import { expect, it, vi } from 'vitest'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { ReviewedLesson } from '../../../stories/materials/shared/ReviewedLesson'
@@ -155,4 +157,61 @@ it('preserves the word-only default when no example is supplied', () => {
   )
   expect(screen.getByText(item.word)).toBeVisible()
   expect(screen.queryByText(item.example)).toBeNull()
+})
+
+it('keeps six pictures and compact word labels while one shared example follows the selected picture', () => {
+  const items = (
+    hotel.pages.find((page) => page.id === 's2') as { items: VocabularyItem[] }
+  ).items
+  const play = vi.fn()
+  function Example() {
+    const [revealed, setRevealed] = useState<string[]>([])
+    const [all, setAll] = useState(false)
+    return (
+      <VocabularyGrid
+        items={items}
+        revealedIds={revealed}
+        imageVariant="scene"
+        density="regular"
+        columns={3}
+        imageAspectRatio={1}
+        revealVariant="tooltip"
+        examplePlacement="footer"
+        onReveal={(id) =>
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }
+        onPlay={play}
+        showAll={all}
+        controls={{
+          showInitial: false,
+          showAll: all,
+          onToggleInitial: () => undefined,
+          onToggleAll: () => setAll(!all),
+        }}
+      />
+    )
+  }
+  const { container } = render(<Example />)
+  const pictures = [...container.querySelectorAll('button[aria-expanded]')]
+  expect(pictures).toHaveLength(6)
+  const caption = screen.getByRole('status')
+  expect(caption).toBeEmptyDOMElement()
+  const shower = screen.getByRole('button', { name: /shower/ })
+  const room = screen.getByRole('button', { name: /room/ })
+  fireEvent.click(shower)
+  expect(caption).toHaveTextContent('shower')
+  expect(caption).toHaveTextContent('The shower doesn’t work')
+  expect(within(shower).queryByText('The shower doesn’t work')).toBeNull()
+  expect(shower).toHaveAttribute('aria-describedby', caption.id)
+  fireEvent.click(room)
+  expect(caption).toHaveTextContent('My room is on the left')
+  expect(screen.queryByText('The shower doesn’t work')).toBeNull()
+  expect(play).toHaveBeenLastCalledWith(items[0]!.id)
+  fireEvent.click(screen.getByRole('button', { name: 'Show all words' }))
+  expect(screen.getAllByRole('status')).toHaveLength(1)
+  expect(caption).toHaveTextContent('My room is on the left')
+  expect([...container.querySelectorAll('button[aria-expanded]')]).toEqual(pictures)
+  fireEvent.click(shower)
+  expect(caption).toHaveTextContent('The shower doesn’t work')
+  expect(play).toHaveBeenLastCalledWith(items[2]!.id)
 })

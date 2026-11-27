@@ -1,3 +1,6 @@
+import hotelContent from '../../materials/Course/lessons/a1-08.json'
+import hotelAtlas from '../../materials/Course/assets/a1-08-vocabulary81.webp'
+import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
 import { ana as learnerPortrait } from '../../materials/shared/characterPortraits'
 import { letters as alphabetLetters } from '../../materials/A102/A102.data'
 import { useLessonSpeech as useAlphabetSpeech } from '../../materials/A102/useLessonSpeech'
@@ -855,4 +858,53 @@ export const Reading: Story = {
       </Styled.Preview>
     )
   },
+}
+
+function SharedVocabularyExamplePreview() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  const [all, setAll] = useState(false)
+  const [hint, setHint] = useState(false)
+  const items = (
+    hotelContent.pages.find((page) => page.id === 's2') as {
+      items: VocabularyItem[]
+    }
+  ).items.map((item) => ({ ...item, imageUrl: hotelAtlas }))
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        items={items}
+        columns={3}
+        density="regular"
+        imageVariant="scene"
+        imageAspectRatio={1}
+        surface="plain"
+        revealVariant="tooltip"
+        examplePlacement="footer"
+        revealedIds={revealed}
+        showAll={all}
+        showInitial={hint}
+        onReveal={(id) =>
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }
+        controls={{
+          showAll: all,
+          showInitial: hint,
+          onToggleAll: () => setAll(!all),
+          onToggleInitial: () => setHint(!hint),
+        }}
+      />
+    </Styled.Preview>
+  )
+}
+export const SharedVocabularyExample: Story = {
+  render: () => <SharedVocabularyExamplePreview />,
+  tags: ['visual-review'],
+}
+export const NarrowSharedVocabularyExample: Story = {
+  render: () => (
+    <Styled.Narrow>
+      <SharedVocabularyExamplePreview />
+    </Styled.Narrow>
+  ),
+  tags: ['visual-review', 'layout-boundary'],
 }

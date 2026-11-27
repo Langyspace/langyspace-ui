@@ -86,7 +86,8 @@ export const Word = styled(Pressable)<{
   color: ${(p) => recipe(p).foreground};
   margin: 0;
   cursor: ${(p) => (p.$static ? 'default' : 'pointer')};
-  &:focus-visible {
+  &:focus-visible,
+  &[data-selected-example='true'] {
     outline: 2px solid ${(p) => recipe(p).accent};
     outline-offset: 2px;
   }
@@ -279,6 +280,37 @@ export const VocabularySection = styled.div`
   display: grid;
   min-width: 0;
   gap: ${theme.spacing[3]};
+`
+export const ExampleFooter = styled.div<{
+  $columns?: 2 | 3 | 4
+  $regularScene?: boolean
+}>`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  width: 100%;
+  max-width: ${(p) => (p.$regularScene ? regularVocabularyMaxWidth(p.$columns) : 'none')};
+  min-height: ${theme.sizes.control.md};
+  margin-inline: auto;
+  > :last-child:not(:first-child) {
+    flex-shrink: 0;
+  }
+`
+export const SelectedExample = styled.div`
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: ${theme.spacing[2]};
+  row-gap: ${theme.spacing[1]};
+  color: ${(p) => recipe(p).foreground};
+  font-size: ${theme.typography.fontSize.md};
+  line-height: ${theme.typography.lineHeight.normal};
+  overflow-wrap: anywhere;
+  b {
+    font-weight: ${theme.typography.fontWeight.semibold};
+  }
 `
 
 export const WordSymbol = styled.span`

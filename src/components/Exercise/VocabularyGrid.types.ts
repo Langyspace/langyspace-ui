@@ -50,6 +50,8 @@ export interface VocabularyGridProps extends Omit<
   /** Omit for responsive three/two-column layout. */
   columns?: 2 | 3 | 4
   density?: 'compact' | 'regular'
+  /** Reveal examples in the image label by default, or in one shared footer for the selected picture. */
+  examplePlacement?: 'label' | 'footer'
   revealVariant?: 'overlay' | 'tooltip'
   revealLabel?: string
   /** Accessible playback action prefix for listen-only cards. */
