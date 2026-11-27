@@ -16,7 +16,7 @@ import a11 from '../assets/audio/A203-D81.6.mp3'
 import a12 from '../assets/audio/A203-D81.7.mp3'
 import a13 from '../assets/audio/A203-D81.8.mp3'
 import a14 from '../assets/audio/A203-L81.1.mp3'
-import i0 from '../assets/a2-03-vocabulary81.webp'
+import i0 from '../assets/a2-03-vocabulary160.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [

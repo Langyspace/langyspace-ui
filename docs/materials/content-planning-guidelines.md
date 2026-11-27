@@ -567,3 +567,7 @@ Flashcards e Shadowing mantêm application até sua adaptação específica: tro
 
 
 **Protótipo A1.08 — legenda compartilhada de vocabulário:** quando a frase no card encobrir a ilustração ou aumentar duas fileiras, usar a variação opcional `examplePlacement="footer"` do VocabularyGrid: etiqueta curta com a palavra na imagem e uma única faixa com palavra/exemplo ao lado dos controles. A faixa acompanha a seleção e mantém os mesmos seis quadros; não criar uma legenda alta por card nem reduzir a frase a texto ilegível. Validar este protótipo antes de adotar em outros materiais.
+
+## Fundos das cenas de vocabulário — revisão160
+
+Objetos isolados podem ter fundo transparente. Cenas que ensinam ações ou situações preservam um fundo contextual completo e opaco; não usar recortes esfumados, halos ou transparência gradual ao redor da cena. O cenário deve ser simples e legível. Arredondar os cantos no componente canônico de cena/card, sem pintar molduras ou máscaras arredondadas no bitmap. Ao mudar o acabamento, preservar as ações, a ordem dos itens e os vínculos de áudio; manter o prompt de estilo canônico intacto. Validar primeiro uma página local antes de estender uma nova direção visual às demais aulas.
