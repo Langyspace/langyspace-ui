@@ -1,5 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { renderToString } from 'react-dom/server'
+import { useLayoutEffect, useState } from 'react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import type { SlideDeckPage } from '../../../src/components/Slide/SlideDeck.types'
@@ -86,6 +87,77 @@ function geometry() {
 }
 
 describe('SlideDeck', () => {
+  it('keeps the product Back action visible on the first, middle and last page without stepping back', () => {
+    const onBack = vi.fn()
+    const onPageChange = vi.fn()
+    render(
+      <SlideDeck
+        label="Aula"
+        pages={pages}
+        onBack={onBack}
+        onPageChange={onPageChange}
+      />,
+    )
+    const { scroll, scrollTo } = geometry()
+    for (const top of [0, 500, 1000]) {
+      scroll(top)
+      onPageChange.mockClear()
+      scrollTo.mockClear()
+      fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+      expect(onPageChange).not.toHaveBeenCalled()
+      expect(scrollTo).not.toHaveBeenCalled()
+    }
+    expect(onBack).toHaveBeenCalledTimes(3)
+  })
+
+  it('does not turn a delayed controlled scroll echo into a new navigation request', () => {
+    function Controlled() {
+      const [pageId, setPageId] = useState('one')
+      useLayoutEffect(() => {
+        if (pageId === 'two') advanceBeforeEffects()
+      }, [pageId])
+      return (
+        <SlideDeck
+          label="Aula"
+          pages={pages}
+          pageId={pageId}
+          onPageChange={setPageId}
+        />
+      )
+    }
+    render(<Controlled />)
+    const { scroll, scrollTo } = geometry()
+    const advanceBeforeEffects = () => scroll(1000)
+    scroll(500)
+    expect(scrollTo).not.toHaveBeenCalled()
+    expect(screen.getByRole('region', { name: 'Terceira' })).toHaveAttribute(
+      'data-current',
+      'true',
+    )
+  })
+  it('positions an initial deep request directly', () => {
+    const descriptor = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      'scrollTo',
+    )
+    const navigate = vi.fn()
+    Object.defineProperty(HTMLElement.prototype, 'scrollTo', {
+      configurable: true,
+      writable: true,
+      value: navigate,
+    })
+    try {
+      render(<SlideDeck label="Aula" pages={pages} pageId="three" />)
+      expect(navigate).toHaveBeenCalledWith(
+        expect.objectContaining({ behavior: 'instant' }),
+      )
+    } finally {
+      if (descriptor)
+        Object.defineProperty(HTMLElement.prototype, 'scrollTo', descriptor)
+      else Reflect.deleteProperty(HTMLElement.prototype, 'scrollTo')
+    }
+  })
+
   it('retains a new navigation target when a pending resize arrives before scrolling settles', () => {
     render(<SlideDeck label="Aula" pages={pages} />)
     const { viewport, scroll, resize, scrollTo } = geometry()
@@ -124,7 +196,7 @@ describe('SlideDeck', () => {
     scroll(0)
     expect(screen.getByRole('textbox')).toHaveValue('Minha resposta')
     expect(
-      screen.queryByRole('button', { name: /Voltar/ }),
+      screen.queryByRole('button', { name: 'Voltar' }),
     ).not.toBeInTheDocument()
   })
 
@@ -149,23 +221,66 @@ describe('SlideDeck', () => {
     expect(scrollTo).not.toHaveBeenCalled()
   })
 
-  it('allows native scrolling within a long slide before advancing', () => {
-    render(<SlideDeck label="Aula" pages={pages} />)
-    const { viewport, scrollTo } = geometry()
-    vi.spyOn(viewport.children[0]!, 'getBoundingClientRect').mockReturnValue(
-      new DOMRect(0, 0, 800, 1100),
-    )
-    expect(fireEvent.keyDown(viewport, { key: 'PageDown' })).toBe(true)
-    expect(scrollTo).not.toHaveBeenCalled()
-  })
+  it.each(['viewport', 'header'] as const)(
+    'advances on the first key without exposing a scroll remainder from the %s',
+    (focus) => {
+      render(
+        <SlideDeck
+          label="Aula"
+          pages={pages}
+          actions={<button>Notes</button>}
+        />,
+      )
+      const { viewport, scrollTo } = geometry()
+      const heights = [613, 500, 500]
+      let top = 0
+      Array.from(viewport.children).forEach((child, index) => {
+        const start = top
+        top += heights[index]!
+        vi.spyOn(child, 'getBoundingClientRect').mockImplementation(
+          () => new DOMRect(0, start - viewport.scrollTop, 800, heights[index]),
+        )
+      })
+      Object.defineProperty(viewport, 'scrollHeight', {
+        configurable: true,
+        value: top,
+      })
+      const target =
+        focus === 'viewport'
+          ? viewport
+          : screen.getByRole('button', { name: 'Notes' })
+      target.focus()
+      expect(fireEvent.keyDown(target, { key: 'PageDown' })).toBe(false)
+      expect(scrollTo).toHaveBeenLastCalledWith({
+        top: 613,
+        behavior: 'smooth',
+      })
+      fireEvent.scroll(viewport)
+      expect(screen.getByRole('region', { name: 'Segunda' })).toHaveAttribute(
+        'data-current',
+        'true',
+      )
+      fireEvent.keyDown(target, { key: 'ArrowUp' })
+      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
+    },
+  )
 
   it('navigates previous, preserving keyboard focus when the first-page button disappears', () => {
     render(<SlideDeck label="Aula" pages={pages} />)
     const { scroll, scrollTo, viewport } = geometry()
     scroll(500)
-    fireEvent.click(screen.getByRole('button', { name: /Voltar/ }))
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
     expect(viewport).toHaveFocus()
+  })
+  it('uses the same logical destination for rapid previous-button clicks during animation', () => {
+    render(<SlideDeck label="Aula" pages={pages} />)
+    const { scroll, scrollTo } = geometry()
+    scroll(1000)
+    scrollTo.mockImplementation(() => undefined)
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
   })
 
   it('accepts page requests, ignores unknown ids and uses the latest callback', () => {
@@ -189,6 +304,71 @@ describe('SlideDeck', () => {
     expect(original).not.toHaveBeenCalled()
     scrollTo.mockClear()
     rerender(<SlideDeck label="Aula" pages={pages} pageId="missing" />)
+    expect(scrollTo).not.toHaveBeenCalled()
+  })
+
+  it('activates the majority page at60% visibility while progress follows actual scroll', () => {
+    const changed = vi.fn()
+    render(<SlideDeck label="Aula" pages={pages} onPageChange={changed} />)
+    const { scroll } = geometry()
+    scroll(275)
+    expect(changed).not.toHaveBeenCalled()
+    scroll(300)
+    expect(changed).toHaveBeenLastCalledWith('two')
+    expect(screen.getByRole('progressbar')).toHaveAttribute('value', '30')
+  })
+  it('handles arrow navigation from deck controls and honors consumer key handling', () => {
+    const { rerender } = render(
+      <SlideDeck label="Aula" pages={pages} actions={<button>Notes</button>} />,
+    )
+    const { scrollTo } = geometry()
+    fireEvent.keyDown(screen.getByRole('button', { name: 'Notes' }), {
+      key: 'ArrowRight',
+    })
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'smooth' })
+    scrollTo.mockClear()
+    fireEvent.keyDown(screen.getByRole('textbox'), { key: 'ArrowDown' })
+    expect(scrollTo).not.toHaveBeenCalled()
+    rerender(
+      <SlideDeck
+        label="Aula"
+        pages={pages}
+        onKeyDown={(e) => e.preventDefault()}
+      />,
+    )
+    fireEvent.keyDown(screen.getByRole('region', { name: 'Aula' }), {
+      key: 'ArrowRight',
+    })
+    expect(scrollTo).not.toHaveBeenCalled()
+  })
+
+  it('reaches the end of an oversized final page', () => {
+    render(<SlideDeck label="Aula" pages={pages} />)
+    const { viewport, scrollTo } = geometry()
+    Object.defineProperty(viewport, 'scrollHeight', {
+      configurable: true,
+      value: 2000,
+    })
+    fireEvent.keyDown(viewport, { key: 'End' })
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1500, behavior: 'smooth' })
+  })
+
+  it('leaves custom widget arrow keys to their own interaction pattern', () => {
+    render(
+      <SlideDeck
+        label="Aula"
+        pages={pages}
+        overlay={
+          <div role="radiogroup" aria-label="Practice">
+            <button role="radio" aria-checked={false}>
+              Choice
+            </button>
+          </div>
+        }
+      />,
+    )
+    const { scrollTo } = geometry()
+    fireEvent.keyDown(screen.getByRole('radio'), { key: 'ArrowRight' })
     expect(scrollTo).not.toHaveBeenCalled()
   })
 

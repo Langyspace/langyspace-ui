@@ -1,0 +1,603 @@
+{
+  "version": 81,
+  "code": "A2.02",
+  "key": "a2-02",
+  "title": "How was your weekend?",
+  "goal": "Tell a weekend story and react to someone else’s news",
+  "freeConversationInstruction": "Tell each other about a recent weekend and keep the conversation going with questions and reactions",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Compare one usual activity with yesterday",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What did you do yesterday?",
+          "hint": "Yesterday I …",
+          "cue": "Say what you did"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Where did you go?",
+          "hint": "I went to …",
+          "cue": "Say where you went"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How was it?",
+          "hint": "It was … What about your day?",
+          "cue": "Describe how it was"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Weekend moments",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A202-V81.0",
+          "word": "visited a museum",
+          "translation": "",
+          "example": "I visited a museum on Sunday",
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "visited a museum",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A202-FS81.0",
+          "audioText": "visited a museum. I visited a museum on Sunday."
+        },
+        {
+          "id": "A202-V81.1",
+          "word": "went to a market",
+          "translation": "",
+          "example": "We went to a market in the morning",
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "went to a market",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A202-FS81.1",
+          "audioText": "went to a market. We went to a market in the morning."
+        },
+        {
+          "id": "A202-V81.2",
+          "word": "had coffee",
+          "translation": "",
+          "example": "I had coffee with a friend",
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "had coffee",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A202-FS81.2",
+          "audioText": "had coffee. I had coffee with a friend."
+        },
+        {
+          "id": "A202-V81.3",
+          "word": "took photos",
+          "translation": "",
+          "example": "We took photos by the river",
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "took photos",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A202-FS81.3",
+          "audioText": "took photos. We took photos by the river."
+        },
+        {
+          "id": "A202-V81.4",
+          "word": "walked on the beach",
+          "translation": "",
+          "example": "She walked on the beach for an hour",
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "walked on the beach",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A202-FS81.4",
+          "audioText": "walked on the beach. She walked on the beach for an hour."
+        },
+        {
+          "id": "A202-V81.5",
+          "word": "stayed at home",
+          "translation": "",
+          "example": "I stayed at home and watched a film",
+          "imageUrl": "a2-02-vocabulary81",
+          "imageAlt": "stayed at home",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A202-FS81.5",
+          "audioText": "stayed at home. I stayed at home and watched a film."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Saturday at the market",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A202-D81.1",
+          "speaker": "Kim",
+          "text": "How was your weekend? Did you go anywhere?",
+          "audioText": "How was your weekend? Did you go anywhere?",
+          "translation": "Como foi seu fim de semana? Você foi a algum lugar?"
+        },
+        {
+          "id": "A202-D81.2",
+          "speaker": "Ana",
+          "text": "Yes! I went to a market on Saturday and had coffee with a friend",
+          "audioText": "Yes! I went to a market on Saturday and had coffee with a friend.",
+          "translation": "Sim! Fui a uma feira no sábado e tomei café com uma amiga"
+        },
+        {
+          "id": "A202-D81.3",
+          "speaker": "Kim",
+          "text": "That sounds nice. Did you buy anything?",
+          "audioText": "That sounds nice. Did you buy anything?",
+          "translation": "Parece legal. Você comprou alguma coisa?"
+        },
+        {
+          "id": "A202-D81.4",
+          "speaker": "Ana",
+          "text": "Just some fruit. Then we took photos by the river",
+          "audioText": "Just some fruit. Then we took photos by the river.",
+          "translation": "Só algumas frutas. Depois tiramos fotos perto do rio"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Where did Ana go on Saturday?",
+          "hint": "She went to …",
+          "answer": "Ana went to a market"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Who did Ana have coffee with?",
+          "hint": "She had coffee with …",
+          "answer": "Ana had coffee with a friend"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What did Ana buy?",
+          "hint": "She bought …",
+          "answer": "Ana bought some fruit"
+        }
+      ],
+      "dialogueGroup": "a2-02.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "A quiet Sunday",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A202-D81.5",
+          "speaker": "Kim",
+          "text": "And what did you do on Sunday?",
+          "audioText": "And what did you do on Sunday?",
+          "translation": "E o que você fez no domingo?"
+        },
+        {
+          "id": "A202-D81.6",
+          "speaker": "Ana",
+          "text": "I stayed at home. I was tired, so I watched a film",
+          "audioText": "I stayed at home. I was tired, so I watched a film.",
+          "translation": "Fiquei em casa. Estava cansada, então assisti a um filme"
+        },
+        {
+          "id": "A202-D81.7",
+          "speaker": "Kim",
+          "text": "Was it good? I’m looking for something to watch",
+          "audioText": "Was it good? I’m looking for something to watch.",
+          "translation": "Foi bom? Estou procurando algo para assistir"
+        },
+        {
+          "id": "A202-D81.8",
+          "speaker": "Ana",
+          "text": "It was really funny! What about you? How was your weekend?",
+          "audioText": "It was really funny! What about you? How was your weekend?",
+          "translation": "Foi muito engraçado! E você? Como foi seu fim de semana?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What did Ana do on Sunday?",
+          "hint": "She stayed … and watched …",
+          "answer": "Ana stayed at home and watched a film"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why did she stay at home?",
+          "hint": "She was …",
+          "answer": "Ana stayed at home because she was tired"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What did she think of the film?",
+          "hint": "She thought it was …",
+          "answer": "Ana thought the film was really funny"
+        }
+      ],
+      "dialogueGroup": "a2-02.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Tell a weekend story",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What did you do last weekend?",
+          "cue": "Describe two activities in order",
+          "hint": "First I … Then I …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How was it?",
+          "cue": "Give your opinion and add one detail",
+          "hint": "It was … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Who did you spend time with?",
+          "cue": "Add who was there, then ask about my weekend",
+          "hint": "I spent time with … Who did you see?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Tell the action and say how it was",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Place or opinion in the past",
+          "verb": "was / were",
+          "example": "The market was busy. We were tired"
+        },
+        {
+          "id": "1",
+          "subject": "A finished action",
+          "verb": "went / had / took / stayed",
+          "example": "I went to a market. Then I had coffee"
+        },
+        {
+          "id": "2",
+          "subject": "Ask about the action",
+          "verb": "Did + subject + base verb?",
+          "example": "Did you take photos? — Yes, I did"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Build your weekend story",
+      "instruction": "Choose a weekend and use three pictures to tell its story",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "What Niamh actually did",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead",
+      "audioText": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead.",
+      "audioId": "A202-W141.1",
+      "greeting": "Here’s what I ended up doing on Sunday",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Where did Niamh go instead of the museum?",
+          "hint": "She went to …",
+          "answer": "Niamh went to the beach"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why did she change her plan?",
+          "hint": "The weather was …",
+          "answer": "Niamh changed her plan because the weather was beautiful"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What did she do after her walk?",
+          "hint": "She took … and had …",
+          "answer": "Niamh took photos and had lunch with a friend"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Niamh"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "A202-W141.2",
+          "audioText": "I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?",
+          "message": "I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?",
+          "timestamp": "10:02"
+        }
+      ]
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Ask about the change",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A story with an unexpected ending",
+      "instruction": "Watch Bob tell his story, then react to someone else’s news",
+      "minutes": 4,
+      "video": {
+        "videoId": "_3uWwTQJ1Co",
+        "startSeconds": 59,
+        "endSeconds": 118,
+        "title": "Showing interest — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-02.video102.q1",
+          "prompt": "What happened to Bob in Canada?",
+          "hint": "Listen for the accident on the ice",
+          "answer": "He fell on the ice and broke his leg"
+        },
+        {
+          "id": "a2-02.video102.q2",
+          "prompt": "Where did he meet his wife?",
+          "hint": "Listen to the positive turn in the story",
+          "answer": "He met her in the hospital"
+        },
+        {
+          "id": "a2-02.video102.q3",
+          "prompt": "How does Noelia react to the good news?",
+          "hint": "Listen after Bob describes meeting his wife",
+          "answer": "She says, “That’s brilliant!”"
+        },
+        {
+          "id": "a2-02.video102.q4",
+          "prompt": "Tell your teacher one good thing about your weekend",
+          "hint": "Use the past simple and add a detail",
+          "answer": "Example: I saw a friend on Saturday. We had lunch together"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Tell a weekend story and react to someone else’s news"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Weekend pictures",
+      "image": "a2-02-vocabulary81",
+      "options": [
+        {
+          "id": "out",
+          "title": "A day out",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Saturday morning",
+              "value": "Market"
+            },
+            {
+              "id": "1",
+              "label": "Saturday afternoon",
+              "value": "Coffee and photos"
+            },
+            {
+              "id": "2",
+              "label": "Sunday",
+              "value": "At home"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "market",
+              "label": "Saturday morning · market",
+              "index": 1
+            },
+            {
+              "id": "coffee",
+              "label": "Saturday afternoon · coffee with a friend",
+              "index": 2
+            },
+            {
+              "id": "home",
+              "label": "Sunday · film at home",
+              "index": 5
+            }
+          ]
+        },
+        {
+          "id": "quiet",
+          "title": "A quieter weekend",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Saturday morning",
+              "value": "Coffee at home"
+            },
+            {
+              "id": "1",
+              "label": "Saturday afternoon",
+              "value": "A beach walk"
+            },
+            {
+              "id": "2",
+              "label": "Sunday",
+              "value": "Museum"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "coffee",
+              "label": "Saturday morning · coffee",
+              "index": 2
+            },
+            {
+              "id": "walk",
+              "label": "Saturday afternoon · beach walk",
+              "index": 4
+            },
+            {
+              "id": "museum",
+              "label": "Sunday · museum",
+              "index": 0
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "story",
+          "prompt": "What did you do on Saturday morning?",
+          "hint": "First I …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What did you do after that?",
+          "hint": "Then I …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How was your Sunday?",
+          "hint": "On Sunday I … It was …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Plan and reality",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Original plan",
+          "value": "Museum"
+        },
+        {
+          "id": "1",
+          "label": "What happened",
+          "value": "Beach walk · photos · lunch"
+        },
+        {
+          "id": "2",
+          "label": "Reason",
+          "value": "Beautiful weather"
+        }
+      ],
+      "questions": [
+        {
+          "id": "followup",
+          "prompt": "What would you like to ask about Kim’s beach walk?",
+          "hint": "Where did you …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How could you ask about her company?",
+          "hint": "Who did you have lunch with?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What part of your own weekend could you share?",
+          "hint": "I … too. / My weekend was different: I …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Plan and reality"
+    }
+  }
+}

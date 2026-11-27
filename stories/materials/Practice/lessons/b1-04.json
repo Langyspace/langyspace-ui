@@ -1,0 +1,255 @@
+{
+  "key": "b1-04",
+  "code": "B1.04",
+  "title": "Whose bag is this?",
+  "first": {
+    "id": "course-practice-b1-04-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-04-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "must"
+          },
+          {
+            "id": "a",
+            "text": "must to"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de must, usamos o verbo básico. No caso de be, ele entra sem to e sem virar is. Por isso: “It must be Kim’s bag”"
+          },
+          "wrong": {
+            "title": "Depois de must, usamos o verbo básico.",
+            "message": "No caso de be, ele entra sem to e sem virar is. Por isso: “It must be Kim’s bag”"
+          }
+        },
+        "context": "It ___ be Kim’s bag"
+      },
+      {
+        "id": "course-b1-04-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O might já funciona como auxiliar. Por isso belong fica sem s, mesmo com um sujeito singular. Por isso: “The pass might belong to Leo”"
+          },
+          "wrong": {
+            "title": "O might já funciona como auxiliar.",
+            "message": "Por isso belong fica sem s, mesmo com um sujeito singular. Por isso: “The pass might belong to Leo”"
+          }
+        },
+        "context": "The pass might belong to Leo"
+      },
+      {
+        "id": "course-b1-04-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "It can’t is the bag she described"
+          },
+          {
+            "id": "b",
+            "text": "It can’t be the bag she described"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de can’t, precisamos da forma básica be. Is não entra depois desse modal. Por isso: “It can’t be the bag she described”"
+          },
+          "wrong": {
+            "title": "Depois de can’t, precisamos da forma básica be.",
+            "message": "Is não entra depois desse modal. Por isso: “It can’t be the bag she described”"
+          }
+        }
+      },
+      {
+        "id": "course-b1-04-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "be"
+          },
+          {
+            "id": "b",
+            "text": "is"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta, could vem antes do sujeito, mas o verbo seguinte continua be. Não trocamos be por is. Por isso: “Could this be your charger?”"
+          },
+          "wrong": {
+            "title": "Na pergunta, could vem antes do sujeito, mas o verbo seguinte continua be.",
+            "message": "Não trocamos be por is. Por isso: “Could this be your charger?”"
+          }
+        },
+        "context": "Could this ___ your charger?"
+      },
+      {
+        "id": "course-b1-04-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O sujeito phone é singular, mas o must já vem antes do verbo. Por isso usamos need, sem acrescentar s. Por isso: “The phone must need charging”"
+          },
+          "wrong": {
+            "title": "O sujeito phone é singular, mas o must já vem antes do verbo.",
+            "message": "Por isso usamos need, sem acrescentar s. Por isso: “The phone must need charging”"
+          }
+        },
+        "context": "The phone must needs charging"
+      },
+      {
+        "id": "course-b1-04-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The owner might be travelling"
+          },
+          {
+            "id": "b",
+            "text": "The owner might travelling"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para falar de uma possível ação em andamento, precisamos de might be mais o verbo com ing. Sem be, falta uma parte. Por isso: “The owner might be travelling”"
+          },
+          "wrong": {
+            "title": "Para falar de uma possível ação em andamento, precisamos de might be mais o verbo com ing.",
+            "message": "Sem be, falta uma parte. Por isso: “The owner might be travelling”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-04-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-04.shadowing.01",
+        "displayText": "Someone has left a backpack by our table. Should we take it to reception?",
+        "translation": "Alguém deixou uma mochila perto da mesa. Devemos levá-la à recepção?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-04.shadowing.02",
+        "displayText": "Yes. There’s a boarding pass visible in the open pocket. The owner might be travelling",
+        "translation": "Sim. Tem um cartão de embarque visível no bolso aberto. A pessoa pode estar viajando",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-04.shadowing.03",
+        "displayText": "Maybe, but it could be an old pass. We don’t know the date",
+        "translation": "Talvez, mas pode ser antigo. Não sabemos a data",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-04.shadowing.04",
+        "displayText": "True. There’s also a charger and a black notebook",
+        "translation": "Verdade. Também tem um carregador e um caderno preto",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-04.shadowing.05",
+        "displayText": "Those are common things. What detail could help reception identify it?",
+        "translation": "São coisas comuns. Que detalhe ajudaria a recepção a identificar?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-04.shadowing.06",
+        "displayText": "The notebook has a silver star, and the key ring is a red fish",
+        "translation": "O caderno tem uma estrela prateada e o chaveiro é um peixe vermelho",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-04.shadowing.07",
+        "displayText": "That’s more useful. Let’s let the caller describe those before we suggest them",
+        "translation": "Isso ajuda mais. Vamos deixar quem ligar descrever antes de sugerirmos",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-04.shadowing.08",
+        "displayText": "Agreed. We can make a guess, but we shouldn’t hand it over without checking",
+        "translation": "Concordo. Podemos levantar uma hipótese, mas não entregar sem conferir",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: separate clues from proof and ask a useful checking question",
+    "duration": "60–90 seconds",
+    "starters": [
+      "It must be…",
+      "It might be…",
+      "It can’t be…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "De quem é?",
+    "first": "Resolver o quiz sobre possibilidades e deduções",
+    "shadowing": "Ouvir e repetir as frases para fazer suposições e conferir informações",
+    "voice": "Mandar um áudio em inglês para a teacher descrevendo pistas sobre um objeto e explicando o que elas indicam, sem tratar uma suposição como certeza. Termine com uma pergunta"
+  }
+}

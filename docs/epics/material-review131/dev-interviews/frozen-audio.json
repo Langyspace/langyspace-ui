@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "status": "frozen-for-audio131",
+  "materialKey": "extra-dev-interviews",
+  "lessonSource": "stories/materials/DevInterviews131/DevInterviews131.content.json",
+  "homework": {
+    "flashcardsId": "dev-interviews-flashcards",
+    "shadowingId": "dev-interviews-shadowing",
+    "ownerTags": [
+      "dev-track131",
+      "extra-dev-interviews"
+    ],
+    "publishedEnvironments": []
+  },
+  "voices": {
+    "Ana": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "provider": "ElevenLabs",
+      "voiceName": "Jessica"
+    },
+    "Kim": {
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "provider": "ElevenLabs",
+      "voiceName": "Sarah Explains"
+    },
+    "Priya": {
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "provider": "ElevenLabs",
+      "voiceName": "Approved DevFirstDay Priya",
+      "accentLabel": "Indian English"
+    },
+    "Ruby": {
+      "voiceId": "56bWURjYFHyYyVf490Dp",
+      "provider": "ElevenLabs",
+      "voiceName": "Approved DevFirstDay Ruby",
+      "accentLabel": "Australian English"
+    }
+  },
+  "providerSettings": {
+    "modelId": "eleven_multilingual_v2",
+    "languageCode": "en",
+    "outputFormat": "mp3_44100_128",
+    "stability": 0.5,
+    "similarityBoost": 0.75,
+    "style": 0.1,
+    "useSpeakerBoost": true,
+    "speed": 0.92
+  },
+  "reuseRule": "Reuse only exact text, speaker/voice/provider and valid bytes with provenance. No browser speech, fake playback or live learner audio.",
+  "items": [
+    {
+      "id": "HW.0.front",
+      "speaker": "Ana",
+      "displayText": "recruiter",
+      "synthesisInput": "recruiter",
+      "file": "assets/audio/HW.0.front.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.0.back",
+      "speaker": "Ana",
+      "displayText": "The recruiter explained the next interview steps.",
+      "synthesisInput": "The recruiter explained the next interview steps.",
+      "file": "assets/audio/HW.0.back.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.1.front",
+      "speaker": "Ana",
+      "displayText": "a job description",
+      "synthesisInput": "a job description",
+      "file": "assets/audio/HW.1.front.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.1.back",
+      "speaker": "Ana",
+      "displayText": "I read the job description before the interview.",
+      "synthesisInput": "I read the job description before the interview.",
+      "file": "assets/audio/HW.1.back.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.2.front",
+      "speaker": "Ana",
+      "displayText": "experience",
+      "synthesisInput": "experience",
+      "file": "assets/audio/HW.2.front.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.2.back",
+      "speaker": "Ana",
+      "displayText": "I have experience building web applications.",
+      "synthesisInput": "I have experience building web applications.",
+      "file": "assets/audio/HW.2.back.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.3.front",
+      "speaker": "Ana",
+      "displayText": "skills",
+      "synthesisInput": "skills",
+      "file": "assets/audio/HW.3.front.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.3.back",
+      "speaker": "Ana",
+      "displayText": "My strongest skills are React and problem solving.",
+      "synthesisInput": "My strongest skills are React and problem solving.",
+      "file": "assets/audio/HW.3.back.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.4.front",
+      "speaker": "Ana",
+      "displayText": "a coding task",
+      "synthesisInput": "a coding task",
+      "file": "assets/audio/HW.4.front.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.4.back",
+      "speaker": "Ana",
+      "displayText": "The coding task is to improve a login form.",
+      "synthesisInput": "The coding task is to improve a login form.",
+      "file": "assets/audio/HW.4.back.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.5.front",
+      "speaker": "Ana",
+      "displayText": "feedback",
+      "synthesisInput": "feedback",
+      "file": "assets/audio/HW.5.front.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.5.back",
+      "speaker": "Ana",
+      "displayText": "Could you give me feedback on my approach?",
+      "synthesisInput": "Could you give me feedback on my approach?",
+      "file": "assets/audio/HW.5.back.mp3",
+      "usage": "homework vocabulary and introductory vocabulary"
+    },
+    {
+      "id": "HW.6.front",
+      "speaker": "Ana",
+      "displayText": "a contribution",
+      "synthesisInput": "a contribution",
+      "file": "assets/audio/HW.6.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.6.back",
+      "speaker": "Ana",
+      "displayText": "I was responsible for the login form.",
+      "synthesisInput": "I was responsible for the login form.",
+      "file": "assets/audio/HW.6.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.7.front",
+      "speaker": "Ana",
+      "displayText": "a challenge",
+      "synthesisInput": "a challenge",
+      "file": "assets/audio/HW.7.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.7.back",
+      "speaker": "Ana",
+      "displayText": "Let me give you a specific example.",
+      "synthesisInput": "Let me give you a specific example.",
+      "file": "assets/audio/HW.7.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.8.front",
+      "speaker": "Ana",
+      "displayText": "an approach",
+      "synthesisInput": "an approach",
+      "file": "assets/audio/HW.8.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.8.back",
+      "speaker": "Ana",
+      "displayText": "I’d start by checking the error response.",
+      "synthesisInput": "I’d start by checking the error response.",
+      "file": "assets/audio/HW.8.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.9.front",
+      "speaker": "Ana",
+      "displayText": "a requirement",
+      "synthesisInput": "a requirement",
+      "file": "assets/audio/HW.9.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.9.back",
+      "speaker": "Ana",
+      "displayText": "A clear error message is one requirement.",
+      "synthesisInput": "A clear error message is one requirement.",
+      "file": "assets/audio/HW.9.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.10.front",
+      "speaker": "Ana",
+      "displayText": "a test case",
+      "synthesisInput": "a test case",
+      "file": "assets/audio/HW.10.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.10.back",
+      "speaker": "Ana",
+      "displayText": "An incorrect password is one useful test case.",
+      "synthesisInput": "An incorrect password is one useful test case.",
+      "file": "assets/audio/HW.10.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.11.front",
+      "speaker": "Ana",
+      "displayText": "an assumption",
+      "synthesisInput": "an assumption",
+      "file": "assets/audio/HW.11.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.11.back",
+      "speaker": "Ana",
+      "displayText": "Let me check one assumption before I start.",
+      "synthesisInput": "Let me check one assumption before I start.",
+      "file": "assets/audio/HW.11.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.12.front",
+      "speaker": "Ana",
+      "displayText": "to clarify",
+      "synthesisInput": "to clarify",
+      "file": "assets/audio/HW.12.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.12.back",
+      "speaker": "Ana",
+      "displayText": "Could you clarify the expected behavior?",
+      "synthesisInput": "Could you clarify the expected behavior?",
+      "file": "assets/audio/HW.12.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.13.front",
+      "speaker": "Ana",
+      "displayText": "to walk someone through",
+      "synthesisInput": "to walk someone through",
+      "file": "assets/audio/HW.13.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.13.back",
+      "speaker": "Ana",
+      "displayText": "Let me walk you through my solution.",
+      "synthesisInput": "Let me walk you through my solution.",
+      "file": "assets/audio/HW.13.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.14.front",
+      "speaker": "Ana",
+      "displayText": "to troubleshoot",
+      "synthesisInput": "to troubleshoot",
+      "file": "assets/audio/HW.14.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.14.back",
+      "speaker": "Ana",
+      "displayText": "I reproduced the issue before I changed the code.",
+      "synthesisInput": "I reproduced the issue before I changed the code.",
+      "file": "assets/audio/HW.14.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.15.front",
+      "speaker": "Ana",
+      "displayText": "a trade-off",
+      "synthesisInput": "a trade-off",
+      "file": "assets/audio/HW.15.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.15.back",
+      "speaker": "Ana",
+      "displayText": "This solution is simpler, but it needs another test.",
+      "synthesisInput": "This solution is simpler, but it needs another test.",
+      "file": "assets/audio/HW.15.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.16.front",
+      "speaker": "Ana",
+      "displayText": "an edge case",
+      "synthesisInput": "an edge case",
+      "file": "assets/audio/HW.16.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.16.back",
+      "speaker": "Ana",
+      "displayText": "An empty email field is an edge case to check.",
+      "synthesisInput": "An empty email field is an edge case to check.",
+      "file": "assets/audio/HW.16.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.17.front",
+      "speaker": "Ana",
+      "displayText": "a follow-up",
+      "synthesisInput": "a follow-up",
+      "file": "assets/audio/HW.17.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.17.back",
+      "speaker": "Ana",
+      "displayText": "Could we arrange a follow-up next week?",
+      "synthesisInput": "Could we arrange a follow-up next week?",
+      "file": "assets/audio/HW.17.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.18.front",
+      "speaker": "Ana",
+      "displayText": "availability",
+      "synthesisInput": "availability",
+      "file": "assets/audio/HW.18.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.18.back",
+      "speaker": "Ana",
+      "displayText": "Thursday at ten works for me.",
+      "synthesisInput": "Thursday at ten works for me.",
+      "file": "assets/audio/HW.18.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.19.front",
+      "speaker": "Ana",
+      "displayText": "onboarding",
+      "synthesisInput": "onboarding",
+      "file": "assets/audio/HW.19.front.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "HW.19.back",
+      "speaker": "Ana",
+      "displayText": "How do you support new developers?",
+      "synthesisInput": "How do you support new developers?",
+      "file": "assets/audio/HW.19.back.mp3",
+      "usage": "homework vocabulary and interview support reference"
+    },
+    {
+      "id": "D.1",
+      "speaker": "Kim",
+      "displayText": "Tell me about a project you know well.",
+      "synthesisInput": "Tell me about a project you know well.",
+      "file": "assets/audio/D.1.mp3",
+      "usage": "dialogue"
+    },
+    {
+      "id": "D.2",
+      "speaker": "Ana",
+      "displayText": "I built a customer portal. It helps customers sign in and check their orders.",
+      "synthesisInput": "I built a customer portal. It helps customers sign in and check their orders.",
+      "file": "assets/audio/D.2.mp3",
+      "usage": "dialogue"
+    },
+    {
+      "id": "D.3",
+      "speaker": "Kim",
+      "displayText": "What was your own contribution to that project?",
+      "synthesisInput": "What was your own contribution to that project?",
+      "file": "assets/audio/D.3.mp3",
+      "usage": "dialogue"
+    },
+    {
+      "id": "D.4",
+      "speaker": "Ana",
+      "displayText": "I built the login form and its error messages. A teammate built the API.",
+      "synthesisInput": "I built the login form and its error messages. A teammate built the API.",
+      "file": "assets/audio/D.4.mp3",
+      "usage": "dialogue"
+    },
+    {
+      "id": "D.5",
+      "speaker": "Kim",
+      "displayText": "What challenge did you face, and how did you handle it?",
+      "synthesisInput": "What challenge did you face, and how did you handle it?",
+      "file": "assets/audio/D.5.mp3",
+      "usage": "dialogue"
+    },
+    {
+      "id": "D.6",
+      "speaker": "Ana",
+      "displayText": "The page opened even when the password was wrong. I reproduced the issue, checked the error response and fixed the navigation. Then I tested correct and incorrect passwords.",
+      "synthesisInput": "The page opened even when the password was wrong. I reproduced the issue, checked the error response and fixed the navigation. Then I tested correct and incorrect passwords.",
+      "file": "assets/audio/D.6.mp3",
+      "usage": "dialogue"
+    },
+    {
+      "id": "HM.1",
+      "speaker": "Kim",
+      "displayText": "Thanks for joining. Could you introduce yourself and tell me what kind of development work interests you?",
+      "synthesisInput": "Thanks for joining. Could you introduce yourself and tell me what kind of development work interests you?",
+      "file": "assets/audio/HM.1.mp3",
+      "usage": "hiringCall"
+    },
+    {
+      "id": "HM.2",
+      "speaker": "Kim",
+      "displayText": "Choose a real or practice project. What does it do, and who uses it?",
+      "synthesisInput": "Choose a real or practice project. What does it do, and who uses it?",
+      "file": "assets/audio/HM.2.mp3",
+      "usage": "hiringCall"
+    },
+    {
+      "id": "HM.3",
+      "speaker": "Kim",
+      "displayText": "What was your own contribution, and what did other people work on?",
+      "synthesisInput": "What was your own contribution, and what did other people work on?",
+      "file": "assets/audio/HM.3.mp3",
+      "usage": "hiringCall"
+    },
+    {
+      "id": "HM.4",
+      "speaker": "Kim",
+      "displayText": "Describe a challenge you faced. What did you do, and what was the result?",
+      "synthesisInput": "Describe a challenge you faced. What did you do, and what was the result?",
+      "file": "assets/audio/HM.4.mp3",
+      "usage": "hiringCall"
+    },
+    {
+      "id": "HM.5",
+      "speaker": "Kim",
+      "displayText": "How do you handle feedback or a request that is not clear?",
+      "synthesisInput": "How do you handle feedback or a request that is not clear?",
+      "file": "assets/audio/HM.5.mp3",
+      "usage": "hiringCall"
+    },
+    {
+      "id": "HM.6",
+      "speaker": "Kim",
+      "displayText": "What would you like to ask me about the role or the team?",
+      "synthesisInput": "What would you like to ask me about the role or the team?",
+      "file": "assets/audio/HM.6.mp3",
+      "usage": "hiringCall"
+    },
+    {
+      "id": "TECH.1",
+      "speaker": "Priya",
+      "displayText": "This login form opens the portal after an incorrect password. What would you clarify before changing the code?",
+      "synthesisInput": "This login form opens the portal after an incorrect password. What would you clarify before changing the code?",
+      "file": "assets/audio/TECH.1.mp3",
+      "usage": "technicalCall"
+    },
+    {
+      "id": "TECH.2",
+      "speaker": "Priya",
+      "displayText": "The API returns a session for valid credentials and a four-oh-one error for invalid credentials. Explain how you would investigate the problem.",
+      "synthesisInput": "The API returns a session for valid credentials and a four-oh-one error for invalid credentials. Explain how you would investigate the problem.",
+      "file": "assets/audio/TECH.2.mp3",
+      "usage": "technicalCall"
+    },
+    {
+      "id": "TECH.3",
+      "speaker": "Priya",
+      "displayText": "What would you change, and why? You do not need to write code.",
+      "synthesisInput": "What would you change, and why? You do not need to write code.",
+      "file": "assets/audio/TECH.3.mp3",
+      "usage": "technicalCall"
+    },
+    {
+      "id": "TECH.4",
+      "speaker": "Priya",
+      "displayText": "How would you test the successful login, an incorrect password and an empty field?",
+      "synthesisInput": "How would you test the successful login, an incorrect password and an empty field?",
+      "file": "assets/audio/TECH.4.mp3",
+      "usage": "technicalCall"
+    },
+    {
+      "id": "TECH.5",
+      "speaker": "Priya",
+      "displayText": "What should happen if the network is unavailable? Explain one trade-off in your approach.",
+      "synthesisInput": "What should happen if the network is unavailable? Explain one trade-off in your approach.",
+      "file": "assets/audio/TECH.5.mp3",
+      "usage": "technicalCall"
+    },
+    {
+      "id": "TECH.6",
+      "speaker": "Priya",
+      "displayText": "Imagine I have not seen your code. Walk me through your solution and tell me what you would check next.",
+      "synthesisInput": "Imagine I have not seen your code. Walk me through your solution and tell me what you would check next.",
+      "file": "assets/audio/TECH.6.mp3",
+      "usage": "technicalCall"
+    },
+    {
+      "id": "NOTE.1",
+      "speaker": "Kim",
+      "displayText": "For the technical interview, we’ll use a customer portal login. A customer enters an email and password. With a wrong password, the form should stay open and show a clear error. Please explain how you would investigate and test that behavior.",
+      "synthesisInput": "For the technical interview, we’ll use a customer portal login. A customer enters an email and password. With a wrong password, the form should stay open and show a clear error. Please explain how you would investigate and test that behavior.",
+      "file": "assets/audio/NOTE.1.mp3",
+      "usage": "notes"
+    },
+    {
+      "id": "NOTE.2",
+      "speaker": "Kim",
+      "displayText": "You don’t need to prepare slides or write code during the call. Bring one real or practice project and explain your own contribution. We’ll leave time for your questions about the team, and I’ll send feedback by Friday.",
+      "synthesisInput": "You don’t need to prepare slides or write code during the call. Bring one real or practice project and explain your own contribution. We’ll leave time for your questions about the team, and I’ll send feedback by Friday.",
+      "file": "assets/audio/NOTE.2.mp3",
+      "usage": "notes"
+    },
+    {
+      "id": "SH.1",
+      "speaker": "Kim",
+      "displayText": "Let me give you a specific example.",
+      "synthesisInput": "Let me give you a specific example.",
+      "file": "assets/audio/SH.1.mp3",
+      "usage": "shadowing"
+    },
+    {
+      "id": "SH.2",
+      "speaker": "Kim",
+      "displayText": "I was responsible for the login form.",
+      "synthesisInput": "I was responsible for the login form.",
+      "file": "assets/audio/SH.2.mp3",
+      "usage": "shadowing"
+    },
+    {
+      "id": "SH.3",
+      "speaker": "Kim",
+      "displayText": "Could you clarify the expected behavior?",
+      "synthesisInput": "Could you clarify the expected behavior?",
+      "file": "assets/audio/SH.3.mp3",
+      "usage": "shadowing"
+    },
+    {
+      "id": "SH.4",
+      "speaker": "Kim",
+      "displayText": "I’d start by checking the error response.",
+      "synthesisInput": "I’d start by checking the error response.",
+      "file": "assets/audio/SH.4.mp3",
+      "usage": "shadowing"
+    },
+    {
+      "id": "SH.5",
+      "speaker": "Priya",
+      "displayText": "Let me walk you through my solution.",
+      "synthesisInput": "Let me walk you through my solution.",
+      "file": "assets/audio/SH.5.mp3",
+      "usage": "shadowing"
+    },
+    {
+      "id": "SH.6",
+      "speaker": "Ruby",
+      "displayText": "How do you support new developers?",
+      "synthesisInput": "How do you support new developers?",
+      "file": "assets/audio/SH.6.mp3",
+      "usage": "shadowing"
+    }
+  ],
+  "sequences": {
+    "vocabulary": [
+      {
+        "labelId": "HW.0.front",
+        "exampleId": "HW.0.back"
+      },
+      {
+        "labelId": "HW.1.front",
+        "exampleId": "HW.1.back"
+      },
+      {
+        "labelId": "HW.2.front",
+        "exampleId": "HW.2.back"
+      },
+      {
+        "labelId": "HW.3.front",
+        "exampleId": "HW.3.back"
+      },
+      {
+        "labelId": "HW.4.front",
+        "exampleId": "HW.4.back"
+      },
+      {
+        "labelId": "HW.5.front",
+        "exampleId": "HW.5.back"
+      }
+    ],
+    "guided": [
+      "D.1",
+      "D.2",
+      "D.3",
+      "D.4",
+      "D.5",
+      "D.6"
+    ],
+    "hiring": [
+      "HM.1",
+      "HM.2",
+      "HM.3",
+      "HM.4",
+      "HM.5",
+      "HM.6"
+    ],
+    "technical": [
+      "TECH.1",
+      "TECH.2",
+      "TECH.3",
+      "TECH.4",
+      "TECH.5",
+      "TECH.6"
+    ],
+    "voiceNotes": [
+      "NOTE.1",
+      "NOTE.2"
+    ],
+    "shadowing": [
+      "SH.1",
+      "SH.2",
+      "SH.3",
+      "SH.4",
+      "SH.5",
+      "SH.6"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+# Requirements
+
+Preserve native shared components, in-image captions and progressive hint → example support. Six meaningful model turns, three factual Questions, three-pair personal practices, hiring and technical calls with six recorded prompts each. Two connected voice notes from Kim, no repeated greeting, three factual questions each. Four-question official bounded video directly before shared Free conversation; gallery last. Twenty relevant distinct homework targets, six shadowing phrases (4 US + Indian + Australian), voice assignment. No typing or code editor requirement; no browser speech or fabricated playback.

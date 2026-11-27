@@ -1,6 +1,15 @@
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { parkScene } from '../../materials/TrialA1/TrialA1.data'
+import { A103Lesson } from '../../materials/A103/A103Lesson'
+import lessonCover from '../../materials/A103/assets/catalog-cover40.webp'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { content } from '../../materials/TrialA1/TrialA1.data'
+import { ana, kim } from '../../materials/shared/characterPortraits'
+import { produce, scene } from '../../materials/A105/A105.data'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
 import { Panel, Stage } from './Slide.stories.styles'
 
@@ -25,8 +34,46 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = { tags: ['visual-review'] }
+export const CoverWithReview: Story = {
+  args: {
+    layout: 'split',
+    cover: { src: lessonCover, alt: 'Ana, Kim and family' },
+    title: 'People in my life',
+    eyebrow: 'A1.03',
+    instruction: 'Introduce the people in your life',
+    children: (
+      <Panel>
+        <h3>Names and spelling</h3>
+        <p>What’s your last name?</p>
+        <p>How do you spell it?</p>
+      </Panel>
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const CoverOnly: Story = {
+  args: {
+    cover: { src: lessonCover, alt: 'Ana, Kim and family' },
+    title: 'People in my life',
+    eyebrow: 'A1.03',
+    instruction: 'Introduce the people in your life',
+    children: null,
+    width: 'reading',
+  },
+  tags: ['visual-review'],
+}
+export const HeadingAboveCover: Story = {
+  ...CoverWithReview,
+  args: {
+    ...CoverWithReview.args,
+    coverPlacement: 'after-heading',
+    title: 'Sua aula experimental chegou ao fim!',
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
 export const Focused: Story = { args: { width: 'focused' } }
 export const Reading: Story = { args: { width: 'reading', density: 'compact' } }
+export const Expanded: Story = { args: { width: 'expanded' } }
 export const WithIntroduction: Story = {
   args: {
     lead: (
@@ -90,5 +137,157 @@ export const SplitIntroduction: Story = {
     title: 'Last class',
     instruction: 'Answer your teacher. Then ask your teacher.',
     children: <Panel>Would you like to come to dinner on Friday?</Panel>,
+  },
+}
+
+export const RecordedDialogue: Story = {
+  args: {
+    title: 'At the street market',
+    eyebrow: 'Guided conversation',
+    instruction: 'Listen, then read with your teacher.',
+    titleAudio: {
+      context: 'Kim and Ana',
+      status: 'idle',
+      onClick: () => undefined,
+    },
+  },
+}
+export const PausedDialogue: Story = {
+  ...RecordedDialogue,
+  args: {
+    ...RecordedDialogue.args,
+    titleAudio: {
+      context: 'Kim and Ana',
+      status: 'paused',
+      onClick: () => undefined,
+    },
+  },
+}
+export const UnavailableDialogue: Story = {
+  ...RecordedDialogue,
+  args: {
+    ...RecordedDialogue.args,
+    titleAudio: {
+      context: 'Kim and Ana',
+      status: 'idle',
+      disabled: true,
+      onClick: () => undefined,
+    },
+  },
+}
+
+/** Real six-turn content and functional click-to-reveal supports, without inner scrollbars. */
+export const DialogueWithQuestions: Story = {
+  render: () => <A103Lesson initialPageId="s71" />,
+  args: {
+    title: 'Who’s this?',
+    eyebrow: 'Guided conversation',
+    instruction: 'Listen, then read with your teacher.',
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+
+export const MediaColumn: Story = {
+  args: {
+    eyebrow: 'Picture talk',
+    title: 'What can you name in the park?',
+    instruction:
+      'Try to name every item before opening the dots. Click each dot to check your answer.',
+    width: { mediaAspectRatio: parkScene.width / parkScene.height },
+    children: (
+      <SceneExplorer
+        imageUrl={parkScene.src}
+        imageAlt="A park scene"
+        imageSizing="presentation"
+        hotspots={[]}
+        visitedIds={[]}
+        onSelect={() => {}}
+        labels={{ initial: '' }}
+      />
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const MediaColumnNarrow: Story = {
+  ...MediaColumn,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+}
+
+export const OneColumnConversation: Story = {
+  args: {
+    columns: 1,
+    eyebrow: 'Dialogue',
+    title: 'Do you like the park?',
+    instruction: 'Listen, then read with your teacher',
+    children: (
+      <LearningDialogue
+        density="compact"
+        lines={content.p3.lines.map((line, index) => ({
+          id: String(index),
+          speaker: line.who === 'kim' ? 'Kim' : 'Ana',
+          avatarUrl: line.who === 'kim' ? kim : ana,
+          side: line.who === 'kim' ? 'start' : 'end',
+          content: line.en,
+        }))}
+      />
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const TwoColumnConversation: Story = {
+  ...OneColumnConversation,
+  args: {
+    ...OneColumnConversation.args,
+    questions: (
+      <Panel>
+        <h3>What does Ana like doing in the park?</h3>
+        <p>Find the answer in the conversation</p>
+      </Panel>
+    ),
+  },
+}
+export const ThreeColumnExercise: Story = {
+  args: {
+    columns: 3,
+    eyebrow: 'Vocabulary',
+    title: 'Fruit',
+    instruction: 'Name each fruit',
+    children: (
+      <VocabularyGrid
+        columns={3}
+        interaction="static"
+        surface="plain"
+        imageFit="contain"
+        revealedIds={[]}
+        items={produce.slice(0, 6).map((item) => ({
+          ...item,
+          imageUrl: scene(item.id),
+          imageAlt: item.translation,
+        }))}
+      />
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+
+export const CenteredConversationColumns: Story = {
+  ...TwoColumnConversation,
+  args: { ...TwoColumnConversation.args, columnAlignment: 'center' },
+  tags: ['layout-boundary', 'visual-review'],
+}
+
+export const ReadingWithRestart: Story = {
+  tags: ['visual-review'],
+  args: {
+    title: 'Listen and read Ana’s update',
+    eyebrow: 'Reading',
+    instruction: 'Listen first, then read and answer the questions',
+    titleAudio: {
+      context: 'Ana’s update',
+      contentKind: 'audio',
+      status: 'paused',
+      onClick: () => undefined,
+      onRestart: () => undefined,
+    },
   },
 }

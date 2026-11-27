@@ -1,0 +1,539 @@
+{
+  "revision": "a201-what-are-you-doing-v2-feedback",
+  "title": "What Are You Doing?",
+  "vocabulary": [
+    {
+      "id": "a201.vocabulary.01",
+      "key": "cooking",
+      "text": "I am cooking.",
+      "translation": "Eu estou cozinhando.",
+      "image": "assets/scene-cooking.webp",
+      "imageAlt": "One woman cooking dinner."
+    },
+    {
+      "id": "a201.vocabulary.02",
+      "key": "reading",
+      "text": "He is reading.",
+      "translation": "Ele está lendo.",
+      "image": "assets/scene-reading.webp",
+      "imageAlt": "One man reading a book."
+    },
+    {
+      "id": "a201.vocabulary.03",
+      "key": "working",
+      "text": "She is working.",
+      "translation": "Ela está trabalhando.",
+      "image": "assets/scene-working.webp",
+      "imageAlt": "One woman working on a laptop."
+    },
+    {
+      "id": "a201.vocabulary.04",
+      "key": "playing",
+      "text": "It is playing.",
+      "translation": "Ele está brincando.",
+      "image": "assets/scene-dog-playing.webp",
+      "imageAlt": "One dog playing."
+    },
+    {
+      "id": "a201.vocabulary.05",
+      "key": "eating",
+      "text": "They are eating.",
+      "translation": "Eles estão comendo.",
+      "image": "assets/scene-people-eating.webp",
+      "imageAlt": "Three adults eating together."
+    },
+    {
+      "id": "a201.vocabulary.06",
+      "key": "sleeping",
+      "text": "We are sleeping.",
+      "translation": "Nós estamos dormindo.",
+      "image": "assets/scene-two-sleeping.webp",
+      "imageAlt": "Two adults sleeping."
+    }
+  ],
+  "timeExpressions": [
+    {
+      "id": "a201.time.now",
+      "en": "Now",
+      "pt": "Agora"
+    },
+    {
+      "id": "a201.time.today",
+      "en": "Today",
+      "pt": "Hoje"
+    },
+    {
+      "id": "a201.time.these-days",
+      "en": "These days",
+      "pt": "Ultimamente / Atualmente"
+    },
+    {
+      "id": "a201.time.lately",
+      "en": "Lately",
+      "pt": "Ultimamente"
+    },
+    {
+      "id": "a201.time.this-week",
+      "en": "This week",
+      "pt": "Esta semana"
+    }
+  ],
+  "warmups": [
+    {
+      "id": "w1",
+      "vocabularyId": "a201.vocabulary.01",
+      "question": "What is she doing?",
+      "options": ["She is sleeping.", "She is cooking.", "She is reading."],
+      "correctIndex": 1
+    },
+    {
+      "id": "w2",
+      "vocabularyId": "a201.vocabulary.02",
+      "question": "What is he doing?",
+      "options": ["He is eating.", "He is working.", "He is reading."],
+      "correctIndex": 2
+    },
+    {
+      "id": "w3",
+      "vocabularyId": "a201.vocabulary.03",
+      "question": "What is she doing?",
+      "options": ["She is working.", "She is cooking.", "She is sleeping."],
+      "correctIndex": 0
+    },
+    {
+      "id": "w4",
+      "vocabularyId": "a201.vocabulary.04",
+      "question": "What is it doing?",
+      "options": ["It is sleeping.", "It is playing.", "It is eating."],
+      "correctIndex": 1
+    },
+    {
+      "id": "w5",
+      "vocabularyId": "a201.vocabulary.05",
+      "question": "What are they doing?",
+      "options": [
+        "They are sleeping.",
+        "They are working.",
+        "They are eating."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "w6",
+      "vocabularyId": "a201.vocabulary.06",
+      "question": "What are they doing?",
+      "options": [
+        "They are sleeping.",
+        "They are playing.",
+        "They are eating."
+      ],
+      "correctIndex": 0
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "a201.dialogue.anna-ben.01",
+      "speaker": "Anna",
+      "text": "Hey! What are you doing?",
+      "translation": "Oi! O que você está fazendo?"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.02",
+      "speaker": "Ben",
+      "text": "I'm cooking dinner. What about you?",
+      "translation": "Estou preparando o jantar. E você?"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.03",
+      "speaker": "Anna",
+      "text": "I'm watching a movie.",
+      "translation": "Estou assistindo a um filme."
+    },
+    {
+      "id": "a201.dialogue.anna-ben.04",
+      "speaker": "Ben",
+      "text": "Nice! Do you usually watch movies at night?",
+      "translation": "Legal! Você costuma assistir a filmes à noite?"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.05",
+      "speaker": "Anna",
+      "text": "Yes, but I usually read before bed. Do you cook every day?",
+      "translation": "Sim, mas geralmente leio antes de dormir. Você cozinha todos os dias?"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.06",
+      "speaker": "Ben",
+      "text": "Not really. I usually order food, but today I'm making pasta.",
+      "translation": "Na verdade, não. Geralmente peço comida, mas hoje estou fazendo macarrão."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "a201.dialogue.emma-lucas.01",
+      "speaker": "Emma",
+      "parts": [
+        "Hey, Lucas! What ",
+        {
+          "id": "g01",
+          "answer": "are you doing"
+        },
+        " right now?"
+      ],
+      "text": "Hey, Lucas! What are you doing right now?",
+      "translation": "Ei, Lucas! O que você está fazendo agora?"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.02",
+      "speaker": "Lucas",
+      "parts": [
+        "Hey! I ",
+        {
+          "id": "g02",
+          "answer": "am cooking"
+        },
+        " dinner. What about you?"
+      ],
+      "text": "Hey! I am cooking dinner. What about you?",
+      "translation": "Oi! Estou preparando o jantar. E você?"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.03",
+      "speaker": "Emma",
+      "parts": [
+        "I ",
+        {
+          "id": "g03",
+          "answer": "am watching"
+        },
+        " TV. Do you usually cook at home?"
+      ],
+      "text": "I am watching TV. Do you usually cook at home?",
+      "translation": "Estou assistindo à TV. Você costuma cozinhar em casa?"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.04",
+      "speaker": "Lucas",
+      "parts": [
+        "Yes! I usually ",
+        {
+          "id": "g04",
+          "answer": "cook"
+        },
+        " dinner every evening. But today, I ",
+        {
+          "id": "g05",
+          "answer": "am making"
+        },
+        " pasta."
+      ],
+      "text": "Yes! I usually cook dinner every evening. But today, I am making pasta.",
+      "translation": "Sim! Geralmente preparo o jantar todas as noites. Mas hoje estou fazendo macarrão."
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.05",
+      "speaker": "Emma",
+      "parts": [
+        "Nice! I usually ",
+        {
+          "id": "g06",
+          "answer": "order"
+        },
+        " food on Fridays."
+      ],
+      "text": "Nice! I usually order food on Fridays.",
+      "translation": "Legal! Geralmente peço comida às sextas."
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.06",
+      "speaker": "Lucas",
+      "parts": [
+        "What do you usually ",
+        {
+          "id": "g07",
+          "answer": "do"
+        },
+        " after dinner?"
+      ],
+      "text": "What do you usually do after dinner?",
+      "translation": "O que você costuma fazer depois do jantar?"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.07",
+      "speaker": "Emma",
+      "parts": [
+        "I usually ",
+        {
+          "id": "g08",
+          "answer": "read"
+        },
+        " a book, but these days I'm ",
+        {
+          "id": "g09",
+          "answer": "watching"
+        },
+        " a new series."
+      ],
+      "text": "I usually read a book, but these days I'm watching a new series.",
+      "translation": "Geralmente leio um livro, mas ultimamente estou assistindo a uma série nova."
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.08",
+      "speaker": "Lucas",
+      "parts": [
+        "Sounds fun! Well, my pasta ",
+        {
+          "id": "g10",
+          "answer": "is"
+        },
+        " ready. Talk later!"
+      ],
+      "text": "Sounds fun! Well, my pasta is ready. Talk later!",
+      "translation": "Parece legal! Bem, meu macarrão está pronto. Até depois!"
+    }
+  ],
+  "park": [
+    {
+      "id": "a201.park.anna",
+      "name": "Anna",
+      "text": "Anna is reading a book.",
+      "question": "What is Anna doing?"
+    },
+    {
+      "id": "a201.park.ben",
+      "name": "Ben",
+      "text": "Ben is running.",
+      "question": "What is Ben doing?"
+    },
+    {
+      "id": "a201.park.emma",
+      "name": "Emma",
+      "text": "Emma is walking her dog.",
+      "question": "What is Emma doing?"
+    },
+    {
+      "id": "a201.park.lucas",
+      "name": "Lucas",
+      "text": "Lucas is riding a bike.",
+      "question": "What is Lucas doing?"
+    },
+    {
+      "id": "a201.park.sophie",
+      "name": "Sophie",
+      "text": "Sophie is eating a sandwich.",
+      "question": "What is Sophie doing?"
+    },
+    {
+      "id": "a201.park.daniel",
+      "name": "Daniel",
+      "text": "Daniel is taking pictures.",
+      "question": "What is Daniel doing?"
+    }
+  ],
+  "firstComprehension": [
+    {
+      "prompt": "What is Ben doing right now?",
+      "answer": "He's cooking dinner."
+    },
+    {
+      "prompt": "What does Ben usually do?",
+      "answer": "He usually orders food."
+    },
+    {
+      "prompt": "What is Anna doing?",
+      "answer": "She's watching a movie."
+    },
+    {
+      "prompt": "What does Anna usually do before bed?",
+      "answer": "She usually reads."
+    }
+  ],
+  "gapComprehension": [
+    {
+      "prompt": "What is Lucas doing right now?",
+      "answer": "He's cooking dinner. He's making pasta."
+    },
+    {
+      "prompt": "What is Emma doing?",
+      "answer": "She's watching TV."
+    },
+    {
+      "prompt": "Does Lucas usually cook at home?",
+      "answer": "Yes, he does."
+    },
+    {
+      "prompt": "What does Emma usually do on Fridays?",
+      "answer": "She usually orders food."
+    },
+    {
+      "prompt": "What does Emma usually do after dinner?",
+      "answer": "She usually reads a book."
+    },
+    {
+      "prompt": "What is Emma watching these days?",
+      "answer": "She's watching a new series."
+    }
+  ],
+  "personal": [
+    {
+      "prompt": "Do you usually cook dinner or order food?",
+      "answer": "I usually cook dinner. / I usually order food."
+    },
+    {
+      "prompt": "What do you usually do after dinner?",
+      "answer": "After dinner, I usually …"
+    },
+    {
+      "prompt": "Are you watching any interesting series these days?",
+      "answer": "Yes, I'm watching … / No, I'm not watching any series right now."
+    },
+    {
+      "prompt": "What are you doing differently this week?",
+      "answer": "This week, I'm … I usually …"
+    },
+    {
+      "prompt": "What do you usually do on Friday nights?",
+      "answer": "On Friday nights, I usually …"
+    }
+  ],
+  "mimeInstructions": [
+    "Mime an action. Guess using the Present Continuous, then ask about the routine."
+  ],
+  "mimeExample": [
+    {
+      "speaker": "Anna",
+      "text": "Are you brushing your teeth?"
+    },
+    {
+      "speaker": "Ben",
+      "text": "Yes, I am!"
+    },
+    {
+      "speaker": "Anna",
+      "text": "Do you brush your teeth after breakfast?"
+    },
+    {
+      "speaker": "Ben",
+      "text": "Yes, I do! I brush my teeth every morning."
+    }
+  ],
+  "conversation": [
+    {
+      "prompt": "What are you doing right now?",
+      "answer": "I'm … right now."
+    },
+    {
+      "prompt": "What are you wearing today?",
+      "answer": "I'm wearing … today."
+    },
+    {
+      "prompt": "Are you sitting or standing?",
+      "answer": "I'm sitting down. / I'm standing up."
+    },
+    {
+      "prompt": "Are you listening to music?",
+      "answer": "Yes, I'm listening to … / No, I'm not listening to music."
+    },
+    {
+      "prompt": "What are you thinking about right now?",
+      "answer": "I'm thinking about …"
+    },
+    {
+      "prompt": "Are you drinking anything?",
+      "answer": "Yes, I'm drinking … / No, I'm not drinking anything."
+    },
+    {
+      "prompt": "What are you doing after class?",
+      "answer": "After class, I'm …"
+    },
+    {
+      "prompt": "Are you watching any good series these days?",
+      "answer": "Yes, I'm watching … / No, I'm not watching a series right now."
+    },
+    {
+      "prompt": "Are you reading any interesting books?",
+      "answer": "Yes, I'm reading … / No, I'm not reading a book right now."
+    },
+    {
+      "prompt": "Are you learning anything new at the moment?",
+      "answer": "I'm learning … at the moment. / I'm not learning anything new right now."
+    },
+    {
+      "prompt": "Are you exercising these days?",
+      "answer": "Yes, I'm … / No, I'm not exercising these days."
+    },
+    {
+      "prompt": "Are you spending more time at home lately?",
+      "answer": "Yes, I'm spending more time at home. / No, I'm going out more."
+    },
+    {
+      "prompt": "What is your family doing right now?",
+      "answer": "My … is … right now. / My parents are …"
+    },
+    {
+      "prompt": "Is anyone in your family working today?",
+      "answer": "Yes, my … is working today. / No, no one is working today."
+    },
+    {
+      "prompt": "What are your friends doing this weekend?",
+      "answer": "My friends are … this weekend."
+    },
+    {
+      "prompt": "Are any of your friends studying English?",
+      "answer": "Yes, my … is studying English. / No, they aren't."
+    },
+    {
+      "prompt": "Is anyone you know traveling right now?",
+      "answer": "Yes, my … is traveling in … / No, no one is traveling right now."
+    },
+    {
+      "prompt": "Are you working or studying a lot this week?",
+      "answer": "This week, I'm working / studying a lot. / I'm not working or studying much."
+    },
+    {
+      "prompt": "Are you trying any new hobbies these days?",
+      "answer": "Yes, I'm trying … / No, I'm not trying any new hobbies."
+    },
+    {
+      "prompt": "Are you planning a trip?",
+      "answer": "Yes, I'm planning a trip to … / No, I'm not planning a trip."
+    }
+  ],
+  "homework": {
+    "title": "Real-Life Observation",
+    "description": "Go to a public place, such as a café, shopping mall or park. Observe what people around you are doing and record a short audio describing their activities.",
+    "example": "I'm at a café. A woman is drinking coffee. Two people are talking. A man is working on his laptop.",
+    "instructions": [
+      "Visit a public place.",
+      "Observe the people around you.",
+      "Record a short audio using the Present Continuous.",
+      "Send the audio to your teacher."
+    ]
+  },
+  "listening": {
+    "id": "a201.listening.anna.01",
+    "transcript": "Hey! What are you doing? I'm at home right now. I'm making some coffee and listening to music. I usually go to the gym in the morning, but today I'm just relaxing. My sister is watching TV, and my parents are cooking lunch. What about you? What are you doing today?",
+    "questions": [
+      {
+        "prompt": "Where is Anna right now?",
+        "answer": "Anna is at home right now."
+      },
+      {
+        "prompt": "What is Anna doing?",
+        "answer": "She is making coffee and listening to music."
+      },
+      {
+        "prompt": "What does Anna usually do in the morning?",
+        "answer": "She usually goes to the gym in the morning."
+      },
+      {
+        "prompt": "What is Anna's sister doing?",
+        "answer": "Her sister is watching TV."
+      },
+      {
+        "prompt": "What are Anna's parents doing?",
+        "answer": "Her parents are cooking lunch."
+      }
+    ]
+  }
+}

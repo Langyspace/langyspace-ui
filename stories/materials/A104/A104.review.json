@@ -1,0 +1,537 @@
+{
+  "version": 79,
+  "code": "A1.04",
+  "title": "My day and our time",
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "People in your life",
+      "instruction": "Introduce someone, then ask your teacher",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "Who’s in your family?",
+          "hint": "This is my … His/Her name is …",
+          "cue": "Introduce a family member"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What does that person do?",
+          "hint": "He’s/She’s a …",
+          "cue": "Say their job"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Where is that person from?",
+          "hint": "He’s/She’s from … What about your family?",
+          "cue": "Say where they’re from"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "kind": "vocabulary",
+      "title": "What do you do every day?",
+      "instruction": "Name the activities first, then click to check and listen",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "V79.0",
+          "word": "wake up",
+          "translation": "acordar",
+          "imageUrl": "scene-wake-up79",
+          "imageAlt": "Ana awake and stretching in bed in the morning",
+          "example": "I wake up at seven",
+          "audioId": "FS79.0",
+          "audioText": "wake up. I wake up at seven."
+        },
+        {
+          "id": "V79.1",
+          "word": "have breakfast",
+          "translation": "tomar café da manhã",
+          "imageUrl": "scene-breakfast79",
+          "imageAlt": "Ana eating toast and having coffee for breakfast",
+          "example": "I have breakfast in the morning",
+          "audioId": "FS79.1",
+          "audioText": "have breakfast. I have breakfast in the morning."
+        },
+        {
+          "id": "V79.2",
+          "word": "work",
+          "translation": "trabalhar",
+          "imageUrl": "scene-work79",
+          "imageAlt": "Ana working at a laptop",
+          "example": "I work in the afternoon",
+          "audioId": "FS79.2",
+          "audioText": "work. I work in the afternoon."
+        },
+        {
+          "id": "V79.3",
+          "word": "study",
+          "translation": "estudar",
+          "imageUrl": "scene-study79",
+          "imageAlt": "Ana studying a book and taking notes",
+          "example": "I study after work",
+          "audioId": "FS79.3",
+          "audioText": "study. I study after work."
+        },
+        {
+          "id": "V79.4",
+          "word": "go to the gym",
+          "translation": "ir à academia",
+          "imageUrl": "scene-gym79",
+          "imageAlt": "Ana exercising with a dumbbell at the gym",
+          "example": "I go to the gym on Tuesday",
+          "audioId": "FS79.4",
+          "audioText": "go to the gym. I go to the gym on Tuesday."
+        },
+        {
+          "id": "V79.5",
+          "word": "go to bed",
+          "translation": "ir para a cama",
+          "imageUrl": "scene-bedtime79",
+          "imageAlt": "Ana awake and getting into bed at night",
+          "example": "I go to bed at ten",
+          "audioId": "FS79.5",
+          "audioText": "go to bed. I go to bed at ten."
+        }
+      ],
+      "alignHeading": true
+    },
+    {
+      "id": "s31",
+      "kind": "vocabulary",
+      "title": "Morning, afternoon or evening?",
+      "instruction": "Describe each time of day, then click to listen",
+      "minutes": 2,
+      "eyebrow": "Reference",
+      "items": [
+        {
+          "id": "T.morning",
+          "word": "morning",
+          "translation": "manhã",
+          "imageUrl": "scene-morning42",
+          "imageAlt": "Ana having breakfast in daylight"
+        },
+        {
+          "id": "T.afternoon",
+          "word": "afternoon",
+          "translation": "tarde",
+          "imageUrl": "scene-afternoon42",
+          "imageAlt": "Ana working at a desk during the afternoon"
+        },
+        {
+          "id": "T.evening",
+          "word": "evening",
+          "translation": "início da noite",
+          "imageUrl": "scene-evening42",
+          "imageAlt": "Ana relaxing at home as the sky becomes violet"
+        }
+      ],
+      "alignHeading": true,
+      "vocabularyRole": "reference",
+      "referenceReason": "The complete three-part day reference supports the six routine actions already introduced"
+    },
+    {
+      "id": "s6",
+      "kind": "dialogue",
+      "title": "Listen for a time to meet",
+      "instruction": "Follow Ana’s routine and find the plan she agrees to",
+      "minutes": 5,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "What time do you get up?",
+          "translation": "A que horas você levanta?",
+          "audioText": "What time do you get up?"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "I always get up early, at six. I work in the morning",
+          "translation": "Eu sempre levanto cedo, às seis. Eu trabalho de manhã",
+          "audioText": "I always get up early, at six. I work in the morning."
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "And in the evening?",
+          "translation": "E à noite?",
+          "audioText": "And in the evening?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "I study on Monday and Wednesday, after work",
+          "translation": "Eu estudo na segunda e na quarta, depois do trabalho",
+          "audioText": "I study on Monday and Wednesday, after work."
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "I go to the gym on Tuesday at seven in the evening. Are you free?",
+          "translation": "Eu vou à academia na terça às sete da noite. Você está livre?",
+          "audioText": "I go to the gym on Tuesday at seven in the evening. Are you free?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes, I am. Great! See you on Tuesday",
+          "translation": "Sim, estou. Ótimo! Até terça",
+          "audioText": "Yes, I am. Great! See you on Tuesday."
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "When will they go to the gym?",
+          "hint": "They’ll go on … at …",
+          "answer": "They’ll go on Tuesday at seven in the evening"
+        },
+        {
+          "id": "s6.q98.2",
+          "prompt": "What time does Ana get up?",
+          "hint": "She gets up at …",
+          "answer": "Ana gets up at six"
+        },
+        {
+          "id": "s6.q98.3",
+          "prompt": "When does Ana study?",
+          "hint": "She studies on …",
+          "answer": "Ana studies on Monday and Wednesday, after work"
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "kind": "questions",
+      "title": "Tell me about your routine",
+      "instruction": "Talk about your day and ask your teacher about hers",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "p1",
+          "prompt": "What do you do in the morning?",
+          "cue": "Say two things you do",
+          "hint": "I … and then I …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "p2",
+          "prompt": "When are you free?",
+          "cue": "Choose a day and a time",
+          "hint": "I’m free on … at … Are you free then?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "evening",
+          "prompt": "What do you do in the evening?",
+          "cue": "Describe an evening habit and ask about mine",
+          "hint": "I … in the evening. What do you do?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s7",
+      "kind": "grammar",
+      "title": "Talk about what you do",
+      "instruction": "Use I with an activity, and I’m with a state",
+      "minutes": 2,
+      "eyebrow": "Grammar",
+      "columns": {
+        "subject": "Use",
+        "verb": "Pattern",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "action",
+          "subject": "Activity",
+          "verb": "I + verb",
+          "example": "I work. I study after work."
+        },
+        {
+          "id": "state",
+          "subject": "State",
+          "verb": "I’m + adjective",
+          "example": "I’m tired. I’m free on Friday."
+        }
+      ],
+      "note": "I + activity: I work. I am + state: I’m free",
+      "layout": "patterns"
+    },
+    {
+      "id": "s71",
+      "kind": "grammar",
+      "title": "Say when it happens",
+      "instruction": "Connect each time expression to the right word",
+      "minutes": 2,
+      "eyebrow": "Grammar",
+      "columns": {
+        "subject": "Time",
+        "verb": "Word",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "at",
+          "subject": "A time",
+          "verb": "at",
+          "example": "I get up at six."
+        },
+        {
+          "id": "on",
+          "subject": "A day",
+          "verb": "on",
+          "example": "I study on Monday."
+        },
+        {
+          "id": "in",
+          "subject": "Part of day",
+          "verb": "in",
+          "example": "I work in the morning. I relax in the afternoon or evening."
+        }
+      ],
+      "layout": "patterns"
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the plan to meet",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "A1.04.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "What time do you get up?",
+          "translation": "A que horas você levanta?",
+          "audioText": "What time do you get up?",
+          "parts": [
+            "What time ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "do"
+            },
+            " you get up?"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "I always get up early, at six. I work in the morning",
+          "translation": "Eu sempre levanto cedo, às seis. Eu trabalho de manhã",
+          "audioText": "I always get up early, at six. I work in the morning.",
+          "parts": [
+            "I always ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "get up"
+            },
+            " early, at six. I work in the morning"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "And in the evening?",
+          "translation": "E à noite?",
+          "audioText": "And in the evening?",
+          "parts": [
+            "And in the ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "evening"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "I study on Monday and Wednesday, after work",
+          "translation": "Eu estudo na segunda e na quarta, depois do trabalho",
+          "audioText": "I study on Monday and Wednesday, after work.",
+          "parts": [
+            "I study ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "on"
+            },
+            " Monday and Wednesday, after work"
+          ]
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "I go to the gym on Tuesday at seven in the evening. Are you free?",
+          "translation": "Eu vou à academia na terça às sete da noite. Você está livre?",
+          "audioText": "I go to the gym on Tuesday at seven in the evening. Are you free?",
+          "parts": [
+            "I go to the gym on Tuesday ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "at"
+            },
+            " seven in the evening. Are you free?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes, I am. Great! See you on Tuesday",
+          "translation": "Sim, estou. Ótimo! Até terça",
+          "audioText": "Yes, I am. Great! See you on Tuesday.",
+          "parts": [
+            "Yes, I ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "am"
+            },
+            ". Great! See you on Tuesday"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "kind": "activity",
+      "title": "Find a time to meet",
+      "instruction": "Use the example week to arrange a visit to the gym",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s9",
+      "kind": "listening",
+      "title": "Kim needs to change the plan",
+      "instruction": "Listen, find the new time and get ready to reply",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "I’m not free on Thursday evening. I work until eight. Are you free on Friday at seven? Let’s go to the gym then. We can meet there. Please tell me if Friday is good for you",
+      "audioId": "L79.1",
+      "greeting": "Can we change our plan?",
+      "items": [
+        {
+          "id": "l2",
+          "prompt": "When does Kim want to meet?",
+          "hint": "She wants to meet on … at …",
+          "answer": "Kim wants to meet on Friday at seven"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "Why isn’t Thursday evening good for Kim?",
+          "hint": "She works until …",
+          "answer": "Thursday isn’t good because Kim works until eight"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "Where does Kim suggest meeting?",
+          "hint": "She suggests meeting at …",
+          "answer": "Kim suggests meeting at the gym"
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "kind": "questions",
+      "title": "Reply to Kim",
+      "instruction": "Reply to the invitation. Agree a time and confirm the place",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "reply",
+          "prompt": "Are you free on Friday at seven?",
+          "cue": "Accept or say you’re busy",
+          "hint": "Yes, I am / No, I’m busy then"
+        },
+        {
+          "id": "s91.q98.2",
+          "prompt": "What time works best for you?",
+          "cue": "Keep the time or suggest another one",
+          "hint": "Friday at seven is good for me / What about … at …?"
+        },
+        {
+          "id": "s91.q98.3",
+          "prompt": "Shall we meet at the gym?",
+          "cue": "Confirm the place or suggest another one",
+          "hint": "Yes, let’s meet at the gym / Can we meet at … instead?"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "How often do they do it?",
+      "instruction": "Watch the conversation about meditation, then describe one of your habits",
+      "minutes": 4,
+      "video": {
+        "videoId": "l1herjZq-4M",
+        "startSeconds": 65,
+        "endSeconds": 104,
+        "title": "Talking about personal interests — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-04.video102.q1",
+          "prompt": "What activity do they both do?",
+          "hint": "Listen for the hobby Paul has started",
+          "answer": "They both do meditation"
+        },
+        {
+          "id": "a1-04.video102.q2",
+          "prompt": "When does Emir usually practise?",
+          "hint": "Listen for a part of the day",
+          "answer": "Emir usually practises in the mornings"
+        },
+        {
+          "id": "a1-04.video102.q3",
+          "prompt": "How often does Paul meditate?",
+          "hint": "Listen for a number followed by a week",
+          "answer": "Paul normally meditates once or twice a week"
+        },
+        {
+          "id": "a1-04.video102.q4",
+          "prompt": "What do you do every morning?",
+          "hint": "Use I usually and a morning activity",
+          "answer": "Example: I usually have breakfast at eight"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise your routine and make a new plan",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Your day",
+          "description": "Record three things you do, including a time and a day"
+        },
+        {
+          "title": "Make a plan",
+          "description": "Send a practice voice note suggesting a day and time. Then change one detail and record your reply"
+        }
+      ]
+    }
+  ],
+  "freeConversationMinutes": 10
+}

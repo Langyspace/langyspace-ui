@@ -1,0 +1,133 @@
+{
+  "sourceBase": "ff30c233539636028b715e2eebd109ca49b48f67",
+  "combinedSourceGrant": "INT-FEEDBACK06-COMBINED-SOURCE-01",
+  "qualifiedContentSha256": "f315b774ff13b9c9fe3acfc4f99de960d4deca44f20c41dfd1d7c290a9368438",
+  "API": {
+    "values": 170,
+    "types": 270,
+    "declarations": 569,
+    "snapshotSha256": "35c06effce17d115c60323ca29fc8c872105e05d1d124d6479890d69f23dbe79",
+    "officialGuardPassed": true
+  },
+  "proofs": [
+    {
+      "path": "api-final-official-guard.log",
+      "sha256": "4c682e824253bf4195328ea6fca80471c90fcb483055e7b1fb13b4d4859cacd4"
+    },
+    {
+      "path": "notes-ui-contracts.log",
+      "sha256": "ac52239e2a3209910598c95c290cf90cc61964129b94c5e9394ab89fb81478a4"
+    },
+    {
+      "path": "notes-window-ssr-corrected.log",
+      "sha256": "9083fb8e8c79792cde8b112712a626667a90a4599bf9897bd07497e0bc3d0fa4"
+    },
+    {
+      "path": "browser-focal/report.json",
+      "sha256": "e8616b92257e78affe2046b136009c272dbeea961776e881276c627b5402808f"
+    },
+    {
+      "path": "browser-integration-focal/report.json",
+      "sha256": "795d48660113b29c9a40c83302f8b90e044457d88299807d1f1cab7231273690"
+    },
+    {
+      "path": "browser-extra-shells/report.json",
+      "sha256": "c5539289c8482f2f9b1449f6ab8d75f6eb9c593016f220f3369eb413b09c3c69"
+    },
+    {
+      "path": "browser-window-states-final/report.json",
+      "sha256": "d3d9cfad190f33a7852273038858918acab3c3474de4a8f2271bf3d5deee8ef6"
+    },
+    {
+      "path": "typecheck-ui-final-corrected.log",
+      "sha256": "9256cc5ec24be978fda9a590774cab911a7a403667f10bec82d048764e3e1bf4"
+    }
+  ],
+  "reusedComposition": {
+    "selectedPaths": 59,
+    "manifestSha256": "759925ed38c7f20c915b3a0f59f4536924730fad01b1476cbf2c51194245c98b",
+    "compositionFocalCases": 5,
+    "approvedNewMp3": 5,
+    "model70AndImages36Preserved": true
+  },
+  "boundaries": {
+    "actualCloudPersistenceTested": false,
+    "StudentChanged": false,
+    "packageReleased": false,
+    "sharedSourceCommitPending": true,
+    "CITriggered": false,
+    "deployed": false,
+    "humanVisualAccepted": false
+  },
+  "UIReviewPairs": {
+    "before": "Existing SlideNotes component, unchanged from ff30, with the same draft/theme/fonts/viewport.",
+    "after": "New controlled full-window Notes with the same draft/theme/fonts/viewport.",
+    "widths": [
+      320,
+      480
+    ],
+    "productComparisons": "Consumer screenshots for the final revision remain a later coordinated gate."
+  },
+  "NotesLintDelta": {
+    "grant": "ui-notes-lint-delta-source-grant.json",
+    "files": [
+      {
+        "path": "src/components/Slide/SlideNotesWindow.tsx",
+        "beforeSha256": "c817a94148187b2f366d2e4e8ac2f2af549beb6c0c82307f985d88dd6b18ba0b",
+        "afterSha256": "a8f64aeaacbb25408c0c912d8aa42130e18c59c8271a22319cac7afa0f0a30be"
+      },
+      {
+        "path": "stories/materials/shared/useLessonNotesPopup.ts",
+        "beforeSha256": "1fa8663a4e3f002ab1e029443eceb8e88b7f889c66ff6290beda4cfec1ab9e95",
+        "afterSha256": "59ddf4c7ca4c4f9c6771cbdeb09572528d2ed93d839713bf69ff065c0822c922"
+      },
+      {
+        "path": "stories/materials/shared/LessonShell.tsx",
+        "beforeSha256": "78680167feecfe7572f2a1386343c7753ce2e64a9bacbc2922b6ae14d18d6175",
+        "afterSha256": "bffecd3d6d5f92c1a7b45f01a931c7a7dbd35f6b6d98889abf70c63c33ce4fb7"
+      },
+      {
+        "path": "stories/materials/shared/LessonDeck.tsx",
+        "beforeSha256": "64ffc23815911336c5915c75a572a21f5a9660f56790278c817da3ddad8ea965",
+        "afterSha256": "3c5bffed1c8b65ab01905a6711e239d1bc12791de6948127200116b40f3a84c9"
+      },
+      {
+        "path": "stories/materials/A101/A101Lesson.tsx",
+        "beforeSha256": "7baef8221c398cb5d83ca003e6d936c1fab6acf592875c35a7f6a9d92a1e8f31",
+        "afterSha256": "a57429c25c2a7e6097b66cb93ad6a9565c7f780d74e6179f201c5aa59c46b992"
+      },
+      {
+        "path": "stories/materials/B101/B101Lesson.tsx",
+        "beforeSha256": "3a72a2e47467d6b6b37d4165a6aef37d8b5ccd8d1bfc3bcb294be904f977197a",
+        "afterSha256": "3b75b86f2b3b4af51cdd21b3ff4d6facf44c519a5b743db164437a4cc311e9f1"
+      },
+      {
+        "path": "stories/materials/B201/B201Shell.tsx",
+        "beforeSha256": "de9f331584bcaf3b491eb9119b6ecd601b6521436c114290a5558d6a58ee0aff",
+        "afterSha256": "e79d08fa062c3a73e280db4421e19d4408a77eda2a7395bc68e5ae6128659252"
+      },
+      {
+        "path": "stories/materials/C101/C101Lesson.tsx",
+        "beforeSha256": "1b88454bb4edce95142aced67ade80662e36cfcecaceb08332caf159febf315b",
+        "afterSha256": "bbacc4367c598e17c9493186b825df11ce1c87e0721affe1aae4acf206bcebbf"
+      },
+      {
+        "path": "stories/materials/TrialB2/TrialB2Lesson.tsx",
+        "beforeSha256": "0f1def0bed46f753b8575f27a965f62d92271fdf25b1b31c5d8b3f1f34f6dad3",
+        "afterSha256": "e85aa43fe7b77cad0d17f547582bb1d7ddbcde32feec978ab700f2fdbc07544c"
+      },
+      {
+        "path": "stories/materials/Frontend/FrontendLesson.tsx",
+        "beforeSha256": "c7880972c7d065dbb57423183bc1ef963fd99925612e11bd4458a8992faab71e",
+        "afterSha256": "df4f446d134d2a06fc6dc8e97554524a0a7cc612025ca756912df2a5fc2a8611"
+      }
+    ],
+    "lintErrors": 0,
+    "existingC101FastRefreshWarnings": 1,
+    "UITypecheckRoots": 73,
+    "diagnostics": 0,
+    "nativeFocalCases": 1,
+    "publicDeclarationUnchanged": "c02dcfbe6879cc00a0a405a20fcf4186bec1456f913ac8796ec93afb87b47e72",
+    "officialAPIGuardReused": true
+  }
+}

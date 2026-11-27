@@ -1,0 +1,579 @@
+{
+  "version": 81,
+  "code": "A2.03",
+  "key": "a2-03",
+  "title": "Sorry I’m late!",
+  "goal": "Explain an interruption and apologise for a delay",
+  "freeConversationInstruction": "Talk about unexpected moments and ask what the other person was doing when something happened",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Tell a short sequence from last weekend",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What did you do last weekend?",
+          "hint": "I … last weekend",
+          "cue": "Name a weekend activity"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What happened first?",
+          "hint": "First I …",
+          "cue": "Start the story"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What happened after that?",
+          "hint": "Then I … Finally, I …",
+          "cue": "Add the next event"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "When plans go wrong",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A203-V81.0",
+          "word": "wait for the bus",
+          "translation": "",
+          "example": "I was waiting for the bus",
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "wait for the bus",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A203-FS81.0",
+          "audioText": "wait for the bus. I was waiting for the bus."
+        },
+        {
+          "id": "A203-V81.1",
+          "word": "miss the bus",
+          "translation": "",
+          "example": "I missed the bus when I went into the shop",
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "miss the bus",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A203-FS81.1",
+          "audioText": "miss the bus. I missed the bus when I went into the shop."
+        },
+        {
+          "id": "A203-V81.2",
+          "word": "drop a phone",
+          "translation": "",
+          "example": "She dropped her phone outside",
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "drop a phone",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A203-FS81.2",
+          "audioText": "drop a phone. She dropped her phone outside."
+        },
+        {
+          "id": "A203-V81.3",
+          "word": "get stuck in traffic",
+          "translation": "",
+          "example": "He got stuck in traffic near the station",
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "get stuck in traffic",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A203-FS81.3",
+          "audioText": "get stuck in traffic. He got stuck in traffic near the station."
+        },
+        {
+          "id": "A203-V81.4",
+          "word": "start raining",
+          "translation": "",
+          "example": "It started raining at twelve",
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "start raining",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A203-FS81.4",
+          "audioText": "start raining. It started raining at twelve."
+        },
+        {
+          "id": "A203-V81.5",
+          "word": "arrive late",
+          "translation": "",
+          "example": "I arrived late for lunch",
+          "imageUrl": "a2-03-vocabulary81",
+          "imageAlt": "arrive late",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A203-FS81.5",
+          "audioText": "arrive late. I arrived late for lunch."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Rain at the bus stop",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A203-D81.1",
+          "speaker": "Kim",
+          "text": "You’re here! Are you all right?",
+          "audioText": "You’re here! Are you all right?",
+          "translation": "Você chegou! Está tudo bem?"
+        },
+        {
+          "id": "A203-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, sorry I’m late. I was waiting for the bus when it started raining",
+          "audioText": "Yes, sorry I’m late. I was waiting for the bus when it started raining.",
+          "translation": "Sim, desculpe o atraso. Eu estava esperando o ônibus quando começou a chover"
+        },
+        {
+          "id": "A203-D81.3",
+          "speaker": "Kim",
+          "text": "Oh no! Did you have an umbrella?",
+          "audioText": "Oh no! Did you have an umbrella?",
+          "translation": "Ah, não! Você estava com guarda-chuva?"
+        },
+        {
+          "id": "A203-D81.4",
+          "speaker": "Ana",
+          "text": "No. I went into a shop, and then I missed the bus",
+          "audioText": "No. I went into a shop, and then I missed the bus.",
+          "translation": "Não. Entrei em uma loja e depois perdi o ônibus"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What was Ana doing when it started raining?",
+          "hint": "She was …",
+          "answer": "Ana was waiting for the bus"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Did Ana have an umbrella?",
+          "hint": "No, she …",
+          "answer": "No, Ana didn’t have an umbrella"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why did Ana miss the bus?",
+          "hint": "She went into …",
+          "answer": "Ana missed the bus after going into a shop to get out of the rain"
+        }
+      ],
+      "dialogueGroup": "a2-03.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Finally at the café",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A203-D81.5",
+          "speaker": "Kim",
+          "text": "What did you do after that?",
+          "audioText": "What did you do after that?",
+          "translation": "O que você fez depois?"
+        },
+        {
+          "id": "A203-D81.6",
+          "speaker": "Ana",
+          "text": "I took the next bus, but it was very slow",
+          "audioText": "I took the next bus, but it was very slow.",
+          "translation": "Peguei o ônibus seguinte, mas ele estava muito lento"
+        },
+        {
+          "id": "A203-D81.7",
+          "speaker": "Kim",
+          "text": "Don’t worry. We can still have lunch",
+          "audioText": "Don’t worry. We can still have lunch.",
+          "translation": "Não se preocupe. Ainda podemos almoçar"
+        },
+        {
+          "id": "A203-D81.8",
+          "speaker": "Ana",
+          "text": "Thanks for waiting. Next time I’ll leave earlier!",
+          "audioText": "Thanks for waiting. Next time I’ll leave earlier!",
+          "translation": "Obrigada por esperar. Da próxima vez vou sair mais cedo!"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "How did Ana travel after missing the bus?",
+          "hint": "She took …",
+          "answer": "Ana took the next bus"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What was the next bus like?",
+          "hint": "It was …",
+          "answer": "The next bus was very slow"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What will Ana do differently next time?",
+          "hint": "She’ll …",
+          "answer": "Ana will leave earlier next time"
+        }
+      ],
+      "dialogueGroup": "a2-03.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Explain an interruption",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What were you doing when it started to rain?",
+          "cue": "Describe the action in progress",
+          "hint": "I was … when …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Why were you late?",
+          "cue": "Explain the sequence and apologise",
+          "hint": "Sorry I’m late. I was … when …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What happened next?",
+          "cue": "Finish the story, then ask about a similar experience",
+          "hint": "After that, I … Did you have a similar experience?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "What was happening when something changed?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An action already in progress",
+          "verb": "was / were + verb-ing",
+          "example": "I was waiting for the bus"
+        },
+        {
+          "id": "1",
+          "subject": "An event interrupts it",
+          "verb": "when + past simple",
+          "example": "I was waiting when it started raining"
+        },
+        {
+          "id": "2",
+          "subject": "Explain and apologise",
+          "verb": "Sorry … + reason",
+          "example": "Sorry I’m late. I missed the bus"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "What happened first?",
+      "instruction": "Choose a picture and its place to retell Ana’s story in order",
+      "minutes": 2,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_mission_story",
+      "kind": "activity",
+      "title": "Explain the delay",
+      "instruction": "Use the three time anchors to explain what happened",
+      "minutes": 3,
+      "eyebrow": "Your story"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Leo is delayed too",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. Leo just called me. He was driving to the café when he got stuck in traffic. There’s a lot of traffic near the station, so he’s running late too. He thinks he can be here at one thirty. He’s fine, and he says we should order our food now. Shall we get a table?",
+      "audioText": "Hi, Ana. Leo just called me. He was driving to the café when he got stuck in traffic. There’s a lot of traffic near the station, so he’s running late too. He thinks he can be here at one thirty. He’s fine, and he says we should order our food now. Shall we get a table?",
+      "audioId": "A203-L81.1",
+      "greeting": "I’ve heard from Leo about the traffic",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Why is Leo late?",
+          "hint": "He got stuck in …",
+          "answer": "Leo got stuck in traffic near the station"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What time does Leo expect to arrive?",
+          "hint": "He expects to arrive at …",
+          "answer": "Leo expects to arrive at one thirty"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What does Leo suggest they do while waiting?",
+          "hint": "He suggests they …",
+          "answer": "Leo suggests that they order their food now"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Update the lunch plan",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "When travel plans go wrong",
+      "instruction": "Watch two travel problems, then explain a delay politely",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 182,
+        "endSeconds": 232,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a2-03.video102.q1",
+          "prompt": "How long is the first delay?",
+          "hint": "Listen for at least",
+          "answer": "The flight is delayed by at least two hours"
+        },
+        {
+          "id": "a2-03.video102.q2",
+          "prompt": "Why is the flight in the next example cancelled?",
+          "hint": "Listen to the employee’s explanation",
+          "answer": "It’s cancelled because of bad weather"
+        },
+        {
+          "id": "a2-03.video102.q3",
+          "prompt": "How does the traveller avoid blaming the employee?",
+          "hint": "Listen to the reply after the apology",
+          "answer": "The traveller says it isn’t the employee’s fault"
+        },
+        {
+          "id": "a2-03.video102.q4",
+          "prompt": "You arrived late because your train stopped. What can you say?",
+          "hint": "Apologise, then explain what happened",
+          "answer": "Example: Sorry I’m late. My train stopped and I had to wait"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explain an interruption and apologise for a delay"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "sequence",
+      "title": "Ana’s story pictures",
+      "image": "a2-03-vocabulary81",
+      "questions": [],
+      "pictures": [
+        {
+          "id": "missed",
+          "label": "The bus leaves",
+          "index": 1
+        },
+        {
+          "id": "waiting",
+          "label": "At the bus stop",
+          "index": 0
+        },
+        {
+          "id": "rain",
+          "label": "Rain starts",
+          "index": 4
+        }
+      ],
+      "stages": [
+        {
+          "id": "first",
+          "label": "First"
+        },
+        {
+          "id": "then",
+          "label": "Then"
+        },
+        {
+          "id": "after",
+          "label": "After that"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Leo’s message",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Problem",
+          "value": "Traffic near the station"
+        },
+        {
+          "id": "1",
+          "label": "Arrival",
+          "value": "About 1:30 pm"
+        },
+        {
+          "id": "2",
+          "label": "Suggestion",
+          "value": "Order your food now"
+        }
+      ],
+      "questions": [
+        {
+          "id": "leo",
+          "prompt": "What could you say to reassure Leo?",
+          "hint": "No problem. Thanks for …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What will you do while you wait?",
+          "hint": "We’ll … while you …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How will you confirm the arrival time?",
+          "hint": "See you at … Is that right?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Leo’s message"
+    },
+    "s_mission_story": {
+      "type": "timeline",
+      "title": "Three moments",
+      "facts": [
+        {
+          "id": "0",
+          "label": "12:00",
+          "value": "Waiting for the bus"
+        },
+        {
+          "id": "1",
+          "label": "12:05",
+          "value": "Rain · went into a shop · missed the bus"
+        },
+        {
+          "id": "2",
+          "label": "12:40",
+          "value": "Arrived at the café"
+        }
+      ],
+      "questions": [
+        {
+          "id": "delay",
+          "prompt": "What were you doing at twelve?",
+          "hint": "I was waiting for …"
+        },
+        {
+          "id": "@s_mission_story.q98.2",
+          "prompt": "What happened when the rain started?",
+          "hint": "I went into … and missed …"
+        },
+        {
+          "id": "@s_mission_story.q98.3",
+          "prompt": "How would you apologise when you arrived?",
+          "hint": "Sorry I’m late. I was … when …"
+        }
+      ],
+      "questionPurpose": "response"
+    }
+  }
+}

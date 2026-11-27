@@ -1,0 +1,575 @@
+{
+  "version": 81,
+  "code": "B1.02",
+  "key": "b1-02",
+  "title": "There used to be a cinema here",
+  "goal": "Compare a neighbourhood’s past and present and share a memory",
+  "freeConversationInstruction": "Compare places you have known, share memories and ask how your teacher’s life has changed",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Catch up on something that has kept you busy",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What have you been doing lately?",
+          "hint": "I’ve been …",
+          "cue": "Describe a recent activity"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What have you finished?",
+          "hint": "I’ve finished …",
+          "cue": "Share a completed result"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What are you still working on?",
+          "hint": "I haven’t finished … yet",
+          "cue": "Explain what is still ongoing"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Words for there used to be a cinema here",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B102-V81.0",
+          "word": "a cinema",
+          "translation": "",
+          "example": "There used to be a cinema on this corner",
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a cinema",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B102-FS81.0",
+          "audioText": "a cinema. There used to be a cinema on this corner."
+        },
+        {
+          "id": "B102-V81.1",
+          "word": "a playground",
+          "translation": "",
+          "example": "The playground still has its old swings",
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a playground",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B102-FS81.1",
+          "audioText": "a playground. The playground still has its old swings."
+        },
+        {
+          "id": "B102-V81.2",
+          "word": "a corner shop",
+          "translation": "",
+          "example": "I used to buy bread at the corner shop",
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a corner shop",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B102-FS81.2",
+          "audioText": "a corner shop. I used to buy bread at the corner shop."
+        },
+        {
+          "id": "B102-V81.3",
+          "word": "a square",
+          "translation": "",
+          "example": "The factory was beside the square",
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a square",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B102-FS81.3",
+          "audioText": "a square. The factory was beside the square."
+        },
+        {
+          "id": "B102-V81.4",
+          "word": "a factory",
+          "translation": "",
+          "example": "My neighbour used to work at the factory",
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "a factory",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B102-FS81.4",
+          "audioText": "a factory. My neighbour used to work at the factory."
+        },
+        {
+          "id": "B102-V81.5",
+          "word": "an apartment block",
+          "translation": "",
+          "example": "There’s an apartment block on the old site now",
+          "imageUrl": "b1-02-vocabulary81",
+          "imageAlt": "an apartment block",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B102-FS81.5",
+          "audioText": "an apartment block. There’s an apartment block on the old site now."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "There used to be a cinema here",
+      "paragraphs": [
+        "Fictional neighbourhood record: the corner cinema is now a pharmacy. The playground and its swings remain; new trees have been added. A former factory stands beside the square. The council has not yet confirmed its current use in this record."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Walking through the old neighbourhood",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B102-D81.1",
+          "speaker": "Kim",
+          "text": "I haven’t been here for years. Wasn’t there a cinema on this corner?",
+          "audioText": "I haven’t been here for years. Wasn’t there a cinema on this corner?",
+          "translation": "Faz anos que não venho aqui. Não tinha um cinema nesta esquina?"
+        },
+        {
+          "id": "B102-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, there used to be. It’s a pharmacy now",
+          "audioText": "Yes, there used to be. It’s a pharmacy now.",
+          "translation": "Sim, tinha. Agora é uma farmácia"
+        },
+        {
+          "id": "B102-D81.3",
+          "speaker": "Kim",
+          "text": "That’s a shame. Did you use to go there?",
+          "audioText": "That’s a shame. Did you use to go there?",
+          "translation": "Que pena. Você costumava ir lá?"
+        },
+        {
+          "id": "B102-D81.4",
+          "speaker": "Ana",
+          "text": "Most Saturdays. The tickets were cheap, and I could walk home afterwards",
+          "audioText": "Most Saturdays. The tickets were cheap, and I could walk home afterwards.",
+          "translation": "Na maioria dos sábados. Os ingressos eram baratos e eu podia voltar a pé"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What is on the old cinema site now?",
+          "hint": "There’s a … there now",
+          "answer": "There is a pharmacy on the old cinema site"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How often did Ana use to go to the cinema?",
+          "hint": "She used to go …",
+          "answer": "Ana used to go most Saturdays"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why was going there convenient?",
+          "hint": "She could … afterwards",
+          "answer": "Ana could walk home afterwards, and the tickets were cheap"
+        }
+      ],
+      "dialogueGroup": "b1-02.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What changed, and what stayed?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B102-D81.5",
+          "speaker": "Kim",
+          "text": "At least the playground is still here. It looks much greener",
+          "audioText": "At least the playground is still here. It looks much greener.",
+          "translation": "Pelo menos o parquinho continua aqui. Parece bem mais verde"
+        },
+        {
+          "id": "B102-D81.6",
+          "speaker": "Ana",
+          "text": "It is. They’ve added trees, but they haven’t removed the old swings",
+          "audioText": "It is. They’ve added trees, but they haven’t removed the old swings.",
+          "translation": "Está mesmo. Colocaram árvores, mas não tiraram os balanços antigos"
+        },
+        {
+          "id": "B102-D81.7",
+          "speaker": "Kim",
+          "text": "Do you think the neighbourhood is better now?",
+          "audioText": "Do you think the neighbourhood is better now?",
+          "translation": "Você acha que o bairro está melhor agora?"
+        },
+        {
+          "id": "B102-D81.8",
+          "speaker": "Ana",
+          "text": "In some ways. There are more places to live, but I miss the small shops",
+          "audioText": "In some ways. There are more places to live, but I miss the small shops.",
+          "translation": "Em alguns aspectos. Há mais moradias, mas sinto falta das lojinhas"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What has been added to the playground?",
+          "hint": "They’ve added …",
+          "answer": "More trees have been added to the playground"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What has stayed the same?",
+          "hint": "The old … are still there",
+          "answer": "The old swings are still there"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What does Ana miss about the neighbourhood?",
+          "hint": "She misses …",
+          "answer": "Ana misses the small shops"
+        }
+      ],
+      "dialogueGroup": "b1-02.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Your neighbourhood, then and now",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What did your neighbourhood use to be like?",
+          "cue": "Describe one change you remember or use the example pictures",
+          "hint": "There used to be … Now there’s …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Did you use to do anything differently?",
+          "cue": "Compare one past habit with your life now",
+          "hint": "I used to …, but now I …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Is there anything you miss about it?",
+          "cue": "Compare a past detail with now and ask about my experience",
+          "hint": "I miss …, but now … What about your neighbourhood?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "A past habit or a place that has changed",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An old habit that is different now",
+          "verb": "used to + base verb",
+          "example": "I used to go to the cinema on Saturdays"
+        },
+        {
+          "id": "1",
+          "subject": "A place that no longer exists there",
+          "verb": "there used to be",
+          "example": "There used to be a cinema on this corner"
+        },
+        {
+          "id": "2",
+          "subject": "Negative and question",
+          "verb": "didn’t use to / Did … use to?",
+          "example": "Did you use to live here? It didn’t use to be this busy"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Show me your old neighbourhood",
+      "instruction": "Compare the two pictures. Describe what has changed and ask about the past",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Another change on the map",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! I checked another change on our example map. There used to be a factory beside the square. It’s an apartment block now, with a small garden in front. The playground is still in the same place. A former resident told me he used to work at the factory, so he misses it, even though he likes the cleaner street. Would you show him what has changed and ask which part he remembers best?",
+      "audioText": "Hi, Ana! I checked another change on our example map. There used to be a factory beside the square. It’s an apartment block now, with a small garden in front. The playground is still in the same place. A former resident told me he used to work at the factory, so he misses it, even though he likes the cleaner street. Would you show him what has changed and ask which part he remembers best?",
+      "audioId": "B102-L81.1",
+      "greeting": "I noticed another change near the square",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What has replaced the factory?",
+          "hint": "There’s now …",
+          "answer": "An apartment block has replaced the factory"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What does the former resident miss?",
+          "hint": "He misses …",
+          "answer": "The former resident misses working at the factory"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What improvement does he appreciate?",
+          "hint": "He likes …",
+          "answer": "He likes the cleaner street"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Explain the newly confirmed change",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A place from the past",
+      "instruction": "Watch Bob talk about Spain, then compare a place before and now",
+      "minutes": 4,
+      "video": {
+        "videoId": "BB7PJl3souA",
+        "startSeconds": 106,
+        "endSeconds": 142,
+        "title": "Keeping a conversation going — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b1-02.video102.q1",
+          "prompt": "Where is Noelia from?",
+          "hint": "Listen to the city she names",
+          "answer": "She’s from Santander"
+        },
+        {
+          "id": "b1-02.video102.q2",
+          "prompt": "What did Bob use to have in Spain?",
+          "hint": "Listen after I used to live in Spain",
+          "answer": "He used to have a small bar on the Costa Brava"
+        },
+        {
+          "id": "b1-02.video102.q3",
+          "prompt": "How does Noelia keep the conversation going?",
+          "hint": "Listen to the question about language",
+          "answer": "She asks whether he speaks Spanish"
+        },
+        {
+          "id": "b1-02.video102.q4",
+          "prompt": "Describe one change in your neighbourhood and ask a follow-up",
+          "hint": "Use used to and a present contrast",
+          "answer": "Example: There used to be a cinema here, but now it’s a supermarket. Has your street changed too?"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Compare a neighbourhood’s past and present and share a memory"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "comparison",
+      "title": "The same corner, before and now",
+      "image": "b1-02-neighbourhood123",
+      "pictureGrid": {
+        "columns": 2,
+        "rows": 1,
+        "sourceAspectRatio": 2
+      },
+      "options": [
+        {
+          "id": "before",
+          "title": "Before",
+          "facts": [],
+          "pictures": [
+            {
+              "id": "view0",
+              "index": 0,
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "now",
+          "title": "Now",
+          "facts": [],
+          "pictures": [
+            {
+              "id": "view1",
+              "index": 1,
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "changes",
+          "prompt": "What used to be on the corner?",
+          "hint": "There used to be …, but now …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What has changed or stayed the same at the playground?",
+          "hint": "They’ve added …, but … is still there"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What could you ask a former resident about the area?",
+          "hint": "Did you use to …? What do you miss about …?"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "comparison",
+      "title": "The former factory site",
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you describe the former factory site now?",
+          "hint": "There used to be … Now there’s …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How could you acknowledge the resident’s memory?",
+          "hint": "I can understand why you miss …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What could you ask about his experience there?",
+          "hint": "What did you use to …? What do you remember about …?"
+        }
+      ],
+      "questionPurpose": "response",
+      "image": "b1-02-vocabulary81",
+      "pictureGrid": {
+        "columns": 3,
+        "rows": 2,
+        "sourceAspectRatio": 1.5
+      },
+      "options": [
+        {
+          "id": "before",
+          "title": "Before",
+          "facts": [],
+          "pictures": [
+            {
+              "id": "view4",
+              "index": 4,
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "now",
+          "title": "Now",
+          "facts": [],
+          "pictures": [
+            {
+              "id": "view5",
+              "index": 5,
+              "label": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

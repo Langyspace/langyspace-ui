@@ -1,0 +1,515 @@
+{
+  "version": 81,
+  "code": "A1.12",
+  "key": "a1-12",
+  "title": "A day trip",
+  "goal": "Make a day-trip plan and change it when the weather changes",
+  "freeConversationInstruction": "Plan a day together, talk about what you enjoy and keep the conversation going without a script",
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Bring back a useful phrase from shopping",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "How do you ask politely for an item?",
+          "hint": "Can I have …, please?",
+          "cue": "Ask politely for an item"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How do you check its price?",
+          "hint": "How much is it?",
+          "cue": "Ask its price"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How do you choose a colour or size?",
+          "hint": "The … one in …, please",
+          "cue": "Choose a colour or size"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Weather and travel",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A112-V81.0",
+          "word": "sunny",
+          "translation": "",
+          "example": "It’s sunny at the park",
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "sunny",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A112-FS81.0",
+          "audioText": "sunny. It’s sunny at the park."
+        },
+        {
+          "id": "A112-V81.1",
+          "word": "rainy",
+          "translation": "",
+          "example": "It’s rainy today",
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "rainy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A112-FS81.1",
+          "audioText": "rainy. It’s rainy today."
+        },
+        {
+          "id": "A112-V81.2",
+          "word": "cloudy",
+          "translation": "",
+          "example": "It’s cloudy this morning",
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "cloudy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A112-FS81.2",
+          "audioText": "cloudy. It’s cloudy this morning."
+        },
+        {
+          "id": "A112-V81.3",
+          "word": "windy",
+          "translation": "",
+          "example": "It’s windy outside",
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "windy",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A112-FS81.3",
+          "audioText": "windy. It’s windy outside."
+        },
+        {
+          "id": "A112-V81.4",
+          "word": "train",
+          "translation": "",
+          "example": "We can take the train",
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "train",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A112-FS81.4",
+          "audioText": "train. We can take the train."
+        },
+        {
+          "id": "A112-V81.5",
+          "word": "ticket",
+          "translation": "",
+          "example": "Bring your ticket",
+          "imageUrl": "a1-12-vocabulary81",
+          "imageAlt": "ticket",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A112-FS81.5",
+          "audioText": "ticket. Bring your ticket."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A plan for today",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "A112-D81.1",
+          "speaker": "Kim",
+          "text": "It’s sunny today. Let’s go to the park",
+          "audioText": "It’s sunny today. Let’s go to the park.",
+          "translation": "Está ensolarado hoje. Vamos ao parque"
+        },
+        {
+          "id": "A112-D81.2",
+          "speaker": "Ana",
+          "text": "Good idea! What time can we meet?",
+          "audioText": "Good idea! What time can we meet?",
+          "translation": "Boa ideia! Que horas podemos nos encontrar?"
+        },
+        {
+          "id": "A112-D81.3",
+          "speaker": "Kim",
+          "text": "At ten, near the station. Is that OK?",
+          "audioText": "At ten, near the station. Is that OK?",
+          "translation": "Às dez, perto da estação. Tudo bem?"
+        },
+        {
+          "id": "A112-D81.4",
+          "speaker": "Ana",
+          "text": "Yes. Is there a café in the park?",
+          "audioText": "Yes. Is there a café in the park?",
+          "translation": "Sim. Tem um café no parque?"
+        },
+        {
+          "id": "A112-D81.5",
+          "speaker": "Kim",
+          "text": "There is. We can have lunch there. Bring your ticket",
+          "audioText": "There is. We can have lunch there. Bring your ticket.",
+          "translation": "Tem. Podemos almoçar lá. Traga sua passagem"
+        },
+        {
+          "id": "A112-D81.6",
+          "speaker": "Ana",
+          "text": "Great. I’ll see you near the station at ten",
+          "audioText": "Great. I’ll see you near the station at ten.",
+          "translation": "Ótimo. Vejo você perto da estação às dez"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Where and when do the friends first agree to meet?",
+          "hint": "They agree to meet near … at …",
+          "answer": "They first agree to meet near the station at ten"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why does Kim suggest the park?",
+          "hint": "It’s … today",
+          "answer": "Kim suggests the park because it’s sunny"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does Kim tell Ana to bring?",
+          "hint": "She tells her to bring …",
+          "answer": "Kim tells Ana to bring her ticket"
+        }
+      ],
+      "dialogueGroup": "a1-12.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Plan a day out",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "Where would you like to go?",
+          "cue": "Choose a place. Ask me",
+          "hint": "Let’s go to … What do you think?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What time can we meet?",
+          "cue": "Choose a time and meeting place",
+          "hint": "Let’s meet at … near …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What can we do there?",
+          "cue": "Suggest an activity, then ask me",
+          "hint": "We can … What would you like to do?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Suggest a plan and agree on the details",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Suggest a plan",
+          "verb": "Let’s + verb",
+          "example": "Let’s go to the park"
+        },
+        {
+          "id": "1",
+          "subject": "Describe the weather",
+          "verb": "It’s + weather word",
+          "example": "It’s sunny / rainy / windy"
+        },
+        {
+          "id": "2",
+          "subject": "Agree on a meeting",
+          "verb": "at + time / place",
+          "example": "Let’s meet at ten at the station"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Plan our day out",
+      "instruction": "Choose a place and agree on a plan for our day out",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Rain changes our plan",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! It’s raining near the park now. Let’s go to the museum today. Meet me at the museum entrance at ten, not at the station. We can take the bus. Bring your ticket. There’s a café inside. See you at ten!",
+      "audioText": "Hi, Ana! It’s raining near the park now. Let’s go to the museum today. Meet me at the museum entrance at ten, not at the station. We can take the bus. Bring your ticket. There’s a café inside. See you at ten!",
+      "audioId": "A112-L81.1",
+      "greeting": "It’s raining — shall we change our plan?",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Where are they meeting now?",
+          "hint": "They’re meeting at …",
+          "answer": "They’re meeting at the museum entrance"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What caused the change of plan?",
+          "hint": "It’s … near the park",
+          "answer": "They changed the plan because it’s raining near the park"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How can they travel to the museum?",
+          "hint": "They can take …",
+          "answer": "They can take the bus"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Tell me the new plan",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Agree on a time and place",
+      "instruction": "Watch the friends finish their plan, then make a simple plan together",
+      "minutes": 4,
+      "video": {
+        "videoId": "E8FM5igDBDI",
+        "startSeconds": 88,
+        "endSeconds": 120,
+        "title": "Making plans — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a1-12.video102.q1",
+          "prompt": "What day do they choose?",
+          "hint": "Listen for the day before afternoon",
+          "answer": "They choose Saturday"
+        },
+        {
+          "id": "a1-12.video102.q2",
+          "prompt": "Where will they meet?",
+          "hint": "Listen for in front of",
+          "answer": "They’ll meet in front of the bowling place at the shopping centre"
+        },
+        {
+          "id": "a1-12.video102.q3",
+          "prompt": "What time do they choose?",
+          "hint": "Listen for the time near the end",
+          "answer": "They choose three o’clock"
+        },
+        {
+          "id": "a1-12.video102.q4",
+          "prompt": "Where and when can you meet your teacher for a day out?",
+          "hint": "Suggest a day, a time and a place",
+          "answer": "Example: Let’s meet on Sunday at ten, in front of the café"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Make a day-trip plan and change it when the weather changes"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Day-out options",
+      "options": [
+        {
+          "id": "park",
+          "title": "Park · outdoors",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Weather now",
+              "value": "Sunny"
+            },
+            {
+              "id": "1",
+              "label": "Meet",
+              "value": "10 am · station"
+            },
+            {
+              "id": "2",
+              "label": "Travel",
+              "value": "Train · bring a ticket"
+            }
+          ]
+        },
+        {
+          "id": "museum",
+          "title": "Museum · indoors",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Weather now",
+              "value": "Sunny"
+            },
+            {
+              "id": "1",
+              "label": "Meet",
+              "value": "10 am · station"
+            },
+            {
+              "id": "2",
+              "label": "Travel",
+              "value": "Bus · bring a ticket"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "plan",
+          "prompt": "Where would you like to go?",
+          "hint": "Let’s go to …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "Where and when can we meet?",
+          "hint": "Let’s meet at … near …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How will we get there?",
+          "hint": "We can take the … Bring your …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "The rainy-day plan",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Place",
+          "value": "Museum · indoors"
+        },
+        {
+          "id": "1",
+          "label": "Meet",
+          "value": "10 am · museum entrance"
+        },
+        {
+          "id": "2",
+          "label": "Travel",
+          "value": "Bus · bring your ticket"
+        }
+      ],
+      "questions": [
+        {
+          "id": "update",
+          "prompt": "Why are we changing the plan?",
+          "hint": "It’s …, so let’s …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Where and when are we meeting now?",
+          "hint": "Let’s meet at … at …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What transport will we use?",
+          "hint": "We can take the … Don’t forget your …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "The rainy-day plan"
+    }
+  }
+}

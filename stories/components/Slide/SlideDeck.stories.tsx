@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
 import { useState } from 'react'
+import { ThemeProvider } from 'styled-components'
+import { theme } from '../../../src/foundations/theme/theme'
+import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { Button } from '../../../src/components/Button/Button'
 import { lessonPages, longPage } from './Slide.fixtures'
@@ -60,6 +63,21 @@ export const WarmUp: Story = {
   args: { pageId: 'warm-up' },
   tags: ['visual-review'],
 }
+
+export const PersistentBack: Story = {
+  args: { onBack: () => undefined },
+  tags: ['visual-review'],
+}
+
+export const PersistentBackLastPage: Story = {
+  args: { onBack: () => undefined, pageId: lessonPages.at(-1)!.id },
+  tags: ['visual-review'],
+}
+
+export const AnswerSoundControl: Story = {
+  args: { pageId: 'warm-up', feedbackSounds: true },
+  tags: ['visual-review', 'audio-review'],
+}
 export const LongContent: Story = {
   args: {
     pages: [lessonPages[0]!, longPage, lessonPages[2]!],
@@ -81,6 +99,19 @@ export const Narrow: Story = {
 export const Empty: Story = { args: { pages: [] } }
 export const SinglePage: Story = { args: { pages: [lessonPages[1]!] } }
 
+/** Manual hardware regression: repeat same-direction trackpad passes without waiting for momentum. */
+export const RepeatedPageGestures: Story = {
+  args: {
+    label: 'Consecutive page gestures',
+    pages: Array.from({ length: 8 }, (_, index) => ({
+      ...lessonPages[index % lessonPages.length]!,
+      id: `gesture-page-${index + 1}`,
+      label: `Gesture page ${index + 1}`,
+    })),
+  },
+  tags: ['interaction-regression'],
+}
+
 function ControlledDeck() {
   const [pageId, setPageId] = useState('intro')
   return (
@@ -101,4 +132,53 @@ function ControlledDeck() {
     />
   )
 }
-export const Controlled: Story = { render: () => <ControlledDeck /> }
+export const Controlled: Story = {
+  render: () => <ControlledDeck />,
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const viewport = canvas.getByRole('region', {
+      name: 'A1.01 · Introduce yourself',
+    })
+    viewport.focus()
+    await userEvent.keyboard('{End}')
+    await waitFor(() =>
+      expect(canvas.getByRole('progressbar')).toHaveAttribute('value', '100'),
+    )
+    await userEvent.keyboard('{Home}')
+    await waitFor(() =>
+      expect(canvas.getByRole('progressbar')).toHaveAttribute('value', '0'),
+    )
+  },
+}
+
+function AppearanceDeck() {
+  const [mode, setMode] = useState<'dark' | 'light'>('dark')
+  return (
+    <ThemeProvider theme={mode === 'dark' ? materialDarkTheme : theme}>
+      <SlideDeck
+        label="Lesson appearance"
+        pages={lessonPages}
+        feedbackSounds
+        themeToggle={{
+          mode,
+          onToggle: () =>
+            setMode((current) => (current === 'dark' ? 'light' : 'dark')),
+        }}
+      />
+    </ThemeProvider>
+  )
+}
+export const ThemeToggle: Story = {
+  render: () => <AppearanceDeck />,
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const control = within(canvasElement).getByRole('button', {
+      name: 'Tema claro',
+    })
+    await expect(control).toHaveAttribute('aria-pressed', 'false')
+    await userEvent.click(control)
+    await expect(control).toHaveAttribute('aria-pressed', 'true')
+    await userEvent.click(control)
+    await expect(control).toHaveAttribute('aria-pressed', 'false')
+  },
+}

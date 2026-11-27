@@ -1,0 +1,537 @@
+{
+  "taskId": "FINAL34-B201-VOCABULARY",
+  "revision": "FINAL34-vocabulary",
+  "authorityThread": "01a1ef87-bfee-7121-a7fa-e409b2bd9a7b",
+  "frozenAt": "2026-11-20T11:48:37.918724+00:00",
+  "provider": "elevenlabs",
+  "voices": {
+    "ana": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "name": "Jessica - Playful, Bright, Warm"
+    },
+    "kim": {
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "name": "Sarah Explains"
+    }
+  },
+  "config": {
+    "modelId": "eleven_multilingual_v2",
+    "voiceSettings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.1,
+      "use_speaker_boost": true,
+      "speed": 0.92
+    },
+    "languageCode": "en",
+    "outputFormat": "mp3_44100_128"
+  },
+  "scope": "Only23literalcurrentlabels(B1018,B2017,C1018),KimSarahExplains. No otherlesson audits, no priorIDs altered, no dialogue changes, no tests/playbackQA/browser/repo/cloud/publication. Root binds on reveal-click.",
+  "material": "B201",
+  "sourceArrays": [
+    {
+      "material": "B201",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json",
+      "sourceFileSha256AtFreeze": "374fa81b2783a734075bd0aa5bff4068eda28e317b2f68db672959ec4b209166",
+      "arrayField": "vocabulary",
+      "sourceArraySha256": "48891abc8c96a8694d5f964fa8f3c3b96debf045e7b67c0598c9e1758373093b",
+      "sourceArray": [
+        {
+          "id": "V.0",
+          "en": "a dead phone",
+          "pt": "celular sem bateria (volta da B1.03)",
+          "hint": "a d___ p____"
+        },
+        {
+          "id": "V.1",
+          "en": "a phone charger",
+          "pt": "carregador de celular (volta da B1.04)",
+          "hint": "a phone c______"
+        },
+        {
+          "id": "V.2",
+          "en": "a charging cable",
+          "pt": "cabo de carregar",
+          "hint": "a charging c____"
+        },
+        {
+          "id": "V.3",
+          "en": "a power bank",
+          "pt": "bateria portátil, power bank",
+          "hint": "a power b___"
+        },
+        {
+          "id": "V.4",
+          "en": "an outlet",
+          "pt": "tomada (volta da B1.07)",
+          "hint": "an o_____"
+        },
+        {
+          "id": "V.5",
+          "en": "a map",
+          "pt": "mapa (volta da B1.04)",
+          "hint": "a m__"
+        },
+        {
+          "id": "V.6",
+          "en": "a doorman",
+          "pt": "porteiro de prédio",
+          "hint": "a d______"
+        }
+      ],
+      "count": 7
+    }
+  ],
+  "items": [
+    {
+      "material": "B201",
+      "id": "V.0",
+      "qualifiedId": "B201:V.0",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a dead phone",
+      "synthesisInput": "a dead phone",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a dead phone",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "1ede8ccf4c51f005118c450834b6eb5e414945b57d63d084cb4b85044d217bbd",
+      "textSha256": "ea97450d1fcacfe674304327ce46e147ad20fb12e6926f37dd6e97af40f07c66",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/0/en",
+      "file": "assets/vocabulary/V.0.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.0.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.300317,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 21776,
+      "sha256": "294767340602f0921d8133ce4dd12c5163e5c83f94db6b4c38f2ce774c2c7e07",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "ohIWpZsiUuQK4iCxSpWB",
+        "character-cost": "5",
+        "history-item-id": "qaYk0iNp5Gm8wuZqWnl1"
+      },
+      "requestId": "ohIWpZsiUuQK4iCxSpWB",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.494,
+      "generatedAt": "2026-11-20T11:48:36.485121+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "B201",
+      "id": "V.1",
+      "qualifiedId": "B201:V.1",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a phone charger",
+      "synthesisInput": "a phone charger",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a phone charger",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "78b9423c6e75c6b4ebe32cdff97d77ad5f7c6889b341886de33217d7d4fb1391",
+      "textSha256": "37d5a441e506b90adb148beee063b3e22d8a8b66c216a0193e1b5b02eab09b77",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/1/en",
+      "file": "assets/vocabulary/V.1.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.1.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.671837,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 27628,
+      "sha256": "fb7e4dd97ce890d3a1b7fdec7557711cf7909564a5b44dc5b5e2238c43a86ca2",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "ke16ZqB9qvqd8jHa2OoM",
+        "character-cost": "6",
+        "history-item-id": "IO7C4JJEj7Xikj5n4OqA"
+      },
+      "requestId": "ke16ZqB9qvqd8jHa2OoM",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.497,
+      "generatedAt": "2026-11-20T11:48:36.492244+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "B201",
+      "id": "V.2",
+      "qualifiedId": "B201:V.2",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a charging cable",
+      "synthesisInput": "a charging cable",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a charging cable",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "5bcd328416fb49618e109585d540742e8162d0eafc553b6ada397d8cf3a21e16",
+      "textSha256": "7a335ee92de1c4b7341dd8e70e5cef2d91c63ffadaebea17773a36fffdb005e1",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/2/en",
+      "file": "assets/vocabulary/V.2.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.2.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.671837,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 27628,
+      "sha256": "56f88e9905304e6effeeaaba89eecd0057832dc6ecc49f2e3cb72e173708b9f3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "xT0pR02LU5K5CoLj8xP5",
+        "character-cost": "6",
+        "history-item-id": "QoqroYhkUBRvYNEy0e3Z"
+      },
+      "requestId": "xT0pR02LU5K5CoLj8xP5",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.477,
+      "generatedAt": "2026-11-20T11:48:36.963819+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "B201",
+      "id": "V.3",
+      "qualifiedId": "B201:V.3",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a power bank",
+      "synthesisInput": "a power bank",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a power bank",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "c991c2dd12b2bca1ee8724e2944e0b28c9e6e154ff83f6794800a20683e50ee8",
+      "textSha256": "81055a76bb7b1dd9622f0c070f55bead9a800c26400b3e323a0e263df0e1982a",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/3/en",
+      "file": "assets/vocabulary/V.3.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.3.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.393197,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 23448,
+      "sha256": "a92ae7d784c37a8f0de000ca186b523497fc375fb129027aca9576d2d95764b5",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "ZJKmck8r9o3PzSxUc7Ak",
+        "character-cost": "5",
+        "history-item-id": "4mRsRjHsD4zuoVzdS5KL"
+      },
+      "requestId": "ZJKmck8r9o3PzSxUc7Ak",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.469,
+      "generatedAt": "2026-11-20T11:48:36.962764+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "B201",
+      "id": "V.4",
+      "qualifiedId": "B201:V.4",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "an outlet",
+      "synthesisInput": "an outlet",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "an outlet",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "2165a5db2940ba4c987399771abcb3002b7755d83ef26eb28f98cec78c90a78c",
+      "textSha256": "a3a4299444f92bdb18bb07028e984a73e1e86bd8b53654f5a3526c0d3c8feeb0",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/4/en",
+      "file": "assets/vocabulary/V.4.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.4.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 0.975238,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 16761,
+      "sha256": "7dac4fabc43ed9c88b158caa532b0ea747bb081293e885dc2fda74c36c84fe71",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "lO2I3UsNAwW6n0A7uhmh",
+        "character-cost": "4",
+        "history-item-id": "P1enUck6ytNgU8YjP4F2"
+      },
+      "requestId": "lO2I3UsNAwW6n0A7uhmh",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.449,
+      "generatedAt": "2026-11-20T11:48:37.414859+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "B201",
+      "id": "V.5",
+      "qualifiedId": "B201:V.5",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a map",
+      "synthesisInput": "a map",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a map",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "b11d30e0bccab6d4de17c2f626cb3087b7e7033ab7afd5098a90a1fa9b6e3935",
+      "textSha256": "23e1765cd96692fcbaafc1b70970e2dd0f25f9454193be4ab4f10ab8248adbe4",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/5/en",
+      "file": "assets/vocabulary/V.5.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.5.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 0.975238,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 16761,
+      "sha256": "0b35c238b109e98180af5b555e01fd0d0f35eb7721e22cea0c70af2816768b09",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "ZYKdfeTWfB1sA6i3L5WZ",
+        "character-cost": "2",
+        "history-item-id": "1hUdZas3XxlY9IuF7Uq2"
+      },
+      "requestId": "ZYKdfeTWfB1sA6i3L5WZ",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.444,
+      "generatedAt": "2026-11-20T11:48:37.414067+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "B201",
+      "id": "V.6",
+      "qualifiedId": "B201:V.6",
+      "group": "vocabulary",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a doorman",
+      "synthesisInput": "a doorman",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a doorman",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "f1a29f9e73f7b2e621cb54fdd11abe993077b3c3ec27f2a18fef288f6652e2d5",
+      "textSha256": "323e1f1b4d0c9862536d50d1f7eb096d69ac31adfed2e3fce8eeea29fec38046",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B201/B201.content.json#/vocabulary/6/en",
+      "file": "assets/vocabulary/V.6.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/B201/assets/vocabulary/V.6.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.114558,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 18851,
+      "sha256": "b528b155921ec747d4a7fc42eb7141db1cd1c55060ea110887de166e5dd92b1d",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "uJ52EPY4Uj061y4Me9uO",
+        "character-cost": "4",
+        "history-item-id": "NxLi3r5zvh3E9qTnvzOw"
+      },
+      "requestId": "uJ52EPY4Uj061y4Me9uO",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.501,
+      "generatedAt": "2026-11-20T11:48:37.916966+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    }
+  ],
+  "requestSha256": "f31c60669a087720fd063160fc92dbb91b37dd45d5a09519ea357992c4730c30",
+  "frozen": true,
+  "createdAt": "2026-11-20T11:48:35.989791+00:00",
+  "summary": {
+    "ids": 7,
+    "generated": 7,
+    "existingReused": 0,
+    "generationCalls": 7,
+    "retries": 0,
+    "failures": 0,
+    "providerCharacterCostHeaderSum": 32,
+    "costNote": "Raw provider header; not currency."
+  },
+  "review": {
+    "testsRun": false,
+    "playbackQA": false,
+    "browserUsed": false,
+    "otherMaterialAudits": false,
+    "sourceOrRepoWrites": false,
+    "cloudOrPublicationWrites": false,
+    "durationBasis": "ffprobe metadata collected during generation flow",
+    "finalReviewer": "user"
+  }
+}

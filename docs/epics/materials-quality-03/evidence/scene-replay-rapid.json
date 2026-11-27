@@ -1,0 +1,36 @@
+[
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 390,
+    "name": "The desk",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 24,
+        "y": 402.796875,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB2/assets/desk-label.mp3",
+      "duration": 1.207438,
+      "playing": true,
+      "time": 0.02322,
+      "olderPaused": true
+    },
+    "pass": true
+  },
+  {
+    "case": "native-replay-tolerance-and-lifecycle",
+    "material": "trial-b2",
+    "width": 390,
+    "jitterCssPx": [6, 8, 12],
+    "nativeReplay": true,
+    "noOverlap": true,
+    "pageExitBeforeCompletion": true,
+    "reentryNotBusy": true,
+    "pass": true
+  }
+]

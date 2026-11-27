@@ -1,0 +1,691 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "items": [
+    {
+      "material": "A101",
+      "id": "V80.0",
+      "text": "Brazil",
+      "speaker": "Ana",
+      "file": "assets/audio/V80.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "zcJLYdElhJfny0NK8P4n",
+      "synthesisInput": "Brazil",
+      "requestBody": {
+        "text": "Brazil",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "zcJLYdElhJfny0NK8P4n",
+        "character-cost": "2",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 15089,
+      "sha256": "0c356182619f875a2c4d72dc76e5accf2156a66a77b3be804a17fe5b3ba96cbb",
+      "durationSeconds": 0.882358
+    },
+    {
+      "material": "A101",
+      "id": "FE80.0",
+      "text": "I’m from Brazil.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE80.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "bF2ZefdHABkFTotHp8OQ",
+      "synthesisInput": "I'm from Brazil.",
+      "requestBody": {
+        "text": "I'm from Brazil.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "bF2ZefdHABkFTotHp8OQ",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 19687,
+      "sha256": "ab4962c5e4098b65fbdb8f0097c7e9dc1420f28087529ccc1e734c56e3ff1d87",
+      "durationSeconds": 1.160998
+    },
+    {
+      "material": "A101",
+      "id": "V80.1",
+      "text": "South Korea",
+      "speaker": "Ana",
+      "file": "assets/audio/V80.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "KQQrNipAUidiZyxFNdSk",
+      "synthesisInput": "South Korea",
+      "requestBody": {
+        "text": "South Korea",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "KQQrNipAUidiZyxFNdSk",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 18015,
+      "sha256": "2394a5aec4d75ad82f060445938c30a0655545f969c2adca9f8571b23a80b4c3",
+      "durationSeconds": 1.068118
+    },
+    {
+      "material": "A101",
+      "id": "FE80.1",
+      "text": "I’m from South Korea.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE80.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "15LFEzvVjzWYjHQ6fTEe",
+      "synthesisInput": "I'm from South Korea.",
+      "requestBody": {
+        "text": "I'm from South Korea.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "15LFEzvVjzWYjHQ6fTEe",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 22612,
+      "sha256": "c676c4ffdf4b67fbd6f71af4fbe6fda2576e43967f5d599c0b267a061dc8d071",
+      "durationSeconds": 1.346757
+    },
+    {
+      "material": "A101",
+      "id": "V80.2",
+      "text": "the United States",
+      "speaker": "Ana",
+      "file": "assets/audio/V80.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "sNpV4mtveXzQhGVbh7gG",
+      "synthesisInput": "the United States",
+      "requestBody": {
+        "text": "the United States",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "sNpV4mtveXzQhGVbh7gG",
+        "character-cost": "7",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 23448,
+      "sha256": "1de32b6649089ceb365ab170c1e1272d76ec51dc320cb463ceab028926a6bf45",
+      "durationSeconds": 1.393197
+    },
+    {
+      "material": "A101",
+      "id": "FE80.2",
+      "text": "I’m from the United States.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE80.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "J4ywQzoWLohhInxefILP",
+      "synthesisInput": "I'm from the United States.",
+      "requestBody": {
+        "text": "I'm from the United States.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "J4ywQzoWLohhInxefILP",
+        "character-cost": "11",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 25538,
+      "sha256": "fcab5c7ab0f160a9987b140b19c9ed0a30c3c45e13ae4903fa9c3911d38057d4",
+      "durationSeconds": 1.532517
+    },
+    {
+      "material": "A101",
+      "id": "FE80.3",
+      "text": "I’m happy.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE80.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "VjP39s3Y2gVQwEjzDSRJ",
+      "synthesisInput": "I'm happy.",
+      "requestBody": {
+        "text": "I'm happy.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "VjP39s3Y2gVQwEjzDSRJ",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 15089,
+      "sha256": "d94e7516ed6da7d63b493cd1d67e602006d246da6ba4b44d22f9a7f7a213a538",
+      "durationSeconds": 0.882358
+    },
+    {
+      "material": "A101",
+      "id": "FE80.4",
+      "text": "I’m tired.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE80.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Ec2zjitgwoxXCjRllKHv",
+      "synthesisInput": "I'm tired.",
+      "requestBody": {
+        "text": "I'm tired.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Ec2zjitgwoxXCjRllKHv",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 17597,
+      "sha256": "03d75f0a469a718d4486b622c01fec128f3d9d5cbe04de02e834e1020990618a",
+      "durationSeconds": 1.021678
+    },
+    {
+      "material": "A101",
+      "id": "FE80.5",
+      "text": "I’m hungry.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE80.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "M0NVW90uKjJbq8g0d9si",
+      "synthesisInput": "I'm hungry.",
+      "requestBody": {
+        "text": "I'm hungry.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "M0NVW90uKjJbq8g0d9si",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 17597,
+      "sha256": "111856e485977cb7b9233ee4d740e3bc960892a5cdd720ec6af57447ab555156",
+      "durationSeconds": 1.021678
+    },
+    {
+      "material": "A101",
+      "id": "R80.5",
+      "text": "I’m tired, but I’m happy. Welcome, Ana!",
+      "speaker": "Kim",
+      "file": "assets/audio/R80.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "ZzpBMuEDHHmbj4vDpTRI",
+      "synthesisInput": "I'm tired, but I'm happy. Welcome, Ana!",
+      "requestBody": {
+        "text": "I'm tired, but I'm happy. Welcome, Ana!",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "ZzpBMuEDHHmbj4vDpTRI",
+        "character-cost": "16",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 64826,
+      "sha256": "0c80dba983f2c603f01ac878659c8fe7abbf23a6c88e29498a5f25cfd3e16e75",
+      "durationSeconds": 3.993832
+    },
+    {
+      "material": "A101",
+      "id": "R80.6",
+      "text": "Thank you! It’s nice to be here.",
+      "speaker": "Ana",
+      "file": "assets/audio/R80.6.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "abqZKPZQwbodRA1Vmnxc",
+      "synthesisInput": "Thank you! It's nice to be here.",
+      "requestBody": {
+        "text": "Thank you! It's nice to be here.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "abqZKPZQwbodRA1Vmnxc",
+        "character-cost": "13",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 33061,
+      "sha256": "43b43d10aad655cbffd8a02aa61aaee45d4011ae068555b6b0b8f6a2284a3c97",
+      "durationSeconds": 1.996916
+    },
+    {
+      "material": "A101",
+      "id": "L80.1",
+      "text": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry?",
+      "speaker": "Kim",
+      "file": "assets/audio/L80.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "3HjOPtlTvCMcs2N8ctT1",
+      "synthesisInput": "Hi! It's Kim. This is my friend Mia. Mia is from the United States. We're at the café. Come and say hello! I'm happy you're here. How are you today? Are you hungry?",
+      "requestBody": {
+        "text": "Hi! It's Kim. This is my friend Mia. Mia is from the United States. We're at the café. Come and say hello! I'm happy you're here. How are you today? Are you hungry?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "3HjOPtlTvCMcs2N8ctT1",
+        "character-cost": "66",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 214456,
+      "sha256": "377f316c0fd057717a640d1b05e9dab17493aa9475b9acfc993820889538d71c",
+      "durationSeconds": 13.328254
+    },
+    {
+      "material": "A101",
+      "id": "FS80.0",
+      "text": "Brazil. I’m from Brazil.",
+      "file": "assets/audio/FS80.0.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["zcJLYdElhJfny0NK8P4n", "bF2ZefdHABkFTotHp8OQ"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7886,
+          "sourceSha256": "0c356182619f875a2c4d72dc76e5accf2156a66a77b3be804a17fe5b3ba96cbb"
+        },
+        {
+          "leadingQuietFrames": 2200,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 12474,
+          "sourceSha256": "ab4962c5e4098b65fbdb8f0097c7e9dc1420f28087529ccc1e734c56e3ff1d87"
+        }
+      ],
+      "insertedSilenceFrames": 10589,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 30136,
+      "sha256": "c79f76bcd5c51d0eafa7699a239891ac1b5eca177b0bfdaa8bbea36f314a5567",
+      "durationSeconds": 1.821791
+    },
+    {
+      "material": "A101",
+      "id": "FS80.1",
+      "text": "South Korea. I’m from South Korea.",
+      "file": "assets/audio/FS80.1.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["KQQrNipAUidiZyxFNdSk", "15LFEzvVjzWYjHQ6fTEe"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 9038,
+          "sourceSha256": "2394a5aec4d75ad82f060445938c30a0655545f969c2adca9f8571b23a80b4c3"
+        },
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8786,
+          "sourceSha256": "c676c4ffdf4b67fbd6f71af4fbe6fda2576e43967f5d599c0b267a061dc8d071"
+        }
+      ],
+      "insertedSilenceFrames": 9709,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 36823,
+      "sha256": "1c087530f184a978e9aeff82f20be44f0dedf47e38e94fb35583374c9dea2161",
+      "durationSeconds": 2.230862
+    },
+    {
+      "material": "A101",
+      "id": "FS80.2",
+      "text": "the United States. I’m from the United States.",
+      "file": "assets/audio/FS80.2.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["sNpV4mtveXzQhGVbh7gG", "J4ywQzoWLohhInxefILP"],
+      "sources": [
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5114,
+          "sourceSha256": "1de32b6649089ceb365ab170c1e1272d76ec51dc320cb463ceab028926a6bf45"
+        },
+        {
+          "leadingQuietFrames": 2640,
+          "trailingQuietFrames": 1804,
+          "trimStartFrames": 0,
+          "trimEndFrames": 0,
+          "sourceSha256": "fcab5c7ab0f160a9987b140b19c9ed0a30c3c45e13ae4903fa9c3911d38057d4"
+        }
+      ],
+      "insertedSilenceFrames": 10149,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 49780,
+      "sha256": "1d3e1de548d69f9df431b78ad2377168f7e8cc303397aa314fc0f314362ce42e",
+      "durationSeconds": 3.039887
+    },
+    {
+      "material": "A101",
+      "id": "FS80.3",
+      "text": "happy. I’m happy.",
+      "file": "assets/audio/FS80.3.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["hAh8m6yhPga0q9N4XyPC", "VjP39s3Y2gVQwEjzDSRJ"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1980,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10018,
+          "sourceSha256": "787603ecac452060da261170bb6105e145513fba7b3c871ea9d5b472876d58aa"
+        },
+        {
+          "leadingQuietFrames": 2640,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7446,
+          "sourceSha256": "d94e7516ed6da7d63b493cd1d67e602006d246da6ba4b44d22f9a7f7a213a538"
+        }
+      ],
+      "insertedSilenceFrames": 10149,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 25956,
+      "sha256": "ec458cab1a6b72cc53cdc0701e869bcc603a7ae60e9a4d8a1ec0ebeaca04ea15",
+      "durationSeconds": 1.552404
+    },
+    {
+      "material": "A101",
+      "id": "FS80.4",
+      "text": "tired. I’m tired.",
+      "file": "assets/audio/FS80.4.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["PrG1AIMwSkUMXaAMYbLQ", "Ec2zjitgwoxXCjRllKHv"],
+      "sources": [
+        {
+          "leadingQuietFrames": 3300,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10830,
+          "sourceSha256": "9756f31bdc6239312ce93d1765a20107b725b43498fd0133572ca4b1a208e60d"
+        },
+        {
+          "leadingQuietFrames": 2200,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10070,
+          "sourceSha256": "03d75f0a469a718d4486b622c01fec128f3d9d5cbe04de02e834e1020990618a"
+        }
+      ],
+      "insertedSilenceFrames": 10589,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 26374,
+      "sha256": "bec412f2dbd259b48790d0bbd7ae2a8a3d664ec2ac15723d0f620e26c36ef287",
+      "durationSeconds": 1.577347
+    },
+    {
+      "material": "A101",
+      "id": "FS80.5",
+      "text": "hungry. I’m hungry.",
+      "file": "assets/audio/FS80.5.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["v285GSCh20VTT3edE07p", "M0NVW90uKjJbq8g0d9si"],
+      "sources": [
+        {
+          "leadingQuietFrames": 2200,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7818,
+          "sourceSha256": "a839a06f0bee30f0eac839275e1e4a3ac1136220273c80612efcef76b4f2dadf"
+        },
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11390,
+          "sourceSha256": "111856e485977cb7b9233ee4d740e3bc960892a5cdd720ec6af57447ab555156"
+        }
+      ],
+      "insertedSilenceFrames": 9709,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 27210,
+      "sha256": "95e96cfc0adc6de16895c035f28c646a77e5396aa08cc83bc6ac78efb31bde52",
+      "durationSeconds": 1.6422
+    }
+  ],
+  "review": "Receipts and PCM metadata; no perceptual approval claimed"
+}

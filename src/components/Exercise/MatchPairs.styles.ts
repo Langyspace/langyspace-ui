@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
 export { Stack, Marker } from './Exercise.shared.styles'
@@ -35,9 +36,9 @@ export const Match = styled(Pressable)<{
   padding: ${theme.spacing[1]} ${theme.spacing[4]} ${theme.spacing[1]}
     ${theme.spacing[2]};
   border: 1.5px solid
-    ${(p) => (p.$matched ? theme.semantic.status.success.foreground : p.$incorrect ? theme.semantic.status.danger.foreground : recipe(p).border)};
+    ${(p) => (p.$matched ? (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground) : p.$incorrect ? (resolveTheme(p).semantic?.status.danger.foreground ?? theme.semantic.status.danger.foreground) : recipe(p).border)};
   border-radius: ${theme.radius.md};
-  background: ${(p) => (p.$matched ? theme.semantic.status.success.background : p.$incorrect ? theme.semantic.status.danger.background : recipe(p).canvas)};
+  background: ${(p) => (p.$matched ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$incorrect ? (resolveTheme(p).semantic?.status.danger.background ?? theme.semantic.status.danger.background) : recipe(p).canvas)};
   color: ${(p) => recipe(p).foreground};
   font: inherit;
   font-size: 1.0625rem;

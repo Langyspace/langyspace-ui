@@ -1,0 +1,626 @@
+{
+  "version": 81,
+  "code": "B2.11",
+  "key": "b2-11",
+  "title": "Having said that",
+  "goal": "Propose a change, acknowledge an objection and preserve the purpose while adapting the plan",
+  "freeConversationInstruction": "Discuss changes you would like to make and explore each other’s objections and possible compromises",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall an opinion with a counterpoint",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What change would you support in a group routine?",
+          "hint": "I’d support … because …",
+          "cue": "Propose a useful change"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What is the strongest concern about it?",
+          "hint": "A reasonable concern is …",
+          "cue": "Acknowledge the strongest concern"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you address that concern without losing the benefit?",
+          "hint": "Having said that, we could …",
+          "cue": "Offer a practical adjustment"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Proposals and compromises",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B211-V81.0",
+          "word": "a proposal",
+          "translation": "",
+          "example": "The proposal changes the status round",
+          "imageUrl": "b2-11-vocabulary81",
+          "imageAlt": "a proposal",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B211-FS81.0",
+          "audioText": "a proposal. The proposal changes the status round."
+        },
+        {
+          "id": "B211-V81.1",
+          "word": "a benefit",
+          "translation": "",
+          "example": "A possible benefit is more useful live time",
+          "imageUrl": "b2-11-vocabulary81",
+          "imageAlt": "a benefit",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B211-FS81.1",
+          "audioText": "a benefit. A possible benefit is more useful live time."
+        },
+        {
+          "id": "B211-V81.2",
+          "word": "a drawback",
+          "translation": "",
+          "example": "A drawback is that updates may not be read",
+          "imageUrl": "b2-11-vocabulary81",
+          "imageAlt": "a drawback",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B211-FS81.2",
+          "audioText": "a drawback. A drawback is that updates may not be read."
+        },
+        {
+          "id": "B211-V81.3",
+          "word": "a concern",
+          "translation": "",
+          "example": "We need to understand the concern",
+          "imageUrl": "b2-11-vocabulary81",
+          "imageAlt": "a concern",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B211-FS81.3",
+          "audioText": "a concern. We need to understand the concern."
+        },
+        {
+          "id": "B211-V81.4",
+          "word": "an alternative",
+          "translation": "",
+          "example": "What alternative would preserve the purpose?",
+          "imageUrl": "b2-11-vocabulary81",
+          "imageAlt": "an alternative",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B211-FS81.4",
+          "audioText": "an alternative. What alternative would preserve the purpose?"
+        },
+        {
+          "id": "B211-V81.5",
+          "word": "a compromise",
+          "translation": "",
+          "example": "The compromise keeps a short live discussion",
+          "imageUrl": "b2-11-vocabulary81",
+          "imageAlt": "a compromise",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B211-FS81.5",
+          "audioText": "a compromise. The compromise keeps a short live discussion."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Having said that",
+      "paragraphs": [
+        "Fictional study group: current weekly meeting includes 60 minutes of spoken updates. Proposal: short written update plus a 10-minute live question slot. Benefits are possible, not measured outcomes. Concerns: reading, late questions and response responsibility. A trial needs an agreed review criterion."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "The change and its purpose",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B211-D81.1",
+          "speaker": "Kim",
+          "text": "What change would you propose for our weekly study-group meeting?",
+          "audioText": "What change would you propose for our weekly study-group meeting?",
+          "translation": "Que mudança você proporia para nossa reunião semanal do grupo de estudos?"
+        },
+        {
+          "id": "B211-D81.2",
+          "speaker": "Ana",
+          "text": "I’d replace the sixty-minute status round with a short written update",
+          "audioText": "I’d replace the sixty-minute status round with a short written update.",
+          "translation": "Eu substituiria a rodada de atualização de sessenta minutos por uma atualização escrita curta"
+        },
+        {
+          "id": "B211-D81.3",
+          "speaker": "Kim",
+          "text": "What problem would that solve?",
+          "audioText": "What problem would that solve?",
+          "translation": "Que problema isso resolveria?"
+        },
+        {
+          "id": "B211-D81.4",
+          "speaker": "Ana",
+          "text": "People repeat information we could read. We need the live time for questions",
+          "audioText": "People repeat information we could read. We need the live time for questions.",
+          "translation": "As pessoas repetem informações que poderíamos ler. Precisamos do tempo ao vivo para perguntas"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What part of the meeting would Ana replace?",
+          "hint": "She would replace …",
+          "answer": "Ana would replace the sixty-minute spoken status round"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What would replace it?",
+          "hint": "There would be …",
+          "answer": "There would be a short written update"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What should live meeting time be used for?",
+          "hint": "It should be used for …",
+          "answer": "Live meeting time should be used for questions"
+        }
+      ],
+      "dialogueGroup": "b2-11.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Take the objection seriously",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B211-D81.5",
+          "speaker": "Kim",
+          "text": "I can see the benefit. My concern is that some people won’t read the update",
+          "audioText": "I can see the benefit. My concern is that some people won’t read the update.",
+          "translation": "Vejo o benefício. Minha preocupação é que algumas pessoas não leiam"
+        },
+        {
+          "id": "B211-D81.6",
+          "speaker": "Ana",
+          "text": "That’s a fair point. Having said that, a longer meeting doesn’t guarantee attention either",
+          "audioText": "That’s a fair point. Having said that, a longer meeting doesn’t guarantee attention either.",
+          "translation": "É um ponto válido. Dito isso, uma reunião mais longa também não garante atenção"
+        },
+        {
+          "id": "B211-D81.7",
+          "speaker": "Kim",
+          "text": "True. Could the update be short enough to read before a ten-minute discussion?",
+          "audioText": "True. Could the update be short enough to read before a ten-minute discussion?",
+          "translation": "Verdade. A atualização poderia ser curta o suficiente para ler antes de dez minutos de discussão?"
+        },
+        {
+          "id": "B211-D81.8",
+          "speaker": "Ana",
+          "text": "Yes. We could use three headings and keep the live slot for unresolved questions",
+          "audioText": "Yes. We could use three headings and keep the live slot for unresolved questions.",
+          "translation": "Sim. Poderíamos usar três tópicos e reservar o momento ao vivo para dúvidas pendentes"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What concern does Kim raise?",
+          "hint": "Some people might …",
+          "answer": "Kim worries that some people won’t read the update"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why doesn’t a longer meeting guarantee a solution?",
+          "hint": "It doesn’t guarantee …",
+          "answer": "A longer meeting doesn’t guarantee people’s attention"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What format do they propose?",
+          "hint": "They propose … followed by …",
+          "answer": "They propose an update with three headings followed by a ten-minute discussion"
+        }
+      ],
+      "dialogueGroup": "b2-11.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Make the compromise testable",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B211-D81.9",
+          "speaker": "Kim",
+          "text": "What about someone who thinks of a question afterwards?",
+          "audioText": "What about someone who thinks of a question afterwards?",
+          "translation": "E quem pensar em uma pergunta depois?"
+        },
+        {
+          "id": "B211-D81.10",
+          "speaker": "Ana",
+          "text": "We’d need a place to ask asynchronously, and someone responsible for replies",
+          "audioText": "We’d need a place to ask asynchronously, and someone responsible for replies.",
+          "translation": "Precisaríamos de um lugar para perguntar depois e alguém responsável pelas respostas"
+        },
+        {
+          "id": "B211-D81.11",
+          "speaker": "Kim",
+          "text": "Then I’d support a trial, provided we check whether questions actually get answered",
+          "audioText": "Then I’d support a trial, provided we check whether questions actually get answered.",
+          "translation": "Então apoiaria um teste, desde que verifiquemos se as perguntas realmente são respondidas"
+        },
+        {
+          "id": "B211-D81.12",
+          "speaker": "Ana",
+          "text": "Agreed. In short, less reporting aloud, but a clearer way to get help",
+          "audioText": "Agreed. In short, less reporting aloud, but a clearer way to get help.",
+          "translation": "Combinado. Em resumo, menos leitura de atualizações em voz alta e um caminho mais claro para obter ajuda"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What support is needed after the live discussion?",
+          "hint": "They need … and …",
+          "answer": "They need an asynchronous question space and someone responsible for replies"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What condition does Kim attach to supporting the trial?",
+          "hint": "They must check whether …",
+          "answer": "They must check whether questions actually get answered"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What is the overall purpose of the change?",
+          "hint": "Less …, but …",
+          "answer": "The purpose is less reporting aloud but a clearer way to get help"
+        }
+      ],
+      "dialogueGroup": "b2-11.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Propose a workable change",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Guide the response, not every sentence",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Open with purpose",
+          "verb": "I’d suggest … because …",
+          "example": "I’d suggest a written update because live time is limited"
+        },
+        {
+          "id": "1",
+          "subject": "Acknowledge, then qualify",
+          "verb": "That’s a fair point. Having said that, …",
+          "example": "That’s a fair point. Having said that, longer isn’t always clearer"
+        },
+        {
+          "id": "2",
+          "subject": "Conclude with the compromise",
+          "verb": "Overall / In short + specific change",
+          "example": "Overall, keep a short live slot and add a question channel"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Pitch a useful change",
+      "instruction": "Explain how your proposed change would work and respond to one objection",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A concern about unanswered questions",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. One group member likes the shorter meeting but is worried about asking questions after the live discussion. They can’t always join at the same time, and they don’t want their questions to disappear in a long message thread. They suggest a separate question channel, with a named person checking it each study day. Could you revise the proposal without bringing back the full sixty-minute status round? Keep its purpose—more useful time—and explain what you would change so people can still get an answer. We should agree how to review the trial before calling it a success",
+      "audioText": "Hi, Ana. One group member likes the shorter meeting but is worried about asking questions after the live discussion. They can’t always join at the same time, and they don’t want their questions to disappear in a long message thread. They suggest a separate question channel, with a named person checking it each study day. Could you revise the proposal without bringing back the full sixty-minute status round? Keep its purpose—more useful time—and explain what you would change so people can still get an answer. We should agree how to review the trial before calling it a success.",
+      "audioId": "B211-L81.1",
+      "greeting": "Here’s an update on what we discussed",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Why can’t the member rely only on the live discussion?",
+          "hint": "They can’t always …",
+          "answer": "The member can’t always join at the same time"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What problem do they anticipate with later questions?",
+          "hint": "Questions could …",
+          "answer": "Later questions could disappear in a long message thread"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What concrete support do they suggest?",
+          "hint": "They suggest … with …",
+          "answer": "They suggest a separate question channel with a named person checking it each study day"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Revise the proposal and its review",
+      "instruction": "Keep the purpose, adjust the mechanism and agree how to review the change",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Keep the aim, change the proposal",
+      "instruction": "Watch the objections, then propose a compromise that preserves the purpose",
+      "minutes": 4,
+      "video": {
+        "videoId": "ZveJWidWxgY",
+        "startSeconds": 91,
+        "endSeconds": 159,
+        "title": "Discussing advantages and disadvantages — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b2-11.video102.q1",
+          "prompt": "What purpose is Noelia trying to protect?",
+          "hint": "Listen to her link between fun and the business",
+          "answer": "She wants to encourage creativity at work"
+        },
+        {
+          "id": "b2-11.video102.q2",
+          "prompt": "Which concern involves people outside the team?",
+          "hint": "Listen for clients arriving",
+          "answer": "Yuna worries about clients seeing the staff jumping around"
+        },
+        {
+          "id": "b2-11.video102.q3",
+          "prompt": "What is the difference between thinking about it and saying yes?",
+          "hint": "Listen to Yuna’s last two replies",
+          "answer": "Considering the idea is not the same as approving it"
+        },
+        {
+          "id": "b2-11.video102.q4",
+          "prompt": "Make a counterproposal that keeps the creativity goal",
+          "hint": "Acknowledge the concern and suggest a workable change",
+          "answer": "Example: A break space could help creativity. Having said that, I’d choose quiet activities instead of a trampoline"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Propose a change, acknowledge an objection and preserve the purpose while adapting the plan"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Change proposal",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Current",
+          "value": "60-minute spoken status round"
+        },
+        {
+          "id": "1",
+          "label": "Proposed",
+          "value": "Written update · 10-minute live questions"
+        },
+        {
+          "id": "2",
+          "label": "Need to protect",
+          "value": "A reliable way to ask and get answers"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you explain the proposed change?",
+          "hint": "Instead of …, we’d …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you acknowledge the concern about reading?",
+          "hint": "I take the point that …; having said that, …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you judge whether the trial works?",
+          "hint": "We’d check whether … before …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Revised proposal",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Purpose",
+          "value": "Less repeated reporting · useful help"
+        },
+        {
+          "id": "1",
+          "label": "Objection",
+          "value": "Late questions can get lost"
+        },
+        {
+          "id": "2",
+          "label": "Suggestion",
+          "value": "Question channel · named daily responder"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What would you keep from the original proposal?",
+          "hint": "I’d keep … because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you protect questions asked later?",
+          "hint": "We could … with … responsible for …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What would you agree before declaring success?",
+          "hint": "We should agree how to review … and …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Current",
+          "value": "60-minute spoken status round"
+        },
+        {
+          "id": "1",
+          "label": "Proposed",
+          "value": "Written update · 10-minute live questions"
+        },
+        {
+          "id": "2",
+          "label": "Need to protect",
+          "value": "A reliable way to ask and get answers"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What change would you propose?",
+          "cue": "Explain the change and the problem it addresses",
+          "hint": "I’d suggest … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What about this concern?",
+          "cue": "Acknowledge the objection before responding",
+          "hint": "That’s a fair point. Having said that, …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How could you adapt the proposal to address that concern?",
+          "cue": "Acknowledge the objection and propose a specific adjustment",
+          "hint": "I take your point about … What if we …?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

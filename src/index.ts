@@ -284,6 +284,11 @@ export { PracticeCardBody } from './components/Practice/PracticeCardBody'
 export type { PracticeCardBodyProps } from './components/Practice/PracticeCardBody.types'
 
 export { QuizOption } from './components/Quiz/QuizOption'
+export { useFeedbackSounds } from './components/Quiz/useFeedbackSounds'
+export type {
+  FeedbackSoundOutcome,
+  FeedbackSoundsController,
+} from './components/Quiz/useFeedbackSounds.types'
 export type {
   QuizOptionProps,
   QuizOptionState,
@@ -301,6 +306,11 @@ export type {
 export { PracticePlaybackControls } from './components/Practice/PracticePlaybackControls'
 export type { PracticePlaybackControlsProps } from './components/Practice/PracticePlaybackControls.types'
 
+export { QuizSession } from './components/Quiz/QuizSession'
+export type {
+  QuizSessionProps,
+  QuizSessionQuestion,
+} from './components/Quiz/QuizSession.types'
 export { QuizSessionHeader } from './components/Quiz/QuizSessionHeader'
 export type { QuizSessionHeaderProps } from './components/Quiz/QuizSessionHeader.types'
 
@@ -506,6 +516,31 @@ export { ToggleButton } from './components/ToggleButton/ToggleButton'
 export type { ToggleButtonProps } from './components/ToggleButton/ToggleButton.types'
 
 export { ChoiceCard } from './components/ChoiceCard/ChoiceCard'
+export { ImageSortBoard } from './components/Exercise/ImageSortBoard'
+export { PictureStrip } from './components/Exercise/PictureStrip'
+export type {
+  PictureStripProps,
+  PictureStripItem,
+} from './components/Exercise/PictureStrip.types'
+export type { PictureRegion } from './internal/PictureImage.types'
+export { ComicRolePlay } from './components/Exercise/ComicRolePlay'
+export { MeetingFrame } from './components/Device/MeetingFrame'
+export type {
+  MeetingFrameProps,
+  MeetingParticipant,
+} from './components/Device/MeetingFrame.types'
+export type {
+  ComicRolePlayProps,
+  ComicPanel,
+  ComicParticipant,
+  ComicTurn,
+  ComicGuidance,
+} from './components/Exercise/ComicRolePlay.types'
+export type {
+  ImageSortBoardProps,
+  ImageSortItem,
+  ImageSortCategory,
+} from './components/Exercise/ImageSortBoard.types'
 export type { ChoiceCardProps } from './components/ChoiceCard/ChoiceCard.types'
 
 export { Skeleton } from './components/Skeleton/Skeleton'
@@ -588,6 +623,15 @@ export type {
   SlideDeckProps,
 } from './components/Slide/SlideDeck.types'
 export { SlidePage } from './components/Slide/SlidePage'
+export { MobileFrame } from './components/Device/MobileFrame'
+export { DeviceGallery } from './components/Device/DeviceGallery'
+export type {
+  DeviceGalleryItem,
+  DeviceGalleryProps,
+} from './components/Device/DeviceGallery.types'
+export type { MobileFrameProps } from './components/Device/MobileFrame.types'
+export { MessagePhoneFrame } from './components/Device/MessagePhoneFrame'
+export type { MessagePhoneFrameProps } from './components/Device/MessagePhoneFrame.types'
 export { VoiceMessageExercise } from './components/VoiceMessage/VoiceMessageExercise'
 export type {
   VoiceMessageAudio,
@@ -600,12 +644,28 @@ export type { SlidePageProps } from './components/Slide/SlidePage.types'
 
 export { ExercisePanel } from './components/Exercise/ExercisePanel'
 export type { ExercisePanelProps } from './components/Exercise/ExercisePanel.types'
+export { TaskBoard } from './components/TaskBoard/TaskBoard'
+export type {
+  TaskBoardProps,
+  TaskBoardColumn,
+  TaskBoardCard,
+  TaskBoardAssignee,
+} from './components/TaskBoard/TaskBoard.types'
 export { VocabularyGrid } from './components/Exercise/VocabularyGrid'
 export type { VocabularyGridProps } from './components/Exercise/VocabularyGrid.types'
 export { LearningDialogue } from './components/Exercise/LearningDialogue'
 export type { LearningDialogueProps } from './components/Exercise/LearningDialogue.types'
 export { RevealCard } from './components/Exercise/RevealCard'
-export type { RevealCardProps } from './components/Exercise/RevealCard.types'
+export { QuestionList } from './components/Exercise/QuestionList'
+export type {
+  QuestionListProps,
+  QuestionListItem,
+} from './components/Exercise/QuestionList.types'
+export type {
+  RevealCardProps,
+  RevealGuidance,
+  RevealGuidanceLevel,
+} from './components/Exercise/RevealCard.types'
 export { MatchPairs } from './components/Exercise/MatchPairs'
 export type { MatchPairsProps } from './components/Exercise/MatchPairs.types'
 export type { VocabularyItem } from './components/Exercise/VocabularyGrid.types'
@@ -657,3 +717,42 @@ export type {
   RevealSequenceCardProps,
   RevealSequenceStage,
 } from './components/InteractiveMaterial/RevealSequenceCard.types'
+
+export { materialDarkTheme } from './foundations/theme/materialDarkTheme'
+export { SlideNotes } from './components/Slide/SlideNotes'
+export type {
+  SlideNotesProps,
+  SlideNotesLabels,
+} from './components/Slide/SlideNotes.types'
+
+export { SlideNotesWindow } from './components/Slide/SlideNotesWindow'
+export type { SlideNotesWindowProps } from './components/Slide/SlideNotesWindow.types'
+
+export type { LearningDialogueGap } from './components/Exercise/LearningDialogue.types'
+export type {
+  SlideAudioActionProps,
+  SlideAudioStatus,
+} from './components/Slide/SlideAudioAction.types'
+
+export { RouteMap } from './components/InteractiveMaterial/RouteMap'
+export type {
+  RouteMapProps,
+  MapPlace,
+} from './components/InteractiveMaterial/RouteMap.types'
+
+export { FlashcardSession } from './components/Flashcard/FlashcardSession'
+export type {
+  FlashcardSessionProps,
+  FlashcardSessionCard,
+} from './components/Flashcard/FlashcardSession.types'
+export { ShadowingSession } from './components/Shadowing/ShadowingSession'
+export type { ShadowingSessionProps } from './components/Shadowing/ShadowingSession.types'
+
+export { QuestionRoulette } from './components/Exercise/QuestionRoulette'
+export type {
+  QuestionRouletteProps,
+  QuestionRouletteQuestion,
+  QuestionRouletteTopic,
+  QuestionRouletteSelection,
+  QuestionRouletteLabels,
+} from './components/Exercise/QuestionRoulette.types'

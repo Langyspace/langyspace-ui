@@ -1,0 +1,721 @@
+{
+  "version": 81,
+  "code": "B2.12",
+  "key": "b2-12",
+  "title": "Should phones be banned at school?",
+  "goal": "Agree on a proportionate phone policy and test it against an omitted case",
+  "freeConversationInstruction": "Debate a policy, explore consequences and respond to each other’s strongest arguments",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how to preserve a proposal’s purpose when adapting it",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What specific problem should a rule address?",
+          "hint": "The concern is …, rather than …",
+          "cue": "Name the problem to address"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What useful behaviour might a broad ban prevent?",
+          "hint": "A ban could also prevent …",
+          "cue": "Consider a legitimate use"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How could an exception work fairly?",
+          "hint": "A workable exception would …",
+          "cue": "Design a workable exception"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "A rule with a reason and exceptions",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B212-V81.0",
+          "word": "a distraction",
+          "translation": "",
+          "example": "Social notifications are a distraction in this case",
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "a distraction",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B212-FS81.0",
+          "audioText": "a distraction. Social notifications are a distraction in this case."
+        },
+        {
+          "id": "B212-V81.1",
+          "word": "an exception",
+          "translation": "",
+          "example": "An exception needs a workable process",
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "an exception",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B212-FS81.1",
+          "audioText": "an exception. An exception needs a workable process."
+        },
+        {
+          "id": "B212-V81.2",
+          "word": "accessibility",
+          "translation": "",
+          "example": "Accessibility use supports participation",
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "accessibility",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B212-FS81.2",
+          "audioText": "accessibility. Accessibility use supports participation."
+        },
+        {
+          "id": "B212-V81.3",
+          "word": "screen time",
+          "translation": "",
+          "example": "Screen time alone doesn’t explain the purpose of use",
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "screen time",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B212-FS81.3",
+          "audioText": "screen time. Screen time alone doesn’t explain the purpose of use."
+        },
+        {
+          "id": "B212-V81.4",
+          "word": "a restriction",
+          "translation": "",
+          "example": "The restriction should target the stated problem",
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "a restriction",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B212-FS81.4",
+          "audioText": "a restriction. The restriction should target the stated problem."
+        },
+        {
+          "id": "B212-V81.5",
+          "word": "a shared responsibility",
+          "translation": "",
+          "example": "Clear expectations are a shared responsibility",
+          "imageUrl": "b2-12-vocabulary81",
+          "imageAlt": "a shared responsibility",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B212-FS81.5",
+          "audioText": "a shared responsibility. Clear expectations are a shared responsibility."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Should phones be banned at school?",
+      "paragraphs": [
+        "Fictional school discussion, not a research finding: social-message checking interrupts lessons. Consider three uses separately: social notifications, an approved accessibility tool, and urgent family contact. No policy outcome is claimed to be universal. The group must agree a purpose, a restriction and a private exception route."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Define the issue before the rule",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B212-D81.1",
+          "speaker": "Kim",
+          "text": "What problem should a school phone policy actually solve?",
+          "audioText": "What problem should a school phone policy actually solve?",
+          "translation": "Que problema uma política de celular na escola deveria resolver?"
+        },
+        {
+          "id": "B212-D81.2",
+          "speaker": "Ana",
+          "text": "For this case, repeated social-message checking is interrupting lessons",
+          "audioText": "For this case, repeated social-message checking is interrupting lessons.",
+          "translation": "Neste caso, a consulta repetida de mensagens sociais está interrompendo as aulas"
+        },
+        {
+          "id": "B212-D81.3",
+          "speaker": "Kim",
+          "text": "Then a total ban might be simpler than many exceptions",
+          "audioText": "Then a total ban might be simpler than many exceptions.",
+          "translation": "Então uma proibição total poderia ser mais simples do que muitas exceções"
+        },
+        {
+          "id": "B212-D81.4",
+          "speaker": "Ana",
+          "text": "Possibly, although some learners use a phone as an accessibility tool",
+          "audioText": "Possibly, although some learners use a phone as an accessibility tool.",
+          "translation": "Talvez, embora alguns alunos usem o celular como recurso de acessibilidade"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What classroom problem is the policy meant to solve?",
+          "hint": "Repeated … interrupts …",
+          "answer": "Repeated social-message checking interrupts lessons"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why does Kim consider a total ban?",
+          "hint": "It might be …",
+          "answer": "A total ban might be simpler than many exceptions"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What legitimate phone use does Ana identify?",
+          "hint": "Some learners use …",
+          "answer": "Some learners use phones as accessibility tools"
+        }
+      ],
+      "dialogueGroup": "b2-12.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "An exception that works",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B212-D81.5",
+          "speaker": "Kim",
+          "text": "Could the rule allow approved tools while restricting social notifications?",
+          "audioText": "Could the rule allow approved tools while restricting social notifications?",
+          "translation": "A regra poderia permitir recursos aprovados e restringir notificações sociais?"
+        },
+        {
+          "id": "B212-D81.6",
+          "speaker": "Ana",
+          "text": "That seems more targeted. We’d need a clear way to request an exception without public explanations",
+          "audioText": "That seems more targeted. We’d need a clear way to request an exception without public explanations.",
+          "translation": "Parece mais direcionado. Precisaríamos de um jeito claro de pedir exceção sem explicações públicas"
+        },
+        {
+          "id": "B212-D81.7",
+          "speaker": "Kim",
+          "text": "What about family contact during an emergency?",
+          "audioText": "What about family contact during an emergency?",
+          "translation": "E contato com a família durante uma emergência?"
+        },
+        {
+          "id": "B212-D81.8",
+          "speaker": "Ana",
+          "text": "A named contact route could help, but we shouldn’t assume the current office system is always fast enough",
+          "audioText": "A named contact route could help, but we shouldn’t assume the current office system is always fast enough.",
+          "translation": "Um canal definido poderia ajudar, mas não devemos presumir que a secretaria atual é sempre rápida o bastante"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What more targeted rule do they consider?",
+          "hint": "Allow … while restricting …",
+          "answer": "They consider allowing approved tools while restricting social notifications"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why should exception requests avoid public explanations?",
+          "hint": "To protect …",
+          "answer": "Public explanations could expose private information"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What assumption about emergency contact should they avoid?",
+          "hint": "They shouldn’t assume …",
+          "answer": "They shouldn’t assume the current office contact system is always fast enough"
+        }
+      ],
+      "dialogueGroup": "b2-12.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Test the policy",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B212-D81.9",
+          "speaker": "Kim",
+          "text": "So the policy needs a rule, a reason and a workable exception process",
+          "audioText": "So the policy needs a rule, a reason and a workable exception process.",
+          "translation": "Então a política precisa de regra, motivo e processo viável de exceção"
+        },
+        {
+          "id": "B212-D81.10",
+          "speaker": "Ana",
+          "text": "Yes. Whereas distraction is the target, some phone use supports participation",
+          "audioText": "Yes. Whereas distraction is the target, some phone use supports participation.",
+          "translation": "Sim. Enquanto a distração é o alvo, alguns usos apoiam a participação"
+        },
+        {
+          "id": "B212-D81.11",
+          "speaker": "Kim",
+          "text": "I’d test the draft against concrete cases before saying it treats everyone fairly",
+          "audioText": "I’d test the draft against concrete cases before saying it treats everyone fairly.",
+          "translation": "Eu testaria o rascunho com casos concretos antes de dizer que trata todos de forma justa"
+        },
+        {
+          "id": "B212-D81.12",
+          "speaker": "Ana",
+          "text": "Agreed. Despite the need for consistency, identical treatment isn’t always the right response",
+          "audioText": "Agreed. Despite the need for consistency, identical treatment isn’t always the right response.",
+          "translation": "Concordo. Apesar da necessidade de consistência, tratamento idêntico nem sempre é a resposta adequada"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What three parts does the policy need?",
+          "hint": "It needs …, … and …",
+          "answer": "The policy needs a rule, a reason and a workable exception process"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why can identical treatment be inappropriate?",
+          "hint": "Some phone use …",
+          "answer": "Some phone use supports participation rather than distracting from it"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "How should they assess the draft?",
+          "hint": "They should test it against …",
+          "answer": "They should test the draft against concrete cases"
+        }
+      ],
+      "dialogueGroup": "b2-12.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Define the policy’s purpose",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Concede a point without losing the distinction",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Concede using a clause",
+          "verb": "although / while + clause",
+          "example": "Although phones can distract, some uses support participation"
+        },
+        {
+          "id": "1",
+          "subject": "Concede using a noun phrase",
+          "verb": "despite + noun / -ing",
+          "example": "Despite the need for consistency, exceptions may be necessary"
+        },
+        {
+          "id": "2",
+          "subject": "Contrast two situations",
+          "verb": "whereas / while",
+          "example": "Social notifications interrupt, whereas an approved reading tool can help"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Design a workable policy",
+      "instruction": "Agree on a policy and test it with a real-life case",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "An accessibility case was omitted",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. There’s a case our draft policy hasn’t addressed. A learner uses a phone to read material aloud and communicate when speaking is difficult. Asking for permission publicly every lesson would draw attention to private information and could delay participation. The learner isn’t asking to use social media. Could you reconsider how the exception works, rather than treating this as a choice between no rules and unlimited phone use? A private agreement, clear permitted use and a way to review problems might be worth discussing. The main classroom concern remains repeated social-message checking, so we still need a rule that addresses that specific problem",
+      "audioText": "Hi, Ana. There’s a case our draft policy hasn’t addressed. A learner uses a phone to read material aloud and communicate when speaking is difficult. Asking for permission publicly every lesson would draw attention to private information and could delay participation. The learner isn’t asking to use social media. Could you reconsider how the exception works, rather than treating this as a choice between no rules and unlimited phone use? A private agreement, clear permitted use and a way to review problems might be worth discussing. The main classroom concern remains repeated social-message checking, so we still need a rule that addresses that specific problem.",
+      "audioId": "B212-L81.1",
+      "greeting": "I’ve thought about the options a little more",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "How does the learner use the phone?",
+          "hint": "They use it to … and …",
+          "answer": "The learner uses the phone to read material aloud and communicate"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why is public permission every lesson problematic?",
+          "hint": "It could … and …",
+          "answer": "It could expose private information and delay participation"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What classroom concern still needs a rule?",
+          "hint": "The rule must address …",
+          "answer": "The rule must still address repeated social-message checking"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Revise one condition, not the whole purpose",
+      "instruction": "Test the exception process and revise one condition without changing the policy’s purpose",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Does phones off work as a policy?",
+      "instruction": "Watch the meeting rule, then test a phone policy against a real exception",
+      "minutes": 4,
+      "video": {
+        "videoId": "dH7LF_bbHu0",
+        "startSeconds": 45,
+        "endSeconds": 66,
+        "title": "Making suggestions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "b2-12.video102.q1",
+          "prompt": "What restriction do they choose?",
+          "hint": "Listen to the rule before the meeting starts",
+          "answer": "They choose to turn their phones off"
+        },
+        {
+          "id": "b2-12.video102.q2",
+          "prompt": "What specific setting is the rule for?",
+          "hint": "Look at the activity they are about to start",
+          "answer": "It’s for a focused meeting"
+        },
+        {
+          "id": "b2-12.video102.q3",
+          "prompt": "Does this excerpt address emergency calls or accessibility needs?",
+          "hint": "Notice what is and isn’t discussed",
+          "answer": "No. Those exceptions aren’t discussed in the excerpt"
+        },
+        {
+          "id": "b2-12.video102.q4",
+          "prompt": "Adapt the rule for a school without ignoring those needs",
+          "hint": "State the rule, an exception and how it would work",
+          "answer": "Example: Phones stay away during lessons, but students can agree an emergency or accessibility exception with staff"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Agree on a proportionate phone policy and test it against an omitted case"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Different uses need an explicit response",
+      "options": [
+        {
+          "id": "social",
+          "title": "Social notifications",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Purpose",
+              "value": "Social contact"
+            },
+            {
+              "id": "1",
+              "label": "Classroom effect",
+              "value": "Interruptions in this case"
+            },
+            {
+              "id": "2",
+              "label": "Policy question",
+              "value": "What restriction addresses it?"
+            }
+          ]
+        },
+        {
+          "id": "access",
+          "title": "Accessibility use",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Purpose",
+              "value": "Reading or communication support"
+            },
+            {
+              "id": "1",
+              "label": "Need",
+              "value": "Reliable, private approval"
+            },
+            {
+              "id": "2",
+              "label": "Policy question",
+              "value": "How can participation continue?"
+            }
+          ]
+        },
+        {
+          "id": "urgent",
+          "title": "Urgent contact",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Purpose",
+              "value": "Family emergency"
+            },
+            {
+              "id": "1",
+              "label": "Need",
+              "value": "Fast contact route"
+            },
+            {
+              "id": "2",
+              "label": "Policy question",
+              "value": "What works when urgent?"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "policy",
+          "prompt": "What restriction addresses social interruptions?",
+          "hint": "I’d restrict … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you protect accessibility use?",
+          "hint": "Approved … should … without …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What urgent-contact arrangement would you test?",
+          "hint": "For emergencies, we’d need … that …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Exception process",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Tool",
+          "value": "Reading aloud and communication"
+        },
+        {
+          "id": "1",
+          "label": "Problem with draft",
+          "value": "Public permission every lesson"
+        },
+        {
+          "id": "2",
+          "label": "Requirement",
+          "value": "Private agreement · reliable participation"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you revise the exception process?",
+          "hint": "Instead of …, we could agree … privately"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What permitted use would you make explicit?",
+          "hint": "The agreement would allow … but not …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you review problems without excluding the learner?",
+          "hint": "If … happens, we would … while preserving …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_personal": {
+      "type": "choices",
+      "title": "Situation reference",
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What problem should the policy solve?",
+          "cue": "Define the issue before choosing a rule",
+          "hint": "The main issue is …, rather than …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Who might need an exception?",
+          "cue": "Consider a different perspective and justify a condition",
+          "hint": "Although …, we should allow … when …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain the final policy to someone affected by it?",
+          "cue": "State the aim, boundary and exception in plain language",
+          "hint": "The aim is to … In practice, … We’d make an exception when …",
+          "answer": "One possible response"
+        }
+      ],
+      "options": [
+        {
+          "id": "social",
+          "title": "Social notifications",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Purpose",
+              "value": "Social contact"
+            },
+            {
+              "id": "1",
+              "label": "Classroom effect",
+              "value": "Interruptions in this case"
+            },
+            {
+              "id": "2",
+              "label": "Policy question",
+              "value": "What restriction addresses it?"
+            }
+          ]
+        },
+        {
+          "id": "access",
+          "title": "Accessibility use",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Purpose",
+              "value": "Reading or communication support"
+            },
+            {
+              "id": "1",
+              "label": "Need",
+              "value": "Reliable, private approval"
+            },
+            {
+              "id": "2",
+              "label": "Policy question",
+              "value": "How can participation continue?"
+            }
+          ]
+        },
+        {
+          "id": "urgent",
+          "title": "Urgent contact",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Purpose",
+              "value": "Family emergency"
+            },
+            {
+              "id": "1",
+              "label": "Need",
+              "value": "Fast contact route"
+            },
+            {
+              "id": "2",
+              "label": "Policy question",
+              "value": "What works when urgent?"
+            }
+          ]
+        }
+      ],
+      "questionPurpose": "conversation"
+    }
+  }
+}

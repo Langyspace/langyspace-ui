@@ -1,3 +1,4 @@
+import { MeetingFrame } from '../Device/MeetingFrame'
 import { AudioSequenceControls } from './AudioSequenceControls'
 import { SimulationIcon } from './SimulationIcon'
 import * as Styled from './InterviewSimulation.styles'
@@ -6,14 +7,24 @@ export function InterviewSimulation({
   title,
   interviewer,
   learnerName,
+  learnerAvatarUrl,
+  presentation = 'interview',
+  imageFit = 'cover',
+  participants,
+  activeParticipantId,
+  sharedContent,
+  sharedContentLabel,
+  playback,
+  supportAction,
   caption,
-  captionsEnabled,
+  learnerCaption,
+  captionsEnabled = true,
   onCaptionsChange,
-  microphoneEnabled,
+  microphoneEnabled = false,
   onMicrophoneChange,
-  cameraEnabled,
+  cameraEnabled = false,
   onCameraChange,
-  handRaised,
+  handRaised = false,
   onHandChange,
   turnIndex,
   turnCount,
@@ -30,6 +41,9 @@ export function InterviewSimulation({
   ...props
 }: InterviewSimulationProps) {
   const text = {
+    play: 'Play current part',
+    pause: 'Pause current part',
+    resume: 'Resume current part',
     interview: 'Interview',
     ended: 'Call ended',
     microphone: 'Microfone',
@@ -43,6 +57,53 @@ export function InterviewSimulation({
     progress: 'Áudios da entrevista',
     ...labels,
   }
+  if (presentation === 'guided-call')
+    return (
+      <Styled.Root as="section" {...props}>
+        <MeetingFrame
+          aria-label={typeof title === 'string' ? title : 'Team meeting'}
+          main={{ name: interviewer.name, imageUrl: interviewer.imageUrl }}
+          inset={{
+            id: 'learner',
+            name: learnerName,
+            imageUrl: learnerAvatarUrl,
+          }}
+          insetPresentation={learnerAvatarUrl ? 'video' : 'avatar'}
+          layout={participants?.length ? 'grid' : 'spotlight'}
+          participants={participants}
+          activeParticipantId={activeParticipantId}
+          sharedContent={sharedContent}
+          sharedContentLabel={sharedContentLabel}
+          stageTone="sky"
+          imageFit={imageFit}
+          caption={captionsEnabled ? caption : undefined}
+          learnerCaption={learnerCaption}
+        />
+        {children}
+        <AudioSequenceControls
+          index={turnIndex}
+          count={turnCount}
+          onNext={onNext}
+          onPrevious={onPrevious}
+          onReplay={onReplay}
+          disabled={ended}
+          loading={loading}
+          status={status}
+          supportAction={supportAction}
+          density="compact"
+          playback={playback}
+          labels={{
+            previous: text.previous,
+            next: text.next,
+            replay: text.replay,
+            progress: text.progress,
+            play: text.play,
+            pause: text.pause,
+            resume: text.resume,
+          }}
+        />
+      </Styled.Root>
+    )
   return (
     <Styled.Root as="section" {...props}>
       <Styled.Meet>
@@ -63,68 +124,78 @@ export function InterviewSimulation({
             </Styled.Caption>
           ) : null}
           <Styled.Self>
-            <b aria-hidden="true">{learnerName.slice(0, 1).toUpperCase()}</b>
+            <>
+              {learnerAvatarUrl ? (
+                <img src={learnerAvatarUrl} alt="" />
+              ) : (
+                <b aria-hidden="true">
+                  {learnerName.slice(0, 1).toUpperCase()}
+                </b>
+              )}
+            </>
             <span>{learnerName}</span>
           </Styled.Self>
         </Styled.Main>
-        <Styled.Bar>
-          <Styled.Control
-            type="button"
-            data-device="microphone"
-            aria-label={text.microphone}
-            aria-pressed={microphoneEnabled}
-            disabled={ended}
-            onClick={() => {
-              onMicrophoneChange(!microphoneEnabled)
-            }}
-          >
-            <SimulationIcon name="mic" />
-          </Styled.Control>
-          <Styled.Control
-            type="button"
-            data-device="camera"
-            aria-label={text.camera}
-            aria-pressed={cameraEnabled}
-            disabled={ended}
-            onClick={() => {
-              onCameraChange(!cameraEnabled)
-            }}
-          >
-            <SimulationIcon name="camera" />
-          </Styled.Control>
-          <Styled.Control
-            type="button"
-            $active={captionsEnabled}
-            aria-label={text.captions}
-            aria-pressed={captionsEnabled}
-            onClick={() => {
-              onCaptionsChange(!captionsEnabled)
-            }}
-          >
-            <SimulationIcon name="captions" />
-          </Styled.Control>
-          <Styled.Control
-            type="button"
-            $active={handRaised}
-            aria-label={text.hand}
-            aria-pressed={handRaised}
-            disabled={ended}
-            onClick={() => {
-              onHandChange(!handRaised)
-            }}
-          >
-            <SimulationIcon name="hand" />
-          </Styled.Control>
-          <Styled.Control
-            type="button"
-            $end
-            aria-label={text.end}
-            onClick={onEnd}
-            disabled={ended}
-          >
-            <SimulationIcon name="hangup" />
-          </Styled.Control>
-        </Styled.Bar>
+        {presentation === 'interview' ? (
+          <Styled.Bar>
+            <Styled.Control
+              type="button"
+              data-device="microphone"
+              aria-label={text.microphone}
+              aria-pressed={microphoneEnabled}
+              disabled={ended}
+              onClick={() => {
+                onMicrophoneChange?.(!microphoneEnabled)
+              }}
+            >
+              <SimulationIcon name="mic" />
+            </Styled.Control>
+            <Styled.Control
+              type="button"
+              data-device="camera"
+              aria-label={text.camera}
+              aria-pressed={cameraEnabled}
+              disabled={ended}
+              onClick={() => {
+                onCameraChange?.(!cameraEnabled)
+              }}
+            >
+              <SimulationIcon name="camera" />
+            </Styled.Control>
+            <Styled.Control
+              type="button"
+              $active={captionsEnabled}
+              aria-label={text.captions}
+              aria-pressed={captionsEnabled}
+              onClick={() => {
+                onCaptionsChange?.(!captionsEnabled)
+              }}
+            >
+              <SimulationIcon name="captions" />
+            </Styled.Control>
+            <Styled.Control
+              type="button"
+              $active={handRaised}
+              aria-label={text.hand}
+              aria-pressed={handRaised}
+              disabled={ended}
+              onClick={() => {
+                onHandChange?.(!handRaised)
+              }}
+            >
+              <SimulationIcon name="hand" />
+            </Styled.Control>
+            <Styled.Control
+              type="button"
+              $end
+              aria-label={text.end}
+              onClick={onEnd}
+              disabled={ended}
+            >
+              <SimulationIcon name="hangup" />
+            </Styled.Control>
+          </Styled.Bar>
+        ) : null}
       </Styled.Meet>
       <AudioSequenceControls
         index={turnIndex}
@@ -135,11 +206,17 @@ export function InterviewSimulation({
         disabled={ended}
         loading={loading}
         status={status}
+        supportAction={supportAction}
+        density="regular"
+        playback={playback}
         labels={{
           previous: text.previous,
           next: text.next,
           replay: text.replay,
           progress: text.progress,
+          play: text.play,
+          pause: text.pause,
+          resume: text.resume,
         }}
       />
       {children}

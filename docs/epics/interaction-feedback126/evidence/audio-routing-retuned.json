@@ -1,0 +1,106 @@
+{
+  "cursor": 333,
+  "events": [
+    {
+      "sequence": 324,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.audioNodeCreated",
+      "params": {
+        "node": {
+          "channelCount": 2,
+          "channelCountMode": "max",
+          "channelInterpretation": "speakers",
+          "contextId": "d82e710e-34cb-4822-8908-cf1a58430368",
+          "nodeId": "9f929feb-e3b5-4683-ab17-d3f7b590474e",
+          "nodeType": "Gain",
+          "numberOfInputs": 1,
+          "numberOfOutputs": 1
+        }
+      }
+    },
+    {
+      "sequence": 326,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.nodesConnected",
+      "params": {
+        "contextId": "d82e710e-34cb-4822-8908-cf1a58430368",
+        "destinationId": "719b3599-df74-4089-84f9-d4f979f5c51f",
+        "destinationInputIndex": 0,
+        "sourceId": "9f929feb-e3b5-4683-ab17-d3f7b590474e",
+        "sourceOutputIndex": 0
+      }
+    },
+    {
+      "sequence": 327,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.audioNodeCreated",
+      "params": {
+        "node": {
+          "channelCount": 2,
+          "channelCountMode": "max",
+          "channelInterpretation": "speakers",
+          "contextId": "d82e710e-34cb-4822-8908-cf1a58430368",
+          "nodeId": "f4b6975a-ab34-45e7-959a-2a8d2a2033ba",
+          "nodeType": "Oscillator",
+          "numberOfInputs": 0,
+          "numberOfOutputs": 1
+        }
+      }
+    },
+    {
+      "sequence": 330,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.audioNodeCreated",
+      "params": {
+        "node": {
+          "channelCount": 2,
+          "channelCountMode": "max",
+          "channelInterpretation": "speakers",
+          "contextId": "d82e710e-34cb-4822-8908-cf1a58430368",
+          "nodeId": "d66b0832-cb7f-4188-9ce6-79884579ce66",
+          "nodeType": "Gain",
+          "numberOfInputs": 1,
+          "numberOfOutputs": 1
+        }
+      }
+    },
+    {
+      "sequence": 332,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.nodesConnected",
+      "params": {
+        "contextId": "d82e710e-34cb-4822-8908-cf1a58430368",
+        "destinationId": "d66b0832-cb7f-4188-9ce6-79884579ce66",
+        "destinationInputIndex": 0,
+        "sourceId": "f4b6975a-ab34-45e7-959a-2a8d2a2033ba",
+        "sourceOutputIndex": 0
+      }
+    },
+    {
+      "sequence": 333,
+      "source": {
+        "tabId": 9
+      },
+      "method": "WebAudio.nodesConnected",
+      "params": {
+        "contextId": "d82e710e-34cb-4822-8908-cf1a58430368",
+        "destinationId": "9f929feb-e3b5-4683-ab17-d3f7b590474e",
+        "destinationInputIndex": 0,
+        "sourceId": "d66b0832-cb7f-4188-9ce6-79884579ce66",
+        "sourceOutputIndex": 0
+      }
+    }
+  ],
+  "hasMore": false,
+  "truncated": false
+}

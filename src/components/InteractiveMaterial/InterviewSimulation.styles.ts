@@ -63,6 +63,12 @@ export const Self = styled.div`
   border: 2px solid ${theme.simulations.canvas};
   padding-bottom: 10px;
   box-sizing: border-box;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
   b {
     width: 45%;
     max-width: 40px;
@@ -72,7 +78,7 @@ export const Self = styled.div`
     display: grid;
     place-items: center;
     background: ${theme.slides.accent};
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: clamp(12px, 2vw, 18px);
   }
   span {

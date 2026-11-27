@@ -726,14 +726,24 @@ const slideRecipe = {
   conversationWidth: '60rem',
   introductionWidth: '70rem',
   headerHeight: '3.5rem',
+  compactBreakpoint: '47.5rem',
+  notesWidth: '22.5rem',
+  notesHeight: '27.5rem',
+  notesBorder: '#E4E4E4',
+  notesShadow: '0 12px 32px rgba(0,0,0,.14)',
   headerSurface: 'rgba(255, 255, 255, 0.92)',
   panelRadius: '0.5rem',
 } as const
 
 // Current Claude A1.01 phone, browser-measured 2026-11-16; colors stay local to this device recipe.
 const voiceMessage = {
+  questionSurface: undefined as string | undefined,
+  questionForeground: undefined as string | undefined,
+  questionBorder: undefined as string | undefined,
   phoneWidth: '13.28125rem',
   phoneHeight: '26.5625rem',
+  largePhoneWidth: 'clamp(12rem, calc((100dvh - 13rem) / 2), 18rem)',
+  largePhoneHeight: 'clamp(24rem, calc(100dvh - 13rem), 36rem)',
   phoneRadius: '2.125rem',
   frameWidth: '0.5625rem',
   contentWidth: '47.5rem',
@@ -760,6 +770,9 @@ const voiceMessage = {
   danger: semantic.status.danger.foreground,
   dangerSurface: semantic.status.danger.background,
   composerAccent: '#0E8A57',
+  outgoingSurface: '#D9FDD3',
+  outgoingForeground: palette.neutral[900],
+  outgoingMuted: palette.neutral[600],
 } as const
 
 // Device simulations extracted from the published UX Lab (2026-11-16).
@@ -767,6 +780,8 @@ const simulations = {
   stackWidth: '560px',
   canvas: '#1F1F1F',
   stage: '#2B2B2E',
+  // Sampled from the approved illustrated meeting portrait, without cropping its face.
+  illustratedStage: '#AAD5F4',
   foreground: '#FFFFFF',
   muted: '#C9C9C9',
   controls: '#3C4043',
@@ -785,6 +800,20 @@ const simulations = {
 } as const
 
 const exercises = {
+  rouletteSpinDuration: '3.8s',
+  rouletteSpinEasing: 'cubic-bezier(0.12, 0.72, 0.15, 1)',
+  rouletteSpinTurns: 6,
+  workstation: {
+    frame: palette.neutral[400],
+    edge: palette.neutral[600],
+    windowBar: palette.feedback.info,
+    windowForeground: palette.white,
+    taskbar: palette.neutral[700],
+    taskbarForeground: palette.neutral[200],
+    close: palette.accent.pink,
+    minimize: palette.feedback.warning,
+    maximize: palette.feedback.success,
+  },
   negative: '#CF2634',
   question: '#2563D9',
   sceneHeight: 'clamp(5.75rem, 18cqh, 11.25rem)',

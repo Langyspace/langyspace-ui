@@ -1,0 +1,506 @@
+{
+  "version": 81,
+  "code": "A1.07",
+  "key": "a1-07",
+  "title": "At the airport",
+  "goal": "Answer arrival questions and check your gate",
+  "freeConversationInstruction": "Talk about arriving in a new place, ask travel questions and practise checking details",
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Use a made-up name and number from our contact lesson",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What’s your last name?",
+          "hint": "My last name is …",
+          "cue": "Say your last name"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How do you spell it?",
+          "hint": "That’s …",
+          "cue": "Spell your last name"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What’s your phone number?",
+          "hint": "My phone number is …",
+          "cue": "Say your phone number"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Airport essentials",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A107-V81.0",
+          "word": "passport",
+          "translation": "",
+          "example": "Keep your passport with you",
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "passport",
+          "imageRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 68,
+            "row": 80,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A107-FS81.0",
+          "audioText": "passport. Keep your passport with you."
+        },
+        {
+          "id": "A107-V81.1",
+          "word": "suitcase",
+          "translation": "",
+          "example": "This is my suitcase",
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "suitcase",
+          "imageRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 416,
+            "row": 62,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A107-FS81.1",
+          "audioText": "suitcase. This is my suitcase."
+        },
+        {
+          "id": "A107-V81.2",
+          "word": "plane",
+          "translation": "",
+          "example": "The plane is over there",
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "plane",
+          "imageRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 770,
+            "row": 63,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A107-FS81.2",
+          "audioText": "plane. The plane is over there."
+        },
+        {
+          "id": "A107-V81.3",
+          "word": "taxi",
+          "translation": "",
+          "example": "I need a taxi to the hotel",
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "taxi",
+          "imageRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 53,
+            "row": 408,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A107-FS81.3",
+          "audioText": "taxi. I need a taxi to the hotel."
+        },
+        {
+          "id": "A107-V81.4",
+          "word": "bus",
+          "translation": "",
+          "example": "The bus is outside",
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "bus",
+          "imageRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 415,
+            "row": 410,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A107-FS81.4",
+          "audioText": "bus. The bus is outside."
+        },
+        {
+          "id": "A107-V81.5",
+          "word": "gate",
+          "translation": "",
+          "example": "Our gate is next to the café",
+          "imageUrl": "a1-07-vocabulary81",
+          "imageAlt": "gate",
+          "imageRegion": {
+            "columns": 1200,
+            "rows": 800,
+            "column": 773,
+            "row": 403,
+            "columnSpan": 360,
+            "rowSpan": 360,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A107-FS81.5",
+          "audioText": "gate. Our gate is next to the café."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Arriving at the airport",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "A107-D81.1",
+          "speaker": "Kim",
+          "text": "Welcome! Where are you staying?",
+          "audioText": "Welcome! Where are you staying?",
+          "translation": "Bem-vinda! Onde você vai ficar?"
+        },
+        {
+          "id": "A107-D81.2",
+          "speaker": "Ana",
+          "text": "I’m staying at the Park Hotel",
+          "audioText": "I’m staying at the Park Hotel.",
+          "translation": "Vou ficar no Park Hotel"
+        },
+        {
+          "id": "A107-D81.3",
+          "speaker": "Kim",
+          "text": "And how long are you staying?",
+          "audioText": "And how long are you staying?",
+          "translation": "E por quanto tempo?"
+        },
+        {
+          "id": "A107-D81.4",
+          "speaker": "Ana",
+          "text": "For three days. Where is gate six?",
+          "audioText": "For three days. Where is gate six?",
+          "translation": "Por três dias. Onde fica o portão seis?"
+        },
+        {
+          "id": "A107-D81.5",
+          "speaker": "Kim",
+          "text": "It’s on the left, next to the café",
+          "audioText": "It’s on the left, next to the café.",
+          "translation": "Fica à esquerda, ao lado do café"
+        },
+        {
+          "id": "A107-D81.6",
+          "speaker": "Ana",
+          "text": "Thank you. Can you say that again, please?",
+          "audioText": "Thank you. Can you say that again, please?",
+          "translation": "Obrigada. Pode repetir, por favor?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Where is Ana staying?",
+          "hint": "She’s staying at …",
+          "answer": "Ana is staying at the Park Hotel"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How long is Ana staying?",
+          "hint": "She’s staying for …",
+          "answer": "Ana is staying for three days"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Where is gate six?",
+          "hint": "It’s on …, next to …",
+          "answer": "Gate six is on the left, next to the café"
+        }
+      ],
+      "dialogueGroup": "a1-07.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Share your travel details",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "Where are you staying?",
+          "cue": "Use the hotel on your card",
+          "hint": "I’m staying at …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How long are you staying?",
+          "cue": "Say how many days",
+          "hint": "For … days",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What do you need at the airport?",
+          "cue": "Say what you need, then ask your teacher",
+          "hint": "I need … What do you need?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Ask and check travel details",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Ask about a place",
+          "verb": "Where …?",
+          "example": "Where are you staying? — At the Park Hotel"
+        },
+        {
+          "id": "1",
+          "subject": "Ask about a duration",
+          "verb": "How long …?",
+          "example": "How long are you staying? — For three days"
+        },
+        {
+          "id": "2",
+          "subject": "Check a detail",
+          "verb": "What / Can you …?",
+          "example": "What gate is it? Can you say that again?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "You’ve arrived",
+      "instruction": "Use your travel card to answer and check details",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A new gate",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Your gate is different now. Please go to gate eight, not gate six. It’s next to the café. You have time for some water. Keep your passport with you. I’m near the gate. See you there!",
+      "audioText": "Hi, Ana! Your gate is different now. Please go to gate eight, not gate six. It’s next to the café. You have time for some water. Keep your passport with you. I’m near the gate. See you there!",
+      "audioId": "A107-L81.1",
+      "greeting": "The gate has changed — here’s the terminal",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What’s Ana’s new gate?",
+          "hint": "Her new gate is …",
+          "answer": "Ana’s new gate is gate eight"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What is the new gate next to?",
+          "hint": "It’s next to …",
+          "answer": "The new gate is next to the café"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should Ana keep with her?",
+          "hint": "She should keep …",
+          "answer": "Ana should keep her passport with her"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "a1-07-cover81",
+        "alt": "An airport terminal, shared as context for the gate change"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Find the new gate",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Check in for a flight",
+      "instruction": "Watch the airport conversation and practise a useful request",
+      "minutes": 4,
+      "video": {
+        "videoId": "DUqdQjkvElo",
+        "startSeconds": 31,
+        "endSeconds": 79,
+        "title": "Airport English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a1-07.video102.q1",
+          "prompt": "Where is the passenger flying?",
+          "hint": "Listen to his first answer",
+          "answer": "He’s flying to London"
+        },
+        {
+          "id": "a1-07.video102.q2",
+          "prompt": "What kind of seat would he like?",
+          "hint": "Listen for window or aisle",
+          "answer": "He would like a window seat"
+        },
+        {
+          "id": "a1-07.video102.q3",
+          "prompt": "Where does he have his boarding pass?",
+          "hint": "Listen when he refuses a paper copy",
+          "answer": "He has it on his phone"
+        },
+        {
+          "id": "a1-07.video102.q4",
+          "prompt": "How can you ask for a different seat?",
+          "hint": "Start with Can I",
+          "answer": "Example: Can I have a window seat, please?"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Use a made-up hotel and a number of days. Record two answers and one checking question"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Your travel card",
+      "image": "a1-07-cover81",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Hotel",
+          "value": "Park Hotel"
+        },
+        {
+          "id": "1",
+          "label": "Stay",
+          "value": "Three days"
+        },
+        {
+          "id": "2",
+          "label": "Gate",
+          "value": "6"
+        }
+      ],
+      "questions": [
+        {
+          "id": "arrival",
+          "prompt": "Where are you staying?",
+          "hint": "I’m staying at …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How long are you staying?",
+          "hint": "For … days"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What do you want to ask about your gate?",
+          "hint": "Where is gate …, please?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Your travel card"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Updated departure",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Old gate",
+          "value": "6"
+        },
+        {
+          "id": "1",
+          "label": "New gate",
+          "value": "8 · next to the café"
+        },
+        {
+          "id": "2",
+          "label": "Bring",
+          "value": "Your passport"
+        }
+      ],
+      "questions": [
+        {
+          "id": "gate",
+          "prompt": "What’s the new gate?",
+          "hint": "It’s gate …, right?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Where is it?",
+          "hint": "It’s next to …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Can you ask me to repeat the gate number?",
+          "hint": "Can you say that again, please?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Updated departure"
+    }
+  }
+}

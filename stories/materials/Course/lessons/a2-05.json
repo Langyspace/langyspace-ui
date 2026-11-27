@@ -1,0 +1,580 @@
+{
+  "version": 81,
+  "code": "A2.05",
+  "key": "a2-05",
+  "title": "I’ll carry that!",
+  "goal": "Offer practical help and distinguish it from an earlier plan",
+  "freeConversationInstruction": "Talk about times you helped someone and make practical plans to help each other in a new situation",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall an arrangement and an intention",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What are you doing this weekend?",
+          "hint": "I’m … on …",
+          "cue": "Describe a weekend plan"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What are you planning to do at home?",
+          "hint": "I’m going to …",
+          "cue": "Explain your plan at home"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Would you like any help?",
+          "hint": "Could you help me …? / No, thank you",
+          "cue": "Accept help or politely decline"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Helping with a move",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A205-V81.0",
+          "word": "carry a box",
+          "translation": "",
+          "example": "I’ll carry the smaller box",
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "carry a box",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A205-FS81.0",
+          "audioText": "carry a box. I’ll carry the smaller box."
+        },
+        {
+          "id": "A205-V81.1",
+          "word": "open the door",
+          "translation": "",
+          "example": "Can you open the door?",
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "open the door",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A205-FS81.1",
+          "audioText": "open the door. Can you open the door?"
+        },
+        {
+          "id": "A205-V81.2",
+          "word": "take the stairs",
+          "translation": "",
+          "example": "We have to take the stairs",
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "take the stairs",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A205-FS81.2",
+          "audioText": "take the stairs. We have to take the stairs."
+        },
+        {
+          "id": "A205-V81.3",
+          "word": "move a chair",
+          "translation": "",
+          "example": "I’ll move this chair",
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "move a chair",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A205-FS81.3",
+          "audioText": "move a chair. I’ll move this chair."
+        },
+        {
+          "id": "A205-V81.4",
+          "word": "paint a wall",
+          "translation": "",
+          "example": "I’m going to paint a wall tomorrow",
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "paint a wall",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A205-FS81.4",
+          "audioText": "paint a wall. I’m going to paint a wall tomorrow."
+        },
+        {
+          "id": "A205-V81.5",
+          "word": "unpack a bag",
+          "translation": "",
+          "example": "I want to unpack my bags today",
+          "imageUrl": "a2-05-vocabulary81",
+          "imageAlt": "unpack a bag",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A205-FS81.5",
+          "audioText": "unpack a bag. I want to unpack my bags today."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "At the door",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A205-D81.1",
+          "speaker": "Kim",
+          "text": "Those boxes look heavy. Do you need a hand?",
+          "audioText": "Those boxes look heavy. Do you need a hand?",
+          "translation": "Essas caixas parecem pesadas. Precisa de ajuda?"
+        },
+        {
+          "id": "A205-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, please. I can’t carry this one and open the door",
+          "audioText": "Yes, please. I can’t carry this one and open the door.",
+          "translation": "Sim, por favor. Não consigo carregar esta e abrir a porta"
+        },
+        {
+          "id": "A205-D81.3",
+          "speaker": "Kim",
+          "text": "I’ll open the door. Then I’ll carry the smaller box",
+          "audioText": "I’ll open the door. Then I’ll carry the smaller box.",
+          "translation": "Vou abrir a porta. Depois carrego a caixa menor"
+        },
+        {
+          "id": "A205-D81.4",
+          "speaker": "Ana",
+          "text": "Thank you! I’m going to put everything in the living room",
+          "audioText": "Thank you! I’m going to put everything in the living room.",
+          "translation": "Obrigada! Vou colocar tudo na sala"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What does Kim offer to do first?",
+          "hint": "She’ll …",
+          "answer": "Kim offers to open the door"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why does Ana need help?",
+          "hint": "She can’t … and …",
+          "answer": "Ana can’t carry the box and open the door at the same time"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Where is Ana going to put everything?",
+          "hint": "She’s going to put it in …",
+          "answer": "Ana is going to put everything in the living room"
+        }
+      ],
+      "dialogueGroup": "a2-05.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Making space",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A205-D81.5",
+          "speaker": "Kim",
+          "text": "Are you going to paint the walls today?",
+          "audioText": "Are you going to paint the walls today?",
+          "translation": "Você vai pintar as paredes hoje?"
+        },
+        {
+          "id": "A205-D81.6",
+          "speaker": "Ana",
+          "text": "No, that’s the plan for tomorrow. Today I just want to unpack",
+          "audioText": "No, that’s the plan for tomorrow. Today I just want to unpack.",
+          "translation": "Não, esse é o plano para amanhã. Hoje só quero desfazer as malas"
+        },
+        {
+          "id": "A205-D81.7",
+          "speaker": "Kim",
+          "text": "All right. I’ll move this chair so we have more space",
+          "audioText": "All right. I’ll move this chair so we have more space.",
+          "translation": "Tudo bem. Vou mover esta cadeira para termos mais espaço"
+        },
+        {
+          "id": "A205-D81.8",
+          "speaker": "Ana",
+          "text": "That would be great. We can have coffee when we finish",
+          "audioText": "That would be great. We can have coffee when we finish.",
+          "translation": "Seria ótimo. Podemos tomar café quando terminarmos"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "When is Ana going to paint?",
+          "hint": "She’s going to paint …",
+          "answer": "Ana is going to paint tomorrow"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does Ana want to do today?",
+          "hint": "She wants to …",
+          "answer": "Ana wants to unpack today"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How does Kim offer to make more space?",
+          "hint": "She’ll move …",
+          "answer": "Kim offers to move the chair"
+        }
+      ],
+      "dialogueGroup": "a2-05.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Offer some help",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "These boxes are heavy. Can you help?",
+          "cue": "Offer one concrete action",
+          "hint": "I’ll …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What are you going to do after the move?",
+          "cue": "Explain a plan you already have",
+          "hint": "I’m going to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would make the move easier?",
+          "cue": "Offer one practical action and check whether it helps",
+          "hint": "I can … Would that help?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Offer now or explain a plan?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An offer or decision now",
+          "verb": "I’ll + base verb",
+          "example": "I’ll open the door for you"
+        },
+        {
+          "id": "1",
+          "subject": "An intention already decided",
+          "verb": "I’m going to + base verb",
+          "example": "I’m going to paint tomorrow"
+        },
+        {
+          "id": "2",
+          "subject": "Ask and accept help",
+          "verb": "Could you …? / That would be great",
+          "example": "Could you carry this bag? — That would be great"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Help with the move",
+      "instruction": "Offer help with one action at a time and agree who will do what",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The lift isn’t working",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! A quick update about the move: the lift isn’t working this afternoon. We have to take the stairs. The heavy box can stay downstairs for now, but I need help carrying the small bags. Could you come at three? I’m still going to paint tomorrow, so there’s no need to bring paint today. Thank you!",
+      "audioText": "Hi, Ana! A quick update about the move: the lift isn’t working this afternoon. We have to take the stairs. The heavy box can stay downstairs for now, but I need help carrying the small bags. Could you come at three? I’m still going to paint tomorrow, so there’s no need to bring paint today. Thank you!",
+      "audioId": "A205-W141.1",
+      "greeting": "One thing has changed for the move",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Why do they have to use the stairs?",
+          "hint": "The … isn’t working",
+          "answer": "They have to use the stairs because the lift isn’t working"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What needs carrying now?",
+          "hint": "Owen needs help with …",
+          "answer": "Owen needs help carrying the small bags"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What time does Owen ask Ana to come?",
+          "hint": "He asks her to come at …",
+          "answer": "Owen asks Ana to come at three"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Owen"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Agree on the help",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "I’ll show you",
+      "instruction": "Watch Vanya offer help, then offer help in a new situation",
+      "minutes": 4,
+      "video": {
+        "videoId": "LLvGYEjutWo",
+        "startSeconds": 49,
+        "endSeconds": 89,
+        "title": "Giving instructions — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a2-05.video102.q1",
+          "prompt": "What problem does Emir have?",
+          "hint": "Listen to his question about the machine",
+          "answer": "He doesn’t know how to use the coffee machine"
+        },
+        {
+          "id": "a2-05.video102.q2",
+          "prompt": "What does Vanya offer to do?",
+          "hint": "Listen for I’ll",
+          "answer": "She offers to show him how to use it"
+        },
+        {
+          "id": "a2-05.video102.q3",
+          "prompt": "What is the first step?",
+          "hint": "Follow the first instruction",
+          "answer": "He has to put the correct amount of coffee in the holder"
+        },
+        {
+          "id": "a2-05.video102.q4",
+          "prompt": "Your teacher is carrying several bags. What do you offer?",
+          "hint": "Use I’ll to offer immediate help",
+          "answer": "Example: I’ll carry those bags for you"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Offer practical help and distinguish it from an earlier plan"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Moving-day situations",
+      "image": "a2-05-vocabulary81",
+      "options": [
+        {
+          "id": "door",
+          "title": "At the door",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Problem",
+              "value": "Heavy box · door closed"
+            },
+            {
+              "id": "1",
+              "label": "Need",
+              "value": "A free hand"
+            },
+            {
+              "id": "2",
+              "label": "Earlier plan",
+              "value": "Paint tomorrow"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view0",
+              "index": 0,
+              "label": ""
+            },
+            {
+              "id": "view1",
+              "index": 1,
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "chair",
+          "title": "In the room",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Problem",
+              "value": "Chair blocks the space"
+            },
+            {
+              "id": "1",
+              "label": "Need",
+              "value": "Room for the boxes"
+            },
+            {
+              "id": "2",
+              "label": "Earlier plan",
+              "value": "Unpack today"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view3",
+              "index": 3,
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "help",
+          "prompt": "Can you give me a hand?",
+          "hint": "I’ll …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What will you do after that?",
+          "hint": "Then I’ll … so we can …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Are we painting today?",
+          "hint": "No, we’re going to … tomorrow. Today …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "This afternoon’s needs",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Access",
+          "value": "Stairs · lift not working"
+        },
+        {
+          "id": "1",
+          "label": "Carry now",
+          "value": "Small bags · leave heavy box downstairs"
+        },
+        {
+          "id": "2",
+          "label": "Time",
+          "value": "3 pm · painting is tomorrow"
+        }
+      ],
+      "questions": [
+        {
+          "id": "offer",
+          "prompt": "What can you help carry?",
+          "hint": "I’ll carry …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What can stay downstairs for now?",
+          "hint": "We can leave … downstairs"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "When can you come?",
+          "hint": "I can come at … Shall I bring anything?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "This afternoon’s needs"
+    }
+  }
+}

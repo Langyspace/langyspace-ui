@@ -1,0 +1,17 @@
+{
+  "B2FocusAdapter": {
+    "path": "stories/materials/TrialB2/TrialB2Lesson.tsx",
+    "change": "Add data-slide-deck/data-slide-viewport to existing tabIndex0 viewport; no layout change.",
+    "sha256": "b33da534cf2326aa5dc6afe031ab26830802690034caa4614cd6b82400dbbb4c"
+  },
+  "A201LiteralTypeFix": {
+    "path": "stories/materials/A201/A201.practice.tsx",
+    "change": "Preserve start/end literal union with as const; runtime identical.",
+    "sha256": "5116ec646d830f56a9eab0d4b7bd39b5a3231b7ac06c071ac38246f9753539b0"
+  },
+  "authorEvidenceReused": true,
+  "focusedUnitTestsPassed": 29,
+  "typecheckPassedAfterLiteralFix": true,
+  "noNewAudio": true,
+  "noProduction": true
+}

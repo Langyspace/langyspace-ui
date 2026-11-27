@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
 export const Root = styled(Common.Stack).withConfig({
@@ -24,10 +25,10 @@ export const Choice = styled(Pressable)<{
   padding: clamp(10px, 2.2cqh, 20px) 12px;
   min-width: 0;
   border: 2px solid
-    ${(p) => (p.$feedback === 'correct' ? theme.semantic.status.success.foreground : p.$feedback === 'incorrect' ? Common.recipe(p).accent : Common.recipe(p).border)};
-  background: ${(p) => (p.$feedback === 'correct' ? theme.semantic.status.success.background : Common.recipe(p).surface)};
+    ${(p) => (p.$feedback === 'correct' ? (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground) : p.$feedback === 'incorrect' ? Common.recipe(p).accent : Common.recipe(p).border)};
+  background: ${(p) => (p.$feedback === 'correct' ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : Common.recipe(p).surface)};
   border-radius: 20px;
-  color: ${(p) => (p.$feedback === 'correct' ? theme.semantic.status.success.foreground : Common.recipe(p).foreground)};
+  color: ${(p) => (p.$feedback === 'correct' ? (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground) : Common.recipe(p).foreground)};
   cursor: pointer;
   img {
     width: clamp(52px, 13cqh, 140px);
@@ -35,13 +36,13 @@ export const Choice = styled(Pressable)<{
     object-fit: contain;
   }
   b {
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: clamp(20px, 3.2cqh, 28px);
     line-height: 1.3;
   }
   span {
     font-size: 13px;
-    color: ${(p) => (p.$feedback === 'correct' ? theme.semantic.status.success.foreground : Common.recipe(p).muted)};
+    color: ${(p) => (p.$feedback === 'correct' ? (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground) : Common.recipe(p).muted)};
   }
   &:focus-visible {
     outline: 3px solid ${(p) => Common.recipe(p).accent};
@@ -55,5 +56,5 @@ export const Score = styled.span<{ $correct: boolean }>`
   width: 10px;
   height: 10px;
   border-radius: ${theme.radius.circle};
-  background: ${(p) => (p.$correct ? theme.semantic.status.success.foreground : Common.recipe(p).accent)};
+  background: ${(p) => (p.$correct ? (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground) : Common.recipe(p).accent)};
 `

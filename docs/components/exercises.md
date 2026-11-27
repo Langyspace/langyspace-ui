@@ -2,19 +2,75 @@
 
 The teacher and student compose these contracts with `SlidePage` and `SlideDeck`. `Materials/A1.01` is the complete 26-screen source fixture; lesson data, answer keys, synthesis, homework destinations and private teacher notes are catalog fixtures, not package exports.
 
+## Answer sounds
+
+`QuizOption.feedbackOutcome` accepts `correct` or `wrong`, supplied by the consumer
+when the result of that alternative is known. It plays once in an accepted click,
+after the consumer callback; disabled buttons and prevented events stay silent.
+Omit the outcome on personal preferences, exploratory choices and ungraded tasks.
+No sound is triggered by state rendering, hover, answer reveal or navigation.
+
+`GapFillChoice`, `MinimalPairChoice` and `VoiceMessageChoice` carry the same optional
+outcome for their native choices. Existing result colors/icons remain independent.
+`useFeedbackSounds()` exposes the client-window mute preference, play and stop;
+`SlideDeck feedbackSounds` displays the library icon button to toggle it.
+Spoken recordings are independent. No storage, audio files, server or new provider
+is required. Context creation/resume happens only in the answer gesture and fails
+silently without affecting evaluation. Rapid responses replace the prior cue.
+
+The fixed design uses rounded sine tones with a quiet second harmonic: ascending
+280ms for correct, descending225ms for wrong, soft attack/release and bounded gain.
+Parameters are centralized in foundations/audio/feedbackSoundDesign.ts. See
+[research and limitations](../epics/choice-feedback41/sound-study.md); these are
+product choices, not clinically optimized frequencies or a retention guarantee.
+
 ## ExercisePanel
 
+Warm-up images occupy the same complete column as the choices, with a contained 3:2 canvas. Presentation pages fit the entire exercise to the viewport when necessary; the image is no longer independently narrowed by a height-derived width cap.
+
+`LearningDialogue.footerAction` centers a consumer-owned action at the bottom of
+a stretched conversation column, outside the bubbles. Compose it with
+`SlidePage columnAlignment="stretch"` or the equivalent voice-message layout.
+Omitting the slot preserves existing message layouts.
+
+`variant="workstation"` owns the monitor frame, colored window bar, fixed taskbar,
+chin and stand. `workstationMeta` accepts `appLabel`, `clock` and `date` supplied
+by the exercise; these are illustrative metadata, not an operating-system clock.
+The body grows with the native form fields; chrome never flex-shrinks over them.
+Its silver frame and blue title bar use the workstation tokens in `theme.exercises`.
+The contextual image remains a separate media slot at a comparable scale.
+
+`variant="monitor"` can show its existing `media` slot inside the screen, above the
+native content, as a bounded contained illustration. `screenAspectRatio` optionally
+sets a familiar screen proportion; content can still grow instead of clipping.
+The workstation variant keeps its contextual media outside the monitor.
+`screenTextAlign="center"` centers the screen's message without moving the native
+window title, controls or any surrounding lesson content. Omit it to inherit the
+existing text alignment.
+
+`RevealCard presentation="prompt" answerMinLines={3}` can reserve a short model's
+minimum space when switching between content records. Longer text still grows;
+concealed answers remain inert and inaccessible. Omit it for the existing layout.
+
 A shared capsule with optional heading, counter and media slots. It supplies the measured compact exercise layout, without owning options, media playback or scoring.
+
+In a warm-up, `mediaBadge={{ src, alt }}` places a secondary visual cue at the upper-right of the main image. Flags keep their natural proportions without a white frame; the sequence counter stays at the upper-left. Omitting the prop preserves existing exercises. A1.01 supplies its official flag as the evidence for a country answer.
 
 ## VocabularyGrid
 
 Receives semantic image/word/translation items, controlled `revealedIds`, `showAll`, `showInitial` and `onReveal`. Hover/focus previews the label; native button activation delegates the stable id and optional `onPlay`. Touch and keyboard do not depend on hover. Image descriptions come from the consumer; decorative images do not duplicate the spoken description.
 
+An item's `badgePosition="end"` puts its existing native `badge` at the upper-right, as in the four time labels in Greetings. Omit it for the original upper-left placement. Badge text is independent of the concealed vocabulary label; the same typography and inset apply throughout the grid.
+
 `imageVariant="scene"` gives contextual illustrations a full-card frame whose height follows the material viewport. The default `isolated` keeps icon framing. Optional `columns={3}` keeps the reference's three columns even on a phone; omit it for the responsive three/two-column grid. `density="regular"` provides taller vocabulary cards. `revealVariant="tooltip"` uses a hover/focus translation tooltip, a persistent word caption after activation/show-all and an initial-letter hint. The default overlay reveal remains available. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
+
+Scene cards also honor the existing `density="regular"`: a 3:2 frame capped by the regular height preserves the composition of matching 3:2 artwork. Compact scenes keep their original height and upper framing. A2.01 uses the responsive three/two-column default; image composition remains the material author's responsibility.
 
 ## LearningDialogue
 
 Receives stable line ids, speaker names/avatars, start/end alignment and React content. Translation visibility, playing id and playback/translation actions are controlled by the product. Content slots permit the existing dialogue to contain exercise blanks without cloning the chat. No speech engine or microphone service is bundled.
+
+For personal information, an inline part `{ id, kind: 'open', label }` renders a native, labelled text field in the same bubble. Supply `gapValues` and `onGapChange(gapId, value, lineId)` to own responses. Answers are free text, without a correct option, reveal action, grading or automatic audio. Values expand the underline within the available space. Existing `{ id, answer }` parts retain their reveal interaction. MaterialPersonalDialogue binds the existing Teacher/learner identity contexts; response state stays in the current material session and clears when participants change. Names remain below avatars and both sides keep the standard compact dialogue layout.
 
 ## RevealCard
 
@@ -37,3 +93,83 @@ B1.01 also uses `VocabularyGrid columns={4}` (two columns on narrow containers) 
 Learner turns in `LearningDialogue` can provide `actionLabel`, `completedIds` and `onComplete`. They use the same bubble and a native, keyboard-operable response action, with a visible completion state. Consumer callbacks own evaluation and progress. Ordinary line translation and audio remain unchanged.
 
 For teacher-led guessing, `VocabularyGrid revealOnHover={false}` keeps an answer concealed while pointing or focusing until the consumer reveals its id. An optional `initialHint` on each item supplies a phrase scaffold such as `playing the g_____`; otherwise the initial-letter hint keeps its existing behavior. `LearningDialogue density="compact"` keeps the speaker accessible while reducing avatar/name chrome for longer conversations.
+
+For a controlled classroom reveal, `activeId` keeps just the current card's tooltip open independently
+of pointer hover. Other reviewed word captions stay concealed until `showAll`; initial scaffolds
+still follow `showInitial`. `markRevealed` adds a green check and border to activated cards without
+adding a question mark to untouched tooltip cards. An optional item `badge` carries consumer-owned
+review metadata. All three contracts are opt-in; existing reveals and captions keep their defaults.
+See `ReviewedVocabulary` and `Materials/B2.01` for the new twelve-page lesson composition.
+
+`imageFit="contain"` preserves a whole scene inside its existing card. Omit it to retain the previous framing.
+
+## Progressive guidance and reusable monitor
+
+`RevealCard.guidance` is opt-in controlled support with levels `cue`, `hint` and `full`. One button cycles Hint → Answer → Hide beneath the prompt. The consumer supplies the hint, answer, labels and state; `answerMinLines` keeps space for both support states without clipping longer text. Changing the selected record should reset guidance to `cue`. Existing card and click-to-reveal prompt behavior remains unchanged.
+
+`ExercisePanel variant="monitor"` reuses the workstation hardware frame with arbitrary children. `monitorLayout="flow"` is the default; `form` opts into the compact two-column field layout. `workstationMeta.clock` and `.date` share one line in the top bar. Omitting `.appLabel` omits the bottom taskbar and its decorative icon. `variant="workstation"` retains the contextual image and form grid. No simulated save, clock service or operating-system actions are bundled.
+
+See Exercise/Components stories `ProgressiveHint`, `ProgressiveAnswer`, `MonitorContent` and `MonitorForm`; final visual review belongs to the consumer.
+
+B1/B2/C1 compose ExercisePanel, QuizPromptHeader, QuizQuestion and QuizOption as a compact list of statement decisions. All examples remain visible, attempts are retained per item and only the selected completed explanation expands. Reopening it is silent. Evaluation stays in the shared lesson adapter. B1 image warm-ups count only their own image sequence; a dialogue portrait is not a progress surface.
+
+`ExercisePanel.navigation` accepts a controlled index, count, onChange and optional previous/next labels. It displays progress and native bounded navigation independently of exercise evaluation; no route, answer state or timer is bundled. B2 references and C1 grammar use the same navigation for short content groups.
+
+`warmupMediaSizing="presentation"` opts into the existing media-height scale and a centered proportional frame for isolated warm-up illustrations. `natural` remains the default, preserving existing full-width framing. Counters stay on the media; images remain whole with contain. B2 uses the bounded variation for objects rather than stretching its square cutouts across the full page.
+
+## Compact statement decisions
+
+`QuizOption layout="inline"` uses intrinsic width for short answers beside a prompt, reserving the result-mark width before and after evaluation. Supply `letter={null}` when letter markers are unnecessary. `block` remains the default and preserves existing full-width options. Density, native buttons, sound outcomes and correct/wrong/dim states keep their existing contracts.
+
+`QuizQuestion density="compact" tone="material"` provides Montserrat semibold body-size questions with the material foreground. Regular/default preserves the original practice size and quiz ink. `QuizPromptHeader` stacks its prompt and answers at narrow widths.
+
+SlidePage tools align to the trailing edge, including a wrapped tools row. GuidedScenario centers its case choices through the shared Row alignment variation; B1/B2/C1 consume the same composition. Source stories cover inline choice states, the compact prompt, B1 role swap, revealed review and narrow review. These stories were authored, not executed, in delivery45.
+
+## Controlled learner identity
+
+`LearningDialogue.learnerIdentity` accepts `{firstName, avatarUrl}` from the consumer. It applies only to lines marked `participant="learner"`; authored model speakers keep their names/portraits. Both values are required for the personalized identity. Missing/empty input or image failure yields You. Removing the prop clears the prior identity. `Avatar.onImageError` optionally informs controlled consumers while retaining Avatar’s own image fallback. `LearningDialogueLine.initials` optionally supplies the portrait fallback explicitly.
+
+The material adapter binds this prop from a scoped context and recognizes legacy You/You:role lines at the product boundary. All maintained dialogue consumers use the adapter. The iframe asks once per material; Teacher owns occurrence lookup, authentication and profile retrieval. Only firstName/avatarUrl cross the strict origin/window/version/key/source bridge. Nothing is added to URL/storage/logs. Source fixtures cover photo/no photo, prop clearing and failed-image replacement; not executed in this fast delivery.
+
+## Paired conversation and contextual support
+
+`LearningDialogue presentation="paired"` adds space before each new adjacent question/answer pair. All presentations use the same canonical bubble skin; density alone controls padding. Default dialogue presentation stays unchanged. Pairing affects presentation, not evaluation, identity or the number of lesson turns.
+
+`guidance.placement="line"` moves the existing bulb/model controls beside lines with a cue/hint. The consumer controls `activeLineId` and `level`; `onChange(level, lineId?)` identifies the activated answer. Other lines stay at cue level, and the current control collapses its own support. `line.guidanceLabel` supplies question-specific accessible names. Hidden layers remain mounted/inert to reserve text geometry. Default below-dialogue controls keep their current behavior and labels.
+
+`VocabularyControls density="compact"` reuses small IconButtons for inline support. Regular density remains the default. Audio controls retain their own column if present with inline support. TrialA1 greeting uses the compact standard dialogue in SlidePage’s focused column. Source fixtures cover cue/hint/model, cross-answer switching and narrow layout; these were authored, not executed, per the current fast-delivery policy.
+
+## Sequential support and unified bubble skin
+
+`LearningDialogue.sequentialGuidance` accepts controlled `hintedLineIds`, `revealedLineIds`, `onRevealHint(id?)` and `onRevealModel(id?)`. One shared VocabularyControls row sits below the dialogue, centered in normal content flow. Each activation reports the next eligible line in source order; undefined resets that support layer after completion. Visible models take precedence and are skipped by the next-tip command. Previously shown tips can reappear when models are hidden. No supported lines means no controls.
+
+Sequential support uses `VocabularyControls interaction="progressive"` with position/action labels instead of toggle pressed semantics. `hintDisabled` covers the state in which models already show every answer. Defaults retain existing toggle behavior. Standard level and inline guidance remain compatible; TrialA1 introduction and principal paired examples adopt the sequential row.
+
+The newer bubble paint is now the common Speech rule for guided and introductory conversation. An inset stroke avoids adding height to dense compact rows. Paired spacing no longer chooses a separate surface or border. Regular/compact remain meaningful density variations. Identity, completion and playback states retain their own contracts. Sequential source tests/fixtures are authored, not executed in the fast delivery.
+
+`LearningDialogue.bubbleWidth="fill"` stretches each bubble within its existing speaker-side width, useful for open conversation stems and short placeholders. It preserves the shared skin, spacing, identities, playback, translation and gap states; the default `content` sizing is unchanged. Consumer-authored prompts must distinguish open language stems from complete recorded dialogue.
+
+Sequential support keeps inactive layers mounted, inert and hidden with display:none, so only the visible cue/tip/model determines the bubble dimensions. Standard level/inline guidance retains its reserved geometry. TrialA1 greeting, rehearsal and open conversation use the same compact, content-sized dialogue as their recorded model, without paired margins or fill-width bubbles.
+
+### Hints without a model action
+
+Omit `sequentialGuidance.onRevealModel` to render just one ordered hint button below the dialogue. The controlled cue/hint layers retain the normal bubble dimensions, identities and keyboard behavior. Existing consumers that supply the callback keep both controls. See `SequentialHintsOnly`; material question adapters supply each teacher question and learner intention as ordinary dialogue lines.
+
+The page containing regular scene vocabulary can select `SlidePage width={{ vocabularyColumns: 3 }}`. Its heading and grid then share the same height-aware width recipe. The card grid keeps its default responsive three/two-column behavior; the page span is not a command to force three tiny columns on mobile. Existing page-width and vocabulary defaults are unchanged.
+
+`GrammarTable layout="patterns"` uses two columns: a plain purpose label, followed by the pattern and its example together. Supply a matching `columns.example` heading such as Pattern and example. This is useful for functional explanations and narrow screens; the default columns layout and pronoun chips remain unchanged. Concealed answers still hide both the pattern and example together.
+
+### Compreensão ao lado de diálogo
+
+Compor `RevealCard presentation="prompt"` numa lista numerada para perguntas factuais. A pergunta clicável revela a resposta abaixo; `VocabularyControls` oferece a lâmpada inferior quando há apoios graduais. Essa composição não reutiliza os participantes e balões do diálogo. A interação pessoal continua usando `LearningDialogue` com pistas e, normalmente, pelo menos três pares de fala. Os adaptadores dos materiais escolhem a finalidade; o componente não infere pedagogia a partir do título.
+
+
+### Slide appearance control
+
+`SlideDeck themeToggle={{ mode, onToggle }}` adds a controlled sun/moon icon immediately before the answer-sound control. `mode` is `dark` or `light`; `onToggle` belongs to the consumer, which also supplies the matching ThemeProvider. Omit the prop to preserve the existing generic deck. The button is named “Tema claro”, exposes its state with aria-pressed and names its next action in the tooltip. It does not change navigation, audio or exercise state.
+
+Maintained materials bind this control in their shared MaterialTheme/MaterialSlideDeck and experimental LessonShell. Presentations start dark; nested wrappers inherit the same session choice. The light theme reuses the canonical UI Library theme; it does not add a second color palette.
+
+VocabularyControls accepts optional `onReset` and `labels.reset` for a third neutral reset icon. The controlled consumer clears its revealed IDs, first-letter hints, show-all flag and active playback; VocabularyGrid also clears its hover preview. The callback stays optional for other activities that use the bulb/eye controls without a vocabulary reset.
+
+`ExercisePanel variant="reading"` apresenta um título e parágrafos diretos, com tipografia maior de leitura e espaçamento natural. Não cria From/Subject, controles extras, altura fixa ou scroll interno. O consumidor compõe Questions na segunda coluna de SlidePage e usa seu play no título para a narração.

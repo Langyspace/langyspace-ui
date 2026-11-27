@@ -1,0 +1,92 @@
+{
+  "feedback": 62,
+  "approvedRequestSha256": "687522d13efc5eb8fda79e4f036bdc946686e8d5234ea32efe18eaea18278643",
+  "items": [
+    {
+      "feedback": 62,
+      "id": "L.1",
+      "material": "TrialA1",
+      "text": "I’m happy today! I love playing soccer with my friends. I have my sneakers on and my ball with me.\n\nKim is on a bench with her headphones. We both like music, but I don’t like books",
+      "speaker": "Ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/listening-ana62-1.mp3",
+      "playbackRate": 1,
+      "synthesisInput": "I'm happy today! I love playing soccer with my friends. I have my sneakers on and my ball with me.\n\nKim is on a bench with her headphones. We both like music, but I don't like books",
+      "startedAt": "2026-11-21T16:16:43.894463+00:00",
+      "status": "ready",
+      "requestId": "cYziOxuvJ5A280jE2ASy",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "cYziOxuvJ5A280jE2ASy",
+        "character-cost": "72",
+        "history-item-id": "YzTKFnvDuODTiotL3gTy",
+        "content-type": "audio/mpeg"
+      },
+      "bytes": 199409,
+      "sha256": "98f9e31599522713d942fb4111bfd6458aa0e1e57fdf25c3bcbc89c37a1240f3",
+      "durationSeconds": 12.399456,
+      "sampleRate": 44100,
+      "channels": 1,
+      "assetPath": "/Users/margaridamartins/.codex/outputs/listening-free-conversation62-20261121/approved-audios/listening-ana62-1.mp3",
+      "completedAt": "2026-11-21T16:16:45.010909+00:00",
+      "processing": "Unmodified single-call provider MP3; no joins, cuts or playback QA"
+    },
+    {
+      "feedback": 62,
+      "id": "L.2",
+      "material": "TrialA1",
+      "text": "I also like watching movies at home. I love dogs, and Kim likes cats.\n\nNow I’m hungry! I want pizza, but I don’t like salad.\n\nWhat about you? Tell me what you like!",
+      "speaker": "Ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/listening-ana62-2.mp3",
+      "playbackRate": 1,
+      "synthesisInput": "I also like watching movies at home. I love dogs, and Kim likes cats.\n\nNow I'm hungry! I want pizza, but I don't like salad.\n\nWhat about you? Tell me what you like!",
+      "startedAt": "2026-11-21T16:16:45.011489+00:00",
+      "status": "ready",
+      "requestId": "NA3ziYfvnaOXVLotKoMF",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "NA3ziYfvnaOXVLotKoMF",
+        "character-cost": "66",
+        "history-item-id": "FbgON4ZtAmbCy1644Gxw",
+        "content-type": "audio/mpeg"
+      },
+      "bytes": 190632,
+      "sha256": "1bae7aa442874119f7abc7e281e57a2a23205f649e485e168c16c713e3289220",
+      "durationSeconds": 11.842177,
+      "sampleRate": 44100,
+      "channels": 1,
+      "assetPath": "/Users/margaridamartins/.codex/outputs/listening-free-conversation62-20261121/approved-audios/listening-ana62-2.mp3",
+      "completedAt": "2026-11-21T16:16:46.004770+00:00",
+      "processing": "Unmodified single-call provider MP3; no joins, cuts or playback QA"
+    }
+  ],
+  "generationCalls": 2,
+  "retries": 0,
+  "playbackQA": false,
+  "status": "ready"
+}

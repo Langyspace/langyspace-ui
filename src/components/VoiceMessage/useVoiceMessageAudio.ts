@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { observeFeedbackMedia } from '../../internal/feedbackSounds'
 
 /** Count native playing events for new listening passes, never clicks or resumes. */
 export function useVoiceMessageAudio(active: boolean) {
@@ -18,7 +19,16 @@ export function useVoiceMessageAudio(active: boolean) {
   useEffect(() => {
     mountedRef.current = true
     const audio = audioRef.current
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        intentRef.current = false
+        attemptRef.current += 1
+        audio?.pause()
+      }
+    }
+    document.addEventListener('visibilitychange', onVisibilityChange)
     return () => {
+      document.removeEventListener('visibilitychange', onVisibilityChange)
       mountedRef.current = false
       intentRef.current = false
       attemptRef.current += 1
@@ -37,6 +47,7 @@ export function useVoiceMessageAudio(active: boolean) {
   const toggle = async () => {
     const audio = audioRef.current
     if (!audio || !active) return
+    observeFeedbackMedia(audio)
     if (intentRef.current) {
       intentRef.current = false
       attemptRef.current += 1
@@ -86,6 +97,7 @@ export function useVoiceMessageAudio(active: boolean) {
       },
       onPause: () => {
         if (audioRef.current?.ended || audioRef.current?.error) return
+        attemptRef.current += 1
         intentRef.current = false
         setStatus('paused')
       },

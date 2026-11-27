@@ -1,3 +1,5 @@
+import { ThemeProvider } from 'styled-components'
+import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 
@@ -13,3 +15,70 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
+export const StackedDescription: Story = {
+  args: {
+    tone: 'material',
+    density: 'compact',
+    layout: 'stacked',
+    items: [
+      {
+        id: 'observation',
+        label: 'What you observed',
+        value: 'The last two updates arrived after the meetings.',
+      },
+      {
+        id: 'effect',
+        label: 'The effect',
+        value: 'The team had to reopen decisions.',
+      },
+      {
+        id: 'goal',
+        label: 'A workable change',
+        value: 'Send confirmed figures early and flag missing ones.',
+      },
+    ],
+  },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+}
+export const CompactFacts: Story = {
+  args: {
+    tone: 'material',
+    density: 'compact',
+    items: [
+      { id: 'activity', label: 'Activity', value: 'playing soccer' },
+      { id: 'duration', label: 'How long', value: 'an hour' },
+      { id: 'partner', label: 'With whom', value: 'my friends' },
+    ],
+  },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+}
+
+export const MaterialContact: Story = {
+  args: {
+    tone: 'material',
+    items: [
+      { id: 'first', label: 'First name', value: 'Ana' },
+      { id: 'last', label: 'Last name', value: 'Souza' },
+      { id: 'phone', label: 'Phone number', value: '984 221 507' },
+    ],
+  },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+}

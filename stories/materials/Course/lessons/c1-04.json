@@ -1,0 +1,643 @@
+{
+  "version": 81,
+  "code": "C1.04",
+  "key": "c1-04",
+  "title": "I’d rather you didn’t",
+  "goal": "Negotiate a boundary that recognises both people’s needs",
+  "freeConversationInstruction": "Talk about boundaries, expectations and ways to disagree while maintaining a good relationship",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how feedback separates an observation from an inferred attitude",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "How would you describe the impact of a shared-space problem?",
+          "hint": "When …, I find it difficult to …",
+          "cue": "Describe impact without assigning motives"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What competing need should be acknowledged?",
+          "hint": "I understand that you need …",
+          "cue": "Acknowledge the competing need"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What specific boundary could protect both needs?",
+          "hint": "Would you mind …, with … if …?",
+          "cue": "Propose a specific boundary"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Boundaries and expectations",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C104-V81.0",
+          "word": "set a boundary",
+          "translation": "",
+          "example": "A clear request can help set a boundary",
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "set a boundary",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C104-FS81.0",
+          "audioText": "set a boundary. A clear request can help set a boundary."
+        },
+        {
+          "id": "C104-V81.1",
+          "word": "bring something up",
+          "translation": "",
+          "example": "Bring it up before resentment grows",
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "bring something up",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C104-FS81.1",
+          "audioText": "bring something up. Bring it up before resentment grows."
+        },
+        {
+          "id": "C104-V81.2",
+          "word": "a shared space",
+          "translation": "",
+          "example": "We both use the shared space",
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "a shared space",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C104-FS81.2",
+          "audioText": "a shared space. We both use the shared space."
+        },
+        {
+          "id": "C104-V81.3",
+          "word": "an expectation",
+          "translation": "",
+          "example": "The expectation needs to be explicit",
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "an expectation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C104-FS81.3",
+          "audioText": "an expectation. The expectation needs to be explicit."
+        },
+        {
+          "id": "C104-V81.4",
+          "word": "a compromise",
+          "translation": "",
+          "example": "A compromise should protect both needs",
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "a compromise",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C104-FS81.4",
+          "audioText": "a compromise. A compromise should protect both needs."
+        },
+        {
+          "id": "C104-V81.5",
+          "word": "a recurring issue",
+          "translation": "",
+          "example": "The late calls have become a recurring issue",
+          "imageUrl": "c1-04-vocabulary81",
+          "imageAlt": "a recurring issue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C104-FS81.5",
+          "audioText": "a recurring issue. The late calls have become a recurring issue."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The need for quiet",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Home-working perspective · simulated source",
+      "subject": "Predictability, not silence at all costs",
+      "paragraphs": [
+        "The person working at home says sound from late calls makes concentrated evening work difficult. The concern is not who the other person contacts; it is not knowing when the shared room will be quiet. A predictable period would make it easier to schedule demanding work. The person is willing to discuss exceptions but does not want every evening to require a new negotiation.",
+        "The account describes an impact, not proof that the caller is inconsiderate. An effective request needs a concrete time, a place or behaviour that can change, and a way to review the arrangement. A judgement about personality is less actionable than a description of when concentration is interrupted."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The need for contact",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Family-call perspective · simulated source",
+      "subject": "A different time zone",
+      "paragraphs": [
+        "The other person uses late calls to stay in touch with family in a different time zone. An earlier routine slot is not always available. They are willing to use a smaller room and headphones, but worry that an absolute ban would also prevent an urgent conversation. They want a clear difference between a regular arrangement and an exceptional situation.",
+        "This perspective does not remove the impact of sound in a shared space. It identifies a second need that a workable agreement must address. Both people could benefit from naming an ordinary quiet period and agreeing how to communicate an exception, rather than treating every deviation as proof of bad intentions."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Raise the impact, not an accusation",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C104-D81.1",
+          "speaker": "Kim",
+          "text": "Could we bring up the late calls before it becomes a recurring argument?",
+          "audioText": "Could we bring up the late calls before it becomes a recurring argument?",
+          "translation": "Podemos conversar sobre as ligações tarde antes de isso virar uma discussão recorrente?"
+        },
+        {
+          "id": "C104-D81.2",
+          "speaker": "Ana",
+          "text": "Yes. I’ve been finding it difficult to concentrate when calls carry through the shared room",
+          "audioText": "Yes. I’ve been finding it difficult to concentrate when calls carry through the shared room.",
+          "translation": "Sim. Tenho achado difícil me concentrar quando o som das chamadas passa pela sala compartilhada"
+        },
+        {
+          "id": "C104-D81.3",
+          "speaker": "Kim",
+          "text": "I understand. I’m calling family in another time zone, so an earlier slot is difficult",
+          "audioText": "I understand. I’m calling family in another time zone, so an earlier slot is difficult.",
+          "translation": "Entendo. Ligo para a família em outro fuso, então um horário mais cedo é difícil"
+        },
+        {
+          "id": "C104-D81.4",
+          "speaker": "Ana",
+          "text": "Would you mind using the smaller room and headphones after nine?",
+          "audioText": "Would you mind using the smaller room and headphones after nine?",
+          "translation": "Você se importaria de usar o quarto menor e fones depois das nove?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What impact do the calls have?",
+          "hint": "They make it difficult to …",
+          "answer": "The calls carry through the shared room and make concentration difficult"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why is an earlier call difficult?",
+          "hint": "The family is …",
+          "answer": "The family is in another time zone"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What adjustment is proposed after nine?",
+          "hint": "Use … and …",
+          "answer": "The proposal is to use the smaller room and headphones after nine"
+        }
+      ],
+      "dialogueGroup": "c1-04.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Protect both interests",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C104-D81.5",
+          "speaker": "Kim",
+          "text": "I can do that, but I wouldn’t want to promise there will never be an urgent call",
+          "audioText": "I can do that, but I wouldn’t want to promise there will never be an urgent call.",
+          "translation": "Posso fazer isso, mas não gostaria de prometer que nunca haverá uma ligação urgente"
+        },
+        {
+          "id": "C104-D81.6",
+          "speaker": "Ana",
+          "text": "That’s reasonable. I’d rather you let me know when there’s an exception than leave me guessing",
+          "audioText": "That’s reasonable. I’d rather you let me know when there’s an exception than leave me guessing.",
+          "translation": "É razoável. Eu preferiria que me avisasse quando houvesse uma exceção em vez de me deixar adivinhar"
+        },
+        {
+          "id": "C104-D81.7",
+          "speaker": "Kim",
+          "text": "Could we agree a regular quiet period, with a brief message if something unusual happens?",
+          "audioText": "Could we agree a regular quiet period, with a brief message if something unusual happens?",
+          "translation": "Podemos combinar um período de silêncio, com uma mensagem breve se algo incomum acontecer?"
+        },
+        {
+          "id": "C104-D81.8",
+          "speaker": "Ana",
+          "text": "Yes. The main issue for me is predictable concentration time, not controlling who you speak to",
+          "audioText": "Yes. The main issue for me is predictable concentration time, not controlling who you speak to.",
+          "translation": "Sim. O principal para mim é ter um horário previsível de concentração, não controlar com quem você fala"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What absolute promise does the caller avoid?",
+          "hint": "They won’t promise …",
+          "answer": "The caller won’t promise there will never be an urgent call"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How could exceptions be communicated?",
+          "hint": "With … when …",
+          "answer": "Exceptions could be communicated with a brief message"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What is the underlying need?",
+          "hint": "It is …, not …",
+          "answer": "The underlying need is predictable concentration time, not control over family contact"
+        }
+      ],
+      "dialogueGroup": "c1-04.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Check the extent of agreement",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C104-D81.9",
+          "speaker": "Kim",
+          "text": "Then perhaps we can protect that time and still make the family call possible",
+          "audioText": "Then perhaps we can protect that time and still make the family call possible.",
+          "translation": "Então talvez possamos proteger esse horário e manter a ligação com a família"
+        },
+        {
+          "id": "C104-D81.10",
+          "speaker": "Ana",
+          "text": "What period would be workable for you?",
+          "audioText": "What period would be workable for you?",
+          "translation": "Qual período seria viável para você?"
+        },
+        {
+          "id": "C104-D81.11",
+          "speaker": "Kim",
+          "text": "I’ll check the family’s availability before committing to a precise end time",
+          "audioText": "I’ll check the family’s availability before committing to a precise end time.",
+          "translation": "Vou conferir a disponibilidade da família antes de me comprometer com um horário exato"
+        },
+        {
+          "id": "C104-D81.12",
+          "speaker": "Ana",
+          "text": "Thanks. Let’s confirm the arrangement rather than assume a polite response means full agreement",
+          "audioText": "Thanks. Let’s confirm the arrangement rather than assume a polite response means full agreement.",
+          "translation": "Obrigada. Vamos confirmar o acordo em vez de presumir que uma resposta educada significa concordância total"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What two needs are they trying to protect?",
+          "hint": "They want both … and …",
+          "answer": "They want both concentration time and family calls to remain possible"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why isn’t a precise end time promised yet?",
+          "hint": "Family availability …",
+          "answer": "Family availability still needs checking"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why do they want explicit confirmation?",
+          "hint": "A polite response may not mean …",
+          "answer": "A polite response may not mean full agreement"
+        }
+      ],
+      "dialogueGroup": "c1-04.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Raise a difficult issue",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Choose distance and directness for the relationship",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A specific, softened request",
+          "verb": "Would you mind + -ing?",
+          "example": "Would you mind using headphones after nine?"
+        },
+        {
+          "id": "1",
+          "subject": "A preference about another person’s action",
+          "verb": "I’d rather + subject + past form",
+          "example": "I’d rather you let me know about an exception"
+        },
+        {
+          "id": "2",
+          "subject": "A stronger expression of irritation",
+          "verb": "I wish + subject + wouldn’t + verb",
+          "example": "I wish you wouldn’t take calls here — consider whether this tone helps"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Agree on a boundary",
+      "instruction": "Raise the issue and try to agree on a workable boundary",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A conditional agreement",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I can make the regular family call before ten thirty, using the smaller room and headphones. I’m willing to keep the shared room quiet after nine, provided we allow a brief exception for an urgent call and I message you if that happens. I’m not asking for unlimited late calls; I just don’t want us to treat an emergency as a broken routine agreement. Could you tell me whether that protects the concentration time you need? If the sound still carries, we can review the room arrangement rather than turn it into a judgement about either person’s consideration for others",
+      "audioText": "Hi, Ana. I can make the regular family call before ten thirty, using the smaller room and headphones. I’m willing to keep the shared room quiet after nine, provided we allow a brief exception for an urgent call and I message you if that happens. I’m not asking for unlimited late calls; I just don’t want us to treat an emergency as a broken routine agreement. Could you tell me whether that protects the concentration time you need? If the sound still carries, we can review the room arrangement rather than turn it into a judgement about either person’s consideration for others.",
+      "audioId": "C104-L81.1",
+      "greeting": "I’d like to clarify what I’m asking for",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What regular calling arrangement is offered?",
+          "hint": "Calls would be … using …",
+          "answer": "Regular calls would be before ten thirty, using the smaller room and headphones"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What condition accompanies quiet after nine?",
+          "hint": "There must be … with …",
+          "answer": "There must be brief urgent-call exceptions with a message"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What could be reviewed if sound still carries?",
+          "hint": "They could review …",
+          "answer": "They could review the room arrangement rather than judge each other’s consideration"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Confirm the workable boundary",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Set a boundary and keep a way forward",
+      "instruction": "Watch Paul protect his existing commitments, then negotiate your own boundary",
+      "minutes": 4,
+      "video": {
+        "videoId": "hO98Bjn87KM",
+        "startSeconds": 79,
+        "endSeconds": 135,
+        "title": "Asking a favour — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-04.video102.q1",
+          "prompt": "Which two existing commitments does Paul protect?",
+          "hint": "Listen to his reasons for refusing the afternoon and evening",
+          "answer": "He protects a work deadline and his niece’s birthday cinema trip"
+        },
+        {
+          "id": "c1-04.video102.q2",
+          "prompt": "What makes his refusal more informative than a bare no?",
+          "hint": "Notice the reasons and the conditional phrase",
+          "answer": "He explains the constraints and says he would help if he could"
+        },
+        {
+          "id": "c1-04.video102.q3",
+          "prompt": "What concrete arrangement ends the negotiation?",
+          "hint": "Listen to the final time and compensation discussion",
+          "answer": "They agree on six the next morning after discussing an extra day’s holiday"
+        },
+        {
+          "id": "c1-04.video102.q4",
+          "prompt": "Respond to a late request using I’d rather and offer one viable option",
+          "hint": "Protect a need while recognising the other person’s problem",
+          "answer": "Example: I’d rather we didn’t change tonight’s plans at this stage. I can review the work first thing tomorrow"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Negotiate a boundary that recognises both people’s needs"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Two needs in a shared space",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Person A",
+          "value": "Predictable quiet for evening home work"
+        },
+        {
+          "id": "1",
+          "label": "Person B",
+          "value": "Family calls across time zones"
+        },
+        {
+          "id": "2",
+          "label": "Possible adjustment",
+          "value": "Smaller room · headphones · an exception process"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you open the discussion without assigning motives?",
+          "hint": "I’ve noticed …, which makes … difficult"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What accommodation would you request?",
+          "hint": "I’d rather we … while still allowing …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would count as an agreed exception?",
+          "hint": "If …, please … so that …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Two needs in a shared space"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "What is and isn’t agreed",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Regular arrangement",
+          "value": "Small room · headphones · calls before 10:30"
+        },
+        {
+          "id": "1",
+          "label": "Quiet period",
+          "value": "Shared room after 9"
+        },
+        {
+          "id": "2",
+          "label": "Condition",
+          "value": "Urgent exceptions · send a message"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Does the offer protect the concentration time you need?",
+          "hint": "It addresses …, provided …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you confirm the urgent-call exception?",
+          "hint": "For an urgent call, we’d agree to …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What review would you suggest if the arrangement doesn’t work?",
+          "hint": "If sound still …, let’s review … rather than …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "What is and isn’t agreed"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Person A",
+          "value": "Predictable quiet for evening home work"
+        },
+        {
+          "id": "1",
+          "label": "Person B",
+          "value": "Family calls across time zones"
+        },
+        {
+          "id": "2",
+          "label": "Possible adjustment",
+          "value": "Smaller room · headphones · an exception process"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "How would you bring this up without making it personal?",
+          "cue": "Describe the impact and make a specific request",
+          "hint": "I’ve been finding … difficult. Would you mind …?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What could you offer in return?",
+          "cue": "Acknowledge the other person’s need and suggest a compromise",
+          "hint": "I understand … Perhaps we could …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check whether your offer meets their concern?",
+          "cue": "Invite their perspective and negotiate one concrete adjustment",
+          "hint": "Would that address your concern about …, or is there something I’ve missed?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

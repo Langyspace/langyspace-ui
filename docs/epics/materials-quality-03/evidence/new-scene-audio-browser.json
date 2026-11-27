@@ -1,0 +1,253 @@
+[
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b1",
+    "width": 1440,
+    "name": "The flat tire",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 487.359375,
+        "y": 394.78125,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": null,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b1",
+    "width": 1440,
+    "name": "The suitcase",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 856.03125,
+        "y": 703.015625,
+        "width": 303.96875,
+        "height": 146
+      }
+    },
+    "playback": null,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b1",
+    "width": 1440,
+    "name": "The coast",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 856,
+        "y": 246.9375,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": null,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 1440,
+    "name": "The laptop",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 728,
+        "y": 245.328125,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": null,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 1440,
+    "name": "Ana at work",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 440,
+        "y": 245.328125,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": null,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 1440,
+    "name": "The desk",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 408,
+        "y": 235.328125,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": null,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b1",
+    "width": 390,
+    "name": "The flat tire",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 24,
+        "y": 273.390625,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/assets/flat-tire-label.mp3",
+      "duration": 1.486077,
+      "playing": true,
+      "time": 0.020194,
+      "olderPaused": true
+    },
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b1",
+    "width": 390,
+    "name": "The suitcase",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 62.03125,
+        "y": 285.390625,
+        "width": 303.96875,
+        "height": 146
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/assets/suitcase-label.mp3",
+      "duration": 1.393197,
+      "playing": true,
+      "time": 0.020237,
+      "olderPaused": true
+    },
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b1",
+    "width": 390,
+    "name": "The coast",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 62,
+        "y": 273.390625,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/assets/coast-label.mp3",
+      "duration": 1.160998,
+      "playing": true,
+      "time": 0.02322,
+      "olderPaused": true
+    },
+    "pass": true
+  },
+  {
+    "case": "native-replay-tolerance-and-lifecycle",
+    "material": "trial-b1",
+    "width": 390,
+    "jitterCssPx": [6, 8, 12],
+    "nativeReplay": true,
+    "noOverlap": true,
+    "pageExitBeforeCompletion": true,
+    "reentryNotBusy": true,
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 390,
+    "name": "The laptop",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 62,
+        "y": 402.796875,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB2/assets/laptop-label.mp3",
+      "duration": 1.346757,
+      "playing": true,
+      "time": 0.02322,
+      "olderPaused": true
+    },
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 390,
+    "name": "Ana at work",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 24,
+        "y": 328.796875,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB2/assets/ana-at-work-label.mp3",
+      "duration": 1.718277,
+      "playing": true,
+      "time": 0.021588,
+      "olderPaused": true
+    },
+    "pass": true
+  },
+  {
+    "case": "recorded-label-balloon",
+    "material": "trial-b2",
+    "width": 390,
+    "name": "The desk",
+    "geometry": {
+      "inside": true,
+      "rect": {
+        "x": 24,
+        "y": 328.796875,
+        "width": 304,
+        "height": 170
+      }
+    },
+    "playback": {
+      "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB2/assets/desk-label.mp3",
+      "duration": 1.207438,
+      "playing": true,
+      "time": 0.021655,
+      "olderPaused": true
+    },
+    "pass": true
+  }
+]

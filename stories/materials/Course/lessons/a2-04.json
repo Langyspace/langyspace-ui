@@ -1,0 +1,561 @@
+{
+  "version": 81,
+  "code": "A2.04",
+  "key": "a2-04",
+  "title": "Are you doing anything on Saturday?",
+  "goal": "Invite someone, explain a conflict and find another time",
+  "freeConversationInstruction": "Talk about upcoming plans and make invitations, giving reasons and suggesting alternatives",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Make a simple invitation using a day and time",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What are you doing this weekend?",
+          "hint": "I’m … on …",
+          "cue": "Describe a weekend plan"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "When are you free?",
+          "hint": "I’m free on … at …",
+          "cue": "Say when you’re free"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How could you invite me to join you?",
+          "hint": "Would you like to …?",
+          "cue": "Invite me to join you"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Plans for the weekend",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A204-V81.0",
+          "word": "a food festival",
+          "translation": "",
+          "example": "There’s a food festival this weekend",
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a food festival",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A204-FS81.0",
+          "audioText": "a food festival. There’s a food festival this weekend."
+        },
+        {
+          "id": "A204-V81.1",
+          "word": "a concert",
+          "translation": "",
+          "example": "We’re going to a concert on Friday",
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a concert",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A204-FS81.1",
+          "audioText": "a concert. We’re going to a concert on Friday."
+        },
+        {
+          "id": "A204-V81.2",
+          "word": "a barbecue",
+          "translation": "",
+          "example": "Would you like to come to a barbecue?",
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a barbecue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A204-FS81.2",
+          "audioText": "a barbecue. Would you like to come to a barbecue?"
+        },
+        {
+          "id": "A204-V81.3",
+          "word": "a birthday party",
+          "translation": "",
+          "example": "I’m going to a birthday party tonight",
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a birthday party",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A204-FS81.3",
+          "audioText": "a birthday party. I’m going to a birthday party tonight."
+        },
+        {
+          "id": "A204-V81.4",
+          "word": "a yoga class",
+          "translation": "",
+          "example": "My yoga class is at two",
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a yoga class",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A204-FS81.4",
+          "audioText": "a yoga class. My yoga class is at two."
+        },
+        {
+          "id": "A204-V81.5",
+          "word": "a picnic",
+          "translation": "",
+          "example": "How about a picnic on Sunday?",
+          "imageUrl": "a2-04-vocabulary81",
+          "imageAlt": "a picnic",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A204-FS81.5",
+          "audioText": "a picnic. How about a picnic on Sunday?"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "An invitation",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A204-D81.1",
+          "speaker": "Kim",
+          "text": "Are you doing anything on Saturday? There’s a food festival",
+          "audioText": "Are you doing anything on Saturday? There’s a food festival.",
+          "translation": "Você vai fazer algo no sábado? Tem um festival de comida"
+        },
+        {
+          "id": "A204-D81.2",
+          "speaker": "Ana",
+          "text": "I’m going to a yoga class at two. What time is the festival?",
+          "audioText": "I’m going to a yoga class at two. What time is the festival?",
+          "translation": "Vou a uma aula de yoga às duas. Que horas é o festival?"
+        },
+        {
+          "id": "A204-D81.3",
+          "speaker": "Kim",
+          "text": "It’s open all afternoon, and on Sunday morning too",
+          "audioText": "It’s open all afternoon, and on Sunday morning too.",
+          "translation": "Fica aberto a tarde toda e também no domingo de manhã"
+        },
+        {
+          "id": "A204-D81.4",
+          "speaker": "Ana",
+          "text": "Sunday is better for me. I’m free at ten",
+          "audioText": "Sunday is better for me. I’m free at ten.",
+          "translation": "Domingo é melhor para mim. Estou livre às dez"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What is Ana doing on Saturday at two?",
+          "hint": "She’s going to …",
+          "answer": "Ana is going to a yoga class"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When is the festival open?",
+          "hint": "It’s open … and …",
+          "answer": "The festival is open on Saturday afternoon and Sunday morning"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "When is Ana free on Sunday?",
+          "hint": "She’s free at …",
+          "answer": "Ana is free at ten on Sunday"
+        }
+      ],
+      "dialogueGroup": "a2-04.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Finding a time",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A204-D81.5",
+          "speaker": "Kim",
+          "text": "Great! Shall we meet at the entrance?",
+          "audioText": "Great! Shall we meet at the entrance?",
+          "translation": "Ótimo! Vamos nos encontrar na entrada?"
+        },
+        {
+          "id": "A204-D81.6",
+          "speaker": "Ana",
+          "text": "Yes. I’m going to try something new this time",
+          "audioText": "Yes. I’m going to try something new this time.",
+          "translation": "Sim. Desta vez vou experimentar algo novo"
+        },
+        {
+          "id": "A204-D81.7",
+          "speaker": "Kim",
+          "text": "Me too. I’ll check the opening time tonight",
+          "audioText": "Me too. I’ll check the opening time tonight.",
+          "translation": "Eu também. Vou conferir o horário de abertura hoje à noite"
+        },
+        {
+          "id": "A204-D81.8",
+          "speaker": "Ana",
+          "text": "Thanks. Send me a message when you know",
+          "audioText": "Thanks. Send me a message when you know.",
+          "translation": "Obrigada. Me mande uma mensagem quando souber"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Where do they agree to meet?",
+          "hint": "They’ll meet at …",
+          "answer": "They agree to meet at the entrance"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does Ana plan to do at the festival?",
+          "hint": "She’s going to …",
+          "answer": "Ana is going to try something new"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What will Kim check that evening?",
+          "hint": "She’ll check …",
+          "answer": "Kim will check the opening time and message Ana"
+        }
+      ],
+      "dialogueGroup": "a2-04.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Make a weekend arrangement",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "Are you doing anything on Saturday?",
+          "cue": "Describe a plan or say you are free",
+          "hint": "I’m … on Saturday / I’m free on …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Would you like to go together?",
+          "cue": "Accept or suggest another day",
+          "hint": "I’d love to, but … How about …?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Where shall we meet?",
+          "cue": "Agree on a meeting point and check the time",
+          "hint": "Let’s meet at … Does … work for you?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "An arrangement or an intention?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A confirmed arrangement",
+          "verb": "am / is / are + verb-ing + future time",
+          "example": "I’m going to a yoga class on Saturday"
+        },
+        {
+          "id": "1",
+          "subject": "An intention",
+          "verb": "am / is / are going to + verb",
+          "example": "I’m going to try something new"
+        },
+        {
+          "id": "2",
+          "subject": "Decline and offer an alternative",
+          "verb": "I’d love to, but … How about …?",
+          "example": "I’d love to, but I’m busy. How about Sunday?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Find a plan that works",
+      "instruction": "Invite me to the food festival and find a time that works for both of us",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The opening time is later",
+      "instruction": "Listen and answer, then open the video shared in the chat",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! I checked the food festival. It opens at eleven on Sunday, not ten. Would eleven thirty work for you? We could meet at the main entrance and have lunch there. I’m still free in the afternoon. If Sunday is difficult, the festival is also open on Saturday until six. What do you think?",
+      "audioText": "Hi, Ana! I checked the food festival. It opens at eleven on Sunday, not ten. Would eleven thirty work for you? We could meet at the main entrance and have lunch there. I’m still free in the afternoon. If Sunday is difficult, the festival is also open on Saturday until six. What do you think?",
+      "audioId": "A204-L81.1",
+      "greeting": "This clip gave me another idea for making plans",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What time does the festival open on Sunday?",
+          "hint": "It opens at …",
+          "answer": "The festival opens at eleven on Sunday"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "When and where does Kim suggest meeting?",
+          "hint": "She suggests … at …",
+          "answer": "Kim suggests meeting at eleven thirty at the main entrance"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What alternative does Kim offer?",
+          "hint": "They could go on …",
+          "answer": "They could go on Saturday, when the festival is open until six"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "videoPageId": "s_video102"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Confirm or suggest an alternative",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Find a plan Jack will enjoy",
+      "instruction": "Watch the friends consider activities, then suggest another plan",
+      "minutes": 4,
+      "video": {
+        "videoId": "E8FM5igDBDI",
+        "startSeconds": 22,
+        "endSeconds": 88,
+        "title": "Making plans — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a2-04.video102.q1",
+          "prompt": "Why are they organising a celebration?",
+          "hint": "Listen to the first sentence about Jack",
+          "answer": "It’s Jack’s birthday next week"
+        },
+        {
+          "id": "a2-04.video102.q2",
+          "prompt": "Why don’t they choose the cinema?",
+          "hint": "Listen to what happened last week",
+          "answer": "They already saw the film and didn’t find it very funny"
+        },
+        {
+          "id": "a2-04.video102.q3",
+          "prompt": "What activity does Jack like?",
+          "hint": "Listen after the ice-skating suggestion",
+          "answer": "He likes bowling"
+        },
+        {
+          "id": "a2-04.video102.q4",
+          "prompt": "Invite your teacher to something you both might enjoy",
+          "hint": "Suggest an activity and ask about availability",
+          "answer": "Example: Would you like to go to a café on Saturday?"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Invite someone, explain a conflict and find another time"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Festival availability",
+      "options": [
+        {
+          "id": "sat",
+          "title": "Saturday",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Your diary",
+              "value": "Yoga · 2 pm"
+            },
+            {
+              "id": "1",
+              "label": "Festival",
+              "value": "12 pm–6 pm"
+            },
+            {
+              "id": "2",
+              "label": "Teacher",
+              "value": "Ask when she’s free"
+            }
+          ]
+        },
+        {
+          "id": "sun",
+          "title": "Sunday",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Your diary",
+              "value": "Free from 10 am"
+            },
+            {
+              "id": "1",
+              "label": "Festival",
+              "value": "Morning opening · check first"
+            },
+            {
+              "id": "2",
+              "label": "Teacher",
+              "value": "Ask when she’s free"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "invite",
+          "prompt": "Would you like to go to the festival together?",
+          "hint": "Yes, I’d love to. / I’d like to, but …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What time fits your diary?",
+          "hint": "I’m … at … How about …?"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What information should we check first?",
+          "hint": "What time does …? Shall we check …?"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Updated invitation",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Sunday opening",
+          "value": "11 am"
+        },
+        {
+          "id": "1",
+          "label": "Kim’s suggestion",
+          "value": "11:30 am · main entrance"
+        },
+        {
+          "id": "2",
+          "label": "Alternative",
+          "value": "Saturday · before 6 pm"
+        }
+      ],
+      "questions": [
+        {
+          "id": "time",
+          "prompt": "Does eleven thirty work for you?",
+          "hint": "That works. / I can’t because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Where shall we meet?",
+          "hint": "Let’s meet at …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What alternative could you suggest if Sunday is difficult?",
+          "hint": "How about Saturday …?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Updated invitation"
+    }
+  }
+}

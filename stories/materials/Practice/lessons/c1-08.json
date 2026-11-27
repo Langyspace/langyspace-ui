@@ -1,0 +1,279 @@
+{
+  "key": "c1-08",
+  "code": "C1.08",
+  "title": "Much as I’d like to…",
+  "first": {
+    "id": "course-practice-c1-08-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-08-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "as"
+          },
+          {
+            "id": "b",
+            "text": "as of"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Much as já introduz a concessão: você reconhece um desejo e mantém seu limite. A oração vem diretamente depois, sem of. Por isso: “Much as I’d like to, I can’t agree”"
+          },
+          "wrong": {
+            "title": "Much as já introduz a concessão: você reconhece um desejo e mantém seu limite.",
+            "message": "A oração vem diretamente depois, sem of. Por isso: “Much as I’d like to, I can’t agree”"
+          }
+        },
+        "context": "Much ___ I’d like to, I can’t agree"
+      },
+      {
+        "id": "course-c1-08-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Nessa concessão com however, o adjetivo vem logo depois dele. Só então aparecem o sujeito e o verbo: useful it is. Por isso: “However useful it is, I need more notice”"
+          },
+          "wrong": {
+            "title": "Nessa concessão com however, o adjetivo vem logo depois dele.",
+            "message": "Só então aparecem o sujeito e o verbo: useful it is. Por isso: “However useful it is, I need more notice”"
+          }
+        },
+        "context": "However useful it is, I need more notice"
+      },
+      {
+        "id": "course-c1-08-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Whatever plan do we choose, I need notice"
+          },
+          {
+            "id": "a",
+            "text": "Whatever plan we choose, I need notice"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui whatever introduz uma concessão, não uma pergunta direta. Por isso mantemos a ordem we choose, sem do we choose. Por isso: “Whatever plan we choose, I need notice”"
+          },
+          "wrong": {
+            "title": "Aqui whatever introduz uma concessão, não uma pergunta direta.",
+            "message": "Por isso mantemos a ordem we choose, sem do we choose. Por isso: “Whatever plan we choose, I need notice”"
+          }
+        }
+      },
+      {
+        "id": "course-c1-08-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "like"
+          },
+          {
+            "id": "b",
+            "text": "liked"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O would continua pedindo o verbo básico dentro dessa concessão. Por isso usamos would like, não would liked. Por isso: “Much as I would like to agree, the dates don’t work”"
+          },
+          "wrong": {
+            "title": "O would continua pedindo o verbo básico dentro dessa concessão.",
+            "message": "Por isso usamos would like, não would liked. Por isso: “Much as I would like to agree, the dates don’t work”"
+          }
+        },
+        "context": "Much as I would ___ to agree, the dates don’t work"
+      },
+      {
+        "id": "course-c1-08-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de however much, mantemos a ordem de afirmação: we offer. Não fazemos a inversão do we offer de uma pergunta direta. Por isso: “However much we offer, the limit remains”"
+          },
+          "wrong": {
+            "title": "Depois de however much, mantemos a ordem de afirmação: we offer.",
+            "message": "Não fazemos a inversão do we offer de uma pergunta direta. Por isso: “However much we offer, the limit remains”"
+          }
+        },
+        "context": "However much do we offer, the limit remains"
+      },
+      {
+        "id": "course-c1-08-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "The change helps. Even so, I need more notice"
+          },
+          {
+            "id": "a",
+            "text": "Even so of the change, I need more notice"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Even so liga uma nova afirmação que mantém a ressalva. Ele não funciona como uma preposição seguida de of the change. Por isso: “The change helps. Even so, I need more notice”"
+          },
+          "wrong": {
+            "title": "Even so liga uma nova afirmação que mantém a ressalva.",
+            "message": "Ele não funciona como uma preposição seguida de of the change. Por isso: “The change helps. Even so, I need more notice”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-08.shadowing.01",
+        "displayText": "I understand why you’d prefer a twelve-month contract",
+        "translation": "Entendo por que você prefere um contrato de doze meses",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.02",
+        "displayText": "It gives me some certainty, especially with the maintenance costs",
+        "translation": "Isso me dá alguma segurança, especialmente em relação aos custos de manutenção",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.03",
+        "displayText": "Much as I like the apartment, I can only commit to six months",
+        "translation": "Por mais que eu goste do apartamento, só posso me comprometer por seis meses",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.04",
+        "displayText": "That’s difficult. I need to know the place won’t be empty halfway through the year",
+        "translation": "Isso é difícil. Preciso ter certeza de que o local não ficará vazio no meio do ano",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.05",
+        "displayText": "Would you consider six months with an option to extend?",
+        "translation": "Você consideraria um contrato de seis meses com opção de prorrogação?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.06",
+        "displayText": "Possibly, provided you let me know well in advance",
+        "translation": "Possivelmente, desde que me avise com bastante antecedência",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.07",
+        "displayText": "That seems reasonable. The rent would also need to stay the same during the initial term",
+        "translation": "Isso parece razoável. O aluguel também precisaria permanecer o mesmo durante o prazo inicial",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.08",
+        "displayText": "I can agree to that, but I can’t promise the same price for the extension",
+        "translation": "Concordo com isso, mas não posso prometer o mesmo preço para a extensão",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.09",
+        "displayText": "Fair enough. My main concern is having a clear review date",
+        "translation": "Entendo. Minha principal preocupação é ter uma data de revisão clara",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.10",
+        "displayText": "Then let’s put that in writing",
+        "translation": "Então vamos colocar isso por escrito",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.11",
+        "displayText": "Good. We’ve both had to compromise, but the arrangement feels workable",
+        "translation": "Ótimo. Ambos tivemos que ceder, mas o acordo parece viável",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.12",
+        "displayText": "Agreed. I’ll send you the revised terms this afternoon",
+        "translation": "Concordo. Enviarei os termos revisados esta tarde",
+        "speakerId": "noah-ellis"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "ruby-bennett",
+        "name": "Ruby",
+        "avatarUrl": "/flashcards/course-characters/ruby-bennett/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      },
+      {
+        "id": "noah-ellis",
+        "name": "Noah",
+        "avatarUrl": "/flashcards/course-characters/noah-ellis/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: make a counterproposal that protects shared interests and explicit limits",
+    "duration": "90–120 seconds",
+    "starters": [
+      "Much as I’d like to…",
+      "Even if…",
+      "Whatever…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Uma contraproposta",
+    "first": "Resolver o quiz sobre concessões e limites em propostas",
+    "shadowing": "Ouvir e repetir as frases para fazer uma contraproposta",
+    "voice": "Mandar um áudio em inglês para a teacher fazendo uma contraproposta que preserve os interesses em comum e deixe claros os limites de cada lado. Termine com uma pergunta"
+  }
+}

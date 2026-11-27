@@ -1,0 +1,582 @@
+{
+  "version": 81,
+  "code": "A2.08",
+  "key": "a2-08",
+  "title": "Have you ever been to Lisbon?",
+  "goal": "Ask about an experience and choose a follow-up that fits the answer",
+  "freeConversationInstruction": "Talk about experiences, ask for details and recommend something based on what your teacher tells you",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Describe one finished travel experience",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What rule do you have to follow at home or work?",
+          "hint": "I have to …",
+          "cue": "Explain one rule"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What is not allowed there?",
+          "hint": "You mustn’t …",
+          "cue": "Say what isn’t allowed"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What don’t you have to do?",
+          "hint": "You don’t have to …",
+          "cue": "Describe something optional"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Experiences in Lisbon",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A208-V81.0",
+          "word": "take a tram",
+          "translation": "",
+          "example": "Have you ever taken a tram?",
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "take a tram",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A208-FS81.0",
+          "audioText": "take a tram. Have you ever taken a tram?"
+        },
+        {
+          "id": "A208-V81.1",
+          "word": "visit a castle",
+          "translation": "",
+          "example": "I visited a castle last year",
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "visit a castle",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A208-FS81.1",
+          "audioText": "visit a castle. I visited a castle last year."
+        },
+        {
+          "id": "A208-V81.2",
+          "word": "try a pastel de nata",
+          "translation": "",
+          "example": "You should try a pastel de nata",
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "try a pastel de nata",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A208-FS81.2",
+          "audioText": "try a pastel de nata. You should try a pastel de nata."
+        },
+        {
+          "id": "A208-V81.3",
+          "word": "see the tiles",
+          "translation": "",
+          "example": "We saw beautiful tiles in the city",
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "see the tiles",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A208-FS81.3",
+          "audioText": "see the tiles. We saw beautiful tiles in the city."
+        },
+        {
+          "id": "A208-V81.4",
+          "word": "watch the sunset",
+          "translation": "",
+          "example": "I’d like to watch the sunset",
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "watch the sunset",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A208-FS81.4",
+          "audioText": "watch the sunset. I’d like to watch the sunset."
+        },
+        {
+          "id": "A208-V81.5",
+          "word": "visit the aquarium",
+          "translation": "",
+          "example": "I haven’t visited the aquarium yet",
+          "imageUrl": "a2-08-vocabulary81",
+          "imageAlt": "visit the aquarium",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A208-FS81.5",
+          "audioText": "visit the aquarium. I haven’t visited the aquarium yet."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Ideas for Lisbon",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A208-D81.1",
+          "speaker": "Kim",
+          "text": "Have you ever been to Lisbon? I’m looking for ideas",
+          "audioText": "Have you ever been to Lisbon? I’m looking for ideas.",
+          "translation": "Você já foi a Lisboa? Estou procurando ideias"
+        },
+        {
+          "id": "A208-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, I went last year. I took a tram and visited a castle",
+          "audioText": "Yes, I went last year. I took a tram and visited a castle.",
+          "translation": "Sim, fui no ano passado. Andei de bonde e visitei um castelo"
+        },
+        {
+          "id": "A208-D81.3",
+          "speaker": "Kim",
+          "text": "Which did you enjoy more?",
+          "audioText": "Which did you enjoy more?",
+          "translation": "De qual você gostou mais?"
+        },
+        {
+          "id": "A208-D81.4",
+          "speaker": "Ana",
+          "text": "The castle. The view was beautiful, but there were a lot of people",
+          "audioText": "The castle. The view was beautiful, but there were a lot of people.",
+          "translation": "Do castelo. A vista era linda, mas havia muita gente"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "When did Ana visit Lisbon?",
+          "hint": "She visited …",
+          "answer": "Ana visited Lisbon last year"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What did she do there?",
+          "hint": "She took … and visited …",
+          "answer": "Ana took a tram and visited a castle"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Which activity did she prefer?",
+          "hint": "She preferred … because …",
+          "answer": "Ana preferred the castle because the view was beautiful"
+        }
+      ],
+      "dialogueGroup": "a2-08.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "A follow-up that fits",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A208-D81.5",
+          "speaker": "Kim",
+          "text": "Have you ever visited the aquarium?",
+          "audioText": "Have you ever visited the aquarium?",
+          "translation": "Você já visitou o aquário?"
+        },
+        {
+          "id": "A208-D81.6",
+          "speaker": "Ana",
+          "text": "No, I haven’t. I’d like to go next time",
+          "audioText": "No, I haven’t. I’d like to go next time.",
+          "translation": "Não. Gostaria de ir na próxima vez"
+        },
+        {
+          "id": "A208-D81.7",
+          "speaker": "Kim",
+          "text": "Me too. I love watching the fish. We could go together",
+          "audioText": "Me too. I love watching the fish. We could go together.",
+          "translation": "Eu também. Adoro observar os peixes. Poderíamos ir juntas"
+        },
+        {
+          "id": "A208-D81.8",
+          "speaker": "Ana",
+          "text": "Good idea. And you should try a pastel de nata while you’re there",
+          "audioText": "Good idea. And you should try a pastel de nata while you’re there.",
+          "translation": "Boa ideia. E você deveria experimentar um pastel de nata quando estiver lá"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Has Ana visited the aquarium?",
+          "hint": "No, she …",
+          "answer": "No, Ana hasn’t visited the aquarium"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What would Ana like to do next time?",
+          "hint": "She’d like to …",
+          "answer": "Ana would like to visit the aquarium next time"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What food does Ana recommend?",
+          "hint": "She recommends …",
+          "answer": "Ana recommends trying a pastel de nata"
+        }
+      ],
+      "dialogueGroup": "a2-08.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Compare travel experiences",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "Have you ever tried something new on a trip?",
+          "cue": "Share an experience or something you would like to try",
+          "hint": "Yes, I’ve … / No, but I’d like to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Which activity would you recommend to me?",
+          "cue": "Choose an activity and explain why",
+          "hint": "You should … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Would you try it again?",
+          "cue": "Explain your choice, then ask about my experiences",
+          "hint": "I’d … again because … Have you ever …?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Experience first, details next",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An experience, no finished date",
+          "verb": "Have you ever …? / I’ve …",
+          "example": "Have you ever taken a tram? — Yes, I have"
+        },
+        {
+          "id": "1",
+          "subject": "Not an experience yet",
+          "verb": "I’ve never … / I haven’t … yet",
+          "example": "I haven’t visited the aquarium yet"
+        },
+        {
+          "id": "2",
+          "subject": "Details of one finished occasion",
+          "verb": "When did you …? / past simple",
+          "example": "When did you go? — I went last year"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Recommend something I’ll enjoy",
+      "instruction": "Choose an experience, ask about it and give a useful follow-up",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "One experience, one plan",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! A quick update from Lisbon. I’ve tried a pastel de nata now, and I loved it. I had one at a small café this morning. I haven’t visited the aquarium yet. I’m thinking of going tomorrow, but I haven’t booked a ticket. Have you ever been? I’d love to know what you thought of it before I decide",
+      "audioText": "Hi, Ana! A quick update from Lisbon. I’ve tried a pastel de nata now, and I loved it. I had one at a small café this morning. I haven’t visited the aquarium yet. I’m thinking of going tomorrow, but I haven’t booked a ticket. Have you ever been? I’d love to know what you thought of it before I decide.",
+      "audioId": "A208-L81.1",
+      "greeting": "A little update from Lisbon",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What has Kim tried now?",
+          "hint": "She’s tried …",
+          "answer": "Kim has tried a pastel de nata"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Has Kim booked an aquarium ticket?",
+          "hint": "No, she …",
+          "answer": "No, Kim hasn’t booked an aquarium ticket"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What would Kim like to know before deciding?",
+          "hint": "She’d like to hear …",
+          "answer": "Kim would like to hear about Ana’s experience of the aquarium"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Give a useful recommendation",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Have you ever visited him?",
+      "instruction": "Watch Sam talk about visits, then ask about a real experience",
+      "minutes": 4,
+      "video": {
+        "videoId": "4FgU5qqw8-w",
+        "startSeconds": 76,
+        "endSeconds": 106,
+        "title": "Talking about your family — British Council | LearnEnglish Teens",
+        "credit": "British Council | LearnEnglish Teens"
+      },
+      "items": [
+        {
+          "id": "a2-08.video102.q1",
+          "prompt": "How many visits does Sam finally mention?",
+          "hint": "Listen to the correction after twice",
+          "answer": "He finally mentions three visits"
+        },
+        {
+          "id": "a2-08.video102.q2",
+          "prompt": "Why doesn’t he remember the first visit?",
+          "hint": "Listen to his age at the time",
+          "answer": "He was really little"
+        },
+        {
+          "id": "a2-08.video102.q3",
+          "prompt": "Has Sam met Rob’s mother?",
+          "hint": "Listen to his answer to Jack’s question",
+          "answer": "Yes, he has met her"
+        },
+        {
+          "id": "a2-08.video102.q4",
+          "prompt": "Ask your teacher about visiting another country, then follow up",
+          "hint": "Use Have you ever and then a past question",
+          "answer": "Example: Have you ever been to Portugal? When did you go?"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Ask about an experience and choose a follow-up that fits the answer"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Experience options",
+      "image": "a2-08-vocabulary81",
+      "options": [
+        {
+          "id": "tram",
+          "title": "Take a tram",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Good for",
+              "value": "Seeing the city"
+            },
+            {
+              "id": "1",
+              "label": "Consider",
+              "value": "Busy at popular times"
+            },
+            {
+              "id": "2",
+              "label": "Ask",
+              "value": "Experience first, then a detail"
+            }
+          ]
+        },
+        {
+          "id": "castle",
+          "title": "Visit a castle",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Good for",
+              "value": "Views and history"
+            },
+            {
+              "id": "1",
+              "label": "Consider",
+              "value": "A walk uphill"
+            },
+            {
+              "id": "2",
+              "label": "Ask",
+              "value": "Experience first, then a detail"
+            }
+          ]
+        },
+        {
+          "id": "aquarium",
+          "title": "Visit the aquarium",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Good for",
+              "value": "Sea life · indoors"
+            },
+            {
+              "id": "1",
+              "label": "Consider",
+              "value": "Booking a ticket"
+            },
+            {
+              "id": "2",
+              "label": "Ask",
+              "value": "Experience first, then a detail"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "experience",
+          "prompt": "Have you ever tried this experience?",
+          "hint": "Yes, I have. / No, I haven’t"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "When did you do it, or would you like to try it?",
+          "hint": "I did it … / I’d like to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What detail would you like to ask me about it?",
+          "hint": "Was it …? What was … like?"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "What Kim wants to know",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Already tried",
+          "value": "Pastel de nata · enjoyed it"
+        },
+        {
+          "id": "1",
+          "label": "Not done yet",
+          "value": "Aquarium · considering tomorrow"
+        },
+        {
+          "id": "2",
+          "label": "Wants",
+          "value": "Your experience or honest uncertainty"
+        }
+      ],
+      "questions": [
+        {
+          "id": "recommend",
+          "prompt": "Have you ever been to the aquarium?",
+          "hint": "I’ve been … / I haven’t been"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What can you honestly tell Kim about it?",
+          "hint": "I thought … / I’m not sure, but …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What could Kim check before booking?",
+          "hint": "She could check … / Have you checked …?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "What Kim wants to know"
+    }
+  }
+}

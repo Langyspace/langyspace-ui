@@ -1,0 +1,618 @@
+{
+  "materialKey": "extra-influencer-routine",
+  "title": "A day in my life",
+  "level": "A2 / B1",
+  "instruction": "Talk about your morning, getting ready, your workout and your evening routine",
+  "blocks": [
+    {
+      "key": "morning",
+      "sceneTitle": "How does her morning start?",
+      "sceneSubtitle": "Describe her routine first. Tap the objects to check the expressions",
+      "dialogueTitle": "A morning before filming",
+      "dialogueSubtitle": "Listen to Ana and Kim. Find out how Ana starts her day",
+      "sceneAlt": "Ana having breakfast at home, with a bed, alarm clock and open curtains nearby",
+      "vocab": [
+        {
+          "id": "V.1.1",
+          "label": "wake up",
+          "example": "I usually wake up around seven",
+          "audioText": "wake up. I usually wake up around seven"
+        },
+        {
+          "id": "V.1.2",
+          "label": "get out of bed",
+          "example": "I get out of bed when my alarm rings",
+          "audioText": "get out of bed. I get out of bed when my alarm rings"
+        },
+        {
+          "id": "V.1.3",
+          "label": "open the curtains",
+          "example": "I open the curtains to let the light in",
+          "audioText": "open the curtains. I open the curtains to let the light in"
+        },
+        {
+          "id": "V.1.4",
+          "label": "make the bed",
+          "example": "I make my bed before breakfast",
+          "audioText": "make the bed. I make my bed before breakfast"
+        },
+        {
+          "id": "V.1.5",
+          "label": "make coffee",
+          "example": "I make coffee while my breakfast is cooking",
+          "audioText": "make coffee. I make coffee while my breakfast is cooking"
+        },
+        {
+          "id": "V.1.6",
+          "label": "have breakfast",
+          "example": "I have eggs and toast for breakfast",
+          "audioText": "have breakfast. I have eggs and toast for breakfast"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": "D.1.1",
+          "speaker": "Kim",
+          "text": "What time do you usually wake up?",
+          "translation": "A que horas você costuma acordar?"
+        },
+        {
+          "id": "D.1.2",
+          "speaker": "Ana",
+          "text": "Around seven. I get out of bed, open the curtains and make my bed",
+          "translation": "Por volta das sete. Eu levanto, abro as cortinas e arrumo a cama"
+        },
+        {
+          "id": "D.1.3",
+          "speaker": "Kim",
+          "text": "Do you check your phone straight away?",
+          "translation": "Você olha o celular logo de cara?"
+        },
+        {
+          "id": "D.1.4",
+          "speaker": "Ana",
+          "text": "No, I don’t. I brush my teeth and have breakfast first",
+          "translation": "Não. Primeiro eu escovo os dentes e tomo café da manhã"
+        },
+        {
+          "id": "D.1.5",
+          "speaker": "Kim",
+          "text": "What do you usually have for breakfast?",
+          "translation": "O que você costuma comer no café da manhã?"
+        },
+        {
+          "id": "D.1.6",
+          "speaker": "Ana",
+          "text": "Eggs and toast, with a cup of coffee. Then I plan my content",
+          "translation": "Ovos e torradas, com uma xícara de café. Depois eu planejo meu conteúdo"
+        }
+      ],
+      "questions": [
+        {
+          "id": "Q.1.1",
+          "prompt": "What time does Ana usually wake up?",
+          "answer": "Ana usually wakes up around seven",
+          "hint": "She usually wakes up …"
+        },
+        {
+          "id": "Q.1.2",
+          "prompt": "Does she check her phone straight away?",
+          "answer": "No, Ana has breakfast before checking her phone",
+          "hint": "No, she … first"
+        },
+        {
+          "id": "Q.1.3",
+          "prompt": "What does she do after breakfast?",
+          "answer": "Ana plans her content after breakfast",
+          "hint": "After breakfast, she …"
+        }
+      ],
+      "personal": {
+        "title": "Tell me about your morning",
+        "instruction": "Describe your real morning, then ask your teacher about hers",
+        "prompts": [
+          {
+            "id": "P.1.1",
+            "question": "What do you usually do first when you wake up?",
+            "cue": "Describe the start of your morning",
+            "hint": "I usually… Then I…"
+          },
+          {
+            "id": "P.1.2",
+            "question": "What do you do before you start working or filming?",
+            "cue": "Explain what you do before work",
+            "hint": "Before I start…, I…"
+          },
+          {
+            "id": "P.1.3",
+            "question": "Is your routine different at weekends?",
+            "cue": "Compare your routines and ask your teacher a question",
+            "hint": "At weekends, I… What do you usually…?"
+          }
+        ]
+      }
+    },
+    {
+      "key": "ready",
+      "sceneTitle": "Getting ready for the gym",
+      "sceneSubtitle": "Describe how she gets ready. Tap the objects to check the expressions",
+      "dialogueTitle": "Before leaving home",
+      "dialogueSubtitle": "Listen to how Ana gets ready and what she takes to the gym",
+      "sceneAlt": "Ana choosing gym clothes and getting ready at a vanity, with sneakers and an open gym bag",
+      "vocab": [
+        {
+          "id": "V.2.1",
+          "label": "choose an outfit",
+          "example": "I choose a comfortable outfit for the gym",
+          "audioText": "choose an outfit. I choose a comfortable outfit for the gym"
+        },
+        {
+          "id": "V.2.2",
+          "label": "get dressed",
+          "example": "I get dressed after breakfast",
+          "audioText": "get dressed. I get dressed after breakfast"
+        },
+        {
+          "id": "V.2.3",
+          "label": "put on sneakers",
+          "example": "I put on my sneakers before I leave",
+          "audioText": "put on sneakers. I put on my sneakers before I leave"
+        },
+        {
+          "id": "V.2.4",
+          "label": "tie your hair up",
+          "example": "I tie my hair up when I work out",
+          "audioText": "tie your hair up. I tie my hair up when I work out"
+        },
+        {
+          "id": "V.2.5",
+          "label": "put on makeup",
+          "example": "I sometimes put on a little makeup",
+          "audioText": "put on makeup. I sometimes put on a little makeup"
+        },
+        {
+          "id": "V.2.6",
+          "label": "pack your gym bag",
+          "example": "I pack my gym bag with a towel and a water bottle",
+          "audioText": "pack your gym bag. I pack my gym bag with a towel and a water bottle"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": "D.2.1",
+          "speaker": "Kim",
+          "text": "What do you usually wear to the gym?",
+          "translation": "O que você costuma vestir para ir à academia?"
+        },
+        {
+          "id": "D.2.2",
+          "speaker": "Ana",
+          "text": "Leggings, a comfortable top and sneakers",
+          "translation": "Legging, uma blusa confortável e tênis"
+        },
+        {
+          "id": "D.2.3",
+          "speaker": "Kim",
+          "text": "Do you put on makeup before you go?",
+          "translation": "Você se maquia antes de ir?"
+        },
+        {
+          "id": "D.2.4",
+          "speaker": "Ana",
+          "text": "Sometimes, just a little. I always tie my hair up",
+          "translation": "Às vezes, só um pouco. Eu sempre prendo o cabelo"
+        },
+        {
+          "id": "D.2.5",
+          "speaker": "Kim",
+          "text": "What do you take in your gym bag?",
+          "translation": "O que você leva na bolsa da academia?"
+        },
+        {
+          "id": "D.2.6",
+          "speaker": "Ana",
+          "text": "A towel and a water bottle. I check my bag before I leave",
+          "translation": "Uma toalha e uma garrafa de água. Eu confiro minha bolsa antes de sair"
+        }
+      ],
+      "questions": [
+        {
+          "id": "Q.2.1",
+          "prompt": "What does Ana usually wear to the gym?",
+          "answer": "Ana usually wears leggings, a comfortable top and sneakers",
+          "hint": "She usually wears …"
+        },
+        {
+          "id": "Q.2.2",
+          "prompt": "Does she always put on makeup?",
+          "answer": "No, Ana only puts on makeup sometimes",
+          "hint": "No, she only …"
+        },
+        {
+          "id": "Q.2.3",
+          "prompt": "What does she take in her bag?",
+          "answer": "Ana takes a towel and a water bottle in her gym bag",
+          "hint": "She takes … and …"
+        }
+      ],
+      "personal": {
+        "title": "How do you get ready?",
+        "instruction": "Explain your choices, then ask your teacher about hers",
+        "prompts": [
+          {
+            "id": "P.2.1",
+            "question": "What do you usually wear when you exercise?",
+            "cue": "Describe your clothes and shoes",
+            "hint": "I usually wear… because…"
+          },
+          {
+            "id": "P.2.2",
+            "question": "How do you get ready before leaving home?",
+            "cue": "Explain your hair, makeup or getting-ready routine",
+            "hint": "First, I… I always… / I don’t usually…"
+          },
+          {
+            "id": "P.2.3",
+            "question": "What do you take with you?",
+            "cue": "Describe what you take, then ask your teacher a question",
+            "hint": "I take… Do you usually…?"
+          }
+        ]
+      }
+    },
+    {
+      "key": "gym",
+      "sceneTitle": "At the gym",
+      "sceneSubtitle": "Describe a workout using the scene. Tap to check the expressions",
+      "dialogueTitle": "What does her workout look like?",
+      "dialogueSubtitle": "Listen to Ana describing her training habits",
+      "sceneAlt": "Ana lifting dumbbells at a gym, with a mat, rest bench, water bottle and exercise machine",
+      "vocab": [
+        {
+          "id": "V.3.1",
+          "label": "warm up",
+          "example": "I warm up before I lift weights",
+          "audioText": "warm up. I warm up before I lift weights"
+        },
+        {
+          "id": "V.3.2",
+          "label": "lift weights",
+          "example": "I lift weights three times a week",
+          "audioText": "lift weights. I lift weights three times a week"
+        },
+        {
+          "id": "V.3.3",
+          "label": "use a machine",
+          "example": "I use a machine for some exercises",
+          "audioText": "use a machine. I use a machine for some exercises"
+        },
+        {
+          "id": "V.3.4",
+          "label": "take a break",
+          "example": "I take a short break between exercises",
+          "audioText": "take a break. I take a short break between exercises"
+        },
+        {
+          "id": "V.3.5",
+          "label": "drink water",
+          "example": "I drink water during my workout",
+          "audioText": "drink water. I drink water during my workout"
+        },
+        {
+          "id": "V.3.6",
+          "label": "stretch",
+          "example": "I stretch at the end of my workout",
+          "audioText": "stretch. I stretch at the end of my workout"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": "D.3.1",
+          "speaker": "Kim",
+          "text": "How often do you go to the gym?",
+          "translation": "Com que frequência você vai à academia?"
+        },
+        {
+          "id": "D.3.2",
+          "speaker": "Ana",
+          "text": "Three times a week. I usually go in the afternoon",
+          "translation": "Três vezes por semana. Eu costumo ir à tarde"
+        },
+        {
+          "id": "D.3.3",
+          "speaker": "Kim",
+          "text": "What do you do when you get there?",
+          "translation": "O que você faz quando chega lá?"
+        },
+        {
+          "id": "D.3.4",
+          "speaker": "Ana",
+          "text": "I warm up, then I lift weights and use a few machines",
+          "translation": "Eu aqueço, depois faço exercícios com pesos e uso alguns aparelhos"
+        },
+        {
+          "id": "D.3.5",
+          "speaker": "Kim",
+          "text": "Do you film your whole workout?",
+          "translation": "Você grava o treino inteiro?"
+        },
+        {
+          "id": "D.3.6",
+          "speaker": "Ana",
+          "text": "No, just a few clips. I put my phone away between exercises and stretch at the end",
+          "translation": "Não, só alguns vídeos curtos. Eu guardo o celular entre os exercícios e alongo no final"
+        }
+      ],
+      "questions": [
+        {
+          "id": "Q.3.1",
+          "prompt": "How often does Ana go to the gym?",
+          "answer": "Ana goes to the gym three times a week",
+          "hint": "She goes … times …"
+        },
+        {
+          "id": "Q.3.2",
+          "prompt": "What does she do before lifting weights?",
+          "answer": "Ana warms up before lifting weights",
+          "hint": "Before lifting weights, she …"
+        },
+        {
+          "id": "Q.3.3",
+          "prompt": "Does she film her whole workout?",
+          "answer": "No, Ana only films a few clips of her workout",
+          "hint": "No, she only films …"
+        }
+      ],
+      "personal": {
+        "title": "Talk me through your workout",
+        "instruction": "Explain your habits and find out how your teacher stays active",
+        "prompts": [
+          {
+            "id": "P.3.1",
+            "question": "How often do you exercise, and when?",
+            "cue": "Describe your activity and frequency",
+            "hint": "I… once / twice / three times a week"
+          },
+          {
+            "id": "P.3.2",
+            "question": "What do you do before, during and after your workout?",
+            "cue": "Explain the sequence of your workout",
+            "hint": "I start with… Then… At the end…"
+          },
+          {
+            "id": "P.3.3",
+            "question": "Do you prefer exercising alone or with someone?",
+            "cue": "Explain your preference and ask your teacher about exercise",
+            "hint": "I prefer… because… How often do you…?"
+          }
+        ]
+      }
+    },
+    {
+      "key": "night",
+      "sceneTitle": "Getting ready for bed",
+      "sceneSubtitle": "Describe her evening routine. Tap to check the expressions",
+      "dialogueTitle": "How does Ana wind down?",
+      "dialogueSubtitle": "Listen to what Ana does before bed",
+      "sceneAlt": "Ana applying moisturizer at her vanity at night, with skincare products, pajamas, a bed and alarm clock",
+      "vocab": [
+        {
+          "id": "V.4.1",
+          "label": "remove your makeup",
+          "example": "I remove my makeup in the evening",
+          "audioText": "remove your makeup. I remove my makeup in the evening"
+        },
+        {
+          "id": "V.4.2",
+          "label": "wash your face",
+          "example": "I wash my face before bed",
+          "audioText": "wash your face. I wash my face before bed"
+        },
+        {
+          "id": "V.4.3",
+          "label": "put on moisturizer",
+          "example": "I put on moisturizer after washing my face",
+          "audioText": "put on moisturizer. I put on moisturizer after washing my face"
+        },
+        {
+          "id": "V.4.4",
+          "label": "put on pajamas",
+          "example": "I put on pajamas after my shower",
+          "audioText": "put on pajamas. I put on pajamas after my shower"
+        },
+        {
+          "id": "V.4.5",
+          "label": "set an alarm",
+          "example": "I set an alarm for the next morning",
+          "audioText": "set an alarm. I set an alarm for the next morning"
+        },
+        {
+          "id": "V.4.6",
+          "label": "go to bed",
+          "example": "I usually go to bed around eleven",
+          "audioText": "go to bed. I usually go to bed around eleven"
+        }
+      ],
+      "dialogue": [
+        {
+          "id": "D.4.1",
+          "speaker": "Kim",
+          "text": "What do you usually do after dinner?",
+          "translation": "O que você costuma fazer depois do jantar?"
+        },
+        {
+          "id": "D.4.2",
+          "speaker": "Ana",
+          "text": "I choose my clothes and pack my gym bag for the next day",
+          "translation": "Eu escolho minhas roupas e arrumo a bolsa da academia para o dia seguinte"
+        },
+        {
+          "id": "D.4.3",
+          "speaker": "Kim",
+          "text": "Do you have a skincare routine?",
+          "translation": "Você tem uma rotina de skincare?"
+        },
+        {
+          "id": "D.4.4",
+          "speaker": "Ana",
+          "text": "Yes, I remove my makeup, wash my face and put on moisturizer",
+          "translation": "Sim, eu retiro a maquiagem, lavo o rosto e passo hidratante"
+        },
+        {
+          "id": "D.4.5",
+          "speaker": "Kim",
+          "text": "How do you relax before bed?",
+          "translation": "Como você relaxa antes de dormir?"
+        },
+        {
+          "id": "D.4.6",
+          "speaker": "Ana",
+          "text": "I put on my pajamas and read for a few minutes. I don’t take my phone to bed",
+          "translation": "Eu visto meu pijama e leio por alguns minutos. Eu não levo o celular para a cama"
+        }
+      ],
+      "questions": [
+        {
+          "id": "Q.4.1",
+          "prompt": "What does Ana prepare for the next day?",
+          "answer": "Ana prepares her clothes and gym bag for the next day",
+          "hint": "She prepares … and …"
+        },
+        {
+          "id": "Q.4.2",
+          "prompt": "What does she do after washing her face?",
+          "answer": "Ana puts on moisturizer after washing her face",
+          "hint": "After washing her face, she …"
+        },
+        {
+          "id": "Q.4.3",
+          "prompt": "Does she take her phone to bed?",
+          "answer": "No, Ana reads for a few minutes instead of taking her phone to bed",
+          "hint": "No, she … instead"
+        }
+      ],
+      "personal": {
+        "title": "Tell me about your evening",
+        "instruction": "Describe your real evening and ask your teacher about hers",
+        "prompts": [
+          {
+            "id": "P.4.1",
+            "question": "What do you usually do after dinner?",
+            "cue": "Describe how you finish your day",
+            "hint": "After dinner, I usually…"
+          },
+          {
+            "id": "P.4.2",
+            "question": "What does your skincare or bedtime routine look like?",
+            "cue": "Explain what you do, in order",
+            "hint": "First… Then… Before bed…"
+          },
+          {
+            "id": "P.4.3",
+            "question": "What helps you relax at night?",
+            "cue": "Explain what works for you and ask your teacher a question",
+            "hint": "…helps me relax. What helps you…?"
+          }
+        ]
+      }
+    }
+  ],
+  "grammar": {
+    "title": "Talking about habits",
+    "instruction": "Use the Simple Present to describe routines and ask about them",
+    "rows": [
+      {
+        "id": "positive",
+        "subject": "Habit",
+        "verb": "I work out three times a week",
+        "example": "She works out three times a week"
+      },
+      {
+        "id": "negative",
+        "subject": "Negative",
+        "verb": "I don’t check my phone at breakfast",
+        "example": "She doesn’t check her phone at breakfast"
+      },
+      {
+        "id": "question",
+        "subject": "Question",
+        "verb": "Do you exercise in the morning?",
+        "example": "Does she exercise in the morning?"
+      }
+    ],
+    "note": "I usually work out in the afternoon · After do, does, don’t and doesn’t, use the base verb"
+  },
+  "listening": {
+    "id": "L.1",
+    "title": "A voice note before bed",
+    "instruction": "Listen to your best friend Kim and find out what her routine is like",
+    "greeting": "I finally have a quiet moment before bed 🌙",
+    "text": "On most days, I wake up around seven and have coffee and toast. I plan my content before I start filming. Before the gym, I choose a comfortable outfit, tie my hair up and pack a towel and a water bottle. I go three times a week, usually in the afternoon. I warm up, lift weights and stretch at the end. I don’t post every clip I film. I save some for another day. After dinner, I reply to messages and do my skincare. I wash my face and put on moisturizer. Before bed, I leave my phone on my desk because I sleep better that way. What about you? What helps you relax at night?",
+    "questions": [
+      {
+        "id": "LQ.1",
+        "prompt": "What does Kim put in her gym bag?",
+        "answer": "Kim puts a towel and a water bottle in her gym bag",
+        "hint": "She puts … and … in her bag"
+      },
+      {
+        "id": "LQ.2",
+        "prompt": "Does she post every clip she films?",
+        "answer": "No, Kim saves some clips for another day",
+        "hint": "No, she saves …"
+      },
+      {
+        "id": "LQ.3",
+        "prompt": "Where does she leave her phone before bed?",
+        "answer": "Kim leaves her phone on her desk before bed",
+        "hint": "She leaves it …"
+      }
+    ]
+  },
+  "reply": {
+    "title": "Send your bestie a reply",
+    "instruction": "Reply aloud: share one similarity, one difference and one question",
+    "prompts": [
+      {
+        "id": "reply.1",
+        "speaker": "Kim",
+        "question": "What do our routines have in common?",
+        "cue": "Describe one thing you both do",
+        "hint": "I also… / We both…"
+      },
+      {
+        "id": "reply.2",
+        "speaker": "Kim",
+        "question": "What is different about your day?",
+        "cue": "Explain one difference",
+        "hint": "But I usually… / I don’t…"
+      },
+      {
+        "id": "reply.3",
+        "speaker": "Kim",
+        "question": "What would you like to ask me?",
+        "cue": "Ask your bestie a question about her routine",
+        "hint": "Do you…? / How often do you…?"
+      }
+    ]
+  },
+  "freeConversationInstruction": "Have a longer conversation about your morning, getting ready, exercise and evenings. Share what works for you and one habit you’d like to change",
+  "homework": {
+    "title": "Class complete — your homework",
+    "instruction": "Review the flashcards, repeat the shadowing phrases and send your teacher a 45–60 second voice note about your routine",
+    "tasks": [
+      {
+        "title": "Morning",
+        "description": "Record 45–60 seconds about your morning. Show two or three objects and explain when you use them."
+      },
+      {
+        "title": "Getting ready and working out",
+        "description": "Describe your outfit, what you take and your workout. Use one frequency expression and first / then / at the end."
+      },
+      {
+        "title": "Before bed",
+        "description": "Record a voice note about your evening routine. Finish with two questions for your teacher."
+      }
+    ]
+  }
+}

@@ -43,6 +43,7 @@ jobs:
           pnpm run test:styling-policy
           pnpm run test:styling-system
           pnpm run test:button-system
+          node scripts/audit-material-content.mjs > material-content-audit.json
           pnpm run lint
           pnpm run format:check
           pnpm run typecheck

@@ -17,6 +17,8 @@ type NativeIconButtonProps = Omit<
 export type IconButtonProps = NativeIconButtonProps &
   AccessibleName & {
     children: ReactNode
+    /** Optional interaction earcon, sharing the material's sound preference. */
+    feedbackSound?: 'hint'
     loading?: boolean
     shape?: IconButtonShape
     size?: IconButtonSize

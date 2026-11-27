@@ -2,6 +2,7 @@ import type { ComponentPropsWithRef, ReactNode } from 'react'
 
 export interface CalendarMonthGridProps extends ComponentPropsWithRef<'div'> {
   children: ReactNode
+  density?: 'regular' | 'compact'
 }
 
 export interface CalendarWeekGridProps extends ComponentPropsWithRef<'div'> {
@@ -18,6 +19,8 @@ export type CalendarDayProps = Omit<
 > & {
   day: ReactNode
   muted?: boolean
+  presentation?: 'default' | 'vocabulary'
+  selected?: boolean
 } & DayAction
 
 export interface CalendarDayNumberProps extends ComponentPropsWithRef<'span'> {

@@ -1,0 +1,636 @@
+{
+  "version": 81,
+  "code": "B2.03",
+  "key": "b2-03",
+  "title": "If I hadn’t gone to Toronto",
+  "goal": "Connect a past decision to present consequences without treating a hypothesis as fact",
+  "freeConversationInstruction": "Reflect on turning points, ask about alternatives and discuss what you can and cannot know about them",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a hypothetical choice and a past lesson",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What past decision would you make differently?",
+          "hint": "If I hadn’t …, I might … now",
+          "cue": "Reflect on a past decision"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which consequence do you know actually happened?",
+          "hint": "What I know is that …",
+          "cue": "State a confirmed consequence"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What alternative is possible but uncertain?",
+          "hint": "It’s possible that …, although …",
+          "cue": "Suggest a possible alternative"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Choices and consequences",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B203-V81.0",
+          "word": "a turning point",
+          "translation": "",
+          "example": "The course became a turning point",
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a turning point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B203-FS81.0",
+          "audioText": "a turning point. The course became a turning point."
+        },
+        {
+          "id": "B203-V81.1",
+          "word": "take a chance",
+          "translation": "",
+          "example": "They decided to take a chance on it",
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "take a chance",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B203-FS81.1",
+          "audioText": "take a chance. They decided to take a chance on it."
+        },
+        {
+          "id": "B203-V81.2",
+          "word": "miss an opportunity",
+          "translation": "",
+          "example": "Missing one opportunity doesn’t close every path",
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "miss an opportunity",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B203-FS81.2",
+          "audioText": "miss an opportunity. Missing one opportunity doesn’t close every path."
+        },
+        {
+          "id": "B203-V81.3",
+          "word": "a consequence",
+          "translation": "",
+          "example": "The collaboration was an unexpected consequence",
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a consequence",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B203-FS81.3",
+          "audioText": "a consequence. The collaboration was an unexpected consequence."
+        },
+        {
+          "id": "B203-V81.4",
+          "word": "a setback",
+          "translation": "",
+          "example": "A setback may change the route",
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a setback",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B203-FS81.4",
+          "audioText": "a setback. A setback may change the route."
+        },
+        {
+          "id": "B203-V81.5",
+          "word": "a fresh start",
+          "translation": "",
+          "example": "The move offered a fresh start",
+          "imageUrl": "b2-03-vocabulary81",
+          "imageAlt": "a fresh start",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B203-FS81.5",
+          "audioText": "a fresh start. The move offered a fresh start."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "If I hadn’t gone to Toronto",
+      "paragraphs": [
+        "Fictional profile: took a practical course in Toronto; later used the skills on a community project; now leads small projects with more confidence. A collaborator was met during the course. No job offer or inevitable career outcome is claimed. Alternative timelines are hypotheses, not evidence."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A turning point",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B203-D81.1",
+          "speaker": "Kim",
+          "text": "In this story, what made the short course in Toronto a turning point?",
+          "audioText": "In this story, what made the short course in Toronto a turning point?",
+          "translation": "Nesta história, o que tornou o curso curto em Toronto um ponto de virada?"
+        },
+        {
+          "id": "B203-D81.2",
+          "speaker": "Ana",
+          "text": "The person took a chance on a practical course and now feels confident leading small projects",
+          "audioText": "The person took a chance on a practical course and now feels confident leading small projects.",
+          "translation": "A pessoa arriscou fazer um curso prático e hoje se sente confiante para liderar projetos pequenos"
+        },
+        {
+          "id": "B203-D81.3",
+          "speaker": "Kim",
+          "text": "So if they hadn’t taken the course, they wouldn’t be doing that now?",
+          "audioText": "So if they hadn’t taken the course, they wouldn’t be doing that now?",
+          "translation": "Então, se não tivesse feito o curso, não estaria fazendo isso hoje?"
+        },
+        {
+          "id": "B203-D81.4",
+          "speaker": "Ana",
+          "text": "They might be less confident, but we can’t know that they’d never have learned another way",
+          "audioText": "They might be less confident, but we can’t know that they’d never have learned another way.",
+          "translation": "Talvez tivesse menos confiança, mas não sabemos se nunca teria aprendido de outra forma"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What did the person gain from the Toronto course?",
+          "hint": "They now feel …",
+          "answer": "They now feel confident leading small projects"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What past decision led to that experience?",
+          "hint": "They took …",
+          "answer": "They took a chance on a practical course in Toronto"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why can’t Kim say the person would never have learned another way?",
+          "hint": "Because … is unknown",
+          "answer": "The outcome of another learning route is unknown"
+        }
+      ],
+      "dialogueGroup": "b2-03.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "An unexpected consequence",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B203-D81.5",
+          "speaker": "Kim",
+          "text": "That’s fair. What actually happened after the course?",
+          "audioText": "That’s fair. What actually happened after the course?",
+          "translation": "É justo. O que realmente aconteceu depois do curso?"
+        },
+        {
+          "id": "B203-D81.6",
+          "speaker": "Ana",
+          "text": "They used the new skills on a community project and met a future collaborator",
+          "audioText": "They used the new skills on a community project and met a future collaborator.",
+          "translation": "Usou as novas habilidades em um projeto comunitário e conheceu uma futura colaboradora"
+        },
+        {
+          "id": "B203-D81.7",
+          "speaker": "Kim",
+          "text": "Was meeting that person part of the original plan?",
+          "audioText": "Was meeting that person part of the original plan?",
+          "translation": "Conhecer essa pessoa fazia parte do plano original?"
+        },
+        {
+          "id": "B203-D81.8",
+          "speaker": "Ana",
+          "text": "Not at all. That was an unexpected consequence, not a promised outcome",
+          "audioText": "Not at all. That was an unexpected consequence, not a promised outcome.",
+          "translation": "Não. Foi uma consequência inesperada, não um resultado prometido"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Where did the person use the new skills?",
+          "hint": "They used them on …",
+          "answer": "They used the new skills on a community project"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Who did they meet after the course?",
+          "hint": "They met …",
+          "answer": "They met a future collaborator"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Was that meeting a planned outcome?",
+          "hint": "No, it was …",
+          "answer": "No, the meeting was an unexpected consequence"
+        }
+      ],
+      "dialogueGroup": "b2-03.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "One path, not the only path",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B203-D81.9",
+          "speaker": "Kim",
+          "text": "What would be different now if that meeting hadn’t happened?",
+          "audioText": "What would be different now if that meeting hadn’t happened?",
+          "translation": "O que seria diferente hoje se aquele encontro não tivesse acontecido?"
+        },
+        {
+          "id": "B203-D81.10",
+          "speaker": "Ana",
+          "text": "The collaboration might not exist, although they could still have developed the skills",
+          "audioText": "The collaboration might not exist, although they could still have developed the skills.",
+          "translation": "A colaboração talvez não existisse, embora ainda pudesse ter desenvolvido as habilidades"
+        },
+        {
+          "id": "B203-D81.11",
+          "speaker": "Kim",
+          "text": "So the experience matters, but there isn’t only one possible path",
+          "audioText": "So the experience matters, but there isn’t only one possible path.",
+          "translation": "Então a experiência importa, mas não existe só um caminho possível"
+        },
+        {
+          "id": "B203-D81.12",
+          "speaker": "Ana",
+          "text": "Exactly. I’d separate the facts from what we imagine about the alternative",
+          "audioText": "Exactly. I’d separate the facts from what we imagine about the alternative.",
+          "translation": "Exatamente. Eu separaria os fatos do que imaginamos sobre a alternativa"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What might not exist without the meeting?",
+          "hint": "The … might not exist",
+          "answer": "The collaboration might not exist without the meeting"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Could the person still have developed skills another way?",
+          "hint": "Yes, they could …",
+          "answer": "Yes, they could still have developed the skills another way"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What distinction does Ana want to preserve?",
+          "hint": "She separates … from …",
+          "answer": "Ana separates facts from imagined alternatives"
+        }
+      ],
+      "dialogueGroup": "b2-03.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Connect a past choice to today",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "A past choice with a consequence now",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A past condition, a present result",
+          "verb": "If + had + participle, would + base verb",
+          "example": "If they hadn’t taken the course, they might feel less confident now"
+        },
+        {
+          "id": "1",
+          "subject": "Keep uncertainty visible",
+          "verb": "might / could + base verb",
+          "example": "They could have learned another way"
+        },
+        {
+          "id": "2",
+          "subject": "Separate evidence and speculation",
+          "verb": "We know … / We can’t know whether …",
+          "example": "We know they met a collaborator; we can’t know every alternative outcome"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Two possible paths",
+      "instruction": "Explain how a past choice affects the present",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The unexpected collaboration",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people",
+      "audioText": "Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people.",
+      "audioId": "B203-W141.1",
+      "greeting": "There was an unexpected benefit from that course",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Was the unexpected benefit a job offer?",
+          "hint": "No, the person …",
+          "answer": "No, the person met someone who later invited them onto a community project"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How does that collaboration still help today?",
+          "hint": "It helps them …",
+          "answer": "The collaboration helps them explain their skills to others"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Why is ‘no opportunities at all’ too strong?",
+          "hint": "Because another route …",
+          "answer": "Another route might have created opportunities, although its outcome is unknown"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Priya"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "B203-W141.2",
+          "audioText": "If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?",
+          "message": "If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?",
+          "timestamp": "10:02"
+        }
+      ]
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Describe the other path cautiously",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A past choice, a consequence now",
+      "instruction": "Watch the breakfast example, then connect a past decision to the present",
+      "minutes": 4,
+      "video": {
+        "videoId": "K74ym19xdYE",
+        "startSeconds": 6,
+        "endSeconds": 52,
+        "title": "Mixed conditionals — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-03.video102.q1",
+          "prompt": "Did the speaker in the example eat breakfast?",
+          "hint": "Listen when Georgina explains what is true",
+          "answer": "No. The person didn’t eat breakfast"
+        },
+        {
+          "id": "b2-03.video102.q2",
+          "prompt": "What is true about that person now?",
+          "hint": "Separate the imagined result from the real one",
+          "answer": "The person is hungry now"
+        },
+        {
+          "id": "b2-03.video102.q3",
+          "prompt": "Why does the example combine two different conditional forms?",
+          "hint": "Notice the time of the cause and the result",
+          "answer": "The imagined cause is in the past, but the imagined result is in the present"
+        },
+        {
+          "id": "b2-03.video102.q4",
+          "prompt": "Imagine a past travel choice had been different. What might be different now?",
+          "hint": "Make the hypothesis clear and avoid certainty without evidence",
+          "answer": "Example: If I hadn’t moved abroad, I might still be living near my family"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Connect a past decision to present consequences without treating a hypothesis as fact"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Fact and possible alternative",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Past fact",
+          "value": "Took the practical course in Toronto"
+        },
+        {
+          "id": "1",
+          "label": "Present fact",
+          "value": "Uses the skills · leads small projects"
+        },
+        {
+          "id": "2",
+          "label": "Alternative",
+          "value": "Could have learned elsewhere · outcome unknown"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How did the past choice affect the present?",
+          "hint": "If they hadn’t …, they might not … now"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "Which part of that explanation is confirmed?",
+          "hint": "The confirmed facts are …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What other learning route could have been possible?",
+          "hint": "They could have …, but we can’t know …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Fact and possible alternative"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "An unexpected, ongoing result",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Not claimed",
+          "value": "A job offer"
+        },
+        {
+          "id": "1",
+          "label": "Confirmed",
+          "value": "Met a collaborator · still work on community projects"
+        },
+        {
+          "id": "2",
+          "label": "Uncertain",
+          "value": "What another route would have produced"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you describe the ongoing result accurately?",
+          "hint": "They met … and still …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What might be different without the meeting?",
+          "hint": "If they hadn’t met, … might …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How will you avoid turning a possibility into a certainty?",
+          "hint": "We can say …, but not assume …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "An unexpected, ongoing result"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Past fact",
+          "value": "Took the practical course in Toronto"
+        },
+        {
+          "id": "1",
+          "label": "Present fact",
+          "value": "Uses the skills · leads small projects"
+        },
+        {
+          "id": "2",
+          "label": "Alternative",
+          "value": "Could have learned elsewhere · outcome unknown"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "How has that decision affected your life now?",
+          "cue": "Connect a past decision to a present consequence",
+          "hint": "If I hadn’t …, I wouldn’t … now",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What might be different in the other scenario?",
+          "cue": "Explore an alternative without pretending to know the outcome",
+          "hint": "I might …, but it’s hard to know whether …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain your decision to someone who would have chosen differently?",
+          "cue": "Acknowledge their alternative and defend your choice without claiming certainty",
+          "hint": "I can see why you’d … If I hadn’t …, I might … now, but I can’t know …",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

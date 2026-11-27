@@ -1,0 +1,393 @@
+{
+  "key": "extra-dev-study",
+  "code": "DEV.01",
+  "title": "Build your path into tech",
+  "publishedEnvironments": ["staging"],
+  "homeworkCopy": {
+    "title": "Meu caminho na tecnologia",
+    "first": "Estudar o vocabulário de estudos e projetos nos flashcards",
+    "shadowing": "Ouvir e repetir as frases para explicar um projeto e pedir ajuda",
+    "voice": "Mandar um áudio em inglês para a teacher contando o que você está estudando, explicando uma funcionalidade do seu projeto e dizendo o que quer melhorar. Termine com uma pergunta"
+  },
+  "first": {
+    "kind": "flashcards",
+    "id": "dev-study-flashcards",
+    "cards": [
+      {
+        "id": "dev-study131.0",
+        "word": "a tutorial",
+        "translation": "um tutorial",
+        "example": "I use a tutorial to learn one new feature.",
+        "exampleTranslation": "Eu uso um tutorial para aprender uma funcionalidade nova.",
+        "visualLabel": "a tutorial",
+        "audioId": "V.0",
+        "backAudioId": "VE.0",
+        "imageSrc": "/flashcards-transparent/course-practice/dev-track131/f6b0896d83f2e58fc1cbb97a860c3948f086069b943102d3ca273b4177cdc154/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.1",
+        "word": "documentation",
+        "translation": "documentação",
+        "example": "I check the documentation when I need an explanation.",
+        "exampleTranslation": "Eu consulto a documentação quando preciso de uma explicação.",
+        "visualLabel": "documentation",
+        "audioId": "V.1",
+        "backAudioId": "VE.1",
+        "imageSrc": "/flashcards-transparent/course-practice/dev-track131/f6b0896d83f2e58fc1cbb97a860c3948f086069b943102d3ca273b4177cdc154/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.2",
+        "word": "an error message",
+        "translation": "uma mensagem de erro",
+        "example": "The error message tells me what went wrong.",
+        "exampleTranslation": "A mensagem de erro me diz o que deu errado.",
+        "visualLabel": "an error message",
+        "audioId": "V.2",
+        "backAudioId": "VE.2",
+        "imageSrc": "/flashcards-transparent/course-practice/dev-track131/f6b0896d83f2e58fc1cbb97a860c3948f086069b943102d3ca273b4177cdc154/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.3",
+        "word": "a practice project",
+        "translation": "um projeto de prática",
+        "example": "My practice project is a task-list app.",
+        "exampleTranslation": "Meu projeto de prática é um aplicativo de lista de tarefas.",
+        "visualLabel": "a practice project",
+        "audioId": "V.3",
+        "backAudioId": "VE.3",
+        "imageSrc": "/flashcards-transparent/course-practice/dev-track131/f6b0896d83f2e58fc1cbb97a860c3948f086069b943102d3ca273b4177cdc154/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.4",
+        "word": "a study plan",
+        "translation": "um plano de estudos",
+        "example": "My study plan has three short sessions this week.",
+        "exampleTranslation": "Meu plano de estudos tem três sessões curtas nesta semana.",
+        "visualLabel": "a study plan",
+        "audioId": "V.4",
+        "backAudioId": "VE.4",
+        "imageSrc": "/flashcards-transparent/course-practice/dev-track131/f6b0896d83f2e58fc1cbb97a860c3948f086069b943102d3ca273b4177cdc154/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.5",
+        "word": "a portfolio",
+        "translation": "um portfólio",
+        "example": "My portfolio shows projects I can explain.",
+        "exampleTranslation": "Meu portfólio mostra projetos que eu consigo explicar.",
+        "visualLabel": "a portfolio",
+        "audioId": "V.5",
+        "backAudioId": "VE.5",
+        "imageSrc": "/flashcards-transparent/course-practice/dev-track131/f6b0896d83f2e58fc1cbb97a860c3948f086069b943102d3ca273b4177cdc154/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.6",
+        "word": "a repository",
+        "translation": "repositório",
+        "example": "The project files are in the repository",
+        "exampleTranslation": "Os arquivos do projeto estão no repositório",
+        "visualLabel": "a repository",
+        "audioId": "HW.6.front",
+        "backAudioId": "HW.6.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.7",
+        "word": "frontend",
+        "translation": "parte visual da aplicação",
+        "example": "I’m working on the frontend of the customer portal",
+        "exampleTranslation": "Estou trabalhando na parte visual do portal do cliente",
+        "visualLabel": "frontend",
+        "audioId": "HW.7.front",
+        "backAudioId": "HW.7.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.8",
+        "word": "backend",
+        "translation": "parte do sistema que processa os dados",
+        "example": "Priya is connecting the login screen to the backend",
+        "exampleTranslation": "Priya está conectando a tela de login ao backend",
+        "visualLabel": "backend",
+        "audioId": "HW.8.front",
+        "backAudioId": "HW.8.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.9",
+        "word": "a login screen",
+        "translation": "tela de login",
+        "example": "The login screen has email and password fields",
+        "exampleTranslation": "A tela de login tem campos de e-mail e senha",
+        "visualLabel": "a login screen",
+        "audioId": "HW.9.front",
+        "backAudioId": "HW.9.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/5d5300dab993c74871618ff662b74f988a8cbae98fd312ab7f93ebffb5a2e931/image.webp"
+      },
+      {
+        "id": "dev-study131.10",
+        "word": "a form",
+        "translation": "formulário",
+        "example": "The form shows an error when a field is empty",
+        "exampleTranslation": "O formulário mostra um erro quando um campo está vazio",
+        "visualLabel": "a form",
+        "audioId": "HW.10.front",
+        "backAudioId": "HW.10.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/5d5300dab993c74871618ff662b74f988a8cbae98fd312ab7f93ebffb5a2e931/image.webp"
+      },
+      {
+        "id": "dev-study131.11",
+        "word": "a password",
+        "translation": "senha",
+        "example": "The password is incorrect — please try again",
+        "exampleTranslation": "A senha está incorreta — tente novamente",
+        "visualLabel": "a password",
+        "audioId": "HW.11.front",
+        "backAudioId": "HW.11.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/e482baeb6853332459574a975008557cd6d4c9278f9b49b5f475688f3735f028/image.webp"
+      },
+      {
+        "id": "dev-study131.12",
+        "word": "an email address",
+        "translation": "endereço de e-mail",
+        "example": "Use your work email address to request access",
+        "exampleTranslation": "Use seu e-mail de trabalho para pedir acesso",
+        "visualLabel": "an email address",
+        "audioId": "HW.12.front",
+        "backAudioId": "HW.12.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.13",
+        "word": "a button",
+        "translation": "botão",
+        "example": "Click the button to sign in",
+        "exampleTranslation": "Clique no botão para entrar",
+        "visualLabel": "a button",
+        "audioId": "HW.13.front",
+        "backAudioId": "HW.13.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/22d4ad9635452551662e6c97932980e492fa8f7a3b73a42aa0952118aa369e20/image.webp"
+      },
+      {
+        "id": "dev-study131.14",
+        "word": "a test account",
+        "translation": "conta de teste",
+        "example": "I need an active test account for the demo",
+        "exampleTranslation": "Preciso de uma conta de teste ativa para a demonstração",
+        "visualLabel": "a test account",
+        "audioId": "HW.14.front",
+        "backAudioId": "HW.14.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/0a3feb5e4f780f008152e316297c896201896285ad688330e53320faaa08387f/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.15",
+        "word": "a layout",
+        "translation": "organização visual da tela",
+        "example": "The layout is ready, but the API connection is still missing",
+        "exampleTranslation": "O layout está pronto, mas ainda falta a conexão com a API",
+        "visualLabel": "a layout",
+        "audioId": "HW.15.front",
+        "backAudioId": "HW.15.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/5d3038f82ff3a10e03d978419c7a3395801c55ddfd4d5bf42cdf3876a2189ccd/image.webp"
+      },
+      {
+        "id": "dev-study131.16",
+        "word": "an API",
+        "translation": "interface de comunicação entre sistemas",
+        "example": "The API checks the email address and password",
+        "exampleTranslation": "A API verifica o endereço de e-mail e a senha",
+        "visualLabel": "an API",
+        "audioId": "HW.16.front",
+        "backAudioId": "HW.16.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/20fd7898cacd20f717e5fa9dd86c869d13e0c74e0d8dccd7640593e82a0fe99d/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "dev-study131.17",
+        "word": "task",
+        "translation": "tarefa",
+        "example": "My first task is to build the login screen",
+        "exampleTranslation": "Minha primeira tarefa é criar a tela de login",
+        "visualLabel": "task",
+        "audioId": "HW.17.front",
+        "backAudioId": "HW.17.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/5d3038f82ff3a10e03d978419c7a3395801c55ddfd4d5bf42cdf3876a2189ccd/image.webp"
+      },
+      {
+        "id": "dev-study131.18",
+        "word": "deadline",
+        "translation": "prazo",
+        "example": "The deadline is Friday",
+        "exampleTranslation": "O prazo é sexta-feira",
+        "visualLabel": "deadline",
+        "audioId": "HW.18.front",
+        "backAudioId": "HW.18.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/bd6d4d08ac9e42ad4a2d6a728fd5d026f5eab053a6afe618e526d6ecf15c6456/image.webp"
+      },
+      {
+        "id": "dev-study131.19",
+        "word": "feedback",
+        "translation": "comentários para melhorar o trabalho",
+        "example": "Thanks for the feedback",
+        "exampleTranslation": "Obrigada pelos comentários",
+        "visualLabel": "feedback",
+        "audioId": "HW.19.front",
+        "backAudioId": "HW.19.back",
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/7c5ca63718143557b6f58265ac3675e690f37525470f3383778afdd1be9b9a1a/image.webp"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "dev-study-shadowing",
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentLabel": "American English"
+      },
+      {
+        "id": "owen",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentLabel": "British English"
+      },
+      {
+        "id": "niamh",
+        "name": "Niamh",
+        "avatarUrl": "/flashcards/course-characters/niamh-murphy/image.webp",
+        "accentLabel": "Irish English"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "SH.1",
+        "speakerId": "kim",
+        "displayText": "I’m working on a small web application.",
+        "translation": "Estou trabalhando em um pequeno aplicativo web."
+      },
+      {
+        "id": "SH.2",
+        "speakerId": "kim",
+        "displayText": "My goal is to explain one feature clearly.",
+        "translation": "Meu objetivo é explicar uma funcionalidade com clareza."
+      },
+      {
+        "id": "SH.3",
+        "speakerId": "owen",
+        "displayText": "I expected the tasks to stay in the list.",
+        "translation": "Eu esperava que as tarefas continuassem na lista."
+      },
+      {
+        "id": "SH.4",
+        "speakerId": "niamh",
+        "displayText": "After I refreshed the page, the list was empty.",
+        "translation": "Depois que eu atualizei a página, a lista estava vazia."
+      },
+      {
+        "id": "SH.5",
+        "speakerId": "kim",
+        "displayText": "Could you say that again?",
+        "translation": "Você poderia repetir?"
+      },
+      {
+        "id": "SH.6",
+        "speakerId": "kim",
+        "displayText": "Next time, I’ll test one small change.",
+        "translation": "Da próxima vez, vou testar uma pequena mudança."
+      }
+    ]
+  },
+  "voice": {
+    "prompt": "Tell your teacher what you are learning, explain one feature of a project and say what you want to improve",
+    "duration": "30–60 seconds",
+    "starters": [
+      "I’m learning…",
+      "My project helps people…",
+      "Next, I want to…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

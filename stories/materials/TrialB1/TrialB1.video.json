@@ -1,0 +1,37 @@
+{
+  "title": "Camping or staying home?",
+  "instruction": "Watch two friends discuss camping. Explain what changes his mind, then choose your own kind of trip",
+  "video": {
+    "videoId": "eYa46Ap49Kk",
+    "startSeconds": 109,
+    "endSeconds": 145.5,
+    "title": "The First Guy To Ever Go Camping",
+    "credit": "Ryan George"
+  },
+  "items": [
+    {
+      "id": "trip-context",
+      "prompt": "Why does one man suggest staying at home?",
+      "hint": "Compare the camping equipment with what they already have at home",
+      "answer": "He thinks camping gives them a less comfortable version of what they already have at home"
+    },
+    {
+      "id": "trip-offer",
+      "prompt": "What does his friend think they depend on too much?",
+      "hint": "Listen for three things before disconnect",
+      "answer": "His friend thinks they depend too much on their comforts, houses and devices"
+    },
+    {
+      "id": "trip-request",
+      "prompt": "What finally makes camping sound nice to the hesitant man?",
+      "hint": "Listen to the suggestion about nature and the stars",
+      "answer": "The idea of disconnecting from their usual comforts, reconnecting with nature and looking at the stars makes it sound nice"
+    },
+    {
+      "id": "trip-you",
+      "prompt": "Would you choose a camping trip or a comfortable hotel? Explain why and ask your teacher",
+      "hint": "Compare comfort, nature and being away from your devices",
+      "answer": "Example: I’d choose camping because I’d like to switch off and spend time outdoors. What would you choose?"
+    }
+  ]
+}

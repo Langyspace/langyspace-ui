@@ -1,0 +1,255 @@
+{
+  "key": "b1-12",
+  "code": "B1.12",
+  "title": "Office or home?",
+  "first": {
+    "id": "course-practice-b1-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-12-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "because"
+          },
+          {
+            "id": "b",
+            "text": "because of"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de because, podemos colocar uma oração completa, como it’s quiet. Because of pede uma expressão nominal, não essa oração. Por isso: “I stay home because it’s quiet”"
+          },
+          "wrong": {
+            "title": "Depois de because, podemos colocar uma oração completa, como it’s quiet.",
+            "message": "Because of pede uma expressão nominal, não essa oração. Por isso: “I stay home because it’s quiet”"
+          }
+        },
+        "context": "I stay home ___ it’s quiet"
+      },
+      {
+        "id": "course-b1-12-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "The traffic é uma expressão nominal. Para apresentar esse motivo, usamos because of; because sozinho precisaria de uma oração. Por isso: “I arrived late because of the traffic”"
+          },
+          "wrong": {
+            "title": "The traffic é uma expressão nominal.",
+            "message": "Para apresentar esse motivo, usamos because of; because sozinho precisaria de uma oração. Por isso: “I arrived late because of the traffic”"
+          }
+        },
+        "context": "I arrived late because the traffic"
+      },
+      {
+        "id": "course-b1-12-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Although of I prefer home, I value team contact"
+          },
+          {
+            "id": "b",
+            "text": "Although I prefer home, I value team contact"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Although já liga o contraste à oração I prefer home. Não colocamos of depois dele. Por isso: “Although I prefer home, I value team contact”"
+          },
+          "wrong": {
+            "title": "Although já liga o contraste à oração I prefer home.",
+            "message": "Não colocamos of depois dele. Por isso: “Although I prefer home, I value team contact”"
+          }
+        }
+      },
+      {
+        "id": "course-b1-12-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "so"
+          },
+          {
+            "id": "a",
+            "text": "so because"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "So apresenta o resultado de o trem ter atrasado. Não precisamos colocar because depois dele também. Por isso: “The train was late, so I missed the meeting”"
+          },
+          "wrong": {
+            "title": "So apresenta o resultado de o trem ter atrasado.",
+            "message": "Não precisamos colocar because depois dele também. Por isso: “The train was late, so I missed the meeting”"
+          }
+        },
+        "context": "The train was late, ___ I missed the meeting"
+      },
+      {
+        "id": "course-b1-12-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "However conecta a nova frase ao contraste com a anterior. Ele não funciona como uma preposição com of this. Por isso: “The office is busy. However, I work well there”"
+          },
+          "wrong": {
+            "title": "However conecta a nova frase ao contraste com a anterior.",
+            "message": "Ele não funciona como uma preposição com of this. Por isso: “The office is busy. However, I work well there”"
+          }
+        },
+        "context": "The office is busy. However, I work well there"
+      },
+      {
+        "id": "course-b1-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I stayed home because of the noise"
+          },
+          {
+            "id": "b",
+            "text": "I stayed home because of it was noisy"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Because of pode ser seguido de the noise. Se você quiser dizer it was noisy, que tem sujeito e verbo, use because sem of. Por isso: “I stayed home because of the noise”"
+          },
+          "wrong": {
+            "title": "Because of pode ser seguido de the noise.",
+            "message": "Se você quiser dizer it was noisy, que tem sujeito e verbo, use because sem of. Por isso: “I stayed home because of the noise”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-12.shadowing.01",
+        "displayText": "Do you work better at home or in an office?",
+        "translation": "Você trabalha melhor em casa ou no escritório?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.02",
+        "displayText": "At home, usually, because I can concentrate without interruptions",
+        "translation": "Em casa, geralmente, porque consigo me concentrar sem interrupções",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-12.shadowing.03",
+        "displayText": "I understand that. However, I miss the quick conversations with the team",
+        "translation": "Entendo. Porém, sinto falta das conversas rápidas com a equipe",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.04",
+        "displayText": "Me too. Although I prefer home, I wouldn’t want to work alone all week",
+        "translation": "Eu também. Embora prefira casa, não gostaria de trabalhar sozinha a semana toda",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-12.shadowing.05",
+        "displayText": "Would a hybrid routine solve that?",
+        "translation": "Uma rotina híbrida resolveria isso?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.06",
+        "displayText": "It could, if we agree on the office days. Otherwise we might all come in separately",
+        "translation": "Poderia, se combinarmos os dias presenciais. Caso contrário, podemos ir em dias diferentes",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-12.shadowing.07",
+        "displayText": "Good point. We could have two shared team days and keep the rest flexible",
+        "translation": "Bem lembrado. Poderíamos ter dois dias de equipe e manter o restante flexível",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.08",
+        "displayText": "That’s worth trying. Let’s check whether it gives us enough quiet time too",
+        "translation": "Vale tentar. Vamos conferir se também dá tempo suficiente de concentração",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: defend a preference, acknowledge a drawback and negotiate a routine",
+    "duration": "60–90 seconds",
+    "starters": [
+      "I need… because…",
+      "The… is… because…",
+      "Although…, I prefer…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Trabalhar em casa ou no escritório?",
+    "first": "Resolver o quiz sobre como explicar razões e contrastes",
+    "shadowing": "Ouvir e repetir as frases para defender uma preferência",
+    "voice": "Mandar um áudio em inglês para a teacher explicando onde prefere trabalhar, reconhecendo uma desvantagem e propondo uma rotina que funcione para a equipe. Termine com uma pergunta"
+  }
+}

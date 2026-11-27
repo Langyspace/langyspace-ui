@@ -1,0 +1,643 @@
+{
+  "version": 81,
+  "code": "C1.11",
+  "key": "c1-11",
+  "title": "To put it another way…",
+  "goal": "Reformulate a disagreement and check the intended meaning with a concrete example",
+  "freeConversationInstruction": "Explore ideas, ask for clarification and reformulate until both of you understand the other’s point",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall making an action explicit for a recipient",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What response does the person actually need?",
+          "hint": "They need …, rather than …",
+          "cue": "Identify the practical need"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How could one ambiguous word create disagreement?",
+          "hint": "They may interpret … as …",
+          "cue": "Explain the ambiguous interpretation"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you check your reformulation?",
+          "hint": "Have I understood correctly that …?",
+          "cue": "Check the other person agrees"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Reformulating without distorting",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C111-V81.0",
+          "word": "in other words",
+          "translation": "",
+          "example": "In other words, acknowledgement is not the final answer",
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "in other words",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C111-FS81.0",
+          "audioText": "in other words. In other words, acknowledgement is not the final answer."
+        },
+        {
+          "id": "C111-V81.1",
+          "word": "what I mean is",
+          "translation": "",
+          "example": "What I mean is a realistic response time",
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "what I mean is",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C111-FS81.1",
+          "audioText": "what I mean is. What I mean is a realistic response time."
+        },
+        {
+          "id": "C111-V81.2",
+          "word": "to put it another way",
+          "translation": "",
+          "example": "To put it another way, imagine a short receipt message",
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "to put it another way",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C111-FS81.2",
+          "audioText": "to put it another way. To put it another way, imagine a short receipt message."
+        },
+        {
+          "id": "C111-V81.3",
+          "word": "a misunderstanding",
+          "translation": "",
+          "example": "The misunderstanding concerns the meaning of quick",
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "a misunderstanding",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C111-FS81.3",
+          "audioText": "a misunderstanding. The misunderstanding concerns the meaning of quick."
+        },
+        {
+          "id": "C111-V81.4",
+          "word": "a clarification",
+          "translation": "",
+          "example": "A clarification should make the action concrete",
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "a clarification",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C111-FS81.4",
+          "audioText": "a clarification. A clarification should make the action concrete."
+        },
+        {
+          "id": "C111-V81.5",
+          "word": "common ground",
+          "translation": "",
+          "example": "Accuracy and predictability are common ground",
+          "imageUrl": "c1-11-vocabulary81",
+          "imageAlt": "common ground",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C111-FS81.5",
+          "audioText": "common ground. Accuracy and predictability are common ground."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The sender’s need",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Message A · simulated source",
+      "subject": "A quick reply",
+      "paragraphs": [
+        "“Please send a quick reply so I can plan the next stage.” The sender explains that long silence makes scheduling difficult. They want to know whether the request has arrived and when an answer can be expected. The message does not explicitly say whether quick means a receipt acknowledgement or a complete verified response.",
+        "Their underlying need is predictability. A useful reformulation should preserve that without turning it into a demand for unverified figures. The learner should check the intended meaning before assigning an unreasonable position to the sender. The fact that a request feels urgent does not establish that every part of it must be completed immediately."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The receiver’s concern",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Message B · simulated source",
+      "subject": "Time to verify",
+      "paragraphs": [
+        "“Verification of the requested figures requires additional time. We cannot give a reliable final answer today.” The receiver is concerned that a quick reply will be treated as a completed check. They want enough time to verify the figures before anyone acts on them. They have not rejected sending a receipt acknowledgement or a realistic estimate.",
+        "The dense wording is not inherently incorrect, but it leaves the person and next action less visible. A clearer oral version might say who is checking and when they will respond. The task is to identify the common ground, separate acknowledgement from completion and test a concrete example with both sides before declaring the disagreement resolved."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Check the disputed word",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C111-D81.1",
+          "speaker": "Kim",
+          "text": "When you say we need a quick reply, do you mean a full answer today?",
+          "audioText": "When you say we need a quick reply, do you mean a full answer today?",
+          "translation": "Quando diz que precisamos de resposta rápida, quer dizer uma resposta completa hoje?"
+        },
+        {
+          "id": "C111-D81.2",
+          "speaker": "Ana",
+          "text": "Not necessarily. I need to know the request has been received and when a checked answer will follow",
+          "audioText": "Not necessarily. I need to know the request has been received and when a checked answer will follow.",
+          "translation": "Não necessariamente. Preciso saber que o pedido foi recebido e quando virá uma resposta verificada"
+        },
+        {
+          "id": "C111-D81.3",
+          "speaker": "Kim",
+          "text": "I’d taken quick to mean answering before checking the figures",
+          "audioText": "I’d taken quick to mean answering before checking the figures.",
+          "translation": "Eu tinha entendido rápido como responder antes de conferir os números"
+        },
+        {
+          "id": "C111-D81.4",
+          "speaker": "Ana",
+          "text": "That would be risky. What I mean is quick acknowledgement, not instant certainty",
+          "audioText": "That would be risky. What I mean is quick acknowledgement, not instant certainty.",
+          "translation": "Isso seria arriscado. Quero dizer confirmação rápida de recebimento, não certeza instantânea"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Does ‘quick reply’ mean checked figures today?",
+          "hint": "No, it means …",
+          "answer": "No, it means acknowledgement and a time for the checked answer"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What interpretation did Kim initially make?",
+          "hint": "Kim thought …",
+          "answer": "Kim thought a quick reply meant answering before checking the figures"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What risk does Ana identify?",
+          "hint": "An immediate answer might …",
+          "answer": "An immediate answer might present unchecked figures as certain"
+        }
+      ],
+      "dialogueGroup": "c1-11.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "An example makes the meaning testable",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C111-D81.5",
+          "speaker": "Kim",
+          "text": "So, if I understand you correctly, verification can still take until tomorrow?",
+          "audioText": "So, if I understand you correctly, verification can still take until tomorrow?",
+          "translation": "Então, se entendi corretamente, a verificação ainda pode levar até amanhã?"
+        },
+        {
+          "id": "C111-D81.6",
+          "speaker": "Ana",
+          "text": "Yes, provided the sender gives a realistic time and updates us if it changes",
+          "audioText": "Yes, provided the sender gives a realistic time and updates us if it changes.",
+          "translation": "Sim, desde que a pessoa dê um horário realista e avise se mudar"
+        },
+        {
+          "id": "C111-D81.7",
+          "speaker": "Kim",
+          "text": "To put it another way, a message can be fast without pretending the answer is complete",
+          "audioText": "To put it another way, a message can be fast without pretending the answer is complete.",
+          "translation": "Em outras palavras, a mensagem pode ser rápida sem fingir que a resposta está completa"
+        },
+        {
+          "id": "C111-D81.8",
+          "speaker": "Ana",
+          "text": "Exactly. A concrete example would be: “Received. I’ll check the figures and reply by four tomorrow.”",
+          "audioText": "Exactly. A concrete example would be: “Received. I’ll check the figures and reply by four tomorrow.”",
+          "translation": "Exatamente. Um exemplo concreto seria: “Recebido. Vou conferir os números e responder até as quatro de amanhã.”"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Can verification take until tomorrow?",
+          "hint": "Yes, provided …",
+          "answer": "Yes, provided the sender gives a realistic time and updates it if needed"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How can a fast message remain accurate?",
+          "hint": "It can acknowledge … without …",
+          "answer": "It can acknowledge receipt without pretending the answer is complete"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What concrete promise does Ana’s example make?",
+          "hint": "It promises to … by …",
+          "answer": "The example promises to check the figures and reply by four tomorrow"
+        }
+      ],
+      "dialogueGroup": "c1-11.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Find common ground without assuming agreement",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C111-D81.9",
+          "speaker": "Kim",
+          "text": "That also makes the next step easier to track than “verification of availability is ongoing”",
+          "audioText": "That also makes the next step easier to track than “verification of availability is ongoing”.",
+          "translation": "Isso também facilita acompanhar o próximo passo, mais do que “a verificação da disponibilidade está em andamento”"
+        },
+        {
+          "id": "C111-D81.10",
+          "speaker": "Ana",
+          "text": "Yes. The noun phrase isn’t wrong, but it can hide who is doing what and when",
+          "audioText": "Yes. The noun phrase isn’t wrong, but it can hide who is doing what and when.",
+          "translation": "Sim. A expressão nominal não está errada, mas pode esconder quem faz o quê e quando"
+        },
+        {
+          "id": "C111-D81.11",
+          "speaker": "Kim",
+          "text": "Then our common ground is an accurate answer with a visible response time",
+          "audioText": "Then our common ground is an accurate answer with a visible response time.",
+          "translation": "Então nosso ponto em comum é uma resposta correta com prazo visível"
+        },
+        {
+          "id": "C111-D81.12",
+          "speaker": "Ana",
+          "text": "And we should check that interpretation with the other person instead of announcing the disagreement is solved",
+          "audioText": "And we should check that interpretation with the other person instead of announcing the disagreement is solved.",
+          "translation": "E devemos conferir essa interpretação com a outra pessoa em vez de anunciar que a discordância acabou"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "Why might the noun phrase obscure the next step?",
+          "hint": "It can hide …",
+          "answer": "The noun phrase can hide who is doing what and when"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What common ground do they identify?",
+          "hint": "They both need … with …",
+          "answer": "They both need an accurate answer with a visible response time"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why should they check that interpretation?",
+          "hint": "They shouldn’t assume …",
+          "answer": "They shouldn’t assume the other person accepts their summary"
+        }
+      ],
+      "dialogueGroup": "c1-11.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Check your interpretation",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Make the meaning concrete and check it",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Check your interpretation",
+          "verb": "So, if I understand you correctly, …",
+          "example": "So, if I understand you correctly, a checked answer tomorrow is acceptable?"
+        },
+        {
+          "id": "1",
+          "subject": "Replace an abstraction with an example",
+          "verb": "To put it another way, imagine …",
+          "example": "Imagine a message saying received, with a checked reply time"
+        },
+        {
+          "id": "2",
+          "subject": "Expand a dense noun phrase",
+          "verb": "person + action + time",
+          "example": "“Verification is ongoing” → “I’m checking the figures and will reply by four”"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Help them understand each other",
+      "instruction": "Explain both views and check that I understood them correctly",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Quick acknowledgement, not unchecked certainty",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position",
+      "audioText": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position.",
+      "audioId": "C111-L81.1",
+      "greeting": "I’ve checked the wording of that explanation",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What was the speaker asking for?",
+          "hint": "They wanted … and …",
+          "answer": "The speaker wanted prompt acknowledgement and a realistic time for the complete answer"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What response pattern is causing difficulty?",
+          "hint": "Silence followed by …",
+          "answer": "Silence followed by a rushed, unchecked answer is causing difficulty"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What two needs should the reformulation make visible?",
+          "hint": "One person needs …; the other …",
+          "answer": "One person needs accuracy; the other needs a response time for planning"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Restate both positions and check them",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Same words, a different message",
+      "instruction": "Watch the pace and pitch examples, then clarify a possible misunderstanding",
+      "minutes": 4,
+      "video": {
+        "videoId": "eIho2S0ZahI",
+        "startSeconds": 381,
+        "endSeconds": 416,
+        "title": "Julian Treasure — How to speak so that people want to listen — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-11.video102.q1",
+          "prompt": "How does the speaker use a slower pace?",
+          "hint": "Listen to the demonstration after the fast delivery",
+          "answer": "He slows down to emphasise a point"
+        },
+        {
+          "id": "c1-11.video102.q2",
+          "prompt": "What sentence does he repeat with a different pitch?",
+          "hint": "Listen to the question about a missing object",
+          "answer": "He repeats, “Where did you leave my keys?”"
+        },
+        {
+          "id": "c1-11.video102.q3",
+          "prompt": "Why might a listener understand the second delivery differently?",
+          "hint": "Consider possible urgency without claiming a universal rule",
+          "answer": "Example: The higher pitch may suggest more urgency or frustration, depending on the context"
+        },
+        {
+          "id": "c1-11.video102.q4",
+          "prompt": "Clarify your meaning after a colleague thinks you were blaming them",
+          "hint": "Reformulate and check with a concrete example",
+          "answer": "Example: To put it another way, I’m asking where to look, not suggesting it’s your fault. Would checking the meeting room be a good first step?"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Reformulate a disagreement and check the intended meaning with a concrete example"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Two needs behind one word",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Person A",
+          "value": "A prompt reply to plan the next step"
+        },
+        {
+          "id": "1",
+          "label": "Person B",
+          "value": "Time to verify before stating the figures"
+        },
+        {
+          "id": "2",
+          "label": "Potential bridge",
+          "value": "Acknowledge now · give a checked-answer time"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you explain the first person’s need?",
+          "hint": "They need a prompt … so that …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you preserve the other person’s accuracy concern?",
+          "hint": "That doesn’t require … before …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What example could bridge the two needs?",
+          "hint": "Received; I’ll … and reply by …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Two needs behind one word"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "A workable distinction",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Now",
+          "value": "Acknowledge receipt"
+        },
+        {
+          "id": "1",
+          "label": "After checking",
+          "value": "Complete answer · by 4 tomorrow if realistic"
+        },
+        {
+          "id": "2",
+          "label": "If timing changes",
+          "value": "Send an update, not silence"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What would you ask the sender to do now?",
+          "hint": "Please acknowledge … and give …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What should happen if the timing changes?",
+          "hint": "If …, send … rather than …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you check that both people accept your summary?",
+          "hint": "Does that reflect …, or have I missed …?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "A workable distinction"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Person A",
+          "value": "A prompt reply to plan the next step"
+        },
+        {
+          "id": "1",
+          "label": "Person B",
+          "value": "Time to verify before stating the figures"
+        },
+        {
+          "id": "2",
+          "label": "Potential bridge",
+          "value": "Acknowledge now · give a checked-answer time"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What do you think the other person means?",
+          "cue": "Check your interpretation before responding",
+          "hint": "So, if I understand you correctly, …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Can you explain it another way?",
+          "cue": "Use a concrete example rather than repeat the same words",
+          "hint": "To put it another way, imagine …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would you agree explicitly before moving on?",
+          "cue": "Turn different interpretations into a checkable shared expectation",
+          "hint": "By …, we mean … Could we confirm … so we’re working to the same expectation?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

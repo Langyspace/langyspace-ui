@@ -1,0 +1,25 @@
+# Next task
+
+Continue the owner’s live local review of the11-page customer-portal lesson; record feedback in reviews.md. Current single-speaker frame keeps both captions visible (Kim left, learner below/right), the filled grey hint next to Next, no detached learner bubble and no routine status instructions. The hint button stays mounted, disabled until a learner prompt, to keep the transport stable.
+
+Planning is people-only with captions over the grid. Review uses an identified shared application, a vertical participant column, and a lower free area inside the shared window for the two captions. The bulb cycles instruction → hint → complete example → instruction for all 12 directed learner turns, replacing rather than stacking text. Avoid returning to captions beside the form or a horizontal participant strip; those intermediate layouts were rejected.
+
+Reuse the latest passing10-test result in shared-presentation-tests.log and source declaration/API check in shared-presentation logs while relevant inputs are unchanged. The read-only Login/recovery flow and shared-window caption placement have focused coverage; do not repeat the earlier environment-timeout work. The full typecheck/catalog visual matrix was not rerun.
+
+Original staging publication remains pending the consolidated local revision. Once ready, commit/export/adopt the new66-material catalog through the canonical coordinator once, preserving the previous65 entries/covers. No production authorization in95. Local preview server restarted25 November in exec session36662 at port8955.
+
+Latest work screens retain the computer frame: Access has its generated error artwork, project/email and one supported opening pair; Daily has a native3-column TaskBoard with assignees; the independent blocker uses2columns and one learner-led cue. Do not return to either the old dense key-value screens or the intermediate unsupported image-only Access. Final evidence is in contextual-work logs; TaskBoard/manifest evidence in simplified-work-tests.
+
+Latest refinement: Access has a padlock alone and centered error text; live teacher labels use Teacher or the injected first name/photo. Feedback and Blocker have an initial teacher question. Daily speaking support is hint → full model per answer in order, then reset. Device/board pairings are vertically centered via opt-in SlidePage columnAlignment; the voice-message pairing uses its balanced center layout. Reuse the passing5-test and final declaration/API evidence in teacher-support-refinement logs.
+Latest owner correction supersedes centered pairing above: Access, Daily, Feedback and Blocker conversations align to the top. One progressive bulb is inside the end of the last learner bubble, not below the conversation. Meeting support remains beside Next. Source declarations passed; DevTeamMeeting 5/5 and dialogue callback regression passed; three unrelated vocabulary visibility assertions remain recorded in validation.md. Local preview remains the delivery surface.
+Latest toolkit revision: one POV developer-desk scene replaces the six white icon cards. Six SceneExplorer vocabulary hotspots keep the original labels/examples and word-plus-example audio. See toolkit-pov-prompt.txt and toolkit-pov-image.json; prompt prefix intact, one built-in generation, no references. Local preview only; no package/API contract change or publication.
+
+## 25 November — clarified column footer and staged homework
+
+Owner clarified the bulb belongs outside all bubbles, horizontally centered at the bottom of the conversation column. This supersedes the intermediate inline-bubble placement. Access/Daily/Feedback/Blocker use the canonical stretch pairing with LearningDialogue.footerAction; dialogue remains at the top and meeting transport is unchanged.
+
+Two homework activities are now verified in staging: dev-first-day-flashcards (6cards) and dev-first-day-shadowing (6phrases). The local ending enables their native links; production stays disabled.18 existing recordings and the canonical Kim portrait were reused, with no new generation. See homework/README.md and publication-receipt.json. No lesson Hosting export/publication or backend deployment occurred.
+
+Latest homework correction:Dev flashcards are20 distinct terms with complete English word/example audio in staging and the local preview; shadowing stays6phrases. Reuse the two passing DevHomework tests and homework/publication-receipt.json. Thirty other course decks below20 are mapped in homework/expansion-plan20.md; their candidate additions require lesson-level curation/media completion before publication. Production inspection was read-only. Preserve old six-card receipts in history-six-cards and the original40 lesson recordings.
+
+Guideline entry point updated25 November:for the next material, start with docs/materials/material-authoring-playbook.md, linked from the central guideline and AGENTS. It consolidates exact page copy/interaction, canonical component selection, final support placement, coherent work narrative, immutable image prompt,20-card homework and separate publication states. Historical interim designs are not the starting template.

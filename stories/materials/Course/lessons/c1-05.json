@@ -1,0 +1,643 @@
+{
+  "version": 81,
+  "code": "C1.05",
+  "key": "c1-05",
+  "title": "Little did I know…",
+  "goal": "Shape a story so the listener understands why the ending is surprising",
+  "freeConversationInstruction": "Share stories, react naturally and ask questions about the details that matter",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall the background and turning point of a story",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What does a listener need to understand before a story’s surprise?",
+          "hint": "They first need to know …",
+          "cue": "Establish the listener’s starting point"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you distinguish noticing a loss from its cause?",
+          "hint": "I noticed … at …, but that doesn’t show …",
+          "cue": "Separate discovery from cause"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Where would emphasis help rather than exaggerate?",
+          "hint": "I’d emphasise … because …",
+          "cue": "Choose what deserves emphasis"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "A story with a turning point",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C105-V81.0",
+          "word": "at first",
+          "translation": "",
+          "example": "At first, I assumed it had disappeared on the train",
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "at first",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C105-FS81.0",
+          "audioText": "at first. At first, I assumed it had disappeared on the train."
+        },
+        {
+          "id": "C105-V81.1",
+          "word": "to my surprise",
+          "translation": "",
+          "example": "To my surprise, the photograph told another story",
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "to my surprise",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C105-FS81.1",
+          "audioText": "to my surprise. To my surprise, the photograph told another story."
+        },
+        {
+          "id": "C105-V81.2",
+          "word": "as it turned out",
+          "translation": "",
+          "example": "As it turned out, it was still at the café",
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "as it turned out",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C105-FS81.2",
+          "audioText": "as it turned out. As it turned out, it was still at the café."
+        },
+        {
+          "id": "C105-V81.3",
+          "word": "a turning point",
+          "translation": "",
+          "example": "That earlier photograph was the turning point",
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "a turning point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C105-FS81.3",
+          "audioText": "a turning point. That earlier photograph was the turning point."
+        },
+        {
+          "id": "C105-V81.4",
+          "word": "looking back",
+          "translation": "",
+          "example": "Looking back, I’d confused noticing with losing",
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "looking back",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C105-FS81.4",
+          "audioText": "looking back. Looking back, I’d confused noticing with losing."
+        },
+        {
+          "id": "C105-V81.5",
+          "word": "the last thing I expected",
+          "translation": "",
+          "example": "Finding it on that chair was the last thing I expected",
+          "imageUrl": "c1-05-vocabulary81",
+          "imageAlt": "the last thing I expected",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C105-FS81.5",
+          "audioText": "the last thing I expected. Finding it on that chair was the last thing I expected."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The initial account",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Traveller’s account · simulated source",
+      "subject": "Noticed missing on the train",
+      "paragraphs": [
+        "The traveller had spent the morning at a café before taking a train. A coat had been left over a chair, then put on in a hurry before departure. During the journey, the traveller noticed that a scarf was missing. An anxious first explanation was that it might have disappeared somewhere between the station and the train.",
+        "The record does not establish theft, an encounter with a stranger or the exact moment the scarf was set down. For a clear retelling, distinguish the moment of noticing the loss from the moment of losing the object. The listener needs the café and coat detail before a later discovery can change the interpretation."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The later clue",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Café staff’s account · simulated source",
+      "subject": "A photograph and a chair",
+      "paragraphs": [
+        "Café staff later found the scarf on the chair where the coat had been earlier. A photograph taken before the traveller left shows the scarf already there. The staff kept it behind the counter until it could be collected. These are the agreed facts of this fictional story.",
+        "The useful twist is a corrected timeline, not an invented danger. A storyteller can decide when to reveal the photograph, but should not change what it proves. It explains why the initial train explanation was mistaken and gives an ordinary setting new significance. The collection details can be shortened if they distract from that turning point."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Prepare the listener",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C105-D81.1",
+          "speaker": "Kim",
+          "text": "You look relieved. Have you found the scarf you thought you’d lost?",
+          "audioText": "You look relieved. Have you found the scarf you thought you’d lost?",
+          "translation": "Você parece aliviada. Encontrou o cachecol que achava que tinha perdido?"
+        },
+        {
+          "id": "C105-D81.2",
+          "speaker": "Ana",
+          "text": "Not yet, but the café staff think they’ve seen it. I was convinced it had gone on the train",
+          "audioText": "Not yet, but the café staff think they’ve seen it. I was convinced it had gone on the train.",
+          "translation": "Ainda não, mas o pessoal do café acha que o viu. Eu tinha certeza de que tinha sumido no trem"
+        },
+        {
+          "id": "C105-D81.3",
+          "speaker": "Kim",
+          "text": "When did you actually notice it was missing?",
+          "audioText": "When did you actually notice it was missing?",
+          "translation": "Quando você realmente percebeu que estava faltando?"
+        },
+        {
+          "id": "C105-D81.4",
+          "speaker": "Ana",
+          "text": "During the journey. Before that, I’d put on my coat and hurried from the café to the station",
+          "audioText": "During the journey. Before that, I’d put on my coat and hurried from the café to the station.",
+          "translation": "Durante a viagem. Antes disso, eu tinha vestido o casaco e corrido do café para a estação"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Where did Ana initially think the scarf had gone?",
+          "hint": "She thought it …",
+          "answer": "Ana initially thought the scarf had gone on the train"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When did she notice it was missing?",
+          "hint": "She noticed …",
+          "answer": "Ana noticed the scarf was missing during the journey"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What had she done just before going to the station?",
+          "hint": "She had … and …",
+          "answer": "Ana had put on her coat and hurried from the café"
+        }
+      ],
+      "dialogueGroup": "c1-05.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Find the turning point",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C105-D81.5",
+          "speaker": "Kim",
+          "text": "Could it have stayed on the café chair when you picked up the coat?",
+          "audioText": "Could it have stayed on the café chair when you picked up the coat?",
+          "translation": "Ele poderia ter ficado na cadeira do café quando você pegou o casaco?"
+        },
+        {
+          "id": "C105-D81.6",
+          "speaker": "Ana",
+          "text": "That hadn’t occurred to me. I thought I remembered wearing it when I left, but I’m less sure now",
+          "audioText": "That hadn’t occurred to me. I thought I remembered wearing it when I left, but I’m less sure now.",
+          "translation": "Eu não tinha pensado nisso. Achava que lembrava de estar com ele ao sair, mas agora tenho menos certeza"
+        },
+        {
+          "id": "C105-D81.7",
+          "speaker": "Kim",
+          "text": "Do you have a photograph from before you left? It might help distinguish a memory from an assumption",
+          "audioText": "Do you have a photograph from before you left? It might help distinguish a memory from an assumption.",
+          "translation": "Você tem uma foto de antes de sair? Talvez ajude a separar lembrança de suposição"
+        },
+        {
+          "id": "C105-D81.8",
+          "speaker": "Ana",
+          "text": "I do. I’ve sent it to the staff, and they’re checking the chair and the picture",
+          "audioText": "I do. I’ve sent it to the staff, and they’re checking the chair and the picture.",
+          "translation": "Tenho. Enviei ao pessoal e estão conferindo a cadeira e a foto"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What alternative explanation does Kim suggest?",
+          "hint": "It could have …",
+          "answer": "The scarf could have stayed on the café chair when Ana picked up her coat"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How confident is Ana about wearing it when leaving?",
+          "hint": "She is …",
+          "answer": "Ana is less sure about that memory now"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What evidence are the staff checking?",
+          "hint": "They are checking … and …",
+          "answer": "The staff are checking the chair and a photograph taken before departure"
+        }
+      ],
+      "dialogueGroup": "c1-05.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Choose the emphasis",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C105-D81.9",
+          "speaker": "Kim",
+          "text": "What would that change about the story?",
+          "audioText": "What would that change about the story?",
+          "translation": "O que isso mudaria na história?"
+        },
+        {
+          "id": "C105-D81.10",
+          "speaker": "Ana",
+          "text": "If the scarf is in that earlier photo, I’ll know it didn’t disappear during the train journey",
+          "audioText": "If the scarf is in that earlier photo, I’ll know it didn’t disappear during the train journey.",
+          "translation": "Se o cachecol estiver naquela foto anterior, saberei que não sumiu durante a viagem de trem"
+        },
+        {
+          "id": "C105-D81.11",
+          "speaker": "Kim",
+          "text": "And you could explain why the ending surprised you without turning it into a theft story",
+          "audioText": "And you could explain why the ending surprised you without turning it into a theft story.",
+          "translation": "E poderá explicar por que o final surpreendeu você sem transformar isso em uma história de roubo"
+        },
+        {
+          "id": "C105-D81.12",
+          "speaker": "Ana",
+          "text": "Exactly. At first I confused where I noticed the loss with where I’d actually left it",
+          "audioText": "Exactly. At first I confused where I noticed the loss with where I’d actually left it.",
+          "translation": "Exatamente. Primeiro confundi onde percebi a falta com onde eu realmente o tinha deixado"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What would the scarf appearing in the earlier photo establish?",
+          "hint": "It would establish …",
+          "answer": "It would establish that the scarf did not disappear during the train journey"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What unsupported narrative should be avoided?",
+          "hint": "They should avoid …",
+          "answer": "They should avoid turning the story into an unsupported theft claim"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What initial confusion does Ana identify?",
+          "hint": "She confused … with …",
+          "answer": "Ana confused where she noticed the loss with where she left the scarf"
+        }
+      ],
+      "dialogueGroup": "c1-05.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Choose when to reveal a detail",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Emphasis that earns its place in the story",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Signal an unexpected discovery",
+          "verb": "Little did I know + clause",
+          "example": "Little did I know the scarf was still at the café"
+        },
+        {
+          "id": "1",
+          "subject": "Emphasise an exceptional earlier experience",
+          "verb": "Never had + subject + participle",
+          "example": "Never had I been so relieved to recognise a chair"
+        },
+        {
+          "id": "2",
+          "subject": "A plain alternative is equally valid",
+          "verb": "I didn’t realise … / I had never …",
+          "example": "I didn’t realise the scarf was still there"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Tell a story worth following",
+      "instruction": "Tell the story so I can follow why the ending matters",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The photograph changes the timeline",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want",
+      "audioText": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want.",
+      "audioId": "C105-L81.1",
+      "greeting": "I found the photograph from before the train journey",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Where did staff find the scarf?",
+          "hint": "They found it …",
+          "answer": "The staff found the scarf on the café chair"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How did the photograph change the explanation?",
+          "hint": "It showed … before …",
+          "answer": "The photograph showed the scarf on the chair before the train journey"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How did the story end?",
+          "hint": "The staff … and the traveller …",
+          "answer": "The staff kept the scarf behind the counter and the traveller collected it later"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "c1-05-scarf-photo123",
+        "alt": "The scarf on the café chair before departure"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Retell the ending so it matters",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Let the listener feel the turning point",
+      "instruction": "Watch the contrast between a flat story and a tense one, then reshape an opening",
+      "minutes": 4,
+      "video": {
+        "videoId": "m04lQ5BUAn0",
+        "startSeconds": 474,
+        "endSeconds": 565,
+        "title": "How to tell a story in English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "c1-05.video102.q1",
+          "prompt": "Why does the speaker reject the short monster story?",
+          "hint": "Look at how easily the goal is reached",
+          "answer": "The problem is solved immediately, so there is little tension"
+        },
+        {
+          "id": "c1-05.video102.q2",
+          "prompt": "Which details make the mountain journey difficult before the storm?",
+          "hint": "Listen for physical conditions and what the traveller carries",
+          "answer": "The thin air and heavy pack make it difficult before the weather changes"
+        },
+        {
+          "id": "c1-05.video102.q3",
+          "prompt": "What information is withheld after the storm arrives?",
+          "hint": "Notice the questions left open",
+          "answer": "The excerpt leaves open whether the traveller crossed the pass or was hurt"
+        },
+        {
+          "id": "c1-05.video102.q4",
+          "prompt": "Recast the turning point using an emphatic opening",
+          "hint": "Use Little did I know without inventing the story’s ending",
+          "answer": "Example: Little did I know that a storm was about to arrive just as I approached the top"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Shape a story so the listener understands why the ending is surprising"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "The factual story, not a theft claim",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Before the train",
+          "value": "Café · coat on a chair"
+        },
+        {
+          "id": "1",
+          "label": "On the train",
+          "value": "Scarf noticed missing"
+        },
+        {
+          "id": "2",
+          "label": "Later clue",
+          "value": "A photograph from before departure"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you establish the traveller’s initial expectation?",
+          "hint": "At first, they were convinced …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you introduce the photograph without claiming theft?",
+          "hint": "A photograph taken … suggested …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What question about the timeline still needs answering?",
+          "hint": "We still need to know whether …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "The factual story, not a theft claim"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Photograph taken before departure",
+      "facts": [
+        {
+          "id": "1",
+          "label": "What it rules out",
+          "value": "Disappearance during that train journey"
+        },
+        {
+          "id": "2",
+          "label": "Outcome",
+          "value": "Staff kept it · traveller collected it"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you reveal what the photograph establishes?",
+          "hint": "What the photograph showed was …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you explain the surprise accurately?",
+          "hint": "The surprise was …, rather than …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you close the story without adding drama?",
+          "hint": "The staff …, and later …"
+        }
+      ],
+      "questionPurpose": "response",
+      "image": "c1-05-scarf-photo123",
+      "referenceLabel": "Photograph taken before departure"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Before the train",
+          "value": "Café · coat on a chair"
+        },
+        {
+          "id": "1",
+          "label": "On the train",
+          "value": "Scarf noticed missing"
+        },
+        {
+          "id": "2",
+          "label": "Later clue",
+          "value": "A photograph from before departure"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Which detail would you reveal first?",
+          "cue": "Choose what the listener needs before the surprise",
+          "hint": "At first, … What I didn’t realise was …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What changed the way you saw the situation?",
+          "cue": "Explain the turning point and its significance",
+          "hint": "As it turned out, …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you tell the ending without explaining away its ambiguity?",
+          "cue": "Retain a meaningful uncertainty and invite an interpretation",
+          "hint": "What makes it striking is …, though we never find out … How do you read it?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

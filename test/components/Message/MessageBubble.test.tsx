@@ -65,4 +65,24 @@ describe('MessageBubble', () => {
       screen.getByText('Tento novamente depois.').parentElement,
     ).toHaveStyle({ overflowWrap: 'anywhere' })
   })
+
+  it('uses readable native sent-message colors only for the explicit messaging appearance', () => {
+    const { rerender } = render(
+      <MessageBubble appearance="messaging" side="outgoing" timestamp="10:30">
+        A sent message
+      </MessageBubble>,
+    )
+    expect(screen.getByText('A sent message').parentElement).toHaveStyle({
+      background: '#D9FDD3',
+      color: '#0A0A0A',
+    })
+    rerender(
+      <MessageBubble side="outgoing" timestamp="10:30">
+        A sent message
+      </MessageBubble>,
+    )
+    expect(screen.getByText('A sent message').parentElement).not.toHaveStyle({
+      background: '#D9FDD3',
+    })
+  })
 })

@@ -1,0 +1,695 @@
+{
+  "version": 81,
+  "code": "C1.06",
+  "key": "c1-06",
+  "title": "The more I think about it…",
+  "goal": "Weigh a trade-off, explain its priority and specify what could change the recommendation",
+  "freeConversationInstruction": "Explore a difficult choice, discuss your priorities and challenge each other’s assumptions",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a recommendation with a cost caveat",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What would you verify before recommending a course?",
+          "hint": "I’d verify … rather than assume …",
+          "cue": "Identify the decisive checks"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which requirement could reverse your initial preference?",
+          "hint": "If …, I’d reconsider …",
+          "cue": "State a possible reversal"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you communicate a provisional recommendation?",
+          "hint": "On current information …, subject to …",
+          "cue": "Qualify your recommendation"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Choices with a real trade-off",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C106-V81.0",
+          "word": "a trade-off",
+          "translation": "",
+          "example": "This is a trade-off between cost and flexibility",
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a trade-off",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C106-FS81.0",
+          "audioText": "a trade-off. This is a trade-off between cost and flexibility."
+        },
+        {
+          "id": "C106-V81.1",
+          "word": "a priority",
+          "translation": "",
+          "example": "Attendance may become the main priority",
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a priority",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C106-FS81.1",
+          "audioText": "a priority. Attendance may become the main priority."
+        },
+        {
+          "id": "C106-V81.2",
+          "word": "a long-term benefit",
+          "translation": "",
+          "example": "The long-term benefit depends on applying the skills",
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a long-term benefit",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C106-FS81.2",
+          "audioText": "a long-term benefit. The long-term benefit depends on applying the skills."
+        },
+        {
+          "id": "C106-V81.3",
+          "word": "a short-term cost",
+          "translation": "",
+          "example": "The higher fee is a short-term cost",
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a short-term cost",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C106-FS81.3",
+          "audioText": "a short-term cost. The higher fee is a short-term cost."
+        },
+        {
+          "id": "C106-V81.4",
+          "word": "a deal-breaker",
+          "translation": "",
+          "example": "A fixed timetable conflict could be a deal-breaker",
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "a deal-breaker",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C106-FS81.4",
+          "audioText": "a deal-breaker. A fixed timetable conflict could be a deal-breaker."
+        },
+        {
+          "id": "C106-V81.5",
+          "word": "reconsider a decision",
+          "translation": "",
+          "example": "We should reconsider the decision when the conditions change",
+          "imageUrl": "c1-06-vocabulary81",
+          "imageAlt": "reconsider a decision",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C106-FS81.5",
+          "audioText": "reconsider a decision. We should reconsider the decision when the conditions change."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The course brief",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Learner profile · simulated source",
+      "subject": "A practical project, not a certificate alone",
+      "paragraphs": [
+        "The fictional learner wants feedback on a practical project. They can usually attend Wednesday evenings and a Friday check-in, while Tuesday is a fixed commitment. The lower fee is attractive, but they are willing to consider a higher cost if the learning can be applied directly. Finishing sooner would help, although it is not a firm deadline.",
+        "Two details remain uncertain: whether the timetable could change, and how closely feedback relates to the learner’s project. A recommendation should name those uncertainties. The learner has not said that flexibility outweighs every other criterion, and the two course formats should not be reduced to cheap versus good."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The comparable options",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Course comparison · simulated source",
+      "subject": "Cost, schedule and application",
+      "paragraphs": [
+        "Course A costs $180 for eight weeks. It currently lists Wednesday sessions from seven to nine, practical tasks and feedback during class. Course B costs $320 for twelve weeks. It lists independent work, a Friday six o’clock check-in and a project discussed at that check-in. These are simulated offers for decision practice.",
+        "The comparison does not establish which teaching is better or guarantee an outcome. The key question is how each format meets the learner’s actual needs. A more expensive option may be feasible without being automatically preferable. Ask what information could change the balance before turning a tentative recommendation into an unconditional one."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Compare the same criteria",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C106-D81.1",
+          "speaker": "Kim",
+          "text": "Which course seems a better fit for the person in this brief?",
+          "audioText": "Which course seems a better fit for the person in this brief?",
+          "translation": "Qual curso parece mais adequado para a pessoa deste perfil?"
+        },
+        {
+          "id": "C106-D81.2",
+          "speaker": "Ana",
+          "text": "A costs less and finishes sooner, but the more I consider the timetable, the more important flexibility seems",
+          "audioText": "A costs less and finishes sooner, but the more I consider the timetable, the more important flexibility seems.",
+          "translation": "O A custa menos e termina antes, mas quanto mais considero o horário, mais importante a flexibilidade parece"
+        },
+        {
+          "id": "C106-D81.3",
+          "speaker": "Kim",
+          "text": "Are we treating flexibility as a preference or a fixed requirement?",
+          "audioText": "Are we treating flexibility as a preference or a fixed requirement?",
+          "translation": "Estamos tratando flexibilidade como preferência ou requisito fixo?"
+        },
+        {
+          "id": "C106-D81.4",
+          "speaker": "Ana",
+          "text": "A preference at the moment. The person can usually attend Wednesday evenings",
+          "audioText": "A preference at the moment. The person can usually attend Wednesday evenings.",
+          "translation": "Como preferência por enquanto. A pessoa geralmente pode ir às quartas à noite"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What initially makes A attractive?",
+          "hint": "It … and …",
+          "answer": "Course A costs less and finishes sooner"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Is flexibility initially a fixed requirement?",
+          "hint": "No, it is …",
+          "answer": "Flexibility is initially a preference"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "When can the person usually attend?",
+          "hint": "They can usually …",
+          "answer": "The person can usually attend on Wednesday evenings"
+        }
+      ],
+      "dialogueGroup": "c1-06.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What could change your mind?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C106-D81.5",
+          "speaker": "Kim",
+          "text": "Then B’s higher price needs a reason beyond being described as flexible",
+          "audioText": "Then B’s higher price needs a reason beyond being described as flexible.",
+          "translation": "Então o preço maior do B precisa de uma razão além de ser chamado de flexível"
+        },
+        {
+          "id": "C106-D81.6",
+          "speaker": "Ana",
+          "text": "True. It has independent work and a Friday check-in, but we haven’t confirmed the feedback format",
+          "audioText": "True. It has independent work and a Friday check-in, but we haven’t confirmed the feedback format.",
+          "translation": "Verdade. Tem trabalho independente e encontro na sexta, mas não confirmamos o formato do retorno"
+        },
+        {
+          "id": "C106-D81.7",
+          "speaker": "Kim",
+          "text": "What would make you reconsider A?",
+          "audioText": "What would make you reconsider A?",
+          "translation": "O que faria você reconsiderar o A?"
+        },
+        {
+          "id": "C106-D81.8",
+          "speaker": "Ana",
+          "text": "A timetable change, or evidence that feedback can’t address the person’s project",
+          "audioText": "A timetable change, or evidence that feedback can’t address the person’s project.",
+          "translation": "Uma mudança de horário ou evidência de que o retorno não atende ao projeto da pessoa"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What needs confirming about B?",
+          "hint": "They haven’t confirmed …",
+          "answer": "They haven’t confirmed B’s feedback format"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How is B’s study time organised?",
+          "hint": "It has … and …",
+          "answer": "B has independent work and a Friday check-in"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What could make Ana reconsider A?",
+          "hint": "Either … or …",
+          "answer": "A timetable change or unsuitable project feedback could make Ana reconsider A"
+        }
+      ],
+      "dialogueGroup": "c1-06.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "A provisional recommendation",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C106-D81.9",
+          "speaker": "Kim",
+          "text": "So the lower price matters, but it isn’t the whole decision",
+          "audioText": "So the lower price matters, but it isn’t the whole decision.",
+          "translation": "Então o preço menor importa, mas não é toda a decisão"
+        },
+        {
+          "id": "C106-D81.10",
+          "speaker": "Ana",
+          "text": "Exactly. The more directly the work applies to the project, the more useful the course becomes",
+          "audioText": "Exactly. The more directly the work applies to the project, the more useful the course becomes.",
+          "translation": "Exatamente. Quanto mais diretamente as tarefas se aplicam ao projeto, mais útil fica o curso"
+        },
+        {
+          "id": "C106-D81.11",
+          "speaker": "Kim",
+          "text": "I’d recommend A provisionally, then verify the two uncertain details",
+          "audioText": "I’d recommend A provisionally, then verify the two uncertain details.",
+          "translation": "Eu recomendaria o A provisoriamente e verificaria os dois detalhes incertos"
+        },
+        {
+          "id": "C106-D81.12",
+          "speaker": "Ana",
+          "text": "And I’d say what could reverse that recommendation, so it doesn’t sound unconditional",
+          "audioText": "And I’d say what could reverse that recommendation, so it doesn’t sound unconditional.",
+          "translation": "E eu diria o que poderia mudar a recomendação para não soar incondicional"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What makes the course more useful beyond price?",
+          "hint": "How directly …",
+          "answer": "How directly the work applies to the person’s project makes it more useful"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "How firm is Kim’s recommendation of A?",
+          "hint": "It is … pending …",
+          "answer": "Kim’s recommendation of A is provisional pending two checks"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why should the recommendation state what could reverse it?",
+          "hint": "So it doesn’t sound …",
+          "answer": "It should state possible reversals so it doesn’t sound unconditional"
+        }
+      ],
+      "dialogueGroup": "c1-06.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Explain your trade-off",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Make the strength of the comparison match the evidence",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A linked change in emphasis",
+          "verb": "the more …, the more / less …",
+          "example": "The more I consider the timetable, the more flexibility matters"
+        },
+        {
+          "id": "1",
+          "subject": "State the size of a difference accurately",
+          "verb": "slightly / considerably / much + comparative",
+          "example": "B is considerably more expensive, but price alone doesn’t settle the choice"
+        },
+        {
+          "id": "2",
+          "subject": "A decision-changing condition",
+          "verb": "I’d reconsider if …",
+          "example": "I’d reconsider A if the live session conflicted with a fixed commitment"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Make the case, then rethink it",
+      "instruction": "Recommend an option and explain what could change your mind",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A preference becomes a constraint",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. Course A has changed its live session from Wednesday to Tuesday, still seven to nine. The person on our brief has a regular Tuesday commitment and cannot attend live then. The provider also says the practical feedback is only given during that live class, not on a recording afterwards. The price and eight-week length are unchanged. This turns attendance from a flexible preference into a serious constraint. Course B’s Friday check-in still fits, but we should confirm whether its feedback covers the person’s project before accepting the higher cost. Could you explain how the balance has changed rather than simply saying the more expensive course is now better? There may also be a later run of A worth asking about",
+      "audioText": "Hi, Ana. Course A has changed its live session from Wednesday to Tuesday, still seven to nine. The person on our brief has a regular Tuesday commitment and cannot attend live then. The provider also says the practical feedback is only given during that live class, not on a recording afterwards. The price and eight-week length are unchanged. This turns attendance from a flexible preference into a serious constraint. Course B’s Friday check-in still fits, but we should confirm whether its feedback covers the person’s project before accepting the higher cost. Could you explain how the balance has changed rather than simply saying the more expensive course is now better? There may also be a later run of A worth asking about.",
+      "audioId": "C106-L81.1",
+      "greeting": "One more detail before we draw a conclusion",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What turns A’s timetable into a serious constraint?",
+          "hint": "The session moved …, when …",
+          "answer": "A’s session moved to Tuesday, when the person has a fixed commitment"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why doesn’t a recording solve the problem?",
+          "hint": "Practical feedback is …",
+          "answer": "Practical feedback is only available during the live class"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should be checked before paying more for B?",
+          "hint": "They should confirm whether …",
+          "answer": "They should confirm whether B’s feedback covers the person’s project"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Revise the reasoning, not just the choice",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Optimism needs a test",
+      "instruction": "Watch Teller explain the moonshot approach, then weigh a proposal and its limit",
+      "minutes": 4,
+      "video": {
+        "videoId": "2t13Rq4oc7A",
+        "startSeconds": 89,
+        "endSeconds": 163,
+        "title": "Astro Teller — The unexpected benefit of celebrating failure — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-06.video102.q1",
+          "prompt": "What three elements does the blueprint require?",
+          "hint": "Listen for problem, solution and a reason to believe",
+          "answer": "It requires a major problem, a radical solution and a reason to believe the technology could be built"
+        },
+        {
+          "id": "c1-06.video102.q2",
+          "prompt": "Why does the team try the hardest parts first?",
+          "hint": "Connect skepticism with the survival of a proposal",
+          "answer": "They try to expose reasons a project may fail before committing further"
+        },
+        {
+          "id": "c1-06.video102.q3",
+          "prompt": "Is a large vision alone enough in this account?",
+          "hint": "Distinguish optimism from a testable plan",
+          "answer": "No. The vision is paired with concrete plans and attempts to disprove it"
+        },
+        {
+          "id": "c1-06.video102.q4",
+          "prompt": "Recommend a proposal and say what evidence would change your recommendation",
+          "hint": "Make the trade-off and priority explicit",
+          "answer": "Example: The more I consider the cost, the more I favour a small trial. I’d reconsider if it demonstrated reliable results at scale"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Weigh a trade-off, explain its priority and specify what could change the recommendation"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Need: practical project feedback · attendable schedule",
+      "options": [
+        {
+          "id": "A",
+          "title": "Course A",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Cost and length",
+              "value": "$180 · eight weeks"
+            },
+            {
+              "id": "1",
+              "label": "Schedule",
+              "value": "Wednesday · 7–9 pm"
+            },
+            {
+              "id": "2",
+              "label": "Application",
+              "value": "Practical tasks · feedback during class"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Course B",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Cost and length",
+              "value": "$320 · twelve weeks"
+            },
+            {
+              "id": "1",
+              "label": "Schedule",
+              "value": "Independent work · Friday 6 pm check-in"
+            },
+            {
+              "id": "2",
+              "label": "Application",
+              "value": "Project · feedback at weekly check-in"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "course",
+          "prompt": "Which course would you provisionally recommend?",
+          "hint": "The more I consider …, the more …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What uncertainty limits that recommendation?",
+          "hint": "This depends on whether …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What new information could reverse it?",
+          "hint": "Were … to change, I’d reconsider …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "New constraints",
+      "facts": [
+        {
+          "id": "0",
+          "label": "A changed",
+          "value": "Tuesday 7–9 pm · fixed conflict"
+        },
+        {
+          "id": "1",
+          "label": "A’s feedback",
+          "value": "Live-only · not supplied with recording"
+        },
+        {
+          "id": "2",
+          "label": "B still to check",
+          "value": "Project feedback · Friday check-in fits"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How has A’s suitability changed?",
+          "hint": "What was a preference has become … because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What must B justify beyond having a suitable time?",
+          "hint": "Its higher price would be justified if …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What alternative would you investigate before deciding?",
+          "hint": "I’d also ask whether … before …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "New constraints"
+    },
+    "s_personal": {
+      "type": "choices",
+      "title": "Situation reference",
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Which trade-off matters most to you?",
+          "cue": "Explain a priority and what you would give up",
+          "hint": "The more I consider …, the more … matters to me",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What would make you reconsider?",
+          "cue": "Name information that could genuinely change your choice",
+          "hint": "I’d reconsider if …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain your decision to someone who values the other option?",
+          "cue": "Recognise their priority while defending your own",
+          "hint": "I can see the case for … For me, the deciding factor is … What would shift your view?",
+          "answer": "One possible response"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "title": "Course A",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Cost and length",
+              "value": "$180 · eight weeks"
+            },
+            {
+              "id": "1",
+              "label": "Schedule",
+              "value": "Wednesday · 7–9 pm"
+            },
+            {
+              "id": "2",
+              "label": "Application",
+              "value": "Practical tasks · feedback during class"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Course B",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Cost and length",
+              "value": "$320 · twelve weeks"
+            },
+            {
+              "id": "1",
+              "label": "Schedule",
+              "value": "Independent work · Friday 6 pm check-in"
+            },
+            {
+              "id": "2",
+              "label": "Application",
+              "value": "Project · feedback at weekly check-in"
+            }
+          ]
+        }
+      ],
+      "questionPurpose": "conversation"
+    }
+  }
+}

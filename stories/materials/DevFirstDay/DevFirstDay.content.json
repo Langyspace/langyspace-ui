@@ -1,0 +1,291 @@
+{
+  "materialKey": "extra-dev-first-day",
+  "title": "Your first day on the team",
+  "instruction": "Join a team building a new customer portal. Explain your work and ask for the help you need",
+  "vocabulary": [
+    {
+      "id": "V.0",
+      "word": "task",
+      "translation": "tarefa",
+      "example": "My first task is to build the login screen",
+      "exampleTranslation": "Minha primeira tarefa é criar a tela de login"
+    },
+    {
+      "id": "V.1",
+      "word": "access",
+      "translation": "acesso",
+      "example": "I need access to the repository",
+      "exampleTranslation": "Preciso de acesso ao repositório"
+    },
+    {
+      "id": "V.2",
+      "word": "blocker",
+      "translation": "impedimento",
+      "example": "Missing access is a blocker",
+      "exampleTranslation": "A falta de acesso é um impedimento"
+    },
+    {
+      "id": "V.3",
+      "word": "deadline",
+      "translation": "prazo",
+      "example": "The deadline is Friday",
+      "exampleTranslation": "O prazo é sexta-feira"
+    },
+    {
+      "id": "V.4",
+      "word": "update",
+      "translation": "atualização de andamento",
+      "example": "Here is a quick update",
+      "exampleTranslation": "Aqui vai uma atualização rápida"
+    },
+    {
+      "id": "V.5",
+      "word": "feedback",
+      "translation": "comentários para melhorar o trabalho",
+      "example": "Thanks for the feedback",
+      "exampleTranslation": "Obrigada pelos comentários"
+    }
+  ],
+  "call": [
+    {
+      "id": "CALL.1",
+      "text": "Hi, welcome to the team! I’m Kim. Can you hear me clearly?",
+      "cue": "Confirm that you can hear Kim",
+      "hint": "Yes, I can hear you…",
+      "example": "Yes, I can hear you clearly"
+    },
+    {
+      "id": "CALL.2",
+      "text": "Let’s start with a quick introduction. What’s your name, and what do you work with?",
+      "cue": "Introduce yourself and what you work with",
+      "hint": "I’m… / I work with…",
+      "example": "My name is Alex, and I’m a frontend developer"
+    },
+    {
+      "id": "CALL.3",
+      "text": "I work on the frontend. Which tools do you use most?",
+      "cue": "Tell Kim which tools you use",
+      "hint": "I mostly use… / I also use…",
+      "example": "I mostly use React and TypeScript, and I also use Git every day"
+    },
+    {
+      "id": "ACCOUNT.CALL.4",
+      "text": "Today, your task is to build the login screen for our new customer portal. You’re working on the frontend. Could you repeat that back to me?",
+      "cue": "Confirm which screen you will build and which part of the project you will work on",
+      "hint": "So, I’ll build… / I’ll work on…",
+      "example": "So, I’ll build the Login screen and work on the frontend of the customer portal"
+    },
+    {
+      "id": "CALL.5",
+      "text": "I’ll send you the setup guide after this call. Can you message me if you need access?",
+      "cue": "Confirm that you will message her if you need access",
+      "hint": "Sure, I’ll… if…",
+      "example": "Sure, I’ll message you if I need access to the project"
+    }
+  ],
+  "feedback": {
+    "id": "ACCOUNT.FEEDBACK",
+    "text": "Thanks for showing the login screen. The form is clear, and the error message helps. Could you make the Forgot password link easier to find on mobile? Let’s add that to our next tasks."
+  },
+  "shadowing": [
+    {
+      "id": "SH.1",
+      "text": "Could you say that again?"
+    },
+    {
+      "id": "SH.2",
+      "text": "Could you give me access to the repository?"
+    },
+    {
+      "id": "ACCOUNT.SH.3",
+      "text": "What should happen when the user clicks Sign in?"
+    },
+    {
+      "id": "SH.4",
+      "text": "I’m blocked because I don’t have access yet"
+    },
+    {
+      "id": "SH.5",
+      "text": "The deadline is Friday. Is that still correct?"
+    },
+    {
+      "id": "SH.6",
+      "text": "Thanks for the feedback. I’ll update the task"
+    }
+  ],
+  "daily": [
+    {
+      "id": "1",
+      "question": "How is the Login screen going?",
+      "cue": "Use the board to explain what is ready and what is still missing",
+      "hint": "The layout is… / I still need…",
+      "example": "The Login layout is ready, but I’m still waiting for the test API address"
+    },
+    {
+      "id": "2",
+      "question": "What is stopping you from connecting it to the backend?",
+      "cue": "Explain the blocker and ask for the help you need",
+      "hint": "I’m waiting for… / Could you…?",
+      "example": "I’m waiting for the test API address — could you send it to me?"
+    },
+    {
+      "id": "3",
+      "question": "Priya can send the test API address after lunch. What can you do while you wait?",
+      "cue": "Agree on useful work you can do before connecting the API",
+      "hint": "While I wait, I can… / Once I have it, I’ll…",
+      "example": "While I wait, I can test the layout and error message, and I’ll connect the API after lunch"
+    }
+  ],
+  "team": [
+    {
+      "id": "kim",
+      "name": "Kim",
+      "role": "Frontend developer",
+      "accent": "American English",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT"
+    },
+    {
+      "id": "owen",
+      "name": "Owen",
+      "role": "Senior developer",
+      "accent": "British English",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb"
+    },
+    {
+      "id": "priya",
+      "name": "Priya",
+      "role": "Backend developer",
+      "accent": "Indian English",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc"
+    },
+    {
+      "id": "niamh",
+      "name": "Niamh",
+      "role": "QA engineer",
+      "accent": "Irish English",
+      "voiceId": "t6WJWTYTryhcQnrBHdCr"
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "role": "Frontend developer · password reset",
+      "accent": "Australian English",
+      "voiceId": "56bWURjYFHyYyVf490Dp"
+    }
+  ],
+  "planningCall": [
+    {
+      "id": "ACCOUNT.PLAN.1",
+      "speakerId": "kim",
+      "text": "We’re building the customer portal. You own the login screen. What should a customer be able to do in the first version?",
+      "cue": "Explain what the Login screen needs to do",
+      "hint": "The customer can… / The first version needs…",
+      "example": "The customer can sign in with an email and password and reset their password if they forget it"
+    },
+    {
+      "id": "ACCOUNT.PLAN.2",
+      "speakerId": "owen",
+      "text": "I’d add Google login first. Most people don’t want another password. Why start with email and password?",
+      "cue": "Discuss Owen’s suggestion and explain your choice for the first version",
+      "hint": "I see your point, but… / For Friday, I’d…",
+      "example": "I see your point, but I’d start with email and password to keep Friday’s version small"
+    },
+    {
+      "id": "ACCOUNT.PLAN.3",
+      "speakerId": "priya",
+      "text": "The email and password API is ready. Google login would need more backend work. What information do you need from me?",
+      "cue": "Ask for the API information or support you need",
+      "hint": "Could you send me…? / What happens if…?",
+      "example": "Could you send me the API URL and the error response for an incorrect password?"
+    },
+    {
+      "id": "ACCOUNT.PLAN.4",
+      "speakerId": "ruby",
+      "text": "I’ve finished the password reset screen. Your login screen only needs a Forgot password link to open it. Where will you put that link?",
+      "cue": "Explain where the link should be and why",
+      "hint": "I’d put it… / That would help people…",
+      "example": "I’d put the Forgot password link below the password field so customers can find it easily"
+    },
+    {
+      "id": "ACCOUNT.PLAN.5",
+      "speakerId": "niamh",
+      "text": "What should the screen show if the email or password is wrong? We need to make that clear without losing what the customer typed.",
+      "cue": "Suggest how the Login screen should handle the error",
+      "hint": "I’d show… / I’d keep… / Should we…?",
+      "example": "I’d show a clear error message and keep the email so the customer can try again"
+    },
+    {
+      "id": "PLAN.6",
+      "speakerId": "kim",
+      "text": "Let’s agree on this version before we finish. What will you deliver by Friday, and what will you leave for later?",
+      "cue": "Summarise the agreed first version and the next step",
+      "hint": "By Friday, I’ll… / We’ll leave… for later",
+      "example": "By Friday, I’ll deliver email and password login with error handling and a reset link, and we’ll leave Google login for later"
+    }
+  ],
+  "reviewCall": [
+    {
+      "id": "ACCOUNT.REVIEW.1",
+      "speakerId": "owen",
+      "text": "I’ve finished the registration screen. A new customer can enter their name, email and password, then create an account. If an email is already in use, the page shows a clear message."
+    },
+    {
+      "id": "ACCOUNT.REVIEW.2",
+      "speakerId": "ruby",
+      "text": "I’ve built the password reset screen. The customer enters their email and asks for a reset link. After they send it, the page tells them to check their inbox. They don’t need to remember their old password."
+    },
+    {
+      "id": "ACCOUNT.REVIEW.3",
+      "speakerId": "priya",
+      "text": "The backend now supports registration, login and password reset. The login API checks the email and password. If they are correct, it returns a session. If not, it returns an error for the screen to show."
+    },
+    {
+      "id": "ACCOUNT.REVIEW.4",
+      "speakerId": "kim",
+      "text": "Now show us your login screen. Explain how a customer signs in, what happens when the password is wrong, and how they can reset it.",
+      "cue": "Present the Login screen: signing in, a wrong password and password recovery",
+      "hint": "The customer enters… / If… / They can…",
+      "example": "Customers sign in with an email and password, see an error if either is wrong, and use Forgot password to reset it"
+    }
+  ],
+  "accessPractice": [
+    {
+      "id": "1",
+      "question": "Can you open the customer-portal repository?",
+      "cue": "Explain the error you can see and ask for access",
+      "hint": "I can’t open… / It says… / Could you…?"
+    },
+    {
+      "id": "2",
+      "question": "Which work email should I give access to?",
+      "cue": "Give the work email shown on the screen and confirm the repository",
+      "hint": "Please use… / I need access to…"
+    },
+    {
+      "id": "3",
+      "question": "I’ve added you. What will you do next?",
+      "cue": "Thank your teammate and explain your first step",
+      "hint": "Thanks, I’ll… / Then I’ll…"
+    }
+  ],
+  "independent": [
+    {
+      "id": "1",
+      "question": "Can we show the Login screen in Friday’s demo?",
+      "cue": "Explain what is ready and what is blocking the test",
+      "hint": "The screen is… / The test account…"
+    },
+    {
+      "id": "2",
+      "question": "What do you need from me to unblock it?",
+      "cue": "Ask your teammate for specific help",
+      "hint": "Could you…? / I need… so I can…"
+    },
+    {
+      "id": "3",
+      "question": "I can activate a test account after lunch. What will you check next?",
+      "cue": "Agree on the next test and when you will give an update",
+      "hint": "Once it’s active, I’ll… / I’ll update you…"
+    }
+  ]
+}

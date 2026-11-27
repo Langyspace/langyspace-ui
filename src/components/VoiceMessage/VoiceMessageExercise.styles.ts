@@ -29,13 +29,13 @@ export const Root = styled.section.withConfig({
   color: ${(p) => recipe(p).foreground};
 `
 
-export const Layout = styled.div`
+export const Layout = styled.div<{
+  $balanced?: boolean
+  $alignment?: 'start' | 'center' | 'stretch'
+}>`
   display: grid;
-  grid-template-columns: minmax(0, ${(p) => recipe(p).phoneWidth}) minmax(
-      0,
-      1fr
-    );
-  align-items: start;
+  grid-template-columns: ${(p) => (p.$balanced ? 'repeat(2, minmax(0, 1fr))' : `minmax(0, ${recipe(p).phoneWidth}) minmax(0, 1fr)`)};
+  align-items: ${(p) => p.$alignment ?? (p.$balanced ? 'center' : 'start')};
   gap: ${theme.spacing[8]};
   width: min(100%, ${(p) => recipe(p).contentWidth});
   margin-inline: auto;
@@ -62,6 +62,10 @@ export const Phone = styled.div`
   background: ${(p) => recipe(p).canvas};
   overflow: hidden;
   box-sizing: border-box;
+  :where([data-slide-fit]) && {
+    height: auto;
+    min-height: ${(p) => recipe(p).phoneHeight};
+  }
 `
 
 export const Contact = styled.div`
@@ -70,20 +74,8 @@ export const Contact = styled.div`
   gap: ${theme.spacing[2]};
   padding: ${theme.voiceMessage.conversationInset};
   background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
   border-bottom: 1px solid ${(p) => recipe(p).border};
-`
-export const ContactText = styled.div`
-  min-width: 0;
-  line-height: 1.4;
-  overflow-wrap: anywhere;
-  strong {
-    display: block;
-    font-size: ${theme.typography.fontSize.sm};
-  }
-  small {
-    color: ${(p) => recipe(p).muted};
-    font-size: ${theme.typography.fontSize.xs};
-  }
 `
 export const Conversation = styled.div`
   display: flex;
@@ -94,6 +86,10 @@ export const Conversation = styled.div`
   gap: ${theme.voiceMessage.conversationInset};
   padding: ${theme.spacing[2]} ${theme.voiceMessage.conversationInset};
   overflow-y: auto;
+  :where([data-slide-fit]) & {
+    overflow-y: visible;
+    min-height: max-content;
+  }
   overscroll-behavior: contain;
   &:focus-visible {
     outline: 2px solid ${(p) => recipe(p).accent};
@@ -117,10 +113,62 @@ export const Bubble = styled.div`
 export const VoiceBubble = styled(Bubble)`
   width: 86%;
 `
+export const PhotoBubble = styled(Bubble)`
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: ${theme.radius.lg};
+  }
+`
+export const VideoPreview = styled(Pressable)`
+  width: 86%;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: ${theme.radius.lg};
+  text-align: left;
+  background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
+  box-shadow: ${theme.shadows.xs};
+`
+export const VideoThumbnail = styled.span`
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  background: ${(p) => recipe(p).controlSurface};
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`
+export const VideoPreviewIcon = styled.span`
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: ${theme.sizes.control.sm};
+  height: ${theme.sizes.control.sm};
+  border-radius: ${theme.radius.pill};
+  background: ${(p) => recipe(p).accent};
+  color: ${(p) => recipe(p).onAccent};
+`
+export const VideoCaption = styled.span`
+  display: grid;
+  gap: ${theme.spacing[1]};
+  padding: ${theme.spacing[2]};
+  font-size: ${theme.typography.fontSize.xs};
+  line-height: 1.4;
+  strong {
+    font-weight: ${theme.typography.fontWeight.semibold};
+  }
+`
 export const Player = styled.div`
   display: flex;
   align-items: center;
-  gap: ${theme.spacing[2]};
+  gap: ${theme.spacing[1]};
   min-width: 0;
 `
 export const Play = styled(DeviceControl)`
@@ -150,7 +198,8 @@ export const Wave = styled.div`
   justify-content: space-between;
   min-width: 0;
   height: ${theme.voiceMessage.waveformHeight};
-  gap: 2px;
+  overflow: hidden;
+  gap: 1px;
 `
 export const Bar = styled.i<{ $height: number; $played: boolean }>`
   display: block;
@@ -167,6 +216,28 @@ export const Meta = styled.div`
   font-size: ${theme.voiceMessage.metaFontSize};
   font-variant-numeric: tabular-nums;
 `
+export const TranscriptToggle = styled(DeviceControl)`
+  display: block;
+  width: 100%;
+  min-height: ${theme.spacing[6]};
+  max-width: 100%;
+  margin-top: calc(${theme.spacing[1]} / 2);
+  padding: 0;
+  border: 0;
+  border-radius: ${theme.radius.sm};
+  color: ${(p) => `color-mix(in srgb, ${recipe(p).muted} 94%, ${recipe(p).surface})`};
+  background: transparent;
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.regular};
+  text-align: left;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  &[aria-expanded='true'] {
+    color: ${(p) => recipe(p).foreground};
+    font-size: ${(p) => recipe(p).transcriptFontSize};
+    line-height: 1.4;
+  }
+`
 export const Time = styled.time`
   display: block;
   text-align: right;
@@ -177,9 +248,14 @@ export const Transcript = styled.div<{ $visible: boolean }>`
   border-top: 1px dashed ${(p) => recipe(p).border};
   margin-top: ${theme.voiceMessage.conversationInset};
   padding-top: ${theme.voiceMessage.conversationInset};
-  font-size: ${theme.voiceMessage.transcriptFontSize};
+  font-size: ${(p) => recipe(p).transcriptFontSize};
   line-height: 1.4;
   white-space: pre-wrap;
+  &[data-transcript-interactive] {
+    border: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
   p {
     margin: 0;
   }
@@ -211,7 +287,17 @@ export const Error = styled.div`
   color: ${(p) => recipe(p).danger};
   font-size: ${theme.typography.fontSize.sm};
 `
-export const Side = styled.div`
+export const Side = styled.div<{ $stretch?: boolean }>`
+  color: ${(p) => recipe(p).questionForeground ?? recipe(p).foreground};
+  align-self: stretch;
+  ${(p) =>
+    p.$stretch
+      ? css`
+          > :last-child {
+            flex: 1;
+          }
+        `
+      : undefined}
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -232,9 +318,9 @@ export const Question = styled.fieldset`
   min-width: 0;
   margin: 0;
   padding: ${theme.spacing[3]} ${theme.spacing[4]};
-  border: 1px solid ${(p) => recipe(p).border};
+  border: 1px solid ${(p) => recipe(p).questionBorder ?? recipe(p).border};
   border-radius: ${theme.radius.lg};
-  background: ${(p) => recipe(p).surface};
+  background: ${(p) => recipe(p).questionSurface ?? recipe(p).surface};
 `
 export const QuestionText = styled.p`
   flex: 1 1 10rem;
@@ -256,9 +342,9 @@ export const Choice = styled(DeviceControl)<{
   padding: 0 ${theme.spacing[3]};
   border: 1px solid;
   font-size: ${theme.typography.fontSize.sm};
-  color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).foreground)};
-  background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : recipe(p).surface)};
-  border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).border)};
+  color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : (recipe(p).questionForeground ?? recipe(p).foreground))};
+  background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : (recipe(p).questionSurface ?? recipe(p).surface))};
+  border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : (recipe(p).questionBorder ?? recipe(p).border))};
   text-decoration: ${({ $feedback }) => ($feedback === 'incorrect' ? 'line-through' : 'none')};
   overflow-wrap: anywhere;
   max-width: 100%;

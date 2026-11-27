@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "ACCOUNT.VS.0",
+      "text": "task. My first task is to build the login screen",
+      "file": "assets/audio/ACCOUNT.VS.0.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "requestId": null,
+      "sources": [
+        {
+          "id": "V.0",
+          "sha256": "b16c59ee06c571ea29ac561db738dff3e84489d3db55f89b564bdb9cc29a2f4b",
+          "requestId": "Z7n5D6YwpbMDWMNRdhya",
+          "leadingFrames": 2210,
+          "trailingFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10365
+        },
+        {
+          "id": "ACCOUNT.EX.0",
+          "sha256": "bd918ab2248bc1fb2864571c2249e29b194d8f37b920e4e8163bbd93ab3e050d",
+          "requestId": "1tz5XKJcU6IUZ49jgStu",
+          "leadingFrames": 1326,
+          "trailingFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8851
+        }
+      ],
+      "extraSilenceFrames": 11463,
+      "boundaryQuietMilliseconds": 350,
+      "sha256": "503aad9ae752be89101ebbda10b72c2bdf9c5e1fc21f9ddbc0cb1012c50db4f6"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "prefixFile": "docs/materials/prompts/langy-illustration-v1.8.txt",
+  "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "calls": 6,
+  "items": [
+    {
+      "id": "come-across",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-f7d6da2f-6353-493a-b852-3146eda003d2.png",
+      "destination": "stories/materials/C101/assets/scene-come-across79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/c1-01/come-across.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "447f7864eb703fd26eb1c636583a42b8491bde1e45f103dde79bb5f513ec2036",
+      "originalSha256": "79569ee14844cb38f01412047dd6f91a4400555d12ef40e56e131797ed53acfe",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "take-on-board",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-58710aa3-dce1-4017-9d6e-aee93fa6c3f5.png",
+      "destination": "stories/materials/C101/assets/scene-take-on-board79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/c1-01/take-on-board.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "3cdd63a934f4e5f9dc4e53e9eee9a401475644c6d2498d6e0865891dfe332fa6",
+      "originalSha256": "09eb5e9f713330c253be5a2fea6f5f79c4b7343c64038c61eb612da58a9f9c79",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "constructive",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-8b728537-ab1e-478a-ae74-8c40c94e8785.png",
+      "destination": "stories/materials/C101/assets/scene-constructive79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/c1-01/constructive.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "c58c841d59f76791993b52b5c8c8be0e365c7ee4e8ed944af065322e7ee9d7d1",
+      "originalSha256": "a8252d1d8fce130671fc4e4eaf1cc05a9dc181c4f6ae7d2e73bbca7d85b6e1ff",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "harsh",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-159139fa-e68a-4425-bad0-0557b89c6c63.png",
+      "destination": "stories/materials/C101/assets/scene-harsh79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/c1-01/harsh.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "8d9e18b30bc51d3fdb29a9c2865b48c3bc5f74570225399f32979543fdd9828b",
+      "originalSha256": "29082aba8384c354df8a619bac24648ea43db4949ab78f6b7ccac8b26364e59f",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "learning-curve",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-66fcc179-60f2-4457-96fd-69cbcc3cc60f.png",
+      "destination": "stories/materials/C101/assets/scene-learning-curve79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/c1-01/learning-curve.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "153512ad6e39a81e5b5a4acd0e483d4bf1e93af8c6966fd6e322a2978aedd4b1",
+      "originalSha256": "c74394c39fc054c780a88f1adc186069145a2257c63e03b6f8bc96fb6bc0c89d",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "to-be-fair",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-ab4bc89f-8289-4ae3-9d4c-4ac08837029b.png",
+      "destination": "stories/materials/C101/assets/scene-to-be-fair79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/c1-01/to-be-fair.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "70cad12428a4be4d2e540003a48f0e2ed044c98e3e8e3f3e95022da9f433dc60",
+      "originalSha256": "6b9383f7fa5681bc543c555430525f8c581972df706dc984162591fab902579d",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "status": "ready_for_root_asset_adoption",
+  "manifest": "manifest.json",
+  "manifestSha256": "e3b85c172c16e4ae7e79def481084342b34189f1b5235b488cf4cee1a76edb64",
+  "a108": {
+    "materialKey": "a1-08",
+    "pageId": "s2",
+    "file": "assets/a1-08-vocabulary136.webp",
+    "sha256": "2d773dbd142ab7a435c7eadc9896a5c0326c5fae3e2736223e34d5fa76409650",
+    "bytes": 521434,
+    "width": 1200,
+    "height": 800,
+    "alpha": true,
+    "destination": "stories/materials/Course/assets/a1-08-vocabulary81.webp",
+    "currentSha256": "a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7",
+    "processing": "cwebp -lossless -resize 1200 800; no crop, background editing or semantic editing",
+    "bindings": [
+      {
+        "id": "A108-V81.0",
+        "word": "room",
+        "imageUrl": "a1-08-vocabulary81",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "A108-V81.1",
+        "word": "key",
+        "imageUrl": "a1-08-vocabulary81",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "A108-V81.2",
+        "word": "shower",
+        "imageUrl": "a1-08-vocabulary81",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "A108-V81.3",
+        "word": "light",
+        "imageUrl": "a1-08-vocabulary81",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "A108-V81.4",
+        "word": "towel",
+        "imageUrl": "a1-08-vocabulary81",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      {
+        "id": "A108-V81.5",
+        "word": "reception",
+        "imageUrl": "a1-08-vocabulary81",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      }
+    ]
+  },
+  "b101": {
+    "materialKey": "b1-01",
+    "pageId": "s2",
+    "itemId": "B101-V81.3",
+    "word": "work out",
+    "file": "assets/b1-01-work-out136.webp",
+    "sha256": "89958a17e3a1b965ef1a437b1abaa92ae8359c254c02df4663f4c827aac7217d",
+    "bytes": 616862,
+    "width": 1254,
+    "height": 1254,
+    "alpha": true,
+    "destination": "stories/materials/Course/assets/b1-01-work-out136.webp",
+    "oldImageUrl": "b1-01-vocabulary81",
+    "newImageUrl": "b1-01-work-out136",
+    "removeOnlyThisItemImageRegion": true,
+    "moduleImport": "Add dedicated import and images map entry to Course/lessons/b1-01.module.ts; root integrates",
+    "originalPng": "assets/b101-work-out136.original.png",
+    "originalSha256": "d2df38e323dbfd12395f45a4a1aa0c9c0f1c2836623178f2bcd756dcd45758a2",
+    "request": "tool-request.b101.exact.json",
+    "prompt": "prompts/b101-work-out136.txt",
+    "promptSha256": "b2ba698f896783b5a7f8132de4328a045f8f635efc248e9ad5a4d0359b361f7c",
+    "processing": "cwebp -lossless only; no crop, resize, mask or semantic edit",
+    "otherFiveAtlasBindings": "preserve exactly",
+    "currentAtlasSha256": "4d6746ee64106bb4116808f3129e03dcb855cf0afc9416c2975d8170367c6561",
+    "opticalObservation": "Final WebP composited onto white and dark backgrounds was viewed; no broad pale glow observed. Minor edge quality remains for human review."
+  },
+  "sourceCanonicalSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "repositoryFilesWritten": [],
+  "calls": 2,
+  "ciTriggered": false,
+  "deployTriggered": false,
+  "review": "Visual gate review: pending human"
+}

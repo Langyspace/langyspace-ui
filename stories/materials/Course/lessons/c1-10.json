@@ -1,0 +1,695 @@
+{
+  "version": 81,
+  "code": "C1.10",
+  "key": "c1-10",
+  "title": "I’m writing to let you know…",
+  "goal": "Keep the same facts while adapting tone and making the recipient’s action clear",
+  "freeConversationInstruction": "Compare communication styles and practise adapting the same idea to different people and situations",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall briefing different audiences",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What must remain unchanged when you change register?",
+          "hint": "The …, … and … must remain clear",
+          "cue": "Preserve the commitment"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you make the requested action explicit?",
+          "hint": "Please confirm whether … by …",
+          "cue": "Make the requested action explicit"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you change for a more informal recipient?",
+          "hint": "I’d shorten … while preserving …",
+          "cue": "Adapt tone without changing facts"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Audience, tone and action",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C110-V81.0",
+          "word": "an update",
+          "translation": "",
+          "example": "The update keeps the time and room unchanged",
+          "imageUrl": "c1-10-vocabulary81",
+          "imageAlt": "an update",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C110-FS81.0",
+          "audioText": "an update. The update keeps the time and room unchanged."
+        },
+        {
+          "id": "C110-V81.1",
+          "word": "a recipient",
+          "translation": "",
+          "example": "Choose the tone for the recipient",
+          "imageUrl": "c1-10-vocabulary81",
+          "imageAlt": "a recipient",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C110-FS81.1",
+          "audioText": "a recipient. Choose the tone for the recipient."
+        },
+        {
+          "id": "C110-V81.2",
+          "word": "a tone",
+          "translation": "",
+          "example": "A formal tone is not automatically clearer",
+          "imageUrl": "c1-10-vocabulary81",
+          "imageAlt": "a tone",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C110-FS81.2",
+          "audioText": "a tone. A formal tone is not automatically clearer."
+        },
+        {
+          "id": "C110-V81.3",
+          "word": "an acknowledgement",
+          "translation": "",
+          "example": "An acknowledgement is not an attendance commitment",
+          "imageUrl": "c1-10-vocabulary81",
+          "imageAlt": "an acknowledgement",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C110-FS81.3",
+          "audioText": "an acknowledgement. An acknowledgement is not an attendance commitment."
+        },
+        {
+          "id": "C110-V81.4",
+          "word": "a call to action",
+          "translation": "",
+          "example": "The call to action needs a deadline",
+          "imageUrl": "c1-10-vocabulary81",
+          "imageAlt": "a call to action",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C110-FS81.4",
+          "audioText": "a call to action. The call to action needs a deadline."
+        },
+        {
+          "id": "C110-V81.5",
+          "word": "a follow-up",
+          "translation": "",
+          "example": "A follow-up should address the missing answer",
+          "imageUrl": "c1-10-vocabulary81",
+          "imageAlt": "a follow-up",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C110-FS81.5",
+          "audioText": "a follow-up. A follow-up should address the missing answer."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The shared factual brief",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Event update card · simulated source",
+      "subject": "Fictional dates: December 2026",
+      "paragraphs": [
+        "This simulated message is prepared on Thursday 3 December 2026. The event is moving from Friday 4 December to Monday 7 December. It will still start at ten in the morning in room two. Organisers need an attendance response by Friday 4 December at five in the afternoon. These are fixed facts for both versions of the task.",
+        "The first recipient is a client who needs a concise professional update and a clear requested action. The second is a friend who can receive a more informal message. Neither version should imply that simply reading the update counts as agreement to attend. Do not replace the fixed dates with relative expressions that change when the message is read."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "What a recipient needs",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Communication review · simulated source",
+      "subject": "A useful response, not just a polite message",
+      "paragraphs": [
+        "A recipient can understand the new date without understanding what reply is expected. “Please acknowledge” may ask only for confirmation that the message has been read. “Please confirm whether you can attend” requests a different commitment. The wording should match the information the organiser actually needs.",
+        "Register can change the opening, degree of distance and length. It should not change the date, location or deadline, or hide the action under elaborate courtesy. The task is to make two natural versions of the same update, then repair one specific ambiguity if the recipient asks. Clear informal language is a valid choice for the appropriate relationship."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Audience and action first",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C110-D81.1",
+          "speaker": "Kim",
+          "text": "Who is this update for, and what do they need to do?",
+          "audioText": "Who is this update for, and what do they need to do?",
+          "translation": "Para quem é esta atualização e o que essa pessoa precisa fazer?"
+        },
+        {
+          "id": "C110-D81.2",
+          "speaker": "Ana",
+          "text": "One version is for a client, another for a friend. Both need to confirm attendance",
+          "audioText": "One version is for a client, another for a friend. Both need to confirm attendance.",
+          "translation": "Uma versão é para um cliente, outra para uma amiga. Ambos precisam confirmar presença"
+        },
+        {
+          "id": "C110-D81.3",
+          "speaker": "Kim",
+          "text": "What are the facts that must stay the same?",
+          "audioText": "What are the facts that must stay the same?",
+          "translation": "Quais fatos precisam permanecer iguais?"
+        },
+        {
+          "id": "C110-D81.4",
+          "speaker": "Ana",
+          "text": "The event moves from Friday the fourth to Monday the seventh of December. Time and room stay the same",
+          "audioText": "The event moves from Friday the fourth to Monday the seventh of December. Time and room stay the same.",
+          "translation": "O evento passa de sexta, quatro, para segunda, sete de dezembro. Horário e sala continuam iguais"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Who will receive the two versions?",
+          "hint": "One is for … and one …",
+          "answer": "One version is for a client and the other is for a friend"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does each recipient need to confirm?",
+          "hint": "They need to confirm …",
+          "answer": "Each recipient needs to confirm attendance"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What changes, and what stays the same?",
+          "hint": "The date moves …; … stay …",
+          "answer": "The date moves from Friday the fourth to Monday the seventh of December; time and room stay the same"
+        }
+      ],
+      "dialogueGroup": "c1-10.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "A deadline that survives late reading",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C110-D81.5",
+          "speaker": "Kim",
+          "text": "And the response deadline? “Tomorrow” could become unclear if the message is read late",
+          "audioText": "And the response deadline? “Tomorrow” could become unclear if the message is read late.",
+          "translation": "E o prazo de resposta? “Amanhã” pode ficar confuso se a mensagem for lida depois"
+        },
+        {
+          "id": "C110-D81.6",
+          "speaker": "Ana",
+          "text": "Then I’d write Friday the fourth at five, rather than rely on the sending date",
+          "audioText": "Then I’d write Friday the fourth at five, rather than rely on the sending date.",
+          "translation": "Então escreveria sexta, quatro, às cinco, em vez de depender da data do envio"
+        },
+        {
+          "id": "C110-D81.7",
+          "speaker": "Kim",
+          "text": "Would a more formal opening make the client version more proficient?",
+          "audioText": "Would a more formal opening make the client version more proficient?",
+          "translation": "Uma abertura mais formal tornaria a versão para o cliente mais proficiente?"
+        },
+        {
+          "id": "C110-D81.8",
+          "speaker": "Ana",
+          "text": "Not automatically. “I’m writing to let you know” is useful if the purpose is still easy to find",
+          "audioText": "Not automatically. “I’m writing to let you know” is useful if the purpose is still easy to find.",
+          "translation": "Não automaticamente. “Escrevo para informar” é útil se o propósito continuar fácil de encontrar"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why can ‘tomorrow’ cause confusion?",
+          "hint": "The message may …",
+          "answer": "The message may be read after the sending day"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What explicit deadline does Ana propose?",
+          "hint": "She proposes …",
+          "answer": "Ana proposes Friday the fourth at five"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Does a formal opening automatically improve the message?",
+          "hint": "No, … still needs …",
+          "answer": "No, the purpose still needs to be easy to find"
+        }
+      ],
+      "dialogueGroup": "c1-10.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Adapt the tone, keep the facts",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C110-D81.9",
+          "speaker": "Kim",
+          "text": "And for the friend?",
+          "audioText": "And for the friend?",
+          "translation": "E para a amiga?"
+        },
+        {
+          "id": "C110-D81.10",
+          "speaker": "Ana",
+          "text": "“Quick update: it’s Monday now. Same time and room. Can you confirm by Friday at five?”",
+          "audioText": "“Quick update: it’s Monday now. Same time and room. Can you confirm by Friday at five?”",
+          "translation": "“Atualização rápida: agora é segunda. Mesmo horário e sala. Pode confirmar até sexta às cinco?”"
+        },
+        {
+          "id": "C110-D81.11",
+          "speaker": "Kim",
+          "text": "That’s shorter, but it still keeps the action and deadline",
+          "audioText": "That’s shorter, but it still keeps the action and deadline.",
+          "translation": "É mais curto, mas mantém a ação e o prazo"
+        },
+        {
+          "id": "C110-D81.12",
+          "speaker": "Ana",
+          "text": "Exactly. Changing the register shouldn’t change the commitment we ask for",
+          "audioText": "Exactly. Changing the register shouldn’t change the commitment we ask for.",
+          "translation": "Exatamente. Mudar o registro não deve mudar o compromisso que pedimos"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "How does the friend’s version open?",
+          "hint": "It opens with …",
+          "answer": "The friend’s version opens with a quick update that the event is now on Monday"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What must the shorter version preserve?",
+          "hint": "It must preserve … and …",
+          "answer": "The shorter version must preserve the requested action and deadline"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What should changing register never change?",
+          "hint": "It shouldn’t change …",
+          "answer": "Changing register shouldn’t change the commitment requested"
+        }
+      ],
+      "dialogueGroup": "c1-10.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Adapt the message to its reader",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Choose the register for its effect, not its complexity",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A clear professional purpose",
+          "verb": "I’m writing to let you know …",
+          "example": "I’m writing to let you know the event date has changed"
+        },
+        {
+          "id": "1",
+          "subject": "A natural shorter update",
+          "verb": "Quick update: … / Just to let you know …",
+          "example": "Quick update: it’s Monday now, same time and room"
+        },
+        {
+          "id": "2",
+          "subject": "An explicit action, not vague acknowledgement",
+          "verb": "Please confirm whether … by …",
+          "example": "Please confirm whether you can attend by Friday 4 December at 5 pm"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Same news, different audience",
+      "instruction": "Give the same update to two people in an appropriate way",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Acknowledgement is not attendance",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I’ve read the event update, but I’m not sure what you need from me. When you say “please acknowledge”, do you only want me to confirm I’ve seen the message, or do you need to know whether I can attend on Monday? I can send either, but they aren’t the same commitment. Could you also give the response deadline as a day and time rather than “tomorrow”? I sometimes read messages after the day they were sent. The new date, same ten o’clock start and room two are clear. It’s the requested action that needs clarification, so there’s no need to rewrite every factual detail or make the wording more elaborate",
+      "audioText": "Hi, Ana. I’ve read the event update, but I’m not sure what you need from me. When you say “please acknowledge”, do you only want me to confirm I’ve seen the message, or do you need to know whether I can attend on Monday? I can send either, but they aren’t the same commitment. Could you also give the response deadline as a day and time rather than “tomorrow”? I sometimes read messages after the day they were sent. The new date, same ten o’clock start and room two are clear. It’s the requested action that needs clarification, so there’s no need to rewrite every factual detail or make the wording more elaborate.",
+      "audioId": "C110-W141.1",
+      "greeting": "Could you clarify what you need me to confirm?",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What requested action is unclear?",
+          "hint": "The reader can’t tell whether … or …",
+          "answer": "The reader can’t tell whether to acknowledge receipt or confirm attendance"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Which factual details are already clear?",
+          "hint": "The reader understands …",
+          "answer": "The reader understands the new date, ten o’clock start and room two"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What deadline format would help?",
+          "hint": "A … rather than …",
+          "answer": "A specific day and time would help more than ‘tomorrow’"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Niamh"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Clarify only the missing action",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Same words, different interpretations",
+      "instruction": "Watch how wording and relationships affect meaning, then make an update’s action clear",
+      "minutes": 4,
+      "video": {
+        "videoId": "gCfzeONu3Mo",
+        "startSeconds": 109,
+        "endSeconds": 161,
+        "title": "How miscommunication happens — Katherine Hampsten — TED-Ed",
+        "credit": "TED-Ed"
+      },
+      "items": [
+        {
+          "id": "c1-10.video102.q1",
+          "prompt": "Does the receiver get an unfiltered copy of the sender’s meaning?",
+          "hint": "Listen for the two interpretations",
+          "answer": "No. People express and interpret messages through their own subjective filters"
+        },
+        {
+          "id": "c1-10.video102.q2",
+          "prompt": "What does the changing lump of clay illustrate?",
+          "hint": "Connect the visual metaphor with interpretation",
+          "answer": "Each participant reshapes the message through their own perceptions"
+        },
+        {
+          "id": "c1-10.video102.q3",
+          "prompt": "How could a relationship change the way a phrase is understood?",
+          "hint": "Consider a friend and a client reading the same casual wording",
+          "answer": "Example: A brief casual phrase may sound friendly to a close friend but dismissive or overly familiar to a client"
+        },
+        {
+          "id": "c1-10.video102.q4",
+          "prompt": "Make a recipient’s next action explicit in a short event update",
+          "hint": "State what to confirm and give an unambiguous deadline",
+          "answer": "Example: The event is now on Monday 7 December. Please confirm by Friday 4 December at 5 pm whether you can attend"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Keep the same facts while adapting tone and making the recipient’s action clear"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Same update · two relationships",
+      "options": [
+        {
+          "id": "client",
+          "title": "Client",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Change",
+              "value": "Friday 4 → Monday 7 December"
+            },
+            {
+              "id": "1",
+              "label": "Unchanged",
+              "value": "10 am · room 2"
+            },
+            {
+              "id": "2",
+              "label": "Action",
+              "value": "Confirm attendance by Friday 4 · 5 pm"
+            }
+          ]
+        },
+        {
+          "id": "friend",
+          "title": "Friend",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Change",
+              "value": "Friday 4 → Monday 7 December"
+            },
+            {
+              "id": "1",
+              "label": "Unchanged",
+              "value": "10 am · room 2"
+            },
+            {
+              "id": "2",
+              "label": "Action",
+              "value": "Confirm attendance by Friday 4 · 5 pm"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "update",
+          "prompt": "How would you announce the change to your chosen recipient?",
+          "hint": "I’m writing to … / Quick update: …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you state what remains unchanged?",
+          "hint": "The … and … remain …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you request attendance confirmation precisely?",
+          "hint": "Please confirm whether … by Friday …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "The recipient understood the facts",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Clear",
+          "value": "Monday 7 December · 10 am · room 2"
+        },
+        {
+          "id": "1",
+          "label": "Unclear",
+          "value": "Read receipt or attendance confirmation?"
+        },
+        {
+          "id": "2",
+          "label": "Deadline",
+          "value": "Friday 4 December · 5 pm"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you distinguish attendance from receipt?",
+          "hint": "I need to know whether …, rather than only …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What explicit response deadline would you give?",
+          "hint": "Please reply by … on …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you preserve clarity without rewriting everything?",
+          "hint": "The date, time and room …; the action I need is …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "The recipient understood the facts"
+    },
+    "s_personal": {
+      "type": "choices",
+      "title": "Situation reference",
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Who is this message for, and what do they need to do?",
+          "cue": "Identify audience and action before choosing the tone",
+          "hint": "It’s for … They need to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How would you say the same thing to a friend?",
+          "cue": "Keep the facts and change the register",
+          "hint": "Quick update: … Could you …?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check that your wording cannot be misread?",
+          "cue": "Test the intended action and clarify one ambiguous phrase",
+          "hint": "To be clear, I’m asking for … rather than … How might that come across?",
+          "answer": "One possible response"
+        }
+      ],
+      "options": [
+        {
+          "id": "client",
+          "title": "Client",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Change",
+              "value": "Friday 4 → Monday 7 December"
+            },
+            {
+              "id": "1",
+              "label": "Unchanged",
+              "value": "10 am · room 2"
+            },
+            {
+              "id": "2",
+              "label": "Action",
+              "value": "Confirm attendance by Friday 4 · 5 pm"
+            }
+          ]
+        },
+        {
+          "id": "friend",
+          "title": "Friend",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Change",
+              "value": "Friday 4 → Monday 7 December"
+            },
+            {
+              "id": "1",
+              "label": "Unchanged",
+              "value": "10 am · room 2"
+            },
+            {
+              "id": "2",
+              "label": "Action",
+              "value": "Confirm attendance by Friday 4 · 5 pm"
+            }
+          ]
+        }
+      ],
+      "questionPurpose": "conversation"
+    }
+  }
+}

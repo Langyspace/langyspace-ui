@@ -1,0 +1,628 @@
+{
+  "version": 81,
+  "code": "B2.02",
+  "key": "b2-02",
+  "title": "By Friday I’ll have finished it",
+  "goal": "Negotiate a deadline using dependencies and realistic commitments",
+  "freeConversationInstruction": "Talk about upcoming projects or personal plans and discuss realistic expectations and trade-offs",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall an arrangement and a reason to check it",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What can you commit to this week?",
+          "hint": "I can … by …, provided …",
+          "cue": "Make a bounded commitment"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What does that commitment depend on?",
+          "hint": "Before I can …, I need …",
+          "cue": "Identify its dependency"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you communicate a delay?",
+          "hint": "The … has changed, so …",
+          "cue": "Communicate a revised timeline"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Progress and delivery",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B202-V81.0",
+          "word": "a deadline",
+          "translation": "",
+          "example": "We shouldn’t promise a deadline before checking dependencies",
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a deadline",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B202-FS81.0",
+          "audioText": "a deadline. We shouldn’t promise a deadline before checking dependencies."
+        },
+        {
+          "id": "B202-V81.1",
+          "word": "a progress update",
+          "translation": "",
+          "example": "Please send a short progress update",
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a progress update",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B202-FS81.1",
+          "audioText": "a progress update. Please send a short progress update."
+        },
+        {
+          "id": "B202-V81.2",
+          "word": "a draft",
+          "translation": "",
+          "example": "The draft is ready for review",
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a draft",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B202-FS81.2",
+          "audioText": "a draft. The draft is ready for review."
+        },
+        {
+          "id": "B202-V81.3",
+          "word": "a final version",
+          "translation": "",
+          "example": "This is not the final version yet",
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a final version",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B202-FS81.3",
+          "audioText": "a final version. This is not the final version yet."
+        },
+        {
+          "id": "B202-V81.4",
+          "word": "a delay",
+          "translation": "",
+          "example": "A review delay affects the next task",
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a delay",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B202-FS81.4",
+          "audioText": "a delay. A review delay affects the next task."
+        },
+        {
+          "id": "B202-V81.5",
+          "word": "a handover",
+          "translation": "",
+          "example": "We need to agree a staged handover",
+          "imageUrl": "b2-02-vocabulary81",
+          "imageAlt": "a handover",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B202-FS81.5",
+          "audioText": "a handover. We need to agree a staged handover."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "By Friday I’ll have finished it",
+      "paragraphs": [
+        "Fictional event schedule: draft Tuesday; review Wednesday; final preparation takes about one working day after comments. Volunteers arrive Friday at 10 am. A brief welcome sheet can be prepared separately. New sections are outside the current estimate. Do not present a draft as an approved final pack."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Can we promise Friday morning?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B202-D81.1",
+          "speaker": "Kim",
+          "text": "Can we promise the event pack will be ready by Friday morning?",
+          "audioText": "Can we promise the event pack will be ready by Friday morning?",
+          "translation": "Podemos prometer que o material do evento estará pronto na sexta de manhã?"
+        },
+        {
+          "id": "B202-D81.2",
+          "speaker": "Ana",
+          "text": "The draft will be ready on Tuesday, but we need the review before making that promise",
+          "audioText": "The draft will be ready on Tuesday, but we need the review before making that promise.",
+          "translation": "O rascunho ficará pronto na terça, mas precisamos da revisão antes de prometer"
+        },
+        {
+          "id": "B202-D81.3",
+          "speaker": "Kim",
+          "text": "The review is booked for Wednesday. How long will the final changes take?",
+          "audioText": "The review is booked for Wednesday. How long will the final changes take?",
+          "translation": "A revisão está marcada para quarta. Quanto tempo levarão os ajustes finais?"
+        },
+        {
+          "id": "B202-D81.4",
+          "speaker": "Ana",
+          "text": "About one working day after the comments arrive, provided the brief doesn’t change",
+          "audioText": "About one working day after the comments arrive, provided the brief doesn’t change.",
+          "translation": "Cerca de um dia útil depois de receber os comentários, desde que o escopo não mude"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why isn’t the draft enough to promise Friday delivery?",
+          "hint": "They still need …",
+          "answer": "They still need a review before promising delivery"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When is the review originally booked?",
+          "hint": "It’s booked for …",
+          "answer": "The review is booked for Wednesday"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What condition applies to the final changes?",
+          "hint": "They need …, provided …",
+          "answer": "The changes need about one working day after comments arrive, provided the brief doesn’t change"
+        }
+      ],
+      "dialogueGroup": "b2-02.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "At the handover",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B202-D81.5",
+          "speaker": "Kim",
+          "text": "So by Thursday evening you’ll have finished the main version?",
+          "audioText": "So by Thursday evening you’ll have finished the main version?",
+          "translation": "Então até quinta à noite você terá terminado a versão principal?"
+        },
+        {
+          "id": "B202-D81.6",
+          "speaker": "Ana",
+          "text": "That’s the plan. On Friday morning I’ll be checking the printed copies",
+          "audioText": "That’s the plan. On Friday morning I’ll be checking the printed copies.",
+          "translation": "Esse é o plano. Na sexta de manhã estarei conferindo as cópias impressas"
+        },
+        {
+          "id": "B202-D81.7",
+          "speaker": "Kim",
+          "text": "What will you be doing when the volunteers arrive at ten?",
+          "audioText": "What will you be doing when the volunteers arrive at ten?",
+          "translation": "O que você estará fazendo quando os voluntários chegarem às dez?"
+        },
+        {
+          "id": "B202-D81.8",
+          "speaker": "Ana",
+          "text": "I’ll be handing over the packs. Someone else needs to welcome the guests",
+          "audioText": "I’ll be handing over the packs. Someone else needs to welcome the guests.",
+          "translation": "Estarei entregando o material. Outra pessoa precisa receber os convidados"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "When should the main version be finished?",
+          "hint": "It should be finished by …",
+          "answer": "The main version should be finished by Thursday evening"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What will Ana be doing on Friday morning?",
+          "hint": "She’ll be …",
+          "answer": "Ana will be checking the printed copies"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Who will welcome the guests?",
+          "hint": "Kim offers to …",
+          "answer": "Kim offers to welcome the guests while Ana hands over the packs"
+        }
+      ],
+      "dialogueGroup": "b2-02.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "A commitment with conditions",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B202-D81.9",
+          "speaker": "Kim",
+          "text": "I can do that. What would put the handover at risk?",
+          "audioText": "I can do that. What would put the handover at risk?",
+          "translation": "Posso fazer isso. O que colocaria a entrega em risco?"
+        },
+        {
+          "id": "B202-D81.10",
+          "speaker": "Ana",
+          "text": "A late review or a new section. We should flag either as soon as it happens",
+          "audioText": "A late review or a new section. We should flag either as soon as it happens.",
+          "translation": "Uma revisão atrasada ou uma nova seção. Devemos avisar assim que acontecer"
+        },
+        {
+          "id": "B202-D81.11",
+          "speaker": "Kim",
+          "text": "Agreed. Let’s confirm the review, then communicate the deadline with that condition",
+          "audioText": "Agreed. Let’s confirm the review, then communicate the deadline with that condition.",
+          "translation": "Combinado. Vamos confirmar a revisão e comunicar o prazo com essa condição"
+        },
+        {
+          "id": "B202-D81.12",
+          "speaker": "Ana",
+          "text": "And keep a short progress update, so nobody assumes a draft is the final version",
+          "audioText": "And keep a short progress update, so nobody assumes a draft is the final version.",
+          "translation": "E manter uma atualização breve para ninguém presumir que o rascunho é a versão final"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What could put the handover at risk?",
+          "hint": "Either … or …",
+          "answer": "A late review or a new section could put the handover at risk"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What should they do before communicating the deadline?",
+          "hint": "They should confirm …",
+          "answer": "They should confirm the review and communicate the deadline with that condition"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why do they need progress updates?",
+          "hint": "So nobody assumes …",
+          "answer": "They need updates so nobody assumes the draft is the final version"
+        }
+      ],
+      "dialogueGroup": "b2-02.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Check what will be ready",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "In progress then, or completed by then?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "In progress at a future moment",
+          "verb": "will be + verb-ing",
+          "example": "At ten, I’ll be handing over the packs"
+        },
+        {
+          "id": "1",
+          "subject": "Completed before a future point",
+          "verb": "will have + past participle + by",
+          "example": "By Thursday evening, I’ll have finished the version"
+        },
+        {
+          "id": "2",
+          "subject": "Make the condition explicit",
+          "verb": "provided / as long as + clause",
+          "example": "We’ll meet the deadline provided the brief doesn’t change"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Agree on a realistic deadline",
+      "instruction": "Ask about priorities and agree on a realistic deadline",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The review has slipped",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. The draft is ready, but the review has moved from Wednesday to Thursday afternoon. The final changes still need roughly one working day after we receive the comments. That means we shouldn’t promise the final pack for Friday morning. We can have a short welcome sheet ready by ten, while the full pack is still being checked. Could you ask whether that would cover the volunteers’ immediate needs? If it does, we can agree a later handover for the complete version rather than quietly sending an unchecked draft. We also need to make clear that a new section would require another estimate",
+      "audioText": "Hi, Ana. The draft is ready, but the review has moved from Wednesday to Thursday afternoon. The final changes still need roughly one working day after we receive the comments. That means we shouldn’t promise the final pack for Friday morning. We can have a short welcome sheet ready by ten, while the full pack is still being checked. Could you ask whether that would cover the volunteers’ immediate needs? If it does, we can agree a later handover for the complete version rather than quietly sending an unchecked draft. We also need to make clear that a new section would require another estimate.",
+      "audioId": "B202-L81.1",
+      "greeting": "The review date has changed again",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Why shouldn’t they promise the full pack for Friday morning?",
+          "hint": "The review moved to …, and …",
+          "answer": "The review moved to Thursday afternoon, and changes still need roughly one working day"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What can be ready by ten?",
+          "hint": "They can prepare …",
+          "answer": "They can prepare a short welcome sheet by ten"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should Ana check before agreeing a staged handover?",
+          "hint": "She should ask whether …",
+          "answer": "Ana should ask whether the welcome sheet covers the volunteers’ immediate needs"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Negotiate a staged handover",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What will be finished by the deadline?",
+      "instruction": "Watch the work plan, then make a realistic commitment with one dependency",
+      "minutes": 4,
+      "video": {
+        "videoId": "iISY9FgeYpU",
+        "startSeconds": 54,
+        "endSeconds": 86,
+        "title": "Future perfect or future perfect continuous? — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-02.video102.q1",
+          "prompt": "What does the future perfect focus on here?",
+          "hint": "Listen for completed and a future time",
+          "answer": "It focuses on actions completed before a future time"
+        },
+        {
+          "id": "b2-02.video102.q2",
+          "prompt": "How many people will the speaker have emailed?",
+          "hint": "Look at the to-do-list example",
+          "answer": "He will have emailed seven people"
+        },
+        {
+          "id": "b2-02.video102.q3",
+          "prompt": "What other two tasks will he have completed?",
+          "hint": "Listen after the emails",
+          "answer": "He will have had three meetings and finished a project"
+        },
+        {
+          "id": "b2-02.video102.q4",
+          "prompt": "Promise a result by Friday without hiding a dependency",
+          "hint": "Use will have and explain what you need first",
+          "answer": "Example: I’ll have finished the slides by Friday if I receive the figures on Thursday"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Negotiate a deadline using dependencies and realistic commitments"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Original delivery plan",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Tuesday",
+          "value": "Draft"
+        },
+        {
+          "id": "1",
+          "label": "Wednesday",
+          "value": "Review · comments needed"
+        },
+        {
+          "id": "2",
+          "label": "Friday 10 am",
+          "value": "Volunteer handover"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Which deadline can you responsibly communicate?",
+          "hint": "We expect … by …, provided …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What dependency needs confirmation first?",
+          "hint": "We need confirmation of … before …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How will you distinguish the draft from the final pack?",
+          "hint": "The draft …; the final pack …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Original delivery plan"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "A revised plan",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Changed dependency",
+          "value": "Review · Thursday afternoon"
+        },
+        {
+          "id": "1",
+          "label": "Immediate need",
+          "value": "Welcome sheet · Friday 10 am"
+        },
+        {
+          "id": "2",
+          "label": "Full pack",
+          "value": "Allow one working day after comments"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Would the welcome sheet meet the immediate need?",
+          "hint": "It would cover …, but we should check …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "When could you promise the complete pack?",
+          "hint": "We’ll need … after … before …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What change would require a new estimate?",
+          "hint": "If …, we’ll need to estimate … again"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "A revised plan"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Tuesday",
+          "value": "Draft"
+        },
+        {
+          "id": "1",
+          "label": "Wednesday",
+          "value": "Review · comments needed"
+        },
+        {
+          "id": "2",
+          "label": "Friday 10 am",
+          "value": "Volunteer handover"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What will be ready by Friday?",
+          "cue": "Commit only to what the schedule supports",
+          "hint": "By Friday, I’ll have …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What will you be doing when the others arrive?",
+          "cue": "Describe an activity in progress at that future time",
+          "hint": "I’ll be … when …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you make the commitment clear to the other person?",
+          "cue": "State the promise and its condition, then check the interpretation",
+          "hint": "We can commit to … provided that … Does that match your understanding?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

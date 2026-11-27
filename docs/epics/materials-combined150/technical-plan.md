@@ -1,0 +1,3 @@
+# Technical plan
+
+Preserve feature worktrees, merge source branches into isolated integration worktrees, resolve documentation conflicts by retaining current rules, reconcile API declarations and run focused integration tests. Build one neutral UI material artifact. Adopt all files/provenance in Teacher with a same67-keys/covers guard, preserving the qualified consumer package. Add a separate expiring source-bound combined150 Hosting admission without widening prior admissions. Build staging then production from the same final Teacher source, use the existing environment lease/backend/remote-byte checks and completion receipts. Reuse prior scopes and tests; no new synthesis.

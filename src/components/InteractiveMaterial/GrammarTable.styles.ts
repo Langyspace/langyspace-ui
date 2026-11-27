@@ -1,5 +1,6 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
 export const Root = styled(Common.Stack).withConfig({
@@ -16,10 +17,11 @@ export const Wrap = styled.div`
 `
 export const Table = styled.table<{
   $tone: 'affirmative' | 'negative' | 'question'
-  $reveal: boolean
+  $captionHidden: boolean
+  $patterns: boolean
 }>`
-  --grammar-ink: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.foreground : p.$tone === 'question' ? theme.semantic.status.info.foreground : theme.semantic.status.success.foreground)};
-  --grammar-surface: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.background : p.$tone === 'question' ? theme.semantic.status.info.background : theme.semantic.status.success.background)};
+  --grammar-ink: ${(p) => (p.$tone === 'negative' ? (resolveTheme(p).semantic?.status.danger.foreground ?? theme.semantic.status.danger.foreground) : p.$tone === 'question' ? (resolveTheme(p).semantic?.status.info.foreground ?? theme.semantic.status.info.foreground) : (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground))};
+  --grammar-surface: ${(p) => (p.$tone === 'negative' ? (resolveTheme(p).semantic?.status.danger.background ?? theme.semantic.status.danger.background) : p.$tone === 'question' ? (resolveTheme(p).semantic?.status.info.background ?? theme.semantic.status.info.background) : (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background))};
   width: 100%;
   border-collapse: collapse;
   text-align: left;
@@ -31,15 +33,15 @@ export const Table = styled.table<{
     font: 700 12px ${theme.slides.displayFontFamily};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: ${(p) => (p.$reveal ? theme.colors.palette.white : 'var(--grammar-ink)')};
-    background: ${(p) => (p.$reveal ? 'var(--grammar-ink)' : 'var(--grammar-surface)')};
+    color: ${(p) => Common.recipe(p).muted};
+    background: ${(p) => Common.recipe(p).surface};
   }
   th {
-    font: 700 12px ${theme.slides.displayFontFamily};
+    font: 700 12px ${theme.typography.fontFamily.sans};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: ${(p) => (p.$reveal ? theme.colors.palette.white : 'var(--grammar-ink)')};
-    background: ${(p) => (p.$reveal ? 'var(--grammar-ink)' : 'var(--grammar-surface)')};
+    color: ${(p) => Common.recipe(p).muted};
+    background: ${(p) => Common.recipe(p).surface};
   }
   th,
   td {
@@ -48,6 +50,7 @@ export const Table = styled.table<{
     vertical-align: middle;
   }
   tbody th {
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: inherit;
     text-transform: none;
     letter-spacing: normal;
@@ -55,33 +58,91 @@ export const Table = styled.table<{
     background: ${(p) => Common.recipe(p).canvas};
     > span {
       display: inline-block;
-      padding: ${(p) => (p.$reveal ? '0' : '3px 10px')};
+      padding: 3px 10px;
       border-radius: ${theme.radius.pill};
-      background: ${(p) => (p.$reveal ? 'transparent' : Common.recipe(p).accent)};
-      color: ${(p) => (p.$reveal ? 'inherit' : Common.recipe(p).canvas)};
+      background: ${(p) => Common.recipe(p).accent};
+      color: ${(p) => Common.recipe(p).canvas};
     }
   }
   td[data-verb],
   td strong {
     font-weight: 700;
-    color: ${(p) => `color-mix(in srgb, var(--grammar-ink) 65%, ${Common.recipe(p).foreground})`};
+    color: var(--grammar-ink);
   }
   tbody tr:last-child > * {
     border-bottom: 0;
   }
+  ${(p) =>
+    p.$patterns &&
+    css`
+      tbody th {
+        width: 25%;
+        > span {
+          padding: 0;
+          border-radius: 0;
+          color: inherit;
+          background: transparent;
+        }
+      }
+    `}
+  ${(p) =>
+    p.$captionHidden &&
+    css`
+      caption {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+      }
+    `}
+`
+export const Pattern = styled.strong`
+  display: block;
+  margin-bottom: ${theme.spacing[1]};
 `
 export const Example = styled(Pressable)<{ $concealed: boolean }>`
   padding: ${theme.spacing[1]} ${(p) => (p.$concealed ? theme.spacing[4] : '0')};
   border: 0;
   background: ${(p) => (p.$concealed ? Common.recipe(p).accent : 'transparent')};
   font: inherit;
-  color: ${(p) => (p.$concealed ? theme.colors.palette.white : 'inherit')};
+  font-weight: ${(p) => (p.$concealed ? theme.typography.fontWeight.bold : theme.typography.fontWeight.semibold)};
+  color: ${(p) => (p.$concealed ? Common.recipe(p).canvas : 'inherit')};
   cursor: pointer;
   text-align: left;
   border-radius: ${theme.radius.sm};
   min-height: ${theme.spacing[8]};
+  font-family: ${theme.typography.fontFamily.sans};
+  transition: none;
+  &&:hover:not(:disabled),
+  &&:active:not(:disabled) {
+    transform: none;
+    box-shadow: none;
+    background: ${(p) => (p.$concealed ? Common.recipe(p).accent : 'transparent')};
+    color: ${(p) => (p.$concealed ? Common.recipe(p).canvas : 'inherit')};
+  }
   &:focus-visible {
     outline: 3px solid ${(p) => Common.recipe(p).accent};
     outline-offset: 3px;
   }
+`
+export const AnswerFrame = styled.div`
+  position: relative;
+  min-width: 0;
+  min-height: ${theme.sizes.control.md};
+`
+export const AnswerContent = styled.div<{ $concealed: boolean }>`
+  visibility: ${(p) => (p.$concealed ? 'hidden' : 'visible')};
+  min-width: 0;
+`
+export const RevealControl = styled(Example)`
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  height: ${theme.sizes.control.md};
+  min-height: ${theme.sizes.control.md};
+  margin-block: auto;
 `

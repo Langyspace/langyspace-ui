@@ -1,0 +1,3050 @@
+{
+  "version": 124,
+  "purpose": "Only missing concepts for minimum20 homework decks; first reuse exact approved text+voice+provider recordings",
+  "newConcepts": 80,
+  "speechItems": [
+    {
+      "id": "flashcard124-husband.front",
+      "displayText": "husband",
+      "synthesisInput": "husband",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-husband.front.mp3"
+    },
+    {
+      "id": "flashcard124-husband.back",
+      "displayText": "Her husband is from Brazil",
+      "synthesisInput": "Her husband is from Brazil",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-husband.back.mp3"
+    },
+    {
+      "id": "flashcard124-wife.front",
+      "displayText": "wife",
+      "synthesisInput": "wife",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-wife.front.mp3"
+    },
+    {
+      "id": "flashcard124-wife.back",
+      "displayText": "His wife is a doctor",
+      "synthesisInput": "His wife is a doctor",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-wife.back.mp3"
+    },
+    {
+      "id": "flashcard124-son.front",
+      "displayText": "son",
+      "synthesisInput": "son",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-son.front.mp3"
+    },
+    {
+      "id": "flashcard124-son.back",
+      "displayText": "This is my son",
+      "synthesisInput": "This is my son",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-son.back.mp3"
+    },
+    {
+      "id": "flashcard124-daughter.front",
+      "displayText": "daughter",
+      "synthesisInput": "daughter",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-daughter.front.mp3"
+    },
+    {
+      "id": "flashcard124-daughter.back",
+      "displayText": "My daughter is a student",
+      "synthesisInput": "My daughter is a student",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-daughter.back.mp3"
+    },
+    {
+      "id": "flashcard124-grandmother.front",
+      "displayText": "grandmother",
+      "synthesisInput": "grandmother",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-grandmother.front.mp3"
+    },
+    {
+      "id": "flashcard124-grandmother.back",
+      "displayText": "My grandmother lives near me",
+      "synthesisInput": "My grandmother lives near me",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-grandmother.back.mp3"
+    },
+    {
+      "id": "flashcard124-grandfather.front",
+      "displayText": "grandfather",
+      "synthesisInput": "grandfather",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-grandfather.front.mp3"
+    },
+    {
+      "id": "flashcard124-grandfather.back",
+      "displayText": "This is my grandfather",
+      "synthesisInput": "This is my grandfather",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-grandfather.back.mp3"
+    },
+    {
+      "id": "flashcard124-aunt.front",
+      "displayText": "aunt",
+      "synthesisInput": "aunt",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-aunt.front.mp3"
+    },
+    {
+      "id": "flashcard124-aunt.back",
+      "displayText": "My aunt is a teacher",
+      "synthesisInput": "My aunt is a teacher",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-aunt.back.mp3"
+    },
+    {
+      "id": "flashcard124-uncle.front",
+      "displayText": "uncle",
+      "synthesisInput": "uncle",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-uncle.front.mp3"
+    },
+    {
+      "id": "flashcard124-uncle.back",
+      "displayText": "My uncle is from Recife",
+      "synthesisInput": "My uncle is from Recife",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-uncle.back.mp3"
+    },
+    {
+      "id": "flashcard124-cousin.front",
+      "displayText": "cousin",
+      "synthesisInput": "cousin",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-cousin.front.mp3"
+    },
+    {
+      "id": "flashcard124-cousin.back",
+      "displayText": "My cousin is a cook",
+      "synthesisInput": "My cousin is a cook",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-cousin.back.mp3"
+    },
+    {
+      "id": "flashcard124-partner.front",
+      "displayText": "partner",
+      "synthesisInput": "partner",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-partner.front.mp3"
+    },
+    {
+      "id": "flashcard124-partner.back",
+      "displayText": "This is my partner",
+      "synthesisInput": "This is my partner",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-partner.back.mp3"
+    },
+    {
+      "id": "flashcard124-neighbor.front",
+      "displayText": "neighbor",
+      "synthesisInput": "neighbor",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-neighbor.front.mp3"
+    },
+    {
+      "id": "flashcard124-neighbor.back",
+      "displayText": "My neighbor is very friendly",
+      "synthesisInput": "My neighbor is very friendly",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-neighbor.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-chair.front",
+      "displayText": "a chair",
+      "synthesisInput": "a chair",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-chair.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-chair.back",
+      "displayText": "The chair is next to the table",
+      "synthesisInput": "The chair is next to the table",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-chair.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-door.front",
+      "displayText": "a door",
+      "synthesisInput": "a door",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-door.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-door.back",
+      "displayText": "The cat is behind the door",
+      "synthesisInput": "The cat is behind the door",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-door.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-window.front",
+      "displayText": "a window",
+      "synthesisInput": "a window",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-window.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-window.back",
+      "displayText": "The bird is near the window",
+      "synthesisInput": "The bird is near the window",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-window.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-desk.front",
+      "displayText": "a desk",
+      "synthesisInput": "a desk",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-desk.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-desk.back",
+      "displayText": "The book is on the desk",
+      "synthesisInput": "The book is on the desk",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-desk.back.mp3"
+    },
+    {
+      "id": "flashcard124-an-earache.front",
+      "displayText": "an earache",
+      "synthesisInput": "an earache",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-earache.front.mp3"
+    },
+    {
+      "id": "flashcard124-an-earache.back",
+      "displayText": "I have an earache",
+      "synthesisInput": "I have an earache",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-earache.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-toothache.front",
+      "displayText": "a toothache",
+      "synthesisInput": "a toothache",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-toothache.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-toothache.back",
+      "displayText": "I have a toothache",
+      "synthesisInput": "I have a toothache",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-toothache.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-cold.front",
+      "displayText": "a cold",
+      "synthesisInput": "a cold",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-cold.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-cold.back",
+      "displayText": "I think I have a cold",
+      "synthesisInput": "I think I have a cold",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-cold.back.mp3"
+    },
+    {
+      "id": "flashcard124-dizzy.front",
+      "displayText": "dizzy",
+      "synthesisInput": "dizzy",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-dizzy.front.mp3"
+    },
+    {
+      "id": "flashcard124-dizzy.back",
+      "displayText": "I feel dizzy when I stand up",
+      "synthesisInput": "I feel dizzy when I stand up",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-dizzy.back.mp3"
+    },
+    {
+      "id": "flashcard124-sick.front",
+      "displayText": "sick",
+      "synthesisInput": "sick",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-sick.front.mp3"
+    },
+    {
+      "id": "flashcard124-sick.back",
+      "displayText": "I feel sick today",
+      "synthesisInput": "I feel sick today",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-sick.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-runny-nose.front",
+      "displayText": "a runny nose",
+      "synthesisInput": "a runny nose",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-runny-nose.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-runny-nose.back",
+      "displayText": "I have a runny nose",
+      "synthesisInput": "I have a runny nose",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-runny-nose.back.mp3"
+    },
+    {
+      "id": "flashcard124-temperature.front",
+      "displayText": "temperature",
+      "synthesisInput": "temperature",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-temperature.front.mp3"
+    },
+    {
+      "id": "flashcard124-temperature.back",
+      "displayText": "Can you check my temperature?",
+      "synthesisInput": "Can you check my temperature?",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-temperature.back.mp3"
+    },
+    {
+      "id": "flashcard124-medicine.front",
+      "displayText": "medicine",
+      "synthesisInput": "medicine",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-medicine.front.mp3"
+    },
+    {
+      "id": "flashcard124-medicine.back",
+      "displayText": "Do I need any medicine?",
+      "synthesisInput": "Do I need any medicine?",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-medicine.back.mp3"
+    },
+    {
+      "id": "flashcard124-rest.front",
+      "displayText": "rest",
+      "synthesisInput": "rest",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-rest.front.mp3"
+    },
+    {
+      "id": "flashcard124-rest.back",
+      "displayText": "You need some rest",
+      "synthesisInput": "You need some rest",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-rest.back.mp3"
+    },
+    {
+      "id": "flashcard124-an-appointment.front",
+      "displayText": "an appointment",
+      "synthesisInput": "an appointment",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-appointment.front.mp3"
+    },
+    {
+      "id": "flashcard124-an-appointment.back",
+      "displayText": "I have an appointment this afternoon",
+      "synthesisInput": "I have an appointment this afternoon",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-appointment.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-pharmacy.front",
+      "displayText": "a pharmacy",
+      "synthesisInput": "a pharmacy",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-pharmacy.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-pharmacy.back",
+      "displayText": "Is there a pharmacy near here?",
+      "synthesisInput": "Is there a pharmacy near here?",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-pharmacy.back.mp3"
+    },
+    {
+      "id": "flashcard124-drink-water.front",
+      "displayText": "drink water",
+      "synthesisInput": "drink water",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-drink-water.front.mp3"
+    },
+    {
+      "id": "flashcard124-drink-water.back",
+      "displayText": "Remember to drink water",
+      "synthesisInput": "Remember to drink water",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-drink-water.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-storm.front",
+      "displayText": "a storm",
+      "synthesisInput": "a storm",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-storm.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-storm.back",
+      "displayText": "There may be a storm this afternoon",
+      "synthesisInput": "There may be a storm this afternoon",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-storm.back.mp3"
+    },
+    {
+      "id": "flashcard124-sunny.front",
+      "displayText": "sunny",
+      "synthesisInput": "sunny",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-sunny.front.mp3"
+    },
+    {
+      "id": "flashcard124-sunny.back",
+      "displayText": "If it is sunny, we can go for a walk",
+      "synthesisInput": "If it is sunny, we can go for a walk",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-sunny.back.mp3"
+    },
+    {
+      "id": "flashcard124-cloudy.front",
+      "displayText": "cloudy",
+      "synthesisInput": "cloudy",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-cloudy.front.mp3"
+    },
+    {
+      "id": "flashcard124-cloudy.back",
+      "displayText": "It is cloudy this morning",
+      "synthesisInput": "It is cloudy this morning",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-cloudy.back.mp3"
+    },
+    {
+      "id": "flashcard124-windy.front",
+      "displayText": "windy",
+      "synthesisInput": "windy",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-windy.front.mp3"
+    },
+    {
+      "id": "flashcard124-windy.back",
+      "displayText": "It is too windy for a picnic",
+      "synthesisInput": "It is too windy for a picnic",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-windy.back.mp3"
+    },
+    {
+      "id": "flashcard124-an-umbrella.front",
+      "displayText": "an umbrella",
+      "synthesisInput": "an umbrella",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-umbrella.front.mp3"
+    },
+    {
+      "id": "flashcard124-an-umbrella.back",
+      "displayText": "Take an umbrella in case it rains",
+      "synthesisInput": "Take an umbrella in case it rains",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-umbrella.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-shelter.front",
+      "displayText": "a shelter",
+      "synthesisInput": "a shelter",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-shelter.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-shelter.back",
+      "displayText": "We can wait in the shelter",
+      "synthesisInput": "We can wait in the shelter",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-shelter.back.mp3"
+    },
+    {
+      "id": "flashcard124-cancel.front",
+      "displayText": "cancel",
+      "synthesisInput": "cancel",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-cancel.front.mp3"
+    },
+    {
+      "id": "flashcard124-cancel.back",
+      "displayText": "We may need to cancel the hike",
+      "synthesisInput": "We may need to cancel the hike",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-cancel.back.mp3"
+    },
+    {
+      "id": "flashcard124-postpone.front",
+      "displayText": "postpone",
+      "synthesisInput": "postpone",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-postpone.front.mp3"
+    },
+    {
+      "id": "flashcard124-postpone.back",
+      "displayText": "Can we postpone the picnic until Sunday?",
+      "synthesisInput": "Can we postpone the picnic until Sunday?",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-postpone.back.mp3"
+    },
+    {
+      "id": "flashcard124-indoors.front",
+      "displayText": "indoors",
+      "synthesisInput": "indoors",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-indoors.front.mp3"
+    },
+    {
+      "id": "flashcard124-indoors.back",
+      "displayText": "We can do something indoors",
+      "synthesisInput": "We can do something indoors",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-indoors.back.mp3"
+    },
+    {
+      "id": "flashcard124-dry.front",
+      "displayText": "dry",
+      "synthesisInput": "dry",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-dry.front.mp3"
+    },
+    {
+      "id": "flashcard124-dry.back",
+      "displayText": "The path should be dry tomorrow",
+      "synthesisInput": "The path should be dry tomorrow",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-dry.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-neighborhood.front",
+      "displayText": "a neighborhood",
+      "synthesisInput": "a neighborhood",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-neighborhood.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-neighborhood.back",
+      "displayText": "The neighborhood has changed a lot",
+      "synthesisInput": "The neighborhood has changed a lot",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-neighborhood.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-library.front",
+      "displayText": "a library",
+      "synthesisInput": "a library",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-library.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-library.back",
+      "displayText": "There used to be a library here",
+      "synthesisInput": "There used to be a library here",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-library.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-post-office.front",
+      "displayText": "a post office",
+      "synthesisInput": "a post office",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-post-office.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-post-office.back",
+      "displayText": "The post office is now a café",
+      "synthesisInput": "The post office is now a café",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-post-office.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-town-hall.front",
+      "displayText": "a town hall",
+      "synthesisInput": "a town hall",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-town-hall.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-town-hall.back",
+      "displayText": "The town hall is beside the square",
+      "synthesisInput": "The town hall is beside the square",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-town-hall.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-pavement.front",
+      "displayText": "a pavement",
+      "synthesisInput": "a pavement",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-pavement.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-pavement.back",
+      "displayText": "They have made the pavement wider",
+      "synthesisInput": "They have made the pavement wider",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-pavement.back.mp3"
+    },
+    {
+      "id": "flashcard124-traffic-lights.front",
+      "displayText": "traffic lights",
+      "synthesisInput": "traffic lights",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-traffic-lights.front.mp3"
+    },
+    {
+      "id": "flashcard124-traffic-lights.back",
+      "displayText": "There did not use to be traffic lights here",
+      "synthesisInput": "There did not use to be traffic lights here",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-traffic-lights.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-crossroads.front",
+      "displayText": "a crossroads",
+      "synthesisInput": "a crossroads",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-crossroads.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-crossroads.back",
+      "displayText": "The old shop was at the crossroads",
+      "synthesisInput": "The old shop was at the crossroads",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-crossroads.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-park.front",
+      "displayText": "a park",
+      "synthesisInput": "a park",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-park.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-park.back",
+      "displayText": "We used to play in the park",
+      "synthesisInput": "We used to play in the park",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-park.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-swimming-pool.front",
+      "displayText": "a swimming pool",
+      "synthesisInput": "a swimming pool",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-swimming-pool.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-swimming-pool.back",
+      "displayText": "There is a new swimming pool in town",
+      "synthesisInput": "There is a new swimming pool in town",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-swimming-pool.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-shopping-center.front",
+      "displayText": "a shopping center",
+      "synthesisInput": "a shopping center",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-shopping-center.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-shopping-center.back",
+      "displayText": "The factory has become a shopping center",
+      "synthesisInput": "The factory has become a shopping center",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-shopping-center.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-supermarket.front",
+      "displayText": "a supermarket",
+      "synthesisInput": "a supermarket",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-supermarket.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-supermarket.back",
+      "displayText": "A supermarket has replaced the small shops",
+      "synthesisInput": "A supermarket has replaced the small shops",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-supermarket.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-warehouse.front",
+      "displayText": "a warehouse",
+      "synthesisInput": "a warehouse",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-warehouse.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-warehouse.back",
+      "displayText": "The warehouse is now an apartment building",
+      "synthesisInput": "The warehouse is now an apartment building",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-warehouse.back.mp3"
+    },
+    {
+      "id": "flashcard124-green-space.front",
+      "displayText": "green space",
+      "synthesisInput": "green space",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-green-space.front.mp3"
+    },
+    {
+      "id": "flashcard124-green-space.back",
+      "displayText": "The neighborhood needs more green space",
+      "synthesisInput": "The neighborhood needs more green space",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-green-space.back.mp3"
+    },
+    {
+      "id": "flashcard124-get-used-to.front",
+      "displayText": "get used to",
+      "synthesisInput": "get used to",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-get-used-to.front.mp3"
+    },
+    {
+      "id": "flashcard124-get-used-to.back",
+      "displayText": "It takes time to get used to a new routine",
+      "synthesisInput": "It takes time to get used to a new routine",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-get-used-to.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-new-environment.front",
+      "displayText": "a new environment",
+      "synthesisInput": "a new environment",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-new-environment.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-new-environment.back",
+      "displayText": "I am learning to work in a new environment",
+      "synthesisInput": "I am learning to work in a new environment",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-new-environment.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-time-difference.front",
+      "displayText": "a time difference",
+      "synthesisInput": "a time difference",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-time-difference.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-time-difference.back",
+      "displayText": "The time difference makes our calls difficult",
+      "synthesisInput": "The time difference makes our calls difficult",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-time-difference.back.mp3"
+    },
+    {
+      "id": "flashcard124-culture-shock.front",
+      "displayText": "culture shock",
+      "synthesisInput": "culture shock",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-culture-shock.front.mp3"
+    },
+    {
+      "id": "flashcard124-culture-shock.back",
+      "displayText": "Culture shock can make the first weeks difficult",
+      "synthesisInput": "Culture shock can make the first weeks difficult",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-culture-shock.back.mp3"
+    },
+    {
+      "id": "flashcard124-local-customs.front",
+      "displayText": "local customs",
+      "synthesisInput": "local customs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-local-customs.front.mp3"
+    },
+    {
+      "id": "flashcard124-local-customs.back",
+      "displayText": "Learning about local customs helps me settle in",
+      "synthesisInput": "Learning about local customs helps me settle in",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-local-customs.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-support-network.front",
+      "displayText": "a support network",
+      "synthesisInput": "a support network",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-support-network.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-support-network.back",
+      "displayText": "It helps to build a support network",
+      "synthesisInput": "It helps to build a support network",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-support-network.back.mp3"
+    },
+    {
+      "id": "flashcard124-keep-in-touch.front",
+      "displayText": "keep in touch",
+      "synthesisInput": "keep in touch",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-keep-in-touch.front.mp3"
+    },
+    {
+      "id": "flashcard124-keep-in-touch.back",
+      "displayText": "I keep in touch with friends back home",
+      "synthesisInput": "I keep in touch with friends back home",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-keep-in-touch.back.mp3"
+    },
+    {
+      "id": "flashcard124-belong.front",
+      "displayText": "belong",
+      "synthesisInput": "belong",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-belong.front.mp3"
+    },
+    {
+      "id": "flashcard124-belong.back",
+      "displayText": "I am starting to feel that I belong here",
+      "synthesisInput": "I am starting to feel that I belong here",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-belong.back.mp3"
+    },
+    {
+      "id": "flashcard124-fit-in.front",
+      "displayText": "fit in",
+      "synthesisInput": "fit in",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-fit-in.front.mp3"
+    },
+    {
+      "id": "flashcard124-fit-in.back",
+      "displayText": "You do not have to change everything to fit in",
+      "synthesisInput": "You do not have to change everything to fit in",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-fit-in.back.mp3"
+    },
+    {
+      "id": "flashcard124-independence.front",
+      "displayText": "independence",
+      "synthesisInput": "independence",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-independence.front.mp3"
+    },
+    {
+      "id": "flashcard124-independence.back",
+      "displayText": "Living abroad has given me more independence",
+      "synthesisInput": "Living abroad has given me more independence",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-independence.back.mp3"
+    },
+    {
+      "id": "flashcard124-practical-skills.front",
+      "displayText": "practical skills",
+      "synthesisInput": "practical skills",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-practical-skills.front.mp3"
+    },
+    {
+      "id": "flashcard124-practical-skills.back",
+      "displayText": "I have learned useful practical skills",
+      "synthesisInput": "I have learned useful practical skills",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-practical-skills.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-language-barrier.front",
+      "displayText": "a language barrier",
+      "synthesisInput": "a language barrier",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-language-barrier.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-language-barrier.back",
+      "displayText": "The language barrier made simple tasks harder",
+      "synthesisInput": "The language barrier made simple tasks harder",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-language-barrier.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-social-circle.front",
+      "displayText": "a social circle",
+      "synthesisInput": "a social circle",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-social-circle.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-social-circle.back",
+      "displayText": "It takes time to build a new social circle",
+      "synthesisInput": "It takes time to build a new social circle",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-social-circle.back.mp3"
+    },
+    {
+      "id": "flashcard124-feel-at-home.front",
+      "displayText": "feel at home",
+      "synthesisInput": "feel at home",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-feel-at-home.front.mp3"
+    },
+    {
+      "id": "flashcard124-feel-at-home.back",
+      "displayText": "I finally feel at home in this city",
+      "synthesisInput": "I finally feel at home in this city",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-feel-at-home.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-wheel.front",
+      "displayText": "a wheel",
+      "synthesisInput": "a wheel",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-wheel.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-wheel.back",
+      "displayText": "The front wheel is damaged",
+      "synthesisInput": "The front wheel is damaged",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-wheel.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-handlebar.front",
+      "displayText": "a handlebar",
+      "synthesisInput": "a handlebar",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-handlebar.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-handlebar.back",
+      "displayText": "There is a light on the handlebar",
+      "synthesisInput": "There is a light on the handlebar",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-handlebar.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-frame.front",
+      "displayText": "a frame",
+      "synthesisInput": "a frame",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-frame.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-frame.back",
+      "displayText": "There is a yellow sticker on the frame",
+      "synthesisInput": "There is a yellow sticker on the frame",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-frame.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-security-camera.front",
+      "displayText": "a security camera",
+      "synthesisInput": "a security camera",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-security-camera.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-security-camera.back",
+      "displayText": "There is a security camera near the bike rack",
+      "synthesisInput": "There is a security camera near the bike rack",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-security-camera.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-police-station.front",
+      "displayText": "a police station",
+      "synthesisInput": "a police station",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-police-station.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-police-station.back",
+      "displayText": "I reported the missing bicycle at the police station",
+      "synthesisInput": "I reported the missing bicycle at the police station",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-police-station.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-description.front",
+      "displayText": "a description",
+      "synthesisInput": "a description",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-description.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-description.back",
+      "displayText": "Can you give a clear description of the bicycle?",
+      "synthesisInput": "Can you give a clear description of the bicycle?",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-description.back.mp3"
+    },
+    {
+      "id": "flashcard124-an-incident-number.front",
+      "displayText": "an incident number",
+      "synthesisInput": "an incident number",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-incident-number.front.mp3"
+    },
+    {
+      "id": "flashcard124-an-incident-number.back",
+      "displayText": "Please keep your incident number",
+      "synthesisInput": "Please keep your incident number",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-incident-number.back.mp3"
+    },
+    {
+      "id": "flashcard124-an-invitation.front",
+      "displayText": "an invitation",
+      "synthesisInput": "an invitation",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-invitation.front.mp3"
+    },
+    {
+      "id": "flashcard124-an-invitation.back",
+      "displayText": "We received an invitation to the wedding",
+      "synthesisInput": "We received an invitation to the wedding",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-an-invitation.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-ceremony.front",
+      "displayText": "a ceremony",
+      "synthesisInput": "a ceremony",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-ceremony.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-ceremony.back",
+      "displayText": "The ceremony starts at three",
+      "synthesisInput": "The ceremony starts at three",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-ceremony.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-wedding-reception.front",
+      "displayText": "a wedding reception",
+      "synthesisInput": "a wedding reception",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-wedding-reception.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-wedding-reception.back",
+      "displayText": "We met at the wedding reception",
+      "synthesisInput": "We met at the wedding reception",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-wedding-reception.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-venue.front",
+      "displayText": "a venue",
+      "synthesisInput": "a venue",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-venue.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-venue.back",
+      "displayText": "The venue is near the station",
+      "synthesisInput": "The venue is near the station",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-venue.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-best-man.front",
+      "displayText": "a best man",
+      "synthesisInput": "a best man",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-best-man.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-best-man.back",
+      "displayText": "The best man is giving a speech",
+      "synthesisInput": "The best man is giving a speech",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-best-man.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-bridesmaid.front",
+      "displayText": "a bridesmaid",
+      "synthesisInput": "a bridesmaid",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-bridesmaid.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-bridesmaid.back",
+      "displayText": "The bridesmaid is wearing a green dress",
+      "synthesisInput": "The bridesmaid is wearing a green dress",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-bridesmaid.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-toast.front",
+      "displayText": "a toast",
+      "synthesisInput": "a toast",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-toast.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-toast.back",
+      "displayText": "Let us make a toast to the couple",
+      "synthesisInput": "Let us make a toast to the couple",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-toast.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-wedding-cake.front",
+      "displayText": "a wedding cake",
+      "synthesisInput": "a wedding cake",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-wedding-cake.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-wedding-cake.back",
+      "displayText": "The wedding cake is on that table",
+      "synthesisInput": "The wedding cake is on that table",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-wedding-cake.back.mp3"
+    },
+    {
+      "id": "flashcard124-a-bouquet.front",
+      "displayText": "a bouquet",
+      "synthesisInput": "a bouquet",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-bouquet.front.mp3"
+    },
+    {
+      "id": "flashcard124-a-bouquet.back",
+      "displayText": "The bride is holding a bouquet",
+      "synthesisInput": "The bride is holding a bouquet",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "speaker": "Ana",
+      "modelId": "eleven_multilingual_v2",
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "file": "assets/audio/flashcard124-a-bouquet.back.mp3"
+    }
+  ],
+  "noPortugueseSynthesis": true,
+  "noCloudPublication": true,
+  "voiceSource": "Student content/course-practice/flashcard-voice85.json: same existing Ana/Jessica approved model and settings"
+}

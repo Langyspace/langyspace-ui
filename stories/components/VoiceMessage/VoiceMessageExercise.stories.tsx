@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
 import { initial, questions } from './VoiceMessage.fixtures'
 import { VoiceMessageDemo, VoiceMessageDeck } from './VoiceMessageDemo'
 import { Stage, Caption, Narrow } from './VoiceMessage.stories.styles'
@@ -16,9 +17,7 @@ const meta = {
   decorators: [
     (Story) => (
       <Stage>
-        <Caption>
-          Voz de demonstração local; gravação final não incluída.
-        </Caption>
+        <Caption>Exercício de mensagens de áudio</Caption>
         <Story />
       </Stage>
     ),
@@ -46,6 +45,22 @@ export const InSlideDeck: Story = {
 export const Standalone: Story = {
   render: (args) => <VoiceMessageDemo {...args} />,
 }
+export const BalancedTopAligned: Story = {
+  ...Default,
+  args: { layout: 'balanced', columnAlignment: 'start' },
+  tags: ['layout-boundary', 'visual-review'],
+}
+export const LightPhoneInDarkMaterial: Story = {
+  args: { contact: { name: 'Leo', status: 'online' } },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+  tags: ['visual-review'],
+}
 export const NarrowContainer: Story = {
   render: (args) => (
     <Narrow>
@@ -53,6 +68,39 @@ export const NarrowContainer: Story = {
     </Narrow>
   ),
   tags: ['layout-boundary', 'visual-review'],
+}
+export const AutomaticThirdListen: Story = {
+  args: { transcriptReveal: 'third-listen' },
+  tags: ['visual-review'],
+}
+export const ManualTranscriptBeforePlayback: Story = {
+  args: { transcriptReveal: 'third-listen' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    await expect(
+      canvas.getByRole('button', { name: 'Mostrar transcrição' }),
+    ).toHaveTextContent('Transcrição')
+    await userEvent.click(
+      canvas.getByRole('button', { name: 'Mostrar transcrição' }),
+    )
+    await expect(
+      canvas.getByRole('button', { name: 'Esconder transcrição' }),
+    ).toHaveAttribute('aria-pressed', 'true')
+    await expect(
+      canvas.getByRole('button', { name: 'Esconder transcrição' }),
+    ).toHaveTextContent(initial.audio.transcript)
+    await expect(
+      canvas.getByRole('region', { name: 'Transcrição' }),
+    ).toHaveTextContent(initial.audio.transcript)
+    await expect(canvasElement.querySelector('[data-listens]')).toHaveAttribute(
+      'data-listens',
+      '0',
+    )
+  },
+}
+export const AutomaticOnly: Story = {
+  args: { transcriptReveal: 'third-listen', transcriptToggle: false },
 }
 export const Inactive: Story = { args: { active: false } }
 export const MissingRecording: Story = {
@@ -131,6 +179,7 @@ export const ThemeOverride: Story = {
   tags: ['visual-review'],
 }
 export const PlaybackAndTranscript: Story = {
+  args: { transcriptReveal: 'second-listen' },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const audio = canvasElement.querySelector('audio')!
@@ -186,4 +235,60 @@ export const PlaybackAndTranscript: Story = {
     ).toHaveTextContent(initial.audio.transcript)
     await userEvent.click(canvas.getByRole('button', { name: 'Pausar áudio' }))
   },
+}
+
+export const FollowUpReplay: Story = {
+  args: {
+    transcriptReveal: 'second-listen',
+    replayActionLabel: 'Listen again and check',
+  },
+}
+
+export const ManualTranscriptAfterReplay: Story = {
+  args: {
+    transcriptReveal: 'manual-after-replay',
+    replayActionLabel: 'Listen again and check',
+  },
+  tags: ['visual-review'],
+}
+
+export const ContextBeforeVoiceNote: Story = {
+  args: {
+    greeting: { text: 'Hi! Here’s a quick update.', timestamp: '19:40' },
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+
+export const TwoMessages: Story = {
+  args: {
+    additionalAudios: [
+      { ...initial.audio, id: 'second-message', timestamp: '19:42' },
+    ],
+  },
+  render: (args) => <VoiceMessageDemo {...args} />,
+  tags: ['visual-review'],
+}
+export const TwoMessagesInactive: Story = {
+  ...TwoMessages,
+  args: { ...TwoMessages.args, active: false },
+}
+
+export const SharedVideo: Story = {
+  args: {
+    greeting: {
+      text: 'This clip gave me another idea for making plans',
+      timestamp: '19:40',
+    },
+    videoAttachment: {
+      title: 'Making plans',
+      sourceLabel: 'YouTube',
+      timestamp: '19:40',
+      onOpen: () => undefined,
+    },
+  },
+  tags: ['visual-review'],
+}
+export const SharedVideoInactive: Story = {
+  ...SharedVideo,
+  args: { ...SharedVideo.args, active: false },
 }

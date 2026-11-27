@@ -1,0 +1,630 @@
+{
+  "version": 81,
+  "code": "B2.04",
+  "key": "b2-04",
+  "title": "Someone must have been here",
+  "goal": "Test explanations about a past event using evidence and uncertainty",
+  "freeConversationInstruction": "Discuss surprising situations, compare explanations and show how certain you are",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how to distinguish a clue from proof",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What clue could suggest someone visited?",
+          "hint": "The … suggests …",
+          "cue": "Identify an observable clue"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What would be another possible explanation?",
+          "hint": "It might also mean …",
+          "cue": "Consider another explanation"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you check before drawing a conclusion?",
+          "hint": "I’d check … before saying …",
+          "cue": "Propose an evidence check"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Clues and explanations",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B204-V81.0",
+          "word": "a clue",
+          "translation": "",
+          "example": "A clue is not always proof",
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a clue",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B204-FS81.0",
+          "audioText": "a clue. A clue is not always proof."
+        },
+        {
+          "id": "B204-V81.1",
+          "word": "a footprint",
+          "translation": "",
+          "example": "A footprint may support more than one story",
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a footprint",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B204-FS81.1",
+          "audioText": "a footprint. A footprint may support more than one story."
+        },
+        {
+          "id": "B204-V81.2",
+          "word": "a receipt",
+          "translation": "",
+          "example": "We don’t know who left the receipt",
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a receipt",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B204-FS81.2",
+          "audioText": "a receipt. We don’t know who left the receipt."
+        },
+        {
+          "id": "B204-V81.3",
+          "word": "a spare key",
+          "translation": "",
+          "example": "The neighbour had a spare key",
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a spare key",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B204-FS81.3",
+          "audioText": "a spare key. The neighbour had a spare key."
+        },
+        {
+          "id": "B204-V81.4",
+          "word": "a security camera",
+          "translation": "",
+          "example": "Check the security camera only if needed",
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "a security camera",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B204-FS81.4",
+          "audioText": "a security camera. Check the security camera only if needed."
+        },
+        {
+          "id": "B204-V81.5",
+          "word": "an explanation",
+          "translation": "",
+          "example": "An explanation should fit the evidence",
+          "imageUrl": "b2-04-vocabulary81",
+          "imageAlt": "an explanation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B204-FS81.5",
+          "audioText": "an explanation. An explanation should fit the evidence."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Someone must have been here",
+      "paragraphs": [
+        "Fictional flat record: spare key used at 5 pm; receipt printed at 5:20 pm, owner unknown; window currently closed; plant has moved. A neighbour had permission to water plants. No forced entry has been confirmed. Current observations do not establish every earlier event."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "The first clues",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B204-D81.1",
+          "speaker": "Kim",
+          "text": "Someone must have been here. The plant has been moved",
+          "audioText": "Someone must have been here. The plant has been moved.",
+          "translation": "Alguém deve ter estado aqui. Mudaram a planta de lugar"
+        },
+        {
+          "id": "B204-D81.2",
+          "speaker": "Ana",
+          "text": "Maybe, but let’s check the record before deciding who it was",
+          "audioText": "Maybe, but let’s check the record before deciding who it was.",
+          "translation": "Talvez, mas vamos conferir o registro antes de decidir quem foi"
+        },
+        {
+          "id": "B204-D81.3",
+          "speaker": "Kim",
+          "text": "A spare key was used at five. There’s also a receipt from five twenty",
+          "audioText": "A spare key was used at five. There’s also a receipt from five twenty.",
+          "translation": "Usaram uma chave reserva às cinco. Também tem um recibo das cinco e vinte"
+        },
+        {
+          "id": "B204-D81.4",
+          "speaker": "Ana",
+          "text": "That suggests a visit, but the receipt might have been left by someone else earlier",
+          "audioText": "That suggests a visit, but the receipt might have been left by someone else earlier.",
+          "translation": "Isso sugere uma visita, mas o recibo pode ter sido deixado antes por outra pessoa"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What first makes Kim think someone visited?",
+          "hint": "The … has been …",
+          "answer": "The plant has been moved"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does the key record show?",
+          "hint": "It shows … at …",
+          "answer": "The record shows the spare key was used at five"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Does the receipt prove who visited?",
+          "hint": "No, it might …",
+          "answer": "No, the receipt might have been left earlier by someone else"
+        }
+      ],
+      "dialogueGroup": "b2-04.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What the clues don’t prove",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B204-D81.5",
+          "speaker": "Kim",
+          "text": "Could someone have come through the window?",
+          "audioText": "Could someone have come through the window?",
+          "translation": "Alguém poderia ter entrado pela janela?"
+        },
+        {
+          "id": "B204-D81.6",
+          "speaker": "Ana",
+          "text": "It’s closed now. That doesn’t prove it was closed the whole afternoon",
+          "audioText": "It’s closed now. That doesn’t prove it was closed the whole afternoon.",
+          "translation": "Ela está fechada agora. Isso não prova que ficou fechada a tarde inteira"
+        },
+        {
+          "id": "B204-D81.7",
+          "speaker": "Kim",
+          "text": "Good point. We shouldn’t treat a current state as a complete history",
+          "audioText": "Good point. We shouldn’t treat a current state as a complete history.",
+          "translation": "Bem lembrado. Não devemos tratar o estado atual como toda a história"
+        },
+        {
+          "id": "B204-D81.8",
+          "speaker": "Ana",
+          "text": "Who had permission to use the key?",
+          "audioText": "Who had permission to use the key?",
+          "translation": "Quem tinha autorização para usar a chave?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What possible entry route does Kim suggest?",
+          "hint": "Someone could have …",
+          "answer": "Kim suggests someone could have come through the window"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What do they actually know about the window?",
+          "hint": "They know … now",
+          "answer": "They know the window is closed now"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Why doesn’t that settle the question?",
+          "hint": "Its current state doesn’t prove …",
+          "answer": "Its current state doesn’t prove it was closed all afternoon"
+        }
+      ],
+      "dialogueGroup": "b2-04.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Choose a useful check",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B204-D81.9",
+          "speaker": "Kim",
+          "text": "The neighbour was going to water the plants, but I don’t know whether she came",
+          "audioText": "The neighbour was going to water the plants, but I don’t know whether she came.",
+          "translation": "A vizinha ia regar as plantas, mas não sei se veio"
+        },
+        {
+          "id": "B204-D81.10",
+          "speaker": "Ana",
+          "text": "Then I’d ask her first. The camera record could be another check if needed",
+          "audioText": "Then I’d ask her first. The camera record could be another check if needed.",
+          "translation": "Então eu perguntaria primeiro a ela. O registro da câmera seria outra verificação, se necessário"
+        },
+        {
+          "id": "B204-D81.11",
+          "speaker": "Kim",
+          "text": "So our strongest explanation is a permitted visit, not a confirmed identity yet",
+          "audioText": "So our strongest explanation is a permitted visit, not a confirmed identity yet.",
+          "translation": "Então a explicação mais forte é uma visita autorizada, mas sem identidade confirmada"
+        },
+        {
+          "id": "B204-D81.12",
+          "speaker": "Ana",
+          "text": "Exactly. We can update that conclusion when we have more than a clue",
+          "audioText": "Exactly. We can update that conclusion when we have more than a clue.",
+          "translation": "Exatamente. Podemos atualizar a conclusão quando tivermos mais do que uma pista"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "Who had a reason to use the spare key?",
+          "hint": "The neighbour was going to …",
+          "answer": "The neighbour was going to water the plants"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What would Ana check first?",
+          "hint": "She would ask …",
+          "answer": "Ana would ask the neighbour first"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Is the visitor’s identity confirmed yet?",
+          "hint": "No, a permitted visit is …",
+          "answer": "No, a permitted visit is the strongest explanation, but the identity is not confirmed yet"
+        }
+      ],
+      "dialogueGroup": "b2-04.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Separate clues from guesses",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "How strong is the evidence for the past event?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Strong past inference",
+          "verb": "must have + past participle",
+          "example": "Someone must have moved the plant"
+        },
+        {
+          "id": "1",
+          "subject": "Possible past explanation",
+          "verb": "might / could have + past participle",
+          "example": "The receipt might have been left earlier"
+        },
+        {
+          "id": "2",
+          "subject": "Rule out only with compatible evidence",
+          "verb": "can’t have + past participle",
+          "example": "If the only key stayed sealed, it can’t have been used then"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Find the most plausible explanation",
+      "instruction": "Give an explanation and say what evidence would confirm it",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A visit is confirmed",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. The neighbour has confirmed that she used the spare key at five to water the plants. She says she moved the plant away from the closed window before leaving. That supports the explanation of an authorised visit. She doesn’t recognise the receipt from five twenty, though, so we still don’t know who left it or when it came into the flat. Could you update the explanation without making the receipt fit by inventing another visit? We have confirmation for the key and the plant, but only an unresolved clue for the receipt",
+      "audioText": "Hi, Ana. The neighbour has confirmed that she used the spare key at five to water the plants. She says she moved the plant away from the closed window before leaving. That supports the explanation of an authorised visit. She doesn’t recognise the receipt from five twenty, though, so we still don’t know who left it or when it came into the flat. Could you update the explanation without making the receipt fit by inventing another visit? We have confirmation for the key and the plant, but only an unresolved clue for the receipt.",
+      "audioId": "B204-L81.1",
+      "greeting": "I checked what the message actually means",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Which visit has now been confirmed?",
+          "hint": "The neighbour … at …",
+          "answer": "The neighbour used the spare key at five to water the plants"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why was the plant moved?",
+          "hint": "The neighbour moved it …",
+          "answer": "The neighbour moved the plant away from the closed window"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What remains unexplained?",
+          "hint": "They still don’t know …",
+          "answer": "They still don’t know who left the receipt or when it entered the flat"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Update only what the evidence supports",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Which explanation does the evidence support?",
+      "instruction": "Watch the guesses about Sam, then evaluate possible explanations for a past event",
+      "minutes": 4,
+      "video": {
+        "videoId": "u6hEQdGGMuc",
+        "startSeconds": 26,
+        "endSeconds": 48,
+        "title": "Modal verbs of deduction — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b2-04.video102.q1",
+          "prompt": "What do they actually know about Sam?",
+          "hint": "Separate the observation from the guesses",
+          "answer": "They know she is late for work"
+        },
+        {
+          "id": "b2-04.video102.q2",
+          "prompt": "Which three possible explanations are offered?",
+          "hint": "Listen for could, might and may",
+          "answer": "Her car could be broken, she might be asleep, or there may be traffic"
+        },
+        {
+          "id": "b2-04.video102.q3",
+          "prompt": "Is any one explanation confirmed?",
+          "hint": "Notice whether the speaker supplies proof",
+          "answer": "No. The speaker presents them as possibilities"
+        },
+        {
+          "id": "b2-04.video102.q4",
+          "prompt": "Sam later says she arrived at noon. Give two possible earlier explanations",
+          "hint": "Use might have and say what you would check",
+          "answer": "Example: She might have missed her bus, or her car might have broken down. I’d ask what happened"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Test explanations about a past event using evidence and uncertainty"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Evidence before explanation",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Record",
+          "value": "Spare key used · 5 pm"
+        },
+        {
+          "id": "1",
+          "label": "Object",
+          "value": "Receipt · 5:20 pm · owner unknown"
+        },
+        {
+          "id": "movement",
+          "label": "Reported change",
+          "value": "Plant moved from the windowsill"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What is your strongest explanation?",
+          "hint": "Someone may have … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What alternative explanation should stay open?",
+          "hint": "The … could also …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What evidence would help you distinguish the explanations?",
+          "hint": "I’d check … to find out whether …"
+        }
+      ],
+      "questionPurpose": "response",
+      "image": "b2-04-flat-evidence123",
+      "referenceLabel": "Evidence before explanation"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Confirmation and remaining uncertainty",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Confirmed",
+          "value": "Neighbour used key at 5 · watered plants"
+        },
+        {
+          "id": "1",
+          "label": "Explained",
+          "value": "Plant moved away from window"
+        },
+        {
+          "id": "2",
+          "label": "Unresolved",
+          "value": "Who left the receipt · when it arrived"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Which conclusion can you state more confidently now?",
+          "hint": "The neighbour has confirmed …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What uncertainty should you still acknowledge?",
+          "hint": "We still don’t know …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you explain the receipt without inventing another visit?",
+          "hint": "The receipt remains …; it doesn’t establish …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Confirmation and remaining uncertainty"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Record",
+          "value": "Spare key used · 5 pm"
+        },
+        {
+          "id": "1",
+          "label": "Object",
+          "value": "Receipt · 5:20 pm · owner unknown"
+        },
+        {
+          "id": "movement",
+          "label": "Reported change",
+          "value": "Plant moved from the windowsill"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What might have happened here?",
+          "cue": "Offer a hypothesis and point to the evidence",
+          "hint": "Someone might have … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What would help you confirm that?",
+          "cue": "Identify what is still unknown",
+          "hint": "We’d need to check whether …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would change your mind?",
+          "cue": "Name evidence that would strengthen or weaken the explanation",
+          "hint": "I’d be more convinced if … What evidence would you look for?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "image": "b2-04-flat-evidence123",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

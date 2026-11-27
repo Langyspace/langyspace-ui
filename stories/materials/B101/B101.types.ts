@@ -1,4 +1,5 @@
 export interface B101LessonProps {
+  studentPortalOrigin?: string
   initialPageId?: string
 }
 export interface SpeechLine {
@@ -20,4 +21,14 @@ export interface SpeechSectionProps {
 export interface NotesProps {
   open: boolean
   onClose: () => void
+}
+
+export interface VocabularySectionProps {
+  group?: number
+  active?: boolean
+}
+
+export interface YourVersionSectionProps {
+  swapped: boolean
+  support: boolean
 }

@@ -1,16 +1,13 @@
-import { useRef, useState } from 'react'
+import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
+import { GuidedScenario } from '../shared/GuidedScenario'
+import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { createTheme } from '../../../src/foundations/theme/createTheme'
-import { Button } from '../../../src/components/Button/Button'
-import { TextInput } from '../../../src/components/Form/TextInput'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
-import { RevealSequenceCard } from '../../../src/components/InteractiveMaterial/RevealSequenceCard'
-import { content, kim, image, toggle } from './B101.data'
-import { MiniVocabulary } from './B101.practice'
-import type { SpeechSectionProps } from './B101.types'
-import voice from './assets/leo-demo.mp3'
+import { content, kim, leo, image } from './B101.data'
+import type { YourVersionSectionProps } from './B101.types'
+import voice from './assets/audio/L.9.mp3'
 import * as S from './B101.styles'
 const firstTurns = [
   {
@@ -77,110 +74,50 @@ const swappedTurns = [
   },
   { speaker: 'Teacher', text: 'Wow! Welcome back! Have some cake.' },
 ]
-export function YourVersionSection({ speech }: SpeechSectionProps) {
-  const [swapped, setSwapped] = useState(false),
-    [support, setSupport] = useState(true),
-    [marked, setMarked] = useState<string[]>([])
-  const turns = swapped ? swappedTurns : firstTurns,
-    prefix = swapped ? 'swapped' : 'first'
-  const done = turns.filter(
-    (t, i) => t.speaker === 'You' && marked.includes(`${prefix}-${i}`),
-  ).length
+export function YourVersionSection({
+  swapped,
+  support,
+}: YourVersionSectionProps) {
+  const turns = swapped ? swappedTurns : firstTurns
+  const prefix = swapped ? 'swapped' : 'first'
   return (
-    <S.Stack>
-      <S.Row>
-        <b>{swapped ? 'You: back from a trip' : 'You: about your life'}</b>
-        <S.Hint>{swapped ? 'Teacher: friend' : 'Teacher: Kim'}</S.Hint>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={() => {
-            speech.stop()
-            setSwapped(!swapped)
-          }}
-        >
-          {swapped ? '⇄ Swap back' : '⇄ Swap roles'}
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          aria-expanded={support}
-          onClick={() => setSupport(!support)}
-        >
-          {support ? 'Hide support' : 'Show support'}
-        </Button>
-        <S.Counter role="status">{done} of 4</S.Counter>
-      </S.Row>
-      {swapped ? (
-        <S.Hint>
-          Now you are back from a trip. Ask your teacher. Her answers are a
-          model: she can change them.
-        </S.Hint>
-      ) : null}
-      <S.ConversationColumns>
-        <LearningDialogue
-          density="compact"
-          lines={turns.map((turn, i) => {
-            const id = `${prefix}-${i}`,
-              learner = turn.speaker === 'You'
-            return {
-              id,
-              speaker: turn.speaker,
-              avatarUrl: turn.speaker === 'Kim' ? kim : undefined,
-              side: learner ? 'end' : 'start',
-              audioLabel:
-                'audio' in turn && turn.audio
-                  ? `Listen: ${turn.text}`
-                  : undefined,
-              actionLabel: learner ? `Mark response: ${turn.cue}` : undefined,
-              content: learner ? (
-                <S.LearnerCue>
-                  {support ? turn.text : turn.cue}
-                  {support ? <S.Hint>{turn.cue}</S.Hint> : null}
-                </S.LearnerCue>
-              ) : (
-                turn.text
-              ),
-            }
-          })}
-          completedIds={marked}
-          onComplete={(id) => setMarked((old) => toggle(old, id))}
-          playingId={speech.playingId}
-          onPlay={(id) => {
-            const turn = turns[Number(id.split('-')[1])]
-            if (turn) speech.speak([{ id, text: turn.text, speaker: 'kim' }])
-          }}
-        />
-        {!swapped ? <MiniVocabulary column /> : null}
-      </S.ConversationColumns>
-    </S.Stack>
+    <LearningDialogue
+      density="compact"
+      lines={turns.map((turn, i) => {
+        const learner = turn.speaker === 'You'
+        return {
+          id: `${prefix}-${i}`,
+          speaker: turn.speaker,
+          avatarUrl: turn.speaker === 'Kim' ? kim : undefined,
+          side: learner ? 'end' : 'start',
+          content: learner ? (
+            <S.LearnerCue>{support ? turn.text : turn.cue}</S.LearnerCue>
+          ) : (
+            turn.text
+          ),
+        }
+      })}
+    />
   )
 }
-const listeningTheme = createTheme({
-  voiceMessage: {
-    contentWidth: '65rem',
-    phoneWidth: '11.875rem',
-    phoneHeight: '23.75rem',
-  },
-})
 export function ListeningSection({ active }: { active: boolean }) {
-  const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
-    [support, setSupport] = useState(false)
+  const [attempts, setAttempts] = useState<Record<string, string[]>>({})
   return (
-    <ThemeProvider theme={listeningTheme}>
+    <ThemeProvider theme={lessonVoiceMessageTheme}>
       <VoiceMessageExercise
-        contact={{ name: 'Leo', status: 'online' }}
+        contact={{ name: 'Leo', avatarUrl: leo, status: 'online' }}
         greeting={{
           text: 'Leo! Kim is back. Where are you??',
           timestamp: '19:02',
         }}
         audio={{
-          id: 'b101-leo-demo',
+          id: 'b101-leo-message',
           src: voice,
           transcript: content.listening.transcript,
           timestamp: '19:15',
         }}
         active={active}
+        transcriptReveal="third-listen"
         labels={{
           play: 'Play Leo’s message',
           pause: 'Pause',
@@ -188,7 +125,8 @@ export function ListeningSection({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
-          transcriptHidden: 'The transcription appears on the second listen.',
+          ...voiceMessageTranscriptLabels,
+          transcriptHidden: 'The transcript appears on the third listen.',
           audioUnavailable: 'Audio unavailable',
           audioError: 'Could not play the message. Try again.',
           retry: 'Try again',
@@ -210,6 +148,8 @@ export function ListeningSection({ active }: { active: boolean }) {
             choices: q.o.map((label, j) => ({
               id: String(j),
               label,
+              feedbackOutcome:
+                j === q.a ? ('correct' as const) : ('wrong' as const),
               feedback: chosen.includes(String(j))
                 ? j === q.a
                   ? 'correct'
@@ -221,122 +161,104 @@ export function ListeningSection({ active }: { active: boolean }) {
         onAnswer={(id, choice) =>
           setAttempts((old) => ({ ...old, [id]: [...(old[id] ?? []), choice] }))
         }
-        footer={
-          <S.Dark>
-            <strong>Now you</strong>
-            <p>Answer Leo: say Congratulations! and what you’ve been doing.</p>
-            <S.Row>
-              <Button
-                variant="inverse"
-                size="sm"
-                aria-expanded={support}
-                onClick={() => setSupport(!support)}
-              >
-                {support ? 'Hide support' : 'Show support'}
-              </Button>
-            </S.Row>
-            {support ? (
-              <p>Congratulations, Leo! · I’ve been … · Of course! · Call me!</p>
-            ) : null}
-            <S.Hint>I mean = quer dizer</S.Hint>
-          </S.Dark>
-        }
       />
     </ThemeProvider>
   )
 }
+const roleplayCases = [
+  {
+    id: 'soccer',
+    label: 'Monday',
+    clue: 'muddy-shoes',
+    alt: 'Muddy soccer shoes beside the door.',
+    activity: 'playing soccer',
+    duration: 'an hour',
+    partner: 'my friends',
+  },
+  {
+    id: 'bike',
+    label: 'Wednesday',
+    clue: 'hot',
+    alt: 'Someone feeling hot after being outdoors.',
+    activity: 'riding my bike',
+    duration: 'two hours',
+    partner: 'my sister',
+  },
+  {
+    id: 'bus',
+    label: 'Saturday',
+    clue: 'wet-shirt',
+    alt: 'A wet shirt after being outside in the rain.',
+    activity: 'waiting for the bus',
+    duration: 'twenty minutes',
+    partner: 'a friend',
+  },
+]
 export function RolePlaySection() {
-  const [stages, setStages] = useState<Record<string, string>>({}),
-    [support, setSupport] = useState(false),
-    [steps, setSteps] = useState<string[]>([]),
-    [summary, setSummary] = useState<Record<string, string>>({})
-  const firstField = useRef<HTMLInputElement>(null)
-  const answers = ['soccer', 'bike', 'bus'],
-    clues = ['muddy-shoes', 'hot', 'wet-shirt']
   return (
-    <RolePlayExercise
-      density="compact"
-      situation="One week later. Kim comes to your house on Monday, Wednesday and Saturday."
-      support={content.support}
-      supportVisible={support}
-      onSupportToggle={() => setSupport(!support)}
-      labels={{
-        show: 'Show support',
-        hide: 'Hide support',
-        steps: 'Steps · your teacher checks',
-        progress: 'done',
-      }}
-      steps={content.steps.map((label, i) => ({ id: String(i), label }))}
-      completedIds={steps}
-      onStepToggle={(id) => setSteps((old) => toggle(old, id))}
-      tracker={
-        <S.Summary>
-          <S.Row>
-            <b>Your three weeks</b>
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => {
-                setSummary({})
-                firstField.current?.focus()
-              }}
-            >
-              Clear
-            </Button>
-          </S.Row>
-          {content.summary.map((label, i) => (
-            <label key={label}>
-              {label}
-              <TextInput
-                ref={i === 0 ? firstField : undefined}
-                size="sm"
-                value={summary[String(i)] ?? ''}
-                onChange={(e) =>
-                  setSummary((old) => ({ ...old, [String(i)]: e.target.value }))
-                }
-                autoComplete="off"
-              />
-            </label>
-          ))}
-        </S.Summary>
-      }
-    >
-      <S.Clues>
-        {content.clues.map((clue, i) => (
-          <RevealSequenceCard
-            key={clue.day}
-            title={clue.day}
-            stageId={stages[clue.day] ?? 'closed'}
-            onAdvance={(id) => setStages((old) => ({ ...old, [clue.day]: id }))}
-            stages={[
-              {
-                id: 'closed',
-                revealLabel: `${clue.day}: closed card`,
-              },
-              {
-                id: 'clue',
-                image: {
-                  src: image(clues[i] ?? ''),
-                  alt:
-                    i === 0
-                      ? 'Tênis com lama na entrada da casa'
-                      : i === 1
-                        ? 'Kim com calor e suor após chegar em casa'
-                        : 'Camiseta molhada ao chegar em casa',
-                },
-                revealLabel: `${clue.day}: show clue`,
-              },
-              {
-                id: 'answer',
-                image: { src: image(answers[i] ?? ''), alt: clue.w },
-                content: clue.w,
-                revealLabel: `${clue.day}: show answer`,
-              },
-            ]}
-          />
-        ))}
-      </S.Clues>
-      <MiniVocabulary />
-    </RolePlayExercise>
+    <GuidedScenario
+      selectionLabel="Choose Kim’s day"
+      cases={roleplayCases.map((current) => {
+        const questionActivity =
+          current.id === 'bike' ? 'riding your bike' : current.activity
+        return {
+          id: current.id,
+          label: current.label,
+          image: { src: image(current.clue), alt: current.alt },
+          facts: [
+            { id: 'activity', label: 'Activity', value: current.activity },
+            { id: 'duration', label: 'How long', value: current.duration },
+            { id: 'partner', label: 'With whom', value: current.partner },
+          ],
+          lines: [
+            {
+              id: 'ask-activity',
+              speaker: 'You',
+              side: 'end' as const,
+              cue: 'Ask what Kim has been doing.',
+              hint: 'What have you been …?',
+              content: 'What have you been doing?',
+            },
+            {
+              id: 'activity',
+              speaker: 'Kim',
+              avatarUrl: kim,
+              side: 'start' as const,
+              content: `I’ve been ${current.activity}.`,
+            },
+            {
+              id: 'ask-duration',
+              speaker: 'You',
+              side: 'end' as const,
+              cue: 'Ask how long.',
+              hint: 'How long have you been …?',
+              content: `How long have you been ${questionActivity}?`,
+            },
+            {
+              id: 'duration',
+              speaker: 'Kim',
+              avatarUrl: kim,
+              side: 'start' as const,
+              content: `For ${current.duration}.`,
+            },
+            {
+              id: 'ask-partner',
+              speaker: 'You',
+              side: 'end' as const,
+              cue: 'Ask who was with her.',
+              hint: 'Who have you been … with?',
+              content: `Who have you been ${questionActivity} with?`,
+            },
+            {
+              id: 'partner',
+              speaker: 'Kim',
+              avatarUrl: kim,
+              side: 'start' as const,
+              content: `With ${current.partner}.`,
+            },
+          ],
+        }
+      })}
+    />
   )
 }

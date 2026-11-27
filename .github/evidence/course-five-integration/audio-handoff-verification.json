@@ -1,0 +1,472 @@
+{
+  "taskId": "INT-COURSE-FIVE-02",
+  "checkedAt": "2026-11-19T01:46:41.614085+00:00",
+  "audioTaskId": "AUD-COURSE-FIVE-02",
+  "providerReceiptSha256": "63695bd59fda0b8210e3775c0431be852d07914864aad3aca38c69bef70e3165",
+  "courses": {
+    "A101": {
+      "manifestSha256": "a26be2b18aca5e5342d64d346f4c00f7972b61165aa7933e04ef1c1638bc259d",
+      "count": 19,
+      "liveFinalRequestSha256": "67021d6d16d7db4fc25550c90f4f5f69ee281feeb10a1cba193d6a3c83c5bc37",
+      "allAssetHashesAndMapTextMatched": true,
+      "clips": [
+        {
+          "id": "R.T1",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.065034,
+          "sha256": "4d6ea12ea2fbbde8e79c19d630ec1ff10dab3936719d0bc429e6d0a0326b1d54"
+        },
+        {
+          "id": "R.T2",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.900952,
+          "sha256": "c6d79ea0907da3cd5e5061680b27cb32bb60613b1a85762fe81843c75dc75b53"
+        },
+        {
+          "id": "R.T3",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 2.414875,
+          "sha256": "9d2061219880e2a7eb8a7aa3dab7b12406e9db14716afaa728576c7102485112"
+        },
+        {
+          "id": "R.T4",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 2.554195,
+          "sha256": "5b284856850c21bf21f7f0e6275c623e26d910b469db4dbe896c0f9875e08708"
+        },
+        {
+          "id": "R.T5",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 4.133152,
+          "sha256": "e8929ca3a9f4043e89e6a65a1183d0807a464038a6ae0e88f10470408b7b2101"
+        },
+        {
+          "id": "R.T6",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.808073,
+          "sha256": "1cd39b17cc4e124df1d38a5de355e9205415dc66a63e5623ed10561475565619"
+        },
+        {
+          "id": "ph_happy",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.835918,
+          "sha256": "787603ecac452060da261170bb6105e145513fba7b3c871ea9d5b472876d58aa"
+        },
+        {
+          "id": "ph_sad",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.882358,
+          "sha256": "e3017b8583bdc0df5b2784e2d0b283c8e8f10216bc048e1dd8c38cf43446dfcd"
+        },
+        {
+          "id": "ph_tired",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.789478,
+          "sha256": "9756f31bdc6239312ce93d1765a20107b725b43498fd0133572ca4b1a208e60d"
+        },
+        {
+          "id": "ph_hungry",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.835918,
+          "sha256": "a839a06f0bee30f0eac839275e1e4a3ac1136220273c80612efcef76b4f2dadf"
+        },
+        {
+          "id": "ph_cold",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.835918,
+          "sha256": "30f3c412d634959d31ea0ce4341fee1f00c616bb239726dee82c88bc10f04fb8"
+        },
+        {
+          "id": "ph_angry",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.835918,
+          "sha256": "fcccde01486bf6e485c554da56fa9b1c8f75ae527361e175604a804aeb60e344"
+        },
+        {
+          "id": "fl_korea",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.882358,
+          "sha256": "9d947198b420161952aa5419ec40e0c194fc7b5b24a2f919e0a843eed9a848bd"
+        },
+        {
+          "id": "fl_japan",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.835918,
+          "sha256": "42dd85d11481c19cbc349b8241a1ddc0a31c133e073eaebc74948a14507a16f1"
+        },
+        {
+          "id": "fl_spain",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.882358,
+          "sha256": "0758baebd2536c7c45063538ad063c944aadc305daa03971fc2d64512ce8cdc8"
+        },
+        {
+          "id": "fl_germany",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.882358,
+          "sha256": "e9dbfeea2d8d33f849094b331ecc5fb89d7e591bb1c8bf377e40b8f5319aeeb3"
+        },
+        {
+          "id": "fl_france",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.789478,
+          "sha256": "c90fe12f2a3e1fd3a48b937acba83accd2a65214239cd3d477a4fae6b5ba8f19"
+        },
+        {
+          "id": "fl_usa",
+          "type": "vocabulary",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.114558,
+          "sha256": "acf3f0b03592b45ada9a018a0cb44e3dbdb8a2e96d0c5c4bcfaeab15170fb18c"
+        },
+        {
+          "id": "W.1",
+          "type": "voice_message",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 5.29415,
+          "sha256": "7ba86bb9db20b3c9a4d35a58c46f46932f0aa45a546f6fa16f2b7757c89f32e4"
+        }
+      ]
+    },
+    "B101": {
+      "manifestSha256": "9529e30de734ff71e35cfd588089b8ca70f968f1dbf4494b6a184ea77fdb4752",
+      "count": 16,
+      "liveFinalRequestSha256": "a94a4f43181f698036aa41c18b7fb48f758321b3334f6d85d2b42e3b7895c6be",
+      "allAssetHashesAndMapTextMatched": true,
+      "clips": [
+        {
+          "id": "D.1",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 4.87619,
+          "sha256": "7bf1bd7965308be2dbbc97df67bcdaaf24e3f6438790562f478208d17ac23096"
+        },
+        {
+          "id": "D.2",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.854512,
+          "sha256": "b80a9f6fc00fae5c409dbcb24a3c7d723b1f6f0c25a82cc4291108bf646c1a86"
+        },
+        {
+          "id": "D.3",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 2.414875,
+          "sha256": "5b28c7490872ee3fbd424c57f9fb5d2d3c272e3cb710148ded292e93e0b60872"
+        },
+        {
+          "id": "D.4",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 7.244626,
+          "sha256": "b4203c544728a37fb2245bbc9ad9ba449473d9c0d44e06c26780150f24421559"
+        },
+        {
+          "id": "D.5",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 2.879274,
+          "sha256": "bc43604f90e4c7befcacaae5f595055dc5d1aab76a844bbf560601ec6f751485"
+        },
+        {
+          "id": "D.6",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.111474,
+          "sha256": "44c53c5d7978786b933398c344e80c70fb925b474844f772a2810aea71b25d60"
+        },
+        {
+          "id": "D.7",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 6.269388,
+          "sha256": "7aa6c9cb71e8b0507b9905234ccad4d439d80856506f7c005c98739f9d4c2279"
+        },
+        {
+          "id": "D.8",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 6.455147,
+          "sha256": "81d933755f3b90f4cbc489e0c095c519a71eca3776703c3c73ae3a7744ec5547"
+        },
+        {
+          "id": "D.9",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 7.291066,
+          "sha256": "774b821194fd02b20c59d60a7f38ea1606ddbf7f576a80740bdc87343c82b335"
+        },
+        {
+          "id": "D.10",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.436553,
+          "sha256": "27c33c3be44e3dcece7fda34fa64725bb10436d1c5be64cd0823ac3cf6fb8137"
+        },
+        {
+          "id": "D.11",
+          "type": "dialogue",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 2.879274,
+          "sha256": "6c190dc68d736e28e68c45fbc29fca581f68bd7ee25eee5d24d8f46dc7eda91b"
+        },
+        {
+          "id": "P.0.0",
+          "type": "listening-discrimination",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.928798,
+          "sha256": "20fe475cab0e52f82625a22aa631a5828b7ceceb0e2e741ec6bfacc5fc4a2428"
+        },
+        {
+          "id": "P.0.1",
+          "type": "listening-discrimination",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.068118,
+          "sha256": "82aa2a22d562b111096ba4048969db185a7970b608f253b34c688fa72f70ee2f"
+        },
+        {
+          "id": "P.1.0",
+          "type": "listening-discrimination",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.021678,
+          "sha256": "f01e026fcf2b3b6006fa8abc2dda70336989311fead6dc42469409e306815a49"
+        },
+        {
+          "id": "P.1.1",
+          "type": "listening-discrimination",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.160998,
+          "sha256": "6a306ae5fd372e4bbf641f7a54bbe706dd8d45bf16e5ac0b91b6b358ab511462"
+        },
+        {
+          "id": "L.9",
+          "type": "voice-message",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 22.476916,
+          "sha256": "f83af7b038c2c94f421f39dc57f464d46312bb8b4cefe323274853f8fe7367f4"
+        }
+      ]
+    },
+    "B201": {
+      "manifestSha256": "eade4b9392b0ccbc37fb79e58b804cbe0ee896ffac0174787b901ac088756ccc",
+      "count": 5,
+      "liveFinalRequestSha256": "943e944f756fab309db6abed6ba0106374e12b206758689c10ea4c9cf05e1b6e",
+      "allAssetHashesAndMapTextMatched": true,
+      "clips": [
+        {
+          "id": "b201-raj-message",
+          "type": "listening_voice_message",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 21.362358,
+          "sha256": "8b5fc957593029708987fac2966b98d053e3eb2300f7c8875e75cdefda260207"
+        },
+        {
+          "id": "b201-pair-0-0",
+          "type": "minimal_pair",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 0.975238,
+          "sha256": "93ce3c6820e20d1f037be5af6457d39586b01ae10be0698983cf890d67651e0e"
+        },
+        {
+          "id": "b201-pair-0-1",
+          "type": "minimal_pair",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.253878,
+          "sha256": "57580cafc2a0a1d51cba324ca5430e33e38b992c0f60abdce18cff0aca9b1ad0"
+        },
+        {
+          "id": "b201-pair-1-0",
+          "type": "minimal_pair",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.021678,
+          "sha256": "c58814e22306ee33ce394dfdae22da1fbd0c439c9fea3dc8084ac84d72d49679"
+        },
+        {
+          "id": "b201-pair-1-1",
+          "type": "minimal_pair",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.114558,
+          "sha256": "d200e06fb67d28676d3f1be965f5cfef38289db64870d97dcb4a850f9686d91d"
+        }
+      ]
+    },
+    "C101": {
+      "manifestSha256": "1da943b98c704af4203545a63bfbef558ee2eb32444004f0426dff333c16ab36",
+      "count": 19,
+      "liveFinalRequestSha256": "0e469ec836104ac5d40df5fae2d1210176bd1816b0c099b0b42a16a75eccdd35",
+      "allAssetHashesAndMapTextMatched": true,
+      "clips": [
+        {
+          "id": "c101-D6-1",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.529433,
+          "sha256": "3a01594937324e0fbce73731c2de6b5feb4b6a66adccf40507bb36850255f089"
+        },
+        {
+          "id": "c101-D6-2",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 5.433469,
+          "sha256": "f2944968c07d3d9a2faac4fd0a189102181a518ed8bd0b0f95db4b030c748aba"
+        },
+        {
+          "id": "c101-D6-3",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.811156,
+          "sha256": "32720f0d5226bb7692c05495ffc0872b10f837b65dc7c4b016b3c7dfbfe24940"
+        },
+        {
+          "id": "c101-D6-4",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.622313,
+          "sha256": "90201cee48751ac7c600157599f41fc04dc8561a28366efb3360c46a375ffd57"
+        },
+        {
+          "id": "c101-D6-5",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 2.554195,
+          "sha256": "d79e61606035b037ff0bf8953275c654f7bbbb788638ed41aa1d74bc03449f5d"
+        },
+        {
+          "id": "c101-D6-6",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 1.207438,
+          "sha256": "4d189a71a8b661706a713cda15b92887fc51f7d9c0dff807bfe163e82e17afa6"
+        },
+        {
+          "id": "c101-D6-7",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 6.222948,
+          "sha256": "48c42fe3cab336e1f5bdd4494f7a4e832cfee6a156af5e7f819c699d0b0ca77a"
+        },
+        {
+          "id": "c101-D6-8",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 4.551111,
+          "sha256": "7b9ce856c0a646adaa8865322cd8ddbd9d5ab8af4f4c1ae0b4f3f699c6fc5d45"
+        },
+        {
+          "id": "c101-D6-9",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 4.690431,
+          "sha256": "71cd01dddd1a056e875d8c814ce55ffa0de1c349469d7e0977f46062c2bbf0ea"
+        },
+        {
+          "id": "c101-D6-10",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 5.387029,
+          "sha256": "45bee44106989f35f9cd0375e4ed9992014f5727a1bdb5394ee7c34662802df9"
+        },
+        {
+          "id": "c101-D6-11",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 5.06195,
+          "sha256": "209eef2979e7f6530e37df32700f46fd43d7891713d5e4cca806b1913be208c8"
+        },
+        {
+          "id": "c101-D6-12",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 3.575873,
+          "sha256": "4ef873d927fcc2c521c277057b4af72e36326a6b1654e052a0719e16bda14a1b"
+        },
+        {
+          "id": "c101-D6-13",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 5.387029,
+          "sha256": "97f68bb478a03a3f9e06fb01c46e1fc586ed173497801d0b886518db06c96ac1"
+        },
+        {
+          "id": "c101-D6-14",
+          "type": "dialogue_listening",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 5.34059,
+          "sha256": "ab9392f3d4bb412959cd0be262697a64883007b508c2a1bd72db1002de74b914"
+        },
+        {
+          "id": "c101-pair-0-0",
+          "type": "intonation_discrimination",
+          "modelId": "eleven_v4",
+          "durationSeconds": 2.16,
+          "sha256": "9891986db2c6b9d42bc42a41b2a1c0408d59ffa1b4851128f78520947a58a96a"
+        },
+        {
+          "id": "c101-pair-0-1",
+          "type": "intonation_discrimination",
+          "modelId": "eleven_v4",
+          "durationSeconds": 2.08,
+          "sha256": "aace662e62db01784fd91672f379f764f7e37253093fcb1088029e7af6ea92f9"
+        },
+        {
+          "id": "c101-pair-1-0",
+          "type": "intonation_discrimination",
+          "modelId": "eleven_v4",
+          "durationSeconds": 3.44,
+          "sha256": "aae71df29b67ea2aa51f05308b26a55c92c6beacc19119f358579fc83b34eaf0"
+        },
+        {
+          "id": "c101-pair-1-1",
+          "type": "intonation_discrimination",
+          "modelId": "eleven_v4",
+          "durationSeconds": 2.8,
+          "sha256": "c6f27730700cb9b79080c7b2b8d1d0a3a142407ebe6bd51d78017e9810a63fdf"
+        },
+        {
+          "id": "c101-raj-message",
+          "type": "listening_voice_message",
+          "modelId": "eleven_multilingual_v2",
+          "durationSeconds": 32.275737,
+          "sha256": "ebb79a53ae9d5c15eb77c068b796f6263d704cf395d479b811a40f0397930d9d"
+        }
+      ]
+    }
+  },
+  "verifiedClips": 59,
+  "pedagogicalIntonationGate": "pending paired listening; not accepted",
+  "humanListening": "pending",
+  "helperDecodeAndZipEvidenceReused": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-audios-20261119/batch-verification.json",
+  "sourceWrites": 0,
+  "remoteWrites": 0,
+  "providerCalls": 0,
+  "c1Intonation": {
+    "count": 4,
+    "ids": [
+      "c101-pair-0-0",
+      "c101-pair-0-1",
+      "c101-pair-1-0",
+      "c101-pair-1-1"
+    ],
+    "model": "eleven_v4",
+    "sameVoiceAndSettings": true,
+    "gate": "pending; technical matches do not prove perceptible intent distinction"
+  }
+}

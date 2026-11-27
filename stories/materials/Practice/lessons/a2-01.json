@@ -1,0 +1,243 @@
+{
+  "key": "a2-01",
+  "code": "A2.01",
+  "title": "What are you doing?",
+  "first": {
+    "id": "course-practice-a2-01-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-01-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She’s"
+          },
+          {
+            "id": "b",
+            "text": "She"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A ação está acontecendo agora, então precisamos de duas partes: is e o verbo com ing. Só making, sem o is, deixa a frase incompleta. Por isso: “She’s making coffee”"
+          },
+          "wrong": {
+            "title": "A ação está acontecendo agora, então precisamos de duas partes: is e o verbo com ing.",
+            "message": "Só making, sem o is, deixa a frase incompleta. Por isso: “She’s making coffee”"
+          }
+        },
+        "context": "___ making coffee"
+      },
+      {
+        "id": "course-a2-01-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Estamos falando de um hábito de she. No presente simples, o verbo recebe s: she works. Por isso: “She usually works from home”"
+          },
+          "wrong": {
+            "title": "Estamos falando de um hábito de she.",
+            "message": "No presente simples, o verbo recebe s: she works. Por isso: “She usually works from home”"
+          }
+        },
+        "context": "She usually work from home"
+      },
+      {
+        "id": "course-a2-01-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "What are you usually cook?"
+          },
+          {
+            "id": "b",
+            "text": "What do you usually cook?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Essa pergunta é sobre rotina. Usamos do com o verbo básico cook; are cook mistura duas estruturas diferentes. Por isso: “What do you usually cook?”"
+          },
+          "wrong": {
+            "title": "Essa pergunta é sobre rotina.",
+            "message": "Usamos do com o verbo básico cook; are cook mistura duas estruturas diferentes. Por isso: “What do you usually cook?”"
+          }
+        }
+      },
+      {
+        "id": "course-a2-01-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "are you"
+          },
+          {
+            "id": "b",
+            "text": "you are"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta sobre o que está acontecendo, are vem antes de you. Na resposta, a ordem volta a ser you are. Por isso: “What are you cooking?”"
+          },
+          "wrong": {
+            "title": "Na pergunta direta sobre o que está acontecendo, are vem antes de you.",
+            "message": "Na resposta, a ordem volta a ser you are. Por isso: “What are you cooking?”"
+          }
+        },
+        "context": "What ___ cooking?"
+      },
+      {
+        "id": "course-a2-01-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O doesn’t já marca a terceira pessoa na negativa. Por isso o verbo seguinte fica watch, sem outro s. Por isso: “He doesn’t watch TV in the morning”"
+          },
+          "wrong": {
+            "title": "O doesn’t já marca a terceira pessoa na negativa.",
+            "message": "Por isso o verbo seguinte fica watch, sem outro s. Por isso: “He doesn’t watch TV in the morning”"
+          }
+        },
+        "context": "He doesn’t watch TV in the morning"
+      },
+      {
+        "id": "course-a2-01-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "They aren’t working today"
+          },
+          {
+            "id": "b",
+            "text": "They don’t working today"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para negar uma ação em andamento, usamos aren’t antes do verbo com ing. Don’t não acompanha working desse jeito. Por isso: “They aren’t working today”"
+          },
+          "wrong": {
+            "title": "Para negar uma ação em andamento, usamos aren’t antes do verbo com ing.",
+            "message": "Don’t não acompanha working desse jeito. Por isso: “They aren’t working today”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-01-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-01.shadowing.01",
+        "displayText": "Hey! What are you doing?",
+        "translation": "Oi! O que você está fazendo?",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.02",
+        "displayText": "I'm cooking dinner. What about you?",
+        "translation": "Estou preparando o jantar. E você?",
+        "speakerId": "ben"
+      },
+      {
+        "id": "a2-01.shadowing.03",
+        "displayText": "I'm watching a movie",
+        "translation": "Estou assistindo a um filme.",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.04",
+        "displayText": "Nice! Do you usually watch movies at night?",
+        "translation": "Legal! Você costuma assistir a filmes à noite?",
+        "speakerId": "ben"
+      },
+      {
+        "id": "a2-01.shadowing.05",
+        "displayText": "Yes, but I usually read before bed. Do you cook every day?",
+        "translation": "Sim, mas geralmente leio antes de dormir. Você cozinha todos os dias?",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.06",
+        "displayText": "Not really. I usually order food, but today I'm making pasta",
+        "translation": "Na verdade, não. Geralmente peço comida, mas hoje estou fazendo macarrão.",
+        "speakerId": "ben"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "anna",
+        "name": "Anna",
+        "avatarUrl": "/flashcards/course-characters/anna/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ben",
+        "name": "Ben",
+        "avatarUrl": "/flashcards/course-characters/ben/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: compare your usual routine with what is happening today",
+    "duration": "45–60 seconds",
+    "starters": [
+      "I usually…",
+      "Today I’m…",
+      "I usually…, but today…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Rotina e agora",
+    "first": "Resolver o quiz sobre rotina e ações que estão acontecendo agora",
+    "shadowing": "Ouvir e repetir as frases que comparam hábitos com o que acontece hoje",
+    "voice": "Mandar um áudio em inglês para a teacher comparando sua rotina com o que você está fazendo hoje. Termine com uma pergunta"
+  }
+}

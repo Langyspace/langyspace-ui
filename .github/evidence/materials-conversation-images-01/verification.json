@@ -1,0 +1,2111 @@
+{
+  "schemaVersion": 1,
+  "state": "local_composition_verified_uncommitted",
+  "sourceBaseCommit": "142a5dc7a8ccb7eccf2b4dc9641f08318ccda2d0",
+  "sourcePlanSha256": "9eaa05278d37942e07dcaf15483fb0ebef3918024c4509b46d580e7d3990fb4a",
+  "sourceFiles": [
+    {
+      "path": "stories/materials/A101/assets/e_brain.png",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "c7322fe9c3bdf9ef0f48bff5c37f5e98d9266d5fd53efbb1eb9ed8a4bec2ed72",
+      "afterSha256": "eaa2b9af51472b926358190a79651124a1fcfdd7af10cc5f98d4eae5daa1db15",
+      "bytes": 64892
+    },
+    {
+      "path": "stories/materials/A101/assets/e_cards.png",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "b6bc7092813d2bb3c53a893adc072ca9548e90ebcc05ce323bea594cc4a0eabc",
+      "afterSha256": "94005acbe846c4ad733e6723510e4a33c43e2c200097c34ec625c86efc764a34",
+      "bytes": 41655
+    },
+    {
+      "path": "stories/materials/A101/assets/e_mic.png",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "9a3f421a037f7ed8a5dd82289935c072eabfc3009ebeca0fb808936768fac6ff",
+      "afterSha256": "dada0eac052ebe7bfd61351b44b17ae4ebf32c82e6bd1a0ca483d62ca8e984c4",
+      "bytes": 33466
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-angry-leo.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "66471ef6a5f195e1060135889755d2bb6fb673a88cd3ca6af6b0d92e5d7982ca",
+      "afterSha256": "4e8f64c7f8df8f106444bdd1e4725c6f0373a458fcb0c46d155e37143618018f",
+      "bytes": 25666
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-cold-julia.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "9fbca89f5fffd5f5c4fff1ad1bfa34868016cd4dfa91ca5f08ef0f5a38bb54ed",
+      "afterSha256": "68f4735a8dec5e9256997c58e8b166b7b818afc7c1f9cd80a8b9de8bcee275f2",
+      "bytes": 58198
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-cold-tom.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "d9c7b5a0649a72cacb369770237e83f73202c2ac3c99261df3412017a5bdf20f",
+      "afterSha256": "10cbeca9a8570bf03c4855782fbcbe35416d815f6740862ea7b67913c3460e3f",
+      "bytes": 68540
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-france-chloe.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "fbf2476321640cd54a8399ab40375061ba95a6ea998cdf31a7735b0df8591ad0",
+      "afterSha256": "880d3ac7cc55aca20b3b5cf710803e1c33350d9b6cd098ed524c9936458e3c02",
+      "bytes": 44562
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-germany-lukas.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "ccc5ab2e94677b5a6caee2e2c18f406de4aa54f624f37a5deb545d35939a46fc",
+      "afterSha256": "5aa0d84c74662123b5b6a306ad8ef0e3136b87046f66188dbf002a6731080c2f",
+      "bytes": 28634
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-happy-mia.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "6ed1a2d292c13db5548bc832a4e788ba05d6c8000df2f45a2395c3be68741ff1",
+      "afterSha256": "7ef12ef7b54dc40fa68f0b3d567e1b441f244a7186d1dd15d376791c184c12b9",
+      "bytes": 42550
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-hungry-ana.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "1797201c8993db2156dd2b4ce5cad0ad61a7b8a92180b267f92e8cd14fdf7a26",
+      "afterSha256": "3fac180160396ac067cf36e4adaa70bd5e5c2d674f0ff19a3def4f946d62bab9",
+      "bytes": 39672
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-hungry-jun.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "a82c4c502ba19715e142368294be39c4dfdc30e7b9511b967ab558dafb855ca4",
+      "afterSha256": "67c9a6f9573598b0463f1456b5f5ff829b33126c4ebe569b603da45b3459d893",
+      "bytes": 41324
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-japan-hiro.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "964112348fafb82d5de5bcbe510d070f9f220461d65f9828cf627f6222747527",
+      "afterSha256": "0e3e7b6cfc25617f252fc77f469a1614d0ef210f1ffeadc9f237c9fe32277813",
+      "bytes": 32666
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-korea-jiwoo.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "7d11f017af1ddb3c92cb85abf501bd7dd2267e40326d96a40e66d39f217c328a",
+      "afterSha256": "0efafe3112025c0002a7187e0469e8d8ff035592304ef487ad79cfcad871329f",
+      "bytes": 37102
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-sad-josh.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "d72cef0d0a3609100ebd4eb3f09a3b7e7cd5023e4578f352436b3143886a6a09",
+      "afterSha256": "29f7e92a42aa7293afff6e3afcb25a0971cfcb4ca77aa692b2112ca2cdcef18e",
+      "bytes": 28734
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-spain-lucia.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "549cb37c83308593a05db414c3cd1243df74fa39a5c557ee80d92467cb3c20c0",
+      "afterSha256": "213d92aa3ff3ce463a1bc6b0c305a826aedf5e24d36c569b569f2a1983cbaa06",
+      "bytes": 25636
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-tired-kim.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "753798124af29006f01f0046eb133840078ad760c79f7b6e7f47d9cf956a99ee",
+      "afterSha256": "cd240920666a4203b4a000994dbbef305c5646795bc49e0e3df5cb419265bf4b",
+      "bytes": 59272
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-tired-tom.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "649d57150022a9a2c1c331ed9313f2b3dfdb1ab12409120702a03824ac70715c",
+      "afterSha256": "65abc2f356592b9593cca24e0ffbd1ea7613e76bde300b9916b45143bd6126e6",
+      "bytes": 26210
+    },
+    {
+      "path": "stories/materials/A101/assets/scene-usa-jake.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "01c8c470b547ba495e259726fbbf94c89523ace88acc06632e69a7d52117f4a8",
+      "afterSha256": "ec5d30a8f9e5e696090260a6c3b1b0a89202cf48aaa7314041dd02b8ba458939",
+      "bytes": 36246
+    },
+    {
+      "path": "stories/materials/A201/A201Lesson.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "replace",
+      "beforeSha256": "df88f272caaf61f6919142281935cf269c4fff4c0ae9142d7e7169b744b4590a",
+      "afterSha256": "5e7a55df7571de2b894799f1ef80204000cfecf152055bf7ee36520506c8d4b5",
+      "bytes": 4710
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/01.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "b43ee095a664c097617729f9091eac0cbdafb68ff0a7c6f4ac85ac58163dcd11",
+      "bytes": 35987
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/02.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "5d6e5930b17b7b05c3fde9aeea74c673b8d2a4c563142d76a40612222b0d165e",
+      "bytes": 51034
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/03.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "dca2ed49be9b4498ba0efaeaaae7343c915ac45859384a2761d537aa616eb8c5",
+      "bytes": 31390
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/04.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "69b13431a4b03201140f084e8f3dc9cf07423d0c525622b166c8a798e3bce025",
+      "bytes": 38913
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/05.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "282037847b770de5a841ba924985788d5983d6dfd1cafc32827a0b256573dbd0",
+      "bytes": 27628
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/06.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "a798608425ebb1304d2b4d03613ce2acbcaf5a982d1346d94d689ba804c4158e",
+      "bytes": 61901
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/07.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "2ddcb923e9317d4eca4961358b9b4c33f8e97a77e5930d2d7cc9fd5eb829ea37",
+      "bytes": 41003
+    },
+    {
+      "path": "stories/materials/A201/assets/dialogue/08.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "dd24c292cd3affadb0ebca470af20e5d05e12cde26dd1ac580b67ab20c0fce57",
+      "bytes": 73185
+    },
+    {
+      "path": "stories/materials/B101/assets/catalog-cover-gardening.webp",
+      "kind": "new-b1-dedicated-cover",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "7614fb88c9f5c11a49858796bc7e19cc48b509d5142648c9a54a524fe3dcf411",
+      "bytes": 23380
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-baking.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "957603777f5c636b41b134caebac45b1fc3ce27a91288ea22ec6961e66408416",
+      "afterSha256": "2acf61ccc56e474f3ecadd7f330aa4b52b48818733f5973f7eb0a3821cb86f27",
+      "bytes": 26890
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-bike.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "4dee48b4e39ecf7338c2df3da789f22a87b34a3636645e3dcec554b252c615a4",
+      "afterSha256": "d541cb3dbbaed399768f1d98716a2321ec76eee730e5c4179c842d3ef15e80ff",
+      "bytes": 44180
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-bus.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "deddfc52ede3463c05824316cd43948a31ec53fddd1f1111700152c6600993c9",
+      "afterSha256": "7839f0186803bee0612fbe8ff1977837066917ce235d5681486c5dd43d179bda",
+      "bytes": 49462
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-gardening.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "356ad56439fc70d781590580e005c0cd46ae664f2db433e3beab5a361baa3a1d",
+      "afterSha256": "9d027351c1ef151bdb2317f59f52acd9a0ee8474dd616ee25ab989b0a457ea76",
+      "bytes": 40690
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-guitar.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "8d6dfa30b7c4192130ee97ff89fabba0a20a7430e1eab36c180d3ddaeb8abf60",
+      "afterSha256": "9035726e8fe69da32e650e1a5a1d5a32e3b434d4a3112c6e3cf51d84d8a688b6",
+      "bytes": 46030
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-hot.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "0eb991329824ec42c066498b1fc2eee634e48aedb47e0ab7f80d6cb68c781b15",
+      "afterSha256": "12afeff73b685cb010b462dcc966c63579d3590f3500abb1e131f7e1ab736c5b",
+      "bytes": 32878
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-muddy-shoes.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "0a98eb69aa327bcc1d91e0c66a30c045a883551c092a895b33c9099688d3c621",
+      "afterSha256": "dbe1210903d70bc49e6d38fc1c0f57b706c8cc97a3e26e4741d01b907ebb552f",
+      "bytes": 69854
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-shopping.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "0f3d012b74b032c621e32402cf7ebecab3ddb35f825a0c1efbe0a84ad356d6f4",
+      "afterSha256": "1e7550d6898e4130c0e2eb85f7527e998fcb3fe2670225e89d103bd99a19531b",
+      "bytes": 18060
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-soccer.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "e828aa5a7dfbe2f50b0db921abcbc5e5bca65b1f3ea1ab3021a2faa7031c1ac3",
+      "afterSha256": "553c6a2f4db0bc362992fc4312d6d2c104b149bd514e46944efbb2cffe80965a",
+      "bytes": 32288
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-swimming.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "831d5b87cb9273abf20248449d816eca4eb7e47498506943fee5ee0f9edd7ff0",
+      "afterSha256": "1b758125bf1ff3a8b4a42f714a8342e676475439daf483516688c3a31c7e1fcf",
+      "bytes": 50732
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-tv.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "9cf0e4547a0154e69595816e0ba727875ddc056d80119fddaad4ea0c6b75b26b",
+      "afterSha256": "42dfdea77b15f4bd6574eefc71dd93e8a6453677a80f6cc5dc3426a1a35efe7c",
+      "bytes": 32910
+    },
+    {
+      "path": "stories/materials/B101/assets/scene-wet-shirt.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "069d65a9a77ede3bcbe82060ddde76fc4232efbbd68fcc1cd03791b2be51ab82",
+      "afterSha256": "0f8aeab4abdda915d455a8d985831c586834bc382cc9d39bcbc1e67e967fb2c7",
+      "bytes": 35272
+    },
+    {
+      "path": "stories/materials/B201/B201Lesson.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "replace",
+      "beforeSha256": "230c785de3b3c9acd15db98ca41f4f48d14399955900450326fced0eaf4623f3",
+      "afterSha256": "8f49fec5360150ccb594add44ce1992becf8783773a573fd0372661368b16c67",
+      "bytes": 11745
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/01.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "93a15011e0cf2561e2a3f0b8848d71a8a02811845bcfa5f7e0262ba46e5a850a",
+      "bytes": 33897
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/02.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "737019063aae3148debd1e0a129b5a62b7cd83df100254568fed82120ec1e932",
+      "bytes": 71514
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/03.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "6b678eff73cd89f0306664024e56ca783c1fbe212897bc459bb74034be0456b0",
+      "bytes": 27210
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/04.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "f2120086fd0976cd446c389d5a9c58f3bcf38b096fcdc132773797b639830934",
+      "bytes": 119161
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/05.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "01f0e08b9b3061eb44cf6978187337003eb3f0febaecd92866fb4b4f286f86e8",
+      "bytes": 36823
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/06.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "0d9b783611d996c1fc4c9b33ba7313992893849a0d1e38764ae1749dc13d45a1",
+      "bytes": 112474
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/07.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "a1357fcacb5613c2d9b389232574553c504d545516daef07c5c8327387496309",
+      "bytes": 22612
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/08.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "daba49b01161ab81b4a5b0b2afa23c9de8a1e4a6618368ad225ab272c15ea124",
+      "bytes": 84888
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/09.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "4ff4119b2b5acba0978defdbc1f99a1c103280c7974ba29802de637423d0b35b",
+      "bytes": 31390
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/10.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "f34748a9b643abb6ac5c96816224c02217cd037541d2c8bb0fd8e702b6d9259e",
+      "bytes": 102025
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/11.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "be745a049fa7d457fd4ea3379bde8eb6fefd6d1d6d35d69a34a2d538112ce0cb",
+      "bytes": 38077
+    },
+    {
+      "path": "stories/materials/B201/assets/dialogue/12.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "2a4c125031bc138ef7c33a1bc570a15a42c79b8535a0c50f63e1b8d619833290",
+      "bytes": 111220
+    },
+    {
+      "path": "stories/materials/C101/assets/cover-ana-soft-dimension-v2.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "5cc703371537bec73d724ded4b6057b01b179d414dc8d07ffef62a2cca16b71e",
+      "afterSha256": "99dbfa5c1b88f6cd50da64d8ac0b3ef9ae6517bc7fbc1572ccfcbd32f8a64ea8",
+      "bytes": 40750
+    },
+    {
+      "path": "stories/materials/Standalone/catalog.json",
+      "kind": "catalog-cover-metadata",
+      "action": "replace",
+      "beforeSha256": "d3809917672b51644e03ecaf93c1de0fc50d10c32d1aeaa2ed789a8908d641fd",
+      "afterSha256": "e45422cfcb618fc1599e0d6494b99012296d901536ca8f6f8236eedf1ad570fd",
+      "bytes": 4803
+    },
+    {
+      "path": "stories/materials/TrialA1/TrialA1Lesson.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "replace",
+      "beforeSha256": "cd4e091504e77080ccce7185262b4a504f50b0e4a349854a91dee2d369e5b491",
+      "afterSha256": "7592d2b5efadf879408c9d0d398b7966e1e38acfed04cfe94c3c7f2ca005a290",
+      "bytes": 4092
+    },
+    {
+      "path": "stories/materials/TrialA1/assets/dialogue/01.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "edc7a459a0618a5fe613d5a76f83c9c1f07a9d90acc0b29a6ab15d03f6604456",
+      "bytes": 28464
+    },
+    {
+      "path": "stories/materials/TrialA1/assets/dialogue/02.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "fa6f473159f4c20314fb6523d23c0e9fb1ed343abc3f77f5496c75ed22a014db",
+      "bytes": 44346
+    },
+    {
+      "path": "stories/materials/TrialA1/assets/dialogue/03.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "06d51b75a1665979e0723857a6fa535219b2f128b0aeddfa514a6f4c8e544478",
+      "bytes": 49362
+    },
+    {
+      "path": "stories/materials/TrialA1/assets/dialogue/04.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "bb0dd82adcc0cf892eed65dca29d1841b6e338a02b8c83620ba422ebab1f7798",
+      "bytes": 44346
+    },
+    {
+      "path": "stories/materials/TrialA1/assets/dialogue/05.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "26f3a266c163d4f766df544b47b3a7d75a2ad011b2f2236c02218c24db19ed4f",
+      "bytes": 30136
+    },
+    {
+      "path": "stories/materials/TrialB1/TrialB1Lesson.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "replace",
+      "beforeSha256": "4efd42c38ac81e8a5dbcacc9c0eeffe5c1f13400bcfb1c4e0062adb8ac297b29",
+      "afterSha256": "f2ef678f25d4e6222dc9ff7effe6c46023e254a800abc66007d5e4c916a71de6",
+      "bytes": 7736
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/01.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "fba15c5bb9155a78a993f3df5b1c312207834fe55b085490c459991279306e0f",
+      "bytes": 34315
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/02.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "4a15ce205e4edf2be9b842593ef9cfdefe29487cd8848b4e3d40f55b8e86af5c",
+      "bytes": 75275
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/03.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "dc8160d07c1b4218cd029a3afaccb14aaeda27e59ffaf24da779a784a43ab5dd",
+      "bytes": 44346
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/04.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "86afc08896a74405447e07c13154a357ba32071584e54c011ba99aaaf57d575e",
+      "bytes": 89486
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/05.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "261ee87c069694b6d0d3a3ab81ea4abcd2c641a4d49c67fe0801946f2c68b5a2",
+      "bytes": 124594
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/06.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "61a0c6d3b0c402ed49436e5519362c75481d4f79c1c178f86265156f821b867d",
+      "bytes": 44764
+    },
+    {
+      "path": "stories/materials/TrialB1/assets/dialogue/07.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "e218b45ef9ce8e283501302f0ebe2fb34b6ce661e1cb99ee80d20ff71bdb445f",
+      "bytes": 75275
+    },
+    {
+      "path": "stories/materials/TrialB2/TrialB2Lesson.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "replace",
+      "beforeSha256": "e037025d903d7546aa681b3277809ccf01dbd8223b63b86a11e3873e9b5e19f9",
+      "afterSha256": "b79651176c14e9358af311629131bddeca9ea124eae7be107fa5d0e08ac6b675",
+      "bytes": 8724
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/01.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "75126afd0af154949745d928fe99912f18ebaf7714c175cadc650ee91fc53dae",
+      "bytes": 72350
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/02.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "d1df28991f7013fd684716b829b458be2fad68162bcfb2f40a08e81b28ffca3c",
+      "bytes": 103696
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/03.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "6de0af594d77fa55655f93bcb364a481e92a4d35b8255d1232be624151e01525",
+      "bytes": 119997
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/04.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "8d5c2f209876d44ff9edc6de0d923d5557bca37c5109518955b19b93617faba9",
+      "bytes": 30136
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/05.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "e7a27faf2f091f16ef6441541e662d0922046c93f55c6c7c80ebf1105779d472",
+      "bytes": 91158
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/06.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "08e2104ee224a3b6b3c0e2c2dbb2d023cedf1c71896e13e05d0b05e894545caf",
+      "bytes": 64826
+    },
+    {
+      "path": "stories/materials/TrialB2/assets/dialogue/07.mp3",
+      "kind": "new-recorded-dialogue-mp3",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "ca9a5381f3a191b776bde1a418c1234a5f711887868636610bc91e8bcba7847b",
+      "bytes": 70260
+    },
+    {
+      "path": "stories/materials/shared/RecordedDialoguePlayback.stories.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "b371728a4d760442557fdefa73c333751feac31b81dc20eade09973ea4f34831",
+      "bytes": 936
+    },
+    {
+      "path": "stories/materials/shared/RecordedDialoguePlayback.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "657977c3d71dc7cc901976c1e76b811242f34f4f9419724c6d66e8f5677e4e46",
+      "bytes": 2803
+    },
+    {
+      "path": "stories/materials/shared/RecordedDialoguePlayback.types.ts",
+      "kind": "conversation-source-test-story",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "2d8c08a8245dca9424d9682e6348282da79c06199d01f525612f4baf39c2fcab",
+      "bytes": 899
+    },
+    {
+      "path": "stories/materials/shared/assets/ana-profile-soft-v2.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "fe9d958a3d9056b8dd12ddf85d590e8397c33bd5b263a57e8b50453d00807043",
+      "afterSha256": "9657b07ba2d91040e131711972c8029d702d3c84b3ea1955e86e9065c920f276",
+      "bytes": 106656
+    },
+    {
+      "path": "stories/materials/shared/assets/kim-profile-approved.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "1637ecd219e5f3df56127eacdbea10ca510c59f16381e5e8f5c7f1a55d386fbf",
+      "afterSha256": "22b936311d5bf6fa2c61fe958871eccbb98e5e69808229a61fba9d8eda0732a0",
+      "bytes": 56854
+    },
+    {
+      "path": "stories/materials/shared/assets/leo-profile-soft-v2.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "e9c1d57130c9a8c0e96aab8405bb3cef4b3a4e241cf3760d545a0241866c2cc5",
+      "afterSha256": "2559e3c4309072106618e864b9c50196cf33901b62aa63280e7248414c063775",
+      "bytes": 55200
+    },
+    {
+      "path": "stories/materials/shared/assets/raj-profile-v1.webp",
+      "kind": "replacement-image",
+      "action": "replace",
+      "beforeSha256": "1ce1ed3b69ee281686b0866d27517dd88796bba4d616e2244482d94ba9f78c61",
+      "afterSha256": "7981098f601fca15a6bdad66f6d46d4196167b6e94bc4e65af972f311954c62b",
+      "bytes": 64954
+    },
+    {
+      "path": "stories/materials/shared/conversationRecordings.ts",
+      "kind": "conversation-source-test-story",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "33d685103743d2baa025b85cc686ee90908a51f4da06c4fc13e6ab8972ec6651",
+      "bytes": 17405
+    },
+    {
+      "path": "stories/materials/shared/useRecordedConversationAudio.ts",
+      "kind": "conversation-source-test-story",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "35a1be400dfe93173ddb38643ea73771bc1d4f5108269bd66ee8f1c12fa90bba",
+      "bytes": 5745
+    },
+    {
+      "path": "test/materials/shared/RecordedDialoguePlayback.test.tsx",
+      "kind": "conversation-source-test-story",
+      "action": "add",
+      "beforeSha256": null,
+      "afterSha256": "2fc1356c0edf108ab796fd966ef89d0100b09dc93a9c3484b274f67218911d5b",
+      "bytes": 8781
+    }
+  ],
+  "localChecks": {
+    "eslint": {
+      "passed": true,
+      "sourceFiles": 11,
+      "exitCode": 0
+    },
+    "styling": {
+      "passed": true,
+      "ownedSourceFiles": 10,
+      "generatedAssets": 0,
+      "exitCode": 0
+    },
+    "diffWhitespace": {
+      "passed": true,
+      "exitCode": 0
+    },
+    "testsRerun": 0,
+    "sourceFormattingDelta": []
+  },
+  "reusedProofs": [
+    {
+      "proof": "controller units",
+      "resultSha256": "029359402f968b48590666e89b6a1af0ce3fb34e063978fe3d0f6328a1ea3baa",
+      "count": 7,
+      "reused": true,
+      "rerun": false
+    },
+    {
+      "proof": "native queues and39 turns",
+      "resultSha256": "2dcca85aa83b52cce200698ca2490ba8feed2ba6d389aa804d2fbcc8e9327e01",
+      "count": 39,
+      "reused": true,
+      "rerun": false
+    },
+    {
+      "proof": "native fault/retry/cancel androle independence",
+      "resultSha256": "1362114f0c51218476928c9dde514928aaa793e499db3c68ac11943f383df80e",
+      "count": null,
+      "reused": true,
+      "rerun": false
+    },
+    {
+      "proof": "V2 button states, keyboard andcontrast",
+      "resultSha256": "4fcfe22b97d6d884228445498eea2eed3af2c447882c11c888c73498be9c7316",
+      "count": 12,
+      "reused": true,
+      "rerun": false
+    }
+  ],
+  "newCombinedCaptures": 102,
+  "conversationCaptures": 12,
+  "imageAvatarConsumerCaptures": 78,
+  "coverCaptures": 12,
+  "nativeFirstClipSmokes": [
+    {
+      "id": "TrialA1:s3",
+      "sha256": "edc7a459a0618a5fe613d5a76f83c9c1f07a9d90acc0b29a6ab15d03f6604456",
+      "nativePlayingThenPaused": true
+    },
+    {
+      "id": "A201:s6",
+      "sha256": "b43ee095a664c097617729f9091eac0cbdafb68ff0a7c6f4ac85ac58163dcd11",
+      "nativePlayingThenPaused": true
+    },
+    {
+      "id": "TrialB1:s3",
+      "sha256": "fba15c5bb9155a78a993f3df5b1c312207834fe55b085490c459991279306e0f",
+      "nativePlayingThenPaused": true
+    },
+    {
+      "id": "TrialB2:s3",
+      "sha256": "75126afd0af154949745d928fe99912f18ebaf7714c175cadc650ee91fc53dae",
+      "nativePlayingThenPaused": true
+    },
+    {
+      "id": "B201:s6",
+      "sha256": "93a15011e0cf2561e2a3f0b8848d71a8a02811845bcfa5f7e0262ba46e5a850a",
+      "nativePlayingThenPaused": true
+    },
+    {
+      "id": "B201:s62",
+      "sha256": "a1357fcacb5613c2d9b389232574553c504d545516daef07c5c8327387496309",
+      "nativePlayingThenPaused": true
+    }
+  ],
+  "runtimeErrors": [],
+  "failedSubresources": [],
+  "imageEvidence": [
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/TrialA1-s3-1440.png",
+      "sha256": "0f356d5476caebf1ab12c8fe838d05b2c68e02e87b80fc7c9a02127aa480632e",
+      "bytes": 83939,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/TrialA1-s3-1440.png",
+      "sha256": "e7c77e496a89ddbdb0f69fc36401d5919d9cd22a11db5065128250b8605533a6",
+      "bytes": 86887,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/TrialA1-s3-390.png",
+      "sha256": "ba99ed1fa29fc29832704ff782c29ce3e708b593df9041b6711a26189e7d1174",
+      "bytes": 67484,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/TrialA1-s3-390.png",
+      "sha256": "5529c40eec30669f79286286169226ec45d17e3afea02baf61ffcb6559e08873",
+      "bytes": 71926,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/A201-s6-1440.png",
+      "sha256": "03485befabc32815943b12278995cfcd468120068ec463f1b13796f40665d32d",
+      "bytes": 83255,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/A201-s6-1440.png",
+      "sha256": "092cb153c0e513a8423d9c7acafc1100e63e01ff5d8ba456139795f6deebee99",
+      "bytes": 85243,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/A201-s6-390.png",
+      "sha256": "03e91b8749f8f429142025cefe132faa9f8e1029932cb386aa4d2b1f0d9a9bdf",
+      "bytes": 70667,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/A201-s6-390.png",
+      "sha256": "e45206474edb23726ac02ef9e7fe08dc265f6e2d90a025d87daa005de73c642e",
+      "bytes": 74234,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB1-s3-1440.png",
+      "sha256": "ad1141d0cf3edcb26f097e3b719d37e59fb256cb37abfec0e81871d5c5a69863",
+      "bytes": 121709,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB1-s3-1440.png",
+      "sha256": "2613f77c4867976274bda86273eaf076baba50c42974b7c341ecb565eb584e30",
+      "bytes": 123881,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB1-s3-390.png",
+      "sha256": "5968c5f84ae8f3ab26ec385bc202dded2db19dafefafc06fdc729e5a095d6a9a",
+      "bytes": 102968,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB1-s3-390.png",
+      "sha256": "47265fef558414fc2cd9f12edb66c2d8ef8003451d71499a4e65f8dba3a40a2b",
+      "bytes": 106508,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB2-s3-1440.png",
+      "sha256": "d49d97ca1c848f3ddfd3ff6b46885678c28b8c57d8e39a1459228a84c4b7fc76",
+      "bytes": 109769,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB2-s3-1440.png",
+      "sha256": "fbed99ea1cbc384e99dd1802ffe6ec8a27eb7d5ac7dff317d4aa6b43228d8fff",
+      "bytes": 111638,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB2-s3-390.png",
+      "sha256": "8a9735d34bae39c9c6a4a44e7a0fcb2c8fc024ac76354d0c4cfcd29f3e44bb0b",
+      "bytes": 80222,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB2-s3-390.png",
+      "sha256": "61b66cab9e034e099c4206f189d696dc4d49bca0b8b4ee2e4efd35b0fc3f3ae4",
+      "bytes": 81245,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s6-1440.png",
+      "sha256": "2c251905046c6699412a07acf11a91768e462d606b0dd88c3525e252a9d5b136",
+      "bytes": 85382,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s6-1440.png",
+      "sha256": "d5ec93685eace0dce200318dcc89f04c9d9e54b8db5d93953ab9b842d8f333d1",
+      "bytes": 87859,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s6-390.png",
+      "sha256": "a6819f7823cf6c9a304e3ac66f70c54debfd037a2d778350b322ff54c900f0b3",
+      "bytes": 72756,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s6-390.png",
+      "sha256": "6591e76a25bf20714cfc16d12bd440f4479fabde46978bb466a315e0701a0050",
+      "bytes": 76656,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s62-1440.png",
+      "sha256": "3da0008e33a2b0db53b7fc9931c5f94ecc7b49b34b9da09202498f98f0ec7a24",
+      "bytes": 80289,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s62-1440.png",
+      "sha256": "6ccf6ca5f6a18255147025537a4d50bc9087ee8b36ce52e82b69e577bcb9f470",
+      "bytes": 82989,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s62-390.png",
+      "sha256": "11803140af356ac10594801bad19e2ce10fc14360590078aeb7bbcc386b3a866",
+      "bytes": 68011,
+      "method": "reuse-validated-before"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s62-390.png",
+      "sha256": "cd77465b2983a4c87254a4bb850eee7aed72d618cf43125330a46fc655807a62",
+      "bytes": 71493,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s6-1440-avatar.png",
+      "sha256": "4e6bed2f89a924ce5a56685ccd5a2d74fae86faa5df559d8ade0338eec43fc43",
+      "bytes": 90835,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s6-390-avatar.png",
+      "sha256": "80efb7182fa9f9eafba09fef8227468700cf3033a9b4993fb40acf0ffc370e06",
+      "bytes": 75889,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s8-1440-avatar.png",
+      "sha256": "98ab88b2c82c710d8cfaf6f4f32cfcc2fc9de48e6cad5191615a494bdf7e846b",
+      "bytes": 90233,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s8-390-avatar.png",
+      "sha256": "2519f9e9590ee6b97c7194e23b4b753d5872379eadbd54abcdb3be68b7754155",
+      "bytes": 73807,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s33-1440-avatar.png",
+      "sha256": "f0f2948a03f0c6e22cd9c65c802134d6370b88ee91a85b87f702004ba5741b0a",
+      "bytes": 61539,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s33-390-avatar.png",
+      "sha256": "1149cff6730ea7e2f663f56db8f9cf6bbe2f9722074d8eca75088fb6b2190e2c",
+      "bytes": 42788,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s6-1440-avatar.png",
+      "sha256": "677ad7f072b88c74bf96c0d92284579037b538c2afa158dcea8eb4b3da0ee879",
+      "bytes": 98154,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s6-390-avatar.png",
+      "sha256": "0ee7b5d4635cb85a84b908fa561b4f9874b710b9a810a8a6d89af24ec183f981",
+      "bytes": 81913,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s62-1440-avatar.png",
+      "sha256": "2e336745147be186cab597c885a7a12e05a04f719a271e94c54e60a58d3b49b0",
+      "bytes": 90857,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s62-390-avatar.png",
+      "sha256": "66befd4e7d795bbb617b13c90c6c21186c18aac6a46973c548641526ac95a03c",
+      "bytes": 76035,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s9-1440-avatar.png",
+      "sha256": "10ff3a447ec223418510790ce0e86f3ac2ae523b88923bec07bf598aeaf38292",
+      "bytes": 84394,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s9-390-avatar.png",
+      "sha256": "22980057ae32a452cd62abfb923f95ad9fa382d45c708d4489f4dae3b029a7a6",
+      "bytes": 53899,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s6-1440-avatar.png",
+      "sha256": "22556980c07c80efc46ff5960d38d2da16f97eb4d15cd17544f4db75135b47ec",
+      "bytes": 87634,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s6-390-avatar.png",
+      "sha256": "0237d9247f669fb35b4bd39f40fb5d70dea8a80b6fee74402b8201f102e9f86f",
+      "bytes": 75380,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s62-1440-avatar.png",
+      "sha256": "db513b2b416c10cabb8cd262be3c9e3334dbf2725351fb6f0543a8c328533a1a",
+      "bytes": 85332,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s62-390-avatar.png",
+      "sha256": "46d8b60eaf1308a323d7faf70191bfbb62c5dc4ec456b095b15eb1e679be2a07",
+      "bytes": 72401,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s8-swapped-1440-avatar.png",
+      "sha256": "32604a285fbf12c0df5e586f01de85e02955ec87aa84119b232426b33e9ad4e2",
+      "bytes": 257268,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s8-swapped-390-avatar.png",
+      "sha256": "8eaf2fdf65dcd64ad74ccc0059cadcfa6ab1df07d552068816af9835b3d08bd8",
+      "bytes": 204920,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s6-1440-avatar.png",
+      "sha256": "aa3aafc22906613addf12a09264655ecd6df238e4878fa8fd586375ff3b7f63e",
+      "bytes": 84524,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s6-390-avatar.png",
+      "sha256": "6d578f9d8162b98d153bc73263e72adede1ca9b6367b0bc39e5496deb1873619",
+      "bytes": 72763,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s62-1440-avatar.png",
+      "sha256": "b485aed9b0b5ea6d6f497b9c7f32ea25ef1cfd30b4692db3d27458c505a8a841",
+      "bytes": 100355,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s62-390-avatar.png",
+      "sha256": "500fdd533d11c195d955c6961dba3de240ca598ab33ad85c7782467cde930457",
+      "bytes": 87602,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s8-swapped-1440-avatar.png",
+      "sha256": "bbcdb7b508d7186bb1fb86fbbe945f68b9c2e6bb30eea768fc4f3d32549324b9",
+      "bytes": 97702,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s8-swapped-390-avatar.png",
+      "sha256": "da3037c63798d27a34008b55430d1db581dde1e306266159edca54530c96b9a8",
+      "bytes": 85062,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-a1-s3-1440-avatar.png",
+      "sha256": "43c5997b8f7311216fa9f7937478df78e124f4694b1203cce8de66db3e958dd8",
+      "bytes": 88640,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-a1-s3-390-avatar.png",
+      "sha256": "5da5432459a8b2c78c460612e555e4c87f0a32193b91299481c874c06e32c8dd",
+      "bytes": 68733,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-b2-s3-1440-avatar.png",
+      "sha256": "1058cf3858ee97dcd76ecc040c71055cab119e75c12a423b8fa4b34bd841276e",
+      "bytes": 102715,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-b2-s3-390-avatar.png",
+      "sha256": "d7be8038e319e37fd9d12e8df9d91bf81c3f26004c06296e556f038ebf12c026",
+      "bytes": 69484,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s1-1440.png",
+      "sha256": "3e58e782b41c875467d3d84f755f5ff1788a78ddd32c5c910377e5ec6173da06",
+      "bytes": 374195,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s1-390.png",
+      "sha256": "07e2b6711f5eee235d405945edf2514035f3e8666f7173b7486e93b8e5812b5a",
+      "bytes": 154048,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s10-1440.png",
+      "sha256": "778e24ff4faf0f345c985a21770ac6272648d179beceedf4708759ce51cf4383",
+      "bytes": 302358,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s10-390.png",
+      "sha256": "f4ba3440c30934eac8578920ca4e9b87919e0f7f2029e10f999872b03939411a",
+      "bytes": 141355,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s13-1440.png",
+      "sha256": "0f8d75e0a6fa78223acdd475c6cba8f6de379c53375484b5b0df14b0a9cd87fa",
+      "bytes": 77382,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s13-390.png",
+      "sha256": "910399a356fe766a9befa162068d91841b89af028b3cbeffb7c1e95d69367dbd",
+      "bytes": 66131,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s21-1440.png",
+      "sha256": "13098949b2f3027eba8b8c56e35391d0b922f43500bee0b8329f61e7664931ae",
+      "bytes": 183826,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s21-390.png",
+      "sha256": "7207558654b690e4b00f32eb995e99161fa0450218fbf4ad1fe0d750bd4f1271",
+      "bytes": 79180,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s22-1440.png",
+      "sha256": "8ae13a9823cea55c19aa293a17ac515ebe54ba3882a3301d285372321d3ce1ba",
+      "bytes": 299023,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s22-390.png",
+      "sha256": "d6df8ac4b73fd1b4cf166f733f5b026427632e45a0e718c34ced60bdad893678",
+      "bytes": 108554,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s23-1440.png",
+      "sha256": "91828ede12d89585f9dd2e736d3af396ee34a39ec9a9bc88e3571caee283b2c4",
+      "bytes": 179740,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s23-390.png",
+      "sha256": "cd4ade8acd181fd6f15b2b7b87d213acbef4c819f6a789f5aca725819bd16a24",
+      "bytes": 75001,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s24-1440.png",
+      "sha256": "e3fcec18e114b856beaf00dea1f049dcca5ae413ed47e9580b591b716edf317f",
+      "bytes": 230088,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s24-390.png",
+      "sha256": "211e3d794579f34b517240426a6a4b51665d5f0c7ec98f0aa6d668a7de87ee2c",
+      "bytes": 87370,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s25-1440.png",
+      "sha256": "ccdbce53f12a0f9f7325df9dc0fbd67a1c22d4e6dab77d8910765e8d7455ae17",
+      "bytes": 226664,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s25-390.png",
+      "sha256": "53e5d6b0998874c925226ccfc2e8dc443db5f550711698f9166661fc0c67a4e9",
+      "bytes": 89395,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s26-1440.png",
+      "sha256": "e8125ebadcae5e6ec74734664baa13b33815305519c62c3cae57b8bb960aa40d",
+      "bytes": 179977,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s26-390.png",
+      "sha256": "0531da09807c3aba8de2a67c8442c0908e5800e9cd435014a330bcb87f93e42e",
+      "bytes": 77269,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s51-1440.png",
+      "sha256": "eb6a9e1a2f57b99040c5b8aa57e66c40b03532f70d0a7eb6071382673b3edd22",
+      "bytes": 232531,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s51-390.png",
+      "sha256": "e38120b971e63602c277ab04ad5067e2183a7f04379916cc0011fd975d988713",
+      "bytes": 91676,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s52-1440.png",
+      "sha256": "c3ec11e7b2764da612a9abecd49fbfa40d12f52b7b4b831994c2d0429add0576",
+      "bytes": 205762,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s52-390.png",
+      "sha256": "ee020c649f79cce810ed5dd86edc4dd12c4a33419d710651b773603b44c050c6",
+      "bytes": 83898,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s53-1440.png",
+      "sha256": "8fd1b23d72768ff43a8c9d95d3c221b8dbe9a96d688f3aa5166abf2ec34dcf3f",
+      "bytes": 182268,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s53-390.png",
+      "sha256": "8067a4f88a972700349ae93fb9ff46a1e2de0f98bcbecbc5d0231cc642dab8dd",
+      "bytes": 80929,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s54-1440.png",
+      "sha256": "ac6539c1ef53d02405a907229465f451ea3d6645d91d915577d022b34862bf8e",
+      "bytes": 205976,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s54-390.png",
+      "sha256": "1c256e5b5fe6b1961dc35e4f6d88c70424142f421db2fb4277715254871ae1e5",
+      "bytes": 86411,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s55-1440.png",
+      "sha256": "4117ff27f07e4e1ae590e5520197c2891c4d4d3a88b2ddcc8b8115ea721363d6",
+      "bytes": 241822,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s55-390.png",
+      "sha256": "7d91561521baf09f812b513f6a30d61cdb20d28c05eaf6c4f269087e14778e2d",
+      "bytes": 96666,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s56-1440.png",
+      "sha256": "60e29f7d21319a0e56f1fb306454d044ffe0f16ce6844294b8e7fb61c4867db1",
+      "bytes": 223869,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s56-390.png",
+      "sha256": "d31cde72a1f2dac1a3168eaf2ff312fabdae121e6e3d59a5c01d86822f100575",
+      "bytes": 88811,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer0-1440.png",
+      "sha256": "7f7191da9fd90d2e414d4df4d3376d72baf1e488393e0e8cf8d0c34f74ad9836",
+      "bytes": 112677,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer0-390.png",
+      "sha256": "5cfc0bdd522a7a76331a5d350f5fd0b8203cc4c21c282366f235e552e121c8f9",
+      "bytes": 84710,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer1-1440.png",
+      "sha256": "f97afaf22f2d4d8ed2a6d002234317dcfe74a81bc9eb378b614b194bbd48faee",
+      "bytes": 175879,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer1-390.png",
+      "sha256": "1d7a935bb11b9f3ae5cd9e4b8af2066ba683996446865580665fcafe37fe9371",
+      "bytes": 139002,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer2-1440.png",
+      "sha256": "33c3c3ee7fc45141af19887821d44c55038d94c1b74a86a22f08dffe30feed7a",
+      "bytes": 253803,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer2-390.png",
+      "sha256": "2edcc0f1aaffab81bf472a639154580bf3821ce11f7f522f25e3fe3c56f694b4",
+      "bytes": 156610,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue0-1440.png",
+      "sha256": "590f3ab27501c59f4323d89a400bd6e7a553ec26bfaa161890626029ec093bd6",
+      "bytes": 143593,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue0-390.png",
+      "sha256": "d79bb0d1c6493c12303b509f7c9a17535ad01e8bc84fea5dc7dcb353871e71ec",
+      "bytes": 109165,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue1-1440.png",
+      "sha256": "58e7dabce99903490be2bed692fbfc2fa321f45907ce7892e4a012ccbf972fc7",
+      "bytes": 176383,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue1-390.png",
+      "sha256": "e38c62dcaaef43615666417dbac4f7f77c365ff01d6e0c163d7183ab0b4fea8d",
+      "bytes": 139108,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue2-1440.png",
+      "sha256": "67671b28b0449c615fab07a04aab61e6fb4b049a7e2dcf8c6420804cae36fa36",
+      "bytes": 235818,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue2-390.png",
+      "sha256": "097b45dd466c884d2089bc98f205428ec7926432daa5f5c99f6a803e8a3e380a",
+      "bytes": 138681,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s2-scene-1440.png",
+      "sha256": "0430a24456dfe20c04c41b4499c386c1068f953e2d9cae2ea8e8b21146bf1fd1",
+      "bytes": 480232,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s2-scene-390.png",
+      "sha256": "46eb25b260b65ff2fea6e6369958d03f2360f964e397a11894f401815f51ff96",
+      "bytes": 213910,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s21-scene-1440.png",
+      "sha256": "b6866c3752d71a54fe21a4b3f3e7f398b97d9527627b91a9b7503a65ad031d7a",
+      "bytes": 393733,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s21-scene-390.png",
+      "sha256": "b0a8d275dfec60b1acd58683049d612e89e25219dfe746a7a219f1a4ee10b775",
+      "bytes": 171483,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s31-scene-1440.png",
+      "sha256": "e3f86a0bc17be511a240a2215aa304463d18852d7ca9d849af4837fb0ff4925f",
+      "bytes": 142546,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s31-scene-390.png",
+      "sha256": "8f03b49700d397b5e0d121da7655d2954a5f386d7b785d39cc416ab52283f85c",
+      "bytes": 100256,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s32-scene-1440.png",
+      "sha256": "82bdb4e3f2c44f08a12a0b274ef93c779f7d395a99f578c19761a5ba35b24f58",
+      "bytes": 151117,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s32-scene-390.png",
+      "sha256": "47785a584508bcb6dedc7c05d881642a8ef7e85acf20c6815dd613879cc7fa65",
+      "bytes": 103801,
+      "method": "fresh-combined-after-required"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/before/a1-01-1440.png",
+      "sha256": "c911e393561568dd8127b3326b8a791fd5423993f8a771302f3e2c3aade0cc0d",
+      "bytes": 84679,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/after/a1-01-1440.png",
+      "sha256": "c64c70c77974cf40bf184f1939f433e3305d9f5353c0fef4d497ce3f38fff3f1",
+      "bytes": 87716,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/before/a1-01-390.png",
+      "sha256": "4e06e355c7b19fd7ded2637daff25751f9e06d2726f44a81062808bbda14f43f",
+      "bytes": 75052,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/after/a1-01-390.png",
+      "sha256": "eb225b328b3f519027e994aef3bb158aaa71c1bf635993b825ee9b0ca2aa4a05",
+      "bytes": 79429,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/before/b1-01-1440.png",
+      "sha256": "1466a0b372407c089200c6eba35839f7efac34694079c58780df5f3f73044e23",
+      "bytes": 109769,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/after/b1-01-1440.png",
+      "sha256": "91441cb8087f6e1ba9e2a5fcd1649661103b3c82655efe63b0a6e5a62ba372d0",
+      "bytes": 55090,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/before/b1-01-390.png",
+      "sha256": "bdc6a138b08723457f3e97fbebc082379a6832de8ca78765e075d84437722c29",
+      "bytes": 99677,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/after/b1-01-390.png",
+      "sha256": "0dffd4fbe98e6654028dea0a461c28d4a166f646dbf33ce76a4a437071adfacb",
+      "bytes": 49747,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/before/c1-01-1440.png",
+      "sha256": "014142ea9de8444c80a3593616a6ba229548e73eca9848bad39fd0232cd1ba55",
+      "bytes": 85372,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/after/c1-01-1440.png",
+      "sha256": "f4605272667d8c0fde7dc64f65120907ae634d50e93c0be3ab157a948ea6fbe4",
+      "bytes": 77552,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/before/c1-01-390.png",
+      "sha256": "3eb7ab44952f005272621c6429e42079fdf2341ae2f5db2e6cf8c9b3b4ef1494",
+      "bytes": 77044,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/covers/after/c1-01-390.png",
+      "sha256": "2f2b60e621508a59c15f0bc84fcfbe8fe90eb9ee61c8fa86bfb3a9eaa706f9c1",
+      "bytes": 68683,
+      "method": "same-Teacher3bd-component-fixture"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/ana-circle-32.png",
+      "sha256": "bf6abb42606e91ada27b11b81dc7cd3fa7451381e43a91eb4c582b9522dd2d19",
+      "bytes": 2573,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/ana-circle-44.png",
+      "sha256": "b0c5bc84b1a78076d9205716a6235b3c1cd3a46540bdf95f5af2bc76e07e181c",
+      "bytes": 4247,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/ana-circle-64.png",
+      "sha256": "213b9fd29cd3ca9bfc2aa7b9fe242c81d37321ea954f39721345cc5c54eb4c56",
+      "bytes": 8001,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/ana-circle-128.png",
+      "sha256": "343e27e8eb7683ebc93bb76b923bc26326d8620e88a6757058e3e93a26edcdc2",
+      "bytes": 26505,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/kim-circle-32.png",
+      "sha256": "36f6e89e697765e3b9f0767c4e17d2a739319fcf3b0aefa8d54921b7400c8925",
+      "bytes": 2205,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/kim-circle-44.png",
+      "sha256": "9a25e2c067dcc81171c02996e5f7a8600847bc3429fb40db60ce656ae7b80e97",
+      "bytes": 3469,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/kim-circle-64.png",
+      "sha256": "b7366e9f3f119c42e7df9d4acfef3b030bccb6d68359b9f4b0358675e7d965ba",
+      "bytes": 6409,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/kim-circle-128.png",
+      "sha256": "12cd7fe22f0fbe3ad27dc10c2be6612caf023c43514a18a9f1157bc8c2ac29e8",
+      "bytes": 20660,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/leo-circle-32.png",
+      "sha256": "0504839cb72620a572663bba90e61b35b580c2f2059ee17bb93059b2a9ad7994",
+      "bytes": 2201,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/leo-circle-44.png",
+      "sha256": "01856f38860c28b3ee9abea8ba79977d523e8585ac1f8fcb160b1906270c627e",
+      "bytes": 3530,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/leo-circle-64.png",
+      "sha256": "6f4ec01a1d31182fbbb68d51032838327926b81cf7ae21546eb0754d9b66daa4",
+      "bytes": 6587,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/leo-circle-128.png",
+      "sha256": "9ec089e6dbde327a0065421100e19586bfa9e031023765074a66af1755cef01c",
+      "bytes": 21127,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/raj-circle-32.png",
+      "sha256": "a941bba9dab4f6b9febbaba91b5f6e242912d3d02b1998e4dfd26019dbf66af8",
+      "bytes": 2355,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/raj-circle-44.png",
+      "sha256": "4a1a1ec308bb794f30679dc7f86ad5e19dea51a24fa786c5cc7fe0e57ff518d6",
+      "bytes": 3758,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/raj-circle-64.png",
+      "sha256": "a050bf315a4671bee4d37c0194dd70ce1c5cc8c17152b9fb24bd6a74a98e75ca",
+      "bytes": 7061,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/avatarProofs/raj-circle-128.png",
+      "sha256": "47f942afea00c8add0dbaa06c0f3992ba35b61751e35c37387965ef685aa8951",
+      "bytes": 22793,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/coverProofs/a101--scene-france-chloe-cover-16x10.webp",
+      "sha256": "f097082cb2647b699c8f6a277f973d34fb07b6f15180eac05bcf0d7441b8b2ca",
+      "bytes": 35346,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/coverProofs/b101--catalog-cover-gardening-cover-16x10.webp",
+      "sha256": "338d3c29ec718756fa3eb5c2a6952d5b051452e16ee53771acd28754c8ba6d77",
+      "bytes": 20090,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/coverProofs/c101--catalog-cover-cover-16x10.webp",
+      "sha256": "6cf27034b12190398a76422607564c0e5cb4c3f94086778ba4e7b04b58a8f4a6",
+      "bytes": 31930,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/contactSheets/avatar-circles-contact-sheet.png",
+      "sha256": "84b1be14029222a409a31e08fa01ffc10ab2fa087bd80f79cf09401849d4ecd8",
+      "bytes": 275915,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/contactSheets/catalog-crops-contact-sheet.png",
+      "sha256": "86b19cf048a57f97d60aa065af610eb1e2f5021e803c0da21d7b4392ea0f1634",
+      "bytes": 271458,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/contactSheets/a101-contact-sheet.png",
+      "sha256": "426d10eb9744c5252174f09f5af8df8ca87b4be5255cc3435c0ab746506157a1",
+      "bytes": 1646438,
+      "method": "reuse-owner-bitmap-crop-proof"
+    },
+    {
+      "path": ".github/evidence/materials-conversation-images-01/image-owner/contactSheets/b101-contact-sheet.png",
+      "sha256": "8f175fa6a8da0501f39b0025953af5d83590ac5fc414363a67f27a46921255b4",
+      "bytes": 1257570,
+      "method": "reuse-owner-bitmap-crop-proof"
+    }
+  ],
+  "pairedScreens": [
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/TrialA1-s3-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/TrialA1-s3-1440.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/TrialA1-s3-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/TrialA1-s3-390.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/A201-s6-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/A201-s6-1440.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/A201-s6-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/A201-s6-390.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB1-s3-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB1-s3-1440.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB1-s3-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB1-s3-390.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB2-s3-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB2-s3-1440.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/TrialB2-s3-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/TrialB2-s3-390.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s6-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s6-1440.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s6-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s6-390.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s62-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s62-1440.png",
+      "group": "conversation"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/conversation/before/B201-s62-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/conversation/after/B201-s62-390.png",
+      "group": "conversation"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s6-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s6-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s6-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s6-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s8-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s8-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s8-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/a1-01-s8-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s33-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s33-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s33-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s33-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s6-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s6-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s6-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s6-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s62-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s62-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s62-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s62-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s9-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s9-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s9-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b1-01-s9-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s6-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s6-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s6-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s6-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s62-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s62-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s62-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s62-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s8-swapped-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s8-swapped-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s8-swapped-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/b2-01-s8-swapped-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s6-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s6-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s6-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s6-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s62-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s62-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s62-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s62-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s8-swapped-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s8-swapped-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s8-swapped-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/c1-01-s8-swapped-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-s3-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-a1-s3-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-s3-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-a1-s3-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-s3-1440-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-b2-s3-1440-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-s3-390-avatar.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/scene-avatar/trial-b2-s3-390-avatar.png",
+      "group": "scene-avatar"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s1-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s1-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s1-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s1-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s10-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s10-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s10-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s10-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s13-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s13-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s13-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s13-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s21-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s21-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s21-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s21-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s22-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s22-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s22-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s22-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s23-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s23-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s23-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s23-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s24-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s24-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s24-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s24-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s25-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s25-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s25-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s25-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s26-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s26-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s26-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s26-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s51-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s51-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s51-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s51-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s52-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s52-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s52-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s52-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s53-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s53-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s53-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s53-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s54-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s54-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s54-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s54-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s55-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s55-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s55-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s55-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s56-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s56-1440.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s56-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/a101-fit/s56-390.png",
+      "group": "a101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer0-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer0-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer0-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer0-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer1-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer1-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer1-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer1-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer2-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer2-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer2-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-answer2-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue0-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue0-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue0-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue0-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue1-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue1-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue1-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue1-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue2-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue2-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue2-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s11-clue2-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s2-scene-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s2-scene-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s2-scene-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s2-scene-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s21-scene-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s21-scene-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s21-scene-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s21-scene-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s31-scene-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s31-scene-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s31-scene-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s31-scene-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s32-scene-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s32-scene-1440.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s32-scene-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/consumers/after/b101-fit/b1-01-s32-scene-390.png",
+      "group": "b101-fit"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/covers/before/a1-01-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/covers/after/a1-01-1440.png",
+      "group": "catalog-covers"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/covers/before/a1-01-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/covers/after/a1-01-390.png",
+      "group": "catalog-covers"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/covers/before/b1-01-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/covers/after/b1-01-1440.png",
+      "group": "catalog-covers"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/covers/before/b1-01-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/covers/after/b1-01-390.png",
+      "group": "catalog-covers"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/covers/before/c1-01-1440.png",
+      "after": ".github/evidence/materials-conversation-images-01/covers/after/c1-01-1440.png",
+      "group": "catalog-covers"
+    },
+    {
+      "before": ".github/evidence/materials-conversation-images-01/covers/before/c1-01-390.png",
+      "after": ".github/evidence/materials-conversation-images-01/covers/after/c1-01-390.png",
+      "group": "catalog-covers"
+    }
+  ],
+  "unchangedSceneExplorerStatesReused": 12,
+  "conversationBeforeIsOriginalNoPlay142a": true,
+  "coverFixture": {
+    "source": "Teacher3bd Thumb andPreviewImage",
+    "baselineImages": "UI142a originalcatalog cover bytes",
+    "authenticatedOrStagingClaim": false,
+    "newB1CoverDimensions": [768, 480],
+    "newFocalContract": false
+  },
+  "officialBuildOrExport": false,
+  "newStagingPublication": false,
+  "humanVisualApproval": false,
+  "humanListeningVerified": false,
+  "visualGate": "Visual gate review: pending human"
+}

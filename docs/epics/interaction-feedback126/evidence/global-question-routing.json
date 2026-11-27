@@ -1,0 +1,195 @@
+{
+  "listening": {
+    "cursor": 550,
+    "events": [
+      {
+        "sequence": 531,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "explicit",
+            "channelInterpretation": "speakers",
+            "contextId": "7286e3cc-10f5-488c-88a2-35f556bb11d5",
+            "nodeId": "48b682d5-b299-4c20-8b1c-b9b4b572e74e",
+            "nodeType": "AudioDestination",
+            "numberOfInputs": 1,
+            "numberOfOutputs": 0
+          }
+        }
+      },
+      {
+        "sequence": 543,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "max",
+            "channelInterpretation": "speakers",
+            "contextId": "7286e3cc-10f5-488c-88a2-35f556bb11d5",
+            "nodeId": "c5d8be71-2dec-4293-9dd9-b6c0f6502334",
+            "nodeType": "Gain",
+            "numberOfInputs": 1,
+            "numberOfOutputs": 1
+          }
+        }
+      },
+      {
+        "sequence": 546,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "max",
+            "channelInterpretation": "speakers",
+            "contextId": "7286e3cc-10f5-488c-88a2-35f556bb11d5",
+            "nodeId": "d7e65653-7aff-4282-867b-f5efe3eb2b12",
+            "nodeType": "AudioBufferSource",
+            "numberOfInputs": 0,
+            "numberOfOutputs": 1
+          }
+        }
+      }
+    ],
+    "hasMore": false,
+    "truncated": false
+  },
+  "video": {
+    "cursor": 667,
+    "events": [
+      {
+        "sequence": 649,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "explicit",
+            "channelInterpretation": "speakers",
+            "contextId": "bfc6978b-a065-4253-89a0-d65bf0e257f7",
+            "nodeId": "daf486ef-b934-40b1-b30a-71c6ec969949",
+            "nodeType": "AudioDestination",
+            "numberOfInputs": 1,
+            "numberOfOutputs": 0
+          }
+        }
+      },
+      {
+        "sequence": 661,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "max",
+            "channelInterpretation": "speakers",
+            "contextId": "bfc6978b-a065-4253-89a0-d65bf0e257f7",
+            "nodeId": "637d4e34-55e2-42a5-a07d-58c0665188f8",
+            "nodeType": "Gain",
+            "numberOfInputs": 1,
+            "numberOfOutputs": 1
+          }
+        }
+      },
+      {
+        "sequence": 664,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "max",
+            "channelInterpretation": "speakers",
+            "contextId": "bfc6978b-a065-4253-89a0-d65bf0e257f7",
+            "nodeId": "2b6c1048-45b2-4953-85b9-b51775257d8b",
+            "nodeType": "AudioBufferSource",
+            "numberOfInputs": 0,
+            "numberOfOutputs": 1
+          }
+        }
+      }
+    ],
+    "hasMore": false,
+    "truncated": false
+  },
+  "hintOnly": {
+    "cursor": 785,
+    "events": [
+      {
+        "sequence": 767,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "explicit",
+            "channelInterpretation": "speakers",
+            "contextId": "c96b7a7d-4432-47f4-8e66-86748c7d78a7",
+            "nodeId": "30f15c8c-3424-4fbf-99e4-27a5de4f7ff3",
+            "nodeType": "AudioDestination",
+            "numberOfInputs": 1,
+            "numberOfOutputs": 0
+          }
+        }
+      },
+      {
+        "sequence": 779,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "max",
+            "channelInterpretation": "speakers",
+            "contextId": "c96b7a7d-4432-47f4-8e66-86748c7d78a7",
+            "nodeId": "f67d3bef-80b6-4d13-b591-dda05a751564",
+            "nodeType": "Gain",
+            "numberOfInputs": 1,
+            "numberOfOutputs": 1
+          }
+        }
+      },
+      {
+        "sequence": 782,
+        "source": {
+          "tabId": 9
+        },
+        "method": "WebAudio.audioNodeCreated",
+        "params": {
+          "node": {
+            "channelCount": 2,
+            "channelCountMode": "max",
+            "channelInterpretation": "speakers",
+            "contextId": "c96b7a7d-4432-47f4-8e66-86748c7d78a7",
+            "nodeId": "25ecdb97-b49a-4fd7-9f38-a39263691d8f",
+            "nodeType": "AudioBufferSource",
+            "numberOfInputs": 0,
+            "numberOfOutputs": 1
+          }
+        }
+      }
+    ],
+    "hasMore": false,
+    "truncated": false
+  },
+  "texture": "same approved filtered air"
+}

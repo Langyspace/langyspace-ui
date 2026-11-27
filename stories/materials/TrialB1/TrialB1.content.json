@@ -1,0 +1,218 @@
+{
+  "revision": "EXP-B1-B2-INTRODUCTIONS73",
+  "title": "A trip to remember",
+  "level": "B1 / B2",
+  "minutes": 19,
+  "reviewScope": [
+    "cover",
+    "introduce-yourself",
+    "s2",
+    "s3",
+    "free-conversation",
+    "next-steps"
+  ],
+  "scene": {
+    "id": "s2",
+    "title": "On the road",
+    "subtitle": "Name the six things in the scene. Click to check and listen",
+    "imageAlt": "A blue car with a flat tire, a pink suitcase, a tow truck, a mechanic and a spare tire on a coastal road",
+    "imageWidth": 1280,
+    "imageHeight": 720,
+    "hotspots": [
+      {
+        "id": "tire",
+        "audioId": "V.flat-tire",
+        "label": "a flat tire",
+        "example": "We’ve got a flat tire",
+        "audioText": "a flat tire. We’ve got a flat tire",
+        "xPercent": 43.6,
+        "yPercent": 77.7,
+        "targetBounds": {
+          "xPercent": 37.4,
+          "yPercent": 65,
+          "widthPercent": 13,
+          "heightPercent": 23
+        }
+      },
+      {
+        "id": "suitcase",
+        "audioId": "V.suitcase",
+        "label": "a suitcase",
+        "example": "I packed one suitcase",
+        "audioText": "a suitcase. I packed one suitcase",
+        "xPercent": 93,
+        "yPercent": 69.3,
+        "targetBounds": {
+          "xPercent": 88,
+          "yPercent": 48,
+          "widthPercent": 10,
+          "heightPercent": 40
+        }
+      },
+      {
+        "id": "coast",
+        "audioId": "V.coast",
+        "label": "the coast",
+        "example": "We drove along the coast",
+        "audioText": "the coast. We drove along the coast",
+        "xPercent": 86,
+        "yPercent": 25,
+        "targetBounds": {
+          "xPercent": 79,
+          "yPercent": 17,
+          "widthPercent": 20,
+          "heightPercent": 20
+        }
+      },
+      {
+        "id": "tow-truck",
+        "audioId": "V.tow-truck",
+        "label": "a tow truck",
+        "example": "We called a tow truck",
+        "audioText": "a tow truck. We called a tow truck",
+        "xPercent": 10.3,
+        "yPercent": 27.5,
+        "targetBounds": {
+          "xPercent": 1,
+          "yPercent": 16,
+          "widthPercent": 20,
+          "heightPercent": 23
+        }
+      },
+      {
+        "id": "mechanic",
+        "audioId": "V.mechanic",
+        "label": "a mechanic",
+        "example": "A mechanic is checking the wheel",
+        "audioText": "a mechanic. A mechanic is checking the wheel",
+        "xPercent": 71.9,
+        "yPercent": 47.5,
+        "targetBounds": {
+          "xPercent": 65,
+          "yPercent": 17,
+          "widthPercent": 16,
+          "heightPercent": 64
+        }
+      },
+      {
+        "id": "spare-tire",
+        "audioId": "V.spare-tire",
+        "label": "a spare tire",
+        "example": "We have a spare tire in the trunk",
+        "audioText": "a spare tire. We have a spare tire in the trunk",
+        "xPercent": 80.8,
+        "yPercent": 76,
+        "targetBounds": {
+          "xPercent": 74.5,
+          "yPercent": 61,
+          "widthPercent": 13,
+          "heightPercent": 28
+        }
+      }
+    ]
+  },
+  "dialogue": {
+    "id": "s3",
+    "title": "Ana’s change of plans",
+    "subtitle": "Listen and read with your teacher, then answer the questions",
+    "lines": [
+      {
+        "id": "D.1",
+        "who": "Kim",
+        "en": "How was your weekend in Ilhabela?",
+        "pt": "Como foi seu fim de semana em Ilhabela?"
+      },
+      {
+        "id": "D.2",
+        "who": "Ana",
+        "en": "It was great in the end. Leo and I were planning to spend Sunday on the beach",
+        "pt": "No fim, foi ótimo. Leo e eu estávamos planejando passar o domingo na praia"
+      },
+      {
+        "id": "D.3",
+        "who": "Kim",
+        "en": "In the end? Did something go wrong?",
+        "pt": "No fim? Alguma coisa deu errado?"
+      },
+      {
+        "id": "D.4",
+        "who": "Ana",
+        "en": "Yes, it rained all morning, so we ended up in a little café",
+        "pt": "Sim, choveu a manhã toda, então acabamos em um pequeno café"
+      },
+      {
+        "id": "D.5",
+        "who": "Kim",
+        "en": "That sounds nice. What was the best part?",
+        "pt": "Parece legal. Qual foi a melhor parte?"
+      },
+      {
+        "id": "D.6",
+        "who": "Ana",
+        "en": "The weather got better, and we took a boat trip along the coast. The view was amazing",
+        "pt": "O tempo melhorou, e fizemos um passeio de barco pelo litoral. A vista era incrível"
+      },
+      {
+        "id": "D.7",
+        "who": "Kim",
+        "en": "So you made the most of it. What would you do differently next time?",
+        "pt": "Então vocês aproveitaram o melhor possível. O que você faria diferente na próxima vez?"
+      },
+      {
+        "id": "D.8",
+        "who": "Ana",
+        "en": "I’d check the weather before leaving! But I’d definitely go back",
+        "pt": "Eu verificaria a previsão do tempo antes de sair! Mas com certeza voltaria"
+      }
+    ],
+    "questions": [
+      {
+        "id": "plan",
+        "prompt": "What was Ana’s original plan?",
+        "answer": "She planned to spend Sunday on the beach",
+        "hint": "She planned to …"
+      },
+      {
+        "id": "cafe",
+        "prompt": "Why did Ana and Leo go to a café?",
+        "answer": "Ana and Leo went to a café because it rained all morning",
+        "hint": "They went because …"
+      },
+      {
+        "id": "next-time",
+        "prompt": "What would Ana do differently next time?",
+        "answer": "She’d check the weather before leaving",
+        "hint": "Next time, she’d …"
+      }
+    ]
+  },
+  "freeConversationInstruction": "Talk freely with your teacher in English about trips, days out and changes of plan",
+  "introduction": {
+    "title": "Introduce yourself",
+    "instruction": "Get to know your teacher. Share a little about yourself and ask back",
+    "prompts": [
+      {
+        "id": "about-you",
+        "introduceTeacher": true,
+        "question": "Nice to meet you! Tell me a little about yourself",
+        "cue": "Introduce yourself, share one detail and ask your teacher about herself",
+        "hint": "Try “I’m from…” or “I’m based in…”. Add one detail, then ask “How about you?”",
+        "model": "Hi, I’m … I’m from …, and I’m currently … How about you?"
+      },
+      {
+        "id": "interests",
+        "question": "What do you enjoy doing in your free time?",
+        "cue": "Talk about one interest and ask your teacher what she enjoys",
+        "hint": "Try “I enjoy…” or “I’m really into…”. React to your teacher’s answer and ask a follow-up",
+        "model": "I’m really into … at the moment. How about you — what do you enjoy doing?"
+      },
+      {
+        "id": "english-goal",
+        "question": "What would you like to feel more confident doing in English?",
+        "cue": "Share one goal and ask your teacher for her perspective",
+        "hint": "Try “I’d like to get better at…” or “I’d love to feel more comfortable…”",
+        "model": "I’d like to feel more comfortable … What would you suggest I focus on?"
+      }
+    ]
+  }
+}

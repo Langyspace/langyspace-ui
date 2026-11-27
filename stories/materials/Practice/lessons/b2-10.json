@@ -1,0 +1,279 @@
+{
+  "key": "b2-10",
+  "code": "B2.10",
+  "title": "What I need is a quiet room",
+  "first": {
+    "id": "course-practice-b2-10-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-10-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "What"
+          },
+          {
+            "id": "a",
+            "text": "What do"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Essa construção começa com what I need, na ordem de uma afirmação. Não usamos a inversão do I need, porque essa parte não é uma pergunta direta. Por isso: “What I need is a quiet room”"
+          },
+          "wrong": {
+            "title": "Essa construção começa com what I need, na ordem de uma afirmação.",
+            "message": "Não usamos a inversão do I need, porque essa parte não é uma pergunta direta. Por isso: “What I need is a quiet room”"
+          }
+        },
+        "context": "___ I need is a quiet room"
+      },
+      {
+        "id": "course-b2-10-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para destacar o que causou o problema, usamos it was e depois ligamos o restante com that. What não faz essa ligação aqui. Por isso: “It was the lift that woke me”"
+          },
+          "wrong": {
+            "title": "Para destacar o que causou o problema, usamos it was e depois ligamos o restante com that.",
+            "message": "What não faz essa ligação aqui. Por isso: “It was the lift that woke me”"
+          }
+        },
+        "context": "It was the lift what woke me"
+      },
+      {
+        "id": "course-b2-10-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I did asked for a change"
+          },
+          {
+            "id": "b",
+            "text": "I did ask for a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O did dá ênfase ao pedido e já carrega o passado. Por isso ask fica na forma básica, sem ed. Por isso: “I did ask for a change”"
+          },
+          "wrong": {
+            "title": "O did dá ênfase ao pedido e já carrega o passado.",
+            "message": "Por isso ask fica na forma básica, sem ed. Por isso: “I did ask for a change”"
+          }
+        }
+      },
+      {
+        "id": "course-b2-10-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "was"
+          },
+          {
+            "id": "b",
+            "text": "were"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A frase está identificando uma coisa: o barulho. Por isso usamos was nessa construção, não were. Por isso: “What disturbed me was the noise”"
+          },
+          "wrong": {
+            "title": "A frase está identificando uma coisa: o barulho.",
+            "message": "Por isso usamos was nessa construção, não were. Por isso: “What disturbed me was the noise”"
+          }
+        },
+        "context": "What disturbed me ___ the noise"
+      },
+      {
+        "id": "course-b2-10-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O did já marca o passado e destaca que ela realmente explicou. Depois dele, usamos explain, sem ed. Por isso: “She did explain the problem at reception”"
+          },
+          "wrong": {
+            "title": "O did já marca o passado e destaca que ela realmente explicou.",
+            "message": "Depois dele, usamos explain, sem ed. Por isso: “She did explain the problem at reception”"
+          }
+        },
+        "context": "She did explain the problem at reception"
+      },
+      {
+        "id": "course-b2-10-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "It was the noise that kept me awake"
+          },
+          {
+            "id": "a",
+            "text": "It was the noise that it kept me awake"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O that já funciona como sujeito de kept. Se colocarmos it também, repetimos esse sujeito dentro da oração. Por isso: “It was the noise that kept me awake”"
+          },
+          "wrong": {
+            "title": "O that já funciona como sujeito de kept.",
+            "message": "Se colocarmos it também, repetimos esse sujeito dentro da oração. Por isso: “It was the noise that kept me awake”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-10.shadowing.01",
+        "displayText": "I’m sorry, but the room next to the lift is too noisy for me to sleep",
+        "translation": "Desculpe, mas o quarto perto do elevador está barulhento demais para eu dormir",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-10.shadowing.02",
+        "displayText": "I’m sorry for the disturbance. We can offer earplugs",
+        "translation": "Sinto muito pelo incômodo. Podemos oferecer protetores auriculares",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-10.shadowing.03",
+        "displayText": "Thank you, but what I need is a quiet room. I have an early presentation",
+        "translation": "Obrigada, mas preciso de um quarto silencioso. Tenho uma apresentação cedo",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-10.shadowing.04",
+        "displayText": "I understand. Is the problem mainly the lift or the street outside?",
+        "translation": "Entendo. O problema é principalmente o elevador ou a rua?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-10.shadowing.05",
+        "displayText": "It was the lift that woke me repeatedly. The street isn’t the main issue",
+        "translation": "Foi o elevador que me acordou repetidamente. A rua não é a questão principal",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-10.shadowing.06",
+        "displayText": "That helps us find a suitable alternative. Have you already asked for a change?",
+        "translation": "Isso ajuda a encontrar uma alternativa adequada. Você já pediu uma troca?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-10.shadowing.07",
+        "displayText": "I did ask this afternoon, but I haven’t had a confirmed option yet",
+        "translation": "Pedi esta tarde, mas ainda não recebi uma opção confirmada",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-10.shadowing.08",
+        "displayText": "I can check another room, though it may not be available immediately",
+        "translation": "Posso conferir outro quarto, embora talvez não esteja disponível imediatamente",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-10.shadowing.09",
+        "displayText": "Could you tell me when it would be ready and whether it’s away from the lift?",
+        "translation": "Pode dizer quando estaria pronto e se fica longe do elevador?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-10.shadowing.10",
+        "displayText": "Yes. I’ll confirm those details before asking you to move",
+        "translation": "Sim. Confirmarei esses detalhes antes de pedir que você se mude",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-10.shadowing.11",
+        "displayText": "I appreciate that. A different room only helps if it solves the noise problem",
+        "translation": "Agradeço. Outro quarto só ajuda se resolver o problema do barulho",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-10.shadowing.12",
+        "displayText": "Agreed. I’ll come back with a specific offer rather than another general apology",
+        "translation": "Concordo. Voltarei com uma oferta específica em vez de outro pedido genérico de desculpas",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: explain the impact of a problem and negotiate a solution that meets the actual need",
+    "duration": "90–120 seconds",
+    "starters": [
+      "What I need is…",
+      "It was… that…",
+      "I did ask for…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Explicando o que você precisa",
+    "first": "Resolver o quiz sobre frases que dão destaque à informação principal",
+    "shadowing": "Ouvir e repetir as frases para explicar um problema e pedir uma solução",
+    "voice": "Mandar um áudio em inglês para a teacher explicando como um problema afeta você e negociando uma solução que atenda à sua necessidade. Termine com uma pergunta"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "pages": [
+    "cover",
+    "s_greetings",
+    "s4",
+    "s_visual1",
+    "s_visual2",
+    "s_visual3",
+    "s_visual4",
+    "s_visual5",
+    "s_visual6",
+    "s1",
+    "s_country107_1",
+    "s_country107_2",
+    "s_country107_3",
+    "s_country107_4",
+    "s_country107_5",
+    "s_country107_6",
+    "s6",
+    "s8",
+    "s_personal111",
+    "s_introducing111",
+    "s10",
+    "s_roleplay_challenge110",
+    "s9",
+    "s_video_intro",
+    "free-conversation",
+    "s13"
+  ],
+  "transitions": [
+    {
+      "direction": 1,
+      "expected": "s_greetings",
+      "observed": "s_greetings"
+    },
+    {
+      "direction": 1,
+      "expected": "s4",
+      "observed": "s4"
+    },
+    {
+      "direction": 1,
+      "expected": "s_visual1",
+      "observed": "s_visual1"
+    },
+    {
+      "direction": 1,
+      "expected": "s_visual2",
+      "observed": "s_visual2"
+    },
+    {
+      "direction": 1,
+      "expected": "s_visual3",
+      "observed": "s_visual3"
+    },
+    {
+      "direction": 1,
+      "expected": "s_visual4",
+      "observed": "s_visual4"
+    },
+    {
+      "direction": 1,
+      "expected": "s_visual5",
+      "observed": "s_visual5"
+    },
+    {
+      "direction": 1,
+      "expected": "s_visual6",
+      "observed": "s_visual6"
+    },
+    {
+      "direction": 1,
+      "expected": "s1",
+      "observed": "s1"
+    },
+    {
+      "direction": 1,
+      "expected": "s_country107_1",
+      "observed": "s_country107_1"
+    },
+    {
+      "direction": 1,
+      "expected": "s_country107_2",
+      "observed": "s_country107_2"
+    },
+    {
+      "direction": 1,
+      "expected": "s_country107_3",
+      "observed": "s_country107_3"
+    },
+    {
+      "direction": 1,
+      "expected": "s_country107_4",
+      "observed": "s_country107_4"
+    },
+    {
+      "direction": 1,
+      "expected": "s_country107_5",
+      "observed": "s_country107_5"
+    },
+    {
+      "direction": 1,
+      "expected": "s_country107_6",
+      "observed": "s_country107_6"
+    },
+    {
+      "direction": 1,
+      "expected": "s6",
+      "observed": "s6"
+    },
+    {
+      "direction": 1,
+      "expected": "s8",
+      "observed": "s8"
+    },
+    {
+      "direction": 1,
+      "expected": "s_personal111",
+      "observed": "s_personal111"
+    },
+    {
+      "direction": 1,
+      "expected": "s_introducing111",
+      "observed": "s_introducing111"
+    },
+    {
+      "direction": 1,
+      "expected": "s10",
+      "observed": "s10"
+    },
+    {
+      "direction": 1,
+      "expected": "s_roleplay_challenge110",
+      "observed": "s_roleplay_challenge110"
+    },
+    {
+      "direction": 1,
+      "expected": "s9",
+      "observed": "s9"
+    },
+    {
+      "direction": 1,
+      "expected": "s_video_intro",
+      "observed": "s_video_intro"
+    },
+    {
+      "direction": 1,
+      "expected": "free-conversation",
+      "observed": "free-conversation"
+    },
+    {
+      "direction": 1,
+      "expected": "s13",
+      "observed": "s13"
+    },
+    {
+      "direction": -1,
+      "expected": "free-conversation",
+      "observed": "free-conversation"
+    },
+    {
+      "direction": -1,
+      "expected": "s_video_intro",
+      "observed": "s_video_intro"
+    },
+    {
+      "direction": -1,
+      "expected": "s9",
+      "observed": "s9"
+    },
+    {
+      "direction": -1,
+      "expected": "s_roleplay_challenge110",
+      "observed": "s_roleplay_challenge110"
+    },
+    {
+      "direction": -1,
+      "expected": "s10",
+      "observed": "s10"
+    },
+    {
+      "direction": -1,
+      "expected": "s_introducing111",
+      "observed": "s_introducing111"
+    },
+    {
+      "direction": -1,
+      "expected": "s_personal111",
+      "observed": "s_personal111"
+    },
+    {
+      "direction": -1,
+      "expected": "s8",
+      "observed": "s8"
+    },
+    {
+      "direction": -1,
+      "expected": "s6",
+      "observed": "s6"
+    },
+    {
+      "direction": -1,
+      "expected": "s_country107_6",
+      "observed": "s_country107_6"
+    },
+    {
+      "direction": -1,
+      "expected": "s_country107_5",
+      "observed": "s_country107_5"
+    },
+    {
+      "direction": -1,
+      "expected": "s_country107_4",
+      "observed": "s_country107_4"
+    },
+    {
+      "direction": -1,
+      "expected": "s_country107_3",
+      "observed": "s_country107_3"
+    },
+    {
+      "direction": -1,
+      "expected": "s_country107_2",
+      "observed": "s_country107_2"
+    },
+    {
+      "direction": -1,
+      "expected": "s_country107_1",
+      "observed": "s_country107_1"
+    },
+    {
+      "direction": -1,
+      "expected": "s1",
+      "observed": "s1"
+    },
+    {
+      "direction": -1,
+      "expected": "s_visual6",
+      "observed": "s_visual6"
+    },
+    {
+      "direction": -1,
+      "expected": "s_visual5",
+      "observed": "s_visual5"
+    },
+    {
+      "direction": -1,
+      "expected": "s_visual4",
+      "observed": "s_visual4"
+    },
+    {
+      "direction": -1,
+      "expected": "s_visual3",
+      "observed": "s_visual3"
+    },
+    {
+      "direction": -1,
+      "expected": "s_visual2",
+      "observed": "s_visual2"
+    },
+    {
+      "direction": -1,
+      "expected": "s_visual1",
+      "observed": "s_visual1"
+    },
+    {
+      "direction": -1,
+      "expected": "s4",
+      "observed": "s4"
+    },
+    {
+      "direction": -1,
+      "expected": "s_greetings",
+      "observed": "s_greetings"
+    },
+    {
+      "direction": -1,
+      "expected": "cover",
+      "observed": "cover"
+    }
+  ]
+}

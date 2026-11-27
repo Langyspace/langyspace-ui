@@ -1,0 +1,525 @@
+{
+  "version": 81,
+  "code": "A1.08",
+  "key": "a1-08",
+  "title": "At the hotel",
+  "goal": "Explain a hotel problem and ask for help",
+  "freeConversationInstruction": "Talk about what you need in a hotel and practise asking for help in different situations",
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Use the travel card from our airport lesson",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "Where are you staying?",
+          "hint": "I’m staying at …",
+          "cue": "Name a place to stay"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How long are you staying?",
+          "hint": "For … days",
+          "cue": "Say how many days"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How can you ask someone to repeat a direction?",
+          "hint": "Can you say that again, please?",
+          "cue": "Ask me to repeat the direction"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Help at the hotel",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "A108-V81.0",
+          "word": "room",
+          "translation": "",
+          "example": "My room is on the left",
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "room",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A108-FS81.0",
+          "audioText": "room. My room is on the left."
+        },
+        {
+          "id": "A108-V81.1",
+          "word": "key",
+          "translation": "",
+          "example": "Can I have my key, please?",
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "key",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A108-FS81.1",
+          "audioText": "key. Can I have my key, please?"
+        },
+        {
+          "id": "A108-V81.2",
+          "word": "shower",
+          "translation": "",
+          "example": "The shower doesn’t work",
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "shower",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A108-FS81.2",
+          "audioText": "shower. The shower doesn’t work."
+        },
+        {
+          "id": "A108-V81.3",
+          "word": "light",
+          "translation": "",
+          "example": "Can you check the light?",
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "light",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A108-FS81.3",
+          "audioText": "light. Can you check the light?"
+        },
+        {
+          "id": "A108-V81.4",
+          "word": "towel",
+          "translation": "",
+          "example": "I need a clean towel",
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "towel",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A108-FS81.4",
+          "audioText": "towel. I need a clean towel."
+        },
+        {
+          "id": "A108-V81.5",
+          "word": "reception",
+          "translation": "",
+          "example": "Please call reception",
+          "imageUrl": "a1-08-vocabulary81",
+          "imageAlt": "reception",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "A108-FS81.5",
+          "audioText": "reception. Please call reception."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A call to reception",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "A108-D81.1",
+          "speaker": "Kim",
+          "text": "Good evening. How can I help?",
+          "audioText": "Good evening. How can I help?",
+          "translation": "Boa noite. Como posso ajudar?"
+        },
+        {
+          "id": "A108-D81.2",
+          "speaker": "Ana",
+          "text": "I’m in room 204. The shower doesn’t work",
+          "audioText": "I’m in room 204. The shower doesn’t work.",
+          "translation": "Estou no quarto 204. O chuveiro não funciona"
+        },
+        {
+          "id": "A108-D81.3",
+          "speaker": "Kim",
+          "text": "I’m sorry. Do you need a towel?",
+          "audioText": "I’m sorry. Do you need a towel?",
+          "translation": "Sinto muito. Você precisa de uma toalha?"
+        },
+        {
+          "id": "A108-D81.4",
+          "speaker": "Ana",
+          "text": "Yes, please. Can I have two towels?",
+          "audioText": "Yes, please. Can I have two towels?",
+          "translation": "Sim, por favor. Posso pedir duas toalhas?"
+        },
+        {
+          "id": "A108-D81.5",
+          "speaker": "Kim",
+          "text": "Of course. Someone can come at six. Is that OK?",
+          "audioText": "Of course. Someone can come at six. Is that OK?",
+          "translation": "Claro. Alguém pode ir às seis. Tudo bem?"
+        },
+        {
+          "id": "A108-D81.6",
+          "speaker": "Ana",
+          "text": "Yes, thank you. I’ll be here",
+          "audioText": "Yes, thank you. I’ll be here.",
+          "translation": "Sim, obrigada. Vou estar aqui"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What is the problem in Ana’s room?",
+          "hint": "The … doesn’t work",
+          "answer": "The shower in Ana’s room doesn’t work"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What’s Ana’s room number?",
+          "hint": "Her room number is …",
+          "answer": "Ana’s room number is 204"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How many towels does Ana ask for?",
+          "hint": "She asks for …",
+          "answer": "Ana asks for two towels"
+        }
+      ],
+      "dialogueGroup": "a1-08.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Explain a room problem",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What’s the problem with your room?",
+          "cue": "Say what doesn’t work",
+          "hint": "The … doesn’t work",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What do you need?",
+          "cue": "Ask for what you need",
+          "hint": "Can I have …, please?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Can you ask me for help?",
+          "cue": "Make a polite request about the room",
+          "hint": "Can I have …, please?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Ask for help politely",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Explain the problem",
+          "verb": "The + thing + doesn’t work",
+          "example": "The shower doesn’t work"
+        },
+        {
+          "id": "1",
+          "subject": "Ask for an item",
+          "verb": "Can I have + item, please?",
+          "example": "Can I have two towels, please?"
+        },
+        {
+          "id": "2",
+          "subject": "Ask for help",
+          "verb": "Can you + action?",
+          "example": "Can you help me, please?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Can you help me?",
+      "instruction": "Choose a room problem, tell reception your room number and ask for help",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Reception has an update",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hello, Ana. This is reception. Someone can come to your room at seven this evening, not six. We have two towels for you here. You can collect them now, or we can bring them at seven. Please tell us what you need. Thank you!",
+      "audioText": "Hello, Ana. This is reception. Someone can come to your room at seven this evening, not six. We have two towels for you here. You can collect them now, or we can bring them at seven. Please tell us what you need. Thank you!",
+      "audioId": "A108-W141.1",
+      "greeting": "Reception has a new time for you",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "When can someone come to Ana’s room?",
+          "hint": "Someone can come at …",
+          "answer": "Someone can come at seven this evening"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How many towels does reception have for her?",
+          "hint": "They have …",
+          "answer": "Reception has two towels for Ana"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How can Ana get the towels?",
+          "hint": "She can … or …",
+          "answer": "Ana can collect them now or have them delivered at seven"
+        }
+      ],
+      "greetingTimestamp": "17:10",
+      "voiceTimestamp": "17:11",
+      "contact": {
+        "name": "Evelyn"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Confirm the new time",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "There’s a problem with my room",
+      "instruction": "Watch the guest ask for help, then explain a simple hotel problem",
+      "minutes": 4,
+      "video": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 581,
+        "endSeconds": 625,
+        "title": "Hotel English — Oxford Online English",
+        "credit": "Oxford Online English"
+      },
+      "items": [
+        {
+          "id": "a1-08.video102.q1",
+          "prompt": "Is the room too hot or too cold?",
+          "hint": "Listen to the heating problem",
+          "answer": "The room is too hot"
+        },
+        {
+          "id": "a1-08.video102.q2",
+          "prompt": "What else doesn’t always work?",
+          "hint": "Listen for the item used to open the door",
+          "answer": "The key doesn’t always work"
+        },
+        {
+          "id": "a1-08.video102.q3",
+          "prompt": "What does the receptionist offer to make?",
+          "hint": "Listen to the last solution",
+          "answer": "The receptionist offers to make a new key"
+        },
+        {
+          "id": "a1-08.video102.q4",
+          "prompt": "Your room is too cold. What can you say?",
+          "hint": "Say the problem and ask for help",
+          "answer": "Example: My room is too cold. Can you help me, please?"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explain a hotel problem and ask for help"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Room problems",
+      "options": [
+        {
+          "id": "shower",
+          "title": "Shower",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Room",
+              "value": "204"
+            },
+            {
+              "id": "2",
+              "label": "You need",
+              "value": "Two towels"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view0",
+              "index": 0,
+              "label": ""
+            }
+          ]
+        },
+        {
+          "id": "light",
+          "title": "Light",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Room",
+              "value": "204"
+            },
+            {
+              "id": "2",
+              "label": "You need",
+              "value": "Help this evening"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "view1",
+              "index": 1,
+              "label": ""
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "help",
+          "prompt": "What room are you in?",
+          "hint": "I’m in room …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What’s the problem?",
+          "hint": "The … doesn’t work"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What do you need?",
+          "hint": "Can I have …, please?"
+        }
+      ],
+      "questionPurpose": "response",
+      "image": "a1-08-hotel-problems123",
+      "pictureGrid": {
+        "columns": 2,
+        "rows": 1,
+        "sourceAspectRatio": 2
+      }
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Reception’s offer",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Visit",
+          "value": "7 pm"
+        },
+        {
+          "id": "1",
+          "label": "Towels",
+          "value": "Two · ready at reception"
+        },
+        {
+          "id": "2",
+          "label": "Choice",
+          "value": "Collect now or delivery at 7"
+        }
+      ],
+      "questions": [
+        {
+          "id": "confirm",
+          "prompt": "Is seven OK for you?",
+          "hint": "Seven is fine. / Can someone come at …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Will you collect the towels or ask for delivery?",
+          "hint": "I can collect them. / Can you bring them, please?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Can you confirm your room number?",
+          "hint": "I’m in room … Thank you"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Reception’s offer"
+    }
+  }
+}

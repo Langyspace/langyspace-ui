@@ -1,0 +1,653 @@
+{
+  "version": 81,
+  "code": "C1.09",
+  "key": "c1-09",
+  "title": "It’s bound to get worse",
+  "goal": "Match a prediction’s certainty to limited data and test its assumptions",
+  "freeConversationInstruction": "Discuss possible changes in your city or daily life, test assumptions and make careful predictions",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how to attribute a claim and mark its uncertainty",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What does a short trend actually establish?",
+          "hint": "The observations show …, but not necessarily …",
+          "cue": "Bound the observed trend"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What condition would you attach to a forecast?",
+          "hint": "It is likely to … if …",
+          "cue": "State a forecast condition"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What observation would make you revise a recommendation?",
+          "hint": "If we observed …, I’d reconsider …",
+          "cue": "Define a decision trigger"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Trends, projections and scenarios",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C109-V81.0",
+          "word": "a trend",
+          "translation": "",
+          "example": "Three observations suggest a trend, not a certainty",
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a trend",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C109-FS81.0",
+          "audioText": "a trend. Three observations suggest a trend, not a certainty."
+        },
+        {
+          "id": "C109-V81.1",
+          "word": "a projection",
+          "translation": "",
+          "example": "The projection depends on stated assumptions",
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a projection",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C109-FS81.1",
+          "audioText": "a projection. The projection depends on stated assumptions."
+        },
+        {
+          "id": "C109-V81.2",
+          "word": "a likely outcome",
+          "translation": "",
+          "example": "A likely outcome is not a guaranteed one",
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a likely outcome",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C109-FS81.2",
+          "audioText": "a likely outcome. A likely outcome is not a guaranteed one."
+        },
+        {
+          "id": "C109-V81.3",
+          "word": "a worst-case scenario",
+          "translation": "",
+          "example": "A worst-case scenario should be labelled as a scenario",
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a worst-case scenario",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C109-FS81.3",
+          "audioText": "a worst-case scenario. A worst-case scenario should be labelled as a scenario."
+        },
+        {
+          "id": "C109-V81.4",
+          "word": "an early sign",
+          "translation": "",
+          "example": "This could be an early sign of a gap",
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "an early sign",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C109-FS81.4",
+          "audioText": "an early sign. This could be an early sign of a gap."
+        },
+        {
+          "id": "C109-V81.5",
+          "word": "a contributing factor",
+          "translation": "",
+          "example": "Service timing is a contributing factor",
+          "imageUrl": "c1-09-vocabulary81",
+          "imageAlt": "a contributing factor",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C109-FS81.5",
+          "audioText": "a contributing factor. Service timing is a contributing factor."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "What has been observed",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Fictional city data note · simulated source",
+      "subject": "Three months of trips",
+      "paragraphs": [
+        "The teaching dataset records average daily trips of 100 in January, 120 in February and 140 in March. These are simulated figures, not news or a statistical study. The series shows a rise across three observations, but provides no earlier years, seasonal pattern or explanation of who is travelling.",
+        "A projection continuing the same increase would be conditional on similar circumstances. It should not be relabelled as an observed April result. A recommendation can acknowledge a possible pressure on services without claiming that these figures alone establish a permanent rate, a single cause or an inevitable worst-case outcome."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "What the plan assumes",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Transport scenario · simulated source",
+      "subject": "Capacity must match the need",
+      "paragraphs": [
+        "The scenario includes additional transport starting next month. The headline capacity estimate treats the extra service as if it covers the demand under discussion. The record confirms a service plan but leaves the detailed time coverage for a later check. A group member therefore suggests that no further action will be necessary.",
+        "That conclusion depends on more than a total number. Capacity at the wrong time or place may not meet the actual need. The task is to identify which assumption should be tested and what information would change the recommendation. Monitoring can be a sensible action if it has a focus, an owner and a clear trigger for reviewing the plan."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A trend or a certainty?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C109-D81.1",
+          "speaker": "Kim",
+          "text": "Demand has risen for three months. It’s bound to get worse, isn’t it?",
+          "audioText": "Demand has risen for three months. It’s bound to get worse, isn’t it?",
+          "translation": "A demanda subiu por três meses. Com certeza vai piorar, não vai?"
+        },
+        {
+          "id": "C109-D81.2",
+          "speaker": "Ana",
+          "text": "The figures suggest growth, but “bound to” is stronger than these three observations justify",
+          "audioText": "The figures suggest growth, but “bound to” is stronger than these three observations justify.",
+          "translation": "Os números sugerem crescimento, mas “com certeza” é mais forte do que essas três observações justificam"
+        },
+        {
+          "id": "C109-D81.3",
+          "speaker": "Kim",
+          "text": "What would be a more defensible claim?",
+          "audioText": "What would be a more defensible claim?",
+          "translation": "Qual afirmação seria mais defensável?"
+        },
+        {
+          "id": "C109-D81.4",
+          "speaker": "Ana",
+          "text": "Demand is likely to rise if the same conditions continue. We should state that condition",
+          "audioText": "Demand is likely to rise if the same conditions continue. We should state that condition.",
+          "translation": "É provável que a demanda suba se as mesmas condições continuarem. Devemos explicitar essa condição"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "How much historical evidence is being discussed?",
+          "hint": "They have …",
+          "answer": "They have three months of rising demand"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why is ‘bound to get worse’ too strong?",
+          "hint": "Three observations don’t justify …",
+          "answer": "Three observations don’t justify a certain prediction"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What condition belongs in the more defensible forecast?",
+          "hint": "Demand is likely to rise if …",
+          "answer": "Demand is likely to rise if the same conditions continue"
+        }
+      ],
+      "dialogueGroup": "c1-09.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Test the projection’s premise",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C109-D81.5",
+          "speaker": "Kim",
+          "text": "The proposal says extra transport is set to start next month",
+          "audioText": "The proposal says extra transport is set to start next month.",
+          "translation": "A proposta diz que o transporte extra deve começar no próximo mês"
+        },
+        {
+          "id": "C109-D81.6",
+          "speaker": "Ana",
+          "text": "Is that a confirmed service plan, or just an assumption in the projection?",
+          "audioText": "Is that a confirmed service plan, or just an assumption in the projection?",
+          "translation": "É um plano de serviço confirmado ou só uma premissa da projeção?"
+        },
+        {
+          "id": "C109-D81.7",
+          "speaker": "Kim",
+          "text": "The plan is confirmed, but the capacity estimate assumes it covers the period of highest demand",
+          "audioText": "The plan is confirmed, but the capacity estimate assumes it covers the period of highest demand.",
+          "translation": "O plano está confirmado, mas a estimativa de capacidade presume que cobre o período de maior demanda"
+        },
+        {
+          "id": "C109-D81.8",
+          "speaker": "Ana",
+          "text": "Then timing matters as much as the headline number",
+          "audioText": "Then timing matters as much as the headline number.",
+          "translation": "Então o horário importa tanto quanto o número principal"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Is the extra transport plan confirmed?",
+          "hint": "Yes, …",
+          "answer": "Yes, the extra transport plan is confirmed"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does the capacity estimate assume?",
+          "hint": "It assumes …",
+          "answer": "The capacity estimate assumes the service covers the highest-demand period"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Why does timing matter?",
+          "hint": "Total capacity doesn’t show …",
+          "answer": "Total capacity doesn’t show whether the service runs when people need it"
+        }
+      ],
+      "dialogueGroup": "c1-09.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Choose a proportionate next step",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C109-D81.9",
+          "speaker": "Kim",
+          "text": "We were going to recommend no further action because the extra service looked sufficient",
+          "audioText": "We were going to recommend no further action because the extra service looked sufficient.",
+          "translation": "Íamos recomendar não fazer mais nada porque o serviço extra parecia suficiente"
+        },
+        {
+          "id": "C109-D81.10",
+          "speaker": "Ana",
+          "text": "I’d qualify that until we check the coverage. More total capacity may still leave a local gap",
+          "audioText": "I’d qualify that until we check the coverage. More total capacity may still leave a local gap.",
+          "translation": "Eu colocaria uma ressalva até conferirmos a cobertura. Mais capacidade total ainda pode deixar uma lacuna específica"
+        },
+        {
+          "id": "C109-D81.11",
+          "speaker": "Kim",
+          "text": "Would monitoring the next month be too passive?",
+          "audioText": "Would monitoring the next month be too passive?",
+          "translation": "Monitorar o próximo mês seria passivo demais?"
+        },
+        {
+          "id": "C109-D81.12",
+          "speaker": "Ana",
+          "text": "Not if we also check the affected time slot and define when we’ll change the plan",
+          "audioText": "Not if we also check the affected time slot and define when we’ll change the plan.",
+          "translation": "Não se também conferirmos o horário afetado e definirmos quando mudaremos o plano"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What was the original recommendation?",
+          "hint": "They were going to recommend …",
+          "answer": "They were going to recommend no further action"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why does Ana qualify that recommendation?",
+          "hint": "More total capacity may …",
+          "answer": "More total capacity may still leave a local gap"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What makes monitoring an active response?",
+          "hint": "They also need … and …",
+          "answer": "They also need to check the affected time slot and define a trigger for changing the plan"
+        }
+      ],
+      "dialogueGroup": "c1-09.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Calibrate the prediction",
+      "instruction": "Use the reference to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "How much certainty does the language commit you to?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A probable outcome, with conditions",
+          "verb": "likely / unlikely to + verb",
+          "example": "Demand is likely to rise if conditions continue"
+        },
+        {
+          "id": "1",
+          "subject": "A very strong prediction",
+          "verb": "bound to + verb",
+          "example": "“Bound to get worse” needs stronger grounds than this sample"
+        },
+        {
+          "id": "2",
+          "subject": "A scheduled or expected development",
+          "verb": "set to / was going to",
+          "example": "The service is set to start. We were going to recommend no action"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Forecast without overstating",
+      "instruction": "Explain your prediction and say what could make it wrong",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Total capacity is not all-day coverage",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”",
+      "audioText": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”.",
+      "audioId": "C109-L81.1",
+      "greeting": "There’s an update on how certain we can be",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What limitation has been found in the extra service?",
+          "hint": "It only runs …",
+          "answer": "The extra service only runs during the morning peak"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What demand is not automatically covered?",
+          "hint": "The projection also includes …",
+          "answer": "The projection also includes afternoon trips"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What does that limitation not prove?",
+          "hint": "It doesn’t prove … or …",
+          "answer": "It doesn’t prove demand will keep rising at the same rate or that the whole plan will fail"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Revise the recommendation and the trigger",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "What can a historical trend support?",
+      "instruction": "Watch this 2014 talk’s account of twentieth-century disaster data, then assess a prediction",
+      "minutes": 4,
+      "video": {
+        "videoId": "Sm5xF-UYgdg",
+        "startSeconds": 83,
+        "endSeconds": 140,
+        "title": "Hans and Ola Rosling — How not to be ignorant about the world — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-09.video102.q1",
+          "prompt": "What period is the graph described as covering?",
+          "hint": "Listen for the two years",
+          "answer": "It is described as covering 1900 to 2000"
+        },
+        {
+          "id": "c1-09.video102.q2",
+          "prompt": "How does Rosling contrast the public belief with the data?",
+          "hint": "Listen to doubled and less than half",
+          "answer": "Many respondents thought deaths had doubled, while the data he presents show a fall to less than half"
+        },
+        {
+          "id": "c1-09.video102.q3",
+          "prompt": "Does that establish that every future year will improve?",
+          "hint": "Separate a historical trend from a guaranteed forecast",
+          "answer": "No. A historical pattern alone does not guarantee a future outcome"
+        },
+        {
+          "id": "c1-09.video102.q4",
+          "prompt": "Make a cautious prediction and name a condition that could change it",
+          "hint": "Use may or is likely to and specify the assumption",
+          "answer": "Example: Deaths may continue to fall if protective measures improve, but more severe hazards could alter that trend"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Match a prediction’s certainty to limited data and test its assumptions"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "chart",
+      "title": "Observed daily trips · fictional example",
+      "chart": {
+        "items": [
+          {
+            "id": "jan",
+            "label": "January",
+            "description": "Observed trips per day · fictional",
+            "values": [100]
+          },
+          {
+            "id": "feb",
+            "label": "February",
+            "description": "Observed trips per day · fictional",
+            "values": [120]
+          },
+          {
+            "id": "mar",
+            "label": "March",
+            "description": "Observed trips per day · fictional",
+            "values": [140]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "trend",
+          "prompt": "How would you describe the observed trend without overstating it?",
+          "hint": "The figures suggest … over …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What assumption limits the capacity projection?",
+          "hint": "The projection assumes …, which needs …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would trigger a further decision?",
+          "hint": "If … in the affected time slot, we would …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Observed daily trips · fictional example"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "A limitation in the capacity assumption",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Confirmed",
+          "value": "Extra service starts next month"
+        },
+        {
+          "id": "1",
+          "label": "Coverage",
+          "value": "Morning peak only"
+        },
+        {
+          "id": "2",
+          "label": "Need to check",
+          "value": "Afternoon demand and capacity"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you revise the ‘problem solved’ claim?",
+          "hint": "The extra service covers …, but … remains unverified"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What afternoon information would you request?",
+          "hint": "We need to compare … with …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What conditional recommendation would you make?",
+          "hint": "I’d recommend … pending …, with a review if …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "A limitation in the capacity assumption"
+    },
+    "s_personal": {
+      "type": "chart",
+      "title": "Observed daily trips · fictional example",
+      "chart": {
+        "items": [
+          {
+            "id": "jan",
+            "label": "January",
+            "description": "Observed trips per day · fictional",
+            "values": [100]
+          },
+          {
+            "id": "feb",
+            "label": "February",
+            "description": "Observed trips per day · fictional",
+            "values": [120]
+          },
+          {
+            "id": "mar",
+            "label": "March",
+            "description": "Observed trips per day · fictional",
+            "values": [140]
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "How certain can we be from these figures?",
+          "cue": "Match your claim to the strength of the evidence",
+          "hint": "The figures suggest …, but they don’t establish …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What would be a sensible next step?",
+          "cue": "Propose action while acknowledging uncertainty",
+          "hint": "Even if …, it would be worth …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What further evidence would most affect your recommendation?",
+          "cue": "Name a decision-relevant gap without asking for certainty",
+          "hint": "The most useful thing to establish would be … If it showed …, I’d reconsider …",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Observed daily trips · fictional example"
+    }
+  }
+}

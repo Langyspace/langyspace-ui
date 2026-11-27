@@ -166,9 +166,9 @@ Cuidados: htmlFor deve apontar ao id do primeiro dígito, formado por idPrefix-0
 
 Identidade com iniciais, imagem opcional e fallback React quando iniciais estão vazias.
 
-Contrato: initials, imageUrl, size, tone, children e atributos/ref de span.
+Contrato: initials, imageUrl, size, tone, children e atributos/ref de span. A variação nomeada aceita name, namePosition (below/beside) e description; foto e nome compartilham espaço e tipografia.
 
-Cuidados: É decorativo por padrão quando o nome adjacente identifica a pessoa. Falha de imagem volta ao fallback e uma URL nova é tentada; upload/navegação ficam externos.
+Cuidados: Sem name, é decorativo por padrão quando o nome adjacente identifica a pessoa. Com name, o conjunto é acessível, usa nome em texto principal semibold e separa foto/texto por token de espaço; aria-hidden explícito continua disponível. Falha de imagem volta ao fallback e uma URL nova é tentada; upload/navegação ficam externos.
 
 ## BrandLink
 

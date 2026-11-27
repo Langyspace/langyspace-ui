@@ -1,0 +1,906 @@
+{
+  "phase": "after",
+  "source": "source preview, media crop delta; not Teacher staging",
+  "results": [
+    {
+      "material": "a1-01",
+      "id": "s1",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 243.25,
+            "top": 305.25,
+            "width": 308.5,
+            "height": 205
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 565.75,
+            "top": 305.25,
+            "width": 308.5,
+            "height": 205
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 888.25,
+            "top": 305.25,
+            "width": 308.5,
+            "height": 205
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 243.25,
+            "top": 524.25,
+            "width": 308.5,
+            "height": 205
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 565.75,
+            "top": 524.25,
+            "width": 308.5,
+            "height": 205
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 888.25,
+            "top": 524.25,
+            "width": 308.5,
+            "height": 205
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s24",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 177,
+            "top": 323.265625,
+            "width": 619.484375,
+            "height": 412.984375
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s26",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 177,
+            "top": 323.265625,
+            "width": 619.484375,
+            "height": 412.984375
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s54",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-germany-lukas.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 177,
+            "top": 303.265625,
+            "width": 619.484375,
+            "height": 412.984375
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "natural": [200, 150],
+          "rect": {
+            "left": 748.484375,
+            "top": 724.25,
+            "width": 48,
+            "height": 32
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s2",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-baking.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 281,
+            "top": 202.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 727,
+            "top": 202.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 281,
+            "top": 504.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-guitar.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 727,
+            "top": 504.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s21",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 281,
+            "top": 202.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-shopping.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 727,
+            "top": 202.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-tv.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 281,
+            "top": 504.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 727,
+            "top": 504.75,
+            "width": 432,
+            "height": 288
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s31",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 217,
+            "top": 398.828125,
+            "width": 392.796875,
+            "height": 261.859375
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s32",
+      "state": "scene",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 217,
+            "top": 398.828125,
+            "width": 392.796875,
+            "height": 261.859375
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "clue0",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-muddy-shoes.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 230,
+            "top": 352.515625,
+            "width": 304,
+            "height": 225
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "answer0",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 230,
+            "top": 352.515625,
+            "width": 304,
+            "height": 225
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "answer1",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 568,
+            "top": 352.515625,
+            "width": 304,
+            "height": 225
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s1",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 301.296875,
+            "width": 171,
+            "height": 113.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 202,
+            "top": 301.296875,
+            "width": 171,
+            "height": 113.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 428.625,
+            "width": 171,
+            "height": 113.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 202,
+            "top": 428.625,
+            "width": 171,
+            "height": 113.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 555.953125,
+            "width": 171,
+            "height": 113.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 202,
+            "top": 555.953125,
+            "width": 171,
+            "height": 113.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s24",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 33,
+            "top": 281.640625,
+            "width": 324,
+            "height": 216
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s26",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 33,
+            "top": 281.640625,
+            "width": 324,
+            "height": 216
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "a1-01",
+      "id": "s54",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-germany-lukas.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 33,
+            "top": 261.640625,
+            "width": 324,
+            "height": 216
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "natural": [200, 150],
+          "rect": {
+            "left": 309,
+            "top": 485.640625,
+            "width": 48,
+            "height": 32
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s2",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-baking.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 170.28125,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 421.609375,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 672.9375,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-guitar.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 924.265625,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s21",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 169.875,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-shopping.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 421.203125,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-tv.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 672.53125,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 17,
+            "top": 923.859375,
+            "width": 356,
+            "height": 237.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s31",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 29,
+            "top": 273.359375,
+            "width": 332,
+            "height": 221.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s32",
+      "state": "scene",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 29,
+            "top": 346.359375,
+            "width": 332,
+            "height": 221.328125
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "clue0",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-muddy-shoes.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 46,
+            "top": 361.609375,
+            "width": 298,
+            "height": 211
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "answer0",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 46,
+            "top": 361.609375,
+            "width": 298,
+            "height": 211
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "answer1",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 46,
+            "top": 593.5,
+            "width": 298,
+            "height": 211
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "clue1",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-hot.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 568,
+            "top": 365.953125,
+            "width": 304,
+            "height": 225
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "clue2",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-wet-shirt.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 906,
+            "top": 365.953125,
+            "width": 304,
+            "height": 225
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "answer2",
+      "width": 1440,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bus.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 906,
+            "top": 352.515625,
+            "width": 304,
+            "height": 225
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "clue1",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-hot.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 46,
+            "top": 619.5,
+            "width": 298,
+            "height": 211
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "clue2",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-wet-shirt.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 46,
+            "top": 371.390625,
+            "width": 298,
+            "height": 211
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "material": "b1-01",
+      "id": "s11",
+      "state": "answer2",
+      "width": 390,
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bus.webp",
+          "natural": [768, 512],
+          "rect": {
+            "left": 46,
+            "top": 371.390625,
+            "width": 298,
+            "height": 211
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    }
+  ]
+}

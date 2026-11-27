@@ -1,0 +1,555 @@
+{
+  "version": 81,
+  "code": "B1.08",
+  "key": "b1-08",
+  "title": "I’m getting used to the cold",
+  "goal": "Explain what feels familiar now and what you are still adapting to",
+  "freeConversationInstruction": "Talk about changes in routine and share how you adapt to unfamiliar situations",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Think of an old habit that has changed",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What did you use to do differently?",
+          "hint": "I used to …",
+          "cue": "Describe a former habit"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What is your routine now?",
+          "hint": "Now I …",
+          "cue": "Compare your current routine"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What helped you make the change?",
+          "hint": "… helped me …",
+          "cue": "Explain what helped you change"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Words for i’m getting used to the cold",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B108-V81.0",
+          "word": "settle in",
+          "translation": "",
+          "example": "It takes time to settle in",
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "settle in",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B108-FS81.0",
+          "audioText": "settle in. It takes time to settle in."
+        },
+        {
+          "id": "B108-V81.1",
+          "word": "commute",
+          "translation": "",
+          "example": "My commute is easier now",
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "commute",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B108-FS81.1",
+          "audioText": "commute. My commute is easier now."
+        },
+        {
+          "id": "B108-V81.2",
+          "word": "dress in layers",
+          "translation": "",
+          "example": "I’m getting used to dressing in layers",
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "dress in layers",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B108-FS81.2",
+          "audioText": "dress in layers. I’m getting used to dressing in layers."
+        },
+        {
+          "id": "B108-V81.3",
+          "word": "feel homesick",
+          "translation": "",
+          "example": "It’s normal to feel homesick sometimes",
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "feel homesick",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B108-FS81.3",
+          "audioText": "feel homesick. It’s normal to feel homesick sometimes."
+        },
+        {
+          "id": "B108-V81.4",
+          "word": "make friends",
+          "translation": "",
+          "example": "The weekly group helped me make friends",
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "make friends",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B108-FS81.4",
+          "audioText": "make friends. The weekly group helped me make friends."
+        },
+        {
+          "id": "B108-V81.5",
+          "word": "adjust your routine",
+          "translation": "",
+          "example": "You may need to adjust your routine",
+          "imageUrl": "b1-08-vocabulary81",
+          "imageAlt": "adjust your routine",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B108-FS81.5",
+          "audioText": "adjust your routine. You may need to adjust your routine."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "I’m getting used to the cold",
+      "paragraphs": [
+        "Fictional relocation profile: previously drove most places. Now takes the bus and checks the timetable. Joined a weekly social group. Cold weather and occasional homesickness remain difficult. These are role facts, not a permanent biography for the speakers."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A new routine",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B108-D81.1",
+          "speaker": "Kim",
+          "text": "How are you settling in? Is the new routine getting easier?",
+          "audioText": "How are you settling in? Is the new routine getting easier?",
+          "translation": "Como está a adaptação? A nova rotina está ficando mais fácil?"
+        },
+        {
+          "id": "B108-D81.2",
+          "speaker": "Ana",
+          "text": "Some parts are. I’m used to taking the bus now, but the cold still surprises me",
+          "audioText": "Some parts are. I’m used to taking the bus now, but the cold still surprises me.",
+          "translation": "Algumas partes, sim. Já estou acostumada a pegar o ônibus, mas o frio ainda me surpreende"
+        },
+        {
+          "id": "B108-D81.3",
+          "speaker": "Kim",
+          "text": "Did you use to drive everywhere before the move?",
+          "audioText": "Did you use to drive everywhere before the move?",
+          "translation": "Você costumava ir a todos os lugares de carro antes da mudança?"
+        },
+        {
+          "id": "B108-D81.4",
+          "speaker": "Ana",
+          "text": "I did. At first I missed the last bus twice because I didn’t check the timetable",
+          "audioText": "I did. At first I missed the last bus twice because I didn’t check the timetable.",
+          "translation": "Sim. No começo perdi o último ônibus duas vezes porque não olhei os horários"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What is Ana used to doing now?",
+          "hint": "She’s used to …",
+          "answer": "Ana is used to taking the bus now"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How did she usually travel before moving?",
+          "hint": "She used to …",
+          "answer": "Ana used to drive everywhere"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why did she miss the last bus at first?",
+          "hint": "She didn’t …",
+          "answer": "Ana missed the last bus because she didn’t check the timetable"
+        }
+      ],
+      "dialogueGroup": "b1-08.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What has helped?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B108-D81.5",
+          "speaker": "Kim",
+          "text": "What helped you get used to it?",
+          "audioText": "What helped you get used to it?",
+          "translation": "O que ajudou você a se acostumar?"
+        },
+        {
+          "id": "B108-D81.6",
+          "speaker": "Ana",
+          "text": "Planning the journey before leaving. I’m still getting used to dressing in layers, though",
+          "audioText": "Planning the journey before leaving. I’m still getting used to dressing in layers, though.",
+          "translation": "Planejar o trajeto antes de sair. Mas ainda estou me acostumando a vestir várias camadas"
+        },
+        {
+          "id": "B108-D81.7",
+          "speaker": "Kim",
+          "text": "And have you had time to make friends?",
+          "audioText": "And have you had time to make friends?",
+          "translation": "E teve tempo para fazer amigos?"
+        },
+        {
+          "id": "B108-D81.8",
+          "speaker": "Ana",
+          "text": "A little. I’ve joined a weekly group, and that makes the place feel less unfamiliar",
+          "audioText": "A little. I’ve joined a weekly group, and that makes the place feel less unfamiliar.",
+          "translation": "Um pouco. Entrei em um grupo semanal e isso faz o lugar parecer menos desconhecido"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What helped Ana adapt to bus journeys?",
+          "hint": "… helped her",
+          "answer": "Planning the journey before leaving helped Ana adapt"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What is she still getting used to?",
+          "hint": "She’s still getting used to …",
+          "answer": "Ana is still getting used to dressing in layers"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How is she making the place feel more familiar?",
+          "hint": "She’s joined …",
+          "answer": "Ana has joined a weekly group"
+        }
+      ],
+      "dialogueGroup": "b1-08.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Talk about a new routine",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What are you still getting used to?",
+          "cue": "Describe a real or imagined change",
+          "hint": "I’m still getting used to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What has become easier?",
+          "cue": "Explain something that now feels normal",
+          "hint": "I’m used to … now, but at first …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What advice would you give me if I tried it?",
+          "cue": "Explain one useful habit and invite a follow-up",
+          "hint": "At first, … Now I’m used to … You could …",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "An old habit, a new normal or an ongoing adjustment?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An old habit",
+          "verb": "used to + base verb",
+          "example": "I used to drive everywhere"
+        },
+        {
+          "id": "1",
+          "subject": "Something feels normal now",
+          "verb": "be used to + noun / -ing",
+          "example": "I’m used to taking the bus"
+        },
+        {
+          "id": "2",
+          "subject": "The adaptation is still happening",
+          "verb": "get used to + noun / -ing",
+          "example": "I’m getting used to dressing in layers"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Help someone settle in",
+      "instruction": "Tell me what is getting easier and what is still difficult",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "An honest update",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day",
+      "audioText": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day.",
+      "audioId": "B108-W141.1",
+      "greeting": "I’m getting used to some things here",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What is easier about the bus routine now?",
+          "hint": "The speaker is used to …",
+          "answer": "The speaker is used to checking the timetable and no longer misses the last bus"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What is still difficult during the day?",
+          "hint": "Deciding … is still difficult",
+          "answer": "Deciding what to wear in changing weather is still difficult"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How does the speaker sometimes feel in the evening?",
+          "hint": "They sometimes feel …",
+          "answer": "The speaker sometimes feels homesick in the evening"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Niamh"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "B108-W141.2",
+          "audioText": "I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience.",
+          "message": "I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience",
+          "timestamp": "10:02"
+        }
+      ]
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Respond to both sides of the update",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Get used to a different workday",
+      "instruction": "Watch the choices a distributed team can make, then describe a change you are adapting to",
+      "minutes": 4,
+      "video": {
+        "videoId": "x6fIseKzzH0",
+        "startSeconds": 95,
+        "endSeconds": 119,
+        "title": "Matt Mullenweg — Why working from home is good for business — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "b1-08.video102.q1",
+          "prompt": "Who can choose their own schedule in his example?",
+          "hint": "Listen for the exception about specific hours",
+          "answer": "People whose roles don’t require specific hours can choose their schedule"
+        },
+        {
+          "id": "b1-08.video102.q2",
+          "prompt": "Which two examples affect sound in the work environment?",
+          "hint": "Listen for music and its opposite",
+          "answer": "Workers can choose music or silence"
+        },
+        {
+          "id": "b1-08.video102.q3",
+          "prompt": "What travel time can workers save?",
+          "hint": "Listen to the final sentence",
+          "answer": "They can save commuting time"
+        },
+        {
+          "id": "b1-08.video102.q4",
+          "prompt": "What change are you getting used to, and what is already familiar?",
+          "hint": "Contrast getting used to with used to plus a noun or -ing",
+          "answer": "Example: I’m getting used to starting early, but I’m already used to working from home"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explain what feels familiar now and what you are still adapting to"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Adaptation is uneven",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Before",
+          "value": "Drove most places"
+        },
+        {
+          "id": "1",
+          "label": "Easier now",
+          "value": "Bus journeys · checking the timetable"
+        },
+        {
+          "id": "2",
+          "label": "Still difficult",
+          "value": "Cold weather · what to wear"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What did this person use to do before moving?",
+          "hint": "They used to …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What are they used to now?",
+          "hint": "They’re used to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What are they still getting used to?",
+          "hint": "They’re still getting used to …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Adaptation is uneven"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Practical, not automatic advice",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Progress",
+          "value": "Bus routine feels familiar"
+        },
+        {
+          "id": "1",
+          "label": "Difficulty",
+          "value": "Changing weather · evenings away from home"
+        },
+        {
+          "id": "2",
+          "label": "Support already tried",
+          "value": "A weekly group"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you acknowledge both progress and difficulty?",
+          "hint": "You’re used to … now, but …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What would you ask about the difficult evenings?",
+          "hint": "What do you miss about …? When do you …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What suggestion could you offer after listening?",
+          "hint": "When I was getting used to …, … helped. Would …?"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "Practical, not automatic advice"
+    }
+  }
+}

@@ -94,6 +94,73 @@
   require bundle and package smoke checks.
 - Do not add an implicit global stylesheet requirement or rely on consumer import order.
 
+## Interactive lesson defaults
+
+- Before planning or revising lesson content, read [content planning guidelines](docs/materials/content-planning-guidelines.md). For a new material, follow the
+  [consolidated authoring and launch workflow](docs/materials/material-authoring-playbook.md) before generating media.
+  Maintain that central guide in the same delivery when user feedback establishes a reusable rule.
+  Read/update [character continuity](docs/characters/characters.md) before introducing new facts about named characters.
+  Guided dialogue and comprehension share SlidePage’s two-column questions slot. Comprehension uses
+  the canonical QuestionList with at least three meaningful questions per block, full-sentence factual
+  answers and hints that replace answers in the same content-sized slot. Use individual equal-width
+  cards with natural height, small white numbers on the same solid brand fill as Play, and medium-weight prompts. Reuse the starred Questions
+  eyebrow and one progressive bulb immediately below the last card, aligned right. Do not invent answers for open
+  practice or add repetitive questions just to meet the minimum. Live personal practice
+  keeps canonical bubbles with at least three meaningful pairs. Names remain visible in compact dialogue.
+  Open review and oral reply pages also use live participant bubbles with first-click response support;
+  do not mistake them for factual comprehension merely because their data contains questions.
+  Preserve useful visual choices, gaps and other task variations when revising a lesson renderer.
+  Independent introductory vocabulary groups each contain at least six items; do not combine unrelated
+  groups to meet the count. Portal flashcard sets contain at least twenty distinct, useful words or
+  expressions tied to their lesson and level; keep the six-item introduction rule separate. Continued dialogues and supplementary references need an explicit purpose.
+  New or replanned full guided dialogues and role-play models have at least six meaningful turns; isolated vocabulary objects
+  use transparent assets. Do not expand unrelated lessons or start extra QA/automation from this rule.
+  Grammar explanation pages contain meaning, form and examples only; put quizzes and evaluated practice on separate pages.
+
+- Reviewed UI Library components take precedence over historical Claude Design implementations.
+  Reuse them first; add semantic variations to their canonical owners before consuming them.
+  New reusable visual or interaction patterns belong in `src/components`, not copied lesson markup.
+
+- Material participant labels consume `useMaterialTeacher()` directly: its shared resolver supplies
+  the first name/photo or `Teacher`, plus `identified` for real-name introductions. Do not split
+  teacher names or repeat role fallbacks in individual lessons. Natural instruction copy such as
+  “Ask your teacher” and recorded character identities keep their own meaning.
+
+- Apply reusable exercise changes in canonical components and shared lesson helpers, then adopt
+  them in every maintained material, the UX Lab and its originals. Do not fix one exported HTML
+  while leaving the source component with the old behavior.
+- Keep learner instructions short, clear and in English. Keep optional Portuguese translations
+  behind a click on the original text; reveal answers below the question without a separate
+  show/hide button.
+- Keep manually revealed vocabulary labels static. Use the same numbered marker component for
+  exercise questions and conversation prompts, vertically centered with the question itself.
+- Use Montserrat for body text, prompts, dialogue, vocabulary, labels and controls. Reserve Space
+  Grotesk for titles and headings; question text is body content even when large.
+- Vocabulary hint/show controls use the shared centered bulb and eye IconButtons, preserving their
+  accessible labels and pressed states. Do not replace them with text buttons in individual lessons.
+- Reveal tables keep the full answer cell mounted with reserved dimensions before and after reveal.
+  Hidden content must be inert and inaccessible until revealed. Keep audio click-driven and avoid
+  hover-triggered changes. Reuse the standard table appearance and hide a repeated caption visually
+  through its semantic prop rather than creating a separate layout.
+- Center dialogue text within equal vertical padding. Keep audio beside the English text, with
+  translations below; revealing a translation must not move the audio control.
+- Warm-up choices communicate correctness with the option states, without success banners or
+  explanations of wrong answers. Use ExercisePanel's warmup variant with the image above the
+  options; align the header, image and options to the same centered column. Place short progress
+  counters inside the image in a small rounded translucent badge. Do not reserve a separate row
+  or extra top padding for the counter. Keep the header-to-image gap on the compact spacing scale.
+- Selected conversation choices use the canonical dark green with readable white text. Preserve
+  intentional color sequences on speaking activity markers; do not normalize them globally.
+- Reuse prepared ElevenLabs recordings and native players; preload before the click and retain
+  buffers between plays. Do not replace recordings with browser speech or regenerate valid media.
+- New listening pages use the native phone play control, automatic third-listen transcript reveal,
+  and one canonical manual show/hide transcript control per recording. Do not duplicate replay or
+  transcript controls in lesson markup. Count real playback passes rather than pauses/resumes.
+  Keep phone proportions consistent and resolve transcript sizing from its theme.
+- Keep flag assets at their natural proportions, without added white frames or backgrounds.
+  Preserve white that is part of an official flag. Single-round timers omit the round label and
+  the numeric suffix on Start.
+
 ## Progressive guidance
 
 Owned component and live catalog presentation uses tagged styled-components. `pnpm run test:styling-system` rejects authored CSS/Sass/Less, JSX/HTML style, attrs style objects and manual DOM CSS writes. Package font stylesheets are allowed; generated bundles require exact reviewed source and asset provenance. Keep these checks in the existing release gate.
@@ -108,3 +175,7 @@ load it for simple read-only answers or isolated documentation.
 - API/package: `pnpm run check:api`, `pnpm run test:bundle`, `pnpm run test:package`
 - CI-owned direct/indirect UI gate: `pnpm run validate:ui`
 - Storybook: `pnpm run storybook`, `pnpm run build:storybook`
+
+## Validation proportionality — owner feedback 24 November 2026
+
+For content counts, copy and small lesson adjustments, use one authorship check and a focused representative interaction/layout check. Reuse passing evidence when relevant inputs are unchanged. Do not recapture every material, repeat full catalog visual matrices or rebuild/redeploy intermediate refinements by default. A general content review does not itself justify a general UI audit. Expand validation only for a concrete unresolved risk; keep future fixes prompt-sized.

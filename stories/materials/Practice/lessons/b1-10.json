@@ -1,0 +1,255 @@
+{
+  "key": "b1-10",
+  "code": "B1.10",
+  "title": "Could you tell me where it is?",
+  "first": {
+    "id": "course-practice-b1-10-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-10-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "the exit is?"
+          },
+          {
+            "id": "b",
+            "text": "is the exit?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A pergunta já começa com could you tell me. Dentro dela, usamos a ordem de uma afirmação: the exit is, não is the exit. Por isso: “Could you tell me where the exit is?”"
+          },
+          "wrong": {
+            "title": "A pergunta já começa com could you tell me.",
+            "message": "Dentro dela, usamos a ordem de uma afirmação: the exit is, não is the exit. Por isso: “Could you tell me where the exit is?”"
+          }
+        },
+        "context": "Could you tell me where ___"
+      },
+      {
+        "id": "course-b1-10-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de if, a parte interna mantém a ordem the tour is included. A inversão da pergunta fica só no começo: do you know. Por isso: “Do you know if the tour is included?”"
+          },
+          "wrong": {
+            "title": "Depois de if, a parte interna mantém a ordem the tour is included.",
+            "message": "A inversão da pergunta fica só no começo: do you know. Por isso: “Do you know if the tour is included?”"
+          }
+        },
+        "context": "Do you know if is the tour included?"
+      },
+      {
+        "id": "course-b1-10-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "Do you know when does the museum close?"
+          },
+          {
+            "id": "b",
+            "text": "Do you know when the museum closes?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Dentro da pergunta indireta, usamos when the museum closes. Não acrescentamos does nessa parte interna. Por isso: “Do you know when the museum closes?”"
+          },
+          "wrong": {
+            "title": "Dentro da pergunta indireta, usamos when the museum closes.",
+            "message": "Não acrescentamos does nessa parte interna. Por isso: “Do you know when the museum closes?”"
+          }
+        }
+      },
+      {
+        "id": "course-b1-10-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "is the cloakroom?"
+          },
+          {
+            "id": "a",
+            "text": "the cloakroom is?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui a pergunta é direta, sem uma expressão antes. Por isso is vem antes de the cloakroom. Por isso: “Where is the cloakroom?”"
+          },
+          "wrong": {
+            "title": "Aqui a pergunta é direta, sem uma expressão antes.",
+            "message": "Por isso is vem antes de the cloakroom. Por isso: “Where is the cloakroom?”"
+          }
+        },
+        "context": "Where ___"
+      },
+      {
+        "id": "course-b1-10-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na parte interna da pergunta, o sujeito I vem antes de can. A ordem can I ficaria em uma pergunta direta. Por isso: “Could you tell me where I can leave my bag?”"
+          },
+          "wrong": {
+            "title": "Na parte interna da pergunta, o sujeito I vem antes de can.",
+            "message": "A ordem can I ficaria em uma pergunta direta. Por isso: “Could you tell me where I can leave my bag?”"
+          }
+        },
+        "context": "Could you tell me where I can leave my bag?"
+      },
+      {
+        "id": "course-b1-10-q06",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "b",
+            "text": "Do you know if tickets are available?"
+          },
+          {
+            "id": "a",
+            "text": "Do you know if are tickets available?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de if, usamos a ordem de afirmação: tickets are available. A inversão já está em do you know. Por isso: “Do you know if tickets are available?”"
+          },
+          "wrong": {
+            "title": "Depois de if, usamos a ordem de afirmação: tickets are available.",
+            "message": "A inversão já está em do you know. Por isso: “Do you know if tickets are available?”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-10.shadowing.01",
+        "displayText": "Could you tell me where the guided tour starts?",
+        "translation": "Pode me dizer onde começa a visita guiada?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-10.shadowing.02",
+        "displayText": "At the reception desk at ten. The talk is later, at eleven thirty",
+        "translation": "Na recepção às dez. A palestra é depois, às onze e meia",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-10.shadowing.03",
+        "displayText": "Do you know if the tour is included in the entrance fee?",
+        "translation": "Você sabe se a visita está incluída no ingresso?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-10.shadowing.04",
+        "displayText": "The standard tour is included. The special workshop costs extra",
+        "translation": "A visita normal está incluída. A oficina especial custa à parte",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-10.shadowing.05",
+        "displayText": "Thanks. Could you tell me where I can leave my bag?",
+        "translation": "Obrigada. Pode me dizer onde posso deixar minha bolsa?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-10.shadowing.06",
+        "displayText": "There’s a cloakroom on the ground floor, beside the information point",
+        "translation": "Tem um guarda-volumes no térreo, ao lado do ponto de informações",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-10.shadowing.07",
+        "displayText": "And is the talk still in room two?",
+        "translation": "E a palestra continua na sala dois?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-10.shadowing.08",
+        "displayText": "That’s what the timetable says. Please check the board before you go",
+        "translation": "É o que diz a programação. Confira o quadro antes de ir",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: ask polite follow-up questions to plan a visit",
+    "duration": "60–90 seconds",
+    "starters": [
+      "Where is…?",
+      "Could you tell me where…?",
+      "Do you know if…?"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Perguntas com educação",
+    "first": "Resolver o quiz sobre perguntas indiretas",
+    "shadowing": "Ouvir e repetir as perguntas educadas para pedir informações",
+    "voice": "Mandar um áudio em inglês para a teacher pedindo informações sobre uma visita e fazendo perguntas para esclarecer os detalhes. Termine com uma pergunta"
+  }
+}

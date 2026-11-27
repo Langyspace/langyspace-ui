@@ -19,7 +19,8 @@ export const Surface = styled(Stack)`
   font-family: ${theme.typography.fontFamily.sans};
   line-height: 1.5;
 `
-export const Row = styled.div`
+export const Row = styled.div<{ $justify?: 'start' | 'center' | 'end' }>`
+  justify-content: ${(p) => (p.$justify === 'center' ? 'center' : p.$justify === 'end' ? 'flex-end' : undefined)};
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -41,15 +42,27 @@ export const Hint = styled.p`
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.5;
 `
-export const Heading = styled.h3`
+export const Heading = styled.h3<{
+  $prompt?: boolean
+  $align?: 'start' | 'center'
+}>`
   margin: 0;
+  text-align: ${(p) => p.$align};
   color: inherit;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${(p) => (p.$prompt ? theme.typography.fontFamily.sans : recipe(p).displayFontFamily)};
   font-size: ${theme.typography.fontSize.xl};
   line-height: 1.2;
 `
+export const Paragraph = styled.p`
+  margin: 0;
+  color: inherit;
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.45;
+  white-space: pre-line;
+`
 export const Tag = styled.span`
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.08em;
@@ -66,8 +79,19 @@ export const Chip = styled.span`
   font-size: ${theme.typography.fontSize.sm};
   background: ${(p) => recipe(p).canvas};
 `
+/** Spoken reference prompts need screen-share contrast independently of the slide theme. */
+export const SpokenPrompt = styled(Chip)`
+  background: ${theme.colors.palette.white};
+  color: ${theme.colors.palette.black};
+  border-color: ${theme.colors.palette.white};
+  padding: ${theme.spacing[2]} ${theme.spacing[3]};
+  font-size: ${theme.typography.fontSize.md};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: ${theme.typography.lineHeight.snug};
+  text-align: center;
+`
 export const Action = styled(Button)`
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
 `
 export const Number = styled.span`
   display: inline-grid;

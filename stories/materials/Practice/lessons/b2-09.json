@@ -1,0 +1,279 @@
+{
+  "key": "b2-09",
+  "code": "B2.09",
+  "title": "I don’t remember locking the door",
+  "first": {
+    "id": "course-practice-b2-09-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-09-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "remember"
+          },
+          {
+            "id": "b",
+            "text": "remember to"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Você está dizendo que tem a lembrança da ação. Para essa memória, usamos remember com o verbo em ing: locking. Por isso: “I remember locking the door”"
+          },
+          "wrong": {
+            "title": "Você está dizendo que tem a lembrança da ação.",
+            "message": "Para essa memória, usamos remember com o verbo em ing: locking. Por isso: “I remember locking the door”"
+          }
+        },
+        "context": "I ___ locking the door"
+      },
+      {
+        "id": "course-b2-09-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui é um lembrete de uma tarefa que precisa ser feita. Usamos remember to e depois o verbo básico unplug. Por isso: “Remember to unplug the iron”"
+          },
+          "wrong": {
+            "title": "Aqui é um lembrete de uma tarefa que precisa ser feita.",
+            "message": "Usamos remember to e depois o verbo básico unplug. Por isso: “Remember to unplug the iron”"
+          }
+        },
+        "context": "Remember to unplug the iron"
+      },
+      {
+        "id": "course-b2-09-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "I forgot to closing the window"
+          },
+          {
+            "id": "a",
+            "text": "I forgot to close the window"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para contar uma tarefa que você esqueceu de fazer, usamos forgot to mais o verbo básico. Então fica close, não closing. Por isso: “I forgot to close the window”"
+          },
+          "wrong": {
+            "title": "Para contar uma tarefa que você esqueceu de fazer, usamos forgot to mais o verbo básico.",
+            "message": "Então fica close, não closing. Por isso: “I forgot to close the window”"
+          }
+        }
+      },
+      {
+        "id": "course-b2-09-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "shutting"
+          },
+          {
+            "id": "b",
+            "text": "shut"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Eles têm a lembrança de fechar as janelas. Para lembrar uma ação, usamos remember com o verbo em ing, não o verbo básico. Por isso: “They remember shutting the windows”"
+          },
+          "wrong": {
+            "title": "Eles têm a lembrança de fechar as janelas.",
+            "message": "Para lembrar uma ação, usamos remember com o verbo em ing, não o verbo básico. Por isso: “They remember shutting the windows”"
+          }
+        },
+        "context": "They remember ___ the windows"
+      },
+      {
+        "id": "course-b2-09-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de did, o verbo principal volta para remember. O restante continua to lock, porque a pergunta é sobre não esquecer uma tarefa. Por isso: “Did you remember to lock the door?”"
+          },
+          "wrong": {
+            "title": "Depois de did, o verbo principal volta para remember.",
+            "message": "O restante continua to lock, porque a pergunta é sobre não esquecer uma tarefa. Por isso: “Did you remember to lock the door?”"
+          }
+        },
+        "context": "Did you remembered to lock the door?"
+      },
+      {
+        "id": "course-b2-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Don’t forget to take your keys"
+          },
+          {
+            "id": "a",
+            "text": "Don’t forget to taking your keys"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O lembrete é para pegar as chaves. Depois de don’t forget to, usamos take na forma básica, sem ing. Por isso: “Don’t forget to take your keys”"
+          },
+          "wrong": {
+            "title": "O lembrete é para pegar as chaves.",
+            "message": "Depois de don’t forget to, usamos take na forma básica, sem ing. Por isso: “Don’t forget to take your keys”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-09-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-09.shadowing.01",
+        "displayText": "I can’t remember locking the front door",
+        "translation": "Não me lembro de ter trancado a porta da frente",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b2-09.shadowing.02",
+        "displayText": "I remember seeing you turn the key",
+        "translation": "Lembro-me de ter visto você girar a chave",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b2-09.shadowing.03",
+        "displayText": "That’s reassuring. Did you remember to turn off the stove?",
+        "translation": "Que bom. Você se lembrou de desligar o fogão?",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b2-09.shadowing.04",
+        "displayText": "Yes. I checked it just before we left",
+        "translation": "Sim. Verifiquei isso pouco antes de sairmos",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b2-09.shadowing.05",
+        "displayText": "I remembered to close the window, but I forgot to water the plants",
+        "translation": "Lembrei-me de fechar a janela, mas esqueci-me de regar as plantas",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b2-09.shadowing.06",
+        "displayText": "That can wait until we get back",
+        "translation": "Isso pode esperar até voltarmos",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b2-09.shadowing.07",
+        "displayText": "I always seem to forget something when I’m in a hurry",
+        "translation": "Sempre acabo esquecendo alguma coisa quando estou com pressa",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b2-09.shadowing.08",
+        "displayText": "Maybe try keeping a short checklist by the door",
+        "translation": "Talvez seja uma boa ideia manter uma pequena lista de verificação perto da porta",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b2-09.shadowing.09",
+        "displayText": "I tried making one on my phone, but I never looked at it",
+        "translation": "Tentei fazer um no meu celular, mas nunca cheguei a olhar para ele",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b2-09.shadowing.10",
+        "displayText": "Then put it somewhere you’ll actually see it",
+        "translation": "Então coloque-o em algum lugar onde você realmente o veja",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b2-09.shadowing.11",
+        "displayText": "Good idea. And next time I’ll leave a spare key with a friend",
+        "translation": "Boa ideia. E da próxima vez deixarei uma chave reserva com um amigo",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b2-09.shadowing.12",
+        "displayText": "That would help. For now, we can enjoy the evening",
+        "translation": "Isso ajudaria. Por agora, podemos aproveitar a noite",
+        "speakerId": "arjun-mehta"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "priya-nair",
+        "name": "Priya",
+        "avatarUrl": "/flashcards/course-characters/priya-nair/image.webp",
+        "accentCode": "en-IN",
+        "accentLabel": "English · India"
+      },
+      {
+        "id": "arjun-mehta",
+        "name": "Arjun",
+        "avatarUrl": "/flashcards/course-characters/arjun-mehta/image.webp",
+        "accentCode": "en-IN",
+        "accentLabel": "English · India"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: distinguish a remembered action from an uncompleted task and give clear instructions",
+    "duration": "90–120 seconds",
+    "starters": [
+      "I remember…",
+      "Did you remember to…?",
+      "I forgot to…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Lembrei ou ainda preciso fazer?",
+    "first": "Resolver o quiz sobre a diferença entre remember doing e remember to do",
+    "shadowing": "Ouvir e repetir as frases para falar de lembranças e tarefas",
+    "voice": "Mandar um áudio em inglês para a teacher explicando o que você lembra de ter feito e o que ainda precisa fazer. Dê uma instrução clara para evitar uma confusão. Termine com uma pergunta"
+  }
+}

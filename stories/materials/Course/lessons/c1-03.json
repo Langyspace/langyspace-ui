@@ -1,0 +1,651 @@
+{
+  "version": 81,
+  "code": "C1.03",
+  "key": "c1-03",
+  "title": "The company is said to be…",
+  "goal": "Attribute a claim responsibly and revise it when the source changes",
+  "freeConversationInstruction": "Discuss how you evaluate information and explain uncertainty when sharing something with others",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how new evidence changes an explanation",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What does cautious wording leave unverified?",
+          "hint": "Saying … doesn’t establish …",
+          "cue": "Identify the unverified claim"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you attribute a claim clearly?",
+          "hint": "According to …, …",
+          "cue": "Attribute it to a source"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would a useful correction include?",
+          "hint": "I’d correct …, confirm … and leave … open",
+          "cue": "Describe a useful correction"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Claims, sources and verification",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C103-V81.0",
+          "word": "reportedly",
+          "translation": "",
+          "example": "Reportedly does not identify a source by itself",
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "reportedly",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C103-FS81.0",
+          "audioText": "reportedly. Reportedly does not identify a source by itself."
+        },
+        {
+          "id": "C103-V81.1",
+          "word": "an allegation",
+          "translation": "",
+          "example": "An allegation should not become a fact in the summary",
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "an allegation",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C103-FS81.1",
+          "audioText": "an allegation. An allegation should not become a fact in the summary."
+        },
+        {
+          "id": "C103-V81.2",
+          "word": "a reliable source",
+          "translation": "",
+          "example": "Check whether this is a reliable source for the particular claim",
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "a reliable source",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C103-FS81.2",
+          "audioText": "a reliable source. Check whether this is a reliable source for the particular claim."
+        },
+        {
+          "id": "C103-V81.3",
+          "word": "an unconfirmed report",
+          "translation": "",
+          "example": "This is still an unconfirmed report",
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "an unconfirmed report",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C103-FS81.3",
+          "audioText": "an unconfirmed report. This is still an unconfirmed report."
+        },
+        {
+          "id": "C103-V81.4",
+          "word": "an official statement",
+          "translation": "",
+          "example": "The official statement has a narrower scope",
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "an official statement",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C103-FS81.4",
+          "audioText": "an official statement. The official statement has a narrower scope."
+        },
+        {
+          "id": "C103-V81.5",
+          "word": "verify a claim",
+          "translation": "",
+          "example": "We need to verify the claim before sharing it",
+          "imageUrl": "c1-03-vocabulary81",
+          "imageAlt": "verify a claim",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C103-FS81.5",
+          "audioText": "verify a claim. We need to verify the claim before sharing it."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "A claim being circulated",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Neighbourhood post · simulated source",
+      "subject": "Permanent closure?",
+      "paragraphs": [
+        "A neighbourhood post says a familiar café is closing permanently. It links to a photograph of a sign but does not name anyone from the business or reproduce the complete notice. Several replies repeat the permanent-closure claim and add assumptions about the staff and the reasons. None of those additions has a source in the material provided.",
+        "The post may alert readers to a real change, but it does not establish the duration or scope of that change. A responsible summary should not inherit every confident statement in the replies. Before forwarding it, compare the full notice and identify which details the business itself has actually confirmed."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The narrower notice",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Café notice · simulated source",
+      "subject": "Service during renovation",
+      "paragraphs": [
+        "The café’s notice says the dining area will close for renovation. Delivery will continue while work is carried out. It asks customers to follow the café’s own updates for changes in service. The excerpt does not say that the business is permanently closing and does not make claims about staffing.",
+        "This is a simulated notice for source-comparison practice, not a report about a real business. It is more directly connected to the service decision than the neighbourhood replies, but that does not justify adding a reopening date or an explanation that is absent. The practical distinction is between a closed dining area and an entirely closed business."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A cautious phrase is not a source",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C103-D81.1",
+          "speaker": "Kim",
+          "text": "This post says the café is closing permanently. Would you share it?",
+          "audioText": "This post says the café is closing permanently. Would you share it?",
+          "translation": "Esta postagem diz que o café vai fechar definitivamente. Você compartilharia?"
+        },
+        {
+          "id": "C103-D81.2",
+          "speaker": "Ana",
+          "text": "Not as it stands. It doesn’t identify the source of that claim",
+          "audioText": "Not as it stands. It doesn’t identify the source of that claim.",
+          "translation": "Não desse jeito. Não identifica a fonte dessa afirmação"
+        },
+        {
+          "id": "C103-D81.3",
+          "speaker": "Kim",
+          "text": "The café is said to be closing, then? That sounds more cautious",
+          "audioText": "The café is said to be closing, then? That sounds more cautious.",
+          "translation": "Então dizem que o café vai fechar? Parece mais cauteloso"
+        },
+        {
+          "id": "C103-D81.4",
+          "speaker": "Ana",
+          "text": "Grammatically, yes, but it still passes on the claim without telling us who said it",
+          "audioText": "Grammatically, yes, but it still passes on the claim without telling us who said it.",
+          "translation": "Gramaticalmente, sim, mas ainda repassa a alegação sem dizer quem falou"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What claim does the post make?",
+          "hint": "It claims …",
+          "answer": "The post claims the café is closing permanently"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why won’t Ana share it as it stands?",
+          "hint": "It doesn’t identify …",
+          "answer": "The post doesn’t identify the source of its claim"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why doesn’t ‘is said to be’ resolve the problem?",
+          "hint": "It still … without …",
+          "answer": "It still circulates the claim without identifying who made it"
+        }
+      ],
+      "dialogueGroup": "c1-03.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Compare the actual notices",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C103-D81.5",
+          "speaker": "Kim",
+          "text": "The official notice says the dining area will close for renovation while delivery continues",
+          "audioText": "The official notice says the dining area will close for renovation while delivery continues.",
+          "translation": "O aviso oficial diz que o salão fechará para reforma enquanto as entregas continuam"
+        },
+        {
+          "id": "C103-D81.6",
+          "speaker": "Ana",
+          "text": "That confirms a temporary change in service, not the permanent end of the business",
+          "audioText": "That confirms a temporary change in service, not the permanent end of the business.",
+          "translation": "Isso confirma uma mudança temporária no serviço, não o fim definitivo do negócio"
+        },
+        {
+          "id": "C103-D81.7",
+          "speaker": "Kim",
+          "text": "Does it give a reopening date?",
+          "audioText": "Does it give a reopening date?",
+          "translation": "Informa uma data de reabertura?"
+        },
+        {
+          "id": "C103-D81.8",
+          "speaker": "Ana",
+          "text": "Not in this excerpt. We should check rather than turn an expectation into a date",
+          "audioText": "Not in this excerpt. We should check rather than turn an expectation into a date.",
+          "translation": "Não neste trecho. Devemos conferir em vez de transformar expectativa em data"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What change does the official notice confirm?",
+          "hint": "The dining area … while …",
+          "answer": "The dining area will close for renovation while delivery continues"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Does the notice establish permanent closure?",
+          "hint": "No, it confirms …",
+          "answer": "No, it confirms a temporary service change"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What information is absent from the excerpt?",
+          "hint": "It doesn’t give …",
+          "answer": "The excerpt doesn’t give a reopening date"
+        }
+      ],
+      "dialogueGroup": "c1-03.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "What would you share?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C103-D81.9",
+          "speaker": "Kim",
+          "text": "So I could say, according to the café’s notice, the dining area is closing for renovation",
+          "audioText": "So I could say, according to the café’s notice, the dining area is closing for renovation.",
+          "translation": "Então posso dizer: segundo o aviso do café, o salão vai fechar para reforma"
+        },
+        {
+          "id": "C103-D81.10",
+          "speaker": "Ana",
+          "text": "Yes, and keep the delivery detail because it changes what readers need to do",
+          "audioText": "Yes, and keep the delivery detail because it changes what readers need to do.",
+          "translation": "Sim, e mantenha o detalhe das entregas porque muda o que o público precisa fazer"
+        },
+        {
+          "id": "C103-D81.11",
+          "speaker": "Kim",
+          "text": "I’d also correct the permanent-closure claim if I’d already shared it",
+          "audioText": "I’d also correct the permanent-closure claim if I’d already shared it.",
+          "translation": "Eu também corrigiria a alegação de fechamento definitivo se já a tivesse compartilhado"
+        },
+        {
+          "id": "C103-D81.12",
+          "speaker": "Ana",
+          "text": "Exactly. Cautious wording doesn’t remove the responsibility to check and correct",
+          "audioText": "Exactly. Cautious wording doesn’t remove the responsibility to check and correct.",
+          "translation": "Exatamente. Uma formulação cautelosa não elimina a responsabilidade de verificar e corrigir"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "How should Kim attribute the update?",
+          "hint": "According to …",
+          "answer": "Kim should attribute the update to the café’s own notice"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why should the delivery detail be retained?",
+          "hint": "It changes …",
+          "answer": "The delivery detail changes what readers need to do"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What should Kim do if the original claim was already shared?",
+          "hint": "Kim should …",
+          "answer": "Kim should correct the unsupported permanent-closure claim"
+        }
+      ],
+      "dialogueGroup": "c1-03.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Check what the source confirms",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "A reporting structure must preserve attribution",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Report with an identified source",
+          "verb": "It is reported that … / According to …",
+          "example": "According to the café’s notice, the dining area will close for renovation"
+        },
+        {
+          "id": "1",
+          "subject": "A passive reporting structure",
+          "verb": "subject + is said to + verb",
+          "example": "The café is said to be closing — but who says so?"
+        },
+        {
+          "id": "2",
+          "subject": "An earlier alleged event",
+          "verb": "is thought / reported to have + participle",
+          "example": "It was reported to have closed; the current notice does not support that claim"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Decide what to share",
+      "instruction": "Separate confirmed facts, unsupported claims and unknowns, then decide what to share",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "No reopening date has been set",
+      "instruction": "Listen and answer, then open the video shared in the chat",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact?",
+      "audioText": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact?",
+      "audioId": "C103-W141.1",
+      "greeting": "Here’s another example of checking a claim before passing it on",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Which source should anchor the revised update?",
+          "hint": "It should be attributed to …",
+          "answer": "The revised update should be attributed to the café’s official notice"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What remains unknown?",
+          "hint": "A … has not …",
+          "answer": "A reopening date has not been set"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What is the useful next step for someone planning a visit?",
+          "hint": "They should … rather than …",
+          "answer": "They should check the café’s own updates rather than repeat the unverified post"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Owen"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "C103-W141.2",
+          "audioText": "Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently.",
+          "message": "Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently",
+          "timestamp": "10:02"
+        }
+      ],
+      "videoPageId": "s_video102"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Share a corrected update",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "A claim changes when the source changes",
+      "instruction": "Watch Noelia correct the news, then report it with accurate attribution",
+      "minutes": 4,
+      "video": {
+        "videoId": "sFcWuQzA3DQ",
+        "startSeconds": 89,
+        "endSeconds": 123,
+        "title": "Responding to news — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-03.video102.q1",
+          "prompt": "What source caused Noelia’s initial belief?",
+          "hint": "Listen to her explanation about the email",
+          "answer": "She received an email that led her to think she had won"
+        },
+        {
+          "id": "c1-03.video102.q2",
+          "prompt": "What correction does she make?",
+          "hint": "Listen for the contrast between herself and another person",
+          "answer": "She says the email was wrong and that someone else won"
+        },
+        {
+          "id": "c1-03.video102.q3",
+          "prompt": "Can the original message still support an unqualified claim that she won?",
+          "hint": "Explain what the correction changes",
+          "answer": "No. The corrected information withdraws the basis for that claim"
+        },
+        {
+          "id": "c1-03.video102.q4",
+          "prompt": "Report the update responsibly to someone who heard only the first news",
+          "hint": "Attribute the initial claim and make the correction clear",
+          "answer": "Example: Noelia was initially told she’d won, but she later said the email was incorrect and another person had received the award"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Attribute a claim responsibly and revise it when the source changes"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Source categories",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Confirmed",
+          "value": "Dining area renovation · delivery continues"
+        },
+        {
+          "id": "1",
+          "label": "Unsupported claim",
+          "value": "Permanent closure"
+        },
+        {
+          "id": "2",
+          "label": "Unknown",
+          "value": "Reopening date"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you distinguish confirmed and unsupported information?",
+          "hint": "The notice confirms …; it doesn’t support …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you handle the missing reopening date?",
+          "hint": "No date has …, so …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would you advise a prospective visitor to do?",
+          "hint": "Before travelling, check …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "A useful correction",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Source",
+          "value": "Café’s own notice"
+        },
+        {
+          "id": "1",
+          "label": "Service",
+          "value": "Dining area closed for renovation · delivery continues"
+        },
+        {
+          "id": "2",
+          "label": "Limit",
+          "value": "No reopening date yet"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you correct the permanent-closure claim?",
+          "hint": "My earlier update overstated …; according to …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Which practical service information would you retain?",
+          "hint": "Delivery …, while the dining area …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What limit would you state without inventing certainty?",
+          "hint": "We know …, but a … is not yet …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "A useful correction"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Confirmed",
+          "value": "Dining area renovation · delivery continues"
+        },
+        {
+          "id": "1",
+          "label": "Unsupported claim",
+          "value": "Permanent closure"
+        },
+        {
+          "id": "2",
+          "label": "Unknown",
+          "value": "Reopening date"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What can we actually confirm?",
+          "cue": "Separate verified information from the claim",
+          "hint": "The statement confirms …, but … is still unverified",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How would you pass this on responsibly?",
+          "cue": "Attribute the information and preserve its uncertainty",
+          "hint": "According to …, … is reported to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would you say if someone pressed you for certainty?",
+          "cue": "State the limits of the evidence and offer a useful next step",
+          "hint": "What I can confirm is … What remains unclear is … We could verify that by …",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

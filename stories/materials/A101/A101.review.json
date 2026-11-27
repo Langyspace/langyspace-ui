@@ -1,0 +1,769 @@
+{
+  "version": 80,
+  "code": "A1.01",
+  "title": "Introduce yourself",
+  "openingMinutes": 2,
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s_greetings",
+      "kind": "vocabulary",
+      "title": "Greetings",
+      "instruction": "Algumas palavras para cumprimentar as pessoas.",
+      "minutes": 2,
+      "eyebrow": "Vocabulary",
+      "alignHeading": true,
+      "items": [
+        {
+          "id": "greeting107.0",
+          "word": "Hello!",
+          "translation": "Olá!",
+          "imageUrl": "greeting-hello107",
+          "imageAlt": "Ana waving hello",
+          "audioId": "G107.0",
+          "audioText": "Hello!"
+        },
+        {
+          "id": "greeting107.1",
+          "word": "Good morning!",
+          "translation": "Bom dia!",
+          "imageUrl": "greeting-morning107",
+          "imageAlt": "Ana waving beside a window at sunrise",
+          "audioId": "G107.1",
+          "audioText": "Good morning!",
+          "badge": "07:00 a.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.2",
+          "word": "Good afternoon!",
+          "translation": "Boa tarde!",
+          "imageUrl": "greeting-afternoon107",
+          "imageAlt": "Ana waving in bright afternoon daylight",
+          "audioId": "G107.2",
+          "audioText": "Good afternoon!",
+          "badge": "12:00 p.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.3",
+          "word": "Good evening!",
+          "translation": "Boa noite! (ao chegar)",
+          "imageUrl": "greeting-evening107",
+          "imageAlt": "Ana and Kim greeting each other at dusk",
+          "audioId": "G107.3",
+          "audioText": "Good evening!",
+          "badge": "06:00 p.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.4",
+          "word": "Good night!",
+          "translation": "Boa noite! (ao se despedir para dormir)",
+          "imageUrl": "greeting-night107",
+          "imageAlt": "Kim saying good night to Ana as Ana goes to bed",
+          "audioId": "G107.4",
+          "audioText": "Good night!",
+          "badge": "10:00 p.m.",
+          "badgePosition": "end"
+        },
+        {
+          "id": "greeting107.5",
+          "word": "Nice to meet you!",
+          "translation": "Prazer em conhecer você!",
+          "imageUrl": "greeting-meeting107",
+          "imageAlt": "Ana and Kim smiling and shaking right hands",
+          "audioId": "G107.5",
+          "audioText": "Nice to meet you!"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "kind": "vocabulary",
+      "title": "How do you feel?",
+      "instruction": "Name the feelings, then click to check and listen",
+      "minutes": 3,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "vocab80.3",
+          "word": "Happy",
+          "translation": "feliz",
+          "imageUrl": "scene-happy-mia",
+          "imageAlt": "A smiling person celebrating",
+          "audioId": "ph_happy",
+          "audioText": "happy"
+        },
+        {
+          "id": "vocab80.4",
+          "word": "Tired",
+          "translation": "cansado(a)",
+          "imageUrl": "scene-tired-tom",
+          "imageAlt": "A tired person yawning",
+          "audioId": "ph_tired",
+          "audioText": "tired"
+        },
+        {
+          "id": "vocab80.5",
+          "word": "Hungry",
+          "translation": "com fome",
+          "imageUrl": "scene-hungry-ana",
+          "imageAlt": "Ana looking at food because she is hungry",
+          "audioId": "ph_hungry",
+          "audioText": "hungry"
+        },
+        {
+          "id": "vocab94.3",
+          "word": "Sad",
+          "translation": "triste",
+          "imageUrl": "scene-sad-josh",
+          "imageAlt": "Josh looking sad",
+          "audioId": "ph_sad",
+          "audioText": "sad"
+        },
+        {
+          "id": "vocab94.4",
+          "word": "Cold",
+          "translation": "com frio",
+          "imageUrl": "scene-cold-julia",
+          "imageAlt": "Julia wearing warm clothes because she is cold",
+          "audioId": "ph_cold",
+          "audioText": "cold"
+        },
+        {
+          "id": "vocab94.5",
+          "word": "Angry",
+          "translation": "com raiva",
+          "imageUrl": "scene-angry-leo",
+          "imageAlt": "Leo looking angry",
+          "audioId": "ph_angry",
+          "audioText": "angry"
+        }
+      ],
+      "alignHeading": true
+    },
+    {
+      "id": "s_visual1",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Tom?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-tired-tom",
+        "alt": "A tired person yawning"
+      },
+      "options": [
+        "He’s tired.",
+        "He’s cold.",
+        "He’s happy."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_visual2",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Julia?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-cold-julia",
+        "alt": "Julia wearing warm clothes because she is cold"
+      },
+      "options": [
+        "She’s hungry.",
+        "She’s cold.",
+        "She’s happy."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_visual3",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Josh?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-sad-josh",
+        "alt": "Josh looking sad"
+      },
+      "options": [
+        "He’s happy.",
+        "He’s tired.",
+        "He’s sad."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s_visual4",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Mia?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-happy-mia",
+        "alt": "A smiling person celebrating"
+      },
+      "options": [
+        "She’s happy.",
+        "She’s cold.",
+        "She’s tired."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_visual5",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Ana?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-hungry-ana",
+        "alt": "Ana looking at food because she is hungry"
+      },
+      "options": [
+        "She’s cold.",
+        "She’s hungry.",
+        "She’s angry."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_visual6",
+      "kind": "image-choice",
+      "choiceGroup": "feelings",
+      "title": "How is Leo?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · How do you feel?",
+      "image": {
+        "src": "scene-angry-leo",
+        "alt": "Leo looking angry"
+      },
+      "options": [
+        "He’s hungry.",
+        "He’s sad.",
+        "He’s angry."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s1",
+      "kind": "vocabulary",
+      "title": "Countries",
+      "instruction": "Name the countries, then click to check and listen",
+      "minutes": 2,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "vocab80.0",
+          "word": "Brazil",
+          "translation": "Brasil",
+          "imageUrl": "flag-br",
+          "imageAlt": "Flag of Brazil",
+          "example": "I’m from Brazil",
+          "audioId": "FS80.0",
+          "audioText": "Brazil. I’m from Brazil."
+        },
+        {
+          "id": "vocab80.1",
+          "word": "South Korea",
+          "translation": "Coreia do Sul",
+          "imageUrl": "flag-kr",
+          "imageAlt": "Flag of South Korea",
+          "example": "I’m from South Korea",
+          "audioId": "FS80.1",
+          "audioText": "South Korea. I’m from South Korea."
+        },
+        {
+          "id": "vocab80.2",
+          "word": "the United States",
+          "translation": "Estados Unidos",
+          "imageUrl": "flag-us",
+          "imageAlt": "Flag of the United States",
+          "example": "I’m from the United States",
+          "audioId": "FS80.2",
+          "audioText": "the United States. I’m from the United States."
+        },
+        {
+          "id": "vocab94.0",
+          "word": "Japan",
+          "translation": "Japão",
+          "imageUrl": "flag-jp",
+          "imageAlt": "Flag of Japan",
+          "example": "I’m from Japan",
+          "audioId": "FS94.0",
+          "audioText": "Japan. I’m from Japan."
+        },
+        {
+          "id": "vocab94.1",
+          "word": "Germany",
+          "translation": "Alemanha",
+          "imageUrl": "flag-de",
+          "imageAlt": "Flag of Germany",
+          "example": "I’m from Germany",
+          "audioId": "FS94.1",
+          "audioText": "Germany. I’m from Germany."
+        },
+        {
+          "id": "vocab94.2",
+          "word": "France",
+          "translation": "França",
+          "imageUrl": "flag-fr",
+          "imageAlt": "Flag of France",
+          "example": "I’m from France",
+          "audioId": "FS94.2",
+          "audioText": "France. I’m from France."
+        }
+      ],
+      "alignHeading": true,
+      "surface": "plain"
+    },
+    {
+      "id": "s_country107_1",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Ana from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-brazil-ana107",
+        "alt": "Ana wearing a Brazilian football jersey"
+      },
+      "imageBadge": {
+        "src": "flag-br",
+        "alt": "Flag of Brazil"
+      },
+      "options": [
+        "She’s from Japan.",
+        "She’s from France.",
+        "She’s from Brazil."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s_country107_2",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Jiwoo from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-korea-jiwoo",
+        "alt": "Jiwoo wearing a Korean hanbok"
+      },
+      "imageBadge": {
+        "src": "flag-kr",
+        "alt": "Flag of South Korea"
+      },
+      "options": [
+        "She’s from South Korea.",
+        "She’s from Germany.",
+        "She’s from Brazil."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_country107_3",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Hiro from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-japan-hiro",
+        "alt": "Hiro wearing a Japanese kimono and haori"
+      },
+      "imageBadge": {
+        "src": "flag-jp",
+        "alt": "Flag of Japan"
+      },
+      "options": [
+        "He’s from the United States.",
+        "He’s from Japan.",
+        "He’s from France."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s_country107_4",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Lukas from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-germany-lukas",
+        "alt": "Lukas wearing Bavarian traditional clothing"
+      },
+      "imageBadge": {
+        "src": "flag-de",
+        "alt": "Flag of Germany"
+      },
+      "options": [
+        "He’s from Brazil.",
+        "He’s from South Korea.",
+        "He’s from Germany."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "s_country107_5",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Chloé from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-france-chloe",
+        "alt": "Chloé wearing Breton stripes and a beret"
+      },
+      "imageBadge": {
+        "src": "flag-fr",
+        "alt": "Flag of France"
+      },
+      "options": [
+        "She’s from France.",
+        "She’s from Japan.",
+        "She’s from the United States."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "s_country107_6",
+      "kind": "image-choice",
+      "choiceGroup": "countries",
+      "title": "Where is Jake from?",
+      "instruction": "Choose the correct answer",
+      "minutes": 0.5,
+      "eyebrow": "Warm-up · Where are you from?",
+      "image": {
+        "src": "scene-usa-jake",
+        "alt": "Jake wearing Western clothing and a cowboy hat"
+      },
+      "imageBadge": {
+        "src": "flag-us",
+        "alt": "Flag of the United States"
+      },
+      "options": [
+        "He’s from Germany.",
+        "He’s from the United States.",
+        "He’s from South Korea."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "s6",
+      "kind": "dialogue",
+      "title": "Nice to meet you!",
+      "instruction": "Listen as Ana and Kim meet, then read together",
+      "minutes": 3,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "D110.1",
+          "speaker": "Ana",
+          "text": "Good morning! What's your name?",
+          "audioText": "Good morning! What's your name?",
+          "translation": "Bom dia! Qual é seu nome?"
+        },
+        {
+          "id": "D110.2",
+          "speaker": "Kim",
+          "text": "Good morning! My name is Kim. And you?",
+          "audioText": "Good morning! My name is Kim. And you?",
+          "translation": "Bom dia! Meu nome é Kim. E você?"
+        },
+        {
+          "id": "D110.3",
+          "speaker": "Ana",
+          "text": "I'm Ana. Nice to meet you!",
+          "audioText": "I'm Ana. Nice to meet you!",
+          "translation": "Eu sou a Ana. Prazer em te conhecer!"
+        },
+        {
+          "id": "D110.4",
+          "speaker": "Kim",
+          "text": "Nice to meet you, too! Where are you from?",
+          "audioText": "Nice to meet you, too! Where are you from?",
+          "translation": "Prazer em te conhecer também! De onde você é?"
+        },
+        {
+          "id": "D110.5",
+          "speaker": "Ana",
+          "text": "I'm from Brazil. How are you?",
+          "audioText": "I'm from Brazil. How are you?",
+          "translation": "Eu sou do Brasil. Como você está?"
+        },
+        {
+          "id": "D110.6",
+          "speaker": "Kim",
+          "text": "I'm good, thanks! I'm very happy today!",
+          "audioText": "I'm good, thanks! I'm very happy today!",
+          "translation": "Estou bem, obrigada! Estou muito feliz hoje!"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Do they meet in the morning or at night?",
+          "hint": "They meet in …",
+          "answer": "They meet in the morning"
+        },
+        {
+          "id": "d2",
+          "prompt": "Where is Ana from?",
+          "hint": "Ana is from …",
+          "answer": "Ana is from Brazil"
+        },
+        {
+          "id": "d3",
+          "prompt": "How is Kim today?",
+          "hint": "Kim is very … today",
+          "answer": "Kim is very happy today"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "kind": "dialogue",
+      "title": "Nice to meet you!",
+      "instruction": "Read aloud. Complete each gap, then click to check",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · Fill in the blanks",
+      "lines": [
+        {
+          "id": "D110.1",
+          "speaker": "Ana",
+          "text": "Good morning! What's your name?",
+          "audioText": "Good morning! What's your name?",
+          "translation": "Bom dia! Qual é seu nome?",
+          "parts": [
+            "",
+            {
+              "id": "introduction110.gap.1",
+              "answer": "Good morning"
+            },
+            "! What's your name?"
+          ]
+        },
+        {
+          "id": "D110.2",
+          "speaker": "Kim",
+          "text": "Good morning! My name is Kim. And you?",
+          "audioText": "Good morning! My name is Kim. And you?",
+          "translation": "Bom dia! Meu nome é Kim. E você?",
+          "parts": [
+            "Good morning! My ",
+            {
+              "id": "introduction110.gap.2",
+              "answer": "name"
+            },
+            " is Kim. And you?"
+          ]
+        },
+        {
+          "id": "D110.3",
+          "speaker": "Ana",
+          "text": "I'm Ana. Nice to meet you!",
+          "audioText": "I'm Ana. Nice to meet you!",
+          "translation": "Eu sou a Ana. Prazer em te conhecer!",
+          "parts": [
+            "I'm Ana. Nice to ",
+            {
+              "id": "introduction110.gap.3",
+              "answer": "meet you"
+            },
+            "!"
+          ]
+        },
+        {
+          "id": "D110.4",
+          "speaker": "Kim",
+          "text": "Nice to meet you, too! Where are you from?",
+          "audioText": "Nice to meet you, too! Where are you from?",
+          "translation": "Prazer em te conhecer também! De onde você é?",
+          "parts": [
+            "Nice to meet you, too! Where are you ",
+            {
+              "id": "introduction110.gap.4",
+              "answer": "from"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D110.5",
+          "speaker": "Ana",
+          "text": "I'm from Brazil. How are you?",
+          "audioText": "I'm from Brazil. How are you?",
+          "translation": "Eu sou do Brasil. Como você está?",
+          "parts": [
+            "I'm from Brazil. ",
+            {
+              "id": "introduction110.gap.5",
+              "answer": "How are you"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D110.6",
+          "speaker": "Kim",
+          "text": "I'm good, thanks! I'm very happy today!",
+          "audioText": "I'm good, thanks! I'm very happy today!",
+          "translation": "Estou bem, obrigada! Estou muito feliz hoje!",
+          "parts": [
+            "I'm good, thanks! I'm very ",
+            {
+              "id": "introduction110.gap.6",
+              "answer": "happy"
+            },
+            " today!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_personal111",
+      "kind": "activity",
+      "columns": 1,
+      "title": "Talk about yourself",
+      "instruction": "Complete your answers, then practise the conversation with Teacher",
+      "eyebrow": "Guided conversation",
+      "minutes": 4
+    },
+    {
+      "id": "s_introducing111",
+      "kind": "activity",
+      "columns": 1,
+      "title": "Introduce someone",
+      "instruction": "Choose someone you know. Complete your answers, then introduce them to Teacher",
+      "eyebrow": "Guided conversation",
+      "minutes": 3
+    },
+    {
+      "id": "s10",
+      "kind": "activity",
+      "title": "Guess who",
+      "eyebrow": "Roleplay",
+      "instruction": "Choose a person secretly. Teacher asks questions and guesses who you are. Then swap roles",
+      "minutes": 4
+    },
+    {
+      "id": "s_roleplay_challenge110",
+      "kind": "activity",
+      "columns": 1,
+      "title": "Introduce your friend",
+      "eyebrow": "Challenge",
+      "instruction": "Look at the photo. Tell Teacher your friend’s name, where they’re from and how they feel",
+      "minutes": 3
+    },
+    {
+      "id": "s9",
+      "kind": "listening",
+      "title": "Listen and find out about Mia",
+      "instruction": "Listen to Kim’s message, then answer the questions",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry",
+      "audioText": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry?",
+      "audioId": "L80.1",
+      "greeting": "Come and meet my friend!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Where is Kim’s friend Mia from?",
+          "hint": "Mia is from …",
+          "answer": "Mia is from the United States"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "Where are Kim and Mia?",
+          "hint": "They’re at …",
+          "answer": "Kim and Mia are at the café"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "How does Kim feel?",
+          "hint": "She’s …",
+          "answer": "Kim is happy that Ana is there"
+        }
+      ]
+    },
+    {
+      "id": "s_video_intro",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Meet Vanya",
+      "instruction": "Watch the introductions, then answer the questions",
+      "minutes": 4,
+      "video": {
+        "videoId": "HooNbcbgi9U",
+        "startSeconds": 59,
+        "endSeconds": 93,
+        "title": "Meeting new people — British Council",
+        "credit": "British Council · 0:59–1:33"
+      },
+      "items": [
+        {
+          "id": "video1",
+          "prompt": "What’s the man’s name?",
+          "hint": "Listen for “I’m…” after Vanya asks about Paul",
+          "answer": "His name is Emir"
+        },
+        {
+          "id": "video2",
+          "prompt": "Where are they?",
+          "hint": "Look at the room and listen for the place Emir names",
+          "answer": "They’re at an office"
+        },
+        {
+          "id": "video3",
+          "prompt": "What does Yuna say to welcome Vanya?",
+          "hint": "Listen to Yuna’s last words",
+          "answer": "She says “Welcome to the team”"
+        },
+        {
+          "id": "video4",
+          "prompt": "You meet Vanya. How do you introduce yourself?",
+          "hint": "Start with Hi, then say your name",
+          "answer": "Example: Hi, Vanya! I’m [your name]. Nice to meet you"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a short introduction and two questions",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Your introduction",
+          "description": "Record your name, where you’re from and how you feel"
+        },
+        {
+          "title": "Your questions",
+          "description": "Listen to the dialogue again. Practise asking a name and how someone feels without reading"
+        }
+      ]
+    }
+  ]
+}

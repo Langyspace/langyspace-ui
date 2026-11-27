@@ -1,0 +1,47 @@
+{
+  "kind": "focused static props inspection",
+  "result": [
+    {
+      "file": "stories/materials/DevStudy131/DevStudy131Exercises.tsx",
+      "gridProps": {
+        "columns": "{3}",
+        "density": "\"regular\"",
+        "imageVariant": "\"scene\"",
+        "imageFit": "\"contain\"",
+        "imageAspectRatio": "{1}",
+        "revealOnHover": "{false}",
+        "revealVariant": "\"tooltip\"",
+        "items": "{source.vocabulary.map((item) => ({\n          id: item.audioId,\n          word: item.word,\n          translation: item.translation,\n          example: item.example,\n          initialHint: item.initialHint,\n          imageUrl: atlas,\n          imageRegion: item.imageRegion,\n          imageAlt: `A learning situation showing ${item.word}`,\n        }))}",
+        "revealedIds": "{revealed}",
+        "showInitial": "{initial}",
+        "showAll": "{all}",
+        "controls": "{{\n          showInitial: initial,\n          showAll: all,\n          onToggleInitial: () => setInitial((value) => !value),\n          onToggleAll: () => setAll((value) => !value),\n        }}",
+        "onReveal": "{(id) =>\n          setRevealed((old) => (old.includes(id) ? old : [...old, id]))\n        }",
+        "onPlay": "{(id) => {\n          const item = source.vocabulary.find((word) => word.audioId === id)\n          if (item)\n            speech.speak([{ id: item.classAudioId, text: item.classAudioText }])\n        }}"
+      },
+      "reason": "scene+regular activates authored aspect ratio and bounded regular scene grid; atlas cells are square"
+    },
+    {
+      "file": "stories/materials/DevInterviews131/InterviewVocabulary.tsx",
+      "gridProps": {
+        "columns": "{3}",
+        "surface": "\"card\"",
+        "density": "\"regular\"",
+        "imageVariant": "\"scene\"",
+        "imageFit": "\"contain\"",
+        "imageAspectRatio": "{1}",
+        "revealOnHover": "{false}",
+        "items": "{source.vocabulary.map((item, index) => ({\n          ...item,\n          imageUrl: atlas,\n          imageRegion: {\n            columns: 3,\n            rows: 2,\n            column: index % 3,\n            row: Math.floor(index / 3),\n            sourceAspectRatio: 3 / 2,\n          },\n          imageAlt: `Interview scene representing ${item.word}`,\n        }))}",
+        "revealedIds": "{revealed}",
+        "onReveal": "{(id) =>\n          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))\n        }",
+        "onPlay": "{play}",
+        "showAll": "{all}",
+        "showInitial": "{hints}",
+        "controls": "{{\n          showAll: all,\n          showInitial: hints,\n          onToggleAll: () => showAll(!all),\n          onToggleInitial: () => showHints(!hints),\n        }}"
+      },
+      "reason": "scene+regular activates authored aspect ratio and bounded regular scene grid; atlas cells are square"
+    }
+  ],
+  "sharedStylesChanged": false,
+  "renderReview": "root"
+}

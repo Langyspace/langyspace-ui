@@ -1,0 +1,363 @@
+{
+  "key": "a2-08",
+  "code": "A2.08",
+  "title": "Have you ever been to Lisbon?",
+  "first": {
+    "id": "course-practice-a2-08-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a2-08-take-a-tram",
+        "word": "take a tram",
+        "translation": "pegar um bonde",
+        "example": "Have you ever taken a tram?",
+        "exampleTranslation": "Você já andou de bonde?",
+        "visualLabel": "take a tram",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-take-a-tram.front",
+        "backAudioId": "course-a2-08-take-a-tram.back"
+      },
+      {
+        "id": "course-a2-08-visit-a-castle",
+        "word": "visit a castle",
+        "translation": "visitar um castelo",
+        "example": "I visited a castle last year",
+        "exampleTranslation": "Visitei um castelo no ano passado",
+        "visualLabel": "visit a castle",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-visit-a-castle.front",
+        "backAudioId": "course-a2-08-visit-a-castle.back"
+      },
+      {
+        "id": "course-a2-08-try-a-pastel-de-nata",
+        "word": "try a pastel de nata",
+        "translation": "experimentar um pastel de nata",
+        "example": "You should try a pastel de nata",
+        "exampleTranslation": "Você deveria experimentar um pastel de nata",
+        "visualLabel": "try a pastel de nata",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-try-a-pastel-de-nata.front",
+        "backAudioId": "course-a2-08-try-a-pastel-de-nata.back"
+      },
+      {
+        "id": "course-a2-08-see-the-tiles",
+        "word": "see the tiles",
+        "translation": "ver os azulejos",
+        "example": "We saw beautiful tiles in the city",
+        "exampleTranslation": "Vimos azulejos lindos na cidade",
+        "visualLabel": "see the tiles",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-see-the-tiles.front",
+        "backAudioId": "course-a2-08-see-the-tiles.back"
+      },
+      {
+        "id": "course-a2-08-watch-the-sunset",
+        "word": "watch the sunset",
+        "translation": "assistir ao pôr do sol",
+        "example": "I’d like to watch the sunset",
+        "exampleTranslation": "Eu gostaria de ver o pôr do sol",
+        "visualLabel": "watch the sunset",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-watch-the-sunset.front",
+        "backAudioId": "course-a2-08-watch-the-sunset.back"
+      },
+      {
+        "id": "course-a2-08-visit-the-aquarium",
+        "word": "visit the aquarium",
+        "translation": "visitar o aquário",
+        "example": "I haven’t visited the aquarium yet",
+        "exampleTranslation": "Ainda não visitei o aquário",
+        "visualLabel": "visit the aquarium",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-visit-the-aquarium.front",
+        "backAudioId": "course-a2-08-visit-the-aquarium.back"
+      },
+      {
+        "example": "A: Have you been to London? B: I've been there.",
+        "exampleTranslation": "R: Você já esteve em Londres? B: Eu estive lá.",
+        "id": "deck-b1-conversation-starters-ive-been-there",
+        "translation": "Eu já estive lá.",
+        "visualLabel": "IBT",
+        "word": "I've been there.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/ive-been-there/image.webp",
+        "audioId": "deck-b1-conversation-starters-ive-been-there.front",
+        "backAudioId": "deck-b1-conversation-starters-ive-been-there.front"
+      },
+      {
+        "example": "A: Do you like sushi? B: I've never tried it.",
+        "exampleTranslation": "R: Você gosta de sushi? B: Nunca experimentei.",
+        "id": "deck-b1-conversation-starters-ive-never-tried-it",
+        "translation": "Eu nunca experimentei isso.",
+        "visualLabel": "INTI",
+        "word": "I've never tried it.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/ive-never-tried-it/image.webp",
+        "audioId": "deck-b1-conversation-starters-ive-never-tried-it.front",
+        "backAudioId": "deck-b1-conversation-starters-ive-never-tried-it.front"
+      },
+      {
+        "example": "A: I had a job interview. B: How was it?",
+        "exampleTranslation": "R: Tive uma entrevista de emprego. B: Como foi?",
+        "id": "deck-b1-conversation-starters-how-was-it",
+        "translation": "Como foi?",
+        "visualLabel": "HWI",
+        "word": "How was it?",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/how-was-it/image.webp",
+        "audioId": "deck-b1-conversation-starters-how-was-it.front",
+        "backAudioId": "deck-b1-conversation-starters-how-was-it.front"
+      },
+      {
+        "example": "A: How was the party? B: It was fun.",
+        "exampleTranslation": "R: Como foi a festa? B: Foi divertido.",
+        "id": "deck-b1-conversation-starters-it-was-fun",
+        "translation": "Foi divertido.",
+        "visualLabel": "IWF",
+        "word": "It was fun.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/it-was-fun/image.webp",
+        "audioId": "deck-b1-conversation-starters-it-was-fun.front",
+        "backAudioId": "deck-b1-conversation-starters-it-was-fun.front"
+      },
+      {
+        "example": "A: How was the mall? B: It was too crowded.",
+        "exampleTranslation": "R: Como foi o shopping? B: Estava muito lotado.",
+        "id": "deck-b1-conversation-starters-it-was-too-crowded",
+        "translation": "Estava lotado demais.",
+        "visualLabel": "IWTC",
+        "word": "It was too crowded.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/it-was-too-crowded/image.webp",
+        "audioId": "deck-b1-conversation-starters-it-was-too-crowded.front",
+        "backAudioId": "deck-b1-conversation-starters-it-was-too-crowded.front"
+      },
+      {
+        "example": "The trip was expensive, but it was worth it.",
+        "exampleTranslation": "A viagem foi cara, mas valeu a pena.",
+        "id": "deck-b1-conversation-starters-it-was-worth-it",
+        "translation": "Valeu a pena.",
+        "visualLabel": "IWWI",
+        "word": "It was worth it.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/it-was-worth-it/image.webp",
+        "audioId": "deck-b1-conversation-starters-it-was-worth-it.front",
+        "backAudioId": "deck-b1-conversation-starters-it-was-worth-it.front"
+      },
+      {
+        "example": "A: How was the movie? B: I really enjoyed it.",
+        "exampleTranslation": "R: Como foi o filme? B: Eu gostei muito.",
+        "id": "deck-b1-conversation-starters-i-really-enjoyed-it",
+        "translation": "Eu gostei muito.",
+        "visualLabel": "IREI",
+        "word": "I really enjoyed it.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/i-really-enjoyed-it/image.webp",
+        "audioId": "deck-b1-conversation-starters-i-really-enjoyed-it.front",
+        "backAudioId": "deck-b1-conversation-starters-i-really-enjoyed-it.front"
+      },
+      {
+        "example": "I tried something new yesterday.",
+        "exampleTranslation": "Eu tentei algo novo ontem.",
+        "id": "deck-b1-conversation-starters-i-tried-something-new",
+        "translation": "Eu experimentei algo novo.",
+        "visualLabel": "ITSN",
+        "word": "I tried something new.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/i-tried-something-new/image.webp",
+        "audioId": "deck-b1-conversation-starters-i-tried-something-new.front",
+        "backAudioId": "deck-b1-conversation-starters-i-tried-something-new.front"
+      },
+      {
+        "example": "A: I went to the beach. B: That sounds nice.",
+        "exampleTranslation": "R: Fui à praia. B: Isso parece legal.",
+        "id": "deck-b1-conversation-starters-that-sounds-nice",
+        "translation": "Isso parece legal.",
+        "visualLabel": "TSN",
+        "word": "That sounds nice.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/that-sounds-nice/image.webp",
+        "audioId": "deck-b1-conversation-starters-that-sounds-nice.front",
+        "backAudioId": "deck-b1-conversation-starters-that-sounds-nice.front"
+      },
+      {
+        "example": "A: I started a new course. B: Tell me more.",
+        "exampleTranslation": "R: Comecei um novo curso. B: Conte-me mais.",
+        "id": "deck-b1-conversation-starters-tell-me-more",
+        "translation": "Me conta mais.",
+        "visualLabel": "TMM",
+        "word": "Tell me more.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/tell-me-more/image.webp",
+        "audioId": "deck-b1-conversation-starters-tell-me-more.front",
+        "backAudioId": "deck-b1-conversation-starters-tell-me-more.front"
+      },
+      {
+        "example": "A: I'm leaving early today. B: How come?",
+        "exampleTranslation": "R: Vou sair mais cedo hoje. B: Como assim?",
+        "id": "deck-b1-conversation-starters-how-come",
+        "translation": "Como assim? / Por quê?",
+        "visualLabel": "HC",
+        "word": "How come?",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/how-come/image.webp",
+        "audioId": "deck-b1-conversation-starters-how-come.front",
+        "backAudioId": "deck-b1-conversation-starters-how-come.front"
+      },
+      {
+        "example": "I like coffee. What about you?",
+        "exampleTranslation": "Eu gosto de café. E você?",
+        "id": "deck-b1-conversation-starters-what-about-you",
+        "translation": "E você?",
+        "visualLabel": "WAY",
+        "word": "What about you?",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/what-about-you/image.webp",
+        "audioId": "deck-b1-conversation-starters-what-about-you.front",
+        "backAudioId": "deck-b1-conversation-starters-what-about-you.front"
+      },
+      {
+        "example": "How do I get there?",
+        "exampleTranslation": "Como faço para chegar lá?",
+        "id": "deck-a2-travel-how-do-i-get-there",
+        "translation": "Como eu chego lá?",
+        "visualLabel": "HDIG",
+        "word": "How do I get there?",
+        "imageSrc": "/flashcards-transparent/a2/travel/how-do-i-get-there/image.webp",
+        "audioId": "deck-a2-travel-how-do-i-get-there.front",
+        "backAudioId": "deck-a2-travel-how-do-i-get-there.front"
+      },
+      {
+        "example": "A: Can you help me? B: Of course.",
+        "exampleTranslation": "R: Você pode me ajudar? B: Claro.",
+        "id": "deck-b1-conversation-starters-of-course",
+        "translation": "Claro.",
+        "visualLabel": "OC",
+        "word": "Of course.",
+        "imageSrc": "/flashcards-transparent/b1/conversation-starters/of-course/image.webp",
+        "audioId": "deck-b1-conversation-starters-of-course.front",
+        "backAudioId": "deck-b1-conversation-starters-of-course.front"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-08.shadowing.01",
+        "displayText": "Have you ever been to Lisbon?",
+        "translation": "Você já esteve em Lisboa?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.02",
+        "displayText": "Yes, I’ve been twice. Have you?",
+        "translation": "Sim, já fui duas vezes. E você?",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "a2-08.shadowing.03",
+        "displayText": "No, never. What did you do there?",
+        "translation": "Não, nunca. O que você fez lá?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.04",
+        "displayText": "I took a tram and visited the castle",
+        "translation": "Peguei um bonde e visitei o castelo",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "a2-08.shadowing.05",
+        "displayText": "Did you try a pastel de nata?",
+        "translation": "Você já experimentou um pastel de nata?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.06",
+        "displayText": "Of course. I had one every morning",
+        "translation": "Claro. Eu tomava um todas as manhãs",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "a2-08.shadowing.07",
+        "displayText": "That sounds lovely. I’m going there next month",
+        "translation": "Parece ótimo. Vou para lá no mês que vem",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.08",
+        "displayText": "You’ll love it. Try to watch the sunset by the river",
+        "translation": "Você vai adorar. Tente assistir ao pôr do sol à beira do rio",
+        "speakerId": "noah-ellis"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "ruby-bennett",
+        "name": "Ruby",
+        "avatarUrl": "/flashcards/course-characters/ruby-bennett/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      },
+      {
+        "id": "noah-ellis",
+        "name": "Noah",
+        "avatarUrl": "/flashcards/course-characters/noah-ellis/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: ask about an experience and choose a follow-up that fits the answer",
+    "duration": "45–60 seconds",
+    "starters": [
+      "Have you ever…?",
+      "I’ve never…",
+      "When did you…?"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Experiências de viagem",
+    "first": "Estudar as atividades de viagem nos flashcards",
+    "shadowing": "Ouvir e repetir as perguntas e respostas sobre experiências",
+    "voice": "Mandar um áudio em inglês para a teacher perguntando sobre uma experiência de viagem e fazendo outra pergunta que combine com a resposta. Termine com uma pergunta"
+  }
+}

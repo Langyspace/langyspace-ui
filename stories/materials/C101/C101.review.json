@@ -1,0 +1,583 @@
+{
+  "version": 79,
+  "code": "C1.01",
+  "title": "It tends to come across as…",
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "A proposal and a concern",
+      "instruction": "Recall a change you suggested and a concern you had to answer",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What concern might someone have about changing a routine?",
+          "hint": "They might worry about …",
+          "cue": "Make a proposal"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How could you acknowledge that concern?",
+          "hint": "I can see why …",
+          "cue": "Respond to a concern"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What practical response could you offer?",
+          "hint": "We could …, provided that …",
+          "cue": "Suggest a practical next step"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "kind": "vocabulary",
+      "title": "Read the situation, not just the words",
+      "instruction": "Describe each scene, then reveal and listen to a useful expression",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "E.0",
+          "word": "come across as",
+          "translation": "passar a impressão de",
+          "imageUrl": "scene-come-across79",
+          "imageAlt": "A woman reads a brief message and looks uncertain about its tone",
+          "example": "Short emails can come across as cold",
+          "audioId": "FS79.0",
+          "audioText": "come across as. Short emails can come across as cold."
+        },
+        {
+          "id": "E.4",
+          "word": "take it on board",
+          "translation": "levar em conta",
+          "imageUrl": "scene-take-on-board79",
+          "imageAlt": "A man listens to a colleague and makes a useful note for his next presentation",
+          "example": "Raj will take it on board and practise before the next meeting",
+          "audioId": "FS79.1",
+          "audioText": "take it on board. Raj will take it on board and practise before the next meeting."
+        },
+        {
+          "id": "E.6",
+          "word": "constructive",
+          "translation": "construtivo",
+          "imageUrl": "scene-constructive79",
+          "imageAlt": "Two adult colleagues calmly discuss how to improve a presentation together",
+          "example": "Constructive feedback gives a clear next step",
+          "audioId": "FS79.2",
+          "audioText": "constructive. Constructive feedback gives a clear next step."
+        },
+        {
+          "id": "E.7",
+          "word": "harsh",
+          "translation": "ríspido",
+          "imageUrl": "scene-harsh79",
+          "imageAlt": "A woman reacts to a colleague pointing at her work with an accusatory gesture",
+          "example": "That criticism sounds harsh because it attacks the person",
+          "audioId": "FS79.3",
+          "audioText": "harsh. That criticism sounds harsh because it attacks the person."
+        },
+        {
+          "id": "E.3",
+          "word": "a learning curve",
+          "translation": "uma fase de aprendizado",
+          "imageUrl": "scene-learning-curve79",
+          "imageAlt": "A woman works through an unfamiliar task with help from a patient colleague",
+          "example": "Starting a new role involves a learning curve",
+          "audioId": "FS79.4",
+          "audioText": "a learning curve. Starting a new role involves a learning curve."
+        },
+        {
+          "id": "E.2",
+          "word": "To be fair",
+          "translation": "para ser justa",
+          "imageUrl": "scene-to-be-fair79",
+          "imageAlt": "Two colleagues consider a crowded presentation and a small amount of time",
+          "example": "To be fair, Raj had a lot to explain in thirty minutes",
+          "audioId": "FS79.5",
+          "audioText": "To be fair. To be fair, Raj had a lot to explain in thirty minutes."
+        }
+      ],
+      "alignHeading": true
+    },
+    {
+      "id": "s4",
+      "kind": "source",
+      "title": "What went well?",
+      "instruction": "Read Laura’s feedback before preparing a reply",
+      "minutes": 2,
+      "eyebrow": "The situation",
+      "author": "Laura Hughes · client",
+      "subject": "Tuesday’s presentation · first part",
+      "paragraphs": [
+        "Hi Ana,",
+        "Thank you and your team for the presentation Raj delivered on Tuesday. He really knows the project, and he has a friendly style. The slides had a lot of information. To be fair, there was a lot to say in thirty minutes."
+      ]
+    },
+    {
+      "id": "s42",
+      "kind": "source",
+      "title": "What still needs attention?",
+      "instruction": "Separate the concern from the request for next week",
+      "minutes": 1,
+      "eyebrow": "The situation",
+      "author": "Laura Hughes · client",
+      "subject": "Tuesday’s presentation · next step",
+      "paragraphs": [
+        "Some of us found the second part a bit hard to understand, and we didn’t get an answer to my question about the deadline. It might be worth meeting again next week, just for the important points. Would Thursday at ten work? It would be great if you could be there too.",
+        "Best regards,\nLaura Hughes"
+      ]
+    },
+    {
+      "id": "s43",
+      "kind": "questions",
+      "title": "Explain Laura’s message",
+      "instruction": "Use her words as evidence; distinguish facts from your interpretation",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "mail1",
+          "prompt": "What does Laura value, and what concerns her?",
+          "hint": "She values …, but …",
+          "answer": "Laura values Raj’s knowledge and style, but found the second part hard to follow"
+        },
+        {
+          "id": "mail2",
+          "prompt": "When would Laura like to meet again?",
+          "hint": "She suggests … at …",
+          "answer": "Laura suggests meeting on Thursday at ten"
+        },
+        {
+          "id": "s43.q98.3",
+          "prompt": "Who does Laura want to attend as well?",
+          "hint": "She would like … to attend",
+          "answer": "Laura would like Ana to attend too"
+        }
+      ],
+      "questionPurpose": "comprehension"
+    },
+    {
+      "id": "s6",
+      "kind": "dialogue",
+      "title": "Ana’s first attempt",
+      "instruction": "Listen for the criticism and Kim’s reaction",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "D6.1",
+          "speaker": "Kim",
+          "text": "So, the big talk with Raj is tomorrow?",
+          "audioText": "So, the big talk with Raj is tomorrow?",
+          "translation": "Então a grande conversa com o Raj é amanhã?"
+        },
+        {
+          "id": "D6.2",
+          "speaker": "Ana",
+          "text": "Yes. I’ll start with: “You really know the project, and I like your style.”",
+          "audioText": "Yes. I’ll start with: “You really know the project, and I like your style.”",
+          "translation": "Sim. Vou começar com: “Você conhece muito bem o projeto, e eu gosto do seu estilo.”"
+        },
+        {
+          "id": "D6.3",
+          "speaker": "Kim",
+          "text": "Nice. And then?",
+          "audioText": "Nice. And then?",
+          "translation": "Legal. E depois?"
+        },
+        {
+          "id": "D6.4",
+          "speaker": "Ana",
+          "text": "Then: “You talked too fast and just read the slides.”",
+          "audioText": "Then: “You talked too fast and just read the slides.”",
+          "translation": "Depois: “Você falou rápido demais e só leu os slides.”"
+        },
+        {
+          "id": "D6.5",
+          "speaker": "Kim",
+          "text": "Hmm. That sounds a bit harsh",
+          "audioText": "Hmm. That sounds a bit harsh.",
+          "translation": "Hum. Isso soa meio duro"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What does Ana plan to criticise?",
+          "hint": "She plans to mention …",
+          "answer": "Ana plans to say that Raj spoke too fast and read the slides"
+        },
+        {
+          "id": "s6.q98.2",
+          "prompt": "What compliment will Ana give Raj first?",
+          "hint": "She’ll praise his … and …",
+          "answer": "Ana will praise Raj’s knowledge of the project and his style"
+        },
+        {
+          "id": "s6.q98.3",
+          "prompt": "What concern does Kim raise?",
+          "hint": "She thinks the wording …",
+          "answer": "Kim thinks Ana’s criticism sounds a bit harsh"
+        }
+      ],
+      "dialogueGroup": "c1-01.model"
+    },
+    {
+      "id": "s62",
+      "kind": "dialogue",
+      "title": "Make the concern specific",
+      "instruction": "Follow the change from an accusation to an observation",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "D6.6",
+          "speaker": "Ana",
+          "text": "But it’s true!",
+          "audioText": "But it’s true!",
+          "translation": "Mas é verdade!"
+        },
+        {
+          "id": "D6.7",
+          "speaker": "Kim",
+          "text": "Sure, but it might come across as an attack. Try: “It seemed a little rushed.”",
+          "audioText": "Sure, but it might come across as an attack. Try: “It seemed a little rushed.”",
+          "translation": "Claro, mas pode soar como um ataque. Tenta: “Pareceu um pouco corrido.”"
+        },
+        {
+          "id": "D6.8",
+          "speaker": "Ana",
+          "text": "“It seemed a little rushed.” And for the slides, maybe—",
+          "audioText": "“It seemed a little rushed.” And for the slides, maybe—",
+          "translation": "“Pareceu um pouco corrido.” E, para os slides, talvez—"
+        },
+        {
+          "id": "D6.9",
+          "speaker": "Kim",
+          "text": "Maybe “The slides tend to—” Sorry, go on",
+          "audioText": "Maybe “The slides tend to—” Sorry, go on.",
+          "translation": "Talvez “Os slides costumam—” Desculpa, continua"
+        },
+        {
+          "id": "D6.10",
+          "speaker": "Ana",
+          "text": "No, that’s it! “The slides tend to have a lot of text. You might want to cut some.”",
+          "audioText": "No, that’s it! “The slides tend to have a lot of text. You might want to cut some.”",
+          "translation": "Não, é isso! “Os slides costumam ter muito texto. Talvez valha cortar alguns.”"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "How does Kim suggest softening the criticism?",
+          "hint": "Describe the effect rather than …",
+          "answer": "Kim suggests describing the effect rather than making an accusation"
+        },
+        {
+          "id": "s62.q98.2",
+          "prompt": "What phrase does Ana choose about the pace?",
+          "hint": "It seemed …",
+          "answer": "Ana chooses the phrase “It seemed a little rushed”"
+        },
+        {
+          "id": "s62.q98.3",
+          "prompt": "What specific change does Ana suggest for the slides?",
+          "hint": "Raj might want to …",
+          "answer": "Ana suggests that Raj cut some text from the slides"
+        }
+      ],
+      "dialogueGroup": "c1-01.model"
+    },
+    {
+      "id": "s63",
+      "kind": "dialogue",
+      "title": "Agree on a useful next step",
+      "instruction": "Listen for the proposal and the reason to be fair",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "D6.11",
+          "speaker": "Kim",
+          "text": "Much better. And the client’s question? That one’s more serious",
+          "audioText": "Much better. And the client’s question? That one’s more serious.",
+          "translation": "Muito melhor. E a pergunta da cliente? Essa é mais séria"
+        },
+        {
+          "id": "D6.12",
+          "speaker": "Ana",
+          "text": "“I wonder if we could prepare the answers together next time.”",
+          "audioText": "“I wonder if we could prepare the answers together next time.”",
+          "translation": "“Será que a gente podia preparar as respostas juntos da próxima vez?”"
+        },
+        {
+          "id": "D6.13",
+          "speaker": "Kim",
+          "text": "Perfect. Oh, and start with a question: “How do you think it went?”",
+          "audioText": "Perfect. Oh, and start with a question: “How do you think it went?”",
+          "translation": "Perfeito. Ah, e começa com uma pergunta: “Como você acha que foi?”"
+        },
+        {
+          "id": "D6.14",
+          "speaker": "Ana",
+          "text": "Good idea. To be fair, it was his first big client. There’s a learning curve",
+          "audioText": "Good idea. To be fair, it was his first big client. There’s a learning curve.",
+          "translation": "Boa ideia. Para ser justa, era o primeiro cliente grande dele. Tem uma fase de aprendizado"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d3",
+          "prompt": "What next step does Ana propose?",
+          "hint": "She proposes … together",
+          "answer": "Ana proposes preparing the answers together next time"
+        },
+        {
+          "id": "s63.q98.2",
+          "prompt": "What opening question does Kim suggest?",
+          "hint": "How do you think …?",
+          "answer": "Kim suggests asking Raj how he thinks the presentation went"
+        },
+        {
+          "id": "s63.q98.3",
+          "prompt": "Why does Ana say they should be fair to Raj?",
+          "hint": "It was his first …",
+          "answer": "It was Raj’s first big client, so Ana recognises that there is a learning curve"
+        }
+      ],
+      "dialogueGroup": "c1-01.model"
+    },
+    {
+      "id": "s8",
+      "kind": "questions",
+      "title": "How would you raise the issue?",
+      "instruction": "Choose your words and consider how the other person might hear them",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "p1",
+          "prompt": "How might that message come across?",
+          "cue": "Describe a possible interpretation",
+          "hint": "It might come across as …, especially if …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "p2",
+          "prompt": "How would you raise the issue?",
+          "cue": "Offer an observation and a constructive suggestion",
+          "hint": "I’ve noticed … I wonder if we could …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "perspective",
+          "prompt": "What would you ask to understand their perspective?",
+          "cue": "Invite their view before proposing a next step",
+          "hint": "How do you see …? What would help us …?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s7",
+      "kind": "grammar",
+      "title": "Separate a pattern from an impression",
+      "instruction": "Choose wording that matches the evidence you actually have",
+      "minutes": 2,
+      "eyebrow": "Grammar",
+      "columns": {
+        "subject": "Use",
+        "verb": "Pattern",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "tend",
+          "subject": "A pattern",
+          "verb": "tend to + verb",
+          "example": "The slides tend to have a lot of text."
+        },
+        {
+          "id": "seem",
+          "subject": "A view",
+          "verb": "seem + adjective",
+          "example": "The second half seemed a little rushed."
+        },
+        {
+          "id": "effect",
+          "subject": "Possible effect",
+          "verb": "might come across as",
+          "example": "That comment might come across as an attack."
+        }
+      ],
+      "note": "Tend to needs evidence of a repeated pattern. This email concerns one presentation; without more evidence, describe an impression rather than a pattern.",
+      "layout": "patterns"
+    },
+    {
+      "id": "s71",
+      "kind": "grammar",
+      "title": "Invite a response without losing the point",
+      "instruction": "Keep a suggestion specific and open to discussion",
+      "minutes": 1,
+      "eyebrow": "Grammar",
+      "columns": {
+        "subject": "Use",
+        "verb": "Language choice",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "suggest",
+          "subject": "An option",
+          "verb": "might want to + verb",
+          "example": "You might want to cut some text from the slides."
+        },
+        {
+          "id": "request",
+          "subject": "A shared action",
+          "verb": "I wonder if we could …",
+          "example": "I wonder if we could prepare the answers together next time."
+        }
+      ],
+      "note": "A softer opening does not replace a clear request. Relationship, authority and urgency affect the wording.",
+      "layout": "patterns"
+    },
+    {
+      "id": "s11",
+      "kind": "activity",
+      "title": "Make the feedback useful",
+      "instruction": "Give Raj specific feedback and agree on one practical next step",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s9",
+      "kind": "listening",
+      "title": "Raj responds to the feedback",
+      "instruction": "Listen for what he accepts and the point he wants to clarify",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana, it’s Raj. Thanks for today. Really. It was… constructive. I’ll take it on board. I guess I did talk a bit fast. But, to be fair, nobody told me Laura would ask about the deadline. I didn’t know how to handle it. And the slides were Sarah’s. I only saw them on Monday. Anyway. I’ll try not to rush next time. Oh, and Thursday? I wonder if I could talk to Laura directly. Just me. I think it’s worth trying. Let me know. Thanks",
+      "audioText": "Hi, Ana, it’s Raj. Thanks for today. Really. It was… constructive. I’ll take it on board. I guess I did talk a bit fast. But, to be fair, nobody told me Laura would ask about the deadline. I didn’t know how to handle it. And the slides were Sarah’s. I only saw them on Monday. Anyway. I’ll try not to rush next time. Oh, and Thursday? I wonder if I could talk to Laura directly. Just me. I think it’s worth trying. Let me know. Thanks.",
+      "audioId": "c101-raj-message",
+      "contact": {
+        "name": "Raj"
+      },
+      "greeting": "Can we talk about the presentation?",
+      "items": [
+        {
+          "id": "l1",
+          "prompt": "What does Raj accept about his delivery?",
+          "hint": "He accepts that …",
+          "answer": "Raj accepts that he rushed and says he will try not to rush next time"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "Who made the slides, and when did Raj see them?",
+          "hint": "Sarah …; Raj only …",
+          "answer": "Sarah made the slides; Raj only saw them on Monday"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "How does Raj want to meet Laura on Thursday?",
+          "hint": "He wants to …",
+          "answer": "Raj wants to speak to Laura alone"
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "kind": "questions",
+      "title": "Keep the reply constructive",
+      "instruction": "Your teacher plays Raj. Respond to his concern and agree a workable arrangement",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "reply",
+          "prompt": "I’d prefer to meet Laura on my own",
+          "cue": "Acknowledge the preference without promising a change",
+          "hint": "I can see why you’d prefer to discuss the feedback privately"
+        },
+        {
+          "id": "s91.q98.2",
+          "prompt": "Why does Ana need to be there?",
+          "cue": "Explain Laura’s request without sounding defensive",
+          "hint": "Laura asked Ana to join so we can discuss the presentation together"
+        },
+        {
+          "id": "s91.q98.3",
+          "prompt": "Could we find an arrangement that works for both of us?",
+          "cue": "Propose a specific compromise and check agreement",
+          "hint": "Could Ana join for the presentation feedback, and then give you time alone with Laura? Would that work for you?"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "When certainty sounds like a fact",
+      "instruction": "Watch Julian Treasure discuss speaking habits, then give balanced feedback",
+      "minutes": 4,
+      "video": {
+        "videoId": "eIho2S0ZahI",
+        "startSeconds": 108,
+        "endSeconds": 166,
+        "title": "Julian Treasure — How to speak so that people want to listen — TED",
+        "credit": "TED"
+      },
+      "items": [
+        {
+          "id": "c1-01.video102.q1",
+          "prompt": "What behaviour does the blamethrower metaphor describe?",
+          "hint": "Notice where responsibility goes",
+          "answer": "It describes passing responsibility for your actions to other people"
+        },
+        {
+          "id": "c1-01.video102.q2",
+          "prompt": "How does he distinguish dogmatism from a supported claim?",
+          "hint": "Listen to the contrast between facts and opinions",
+          "answer": "He describes dogmatism as presenting opinions as if they were facts"
+        },
+        {
+          "id": "c1-01.video102.q3",
+          "prompt": "Why might exaggeration make a message less credible?",
+          "hint": "Connect the exaggeration example to trust",
+          "answer": "Example: If everything is described as extraordinary, the listener may stop trusting the strength of the claim"
+        },
+        {
+          "id": "c1-01.video102.q4",
+          "prompt": "Give feedback on that habit without labelling the person",
+          "hint": "Use tends to or comes across as, then invite a response",
+          "answer": "Example: The message tends to sound certain before the evidence is clear. Could we make the level of confidence more explicit?"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise feedback that leads to a useful next step",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Prepare",
+          "description": "Write a short observation, its impact and one specific request using a real or fictional situation"
+        },
+        {
+          "title": "Reformulate",
+          "description": "Record a different version for a different relationship. Explain what you changed and why"
+        }
+      ]
+    }
+  ],
+  "freeConversationMinutes": 11
+}

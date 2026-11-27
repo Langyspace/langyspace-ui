@@ -1,0 +1,11 @@
+# My likes and dislikes59
+
+Replace the three exclusive preference pair pages in TrialA1 with one visual speaking/sorting board. Reuse the six approved pictures. Teacher asks Do you like…?, student answers truthfully, teacher places each picture in I like or I don’t like. Student then uses two pictures to ask the teacher. Each item is independent; all may be liked/disliked and items may be left unclassified. No grading, success/error sounds or fixed personal answer key.
+
+Canonical ImageSortBoard composes existing ChoiceCard/Button primitives with native drag/drop plus equivalent click/keyboard placement. Controlled assignments and selection, reclassification/return to pictures, accessible labels and focus preserved after moving. Bottom slot composes the existing bulb/eye support controls. Teacher/student opinions stay in transient consumer state, with no profile writes.
+
+Scope: remove s41/s42/s43, insert s4, keep every other trial page and all13 other lessons, covers, audio, identities, scroll/Notes behavior. No new media or external destinations. Source composition changes217→215 pages. Add stories, a bounded interaction test, public component docs/API and the reusable authoring rule. Existing feature PRs stay draft with human review pending. Necessary package/API/export and one Teacher staging adoption/build/publication; no browser/screenshots/playback/broad QA or production.
+
+Implementation complete: s4 replaces s41/s42/s43; TrialA1 has9 pages and the maintained catalog215 by composition. Existing image creation records retain their historical pair-slot IDs; current likeItems binds those same six approved assets without rewriting provider history.
+
+17 focused tests passed, including all-liked/all-disliked, keyboard and native drop, invalid payload, return/reclassification, focus restoration, speaking tips/models, and the existing dialogue identity/support contracts. Package build passed after correcting a nonexistent typography token to the existing md token. Public API adds ImageSortBoard and its3 types (596 declarations); no existing component contract changed. Final source guards preserve the other13 lessons, all p4-external trial data,13 protected source blobs, six image bytes and media/catalog source files. No visual/browser/playback QA. Staging export/adoption/publication pending, with human visual review retained.

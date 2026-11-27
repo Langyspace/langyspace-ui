@@ -1,0 +1,643 @@
+{
+  "version": 81,
+  "code": "C1.08",
+  "key": "c1-08",
+  "title": "Much as I’d like to…",
+  "goal": "Make a counterproposal that protects shared interests and explicit limits",
+  "freeConversationInstruction": "Discuss changes you would and would not accept and explore conditions that could make them workable",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall negotiating a boundary without personal judgement",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What shared purpose could help a negotiation?",
+          "hint": "We both want …, although …",
+          "cue": "Find the shared purpose"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which condition is a genuine limit rather than a preference?",
+          "hint": "I can compromise on …, but I need …",
+          "cue": "Distinguish a limit from a preference"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you offer a concession without implying full acceptance?",
+          "hint": "Much as I’d like to …, I could agree to … provided …",
+          "cue": "Offer a bounded concession"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Concessions and counterproposals",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "C108-V81.0",
+          "word": "a non-negotiable",
+          "translation": "",
+          "example": "Seven days’ notice is a non-negotiable for this person",
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a non-negotiable",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C108-FS81.0",
+          "audioText": "a non-negotiable. Seven days’ notice is a non-negotiable for this person."
+        },
+        {
+          "id": "C108-V81.1",
+          "word": "a concession",
+          "translation": "",
+          "example": "Reducing frequency is one concession",
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a concession",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C108-FS81.1",
+          "audioText": "a concession. Reducing frequency is one concession."
+        },
+        {
+          "id": "C108-V81.2",
+          "word": "a counterproposal",
+          "translation": "",
+          "example": "The counterproposal keeps regular contact",
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a counterproposal",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C108-FS81.2",
+          "audioText": "a counterproposal. The counterproposal keeps regular contact."
+        },
+        {
+          "id": "C108-V81.3",
+          "word": "a feasible option",
+          "translation": "",
+          "example": "We need a feasible option, not a vague agreement",
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a feasible option",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C108-FS81.3",
+          "audioText": "a feasible option. We need a feasible option, not a vague agreement."
+        },
+        {
+          "id": "C108-V81.4",
+          "word": "a shared interest",
+          "translation": "",
+          "example": "Useful contact is the shared interest",
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a shared interest",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C108-FS81.4",
+          "audioText": "a shared interest. Useful contact is the shared interest."
+        },
+        {
+          "id": "C108-V81.5",
+          "word": "a sticking point",
+          "translation": "",
+          "example": "Notice remains the sticking point",
+          "imageUrl": "c1-08-vocabulary81",
+          "imageAlt": "a sticking point",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "C108-FS81.5",
+          "audioText": "a sticking point. Notice remains the sticking point."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The proposal’s purpose",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Group organiser · simulated source",
+      "subject": "More regular contact",
+      "paragraphs": [
+        "The organiser proposes four evening sessions per month, announced at least forty-eight hours before each session. The aim is more regular contact and fewer unresolved questions between meetings. The proposal does not yet explain whether all four sessions are essential or how someone unable to attend could contribute.",
+        "For the organiser, a workable alternative should preserve useful contact rather than simply reduce the calendar burden. Written updates and fewer live meetings may be options, but their role would need to be clear. A trial could help establish whether the combination works. These are fictional negotiating positions; neither attendance nor agreement has been recorded as a real commitment."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The impact and the limit",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Participant’s position · simulated source",
+      "subject": "Participation requires planning",
+      "paragraphs": [
+        "The participant supports regular contact but can commit to only two evenings per month. They need at least seven days’ notice to arrange their other responsibilities. A forty-eight-hour announcement makes attendance unreliable even when the session itself would be useful. The participant is willing to discuss updates between live sessions.",
+        "The distinction between preference and constraint matters. Accepting a lower frequency would not, by itself, make the notice period workable. A counterproposal should acknowledge the organiser’s purpose, identify what can be offered and retain the planning condition explicitly. A polite expression of interest should not be summarised as full acceptance of every term."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Find the real sticking point",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C108-D81.1",
+          "speaker": "Kim",
+          "text": "How do you feel about moving our group sessions to four evenings a month?",
+          "audioText": "How do you feel about moving our group sessions to four evenings a month?",
+          "translation": "O que acha de passar nossos encontros do grupo para quatro noites por mês?"
+        },
+        {
+          "id": "C108-D81.2",
+          "speaker": "Ana",
+          "text": "I can see the value of more regular contact. Even so, four evenings would be difficult for me",
+          "audioText": "I can see the value of more regular contact. Even so, four evenings would be difficult for me.",
+          "translation": "Vejo o valor de um contato mais regular. Mesmo assim, quatro noites seriam difíceis para mim"
+        },
+        {
+          "id": "C108-D81.3",
+          "speaker": "Kim",
+          "text": "Is the number of sessions the main problem, or the notice?",
+          "audioText": "Is the number of sessions the main problem, or the notice?",
+          "translation": "O principal problema é a quantidade de encontros ou a antecedência?"
+        },
+        {
+          "id": "C108-D81.4",
+          "speaker": "Ana",
+          "text": "Both. I can commit to two, and I need seven days’ notice to arrange things",
+          "audioText": "Both. I can commit to two, and I need seven days’ notice to arrange things.",
+          "translation": "Ambos. Posso me comprometer com dois e preciso de sete dias de antecedência para me organizar"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What benefit does Ana acknowledge?",
+          "hint": "She sees value in …",
+          "answer": "Ana sees value in more regular contact"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What frequency can she commit to?",
+          "hint": "She can commit to …",
+          "answer": "Ana can commit to two evenings a month"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How much notice does she need?",
+          "hint": "She needs …",
+          "answer": "Ana needs seven days’ notice"
+        }
+      ],
+      "dialogueGroup": "c1-08.model"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Make a counterproposal",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C108-D81.5",
+          "speaker": "Kim",
+          "text": "The proposal only gives forty-eight hours. Could you accept that occasionally?",
+          "audioText": "The proposal only gives forty-eight hours. Could you accept that occasionally?",
+          "translation": "A proposta só dá quarenta e oito horas. Aceitaria isso ocasionalmente?"
+        },
+        {
+          "id": "C108-D81.6",
+          "speaker": "Ana",
+          "text": "Much as I’d like to be flexible, I can’t promise attendance at that notice",
+          "audioText": "Much as I’d like to be flexible, I can’t promise attendance at that notice.",
+          "translation": "Por mais que queira ser flexível, não posso prometer presença com essa antecedência"
+        },
+        {
+          "id": "C108-D81.7",
+          "speaker": "Kim",
+          "text": "What alternative would still give the group useful contact?",
+          "audioText": "What alternative would still give the group useful contact?",
+          "translation": "Que alternativa ainda daria um contato útil ao grupo?"
+        },
+        {
+          "id": "C108-D81.8",
+          "speaker": "Ana",
+          "text": "Two planned live sessions, with short updates between them",
+          "audioText": "Two planned live sessions, with short updates between them.",
+          "translation": "Dois encontros ao vivo planejados, com atualizações breves entre eles"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why can’t Ana accept the original notice period?",
+          "hint": "Forty-eight hours …",
+          "answer": "Forty-eight hours doesn’t give Ana enough time to arrange attendance"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What frequency does she propose instead?",
+          "hint": "She proposes …",
+          "answer": "Ana proposes two planned live sessions"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What would maintain contact between sessions?",
+          "hint": "They could use …",
+          "answer": "They could use short updates between live sessions"
+        }
+      ],
+      "dialogueGroup": "c1-08.model"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Confirm the extent of the concession",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C108-D81.9",
+          "speaker": "Kim",
+          "text": "Would you agree to a four-week trial before reviewing it?",
+          "audioText": "Would you agree to a four-week trial before reviewing it?",
+          "translation": "Concordaria com um teste de quatro semanas antes de avaliar?"
+        },
+        {
+          "id": "C108-D81.10",
+          "speaker": "Ana",
+          "text": "Yes, provided the dates are agreed a week ahead. The trial shouldn’t erase that limit",
+          "audioText": "Yes, provided the dates are agreed a week ahead. The trial shouldn’t erase that limit.",
+          "translation": "Sim, desde que as datas sejam combinadas uma semana antes. O teste não deveria apagar esse limite"
+        },
+        {
+          "id": "C108-D81.11",
+          "speaker": "Kim",
+          "text": "Then the shared interest is regular contact; frequency and notice are the variables",
+          "audioText": "Then the shared interest is regular contact; frequency and notice are the variables.",
+          "translation": "Então o interesse comum é contato regular; frequência e antecedência são as variáveis"
+        },
+        {
+          "id": "C108-D81.12",
+          "speaker": "Ana",
+          "text": "Exactly. We can make a concession without implying that every condition is negotiable",
+          "audioText": "Exactly. We can make a concession without implying that every condition is negotiable.",
+          "translation": "Exatamente. Podemos ceder em um ponto sem sugerir que toda condição é negociável"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What condition applies to the four-week trial?",
+          "hint": "Dates must be …",
+          "answer": "Dates must be agreed a week ahead"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What shared interest do they identify?",
+          "hint": "Their shared interest is …",
+          "answer": "Their shared interest is regular contact"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why doesn’t accepting a trial erase the limit?",
+          "hint": "A concession doesn’t mean …",
+          "answer": "A concession doesn’t mean every condition is negotiable"
+        }
+      ],
+      "dialogueGroup": "c1-08.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Negotiate what you can accept",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 2,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Make the concession without hiding the limit",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Recognise value while stating a limit",
+          "verb": "Much as + clause, …",
+          "example": "Much as I’d like to be flexible, I need more notice"
+        },
+        {
+          "id": "1",
+          "subject": "Concede without withdrawing the concern",
+          "verb": "Even so / However + clause",
+          "example": "Two sessions would help. Even so, the dates need notice"
+        },
+        {
+          "id": "2",
+          "subject": "A limit that survives another concession",
+          "verb": "Whatever / however …, …",
+          "example": "Whatever frequency we choose, I still need seven days’ notice"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Negotiate a workable change",
+      "instruction": "Respond to the proposal and negotiate conditions that could work",
+      "minutes": 4,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Frequency changes, notice does not",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 4,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I’ve thought about the group-session proposal. I can accept two live sessions a month instead of four, and I’m happy to try short written updates between them. I still need the dates confirmed at least seven days ahead; reducing the frequency doesn’t remove that planning need. Could we treat the two-session arrangement as a four-week trial and review whether the updates cover the gaps? We seem to agree on regular contact and a trial. The sticking point is not willingness to participate, but the notice required to make participation feasible. Please could you confirm that part explicitly before we tell the group the whole proposal has been accepted?",
+      "audioText": "Hi, Ana. I’ve thought about the group-session proposal. I can accept two live sessions a month instead of four, and I’m happy to try short written updates between them. I still need the dates confirmed at least seven days ahead; reducing the frequency doesn’t remove that planning need. Could we treat the two-session arrangement as a four-week trial and review whether the updates cover the gaps? We seem to agree on regular contact and a trial. The sticking point is not willingness to participate, but the notice required to make participation feasible. Please could you confirm that part explicitly before we tell the group the whole proposal has been accepted?",
+      "audioId": "C108-L81.1",
+      "greeting": "I checked what is possible and what isn’t",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Which parts of the proposal are accepted?",
+          "hint": "Two … plus …",
+          "answer": "Two live sessions a month plus short written updates are accepted"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What condition remains unchanged?",
+          "hint": "Dates still need …",
+          "answer": "Dates still need confirmation at least seven days ahead"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What needs explicit confirmation before informing the group?",
+          "hint": "They must confirm …",
+          "answer": "They must confirm the notice condition before announcing full acceptance"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Confirm common ground and the remaining condition",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Agree to a test, not an unlimited commitment",
+      "instruction": "Watch the challenge to Vanya’s idea, then make a bounded counterproposal",
+      "minutes": 4,
+      "video": {
+        "videoId": "fhSGDAdlAb4",
+        "startSeconds": 104,
+        "endSeconds": 174,
+        "title": "Challenging someone’s ideas — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "c1-08.video102.q1",
+          "prompt": "What shared business question does Emir raise?",
+          "hint": "Listen for relevant and the type of company",
+          "answer": "He asks how the cat videos are relevant to a branding agency"
+        },
+        {
+          "id": "c1-08.video102.q2",
+          "prompt": "What practical workload question follows?",
+          "hint": "Listen to who will do the work",
+          "answer": "They ask who will find all the videos"
+        },
+        {
+          "id": "c1-08.video102.q3",
+          "prompt": "What limited next step is suggested?",
+          "hint": "Listen for a length of time and a way to evaluate it",
+          "answer": "They suggest trying it for a couple of weeks and checking its impact"
+        },
+        {
+          "id": "c1-08.video102.q4",
+          "prompt": "Make a counterproposal that supports the goal while limiting the commitment",
+          "hint": "Use Much as and state a review condition",
+          "answer": "Example: Much as I’d like to grow our audience, I can’t approve an open-ended campaign. Let’s test a small version and review the results"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Make a counterproposal that protects shared interests and explicit limits"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "The proposal and the constraints",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Proposal",
+          "value": "Four evenings per month · 48 hours’ notice"
+        },
+        {
+          "id": "1",
+          "label": "Person’s limit",
+          "value": "Two evenings · seven days’ notice"
+        },
+        {
+          "id": "2",
+          "label": "Shared interest",
+          "value": "Useful, regular contact"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you acknowledge the shared purpose?",
+          "hint": "I can see the value of …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What concession would you offer?",
+          "hint": "I could commit to … rather than …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What condition would you retain?",
+          "hint": "Even with that change, I would still need …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "The proposal and the constraints"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "A partial agreement",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Agreed",
+          "value": "Two live sessions · short written updates"
+        },
+        {
+          "id": "1",
+          "label": "Trial",
+          "value": "Four weeks · review usefulness"
+        },
+        {
+          "id": "2",
+          "label": "Condition retained",
+          "value": "Dates at least seven days ahead"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you summarise the partial agreement?",
+          "hint": "We’ve agreed … and …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What would you explicitly confirm before announcing it?",
+          "hint": "Could you confirm that … remains part of the agreement?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you evaluate the trial against its purpose?",
+          "hint": "After four weeks, we’d check whether …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "A partial agreement"
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Proposal",
+          "value": "Four evenings per month · 48 hours’ notice"
+        },
+        {
+          "id": "1",
+          "label": "Person’s limit",
+          "value": "Two evenings · seven days’ notice"
+        },
+        {
+          "id": "2",
+          "label": "Shared interest",
+          "value": "Useful, regular contact"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Which part could you accept?",
+          "cue": "Recognise common ground before stating a limit",
+          "hint": "I can see the value of … Even so, …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What alternative would protect both interests?",
+          "cue": "Make a specific counterproposal",
+          "hint": "Much as I’d like to …, I’d suggest … instead",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you test whether that common ground is genuine?",
+          "cue": "Check a shared aim and surface a remaining difference",
+          "hint": "We seem to agree on … Where we may still differ is … Is that a fair summary?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation",
+      "referenceLabel": "Situation reference"
+    }
+  }
+}

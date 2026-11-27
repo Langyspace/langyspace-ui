@@ -1,0 +1,387 @@
+[
+  {
+    "scope": "school",
+    "status": "active",
+    "levels": [
+      "B1"
+    ],
+    "tags": [
+      "dev-first-day95",
+      "extra-dev-first-day",
+      "DEV.02",
+      "English · US"
+    ],
+    "bypassLevelGate": false,
+    "id": "dev-first-day-flashcards",
+    "type": "flashcards",
+    "title": "DEV.02 · Your first day on the team · Flashcards",
+    "description": "Pratique vinte termos de TI e colaboração, com exemplos e áudio",
+    "durationMinutes": 10,
+    "words": [
+      {
+        "en": "task",
+        "pt": "tarefa"
+      },
+      {
+        "en": "access",
+        "pt": "acesso"
+      },
+      {
+        "en": "blocker",
+        "pt": "impedimento"
+      },
+      {
+        "en": "deadline",
+        "pt": "prazo"
+      },
+      {
+        "en": "update",
+        "pt": "atualização de andamento"
+      },
+      {
+        "en": "feedback",
+        "pt": "comentários para melhorar o trabalho"
+      },
+      {
+        "en": "a repository",
+        "pt": "repositório"
+      },
+      {
+        "en": "frontend",
+        "pt": "parte visual da aplicação"
+      },
+      {
+        "en": "backend",
+        "pt": "parte do sistema que processa os dados"
+      },
+      {
+        "en": "a login screen",
+        "pt": "tela de login"
+      },
+      {
+        "en": "a form",
+        "pt": "formulário"
+      },
+      {
+        "en": "a password",
+        "pt": "senha"
+      },
+      {
+        "en": "an email address",
+        "pt": "endereço de e-mail"
+      },
+      {
+        "en": "a button",
+        "pt": "botão"
+      },
+      {
+        "en": "an error message",
+        "pt": "mensagem de erro"
+      },
+      {
+        "en": "a password reset",
+        "pt": "redefinição de senha"
+      },
+      {
+        "en": "a test account",
+        "pt": "conta de teste"
+      },
+      {
+        "en": "a layout",
+        "pt": "organização visual da tela"
+      },
+      {
+        "en": "an api",
+        "pt": "interface de comunicação entre sistemas"
+      },
+      {
+        "en": "a demo",
+        "pt": "demonstração do trabalho"
+      }
+    ],
+    "flashcards": {
+      "cards": [
+        {
+          "id": "V.0",
+          "word": "task",
+          "translation": "tarefa",
+          "example": "My first task is to build the login screen",
+          "exampleTranslation": "Minha primeira tarefa é criar a tela de login",
+          "visualLabel": "task",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/b16c59ee06c571ea29ac561db738dff3e84489d3db55f89b564bdb9cc29a2f4b.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/bd918ab2248bc1fb2864571c2249e29b194d8f37b920e4e8163bbd93ab3e050d.mp3"
+        },
+        {
+          "id": "V.1",
+          "word": "access",
+          "translation": "acesso",
+          "example": "I need access to the repository",
+          "exampleTranslation": "Preciso de acesso ao repositório",
+          "visualLabel": "access",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/dfd5fe82d1517eccc5f6216061bf1e96707726c2150170256e96635e5d122cc4.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/78289a85402b650dbbad79691cd0d849644da475e863d515af2ad2dc5fe543e7.mp3"
+        },
+        {
+          "id": "V.2",
+          "word": "blocker",
+          "translation": "impedimento",
+          "example": "Missing access is a blocker",
+          "exampleTranslation": "A falta de acesso é um impedimento",
+          "visualLabel": "blocker",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/0137fac556cd9516b6984cfd01104999b5e00e4ca7e835995145c1db47166f1b.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/a16497860cc265656644a01d3f17c003f9786fa83b92c4c9d45a3b1ea9ede258.mp3"
+        },
+        {
+          "id": "V.3",
+          "word": "deadline",
+          "translation": "prazo",
+          "example": "The deadline is Friday",
+          "exampleTranslation": "O prazo é sexta-feira",
+          "visualLabel": "deadline",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/814474910071fb49ecb9a6d1961e5427e794145f0b9c0239660414d3e1a47689.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/7d9895067b7814c6adf3ee46e9180304546fe00821e632237459b059306d6035.mp3"
+        },
+        {
+          "id": "V.4",
+          "word": "update",
+          "translation": "atualização de andamento",
+          "example": "Here is a quick update",
+          "exampleTranslation": "Aqui vai uma atualização rápida",
+          "visualLabel": "update",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/447542a8aa103f0cb6aa33542c1b883a370bf8d9d56877f927741925e46e64d7.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/16587c87027ad79e1d4ca54f5630bc3c814af131aa90ca32957dd02433f0c75d.mp3"
+        },
+        {
+          "id": "V.5",
+          "word": "feedback",
+          "translation": "comentários para melhorar o trabalho",
+          "example": "Thanks for the feedback",
+          "exampleTranslation": "Obrigada pelos comentários",
+          "visualLabel": "feedback",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/a45622cf42bd7bdf62caee0389b5413da0234f00f3e1f1f6af1d8eeead137f05.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/7d8a5158c125b87e9124528f6adc5b7b54f8bd622e1e27f0137fa0002f06bfc2.mp3"
+        },
+        {
+          "id": "HW.6",
+          "word": "a repository",
+          "translation": "repositório",
+          "example": "The project files are in the repository",
+          "exampleTranslation": "Os arquivos do projeto estão no repositório",
+          "visualLabel": "a repository",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/89cf3567358adeb9d687af8acd60f05af40c314f8ad6ea1c66f9b009516dd18e.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/ac00fb49d10b1099cbdc140e2a6fc17d8dd656713e817066578ed77e4262ae4b.mp3"
+        },
+        {
+          "id": "HW.7",
+          "word": "frontend",
+          "translation": "parte visual da aplicação",
+          "example": "I’m working on the frontend of the customer portal",
+          "exampleTranslation": "Estou trabalhando na parte visual do portal do cliente",
+          "visualLabel": "frontend",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/927ccde671e894d112ac655dfb26da279830265925144ae946cab6dd20832b26.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/f2b8f3934163e643422e98df397d9eb99a95424efefb64ef56e987d7158f31e0.mp3"
+        },
+        {
+          "id": "HW.8",
+          "word": "backend",
+          "translation": "parte do sistema que processa os dados",
+          "example": "Priya is connecting the login screen to the backend",
+          "exampleTranslation": "Priya está conectando a tela de login ao backend",
+          "visualLabel": "backend",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/da46d7fa8df7a9be1bc2dc6bc50d5df50776156c0267af5223bd6ef78445cea8.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/83eda7d513bae335d293f8f1af6082f41ff2a801c7689e98fb2ce78dcf5a7e9a.mp3"
+        },
+        {
+          "id": "HW.9",
+          "word": "a login screen",
+          "translation": "tela de login",
+          "example": "The login screen has email and password fields",
+          "exampleTranslation": "A tela de login tem campos de e-mail e senha",
+          "visualLabel": "a login screen",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/9104e19656b87f8b3ca720375f7580e464d9905b0030a8b14e3ad9e8799633f6.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/bdf072623ea3484c1f393384400e01d8ad872c6c8e26e3dd3f98d19d053d3258.mp3"
+        },
+        {
+          "id": "HW.10",
+          "word": "a form",
+          "translation": "formulário",
+          "example": "The form shows an error when a field is empty",
+          "exampleTranslation": "O formulário mostra um erro quando um campo está vazio",
+          "visualLabel": "a form",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/0749fa545d86520931c225ded9764043e1d34bca39318781e4d5ff6effe7a545.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/c9bf7b8d4a823317ac0599f6ba432465e3de381ab264bbb68129c4f900358798.mp3"
+        },
+        {
+          "id": "HW.11",
+          "word": "a password",
+          "translation": "senha",
+          "example": "The password is incorrect — please try again",
+          "exampleTranslation": "A senha está incorreta — tente novamente",
+          "visualLabel": "a password",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/14daaa2ab5fa486f6716356ee58d622558ea9aa16a020ecb510575ff228f7b76.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/79d34fce76786fcc7fb0fcbdb55a31583398fca6d6f7e004810c934b27f9fc00.mp3"
+        },
+        {
+          "id": "HW.12",
+          "word": "an email address",
+          "translation": "endereço de e-mail",
+          "example": "Use your work email address to request access",
+          "exampleTranslation": "Use seu e-mail de trabalho para pedir acesso",
+          "visualLabel": "an email address",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/b54ab8511f519a6dfce4d6fbc17a3e2a5172247339f28e3c6a4bfa650fd8592e.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/4564a0c8a616aede750c81eab038069a101102094bfc36d339608e826c79508b.mp3"
+        },
+        {
+          "id": "HW.13",
+          "word": "a button",
+          "translation": "botão",
+          "example": "Click the button to sign in",
+          "exampleTranslation": "Clique no botão para entrar",
+          "visualLabel": "a button",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/a43dc3ae2e7409f1a60772dde08779c29b90867627e3157667d21779ba1835bd.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/bd4b7d1bcc78faab872be6be316edf143fdc80ad0569542854ac177bdfdd5839.mp3"
+        },
+        {
+          "id": "HW.14",
+          "word": "an error message",
+          "translation": "mensagem de erro",
+          "example": "The error message explains what went wrong",
+          "exampleTranslation": "A mensagem de erro explica o que deu errado",
+          "visualLabel": "an error message",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/f6efb6732cc6f2fdf8d201a55d7616ef49986cbebb17740ad12ff945cb859412.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/e8ae008ab42708a325e10078d1ba3486a6e23ff17c9305d0f040bb0313f2a763.mp3"
+        },
+        {
+          "id": "HW.15",
+          "word": "a password reset",
+          "translation": "redefinição de senha",
+          "example": "The password reset helps users get back into their accounts",
+          "exampleTranslation": "A redefinição de senha ajuda as pessoas a recuperar o acesso às suas contas",
+          "visualLabel": "a password reset",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/c4465e2c9e50caddcd33a32fa9895600b6a0e55130ada0cd9ed824f00ab0d77b.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/db396ba43f9dc808445432793ddbfffc39ab89c4b23ed63cc4b4cbcbd194829d.mp3"
+        },
+        {
+          "id": "HW.16",
+          "word": "a test account",
+          "translation": "conta de teste",
+          "example": "I need an active test account for the demo",
+          "exampleTranslation": "Preciso de uma conta de teste ativa para a demonstração",
+          "visualLabel": "a test account",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/dda2ebbbbbfc470d5791dac8d92dffc6fbd9d459a5b0cdbe4f48746e87cf7434.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/78c3e34a956183efd4e654a657f4cf5707bf95faa86960cbe970f5648db6f934.mp3"
+        },
+        {
+          "id": "HW.17",
+          "word": "a layout",
+          "translation": "organização visual da tela",
+          "example": "The layout is ready, but the API connection is still missing",
+          "exampleTranslation": "O layout está pronto, mas ainda falta a conexão com a API",
+          "visualLabel": "a layout",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/eab4230224af18a36ae664a1758bc45d97562688d45041910ec9042e49ab33ba.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/c2fe3700f7fd24059d3b9af05609961b7c5ffbb0026926c3569b18491e590215.mp3"
+        },
+        {
+          "id": "HW.18",
+          "word": "an API",
+          "translation": "interface de comunicação entre sistemas",
+          "example": "The API checks the email address and password",
+          "exampleTranslation": "A API verifica o endereço de e-mail e a senha",
+          "visualLabel": "an API",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/49b1700f83456064e0a63eaf6bfb5f778b41d4a46a4c89b391510a1177f7f82d.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/2107285b2511be582ec279694665b25281d014cbf4f3dd40f4612de61f8ec5fb.mp3"
+        },
+        {
+          "id": "HW.19",
+          "word": "a demo",
+          "translation": "demonstração do trabalho",
+          "example": "I’ll show the login screen during Friday’s demo",
+          "exampleTranslation": "Vou mostrar a tela de login na demonstração de sexta-feira",
+          "visualLabel": "a demo",
+          "audioSrc": "/flashcards/course-practice/extra-dev-first-day/affbf06bfc086094ae23946bc26715667ae80eb99818832ec8ace7343da1101a.mp3",
+          "backAudioSrc": "/flashcards/course-practice/extra-dev-first-day/438c85f852f6ec615420f0d890b9c6612ed4bab9dc4ac4e695de23d8a0563ddf.mp3"
+        }
+      ]
+    }
+  },
+  {
+    "scope": "school",
+    "status": "active",
+    "levels": [
+      "B1"
+    ],
+    "tags": [
+      "dev-first-day95",
+      "extra-dev-first-day",
+      "DEV.02",
+      "English · US"
+    ],
+    "bypassLevelGate": false,
+    "id": "dev-first-day-shadowing",
+    "type": "shadowing",
+    "title": "DEV.02 · Your first day on the team · Shadowing",
+    "description": "Ouça e pratique seis frases para pedir ajuda e conversar com o time",
+    "durationMinutes": 5,
+    "words": [],
+    "shadowing": {
+      "speakers": [
+        {
+          "id": "kim",
+          "name": "Kim",
+          "accentCode": "en-US",
+          "accentLabel": "English · US",
+          "avatarUrl": "/flashcards/course-characters/kim-dev-first-day95/image.webp"
+        }
+      ],
+      "level": "B1",
+      "moduleTitle": "DEV.02 · Your first day on the team",
+      "order": 1,
+      "phrases": [
+        {
+          "speakerId": "kim",
+          "text": "Could you say that again?",
+          "translation": "Você poderia repetir?",
+          "audioUrl": "/shadowing-audio/course/extra-dev-first-day/13ba1de7dd4ebfb59400c9e6a4c6affbf1299614f606aab31496c2f4147cc9b4.mp3",
+          "order": 1
+        },
+        {
+          "speakerId": "kim",
+          "text": "Could you give me access to the repository?",
+          "translation": "Você poderia me dar acesso ao repositório?",
+          "audioUrl": "/shadowing-audio/course/extra-dev-first-day/485ec9c2b1f0fc892779c5d7813d5903415bb06525381320aef1af6bcf292be1.mp3",
+          "order": 2
+        },
+        {
+          "speakerId": "kim",
+          "text": "What should happen when the user clicks Sign in?",
+          "translation": "O que deve acontecer quando a pessoa clicar em Sign in?",
+          "audioUrl": "/shadowing-audio/course/extra-dev-first-day/2a3406dc4ad37644b8023536e019e0a08d55e72d4c117d16451b76a570e335b2.mp3",
+          "order": 3
+        },
+        {
+          "speakerId": "kim",
+          "text": "I’m blocked because I don’t have access yet",
+          "translation": "Estou impedida de avançar porque ainda não tenho acesso",
+          "audioUrl": "/shadowing-audio/course/extra-dev-first-day/2fbfebc5d46fa4784e94711e791b886ddfd68496fb7c48d467cf6e85824d75cc.mp3",
+          "order": 4
+        },
+        {
+          "speakerId": "kim",
+          "text": "The deadline is Friday. Is that still correct?",
+          "translation": "O prazo é sexta-feira. Isso continua correto?",
+          "audioUrl": "/shadowing-audio/course/extra-dev-first-day/3ee16968415edf699887b5c9350b84ecbe531bf40710773c37939ff3ee12756c.mp3",
+          "order": 5
+        },
+        {
+          "speakerId": "kim",
+          "text": "Thanks for the feedback. I’ll update the task",
+          "translation": "Obrigada pelos comentários. Vou atualizar a tarefa",
+          "audioUrl": "/shadowing-audio/course/extra-dev-first-day/f3db989bdb0638367e9b438e156d563de701d1aed2dd2f6922b1910dde8a5737.mp3",
+          "order": 6
+        }
+      ],
+      "theme": "work",
+      "tone": "pink"
+    }
+  }
+]

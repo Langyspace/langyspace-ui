@@ -1,0 +1,351 @@
+{
+  "key": "a1-10",
+  "code": "A1.10",
+  "title": "At the café",
+  "first": {
+    "id": "course-practice-a1-10-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a1-10-coffee",
+        "word": "coffee",
+        "translation": "café",
+        "example": "I’d like a coffee, please",
+        "exampleTranslation": "Eu gostaria de um café, por favor",
+        "visualLabel": "coffee",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-coffee.front",
+        "backAudioId": "course-a1-10-coffee.back"
+      },
+      {
+        "id": "course-a1-10-tea",
+        "word": "tea",
+        "translation": "chá",
+        "example": "Can I have some tea?",
+        "exampleTranslation": "Posso tomar um chá?",
+        "visualLabel": "tea",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-tea.front",
+        "backAudioId": "course-a1-10-tea.back"
+      },
+      {
+        "id": "course-a1-10-water",
+        "word": "water",
+        "translation": "água",
+        "example": "Some water, please",
+        "exampleTranslation": "Um pouco de água, por favor",
+        "visualLabel": "water",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-water.front",
+        "backAudioId": "course-a1-10-water.back"
+      },
+      {
+        "id": "course-a1-10-juice",
+        "word": "juice",
+        "translation": "suco",
+        "example": "I’d like an orange juice",
+        "exampleTranslation": "Eu gostaria de um suco de laranja",
+        "visualLabel": "juice",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-juice.front",
+        "backAudioId": "course-a1-10-juice.back"
+      },
+      {
+        "id": "course-a1-10-sandwich",
+        "word": "sandwich",
+        "translation": "sanduíche",
+        "example": "This sandwich is for my friend",
+        "exampleTranslation": "Este sanduíche é para o meu amigo",
+        "visualLabel": "sandwich",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-sandwich.front",
+        "backAudioId": "course-a1-10-sandwich.back"
+      },
+      {
+        "id": "course-a1-10-cake",
+        "word": "cake",
+        "translation": "bolo",
+        "example": "Can I have a piece of cake?",
+        "exampleTranslation": "Posso comer um pedaço de bolo?",
+        "visualLabel": "cake",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-cake.front",
+        "backAudioId": "course-a1-10-cake.back"
+      },
+      {
+        "example": "I eat banana bread with coffee.",
+        "exampleTranslation": "Como pão de banana com café.",
+        "id": "deck-a1-food-combinations-banana-bread",
+        "translation": "pão/bolo de banana",
+        "visualLabel": "BB",
+        "word": "banana bread",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/banana-bread/image.webp",
+        "audioId": "deck-a1-food-combinations-banana-bread.front",
+        "backAudioId": "deck-a1-food-combinations-banana-bread.front"
+      },
+      {
+        "example": "I eat apple pie for dessert.",
+        "exampleTranslation": "Como torta de maçã de sobremesa.",
+        "id": "deck-a1-food-combinations-apple-pie",
+        "translation": "torta de maçã",
+        "visualLabel": "AP",
+        "word": "apple pie",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/apple-pie/image.webp",
+        "audioId": "deck-a1-food-combinations-apple-pie.front",
+        "backAudioId": "deck-a1-food-combinations-apple-pie.front"
+      },
+      {
+        "example": "I eat avocado toast for breakfast.",
+        "exampleTranslation": "Como torradas de abacate no café da manhã.",
+        "id": "deck-a1-food-combinations-avocado-toast",
+        "translation": "torrada com abacate",
+        "visualLabel": "AT",
+        "word": "avocado toast",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/avocado-toast/image.webp",
+        "audioId": "deck-a1-food-combinations-avocado-toast.front",
+        "backAudioId": "deck-a1-food-combinations-avocado-toast.front"
+      },
+      {
+        "example": "I eat a fruit bowl for breakfast.",
+        "exampleTranslation": "Como uma fruteira no café da manhã.",
+        "id": "deck-a1-food-combinations-fruit-bowl",
+        "translation": "tigela de frutas",
+        "visualLabel": "FB",
+        "word": "fruit bowl",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/fruit-bowl/image.webp",
+        "audioId": "deck-a1-food-combinations-fruit-bowl.front",
+        "backAudioId": "deck-a1-food-combinations-fruit-bowl.front"
+      },
+      {
+        "example": "I put fruit jam on bread.",
+        "exampleTranslation": "Coloquei geléia de frutas no pão.",
+        "id": "deck-a1-food-combinations-fruit-jam",
+        "translation": "geleia de fruta",
+        "visualLabel": "FJ",
+        "word": "fruit jam",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/fruit-jam/image.webp",
+        "audioId": "deck-a1-food-combinations-fruit-jam.front",
+        "backAudioId": "deck-a1-food-combinations-fruit-jam.front"
+      },
+      {
+        "example": "I eat fruit salad for dessert.",
+        "exampleTranslation": "Como salada de frutas como sobremesa.",
+        "id": "deck-a1-food-combinations-fruit-salad",
+        "translation": "salada de frutas",
+        "visualLabel": "FS",
+        "word": "fruit salad",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/fruit-salad/image.webp",
+        "audioId": "deck-a1-food-combinations-fruit-salad.front",
+        "backAudioId": "deck-a1-food-combinations-fruit-salad.front"
+      },
+      {
+        "example": "I eat grilled vegetables with fish.",
+        "exampleTranslation": "Como legumes grelhados com peixe.",
+        "id": "deck-a1-food-combinations-grilled-vegetables",
+        "translation": "vegetais grelhados",
+        "visualLabel": "GV",
+        "word": "grilled vegetables",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/grilled-vegetables/image.webp",
+        "audioId": "deck-a1-food-combinations-grilled-vegetables.front",
+        "backAudioId": "deck-a1-food-combinations-grilled-vegetables.front"
+      },
+      {
+        "example": "I drink lemonade on hot days.",
+        "exampleTranslation": "Bebo limonada nos dias quentes.",
+        "id": "deck-a1-food-combinations-lemonade",
+        "translation": "limonada",
+        "visualLabel": "L",
+        "word": "lemonade",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/lemonade/image.webp",
+        "audioId": "deck-a1-food-combinations-lemonade.front",
+        "backAudioId": "deck-a1-food-combinations-lemonade.front"
+      },
+      {
+        "example": "I drink orange juice in the morning.",
+        "exampleTranslation": "Tomo suco de laranja pela manhã.",
+        "id": "deck-a1-food-combinations-orange-juice",
+        "translation": "suco de laranja",
+        "visualLabel": "OJ",
+        "word": "orange juice",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/orange-juice/image.webp",
+        "audioId": "deck-a1-food-combinations-orange-juice.front",
+        "backAudioId": "deck-a1-food-combinations-orange-juice.front"
+      },
+      {
+        "example": "I drink a smoothie in the morning.",
+        "exampleTranslation": "Eu bebo um smoothie pela manhã.",
+        "id": "deck-a1-food-combinations-smoothie",
+        "translation": "smoothie / vitamina",
+        "visualLabel": "S",
+        "word": "smoothie",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/smoothie/image.webp",
+        "audioId": "deck-a1-food-combinations-smoothie.front",
+        "backAudioId": "deck-a1-food-combinations-smoothie.front"
+      },
+      {
+        "example": "I eat soup for dinner.",
+        "exampleTranslation": "Eu como sopa no jantar.",
+        "id": "deck-a1-food-combinations-soup",
+        "translation": "sopa",
+        "visualLabel": "S",
+        "word": "soup",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/soup/image.webp",
+        "audioId": "deck-a1-food-combinations-soup.front",
+        "backAudioId": "deck-a1-food-combinations-soup.front"
+      },
+      {
+        "example": "I eat salad for lunch.",
+        "exampleTranslation": "Eu como salada no almoço.",
+        "id": "deck-a1-food-combinations-salad",
+        "translation": "salada",
+        "visualLabel": "S",
+        "word": "salad",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/salad/image.webp",
+        "audioId": "deck-a1-food-combinations-salad.front",
+        "backAudioId": "deck-a1-food-combinations-salad.front"
+      },
+      {
+        "example": "I eat an açaí bowl after school.",
+        "exampleTranslation": "Como uma tigela de açaí depois da escola.",
+        "id": "deck-a1-food-combinations-acai-bowl",
+        "translation": "tigela de açaí",
+        "visualLabel": "AB",
+        "word": "açaí bowl",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/acai-bowl/image.webp",
+        "audioId": "deck-a1-food-combinations-acai-bowl.front",
+        "backAudioId": "deck-a1-food-combinations-acai-bowl.front"
+      },
+      {
+        "example": "I eat french fries with a burger.",
+        "exampleTranslation": "Como batatas fritas com hambúrguer.",
+        "id": "deck-a1-food-combinations-french-fries",
+        "translation": "batata frita",
+        "visualLabel": "FF",
+        "word": "french fries",
+        "imageSrc": "/flashcards-transparent/a1/food-combinations/french-fries/image.webp",
+        "audioId": "deck-a1-food-combinations-french-fries.front",
+        "backAudioId": "deck-a1-food-combinations-french-fries.front"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-10.shadowing.01",
+        "displayText": "Hello! What would you like?",
+        "translation": "Olá! O que você gostaria de pedir?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-10.shadowing.02",
+        "displayText": "I’d like some tea and a piece of cake, please",
+        "translation": "Eu gostaria de chá e uma fatia de bolo, por favor",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-10.shadowing.03",
+        "displayText": "Of course. Would you like milk in your tea?",
+        "translation": "Claro. Você quer leite no chá?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-10.shadowing.04",
+        "displayText": "No milk, thank you. How much is it?",
+        "translation": "Sem leite, obrigada. Quanto fica?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-10.shadowing.05",
+        "displayText": "It’s six dollars. You can pay here",
+        "translation": "Fica seis dólares. Pode pagar aqui",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-10.shadowing.06",
+        "displayText": "Here you are. Thank you!",
+        "translation": "Aqui está. Obrigada!",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: order a drink and food, then correct a mistake politely",
+    "duration": "20–30 seconds",
+    "starters": [
+      "I’d like some…",
+      "Can I have…?",
+      "Sorry, I asked for…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "No café",
+    "first": "Estudar os alimentos e as bebidas em inglês nos flashcards",
+    "shadowing": "Ouvir e repetir as frases para fazer pedidos em um café",
+    "voice": "Mandar um áudio em inglês para a teacher pedindo uma bebida e algo para comer. Depois, corrija um erro no pedido com educação. Termine com uma pergunta"
+  }
+}

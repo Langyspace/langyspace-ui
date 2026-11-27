@@ -1,0 +1,718 @@
+{
+  "version": 81,
+  "code": "A1.09",
+  "key": "a1-09",
+  "title": "Around the city",
+  "goal": "Ask about places and give a short route",
+  "freeConversationInstruction": "Describe your area, ask about your teacher’s neighbourhood and explain how to reach a place",
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Think about one problem at a hotel",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What’s the problem with your room?",
+          "hint": "The … doesn’t work",
+          "cue": "Explain a room problem"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What do you need?",
+          "hint": "Can I have …, please?",
+          "cue": "Ask for what you need"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What time is good for someone to help?",
+          "hint": "… is good for me. Thank you",
+          "cue": "Suggest a time for help"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "kind": "activity",
+      "title": "Places around town",
+      "instruction": "Name a place, then click to check and listen",
+      "minutes": 4,
+      "eyebrow": "Vocabulary"
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Finding a café",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "A109-D81.1",
+          "speaker": "Kim",
+          "text": "Excuse me. Is there a café near the hotel?",
+          "audioText": "Excuse me. Is there a café near the hotel?",
+          "translation": "Com licença. Tem um café perto do hotel?"
+        },
+        {
+          "id": "A109-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, there is. Go straight and turn right at the first street",
+          "audioText": "Yes, there is. Go straight and turn right at the first street.",
+          "translation": "Sim. Siga em frente e vire à direita na primeira rua"
+        },
+        {
+          "id": "A109-D81.3",
+          "speaker": "Kim",
+          "text": "Is it next to the pharmacy?",
+          "audioText": "Is it next to the pharmacy?",
+          "translation": "Fica ao lado da farmácia?"
+        },
+        {
+          "id": "A109-D81.4",
+          "speaker": "Ana",
+          "text": "Yes. The pharmacy is on the same street",
+          "audioText": "Yes. The pharmacy is on the same street.",
+          "translation": "Sim. A farmácia fica na mesma rua"
+        },
+        {
+          "id": "A109-D81.5",
+          "speaker": "Kim",
+          "text": "Great. And is there a park here?",
+          "audioText": "Great. And is there a park here?",
+          "translation": "Ótimo. E tem um parque aqui?"
+        },
+        {
+          "id": "A109-D81.6",
+          "speaker": "Ana",
+          "text": "Yes. Go straight and take the second right. The park is at the end",
+          "audioText": "Yes. Go straight and take the second right. The park is at the end.",
+          "translation": "Sim. Siga em frente e pegue a segunda à direita. O parque fica no final"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Which street takes Kim to the café?",
+          "hint": "She should take the … street",
+          "answer": "Kim should turn right at the first street"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Is the café next to the pharmacy?",
+          "hint": "Yes, it …",
+          "answer": "Yes, the café is next to the pharmacy"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How can Kim get to the park?",
+          "hint": "She should go … and take …",
+          "answer": "Kim should go straight and take the second right; the park is at the end"
+        }
+      ],
+      "dialogueGroup": "a1-09.model"
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Ask about the town",
+      "instruction": "Start at the hotel, ask for directions and check the route with your teacher",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Places and directions",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Ask if a place exists",
+          "verb": "Is there a …?",
+          "example": "Is there a café near the hotel?"
+        },
+        {
+          "id": "1",
+          "subject": "Say what is there",
+          "verb": "There’s / There are",
+          "example": "There’s a pharmacy. There are two streets on the right"
+        },
+        {
+          "id": "2",
+          "subject": "Give a route",
+          "verb": "Go / Turn + direction",
+          "example": "Go straight. Turn right at the second street"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Meet me at the café",
+      "instruction": "Tell me how to get from the hotel to the café",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Meet me in the park",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Let’s meet at the park, not the café. Start at the hotel and go straight. Turn right at the second street. The park is at the end, after the market. I’m near the trees. See you in ten minutes!",
+      "audioText": "Hi, Ana! Let’s meet at the park, not the café. Start at the hotel and go straight. Turn right at the second street. The park is at the end, after the market. I’m near the trees. See you in ten minutes!",
+      "audioId": "A109-L81.1",
+      "greeting": "Here’s the area near our meeting point",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Where should Ana meet Kim?",
+          "hint": "They should meet at …",
+          "answer": "Ana should meet Kim at the park"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Which street should Ana turn right at?",
+          "hint": "She should turn at the … street",
+          "answer": "Ana should turn right at the second street"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Where is Kim waiting?",
+          "hint": "She’s near …",
+          "answer": "Kim is waiting near the trees"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "a1-09-cover81",
+        "alt": "A street scene, shared as context for the route to the park"
+      }
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Give the updated route",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Where is the hammer?",
+      "instruction": "Watch Bob explain the position, then describe where an object is",
+      "minutes": 4,
+      "video": {
+        "videoId": "K5GJt-CRiFk",
+        "startSeconds": 75,
+        "endSeconds": 105,
+        "title": "Checking understanding — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-09.video102.q1",
+          "prompt": "What container is the hammer in?",
+          "hint": "Listen for the box Bob names",
+          "answer": "It’s in the toolbox"
+        },
+        {
+          "id": "a1-09.video102.q2",
+          "prompt": "Is it on the left or on the right?",
+          "hint": "Listen when Bob repeats the position",
+          "answer": "It’s on the left"
+        },
+        {
+          "id": "a1-09.video102.q3",
+          "prompt": "What is it under?",
+          "hint": "Listen for the other tool",
+          "answer": "It’s under the scissors"
+        },
+        {
+          "id": "a1-09.video102.q4",
+          "prompt": "Where is an object near you?",
+          "hint": "Use on, in, under or next to",
+          "answer": "Example: My phone is on the table, next to my notebook"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Ask about places and give a short route"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "map",
+      "title": "Town map",
+      "map": {
+        "label": "A small town · start at the hotel facing the bank",
+        "startId": "hotel",
+        "places": [
+          {
+            "id": "hotel",
+            "label": "hotel",
+            "symbol": "🏨",
+            "xPercent": 20,
+            "yPercent": 87
+          },
+          {
+            "id": "bank",
+            "label": "bank",
+            "symbol": "🏦",
+            "xPercent": 20,
+            "yPercent": 12
+          },
+          {
+            "id": "cafe",
+            "label": "café",
+            "symbol": "☕",
+            "xPercent": 52,
+            "yPercent": 72
+          },
+          {
+            "id": "pharmacy",
+            "label": "pharmacy",
+            "symbol": "💊",
+            "xPercent": 85,
+            "yPercent": 72
+          },
+          {
+            "id": "market",
+            "label": "market",
+            "symbol": "🛍",
+            "xPercent": 52,
+            "yPercent": 35
+          },
+          {
+            "id": "park",
+            "label": "park",
+            "symbol": "🌳",
+            "xPercent": 85,
+            "yPercent": 35
+          }
+        ],
+        "streets": [
+          {
+            "id": "main",
+            "from": {
+              "x": 20,
+              "y": 12
+            },
+            "to": {
+              "x": 20,
+              "y": 87
+            }
+          },
+          {
+            "id": "first",
+            "from": {
+              "x": 20,
+              "y": 72
+            },
+            "to": {
+              "x": 85,
+              "y": 72
+            }
+          },
+          {
+            "id": "second",
+            "from": {
+              "x": 20,
+              "y": 35
+            },
+            "to": {
+              "x": 85,
+              "y": 35
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "route",
+          "prompt": "Where do we start?",
+          "hint": "We start at the hotel, facing …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How do I get to the café?",
+          "hint": "Go straight and turn … at the … street"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Where is the pharmacy?",
+          "hint": "It’s on the same street, next to …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "map",
+      "title": "The new meeting place",
+      "map": {
+        "label": "A small town · start at the hotel facing the bank",
+        "startId": "hotel",
+        "places": [
+          {
+            "id": "hotel",
+            "label": "hotel",
+            "symbol": "🏨",
+            "xPercent": 20,
+            "yPercent": 87
+          },
+          {
+            "id": "bank",
+            "label": "bank",
+            "symbol": "🏦",
+            "xPercent": 20,
+            "yPercent": 12
+          },
+          {
+            "id": "cafe",
+            "label": "café",
+            "symbol": "☕",
+            "xPercent": 52,
+            "yPercent": 72
+          },
+          {
+            "id": "pharmacy",
+            "label": "pharmacy",
+            "symbol": "💊",
+            "xPercent": 85,
+            "yPercent": 72
+          },
+          {
+            "id": "market",
+            "label": "market",
+            "symbol": "🛍",
+            "xPercent": 52,
+            "yPercent": 35
+          },
+          {
+            "id": "park",
+            "label": "park",
+            "symbol": "🌳",
+            "xPercent": 85,
+            "yPercent": 35
+          }
+        ],
+        "streets": [
+          {
+            "id": "main",
+            "from": {
+              "x": 20,
+              "y": 12
+            },
+            "to": {
+              "x": 20,
+              "y": 87
+            }
+          },
+          {
+            "id": "first",
+            "from": {
+              "x": 20,
+              "y": 72
+            },
+            "to": {
+              "x": 85,
+              "y": 72
+            }
+          },
+          {
+            "id": "second",
+            "from": {
+              "x": 20,
+              "y": 35
+            },
+            "to": {
+              "x": 85,
+              "y": 35
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "park",
+          "prompt": "Where are we meeting now?",
+          "hint": "We’re meeting at …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How do I get there from the hotel?",
+          "hint": "Go straight, then turn … at the … street"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Where is the park on this route?",
+          "hint": "It’s at the end, after …"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s2": {
+      "type": "map",
+      "title": "Six places",
+      "map": {
+        "label": "A small town · start at the hotel facing the bank",
+        "startId": "hotel",
+        "places": [
+          {
+            "id": "hotel",
+            "label": "hotel",
+            "symbol": "🏨",
+            "xPercent": 20,
+            "yPercent": 87
+          },
+          {
+            "id": "bank",
+            "label": "bank",
+            "symbol": "🏦",
+            "xPercent": 20,
+            "yPercent": 12
+          },
+          {
+            "id": "cafe",
+            "label": "café",
+            "symbol": "☕",
+            "xPercent": 52,
+            "yPercent": 72
+          },
+          {
+            "id": "pharmacy",
+            "label": "pharmacy",
+            "symbol": "💊",
+            "xPercent": 85,
+            "yPercent": 72
+          },
+          {
+            "id": "market",
+            "label": "market",
+            "symbol": "🛍",
+            "xPercent": 52,
+            "yPercent": 35
+          },
+          {
+            "id": "park",
+            "label": "park",
+            "symbol": "🌳",
+            "xPercent": 85,
+            "yPercent": 35
+          }
+        ],
+        "streets": [
+          {
+            "id": "main",
+            "from": {
+              "x": 20,
+              "y": 12
+            },
+            "to": {
+              "x": 20,
+              "y": 87
+            }
+          },
+          {
+            "id": "first",
+            "from": {
+              "x": 20,
+              "y": 72
+            },
+            "to": {
+              "x": 85,
+              "y": 72
+            }
+          },
+          {
+            "id": "second",
+            "from": {
+              "x": 20,
+              "y": 35
+            },
+            "to": {
+              "x": 85,
+              "y": 35
+            }
+          }
+        ],
+        "startLabel": "Start · face the bank"
+      },
+      "questions": [],
+      "vocabulary": {
+        "cafe": {
+          "id": "A109-FS81.0",
+          "text": "café. There’s a café near the hotel."
+        },
+        "market": {
+          "id": "A109-FS81.1",
+          "text": "market. The market is on the second street."
+        },
+        "pharmacy": {
+          "id": "A109-FS81.2",
+          "text": "pharmacy. The pharmacy is next to the café."
+        },
+        "bank": {
+          "id": "A109-FS81.3",
+          "text": "bank. Go straight to the bank."
+        },
+        "park": {
+          "id": "A109-FS81.4",
+          "text": "park. Let’s meet at the park."
+        },
+        "hotel": {
+          "id": "A109-FS81.5",
+          "text": "hotel. Start at the hotel."
+        }
+      },
+      "questionPurpose": "response"
+    },
+    "s_personal": {
+      "type": "map",
+      "title": "Town map",
+      "map": {
+        "label": "A small town · start at the hotel facing the bank",
+        "startId": "hotel",
+        "places": [
+          {
+            "id": "hotel",
+            "label": "hotel",
+            "symbol": "🏨",
+            "xPercent": 20,
+            "yPercent": 87
+          },
+          {
+            "id": "bank",
+            "label": "bank",
+            "symbol": "🏦",
+            "xPercent": 20,
+            "yPercent": 12
+          },
+          {
+            "id": "cafe",
+            "label": "café",
+            "symbol": "☕",
+            "xPercent": 52,
+            "yPercent": 72
+          },
+          {
+            "id": "pharmacy",
+            "label": "pharmacy",
+            "symbol": "💊",
+            "xPercent": 85,
+            "yPercent": 72
+          },
+          {
+            "id": "market",
+            "label": "market",
+            "symbol": "🛍",
+            "xPercent": 52,
+            "yPercent": 35
+          },
+          {
+            "id": "park",
+            "label": "park",
+            "symbol": "🌳",
+            "xPercent": 85,
+            "yPercent": 35
+          }
+        ],
+        "streets": [
+          {
+            "id": "main",
+            "from": {
+              "x": 20,
+              "y": 12
+            },
+            "to": {
+              "x": 20,
+              "y": 87
+            }
+          },
+          {
+            "id": "first",
+            "from": {
+              "x": 20,
+              "y": 72
+            },
+            "to": {
+              "x": 85,
+              "y": 72
+            }
+          },
+          {
+            "id": "second",
+            "from": {
+              "x": 20,
+              "y": 35
+            },
+            "to": {
+              "x": 85,
+              "y": 35
+            }
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Is there a café near the hotel?",
+          "cue": "Look at the map and answer",
+          "hint": "Yes, there is. It’s …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How do I get to the park?",
+          "cue": "Start at the hotel",
+          "hint": "Go straight, then …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Can you ask me to repeat one direction?",
+          "cue": "Ask me to repeat the part you didn’t hear",
+          "hint": "Sorry, can you say that again?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    }
+  }
+}

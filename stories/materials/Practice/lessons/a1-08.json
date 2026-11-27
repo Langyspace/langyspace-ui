@@ -1,0 +1,351 @@
+{
+  "key": "a1-08",
+  "code": "A1.08",
+  "title": "At the hotel",
+  "first": {
+    "id": "course-practice-a1-08-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a1-08-room",
+        "word": "room",
+        "translation": "quarto",
+        "example": "My room is on the left",
+        "exampleTranslation": "Meu quarto fica à esquerda",
+        "visualLabel": "room",
+        "imageSrc": "/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-08-room.front",
+        "backAudioId": "course-a1-08-room.back"
+      },
+      {
+        "id": "course-a1-08-key",
+        "word": "key",
+        "translation": "chave",
+        "example": "Can I have my key, please?",
+        "exampleTranslation": "Posso ficar com a minha chave, por favor?",
+        "visualLabel": "key",
+        "imageSrc": "/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-08-key.front",
+        "backAudioId": "course-a1-08-key.back"
+      },
+      {
+        "id": "course-a1-08-shower",
+        "word": "shower",
+        "translation": "chuveiro",
+        "example": "The shower doesn’t work",
+        "exampleTranslation": "O chuveiro não funciona",
+        "visualLabel": "shower",
+        "imageSrc": "/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-08-shower.front",
+        "backAudioId": "course-a1-08-shower.back"
+      },
+      {
+        "id": "course-a1-08-light",
+        "word": "light",
+        "translation": "luz / lâmpada",
+        "example": "Can you check the light?",
+        "exampleTranslation": "Você pode verificar a lâmpada?",
+        "visualLabel": "light",
+        "imageSrc": "/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-08-light.front",
+        "backAudioId": "course-a1-08-light.back"
+      },
+      {
+        "id": "course-a1-08-towel",
+        "word": "towel",
+        "translation": "toalha",
+        "example": "I need a clean towel",
+        "exampleTranslation": "Preciso de uma toalha limpa",
+        "visualLabel": "towel",
+        "imageSrc": "/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-08-towel.front",
+        "backAudioId": "course-a1-08-towel.back"
+      },
+      {
+        "id": "course-a1-08-reception",
+        "word": "reception",
+        "translation": "recepção",
+        "example": "Please call reception",
+        "exampleTranslation": "Por favor, ligue para a recepção",
+        "visualLabel": "reception",
+        "imageSrc": "/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-08-reception.front",
+        "backAudioId": "course-a1-08-reception.back"
+      },
+      {
+        "example": "I made a reservation.",
+        "exampleTranslation": "Eu fiz uma reserva.",
+        "id": "deck-a2-travel-reservation",
+        "translation": "reserva",
+        "visualLabel": "R",
+        "word": "reservation",
+        "imageSrc": "/flashcards-transparent/a2/travel/reservation/image.webp",
+        "audioId": "deck-a2-travel-reservation.front",
+        "backAudioId": "deck-a2-travel-reservation.front"
+      },
+      {
+        "example": "I booked a single room.",
+        "exampleTranslation": "Reservei um quarto individual.",
+        "id": "deck-a2-travel-single-room",
+        "translation": "quarto individual",
+        "visualLabel": "SR",
+        "word": "single room",
+        "imageSrc": "/flashcards-transparent/a2/travel/single-room/image.webp",
+        "audioId": "deck-a2-travel-single-room.front",
+        "backAudioId": "deck-a2-travel-single-room.front"
+      },
+      {
+        "example": "We booked a double room.",
+        "exampleTranslation": "Reservamos um quarto duplo.",
+        "id": "deck-a2-travel-double-room",
+        "translation": "quarto de casal",
+        "visualLabel": "DR",
+        "word": "double room",
+        "imageSrc": "/flashcards-transparent/a2/travel/double-room/image.webp",
+        "audioId": "deck-a2-travel-double-room.front",
+        "backAudioId": "deck-a2-travel-double-room.front"
+      },
+      {
+        "example": "I checked in at three.",
+        "exampleTranslation": "Fiz o check-in às três.",
+        "id": "deck-a2-travel-check-in",
+        "translation": "fazer check-in",
+        "visualLabel": "CI",
+        "word": "check in",
+        "imageSrc": "/flashcards-transparent/a2/travel/check-in/image.webp",
+        "audioId": "deck-a2-travel-check-in.front",
+        "backAudioId": "deck-a2-travel-check-in.front"
+      },
+      {
+        "example": "I checked out in the morning.",
+        "exampleTranslation": "Fiz o check-out pela manhã.",
+        "id": "deck-a2-travel-check-out",
+        "translation": "fazer check-out",
+        "visualLabel": "CO",
+        "word": "check out",
+        "imageSrc": "/flashcards-transparent/a2/travel/check-out/image.webp",
+        "audioId": "deck-a2-travel-check-out.front",
+        "backAudioId": "deck-a2-travel-check-out.front"
+      },
+      {
+        "example": "Breakfast was included.",
+        "exampleTranslation": "O café da manhã estava incluído.",
+        "id": "deck-a2-travel-breakfast-included",
+        "translation": "café da manhã incluso",
+        "visualLabel": "BI",
+        "word": "breakfast included",
+        "imageSrc": "/flashcards-transparent/a2/travel/breakfast-included/image.webp",
+        "audioId": "deck-a2-travel-breakfast-included.front",
+        "backAudioId": "deck-a2-travel-breakfast-included.front"
+      },
+      {
+        "example": "I ordered room service.",
+        "exampleTranslation": "Eu pedi serviço de quarto.",
+        "id": "deck-a2-travel-room-service",
+        "translation": "serviço de quarto",
+        "visualLabel": "RS",
+        "word": "room service",
+        "imageSrc": "/flashcards-transparent/a2/travel/room-service/image.webp",
+        "audioId": "deck-a2-travel-room-service.front",
+        "backAudioId": "deck-a2-travel-room-service.front"
+      },
+      {
+        "id": "course-a1-06-bed",
+        "word": "a bed",
+        "translation": "cama",
+        "example": "The cat is under the bed",
+        "exampleTranslation": "O gato está debaixo da cama",
+        "visualLabel": "a bed",
+        "imageSrc": "/flashcards-transparent/course-images/5d37d141f215ef8d84fa455a603de75fecc00155736a8830937c17539b5e7701/image.webp",
+        "audioId": "course-a1-06-bed.front",
+        "backAudioId": "course-a1-06-bed.back"
+      },
+      {
+        "example": "I took the elevator.",
+        "exampleTranslation": "Peguei o elevador.",
+        "id": "deck-a2-travel-elevator",
+        "translation": "elevador",
+        "visualLabel": "E",
+        "word": "elevator",
+        "imageSrc": "/flashcards-transparent/a2/travel/elevator/image.webp",
+        "audioId": "deck-a2-travel-elevator.front",
+        "backAudioId": "deck-a2-travel-elevator.front"
+      },
+      {
+        "example": "My room was on the second floor.",
+        "exampleTranslation": "Meu quarto ficava no segundo andar.",
+        "id": "deck-a2-travel-floor",
+        "translation": "andar",
+        "visualLabel": "F",
+        "word": "floor",
+        "imageSrc": "/flashcards-transparent/a2/travel/floor/image.webp",
+        "audioId": "deck-a2-travel-floor.front",
+        "backAudioId": "deck-a2-travel-floor.front"
+      },
+      {
+        "example": "I asked for the wifi password.",
+        "exampleTranslation": "Eu pedi a senha do wifi.",
+        "id": "deck-a2-travel-wifi-password",
+        "translation": "senha do Wi-Fi",
+        "visualLabel": "WP",
+        "word": "wifi password",
+        "imageSrc": "/flashcards-transparent/a2/travel/wifi-password/image.webp",
+        "audioId": "deck-a2-travel-wifi-password.front",
+        "backAudioId": "deck-a2-travel-wifi-password.front"
+      },
+      {
+        "example": "The receptionist was helpful.",
+        "exampleTranslation": "A recepcionista foi útil.",
+        "id": "deck-a2-travel-receptionist",
+        "translation": "recepcionista",
+        "visualLabel": "R",
+        "word": "receptionist",
+        "imageSrc": "/flashcards-transparent/a2/travel/receptionist/image.webp",
+        "audioId": "deck-a2-travel-receptionist.front",
+        "backAudioId": "deck-a2-travel-receptionist.front"
+      },
+      {
+        "example": "The room was clean.",
+        "exampleTranslation": "O quarto estava limpo.",
+        "id": "deck-a2-travel-clean-room",
+        "translation": "quarto limpo",
+        "visualLabel": "CR",
+        "word": "clean room",
+        "imageSrc": "/flashcards-transparent/a2/travel/clean-room/image.webp",
+        "audioId": "deck-a2-travel-clean-room.front",
+        "backAudioId": "deck-a2-travel-clean-room.front"
+      },
+      {
+        "example": "We found a cheap hotel.",
+        "exampleTranslation": "Encontramos um hotel barato.",
+        "id": "deck-a2-travel-cheap-hotel",
+        "translation": "hotel barato",
+        "visualLabel": "CH",
+        "word": "cheap hotel",
+        "imageSrc": "/flashcards-transparent/a2/travel/cheap-hotel/image.webp",
+        "audioId": "deck-a2-travel-cheap-hotel.front",
+        "backAudioId": "deck-a2-travel-cheap-hotel.front"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-08.shadowing.01",
+        "displayText": "Hello. My room key doesn’t work",
+        "translation": "Olá. A chave do meu quarto não funciona",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a1-08.shadowing.02",
+        "displayText": "I’m sorry. What’s your room number?",
+        "translation": "Sinto muito. Qual é o número do seu quarto?",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a1-08.shadowing.03",
+        "displayText": "Room twelve. Can you help me?",
+        "translation": "Quarto doze. Pode me ajudar?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a1-08.shadowing.04",
+        "displayText": "Yes. Here’s a new key",
+        "translation": "Sim. Aqui está uma nova chave",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a1-08.shadowing.05",
+        "displayText": "Thank you. Can I have a towel, too?",
+        "translation": "Obrigada. Posso ficar com uma toalha também?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a1-08.shadowing.06",
+        "displayText": "Of course. Here you are",
+        "translation": "Claro. Aqui está",
+        "speakerId": "owen-harris"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "evelyn-carter",
+        "name": "Evelyn",
+        "avatarUrl": "/flashcards/course-characters/evelyn-carter/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      },
+      {
+        "id": "owen-harris",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: explain a hotel problem and ask for help",
+    "duration": "20–30 seconds",
+    "starters": [
+      "The… doesn’t work",
+      "Can I have…?",
+      "Can you help me…?"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "No hotel",
+    "first": "Estudar as palavras de hotel em inglês nos flashcards",
+    "shadowing": "Ouvir e repetir as frases para falar com a recepção",
+    "voice": "Mandar um áudio em inglês para a teacher explicando um problema em um hotel e pedindo ajuda. A situação pode ser inventada. Termine com uma pergunta"
+  }
+}

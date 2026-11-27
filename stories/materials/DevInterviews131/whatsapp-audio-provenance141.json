@@ -1,0 +1,80 @@
+{
+  "version": 141,
+  "provider": "elevenlabs",
+  "sourceRequestSha256": "92dd39f277a7d718c9e94139b805b37311bab5978f94080434e820290a8ba49b",
+  "items": [
+    {
+      "lesson": "DevInterviews131",
+      "id": "W141.1",
+      "speaker": "Priya",
+      "characterId": "priya-nair",
+      "text": "For the technical interview, we’ll use a customer portal login. A customer enters an email and password. With a wrong password, the form should stay open and show a clear error. Please explain how you would investigate and test that behavior.",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/audio/W141.1.mp3",
+      "sourceSha256": "eff4d1fd11051c67176cbc7b33e65b703872d6d1553ed8a8979f0eaab65641bd",
+      "status": "ready",
+      "requestId": "z9JoL3LyZQsywoMAQdbE",
+      "generationAttempts": 1,
+      "synthesisInput": "For the technical interview, we'll use a customer portal login. A customer enters an email and password. With a wrong password, the form should stay open and show a clear error. Please explain how you would investigate and test that behavior.",
+      "disposition": "generated_voice_variation",
+      "provider": "elevenlabs",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "z9JoL3LyZQsywoMAQdbE",
+        "character-cost": "97",
+        "content-type": "audio/mpeg"
+      },
+      "sha256": "5223ff80c221cd06a778010d6c3c742cf86ff14042d986156c0dbceabd7b1c49",
+      "bytes": 295122,
+      "durationSeconds": 18.390204,
+      "sourceFile": "stories/materials/DevInterviews131/DevInterviews131.content.json"
+    },
+    {
+      "lesson": "DevInterviews131",
+      "id": "W141.2",
+      "speaker": "Priya",
+      "characterId": "priya-nair",
+      "text": "You don’t need to prepare slides or write code during the call. Bring one real or practice project and explain your own contribution. We’ll leave time for your questions about the team, and I’ll send feedback by Friday.",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/audio/W141.2.mp3",
+      "sourceSha256": "eff4d1fd11051c67176cbc7b33e65b703872d6d1553ed8a8979f0eaab65641bd",
+      "status": "ready",
+      "requestId": "DJTBCyY3jyVyHCIuGwuN",
+      "generationAttempts": 1,
+      "synthesisInput": "You don't need to prepare slides or write code during the call. Bring one real or practice project and explain your own contribution. We'll leave time for your questions about the team, and I'll send feedback by Friday.",
+      "disposition": "generated_voice_variation",
+      "provider": "elevenlabs",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "DJTBCyY3jyVyHCIuGwuN",
+        "character-cost": "88",
+        "content-type": "audio/mpeg"
+      },
+      "sha256": "094233aec87b3d61fed9c475410011463138db55b174543e8e008fc06821022e",
+      "bytes": 246221,
+      "durationSeconds": 15.32517,
+      "sourceFile": "stories/materials/DevInterviews131/DevInterviews131.content.json"
+    }
+  ],
+  "perceptualReview": "pending human; no playback claim"
+}

@@ -1,0 +1,255 @@
+{
+  "key": "a2-12",
+  "code": "A2.12",
+  "title": "How about Friday?",
+  "first": {
+    "id": "course-practice-a2-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-12-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "meeting"
+          },
+          {
+            "id": "b",
+            "text": "meet"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para sugerir uma ação depois de how about, usamos o verbo com ing. Por isso a sugestão é meeting, não meet. Por isso: “How about meeting on Friday?”"
+          },
+          "wrong": {
+            "title": "Para sugerir uma ação depois de how about, usamos o verbo com ing.",
+            "message": "Por isso a sugestão é meeting, não meet. Por isso: “How about meeting on Friday?”"
+          }
+        },
+        "context": "How about ___ on Friday?"
+      },
+      {
+        "id": "course-a2-12-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de why don’t we, o verbo fica na forma básica. Use book, sem ing. Por isso: “Why don’t we book a table?”"
+          },
+          "wrong": {
+            "title": "Depois de why don’t we, o verbo fica na forma básica.",
+            "message": "Use book, sem ing. Por isso: “Why don’t we book a table?”"
+          }
+        },
+        "context": "Why don’t we book a table?"
+      },
+      {
+        "id": "course-a2-12-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Let’s to check the time first"
+          },
+          {
+            "id": "a",
+            "text": "Let’s check the time first"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Let’s já introduz a sugestão. O verbo check vem diretamente depois, sem to. Por isso: “Let’s check the time first”"
+          },
+          "wrong": {
+            "title": "Let’s já introduz a sugestão.",
+            "message": "O verbo check vem diretamente depois, sem to. Por isso: “Let’s check the time first”"
+          }
+        }
+      },
+      {
+        "id": "course-a2-12-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "sounds"
+          },
+          {
+            "id": "a",
+            "text": "sound"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "That é singular, então o verbo fica sounds. É a mesma concordância que você já usa em she works. Por isso: “That sounds good”"
+          },
+          "wrong": {
+            "title": "That é singular, então o verbo fica sounds.",
+            "message": "É a mesma concordância que você já usa em she works. Por isso: “That sounds good”"
+          }
+        },
+        "context": "That ___ good"
+      },
+      {
+        "id": "course-a2-12-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para dizer que gostaria muito de participar, a combinação é would love to mais o verbo. O to precisa aparecer antes de join. Por isso: “I’d love to join you”"
+          },
+          "wrong": {
+            "title": "Para dizer que gostaria muito de participar, a combinação é would love to mais o verbo.",
+            "message": "O to precisa aparecer antes de join. Por isso: “I’d love to join you”"
+          }
+        },
+        "context": "I’d love join you"
+      },
+      {
+        "id": "course-a2-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "How about dinner on Saturday?"
+          },
+          {
+            "id": "b",
+            "text": "How about to dinner on Saturday?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "How about pode ser seguido diretamente de uma ideia, como dinner on Saturday. Não colocamos to antes de dinner. Por isso: “How about dinner on Saturday?”"
+          },
+          "wrong": {
+            "title": "How about pode ser seguido diretamente de uma ideia, como dinner on Saturday.",
+            "message": "Não colocamos to antes de dinner. Por isso: “How about dinner on Saturday?”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-12.shadowing.01",
+        "displayText": "Would you like to have dinner on Friday?",
+        "translation": "Você gostaria de jantar comigo na sexta-feira?",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.02",
+        "displayText": "I’d love to, but I’m working until eight",
+        "translation": "Adoraria, mas estou trabalhando até às oito",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a2-12.shadowing.03",
+        "displayText": "How about Saturday, then?",
+        "translation": "Que tal sábado, então?",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.04",
+        "displayText": "Saturday works. Why don’t we try the new Italian place?",
+        "translation": "Sábado é uma boa opção. Que tal experimentarmos aquele restaurante italiano novo?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a2-12.shadowing.05",
+        "displayText": "Good idea. Shall we book a table for seven?",
+        "translation": "Boa ideia. Vamos reservar uma mesa para sete?",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.06",
+        "displayText": "Seven is a bit early. How about half past seven?",
+        "translation": "Sete horas é um pouco cedo. Que tal sete e meia?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a2-12.shadowing.07",
+        "displayText": "Perfect. I can book it this afternoon",
+        "translation": "Perfeito. Posso reservar esta tarde",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.08",
+        "displayText": "Thanks. I’ll send you the address",
+        "translation": "Obrigado. Vou te enviar o endereço",
+        "speakerId": "cian-walsh"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "niamh-murphy",
+        "name": "Niamh",
+        "avatarUrl": "/flashcards/course-characters/niamh-murphy/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      },
+      {
+        "id": "cian-walsh",
+        "name": "Cian",
+        "avatarUrl": "/flashcards/course-characters/cian-walsh/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: agree on a social plan and update it when someone cannot attend",
+    "duration": "45–60 seconds",
+    "starters": [
+      "How about…?",
+      "Why don’t we…?",
+      "I’d love to, but…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Vamos marcar?",
+    "first": "Resolver o quiz sobre formas de fazer sugestões",
+    "shadowing": "Ouvir e repetir as frases para combinar um encontro",
+    "voice": "Mandar um áudio em inglês para a teacher combinando um encontro e ajustando o plano porque uma pessoa não pode ir. Termine com uma pergunta"
+  }
+}

@@ -1,4 +1,6 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { MeetingFrameProps } from '../Device/MeetingFrame.types'
+import type { AudioSequenceControlsProps } from './AudioSequenceControls.types'
 export interface InterviewSimulationProps extends Omit<
   ComponentPropsWithRef<'section'>,
   'title'
@@ -6,21 +8,33 @@ export interface InterviewSimulationProps extends Omit<
   title: ReactNode
   interviewer: { name: string; imageUrl: string }
   learnerName: string
+  learnerAvatarUrl?: string
+  /** Guided call has one compact transport and no simulated meeting toggles. */
+  presentation?: 'interview' | 'guided-call'
+  /** Fit supplied portraits without changing the default framing of existing calls. */
+  imageFit?: MeetingFrameProps['imageFit']
+  participants?: MeetingFrameProps['participants']
+  activeParticipantId?: string
+  sharedContent?: ReactNode
+  sharedContentLabel?: MeetingFrameProps['sharedContentLabel']
+  playback?: AudioSequenceControlsProps['playback']
+  supportAction?: AudioSequenceControlsProps['supportAction']
   caption?: ReactNode
-  captionsEnabled: boolean
-  onCaptionsChange: (enabled: boolean) => void
-  microphoneEnabled: boolean
-  onMicrophoneChange: (enabled: boolean) => void
-  cameraEnabled: boolean
-  onCameraChange: (enabled: boolean) => void
-  handRaised: boolean
-  onHandChange: (raised: boolean) => void
+  learnerCaption?: ReactNode
+  captionsEnabled?: boolean
+  onCaptionsChange?: (enabled: boolean) => void
+  microphoneEnabled?: boolean
+  onMicrophoneChange?: (enabled: boolean) => void
+  cameraEnabled?: boolean
+  onCameraChange?: (enabled: boolean) => void
+  handRaised?: boolean
+  onHandChange?: (raised: boolean) => void
   turnIndex: number
   turnCount: number
   onNext: () => void
   onPrevious: () => void
   onReplay: () => void
-  onEnd: () => void
+  onEnd?: () => void
   ended?: boolean
   playing?: boolean
   loading?: boolean
@@ -37,5 +51,8 @@ export interface InterviewSimulationProps extends Omit<
     next: string
     replay: string
     progress: string
+    play: string
+    pause: string
+    resume: string
   }>
 }

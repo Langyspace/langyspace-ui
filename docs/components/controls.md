@@ -100,6 +100,8 @@ Cuidados: Não simular checked apenas por cor ou substituir o label por um ícon
 
 ## ChoiceCard
 
+A variante opcional `lesson` usa a receita visual dos slides e uma borda verde para a seleção, mantendo o texto legível. `aria-pressed`, callbacks, foco, conteúdo e estado desabilitado continuam nativos e controlados pelo consumidor. Preferências pessoais não recebem avaliação automática.
+
 Escolha rica apresentada como botão com espaço para conteúdo composto, usada em seleção de períodos.
 
 Contrato: children e atributos/ref de button.

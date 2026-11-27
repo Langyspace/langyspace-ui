@@ -1,56 +1,41 @@
-import { useId, useRef } from 'react'
+import { useId, useRef, useState } from 'react'
 import { Avatar } from '../Avatar/Avatar'
+import { MessagePhoneFrame } from '../Device/MessagePhoneFrame'
 import { Button } from '../Button/Button'
 import { useVoiceMessageAudio } from './useVoiceMessageAudio'
+import {
+  VoiceMessageRecording,
+  AdditionalVoiceMessage,
+} from './VoiceMessageRecording'
 import * as Styled from './VoiceMessageExercise.styles'
 import type { VoiceMessageExerciseProps } from './VoiceMessageExercise.types'
-
-const wave = [
-  { id: 'a', height: 10 },
-  { id: 'b', height: 26 },
-  { id: 'c', height: 12 },
-  { id: 'd', height: 27 },
-  { id: 'e', height: 12 },
-  { id: 'f', height: 22 },
-  { id: 'g', height: 15 },
-  { id: 'h', height: 14 },
-  { id: 'i', height: 21 },
-  { id: 'j', height: 9 },
-  { id: 'k', height: 27 },
-  { id: 'l', height: 9 },
-  { id: 'm', height: 27 },
-  { id: 'n', height: 8 },
-  { id: 'o', height: 23 },
-  { id: 'p', height: 9 },
-  { id: 'q', height: 18 },
-  { id: 'r', height: 18 },
-  { id: 's', height: 16 },
-  { id: 't', height: 24 },
-  { id: 'u', height: 17 },
-  { id: 'v', height: 25 },
-  { id: 'w', height: 15 },
-  { id: 'x', height: 22 },
-]
-
-function formatTime(seconds: number) {
-  const value = Number.isFinite(seconds) ? Math.max(0, Math.floor(seconds)) : 0
-  return `${Math.floor(value / 60)}:${String(value % 60).padStart(2, '0')}`
-}
+import { playFeedbackSound } from '../../internal/feedbackSounds'
+import { QuestionsTitle } from '../Slide/SlidePage.styles'
 
 function VoiceMessageContent({
   contact,
   greeting,
+  attachment,
+  videoAttachment,
   audio,
+  additionalAudios = [],
   questions,
+  questionHeading,
   onAnswer,
   active = true,
+  layout = 'fluid',
+  columnAlignment,
   footer,
   replyAction,
+  replayActionLabel,
+  transcriptReveal = 'third-listen',
+  transcriptToggle = transcriptReveal === 'third-listen',
   labels: overrides,
   ...props
 }: VoiceMessageExerciseProps) {
+  const [followUpStarted, setFollowUpStarted] = useState(false)
   const id = useId()
-  const playRef = useRef<HTMLButtonElement>(null)
+  const conversationRef = useRef<HTMLDivElement>(null)
   const media = useVoiceMessageAudio(active)
   const labels = {
     play: 'Ouvir áudio',
@@ -59,7 +44,12 @@ function VoiceMessageContent({
     replay: 'Ouvir novamente',
     speed: 'Velocidade',
     transcript: 'Transcrição',
-    transcriptHidden: 'Transcrição na segunda escuta',
+    showTranscript: 'Mostrar transcrição',
+    hideTranscript: 'Esconder transcrição',
+    transcriptHidden:
+      transcriptReveal === 'third-listen'
+        ? 'Transcrição na terceira escuta'
+        : 'Transcrição na segunda escuta',
     audioUnavailable: 'Áudio ainda não disponível.',
     audioError: 'Não foi possível reproduzir o áudio.',
     retry: 'Tentar novamente',
@@ -69,21 +59,28 @@ function VoiceMessageContent({
     conversation: 'Conversa',
     ...overrides,
   }
-  const duration = media.duration || audio.duration || 0
-  const progress = duration > 0 ? Math.min(1, media.elapsed / duration) : 0
-  const playing =
-    active && (media.status === 'playing' || media.status === 'loading')
-  const loading = active && media.status === 'loading'
   const status =
     !active && (media.status === 'playing' || media.status === 'loading')
       ? 'paused'
       : media.status
-  const transcriptVisible = media.playCount >= 2
-  const playLabel = playing
-    ? labels.pause
-    : media.status === 'ended'
-      ? labels.replay
-      : labels.play
+  const manualTranscript = transcriptReveal === 'manual-after-replay'
+  const trackLabels = (index: number) =>
+    additionalAudios.length
+      ? {
+          ...labels,
+          play: `${labels.play} (${index + 1}/${additionalAudios.length + 1})`,
+          pause: `${labels.pause} (${index + 1}/${additionalAudios.length + 1})`,
+          replay: `${labels.replay} (${index + 1}/${additionalAudios.length + 1})`,
+          showTranscript: `${labels.showTranscript} (${index + 1}/${additionalAudios.length + 1})`,
+          hideTranscript: `${labels.hideTranscript} (${index + 1}/${additionalAudios.length + 1})`,
+          speed: `${labels.speed} (${index + 1}/${additionalAudios.length + 1})`,
+        }
+      : labels
+  const pauseSiblings = (current: HTMLAudioElement) => {
+    conversationRef.current?.querySelectorAll('audio').forEach((element) => {
+      if (element !== current) element.pause()
+    })
+  }
 
   return (
     <Styled.Root
@@ -91,162 +88,31 @@ function VoiceMessageContent({
       data-playback={status}
       data-listens={media.playCount}
     >
-      <Styled.Layout>
-        <Styled.Phone>
-          <Styled.StatusBar aria-hidden="true">
-            <span>9:41</span>
-            <Styled.Island />
-            <Styled.StatusIcons>
-              <svg
-                width="18"
-                height="12"
-                viewBox="0 0 18 12"
-                fill="currentColor"
-              >
-                <rect x="0" y="8" width="3" height="4" rx="1" />
-                <rect x="5" y="5" width="3" height="7" rx="1" />
-                <rect x="10" y="2" width="3" height="10" rx="1" />
-              </svg>
-              <svg
-                width="22"
-                height="12"
-                viewBox="0 0 22 12"
-                fill="none"
-                stroke="currentColor"
-              >
-                <rect x="1" y="1" width="17" height="10" rx="2" />
-                <path d="M20 4v4" />
-                <rect
-                  x="3"
-                  y="3"
-                  width="13"
-                  height="6"
-                  rx="1"
-                  fill="currentColor"
-                  stroke="none"
-                />
-              </svg>
-            </Styled.StatusIcons>
-          </Styled.StatusBar>
-          <Styled.Contact>
-            <Styled.Back aria-hidden="true">‹</Styled.Back>
+      <Styled.Layout
+        $balanced={layout === 'balanced'}
+        $alignment={columnAlignment}
+      >
+        <MessagePhoneFrame
+          aria-label={undefined}
+          contact={
             <Avatar
               imageUrl={contact.avatarUrl}
               initials={contact.name.slice(0, 2)}
+              name={contact.name}
+              namePosition="beside"
+              textTone="inherit"
+              description={contact.status}
               size="sm"
             />
-            <Styled.ContactText>
-              <strong>{contact.name}</strong>
-              {contact.status ? <small>{contact.status}</small> : null}
-            </Styled.ContactText>
-          </Styled.Contact>
-          <Styled.Conversation
-            tabIndex={0}
-            role="region"
-            aria-label={`${labels.conversation}: ${contact.name}`}
-          >
-            {greeting ? (
-              <Styled.Bubble>
-                {greeting.text}
-                <Styled.Time>{greeting.timestamp}</Styled.Time>
-              </Styled.Bubble>
-            ) : null}
-            <Styled.VoiceBubble>
-              {/* eslint-disable-next-line jsx-a11y/media-has-caption -- The named transcript region below unlocks on the second listen as explicitly requested for this listening exercise. */}
-              <audio
-                ref={media.audioRef}
-                src={audio.src}
-                preload="metadata"
-                {...media.events}
-              />
-              <Styled.Player>
-                <Styled.Play
-                  ref={playRef}
-                  aria-label={playLabel}
-                  aria-busy={loading || undefined}
-                  title={loading ? labels.loading : playLabel}
-                  aria-controls={`${id}-transcript`}
-                  aria-describedby={
-                    transcriptVisible ? undefined : `${id}-transcript`
-                  }
-                  disabled={!audio.src || !active}
-                  onClick={() => {
-                    void media.toggle()
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    {playing ? (
-                      <path d="M6 4h4v16H6zm8 0h4v16h-4z" />
-                    ) : (
-                      <path d="M7 4v16l13-8z" />
-                    )}
-                  </svg>
-                </Styled.Play>
-                <Styled.Wave aria-hidden="true">
-                  {wave.map(({ id: barId, height }, index) => (
-                    <Styled.Bar
-                      key={barId}
-                      $height={height}
-                      $played={progress > index / wave.length}
-                    />
-                  ))}
-                </Styled.Wave>
-                <Styled.Speed
-                  aria-label={`${labels.speed}: ${media.speed}x`}
-                  disabled={!audio.src || !active}
-                  onClick={media.changeSpeed}
-                >
-                  {media.speed}x
-                </Styled.Speed>
-              </Styled.Player>
-              <Styled.Meta>
-                <span>
-                  {formatTime(media.elapsed)} / {formatTime(duration)}
-                </span>
-                <time>{audio.timestamp}</time>
-              </Styled.Meta>
-              <Styled.Transcript
-                $visible={transcriptVisible}
-                id={`${id}-transcript`}
-                aria-live="polite"
-                role="region"
-                aria-label={labels.transcript}
-              >
-                {transcriptVisible ? (
-                  <p>{audio.transcript}</p>
-                ) : (
-                  <Styled.Hint>{labels.transcriptHidden}</Styled.Hint>
-                )}
-              </Styled.Transcript>
-              {!audio.src ? (
-                <Styled.Hint>{labels.audioUnavailable}</Styled.Hint>
-              ) : null}
-              {media.status === 'error' ? (
-                <Styled.Error role="alert">
-                  {labels.audioError}
-                  <Button
-                    disabled={!active}
-                    variant="text-danger"
-                    onClick={() => {
-                      void media.toggle()
-                      playRef.current?.focus()
-                    }}
-                  >
-                    {labels.retry}
-                  </Button>
-                </Styled.Error>
-              ) : null}
-            </Styled.VoiceBubble>
-          </Styled.Conversation>
-          <Styled.Composer aria-hidden={replyAction ? undefined : true}>
-            <Styled.MessagePlaceholder>Message</Styled.MessagePlaceholder>
-            {replyAction ? (
+          }
+          conversationProps={{
+            ref: conversationRef,
+            tabIndex: 0,
+            role: 'region',
+            'aria-label': `${labels.conversation}: ${contact.name}`,
+          }}
+          composerAction={
+            replyAction ? (
               <Styled.Reply
                 aria-label={replyAction.label}
                 disabled={replyAction.disabled || !active}
@@ -262,22 +128,93 @@ function VoiceMessageContent({
                   <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
                 </svg>
               </Styled.Reply>
-            ) : (
-              <Styled.Microphone aria-hidden="true">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
-                </svg>
-              </Styled.Microphone>
-            )}
-          </Styled.Composer>
-          <Styled.HomeIndicator aria-hidden="true" />
-        </Styled.Phone>
-        <Styled.Side role="group" aria-label={labels.questions}>
+            ) : undefined
+          }
+        >
+          {greeting ? (
+            <Styled.Bubble>
+              {greeting.text}
+              <Styled.Time>{greeting.timestamp}</Styled.Time>
+            </Styled.Bubble>
+          ) : null}
+          {attachment ? (
+            <Styled.PhotoBubble>
+              <img src={attachment.src} alt={attachment.alt} />
+              {attachment.timestamp ? (
+                <Styled.Time>{attachment.timestamp}</Styled.Time>
+              ) : null}
+            </Styled.PhotoBubble>
+          ) : null}
+          {videoAttachment ? (
+            <Styled.VideoPreview
+              aria-label={videoAttachment.title}
+              disabled={!active}
+              onClick={() => {
+                conversationRef.current
+                  ?.querySelectorAll('audio')
+                  .forEach((element) => element.pause())
+                videoAttachment.onOpen()
+              }}
+            >
+              <Styled.VideoThumbnail>
+                {videoAttachment.imageUrl ? (
+                  <img src={videoAttachment.imageUrl} alt="" loading="lazy" />
+                ) : null}
+                <Styled.VideoPreviewIcon aria-hidden="true">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </Styled.VideoPreviewIcon>
+              </Styled.VideoThumbnail>
+              <Styled.VideoCaption>
+                <strong>{videoAttachment.title}</strong>
+                {videoAttachment.sourceLabel ? (
+                  <span>{videoAttachment.sourceLabel}</span>
+                ) : null}
+                {videoAttachment.timestamp ? (
+                  <Styled.Time>{videoAttachment.timestamp}</Styled.Time>
+                ) : null}
+              </Styled.VideoCaption>
+            </Styled.VideoPreview>
+          ) : null}
+          <VoiceMessageRecording
+            audio={audio}
+            contact={contact}
+            active={active}
+            media={media}
+            labels={trackLabels(0)}
+            transcriptReveal={transcriptReveal}
+            transcriptToggle={transcriptToggle}
+            followUpStarted={followUpStarted}
+            id={id}
+            onPlaybackStart={pauseSiblings}
+          />
+          {additionalAudios.map((recording, index) => (
+            <AdditionalVoiceMessage
+              key={`${recording.id}:${recording.src ?? ''}`}
+              audio={recording}
+              contact={contact}
+              active={active}
+              labels={trackLabels(index + 1)}
+              transcriptReveal={transcriptReveal}
+              transcriptToggle={transcriptToggle}
+              onPlaybackStart={pauseSiblings}
+            />
+          ))}
+        </MessagePhoneFrame>
+        <Styled.Side
+          $stretch={columnAlignment === 'stretch'}
+          role="group"
+          aria-label={labels.questions}
+        >
+          {questionHeading ?? (
+            <QuestionsTitle>{labels.questions}</QuestionsTitle>
+          )}
           {questions.map((question, index) => (
             <Styled.Question
               key={question.id}
@@ -301,6 +238,7 @@ function VoiceMessageContent({
                     }
                     onClick={() => {
                       onAnswer(question.id, choice.id)
+                      playFeedbackSound(choice.feedbackOutcome ?? 'question')
                     }}
                   >
                     {choice.label}
@@ -319,6 +257,20 @@ function VoiceMessageContent({
               ) : null}
             </Styled.Question>
           ))}
+          {replayActionLabel &&
+          transcriptReveal !== 'third-listen' &&
+          (manualTranscript ? !followUpStarted : media.playCount < 2) ? (
+            <Button
+              variant="secondary"
+              disabled={!active || media.status !== 'ended'}
+              onClick={() => {
+                setFollowUpStarted(true)
+                void media.toggle()
+              }}
+            >
+              {replayActionLabel}
+            </Button>
+          ) : null}
           {footer}
         </Styled.Side>
       </Styled.Layout>

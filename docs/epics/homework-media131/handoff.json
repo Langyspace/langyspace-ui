@@ -1,0 +1,58 @@
+{
+  "reviewedSources": 66,
+  "withHomework": 63,
+  "withoutExistingHomework": [
+    "trial-a1-a2",
+    "trial-b1",
+    "trial-b2"
+  ],
+  "flashcardSets": 32,
+  "quizSets": 31,
+  "cards": 693,
+  "pictureCards": 657,
+  "alphabetDigitVisuals": 36,
+  "portraitBindings": 125,
+  "affectedLessons": [
+    "a1-03",
+    "a1-06",
+    "a2-05",
+    "a2-06",
+    "a2-11",
+    "b1-02",
+    "b1-08",
+    "b1-09",
+    "b2-01",
+    "b2-03",
+    "b2-07",
+    "b2-11",
+    "c1-01",
+    "c1-04",
+    "c1-05",
+    "c1-07",
+    "c1-11",
+    "extra-dev-first-day",
+    "tema-frontend"
+  ],
+  "changedPictureBindings": 194,
+  "newPictureBindings": 111,
+  "reusedPictureBindings": 53,
+  "generatedPictureBindings": 58,
+  "oldInvalidPictureBindingsCorrected": 83,
+  "newUniqueConcepts": 50,
+  "generatedAtlases": 9,
+  "preparedImmutableImages": 46,
+  "remainingImageOrPortraitGaps": 0,
+  "test": {
+    "command": "pnpm exec vitest run --project unit test/materials/shared/HomeworkMedia131.test.ts",
+    "exitCode": 0,
+    "testFiles": 1,
+    "tests": 1,
+    "durationSeconds": 3.38
+  },
+  "limits": [
+    "No browser/runtime/HTTP/playback verification by media front",
+    "Family relations and abstract concepts depend on adjacent literal card text; generated image owner reports known contextual limits",
+    "Publication/sync and final visual review belong to root/product owner"
+  ],
+  "visualGateReview": "pending human"
+}

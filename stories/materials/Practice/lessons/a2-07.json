@@ -1,0 +1,255 @@
+{
+  "key": "a2-07",
+  "code": "A2.07",
+  "title": "House rules",
+  "first": {
+    "id": "course-practice-a2-07-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-07-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "has"
+          },
+          {
+            "id": "b",
+            "text": "have"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Com she, have to vira has to. O verbo da obrigação continua book, na forma básica. Por isso: “She has to book the grill”"
+          },
+          "wrong": {
+            "title": "Com she, have to vira has to.",
+            "message": "O verbo da obrigação continua book, na forma básica. Por isso: “She has to book the grill”"
+          }
+        },
+        "context": "She ___ to book the grill"
+      },
+      {
+        "id": "course-a2-07-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na expressão don’t have to, o to continua antes da ação. Ela diz que trazer cadeiras não é obrigatório. Por isso: “We don’t have to bring chairs”"
+          },
+          "wrong": {
+            "title": "Na expressão don’t have to, o to continua antes da ação.",
+            "message": "Ela diz que trazer cadeiras não é obrigatório. Por isso: “We don’t have to bring chairs”"
+          }
+        },
+        "context": "We don’t have to bring chairs"
+      },
+      {
+        "id": "course-a2-07-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "You mustn’t to use the pool at night"
+          },
+          {
+            "id": "a",
+            "text": "You mustn’t use the pool at night"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Mustn’t já funciona como um verbo modal. Depois dele, usamos use diretamente, sem acrescentar to. Por isso: “You mustn’t use the pool at night”"
+          },
+          "wrong": {
+            "title": "Mustn’t já funciona como um verbo modal.",
+            "message": "Depois dele, usamos use diretamente, sem acrescentar to. Por isso: “You mustn’t use the pool at night”"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "have"
+          },
+          {
+            "id": "a",
+            "text": "has"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O does já carrega a marca de she na pergunta. Por isso usamos have, não has, logo depois. Por isso: “Does she have to book it?”"
+          },
+          "wrong": {
+            "title": "O does já carrega a marca de she na pergunta.",
+            "message": "Por isso usamos have, não has, logo depois. Por isso: “Does she have to book it?”"
+          }
+        },
+        "context": "Does she ___ to book it?"
+      },
+      {
+        "id": "course-a2-07-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para dizer que existe uma obrigação, usamos have to antes da ação. Sem o to, essa construção fica incompleta. Por isso: “They have to leave by ten”"
+          },
+          "wrong": {
+            "title": "Para dizer que existe uma obrigação, usamos have to antes da ação.",
+            "message": "Sem o to, essa construção fica incompleta. Por isso: “They have to leave by ten”"
+          }
+        },
+        "context": "They have leave by ten"
+      },
+      {
+        "id": "course-a2-07-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "He doesn’t have to clean the pool"
+          },
+          {
+            "id": "a",
+            "text": "He doesn’t has to clean the pool"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de doesn’t, o verbo volta para have. Não precisamos marcar a terceira pessoa de novo com has. Por isso: “He doesn’t have to clean the pool”"
+          },
+          "wrong": {
+            "title": "Depois de doesn’t, o verbo volta para have.",
+            "message": "Não precisamos marcar a terceira pessoa de novo com has. Por isso: “He doesn’t have to clean the pool”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-07-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-07.shadowing.01",
+        "displayText": "I’m new here. Do I have to book the grill?",
+        "translation": "Sou nova aqui. Preciso reservar a churrasqueira?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.02",
+        "displayText": "Yes, you have to book it at reception. It’s free",
+        "translation": "Sim, você precisa reservar na recepção. É grátis",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-07.shadowing.03",
+        "displayText": "Can we use the pool after dinner?",
+        "translation": "Podemos usar a piscina depois do jantar?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.04",
+        "displayText": "Until eight. You mustn’t use it after that",
+        "translation": "Até as oito. Não se pode usar depois disso",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-07.shadowing.05",
+        "displayText": "All right. Do I have to bring my own chairs?",
+        "translation": "Tudo bem. Preciso levar minhas próprias cadeiras?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.06",
+        "displayText": "No, you don’t have to. There are six chairs by the grill",
+        "translation": "Não precisa. Tem seis cadeiras perto da churrasqueira",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-07.shadowing.07",
+        "displayText": "Great. One more thing: can I take my bike in the lift?",
+        "translation": "Ótimo. Mais uma coisa: posso levar a bicicleta no elevador?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.08",
+        "displayText": "Sorry, you can’t. Please leave it in the garage",
+        "translation": "Desculpe, não pode. Por favor, deixe-a na garagem",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: explain shared-space rules and negotiate a workable plan",
+    "duration": "45–60 seconds",
+    "starters": [
+      "You have to…",
+      "You don’t have to…",
+      "You mustn’t…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  },
+  "homeworkCopy": {
+    "title": "Regras de convivência",
+    "first": "Resolver o quiz sobre obrigações e regras de convivência",
+    "shadowing": "Ouvir e repetir as frases para explicar regras e combinar tarefas",
+    "voice": "Mandar um áudio em inglês para a teacher explicando as regras de um espaço compartilhado e propondo uma combinação que funcione para todos. Termine com uma pergunta"
+  }
+}

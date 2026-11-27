@@ -1,0 +1,137 @@
+{
+  "tool": "built-in image_gen",
+  "profile": "exercise-scene",
+  "transparentBackground": false,
+  "conversion": "cwebp quality86, proportional resize768px wide, no crop; environmental backgrounds retained",
+  "images": [
+    {
+      "id": "dead-phone",
+      "prompt": "Square contextual 3D illustration: unbranded black smartphone with an empty red battery symbol on a wooden cafe table. Warm natural light, softly blurred cafe, opaque background. No cables or charger; no text or logo.",
+      "sourceSha256": "4ac614e372ebd603e1642e321959bc7c45252338b4fb0835fd343203388f516d",
+      "sha256": "871663f94ab04970a1ec682828b933a2ef63d5d13102429358e402e7e7ca7f33",
+      "file": "assets/scene-dead-phone.webp",
+      "size": 68386
+    },
+    {
+      "id": "charger",
+      "prompt": "Create ONE square contextual vocabulary illustration for an adult English lesson. Warm polished stylized 3D animated-film rendering, realistic simple object geometry, tactile materials, gentle warm light and a complete softly blurred opaque environmental background. One coherent scene, one unmistakable target object filling the central 75 percent, meaningful even at small size. No collage, border, logo, watermark, letters or words. A white electrical phone charger power adapter with its attached thin cable loosely coiled beside it on a hotel bedside table. The adapter and its two metal plug prongs must be large and visible, with a softly blurred neatly made hotel bed and warm bedside lamp behind. No phone or power bank.",
+      "sourceSha256": "27aad0a646c3efce6363456b8aa4bdc2ef0a95f11965da204b304c2884c841ac",
+      "sha256": "90b23ca67f8d4440a1890c3c7afd8be468e31f856c2f4d4337bbebb35b3d0d78",
+      "file": "assets/scene-charger.webp",
+      "size": 41474
+    },
+    {
+      "id": "charging-cable",
+      "prompt": "Create ONE square contextual vocabulary illustration for an adult English lesson, warm polished stylized 3D animated-film materials and soft natural lighting, complete softly blurred opaque environment. Make the target unmistakable at a small card size and central so a 3:2 crop preserves all essential meaning. No text, numbers, logo, border, collage or watermark. A BLACK charging cable alone in one broad loose loop on a pale cafe tabletop. Both cable ends are large in the foreground and face the viewer: one rectangular USB-A connector and one small oval USB-C connector. There is no power adapter, no phone, headphones, wall outlet or other object in focus. Clearly one cable, with its black color and two distinct connector shapes visible.",
+      "sourceSha256": "29f408d5ca26f92ab6b4d2158fd11d00fe593de97c3762ab19f3dd35fc630e49",
+      "sha256": "152c346ae8318f4bc78fa085d3347f4876b954f7968af26e3728c932fe8509e0",
+      "file": "assets/scene-charging-cable.webp",
+      "size": 42488
+    },
+    {
+      "id": "power-bank-new",
+      "prompt": "Create ONE square contextual vocabulary illustration for an adult English lesson, warm polished stylized 3D animated-film materials and soft natural lighting, complete softly blurred opaque environment. Make the target unmistakable at a small card size and central so a 3:2 crop preserves all essential meaning. No text, numbers, logo, border, collage or watermark. One LIGHT GRAY portable rectangular power bank, three phones thick, on a pale wooden cafe table. A low three-quarter side view clearly shows its thick solid body, four tiny blue status lights on the long side and two USB ports on the short end. No glass or black face, screen, connected cable, plug prongs or phone. Only the power bank is in focus. Cozy softly blurred cafe window in the background.",
+      "sourceSha256": "e8a85057e934922029b3e1aa08ef2ba471f8ce220d9cd3f3a1b8a623c39d0312",
+      "sha256": "6138020752bc7674b133f59e1b6cc0a792413f16f012753d0888cbc6cebc696d",
+      "file": "assets/scene-power-bank-new.webp",
+      "size": 29884
+    },
+    {
+      "id": "outlet-us",
+      "prompt": "Create ONE square contextual vocabulary illustration for an adult English lesson, warm polished stylized 3D animated-film materials and soft natural lighting, complete softly blurred opaque environment. Make the target unmistakable at a small card size and central so a 3:2 crop preserves all essential meaning. No text, numbers, logo, border, collage or watermark. Close-up of a white American electrical outlet on a real cafe interior wall just above a wooden table, no plug inserted and no cable. Precisely show the familiar US outlet face, two narrow vertical slots and one round grounding hole below, correctly oriented. No British three-rectangle socket, no lettering, switch labels or other objects in focus. Warm cafe context.",
+      "sourceSha256": "3df1d9dcc4ecb3e5228f975c487fe88ff9ab4c657a1c8cab19104fb96b11aecc",
+      "sha256": "e299ee157a2382da613fd6a6e187a7595f23fca18c4bc136ff63cb82d4d89301",
+      "file": "assets/scene-outlet-us.webp",
+      "size": 54814
+    },
+    {
+      "id": "map",
+      "prompt": "Create ONE square contextual vocabulary illustration for an adult English lesson, warm polished stylized 3D animated-film materials and soft natural lighting, complete softly blurred opaque environment. Make the target unmistakable at a small card size and central so a 3:2 crop preserves all essential meaning. No text, numbers, logo, border, collage or watermark. A paper street map folded into an accordion standing partly open on a small hotel cafe table, with colorful unlabelled street lines and park shapes visible over its folds. The whole folded paper map is the clear single subject, not a phone or globe. No readable words, numbers, map pins, compass labels or other travel objects in focus. Softly blurred city-window environment.",
+      "sourceSha256": "0413ab05607824b5ca51d9a81737715b75a8ff5f94a5c6deee635dca35e399f9",
+      "sha256": "054982e2036695d4ce41ccb9c575482732ea4027e5f08d0e6db7f67c1b3e230a",
+      "file": "assets/scene-map.webp",
+      "size": 77516
+    },
+    {
+      "id": "doorman",
+      "prompt": "Create ONE square contextual vocabulary illustration for an adult English lesson, warm polished stylized 3D animated-film materials and soft natural lighting, complete softly blurred opaque environment. Make the target unmistakable at a small card size and central so a 3:2 crop preserves all essential meaning. No text, numbers, logo, border, collage or watermark. A friendly adult male apartment doorman wearing a long dark-green coat with gold buttons and white gloves, BARE HEADED with no hat, holding open the glass entrance door of a residential apartment building. Show two rows of balcony windows above a small plain awning so it clearly looks residential, not a hotel. Full upper body and open door are central. No badge, weapon, radio, earpiece, crossed arms, suitcases, cart, numbers, text, flag or nationality symbol.",
+      "sourceSha256": "5ee02b1ec6728e4150712f1e0b3689ba6df701b9d64f4575d3a0a5ec61f0a102",
+      "sha256": "5ea13e3278a61887347909a8999675f32cdb4fd756a7f43e107aeb95da1a9814",
+      "file": "assets/scene-doorman.webp",
+      "size": 69014
+    },
+    {
+      "id": "rain",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. Heavy rain on a city sidewalk, falling raindrops clearly visible against soft gray buildings. One adult woman holding an open red umbrella, wet pavement with puddles reflecting it, wearing an ordinary coat. The rain and umbrella are the unmistakable subject; no snow, phone or car in focus.",
+      "sourceSha256": "da2a130ca593399e8e6cfe4ff9a053039d0fb6d42923ea0542457e19c10fb223",
+      "sha256": "aa49f50e96c124c9c0c8dd0fc45a50045bf7baa7df78e007460225b7ff408e2f",
+      "file": "assets/scene-rain.webp",
+      "size": 110554
+    },
+    {
+      "id": "traffic",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. Dense slow traffic on a broad city street: many cars very close together in several lanes, bumper-to-bumper, viewed from a slightly elevated street-level angle. Warm afternoon light, distant city buildings and a red traffic signal. Traffic congestion must be clear; no single car as the hero, no collision or emergency.",
+      "sourceSha256": "be4fb76e60745762cd9be1fd469af7fb039835dafcb4aecabf25b608196cb5d9",
+      "sha256": "c0356c0857487ed0ad2eb416f4e7fc4607d27968590622ecd23ee2e5b4094640",
+      "file": "assets/scene-traffic.webp",
+      "size": 130142
+    },
+    {
+      "id": "line",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. An orderly line of six adult customers waiting one behind another outside the entrance of a small city cafe. A cafe doorway and service counter at the front of the line are visible, each person's position makes the queue unmistakable. Warm afternoon, no crowd gathering randomly, no words or signage.",
+      "sourceSha256": "894370c8dff706c1cca3ea70e1af9655a3da62307d54110465fe24efab52cb59",
+      "sha256": "522005fee6c24584c6ea7031f78b2b9f7b743ce28a1349b2f8593391bce62f83",
+      "file": "assets/scene-line.webp",
+      "size": 120582
+    },
+    {
+      "id": "departure-board",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. Large black airport departure information board above a modern airport concourse. The word DEPARTURES at the top, neat rows of generic flight times and destinations below, no airline logos. Include the corner of an airport check-in area and a softly blurred traveler with a suitcase. The board is the clear main subject, readable title DEPARTURES is allowed; no giant decorative airplane.",
+      "sourceSha256": "a090deb166cc3b6f6eb39c181fc94b855f8ed8717dc050381977ebe5bb73e682",
+      "sha256": "3a73480358d123ed654a2a8313504242f670af675231ec185f55fbf58b020965",
+      "file": "assets/scene-departure-board.webp",
+      "size": 70742
+    },
+    {
+      "id": "taxi",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. One clearly recognizable yellow New York taxi cab stopped beside a city curb in warm daylight, shown in three-quarter view with its small roof light and checkered stripe. The entire yellow cab is central and large, softly blurred city background. No driver close-up, no advertising text, no logos, no other cars in focus.",
+      "sourceSha256": "653d01ec6b1545e3f8fa3a881fd45804bc599109cbce675ee5dc8dafc0b7a611",
+      "sha256": "7648eee374603e820210e77c5bb9eb87455e0c0d3acc61d3f2431d6f2669951b",
+      "file": "assets/scene-taxi.webp",
+      "size": 65692
+    },
+    {
+      "id": "wallet",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. A brown leather wallet partly open on a small apartment entryway table, showing a couple of plain unlabelled card corners and a folded banknote without readable numbers. It is clearly a wallet, not a purse, suitcase, phone or notebook. Warm soft light and a blurred coat rack in the background.",
+      "sourceSha256": "7c57b4ca15e8fcc71fc0be90951790db6d94e7294cd6412fd99d409fed192eaf",
+      "sha256": "a4d0136dce217920335bfcdbb824c08f84333fd7e6cf9a10c7c54e72cbd8cb80",
+      "file": "assets/scene-wallet.webp",
+      "size": 55750
+    },
+    {
+      "id": "key",
+      "prompt": "Create ONE square contextual scene for an adult English language lesson, matching Langy's warm polished stylized 3D animated-film aesthetic: believable materials, soft natural lighting and a complete opaque environment. Keep essential evidence in the central 75 percent for a 3:2 crop and thumbnail use. Clear simple composition, no collage, border, logos, watermark, decorative emoji or readable words unless specified. One ordinary silver metal apartment door key on a simple round key ring, lying on a wooden apartment entryway table. The full key shape, round head and notched blade are clearly visible and central. A softly blurred apartment door behind. No car remote, keyboard, lock, other keys or text.",
+      "sourceSha256": "8f925c27f4f204c331d263583de55c0e87b26aa7e59e54d39081c7d9974e6173",
+      "sha256": "4333a4c0800e120fbf4d9858b21482e43d805a74e1194655e632bd9b7ad55986",
+      "file": "assets/scene-key.webp",
+      "size": 45416
+    },
+    {
+      "id": "office",
+      "prompt": "One square warm polished stylized 3D illustration for an adult English lesson: a contemporary shared office with several unoccupied desks, monitors, office chairs, plants and large windows. The office setting is unmistakable, seen from a human eye-level angle, soft daylight and complete opaque background. No words, numbers, logos, collage, border or watermark. Keep essential desks central for a 3:2 crop.",
+      "sourceSha256": "412b6f1e25485512529aa3d1897d569a569314c56d373bfa6543684c7bc4f1b4",
+      "sha256": "bf9f0020d4e615ecff179709a5e8f6b2b9dd213bdc8e1a06fbba5d2fcf8c4d85",
+      "file": "assets/scene-office.webp",
+      "size": 76966
+    },
+    {
+      "id": "pajamas",
+      "prompt": "One square warm polished stylized 3D illustration for an adult English lesson: a neatly laid out matching pale-blue cotton pajama set on a cream bed in a cozy home bedroom, a button-up long-sleeved pajama shirt beside its matching trousers, slight soft blue-white stripes. Both garments are visible and central, no person. Blurred bedside lamp and home window behind, warm natural morning light and opaque environmental background. It must clearly look like pajamas, not a business suit or sports clothes. No text, logo, symbols, border, collage or watermark.",
+      "sourceSha256": "d84ebb5aee9e5d4c1a54a065572bc4b404927d6eedbe444b7572187eb84f381c",
+      "sha256": "4ff3f9feb6a666a1c9acf54714c9e5b7a679ebe7b9ee2aa5c56a001fea88159d",
+      "file": "assets/scene-pajamas.webp",
+      "size": 69968
+    }
+  ],
+  "activeVocabularyOverrideManifest": "vocabulary-object-provenance.json"
+}

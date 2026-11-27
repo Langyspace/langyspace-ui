@@ -7,6 +7,10 @@ export interface SimulationIconProps {
     | 'captions'
     | 'hand'
     | 'play'
+    | 'pause'
+    | 'hint'
+    | 'screen-share'
     | 'previous'
     | 'replay'
+    | 'next'
 }

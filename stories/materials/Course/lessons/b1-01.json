@@ -1,0 +1,759 @@
+{
+  "version": 81,
+  "code": "B1.01",
+  "key": "b1-01",
+  "title": "What have you been doing?",
+  "goal": "Catch up on recent activities and distinguish progress from completed results",
+  "freeConversationInstruction": "Catch up on your lives, explain what has kept you busy and ask genuine follow-up questions",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a recent result and an experience from A2",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What have you done recently?",
+          "hint": "I’ve … recently",
+          "cue": "Describe a recent result"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "When did you do it?",
+          "hint": "I … last …",
+          "cue": "Add a finished past time"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What experience would you like to ask me about?",
+          "hint": "Have you ever …? What was it like?",
+          "cue": "Ask me about an experience"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "title": "Busy weeks and time for yourself",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "kind": "vocabulary",
+      "instruction": "Name each picture, then click it to check and listen",
+      "surface": "plain",
+      "alignHeading": true,
+      "imageAspectRatio": 1,
+      "columns": 3,
+      "items": [
+        {
+          "id": "B101-V81.0",
+          "word": "work overtime",
+          "translation": "",
+          "example": "I’ve been working overtime this week",
+          "imageUrl": "b1-01-vocabulary81",
+          "imageAlt": "work overtime",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 0,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B101-FS81.0",
+          "audioText": "work overtime. I’ve been working overtime this week."
+        },
+        {
+          "id": "B101-V81.1",
+          "word": "catch up",
+          "translation": "",
+          "example": "Let’s catch up over coffee",
+          "imageUrl": "b1-01-vocabulary81",
+          "imageAlt": "catch up",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 1,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B101-FS81.1",
+          "audioText": "catch up. Let’s catch up over coffee."
+        },
+        {
+          "id": "B101-V81.2",
+          "word": "take a break",
+          "translation": "",
+          "example": "I need to take a break from painting",
+          "imageUrl": "b1-01-vocabulary81",
+          "imageAlt": "take a break",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 0,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B101-FS81.2",
+          "audioText": "take a break. I need to take a break from painting."
+        },
+        {
+          "id": "B101-V81.3",
+          "word": "work out",
+          "translation": "",
+          "example": "I’ve been working out in the mornings",
+          "imageUrl": "b1-01-work-out136",
+          "imageAlt": "work out",
+          "audioId": "B101-FS81.3",
+          "audioText": "work out. I’ve been working out in the mornings."
+        },
+        {
+          "id": "B101-V81.4",
+          "word": "decorate a room",
+          "translation": "",
+          "example": "She’s been decorating a room all week",
+          "imageUrl": "b1-01-decorate-room143-v2",
+          "imageAlt": "decorate a room",
+          "audioId": "B101-FS81.4",
+          "audioText": "decorate a room. She’s been decorating a room all week."
+        },
+        {
+          "id": "B101-V81.5",
+          "word": "have time for yourself",
+          "translation": "",
+          "example": "Have you had time for yourself lately?",
+          "imageUrl": "b1-01-vocabulary81",
+          "imageAlt": "have time for yourself",
+          "imageRegion": {
+            "columns": 3,
+            "rows": 2,
+            "column": 2,
+            "row": 1,
+            "sourceAspectRatio": 1.5
+          },
+          "audioId": "B101-FS81.5",
+          "audioText": "have time for yourself. Have you had time for yourself lately?"
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Listen and read Ana’s update",
+      "instruction": "Listen to Ana first, then read her update and answer the questions",
+      "minutes": 5,
+      "eyebrow": "Reading",
+      "subject": "A busy week at home",
+      "paragraphs": [
+        "Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.",
+        "I’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.",
+        "It’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend."
+      ],
+      "presentation": "article",
+      "titleAudio": [
+        {
+          "id": "B101-R145.1",
+          "text": "Kim has just come back from visiting her family in Korea. Tomorrow, she’s coming over for coffee. I’ve been painting my flat all week, so I have a lot to show her. I’ve finished the living room and the kitchen, but I haven’t started the bedroom yet.\n\nI’ve also been running every morning for two weeks. Getting up early was hard at first, but now I enjoy it. In the evenings, I’ve been baking. I’ve made three cakes this week, and I’m saving a slice for Kim.\n\nIt’s been a productive week, but I haven’t had much time for myself. This weekend, I want to take a break from painting and catch up with my friend."
+        }
+      ],
+      "questions": [
+        {
+          "id": "reading145.1",
+          "prompt": "Which rooms has Ana finished, and which one is next?",
+          "hint": "Two rooms are finished; one room is still waiting",
+          "answer": "She has finished the living room and the kitchen. The bedroom is next."
+        },
+        {
+          "id": "reading145.2",
+          "prompt": "How often does Ana run, and how long has she been doing it?",
+          "hint": "Look for a daily habit and a period of time",
+          "answer": "She has been running every morning for two weeks."
+        },
+        {
+          "id": "reading145.3",
+          "prompt": "Why does Ana want to take a break this weekend?",
+          "hint": "Think about her busy week and the time she has had for herself",
+          "answer": "She has been busy painting, running and baking, and she has not had much time for herself. She wants to catch up with Kim."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Welcome back",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Hi, Ana! I’m back! Wow… your living room is blue!",
+          "audioText": "Hi, Ana! I’m back! Wow… your living room is blue!",
+          "translation": "Oi, Ana! Voltei! Nossa… a sua sala está azul!"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Welcome back! Yeah, I’ve been painting all week",
+          "audioText": "Welcome back! Yeah, I’ve been painting all week.",
+          "translation": "Bem-vinda de volta! É, passei a semana toda pintando"
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "It’s great! Have you finished?",
+          "audioText": "It’s great! Have you finished?",
+          "translation": "Ficou ótimo! Você terminou?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next",
+          "audioText": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next.",
+          "translation": "Quase. Pintei os dois cômodos, a sala e a cozinha. O quarto é o próximo"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What has Ana been doing all week?",
+          "hint": "She’s been …",
+          "answer": "Ana has been painting all week"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Which rooms has she finished?",
+          "hint": "She’s finished …",
+          "answer": "Ana has finished the living room and kitchen"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Which room will she paint next?",
+          "hint": "The … is next",
+          "answer": "Ana will paint the bedroom next"
+        }
+      ],
+      "dialogueGroup": "welcome-back"
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Activities and results",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "And your shoes! Have you been running?",
+          "audioText": "And your shoes! Have you been running?",
+          "translation": "E esse tênis! Você anda correndo?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes! I’ve been running every morning for two weeks",
+          "audioText": "Yes! I’ve been running every morning for two weeks.",
+          "translation": "Sim! Estou correndo toda manhã há duas semanas"
+        },
+        {
+          "id": "D.7",
+          "speaker": "Kim",
+          "text": "Every morning? Wow. And there’s a cake on the table. You’ve even been baking!",
+          "audioText": "Every morning? Wow. And there’s a cake on the table. You’ve even been baking!",
+          "translation": "Toda manhã? Nossa. E tem um bolo na mesa. Você até anda fazendo bolo!"
+        },
+        {
+          "id": "D.8",
+          "speaker": "Ana",
+          "text": "Ha! Yes. I’ve baked three cakes this week. Anyway, how was Korea?",
+          "audioText": "Ha! Yes. I’ve baked three cakes this week. Anyway, how was Korea?",
+          "translation": "Ha! Sim. Fiz três bolos esta semana. Enfim, como foi a Coreia?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "How long has Ana been running?",
+          "hint": "She’s been running for …",
+          "answer": "Ana has been running for two weeks"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How often does she run?",
+          "hint": "She runs …",
+          "answer": "Ana runs every morning"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How many cakes has she baked this week?",
+          "hint": "She’s baked …",
+          "answer": "Ana has baked three cakes this week"
+        }
+      ],
+      "dialogueGroup": "welcome-back"
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "React and continue",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "D.9",
+          "speaker": "Kim",
+          "text": "Great! I visited my family and ate a lot. But I have jet lag. I’ve been sleeping all day!",
+          "audioText": "Great! I visited my family and ate a lot. But I have jet lag. I’ve been sleeping all day!",
+          "translation": "Ótima! Visitei a minha família e comi muito. Mas estou com jet lag. Passei o dia todo dormindo!"
+        },
+        {
+          "id": "D.10",
+          "speaker": "Ana",
+          "text": "Oh no! You seem tired. Here, have some cake",
+          "audioText": "Oh no! You seem tired. Here, have some cake.",
+          "translation": "Ah, não! Você parece cansada. Toma, come um pedaço de bolo"
+        },
+        {
+          "id": "D.11",
+          "speaker": "Kim",
+          "text": "Of course! I always say yes to cake",
+          "audioText": "Of course! I always say yes to cake.",
+          "translation": "Claro! Eu sempre digo sim para bolo"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "Who did Kim visit in Korea?",
+          "hint": "She visited …",
+          "answer": "Kim visited her family in Korea"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why has she been sleeping all day?",
+          "hint": "She has …",
+          "answer": "Kim has been sleeping all day because she has jet lag"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What does Ana offer Kim?",
+          "hint": "Ana offers …",
+          "answer": "Ana offers Kim some cake"
+        }
+      ],
+      "dialogueGroup": "welcome-back"
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Talk about your week",
+      "instruction": "Compare your week with Ana’s, then ask your teacher about theirs",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What have you been busy with this week?",
+          "cue": "Share an activity you have been working on, then ask me",
+          "hint": "I’ve been … this week. How about you?"
+        },
+        {
+          "id": "1",
+          "prompt": "What have you finished, and what are you still working on?",
+          "cue": "Describe one result and something that is still in progress",
+          "hint": "I’ve finished …, but I’m still working on …"
+        },
+        {
+          "id": "recent.questions.3",
+          "prompt": "Have you had enough time for yourself lately?",
+          "cue": "Tell me how you take a break, then ask about my week",
+          "hint": "I’ve been quite busy, but I’ve made time for … What about you?"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "An activity, a result, or both?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Activity and duration",
+          "verb": "have / has been + verb-ing",
+          "example": "I’ve been painting all week"
+        },
+        {
+          "id": "1",
+          "subject": "A completed result or number",
+          "verb": "have / has + past participle",
+          "example": "I’ve painted two rooms. I’ve baked three cakes"
+        },
+        {
+          "id": "2",
+          "subject": "A result can coexist with more work",
+          "verb": "result + but + ongoing activity",
+          "example": "I’ve finished the living room, but I’m still painting the bedroom"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete Ana’s progress update",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "B1.01.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Hi, Ana! I’m back! Wow… your living room is blue!",
+          "audioText": "Hi, Ana! I’m back! Wow… your living room is blue!",
+          "translation": "Oi, Ana! Voltei! Nossa… a sua sala está azul!",
+          "parts": [
+            "Hi, Ana! I’m ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "back"
+            },
+            "! Wow… your living room is blue!"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Welcome back! Yeah, I’ve been painting all week",
+          "audioText": "Welcome back! Yeah, I’ve been painting all week.",
+          "translation": "Bem-vinda de volta! É, passei a semana toda pintando",
+          "parts": [
+            "Welcome back! Yeah, I’ve ",
+            {
+              "id": "practice99.gap.2",
+              "answer": "been"
+            },
+            " painting all week"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "It’s great! Have you finished?",
+          "audioText": "It’s great! Have you finished?",
+          "translation": "Ficou ótimo! Você terminou?",
+          "parts": [
+            "It’s great! Have you ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "finished"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next",
+          "audioText": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next.",
+          "translation": "Quase. Pintei os dois cômodos, a sala e a cozinha. O quarto é o próximo",
+          "parts": [
+            "Almost. I’ve ",
+            {
+              "id": "practice99.gap.4",
+              "answer": "painted"
+            },
+            " both rooms, the living room and the kitchen. The bedroom is next"
+          ]
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "And your shoes! Have you been running?",
+          "audioText": "And your shoes! Have you been running?",
+          "translation": "E esse tênis! Você anda correndo?",
+          "parts": [
+            "And your shoes! Have you ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "been"
+            },
+            " running?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes! I’ve been running every morning for two weeks",
+          "audioText": "Yes! I’ve been running every morning for two weeks.",
+          "translation": "Sim! Estou correndo toda manhã há duas semanas",
+          "parts": [
+            "Yes! I’ve been running every morning ",
+            {
+              "id": "practice99.gap.6",
+              "answer": "for"
+            },
+            " two weeks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Catch up with a friend",
+      "instruction": "Choose a topic, share recent activities and ask about mine",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A message from Leo",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! It’s Leo. We’ve finished the invitations for the party, so that’s one thing off the list. We’ve also seen eleven possible places now, but we haven’t chosen one yet. We’ve been visiting places every weekend for three weeks, and it’s taking longer than I expected. Carla wants space for dancing, while I’d be happy with a barbecue in the park. Could you help us think about what matters most before we book another visit? The invitations are ready, but the venue decision is still open",
+      "audioText": "Hi, Ana! It’s Leo. We’ve finished the invitations for the party, so that’s one thing off the list. We’ve also seen eleven possible places now, but we haven’t chosen one yet. We’ve been visiting places every weekend for three weeks, and it’s taking longer than I expected. Carla wants space for dancing, while I’d be happy with a barbecue in the park. Could you help us think about what matters most before we book another visit? The invitations are ready, but the venue decision is still open.",
+      "audioId": "B101-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What have Leo and Carla finished?",
+          "hint": "They’ve finished …",
+          "answer": "Leo and Carla have finished the party invitations"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How long have they been visiting venues?",
+          "hint": "They’ve been visiting … for …",
+          "answer": "They’ve been visiting venues every weekend for three weeks"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How do their venue preferences differ?",
+          "hint": "Carla wants …, while Leo …",
+          "answer": "Carla wants space for dancing, while Leo would be happy with a park barbecue"
+        }
+      ],
+      "contact": {
+        "name": "Leo"
+      },
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Help Leo with the decision",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Time spent or work finished?",
+      "instruction": "Watch the picture round, then explain the difference using your own week",
+      "minutes": 4,
+      "video": {
+        "videoId": "lvoc5vDrb8E",
+        "startSeconds": 159,
+        "endSeconds": 205,
+        "title": "The Grammar Gameshow — present perfect simple and continuous — BBC Learning English",
+        "credit": "BBC Learning English"
+      },
+      "items": [
+        {
+          "id": "b1-01.video102.q1",
+          "prompt": "What has the person been doing?",
+          "hint": "Listen to the first sentence about the picture",
+          "answer": "He’s been writing letters"
+        },
+        {
+          "id": "b1-01.video102.q2",
+          "prompt": "Which sentence focuses on completed letters?",
+          "hint": "Listen for written rather than been writing",
+          "answer": "“He’s written a number of letters” focuses on completed results"
+        },
+        {
+          "id": "b1-01.video102.q3",
+          "prompt": "Which question fits the continuous example: how many or how long?",
+          "hint": "Listen to Leslie’s contrast at the end",
+          "answer": "How long fits the continuous example"
+        },
+        {
+          "id": "b1-01.video102.q4",
+          "prompt": "What have you been working on, and what have you finished?",
+          "hint": "Give one ongoing activity and one completed result",
+          "answer": "Example: I’ve been studying English this week, and I’ve finished two lessons"
+        }
+      ]
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Catch up on recent activities and distinguish progress from completed results"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Recent activities",
+      "options": [
+        {
+          "id": "paint",
+          "title": "Painting",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Activity",
+              "value": "Painting all week"
+            },
+            {
+              "id": "1",
+              "label": "Result",
+              "value": "Living room and kitchen finished"
+            },
+            {
+              "id": "2",
+              "label": "Still to do",
+              "value": "Bedroom"
+            }
+          ]
+        },
+        {
+          "id": "run",
+          "title": "Running",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Activity",
+              "value": "Every morning"
+            },
+            {
+              "id": "1",
+              "label": "Duration",
+              "value": "Two weeks"
+            },
+            {
+              "id": "2",
+              "label": "Focus",
+              "value": "An ongoing routine"
+            }
+          ]
+        },
+        {
+          "id": "bake",
+          "title": "Baking",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Activity",
+              "value": "Baking this week"
+            },
+            {
+              "id": "1",
+              "label": "Result",
+              "value": "Three cakes"
+            },
+            {
+              "id": "2",
+              "label": "Follow-up",
+              "value": "Ask who or what they are for"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "catch",
+          "prompt": "What has the person in your chosen topic been doing?",
+          "hint": "They’ve been …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What duration or result can you add?",
+          "hint": "They’ve … for … / They’ve finished …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What follow-up question would keep the conversation going?",
+          "hint": "How long …? / Have you … yet? / Who …?"
+        }
+      ],
+      "questionPurpose": "response"
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "The result and the ongoing task",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Finished",
+          "value": "Invitations"
+        },
+        {
+          "id": "1",
+          "label": "Ongoing",
+          "value": "Venue visits · three weeks · eleven seen"
+        },
+        {
+          "id": "2",
+          "label": "Different preferences",
+          "value": "Carla: dancing space · Leo: park barbecue"
+        }
+      ],
+      "questions": [
+        {
+          "id": "leo",
+          "prompt": "How would you acknowledge their completed work?",
+          "hint": "You’ve already …, so …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What would you ask before recommending another visit?",
+          "hint": "Have you agreed …? / What matters most …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How could you help compare their preferences?",
+          "hint": "Carla needs …, while Leo prefers …; perhaps …"
+        }
+      ],
+      "questionPurpose": "response",
+      "referenceLabel": "The result and the ongoing task"
+    }
+  },
+  "notesStorageKey": "langy-notes:b1-01"
+}

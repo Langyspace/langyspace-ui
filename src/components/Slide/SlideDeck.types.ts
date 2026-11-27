@@ -1,4 +1,28 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { ComponentPropsWithRef, ReactNode, RefObject } from 'react'
+
+export interface SlideGestureOptions {
+  viewportRef: RefObject<HTMLDivElement | null>
+  idsKey: string
+  navigationMode: 'pages' | 'continuous'
+  onStep: (direction: 1 | -1) => void
+}
+
+export interface SlideMovementTarget {
+  pageId: string
+  alignEnd: boolean
+}
+
+export interface SlideTouchGesture {
+  id: number
+  x: number
+  y: number
+  lastY: number
+  axis?: 'vertical' | 'horizontal'
+  direction?: 1 | -1
+  consumedContent: boolean
+  native: boolean
+  moving: boolean
+}
 
 export interface SlideDeckPage {
   /** Stable lesson page identity; never use a position as the id. */
@@ -16,7 +40,23 @@ export interface SlideDeckProps extends Omit<
   pageId?: string
   onPageChange?: (pageId: string) => void
   label: string
+  /** Product-owned exit action. When supplied, Back stays visible on every page. */
+  onBack?: () => void
   previousPageLabel?: string
+  /** Accessible name for the persistent control that returns to the first page. */
+  firstPageLabel?: string
+  /** Page gestures by default; continuous mode keeps native document scrolling without page controls. */
+  navigationMode?: 'pages' | 'continuous'
   /** Product-owned actions such as fullscreen, without duplicating the slide layout. */
   actions?: ReactNode
+  /** Show the shared answer-sound toggle; spoken lesson audio is independent. */
+  feedbackSounds?: boolean
+  feedbackSoundsLabel?: string
+  /** Optional controlled appearance switch, placed immediately before the sound control. */
+  themeToggle?: {
+    mode: 'dark' | 'light'
+    onToggle: () => void
+  }
+  /** Nonmodal material overlays, such as controlled notes, within the deck's viewport. */
+  overlay?: ReactNode
 }

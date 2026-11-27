@@ -1,0 +1,161 @@
+{
+  "dialogueDisplay": {
+    "D.1": "Tell me about a project you know well",
+    "D.2": "I built a customer portal. It helps customers sign in and check their orders",
+    "D.3": "What was your own contribution to that project?",
+    "D.4": "I built the login form and its error messages. A teammate built the API",
+    "D.5": "What challenge did you face, and how did you handle it?",
+    "D.6": "The page opened even when the password was wrong. I reproduced the issue, checked the error response and fixed the navigation. Then I tested correct and incorrect passwords"
+  },
+  "dialogueQuestions": [
+    {
+      "id": "model.q1",
+      "prompt": "What does Ana’s customer portal help people do?",
+      "hint": "Listen for the two customer actions",
+      "answer": "It helps customers sign in and check their orders"
+    },
+    {
+      "id": "model.q2",
+      "prompt": "What did Ana build, and what did her teammate build?",
+      "hint": "Separate the form from the API",
+      "answer": "Ana built the login form and error messages. Her teammate built the API"
+    },
+    {
+      "id": "model.q3",
+      "prompt": "How did Ana handle the incorrect-password problem?",
+      "hint": "Think about reproducing, investigating, changing and testing",
+      "answer": "She reproduced the issue, checked the response, fixed the navigation and tested correct and incorrect passwords"
+    }
+  ],
+  "experience": [
+    {
+      "id": "experience.1",
+      "question": "What does a project you know well do, and who is it for?",
+      "cue": "Introduce a real or practice project and its users",
+      "hint": "It helps… / People use it to…",
+      "example": "My customer portal helps customers sign in and check their orders"
+    },
+    {
+      "id": "experience.2",
+      "question": "What was your own contribution?",
+      "cue": "Explain your work separately from the team’s work",
+      "hint": "I was responsible for… / My teammate…",
+      "example": "I built the login form and its error messages. My teammate built the API"
+    },
+    {
+      "id": "experience.3",
+      "question": "Tell me about one challenge. What did you do, and what changed?",
+      "cue": "Give a problem, an action and a result",
+      "hint": "The problem was… / I checked… / After that…",
+      "example": "The page opened after an incorrect password. I checked the response and fixed the navigation. Then the error stayed on the form"
+    }
+  ],
+  "clarify": [
+    {
+      "id": "clarify.1",
+      "question": "What would you ask before changing this Login screen?",
+      "cue": "Ask how success and failure should behave",
+      "hint": "What should happen if…? / How does…?",
+      "example": "What should happen after an incorrect password, and how does the API report an error?"
+    },
+    {
+      "id": "clarify.2",
+      "question": "Valid details return a session. Invalid details return 401. What would you check?",
+      "cue": "Explain how you would reproduce and investigate the issue",
+      "hint": "First, I’d… / Then I’d…",
+      "example": "First, I’d reproduce the issue with a test account. Then I’d inspect the response and check when the page navigates"
+    },
+    {
+      "id": "clarify.3",
+      "question": "How would you know your change works?",
+      "cue": "Describe at least two meaningful test cases",
+      "hint": "With… I’d expect… / I’d also check…",
+      "example": "With valid details, the portal should open. With an incorrect password, the form should stay open and show an error"
+    }
+  ],
+  "transfer": [
+    {
+      "id": "followup.1",
+      "question": "Does Thursday at ten a.m. Dublin time work for you?",
+      "cue": "Confirm the time or offer a specific alternative",
+      "hint": "That works for me / Could we… instead?",
+      "example": "Thursday at ten a.m. Dublin time works for me"
+    },
+    {
+      "id": "followup.2",
+      "question": "What would you like to clarify before the interview?",
+      "cue": "Ask about the task, a requirement or your project",
+      "hint": "Should I…? / Which… would you like…?",
+      "example": "Which part of my project would you like me to focus on?"
+    },
+    {
+      "id": "followup.3",
+      "question": "What would you ask the team before accepting a role?",
+      "cue": "Ask about feedback, onboarding or how people work together",
+      "hint": "How do you…? / What does… look like?",
+      "example": "How do you give feedback and support new developers during onboarding?"
+    }
+  ],
+  "noteQuestions": [
+    [
+      {
+        "id": "note1.q1",
+        "prompt": "What will the technical task focus on?",
+        "hint": "Think about the customer portal screen",
+        "answer": "It will focus on a customer portal login"
+      },
+      {
+        "id": "note1.q2",
+        "prompt": "What should happen after an incorrect password?",
+        "hint": "The customer should still see the form",
+        "answer": "The form should stay open and show a clear error"
+      },
+      {
+        "id": "note1.q3",
+        "prompt": "What does Priya ask you to explain?",
+        "hint": "Think about finding the problem and checking the result",
+        "answer": "She asks you to explain how you would investigate and test the behavior"
+      }
+    ],
+    [
+      {
+        "id": "note2.q1",
+        "prompt": "Do you need slides or live coding during the call?",
+        "hint": "Listen for what is not required",
+        "answer": "No, slides and live coding are not required"
+      },
+      {
+        "id": "note2.q2",
+        "prompt": "What project should you bring, and what should you explain?",
+        "hint": "A real or practice project is acceptable",
+        "answer": "You should bring one real or practice project and explain your own contribution"
+      },
+      {
+        "id": "note2.q3",
+        "prompt": "When will Priya send feedback?",
+        "hint": "Listen for the final day",
+        "answer": "She will send feedback by Friday"
+      }
+    ]
+  ],
+  "grammarRows": [
+    {
+      "id": "experience",
+      "subject": "Experience until now",
+      "form": "have / has + past participle",
+      "example": "I’ve worked with React for two years"
+    },
+    {
+      "id": "finished",
+      "subject": "One completed project",
+      "form": "past simple + a finished context",
+      "example": "In my last project, I built the login form"
+    },
+    {
+      "id": "approach",
+      "subject": "A possible approach",
+      "form": "would + base verb",
+      "example": "I’d start by checking the error response"
+    }
+  ]
+}

@@ -1,13 +1,24 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
 
 export const CalendarMonthGridRoot = styled.div.withConfig({
   componentId: 'lsui-sc-calendar-month-grid',
-})`
+})<{ $compact: boolean }>`
   display: grid;
   grid-template-columns: repeat(7, minmax(7.5rem, 1fr));
   min-width: 52.5rem;
+  ${(p) =>
+    p.$compact
+      ? css`
+          grid-template-columns: repeat(7, minmax(0, 1fr));
+          width: 100%;
+          min-width: 0;
+          @container (max-width: ${theme.breakpoints.sm}) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        `
+      : undefined}
 `
 
 export const CalendarWeekGridRoot = styled.div.withConfig({

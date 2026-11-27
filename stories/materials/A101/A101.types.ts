@@ -1,5 +1,6 @@
 import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
 export interface A101LessonProps {
+  studentPortalOrigin?: string
   initialPageId?: string
   learnerName?: string
 }

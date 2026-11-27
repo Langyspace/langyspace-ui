@@ -1,0 +1,376 @@
+{
+  "version": 80,
+  "code": "A1.02",
+  "title": "Your name and number",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Say hello again",
+      "instruction": "Share your name and where you’re from, then ask me",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "r1",
+          "prompt": "What’s your name?",
+          "hint": "My name is … What’s your name?",
+          "cue": "Say your name and ask back"
+        },
+        {
+          "id": "r2",
+          "prompt": "Where are you from?",
+          "hint": "I’m from … What about you?",
+          "cue": "Say where you’re from"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How are you today?",
+          "hint": "I’m … How are you?",
+          "cue": "Say how you feel"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s2",
+      "kind": "activity",
+      "title": "Digits for your number",
+      "instruction": "Say the digits, then click to check and listen",
+      "minutes": 3,
+      "eyebrow": "Vocabulary"
+    },
+    {
+      "id": "s6",
+      "kind": "activity",
+      "title": "The alphabet",
+      "instruction": "Use this chart when you need a letter. Click to listen",
+      "minutes": 4,
+      "eyebrow": "Reference"
+    },
+    {
+      "id": "s7",
+      "kind": "questions",
+      "title": "Check the spelling",
+      "instruction": "Listen to the letters and say the last name",
+      "minutes": 2,
+      "eyebrow": "Listening",
+      "titleAudio": [
+        {
+          "id": "S.1",
+          "text": "L-I-M-A."
+        }
+      ],
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What’s the last name?",
+          "hint": "The last name is …",
+          "answer": "The last name is Lima"
+        },
+        {
+          "id": "s7.q98.2",
+          "prompt": "How do you spell it?",
+          "hint": "It’s spelled …",
+          "answer": "It’s spelled L-I-M-A"
+        },
+        {
+          "id": "s7.q98.3",
+          "prompt": "What’s the last letter?",
+          "hint": "The last letter is …",
+          "answer": "The last letter is A"
+        }
+      ],
+      "questionPurpose": "comprehension"
+    },
+    {
+      "id": "s8",
+      "kind": "dialogue",
+      "title": "A new contact",
+      "instruction": "Listen, then check the name and number together",
+      "minutes": 4,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Hi, Ana! What’s your last name?",
+          "audioText": "Hi, Ana! What’s your last name?"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "My last name is Souza",
+          "audioText": "My last name is Souza."
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "How do you spell it?",
+          "audioText": "How do you spell it?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "S-O-U-Z-A",
+          "audioText": "S-O-U-Z-A."
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "What’s your phone number?",
+          "audioText": "What’s your phone number?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "It’s 984 221 507",
+          "audioText": "It’s 984 221 507."
+        }
+      ],
+      "questions": [
+        {
+          "id": "surname",
+          "prompt": "What’s Ana’s last name?",
+          "hint": "Her last name is …",
+          "answer": "Ana’s last name is Souza"
+        },
+        {
+          "id": "s8.q98.2",
+          "prompt": "How does she spell her last name?",
+          "hint": "It’s spelled …",
+          "answer": "She spells it S-O-U-Z-A"
+        },
+        {
+          "id": "s8.q98.3",
+          "prompt": "What’s her phone number?",
+          "hint": "Her number is …",
+          "answer": "Her phone number is 984 221 507"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "kind": "questions",
+      "title": "Your details, your questions",
+      "instruction": "Use a real or made-up name. Ask your teacher for a contact too",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "last",
+          "prompt": "What’s your last name?",
+          "cue": "Say and spell the name",
+          "hint": "My last name is … That’s …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "ask",
+          "prompt": "Now ask me for my contact",
+          "cue": "Ask my name and number",
+          "hint": "What’s your name? What’s your phone number?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "confirm-number",
+          "prompt": "What’s my phone number?",
+          "cue": "Repeat the number you heard and check it with me",
+          "hint": "Your number is … Is that right?",
+          "answer": "One possible response"
+        }
+      ],
+      "questionPurpose": "conversation"
+    },
+    {
+      "id": "s10",
+      "kind": "grammar",
+      "title": "My and your",
+      "instruction": "Use my for your details and your for the person you’re talking to",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "my",
+          "subject": "About me",
+          "verb": "my + name / number",
+          "example": "My name is Ana. My phone number is 984 221 507."
+        },
+        {
+          "id": "your",
+          "subject": "About you",
+          "verb": "your + name / number",
+          "example": "What’s your name? What’s your phone number?"
+        }
+      ]
+    },
+    {
+      "id": "s_gap99",
+      "kind": "dialogue",
+      "title": "Complete the contact exchange",
+      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "minutes": 2,
+      "eyebrow": "Complete the conversation",
+      "dialogueGroup": "A1.02.practice99",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Hi, Ana! What’s your last name?",
+          "audioText": "Hi, Ana! What’s your last name?",
+          "parts": [
+            "Hi, Ana! What’s your ",
+            {
+              "id": "practice99.gap.1",
+              "answer": "last name"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "My last name is Souza",
+          "audioText": "My last name is Souza.",
+          "parts": [
+            "",
+            {
+              "id": "practice99.gap.2",
+              "answer": "My"
+            },
+            " last name is Souza"
+          ]
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "How do you spell it?",
+          "audioText": "How do you spell it?",
+          "parts": [
+            "How do you ",
+            {
+              "id": "practice99.gap.3",
+              "answer": "spell"
+            },
+            " it?"
+          ]
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "S-O-U-Z-A",
+          "audioText": "S-O-U-Z-A."
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "What’s your phone number?",
+          "audioText": "What’s your phone number?",
+          "parts": [
+            "What’s ",
+            {
+              "id": "practice99.gap.5",
+              "answer": "your"
+            },
+            " phone number?"
+          ]
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "It’s 984 221 507",
+          "audioText": "It’s 984 221 507.",
+          "parts": [
+            "",
+            {
+              "id": "practice99.gap.6",
+              "answer": "It’s"
+            },
+            " 984 221 507"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "kind": "activity",
+      "title": "Save my contact",
+      "instruction": "Give your details and check what I type",
+      "minutes": 6,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s14",
+      "kind": "activity",
+      "title": "Kim checks the contact",
+      "instruction": "Answer as Ana. Confirm what is right and correct the number",
+      "minutes": 4,
+      "eyebrow": "Listening"
+    },
+    {
+      "id": "s_video102",
+      "kind": "video",
+      "eyebrow": "Watch and talk",
+      "title": "Ask to hear it again",
+      "instruction": "Watch how Paul asks Bob to repeat, then practise checking a name",
+      "minutes": 4,
+      "video": {
+        "videoId": "K5GJt-CRiFk",
+        "startSeconds": 50,
+        "endSeconds": 85,
+        "title": "Checking understanding — British Council | English",
+        "credit": "British Council | English"
+      },
+      "items": [
+        {
+          "id": "a1-02.video102.q1",
+          "prompt": "What does Bob need?",
+          "hint": "Listen for the tool Bob repeats",
+          "answer": "He needs the hammer"
+        },
+        {
+          "id": "a1-02.video102.q2",
+          "prompt": "Why can’t Paul hear him well?",
+          "hint": "Listen to Paul’s first explanation",
+          "answer": "His ears are blocked"
+        },
+        {
+          "id": "a1-02.video102.q3",
+          "prompt": "How does Paul ask Bob to speak more slowly?",
+          "hint": "Listen for repeat and slowly",
+          "answer": "He says, “Could you repeat that more slowly, please?”"
+        },
+        {
+          "id": "a1-02.video102.q4",
+          "prompt": "Your teacher says a name too quickly. What can you say?",
+          "hint": "Ask for repetition politely",
+          "answer": "Example: Could you say that again more slowly, please?"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise sharing and checking a made-up contact",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Leave a contact",
+          "description": "Record a made-up first name, last name and phone number. Spell the last name"
+        },
+        {
+          "title": "Check one detail",
+          "description": "Ask someone to write what they hear. Confirm the details or correct one digit. The alphabet is a reference, not a list to memorise"
+        }
+      ]
+    }
+  ]
+}
