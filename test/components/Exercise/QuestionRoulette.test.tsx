@@ -5,6 +5,8 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { QuestionRoulette } from '../../../src/components/Exercise/QuestionRoulette'
 import {
   rouletteAngle,
+  rouletteBank,
+  rouletteSegments,
   rouletteSpinDuration,
 } from '../../../src/components/Exercise/QuestionRoulette.logic'
 import type { QuestionRouletteTopic } from '../../../src/components/Exercise/QuestionRoulette.types'
@@ -237,6 +239,8 @@ describe('QuestionRoulette', () => {
     )
     rerender(<QuestionRoulette topics={[topics[0]!, topics[0]!]} />)
     expect(screen.getByRole('button', { name: 'Spin' })).toBeDisabled()
+    rerender(<QuestionRoulette topics={[{ ...topics[0]!, weight: 0 }]} />)
+    expect(screen.getByRole('button', { name: 'Spin' })).toBeDisabled()
     rerender(<QuestionRoulette topics={topics} />)
     expect(screen.getByRole('button', { name: 'Spin' })).toBeEnabled()
     spin()
@@ -245,13 +249,67 @@ describe('QuestionRoulette', () => {
     )
   })
 
+  it('keeps eight mirrored sectors with four distinct sizes throughout a round', () => {
+    const mirrored = Array.from({ length: 8 }, (_, index) => ({
+      id: `topic-${index}`,
+      label: `Topic ${index}`,
+      weight: [6, 5, 4, 3][index % 4]!,
+      questions: [{ id: 'one', prompt: `Question ${index}?` }],
+    }))
+    const segments = rouletteSegments(rouletteBank(mirrored))
+    expect(segments).toHaveLength(8)
+    expect(
+      new Set(
+        segments.map((segment) => Math.round(segment.end - segment.start)),
+      ).size,
+    ).toBe(4)
+    for (let index = 0; index < 4; index++) {
+      const top = segments[index]!
+      const opposite = segments[index + 4]!
+      expect(top.end - top.start).toBeCloseTo([60, 50, 40, 30][index]!)
+      expect(opposite.end - opposite.start).toBeCloseTo(top.end - top.start)
+      expect(opposite.center - top.center).toBeCloseTo(180)
+      const stopped = rouletteAngle(0, top.center)
+      const delta = (stopped + top.center) % 360
+      expect(Math.min(delta, 360 - delta)).toBeCloseTo(0, 6)
+    }
+    const { container } = render(<QuestionRoulette topics={mirrored} />)
+    const sectorPaths = () =>
+      [...container.querySelectorAll('svg[viewBox="0 0 320 320"] path')].map(
+        (path) => path.getAttribute('d'),
+      )
+    const initialPaths = sectorPaths()
+    expect(initialPaths).toHaveLength(8)
+    spin()
+    expect(sectorPaths()).toEqual(initialPaths)
+    spin()
+    expect(sectorPaths()).toEqual(initialPaths)
+  })
+
+  it('uses explicit topic weights while excluding previously drawn questions', () => {
+    const weighted = [
+      { ...topics[0]!, weight: 1 },
+      { ...topics[1]!, weight: 3 },
+    ]
+    vi.mocked(Math.random).mockReturnValue(0.5)
+    const onDraw = vi.fn()
+    render(<QuestionRoulette topics={weighted} onDraw={onDraw} />)
+    spin()
+    expect(onDraw.mock.calls[0]![0].topic.id).toBe('travel')
+    spin()
+    expect(onDraw.mock.calls[1]![0].topic.id).toBe('work')
+    expect(
+      new Set(onDraw.mock.calls.map(([draw]) => draw.question.id)).size,
+    ).toBe(2)
+  })
+
   it('keeps the selected sector center aligned with the top pointer after repeated spins', () => {
-    expect(rouletteAngle(0, 1, 6)).toBe(2460)
-    expect(rouletteAngle(2460, 3, 6)).toBe(4860)
+    expect(rouletteAngle(0, 60)).toBe(2460)
+    expect(rouletteAngle(2460, 180)).toBe(4860)
     for (let count = 1; count <= 8; count++) {
       let rotation = 0
       for (let index = 0; index < count; index++) {
-        const next = rouletteAngle(rotation, index, count)
+        const next = rouletteAngle(rotation, (index * 360) / count)
         expect(next).toBeGreaterThanOrEqual(rotation + 2160)
         const delta = (next + (index * 360) / count) % 360
         expect(Math.min(delta, 360 - delta)).toBeCloseTo(0, 6)

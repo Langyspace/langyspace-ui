@@ -4,6 +4,7 @@ import type { QuestionRouletteTopic } from '../../../src/components/Exercise/Que
 export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
   {
     id: 'work',
+    weight: 6,
     label: 'Work',
     questions: [
       {
@@ -18,10 +19,17 @@ export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
           'If you could change one thing about the way people work, what would you change and why?',
         hint: 'Explain the problem first, then your change and who it would help.',
       },
+      {
+        id: 'skills',
+        prompt:
+          'Would you rather be very good at one skill or reasonably good at many? How would that affect your working life?',
+        hint: 'Compare both options, then connect your choice to a realistic situation.',
+      },
     ],
   },
   {
     id: 'travel',
+    weight: 5,
     label: 'Travel',
     questions: [
       {
@@ -40,6 +48,7 @@ export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
   },
   {
     id: 'choices',
+    weight: 4,
     label: 'Choices',
     questions: [
       {
@@ -54,10 +63,23 @@ export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
           'If you had one extra free day every week, how would you use it? What would you stop doing?',
         hint: 'Describe a realistic day and explain which priorities would change.',
       },
+      {
+        id: 'value',
+        prompt:
+          'When is it worth paying more for something? Describe a purchase you would save up for.',
+        hint: 'Explain what matters to you and compare price with long-term value.',
+      },
+      {
+        id: 'risk',
+        prompt:
+          'Would you choose a safe option or take a risk to reach a personal goal? What would help you decide?',
+        hint: 'Describe the goal, compare the possible outcomes and explain your priorities.',
+      },
     ],
   },
   {
     id: 'people',
+    weight: 3,
     label: 'People',
     questions: [
       {
@@ -76,6 +98,7 @@ export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
   },
   {
     id: 'opinions',
+    weight: 6,
     label: 'Opinions',
     questions: [
       {
@@ -90,10 +113,17 @@ export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
           'Is it better to plan your free time or be spontaneous? What depends on the situation?',
         hint: 'Compare the advantages and describe when you would choose each approach.',
       },
+      {
+        id: 'advice',
+        prompt:
+          'Should people always follow the advice of someone more experienced? When might you disagree?',
+        hint: 'Give a balanced view, describe an exception and explain your reasoning.',
+      },
     ],
   },
   {
     id: 'stories',
+    weight: 5,
     label: 'Stories',
     questions: [
       {
@@ -107,6 +137,44 @@ export const conversationRouletteTopics: readonly QuestionRouletteTopic[] = [
         prompt:
           'Describe a small mistake that taught you something useful. What do you do differently now?',
         hint: 'Tell the story, explain what you learned and connect it to the present.',
+      },
+    ],
+  },
+  {
+    id: 'learning',
+    label: 'Learning',
+    weight: 4,
+    questions: [
+      {
+        id: 'difficult',
+        prompt:
+          'What is something you found difficult at first but now enjoy doing? What made the difference?',
+        hint: 'Describe the first challenge, the turning point and how you feel about it now.',
+      },
+      {
+        id: 'skill',
+        prompt:
+          'If you could learn one new skill this year, what would you choose and how would you practise it?',
+        hint: 'Explain why the skill matters and suggest a realistic way to get started.',
+      },
+    ],
+  },
+  {
+    id: 'future',
+    label: 'Future',
+    weight: 3,
+    questions: [
+      {
+        id: 'change',
+        prompt:
+          'What do you think will change most in everyday life over the next ten years? Why?',
+        hint: 'Make a prediction, explain what makes it likely and consider one possible drawback.',
+      },
+      {
+        id: 'advice',
+        prompt:
+          'If you could send one piece of advice to your future self, what would it be?',
+        hint: 'Choose something meaningful, explain the reason and give an example from your life today.',
       },
     ],
   },

@@ -12,6 +12,8 @@ export interface QuestionRouletteTopic {
   id: string
   /** A short label for the wheel, e.g. Work, Travel or Choices. */
   label: string
+  /** Optional relative sector area and topic draw weight. Repeat weights on opposite topics for a mirrored wheel. */
+  weight?: number
   questions: readonly QuestionRouletteQuestion[]
 }
 
@@ -36,7 +38,7 @@ export interface QuestionRouletteProps extends Omit<
   ComponentPropsWithRef<'section'>,
   'children'
 > {
-  /** One to eight nonempty topics. All remaining questions have equal drawing probability. */
+  /** One to eight nonempty topics. Without explicit topic weights, remaining questions are drawn uniformly. */
   topics: readonly QuestionRouletteTopic[]
   /** Disable when leaving a material page; cancels a pending draw without consuming it. */
   disabled?: boolean
@@ -71,3 +73,12 @@ export type RouletteRoundAction =
     }
   | { type: 'cancel' }
   | { type: 'toggleHint' }
+
+export interface RouletteSegment {
+  topic: QuestionRouletteTopic
+  topicIndex: number
+  count: number
+  start: number
+  end: number
+  center: number
+}

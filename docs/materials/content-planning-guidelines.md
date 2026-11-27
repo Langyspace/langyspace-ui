@@ -16,7 +16,6 @@ Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou rep
 
 **Transcript no WhatsApp:** cada áudio oferece “Transcript” pequeno, cinza-claro e com espaçamento mínimo dentro do balão, sem fundo, borda, ícone ou hover. O clique substitui esse rótulo pela transcrição em tamanho normal de leitura; clicar no próprio texto fecha e restaura o rótulo. Manter foco visível, acesso por teclado e a abertura automática na terceira escuta.
 
-
 Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
 ## Instruções e personalização — revisão114
@@ -536,3 +535,5 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 - Usar QuestionRoulette para respostas espontâneas de alunos mais experientes, com bancos coerentes com o tema e nível. A professora opera um único giro; a aluna responde oralmente com razões e exemplos.
 - A pergunta sorteada fica em destaque, sem lista de respostas nem gabarito pessoal. A dica opcional ajuda a organizar a fala, sem impor uma opinião. Não repetir perguntas antes de terminar a rodada; reiniciar deve ser explícito.
 - Concentrar a instrução no título/subtítulo de SlidePage. Na roleta, o giro pode ter suspense intencional: seis voltas em 3,8 segundos, desacelerando antes de revelar a pergunta. Preservar o modo de movimento reduzido, teclado e um layout que empilha em telas menores. Não adicionar escrita, cronômetro ou placar à atividade por padrão.
+
+- Na roleta, manter as cores dos setores após o sorteio. Para oito opções com tamanhos variados e simetria, repetir os quatro pesos nos setores opostos (ex.: 6/5/4/3/6/5/4/3). Manter a geometria durante toda a rodada, sem encolher ou retirar setores; temas esgotados não voltam ao sorteio antes de reiniciar. Pesos explícitos controlam a área e a chance do tema, com sorteio uniforme entre suas perguntas ainda disponíveis. O controle central deve ser compacto, preservando um alvo clicável adequado.

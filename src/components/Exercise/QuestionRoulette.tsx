@@ -8,6 +8,7 @@ import {
   rouletteAngle,
   rouletteBank,
   rouletteSector,
+  rouletteSegments,
   rouletteSpinDuration,
 } from './QuestionRoulette.logic'
 import type { QuestionRouletteProps } from './QuestionRoulette.types'
@@ -45,6 +46,7 @@ function RouletteRound({
     ...labels,
   }
   const exhausted = bank.length > 0 && used.size === bank.length
+  const segments = rouletteSegments(bank)
   const clearPending = useCallback(() => {
     clearTimeout(timerRef.current)
     timerRef.current = undefined
@@ -64,13 +66,13 @@ function RouletteRound({
     const usedKeys = startingNewRound ? new Set<string>() : used
     const next = nextRouletteEntry(bank, usedKeys, Math.random())
     if (!next) return
+    const targetSegment = segments.find(
+      (segment) => segment.topic.id === next.topic.id,
+    )
+    if (!targetSegment) return
     drawingRef.current = true
     playFeedbackSound('hint')
-    const finalRotation = rouletteAngle(
-      rotation,
-      next.topicIndex,
-      topics.length,
-    )
+    const finalRotation = rouletteAngle(rotation, targetSegment.center)
     dispatch({ type: 'spin', entry: next, rotation: finalRotation })
     const reveal = () => {
       const nextUsed = new Set([...usedKeys, next.key])
@@ -100,32 +102,23 @@ function RouletteRound({
             viewBox="0 0 320 320"
             $rotation={rotation}
           >
-            {bank.length
-              ? topics.map((topic, index) => {
-                  const angle = (index * 360) / topics.length
-                  const radians = ((angle - 90) * Math.PI) / 180
-                  const x = 160 + 103 * Math.cos(radians)
-                  const y = 160 + 103 * Math.sin(radians)
-                  const active = !pending && selected?.topic.id === topic.id
-                  return (
-                    <g key={topic.id}>
-                      <S.Sector
-                        d={rouletteSector(index, topics.length)}
-                        $alternate={index % 2 === 0}
-                        $selected={active}
-                      />
-                      <S.Topic
-                        x={x}
-                        y={y}
-                        transform={`rotate(${angle} ${x} ${y})`}
-                        $selected={active}
-                      >
-                        {topic.label}
-                      </S.Topic>
-                    </g>
-                  )
-                })
-              : null}
+            {segments.map((segment) => {
+              const angle = segment.center
+              const radians = ((angle - 90) * Math.PI) / 180
+              const x = 160 + 108 * Math.cos(radians)
+              const y = 160 + 108 * Math.sin(radians)
+              return (
+                <g key={segment.topic.id}>
+                  <S.Sector
+                    d={rouletteSector(segment.start, segment.end)}
+                    $alternate={segment.topicIndex % 2 === 0}
+                  />
+                  <S.Topic x={x} y={y} transform={`rotate(${angle} ${x} ${y})`}>
+                    {segment.topic.label}
+                  </S.Topic>
+                </g>
+              )
+            })}
           </S.Rotor>
           <S.Rim aria-hidden="true" viewBox="0 0 320 320">
             <circle cx="160" cy="160" r="158" />
@@ -136,7 +129,7 @@ function RouletteRound({
                   key={angle}
                   cx={160 + 156 * Math.cos(angle)}
                   cy={160 + 156 * Math.sin(angle)}
-                  r={index % 6 === 0 ? 2.2 : 1.2}
+                  r={index % 6 === 0 ? 3.2 : 1.4}
                   data-major={index % 6 === 0 || undefined}
                 />
               )

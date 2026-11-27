@@ -39,7 +39,7 @@ export const DrawAndSupport: Story = {
     await waitFor(
       () =>
         expect(canvas.getByLabelText('Questions drawn')).toHaveTextContent(
-          '1 / 12',
+          '1 / 20',
         ),
       { timeout: rouletteSpinDuration + 2_000 },
     )

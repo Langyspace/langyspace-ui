@@ -4,6 +4,7 @@ import type {
   RouletteEntry,
   RouletteRoundState,
   RouletteRoundAction,
+  RouletteSegment,
 } from './QuestionRoulette.types'
 
 /** The same suspense token governs visual deceleration and question reveal. */
@@ -18,6 +19,8 @@ export function rouletteBank(
   const entries: RouletteEntry[] = []
   for (const [topicIndex, topic] of topics.entries()) {
     if (
+      (topic.weight !== undefined &&
+        (!Number.isFinite(topic.weight) || topic.weight <= 0)) ||
       !topic.id.trim() ||
       !topic.label.trim() ||
       !topic.questions.length ||
@@ -51,20 +54,86 @@ export function nextRouletteEntry(
   random: number,
 ): RouletteEntry | undefined {
   const remaining = bank.filter((entry) => !used.has(entry.key))
-  return remaining[
-    Math.min(
-      remaining.length - 1,
-      Math.max(0, Math.floor(random * remaining.length)),
-    )
-  ]
+  if (!remaining.length) return undefined
+  if (!bank.some((entry) => entry.topic.weight !== undefined)) {
+    return remaining[
+      Math.min(
+        remaining.length - 1,
+        Math.max(0, Math.floor(random * remaining.length)),
+      )
+    ]
+  }
+  const groups = new Map<number, RouletteEntry[]>()
+  for (const entry of remaining) {
+    const items = groups.get(entry.topicIndex)
+    if (items) items.push(entry)
+    else groups.set(entry.topicIndex, [entry])
+  }
+  const options = [...groups.values()].map((items) => ({
+    items,
+    weight: items[0]!.topic.weight ?? items.length,
+  }))
+  const maximum = Math.max(...options.map((option) => option.weight))
+  const total = options.reduce(
+    (sum, option) => sum + option.weight / maximum,
+    0,
+  )
+  let cursor = Math.min(1 - Number.EPSILON, Math.max(0, random)) * total
+  for (const option of options) {
+    const weight = option.weight / maximum
+    if (cursor < weight)
+      return option.items[
+        Math.min(
+          option.items.length - 1,
+          Math.floor((cursor / weight) * option.items.length),
+        )
+      ]
+    cursor -= weight
+  }
+  return remaining[remaining.length - 1]
 }
 
-export function rouletteAngle(
-  previous: number,
-  index: number,
-  topicCount: number,
-): number {
-  const target = (((360 - (index * 360) / topicCount) % 360) + 360) % 360
+/** Authored sector sizes remain fixed for the entire round, including mirrored pairs. */
+export function rouletteSegments(
+  bank: readonly RouletteEntry[],
+): RouletteSegment[] {
+  if (!bank.length) return []
+  const counts = new Map<
+    number,
+    { topic: QuestionRouletteTopic; topicIndex: number; count: number }
+  >()
+  for (const entry of bank) {
+    const current = counts.get(entry.topicIndex)
+    if (current) current.count += 1
+    else
+      counts.set(entry.topicIndex, {
+        topic: entry.topic,
+        topicIndex: entry.topicIndex,
+        count: 1,
+      })
+  }
+  const groups = [...counts.values()]
+  const maximum = Math.max(
+    ...groups.map((group) => group.topic.weight ?? group.count),
+  )
+  const total = groups.reduce(
+    (sum, group) => sum + (group.topic.weight ?? group.count) / maximum,
+    0,
+  )
+  const widths = groups.map(
+    (group) => ((group.topic.weight ?? group.count) / maximum / total) * 360,
+  )
+  let start = -widths[0]! / 2
+  return groups.map((group, index) => {
+    const end = start + widths[index]!
+    const segment = { ...group, start, end, center: (start + end) / 2 }
+    start = end
+    return segment
+  })
+}
+
+export function rouletteAngle(previous: number, center: number): number {
+  const target = (((360 - center) % 360) + 360) % 360
   return (
     previous +
     theme.exercises.rouletteSpinTurns * 360 +
@@ -72,16 +141,17 @@ export function rouletteAngle(
   )
 }
 
-export function rouletteSector(index: number, count: number): string {
-  if (count === 1) return 'M160 8a152 152 0 1 1 0 304a152 152 0 1 1 0-304'
-  const arc = 360 / count
+export function rouletteSector(start: number, end: number): string {
+  const arc = end - start
+  if (arc >= 360 - 0.000001)
+    return 'M160 8a152 152 0 1 1 0 304a152 152 0 1 1 0-304'
   const point = (angle: number) => [
-    160 + 152 * Math.cos((angle * Math.PI) / 180),
-    160 + 152 * Math.sin((angle * Math.PI) / 180),
+    160 + 152 * Math.cos(((angle - 90) * Math.PI) / 180),
+    160 + 152 * Math.sin(((angle - 90) * Math.PI) / 180),
   ]
-  const start = point(-90 - arc / 2 + index * arc)
-  const end = point(-90 + arc / 2 + index * arc)
-  return `M160 160L${start.join(' ')}A152 152 0 ${arc > 180 ? 1 : 0} 1 ${end.join(' ')}Z`
+  const first = point(start)
+  const last = point(end)
+  return `M160 160L${first.join(' ')}A152 152 0 ${arc > 180 ? 1 : 0} 1 ${last.join(' ')}Z`
 }
 
 export function initialRouletteRound(): RouletteRoundState {

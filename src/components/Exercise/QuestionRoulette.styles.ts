@@ -34,12 +34,37 @@ export const Wheel = styled.div`
   width: min(100%, 20rem);
   aspect-ratio: 1;
   margin-inline: auto;
+  margin-bottom: ${theme.spacing[6]};
+  isolation: isolate;
   border-radius: ${theme.radius.circle};
   background: ${(p) => recipe(p).canvas};
   box-shadow:
     0 0 0 ${theme.spacing[2]} ${(p) => recipe(p).canvas},
     0 0 0 calc(${theme.spacing[2]} + 1px) ${(p) => recipe(p).border},
     ${theme.shadows.surfaceSoft};
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border: 1px solid ${(p) => recipe(p).border};
+    background: ${(p) => recipe(p).canvas};
+    box-shadow: ${theme.shadows.xs};
+  }
+  &::before {
+    width: ${theme.spacing[10]};
+    height: ${theme.spacing[6]};
+    left: calc(50% - ${theme.spacing[5]});
+    top: calc(100% - ${theme.spacing[2]});
+    border-radius: ${theme.radius.sm};
+  }
+  &::after {
+    width: 50%;
+    height: ${theme.spacing[2]};
+    left: 25%;
+    top: calc(100% + ${theme.spacing[3]});
+    border-radius: ${theme.radius.pill};
+  }
   @container (max-width: ${theme.breakpoints.sm}) {
     width: min(70%, 15rem);
   }
@@ -71,13 +96,13 @@ export const Rim = styled.svg`
     fill: ${(p) => recipe(p).accent};
   }
 `
-export const Sector = styled.path<{ $alternate: boolean; $selected: boolean }>`
-  fill: ${(p) => (p.$selected ? `color-mix(in srgb, ${recipe(p).accent} 85%, ${theme.colors.palette.black})` : p.$alternate ? recipe(p).surface : recipe(p).canvas)};
+export const Sector = styled.path<{ $alternate: boolean }>`
+  fill: ${(p) => (p.$alternate ? recipe(p).surface : recipe(p).canvas)};
   stroke: ${(p) => recipe(p).border};
   stroke-width: 1.5;
 `
-export const Topic = styled.text<{ $selected: boolean }>`
-  fill: ${(p) => (p.$selected ? theme.colors.palette.white : recipe(p).foreground)};
+export const Topic = styled.text`
+  fill: ${(p) => recipe(p).foreground};
   font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.sm};
   font-weight: ${theme.typography.fontWeight.semibold};
@@ -97,13 +122,15 @@ export const Pointer = styled.svg`
 `
 export const Spin = styled(Button)`
   position: absolute;
-  inset: calc(50% - ${theme.spacing[10]}) auto auto
-    calc(50% - ${theme.spacing[10]});
+  inset: calc(50% - ${theme.spacing[6]}) auto auto
+    calc(50% - ${theme.spacing[6]});
   border-radius: ${theme.radius.circle};
-  width: ${theme.spacing[20]};
-  height: ${theme.spacing[20]};
-  min-height: ${theme.spacing[20]};
-  padding: ${theme.spacing[2]};
+  width: ${theme.spacing[12]};
+  height: ${theme.spacing[12]};
+  min-height: ${theme.spacing[12]};
+  padding: ${theme.spacing[1]};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.tight};
   white-space: normal;
   box-shadow:
     0 0 0 ${theme.spacing[1]} ${(p) => recipe(p).canvas},
