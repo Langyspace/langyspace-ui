@@ -9,10 +9,15 @@ export const Root = styled(Common.Stack).withConfig({
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => Common.recipe(p).foreground};
 `
-export const Scene = styled.div<{ $gutter: number; $bounded: boolean }>`
+export const Scene = styled.div<{
+  $gutter: number
+  $bounded: boolean
+  $area?: boolean
+}>`
   position: relative;
   margin-top: ${(p) => p.$gutter}px;
   border-radius: ${theme.slides.panelRadius};
+  padding-top: ${(p) => (p.$area ? theme.spacing[20] : 0)};
   img {
     display: block;
     width: 100%;
@@ -168,7 +173,8 @@ export const Callout = styled(Common.Surface)<{
   $arrow: number
   $imageWidth?: number
   $imageHeight?: number
-  $inline?: boolean
+  $area?: boolean
+  $bottom?: number
 }>`
   position: absolute;
   z-index: 5;
@@ -203,16 +209,11 @@ export const Callout = styled(Common.Surface)<{
         : `top: ${p.$arrow - 4}px; ${p.$placement === 'left' ? 'right: -5px;' : 'left: -5px;'}`}
   }
   ${(p) =>
-    p.$inline
+    p.$area
       ? css`
-          position: static;
-          width: auto;
-          max-width: none;
-          margin-top: ${theme.spacing[3]};
-          box-shadow: none;
-          &::after {
-            display: none;
-          }
+          top: auto;
+          bottom: ${p.$bottom ?? 0}px;
+          width: 22rem;
         `
       : null}
 `
@@ -221,12 +222,30 @@ export const CalloutHeading = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: ${theme.spacing[3]};
+`
+export const CalloutTitle = styled.div`
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: ${theme.spacing[1]} ${theme.spacing[2]};
+  min-width: 0;
   > h3 {
     font-size: ${theme.typography.fontSize.lg};
+    min-width: 0;
+    line-height: 1.25;
   }
-  > button {
-    flex-shrink: 0;
-  }
+`
+export const CalloutSummary = styled.span`
+  color: ${(p) => Common.recipe(p).muted};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
+  white-space: nowrap;
+`
+export const CalloutActions = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[1]};
+  flex-shrink: 0;
 `
 
 /** Functional relationships over the image; never baked into a generated asset. */

@@ -70,32 +70,29 @@ export function CourseActivity({
         }}
         hotspots={activity.scene.hotspots.map((hotspot) => ({
           ...hotspot,
-          example: (
-            <Common.Stack as="span">
-              <span>{hotspot.example}</span>
-              {sceneSupport ? (
-                <span>
-                  {sceneSupport === 1 ? hotspot.hint : hotspot.answer}
-                </span>
-              ) : null}
-              <Common.Row as="span" $justify="end">
-                <IconButton
-                  variant="neutral"
-                  size="sm"
-                  feedbackSound="hint"
-                  aria-label={
-                    sceneSupport === 0
-                      ? 'Show a hint'
-                      : sceneSupport === 1
-                        ? 'Show an example'
-                        : 'Hide support'
-                  }
-                  onClick={() => setSceneSupport((stage) => (stage + 1) % 3)}
-                >
-                  <SimulationIcon name="hint" />
-                </IconButton>
-              </Common.Row>
-            </Common.Stack>
+          summary: hotspot.example,
+          example:
+            sceneSupport === 1
+              ? hotspot.hint
+              : sceneSupport === 2
+                ? hotspot.answer
+                : undefined,
+          actions: (
+            <IconButton
+              variant="neutral"
+              size="sm"
+              feedbackSound="hint"
+              aria-label={
+                sceneSupport === 0
+                  ? 'Show a hint'
+                  : sceneSupport === 1
+                    ? 'Show an example'
+                    : 'Hide support'
+              }
+              onClick={() => setSceneSupport((stage) => (stage + 1) % 3)}
+            >
+              <SimulationIcon name="hint" />
+            </IconButton>
           ),
         }))}
       />
