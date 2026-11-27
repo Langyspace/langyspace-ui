@@ -1,3 +1,9 @@
+import nativeView159_0 from '../assets/native-crop159/e327e0b7f4a7fd0a23bc9caf8c94dabe9bfcb5fce894b08cf50be5a53758cfe2.webp'
+import nativeView159_1 from '../assets/native-crop159/5389ea0f80766d72d4273c3cc4c4d77a6d6af7dba69e01360d8df9a5d5b8a303.webp'
+import nativeView159_2 from '../assets/native-crop159/cb0c7866040be8971860eb474a96520276d57372a05c6a65d774ffc2a29164d5.webp'
+import nativeView159_3 from '../assets/native-crop159/81f1fde2dd1eae0eee6d5d1b06a514528f5928cad019b9f320a7d34f7ca12b87.webp'
+import nativeView159_4 from '../assets/native-crop159/2bc3b03452c7f2b2b7bcf29f1f14be65efa5d4595cae7d1c95bf55aeae40b0b9.webp'
+import nativeView159_5 from '../assets/native-crop159/8be7176548c3ca35919709057bc4fd03b3f0d56bfdc949eb9d0e6e8dda82e9a4.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-10.json'
 import asset0 from '../../Course/assets/audio/A110-D81.1.mp3'
@@ -182,6 +188,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-crop159/e327e0b7f4a7fd0a23bc9caf8c94dabe9bfcb5fce894b08cf50be5a53758cfe2/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/5389ea0f80766d72d4273c3cc4c4d77a6d6af7dba69e01360d8df9a5d5b8a303/image.webp':
+      nativeView159_1,
+    '/flashcards-transparent/course-practice/native-crop159/cb0c7866040be8971860eb474a96520276d57372a05c6a65d774ffc2a29164d5/image.webp':
+      nativeView159_2,
+    '/flashcards-transparent/course-practice/native-crop159/81f1fde2dd1eae0eee6d5d1b06a514528f5928cad019b9f320a7d34f7ca12b87/image.webp':
+      nativeView159_3,
+    '/flashcards-transparent/course-practice/native-crop159/2bc3b03452c7f2b2b7bcf29f1f14be65efa5d4595cae7d1c95bf55aeae40b0b9/image.webp':
+      nativeView159_4,
+    '/flashcards-transparent/course-practice/native-crop159/8be7176548c3ca35919709057bc4fd03b3f0d56bfdc949eb9d0e6e8dda82e9a4/image.webp':
+      nativeView159_5,
     '/flashcards-transparent/a1/food-combinations/banana-bread/image.webp':
       expanded124Asset14,
     '/flashcards-transparent/a1/food-combinations/apple-pie/image.webp':

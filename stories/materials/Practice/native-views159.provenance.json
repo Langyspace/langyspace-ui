@@ -1,0 +1,1333 @@
+{
+  "version": 1,
+  "purpose": "Exact native viewport exports, not generated artwork. Preserve authored vocabulary framing and activity-schema compatibility.",
+  "encoder": {
+    "tool": "Pillow",
+    "version": "11.3.0",
+    "format": "WebP",
+    "lossless": true,
+    "exact": true,
+    "resize": false
+  },
+  "views": [
+    {
+      "lesson": "b1-11",
+      "cardId": "course-a1-11-dress",
+      "word": "dress",
+      "source": "stories/materials/Practice/assets/flashcards124/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 809,
+        "row": 416,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        809,
+        416,
+        1139,
+        746
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9.webp",
+      "outputSha256": "7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9",
+      "outputBytes": 46514,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9/image.webp",
+      "rgbaSha256": "72246c893c93e009da30e16f56b4a00ed89a3cc40dfd1b3f8c35c568c50bbc95",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "b1-11",
+      "cardId": "course-a1-11-glasses",
+      "word": "glasses",
+      "source": "stories/materials/Practice/assets/flashcards124/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 435,
+        "row": 426,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        435,
+        426,
+        765,
+        756
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1.webp",
+      "outputSha256": "4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1",
+      "outputBytes": 30980,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1/image.webp",
+      "rgbaSha256": "498c51adbfb5e1bf1053d9921414bb742fdd7f74dad54fcfaecd418bd94b0a06",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "b1-11",
+      "cardId": "course-a1-11-jacket",
+      "word": "jacket",
+      "source": "stories/materials/Practice/assets/flashcards124/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 809,
+        "row": 41,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        809,
+        41,
+        1139,
+        371
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348.webp",
+      "outputSha256": "eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348",
+      "outputBytes": 59202,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348/image.webp",
+      "rgbaSha256": "484cf79b8924f8671f2b2849144e7b9c00b445fb84a2943bec7a99c80268bf59",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "b1-11",
+      "cardId": "course-a1-11-shoes",
+      "word": "shoes",
+      "source": "stories/materials/Practice/assets/flashcards124/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 427,
+        "row": 63,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        427,
+        63,
+        757,
+        393
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0.webp",
+      "outputSha256": "344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0",
+      "outputBytes": 49850,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0/image.webp",
+      "rgbaSha256": "f1f107d68d94bfb9c32a9f62e1ce7f26ff253021e4b9fd1b01ef89a928277f3d",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "V.0",
+      "word": "task",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 0,
+        "row": 52,
+        "columnSpan": 39,
+        "rowSpan": 48,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        0,
+        489,
+        653,
+        941
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99.webp",
+      "outputSha256": "b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99",
+      "outputBytes": 247118,
+      "outputSize": [
+        653,
+        452
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99/image.webp",
+      "rgbaSha256": "8afefa28be459ea649dec2f181e61c0d770cb1cea87c604d548768b34adfc18a",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 52,
+          "columnSpan": 39,
+          "rowSpan": 48,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "V.1",
+      "word": "access",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 37,
+        "row": 64,
+        "columnSpan": 27,
+        "rowSpan": 34,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        618,
+        602,
+        1071,
+        923
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/b40c2541cef37a4b712b8c08b79fb56cbcc1ed8030d27e7f233a9b74033e2a64.webp",
+      "outputSha256": "b40c2541cef37a4b712b8c08b79fb56cbcc1ed8030d27e7f233a9b74033e2a64",
+      "outputBytes": 119872,
+      "outputSize": [
+        453,
+        321
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/b40c2541cef37a4b712b8c08b79fb56cbcc1ed8030d27e7f233a9b74033e2a64/image.webp",
+      "rgbaSha256": "329688def0de5e2d7631c2b2e964227f7586999d41d561b7754e61caf815de0b",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 37,
+          "row": 64,
+          "columnSpan": 27,
+          "rowSpan": 34,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "V.2",
+      "word": "blocker",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 31,
+        "row": 0,
+        "columnSpan": 42,
+        "rowSpan": 61,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        518,
+        0,
+        1221,
+        575
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/77ba3ace0dab35ce5083dad350ed8f769da9bf6ed757da72c20446f2b9755761.webp",
+      "outputSha256": "77ba3ace0dab35ce5083dad350ed8f769da9bf6ed757da72c20446f2b9755761",
+      "outputBytes": 279826,
+      "outputSize": [
+        703,
+        575
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/77ba3ace0dab35ce5083dad350ed8f769da9bf6ed757da72c20446f2b9755761/image.webp",
+      "rgbaSha256": "3413b95f55df585748648a49ab7b8b6ddc3f0bad9371db7b571c6c88638a4f36",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 31,
+          "row": 0,
+          "columnSpan": 42,
+          "rowSpan": 61,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "V.3",
+      "word": "deadline",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 0,
+        "row": 8,
+        "columnSpan": 32,
+        "rowSpan": 45,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        0,
+        75,
+        536,
+        499
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/42eacdcdab8cb8d9a9cef87034e28719103088e6c985d5c58e677846b5c0f46b.webp",
+      "outputSha256": "42eacdcdab8cb8d9a9cef87034e28719103088e6c985d5c58e677846b5c0f46b",
+      "outputBytes": 173522,
+      "outputSize": [
+        536,
+        424
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/42eacdcdab8cb8d9a9cef87034e28719103088e6c985d5c58e677846b5c0f46b/image.webp",
+      "rgbaSha256": "ee57ba94bc190fdc9261b651e1c65456da0317db31ab026f88275145366d0a21",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 8,
+          "columnSpan": 32,
+          "rowSpan": 45,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "V.4",
+      "word": "update",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 73,
+        "row": 5,
+        "columnSpan": 25,
+        "rowSpan": 49,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        1220,
+        47,
+        1639,
+        509
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/cf89864d0a3434bfb396540ccc426be95f3580f104fb480b015e0f65d0cbe01a.webp",
+      "outputSha256": "cf89864d0a3434bfb396540ccc426be95f3580f104fb480b015e0f65d0cbe01a",
+      "outputBytes": 143730,
+      "outputSize": [
+        419,
+        462
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/cf89864d0a3434bfb396540ccc426be95f3580f104fb480b015e0f65d0cbe01a/image.webp",
+      "rgbaSha256": "c8abfad575fccbab62e9e05029065671080b25453442b222e1d61dff722224a2",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 73,
+          "row": 5,
+          "columnSpan": 25,
+          "rowSpan": 49,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "V.5",
+      "word": "feedback",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 64,
+        "row": 53,
+        "columnSpan": 36,
+        "rowSpan": 47,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        1070,
+        498,
+        1672,
+        941
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/1ee5df05deec316f09b552f4b94c393a2aaf833b15a4b21bd899dae6d3fb4fdd.webp",
+      "outputSha256": "1ee5df05deec316f09b552f4b94c393a2aaf833b15a4b21bd899dae6d3fb4fdd",
+      "outputBytes": 213672,
+      "outputSize": [
+        602,
+        443
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/1ee5df05deec316f09b552f4b94c393a2aaf833b15a4b21bd899dae6d3fb4fdd/image.webp",
+      "rgbaSha256": "1de360ebb4562b998654560fefe740c0b3e27323f44586bffd3a7906d2d5a8d0",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 64,
+          "row": 53,
+          "columnSpan": 36,
+          "rowSpan": 47,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "tema-frontend",
+      "cardId": "HW.17",
+      "word": "a layout",
+      "source": "stories/materials/Practice/assets/homework131/raster-d7416cb56c11c21cb2014c068aa48a01a3e1d6b5b89ee33002417b131c955854.webp",
+      "sourceSha256": "089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f",
+      "region": {
+        "columns": 100,
+        "rows": 100,
+        "column": 0,
+        "row": 52,
+        "columnSpan": 39,
+        "rowSpan": 48,
+        "sourceAspectRatio": 1.7768331562167907
+      },
+      "pixelBounds": [
+        0,
+        489,
+        653,
+        941
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99.webp",
+      "outputSha256": "b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99",
+      "outputBytes": 247118,
+      "outputSize": [
+        653,
+        452
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99/image.webp",
+      "rgbaSha256": "8afefa28be459ea649dec2f181e61c0d770cb1cea87c604d548768b34adfc18a",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/089bd96ccb244cbeecf15251767760315a1201bc224076411c521e3c8c844d9f/image.webp",
+        "imageRegion": {
+          "columns": 100,
+          "rows": 100,
+          "column": 0,
+          "row": 52,
+          "columnSpan": 39,
+          "rowSpan": 48,
+          "sourceAspectRatio": 1.7768331562167907
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "a1-07",
+      "cardId": "course-a1-07-passport",
+      "word": "passport",
+      "source": "stories/materials/Course/assets/a1-07-vocabulary81.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 68,
+        "row": 80,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        68,
+        80,
+        428,
+        440
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b.webp",
+      "outputSha256": "b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b",
+      "outputBytes": 80402,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b/image.webp",
+      "rgbaSha256": "c64796f297c1b6150e2a127977345f2e4892b112512fb617bb2f9ce31338c287",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-07",
+      "cardId": "course-a1-07-suitcase",
+      "word": "suitcase",
+      "source": "stories/materials/Course/assets/a1-07-vocabulary81.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 416,
+        "row": 62,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        416,
+        62,
+        776,
+        422
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd.webp",
+      "outputSha256": "22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd",
+      "outputBytes": 79492,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd/image.webp",
+      "rgbaSha256": "d88737ca7e3d37571fb92e85e3beb1df1c94a8ac91959dbd9201035c276f5660",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-07",
+      "cardId": "course-a1-07-plane",
+      "word": "plane",
+      "source": "stories/materials/Course/assets/a1-07-vocabulary81.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 770,
+        "row": 63,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        770,
+        63,
+        1130,
+        423
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/6994b7c845a1a8e26feaeed5c9caed8029604407bbd2e22b6f134499ee81f1d0.webp",
+      "outputSha256": "6994b7c845a1a8e26feaeed5c9caed8029604407bbd2e22b6f134499ee81f1d0",
+      "outputBytes": 86632,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/6994b7c845a1a8e26feaeed5c9caed8029604407bbd2e22b6f134499ee81f1d0/image.webp",
+      "rgbaSha256": "8a65deaca8f62b16ada7bbb980157edc0f13e537cdd12723f8a31cb501703cc3",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-07",
+      "cardId": "course-a1-07-taxi",
+      "word": "taxi",
+      "source": "stories/materials/Course/assets/a1-07-vocabulary81.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 53,
+        "row": 408,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        53,
+        408,
+        413,
+        768
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/a7bc6394b91cb95fbe3617b4514ccbe7f2b3e1afd218145fcb844d91637db8e9.webp",
+      "outputSha256": "a7bc6394b91cb95fbe3617b4514ccbe7f2b3e1afd218145fcb844d91637db8e9",
+      "outputBytes": 113660,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/a7bc6394b91cb95fbe3617b4514ccbe7f2b3e1afd218145fcb844d91637db8e9/image.webp",
+      "rgbaSha256": "94a46224054a8f9f65df9e9b1824db75106711842efb313136a4ba1436fa019b",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-07",
+      "cardId": "course-a1-07-bus",
+      "word": "bus",
+      "source": "stories/materials/Course/assets/a1-07-vocabulary81.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 415,
+        "row": 410,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        415,
+        410,
+        775,
+        770
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f.webp",
+      "outputSha256": "5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f",
+      "outputBytes": 108404,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f/image.webp",
+      "rgbaSha256": "dc370879020d482450853fb41d8d9c54d976b8cd4297ab7e851374f8ae69b33d",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-07",
+      "cardId": "course-a1-07-gate",
+      "word": "gate",
+      "source": "stories/materials/Course/assets/a1-07-vocabulary81.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 773,
+        "row": 403,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        773,
+        403,
+        1133,
+        763
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/d4ed472d41256418aa902f06ea8565c4c87ea24ce52d3c594c95da4b84fa8eb2.webp",
+      "outputSha256": "d4ed472d41256418aa902f06ea8565c4c87ea24ce52d3c594c95da4b84fa8eb2",
+      "outputBytes": 92516,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/d4ed472d41256418aa902f06ea8565c4c87ea24ce52d3c594c95da4b84fa8eb2/image.webp",
+      "rgbaSha256": "8ca5213b3d11c6b4b012564b8489e178f1fac23798eeee7acc6f9444dd8841d4",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-11",
+      "cardId": "course-a1-11-t-shirt",
+      "word": "T-shirt",
+      "source": "stories/materials/Course/assets/a1-11-vocabulary81.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 66,
+        "row": 48,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        66,
+        48,
+        396,
+        378
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/3c7e28d1e5dc0dd308a715c23ba9da10694c83330cfed758a8c61b135762a7d0.webp",
+      "outputSha256": "3c7e28d1e5dc0dd308a715c23ba9da10694c83330cfed758a8c61b135762a7d0",
+      "outputBytes": 38748,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/3c7e28d1e5dc0dd308a715c23ba9da10694c83330cfed758a8c61b135762a7d0/image.webp",
+      "rgbaSha256": "034bdc5f0df455e10deeb6dde59ae932b61a6645062e9b29fe86e985bbc77c72",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-11",
+      "cardId": "course-a1-11-shoes",
+      "word": "shoes",
+      "source": "stories/materials/Course/assets/a1-11-vocabulary81.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 427,
+        "row": 63,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        427,
+        63,
+        757,
+        393
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0.webp",
+      "outputSha256": "344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0",
+      "outputBytes": 49850,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0/image.webp",
+      "rgbaSha256": "f1f107d68d94bfb9c32a9f62e1ce7f26ff253021e4b9fd1b01ef89a928277f3d",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-11",
+      "cardId": "course-a1-11-jacket",
+      "word": "jacket",
+      "source": "stories/materials/Course/assets/a1-11-vocabulary81.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 809,
+        "row": 41,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        809,
+        41,
+        1139,
+        371
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348.webp",
+      "outputSha256": "eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348",
+      "outputBytes": 59202,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348/image.webp",
+      "rgbaSha256": "484cf79b8924f8671f2b2849144e7b9c00b445fb84a2943bec7a99c80268bf59",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-11",
+      "cardId": "course-a1-11-bag",
+      "word": "bag",
+      "source": "stories/materials/Course/assets/a1-11-vocabulary81.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 53,
+        "row": 422,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        53,
+        422,
+        383,
+        752
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/5b65fce3b9bb32535c5816608abfe1b82b29cdfe5009bd73396450ec3483982b.webp",
+      "outputSha256": "5b65fce3b9bb32535c5816608abfe1b82b29cdfe5009bd73396450ec3483982b",
+      "outputBytes": 49998,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/5b65fce3b9bb32535c5816608abfe1b82b29cdfe5009bd73396450ec3483982b/image.webp",
+      "rgbaSha256": "0db6ada0216a005e6a6b1cf073fc69e4071a6b844bb750121a9528f8f92f5907",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-11",
+      "cardId": "course-a1-11-glasses",
+      "word": "glasses",
+      "source": "stories/materials/Course/assets/a1-11-vocabulary81.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 435,
+        "row": 426,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        435,
+        426,
+        765,
+        756
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1.webp",
+      "outputSha256": "4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1",
+      "outputBytes": 30980,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1/image.webp",
+      "rgbaSha256": "498c51adbfb5e1bf1053d9921414bb742fdd7f74dad54fcfaecd418bd94b0a06",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-11",
+      "cardId": "course-a1-11-dress",
+      "word": "dress",
+      "source": "stories/materials/Course/assets/a1-11-vocabulary81.webp",
+      "sourceSha256": "cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 809,
+        "row": 416,
+        "columnSpan": 330,
+        "rowSpan": 330,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        809,
+        416,
+        1139,
+        746
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9.webp",
+      "outputSha256": "7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9",
+      "outputBytes": 46514,
+      "outputSize": [
+        330,
+        330
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9/image.webp",
+      "rgbaSha256": "72246c893c93e009da30e16f56b4a00ed89a3cc40dfd1b3f8c35c568c50bbc95",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-10",
+      "cardId": "course-a1-10-coffee",
+      "word": "coffee",
+      "source": "stories/materials/Course/assets/a1-10-vocabulary81.webp",
+      "sourceSha256": "6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 45,
+        "row": 46,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        45,
+        46,
+        405,
+        406
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/e327e0b7f4a7fd0a23bc9caf8c94dabe9bfcb5fce894b08cf50be5a53758cfe2.webp",
+      "outputSha256": "e327e0b7f4a7fd0a23bc9caf8c94dabe9bfcb5fce894b08cf50be5a53758cfe2",
+      "outputBytes": 61300,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/e327e0b7f4a7fd0a23bc9caf8c94dabe9bfcb5fce894b08cf50be5a53758cfe2/image.webp",
+      "rgbaSha256": "6dc04cc27801c3ca6f01ea5db3b13b01e1aaaeab66bc27f00eca5d9b0f042bb3",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-10",
+      "cardId": "course-a1-10-tea",
+      "word": "tea",
+      "source": "stories/materials/Course/assets/a1-10-vocabulary81.webp",
+      "sourceSha256": "6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 431,
+        "row": 48,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        431,
+        48,
+        791,
+        408
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/5389ea0f80766d72d4273c3cc4c4d77a6d6af7dba69e01360d8df9a5d5b8a303.webp",
+      "outputSha256": "5389ea0f80766d72d4273c3cc4c4d77a6d6af7dba69e01360d8df9a5d5b8a303",
+      "outputBytes": 72756,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/5389ea0f80766d72d4273c3cc4c4d77a6d6af7dba69e01360d8df9a5d5b8a303/image.webp",
+      "rgbaSha256": "b07b915314f4411a21e92af068f544f097097fa851d0dc2fc07017765218df64",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-10",
+      "cardId": "course-a1-10-water",
+      "word": "water",
+      "source": "stories/materials/Course/assets/a1-10-vocabulary81.webp",
+      "sourceSha256": "6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 786,
+        "row": 44,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        786,
+        44,
+        1146,
+        404
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/cb0c7866040be8971860eb474a96520276d57372a05c6a65d774ffc2a29164d5.webp",
+      "outputSha256": "cb0c7866040be8971860eb474a96520276d57372a05c6a65d774ffc2a29164d5",
+      "outputBytes": 46866,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/cb0c7866040be8971860eb474a96520276d57372a05c6a65d774ffc2a29164d5/image.webp",
+      "rgbaSha256": "c36084a939849f62ec1206b18596b4193759e5dc6711d301662c639cf7e2a889",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-10",
+      "cardId": "course-a1-10-juice",
+      "word": "juice",
+      "source": "stories/materials/Course/assets/a1-10-vocabulary81.webp",
+      "sourceSha256": "6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 34,
+        "row": 391,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        34,
+        391,
+        394,
+        751
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/81f1fde2dd1eae0eee6d5d1b06a514528f5928cad019b9f320a7d34f7ca12b87.webp",
+      "outputSha256": "81f1fde2dd1eae0eee6d5d1b06a514528f5928cad019b9f320a7d34f7ca12b87",
+      "outputBytes": 48564,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/81f1fde2dd1eae0eee6d5d1b06a514528f5928cad019b9f320a7d34f7ca12b87/image.webp",
+      "rgbaSha256": "336f4ba11491eb3073237dad27cd09672f90b58fa6b51beb12220d45f266ebb8",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-10",
+      "cardId": "course-a1-10-sandwich",
+      "word": "sandwich",
+      "source": "stories/materials/Course/assets/a1-10-vocabulary81.webp",
+      "sourceSha256": "6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 414,
+        "row": 388,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        414,
+        388,
+        774,
+        748
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/2bc3b03452c7f2b2b7bcf29f1f14be65efa5d4595cae7d1c95bf55aeae40b0b9.webp",
+      "outputSha256": "2bc3b03452c7f2b2b7bcf29f1f14be65efa5d4595cae7d1c95bf55aeae40b0b9",
+      "outputBytes": 98420,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/2bc3b03452c7f2b2b7bcf29f1f14be65efa5d4595cae7d1c95bf55aeae40b0b9/image.webp",
+      "rgbaSha256": "a50db0942ed9b59a30514151735aabaca817ab92645f721bd4961ec8124b0b2e",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a1-10",
+      "cardId": "course-a1-10-cake",
+      "word": "cake",
+      "source": "stories/materials/Course/assets/a1-10-vocabulary81.webp",
+      "sourceSha256": "6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 787,
+        "row": 383,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        787,
+        383,
+        1147,
+        743
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/8be7176548c3ca35919709057bc4fd03b3f0d56bfdc949eb9d0e6e8dda82e9a4.webp",
+      "outputSha256": "8be7176548c3ca35919709057bc4fd03b3f0d56bfdc949eb9d0e6e8dda82e9a4",
+      "outputBytes": 66710,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/8be7176548c3ca35919709057bc4fd03b3f0d56bfdc949eb9d0e6e8dda82e9a4/image.webp",
+      "rgbaSha256": "ac8f91d1f33a9b52d9718fa64369e03ecdfb392f05771fed197272cb17712ff7",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    },
+    {
+      "lesson": "a2-11",
+      "cardId": "course124-a204-v81-5",
+      "word": "a picnic",
+      "source": "stories/materials/Practice/assets/flashcards124/d7c400091e24223c011f9fc051bb9b06ac3a6f477b8ebfdafe856c2a71ceeb8a.webp",
+      "sourceSha256": "d7c400091e24223c011f9fc051bb9b06ac3a6f477b8ebfdafe856c2a71ceeb8a",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 790,
+        "row": 409,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        790,
+        409,
+        1150,
+        769
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da.webp",
+      "outputSha256": "288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da",
+      "outputBytes": 116924,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da/image.webp",
+      "rgbaSha256": "33d5fdc9f1f031072681a61ccbd06102abdbdb0acc8fc4d182a16233268751ee",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/d7c400091e24223c011f9fc051bb9b06ac3a6f477b8ebfdafe856c2a71ceeb8a/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 9
+    },
+    {
+      "lesson": "a2-11",
+      "cardId": "course-a1-07-bus",
+      "word": "bus",
+      "source": "stories/materials/Practice/assets/flashcards124/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8.webp",
+      "sourceSha256": "ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8",
+      "region": {
+        "columns": 1200,
+        "rows": 800,
+        "column": 415,
+        "row": 410,
+        "columnSpan": 360,
+        "rowSpan": 360,
+        "sourceAspectRatio": 1.5
+      },
+      "pixelBounds": [
+        415,
+        410,
+        775,
+        770
+      ],
+      "output": "stories/materials/Practice/assets/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f.webp",
+      "outputSha256": "5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f",
+      "outputBytes": 108404,
+      "outputSize": [
+        360,
+        360
+      ],
+      "storagePath": "/flashcards-transparent/course-practice/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f/image.webp",
+      "rgbaSha256": "dc370879020d482450853fb41d8d9c54d976b8cd4297ab7e851374f8ae69b33d",
+      "previousMedia": {
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        }
+      },
+      "previousRegionIndex": 7
+    }
+  ],
+  "totalBindings": 31,
+  "uniqueOutputs": 25,
+  "previousMediaBaseline": "53d7f2f64993e8cb24532d3f20023434b16fdf18"
+}

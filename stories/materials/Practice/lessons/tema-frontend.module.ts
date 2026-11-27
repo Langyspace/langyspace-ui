@@ -1,3 +1,9 @@
+import nativeView159_0 from '../assets/native-crop159/b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99.webp'
+import nativeView159_1 from '../assets/native-crop159/b40c2541cef37a4b712b8c08b79fb56cbcc1ed8030d27e7f233a9b74033e2a64.webp'
+import nativeView159_2 from '../assets/native-crop159/77ba3ace0dab35ce5083dad350ed8f769da9bf6ed757da72c20446f2b9755761.webp'
+import nativeView159_3 from '../assets/native-crop159/42eacdcdab8cb8d9a9cef87034e28719103088e6c985d5c58e677846b5c0f46b.webp'
+import nativeView159_4 from '../assets/native-crop159/cf89864d0a3434bfb396540ccc426be95f3580f104fb480b015e0f65d0cbe01a.webp'
+import nativeView159_5 from '../assets/native-crop159/1ee5df05deec316f09b552f4b94c393a2aaf833b15a4b21bd899dae6d3fb4fdd.webp'
 import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './tema-frontend.json'
@@ -256,6 +262,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-crop159/b59848f48f439d607f1666e7af8dbb0731112b445f78362eb76c5459e9638d99/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/b40c2541cef37a4b712b8c08b79fb56cbcc1ed8030d27e7f233a9b74033e2a64/image.webp':
+      nativeView159_1,
+    '/flashcards-transparent/course-practice/native-crop159/77ba3ace0dab35ce5083dad350ed8f769da9bf6ed757da72c20446f2b9755761/image.webp':
+      nativeView159_2,
+    '/flashcards-transparent/course-practice/native-crop159/42eacdcdab8cb8d9a9cef87034e28719103088e6c985d5c58e677846b5c0f46b/image.webp':
+      nativeView159_3,
+    '/flashcards-transparent/course-practice/native-crop159/cf89864d0a3434bfb396540ccc426be95f3580f104fb480b015e0f65d0cbe01a/image.webp':
+      nativeView159_4,
+    '/flashcards-transparent/course-practice/native-crop159/1ee5df05deec316f09b552f4b94c393a2aaf833b15a4b21bd899dae6d3fb4fdd/image.webp':
+      nativeView159_5,
     ...homeworkMediaImages('tema-frontend'),
     '/flashcards-transparent/course-practice/homework-media131/22d4ad9635452551662e6c97932980e492fa8f7a3b73a42aa0952118aa369e20/image.webp':
       extraAsset17,

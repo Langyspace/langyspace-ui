@@ -1,3 +1,7 @@
+import nativeView159_0 from '../assets/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9.webp'
+import nativeView159_1 from '../assets/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1.webp'
+import nativeView159_2 from '../assets/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348.webp'
+import nativeView159_3 from '../assets/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-11.json'
 import asset0 from '../assets/audio/e8fea4e7ca1b764ed5b66583089d0c397def065224e448ed9401af0d655f89a9.mp3'
@@ -219,6 +223,14 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1/image.webp':
+      nativeView159_1,
+    '/flashcards-transparent/course-practice/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348/image.webp':
+      nativeView159_2,
+    '/flashcards-transparent/course-practice/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0/image.webp':
+      nativeView159_3,
     '/flashcards/a2/clothing-essentials/shirt/image.webp': expanded124Asset18,
     '/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp':
       expanded124Asset19,

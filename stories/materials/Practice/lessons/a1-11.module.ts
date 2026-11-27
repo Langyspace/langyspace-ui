@@ -1,3 +1,9 @@
+import nativeView159_0 from '../assets/native-crop159/3c7e28d1e5dc0dd308a715c23ba9da10694c83330cfed758a8c61b135762a7d0.webp'
+import nativeView159_1 from '../assets/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0.webp'
+import nativeView159_2 from '../assets/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348.webp'
+import nativeView159_3 from '../assets/native-crop159/5b65fce3b9bb32535c5816608abfe1b82b29cdfe5009bd73396450ec3483982b.webp'
+import nativeView159_4 from '../assets/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1.webp'
+import nativeView159_5 from '../assets/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-11.json'
 import asset0 from '../../Course/assets/audio/A111-D81.1.mp3'
@@ -186,6 +192,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-crop159/3c7e28d1e5dc0dd308a715c23ba9da10694c83330cfed758a8c61b135762a7d0/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0/image.webp':
+      nativeView159_1,
+    '/flashcards-transparent/course-practice/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348/image.webp':
+      nativeView159_2,
+    '/flashcards-transparent/course-practice/native-crop159/5b65fce3b9bb32535c5816608abfe1b82b29cdfe5009bd73396450ec3483982b/image.webp':
+      nativeView159_3,
+    '/flashcards-transparent/course-practice/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1/image.webp':
+      nativeView159_4,
+    '/flashcards-transparent/course-practice/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9/image.webp':
+      nativeView159_5,
     '/flashcards/a2/clothing-essentials/jeans/image.webp': expanded124Asset14,
     '/flashcards/a2/clothing-essentials/skirt/image.webp': expanded124Asset15,
     '/flashcards/a2/clothing-essentials/shorts/image.webp': expanded124Asset16,

@@ -1,3 +1,5 @@
+import nativeView159_0 from '../assets/native-crop159/288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da.webp'
+import nativeView159_1 from '../assets/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f.webp'
 import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a2-11.json'
@@ -244,6 +246,10 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-crop159/288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f/image.webp':
+      nativeView159_1,
     '/flashcards-transparent/course-practice/homework-media131/c9a3807987a15b65f82d65cf552c2bd0f98dfd6f9317bbc12edf5a21c5a73149/image.webp':
       region131Asset0,
     ...homeworkMediaImages('a2-11'),
