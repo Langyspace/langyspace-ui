@@ -57,7 +57,20 @@ function PreparedLesson({
       ({ speech }: ReviewedActivityContext) => (
         <CourseActivity
           key={id}
-          activity={activity}
+          activity={
+            activity.map?.image
+              ? {
+                  ...activity,
+                  map: {
+                    ...activity.map,
+                    image: {
+                      ...activity.map.image,
+                      src: image(activity.map.image.src),
+                    },
+                  },
+                }
+              : activity
+          }
           image={activity.image ? image(activity.image) : undefined}
           onPlayPlace={(clipId, text) => speech.speak([{ id: clipId, text }])}
         />

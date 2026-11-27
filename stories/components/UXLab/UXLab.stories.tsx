@@ -1,6 +1,8 @@
 import { QuestionRoulette } from '../../../src/components/Exercise/QuestionRoulette'
 import { conversationRouletteTopics } from '../Exercise/QuestionRoulette.fixtures'
 import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
+import townMap152 from '../../materials/Course/assets/a1-09-town-map152.png'
+import townMapData152 from '../../materials/Course/lessons/a1-09.json'
 import airportVocabulary81 from '../../materials/Course/assets/a1-07-vocabulary81.webp'
 import { A102Lesson } from '../../materials/A102/A102Lesson'
 import { A101Lesson } from '../../materials/A101/A101Lesson'
@@ -362,24 +364,25 @@ export const LearnedVocabularyLabels: Story = {
 export const MapReference: Story = {
   render: () => (
     <RouteMap
-      label="Town reference"
-      startId="hotel"
-      places={[
-        {
-          id: 'hotel',
-          label: 'hotel',
-          symbol: '🏨',
-          xPercent: 20,
-          yPercent: 85,
-        },
-        { id: 'cafe', label: 'café', symbol: '☕', xPercent: 55, yPercent: 70 },
-        { id: 'park', label: 'park', symbol: '🌳', xPercent: 85, yPercent: 35 },
-      ]}
-      streets={[
-        { id: 'main', from: { x: 20, y: 15 }, to: { x: 20, y: 85 } },
-        { id: 'first', from: { x: 20, y: 70 }, to: { x: 85, y: 70 } },
-        { id: 'second', from: { x: 20, y: 35 }, to: { x: 85, y: 35 } },
-      ]}
+      {...townMapData152.activities.s_mission.map}
+      image={{
+        ...townMapData152.activities.s_mission.map.image,
+        src: townMap152,
+      }}
+    />
+  ),
+}
+
+export const MapVocabulary: Story = {
+  render: () => (
+    <RouteMap
+      {...townMapData152.activities.s_mission.map}
+      image={{
+        ...townMapData152.activities.s_mission.map.image,
+        src: townMap152,
+      }}
+      revealedIds={['hotel']}
+      selectedId="hotel"
     />
   ),
 }

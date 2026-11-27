@@ -113,6 +113,12 @@ export function CourseActivity({
             showAll={allPlaces}
             onToggleInitial={() => showInitialPlaces(!initialPlaces)}
             onToggleAll={() => showAllPlaces(!allPlaces)}
+            onReset={() => {
+              reveal([])
+              showInitialPlaces(false)
+              showAllPlaces(false)
+              setPlace(undefined)
+            }}
           />
         </Common.Row>
       </Common.Stack>

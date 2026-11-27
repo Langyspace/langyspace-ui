@@ -2,6 +2,13 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Mapas de cidade e rotas — revisão152
+
+- Um mapa usado como referência de aula precisa parecer uma cidade acabada, com ruas pavimentadas, cruzamentos, quarteirões e lugares reconhecíveis. Não entregar linhas soltas, emojis sobre traços ou diagramas com aparência de rascunho como se fossem a ilustração final.
+- Usar vista superior legível e uma hierarquia simples: vias, quadras, construções e áreas verdes. Nomes de ruas e lugares ficam como texto nativo acessível, com contraste adequado, sem depender de letras desenhadas na imagem. Não acrescentar controles ou cliques sem função pedagógica.
+- Reutilizar RouteMap com imagem de fundo e áreas clicáveis sobre os prédios. A área do lugar inteiro deve aceitar o clique, não apenas um ponto pequeno; preservar os controles compartilhados de dica, revelar e resetar. Reutilizar a mesma geografia nas diferentes páginas de uma aula.
+- Conferir a coerência entre desenho, pontos de partida, direção inicial, cruzamentos, perguntas e gravações. Uma imagem bonita com uma rota impossível ou um lugar no lado errado não está pronta. Mapas esquemáticos só cabem quando o objetivo explícito for estudar um esquema, não como substitutos rápidos de uma cena de cidade.
+
 ## Continuidade de voz em nomes próprios — revisão151
 
 - Uma frase em inglês com cidade ou nome brasileiro precisa soar como uma única pessoa falando. Priorizar uma geração contínua da frase completa, com controle de pronúncia do nome compatível com o modelo. Preservar o texto de exibição e registrar separadamente o input fonético.

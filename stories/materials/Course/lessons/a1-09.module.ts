@@ -14,6 +14,7 @@ import a9 from '../assets/audio/A109-FS81.2.mp3'
 import a10 from '../assets/audio/A109-FS81.3.mp3'
 import a11 from '../assets/audio/A109-FS81.4.mp3'
 import a12 from '../assets/audio/A109-FS81.5.mp3'
+import townMap152 from '../assets/a1-09-town-map152.png'
 import w141photo from '../assets/a1-09-cover81.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
@@ -64,6 +65,6 @@ const prepared: PreparedCourseData = {
     { id: 'A109-FS81.4', text: 'park. Let’s meet at the park.', src: a11 },
     { id: 'A109-FS81.5', text: 'hotel. Start at the hotel.', src: a12 },
   ],
-  images: { 'a1-09-cover81': w141photo },
+  images: { 'a1-09-cover81': w141photo, 'a1-09-town-map152': townMap152 },
 }
 export default prepared
