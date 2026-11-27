@@ -1,3 +1,5 @@
+import { QuestionRoulette } from '../../../src/components/Exercise/QuestionRoulette'
+import { conversationRouletteTopics } from '../Exercise/QuestionRoulette.fixtures'
 import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
 import airportVocabulary81 from '../../materials/Course/assets/a1-07-vocabulary81.webp'
 import { A102Lesson } from '../../materials/A102/A102Lesson'
@@ -398,4 +400,9 @@ export const GuidedCallWholePortrait: Story = {
       onReplay={() => {}}
     />
   ),
+}
+
+export const QuestionRoulettePractice: Story = {
+  render: () => <QuestionRoulette topics={conversationRouletteTopics} />,
+  tags: ['visual-review'],
 }

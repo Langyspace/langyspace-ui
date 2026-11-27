@@ -21,6 +21,32 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'QuestionRoulette',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Exercise/QuestionRoulette.tsx',
+    runtimeMarker: 'lsui-sc-question-roulette',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/QuestionRoulette.stories.tsx',
+      title: 'Exercise/QuestionRoulette',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/QuestionRoulette.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/QuestionRoulette.types.ts',
+      documentation: {
+        path: 'docs/components/question-roulette.md',
+        anchor: 'questionroulette',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'QuestionList',
     interactive: true,
     visual: true,
