@@ -89,6 +89,27 @@ const dotHotspot = css`
 export const DotHotspot = styled(Hotspot)`
   ${dotHotspot}
 `
+/** A transparent target over the object, retaining the same focus and selection semantics. */
+export const AreaHotspot = styled(Hotspot)<{
+  $width: number
+  $height: number
+}>`
+  width: ${(p) => p.$width}%;
+  height: ${(p) => p.$height}%;
+  border: 2px solid transparent;
+  border-radius: ${theme.radius.lg};
+  background: transparent;
+  &:hover,
+  &[aria-expanded='true'] {
+    border-color: ${theme.colors.palette.white};
+    outline: none;
+    box-shadow: ${theme.shadows.sm};
+  }
+  &:focus-visible {
+    outline: 3px solid ${(p) => Common.recipe(p).accent};
+    outline-offset: 2px;
+  }
+`
 export const LabelScene = styled(Scene)`
   container-type: inline-size;
   border-radius: ${theme.slides.panelRadius};
@@ -147,6 +168,7 @@ export const Callout = styled(Common.Surface)<{
   $arrow: number
   $imageWidth?: number
   $imageHeight?: number
+  $inline?: boolean
 }>`
   position: absolute;
   z-index: 5;
@@ -180,6 +202,19 @@ export const Callout = styled(Common.Surface)<{
         ? `left: ${p.$arrow - 4}px; ${p.$placement === 'above' ? 'bottom: -5px;' : 'top: -5px;'}`
         : `top: ${p.$arrow - 4}px; ${p.$placement === 'left' ? 'right: -5px;' : 'left: -5px;'}`}
   }
+  ${(p) =>
+    p.$inline
+      ? css`
+          position: static;
+          width: auto;
+          max-width: none;
+          margin-top: ${theme.spacing[3]};
+          box-shadow: none;
+          &::after {
+            display: none;
+          }
+        `
+      : null}
 `
 export const CalloutHeading = styled.div`
   display: flex;

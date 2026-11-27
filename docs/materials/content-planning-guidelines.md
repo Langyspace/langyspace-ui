@@ -2,6 +2,13 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Cenas de compras — revisão157
+
+- A loja fornece contexto e produtos reconhecíveis; títulos, preços, tamanhos, contornos e ajuda são UI nativa, nunca texto ou botões desenhados na imagem. Manter o prompt canônico literal e a identidade dos personagens.
+- Reutilizar `SceneExplorer` com `hotspotInteraction="area"` e os limites de cada objeto para permitir clicar na peça inteira, sem pontos sobrepostos. A professora seleciona a escolha oral da aluna; não exigir digitação na tela compartilhada.
+- A ficha da peça mostra apenas informações úteis para a compra. Uma lâmpada opcional revela dica, depois exemplo completo, substituindo o apoio anterior; trocar ou fechar a peça reinicia a ajuda. A resposta pessoal não tem alternativa correta nem envio simulado.
+- Cores, tamanhos e preços de itens reutilizados precisam concordar com o modelo, a missão e as mensagens de áudio. Não regenerar gravações válidas para adicionar uma cena visual.
+
 ## Mapas de cidade e rotas — revisão152
 
 - Um mapa usado como referência de aula precisa parecer uma cidade acabada, com ruas pavimentadas, cruzamentos, quarteirões e lugares reconhecíveis. Não entregar linhas soltas, emojis sobre traços ou diagramas com aparência de rascunho como se fossem a ilustração final.

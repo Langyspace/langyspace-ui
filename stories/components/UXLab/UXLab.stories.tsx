@@ -3,6 +3,8 @@ import { conversationRouletteTopics } from '../Exercise/QuestionRoulette.fixture
 import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
 import townMap152 from '../../materials/Course/assets/a1-09-town-map152.png'
 import townMapData152 from '../../materials/Course/lessons/a1-09.json'
+import shopScene157 from '../../materials/Course/assets/a1-11-shopping-scene157.png'
+import shopData157 from '../../materials/Course/lessons/a1-11.json'
 import { CourseActivity } from '../../materials/Course/CourseActivity'
 import airportVocabulary81 from '../../materials/Course/assets/a1-07-vocabulary81.webp'
 import { A102Lesson } from '../../materials/A102/A102Lesson'
@@ -370,6 +372,15 @@ export const MapReference: Story = {
         ...townMapData152.activities.s_mission.map.image,
         src: townMap152,
       }}
+    />
+  ),
+}
+
+export const ClothesShopScene: Story = {
+  render: () => (
+    <CourseActivity
+      activity={{ ...shopData157.activities.s_personal, type: 'scene-choice' }}
+      image={shopScene157}
     />
   ),
 }

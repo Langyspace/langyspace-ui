@@ -29,6 +29,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
     imageAlt,
     imageSizing = 'natural',
     hotspots,
+    hotspotInteraction = 'point',
     connections = [],
     selectedId,
     visitedIds,
@@ -114,7 +115,8 @@ export function SceneExplorer(options: SceneExplorerProps) {
     setImageBounds((old) =>
       JSON.stringify(old) === JSON.stringify(visible) ? old : visible,
     )
-    if (!selected || !calloutRef.current) return
+    if (hotspotInteraction === 'area' || !selected || !calloutRef.current)
+      return
     const point = scenePoint(next, selected.xPercent, selected.yPercent)
     const target = selected.targetBounds
     const start = target
@@ -165,7 +167,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
     setLayout((old) =>
       JSON.stringify(old) === JSON.stringify(nextLayout) ? old : nextLayout,
     )
-  }, [selected, hotspots])
+  }, [selected, hotspots, hotspotInteraction])
   useLayoutEffect(measure, [measure, answerVisible, imageUrl, compactLabels])
   useEffect(() => {
     if (typeof ResizeObserver === 'undefined') return
@@ -214,17 +216,20 @@ export function SceneExplorer(options: SceneExplorerProps) {
           </Styled.Connections>
         ) : null}
         {hotspots.map((h) => {
+          const area =
+            hotspotInteraction === 'area' ? h.targetBounds : undefined
           const vocabularyLabel =
             presentation === 'vocabulary' && visitedIds.includes(h.id)
-          const Marker =
-            presentation === 'vocabulary'
+          const Marker = area
+            ? Styled.AreaHotspot
+            : presentation === 'vocabulary'
               ? Styled.VocabularyHotspot
               : presentation === 'labels'
                 ? Styled.LabelHotspot
                 : Styled.DotHotspot
-          const point = geometry
-            ? scenePoint(geometry, h.xPercent, h.yPercent)
-            : undefined
+          const x = area ? area.xPercent + area.widthPercent / 2 : h.xPercent
+          const y = area ? area.yPercent + area.heightPercent / 2 : h.yPercent
+          const point = geometry ? scenePoint(geometry, x, y) : undefined
           const cropped =
             geometry &&
             point &&
@@ -237,15 +242,20 @@ export function SceneExplorer(options: SceneExplorerProps) {
               key={h.id}
               type="button"
               hidden={Boolean(cropped)}
-              $x={
-                point && geometry
-                  ? (point.x / geometry.frameWidth) * 100
-                  : h.xPercent
-              }
+              $x={point && geometry ? (point.x / geometry.frameWidth) * 100 : x}
               $y={
-                point && geometry
-                  ? (point.y / geometry.frameHeight) * 100
-                  : h.yPercent
+                point && geometry ? (point.y / geometry.frameHeight) * 100 : y
+              }
+              $width={
+                area && geometry
+                  ? (area.widthPercent * geometry.width) / geometry.frameWidth
+                  : (area?.widthPercent ?? 0)
+              }
+              $height={
+                area && geometry
+                  ? (area.heightPercent * geometry.height) /
+                    geometry.frameHeight
+                  : (area?.heightPercent ?? 0)
               }
               $visited={visitedIds.includes(h.id)}
               $revealed={
@@ -290,6 +300,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
             $arrow={layout?.arrow ?? 24}
             $imageWidth={imageBounds?.width}
             $imageHeight={imageBounds?.height}
+            $inline={hotspotInteraction === 'area'}
           >
             <Styled.CalloutHeading>
               <Common.Heading>{selected.label}</Common.Heading>
