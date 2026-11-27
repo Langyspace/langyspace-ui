@@ -343,7 +343,7 @@
       "message": "Hi, Ana. Reception has spoken to a caller about the backpack. The caller described a black notebook with a silver star and a red fish key ring, without being told those details first. Both descriptions match the objects in our example. That makes the claim more plausible, but reception still needs to follow its collection procedure. Could you explain why the matching details are stronger evidence than simply having a charger, and say what still needs to be checked?",
       "audioText": "Hi, Ana. Reception has spoken to a caller about the backpack. The caller described a black notebook with a silver star and a red fish key ring, without being told those details first. Both descriptions match the objects in our example. That makes the claim more plausible, but reception still needs to follow its collection procedure. Could you explain why the matching details are stronger evidence than simply having a charger, and say what still needs to be checked?",
       "audioId": "B104-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Someone has called about the backpack",
       "items": [
         {
           "id": "listen",
@@ -365,7 +365,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

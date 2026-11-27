@@ -16,6 +16,7 @@ function VoiceMessageContent({
   contact,
   greeting,
   attachment,
+  videoAttachment,
   audio,
   additionalAudios = [],
   questions,
@@ -144,6 +145,43 @@ function VoiceMessageContent({
                 <Styled.Time>{attachment.timestamp}</Styled.Time>
               ) : null}
             </Styled.PhotoBubble>
+          ) : null}
+          {videoAttachment ? (
+            <Styled.VideoPreview
+              aria-label={videoAttachment.title}
+              disabled={!active}
+              onClick={() => {
+                conversationRef.current
+                  ?.querySelectorAll('audio')
+                  .forEach((element) => element.pause())
+                videoAttachment.onOpen()
+              }}
+            >
+              <Styled.VideoThumbnail>
+                {videoAttachment.imageUrl ? (
+                  <img src={videoAttachment.imageUrl} alt="" loading="lazy" />
+                ) : null}
+                <Styled.VideoPreviewIcon aria-hidden="true">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </Styled.VideoPreviewIcon>
+              </Styled.VideoThumbnail>
+              <Styled.VideoCaption>
+                <strong>{videoAttachment.title}</strong>
+                {videoAttachment.sourceLabel ? (
+                  <span>{videoAttachment.sourceLabel}</span>
+                ) : null}
+                {videoAttachment.timestamp ? (
+                  <Styled.Time>{videoAttachment.timestamp}</Styled.Time>
+                ) : null}
+              </Styled.VideoCaption>
+            </Styled.VideoPreview>
           ) : null}
           <VoiceMessageRecording
             audio={audio}

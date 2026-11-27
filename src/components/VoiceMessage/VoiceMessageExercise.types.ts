@@ -56,6 +56,14 @@ export interface VoiceMessageExerciseProps extends Omit<
   greeting?: { text: string; timestamp: string }
   /** A real image shared in the conversation, before its voice message. */
   attachment?: { src: string; alt: string; timestamp?: string }
+  /** Received video preview. The product owns its prepared player and navigation. */
+  videoAttachment?: {
+    title: string
+    imageUrl?: string
+    sourceLabel?: string
+    timestamp?: string
+    onOpen: () => void
+  }
   audio: VoiceMessageAudio
   /** Additional recordings in the same chat; each retains its own playback/transcript history. */
   additionalAudios?: readonly VoiceMessageAudio[]

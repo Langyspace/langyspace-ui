@@ -367,7 +367,7 @@
       "message": "Hi, Ana! I checked another change on our example map. There used to be a factory beside the square. It’s an apartment block now, with a small garden in front. The playground is still in the same place. A former resident told me he used to work at the factory, so he misses it, even though he likes the cleaner street. Would you show him what has changed and ask which part he remembers best?",
       "audioText": "Hi, Ana! I checked another change on our example map. There used to be a factory beside the square. It’s an apartment block now, with a small garden in front. The playground is still in the same place. A former resident told me he used to work at the factory, so he misses it, even though he likes the cleaner street. Would you show him what has changed and ask which part he remembers best?",
       "audioId": "B102-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I noticed another change near the square",
       "items": [
         {
           "id": "listen",
@@ -389,7 +389,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

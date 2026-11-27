@@ -1,3 +1,5 @@
+import w141clip0 from './assets/audio/W141.1.mp3'
+import w141clip1 from './assets/audio/W141.2.mp3'
 import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
 import clip0 from './assets/audio/V.0.mp3'
 import clip1 from './assets/audio/VE.0.mp3'
@@ -242,4 +244,15 @@ export const devStudyRecordings: readonly PreparedRecording[] = [
   },
   { id: 'SH.5', text: 'Could you say that again?', src: clip58 },
   { id: 'SH.6', text: 'Next time, I’ll test one small change.', src: clip59 },
+
+  {
+    id: 'W141.1',
+    text: 'A quick update about our next study session. We’ll use audio only, so we won’t share screens or code. Choose one feature from your practice project. Explain what it does and who would use it.',
+    src: w141clip0,
+  },
+  {
+    id: 'W141.2',
+    text: 'One more thing: tell me what you tested and what you still want to improve. Send me a short voice note before we meet. If you’re stuck, include the error message and one thing you’ve already tried.',
+    src: w141clip1,
+  },
 ]

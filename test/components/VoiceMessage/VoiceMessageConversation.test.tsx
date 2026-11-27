@@ -48,6 +48,34 @@ beforeEach(() => {
     () => undefined,
   )
 })
+
+it('opens a received video through the product action and pauses both voice notes without autoplay', () => {
+  const onOpen = vi.fn()
+  const { container, rerender } = render(
+    <VoiceMessageExercise
+      {...props}
+      videoAttachment={{
+        title: 'Making plans',
+        sourceLabel: 'YouTube',
+        onOpen,
+      }}
+    />,
+  )
+  const tracks = container.querySelectorAll('audio')
+  fireEvent.click(screen.getByRole('button', { name: 'Making plans' }))
+  expect(onOpen).toHaveBeenCalledOnce()
+  expect(tracks).toHaveLength(2)
+  expect(HTMLMediaElement.prototype.pause).toHaveBeenCalledTimes(2)
+  expect(HTMLMediaElement.prototype.play).not.toHaveBeenCalled()
+  rerender(
+    <VoiceMessageExercise
+      {...props}
+      active={false}
+      videoAttachment={{ title: 'Making plans', onOpen }}
+    />,
+  )
+  expect(screen.getByRole('button', { name: 'Making plans' })).toBeDisabled()
+})
 afterEach(() => vi.restoreAllMocks())
 async function click(name: string) {
   await act(async () => {

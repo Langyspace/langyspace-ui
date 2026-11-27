@@ -17,9 +17,21 @@ import a12 from '../assets/audio/B108-D81.7.mp3'
 import a13 from '../assets/audio/B108-D81.8.mp3'
 import a14 from '../assets/audio/B108-L81.1.mp3'
 import i0 from '../assets/b1-08-vocabulary81.webp'
+import w141clip0 from '../assets/audio/B108-W141.1.mp3'
+import w141clip1 from '../assets/audio/B108-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B108-W141.1',
+      text: 'Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day.',
+      src: w141clip0,
+    },
+    {
+      id: 'B108-W141.2',
+      text: 'I’ve joined a weekly group, but I sometimes feel homesick in the evenings. It isn’t all wonderful or all terrible! What helped you get used to a different routine? I’d really like to hear your experience.',
+      src: w141clip1,
+    },
     {
       id: 'B108-FS81.0',
       text: 'settle in. It takes time to settle in.',

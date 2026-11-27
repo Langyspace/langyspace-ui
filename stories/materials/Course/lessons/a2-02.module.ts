@@ -17,9 +17,21 @@ import a12 from '../assets/audio/A202-D81.7.mp3'
 import a13 from '../assets/audio/A202-D81.8.mp3'
 import a14 from '../assets/audio/A202-L81.1.mp3'
 import i0 from '../assets/a2-02-vocabulary81.webp'
+import w141clip0 from '../assets/audio/A202-W141.1.mp3'
+import w141clip1 from '../assets/audio/A202-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'A202-W141.1',
+      text: 'Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead.',
+      src: w141clip0,
+    },
+    {
+      id: 'A202-W141.2',
+      text: 'I walked for an hour and took some photos. Then I had lunch with a friend. It was a quiet afternoon, but I really enjoyed it. What did you do?',
+      src: w141clip1,
+    },
     {
       id: 'A202-FS81.0',
       text: 'visited a museum. I visited a museum on Sunday.',

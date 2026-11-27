@@ -75,3 +75,11 @@ Native play pauses the other recording elements inside this phone, and native pa
 TrialA1 combines the approved Ana clips and six grouped questions on one standard-width (47.5rem) page. Its phone dimensions are a consumer theme variation, preserving every other lesson’s sizing. Both default single-message and multiple-message behavior require focused regression coverage. No audio is synthesized by this component.
 
 `layout="balanced"` opts into two equal centred tracks for the phone and comprehension. The default `fluid` layout retains its existing phone-sized first track. Hidden exercises use `preload="none"`; active exercises preload their native recording without resetting its source or listening history.
+
+## Received video preview
+
+`videoAttachment={{title, imageUrl?, sourceLabel?, timestamp?, onOpen}}` adds a received video
+preview inside the same phone. It pauses the chat's voice notes before calling `onOpen`; the host
+owns its player, source boundaries and navigation. The preview never autoplays media or chooses an
+external destination. An inactive exercise disables the action. Existing greeting, image attachment,
+additional recordings and transcript histories keep their own contracts.

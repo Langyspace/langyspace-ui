@@ -343,7 +343,7 @@
       "message": "Hi, Ana. There’s still a flight available this evening. It leaves at six and gets in at eight thirty, but the desk hasn’t confirmed a seat yet. The direct flight tomorrow morning would arrive at ten and costs more. The traveller needs to be there by nine tomorrow, so the evening option could work if a seat is confirmed. Could you explain the two choices and what must be checked? A refund and insurance payment have not been confirmed",
       "audioText": "Hi, Ana. There’s still a flight available this evening. It leaves at six and gets in at eight thirty, but the desk hasn’t confirmed a seat yet. The direct flight tomorrow morning would arrive at ten and costs more. The traveller needs to be there by nine tomorrow, so the evening option could work if a seat is confirmed. Could you explain the two choices and what must be checked? A refund and insurance payment have not been confirmed.",
       "audioId": "B107-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "There’s still a flight we could ask about",
       "items": [
         {
           "id": "listen",
@@ -365,7 +365,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

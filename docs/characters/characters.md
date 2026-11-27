@@ -99,3 +99,14 @@ The current customer-portal scenario assigns registration to Owen, backend/accou
 DEV.01 usa Ana como exemplo de pessoa estudando programação e Kim como interlocutora de apoio. DEV.02 usa Kim no papel de entrevistadora de gestão e Priya no papel de entrevistadora técnica. As contribuições no portal do cliente, problemas do Login e exemplos de projeto são fatos das simulações, não histórico profissional permanente dos personagens. A aluna responde com sua própria experiência ou com um projeto de prática.
 
 Owen, Niamh, Priya e Ruby mantêm os retratos já aprovados do time. As práticas de shadowing identificam nome, rosto e variante de inglês: Kim (US), Owen (GB), Niamh (IE), Priya (IN) e Ruby (AU). Sotaque/voz não determina nacionalidade, idade ou uma nova biografia. As duas notas de WhatsApp de cada aula vêm da mesma Kim e formam uma continuação natural.
+
+
+## Variações de WhatsApp — revisão141
+
+As mensagens variam de forma planejada entre as aulas. Priya Nair, Owen Harris, Niamh Murphy, Ruby Bennett e Evelyn Carter reutilizam seus próprios retratos e vozes já registrados, junto do elenco anterior. A função em uma aula (reception, colega ou amiga) pertence à simulação; não fixa profissão, idade, nacionalidade ou relações novas.
+
+Owen fala nos dois áudios de estudos DEV.01; Priya nos dois de preparação da entrevista DEV.02. Kim continua dando o feedback do Login no DEV.03. A voz ativa de Ruby é Emma, ID `56bWURjYFHyYyVf490Dp`; o antigo casting de Noah/Charlie no primeiro rascunho de meetings95 é histórico. Priya mantém Monika Sogam, ID `2zRM7PkgwBPiau2jvVXc`, sotaque en-IN. Não alternar IDs para o mesmo personagem entre exercícios.
+
+O [registro de mídia](character-media.json) reúne16 personagens, nomes completos, sotaque, IDs ElevenLabs, retratos com hash, fonte e localização do prompt original. Os dez prompts85 foram recuperados byte a byte e salvos em `docs/characters/prompts/`, com os hashes originais conferidos. O texto do estilo canônico permanece intacto. Os retratos principais Ana/Kim também registram suas variantes aprovadas no material. Os retratos Anna/Ben das práticas são byte-idênticos aos perfis aprovados A201; suas vozes foram vinculadas pela proveniência das falas A201. Leo/Raj preservam o mesmo ator de voz histórico, sem inferir sotaque/nacionalidade nem regenerar as falas válidas. Não unir outros homônimos só pelo nome.
+
+`conversationStyle` é uma direção editorial criada nesta revisão: Evelyn clara e organizada; Owen prático e reflexivo; Niamh conversacional e curiosa; Ruby animada e objetiva; Priya colaborativa e precisa. Ajuda a escrever as próximas mensagens sem transformar o sotaque em estereótipo ou inventar uma biografia anterior. O prompt visual1.8 foi preservado e nenhuma imagem nova foi gerada.

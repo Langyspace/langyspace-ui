@@ -337,13 +337,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "Check the real reason",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
-      "message": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem. The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?",
-      "audioText": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem. The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?",
-      "audioId": "B103-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem",
+      "audioText": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem.",
+      "audioId": "B103-W141.1",
+      "greeting": "I found out what happened at the concert entrance",
       "items": [
         {
           "id": "listen",
@@ -365,7 +365,18 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Ruby"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "B103-W141.2",
+          "audioText": "The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?",
+          "message": "The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?",
+          "timestamp": "10:02"
+        }
+      ]
     },
     {
       "id": "s_reply",

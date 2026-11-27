@@ -402,7 +402,7 @@
       "message": "Hi, Ana. The draft is ready, but the review has moved from Wednesday to Thursday afternoon. The final changes still need roughly one working day after we receive the comments. That means we shouldn’t promise the final pack for Friday morning. We can have a short welcome sheet ready by ten, while the full pack is still being checked. Could you ask whether that would cover the volunteers’ immediate needs? If it does, we can agree a later handover for the complete version rather than quietly sending an unchecked draft. We also need to make clear that a new section would require another estimate",
       "audioText": "Hi, Ana. The draft is ready, but the review has moved from Wednesday to Thursday afternoon. The final changes still need roughly one working day after we receive the comments. That means we shouldn’t promise the final pack for Friday morning. We can have a short welcome sheet ready by ten, while the full pack is still being checked. Could you ask whether that would cover the volunteers’ immediate needs? If it does, we can agree a later handover for the complete version rather than quietly sending an unchecked draft. We also need to make clear that a new section would require another estimate.",
       "audioId": "B202-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "The review date has changed again",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

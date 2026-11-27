@@ -401,8 +401,8 @@
       "eyebrow": "Listening",
       "message": "Hi, Ana. Reception checked the booking and agrees that breakfast was already included in the room price. They can return the twenty-dollar breakfast charge if we provide the receipt reference; it may take three business days. The fifty-dollar deposit is different. It will be assessed after the room check at departure, so it hasn’t been approved for return yet. Could you explain which amount we can request now and which condition still applies to the deposit? We don’t need to give any bank details in this practice conversation",
       "audioText": "Hi, Ana. Reception checked the booking and agrees that breakfast was already included in the room price. They can return the twenty-dollar breakfast charge if we provide the receipt reference; it may take three business days. The fifty-dollar deposit is different. It will be assessed after the room check at departure, so it hasn’t been approved for return yet. Could you explain which amount we can request now and which condition still applies to the deposit? We don’t need to give any bank details in this practice conversation.",
-      "audioId": "B205-L81.1",
-      "greeting": "I have an update for you!",
+      "audioId": "B205-W141.1",
+      "greeting": "The hotel has checked our booking",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Evelyn"
+      }
     },
     {
       "id": "s_reply",

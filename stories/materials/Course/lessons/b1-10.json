@@ -361,13 +361,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "The talk has moved",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen and answer, then open the video shared in the chat",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. There’s a room change for the eleven thirty talk. It’s now in room four, not room two. The ten o’clock tour still starts at reception. The message doesn’t say whether room four has step-free access, and one person in our group needs it. Could you check that before we leave the ground floor? The entrance fee still includes the standard tour; we haven’t booked the extra workshop",
       "audioText": "Hi, Ana. There’s a room change for the eleven thirty talk. It’s now in room four, not room two. The ten o’clock tour still starts at reception. The message doesn’t say whether room four has step-free access, and one person in our group needs it. Could you check that before we leave the ground floor? The entrance fee still includes the standard tour; we haven’t booked the extra workshop.",
       "audioId": "B110-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s a useful way to ask for information politely",
       "items": [
         {
           "id": "listen",
@@ -389,7 +389,11 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "videoPageId": "s_video102"
     },
     {
       "id": "s_reply",

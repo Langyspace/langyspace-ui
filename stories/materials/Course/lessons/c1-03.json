@@ -411,13 +411,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "No reopening date has been set",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen and answer, then open the video shared in the chat",
       "minutes": 4,
       "eyebrow": "Listening",
-      "message": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact? Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently",
-      "audioText": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact? Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently.",
-      "audioId": "C103-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact?",
+      "audioText": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact?",
+      "audioId": "C103-W141.1",
+      "greeting": "Here’s another example of checking a claim before passing it on",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,19 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Owen"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "C103-W141.2",
+          "audioText": "Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently.",
+          "message": "Please don’t replace the false certainty with a confident reopening date. If people need to plan a visit, the useful next step is to check the café’s own updates rather than repeat the same unverified post. We can explain what the notice confirms and what it leaves open without implying that every part of the original rumour has been investigated independently",
+          "timestamp": "10:02"
+        }
+      ],
+      "videoPageId": "s_video102"
     },
     {
       "id": "s_reply",

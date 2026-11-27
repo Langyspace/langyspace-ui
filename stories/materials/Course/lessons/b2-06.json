@@ -402,7 +402,7 @@
       "message": "Hi, Ana. The new screen has been fitted, but the phone is still being tested. The shop now expects collection on Saturday at five, one day later than planned. They do have a temporary phone available from Friday at four, free of charge, to be returned when you collect yours. That may cover the trip, but you’d need to check that it supports what you need and arrange your own account access. Could you respond to the shop, confirm the revised collection time and ask one relevant question about the temporary phone? The repair quote remains eighty dollars",
       "audioText": "Hi, Ana. The new screen has been fitted, but the phone is still being tested. The shop now expects collection on Saturday at five, one day later than planned. They do have a temporary phone available from Friday at four, free of charge, to be returned when you collect yours. That may cover the trip, but you’d need to check that it supports what you need and arrange your own account access. Could you respond to the shop, confirm the revised collection time and ask one relevant question about the temporary phone? The repair quote remains eighty dollars.",
       "audioId": "B206-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I have another detail for the decision",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

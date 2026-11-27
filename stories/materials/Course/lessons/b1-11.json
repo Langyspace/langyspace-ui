@@ -343,7 +343,7 @@
       "message": "Hi, Ana. Before you introduce me at our example celebration, could you help me find Alex? Alex is the host, the person in the green shirt standing by the drinks table. I don’t mean Nina, who organised the music and is near the dance floor. The speech is almost finished, so we can go over afterwards. Please introduce me using the facts on Alex’s card rather than guessing a job or a family relationship",
       "audioText": "Hi, Ana. Before you introduce me at our example celebration, could you help me find Alex? Alex is the host, the person in the green shirt standing by the drinks table. I don’t mean Nina, who organised the music and is near the dance floor. The speech is almost finished, so we can go over afterwards. Please introduce me using the facts on Alex’s card rather than guessing a job or a family relationship.",
       "audioId": "B111-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Could you help me find the host?",
       "items": [
         {
           "id": "listen",
@@ -365,7 +365,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

@@ -21,9 +21,21 @@ import a16 from '../assets/audio/C107-D81.11.mp3'
 import a17 from '../assets/audio/C107-D81.12.mp3'
 import a18 from '../assets/audio/C107-L81.1.mp3'
 import i0 from '../assets/c1-07-vocabulary81.webp'
+import w141clip0 from '../assets/audio/C107-W141.1.mp3'
+import w141clip1 from '../assets/audio/C107-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'C107-W141.1',
+      text: 'Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings?',
+      src: w141clip0,
+    },
+    {
+      id: 'C107-W141.2',
+      text: 'The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient.',
+      src: w141clip1,
+    },
     {
       id: 'C107-FS81.0',
       text: 'a key takeaway. The key takeaway is the postponement.',

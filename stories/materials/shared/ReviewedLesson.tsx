@@ -161,6 +161,7 @@ function PageContent({
   activity,
   imageChoiceCounter,
   preloadVideo,
+  sharedVideo,
 }: ReviewedPageContentProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [initial, setInitial] = useState(false)
@@ -369,7 +370,7 @@ function PageContent({
         <VoiceMessageExercise
           contact={{
             name: 'Kim',
-            avatarUrl: characterPortrait('Kim'),
+            avatarUrl: characterPortrait(page.contact?.name ?? 'Kim'),
             ...page.contact,
             status: 'online',
           }}
@@ -378,6 +379,15 @@ function PageContent({
             timestamp: page.greetingTimestamp ?? '21:10',
           }}
           attachment={page.image}
+          videoAttachment={
+            sharedVideo
+              ? {
+                  ...sharedVideo,
+                  sourceLabel: 'YouTube',
+                  timestamp: page.greetingTimestamp,
+                }
+              : undefined
+          }
           audio={{
             id: page.audioId ?? 'L.1',
             src: recordings.find(
@@ -389,6 +399,16 @@ function PageContent({
             timestamp: page.voiceTimestamp ?? '21:11',
           }}
           active={active}
+          additionalAudios={page.additionalAudios?.map((part) => ({
+            id: part.audioId,
+            src: recordings.find(
+              (recording) =>
+                recording.id === part.audioId &&
+                recording.text === (part.audioText ?? part.message),
+            )?.src,
+            transcript: part.message,
+            timestamp: part.timestamp,
+          }))}
           questions={[]}
           onAnswer={() => undefined}
           transcriptReveal="third-listen"
@@ -686,6 +706,26 @@ export function ReviewedLesson({
                       activity={activityFor(page.id)}
                       imageChoiceCounter={imageChoiceCounter}
                       preloadVideo={pages[index - 1]?.id === pageId}
+                      sharedVideo={
+                        page.kind === 'listening' && page.videoPageId
+                          ? (() => {
+                              const target = pages.find(
+                                (candidate) =>
+                                  candidate.id === page.videoPageId,
+                              )
+                              return target?.kind === 'video'
+                                ? {
+                                    title: target.video.title,
+                                    imageUrl: `https://i.ytimg.com/vi/${target.video.videoId}/mqdefault.jpg`,
+                                    onOpen: () => {
+                                      speech.stop()
+                                      setPageId(target.id)
+                                    },
+                                  }
+                                : undefined
+                            })()
+                          : undefined
+                      }
                     />
                   </SlidePage>
                 ),

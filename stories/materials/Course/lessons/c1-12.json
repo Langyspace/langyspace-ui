@@ -417,7 +417,7 @@
       "message": "Hi, Ana. I wanted to add an experience to the payment-policy discussion. I normally pay by card, but last week my phone battery died while I was out. At the next place, the payment connection also stopped working for a while. I had some cash with me, but their digital-only process didn’t allow it, so I couldn’t complete the purchase then. I’m not saying that one incident proves digital payment is always unreliable. It does show that temporary loss of access can affect people who usually use it comfortably. Could your recommendation say what happens in that situation, including how staff explain the fallback without embarrassing the customer? I’d also want to know whether a transaction fee changes between the normal process and the fallback. A policy can aim for convenience while still making a specific plan for the moment the convenient route fails",
       "audioText": "Hi, Ana. I wanted to add an experience to the payment-policy discussion. I normally pay by card, but last week my phone battery died while I was out. At the next place, the payment connection also stopped working for a while. I had some cash with me, but their digital-only process didn’t allow it, so I couldn’t complete the purchase then. I’m not saying that one incident proves digital payment is always unreliable. It does show that temporary loss of access can affect people who usually use it comfortably. Could your recommendation say what happens in that situation, including how staff explain the fallback without embarrassing the customer? I’d also want to know whether a transaction fee changes between the normal process and the fallback. A policy can aim for convenience while still making a specific plan for the moment the convenient route fails.",
       "audioId": "C112-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "There’s another perspective to consider",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

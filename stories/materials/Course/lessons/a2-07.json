@@ -330,7 +330,7 @@
       "message": "Hi, Ana! There’s a temporary change this weekend. The pool closes at six, not eight, because of cleaning. The grill booking is still fine, and you can use the chairs. If your friends want to swim, they should come before six. Could you tell them about the earlier closing time? Everything goes back to normal on Monday",
       "audioText": "Hi, Ana! There’s a temporary change this weekend. The pool closes at six, not eight, because of cleaning. The grill booking is still fine, and you can use the chairs. If your friends want to swim, they should come before six. Could you tell them about the earlier closing time? Everything goes back to normal on Monday.",
       "audioId": "A207-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I checked this weekend’s opening times",
       "items": [
         {
           "id": "listen",
@@ -352,7 +352,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

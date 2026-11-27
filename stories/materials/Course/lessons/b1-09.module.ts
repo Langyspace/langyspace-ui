@@ -18,6 +18,7 @@ import a13 from '../assets/audio/B109-D81.8.mp3'
 import a14 from '../assets/audio/B109-L81.1.mp3'
 import i0 from '../assets/b1-09-vocabulary81.webp'
 import evidence123 from '../assets/b1-09-bicycle123.webp'
+import w141photo from '../assets/b1-09-cover81.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
@@ -81,6 +82,10 @@ const prepared: PreparedCourseData = {
       src: a14,
     },
   ],
-  images: { 'b1-09-bicycle123': evidence123, 'b1-09-vocabulary81': i0 },
+  images: {
+    'b1-09-cover81': w141photo,
+    'b1-09-bicycle123': evidence123,
+    'b1-09-vocabulary81': i0,
+  },
 }
 export default prepared

@@ -402,7 +402,7 @@
       "message": "Hi, Ana. I want to clarify the dinner message. I suggested Saturday because it seemed convenient; I didn’t insist on that date or promise that everyone would pay in advance. I’m happy to consider another evening. The host said they would book only after checking availability, and one guest still wants to see the cancellation conditions before paying anything. Could you pass that on without making me sound more definite than I was? A useful summary would say what was suggested, what was actually promised and what is still unresolved",
       "audioText": "Hi, Ana. I want to clarify the dinner message. I suggested Saturday because it seemed convenient; I didn’t insist on that date or promise that everyone would pay in advance. I’m happy to consider another evening. The host said they would book only after checking availability, and one guest still wants to see the cancellation conditions before paying anything. Could you pass that on without making me sound more definite than I was? A useful summary would say what was suggested, what was actually promised and what is still unresolved.",
       "audioId": "B207-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s what I found out about the situation",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

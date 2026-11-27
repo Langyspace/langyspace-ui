@@ -402,7 +402,7 @@
       "message": "Hi, Ana. One group member likes the shorter meeting but is worried about asking questions after the live discussion. They can’t always join at the same time, and they don’t want their questions to disappear in a long message thread. They suggest a separate question channel, with a named person checking it each study day. Could you revise the proposal without bringing back the full sixty-minute status round? Keep its purpose—more useful time—and explain what you would change so people can still get an answer. We should agree how to review the trial before calling it a success",
       "audioText": "Hi, Ana. One group member likes the shorter meeting but is worried about asking questions after the live discussion. They can’t always join at the same time, and they don’t want their questions to disappear in a long message thread. They suggest a separate question channel, with a named person checking it each study day. Could you revise the proposal without bringing back the full sixty-minute status round? Keep its purpose—more useful time—and explain what you would change so people can still get an answer. We should agree how to review the trial before calling it a success.",
       "audioId": "B211-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s an update on what we discussed",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

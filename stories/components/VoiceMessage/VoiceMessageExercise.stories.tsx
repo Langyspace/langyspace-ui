@@ -266,3 +266,23 @@ export const TwoMessagesInactive: Story = {
   ...TwoMessages,
   args: { ...TwoMessages.args, active: false },
 }
+
+export const SharedVideo: Story = {
+  args: {
+    greeting: {
+      text: 'This clip gave me another idea for making plans',
+      timestamp: '19:40',
+    },
+    videoAttachment: {
+      title: 'Making plans',
+      sourceLabel: 'YouTube',
+      timestamp: '19:40',
+      onOpen: () => undefined,
+    },
+  },
+  tags: ['visual-review'],
+}
+export const SharedVideoInactive: Story = {
+  ...SharedVideo,
+  args: { ...SharedVideo.args, active: false },
+}

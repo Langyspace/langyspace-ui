@@ -180,8 +180,8 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
             <VoiceMessageExercise
               layout="balanced"
               contact={{
-                name: 'Kim',
-                avatarUrl: characterPortrait('Kim'),
+                name: source.listening.contact.name,
+                avatarUrl: characterPortrait(source.listening.contact.name),
                 status: 'online',
               }}
               greeting={{ text: source.listening.greeting, timestamp: '18:00' }}

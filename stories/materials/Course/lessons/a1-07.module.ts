@@ -45,6 +45,9 @@ const prepared: PreparedCourseData = {
       src: a12,
     },
   ],
-  images: { 'a1-07-cover81': i0, 'a1-07-vocabulary81': i1 },
+  images: {
+    'a1-07-cover81': i0,
+    'a1-07-vocabulary81': i1,
+  },
 }
 export default prepared

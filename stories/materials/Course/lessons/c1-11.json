@@ -417,7 +417,7 @@
       "message": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position",
       "audioText": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position.",
       "audioId": "C111-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I’ve checked the wording of that explanation",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

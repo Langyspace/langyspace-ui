@@ -417,7 +417,7 @@
       "message": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”",
       "audioText": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”.",
       "audioId": "C109-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "There’s an update on how certain we can be",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",
@@ -519,25 +522,19 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [
-              100
-            ]
+            "values": [100]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [
-              120
-            ]
+            "values": [120]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [
-              140
-            ]
+            "values": [140]
           }
         ]
       },
@@ -610,25 +607,19 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [
-              100
-            ]
+            "values": [100]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [
-              120
-            ]
+            "values": [120]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [
-              140
-            ]
+            "values": [140]
           }
         ]
       },

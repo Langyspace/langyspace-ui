@@ -417,7 +417,7 @@
       "message": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want",
       "audioText": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want.",
       "audioId": "C105-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I found the photograph from before the train journey",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,14 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "c1-05-scarf-photo123",
+        "alt": "The scarf on the café chair before departure"
+      }
     },
     {
       "id": "s_reply",

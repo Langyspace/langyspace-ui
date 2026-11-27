@@ -411,13 +411,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "The supplier date is confirmed",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
       "minutes": 4,
       "eyebrow": "Listening",
-      "message": "Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings? The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient",
-      "audioText": "Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings? The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient.",
-      "audioId": "C107-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings?",
+      "audioText": "Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings?",
+      "audioId": "C107-W141.1",
+      "greeting": "The supplier has confirmed the date and price",
       "items": [
         {
           "id": "listen",
@@ -439,7 +439,18 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Priya"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "C107-W141.2",
+          "audioText": "The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient.",
+          "message": "The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient",
+          "timestamp": "10:02"
+        }
+      ]
     },
     {
       "id": "s_reply",

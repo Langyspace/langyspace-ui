@@ -309,7 +309,7 @@
       "message": "Hi, Ana! It’s raining near the park now. Let’s go to the museum today. Meet me at the museum entrance at ten, not at the station. We can take the bus. Bring your ticket. There’s a café inside. See you at ten!",
       "audioText": "Hi, Ana! It’s raining near the park now. Let’s go to the museum today. Meet me at the museum entrance at ten, not at the station. We can take the bus. Bring your ticket. There’s a café inside. See you at ten!",
       "audioId": "A112-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "It’s raining — shall we change our plan?",
       "items": [
         {
           "id": "listen",
@@ -331,7 +331,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

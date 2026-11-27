@@ -17,9 +17,21 @@ import a12 from '../assets/audio/A211-D81.7.mp3'
 import a13 from '../assets/audio/A211-D81.8.mp3'
 import a14 from '../assets/audio/A211-L81.1.mp3'
 import i0 from '../assets/a2-11-vocabulary81.webp'
+import w141clip0 from '../assets/audio/A211-W141.1.mp3'
+import w141clip1 from '../assets/audio/A211-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'A211-W141.1',
+      text: 'Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside.',
+      src: w141clip0,
+    },
+    {
+      id: 'A211-W141.2',
+      text: 'We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?',
+      src: w141clip1,
+    },
     {
       id: 'A211-FS81.0',
       text: 'a hike. We’re planning a hike on Sunday.',

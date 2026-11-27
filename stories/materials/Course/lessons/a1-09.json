@@ -177,7 +177,7 @@
       "message": "Hi, Ana! Let’s meet at the park, not the café. Start at the hotel and go straight. Turn right at the second street. The park is at the end, after the market. I’m near the trees. See you in ten minutes!",
       "audioText": "Hi, Ana! Let’s meet at the park, not the café. Start at the hotel and go straight. Turn right at the second street. The park is at the end, after the market. I’m near the trees. See you in ten minutes!",
       "audioId": "A109-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "Here’s the area near our meeting point",
       "items": [
         {
           "id": "listen",
@@ -199,7 +199,14 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      },
+      "image": {
+        "src": "a1-09-cover81",
+        "alt": "A street scene, shared as context for the route to the park"
+      }
     },
     {
       "id": "s_reply",

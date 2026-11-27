@@ -17,9 +17,15 @@ import a12 from '../assets/audio/A205-D81.7.mp3'
 import a13 from '../assets/audio/A205-D81.8.mp3'
 import a14 from '../assets/audio/A205-L81.1.mp3'
 import i0 from '../assets/a2-05-vocabulary81.webp'
+import w141clip0 from '../assets/audio/A205-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'A205-W141.1',
+      text: 'Hi, Ana! A quick update about the move: the lift isn’t working this afternoon. We have to take the stairs. The heavy box can stay downstairs for now, but I need help carrying the small bags. Could you come at three? I’m still going to paint tomorrow, so there’s no need to bring paint today. Thank you!',
+      src: w141clip0,
+    },
     {
       id: 'A205-FS81.0',
       text: 'carry a box. I’ll carry the smaller box.',

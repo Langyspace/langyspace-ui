@@ -1,0 +1,80 @@
+{
+  "version": 141,
+  "provider": "elevenlabs",
+  "sourceRequestSha256": "92dd39f277a7d718c9e94139b805b37311bab5978f94080434e820290a8ba49b",
+  "items": [
+    {
+      "lesson": "DevStudy131",
+      "id": "W141.1",
+      "speaker": "Owen",
+      "characterId": "owen-harris",
+      "text": "A quick update about our next study session. We’ll use audio only, so we won’t share screens or code. Choose one feature from your practice project. Explain what it does and who would use it.",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/audio/W141.1.mp3",
+      "sourceSha256": "e97597b786dcc18c3f90b95703c7c2cd38deb4b067e134419800019ee6750fc6",
+      "status": "ready",
+      "requestId": "4J3zwM68BEQPE26r40vp",
+      "generationAttempts": 1,
+      "synthesisInput": "A quick update about our next study session. We'll use audio only, so we won't share screens or code. Choose one feature from your practice project. Explain what it does and who would use it.",
+      "disposition": "generated_voice_variation",
+      "provider": "elevenlabs",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "4J3zwM68BEQPE26r40vp",
+        "character-cost": "76",
+        "content-type": "audio/mpeg"
+      },
+      "sha256": "27e3cac70203a2835ab6b7b3ef86dfb7363946bf27c51b1a23386bcfd013385d",
+      "bytes": 203171,
+      "durationSeconds": 12.631655,
+      "sourceFile": "stories/materials/DevStudy131/DevStudy131.content.json"
+    },
+    {
+      "lesson": "DevStudy131",
+      "id": "W141.2",
+      "speaker": "Owen",
+      "characterId": "owen-harris",
+      "text": "One more thing: tell me what you tested and what you still want to improve. Send me a short voice note before we meet. If you’re stuck, include the error message and one thing you’ve already tried.",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/audio/W141.2.mp3",
+      "sourceSha256": "e97597b786dcc18c3f90b95703c7c2cd38deb4b067e134419800019ee6750fc6",
+      "status": "ready",
+      "requestId": "CChpWoJaORR3vyhWGnkD",
+      "generationAttempts": 1,
+      "synthesisInput": "One more thing: tell me what you tested and what you still want to improve. Send me a short voice note before we meet. If you're stuck, include the error message and one thing you've already tried.",
+      "disposition": "generated_voice_variation",
+      "provider": "elevenlabs",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "CChpWoJaORR3vyhWGnkD",
+        "character-cost": "79",
+        "content-type": "audio/mpeg"
+      },
+      "sha256": "519ed52d3a964c50ad10cee60bd5a8428481a2b07cd46c4c8bd77aba3f6ee40e",
+      "bytes": 188124,
+      "durationSeconds": 11.702857,
+      "sourceFile": "stories/materials/DevStudy131/DevStudy131.content.json"
+    }
+  ],
+  "perceptualReview": "pending human; no playback claim"
+}

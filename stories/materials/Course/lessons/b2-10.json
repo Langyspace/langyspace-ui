@@ -402,7 +402,7 @@
       "message": "Hi, Ana. Reception has offered a room on the quiet side of the building, away from the lift. It will be ready at nine this evening. They can help move the bags, and there is no extra room charge. That addresses the location of the noise, but we still need to confirm whether any maintenance work is planned nearby tonight. You have an early presentation, so the timing matters too. Would you accept the offer, subject to that check, or ask for another arrangement? Could you make clear which part meets the need and which detail is still unresolved?",
       "audioText": "Hi, Ana. Reception has offered a room on the quiet side of the building, away from the lift. It will be ready at nine this evening. They can help move the bags, and there is no extra room charge. That addresses the location of the noise, but we still need to confirm whether any maintenance work is planned nearby tonight. You have an early presentation, so the timing matters too. Would you accept the offer, subject to that check, or ask for another arrangement? Could you make clear which part meets the need and which detail is still unresolved?",
       "audioId": "B210-L81.1",
-      "greeting": "I have an update for you!",
+      "greeting": "I have a detail that changes our next step",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,10 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Kim"
+      }
     },
     {
       "id": "s_reply",

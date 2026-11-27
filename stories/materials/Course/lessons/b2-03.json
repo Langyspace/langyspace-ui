@@ -396,13 +396,13 @@
       "id": "s_listening",
       "kind": "listening",
       "title": "The unexpected collaboration",
-      "instruction": "Listen for the new information and decide how to respond",
+      "instruction": "Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
-      "message": "Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people. If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?",
-      "audioText": "Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people. If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?",
-      "audioId": "B203-L81.1",
-      "greeting": "I have an update for you!",
+      "message": "Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people",
+      "audioText": "Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people.",
+      "audioId": "B203-W141.1",
+      "greeting": "There was an unexpected benefit from that course",
       "items": [
         {
           "id": "listen",
@@ -424,7 +424,18 @@
         }
       ],
       "greetingTimestamp": "10:00",
-      "voiceTimestamp": "10:01"
+      "voiceTimestamp": "10:01",
+      "contact": {
+        "name": "Priya"
+      },
+      "additionalAudios": [
+        {
+          "audioId": "B203-W141.2",
+          "audioText": "If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?",
+          "message": "If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?",
+          "timestamp": "10:02"
+        }
+      ]
     },
     {
       "id": "s_reply",

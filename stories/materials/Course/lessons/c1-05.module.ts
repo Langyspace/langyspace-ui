@@ -121,6 +121,9 @@ const prepared: PreparedCourseData = {
       src: a18,
     },
   ],
-  images: { 'c1-05-scarf-photo123': evidence123, 'c1-05-vocabulary81': i0 },
+  images: {
+    'c1-05-scarf-photo123': evidence123,
+    'c1-05-vocabulary81': i0,
+  },
 }
 export default prepared

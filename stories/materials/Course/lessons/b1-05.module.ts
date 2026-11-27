@@ -17,9 +17,15 @@ import a12 from '../assets/audio/B105-D81.7.mp3'
 import a13 from '../assets/audio/B105-D81.8.mp3'
 import a14 from '../assets/audio/B105-L81.1.mp3'
 import i0 from '../assets/b1-05-vocabulary81.webp'
+import w141clip0 from '../assets/audio/B105-W141.1.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B105-W141.1',
+      text: 'Hi, Ana. I’ve had another call about the repair. He said he couldn’t come on Thursday after all and would come on Friday at eleven instead. He still asked us to leave the spare key at reception. He also said the visit might take longer than an hour if the tap needs replacing. Could you pass that on to the building manager and check that the new time has been understood? The earlier Thursday booking should be removed from the diary.',
+      src: w141clip0,
+    },
     {
       id: 'B105-FS81.0',
       text: 'a leak. There’s a leak under the sink.',

@@ -21,9 +21,21 @@ import a16 from '../assets/audio/B203-D81.11.mp3'
 import a17 from '../assets/audio/B203-D81.12.mp3'
 import a18 from '../assets/audio/B203-L81.1.mp3'
 import i0 from '../assets/b2-03-vocabulary81.webp'
+import w141clip0 from '../assets/audio/B203-W141.1.mp3'
+import w141clip1 from '../assets/audio/B203-W141.2.mp3'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
+    {
+      id: 'B203-W141.1',
+      text: 'Hi, Ana. There’s one more detail about that short course. The unexpected benefit wasn’t a job offer. The person met someone who later invited them to help with a community project. They still collaborate now, and that work has made it easier to explain their skills to other people.',
+      src: w141clip0,
+    },
+    {
+      id: 'B203-W141.2',
+      text: 'If they hadn’t gone to Toronto, that particular collaboration might not exist today. But it would be too strong to say they’d have no opportunities at all. Could you explain the present consequence and then describe a plausible alternative, making clear which part is a fact and which part is only a possibility?',
+      src: w141clip1,
+    },
     {
       id: 'B203-FS81.0',
       text: 'a turning point. The course became a turning point.',

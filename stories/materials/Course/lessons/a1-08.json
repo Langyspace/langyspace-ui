@@ -308,8 +308,8 @@
       "eyebrow": "Listening",
       "message": "Hello, Ana. This is reception. Someone can come to your room at seven this evening, not six. We have two towels for you here. You can collect them now, or we can bring them at seven. Please tell us what you need. Thank you!",
       "audioText": "Hello, Ana. This is reception. Someone can come to your room at seven this evening, not six. We have two towels for you here. You can collect them now, or we can bring them at seven. Please tell us what you need. Thank you!",
-      "audioId": "A108-L81.1",
-      "greeting": "I have an update for you!",
+      "audioId": "A108-W141.1",
+      "greeting": "Reception has a new time for you",
       "items": [
         {
           "id": "listen",
@@ -331,7 +331,10 @@
         }
       ],
       "greetingTimestamp": "17:10",
-      "voiceTimestamp": "17:11"
+      "voiceTimestamp": "17:11",
+      "contact": {
+        "name": "Evelyn"
+      }
     },
     {
       "id": "s_reply",
