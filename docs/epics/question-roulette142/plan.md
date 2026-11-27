@@ -8,7 +8,7 @@ Verified system: SlidePage owns title/instruction/columns; Button and Vocabulary
 
 Wireframe: `[topic wheel + Spin] [topic / progress; selected question; optional hint]`. Narrow containers stack the same regions. The question remains readable; only the wheel turns.
 
-Flow: ready → spin → one question → spin without repeats → all drawn → explicit new round. Select uniformly from remaining questions, not uniformly from topics. The pointer lands on the selected topic. Clear optional support on each draw. Invalid/empty banks disable drawing and recover when corrected. Cancel pending selection when inactive or unmounted. Reduced motion reveals immediately. Preserve keyboard focus on the spin control and announce only the final question.
+Flow: ready → six-turn 3.8-second spin → one question → spin without repeats → all drawn → explicit new round. Select uniformly from remaining questions, not uniformly from topics. The pointer lands on the selected topic. Clear optional support on each draw. Invalid/empty banks disable drawing and recover when corrected. Cancel pending selection when inactive or unmounted. Reduced motion reveals immediately. Preserve keyboard focus on the spin control and announce only the final question.
 
 Delivery steps:
 

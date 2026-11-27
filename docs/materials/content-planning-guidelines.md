@@ -535,4 +535,4 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 
 - Usar QuestionRoulette para respostas espontâneas de alunos mais experientes, com bancos coerentes com o tema e nível. A professora opera um único giro; a aluna responde oralmente com razões e exemplos.
 - A pergunta sorteada fica em destaque, sem lista de respostas nem gabarito pessoal. A dica opcional ajuda a organizar a fala, sem impor uma opinião. Não repetir perguntas antes de terminar a rodada; reiniciar deve ser explícito.
-- Concentrar a instrução no título/subtítulo de SlidePage. Manter animação breve, modo de movimento reduzido, teclado e um layout que empilha em telas menores. Não adicionar escrita, cronômetro ou placar à atividade por padrão.
+- Concentrar a instrução no título/subtítulo de SlidePage. Na roleta, o giro pode ter suspense intencional: seis voltas em 3,8 segundos, desacelerando antes de revelar a pergunta. Preservar o modo de movimento reduzido, teclado e um layout que empilha em telas menores. Não adicionar escrita, cronômetro ou placar à atividade por padrão.

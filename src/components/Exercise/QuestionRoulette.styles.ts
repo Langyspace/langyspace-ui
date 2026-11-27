@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { keyframes, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveSlideTheme as recipe } from '../../foundations/theme/resolveSlideTheme'
 import { Button } from '../Button/Button'
@@ -17,9 +17,16 @@ export const Layout = styled.div`
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   align-items: center;
   gap: ${theme.spacing[8]};
+  padding: ${theme.spacing[6]};
+  border: 1px solid
+    ${(p) => `color-mix(in srgb, ${recipe(p).accent} 24%, ${recipe(p).border})`};
+  border-radius: ${theme.radius.card};
+  background: ${(p) => recipe(p).surface};
+  box-shadow: ${theme.shadows.surfaceSoft};
   @container (max-width: ${theme.breakpoints.sm}) {
     grid-template-columns: minmax(0, 1fr);
-    gap: ${theme.spacing[4]};
+    gap: ${theme.spacing[6]};
+    padding: ${theme.spacing[4]};
   }
 `
 export const Wheel = styled.div`
@@ -27,6 +34,12 @@ export const Wheel = styled.div`
   width: min(100%, 20rem);
   aspect-ratio: 1;
   margin-inline: auto;
+  border-radius: ${theme.radius.circle};
+  background: ${(p) => recipe(p).canvas};
+  box-shadow:
+    0 0 0 ${theme.spacing[2]} ${(p) => recipe(p).canvas},
+    0 0 0 calc(${theme.spacing[2]} + 1px) ${(p) => recipe(p).border},
+    ${theme.shadows.surfaceSoft};
   @container (max-width: ${theme.breakpoints.sm}) {
     width: min(70%, 15rem);
   }
@@ -36,10 +49,26 @@ export const Rotor = styled.svg<{ $rotation: number }>`
   width: 100%;
   height: 100%;
   transform: rotate(${(p) => p.$rotation}deg);
-  transition: transform ${theme.transitions.duration.spinner}
-    ${theme.transitions.easing.standard};
+  transition: transform ${theme.exercises.rouletteSpinDuration}
+    ${theme.exercises.rouletteSpinEasing};
   @media (prefers-reduced-motion: reduce) {
     transition: none;
+  }
+`
+export const Rim = styled.svg`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  fill: ${(p) => recipe(p).muted};
+  circle:first-child {
+    fill: none;
+    stroke: ${(p) => recipe(p).border};
+    stroke-width: 2;
+  }
+  circle[data-major='true'] {
+    fill: ${(p) => recipe(p).accent};
   }
 `
 export const Sector = styled.path<{ $alternate: boolean; $selected: boolean }>`
@@ -61,7 +90,7 @@ export const Pointer = styled.svg`
   z-index: 1;
   width: ${theme.spacing[6]};
   height: ${theme.spacing[6]};
-  top: 0;
+  top: calc(0px - ${theme.spacing[1]});
   left: 50%;
   transform: translate(-50%, -15%);
   fill: ${(p) => recipe(p).accent};
@@ -76,7 +105,9 @@ export const Spin = styled(Button)`
   min-height: ${theme.spacing[20]};
   padding: ${theme.spacing[2]};
   white-space: normal;
-  box-shadow: 0 0 0 ${theme.spacing[1]} ${(p) => recipe(p).canvas};
+  box-shadow:
+    0 0 0 ${theme.spacing[1]} ${(p) => recipe(p).canvas},
+    0 0 0 calc(${theme.spacing[1]} + 2px) ${(p) => recipe(p).border};
 `
 export const Panel = styled.div`
   display: flex;
@@ -89,7 +120,7 @@ export const Panel = styled.div`
   padding: ${theme.spacing[6]};
   border: 1px solid ${(p) => recipe(p).border};
   border-radius: ${theme.radius.xl};
-  background: ${(p) => recipe(p).surface};
+  background: ${(p) => recipe(p).canvas};
   @container (max-width: ${theme.breakpoints.sm}) {
     min-height: 11rem;
     padding: ${theme.spacing[4]};
@@ -105,6 +136,10 @@ export const Meta = styled.div`
   font-weight: ${theme.typography.fontWeight.medium};
   font-variant-numeric: tabular-nums;
 `
+const revealQuestion = keyframes`
+  from { opacity: 0; transform: translateY(${theme.spacing[2]}); }
+  to { opacity: 1; transform: translateY(0); }
+`
 export const Prompt = styled.p`
   margin: 0;
   font-size: clamp(
@@ -115,6 +150,11 @@ export const Prompt = styled.p`
   line-height: ${theme.typography.lineHeight.snug};
   font-weight: ${theme.typography.fontWeight.medium};
   overflow-wrap: anywhere;
+  animation: ${revealQuestion} ${theme.transitions.duration.normal}
+    ${theme.transitions.easing.entrance} both;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 `
 export const Placeholder = styled.p`
   margin: 0;

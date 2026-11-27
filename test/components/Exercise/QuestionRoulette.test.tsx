@@ -75,7 +75,12 @@ describe('QuestionRoulette', () => {
     expect(screen.getByRole('status')).not.toHaveTextContent(
       topics[0]!.questions[0]!.prompt,
     )
-    finishSpin()
+    act(() => vi.advanceTimersByTime(rouletteSpinDuration - 1))
+    expect(screen.getByRole('status')).not.toHaveTextContent(
+      topics[0]!.questions[0]!.prompt,
+    )
+    expect(onDraw).not.toHaveBeenCalled()
+    act(() => vi.advanceTimersByTime(1))
     expect(screen.getByRole('status')).toHaveTextContent(
       topics[0]!.questions[0]!.prompt,
     )
@@ -85,6 +90,26 @@ describe('QuestionRoulette', () => {
       question: topics[0]!.questions[0],
       drawNumber: 1,
     })
+  })
+
+  it('keeps the previous question hidden throughout the next suspenseful spin', () => {
+    render(<QuestionRoulette topics={topics} />)
+    spin()
+    expect(screen.getByRole('status')).toHaveTextContent(
+      topics[0]!.questions[0]!.prompt,
+    )
+    fireEvent.click(screen.getByRole('button', { name: 'Spin' }))
+    expect(
+      screen.queryByText(topics[0]!.questions[0]!.prompt),
+    ).not.toBeInTheDocument()
+    act(() => vi.advanceTimersByTime(rouletteSpinDuration - 1))
+    expect(screen.getByRole('status')).toHaveTextContent('?')
+    expect(screen.getByLabelText('Questions drawn')).toHaveTextContent('1 / 4')
+    act(() => vi.advanceTimersByTime(1))
+    expect(screen.getByRole('status')).toHaveTextContent(
+      topics[0]!.questions[1]!.prompt,
+    )
+    expect(screen.getByLabelText('Questions drawn')).toHaveTextContent('2 / 4')
   })
 
   it('does not repeat until exhaustion and starts a new round only on explicit activation', () => {
@@ -125,7 +150,7 @@ describe('QuestionRoulette', () => {
     await user.keyboard('{Enter}{Enter}')
     fireEvent.click(button)
     await waitFor(() => expect(onDraw).toHaveBeenCalledTimes(1), {
-      timeout: 2_000,
+      timeout: rouletteSpinDuration + 1_000,
     })
     expect(button).toHaveFocus()
     expect(screen.getByLabelText('Questions drawn')).toHaveTextContent('1 / 4')
@@ -221,13 +246,13 @@ describe('QuestionRoulette', () => {
   })
 
   it('keeps the selected sector center aligned with the top pointer after repeated spins', () => {
-    expect(rouletteAngle(0, 1, 6)).toBe(1020)
-    expect(rouletteAngle(1020, 3, 6)).toBe(1980)
+    expect(rouletteAngle(0, 1, 6)).toBe(2460)
+    expect(rouletteAngle(2460, 3, 6)).toBe(4860)
     for (let count = 1; count <= 8; count++) {
       let rotation = 0
       for (let index = 0; index < count; index++) {
         const next = rouletteAngle(rotation, index, count)
-        expect(next).toBeGreaterThanOrEqual(rotation + 720)
+        expect(next).toBeGreaterThanOrEqual(rotation + 2160)
         const delta = (next + (index * 360) / count) % 360
         expect(Math.min(delta, 360 - delta)).toBeCloseTo(0, 6)
         rotation = next

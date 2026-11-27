@@ -800,6 +800,9 @@ const simulations = {
 } as const
 
 const exercises = {
+  rouletteSpinDuration: '3.8s',
+  rouletteSpinEasing: 'cubic-bezier(0.12, 0.72, 0.15, 1)',
+  rouletteSpinTurns: 6,
   workstation: {
     frame: palette.neutral[400],
     edge: palette.neutral[600],

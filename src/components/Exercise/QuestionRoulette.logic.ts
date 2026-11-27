@@ -6,9 +6,9 @@ import type {
   RouletteRoundAction,
 } from './QuestionRoulette.types'
 
-/** Reuse the system's short rotation duration for visual and logical completion. */
+/** The same suspense token governs visual deceleration and question reveal. */
 export const rouletteSpinDuration =
-  Number.parseFloat(theme.transitions.duration.spinner) * 1_000
+  Number.parseFloat(theme.exercises.rouletteSpinDuration) * 1_000
 
 export function rouletteBank(
   topics: readonly QuestionRouletteTopic[],
@@ -65,7 +65,11 @@ export function rouletteAngle(
   topicCount: number,
 ): number {
   const target = (((360 - (index * 360) / topicCount) % 360) + 360) % 360
-  return previous + 720 + ((target - (previous % 360) + 360) % 360)
+  return (
+    previous +
+    theme.exercises.rouletteSpinTurns * 360 +
+    ((target - (previous % 360) + 360) % 360)
+  )
 }
 
 export function rouletteSector(index: number, count: number): string {

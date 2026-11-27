@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, waitFor, within } from 'storybook/test'
 import { ThemeProvider } from 'styled-components'
+import { rouletteSpinDuration } from '../../../src/components/Exercise/QuestionRoulette.logic'
 import { QuestionRoulette } from '../../../src/components/Exercise/QuestionRoulette'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
@@ -35,10 +36,12 @@ export const DrawAndSupport: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     await userEvent.click(canvas.getByRole('button', { name: 'Spin' }))
-    await waitFor(() =>
-      expect(canvas.getByLabelText('Questions drawn')).toHaveTextContent(
-        '1 / 12',
-      ),
+    await waitFor(
+      () =>
+        expect(canvas.getByLabelText('Questions drawn')).toHaveTextContent(
+          '1 / 12',
+        ),
+      { timeout: rouletteSpinDuration + 2_000 },
     )
     await userEvent.click(
       canvas.getByRole('button', { name: 'Show a speaking tip' }),

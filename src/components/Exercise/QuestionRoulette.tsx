@@ -127,6 +127,21 @@ function RouletteRound({
                 })
               : null}
           </S.Rotor>
+          <S.Rim aria-hidden="true" viewBox="0 0 320 320">
+            <circle cx="160" cy="160" r="158" />
+            {Array.from({ length: 24 }, (_, index) => {
+              const angle = (index * Math.PI) / 12
+              return (
+                <circle
+                  key={angle}
+                  cx={160 + 156 * Math.cos(angle)}
+                  cy={160 + 156 * Math.sin(angle)}
+                  r={index % 6 === 0 ? 2.2 : 1.2}
+                  data-major={index % 6 === 0 || undefined}
+                />
+              )
+            })}
+          </S.Rim>
           <S.Pointer aria-hidden="true" viewBox="0 0 24 24">
             <path d="M3 3h18L12 19z" />
           </S.Pointer>
@@ -145,13 +160,15 @@ function RouletteRound({
         </S.Wheel>
         <S.Panel>
           <S.Meta>
-            <span>{selected?.topic.label ?? text.ready}</span>
+            <span>
+              {pending ? text.spinning : (selected?.topic.label ?? text.ready)}
+            </span>
             <span aria-label={text.progress}>
               {used.size} / {bank.length}
             </span>
           </S.Meta>
           <div role="status" aria-live="polite" aria-atomic="true">
-            {selected ? (
+            {selected && !pending ? (
               <S.Prompt>{selected.question.prompt}</S.Prompt>
             ) : (
               <S.Placeholder>
@@ -159,10 +176,10 @@ function RouletteRound({
               </S.Placeholder>
             )}
           </div>
-          {selected?.question.hint && hint ? (
+          {!pending && selected?.question.hint && hint ? (
             <S.Hint>{selected.question.hint}</S.Hint>
           ) : null}
-          {selected?.question.hint ? (
+          {!pending && selected?.question.hint ? (
             <S.Footer>
               <VocabularyControls
                 density="compact"
