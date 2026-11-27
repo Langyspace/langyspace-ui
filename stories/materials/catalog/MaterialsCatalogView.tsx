@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { materialCatalogLinkRel } from '../shared/materialCatalogNavigation'
 import { Button } from '../../../src/components/Button/Button'
 import { SearchInput } from '../../../src/components/Form/SearchInput'
 import * as Styled from './MaterialsCatalog.styles'
@@ -75,7 +76,17 @@ export function MaterialsCatalogView({
                 <Styled.LessonLink
                   key={entry.id}
                   href={entry.href}
-                  target={entry.storyId ? '_top' : '_self'}
+                  target={entry.storyId ? '_top' : '_blank'}
+                  rel={
+                    entry.storyId || !entry.href
+                      ? undefined
+                      : materialCatalogLinkRel(
+                          entry.href,
+                          typeof window === 'undefined'
+                            ? ''
+                            : window.location.origin,
+                        )
+                  }
                 >
                   {content}
                   <span aria-hidden="true">→</span>

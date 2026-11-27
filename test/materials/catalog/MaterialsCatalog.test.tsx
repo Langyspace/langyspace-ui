@@ -6,7 +6,7 @@ import { MaterialsCatalog } from '../../../stories/materials/catalog/MaterialsCa
 import c101Meta from '../../../stories/materials/C101/C101.stories'
 import { materialCatalogUrl } from '../../../stories/materials/shared/materialCatalogNavigation'
 
-it('returns to the local library and opens the selected lesson in the same local tab', () => {
+it('returns to the local library and opens the selected lesson in a new local tab with a return reference', () => {
   const destination = new URL(
     materialCatalogUrl(
       'http://127.0.0.1:8851/?studentPortalOrigin=https%3A%2F%2Fstudent.langy.space&page=s4#a1-03',
@@ -29,17 +29,23 @@ it('returns to the local library and opens the selected lesson in the same local
           title: 'Family',
           description: '',
           review: false,
-          href: 'http://127.0.0.1:8851/?studentPortalOrigin=https%3A%2F%2Fstudent.langy.space#a1-03',
+          href: `${window.location.origin}/?studentPortalOrigin=https%3A%2F%2Fstudent.langy.space#a1-03`,
         },
       ]}
     />,
   )
   const link = screen.getByRole('link', { name: /Family/ })
   expect(link).toHaveAttribute('href', expect.stringContaining('#a1-03'))
-  expect(link).toHaveAttribute('target', '_self')
+  expect(link).toHaveAttribute('target', '_blank')
+  expect(link).toHaveAttribute('rel', 'opener')
 })
 
 it('returns deployed materials to their own portal library without lesson parameters', () => {
+  expect(
+    materialCatalogUrl(
+      'http://localhost:5173/materiais/interactive-a1-03/apresentar',
+    ),
+  ).toBe('http://localhost:5173/materiais')
   expect(
     materialCatalogUrl(
       'https://teacher.staging.langy.space/interactive-materials/index.html?page=s4#a1-03',
