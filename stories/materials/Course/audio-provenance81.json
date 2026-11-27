@@ -49261,35 +49261,39 @@
       "lesson": "A1.09",
       "id": "A109-FS81.5",
       "text": "hotel. Start at the hotel.",
-      "labelId": "A109-V81.5",
-      "exampleId": "A109-FE81.5",
       "file": "assets/audio/A109-FS81.5.mp3",
       "provider": "elevenlabs",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "requestId": null,
-      "sourceRequestIds": ["6MRvJCezAbr0Eu1NtcJ0", "V26zhoSDPl2RtaKTzLnN"],
-      "sources": [
-        {
-          "leadingQuietFrames": 1760,
-          "trailingQuietFrames": 2646,
-          "trimStartFrames": 0,
-          "trimEndFrames": 7378,
-          "sourceSha256": "1df5a15196c1ece0f915ef5d199bb57608d7d03ae2e5318506121a15a405cce9"
-        },
-        {
-          "leadingQuietFrames": 1100,
-          "trailingQuietFrames": 2646,
-          "trimStartFrames": 0,
-          "trimEndFrames": 11290,
-          "sourceSha256": "a65982a5b1de1a5f9211cf2634f402f37c4ef2896e1b32e0936b8cfe09dd7572"
-        }
-      ],
-      "insertedSilenceFrames": 11689,
-      "boundaryQuietMilliseconds": 350.0,
-      "phonemeInteriorsModified": false,
-      "sha256": "682fd745c24d4cebb8310a34092b8500bf135d9abded96a6ea6ed68a5b1c5abc",
-      "bytes": 31807,
-      "durationSeconds": 1.931542
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "modelId": "eleven_v4",
+      "languageCode": "en",
+      "localeIntent": "en-US",
+      "phoneticTarget": "hoʊˈtɛl",
+      "synthesisInput": "\"/hoʊˈtɛl/\". Start at the \"/hoʊˈtɛl/\".",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "requestId": "dHnHLUGzJ3t4L8wnJX1m",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "dHnHLUGzJ3t4L8wnJX1m",
+        "character-cost": "15",
+        "content-type": "audio/mpeg"
+      },
+      "sha256": "3413a8a44ee87e4536ca393112eb538d67862dd1b73be78da057f4814b2cb958",
+      "bytes": 51034,
+      "durationSeconds": 3.12,
+      "sampleRate": 44100,
+      "channels": 1,
+      "isDerived": false,
+      "kind": "speech",
+      "generationAttempts": 1,
+      "processing": "Raw provider MP3; one complete utterance; no splicing, trim, crossfade, gain or time stretch",
+      "historicalReplacedSha256": "682fd745c24d4cebb8310a34092b8500bf135d9abded96a6ea6ed68a5b1c5abc",
+      "createdAt": "2026-11-27T14:36:09.720347+00:00",
+      "perceptualReview": "pending human"
     },
     {
       "material": "Course",

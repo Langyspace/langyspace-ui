@@ -19,4 +19,10 @@ As quatro atividades de mapa do A1.09 usam a mesma imagem/geografia. Vocabulári
 
 Prévia:http://127.0.0.1:8851/?studentPortalOrigin=https%3A%2F%2Fstudent.langy.space&page=s2#a1-09 . Somente local, aguardando revisão. Sem push, CI, Hosting ou mudança de Student/dados.
 
+## Hotel153 — correção de áudio local
+
+A proprietária relatou pronúncia estranha de hotel no mapa. O clique usa A109-FS81.5, uma montagem histórica do label hotel e do exemplo Start at the hotel. A gravação foi substituída por uma fala contínua, Jessica/cgSgspJ2msm6clMCkdW9, eleven_v4, inglês, com IPA hoʊˈtɛl nas duas ocorrências da palavra. Uma chamada, zero retry, mesmos textos de exibição; bytes originais do provider sem cortes, emendas ou outros efeitos. O idioma deixa de depender de inferência sobre a palavra isolada. O relato não estabelece sozinho qual fonema do arquivo antigo estava errado.
+
+Consulta dirigida no provenance encontrou somente o próprio clipe relatado como inadequado com esse texto/voz. Os demais registros, gravações e a arte do mapa não foram alterados. O check de autoria e os hashes conferem a troca única. Metadados/histórico em Course/hotel153-provenance.json; pedido, resposta e MP3 anterior preservados em outputs/hotel153 do workspace. A nova pronúncia precisa de escuta da proprietária. Somente prévia local; sem push, CI ou deploy.
+
 Visual gate review: pending human
