@@ -38,12 +38,19 @@ export const PlayerHost = styled.div`
 export const PlayerFooter = styled.div`
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: ${theme.spacing[2]};
   min-width: 0;
+  > ${Common.Row} {
+    flex-shrink: 0;
+    margin-inline-start: auto;
+  }
 `
 export const Caption = styled.span`
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
   color: ${(p) => Common.recipe(p).foreground};
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.4;
