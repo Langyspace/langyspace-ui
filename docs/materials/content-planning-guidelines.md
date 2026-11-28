@@ -41,6 +41,9 @@ Decisões atuais para lembrar:
 
 ## Vocabulário seguido de prática visual — revisão107
 
+- **Reconhecimento direto de substantivos — revisão163, 28/11/2026:** se a palavra ensinada é um objeto ou lugar, a imagem deve mostrar esse alvo grande e reconhecível. Não acrescentar personagem, gesto de dúvida, pensamento ou ação apenas para ilustrar a frase de exemplo: isso pode fazer a aluna interpretar uma ação diferente do substantivo. Usar pessoas somente quando forem necessárias ao significado ensinado. Lugares podem ter um contexto mínimo; objetos preservam a apresentação apropriada ao conjunto. Em “Shared spaces”, prédio, piscina, garagem, churrasqueira, lixo e bicicleta são os protagonistas, sem pessoas.
+- **Título como ação:** o tema sozinho não instrui a atividade. Preferir “Name the places and objects” a “Shared spaces”; o subtítulo explica a sequência oral e o clique para conferir/ouvir. A seção “Vocabulary” já identifica o formato, sem exigir outro título temático.
+
 - Quando o objetivo for reconhecer o vocabulário recém-apresentado, colocar sua sequência de múltipla escolha visual imediatamente depois do respectivo bloco. Reutilizar a mesma imagem e variar a posição correta. Pergunta, nome, pronome e resposta completa precisam corresponder ao personagem da cena.
 - Quando a apresentação pedir apenas a palavra, omitir o exemplo também do áudio acionado pelo card, reutilizando a gravação isolada válida. Essa variação não remove os exemplos das outras atividades.
 - Em cumprimentos por período, distinguir chegada à noite (`Good evening`) de despedida antes de dormir (`Good night`) pela ação e pelo cenário. Horários são texto nativo padronizado no canto superior direito, não texto gerado dentro da ilustração.

@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "materialKey": "a2-07",
+  "pageId": "s2",
+  "provider": "built-in image_gen",
+  "mode": "text-only generate",
+  "calls": 1,
+  "references": 0,
+  "transparentBackgroundRequested": false,
+  "canonicalStyle": "docs/materials/prompts/langy-illustration-v1.8.txt",
+  "canonicalStyleSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "prompt": "docs/materials/prompts/shared-spaces163/a2-07.txt",
+  "promptSha256": "e135c4799a29941d23dccdce5844252eba5021147096d971f898673d55548b47",
+  "original": ".local/sharedspaces163/original.png",
+  "originalSha256": "5b007399ff12eeb36fbd6663510905d9027bc25f46cbc34e19c4a013765b6242",
+  "asset": "stories/materials/Course/assets/a2-07-vocabulary163.webp",
+  "assetSha256": "e25a2615d9cfa5b2e02dd98e83ed78895768a1e2ef1189d05dc0e0137d90aef2",
+  "assetBytes": 211496,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "conversion": "cwebp -q 92; full image, no resize/crop/semantic edits",
+  "supersedes": "stories/materials/Course/assets/a2-07-vocabulary161.webp",
+  "retainedOldAsset": true,
+  "items": [
+    {
+      "id": "A207-V81.0",
+      "word": "building",
+      "imageRegion": {
+        "columns": 1536,
+        "rows": 1024,
+        "column": 1,
+        "row": 1,
+        "columnSpan": 510,
+        "rowSpan": 510,
+        "sourceAspectRatio": 1.5
+      }
+    },
+    {
+      "id": "A207-V81.1",
+      "word": "pool",
+      "imageRegion": {
+        "columns": 1536,
+        "rows": 1024,
+        "column": 513,
+        "row": 1,
+        "columnSpan": 510,
+        "rowSpan": 510,
+        "sourceAspectRatio": 1.5
+      }
+    },
+    {
+      "id": "A207-V81.2",
+      "word": "garage",
+      "imageRegion": {
+        "columns": 1536,
+        "rows": 1024,
+        "column": 1025,
+        "row": 1,
+        "columnSpan": 510,
+        "rowSpan": 510,
+        "sourceAspectRatio": 1.5
+      }
+    },
+    {
+      "id": "A207-V81.3",
+      "word": "grill",
+      "imageRegion": {
+        "columns": 1536,
+        "rows": 1024,
+        "column": 1,
+        "row": 513,
+        "columnSpan": 510,
+        "rowSpan": 510,
+        "sourceAspectRatio": 1.5
+      }
+    },
+    {
+      "id": "A207-V81.4",
+      "word": "trash",
+      "imageRegion": {
+        "columns": 1536,
+        "rows": 1024,
+        "column": 513,
+        "row": 513,
+        "columnSpan": 510,
+        "rowSpan": 510,
+        "sourceAspectRatio": 1.5
+      }
+    },
+    {
+      "id": "A207-V81.5",
+      "word": "bike",
+      "imageRegion": {
+        "columns": 1536,
+        "rows": 1024,
+        "column": 1025,
+        "row": 513,
+        "columnSpan": 510,
+        "rowSpan": 510,
+        "sourceAspectRatio": 1.5
+      }
+    }
+  ],
+  "visualObservation": "All six images directly show their taught noun without any person. Complete blue bike, open grill, trash bag, garage entrance, pool and residential building visible. Minimal opaque supporting backdrops.",
+  "visualGate": "pending human",
+  "publication": "not triggered",
+  "request": "docs/materials/prompts/shared-spaces163/request.json",
+  "requestSha256": "464bc58d087a84883c1e8de8eabaa0264bd3ae38ee7c82a09bfb9aa5063b35b5",
+  "requestPromptSha256": "a073a038744beff0d8454fec534e92a9787df072e415e310e867004ff26bb52f"
+}

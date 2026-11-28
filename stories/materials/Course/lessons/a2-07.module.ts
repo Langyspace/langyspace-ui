@@ -1,4 +1,4 @@
-import contextual161 from '../assets/a2-07-vocabulary161.webp'
+import directNouns163 from '../assets/a2-07-vocabulary163.webp'
 import data from './a2-07.json'
 import type { PreparedCourseData } from '../Course.types'
 import type { CourseLessonData } from '../Course.types'
@@ -82,7 +82,7 @@ const prepared: PreparedCourseData = {
     },
   ],
   images: {
-    'a2-07-vocabulary161': contextual161,
+    'a2-07-vocabulary163': directNouns163,
     'a2-07-vocabulary81': i0,
   },
 }

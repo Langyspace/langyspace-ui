@@ -68,6 +68,8 @@ As props acima foram conferidas na fonte atual. Antes da adoção em outro produ
 
 ## 5. Usar imagens que expliquem a tarefa
 
+No vocabulário de objetos e lugares, ilustrar primeiro a palavra, não a frase de exemplo. O alvo deve ser reconhecível sem ler a legenda. Não adicionar uma personagem pensando, olhando a hora ou segurando outro objeto quando isso transformar “grill”, “pool” ou “bike” numa ação ambígua. Pessoas entram quando a relação ou a ação for o alvo real. Preservar o prompt canônico literal; mudar apenas o brief de assunto/composição.
+
 Priorizar uma cena contextual a ícones abstratos quando as palavras pertencerem a um mesmo ambiente. Um POV de mesa pode reunir tarefa, acesso, bloqueio, prazo, atualização e feedback; o exemplo explica o conceito de trabalho, sem transformar “laptop” em sinônimo de “blocker”. Cada ponto deve ter uma evidência reconhecível, não uma posição arbitrária.
 
 Simplificar preservando o suporte necessário: moldura de computador, fatos consultáveis, pergunta inicial e dica quando forem úteis. Tirar rótulos repetidos e metadados não significa remover tudo que permite entender a tarefa. Um erro pode usar uma única imagem de cadeado e texto curto. Um feedback recebido pode usar só o áudio e uma resposta oral, sem repetir o protótipo da página anterior.
