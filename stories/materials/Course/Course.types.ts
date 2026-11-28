@@ -3,6 +3,7 @@ import type {
   ReviewedPrompt,
 } from '../shared/ReviewedLesson.types'
 import type { RouteMapProps } from '../../../src/components/InteractiveMaterial/RouteMap.types'
+import type { SceneHotspot } from '../../../src/components/InteractiveMaterial/SceneExplorer.types'
 export interface CourseOption {
   pictures?: readonly { id: string; label: string; index: number }[]
   map?: CourseActivity['map']
@@ -21,11 +22,19 @@ export interface CourseActivity {
     | 'menu'
     | 'timeline'
     | 'chart'
+    | 'scene-choice'
   title: string
   /** Optional noun/metadata label for the reference, never task instructions. */
   referenceLabel?: string
+  /** Coherent reference prose, kept beside its evidence-based questions. */
+  referenceParagraphs?: readonly string[]
   vocabulary?: Readonly<Record<string, { id: string; text: string }>>
   image?: string
+  scene?: {
+    alt: string
+    aspectRatio: number
+    hotspots: readonly (SceneHotspot & { hint: string; answer: string })[]
+  }
   pictureGrid?: { columns: number; rows: number; sourceAspectRatio: number }
   pictures?: readonly { id: string; label: string; index: number }[]
   stages?: readonly { id: string; label: string }[]

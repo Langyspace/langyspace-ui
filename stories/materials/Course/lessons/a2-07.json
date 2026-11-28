@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Offer some help with a shared activity",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Shared spaces",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "building",
           "translation": "",
           "example": "I’m new to this building",
-          "imageUrl": "a2-07-vocabulary81",
+          "imageUrl": "a2-07-vocabulary163",
           "imageAlt": "building",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A207-FS81.0",
@@ -70,13 +72,15 @@
           "word": "pool",
           "translation": "",
           "example": "The pool closes at eight",
-          "imageUrl": "a2-07-vocabulary81",
+          "imageUrl": "a2-07-vocabulary163",
           "imageAlt": "pool",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A207-FS81.1",
@@ -87,13 +91,15 @@
           "word": "garage",
           "translation": "",
           "example": "Leave your bike in the garage",
-          "imageUrl": "a2-07-vocabulary81",
+          "imageUrl": "a2-07-vocabulary163",
           "imageAlt": "garage",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A207-FS81.2",
@@ -104,13 +110,15 @@
           "word": "grill",
           "translation": "",
           "example": "Do I have to book the grill?",
-          "imageUrl": "a2-07-vocabulary81",
+          "imageUrl": "a2-07-vocabulary163",
           "imageAlt": "grill",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A207-FS81.3",
@@ -121,13 +129,15 @@
           "word": "trash",
           "translation": "",
           "example": "Please take the trash downstairs",
-          "imageUrl": "a2-07-vocabulary81",
+          "imageUrl": "a2-07-vocabulary163",
           "imageAlt": "trash",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A207-FS81.4",
@@ -138,13 +148,15 @@
           "word": "bike",
           "translation": "",
           "example": "You can’t take a bike in the lift",
-          "imageUrl": "a2-07-vocabulary81",
+          "imageUrl": "a2-07-vocabulary163",
           "imageAlt": "bike",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A207-FS81.5",
@@ -155,8 +167,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "New to the building",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +226,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "What you need to bring",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -274,43 +286,44 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Check the house rules",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "You live in this building. Teacher is a new neighbour. Explain the grill, pool and bike rules",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Necessary, optional or prohibited?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish have to, don’t have to and mustn’t",
+      "instruction": "Separate an obligation, no obligation and a prohibition",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An obligation",
-          "verb": "have to + verb",
-          "example": "You have to book the grill"
+          "subject": "Obligation",
+          "verb": "have / has to + base verb",
+          "example": "You have to book the grill. She has to book it too"
         },
         {
           "id": "1",
-          "subject": "It is not necessary",
-          "verb": "don’t have to + verb",
+          "subject": "No obligation",
+          "verb": "don’t / doesn’t have to + base verb",
           "example": "You don’t have to bring chairs"
         },
         {
           "id": "2",
-          "subject": "It is prohibited",
-          "verb": "mustn’t + verb",
-          "example": "You mustn’t use the pool after closing"
+          "subject": "Prohibition",
+          "verb": "mustn’t + base verb",
+          "example": "You mustn’t use the pool after eight"
         }
-      ]
+      ],
+      "note": "Don’t have to means it is optional; mustn’t means it is not allowed. Ask about obligation with Do you have to …? / Does she have to …?"
     },
     {
       "id": "s_mission",
@@ -323,8 +336,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "An earlier closing time",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "An earlier closing time. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! There’s a temporary change this weekend. The pool closes at six, not eight, because of cleaning. The grill booking is still fine, and you can use the chairs. If your friends want to swim, they should come before six. Could you tell them about the earlier closing time? Everything goes back to normal on Monday",
@@ -360,8 +373,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Tell your guests what changed",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Tell your guests what changed. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -369,7 +382,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Phones away for a focused meeting",
+      "title": "Watch and answer",
       "instruction": "Watch the meeting rule, then agree on a rule for a shared space",
       "minutes": 4,
       "video": {
@@ -554,97 +567,47 @@
       "referenceLabel": "This weekend only"
     },
     "s_personal": {
-      "type": "choices",
-      "title": "Situation reference",
+      "type": "facts",
+      "title": "Rules for your building",
       "questions": [
         {
           "id": "0",
           "prompt": "Do I have to book the grill?",
-          "cue": "Explain the booking rule shown on the building card",
-          "hint": "Yes, you have to … / No, you don’t have to …",
-          "answer": "One possible response"
+          "cue": "Explain where to book it",
+          "hint": "Yes, you have to book it at reception. It’s free"
         },
         {
           "id": "1",
-          "prompt": "Can we have a party after ten?",
-          "cue": "Explain a restriction and suggest an alternative",
-          "hint": "We can’t …, but we can …",
-          "answer": "One possible response"
+          "prompt": "Can I use the pool after eight?",
+          "cue": "Explain the closing rule",
+          "hint": "No, you mustn’t use it after eight"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What do I need to remember?",
-          "cue": "Explain one rule and invite a question",
-          "hint": "You have to … You don’t have to … Is that clear?",
-          "answer": "One possible response"
+          "prompt": "Can I take my bike in the lift?",
+          "cue": "Explain where to leave the bike",
+          "hint": "No, you can’t. You have to leave it in the garage"
         }
       ],
-      "options": [
+      "questionPurpose": "conversation",
+      "referenceLabel": "Rules for your building",
+      "facts": [
         {
-          "id": "grill",
-          "title": "Grill",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Booking",
-              "value": "Required · reception"
-            },
-            {
-              "id": "1",
-              "label": "Chairs",
-              "value": "Six provided"
-            },
-            {
-              "id": "2",
-              "label": "Cost",
-              "value": "Free"
-            }
-          ]
+          "id": "0",
+          "label": "Grill",
+          "value": "Book at reception · free · six chairs provided"
         },
         {
-          "id": "pool",
-          "title": "Pool",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Hours",
-              "value": "10 am–8 pm"
-            },
-            {
-              "id": "1",
-              "label": "After closing",
-              "value": "No entry"
-            },
-            {
-              "id": "2",
-              "label": "Booking",
-              "value": "Not required"
-            }
-          ]
+          "id": "1",
+          "label": "Pool",
+          "value": "10 am–8 pm · no entry after 8 pm"
         },
         {
-          "id": "garage",
-          "title": "Garage",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Bikes",
-              "value": "Keep them here"
-            },
-            {
-              "id": "1",
-              "label": "Lift",
-              "value": "No bikes"
-            },
-            {
-              "id": "2",
-              "label": "Access",
-              "value": "Residents and guests"
-            }
-          ]
+          "id": "2",
+          "label": "Bikes",
+          "value": "Keep them in the garage · no bikes in the lift"
         }
-      ],
-      "questionPurpose": "conversation"
+      ]
     }
   }
 }

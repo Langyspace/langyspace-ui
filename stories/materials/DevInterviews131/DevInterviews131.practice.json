@@ -141,21 +141,24 @@
   "grammarRows": [
     {
       "id": "experience",
-      "subject": "Experience until now",
+      "subject": "Experience up to now",
       "form": "have / has + past participle",
       "example": "I’ve worked with React for two years"
     },
     {
       "id": "finished",
-      "subject": "One completed project",
-      "form": "past simple + a finished context",
+      "subject": "A finished project or date",
+      "form": "past simple + finished context",
       "example": "In my last project, I built the login form"
     },
     {
       "id": "approach",
-      "subject": "A possible approach",
-      "form": "would + base verb",
-      "example": "I’d start by checking the error response"
+      "subject": "Ask about experience, then details",
+      "form": "Have you + participle? / When did you + base?",
+      "example": "Have you used React? When did you start using it?"
     }
-  ]
+  ],
+  "grammarTitle": "Use present perfect and past simple in an interview",
+  "grammarInstruction": "Describe experience up to now, then use past simple for a finished project or date",
+  "grammarNote": "Present perfect does not use a finished past time such as last year. For details of a completed project, use past simple: When did you build it?"
 }

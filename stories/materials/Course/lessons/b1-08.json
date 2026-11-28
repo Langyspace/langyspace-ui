@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Think of an old habit that has changed",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Words for i’m getting used to the cold",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "settle in",
           "translation": "",
           "example": "It takes time to settle in",
-          "imageUrl": "b1-08-vocabulary81",
+          "imageUrl": "b1-08-vocabulary161",
           "imageAlt": "settle in",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B108-FS81.0",
@@ -70,13 +72,15 @@
           "word": "commute",
           "translation": "",
           "example": "My commute is easier now",
-          "imageUrl": "b1-08-vocabulary81",
+          "imageUrl": "b1-08-vocabulary161",
           "imageAlt": "commute",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B108-FS81.1",
@@ -87,13 +91,15 @@
           "word": "dress in layers",
           "translation": "",
           "example": "I’m getting used to dressing in layers",
-          "imageUrl": "b1-08-vocabulary81",
+          "imageUrl": "b1-08-vocabulary161",
           "imageAlt": "dress in layers",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B108-FS81.2",
@@ -104,13 +110,15 @@
           "word": "feel homesick",
           "translation": "",
           "example": "It’s normal to feel homesick sometimes",
-          "imageUrl": "b1-08-vocabulary81",
+          "imageUrl": "b1-08-vocabulary161",
           "imageAlt": "feel homesick",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B108-FS81.3",
@@ -121,13 +129,15 @@
           "word": "make friends",
           "translation": "",
           "example": "The weekly group helped me make friends",
-          "imageUrl": "b1-08-vocabulary81",
+          "imageUrl": "b1-08-vocabulary161",
           "imageAlt": "make friends",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B108-FS81.4",
@@ -138,13 +148,15 @@
           "word": "adjust your routine",
           "translation": "",
           "example": "You may need to adjust your routine",
-          "imageUrl": "b1-08-vocabulary81",
+          "imageUrl": "b1-08-vocabulary161",
           "imageAlt": "adjust your routine",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B108-FS81.5",
@@ -168,8 +180,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "A new routine",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -227,8 +239,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "What has helped?",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -286,8 +298,8 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Talk about a new routine",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Talk about yourself",
+      "instruction": "Talk about a new routine. Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -318,36 +330,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "An old habit, a new normal or an ongoing adjustment?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish used to, be used to and get used to",
+      "instruction": "Choose whether you mean an old habit, something familiar or a process of adapting",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An old habit",
+          "subject": "Old habit or state",
           "verb": "used to + base verb",
           "example": "I used to drive everywhere"
         },
         {
           "id": "1",
-          "subject": "Something feels normal now",
-          "verb": "be used to + noun / -ing",
-          "example": "I’m used to taking the bus"
+          "subject": "Already familiar",
+          "verb": "be used to + noun / verb-ing",
+          "example": "I’m used to the cold. I’m used to taking the bus"
         },
         {
           "id": "2",
-          "subject": "The adaptation is still happening",
-          "verb": "get used to + noun / -ing",
+          "subject": "Becoming familiar",
+          "verb": "get used to + noun / verb-ing",
           "example": "I’m getting used to dressing in layers"
         }
-      ]
+      ],
+      "note": "In be/get used to, to is a preposition, so a following verb takes -ing. In used to for a past habit, use the base verb instead."
     },
     {
       "id": "s_mission",
@@ -360,8 +373,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "An honest update",
-      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "An honest update. Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. Taking the bus is much easier now. I’m used to checking the timetable before I leave, so I haven’t missed the last bus again. The cold is still difficult, especially deciding what to wear when the weather changes during the day",
@@ -405,8 +418,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to both sides of the update",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Respond to both sides of the update. Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -414,40 +427,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Get used to a different workday",
-      "instruction": "Watch the choices a distributed team can make, then describe a change you are adapting to",
-      "minutes": 4,
+      "title": "How did his routine change?",
+      "instruction": "Follow his changes, then discuss a routine you are adapting to",
+      "minutes": 5,
       "video": {
-        "videoId": "x6fIseKzzH0",
-        "startSeconds": 95,
-        "endSeconds": 119,
-        "title": "Matt Mullenweg — Why working from home is good for business — TED",
+        "videoId": "JnfBXjWm7hc",
+        "startSeconds": 15.1,
+        "endSeconds": 90.8,
+        "title": "Try something new for 30 days | Matt Cutts",
         "credit": "TED"
       },
       "items": [
         {
           "id": "b1-08.video102.q1",
-          "prompt": "Who can choose their own schedule in his example?",
-          "hint": "Listen for the exception about specific hours",
-          "answer": "People whose roles don’t require specific hours can choose their schedule"
+          "prompt": "Why did he decide to try a 30-day challenge?",
+          "hint": "What problem did he describe before deciding to change?",
+          "answer": "He felt trapped in his routine and wanted a change"
         },
         {
           "id": "b1-08.video102.q2",
-          "prompt": "Which two examples affect sound in the work environment?",
-          "hint": "Listen for music and its opposite",
-          "answer": "Workers can choose music or silence"
+          "prompt": "What did taking a photo every day change for him?",
+          "hint": "What could he remember afterwards?",
+          "answer": "The photos helped him remember the places and events of each day"
         },
         {
           "id": "b1-08.video102.q3",
-          "prompt": "What travel time can workers save?",
-          "hint": "Listen to the final sentence",
-          "answer": "They can save commuting time"
+          "prompt": "How did his confidence and activities change?",
+          "hint": "Give one change in confidence and two examples of activities",
+          "answer": "He became more confident, started cycling to work and later climbed Kilimanjaro"
         },
         {
           "id": "b1-08.video102.q4",
-          "prompt": "What change are you getting used to, and what is already familiar?",
-          "hint": "Contrast getting used to with used to plus a noun or -ing",
-          "answer": "Example: I’m getting used to starting early, but I’m already used to working from home"
+          "prompt": "What are you getting used to, and what would help?",
+          "hint": "Describe a change and one realistic source of support",
+          "answer": "Example: I am getting used to studying after work. Short daily sessions would help"
         }
       ]
     },

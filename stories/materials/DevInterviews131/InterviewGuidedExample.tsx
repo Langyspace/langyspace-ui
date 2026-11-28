@@ -1,3 +1,5 @@
+import guidedInstructions from '../shared/guidedConversationInstructions.json'
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { QuestionList } from '../../../src/components/Exercise/QuestionList'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -23,8 +25,8 @@ export function InterviewGuidedExample({ active }: { active: boolean }) {
   return (
     <SlidePage
       eyebrow="Guided conversation"
-      title="Explain your contribution"
-      instruction="Listen to Kim and Ana. Explain the purpose, the individual contribution and the result"
+      title={exerciseHeadings.dialogue}
+      instruction={guidedInstructions.anaKim.questions}
       density="compact"
       titleAudio={{
         context: 'Kim and Ana’s interview',

@@ -1,3 +1,9 @@
+import scene161_0 from '../assets/native-scene161/74d6f4f5cdee2f3c52c3240665dedb4f519b5c87d227efcb70c2d60e9be7cd24.webp'
+import scene161_1 from '../assets/native-scene161/c3c03b3d5876449f34f93332e54ee286f62a0780e3a2369c176ad2a7f30e00f9.webp'
+import scene161_2 from '../assets/native-scene161/4ec21b62ad1398980efd4796924bb8cea7ec3119032356dc127d307f34012cb1.webp'
+import scene161_3 from '../assets/native-scene161/ab4aa6c5d53f685fe912266f938fa53c68b635f05896e9321914a317acd37481.webp'
+import scene161_4 from '../assets/native-scene161/b60d45fe39498745374e927b6ca469652decbeda26ea0c5440595dd9f2e00449.webp'
+import scene161_5 from '../assets/native-scene161/017a9716b95e2ac49fa0b8c0d7834e4fb753cd124cca7ffe4b608afcecd19b14.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-01.json'
 import asset0 from '../../C101/assets/c101-D6-1.mp3'
@@ -279,6 +285,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene161/74d6f4f5cdee2f3c52c3240665dedb4f519b5c87d227efcb70c2d60e9be7cd24/image.webp':
+      scene161_0,
+    '/flashcards-transparent/course-practice/native-scene161/c3c03b3d5876449f34f93332e54ee286f62a0780e3a2369c176ad2a7f30e00f9/image.webp':
+      scene161_1,
+    '/flashcards-transparent/course-practice/native-scene161/4ec21b62ad1398980efd4796924bb8cea7ec3119032356dc127d307f34012cb1/image.webp':
+      scene161_2,
+    '/flashcards-transparent/course-practice/native-scene161/ab4aa6c5d53f685fe912266f938fa53c68b635f05896e9321914a317acd37481/image.webp':
+      scene161_3,
+    '/flashcards-transparent/course-practice/native-scene161/b60d45fe39498745374e927b6ca469652decbeda26ea0c5440595dd9f2e00449/image.webp':
+      scene161_4,
+    '/flashcards-transparent/course-practice/native-scene161/017a9716b95e2ac49fa0b8c0d7834e4fb753cd124cca7ffe4b608afcecd19b14/image.webp':
+      scene161_5,
     '/flashcards-transparent/course-practice/homework-media131/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e/image.webp':
       expanded124Asset20,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':

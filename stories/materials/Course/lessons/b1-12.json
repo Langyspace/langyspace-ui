@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Bring back a hypothetical consequence",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Words for office or home?",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "a commute",
           "translation": "",
           "example": "A long commute changes the working day",
-          "imageUrl": "b1-12-vocabulary81",
+          "imageUrl": "b1-12-vocabulary161",
           "imageAlt": "a commute",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B112-FS81.0",
@@ -70,13 +72,15 @@
           "word": "a distraction",
           "translation": "",
           "example": "Noise can be a distraction",
-          "imageUrl": "b1-12-vocabulary81",
+          "imageUrl": "b1-12-vocabulary161",
           "imageAlt": "a distraction",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B112-FS81.1",
@@ -87,13 +91,15 @@
           "word": "a flexible schedule",
           "translation": "",
           "example": "A flexible schedule needs clear expectations",
-          "imageUrl": "b1-12-vocabulary81",
+          "imageUrl": "b1-12-vocabulary161",
           "imageAlt": "a flexible schedule",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B112-FS81.2",
@@ -104,13 +110,15 @@
           "word": "teamwork",
           "translation": "",
           "example": "Regular contact can support teamwork",
-          "imageUrl": "b1-12-vocabulary81",
+          "imageUrl": "b1-12-vocabulary161",
           "imageAlt": "teamwork",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B112-FS81.3",
@@ -121,13 +129,15 @@
           "word": "a workspace",
           "translation": "",
           "example": "I need a quiet workspace for this task",
-          "imageUrl": "b1-12-vocabulary81",
+          "imageUrl": "b1-12-vocabulary161",
           "imageAlt": "a workspace",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B112-FS81.4",
@@ -138,13 +148,15 @@
           "word": "a work-life balance",
           "translation": "",
           "example": "A predictable routine helps my work-life balance",
-          "imageUrl": "b1-12-vocabulary81",
+          "imageUrl": "b1-12-vocabulary161",
           "imageAlt": "a work-life balance",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B112-FS81.5",
@@ -168,8 +180,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Different preferences",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -227,8 +239,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "A possible compromise",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -286,8 +298,8 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Compare where you work best",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Talk about yourself",
+      "instruction": "Compare where you work best. Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -318,36 +330,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Give a reason and recognise a counterpoint",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Connect reasons, results and contrasts",
+      "instruction": "Choose a connector and the correct kind of phrase after it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A reason and its result",
-          "verb": "because + clause / so + clause",
-          "example": "I need quiet because I write reports, so I work at home"
+          "subject": "Reason",
+          "verb": "because + clause / because of + noun phrase",
+          "example": "I work at home because I need quiet. The trip is slow because of traffic"
         },
         {
           "id": "1",
-          "subject": "A reason as a noun phrase",
-          "verb": "because of + noun phrase",
-          "example": "The journey is tiring because of the traffic"
+          "subject": "Result",
+          "verb": "clause + so + clause",
+          "example": "The office is noisy, so I work at home"
         },
         {
           "id": "2",
-          "subject": "A contrast without dismissing a point",
-          "verb": "although + clause / however",
-          "example": "Although I prefer home, I value team contact. However, the days need planning"
+          "subject": "Contrast",
+          "verb": "although + clause / however + new sentence",
+          "example": "Although I prefer home, I value team contact. However, travel takes time"
         }
-      ]
+      ],
+      "note": "Because takes a subject and verb; because of takes a noun phrase. Do not use although and but to join the same two clauses."
     },
     {
       "id": "s_mission",
@@ -360,8 +373,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Hybrid works, but the schedule doesn’t",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Hybrid works, but the schedule doesn’t. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. Working at home helps me concentrate, and two office days make it easier to speak to the team. However, the office days have been changing at short notice, so planning childcare and travel has become difficult. I don’t want to stop seeing colleagues. I’d like to keep the benefit but make the schedule more predictable. What would you suggest I ask the team to agree on? I don’t think one routine has to be best for everyone",
@@ -397,8 +410,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Keep the benefit, fix the drawback",
-      "instruction": "Adjust the routine to keep its benefit and address the drawback",
+      "title": "Respond to the message",
+      "instruction": "Keep the benefit, fix the drawback. Adjust the routine to keep its benefit and address the drawback",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -406,7 +419,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Office, home or a mix?",
+      "title": "Watch and answer",
       "instruction": "Watch the case for working away from an office, then negotiate a balanced routine",
       "minutes": 4,
       "video": {

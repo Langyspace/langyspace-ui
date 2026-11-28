@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall how to introduce someone without inventing facts",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Words for the woman who’s dancing with leo",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "a guest",
           "translation": "",
           "example": "Nina is a guest at the party",
-          "imageUrl": "b1-11-vocabulary81",
+          "imageUrl": "b1-11-vocabulary161",
           "imageAlt": "a guest",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B111-FS81.0",
@@ -70,13 +72,15 @@
           "word": "a host",
           "translation": "",
           "example": "Alex is the host in the green shirt",
-          "imageUrl": "b1-11-vocabulary81",
+          "imageUrl": "b1-11-vocabulary161",
           "imageAlt": "a host",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B111-FS81.1",
@@ -87,13 +91,15 @@
           "word": "a couple",
           "translation": "",
           "example": "A couple is dancing near the table",
-          "imageUrl": "b1-11-vocabulary81",
+          "imageUrl": "b1-11-vocabulary161",
           "imageAlt": "a couple",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B111-FS81.2",
@@ -104,13 +110,15 @@
           "word": "a speech",
           "translation": "",
           "example": "Let’s wait until the speech finishes",
-          "imageUrl": "b1-11-vocabulary81",
+          "imageUrl": "b1-11-vocabulary161",
           "imageAlt": "a speech",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B111-FS81.3",
@@ -121,13 +129,15 @@
           "word": "a dance floor",
           "translation": "",
           "example": "The drinks table is beside the dance floor",
-          "imageUrl": "b1-11-vocabulary81",
+          "imageUrl": "b1-11-vocabulary161",
           "imageAlt": "a dance floor",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B111-FS81.4",
@@ -138,13 +148,15 @@
           "word": "a celebration",
           "translation": "",
           "example": "It’s a celebration with friends",
-          "imageUrl": "b1-11-vocabulary81",
+          "imageUrl": "b1-11-vocabulary161",
           "imageAlt": "a celebration",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B111-FS81.5",
@@ -168,8 +180,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Who’s who at the celebration?",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -227,8 +239,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Make the introduction easy",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -287,57 +299,58 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Describe someone to meet",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "You and Teacher are at a party. Choose a person’s card, describe them and suggest a question to ask",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Add the detail that identifies the person",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Identify people and things with relative clauses",
+      "instruction": "Use a relative clause immediately after the person, thing or place it identifies",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Identify a person",
+          "subject": "A person",
           "verb": "person + who / that + clause",
-          "example": "The person who’s wearing green is Alex"
+          "example": "The person who is wearing green is Alex"
         },
         {
           "id": "1",
-          "subject": "Identify a thing",
-          "verb": "thing + that + clause",
-          "example": "The table that has the drinks is over there"
+          "subject": "A thing",
+          "verb": "thing + which / that + clause",
+          "example": "The table that has the drinks is by the dance floor"
         },
         {
           "id": "2",
-          "subject": "Identify a place",
+          "subject": "A place",
           "verb": "place + where + clause",
-          "example": "That’s the area where people are dancing"
+          "example": "That’s the room where people are dancing"
         }
-      ]
+      ],
+      "note": "Defining clauses identify which person or thing you mean, so do not separate them with commas. Keep the verb in the relative clause matched to its subject."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Introduce us",
-      "instruction": "Help me find the person and introduce us",
+      "title": "Find and introduce someone",
+      "instruction": "Choose someone for me to meet, describe them clearly and introduce us without interrupting the speech",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Look for the host",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Look for the host. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. Before you introduce me at our example celebration, could you help me find Alex? Alex is the host, the person in the green shirt standing by the drinks table. I don’t mean Nina, who organised the music and is near the dance floor. The speech is almost finished, so we can go over afterwards. Please introduce me using the facts on Alex’s card rather than guessing a job or a family relationship",
@@ -373,8 +386,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Introduce Kim to the right person",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Introduce Kim to the right person. Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -382,7 +395,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Which person does he mean?",
+      "title": "Watch and answer",
       "instruction": "Watch Bob identify his wife, then describe a person clearly",
       "minutes": 4,
       "video": {
@@ -440,70 +453,118 @@
   ],
   "activities": {
     "s_mission": {
-      "type": "choices",
-      "title": "Known facts only",
-      "options": [
-        {
-          "id": "alex",
-          "title": "Alex",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Role",
-              "value": "Host"
+      "type": "scene-choice",
+      "title": "People at the celebration",
+      "image": "b1-11-scene160",
+      "questions": [],
+      "scene": {
+        "alt": "Six adults at a celebration: Alex in green by the drinks table, Kim, Leo and Nina dancing, Ana listening and a woman giving a speech",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "alex",
+            "label": "Alex",
+            "summary": "Host",
+            "example": "Green shirt · by the drinks table",
+            "prompt": "",
+            "xPercent": 11.5,
+            "yPercent": 59.5,
+            "targetBounds": {
+              "xPercent": 1,
+              "yPercent": 22,
+              "widthPercent": 21,
+              "heightPercent": 75
             },
-            {
-              "id": "1",
-              "label": "Find",
-              "value": "Green shirt · by drinks table"
+            "hint": "The person who … / Let’s wait until …",
+            "answer": "That’s Alex, the host in green by the drinks table. Shall we meet him after the speech?"
+          },
+          {
+            "id": "kim",
+            "label": "Kim",
+            "summary": "Conversation",
+            "example": "Short black hair · talking to Alex",
+            "prompt": "",
+            "xPercent": 27.0,
+            "yPercent": 61.0,
+            "targetBounds": {
+              "xPercent": 21,
+              "yPercent": 27,
+              "widthPercent": 12,
+              "heightPercent": 68
             },
-            {
-              "id": "2",
-              "label": "Known action",
-              "value": "Welcoming guests"
-            }
-          ]
-        },
-        {
-          "id": "nina",
-          "title": "Nina",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Role",
-              "value": "Guest"
+            "hint": "The woman with … is …",
+            "answer": "The woman with the short black hair is talking to Alex. That’s Kim"
+          },
+          {
+            "id": "leo",
+            "label": "Leo",
+            "summary": "Dancing",
+            "example": "Blue shirt · black jacket · dancing with Nina",
+            "prompt": "",
+            "xPercent": 42.5,
+            "yPercent": 60.5,
+            "targetBounds": {
+              "xPercent": 34,
+              "yPercent": 23,
+              "widthPercent": 17,
+              "heightPercent": 75
             },
-            {
-              "id": "1",
-              "label": "Find",
-              "value": "Near the dance floor"
+            "hint": "The man who’s … / Do you mean …?",
+            "answer": "Do you mean Leo, the man in the black jacket who’s dancing with Nina?"
+          },
+          {
+            "id": "nina",
+            "label": "Nina",
+            "summary": "Guest",
+            "example": "Coral dress · helped organise the music",
+            "prompt": "",
+            "xPercent": 60.5,
+            "yPercent": 62.5,
+            "targetBounds": {
+              "xPercent": 52,
+              "yPercent": 27,
+              "widthPercent": 17,
+              "heightPercent": 71
             },
-            {
-              "id": "2",
-              "label": "Known action",
-              "value": "Organised the music"
-            }
-          ]
-        }
-      ],
-      "questions": [
-        {
-          "id": "person",
-          "prompt": "Which person would you like to meet?",
-          "hint": "I’d like to meet the person who …"
-        },
-        {
-          "id": "@s_mission.q98.2",
-          "prompt": "How can you point them out using known details?",
-          "hint": "They’re the one wearing … / standing …"
-        },
-        {
-          "id": "@s_mission.q98.3",
-          "prompt": "When would be a good moment for an introduction?",
-          "hint": "Let’s wait until …, then …"
-        }
-      ],
-      "questionPurpose": "response"
+            "hint": "She’s the woman who … / This is …",
+            "answer": "The woman dancing with Leo is Nina. She helped organise the music"
+          },
+          {
+            "id": "ana",
+            "label": "Ana",
+            "summary": "Listening",
+            "example": "Pink top · listening to the speech",
+            "prompt": "",
+            "xPercent": 76.5,
+            "yPercent": 62.0,
+            "targetBounds": {
+              "xPercent": 69.5,
+              "yPercent": 26,
+              "widthPercent": 14,
+              "heightPercent": 72
+            },
+            "hint": "The woman in … / We could … afterwards",
+            "answer": "That’s Ana, the woman in pink listening to the speech. We could introduce you afterwards"
+          },
+          {
+            "id": "speaker",
+            "label": "The speaker",
+            "summary": "Speech",
+            "example": "Holding the microphone · speech in progress",
+            "prompt": "",
+            "xPercent": 92.5,
+            "yPercent": 61.5,
+            "targetBounds": {
+              "xPercent": 85.5,
+              "yPercent": 24,
+              "widthPercent": 14,
+              "heightPercent": 75
+            },
+            "hint": "Let’s wait until … before …",
+            "answer": "Let’s wait until the woman holding the microphone finishes, then I’ll introduce you"
+          }
+        ]
+      }
     },
     "s_reply": {
       "type": "facts",

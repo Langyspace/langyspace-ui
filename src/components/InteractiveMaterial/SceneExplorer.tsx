@@ -29,6 +29,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
     imageAlt,
     imageSizing = 'natural',
     hotspots,
+    hotspotInteraction = 'point',
     connections = [],
     selectedId,
     visitedIds,
@@ -48,7 +49,9 @@ export function SceneExplorer(options: SceneExplorerProps) {
   const imageRef = useRef<HTMLImageElement>(null)
   const calloutRef = useRef<HTMLDivElement>(null)
   const [geometry, setGeometry] = useState<SceneImageGeometry>()
-  const [layout, setLayout] = useState<SceneCalloutLayout>()
+  const [layout, setLayout] = useState<
+    SceneCalloutLayout & { bottom?: number }
+  >()
   const [imageBounds, setImageBounds] = useState<SceneTargetRect>()
   const [frameWidth, setFrameWidth] = useState(0)
   const [localSelectedId, setLocalSelectedId] = useState<string>()
@@ -121,6 +124,32 @@ export function SceneExplorer(options: SceneExplorerProps) {
       ? scenePoint(next, target.xPercent, target.yPercent)
       : { x: point.x - 24, y: point.y - 24 }
     const panel = calloutRef.current.getBoundingClientRect()
+    if (hotspotInteraction === 'area') {
+      const edge = 8
+      const panelWidth = Math.min(panel.width, visible.width - edge * 2)
+      const calloutLeft = Math.max(
+        visible.left + edge,
+        Math.min(
+          point.x - panelWidth / 2,
+          visible.left + visible.width - panelWidth - edge,
+        ),
+      )
+      const nextLayout = {
+        left: calloutLeft,
+        top: 0,
+        bottom: next.frameHeight - start.y + 12,
+        placement: 'above' as const,
+        arrow: Math.max(
+          edge,
+          Math.min(panelWidth - edge, point.x - calloutLeft),
+        ),
+        gutter: 0,
+      }
+      setLayout((old) =>
+        JSON.stringify(old) === JSON.stringify(nextLayout) ? old : nextLayout,
+      )
+      return
+    }
     const obstacles = hotspots.flatMap((hotspot) => {
       const center = scenePoint(next, hotspot.xPercent, hotspot.yPercent)
       const bounds = hotspot.targetBounds
@@ -165,7 +194,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
     setLayout((old) =>
       JSON.stringify(old) === JSON.stringify(nextLayout) ? old : nextLayout,
     )
-  }, [selected, hotspots])
+  }, [selected, hotspots, hotspotInteraction])
   useLayoutEffect(measure, [measure, answerVisible, imageUrl, compactLabels])
   useEffect(() => {
     if (typeof ResizeObserver === 'undefined') return
@@ -186,6 +215,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
       <Frame
         ref={frameRef}
         $bounded={imageSizing === 'presentation'}
+        $area={hotspotInteraction === 'area'}
         $gutter={selected && showCallout ? (layout?.gutter ?? 0) : 0}
       >
         <img ref={imageRef} src={imageUrl} alt={imageAlt} onLoad={measure} />
@@ -214,17 +244,20 @@ export function SceneExplorer(options: SceneExplorerProps) {
           </Styled.Connections>
         ) : null}
         {hotspots.map((h) => {
+          const area =
+            hotspotInteraction === 'area' ? h.targetBounds : undefined
           const vocabularyLabel =
             presentation === 'vocabulary' && visitedIds.includes(h.id)
-          const Marker =
-            presentation === 'vocabulary'
+          const Marker = area
+            ? Styled.AreaHotspot
+            : presentation === 'vocabulary'
               ? Styled.VocabularyHotspot
               : presentation === 'labels'
                 ? Styled.LabelHotspot
                 : Styled.DotHotspot
-          const point = geometry
-            ? scenePoint(geometry, h.xPercent, h.yPercent)
-            : undefined
+          const x = area ? area.xPercent + area.widthPercent / 2 : h.xPercent
+          const y = area ? area.yPercent + area.heightPercent / 2 : h.yPercent
+          const point = geometry ? scenePoint(geometry, x, y) : undefined
           const cropped =
             geometry &&
             point &&
@@ -237,15 +270,20 @@ export function SceneExplorer(options: SceneExplorerProps) {
               key={h.id}
               type="button"
               hidden={Boolean(cropped)}
-              $x={
-                point && geometry
-                  ? (point.x / geometry.frameWidth) * 100
-                  : h.xPercent
-              }
+              $x={point && geometry ? (point.x / geometry.frameWidth) * 100 : x}
               $y={
-                point && geometry
-                  ? (point.y / geometry.frameHeight) * 100
-                  : h.yPercent
+                point && geometry ? (point.y / geometry.frameHeight) * 100 : y
+              }
+              $width={
+                area && geometry
+                  ? (area.widthPercent * geometry.width) / geometry.frameWidth
+                  : (area?.widthPercent ?? 0)
+              }
+              $height={
+                area && geometry
+                  ? (area.heightPercent * geometry.height) /
+                    geometry.frameHeight
+                  : (area?.heightPercent ?? 0)
               }
               $visited={visitedIds.includes(h.id)}
               $revealed={
@@ -290,60 +328,72 @@ export function SceneExplorer(options: SceneExplorerProps) {
             $arrow={layout?.arrow ?? 24}
             $imageWidth={imageBounds?.width}
             $imageHeight={imageBounds?.height}
+            $area={hotspotInteraction === 'area'}
+            $bottom={layout?.bottom}
           >
             <Styled.CalloutHeading>
-              <Common.Heading>{selected.label}</Common.Heading>
-              {onPlayHotspot ? (
-                <IconButton
-                  variant="brand"
-                  size="md"
-                  aria-label={`${text.play}: ${selected.label}`}
-                  aria-busy={playingId === selected.id || undefined}
-                  onClick={() => {
-                    onPlayHotspot(selected.id)
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
+              <Styled.CalloutTitle>
+                <Common.Heading>{selected.label}</Common.Heading>
+                {selected.summary ? (
+                  <Styled.CalloutSummary>
+                    {selected.summary}
+                  </Styled.CalloutSummary>
+                ) : null}
+              </Styled.CalloutTitle>
+              <Styled.CalloutActions>
+                {selected.actions}
+                {onPlayHotspot ? (
+                  <IconButton
+                    variant="brand"
+                    size="md"
+                    aria-label={`${text.play}: ${selected.label}`}
+                    aria-busy={playingId === selected.id || undefined}
+                    onClick={() => {
+                      onPlayHotspot(selected.id)
+                    }}
                   >
-                    <path d="M11 5 6 9H3v6h3l5 4zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14" />
-                  </svg>
-                </IconButton>
-              ) : null}
-              {onDismiss ? (
-                <IconButton
-                  variant="subtle"
-                  size="sm"
-                  aria-label={`Close: ${selected.label}`}
-                  onClick={() => {
-                    frameRef.current
-                      ?.querySelector<HTMLButtonElement>(
-                        `button[aria-controls="${id}"]`,
-                      )
-                      ?.focus({ preventScroll: true })
-                    if (!controlledSelection) setLocalSelectedId(undefined)
-                    onDismiss()
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
+                    <svg
+                      aria-hidden="true"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="M11 5 6 9H3v6h3l5 4zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14" />
+                    </svg>
+                  </IconButton>
+                ) : null}
+                {onDismiss ? (
+                  <IconButton
+                    variant="subtle"
+                    size="sm"
+                    aria-label={`Close: ${selected.label}`}
+                    onClick={() => {
+                      frameRef.current
+                        ?.querySelector<HTMLButtonElement>(
+                          `button[aria-controls="${id}"]`,
+                        )
+                        ?.focus({ preventScroll: true })
+                      if (!controlledSelection) setLocalSelectedId(undefined)
+                      onDismiss()
+                    }}
                   >
-                    <path d="m6 6 12 12M18 6 6 18" />
-                  </svg>
-                </IconButton>
-              ) : null}
+                    <svg
+                      aria-hidden="true"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path d="m6 6 12 12M18 6 6 18" />
+                    </svg>
+                  </IconButton>
+                ) : null}
+              </Styled.CalloutActions>
             </Styled.CalloutHeading>
             {selected.example ? (
               <Styled.CalloutExample>{selected.example}</Styled.CalloutExample>

@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Remember a situation interrupted by an unexpected event",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Words for the show had already started",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -168,8 +168,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Late for the show",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "The problem at the entrance",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -287,57 +287,58 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Explain what happened first",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "Use the concert timeline to explain the order of events to Teacher, then share a similar experience",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Which past event happened first?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Show which past event happened first",
+      "instruction": "Use had plus a past participle for an event earlier than another past event",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "The earlier past event",
+          "subject": "Earlier event",
           "verb": "had + past participle",
-          "example": "She had forgotten her wristband before she left"
+          "example": "The show had started before we arrived"
         },
         {
           "id": "1",
-          "subject": "The later past event",
-          "verb": "past simple",
-          "example": "They arrived at eight twenty"
+          "subject": "Negative",
+          "verb": "hadn’t + past participle",
+          "example": "I hadn’t brought my wristband"
         },
         {
           "id": "2",
-          "subject": "Show the relationship",
-          "verb": "by the time / when + past event",
-          "example": "By the time they arrived, the show had already started"
+          "subject": "Question",
+          "verb": "Had + subject + past participle?",
+          "example": "Had the show started when you arrived? — Yes, it had"
         }
-      ]
+      ],
+      "note": "Had is the same for every subject. Timeline: show started at 8 → we arrived at 8:20. Use past simple for the later event; had started looks back from it."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Reconstruct the evening",
-      "instruction": "Explain what happened first and why it mattered",
+      "title": "Use the information to respond",
+      "instruction": "Reconstruct the evening. Explain what happened first and why it mattered",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Check the real reason",
-      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Check the real reason. Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem",
@@ -381,8 +382,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Correct the misunderstanding",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Correct the misunderstanding. Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -390,7 +391,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "What happened before the mistake?",
+      "title": "Watch and answer",
       "instruction": "Watch Vanya explain her mistake, then reconstruct the order of events",
       "minutes": 4,
       "video": {
@@ -533,7 +534,7 @@
         {
           "id": "0",
           "label": "7:15 pm",
-          "value": "Left home · wristband stayed there"
+          "value": "Left home · wristband stayed there · digital ticket on phone"
         },
         {
           "id": "1",
@@ -563,14 +564,13 @@
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain the delay to your friend?",
-          "cue": "Tell the events in order and check the explanation",
-          "hint": "By the time …, … had already … What would you say?",
-          "answer": "One possible response"
+          "prompt": "How would you explain the wristband problem at the help desk?",
+          "cue": "Say what was left at home and what proof remained",
+          "hint": "I’d left my wristband at home, but I still had my ticket on my phone"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Concert timeline"
     }
   }
 }

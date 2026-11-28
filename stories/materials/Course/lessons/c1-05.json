@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall the background and turning point of a story",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "A story with a turning point",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -155,36 +155,36 @@
     {
       "id": "s_source0",
       "kind": "source",
-      "title": "The initial account",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Traveller’s account · simulated source",
-      "subject": "Noticed missing on the train",
+      "subject": "The missing scarf",
       "paragraphs": [
-        "The traveller had spent the morning at a café before taking a train. A coat had been left over a chair, then put on in a hurry before departure. During the journey, the traveller noticed that a scarf was missing. An anxious first explanation was that it might have disappeared somewhere between the station and the train.",
-        "The record does not establish theft, an encounter with a stranger or the exact moment the scarf was set down. For a clear retelling, distinguish the moment of noticing the loss from the moment of losing the object. The listener needs the café and coat detail before a later discovery can change the interpretation."
-      ]
+        "The traveller spent the morning in a café and left their coat on a chair. When it was time to leave, they put the coat on in a hurry and went to the station.",
+        "On the train, they noticed that their scarf was missing. They initially thought they had lost it between the station and the train. They had not seen anyone take it."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
-      "title": "The later clue",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Café staff’s account · simulated source",
-      "subject": "A photograph and a chair",
+      "subject": "The café’s evidence",
       "paragraphs": [
-        "Café staff later found the scarf on the chair where the coat had been earlier. A photograph taken before the traveller left shows the scarf already there. The staff kept it behind the counter until it could be collected. These are the agreed facts of this fictional story.",
-        "The useful twist is a corrected timeline, not an invented danger. A storyteller can decide when to reveal the photograph, but should not change what it proves. It explains why the initial train explanation was mistaken and gives an ordinary setting new significance. The collection details can be shortened if they distract from that turning point."
-      ]
+        "Café staff found a scarf on the chair the traveller had used. A photograph taken before the traveller’s departure also shows the scarf on that chair.",
+        "The staff kept the scarf behind the counter for collection. The photograph places it in the café before the train journey, contradicting the traveller’s first explanation."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Prepare the listener",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -242,8 +242,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Find the turning point",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -301,8 +301,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "Choose the emphasis",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -360,58 +360,59 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Choose when to reveal a detail",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "title": "Tell the story of the missing scarf",
+      "instruction": "You are the traveller. Use the café and train timeline to tell Teacher how you found your missing scarf",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Emphasis that earns its place in the story",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Create emphasis with negative inversion",
+      "instruction": "Move an auxiliary before the subject after a fronted negative expression",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Signal an unexpected discovery",
-          "verb": "Little did I know + clause",
-          "example": "Little did I know the scarf was still at the café"
+          "subject": "Plain word order",
+          "verb": "subject + auxiliary + verb",
+          "example": "I didn’t know the scarf was still at the café"
         },
         {
           "id": "1",
-          "subject": "Emphasise an exceptional earlier experience",
-          "verb": "Never had + subject + participle",
-          "example": "Never had I been so relieved to recognise a chair"
+          "subject": "Fronted little",
+          "verb": "Little + did + subject + base verb",
+          "example": "Little did I know the scarf was still at the café"
         },
         {
           "id": "2",
-          "subject": "A plain alternative is equally valid",
-          "verb": "I didn’t realise … / I had never …",
-          "example": "I didn’t realise the scarf was still there"
+          "subject": "An earlier experience",
+          "verb": "Never + had + subject + past participle",
+          "example": "Never had I felt so relieved to find a missing scarf"
         }
-      ]
+      ],
+      "note": "Invert the main clause, not the following reported idea. With did, use a base verb; with had, use a past participle. This creates emphasis, not a different sequence of events."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Tell a story worth following",
-      "instruction": "Tell the story so I can follow why the ending matters",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "The photograph changes the timeline",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "The photograph changes the timeline. Listen for the new information and decide how to respond",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I found the ending of the scarf story. The café staff discovered it on the chair where the traveller had left a coat earlier. A photograph taken before departure showed the scarf there already, so it hadn’t disappeared on the train at all. The staff kept it behind the counter, and the traveller collected it later. What made the ending surprising wasn’t a dramatic theft or a stranger’s secret plan. It was the discovery that the initial timeline was wrong. Could you retell it so I first understand the worried expectation, then see why that photograph changes the explanation? You can use a simple sentence for the revelation; an inverted phrase is only useful if it gives the moment the emphasis you want",
@@ -451,49 +452,49 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Retell the ending so it matters",
-      "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Let the listener feel the turning point",
-      "instruction": "Watch the contrast between a flat story and a tense one, then reshape an opening",
-      "minutes": 4,
+      "title": "What makes the ending work?",
+      "instruction": "Follow the story and explain how the ending changes its effect",
+      "minutes": 8,
       "video": {
-        "videoId": "m04lQ5BUAn0",
-        "startSeconds": 474,
-        "endSeconds": 565,
-        "title": "How to tell a story in English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "arj7oStGLkU",
+        "startSeconds": 12.5,
+        "endSeconds": 174.8,
+        "title": "Inside the Mind of a Master Procrastinator | Tim Urban | TED",
+        "credit": "TED"
       },
       "items": [
         {
           "id": "c1-05.video102.q1",
-          "prompt": "Why does the speaker reject the short monster story?",
-          "hint": "Look at how easily the goal is reached",
-          "answer": "The problem is solved immediately, so there is little tension"
+          "prompt": "How did he intend to organise the year?",
+          "hint": "Describe the beginning, middle and end of his original plan",
+          "answer": "He planned a light start, more work in the middle and the greatest effort near the end"
         },
         {
           "id": "c1-05.video102.q2",
-          "prompt": "Which details make the mountain journey difficult before the storm?",
-          "hint": "Listen for physical conditions and what the traveller carries",
-          "answer": "The thin air and heavy pack make it difficult before the weather changes"
+          "prompt": "What actually happened as the deadline approached?",
+          "hint": "Track what changed as the deadline got closer",
+          "answer": "He postponed writing until the last three days, then completed ninety pages and submitted on time"
         },
         {
           "id": "c1-05.video102.q3",
-          "prompt": "What information is withheld after the storm arrives?",
-          "hint": "Notice the questions left open",
-          "answer": "The excerpt leaves open whether the traveller crossed the pass or was hurt"
+          "prompt": "How does he create and then reverse the audience’s expectation?",
+          "hint": "Compare the imagined phone call with his correction after the applause",
+          "answer": "He invents praise from the school, then reveals that the praise never happened and the thesis was poor"
         },
         {
           "id": "c1-05.video102.q4",
-          "prompt": "Recast the turning point using an emphatic opening",
-          "hint": "Use Little did I know without inventing the story’s ending",
-          "answer": "Example: Little did I know that a storm was about to arrive just as I approached the top"
+          "prompt": "Retell the ending more neutrally: what changes in its effect?",
+          "hint": "Keep the events, remove the false happy ending and explain the effect",
+          "answer": "Example: He delayed, submitted on time and produced poor work. A direct account loses the false triumph and surprise"
         }
       ]
     },
@@ -519,125 +520,107 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "The factual story, not a theft claim",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Before the train",
-          "value": "Café · coat on a chair"
-        },
-        {
-          "id": "1",
-          "label": "On the train",
-          "value": "Scarf noticed missing"
-        },
-        {
-          "id": "2",
-          "label": "Later clue",
-          "value": "A photograph from before departure"
-        }
-      ],
+      "title": "The scarf’s timeline",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you establish the traveller’s initial expectation?",
-          "hint": "At first, they were convinced …"
+          "prompt": "When did the traveller notice that the scarf was missing?",
+          "answer": "They noticed it on the train.",
+          "hint": "Separate the moment of discovery from the earlier café visit."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "How would you introduce the photograph without claiming theft?",
-          "hint": "A photograph taken … suggested …"
+          "prompt": "Where did the traveller initially think the scarf had been lost?",
+          "answer": "They initially thought it had been lost between the station and the train.",
+          "hint": "Find the explanation introduced by “At first”."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What question about the timeline still needs answering?",
-          "hint": "We still need to know whether …"
+          "prompt": "What does the photograph show, and when was it taken?",
+          "answer": "It shows the scarf on the café chair before the traveller’s departure.",
+          "hint": "Identify both the location and the photograph’s timing."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "The factual story, not a theft claim"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "The scarf’s timeline",
+      "referenceParagraphs": [
+        "The traveller left a coat on a café chair, put it on in a hurry and went to the station. They only noticed that their scarf was missing once they were on the train. At first, they thought it had been lost between the station and the train.",
+        "A photograph taken before their departure shows the scarf on the café chair. The traveller had not seen anyone take it."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "Photograph taken before departure",
-      "facts": [
-        {
-          "id": "1",
-          "label": "What it rules out",
-          "value": "Disappearance during that train journey"
-        },
-        {
-          "id": "2",
-          "label": "Outcome",
-          "value": "Staff kept it · traveller collected it"
-        }
-      ],
+      "title": "The scarf is found",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you reveal what the photograph establishes?",
-          "hint": "What the photograph showed was …"
+          "prompt": "What does the photograph rule out about the train journey?",
+          "answer": "It rules out the scarf disappearing during that train journey.",
+          "hint": "Compare the time of the photograph with the journey."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "How would you explain the surprise accurately?",
-          "hint": "The surprise was …, rather than …"
+          "prompt": "Where did the staff keep the scarf?",
+          "answer": "They kept it behind the counter.",
+          "hint": "Find the place where the staff stored it."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "How would you close the story without adding drama?",
-          "hint": "The staff …, and later …"
+          "prompt": "How did the story end?",
+          "answer": "The traveller collected the scarf from the café.",
+          "hint": "Look for what the traveller did after the staff found it."
         }
       ],
-      "questionPurpose": "response",
+      "questionPurpose": "comprehension",
       "image": "c1-05-scarf-photo123",
-      "referenceLabel": "Photograph taken before departure"
+      "referenceLabel": "The scarf is found",
+      "referenceParagraphs": [
+        "The photograph shows the scarf on the café chair before the traveller left. It had therefore been left behind before the train journey, rather than disappearing during the journey.",
+        "Café staff found it and kept it behind the counter. The traveller later collected it from the café. No theft was reported or witnessed."
+      ]
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Your scarf’s timeline",
       "facts": [
         {
           "id": "0",
           "label": "Before the train",
-          "value": "Café · coat on a chair"
+          "value": "Café · coat on a chair · left in a hurry"
         },
         {
           "id": "1",
           "label": "On the train",
-          "value": "Scarf noticed missing"
+          "value": "Noticed the scarf missing · first suspected it was lost on the journey"
         },
         {
           "id": "2",
-          "label": "Later clue",
-          "value": "A photograph from before departure"
+          "label": "Later discovery",
+          "value": "Staff found it on the café chair · earlier photograph shows it there"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "Which detail would you reveal first?",
-          "cue": "Choose what the listener needs before the surprise",
-          "hint": "At first, … What I didn’t realise was …",
-          "answer": "One possible response"
+          "prompt": "Where were you before you noticed the scarf was missing?",
+          "cue": "Set up the café before describing the train journey",
+          "hint": "I’d been at a café. Only on the train did I notice the scarf was missing"
         },
         {
           "id": "1",
-          "prompt": "What changed the way you saw the situation?",
-          "cue": "Explain the turning point and its significance",
-          "hint": "As it turned out, …",
-          "answer": "One possible response"
+          "prompt": "What made you realise it hadn’t gone missing on the train?",
+          "cue": "Reveal the photograph and correct the timeline",
+          "hint": "As it turned out, a photograph showed it on the café chair before I left"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you tell the ending without explaining away its ambiguity?",
-          "cue": "Retain a meaningful uncertainty and invite an interpretation",
-          "hint": "What makes it striking is …, though we never find out … How do you read it?",
-          "answer": "One possible response"
+          "prompt": "How would you end the story now that you know where it was?",
+          "cue": "Resolve the mistake without inventing a theft",
+          "hint": "Little did I know it was safe at the café, waiting to be collected"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your scarf’s timeline"
     }
   }
 }

@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Tell a short sequence from last weekend",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "When plans go wrong",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -155,8 +155,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Rain at the bus stop",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +214,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Finally at the café",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -273,7 +273,7 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Explain an interruption",
+      "title": "Describe what happened",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
@@ -305,58 +305,59 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "What was happening when something changed?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Combine past continuous and past simple",
+      "instruction": "Describe an action in progress, then the shorter event that interrupted it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An action already in progress",
+          "subject": "Action in progress",
           "verb": "was / were + verb-ing",
-          "example": "I was waiting for the bus"
+          "example": "I was waiting for the bus. They were walking"
         },
         {
           "id": "1",
-          "subject": "An event interrupts it",
+          "subject": "The interrupting event",
           "verb": "when + past simple",
           "example": "I was waiting when it started raining"
         },
         {
           "id": "2",
-          "subject": "Explain and apologise",
-          "verb": "Sorry … + reason",
-          "example": "Sorry I’m late. I missed the bus"
+          "subject": "Negative and question",
+          "verb": "wasn’t / weren’t + -ing / Was / Were + subject + -ing?",
+          "example": "I wasn’t driving. Were you waiting when I called?"
         }
-      ]
+      ],
+      "note": "Use was with I/he/she/it and were with you/we/they. While often introduces the longer activity: While I was waiting, it started raining."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "What happened first?",
-      "instruction": "Choose a picture and its place to retell Ana’s story in order",
+      "title": "Put the pictures in order",
+      "instruction": "What happened first? Choose a picture and its place to retell Ana’s story in order",
       "minutes": 2,
       "eyebrow": "Speaking task"
     },
     {
       "id": "s_mission_story",
       "kind": "activity",
-      "title": "Explain the delay",
-      "instruction": "Use the three time anchors to explain what happened",
+      "title": "Tell the story",
+      "instruction": "Explain the delay. Use the three time anchors to explain what happened",
       "minutes": 3,
       "eyebrow": "Your story"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Leo is delayed too",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Leo is delayed too. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. Leo just called me. He was driving to the café when he got stuck in traffic. There’s a lot of traffic near the station, so he’s running late too. He thinks he can be here at one thirty. He’s fine, and he says we should order our food now. Shall we get a table?",
@@ -392,8 +393,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Update the lunch plan",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Update the lunch plan. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -401,7 +402,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "When travel plans go wrong",
+      "title": "Watch and answer",
       "instruction": "Watch two travel problems, then explain a delay politely",
       "minutes": 4,
       "video": {

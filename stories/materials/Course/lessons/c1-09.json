@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall how to attribute a claim and mark its uncertainty",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Trends, projections and scenarios",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -155,36 +155,36 @@
     {
       "id": "s_source0",
       "kind": "source",
-      "title": "What has been observed",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Fictional city data note · simulated source",
-      "subject": "Three months of trips",
+      "subject": "Three months of demand",
       "paragraphs": [
-        "The teaching dataset records average daily trips of 100 in January, 120 in February and 140 in March. These are simulated figures, not news or a statistical study. The series shows a rise across three observations, but provides no earlier years, seasonal pattern or explanation of who is travelling.",
-        "A projection continuing the same increase would be conditional on similar circumstances. It should not be relabelled as an observed April result. A recommendation can acknowledge a possible pressure on services without claiming that these figures alone establish a permanent rate, a single cause or an inevitable worst-case outcome."
-      ]
+        "The transport count records 100 trips per day in January, 120 in February and 140 in March. The figures cover only those three months; no earlier seasonal data or breakdown by traveller group is available.",
+        "Demand rose by twenty daily trips in each interval. The count describes past demand, but it does not establish whether the same increase will continue or when during the day the trips occur."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
-      "title": "What the plan assumes",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Transport scenario · simulated source",
-      "subject": "Capacity must match the need",
+      "subject": "The capacity announcement",
       "paragraphs": [
-        "The scenario includes additional transport starting next month. The headline capacity estimate treats the extra service as if it covers the demand under discussion. The record confirms a service plan but leaves the detailed time coverage for a later check. A group member therefore suggests that no further action will be necessary.",
-        "That conclusion depends on more than a total number. Capacity at the wrong time or place may not meet the actual need. The task is to identify which assumption should be tested and what information would change the recommendation. Monitoring can be a sensible action if it has a focus, an owner and a clear trigger for reviewing the plan."
-      ]
+        "The operator says that extra transport will start next month. The announcement does not yet specify which times of day the additional service will cover.",
+        "One group has concluded that no further action is needed. However, the announcement does not establish whether the extra capacity will serve the times when demand is highest."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "A trend or a certainty?",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -242,8 +242,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Test the projection’s premise",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -301,8 +301,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "Choose a proportionate next step",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -360,58 +360,59 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Calibrate the prediction",
-      "instruction": "Use the reference to explain your view and ask a follow-up question",
+      "title": "Make a cautious prediction",
+      "instruction": "Discuss with Teacher what the rise from 100 to 140 daily trips does and does not tell you",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "How much certainty does the language commit you to?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Express probability with likely and bound to",
+      "instruction": "Use be plus an expression and to plus a base verb to show the strength of a prediction",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A probable outcome, with conditions",
-          "verb": "likely / unlikely to + verb",
-          "example": "Demand is likely to rise if conditions continue"
+          "subject": "A probable result",
+          "verb": "be likely / unlikely to + base verb",
+          "example": "Demand is likely to rise. It is unlikely to fall immediately"
         },
         {
           "id": "1",
-          "subject": "A very strong prediction",
-          "verb": "bound to + verb",
-          "example": "“Bound to get worse” needs stronger grounds than this sample"
+          "subject": "A very strong expectation",
+          "verb": "be bound to + base verb",
+          "example": "An extra delay is bound to affect the connection"
         },
         {
           "id": "2",
-          "subject": "A scheduled or expected development",
-          "verb": "set to / was going to",
-          "example": "The service is set to start. We were going to recommend no action"
+          "subject": "An expected or scheduled development",
+          "verb": "be set to + base verb",
+          "example": "The new service is set to start next month"
         }
-      ]
+      ],
+      "note": "Change be for the subject and time: is likely, are likely, was likely. Bound to expresses a much stronger expectation than likely to; the form itself supplies no evidence."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Forecast without overstating",
-      "instruction": "Explain your prediction and say what could make it wrong",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text and chart. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Total capacity is not all-day coverage",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Total capacity is not all-day coverage. Listen for the new information and decide how to respond",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. There’s a limitation in the transport projection. The extra service is confirmed, but it only runs in the morning peak. The demand we’re discussing includes afternoon trips as well. So the added total capacity cannot automatically be treated as coverage for every part of the day. That doesn’t prove demand will keep rising at the same rate, or that the whole plan will fail. It does mean we should qualify the assumption that the extra service removes the problem. Could you revise the recommendation with that distinction? A useful next step would identify what afternoon information is needed and what observation would trigger another decision, rather than simply moving from “everything is solved” to “it’s bound to get worse”",
@@ -447,16 +448,16 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Revise the recommendation and the trigger",
-      "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "What can a historical trend support?",
+      "title": "Watch and answer",
       "instruction": "Watch this 2014 talk’s account of twentieth-century disaster data, then assess a prediction",
       "minutes": 4,
       "video": {
@@ -515,7 +516,7 @@
   "activities": {
     "s_mission": {
       "type": "chart",
-      "title": "Observed daily trips · fictional example",
+      "title": "Demand and unconfirmed coverage",
       "chart": {
         "items": [
           {
@@ -541,62 +542,59 @@
       "questions": [
         {
           "id": "trend",
-          "prompt": "How would you describe the observed trend without overstating it?",
-          "hint": "The figures suggest … over …"
+          "prompt": "How much did daily trips rise from January to March?",
+          "answer": "Daily trips rose by 40, from 100 to 140.",
+          "hint": "Compare the first and last bars."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "What assumption limits the capacity projection?",
-          "hint": "The projection assumes …, which needs …"
+          "prompt": "Which information about the timing of demand is missing?",
+          "answer": "There is no breakdown of trips by time of day.",
+          "hint": "Look for the missing breakdown in paragraph one."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What would trigger a further decision?",
-          "hint": "If … in the affected time slot, we would …"
+          "prompt": "Which detail about the extra service has not yet been confirmed?",
+          "answer": "Its operating times have not yet been confirmed.",
+          "hint": "Separate the start month from the hours covered."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "Observed daily trips · fictional example"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Demand and unconfirmed coverage",
+      "referenceParagraphs": [
+        "The chart records daily trips for January, February and March only. There is no earlier seasonal data or breakdown by time of day.",
+        "The operator has announced extra service for next month, but has not yet confirmed its operating times. The announcement therefore does not establish whether it covers the busiest periods."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "A limitation in the capacity assumption",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Confirmed",
-          "value": "Extra service starts next month"
-        },
-        {
-          "id": "1",
-          "label": "Coverage",
-          "value": "Morning peak only"
-        },
-        {
-          "id": "2",
-          "label": "Need to check",
-          "value": "Afternoon demand and capacity"
-        }
-      ],
+      "title": "Extra service covers mornings only",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you revise the ‘problem solved’ claim?",
-          "hint": "The extra service covers …, but … remains unverified"
+          "prompt": "Which period will the extra service cover?",
+          "answer": "It will cover the morning peak only.",
+          "hint": "Find the limit on the new service."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "What afternoon information would you request?",
-          "hint": "We need to compare … with …"
+          "prompt": "When will the extra service start?",
+          "answer": "It will start next month.",
+          "hint": "Find the start date in the first sentence."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "What conditional recommendation would you make?",
-          "hint": "I’d recommend … pending …, with a review if …"
+          "prompt": "Which comparison is still needed to assess the afternoon service?",
+          "answer": "Afternoon demand needs to be compared with existing afternoon capacity.",
+          "hint": "Find the two quantities not yet compared."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "A limitation in the capacity assumption"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Extra service covers mornings only",
+      "referenceParagraphs": [
+        "The operator has now confirmed that the extra service starts next month and covers the morning peak only. The announcement gives no additional afternoon capacity.",
+        "Afternoon demand and existing afternoon capacity have not yet been compared. The morning announcement alone therefore cannot establish whether afternoon demand will be met."
+      ]
     },
     "s_personal": {
       "type": "chart",

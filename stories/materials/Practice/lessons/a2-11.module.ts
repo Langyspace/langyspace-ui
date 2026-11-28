@@ -1,3 +1,11 @@
+import scene161_0 from '../assets/native-scene161/b5833e6452b4d26b0dcf19d7e031abb94fe366c61af76bb375018e250106bb45.webp'
+import scene161_1 from '../assets/native-scene161/ebeb1dae27e6450609adab5cdf32ca0b3eb3dbe4c168bd6496018d5dffb0ada9.webp'
+import scene161_2 from '../assets/native-scene161/210bc558bbcc5d2024f8aa293373ec3a463dedd82d4ba7c7f07491ecb69d994a.webp'
+import scene161_3 from '../assets/native-scene161/1df80b321f947385ac927281bec436442325176dd74186782b1fb0b2fcec000c.webp'
+import scene161_4 from '../assets/native-scene161/53db67173eeb04a9c4ac2dc5e46fe97686829b6bdeaa3a243254914662ff6599.webp'
+import scene161_5 from '../assets/native-scene161/97196f6c844341d68eedd0c76dd926cfea7e5e90bb39654c0919283a3db3589b.webp'
+import nativeView159_0 from '../assets/native-crop159/288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da.webp'
+import nativeView159_1 from '../assets/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f.webp'
 import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a2-11.json'
@@ -244,6 +252,22 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene161/b5833e6452b4d26b0dcf19d7e031abb94fe366c61af76bb375018e250106bb45/image.webp':
+      scene161_0,
+    '/flashcards-transparent/course-practice/native-scene161/ebeb1dae27e6450609adab5cdf32ca0b3eb3dbe4c168bd6496018d5dffb0ada9/image.webp':
+      scene161_1,
+    '/flashcards-transparent/course-practice/native-scene161/210bc558bbcc5d2024f8aa293373ec3a463dedd82d4ba7c7f07491ecb69d994a/image.webp':
+      scene161_2,
+    '/flashcards-transparent/course-practice/native-scene161/1df80b321f947385ac927281bec436442325176dd74186782b1fb0b2fcec000c/image.webp':
+      scene161_3,
+    '/flashcards-transparent/course-practice/native-scene161/53db67173eeb04a9c4ac2dc5e46fe97686829b6bdeaa3a243254914662ff6599/image.webp':
+      scene161_4,
+    '/flashcards-transparent/course-practice/native-scene161/97196f6c844341d68eedd0c76dd926cfea7e5e90bb39654c0919283a3db3589b/image.webp':
+      scene161_5,
+    '/flashcards-transparent/course-practice/native-crop159/288bedbe0f2ff90e437fc2e3e70a55ca86ce6cc34395b9e0f90f95db26cac3da/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f/image.webp':
+      nativeView159_1,
     '/flashcards-transparent/course-practice/homework-media131/c9a3807987a15b65f82d65cf552c2bd0f98dfd6f9317bbc12edf5a21c5a73149/image.webp':
       region131Asset0,
     ...homeworkMediaImages('a2-11'),

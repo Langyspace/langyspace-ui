@@ -1,3 +1,4 @@
+import contextual161 from '../assets/b1-11-vocabulary161.webp'
 import data from './b1-11.json'
 import type { PreparedCourseData } from '../Course.types'
 import type { CourseLessonData } from '../Course.types'
@@ -17,6 +18,7 @@ import a12 from '../assets/audio/B111-D81.7.mp3'
 import a13 from '../assets/audio/B111-D81.8.mp3'
 import a14 from '../assets/audio/B111-L81.1.mp3'
 import i0 from '../assets/b1-11-vocabulary81.webp'
+import scene160 from '../assets/b1-11-scene160.png'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
@@ -96,6 +98,10 @@ const prepared: PreparedCourseData = {
       src: a14,
     },
   ],
-  images: { 'b1-11-vocabulary81': i0 },
+  images: {
+    'b1-11-vocabulary161': contextual161,
+    'b1-11-vocabulary81': i0,
+    'b1-11-scene160': scene160,
+  },
 }
 export default prepared

@@ -1,3 +1,9 @@
+import scene161_0 from '../assets/native-scene161/a2fcacf65e60fc6cdb45d69cea3008be2146b68aafa2d8deaa64ee1e73238432.webp'
+import scene161_1 from '../assets/native-scene161/33b0a62e9c4fc7e181d1bd5d704070acd776a70110f57dfaa6cc5f2227ea45bb.webp'
+import scene161_2 from '../assets/native-scene161/793600a3258e27b1c0822ae32b8d9ffcce6e0d915612b1078ea0a0a04f0b3f74.webp'
+import scene161_3 from '../assets/native-scene161/0eb6ff7c807a2e0354ec51f4d142b64b66eb8182c9fe68921a4b693f0fc28834.webp'
+import scene161_4 from '../assets/native-scene161/853e66a95b27fda84a1a51392483996bbfc921beb11ab93dbed09c8338a0eaca.webp'
+import scene161_5 from '../assets/native-scene161/efa005a4ae2726d0b014824b3c7b840413b76be82ac5aa3749c818de5f2e637b.webp'
 import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-08.json'
@@ -289,6 +295,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene161/a2fcacf65e60fc6cdb45d69cea3008be2146b68aafa2d8deaa64ee1e73238432/image.webp':
+      scene161_0,
+    '/flashcards-transparent/course-practice/native-scene161/33b0a62e9c4fc7e181d1bd5d704070acd776a70110f57dfaa6cc5f2227ea45bb/image.webp':
+      scene161_1,
+    '/flashcards-transparent/course-practice/native-scene161/793600a3258e27b1c0822ae32b8d9ffcce6e0d915612b1078ea0a0a04f0b3f74/image.webp':
+      scene161_2,
+    '/flashcards-transparent/course-practice/native-scene161/0eb6ff7c807a2e0354ec51f4d142b64b66eb8182c9fe68921a4b693f0fc28834/image.webp':
+      scene161_3,
+    '/flashcards-transparent/course-practice/native-scene161/853e66a95b27fda84a1a51392483996bbfc921beb11ab93dbed09c8338a0eaca/image.webp':
+      scene161_4,
+    '/flashcards-transparent/course-practice/native-scene161/efa005a4ae2726d0b014824b3c7b840413b76be82ac5aa3749c818de5f2e637b/image.webp':
+      scene161_5,
     ...homeworkMediaImages('b1-08'),
     '/flashcards/course-characters/ruby-bennett/image.webp': asset20,
     '/flashcards/course-characters/noah-ellis/image.webp': asset21,

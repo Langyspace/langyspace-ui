@@ -1,3 +1,9 @@
+import scene161_0 from '../assets/native-scene161/e6fbbbbfb6550382821b733164d2615423b9d3d831654cfc92a592c01c7bcd62.webp'
+import scene161_1 from '../assets/native-scene161/67d308a4e29a00a02e4a27215870de88b9aac5c2ce3f2fa215fc0bd960d060f5.webp'
+import scene161_2 from '../assets/native-scene161/834012bed10ddc1f0804a63b0856d1f582d911e1d541826db032311763bfed5b.webp'
+import scene161_3 from '../assets/native-scene161/3c8fbf97dbc6fca502935ab95beac523cece83fd20c1766bdd182721b9ebb47e.webp'
+import scene161_4 from '../assets/native-scene161/d4782addd166211a4415a8cb707d0be0974e91cc5c11bd662e4708131b466903.webp'
+import scene161_5 from '../assets/native-scene161/f606d81f580727e2b252c41277a5b25a664aeca11c981b8344d0eeabad7a41b1.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a2-02.json'
 import asset0 from '../../Course/assets/audio/A202-D81.1.mp3'
@@ -218,6 +224,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene161/e6fbbbbfb6550382821b733164d2615423b9d3d831654cfc92a592c01c7bcd62/image.webp':
+      scene161_0,
+    '/flashcards-transparent/course-practice/native-scene161/67d308a4e29a00a02e4a27215870de88b9aac5c2ce3f2fa215fc0bd960d060f5/image.webp':
+      scene161_1,
+    '/flashcards-transparent/course-practice/native-scene161/834012bed10ddc1f0804a63b0856d1f582d911e1d541826db032311763bfed5b/image.webp':
+      scene161_2,
+    '/flashcards-transparent/course-practice/native-scene161/3c8fbf97dbc6fca502935ab95beac523cece83fd20c1766bdd182721b9ebb47e/image.webp':
+      scene161_3,
+    '/flashcards-transparent/course-practice/native-scene161/d4782addd166211a4415a8cb707d0be0974e91cc5c11bd662e4708131b466903/image.webp':
+      scene161_4,
+    '/flashcards-transparent/course-practice/native-scene161/f606d81f580727e2b252c41277a5b25a664aeca11c981b8344d0eeabad7a41b1/image.webp':
+      scene161_5,
     '/flashcards-transparent/b1/conversation-starters/i-went-out/image.webp':
       expanded124Asset14,
     '/flashcards-transparent/b1/conversation-starters/i-had-a-great-time/image.webp':

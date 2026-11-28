@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Describe one finished travel experience",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Experiences in Lisbon",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "take a tram",
           "translation": "",
           "example": "Have you ever taken a tram?",
-          "imageUrl": "a2-08-vocabulary81",
+          "imageUrl": "a2-08-vocabulary161",
           "imageAlt": "take a tram",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A208-FS81.0",
@@ -70,13 +72,15 @@
           "word": "visit a castle",
           "translation": "",
           "example": "I visited a castle last year",
-          "imageUrl": "a2-08-vocabulary81",
+          "imageUrl": "a2-08-vocabulary161",
           "imageAlt": "visit a castle",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A208-FS81.1",
@@ -87,13 +91,15 @@
           "word": "try a pastel de nata",
           "translation": "",
           "example": "You should try a pastel de nata",
-          "imageUrl": "a2-08-vocabulary81",
+          "imageUrl": "a2-08-vocabulary161",
           "imageAlt": "try a pastel de nata",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A208-FS81.2",
@@ -104,13 +110,15 @@
           "word": "see the tiles",
           "translation": "",
           "example": "We saw beautiful tiles in the city",
-          "imageUrl": "a2-08-vocabulary81",
+          "imageUrl": "a2-08-vocabulary161",
           "imageAlt": "see the tiles",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A208-FS81.3",
@@ -121,13 +129,15 @@
           "word": "watch the sunset",
           "translation": "",
           "example": "I’d like to watch the sunset",
-          "imageUrl": "a2-08-vocabulary81",
+          "imageUrl": "a2-08-vocabulary161",
           "imageAlt": "watch the sunset",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A208-FS81.4",
@@ -138,13 +148,15 @@
           "word": "visit the aquarium",
           "translation": "",
           "example": "I haven’t visited the aquarium yet",
-          "imageUrl": "a2-08-vocabulary81",
+          "imageUrl": "a2-08-vocabulary161",
           "imageAlt": "visit the aquarium",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A208-FS81.5",
@@ -155,8 +167,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Ideas for Lisbon",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +226,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "A follow-up that fits",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -273,8 +285,8 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Compare travel experiences",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Talk about yourself",
+      "instruction": "Compare travel experiences. Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -305,36 +317,43 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Experience first, details next",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Ask about experience with the present perfect",
+      "instruction": "Use have or has plus a past participle for experience without a finished past date",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An experience, no finished date",
-          "verb": "Have you ever …? / I’ve …",
-          "example": "Have you ever taken a tram? — Yes, I have"
+          "subject": "Experience",
+          "verb": "subject + have / has + past participle",
+          "example": "I’ve been to Lisbon. She has taken a tram"
         },
         {
           "id": "1",
-          "subject": "Not an experience yet",
-          "verb": "I’ve never … / I haven’t … yet",
-          "example": "I haven’t visited the aquarium yet"
+          "subject": "Negative experience",
+          "verb": "haven’t / hasn’t + participle / have / has never + participle",
+          "example": "I haven’t visited the aquarium yet. I’ve never been there"
         },
         {
           "id": "2",
-          "subject": "Details of one finished occasion",
-          "verb": "When did you …? / past simple",
-          "example": "When did you go? — I went last year"
+          "subject": "Questions and short answers",
+          "verb": "Have / Has + subject + ever + past participle?",
+          "example": "Have you ever taken a tram? — Yes, I have / No, I haven’t"
+        },
+        {
+          "id": "participle",
+          "subject": "The past participle",
+          "verb": "regular: verb-ed / irregular: learn the form",
+          "example": "visit → visited; be → been; go → gone; take → taken"
         }
-      ]
+      ],
+      "note": "I/you/we/they have; he/she/it has. Ask for a finished date with past simple: When did you go? — I went last year."
     },
     {
       "id": "s_mission",
@@ -347,8 +366,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "One experience, one plan",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "One experience, one plan. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! A quick update from Lisbon. I’ve tried a pastel de nata now, and I loved it. I had one at a small café this morning. I haven’t visited the aquarium yet. I’m thinking of going tomorrow, but I haven’t booked a ticket. Have you ever been? I’d love to know what you thought of it before I decide",
@@ -384,8 +403,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Give a useful recommendation",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Give a useful recommendation. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -393,7 +412,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Have you ever visited him?",
+      "title": "Watch and answer",
       "instruction": "Watch Sam talk about visits, then ask about a real experience",
       "minutes": 4,
       "video": {
@@ -453,7 +472,7 @@
     "s_mission": {
       "type": "choices",
       "title": "Experience options",
-      "image": "a2-08-vocabulary81",
+      "image": "a2-08-vocabulary161",
       "options": [
         {
           "id": "tram",

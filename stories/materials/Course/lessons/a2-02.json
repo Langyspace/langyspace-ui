@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Compare one usual activity with yesterday",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Weekend moments",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "visited a museum",
           "translation": "",
           "example": "I visited a museum on Sunday",
-          "imageUrl": "a2-02-vocabulary81",
+          "imageUrl": "a2-02-vocabulary161",
           "imageAlt": "visited a museum",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A202-FS81.0",
@@ -70,13 +72,15 @@
           "word": "went to a market",
           "translation": "",
           "example": "We went to a market in the morning",
-          "imageUrl": "a2-02-vocabulary81",
+          "imageUrl": "a2-02-vocabulary161",
           "imageAlt": "went to a market",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A202-FS81.1",
@@ -87,13 +91,15 @@
           "word": "had coffee",
           "translation": "",
           "example": "I had coffee with a friend",
-          "imageUrl": "a2-02-vocabulary81",
+          "imageUrl": "a2-02-vocabulary161",
           "imageAlt": "had coffee",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A202-FS81.2",
@@ -104,13 +110,15 @@
           "word": "took photos",
           "translation": "",
           "example": "We took photos by the river",
-          "imageUrl": "a2-02-vocabulary81",
+          "imageUrl": "a2-02-vocabulary161",
           "imageAlt": "took photos",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A202-FS81.3",
@@ -121,13 +129,15 @@
           "word": "walked on the beach",
           "translation": "",
           "example": "She walked on the beach for an hour",
-          "imageUrl": "a2-02-vocabulary81",
+          "imageUrl": "a2-02-vocabulary161",
           "imageAlt": "walked on the beach",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A202-FS81.4",
@@ -138,13 +148,15 @@
           "word": "stayed at home",
           "translation": "",
           "example": "I stayed at home and watched a film",
-          "imageUrl": "a2-02-vocabulary81",
+          "imageUrl": "a2-02-vocabulary161",
           "imageAlt": "stayed at home",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A202-FS81.5",
@@ -155,8 +167,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Saturday at the market",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +226,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "A quiet Sunday",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -273,7 +285,7 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Tell a weekend story",
+      "title": "Describe what happened",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
@@ -305,36 +317,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Tell the action and say how it was",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build past simple statements and questions",
+      "instruction": "Use past simple for finished events; choose did for action verbs and was or were for be",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Place or opinion in the past",
-          "verb": "was / were",
-          "example": "The market was busy. We were tired"
+          "subject": "Finished action",
+          "verb": "subject + regular -ed / irregular past verb",
+          "example": "I visited a market. We went to a café"
         },
         {
           "id": "1",
-          "subject": "A finished action",
-          "verb": "went / had / took / stayed",
-          "example": "I went to a market. Then I had coffee"
+          "subject": "Negative action",
+          "verb": "subject + didn’t + base verb",
+          "example": "I didn’t stay at home. She didn’t take photos"
         },
         {
           "id": "2",
-          "subject": "Ask about the action",
+          "subject": "Ask about an action",
           "verb": "Did + subject + base verb?",
-          "example": "Did you take photos? — Yes, I did"
+          "example": "Did you go out? — Yes, I did. What did you do?"
         }
-      ]
+      ],
+      "note": "Common past forms: go → went, have → had, take → took. After did/didn’t, use the base verb. Be is different: I/he/she was; you/we/they were. Was it busy? — Yes, it was."
     },
     {
       "id": "s_mission",
@@ -347,8 +360,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "What Niamh actually did",
-      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "What Niamh actually did. Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! You asked about my Sunday. I didn’t visit the museum in the end. The weather was beautiful, so I went to the beach instead",
@@ -392,8 +405,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Ask about the change",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Ask about the change. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -401,7 +414,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "A story with an unexpected ending",
+      "title": "Watch and answer",
       "instruction": "Watch Bob tell his story, then react to someone else’s news",
       "minutes": 4,
       "video": {
@@ -461,7 +474,7 @@
     "s_mission": {
       "type": "choices",
       "title": "Weekend pictures",
-      "image": "a2-02-vocabulary81",
+      "image": "a2-02-vocabulary161",
       "options": [
         {
           "id": "out",

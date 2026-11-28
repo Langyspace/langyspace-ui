@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall an arrangement and a reason to check it",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Progress and delivery",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -168,8 +168,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Can we promise Friday morning?",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "At the handover",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -286,8 +286,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "A commitment with conditions",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -346,43 +346,44 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Check what will be ready",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "You prepare the event pack. Teacher coordinates the volunteers. Discuss what can be ready by Friday",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "In progress then, or completed by then?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare future continuous and future perfect",
+      "instruction": "Distinguish an activity in progress at a future time from something complete before it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "In progress at a future moment",
+          "subject": "In progress at a future time",
           "verb": "will be + verb-ing",
-          "example": "At ten, I’ll be handing over the packs"
+          "example": "At ten, I’ll be welcoming the volunteers"
         },
         {
           "id": "1",
-          "subject": "Completed before a future point",
-          "verb": "will have + past participle + by",
-          "example": "By Thursday evening, I’ll have finished the version"
+          "subject": "Complete before a future point",
+          "verb": "will have + past participle",
+          "example": "By Friday, I’ll have finished the pack"
         },
         {
           "id": "2",
-          "subject": "Make the condition explicit",
-          "verb": "provided / as long as + clause",
-          "example": "We’ll meet the deadline provided the brief doesn’t change"
+          "subject": "Negative and question",
+          "verb": "won’t have + participle / Will + subject + have + participle?",
+          "example": "I won’t have finished by Thursday. Will you have finished by Friday?"
         }
-      ]
+      ],
+      "note": "At ten locates an activity; by ten sets a completion limit. Future promises may need a condition: I’ll have finished by Friday if the comments arrive on time."
     },
     {
       "id": "s_mission",
@@ -395,8 +396,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "The review has slipped",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "The review has slipped. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. The draft is ready, but the review has moved from Wednesday to Thursday afternoon. The final changes still need roughly one working day after we receive the comments. That means we shouldn’t promise the final pack for Friday morning. We can have a short welcome sheet ready by ten, while the full pack is still being checked. Could you ask whether that would cover the volunteers’ immediate needs? If it does, we can agree a later handover for the complete version rather than quietly sending an unchecked draft. We also need to make clear that a new section would require another estimate",
@@ -432,8 +433,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Negotiate a staged handover",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Negotiate a staged handover. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -441,7 +442,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "What will be finished by the deadline?",
+      "title": "Watch and answer",
       "instruction": "Watch the work plan, then make a realistic commitment with one dependency",
       "minutes": 4,
       "video": {
@@ -580,49 +581,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Event-pack schedule",
       "facts": [
         {
           "id": "0",
-          "label": "Tuesday",
-          "value": "Draft"
+          "label": "Draft and review",
+          "value": "Draft Tuesday · comments expected Wednesday"
         },
         {
           "id": "1",
-          "label": "Wednesday",
-          "value": "Review · comments needed"
+          "label": "Final preparation",
+          "value": "One working day after review comments"
         },
         {
           "id": "2",
-          "label": "Friday 10 am",
-          "value": "Volunteer handover"
+          "label": "Volunteer arrival",
+          "value": "Friday · 10 am · welcome sheet can be prepared separately"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "What will be ready by Friday?",
-          "cue": "Commit only to what the schedule supports",
-          "hint": "By Friday, I’ll have …",
-          "answer": "One possible response"
+          "prompt": "Will the final pack be ready by Friday?",
+          "cue": "Make a promise that depends on the review",
+          "hint": "We’ll have finished it by Friday if the comments arrive on Wednesday"
         },
         {
           "id": "1",
-          "prompt": "What will you be doing when the others arrive?",
-          "cue": "Describe an activity in progress at that future time",
-          "hint": "I’ll be … when …",
-          "answer": "One possible response"
+          "prompt": "What will you be doing when the volunteers arrive?",
+          "cue": "Describe your plan for welcoming them",
+          "hint": "I’ll be welcoming them and explaining what is ready"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you make the commitment clear to the other person?",
-          "cue": "State the promise and its condition, then check the interpretation",
-          "hint": "We can commit to … provided that … Does that match your understanding?",
-          "answer": "One possible response"
+          "prompt": "What if the review comments arrive late?",
+          "cue": "Explain what needs to change before promising the pack",
+          "hint": "We’ll need to review the deadline if the comments arrive late"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Event-pack schedule"
     }
   }
 }

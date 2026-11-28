@@ -114,3 +114,39 @@ it('keeps an active media error inside the shared frame', () => {
     view.container.querySelector('[data-ui-flashcard-session]'),
   ).toContainElement(screen.getByRole('alert'))
 })
+
+it('keeps atlas art and the full example through front/back interaction', () => {
+  const onFlip = vi.fn(),
+    onRate = vi.fn()
+  const props: FlashcardSessionProps = {
+    ...base,
+    onFlip,
+    onRate,
+    card: {
+      ...base.card!,
+      image: {
+        src: '/six-actions.webp',
+        alt: 'A woman carrying a box',
+        region: {
+          columns: 3,
+          rows: 2,
+          column: 0,
+          row: 0,
+          sourceAspectRatio: 1.5,
+        },
+      },
+    },
+  }
+  const view = render(<FlashcardSession {...props} />)
+  expect(
+    screen.getByRole('img', { name: 'A woman carrying a box' }),
+  ).toBeVisible()
+  expect(view.container.querySelector('img')).toBeNull()
+  expect(screen.getByText('I wake up early')).toBeVisible()
+  fireEvent.click(screen.getByRole('button', { name: 'Flip' }))
+  expect(onFlip).toHaveBeenCalledTimes(1)
+  view.rerender(<FlashcardSession {...props} flipped />)
+  expect(screen.getByText('Eu acordo cedo')).toBeVisible()
+  fireEvent.click(screen.getByRole('button', { name: /Easy/ }))
+  expect(onRate).toHaveBeenCalledExactlyOnceWith('easy')
+})

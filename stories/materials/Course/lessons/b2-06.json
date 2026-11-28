@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall explaining a service problem politely",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Arranging a service",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -168,8 +168,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "A repair before a trip",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "What counts as ready?",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -286,8 +286,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "A contingency to confirm",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -346,43 +346,44 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Arrange a repair",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "You need your phone repaired before a trip. Teacher works at the repair shop. Agree on the repair and timing",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "The service, its progress and its completed steps",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Arrange a service with have or get",
+      "instruction": "Use have/get plus an object and past participle when someone else does the work",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Arrange for someone else to do it",
+          "subject": "Arrange the service",
           "verb": "have / get + object + past participle",
-          "example": "I need to get my screen fixed"
+          "example": "I need to get my screen fixed. I had my phone repaired"
         },
         {
           "id": "1",
-          "subject": "Service in progress",
-          "verb": "is being + past participle",
+          "subject": "Describe work in progress",
+          "verb": "am / is / are being + past participle",
           "example": "The phone is being tested"
         },
         {
           "id": "2",
-          "subject": "Completed step, not necessarily whole service",
-          "verb": "has been + past participle",
+          "subject": "Describe a completed step",
+          "verb": "has / have been + past participle",
           "example": "The screen has been fitted, but testing isn’t finished"
         }
-      ]
+      ],
+      "note": "The object goes before the participle: get my screen fixed. Compare I repaired it myself with I had it repaired: in the second, someone else did the repair."
     },
     {
       "id": "s_mission",
@@ -395,8 +396,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Fitted, but still being tested",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Fitted, but still being tested. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. The new screen has been fitted, but the phone is still being tested. The shop now expects collection on Saturday at five, one day later than planned. They do have a temporary phone available from Friday at four, free of charge, to be returned when you collect yours. That may cover the trip, but you’d need to check that it supports what you need and arrange your own account access. Could you respond to the shop, confirm the revised collection time and ask one relevant question about the temporary phone? The repair quote remains eighty dollars",
@@ -432,8 +433,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Confirm the repair and the temporary solution",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Confirm the repair and the temporary solution. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -441,40 +442,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Is the repair arranged or finished?",
-      "instruction": "Watch the hotel offer help, then negotiate a service deadline",
-      "minutes": 4,
+      "title": "Has it really been fixed?",
+      "instruction": "Compare the repair claim with the evidence, then ask for a check",
+      "minutes": 5,
       "video": {
-        "videoId": "FJrRiVjeOMc",
-        "startSeconds": 581,
-        "endSeconds": 625,
-        "title": "Hotel English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "yxSCWHRAmRU",
+        "startSeconds": 5,
+        "endSeconds": 83,
+        "title": "Getting a fake repair job",
+        "credit": "Viva La Dirt League"
       },
       "items": [
         {
           "id": "b2-06.video102.q1",
-          "prompt": "What does the receptionist promise about the heating?",
-          "hint": "Listen for I’ll send",
-          "answer": "The receptionist promises to send somebody to look at it"
+          "prompt": "What problem does the customer report?",
+          "hint": "Listen for what happened after he took it home",
+          "answer": "The computer he bought the previous day does not work, and he needs it for his job"
         },
         {
           "id": "b2-06.video102.q2",
-          "prompt": "Does the excerpt show the heating being repaired?",
-          "hint": "Distinguish the promise from a completed repair",
-          "answer": "No. It shows an offer to investigate, not a completed repair"
+          "prompt": "What does the employee actually do?",
+          "hint": "Compare the customer’s description with the employee’s claim",
+          "answer": "According to the customer, he puts a power tool over the keyboard, then claims the repair is complete"
         },
         {
           "id": "b2-06.video102.q3",
-          "prompt": "Which problem can the receptionist address immediately?",
-          "hint": "Listen to right now",
-          "answer": "The receptionist can make a new key immediately"
+          "prompt": "What evidence of a successful repair is missing?",
+          "hint": "What would show that the original problem has gone away?",
+          "answer": "The dialogue supplies neither a clear diagnosis nor a successful test of the original fault"
         },
         {
           "id": "b2-06.video102.q4",
-          "prompt": "Arrange a phone-screen repair and check the deadline",
-          "hint": "Use get it fixed and ask for a realistic collection time",
-          "answer": "Example: I need to get the screen fixed. Can you confirm whether it will be ready by Thursday?"
+          "prompt": "What would you ask before agreeing to pay?",
+          "hint": "Ask for a practical demonstration",
+          "answer": "Example: Could you show me that the computer has been fixed before I pay?"
         }
       ]
     },
@@ -585,7 +586,7 @@
         {
           "id": "0",
           "label": "Result needed",
-          "value": "Working, tested screen"
+          "value": "Phone screen fitted and tested · needed before a trip"
         },
         {
           "id": "1",
@@ -601,28 +602,25 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What do you need to have done?",
-          "cue": "Describe the service and the expected result",
-          "hint": "I need to get …",
-          "answer": "One possible response"
+          "prompt": "What do you need to have done before your trip?",
+          "cue": "Name the service and the finished result",
+          "hint": "I need to get the phone screen repaired and tested"
         },
         {
           "id": "1",
-          "prompt": "Will it be ready in time?",
-          "cue": "Ask about progress and negotiate a deadline",
-          "hint": "Could you confirm when …?",
-          "answer": "One possible response"
+          "prompt": "The estimate is Friday at five. What would you like me to confirm?",
+          "cue": "Ask whether testing will be complete by collection",
+          "hint": "Could you confirm it will be fitted and tested by Friday at five?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What would make your proposal workable for both sides?",
-          "cue": "Offer a condition and invite a counterproposal",
-          "hint": "I could agree to … as long as … What would you need?",
-          "answer": "One possible response"
+          "prompt": "What if testing isn’t finished by then?",
+          "cue": "Discuss a backup without assuming it is available",
+          "hint": "Could I have a temporary phone while you finish testing?"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your phone-repair request"
     }
   }
 }

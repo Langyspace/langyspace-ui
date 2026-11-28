@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall briefing different audiences",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Audience, tone and action",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -155,36 +155,36 @@
     {
       "id": "s_source0",
       "kind": "source",
-      "title": "The shared factual brief",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Event update card · simulated source",
-      "subject": "Fictional dates: December 2026",
+      "subject": "The event update",
       "paragraphs": [
-        "This simulated message is prepared on Thursday 3 December 2026. The event is moving from Friday 4 December to Monday 7 December. It will still start at ten in the morning in room two. Organisers need an attendance response by Friday 4 December at five in the afternoon. These are fixed facts for both versions of the task.",
-        "The first recipient is a client who needs a concise professional update and a clear requested action. The second is a friend who can receive a more informal message. Neither version should imply that simply reading the update counts as agreement to attend. Do not replace the fixed dates with relative expressions that change when the message is read."
-      ]
+        "The update is being prepared on Thursday 3 December 2026. The event has moved from Friday 4 December to Monday 7 December. The start time remains 10 am, and the room remains room 2.",
+        "Recipients must confirm whether they can attend by 5 pm on Friday 4 December. They are being asked to confirm attendance, not merely acknowledge that they have read the update."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
-      "title": "What a recipient needs",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Communication review · simulated source",
-      "subject": "A useful response, not just a polite message",
+      "subject": "The same facts for two audiences",
       "paragraphs": [
-        "A recipient can understand the new date without understanding what reply is expected. “Please acknowledge” may ask only for confirmation that the message has been read. “Please confirm whether you can attend” requests a different commitment. The wording should match the information the organiser actually needs.",
-        "Register can change the opening, degree of distance and length. It should not change the date, location or deadline, or hide the action under elaborate courtesy. The task is to make two natural versions of the same update, then repair one specific ambiguity if the recipient asks. Clear informal language is a valid choice for the appropriate relationship."
-      ]
+        "The client version opens formally: “I’m writing to let you know that the event has been rescheduled.” The friend version begins: “Quick update: the event has moved.”",
+        "Both versions give Monday 7 December, 10 am, room 2 and the Friday 4 December 5 pm attendance deadline. The tone changes with the relationship; the event details and requested action do not."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Audience and action first",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -242,8 +242,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "A deadline that survives late reading",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -301,8 +301,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "Adapt the tone, keep the facts",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -361,57 +361,23 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Adapt the message to its reader",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "Use the event facts to give Teacher a client version and a friend version. Keep the requested reply clear",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Choose the register for its effect, not its complexity",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "A clear professional purpose",
-          "verb": "I’m writing to let you know …",
-          "example": "I’m writing to let you know the event date has changed"
-        },
-        {
-          "id": "1",
-          "subject": "A natural shorter update",
-          "verb": "Quick update: … / Just to let you know …",
-          "example": "Quick update: it’s Monday now, same time and room"
-        },
-        {
-          "id": "2",
-          "subject": "An explicit action, not vague acknowledgement",
-          "verb": "Please confirm whether … by …",
-          "example": "Please confirm whether you can attend by Friday 4 December at 5 pm"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Same news, different audience",
-      "instruction": "Give the same update to two people in an appropriate way",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Acknowledgement is not attendance",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Acknowledgement is not attendance. Listen for the new information and decide how to respond",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I’ve read the event update, but I’m not sure what you need from me. When you say “please acknowledge”, do you only want me to confirm I’ve seen the message, or do you need to know whether I can attend on Monday? I can send either, but they aren’t the same commitment. Could you also give the response deadline as a day and time rather than “tomorrow”? I sometimes read messages after the day they were sent. The new date, same ten o’clock start and room two are clear. It’s the requested action that needs clarification, so there’s no need to rewrite every factual detail or make the wording more elaborate",
@@ -447,16 +413,16 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Clarify only the missing action",
-      "instruction": "Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Same words, different interpretations",
+      "title": "Watch and answer",
       "instruction": "Watch how wording and relationships affect meaning, then make an update’s action clear",
       "minutes": 4,
       "video": {
@@ -514,110 +480,64 @@
   ],
   "activities": {
     "s_mission": {
-      "type": "choices",
-      "title": "Same update · two relationships",
-      "options": [
-        {
-          "id": "client",
-          "title": "Client",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Change",
-              "value": "Friday 4 → Monday 7 December"
-            },
-            {
-              "id": "1",
-              "label": "Unchanged",
-              "value": "10 am · room 2"
-            },
-            {
-              "id": "2",
-              "label": "Action",
-              "value": "Confirm attendance by Friday 4 · 5 pm"
-            }
-          ]
-        },
-        {
-          "id": "friend",
-          "title": "Friend",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Change",
-              "value": "Friday 4 → Monday 7 December"
-            },
-            {
-              "id": "1",
-              "label": "Unchanged",
-              "value": "10 am · room 2"
-            },
-            {
-              "id": "2",
-              "label": "Action",
-              "value": "Confirm attendance by Friday 4 · 5 pm"
-            }
-          ]
-        }
-      ],
+      "type": "facts",
+      "title": "Same update, different tone",
       "questions": [
         {
           "id": "update",
-          "prompt": "How would you announce the change to your chosen recipient?",
-          "hint": "I’m writing to … / Quick update: …"
+          "prompt": "Which opening is used in the message to the client?",
+          "answer": "The client message opens, “I’m writing to let you know that the event has been rescheduled.”",
+          "hint": "Find the opening explicitly identified as the client version."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "How would you state what remains unchanged?",
-          "hint": "The … and … remain …"
+          "prompt": "What changed, and which two event details stayed the same?",
+          "answer": "The date changed to Monday 7 December; the 10 am start and room 2 stayed the same.",
+          "hint": "Distinguish the new date from the unchanged time and room."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "How would you request attendance confirmation precisely?",
-          "hint": "Please confirm whether … by Friday …"
+          "prompt": "What must recipients confirm, and by when?",
+          "answer": "They must confirm attendance by 5 pm on Friday 4 December.",
+          "hint": "Find the requested action and deadline, not just the event date."
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Same update, different tone",
+      "referenceParagraphs": [
+        "The client message opens, “I’m writing to let you know that the event has been rescheduled.” The friend message begins, “Quick update: the event has moved.”",
+        "Both say that the event has moved from Friday 4 December to Monday 7 December 2026. It still starts at 10 am in room 2. Both ask recipients to confirm attendance by 5 pm on Friday 4 December."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "The recipient understood the facts",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Clear",
-          "value": "Monday 7 December · 10 am · room 2"
-        },
-        {
-          "id": "1",
-          "label": "Unclear",
-          "value": "Read receipt or attendance confirmation?"
-        },
-        {
-          "id": "2",
-          "label": "Deadline",
-          "value": "Friday 4 December · 5 pm"
-        }
-      ],
+      "title": "Receipt or attendance?",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you distinguish attendance from receipt?",
-          "hint": "I need to know whether …, rather than only …"
+          "prompt": "Which event details has the recipient already understood?",
+          "answer": "They have understood Monday 7 December, 10 am and room 2.",
+          "hint": "Find the information that does not need explaining again."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "What explicit response deadline would you give?",
-          "hint": "Please reply by … on …"
+          "prompt": "What distinction is the recipient unsure about?",
+          "answer": "They are unsure whether to acknowledge reading the message or confirm attendance.",
+          "hint": "Look for the two possible interpretations."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "How would you preserve clarity without rewriting everything?",
-          "hint": "The date, time and room …; the action I need is …"
+          "prompt": "Why would “I’ve read this” be insufficient?",
+          "answer": "It would not confirm whether the recipient will attend.",
+          "hint": "Compare a read receipt with the sender’s actual request."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "The recipient understood the facts"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Receipt or attendance?",
+      "referenceParagraphs": [
+        "The recipient has understood the new date, Monday 7 December, and the unchanged time and place: 10 am in room 2. However, they are unsure whether the sender wants a read receipt or confirmation that they will attend.",
+        "The sender needs confirmation of attendance by 5 pm on Friday 4 December. A message saying only “I’ve read this” would not answer that request."
+      ]
     },
     "s_personal": {
       "type": "choices",
@@ -625,24 +545,21 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "Who is this message for, and what do they need to do?",
-          "cue": "Identify audience and action before choosing the tone",
-          "hint": "It’s for … They need to …",
-          "answer": "One possible response"
+          "prompt": "What do you need the client to know and do?",
+          "cue": "State the new date and request an attendance reply",
+          "hint": "The event is now on Monday 7 December. Please confirm attendance by Friday 4 at five"
         },
         {
           "id": "1",
-          "prompt": "How would you say the same thing to a friend?",
-          "cue": "Keep the facts and change the register",
-          "hint": "Quick update: … Could you …?",
-          "answer": "One possible response"
+          "prompt": "How would you give that same update to a friend?",
+          "cue": "Change the tone while keeping the date and action",
+          "hint": "Quick update: it’s moved to Monday 7. Can you let me know by Friday at five?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check that your wording cannot be misread?",
-          "cue": "Test the intended action and clarify one ambiguous phrase",
-          "hint": "To be clear, I’m asking for … rather than … How might that come across?",
-          "answer": "One possible response"
+          "prompt": "Does confirming receipt mean they’ve agreed to attend?",
+          "cue": "Clarify the exact reply required",
+          "hint": "No. We need to know whether they can attend, not just that they read the message"
         }
       ],
       "options": [
@@ -689,7 +606,8 @@
           ]
         }
       ],
-      "questionPurpose": "conversation"
+      "questionPurpose": "conversation",
+      "referenceLabel": "The same event update · two recipients"
     }
   }
 }

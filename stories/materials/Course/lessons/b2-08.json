@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall needs versus preferences",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Reading an apartment listing",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "a balcony",
           "translation": "",
           "example": "The apartment has a balcony",
-          "imageUrl": "b2-08-vocabulary81",
+          "imageUrl": "b2-08-vocabulary161",
           "imageAlt": "a balcony",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B208-FS81.0",
@@ -70,13 +72,15 @@
           "word": "a viewing",
           "translation": "",
           "example": "I’d arrange a viewing before deciding",
-          "imageUrl": "b2-08-vocabulary81",
+          "imageUrl": "b2-08-vocabulary161",
           "imageAlt": "a viewing",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B208-FS81.1",
@@ -87,13 +91,15 @@
           "word": "a neighbourhood",
           "translation": "",
           "example": "The neighbourhood is close to the metro",
-          "imageUrl": "b2-08-vocabulary81",
+          "imageUrl": "b2-08-vocabulary161",
           "imageAlt": "a neighbourhood",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B208-FS81.2",
@@ -104,13 +110,15 @@
           "word": "a listing",
           "translation": "",
           "example": "The listing doesn’t confirm the full cost",
-          "imageUrl": "b2-08-vocabulary81",
+          "imageUrl": "b2-08-vocabulary161",
           "imageAlt": "a listing",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B208-FS81.3",
@@ -121,13 +129,15 @@
           "word": "a landlord",
           "translation": "",
           "example": "Ask the landlord about the fee",
-          "imageUrl": "b2-08-vocabulary81",
+          "imageUrl": "b2-08-vocabulary161",
           "imageAlt": "a landlord",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B208-FS81.4",
@@ -138,13 +148,15 @@
           "word": "a maintenance fee",
           "translation": "",
           "example": "The maintenance fee is added to the rent",
-          "imageUrl": "b2-08-vocabulary81",
+          "imageUrl": "b2-08-vocabulary161",
           "imageAlt": "a maintenance fee",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "B208-FS81.5",
@@ -168,8 +180,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Start with the brief",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -227,8 +239,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Check the missing cost",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -286,8 +298,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "A recommendation with a caveat",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -346,43 +358,44 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Decide which details matter",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "Teacher works from home two days a week and has under $1,000 a month. Recommend a place and check missing details",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Identify the option or add a relevant detail",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish defining and non-defining relative clauses",
+      "instruction": "Choose whether the relative clause identifies a noun or adds extra information",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A clause needed to identify",
-          "verb": "noun + who / which / that + clause",
-          "example": "The person who works from home needs a work area"
+          "subject": "Identify which one",
+          "verb": "noun + who / which / that + clause; no commas",
+          "example": "The apartment that has a separate room could suit you"
         },
         {
           "id": "1",
-          "subject": "An extra detail about an identified thing",
-          "verb": "commas + who / which + clause",
-          "example": "C, which has a balcony, is further from the metro than A"
+          "subject": "Add extra information",
+          "verb": "identified noun, who / which + clause, …",
+          "example": "Apartment B, which has a separate room, costs $850"
         },
         {
           "id": "2",
-          "subject": "Comment on the whole previous idea",
-          "verb": "comma + which + clause",
+          "subject": "Comment on an entire idea",
+          "verb": "clause, which + clause",
           "example": "B has a separate room, which may make working easier"
         }
-      ]
+      ],
+      "note": "Use commas for extra information and do not use that in a non-defining clause. For a comment on the whole previous idea, use which."
     },
     {
       "id": "s_mission",
@@ -395,8 +408,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "The advertised rent wasn’t the total",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "The advertised rent wasn’t the total. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. The landlord has confirmed that apartment C has a maintenance fee of one hundred and fifty dollars a month, on top of the nine hundred and fifty rent. That takes the total to eleven hundred, above the profile’s firm thousand-dollar limit. The balcony is still appealing, but it doesn’t remove the budget constraint. A and B haven’t changed. Could you revise the recommendation, explain which detail changes it and ask which of the remaining trade-offs matters more? We still need to see whether the work corner in A is comfortable enough for two home-working days a week",
@@ -432,8 +445,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Revise the recommendation",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Revise the recommendation. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -441,40 +454,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Add the detail that helps someone choose",
-      "instruction": "Watch the home descriptions, then recommend a place with relevant extra information",
-      "minutes": 4,
+      "title": "Would this apartment suit you?",
+      "instruction": "Weigh the price, shared facilities and limitations before recommending the apartment",
+      "minutes": 7,
       "video": {
-        "videoId": "kzkEGEjkb30",
-        "startSeconds": 190,
-        "endSeconds": 226,
-        "title": "Talking about your home — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "1MoN5tli3gA",
+        "startSeconds": 185.3,
+        "endSeconds": 287.15,
+        "title": "New York’s Smallest Apartment Has No Bathroom…",
+        "credit": "Cash Jordan"
       },
       "items": [
         {
           "id": "b2-08.video102.q1",
-          "prompt": "Which rooms and outdoor space appear in the first example?",
-          "hint": "Listen before the description becomes more detailed",
-          "answer": "The house has two bedrooms, a kitchen, a living room and a garden"
+          "prompt": "What price and size does the presenter quote?",
+          "hint": "Listen for the amount, then the floor area",
+          "answer": "He quotes 1,300 dollars and says the apartment is 65 square feet, about thirteen feet by five feet"
         },
         {
           "id": "b2-08.video102.q2",
-          "prompt": "What new detail is added about the kitchen?",
-          "hint": "Listen for the furniture in it",
-          "answer": "The kitchen has a dining table"
+          "prompt": "Where is the bathroom, and what does he estimate about sharing?",
+          "hint": "Notice where he walks and the words I think",
+          "answer": "The bathroom is down the hall, outside the apartment. He thinks it is shared with four or six other apartments; he does not give a confirmed exact number"
         },
         {
           "id": "b2-08.video102.q3",
-          "prompt": "What detail is added about the living room?",
-          "hint": "Listen to the description of the windows",
-          "answer": "The living room has big windows"
+          "prompt": "What does he say about cleaning the shared facilities?",
+          "hint": "Listen for the people who do the cleaning",
+          "answer": "Maintenance staff and the superintendent who lives in the building clean the shared facilities, instead of leaving the job to a possibly messy roommate"
         },
         {
           "id": "b2-08.video102.q4",
-          "prompt": "Recommend a flat and add one useful extra detail",
-          "hint": "Use which and explain why the detail matters",
-          "answer": "Example: This flat, which has a balcony, would suit you because you like sitting outside"
+          "prompt": "Would you recommend it? Use which and name one cost to check",
+          "hint": "Use the stated features; do not assume bills are included",
+          "answer": "Example: I would not recommend this apartment, which has no private bathroom, to someone who needs privacy and space to work. Before comparing its price with another flat, I would ask whether utilities and any fees are included"
         }
       ]
     },
@@ -675,29 +688,26 @@
       "referenceLabel": "C now costs $1,100 · A and B unchanged"
     },
     "s_personal": {
-      "type": "choices",
+      "type": "comparison",
       "title": "Situation reference",
       "questions": [
         {
           "id": "0",
-          "prompt": "Which detail changes your opinion?",
-          "cue": "Explain the relevance of one feature",
-          "hint": "The first one, which …, would …",
-          "answer": "One possible response"
+          "prompt": "Which apartment would you recommend for working from home?",
+          "cue": "Match an apartment to the work-space need and budget",
+          "hint": "This apartment could work if its workspace meets your needs"
         },
         {
           "id": "1",
-          "prompt": "What would you ask before deciding?",
-          "cue": "Identify a missing detail and formulate a question",
-          "hint": "I’d want to know whether …",
-          "answer": "One possible response"
+          "prompt": "Which apartment still needs its total cost checked?",
+          "cue": "Identify the unconfirmed fee, then compare it with the budget",
+          "hint": "C is listed at $950, but the unconfirmed fee could change its total"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain your recommendation to that person?",
-          "cue": "Link your choice to their priority, then invite a concern",
-          "hint": "Given that you need …, I’d recommend … What might I be overlooking?",
-          "answer": "One possible response"
+          "prompt": "What else should I check before renting an apartment?",
+          "cue": "Ask about a missing detail that could change your advice",
+          "hint": "I’d check whether the workspace is suitable for your work"
         }
       ],
       "options": [
@@ -714,6 +724,11 @@
               "id": "1",
               "label": "Location",
               "value": "Near the metro"
+            },
+            {
+              "id": "workspace167",
+              "label": "Workspace",
+              "value": "Compact work corner"
             }
           ],
           "pictures": [
@@ -737,6 +752,11 @@
               "id": "1",
               "label": "Location",
               "value": "Twenty-minute walk to metro"
+            },
+            {
+              "id": "workspace167",
+              "label": "Workspace",
+              "value": "Separate room"
             }
           ],
           "pictures": [
@@ -760,6 +780,11 @@
               "id": "1",
               "label": "Location",
               "value": "Ten-minute walk to metro"
+            },
+            {
+              "id": "workspace167",
+              "label": "Workspace",
+              "value": "Balcony and work corner"
             }
           ],
           "pictures": [
@@ -777,7 +802,8 @@
         "columns": 3,
         "rows": 1,
         "sourceAspectRatio": 3
-      }
+      },
+      "referenceLabel": "Apartments for Teacher’s housing search"
     }
   }
 }

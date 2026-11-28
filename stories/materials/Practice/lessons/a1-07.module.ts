@@ -1,3 +1,9 @@
+import nativeView159_0 from '../assets/native-crop159/b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b.webp'
+import nativeView159_1 from '../assets/native-crop159/22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd.webp'
+import nativeView159_2 from '../assets/native-crop159/6994b7c845a1a8e26feaeed5c9caed8029604407bbd2e22b6f134499ee81f1d0.webp'
+import nativeView159_3 from '../assets/native-crop159/a7bc6394b91cb95fbe3617b4514ccbe7f2b3e1afd218145fcb844d91637db8e9.webp'
+import nativeView159_4 from '../assets/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f.webp'
+import nativeView159_5 from '../assets/native-crop159/d4ed472d41256418aa902f06ea8565c4c87ea24ce52d3c594c95da4b84fa8eb2.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-07.json'
 import asset0 from '../../Course/assets/audio/A107-D81.1.mp3'
@@ -186,6 +192,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-crop159/b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd/image.webp':
+      nativeView159_1,
+    '/flashcards-transparent/course-practice/native-crop159/6994b7c845a1a8e26feaeed5c9caed8029604407bbd2e22b6f134499ee81f1d0/image.webp':
+      nativeView159_2,
+    '/flashcards-transparent/course-practice/native-crop159/a7bc6394b91cb95fbe3617b4514ccbe7f2b3e1afd218145fcb844d91637db8e9/image.webp':
+      nativeView159_3,
+    '/flashcards-transparent/course-practice/native-crop159/5818b4304eb0af682a1b5fd14868866939e5882e3c3e76da3783d21dbd522e6f/image.webp':
+      nativeView159_4,
+    '/flashcards-transparent/course-practice/native-crop159/d4ed472d41256418aa902f06ea8565c4c87ea24ce52d3c594c95da4b84fa8eb2/image.webp':
+      nativeView159_5,
     '/flashcards-transparent/a2/travel/boarding-pass/image.webp':
       expanded124Asset14,
     '/flashcards-transparent/a2/travel/ticket/image.webp': expanded124Asset15,

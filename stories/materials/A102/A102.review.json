@@ -7,7 +7,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Say hello again",
+      "title": "Review the last lesson",
       "instruction": "Share your name and where you’re from, then ask me",
       "minutes": 2,
       "eyebrow": "Review",
@@ -36,23 +36,23 @@
     {
       "id": "s2",
       "kind": "activity",
-      "title": "Digits for your number",
-      "instruction": "Say the digits, then click to check and listen",
+      "title": "Say the numbers",
+      "instruction": "Digits for your number. Say the digits, then click to check and listen",
       "minutes": 3,
       "eyebrow": "Vocabulary"
     },
     {
       "id": "s6",
       "kind": "activity",
-      "title": "The alphabet",
-      "instruction": "Use this chart when you need a letter. Click to listen",
+      "title": "Say the letters",
+      "instruction": "The alphabet. Use this chart when you need a letter. Click to listen",
       "minutes": 4,
       "eyebrow": "Reference"
     },
     {
       "id": "s7",
       "kind": "questions",
-      "title": "Check the spelling",
+      "title": "Identify the spelled name",
       "instruction": "Listen to the letters and say the last name",
       "minutes": 2,
       "eyebrow": "Listening",
@@ -87,8 +87,8 @@
     {
       "id": "s8",
       "kind": "dialogue",
-      "title": "A new contact",
-      "instruction": "Listen, then check the name and number together",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -153,7 +153,7 @@
     {
       "id": "s12",
       "kind": "questions",
-      "title": "Your details, your questions",
+      "title": "Share and check contact details",
       "instruction": "Use a real or made-up name. Ask your teacher for a contact too",
       "minutes": 4,
       "eyebrow": "Your turn",
@@ -185,36 +185,43 @@
     {
       "id": "s10",
       "kind": "grammar",
-      "title": "My and your",
-      "instruction": "Use my for your details and your for the person you’re talking to",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use my and your before a noun",
+      "instruction": "Choose a possessive adjective to show whose name or number you mean",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "my",
-          "subject": "About me",
-          "verb": "my + name / number",
-          "example": "My name is Ana. My phone number is 984 221 507."
+          "id": "0",
+          "subject": "The speaker",
+          "verb": "I → my + noun",
+          "example": "My name is Ana. My number is 984 221 507"
         },
         {
-          "id": "your",
-          "subject": "About you",
-          "verb": "your + name / number",
+          "id": "1",
+          "subject": "The listener",
+          "verb": "you → your + noun",
+          "example": "Your name is Kim. Your phone number is on the form"
+        },
+        {
+          "id": "2",
+          "subject": "Ask about possession",
+          "verb": "What is / What’s + your + noun?",
           "example": "What’s your name? What’s your phone number?"
         }
-      ]
+      ],
+      "note": "My and your go before a noun and do not change for singular/plural: my name, my details. I and you are subject pronouns; my and your are not."
     },
     {
       "id": "s_gap99",
       "kind": "dialogue",
-      "title": "Complete the contact exchange",
-      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "title": "Complete the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Say the missing words as you practise, then swap roles",
       "minutes": 2,
       "eyebrow": "Complete the conversation",
       "dialogueGroup": "A1.02.practice99",
@@ -300,16 +307,16 @@
     {
       "id": "s13",
       "kind": "activity",
-      "title": "Save my contact",
-      "instruction": "Give your details and check what I type",
+      "title": "Share and spell your details",
+      "instruction": "Save my contact. Give your details and check what I type",
       "minutes": 6,
       "eyebrow": "Speaking task"
     },
     {
       "id": "s14",
       "kind": "activity",
-      "title": "Kim checks the contact",
-      "instruction": "Answer as Ana. Confirm what is right and correct the number",
+      "title": "Listen and respond",
+      "instruction": "Kim checks the contact. Answer as Ana. Confirm what is right and correct the number",
       "minutes": 4,
       "eyebrow": "Listening"
     },
@@ -317,7 +324,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Ask to hear it again",
+      "title": "Watch and answer",
       "instruction": "Watch how Paul asks Bob to repeat, then practise checking a name",
       "minutes": 4,
       "video": {

@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall how to distinguish a clue from proof",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Clues and explanations",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -168,8 +168,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "The first clues",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "What the clues don’t prove",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -286,8 +286,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "Choose a useful check",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -346,57 +346,58 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Separate clues from guesses",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "Compare the flat’s clues with Teacher. Suggest explanations without treating a possibility as a fact",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "How strong is the evidence for the past event?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Make deductions about the past",
+      "instruction": "Use a modal plus have plus a past participle for an inference about an earlier event",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Strong past inference",
+          "subject": "Strong positive deduction",
           "verb": "must have + past participle",
           "example": "Someone must have moved the plant"
         },
         {
           "id": "1",
-          "subject": "Possible past explanation",
-          "verb": "might / could have + past participle",
-          "example": "The receipt might have been left earlier"
+          "subject": "Possible explanation",
+          "verb": "might / may / could have + past participle",
+          "example": "The neighbour might have watered the plants"
         },
         {
           "id": "2",
-          "subject": "Rule out only with compatible evidence",
-          "verb": "can’t have + past participle",
-          "example": "If the only key stayed sealed, it can’t have been used then"
+          "subject": "Strong negative deduction",
+          "verb": "can’t / couldn’t have + past participle",
+          "example": "If the key remained sealed, it can’t have been used"
         }
-      ]
+      ],
+      "note": "Have + past participle points back to the event; the modal expresses your present judgement. A strong grammatical form still needs strong evidence."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Find the most plausible explanation",
-      "instruction": "Give an explanation and say what evidence would confirm it",
+      "title": "What might have happened here?",
+      "instruction": "Compare the clues, suggest two possible explanations and tell me what you would check next",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "A visit is confirmed",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "A visit is confirmed. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. The neighbour has confirmed that she used the spare key at five to water the plants. She says she moved the plant away from the closed window before leaving. That supports the explanation of an authorised visit. She doesn’t recognise the receipt from five twenty, though, so we still don’t know who left it or when it came into the flat. Could you update the explanation without making the receipt fit by inventing another visit? We have confirmation for the key and the plant, but only an unresolved clue for the receipt",
@@ -432,8 +433,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Update only what the evidence supports",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Update only what the evidence supports. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -441,40 +442,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Which explanation does the evidence support?",
-      "instruction": "Watch the guesses about Sam, then evaluate possible explanations for a past event",
-      "minutes": 4,
+      "title": "Why did the tests fail?",
+      "instruction": "Watch two picture tests fail. Use the clues to explain the failures, then decide what to check",
+      "minutes": 5,
       "video": {
-        "videoId": "u6hEQdGGMuc",
-        "startSeconds": 26,
-        "endSeconds": 48,
-        "title": "Modal verbs of deduction — BBC Learning English",
-        "credit": "BBC Learning English"
+        "videoId": "FXdS7pBi5Po",
+        "startSeconds": 17.209,
+        "endSeconds": 80.084,
+        "title": "New Hire Fails Every \"Are You a Robot\" Test",
+        "credit": "Studio C"
       },
       "items": [
         {
           "id": "b2-04.video102.q1",
-          "prompt": "What do they actually know about Sam?",
-          "hint": "Separate the observation from the guesses",
-          "answer": "They know she is late for work"
+          "prompt": "Why were the tree and stop-sign tests difficult?",
+          "hint": "Listen to his questions about a small branch and a pole",
+          "answer": "He is unsure whether a small part of a branch counts as a tree and whether the pole counts as part of the stop sign"
         },
         {
           "id": "b2-04.video102.q2",
-          "prompt": "Which three possible explanations are offered?",
-          "hint": "Listen for could, might and may",
-          "answer": "Her car could be broken, she might be asleep, or there may be traffic"
+          "prompt": "Why does he ask for help with the letter test?",
+          "hint": "Listen for the two symbols he cannot distinguish",
+          "answer": "He cannot tell whether one symbol is the letter O or the number zero, and asks the interviewer to look at it"
         },
         {
           "id": "b2-04.video102.q3",
-          "prompt": "Is any one explanation confirmed?",
-          "hint": "Notice whether the speaker supplies proof",
-          "answer": "No. The speaker presents them as possibilities"
+          "prompt": "What might have caused the two picture-test failures?",
+          "hint": "Use his branch and pole questions. Separate the observed errors from a possible cause",
+          "answer": "He might have counted partial objects differently from the test. His questions support that possibility, but the clip does not show his exact selections or prove the cause"
         },
         {
           "id": "b2-04.video102.q4",
-          "prompt": "Sam later says she arrived at noon. Give two possible earlier explanations",
-          "hint": "Use might have and say what you would check",
-          "answer": "Example: She might have missed her bus, or her car might have broken down. I’d ask what happened"
+          "prompt": "How would you check a test failure before judging the person?",
+          "hint": "Use might have or could have, then ask for a check of the actual answers",
+          "answer": "Example: I would review the rejected choices. He might have included the pole or excluded a branch. I would try a test with clear rules before deciding"
         }
       ]
     },
@@ -499,45 +500,67 @@
   ],
   "activities": {
     "s_mission": {
-      "type": "facts",
-      "title": "Evidence before explanation",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Record",
-          "value": "Spare key used · 5 pm"
-        },
-        {
-          "id": "1",
-          "label": "Object",
-          "value": "Receipt · 5:20 pm · owner unknown"
-        },
-        {
-          "id": "movement",
-          "label": "Reported change",
-          "value": "Plant moved from the windowsill"
-        }
-      ],
-      "questions": [
-        {
-          "id": "task",
-          "prompt": "What is your strongest explanation?",
-          "hint": "Someone may have … because …"
-        },
-        {
-          "id": "@s_mission.q98.2",
-          "prompt": "What alternative explanation should stay open?",
-          "hint": "The … could also …"
-        },
-        {
-          "id": "@s_mission.q98.3",
-          "prompt": "What evidence would help you distinguish the explanations?",
-          "hint": "I’d check … to find out whether …"
-        }
-      ],
-      "questionPurpose": "response",
+      "type": "scene-choice",
+      "title": "Clues in the flat",
       "image": "b2-04-flat-evidence123",
-      "referenceLabel": "Evidence before explanation"
+      "questions": [],
+      "scene": {
+        "alt": "A closed window with a visible latch, a plant on a side table and a receipt on the main table; the people responsible are not shown",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "window",
+            "label": "Window latch",
+            "summary": "Now",
+            "example": "The window is closed now",
+            "prompt": "",
+            "xPercent": 36.0,
+            "yPercent": 27.0,
+            "targetBounds": {
+              "xPercent": 30,
+              "yPercent": 18,
+              "widthPercent": 12,
+              "heightPercent": 18
+            },
+            "hint": "It could have … / That doesn’t prove …",
+            "answer": "It could have been open earlier; I’d check before ruling that out"
+          },
+          {
+            "id": "plant",
+            "label": "The plant",
+            "summary": "Access record",
+            "example": "Moved from sill; spare key used at 5 pm",
+            "prompt": "",
+            "xPercent": 81.5,
+            "yPercent": 41.0,
+            "targetBounds": {
+              "xPercent": 68,
+              "yPercent": 20,
+              "widthPercent": 27,
+              "heightPercent": 42
+            },
+            "hint": "The neighbour may have … / I’d confirm …",
+            "answer": "The neighbour may have visited. I’d confirm whether she used the key"
+          },
+          {
+            "id": "receipt",
+            "label": "Receipt",
+            "summary": "5:20 pm",
+            "example": "Owner and time of arrival are unknown",
+            "prompt": "",
+            "xPercent": 41.75,
+            "yPercent": 89.5,
+            "targetBounds": {
+              "xPercent": 31.5,
+              "yPercent": 80,
+              "widthPercent": 20.5,
+              "heightPercent": 19
+            },
+            "hint": "It might have … / We still don’t know …",
+            "answer": "It might have been brought in later; we still don’t know who left it"
+          }
+        ]
+      }
     },
     "s_reply": {
       "type": "facts",
@@ -581,22 +604,22 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "The flat’s recorded clues",
       "facts": [
         {
           "id": "0",
-          "label": "Record",
-          "value": "Spare key used · 5 pm"
+          "label": "Access",
+          "value": "Spare key used at 5 pm · neighbour allowed to water plants"
         },
         {
           "id": "1",
-          "label": "Object",
-          "value": "Receipt · 5:20 pm · owner unknown"
+          "label": "Objects",
+          "value": "Receipt printed at 5:20 pm · owner unknown · plant moved"
         },
         {
-          "id": "movement",
-          "label": "Reported change",
-          "value": "Plant moved from the windowsill"
+          "id": "2",
+          "label": "Current state",
+          "value": "Window closed · no forced entry confirmed"
         }
       ],
       "questions": [
@@ -624,7 +647,7 @@
       ],
       "questionPurpose": "conversation",
       "image": "b2-04-flat-evidence123",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "The flat’s recorded clues"
     }
   }
 }

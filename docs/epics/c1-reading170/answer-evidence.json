@@ -1,0 +1,629 @@
+{
+  "baseline": "b6b56163b589fcbeb1fcec0b0a89c55c58acaeb2",
+  "questions": [
+    {
+      "material": "c1-02",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "Which two problems does the opening log confirm?",
+      "answer": "The sound test was incomplete, and the event started twelve minutes late.",
+      "evidence": ["an incomplete sound test and a twelve-minute delay"]
+    },
+    {
+      "material": "c1-02",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Which two explanations is the review considering?",
+      "answer": "It is considering insufficient preparation time and a warning that failed to reach the right person.",
+      "evidence": [
+        "insufficient preparation time and a warning that failed to reach the right person"
+      ]
+    },
+    {
+      "material": "c1-02",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "What evidence has not yet been checked?",
+      "answer": "The message record has not yet been checked.",
+      "evidence": ["The message record has not yet been checked"]
+    },
+    {
+      "material": "c1-02",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "When was the warning sent?",
+      "answer": "The warning was sent before the doors opened.",
+      "evidence": ["a warning was sent before the doors opened"]
+    },
+    {
+      "material": "c1-02",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "Which two follow-up details are missing from the record?",
+      "answer": "No responder was named, and there is no recorded acknowledgement.",
+      "evidence": [
+        "no responder was named, and there is no recorded acknowledgement"
+      ]
+    },
+    {
+      "material": "c1-02",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "Why does the record not establish that someone ignored the warning?",
+      "answer": "It does not identify who read the message.",
+      "evidence": ["The record does not identify who read the message"]
+    },
+    {
+      "material": "c1-03",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "Which part of the café is closed, and why?",
+      "answer": "The dining area is closed for renovation.",
+      "evidence": ["only the dining area is closed for renovation"]
+    },
+    {
+      "material": "c1-03",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Which service is still available?",
+      "answer": "Delivery orders are still being accepted.",
+      "evidence": ["delivery orders are still being accepted"]
+    },
+    {
+      "material": "c1-03",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "Who suggested that staff shortages caused the closure?",
+      "answer": "Another reader suggested it; the café did not.",
+      "evidence": [
+        "A reply blaming staff shortages comes from another reader, not from the café"
+      ]
+    },
+    {
+      "material": "c1-03",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Which claim did the update correct?",
+      "answer": "It corrected the claim that the café had closed permanently.",
+      "evidence": ["It replaces the claim of permanent closure"]
+    },
+    {
+      "material": "c1-03",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "What can customers still order?",
+      "answer": "Customers can still order delivery.",
+      "evidence": ["delivery continues"]
+    },
+    {
+      "material": "c1-03",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "Where should customers check for a reopening announcement?",
+      "answer": "They should check the café’s own updates.",
+      "evidence": ["directed to the café’s own updates"]
+    },
+    {
+      "material": "c1-04",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "What makes quiet important to the first flatmate?",
+      "answer": "They do concentrated work at home in the evening.",
+      "evidence": ["does concentrated work at home in the evening"]
+    },
+    {
+      "material": "c1-04",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Why can’t every family call simply be moved earlier?",
+      "answer": "The family members live in different time zones.",
+      "evidence": ["calls family members in different time zones"]
+    },
+    {
+      "material": "c1-04",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "Which two adjustments are both flatmates willing to discuss?",
+      "answer": "They are willing to discuss using the smaller room and headphones.",
+      "evidence": ["using the smaller room and headphones"]
+    },
+    {
+      "material": "c1-04",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Where will regular calls take place, and what equipment will the caller use?",
+      "answer": "Regular calls will take place in the smaller room, using headphones.",
+      "evidence": ["use the smaller room and headphones"]
+    },
+    {
+      "material": "c1-04",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "When does the shared room’s quiet period begin?",
+      "answer": "The shared room’s quiet period begins at 9 pm.",
+      "evidence": ["The shared room will remain quiet after 9 pm"]
+    },
+    {
+      "material": "c1-04",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "What must the caller do when an urgent exception is needed?",
+      "answer": "The caller must send a message.",
+      "evidence": ["the caller must send a message when an exception is needed"]
+    },
+    {
+      "material": "c1-05",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "When did the traveller notice that the scarf was missing?",
+      "answer": "They noticed it on the train.",
+      "evidence": [
+        "They only noticed that their scarf was missing once they were on the train"
+      ]
+    },
+    {
+      "material": "c1-05",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Where did the traveller initially think the scarf had been lost?",
+      "answer": "They initially thought it had been lost between the station and the train.",
+      "evidence": [
+        "At first, they thought it had been lost between the station and the train"
+      ]
+    },
+    {
+      "material": "c1-05",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "What does the photograph show, and when was it taken?",
+      "answer": "It shows the scarf on the café chair before the traveller’s departure.",
+      "evidence": [
+        "A photograph taken before their departure shows the scarf on the café chair"
+      ]
+    },
+    {
+      "material": "c1-05",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "What does the photograph rule out about the train journey?",
+      "answer": "It rules out the scarf disappearing during that train journey.",
+      "evidence": [
+        "left behind before the train journey, rather than disappearing during the journey"
+      ]
+    },
+    {
+      "material": "c1-05",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "Where did the staff keep the scarf?",
+      "answer": "They kept it behind the counter.",
+      "evidence": ["kept it behind the counter"]
+    },
+    {
+      "material": "c1-05",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "How did the story end?",
+      "answer": "The traveller collected the scarf from the café.",
+      "evidence": ["The traveller later collected it from the café"]
+    },
+    {
+      "material": "c1-06",
+      "page": "s_mission",
+      "question": "course",
+      "prompt": "Which evening is unavailable to the learner?",
+      "answer": "Tuesday evening is unavailable because the learner has a fixed commitment.",
+      "evidence": ["has a fixed commitment on Tuesdays"]
+    },
+    {
+      "material": "c1-06",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "When does each course provide feedback?",
+      "answer": "Course A provides it during class; Course B provides project feedback at its Friday 6 pm check-in.",
+      "evidence": [
+        "feedback during class",
+        "project feedback at a Friday 6 pm check-in"
+      ]
+    },
+    {
+      "material": "c1-06",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "How much more does Course B cost than Course A?",
+      "answer": "Course B costs $140 more than Course A.",
+      "evidence": ["Course A costs $180", "Course B costs $320"]
+    },
+    {
+      "material": "c1-06",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Why can the learner no longer attend Course A’s classes?",
+      "answer": "The classes have moved to Tuesday, when the learner has a fixed commitment.",
+      "evidence": [
+        "moved its classes to Tuesday from 7 to 9 pm, when the learner has a fixed commitment"
+      ]
+    },
+    {
+      "material": "c1-06",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "Would watching Course A’s recording include the feedback?",
+      "answer": "No. Its feedback is live-only and is not supplied with the recording.",
+      "evidence": [
+        "Its feedback is live-only and is not supplied with the recording"
+      ]
+    },
+    {
+      "material": "c1-06",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "What still needs checking about Course B?",
+      "answer": "The learner still needs to check whether its project feedback will meet their needs.",
+      "evidence": [
+        "not yet confirmed whether its project feedback will meet their needs"
+      ]
+    },
+    {
+      "material": "c1-07",
+      "page": "s_mission",
+      "question": "brief",
+      "prompt": "Why did the team postpone the original decision?",
+      "answer": "The original $5,400 quote exceeded the $5,000 budget limit.",
+      "evidence": [
+        "The budget limit is $5,000. The original supplier quoted $5,400"
+      ]
+    },
+    {
+      "material": "c1-07",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "What is the alternative quote, and is its date confirmed?",
+      "answer": "The alternative is estimated at $4,800, and its date is not confirmed.",
+      "evidence": [
+        "alternative estimated at $4,800. The alternative supplier has not confirmed a date"
+      ]
+    },
+    {
+      "material": "c1-07",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "What must happen before the rota organiser asks about availability?",
+      "answer": "The supplier’s date must be confirmed first.",
+      "evidence": [
+        "wait for that date before asking the team about availability"
+      ]
+    },
+    {
+      "material": "c1-07",
+      "page": "s_reply",
+      "question": "update",
+      "prompt": "Which date and price has the supplier confirmed?",
+      "answer": "The supplier has confirmed 13 December and $4,800.",
+      "evidence": ["confirmed 13 December and a price of $4,800"]
+    },
+    {
+      "material": "c1-07",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "Who still needs to authorise the quote or raise a query?",
+      "answer": "The funding decision-maker still needs to do so.",
+      "evidence": [
+        "The funding decision-maker must still review the quote and authorise it or raise a query"
+      ]
+    },
+    {
+      "material": "c1-07",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "Which scheduling detail remains unconfirmed?",
+      "answer": "The team’s availability remains unconfirmed.",
+      "evidence": ["Team availability has not yet been checked"]
+    },
+    {
+      "material": "c1-08",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "How do the proposed frequency and the participant’s availability differ?",
+      "answer": "The organiser proposes four evenings a month, but the participant can attend only two.",
+      "evidence": [
+        "four evening sessions per month",
+        "can attend only two evenings a month"
+      ]
+    },
+    {
+      "material": "c1-08",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Why does the participant need seven days’ notice?",
+      "answer": "They need time to arrange their other responsibilities.",
+      "evidence": [
+        "at least seven days’ notice to arrange other responsibilities"
+      ]
+    },
+    {
+      "material": "c1-08",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "What form of contact is the participant willing to use between meetings?",
+      "answer": "They are willing to use short written updates.",
+      "evidence": ["short written updates between live sessions"]
+    },
+    {
+      "material": "c1-08",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Which two forms of contact have they agreed to use?",
+      "answer": "They have agreed to use live sessions and short written updates.",
+      "evidence": [
+        "two live sessions per month, with short written updates between them"
+      ]
+    },
+    {
+      "material": "c1-08",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "How much notice is still required for session dates?",
+      "answer": "At least seven days’ notice is still required.",
+      "evidence": ["at least seven days in advance"]
+    },
+    {
+      "material": "c1-08",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "When will they review the arrangement, and what will they assess?",
+      "answer": "After four weeks, they will assess whether it provides useful, regular contact.",
+      "evidence": [
+        "four weeks, then review whether it provides useful, regular contact"
+      ]
+    },
+    {
+      "material": "c1-09",
+      "page": "s_mission",
+      "question": "trend",
+      "prompt": "How much did daily trips rise from January to March?",
+      "answer": "Daily trips rose by 40, from 100 to 140.",
+      "evidence": ["@chart:jan:100", "@chart:mar:140"]
+    },
+    {
+      "material": "c1-09",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Which information about the timing of demand is missing?",
+      "answer": "There is no breakdown of trips by time of day.",
+      "evidence": ["no earlier seasonal data or breakdown by time of day"]
+    },
+    {
+      "material": "c1-09",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "Which detail about the extra service has not yet been confirmed?",
+      "answer": "Its operating times have not yet been confirmed.",
+      "evidence": ["has not yet confirmed its operating times"]
+    },
+    {
+      "material": "c1-09",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Which period will the extra service cover?",
+      "answer": "It will cover the morning peak only.",
+      "evidence": ["covers the morning peak only"]
+    },
+    {
+      "material": "c1-09",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "When will the extra service start?",
+      "answer": "It will start next month.",
+      "evidence": ["starts next month"]
+    },
+    {
+      "material": "c1-09",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "Which comparison is still needed to assess the afternoon service?",
+      "answer": "Afternoon demand needs to be compared with existing afternoon capacity.",
+      "evidence": [
+        "Afternoon demand and existing afternoon capacity have not yet been compared"
+      ]
+    },
+    {
+      "material": "c1-10",
+      "page": "s_mission",
+      "question": "update",
+      "prompt": "Which opening is used in the message to the client?",
+      "answer": "The client message opens, “I’m writing to let you know that the event has been rescheduled.”",
+      "evidence": [
+        "I’m writing to let you know that the event has been rescheduled."
+      ]
+    },
+    {
+      "material": "c1-10",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "What changed, and which two event details stayed the same?",
+      "answer": "The date changed to Monday 7 December; the 10 am start and room 2 stayed the same.",
+      "evidence": [
+        "moved from Friday 4 December to Monday 7 December 2026",
+        "It still starts at 10 am in room 2"
+      ]
+    },
+    {
+      "material": "c1-10",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "What must recipients confirm, and by when?",
+      "answer": "They must confirm attendance by 5 pm on Friday 4 December.",
+      "evidence": ["confirm attendance by 5 pm on Friday 4 December"]
+    },
+    {
+      "material": "c1-10",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Which event details has the recipient already understood?",
+      "answer": "They have understood Monday 7 December, 10 am and room 2.",
+      "evidence": ["Monday 7 December", "10 am in room 2"]
+    },
+    {
+      "material": "c1-10",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "What distinction is the recipient unsure about?",
+      "answer": "They are unsure whether to acknowledge reading the message or confirm attendance.",
+      "evidence": ["a read receipt or confirmation that they will attend"]
+    },
+    {
+      "material": "c1-10",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "Why would “I’ve read this” be insufficient?",
+      "answer": "It would not confirm whether the recipient will attend.",
+      "evidence": [
+        "The sender needs confirmation of attendance",
+        "“I’ve read this” would not answer that request"
+      ]
+    },
+    {
+      "material": "c1-11",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "Why does the sender need a quick reply?",
+      "answer": "The sender needs it to plan the next stage.",
+      "evidence": ["because they need to plan the next stage"]
+    },
+    {
+      "material": "c1-11",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "What does the receiver mistakenly think “quick reply” requires?",
+      "answer": "They think it requires sending final figures immediately.",
+      "evidence": [
+        "thinks “quick reply” means sending final figures immediately"
+      ]
+    },
+    {
+      "material": "c1-11",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "Which two things can the sender receive before the figures are checked?",
+      "answer": "The sender can receive acknowledgement and a realistic time for a complete answer.",
+      "evidence": [
+        "acknowledgement that the request arrived and a realistic time for a complete answer"
+      ]
+    },
+    {
+      "material": "c1-11",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "What does Kim suggest sending now?",
+      "answer": "She suggests sending an acknowledgement and a realistic time for the complete answer.",
+      "evidence": [
+        "acknowledging the request now and giving a realistic time for the complete answer"
+      ]
+    },
+    {
+      "material": "c1-11",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "When is it acceptable to promise an answer by 4 pm tomorrow?",
+      "answer": "It is acceptable only if that deadline is achievable.",
+      "evidence": ["only if that deadline is achievable"]
+    },
+    {
+      "material": "c1-11",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "What should happen if the checks take longer than expected?",
+      "answer": "The person checking should send an update with a revised time.",
+      "evidence": [
+        "send an update with a revised time rather than remain silent"
+      ]
+    },
+    {
+      "material": "c1-12",
+      "page": "s_mission",
+      "question": "task",
+      "prompt": "What does the manager want to simplify?",
+      "answer": "The manager wants to simplify checkout and reconciliation.",
+      "evidence": ["simplify checkout and reconciliation"]
+    },
+    {
+      "material": "c1-12",
+      "page": "s_mission",
+      "question": "@s_mission.q98.2",
+      "prompt": "Has a trial demonstrated savings or faster service?",
+      "answer": "No. No trial has yet measured savings or speed.",
+      "evidence": ["No trial has yet measured savings or speed"]
+    },
+    {
+      "material": "c1-12",
+      "page": "s_mission",
+      "question": "@s_mission.q98.3",
+      "prompt": "Which three access barriers does the customer representative identify?",
+      "answer": "They identify the lack of a working device, a suitable account or a reliable connection.",
+      "evidence": ["no working device, suitable account or reliable connection"]
+    },
+    {
+      "material": "c1-12",
+      "page": "s_reply",
+      "question": "task",
+      "prompt": "Which two failures prevent the normal payment route from working?",
+      "answer": "The phone has no battery, and the payment connection is unavailable.",
+      "evidence": [
+        "the customer’s phone has no battery and the payment connection is unavailable"
+      ]
+    },
+    {
+      "material": "c1-12",
+      "page": "s_reply",
+      "question": "@s_reply.q98.2",
+      "prompt": "What does the customer need when that route fails?",
+      "answer": "The customer needs a usable alternative without public embarrassment.",
+      "evidence": [
+        "a usable alternative that does not cause public embarrassment"
+      ]
+    },
+    {
+      "material": "c1-12",
+      "page": "s_reply",
+      "question": "@s_reply.q98.3",
+      "prompt": "Which two details about the alternative remain unknown?",
+      "answer": "Its possible fee and the way staff explain it remain unknown.",
+      "evidence": [
+        "whether the alternative carries a different fee or how staff explain it"
+      ]
+    },
+    {
+      "material": "c1-01",
+      "page": "s4",
+      "question": "mail1",
+      "prompt": "Which two qualities does Laura praise in Raj?",
+      "answer": "She praises his knowledge of the project and his friendly style.",
+      "evidence": ["He really knows the project, and he has a friendly style"]
+    },
+    {
+      "material": "c1-01",
+      "page": "s4",
+      "question": "mail2",
+      "prompt": "Which question was left unanswered?",
+      "answer": "Laura’s question about the deadline was left unanswered.",
+      "evidence": ["we didn’t get an answer to my question about the deadline"]
+    },
+    {
+      "material": "c1-01",
+      "page": "s4",
+      "question": "s43.q98.3",
+      "prompt": "When does Laura suggest meeting again?",
+      "answer": "She suggests Thursday at ten next week.",
+      "evidence": ["next week", "Thursday at ten"]
+    },
+    {
+      "material": "c1-01",
+      "page": "s4",
+      "question": "mail4",
+      "prompt": "Besides Raj, whom does Laura ask to attend?",
+      "answer": "She asks Ana, the email’s recipient, to attend as well.",
+      "evidence": ["Hi Ana", "if you could be there too"]
+    }
+  ]
+}

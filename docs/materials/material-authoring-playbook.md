@@ -56,6 +56,8 @@ As props acima foram conferidas na fonte atual. Antes da adoção em outro produ
 
 ## 4. Manter a conversa simples e apoiada
 
+Escolher o título pela dinâmica e pelo objetivo em [exercise-title-patterns.md](exercise-title-patterns.md), usando as expressões de `stories/materials/shared/exerciseHeadings.json`. O mesmo tipo de tarefa repete a mesma instrução, para que a professora e a aluna reconheçam o formato. Na guided conversation padrão, ambas interpretam os personagens, praticam entre si, trocam os papéis e depois respondem às perguntas: Practise the conversation. O áudio é apoio opcional, não a tarefa principal. Lacunas com respostas do modelo = Complete the conversation; áudio recebido com compreensão = Listen and answer; vídeo com perguntas = Watch and answer. Personagens e assunto entram no subtítulo. Não confundir uso do mesmo componente com a mesma tarefa: apresentar alguém, dar direções e adivinhar uma identidade mantêm ações próprias. Não mudar transcrições nem o nome original de vídeos para adequar um cabeçalho.
+
 - O título diz a ação e o contexto; o subtítulo explica a dinâmica em uma instrução. Não repetir “Team call / First team call”, “Now you”, papéis já visíveis ou “Listen, then reply aloud” abaixo do conteúdo.
 - A professora recebe sua pergunta completa. A aluna vê uma intenção curta; uma lâmpada revela dica e, no segundo clique, uma frase completa de exemplo. A etapa substitui o texto anterior. Com várias respostas, concluir dica/modelo de uma antes de seguir à próxima; ao repetir ou trocar a fala, reiniciar o apoio.
 - Em colunas pareadas, manter os balões no topo e a lâmpada centralizada no fim da coluna. Em reuniões, a lâmpada fica ao lado de Next, com o mesmo ícone preenchido e fundo cinza dos controles. Não colocar o controle dentro do balão.
@@ -67,6 +69,8 @@ As props acima foram conferidas na fonte atual. Antes da adoção em outro produ
 - Textos autorados em balões não terminam com ponto final; manter pontuação interna e interrogações. Preservar separadamente o texto exato da gravação. Não remover pontuação em tempo de renderização.
 
 ## 5. Usar imagens que expliquem a tarefa
+
+No vocabulário de objetos e lugares, ilustrar primeiro a palavra, não a frase de exemplo. O alvo deve ser reconhecível sem ler a legenda. Não adicionar uma personagem pensando, olhando a hora ou segurando outro objeto quando isso transformar “grill”, “pool” ou “bike” numa ação ambígua. Pessoas entram quando a relação ou a ação for o alvo real. Preservar o prompt canônico literal; mudar apenas o brief de assunto/composição.
 
 Priorizar uma cena contextual a ícones abstratos quando as palavras pertencerem a um mesmo ambiente. Um POV de mesa pode reunir tarefa, acesso, bloqueio, prazo, atualização e feedback; o exemplo explica o conceito de trabalho, sem transformar “laptop” em sinônimo de “blocker”. Cada ponto deve ter uma evidência reconhecível, não uma posição arbitrária.
 

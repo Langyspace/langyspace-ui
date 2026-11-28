@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
@@ -8,14 +8,45 @@ export const Root = styled(Common.Stack).withConfig({
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => Common.recipe(p).foreground};
 `
-export const Frame = styled.div`
+export const Frame = styled.div<{ $aspectRatio: number }>`
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: ${(p) => p.$aspectRatio};
   border: 1px solid ${(p) => Common.recipe(p).border};
   border-radius: ${theme.radius.xl};
   background: ${(p) => Common.recipe(p).surface};
   container-type: inline-size;
+`
+export const Art = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+  pointer-events: none;
+  user-select: none;
+`
+export const StreetLabel = styled.span<{
+  $x: number
+  $y: number
+  $vertical: boolean
+}>`
+  position: absolute;
+  left: ${(p) => p.$x}%;
+  top: ${(p) => p.$y}%;
+  transform: translate(-50%, -50%)
+    rotate(${(p) => (p.$vertical ? '-90deg' : '0deg')});
+  padding: 0;
+  color: ${theme.slides.foreground};
+  font-size: clamp(
+    ${theme.typography.fontSize.xs},
+    1.8cqw,
+    ${theme.typography.fontSize.sm}
+  );
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
 `
 export const Streets = styled.svg`
   position: absolute;
@@ -32,6 +63,9 @@ export const Place = styled(Pressable)<{
   $x: number
   $y: number
   $selected: boolean
+  $illustrated: boolean
+  $width?: number
+  $height?: number
 }>`
   position: absolute;
   left: ${(p) => p.$x}%;
@@ -53,6 +87,23 @@ export const Place = styled(Pressable)<{
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.25;
   cursor: pointer;
+  ${(p) =>
+    p.$illustrated
+      ? css`
+          width: ${p.$width ?? 24}%;
+          height: ${p.$height ?? 24}%;
+          max-width: none;
+          min-width: 0;
+          min-height: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          padding: ${theme.spacing[1]};
+          border-color: ${p.$selected ? Common.recipe(p).accent : 'transparent'};
+          background: transparent;
+        `
+      : null}
   &:focus-visible {
     outline: 3px solid ${(p) => Common.recipe(p).accent};
     outline-offset: 3px;
@@ -62,10 +113,42 @@ export const Symbol = styled.span`
   font-size: clamp(1.25rem, 5cqw, 1.75rem);
   line-height: 1;
 `
-export const Label = styled.span<{ $concealed: boolean }>`
+export const Label = styled.span<{
+  $concealed: boolean
+  $illustrated: boolean
+}>`
   visibility: ${(p) => (p.$concealed ? 'hidden' : 'visible')};
   font-weight: ${theme.typography.fontWeight.semibold};
   text-align: center;
+  ${(p) =>
+    p.$illustrated
+      ? css`
+          display: inline-flex;
+          align-items: center;
+          gap: ${theme.spacing[1]};
+          padding: calc(${theme.spacing[1]} / 4) calc(${theme.spacing[1]} / 2);
+          border-radius: ${theme.radius.sm};
+          background: ${Common.recipe(p).canvas};
+          color: ${Common.recipe(p).foreground};
+          font-weight: ${theme.typography.fontWeight.medium};
+          line-height: 1.15;
+          white-space: nowrap;
+          overflow-wrap: normal;
+          word-break: normal;
+          font-size: clamp(
+            ${theme.typography.fontSize.xs},
+            2cqw,
+            ${theme.typography.fontSize.sm}
+          );
+        `
+      : null}
+`
+export const Origin = styled.span`
+  flex: none;
+  width: ${theme.spacing[1]};
+  height: ${theme.spacing[1]};
+  border-radius: ${theme.radius.pill};
+  background: ${(p) => Common.recipe(p).accent};
 `
 export const Start = styled.span`
   font-size: ${theme.typography.fontSize.xs};

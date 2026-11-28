@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Distinguish an observation from a conclusion",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Words for my bike was stolen!",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -168,8 +168,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Reporting the bike",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Description and confirmation",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -287,43 +287,44 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Report the missing bike",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "Your bike is missing. Teacher works at the help desk. Use the photo and report details to describe it",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Focus on the event and the confirmed update",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build passive sentences",
+      "instruction": "Use be plus a past participle when the event or object matters more than who did it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A past event, focus on the object",
+          "subject": "Past simple passive",
           "verb": "was / were + past participle",
-          "example": "The bike was taken from the rack"
+          "example": "The bike was stolen. Two bikes were found"
         },
         {
           "id": "1",
-          "subject": "A recent update with relevance now",
+          "subject": "Present perfect passive",
           "verb": "has / have been + past participle",
           "example": "A similar bike has been found"
         },
         {
           "id": "2",
-          "subject": "An action not confirmed yet",
-          "verb": "hasn’t been + past participle + yet",
-          "example": "The serial number hasn’t been checked yet"
+          "subject": "Negative and question",
+          "verb": "hasn’t been + participle / Has + subject + been + participle?",
+          "example": "The number hasn’t been checked. Has it been checked?"
         }
-      ]
+      ],
+      "note": "Active: Someone stole the bike. Passive: The bike was stolen. Add by + person only when the agent is known and relevant."
     },
     {
       "id": "s_mission",
@@ -336,8 +337,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "A similar bike has been found",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "A similar bike has been found. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. There’s an update about the bicycle report. A blue bike with a black basket has been found near the station. The yellow sticker hasn’t been confirmed, and the serial number hasn’t been checked yet. It may be the missing bike, but it hasn’t been identified as yours. Reception will contact you when the identifying details have been compared. Could you tell the other person what has actually been confirmed, and what you still need to ask?",
@@ -377,8 +378,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Give an accurate update",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Give an accurate update. Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -386,40 +387,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Report the disruption",
-      "instruction": "Watch the flight announcements, then report an incident without inventing a result",
-      "minutes": 4,
+      "title": "Report what was taken",
+      "instruction": "Watch the theft report, then report a missing item using only confirmed facts",
+      "minutes": 5,
       "video": {
-        "videoId": "DUqdQjkvElo",
-        "startSeconds": 182,
-        "endSeconds": 211,
-        "title": "Airport English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "H6as-76WGRg",
+        "startSeconds": 17.4,
+        "endSeconds": 77.2,
+        "title": "Reporting a Theft - Learn English Online",
+        "credit": "Twominute English"
       },
       "items": [
         {
           "id": "b1-09.video102.q1",
-          "prompt": "Which announcement uses delayed?",
-          "hint": "Listen to the first travel problem",
-          "answer": "The first announcement says the flight is delayed by at least two hours"
+          "prompt": "Where does Alex say the theft happened?",
+          "hint": "Listen for his location at the start of the call",
+          "answer": "It happened in Alex Mayer’s shop at Fairwood Shopping Complex"
         },
         {
           "id": "b1-09.video102.q2",
-          "prompt": "What is the reason for the cancellation in the next example?",
-          "hint": "Listen for due to",
-          "answer": "The flight is cancelled due to bad weather"
+          "prompt": "What was taken, and when did it happen?",
+          "hint": "Connect the time in the phone call with the items he names later",
+          "answer": "The computers and other machines were taken from his shop during the previous night. He does not know the exact time"
         },
         {
           "id": "b1-09.video102.q3",
-          "prompt": "Does the cancellation statement name a person who cancelled the flight?",
-          "hint": "Notice what the passive sentence focuses on",
-          "answer": "No. It focuses on the flight and the reason"
+          "prompt": "How soon does the officer say the police will arrive?",
+          "hint": "Listen to the end of the first call",
+          "answer": "He says the police will arrive within fifteen minutes. The clip does not show any property being recovered"
         },
         {
           "id": "b1-09.video102.q4",
-          "prompt": "Your bike is missing. Report only what you know",
-          "hint": "Say what happened without claiming it was found",
-          "answer": "Example: My bike was stolen outside the station this morning. It hasn’t been found"
+          "prompt": "Report a missing item: what do you know and what is unconfirmed?",
+          "hint": "Give a description and the last known place and time",
+          "answer": "Example: My blue bike is missing from the station rack. It has a black basket. I last saw it at six, and it hasn’t been found. I don’t know what happened"
         }
       ]
     },
@@ -537,24 +538,21 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What happened to the bike?",
-          "cue": "Report the event and add time or place",
-          "hint": "It was … while …",
-          "answer": "One possible response"
+          "prompt": "Where and when did you last see your bike?",
+          "cue": "Use the last-seen detail on the report",
+          "hint": "It was last seen at the station rack at six"
         },
         {
           "id": "1",
-          "prompt": "How can we identify it?",
-          "cue": "Describe two distinctive features from the picture",
-          "hint": "It has … and …",
-          "answer": "One possible response"
+          "prompt": "What does it look like?",
+          "cue": "Use the photo to describe identifying features",
+          "hint": "It has a blue frame, a black basket and a yellow sticker"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check the description before leaving?",
-          "cue": "Confirm a detail without adding a new fact",
-          "hint": "You mean the one that …, right? Is there anything else?",
-          "answer": "One possible response"
+          "prompt": "If we find a similar bike, how can we be sure it’s yours?",
+          "cue": "Explain the final identification check",
+          "hint": "The serial number needs to be checked before it’s confirmed"
         }
       ],
       "questionPurpose": "conversation",

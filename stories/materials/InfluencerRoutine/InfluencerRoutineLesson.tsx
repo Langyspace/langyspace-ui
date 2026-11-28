@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -14,6 +15,7 @@ import { PromptExercise } from '../shared/LessonExercises'
 import { RoutineHomework } from './RoutineHomework'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import { characterPortrait } from '../shared/characterPortraits'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
 import { RoutineDialogue } from './RoutineDialogue'
@@ -124,7 +126,7 @@ export function InfluencerRoutineLesson({
       label: source.grammar.title,
       content: (
         <SlidePage
-          columns={2}
+          columns={1}
           eyebrow="Simple Present"
           title={source.grammar.title}
           instruction={source.grammar.instruction}
@@ -133,10 +135,11 @@ export function InfluencerRoutineLesson({
             <GrammarTable
               title="Talking about habits"
               captionVisibility="screen-reader"
+              layout="patterns"
               columns={{
-                subject: 'Purpose',
-                verb: 'I / you',
-                example: 'He / she',
+                subject: 'Meaning',
+                verb: 'Form',
+                example: 'Pattern and examples',
               }}
               rows={source.grammar.rows}
             />
@@ -215,12 +218,16 @@ export function InfluencerRoutineLesson({
       id: 's_video131',
       label: video.title,
       content: (
-        <MaterialVideoPage content={video} active={pageId === 's_video131'} />
+        <MaterialVideoPage
+          content={video}
+          active={pageId === 's_video131'}
+          preload={isUpcomingLessonPage(routinePageIds, pageId, 's_video131')}
+        />
       ),
     },
     {
       id: 'free-conversation',
-      label: 'Free conversation',
+      label: exerciseHeadings.freeConversation,
       content: (
         <FreeConversationPage
           instruction={source.freeConversationInstruction}

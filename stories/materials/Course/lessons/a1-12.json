@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Bring back a useful phrase from shopping",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Weather and travel",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "sunny",
           "translation": "",
           "example": "It’s sunny at the park",
-          "imageUrl": "a1-12-vocabulary81",
+          "imageUrl": "a1-12-vocabulary161",
           "imageAlt": "sunny",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A112-FS81.0",
@@ -70,13 +72,15 @@
           "word": "rainy",
           "translation": "",
           "example": "It’s rainy today",
-          "imageUrl": "a1-12-vocabulary81",
+          "imageUrl": "a1-12-vocabulary161",
           "imageAlt": "rainy",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A112-FS81.1",
@@ -87,13 +91,15 @@
           "word": "cloudy",
           "translation": "",
           "example": "It’s cloudy this morning",
-          "imageUrl": "a1-12-vocabulary81",
+          "imageUrl": "a1-12-vocabulary161",
           "imageAlt": "cloudy",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A112-FS81.2",
@@ -104,13 +110,15 @@
           "word": "windy",
           "translation": "",
           "example": "It’s windy outside",
-          "imageUrl": "a1-12-vocabulary81",
+          "imageUrl": "a1-12-vocabulary161",
           "imageAlt": "windy",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A112-FS81.3",
@@ -155,8 +163,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "A plan for today",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 6,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -228,7 +236,7 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Plan a day out",
+      "title": "Make plans together",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
@@ -258,40 +266,6 @@
       "questionPurpose": "conversation"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Suggest a plan and agree on the details",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "Suggest a plan",
-          "verb": "Let’s + verb",
-          "example": "Let’s go to the park"
-        },
-        {
-          "id": "1",
-          "subject": "Describe the weather",
-          "verb": "It’s + weather word",
-          "example": "It’s sunny / rainy / windy"
-        },
-        {
-          "id": "2",
-          "subject": "Agree on a meeting",
-          "verb": "at + time / place",
-          "example": "Let’s meet at ten at the station"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
       "title": "Plan our day out",
@@ -302,8 +276,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Rain changes our plan",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Rain changes our plan. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! It’s raining near the park now. Let’s go to the museum today. Meet me at the museum entrance at ten, not at the station. We can take the bus. Bring your ticket. There’s a café inside. See you at ten!",
@@ -339,8 +313,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Tell me the new plan",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Tell me the new plan. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -348,7 +322,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Agree on a time and place",
+      "title": "Watch and answer",
       "instruction": "Watch the friends finish their plan, then make a simple plan together",
       "minutes": 4,
       "video": {

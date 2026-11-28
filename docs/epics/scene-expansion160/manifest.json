@@ -1,0 +1,67 @@
+{
+  "generationCalls": 2,
+  "newImages": [
+    {
+      "key": "b1-11",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a21c52-33fc-7d91-a43d-3fc4cda527c3/exec-dddf0370-8969-4760-a862-a311b0a417d2.png",
+      "file": "stories/materials/Course/assets/b1-11-scene160.png",
+      "sha256": "e5046cb561d8e68966f7c1a9899c673cb6049b26410086b0603dc508d98e46aa",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "processing": "byte-identical PNG copy; no crop or semantic edit",
+      "tool": "built-in image_gen",
+      "generationCalls": 1,
+      "references": [],
+      "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+      "promptSha256": "fe0395c6ed40ed2908f4e7e2d77e52b07ed1828c090e9f9917a8363b4719bde2"
+    },
+    {
+      "key": "c1-12",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a21c52-33fc-7d91-a43d-3fc4cda527c3/exec-dcc4902c-14b7-4bee-8667-07966bc096d9.png",
+      "file": "stories/materials/Course/assets/c1-12-scene160.png",
+      "sha256": "f334515df05986c877d407b95c16b8b6074c6d64bcb0c76f507e9222ea793fdf",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "processing": "byte-identical PNG copy; no crop or semantic edit",
+      "tool": "built-in image_gen",
+      "generationCalls": 1,
+      "references": [],
+      "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+      "promptSha256": "faa5e0f105d9735324578ec2c0fc027aee77fa69ced09be640b0605f8f342732"
+    }
+  ],
+  "reusedImage": {
+    "file": "stories/materials/Course/assets/b2-04-flat-evidence123.webp",
+    "sha256": "10e6a6ba0f46f2e83b0263a17a3b01f4a7397f95abc4ea59aa5e536a45ae4657"
+  },
+  "sourcePreservation": [
+    {
+      "key": "b1-11",
+      "changedPage": "s_mission",
+      "pageIdsPreserved": true,
+      "otherPagesAndActivitiesPreserved": true,
+      "audioFilesChanged": 0,
+      "hotspots": 6
+    },
+    {
+      "key": "b2-04",
+      "changedPage": "s_mission",
+      "pageIdsPreserved": true,
+      "otherPagesAndActivitiesPreserved": true,
+      "audioFilesChanged": 0,
+      "hotspots": 3
+    },
+    {
+      "key": "c1-12",
+      "changedPage": "s_reply",
+      "pageIdsPreserved": true,
+      "otherPagesAndActivitiesPreserved": true,
+      "audioFilesChanged": 0,
+      "hotspots": 5
+    }
+  ]
+}

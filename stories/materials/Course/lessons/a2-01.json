@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall a routine action and a time",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Everyday actions",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -155,8 +155,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Dinner today, habits usually",
-      "instruction": "Listen for the activity, the result and the follow-up question",
+      "title": "Practise the conversation",
+      "instruction": "You are Anna and Teacher is Ben. Practise together, swap roles, then answer the questions",
       "minutes": 5,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Your routine and today",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Talk about yourself",
+      "instruction": "Your routine and today. Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -256,42 +256,43 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Usually, or right now?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare present simple and present continuous",
+      "instruction": "Use present simple for a routine and present continuous for an activity happening now",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A habit",
-          "verb": "usually + present simple",
-          "example": "I usually go to the gym in the morning"
+          "subject": "Routine",
+          "verb": "subject + base verb / verb-s",
+          "example": "I usually cook at home. She usually cooks at home"
         },
         {
           "id": "1",
           "subject": "Happening now",
-          "verb": "am / is / are + verb-ing",
-          "example": "Today I’m making coffee at home"
+          "verb": "subject + am / is / are + verb-ing",
+          "example": "I’m cooking now. She’s making coffee"
         },
         {
           "id": "2",
-          "subject": "Ask about the difference",
-          "verb": "What do you usually do? / What are you doing?",
-          "example": "I usually order food, but today I’m cooking"
+          "subject": "Questions",
+          "verb": "Do / Does + subject + base? / Am / Is / Are + subject + -ing?",
+          "example": "Do you usually cook? Are you cooking now?"
         }
-      ]
+      ],
+      "note": "Use don’t/doesn’t for routine negatives; use am not/isn’t/aren’t + -ing for actions now. Some verbs, such as know, normally use the simple form."
     },
     {
       "id": "s_gap99",
       "kind": "dialogue",
-      "title": "Complete the routine and today",
-      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "title": "Complete the conversation",
+      "instruction": "You are Anna and Teacher is Ben. Say the missing words as you practise, then swap roles",
       "minutes": 2,
       "eyebrow": "Complete the conversation",
       "dialogueGroup": "A2.01.practice99",
@@ -391,7 +392,7 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Usually or today?",
+      "title": "Compare a usual day with today",
       "instruction": "Compare a usual day with what is happening today",
       "minutes": 5,
       "eyebrow": "Speaking task"
@@ -399,8 +400,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "A message from Anna",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "A message from Anna. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hey! What are you doing? I'm at home right now. I'm making some coffee and listening to music. I usually go to the gym in the morning, but today I'm just relaxing. My sister is watching TV, and my parents are cooking lunch. What about you? What are you doing today?",
@@ -436,8 +437,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Ask about Anna’s family",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Ask about Anna’s family. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -445,40 +446,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "What is he doing now?",
-      "instruction": "Watch Emir use the machine, then compare a usual habit with today",
+      "title": "Describe what he is doing",
+      "instruction": "Watch the coffee-making, then compare what you are doing now with your usual routine",
       "minutes": 4,
       "video": {
         "videoId": "LLvGYEjutWo",
         "startSeconds": 90,
-        "endSeconds": 130,
-        "title": "Giving instructions — British Council | English",
+        "endSeconds": 132,
+        "title": "How to give instructions in English",
         "credit": "British Council | English"
       },
       "items": [
         {
           "id": "a2-01.video102.q1",
-          "prompt": "What is Emir learning to use?",
-          "hint": "Look at the machine and the drink",
-          "answer": "He’s learning to use a coffee machine"
+          "prompt": "Is the learner doing it correctly? How do you know?",
+          "hint": "Listen to the feedback after he asks “Like this?”",
+          "answer": "Yes. The person helping him says he is doing well"
         },
         {
           "id": "a2-01.video102.q2",
-          "prompt": "Who is helping him?",
-          "hint": "Listen to the person giving instructions",
-          "answer": "Vanya is helping him"
+          "prompt": "What is the next instruction when he asks what to do next?",
+          "hint": "Listen for connect and the machine",
+          "answer": "He is told to connect it to the machine"
         },
         {
           "id": "a2-01.video102.q3",
-          "prompt": "What is he doing before he presses the final button?",
-          "hint": "Follow the instructions about connecting it",
-          "answer": "He’s connecting the coffee holder to the machine"
+          "prompt": "What does he say when he tries the drink?",
+          "hint": "Listen to his response at the end",
+          "answer": "He says it is delicious and thanks the person helping him"
         },
         {
           "id": "a2-01.video102.q4",
-          "prompt": "What do you usually drink, and what are you drinking today?",
-          "hint": "Contrast usually with today",
-          "answer": "Example: I usually drink coffee, but today I’m drinking tea"
+          "prompt": "What are you doing right now? What do you usually do at this time?",
+          "hint": "Use am/is/are + -ing for now, and the SimplePresent for a habit",
+          "answer": "Example: I am studying English now. I usually work at this time, but today I am having a lesson"
         }
       ]
     },

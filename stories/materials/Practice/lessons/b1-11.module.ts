@@ -1,3 +1,13 @@
+import scene161_0 from '../assets/native-scene161/d4d0d21a391e5fb76de67eacda1b23b7b554733fdb7e3c7a104df46714c2c128.webp'
+import scene161_1 from '../assets/native-scene161/84bc70e5520aa29bae7365a1ca6177791bb7ee215c22ce373f3e7048b868a48c.webp'
+import scene161_2 from '../assets/native-scene161/6d112af8268d283a4fbbad612ab0e8474536ad756ecd3c8459f5332d2ff098dd.webp'
+import scene161_3 from '../assets/native-scene161/bdcfe2bf21927abb40ccc81365b53f1a78f1cf7f5b64999faaad2ed13399b344.webp'
+import scene161_4 from '../assets/native-scene161/73973e6a5a9ccb109f32c4fad8acdc9bb083ff00fcba5a8f7f50fcdb6105eb1b.webp'
+import scene161_5 from '../assets/native-scene161/635b5fd304668546441c0eb7497d3bc6535ab937fe379b57fbf56a725fe775ee.webp'
+import nativeView159_0 from '../assets/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9.webp'
+import nativeView159_1 from '../assets/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1.webp'
+import nativeView159_2 from '../assets/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348.webp'
+import nativeView159_3 from '../assets/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-11.json'
 import asset0 from '../assets/audio/e8fea4e7ca1b764ed5b66583089d0c397def065224e448ed9401af0d655f89a9.mp3'
@@ -219,6 +229,26 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene161/d4d0d21a391e5fb76de67eacda1b23b7b554733fdb7e3c7a104df46714c2c128/image.webp':
+      scene161_0,
+    '/flashcards-transparent/course-practice/native-scene161/84bc70e5520aa29bae7365a1ca6177791bb7ee215c22ce373f3e7048b868a48c/image.webp':
+      scene161_1,
+    '/flashcards-transparent/course-practice/native-scene161/6d112af8268d283a4fbbad612ab0e8474536ad756ecd3c8459f5332d2ff098dd/image.webp':
+      scene161_2,
+    '/flashcards-transparent/course-practice/native-scene161/bdcfe2bf21927abb40ccc81365b53f1a78f1cf7f5b64999faaad2ed13399b344/image.webp':
+      scene161_3,
+    '/flashcards-transparent/course-practice/native-scene161/73973e6a5a9ccb109f32c4fad8acdc9bb083ff00fcba5a8f7f50fcdb6105eb1b/image.webp':
+      scene161_4,
+    '/flashcards-transparent/course-practice/native-scene161/635b5fd304668546441c0eb7497d3bc6535ab937fe379b57fbf56a725fe775ee/image.webp':
+      scene161_5,
+    '/flashcards-transparent/course-practice/native-crop159/7f56df47e3f257036c86c824fbdbf275b7a6f616672895919ce90728ab3e8fb9/image.webp':
+      nativeView159_0,
+    '/flashcards-transparent/course-practice/native-crop159/4ab89d2f3d4cb85b69786e5b21793166de3c99d7c9a5a01995f817eb6ad39bb1/image.webp':
+      nativeView159_1,
+    '/flashcards-transparent/course-practice/native-crop159/eec9a9c8b2b554873d00cd803aaa3ebe3f7ddf6748f9061a850f6be956567348/image.webp':
+      nativeView159_2,
+    '/flashcards-transparent/course-practice/native-crop159/344a6c6912212c241123aeec72bc075f29bf23a31e8a01197a4bb9b12271d5f0/image.webp':
+      nativeView159_3,
     '/flashcards/a2/clothing-essentials/shirt/image.webp': expanded124Asset18,
     '/flashcards-transparent/course-images/cc8b090ec2a7d9c3fd5d6ed68d3f2a9e899e96a93b2a7e558d6ac40504bf2716/image.webp':
       expanded124Asset19,

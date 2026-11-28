@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall a choice between two places",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Plan A and Plan B",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "a hike",
           "translation": "",
           "example": "We’re planning a hike on Sunday",
-          "imageUrl": "a2-11-vocabulary81",
+          "imageUrl": "a2-11-vocabulary161",
           "imageAlt": "a hike",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A211-FS81.0",
@@ -70,13 +72,15 @@
           "word": "a trail",
           "translation": "",
           "example": "This trail goes through the trees",
-          "imageUrl": "a2-11-vocabulary81",
+          "imageUrl": "a2-11-vocabulary161",
           "imageAlt": "a trail",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A211-FS81.1",
@@ -87,13 +91,15 @@
           "word": "a museum",
           "translation": "",
           "example": "We’ll go to a museum if it rains",
-          "imageUrl": "a2-11-vocabulary81",
+          "imageUrl": "a2-11-vocabulary161",
           "imageAlt": "a museum",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A211-FS81.2",
@@ -121,13 +127,15 @@
           "word": "a forecast",
           "translation": "",
           "example": "Let’s check the forecast",
-          "imageUrl": "a2-11-vocabulary81",
+          "imageUrl": "a2-11-vocabulary161",
           "imageAlt": "a forecast",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A211-FS81.4",
@@ -138,13 +146,15 @@
           "word": "a backup plan",
           "translation": "",
           "example": "The museum is our backup plan",
-          "imageUrl": "a2-11-vocabulary81",
+          "imageUrl": "a2-11-vocabulary161",
           "imageAlt": "a backup plan",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A211-FS81.5",
@@ -155,8 +165,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Planning the outing",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +224,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Transport and lunch",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -305,36 +315,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "If this happens, what will we do?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build a first conditional sentence",
+      "instruction": "Talk about a real future possibility and the response you plan",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A real possible condition",
-          "verb": "If + present simple",
-          "example": "If it rains, …"
+          "subject": "Condition and result",
+          "verb": "If + present simple, will + base verb",
+          "example": "If it rains, we’ll go to the museum"
         },
         {
           "id": "1",
-          "subject": "The result or decision",
-          "verb": "will + base verb",
-          "example": "… we’ll go to the museum"
+          "subject": "Negative condition or result",
+          "verb": "If + don’t / doesn’t + base, will / won’t + base",
+          "example": "If the bus doesn’t come, we won’t wait outside"
         },
         {
           "id": "2",
-          "subject": "Another possible response",
-          "verb": "can + base verb",
-          "example": "If the bus is late, we can take the next one"
+          "subject": "Ask about the result",
+          "verb": "What will + subject + base + if …?",
+          "example": "What will you do if it rains?"
         }
-      ]
+      ],
+      "note": "Use present simple after if for this future condition. You can reverse the clauses: We’ll go to the museum if it rains. Use a comma when the if-clause comes first."
     },
     {
       "id": "s_mission",
@@ -347,8 +358,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Use the backup plan",
-      "instruction": "Listen to both voice notes, then answer and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Use the backup plan. Listen to both voice notes, then answer and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside",
@@ -392,8 +403,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Confirm the weather and transport plan",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Confirm the weather and transport plan. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -401,7 +412,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Make a backup travel plan",
+      "title": "Watch and answer",
       "instruction": "Watch the cancellation problem, then suggest what to do if plans change",
       "minutes": 4,
       "video": {

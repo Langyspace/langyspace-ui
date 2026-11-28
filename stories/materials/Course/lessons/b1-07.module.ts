@@ -1,3 +1,4 @@
+import contextual161 from '../assets/b1-07-vocabulary161.webp'
 import data from './b1-07.json'
 import type { PreparedCourseData } from '../Course.types'
 import type { CourseLessonData } from '../Course.types'
@@ -96,6 +97,9 @@ const prepared: PreparedCourseData = {
       src: a14,
     },
   ],
-  images: { 'b1-07-vocabulary81': i0 },
+  images: {
+    'b1-07-vocabulary161': contextual161,
+    'b1-07-vocabulary81': i0,
+  },
 }
 export default prepared

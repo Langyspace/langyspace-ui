@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
@@ -7,6 +8,7 @@ import { theme } from '../../../src/foundations/theme/theme'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import { LessonHomeworkGallery } from '../shared/LessonHomeworkGallery'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
@@ -18,7 +20,7 @@ import { DevInterviewCall } from './DevInterviewCall'
 import { InterviewOralPractice } from './InterviewOralPractice'
 import { InterviewVocabulary } from './InterviewVocabulary'
 import { InterviewGuidedExample } from './InterviewGuidedExample'
-import { InterviewRoleBrief, InterviewReference } from './InterviewReference'
+import { InterviewRoleBrief } from './InterviewReference'
 import { InterviewVoiceNote } from './InterviewVoiceNote'
 import source from './DevInterviews131.content.json'
 import practice from './DevInterviews131.practice.json'
@@ -73,11 +75,11 @@ export function DevInterviews131Lesson({
     },
     {
       id: 'vocabulary',
-      label: 'Words for your interview',
+      label: exerciseHeadings.pictureVocabulary,
       content: (
         <SlidePage
           eyebrow="Vocabulary"
-          title="Words for your interview"
+          title={exerciseHeadings.pictureVocabulary}
           instruction="Describe each scene. Click to check the word and hear its example"
           width={{ vocabularyColumns: 3 }}
         >
@@ -109,16 +111,16 @@ export function DevInterviews131Lesson({
     },
     {
       id: 'grammar',
-      label: 'Make your experience clear',
+      label: practice.grammarTitle,
       content: (
         <SlidePage
-          eyebrow="Language support"
-          title="Make your experience clear"
-          instruction="Compare experience until now, a completed project and a possible approach"
+          eyebrow="Grammar"
+          title={practice.grammarTitle}
+          instruction={practice.grammarInstruction}
         >
           <Common.Stack>
             <GrammarTable
-              title="Experience, actions and approaches"
+              title="Present perfect and past simple"
               captionVisibility="screen-reader"
               layout="patterns"
               columns={{ subject: 'Meaning', verb: 'Form', example: 'Example' }}
@@ -129,7 +131,7 @@ export function DevInterviews131Lesson({
                 example: row.example,
               }))}
             />
-            <InterviewReference />
+            <Common.Hint>{practice.grammarNote}</Common.Hint>
           </Common.Stack>
         </SlidePage>
       ),
@@ -190,11 +192,11 @@ export function DevInterviews131Lesson({
     },
     {
       id: 'message',
-      label: 'Prepare for the technical interview',
+      label: exerciseHeadings.listeningQuestions,
       content: (
         <SlidePage
           eyebrow={`A message from ${source.notes[0]!.speaker}`}
-          title="Prepare for the technical interview"
+          title={exerciseHeadings.listeningQuestions}
           instruction={`Read ${source.notes[0]!.speaker}’s message and listen to her first note. Explain the task and the expected behavior`}
           columns={2}
           density="compact"
@@ -205,11 +207,11 @@ export function DevInterviews131Lesson({
     },
     {
       id: 'next-step',
-      label: 'Know the next steps',
+      label: exerciseHeadings.listeningQuestions,
       content: (
         <SlidePage
           eyebrow={`${source.notes[1]!.speaker}’s next voice note`}
-          title="Know the next steps"
+          title={exerciseHeadings.listeningQuestions}
           instruction={`Listen to ${source.notes[1]!.speaker}’s second note. Explain what to prepare and when to expect feedback`}
           columns={2}
           density="compact"
@@ -235,12 +237,16 @@ export function DevInterviews131Lesson({
       id: 'video',
       label: video.title,
       content: (
-        <MaterialVideoPage content={video} active={pageId === 'video'} />
+        <MaterialVideoPage
+          content={video}
+          active={pageId === 'video'}
+          preload={isUpcomingLessonPage(devInterviewPageIds, pageId, 'video')}
+        />
       ),
     },
     {
       id: 'free-conversation',
-      label: 'Free conversation',
+      label: exerciseHeadings.freeConversation,
       content: (
         <FreeConversationPage instruction="Talk about your projects, job interviews and working abroad. Ask each other questions, explore different approaches and follow each other’s ideas" />
       ),

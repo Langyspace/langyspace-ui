@@ -2,6 +2,40 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Cenas como base da conversa, do A1 ao C1 — revisão159
+
+- Procurar nas missões em fichas de texto uma oportunidade de representar uma situação observável. A imagem precisa fornecer evidências ou escolhas para a conversa; não basta ilustrar o título. Preservar textos, gráficos, áudio e fontes quando forem indispensáveis ao raciocínio.
+- A densidade cresce pelas relações entre pessoas, ações, pistas e interesses. A1 nomeia/escolhe/pede; A2 combina e explica sequências; B1 descreve/compara/justifica; B2 testa hipóteses e negocia; C1 pondera perspectivas, condições e exceções. Não aumentar a dificuldade com objetos minúsculos, muitos rótulos ou uma lista maior de controles.
+- Variar a função da mesma base visual: descrever alguém para a professora identificar, escolher e fazer um pedido, resolver um problema com uma atendente visível, comparar antes/depois, relacionar pistas ou negociar necessidades. A aluna participa com a fala e a observação, sem interação obrigatória no próprio dispositivo.
+- A cena deve fazer sentido antes de abrir qualquer ponto. A professora usa poucos cliques para destacar o que foi dito ou consultar um fato. Dica/modelo são opcionais e não alteram o tamanho da imagem; nunca exigir abrir todos os alvos para descobrir a tarefa.
+- Em níveis altos, separar fato observado, informação fornecida e interpretação. Profissão, intenção, estado técnico, disponibilidade, acesso financeiro e certeza não podem ser deduzidos só de aparência ou expressão facial. Hipóteses e soluções razoáveis podem variar; não criar gabarito secreto.
+- Na ficha, manter a evidência necessária visível quando a dica ou o modelo aparecerem. Só o apoio de linguagem é substituído a cada clique. Se a cena revelar uma experiência que chega pelo áudio, colocá-la depois da escuta; não antecipar a informação para facilitar a nova composição visual.
+- O [mapa de oportunidades159](expansao-cenas-interativas159.md) propõe encaixes nas aulas existentes; ele é planejamento, não comprovação de implementação ou publicação.
+
+## Cenas de compras — revisão157
+
+- A loja fornece contexto e produtos reconhecíveis; títulos, preços, tamanhos, contornos e ajuda são UI nativa, nunca texto ou botões desenhados na imagem. Manter o prompt canônico literal e a identidade dos personagens.
+- Reutilizar `SceneExplorer` com `hotspotInteraction="area"` e os limites de cada objeto para permitir clicar na peça inteira, sem pontos sobrepostos. A professora seleciona a escolha oral da aluna; não exigir digitação na tela compartilhada.
+- A ficha da peça mostra apenas informações úteis para a compra. Uma lâmpada opcional revela dica, depois exemplo completo, substituindo o apoio anterior; trocar ou fechar a peça reinicia a ajuda. A resposta pessoal não tem alternativa correta nem envio simulado.
+- A ficha flutua acima da peça, sem cobri-la e sem alterar o tamanho ou a posição da imagem. Manter largura e base da ficha fixas durante a revelação; conteúdo adicional cresce para cima. Reservar uma faixa superior estável desde o estado inicial e reunir nome, tamanho/preço e controles em um cabeçalho compacto.
+- Cores, tamanhos e preços de itens reutilizados precisam concordar com o modelo, a missão e as mensagens de áudio. Não regenerar gravações válidas para adicionar uma cena visual.
+
+## Mapas de cidade e rotas — revisão152
+
+- Um mapa usado como referência de aula precisa parecer uma cidade acabada, com ruas pavimentadas, cruzamentos, quarteirões e lugares reconhecíveis. Não entregar linhas soltas, emojis sobre traços ou diagramas com aparência de rascunho como se fossem a ilustração final.
+- Usar vista superior legível e uma hierarquia simples: vias, quadras, construções e áreas verdes. Nomes de ruas e lugares ficam como texto nativo acessível, com contraste adequado, sem depender de letras desenhadas na imagem. Não acrescentar controles ou cliques sem função pedagógica.
+- Rótulos não podem encobrir a cena: preferir nomes de ruas sobre a própria via, com texto de contraste suficiente, sem brilho ou halo. Reduzir fundo e padding antes de diminuir a fonte; manter leitura confortável na tela compartilhada. Nomes dos lugares usam etiquetas compactas sem quebrar palavras.
+- No mapa ilustrado, indicar o ponto de partida com um pequeno marcador junto ao nome, sem uma segunda etiqueta “Start” empilhada sobre o prédio. Manter a área clicável do lugar inteira mesmo quando a etiqueta for compacta.
+- Ao compor mapa/cena com conversa, o componente visual mantém a própria proporção: estilos de imagem do contêiner externo não podem atingir imagens internas por seletores genéricos. Usar a composição pareada canônica quando as duas colunas couberem; não empilhar prematuramente e depois encolher toda a página. Em tarefas de pedir direções, conferir quem faz as perguntas: a aluna precisa formular as perguntas, com apoio opcional, e a professora recebe as réplicas prontas.
+- Reutilizar RouteMap com imagem de fundo e áreas clicáveis sobre os prédios. A área do lugar inteiro deve aceitar o clique, não apenas um ponto pequeno; preservar os controles compartilhados de dica, revelar e resetar. Reutilizar a mesma geografia nas diferentes páginas de uma aula.
+- Conferir a coerência entre desenho, pontos de partida, direção inicial, cruzamentos, perguntas e gravações. Uma imagem bonita com uma rota impossível ou um lugar no lado errado não está pronta. Mapas esquemáticos só cabem quando o objetivo explícito for estudar um esquema, não como substitutos rápidos de uma cena de cidade.
+
+## Continuidade de voz em nomes próprios — revisão151
+
+- Uma frase em inglês com cidade ou nome brasileiro precisa soar como uma única pessoa falando. Priorizar uma geração contínua da frase completa, com controle de pronúncia do nome compatível com o modelo. Preservar o texto de exibição e registrar separadamente o input fonético.
+- O mesmo voiceId não garante continuidade perceptiva quando trechos são sintetizados em modelos ou idiomas distintos e depois unidos. Não apresentar essa montagem como voz contínua apenas porque os IDs coincidem. A correção de Recife substitui essa montagem nos quatro bindings afetados, preservando as gravações válidas das demais falas.
+- Guardar modelo, voz, input, request-id e bytes reais. Validar inglês, pronúncia local e continuidade por escuta antes de tratar o resultado como aprovado. Uma transcrição correta ou HTTP200 não comprovam timbre e naturalidade. Pausas pedagógicas entre palavra e exemplo são diferentes de uma emenda no meio da frase.
+
 ## Legibilidade e controles de escuta — revisão136
 
 - Dicas curtas de fala precisam ser legíveis na tela compartilhada sem disputar espaço com a atividade. Reutilizar `SpokenPrompt`: fundo branco, texto preto e tokens de tamanho médio e peso médio, com padding compacto. A revisão substitui o tamanho grande que a dona do curso considerou excessivo em Guess who; não ampliar todos os textos da aula.
@@ -20,7 +54,7 @@ Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revis�
 
 ## Instruções e personalização — revisão114
 
-- Título e subtítulo explicam a ação, não só o assunto: Guess who + quem escolhe/pergunta/adivinha; Introduce someone + quem apresentar. Preservar títulos de contexto úteis quando o subtítulo já explica a tarefa. Evitar instruções vagas ou contraditórias.
+- Título e subtítulo explicam a ação, não só o assunto. O título do exercício é uma instrução e reutiliza o mesmo padrão quando a dinâmica e o objetivo forem os mesmos; contexto, personagens e restrições ficam no subtítulo. Seguir [os padrões de títulos](exercise-title-patterns.md) e o registro `stories/materials/shared/exerciseHeadings.json`. Capas e encerramentos mantêm sua função própria. Evitar instruções vagas ou contraditórias.
 - Em conversa pessoal, a professora tem sua fala pronta; só as respostas da aluna ficam abertas. Cumprimento usa o horário no fuso do perfil, com fallback no dispositivo. Origem declarada tem prioridade; quando ausente, usar o país de cadastro do telefone como apoio de leitura autorizado, sem enviar o número ao material ou inferir uma cidade. Contexto sem país usa frase neutra, sem inventar biografia.
 - Lacunas abertas mantêm traço contínuo e margem interna segura, inclusive vazias, com foco ou com resposta longa. Bandeiras sem moldura, padding ou corte dos cantos; preservar sua proporção e seu branco oficial.
 - Preparar o vídeo na página imediatamente anterior, sem autoplay, e conservar o player pronto ao entrar. Carregamento externo não pode controlar navegação. Agrupar caudas esparsas e pequenos repiques do scroll sem impedir passadas renovadas; testar chegada e saída da página de vídeo separadamente do estado da rede.
@@ -41,6 +75,10 @@ Decisões atuais para lembrar:
 
 ## Vocabulário seguido de prática visual — revisão107
 
+- **Reconhecimento direto de substantivos — revisão163, 28/11/2026:** se a palavra ensinada é um objeto ou lugar, a imagem deve mostrar esse alvo grande e reconhecível. Não acrescentar personagem, gesto de dúvida, pensamento ou ação apenas para ilustrar a frase de exemplo: isso pode fazer a aluna interpretar uma ação diferente do substantivo. Usar pessoas somente quando forem necessárias ao significado ensinado. Lugares podem ter um contexto mínimo; objetos preservam a apresentação apropriada ao conjunto. Em “Shared spaces”, prédio, piscina, garagem, churrasqueira, lixo e bicicleta são os protagonistas, sem pessoas.
+- **Título como ação e reconhecimento — revisão164:** o tema sozinho não instrui a atividade. No grid de vocabulário, reutilizar “Name the pictures”; numa cena explorável, “Name what you see”. O subtítulo explica a sequência oral e o clique para conferir/ouvir. A seção “Vocabulary” já identifica o formato, sem exigir outro título temático. Não inventar variações de sinônimos por aula apenas para soar diferente.
+- **Finalidade real — correção165:** o mesmo componente ou um ID parecido não implica a mesma tarefa. Na guided conversation padrão, usar “Practise the conversation”: aluna e professora interpretam os personagens, trocam os papéis e depois respondem às perguntas. Não instruir leitura ou escuta passiva como ação principal; os áudios são apoio opcional. “Talk about yourself” se aplica à informação pessoal real, não automaticamente a pedidos simulados, problemas de hotel, agendamentos ou consulta de fichas. Preservar instruções específicas que já diziam corretamente o que fazer. Verificar a sequência antes de chamar uma página de resposta a uma mensagem.
+
 - Quando o objetivo for reconhecer o vocabulário recém-apresentado, colocar sua sequência de múltipla escolha visual imediatamente depois do respectivo bloco. Reutilizar a mesma imagem e variar a posição correta. Pergunta, nome, pronome e resposta completa precisam corresponder ao personagem da cena.
 - Quando a apresentação pedir apenas a palavra, omitir o exemplo também do áudio acionado pelo card, reutilizando a gravação isolada válida. Essa variação não remove os exemplos das outras atividades.
 - Em cumprimentos por período, distinguir chegada à noite (`Good evening`) de despedida antes de dormir (`Good night`) pela ação e pelo cenário. Horários são texto nativo padronizado no canto superior direito, não texto gerado dentro da ilustração.
@@ -58,8 +96,11 @@ Decisões atuais para lembrar:
 - O trecho pode mostrar apresentações, pronúncia em contexto, falantes nativos, sketches, entrevistas, palestras ou discursos. Escolher pela relação com a linguagem e o objetivo da aula; adequar a dificuldade e o contexto ao nível. Não limitar todos os gêneros a uma duração fixa. A aluna compreende, observa um detalhe, interpreta ou responde; não apenas repete o enunciado.
 - Autorar quatro perguntas para cada trecho, variando compreensão, detalhe, interpretação e prática oral conforme o objetivo. Distinguir resposta factual de exemplo aberto. Não inferir intenção só por rosto ou sotaque, nem impor um gabarito arbitrário. Perguntas de pronúncia podem orientar observação e reprodução de uma expressão em contexto.
 - Usar VideoExercise com variação inline e adaptador YouTube na UI Library. Registrar vídeo/canal, URL original, início/fim e referência consultada. Repetir o mesmo intervalo reaplicando os limites; ao terminar, preparar novamente esse trecho sem autoplay, para que o replay nativo do YouTube também retome o início escolhido. Nas aulas, usar playbackControls="replay-only": um único controle Recomeçar reaplica os limites do trecho, sem botão de Loop. A biblioteca mantém a variação opcional replay-and-loop para outros consumidores. Sem autoplay ao entrar na página; interromper o player ao sair.
+- Preparar o player na página imediatamente anterior também nas extras e experimentais, usando o mesmo `preload` do componente canônico. Derivar essa proximidade da ordem das páginas; não fixar o nome de uma atividade anterior que pode mudar. Manter a instância pronta na entrada, sem autoplay, e interromper/liberar quando a página deixar de estar ativa ou próxima. Não carregar antecipadamente todos os vídeos do catálogo.
 - Exibir nome do vídeo e intervalo como texto não clicável no rodapé, alinhados à esquerda, com Recomeçar à direita na mesma linha. O título pode quebrar linhas sem comprimir o botão. Apresentar link externo apenas para recuperação se o vídeo falhar. Não adicionar um segundo controle de loop nas aulas.
 - Nunca usar YouTube Shorts nem fontes verticais enquadradas como vídeo horizontal. A URL watch não comprova o formato: conferir dimensões reais e composição do vídeo original. Preferir fonte original horizontal 16:9, falas legíveis e trecho coerente com nível/tema; registrar transcrição e quatro perguntas correspondentes. Metadados de incorporação não substituem teste do player na aula.
+- Antes de adotar uma fonte, iniciar o próprio intervalo e registrar um frame real. Conferir a largura útil da cena, além da resolução: faixas estreitas, grandes barras laterais ou mosaicos que reduzem a ação importante a um quadrante podem prejudicar a tela compartilhada mesmo num upload longo16:9. Escolher outra fonte quando a imagem relevante ficar pequena; não usar a thumbnail como aprovação do enquadramento.
+- Conferir também a passagem entre falas nos limites. Captions rolantes podem continuar exibindo uma fala anterior após seu último som; deixar margem adequada quando o recorte deve excluir uma abertura ou piada. Registrar o tempo observado e preservar uma fala completa, considerando a aproximação por keyframe do player.
 - Preservar controles, legendas, identificação e anúncios do YouTube; não baixar, regravar, cobrir ou alterar o áudio do vídeo. O início por keyframe não é um corte exato por quadro. Erros de rede/incorporação devem oferecer a fonte original, sem sucesso simulado. Não aplicar automaticamente a regra de terceira escuta dos áudios WhatsApp a vídeos.
 - Colocar o vídeo imediatamente antes de Free conversation: é uma etapa de compreensão mais exigente, depois das práticas guiadas. Preservar conversa livre penúltima e homework ou fechamento de matrícula último, sem alterar os outros exercícios ou sua ordem
 
@@ -80,6 +121,15 @@ Decisões atuais para lembrar:
 - Manter quatro perguntas, ajuda progressiva, intervalo fixo e uma aplicação oral. O recorte precisa conter a evidência da resposta; uma interpretação possível fica distinta de um fato ou de um modelo aberto. Evitar depender de palavrões, nomes mal transcritos ou referências culturais sem apoio para resolver a atividade
 - A atividade de vídeo vem antes da conversa livre; preservar a conversa livre penúltima e o fechamento de matrícula último nas experimentais
 
+### Variedade de fontes e duração — revisão160
+
+- Escolher a duração pelo arco da situação e pela tarefa, sem padronizar todos os vídeos ou tratar duração como medida de nível. Como referência flexível, trocas iniciais podem funcionar com 20–75s, experiências B1 com 45–120s e algumas situações B2/C1 com 90–180s. Um trecho menor continua válido quando completo; um maior precisa acrescentar contexto, contraste ou consequência.
+- Nos avançados, permitir acompanhar uma cena, uma argumentação ou uma história mais desenvolvida antes de interpretar intenção, avaliar evidência ou reformular. Não terminar antes de uma correção que mude o sentido da história. Planejar tempo de discussão proporcional: um trecho de quase três minutos não cabe com duas reproduções e quatro perguntas num bloco de quatro minutos.
+- Diversificar entrevistas, relatos, reportagens e comédia de canais originais, mantendo os critérios de vídeo horizontal e ausência de Shorts. Exemplos curados nesta rodada: Easy English, TED, Viva La Dirt League, Chris and Jack e Key & Peele; nomes de canais não dispensam conferir cada vídeo, seu contexto e sua adequação à turma.
+- Reutilizar um vídeo apenas quando o intervalo ou a tarefa trouxerem um ganho claro. Evitar o mesmo recorte elementar como padrão de vários níveis; conservar uma fonte já aprovada e pertinente em vez de trocá-la só por novidade.
+- Manter quatro perguntas: três apoiadas no trecho (compreensão ou interpretação justificável) e uma aplicação oral com exemplo aberto. Respostas factuais aceitam paráfrases; respostas pessoais não recebem gabarito único. Registrar limites das captions e conteúdo adulto na curadoria, sem inventar fatos ou exigir compreender palavrões para resolver a atividade.
+- Registrar separadamente: fonte oficial, formato, intervalo conferido em captions, permissão de incorporação por metadados e reprodução observada no iframe. Um sinal não certifica os outros. A curadoria160 e suas reservas estão em `docs/epics/material-video-variety160/curation.json`; as reservas não são mudanças aplicadas.
+
 ## Flashcards — mínimo de 20 itens por conjunto
 
 **Atribuir o conjunto existente completo — revisão97.** Antes de criar um conjunto por aula, procurar uma atividade temática já publicada e compatível. Se houver, a prévia e o link devem usar o mesmo ID, título, todos os cartões e mídias dessa atividade; nunca montar uma amostra de seis como se fosse o dever completo. Conferir a disponibilidade para o nível e o ambiente por leitura. Na A1.01, o conjunto correto é `deck-a2-countries` (Countries, 48 cartões), já disponível para A1; o identificador histórico não determina sozinho a trava de nível. Preservar IDs e progressos dos conjuntos antigos e não regenerar mídias válidas para fazer esse vínculo. A prévia embutida registra a fonte verificada e deve ser atualizada no export quando a atividade mudar.
@@ -87,6 +137,36 @@ Decisões atuais para lembrar:
 Regra de 25/11/2026: cada conjunto de flashcards precisa ter pelo menos 20 palavras ou expressões úteis, distintas e adequadas à aula e ao nível. Preservar itens válidos, completar o vocabulário realmente trabalhado e usar extensões pertinentes; não inflar a contagem com plurais, flexões ou frases quase iguais. Reaproveitar conjuntos temáticos de TI e outros já existentes quando fizerem sentido, mantendo exemplos, imagens e áudio correspondentes. A quantidade não substitui a curadoria.
 
 Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloco introdutório na aula é uma regra separada. Conjuntos menores já publicados entram no plano de ampliação; não declarar que foram atualizados antes do cadastro e da leitura de confirmação. Ver [inventário e propostas por aula](../epics/dev-first-day95/homework/expansion-plan20.md).
+
+## Situação completa na própria tela — revisão166
+
+- Numa prática baseada em mensagens ou posições diferentes, manter as referências essenciais visíveis ao mesmo tempo que a conversa. Não exigir voltar às leituras anteriores para descobrir quem quer o quê.
+- O título e o subtítulo definem a ação, o papel da aluna e quem a professora representa. Preferir falas diretas do interlocutor a perguntas abstratas como “What does the other person mean?”.
+- A referência mostra as mensagens/fatos, sem antecipar o acordo que a aluna deve construir. Uma lâmpada canônica oferece formulações úteis em ordem; a conversa continua aberta e não tem gabarito único.
+
+### Referência e conversa precisam se conectar — revisão167
+
+- Uma ficha de roleplay identifica os mesmos papéis dos balões: quem é You, quem Teacher representa, o que cada um sabe e o que precisa combinar. Não deixar “Person A/B” ou “the other person” sem ligação explícita com a conversa.
+- A primeira fala retoma um elemento reconhecível da ficha: a mensagem enviada, a cobrança, o horário ou o problema. As falas seguintes respondem à troca anterior. Não perguntar sobre “essa oferta”, “essa preocupação” ou “essa proposta” se ela ainda não apareceu.
+- A referência local contém os fatos necessários para responder: não omitir a condição de um prazo, a necessidade de quem recebe uma recomendação ou a pista que muda uma história. Uma hipótese continua hipótese; não manter uma falsa ambiguidade quando a fonte já resolve o caso.
+- Quando a decisão exige comparar duas ofertas ou aplicar regras de vários lugares, mostrar os dados essenciais juntos. Seletores continuam úteis para escolher uma pessoa, destinatário ou imagem, mas não devem esconder a informação exigida pela pergunta atual.
+- As dicas usam a mesma perspectiva e os mesmos fatos da pergunta e da ficha. Não oferecer uma resposta específica de C quando A está selecionado. Apoio de linguagem não é um gabarito único para uma decisão aberta.
+
+### Aplicação com resultado comunicativo — revisão168
+
+- Se uma prática continua confusa após ajustes de copy, reavaliar o desenho pedagógico em vez de insistir na situação original. Preservar a habilidade-alvo, não obrigatoriamente o cenário.
+- Uma aplicação de reformulação/negociação precisa levar a um resultado concreto: proposta, decisão ou acordo. Oferecer necessidades compreensíveis e mais de um aspecto para conciliar. Evitar sustentar toda a atividade na interpretação de uma única palavra quando isso só produz repetição.
+- As falas do interlocutor devem provocar reações diferentes: esclarecer a intenção, construir um exemplo e sintetizar/verificar o acordo. Modelos são possibilidades de linguagem; outras soluções coerentes com o brief continuam válidas.
+
+## Gramática que realmente ensina — revisão169
+
+- A página de gramática é opcional. Só entra quando houver uma estrutura gramatical pertinente à aula para explicar; organização de discurso, registro, negociação e frases prontas não justificam automaticamente esse bloco. Se já estão bem trabalhados no modelo e na prática, não criar uma tabela apenas para cumprir o formato.
+- Nomear o tópico real no título: “Use am, is and are”, “Build past simple statements and questions”, “Distinguish defining and non-defining relative clauses”. “Compare the examples” é um recurso para um contraste real, não um substituto do tópico.
+- Mostrar significado/uso em linguagem simples, estrutura explícita e exemplos completos ligados ao tema. Quando fizer sentido, incluir afirmativa, negativa, pergunta e resposta curta. Para outra construção, mostrar seu contraste central e as restrições relevantes, sem forçar o paradigma dos tempos verbais.
+- A professora deve ter o suficiente para explicar: quem muda a forma, qual verbo permanece na base, quando entra auxiliar, uma contração ou exceção importante e o contraste que costuma confundir. Fórmula sem significado é insuficiente; três frases úteis sem explicar a construção também são.
+- Simplificar a apresentação, não a regra a ponto de ficar falsa. Ex.: present perfect simple também pode descrever uma situação que continua; didn’t need to não informa sozinho se a ação ocorreu; a forma de uma dedução não prova a sua conclusão.
+- Usar o componente canônico GrammarTable e separar em páginas coerentes quando necessário. Não encher o espaço com tópicos sem ligação, atividade avaliativa, múltipla escolha ou perguntas extras embaixo da explicação. Um bloco de be pode ter afirmativa em uma página e negativas/perguntas na seguinte.
+- As estruturas devem corresponder à aula que a aluna está tendo. Reaproveitar o vocabulário/contexto nos exemplos, manter a progressão A1–C1 e preservar falas e áudios válidos. Não acrescentar um novo tópico só para dar aparência de profundidade.
 
 ## Perguntas conforme a finalidade — revisão94
 
@@ -529,7 +609,7 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 Na entrega dos flashcards, valide também os campos aceitos e devolvidos pelo contrato de gravação e pelo endpoint do aluno. Um fallback visual existente apenas no frontend não torna um campo publicável: o servidor pode removê-lo. Letras e dígitos podem usar imagens tipográficas nativas, com símbolo literal e fonte do produto, quando isso garante compatibilidade com o portal já publicado. Não gerar ilustração de IA para um símbolo literal. Preserve IDs/textos/áudios e registre fonte, bytes, hash e vínculo da imagem. Mantenha o readback exato; corrija o payload ao detectar um campo descartado, em vez de flexibilizar o verificador.
 
-O modelo visual e o payload publicado não são intercambiáveis: PictureRegion permite recortes arbitrários, enquanto o contrato de atividades atual aceita apenas grades até8×8 sem spans. Exporte a mesma vista nativa para uma imagem inteira quando o recorte não cabe nesse contrato; preserve original, coordenadas, fonte, bytes e hash, sem redesenhar a cena. Dados de shadowing precisam de IDs de personagem canônicos associados às frases, sotaques aceitos, tema e tom. Antes de publicar um lote, confira o payload completo contra o validador oficial e compare os campos resultantes, mantendo o readback exato após a gravação.
+O modelo visual e o payload publicado não são intercambiáveis: PictureRegion permite recortes arbitrários, enquanto o contrato de atividades atual aceita apenas grades até8×8 sem spans. Exporte a mesma vista nativa para uma imagem inteira quando o recorte não cabe nesse contrato; preserve original, coordenadas, fonte, bytes e hash, sem redesenhar a cena. Ao corrigir o enquadramento de um atlas, confira também os flashcards que reutilizam a mesma imagem, inclusive em outras aulas: a correção no vocabulário não atualiza automaticamente o homework. Compare por imagem de origem e palavra; mantenha a janela aprovada, a proporção e os campos aceitos pelo portal do aluno. Dados de shadowing precisam de IDs de personagem canônicos associados às frases, sotaques aceitos, tema e tom. Antes de publicar um lote, confira o payload completo contra o validador oficial e compare os campos resultantes, mantendo o readback exato após a gravação.
 
 **Reset do vocabulário:** ao lado da lâmpada e do olho, oferecer o ícone de reset para voltar à exploração inicial. Limpar palavras reveladas individualmente, exemplos, dicas e mostrar-todas, além de interromper o áudio atual. O próximo clique numa imagem deve continuar revelando e tocando normalmente. Usar o controle canônico, sem recriar botões por aula.
 
@@ -558,12 +638,23 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 
 - Na roleta, tema/estado e progresso ficam no mesmo cabeçalho fixo durante o giro e a revelação. Usar um estado curto como “Spinning”, mantendo “Spin” no botão central durante o giro, sem recentralizar o painel. O som do giro acompanha a desaceleração, com volume discreto, usando o mute compartilhado e sem competir com as gravações da aula; não tratar o efeito como benefício cognitivo comprovado.
 
-
 ## Prévias de homework legíveis — feedback156
 
 Não resolver a legibilidade de um Quiz encolhendo todo o documento com transform. Usar o modo application-responsive de MobileFrame e a apresentação preview de QuizSession: mesma superfície canônica, menos espaçamento/chrome auxiliar, texto sem escala. A sessão normal do Student mantém seu comportamento. Depois de responder, a prévia resume a opção selecionada; em tela útil abaixo de22rem, concentra a explicação e Próxima sem repetir enunciado/opções. Preservar explicação completa em português.
 
 Flashcards e Shadowing mantêm application até sua adaptação específica: trocar o viewport global pode cortar os controles. Uma mudança de preview não comprova adoção do renderer pelo Student implantado. Conferir o estado inicial e o de correção, sem afirmar encaixe universal sem revisão visual.
 
-
 **Protótipo A1.08 — legenda compartilhada de vocabulário:** quando a frase no card encobrir a ilustração ou aumentar duas fileiras, usar a variação opcional `examplePlacement="footer"` do VocabularyGrid: etiqueta curta com a palavra na imagem e uma única faixa com palavra/exemplo ao lado dos controles. A faixa acompanha a seleção e mantém os mesmos seis quadros; não criar uma legenda alta por card nem reduzir a frase a texto ilegível. Validar este protótipo antes de adotar em outros materiais.
+
+## Fundos das cenas de vocabulário — revisão160
+
+Objetos isolados podem ter fundo transparente. Cenas que ensinam ações ou situações preservam um fundo contextual completo e opaco; não usar recortes esfumados, halos ou transparência gradual ao redor da cena. O cenário deve ser simples e legível. Arredondar os cantos no componente canônico de cena/card, sem pintar molduras ou máscaras arredondadas no bitmap. Ao mudar o acabamento, preservar as ações, a ordem dos itens e os vínculos de áudio; manter o prompt de estilo canônico intacto. Validar primeiro uma página local antes de estender uma nova direção visual às demais aulas.
+
+## Referências precisas e compreensão verificável — revisão170
+
+- Uma referência de leitura é um texto de verdade: título curto e parágrafos coesos, com sequência, interlocutores e relações explícitas. Usar ficha ou tabela apenas quando os dados forem naturalmente estruturados. Não misturar bullets, fragmentos, pontos médios e comentários sobre “o que a aluna deve fazer” no mesmo texto. Instruções ficam no título/subtítulo; notas de autoria não aparecem como parte da situação.
+- Cada pergunta de compreensão tem um significado de resposta determinado pela fonte disponível na mesma tela. Escrever a resposta completa e registrar, na revisão de conteúdo, o trecho exato que a sustenta. São aceitas paráfrases do mesmo fato; opiniões diferentes não são um gabarito. Uma operação simples sobre dados explícitos também é válida, desde que as unidades e valores estejam claros.
+- Não perguntar “por quê?” quando a causa não está informada. Não cobrar uma proposta, preferência, intenção inventada ou explicação psicológica como se fosse compreensão factual. Quando a informação não existe, perguntar precisamente qual detalhe permanece desconhecido; não preencher a lacuna com uma resposta suposta.
+- Diferenciar fonte, alegação, confirmação, proposta e decisão final. Datas, prazos, destinatários e condições devem ser explícitos. Não transformar “pode”, “se” ou uma estimativa em certeza. A dificuldade de C1 vem da linguagem, da relação entre evidências e das distinções relevantes, não de referências abstratas ou instruções ambíguas.
+- Perguntas factuais usam `QuestionList`, com pelo menos três perguntas pertinentes, resposta completa no clique e dica que localiza a evidência. Quando texto e perguntas se relacionam, colocá-los lado a lado; não exigir voltar páginas para recuperar a informação.
+- Conservar a prática aberta como conversa ou roleplay claramente identificado, com papéis e objetivo concretos, sem gabarito fictício. Não substituir toda a prática oral por compreensão nem apresentar “How would you…?” como pergunta factual. Manter imagens e gráficos que sejam evidência útil.

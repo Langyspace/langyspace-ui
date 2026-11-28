@@ -6,7 +6,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "People in your life",
+      "title": "Review the last lesson",
       "instruction": "Introduce someone, then ask your teacher",
       "minutes": 2,
       "eyebrow": "Your turn",
@@ -35,8 +35,8 @@
     {
       "id": "s2",
       "kind": "vocabulary",
-      "title": "What do you do every day?",
-      "instruction": "Name the activities first, then click to check and listen",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "items": [
@@ -106,8 +106,8 @@
     {
       "id": "s31",
       "kind": "vocabulary",
-      "title": "Morning, afternoon or evening?",
-      "instruction": "Describe each time of day, then click to listen",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 2,
       "eyebrow": "Reference",
       "items": [
@@ -140,8 +140,8 @@
     {
       "id": "s6",
       "kind": "dialogue",
-      "title": "Listen for a time to meet",
-      "instruction": "Follow Ana’s routine and find the plan she agrees to",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 5,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -212,8 +212,8 @@
     {
       "id": "s82",
       "kind": "questions",
-      "title": "Tell me about your routine",
-      "instruction": "Talk about your day and ask your teacher about hers",
+      "title": "Talk about yourself",
+      "instruction": "Tell me about your routine. Talk about your day and ask your teacher about hers",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -244,71 +244,84 @@
     {
       "id": "s7",
       "kind": "grammar",
-      "title": "Talk about what you do",
-      "instruction": "Use I with an activity, and I’m with a state",
-      "minutes": 2,
       "eyebrow": "Grammar",
+      "title": "Build simple present sentences",
+      "instruction": "Use simple present for routines; change the verb for he, she and it",
+      "minutes": 2,
+      "layout": "patterns",
       "columns": {
-        "subject": "Use",
-        "verb": "Pattern",
-        "example": "Pattern and example"
+        "subject": "Meaning",
+        "verb": "Form",
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "action",
-          "subject": "Activity",
-          "verb": "I + verb",
-          "example": "I work. I study after work."
+          "id": "0",
+          "subject": "Affirmative",
+          "verb": "I / you / we / they + base verb; he / she / it + verb-s",
+          "example": "I work in the morning. She works in the morning"
         },
         {
-          "id": "state",
-          "subject": "State",
-          "verb": "I’m + adjective",
-          "example": "I’m tired. I’m free on Friday."
+          "id": "1",
+          "subject": "Negative",
+          "verb": "don’t / doesn’t + base verb",
+          "example": "I don’t work at night. She doesn’t work at night"
+        },
+        {
+          "id": "2",
+          "subject": "Question",
+          "verb": "Do / Does + subject + base verb?",
+          "example": "Do you work in the morning? Does she work on Friday?"
+        },
+        {
+          "id": "spelling",
+          "subject": "He / she / it: spelling",
+          "verb": "usually -s; -es after -s/-sh/-ch/-x/-z; consonant + y → -ies",
+          "example": "work → works; watch → watches; study → studies; go → goes"
         }
       ],
-      "note": "I + activity: I work. I am + state: I’m free",
-      "layout": "patterns"
+      "note": "After does/doesn’t, keep the base verb. Short answers: Yes, I do / No, I don’t; Yes, she does / No, she doesn’t. For states with be, use I am / she is instead."
     },
     {
       "id": "s71",
       "kind": "grammar",
-      "title": "Say when it happens",
-      "instruction": "Connect each time expression to the right word",
-      "minutes": 2,
       "eyebrow": "Grammar",
+      "title": "Choose at, on and in for time",
+      "instruction": "Use at for a clock time, on for a day and in for a part of the day",
+      "minutes": 2,
+      "layout": "patterns",
       "columns": {
-        "subject": "Time",
-        "verb": "Word",
-        "example": "Pattern and example"
+        "subject": "Meaning",
+        "verb": "Form",
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "at",
-          "subject": "A time",
-          "verb": "at",
-          "example": "I get up at six."
+          "id": "0",
+          "subject": "Clock time",
+          "verb": "at + time",
+          "example": "I get up at seven. I go to bed at ten"
         },
         {
-          "id": "on",
-          "subject": "A day",
-          "verb": "on",
-          "example": "I study on Monday."
+          "id": "1",
+          "subject": "Day",
+          "verb": "on + day / date",
+          "example": "I study on Monday. I exercise on Friday"
         },
         {
-          "id": "in",
-          "subject": "Part of day",
-          "verb": "in",
-          "example": "I work in the morning. I relax in the afternoon or evening."
+          "id": "2",
+          "subject": "Part of the day",
+          "verb": "in + the morning / afternoon / evening",
+          "example": "I work in the morning. I relax in the evening"
         }
       ],
-      "layout": "patterns"
+      "note": "An important exception is at night. Ask with When …? or What time …? Keep the preposition in the answer: At seven / On Monday."
     },
     {
       "id": "s_gap99",
       "kind": "dialogue",
-      "title": "Complete the plan to meet",
-      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "title": "Complete the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Say the missing words as you practise, then swap roles",
       "minutes": 2,
       "eyebrow": "Complete the conversation",
       "dialogueGroup": "A1.04.practice99",
@@ -416,8 +429,8 @@
     {
       "id": "s9",
       "kind": "listening",
-      "title": "Kim needs to change the plan",
-      "instruction": "Listen, find the new time and get ready to reply",
+      "title": "Listen and answer",
+      "instruction": "Kim needs to change the plan. Listen, find the new time and get ready to reply",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "I’m not free on Thursday evening. I work until eight. Are you free on Friday at seven? Let’s go to the gym then. We can meet there. Please tell me if Friday is good for you",
@@ -447,8 +460,8 @@
     {
       "id": "s91",
       "kind": "questions",
-      "title": "Reply to Kim",
-      "instruction": "Reply to the invitation. Agree a time and confirm the place",
+      "title": "Respond to the message",
+      "instruction": "Reply to Kim. Reply to the invitation. Agree a time and confirm the place",
       "minutes": 2,
       "eyebrow": "Your turn",
       "items": [
@@ -478,39 +491,39 @@
       "kind": "video",
       "eyebrow": "Watch and talk",
       "title": "How often do they do it?",
-      "instruction": "Watch the conversation about meditation, then describe one of your habits",
+      "instruction": "Watch Paul and Emir talk about meditation. Answer, then describe one habit in your week",
       "minutes": 4,
       "video": {
         "videoId": "l1herjZq-4M",
         "startSeconds": 65,
         "endSeconds": 104,
-        "title": "Talking about personal interests — British Council | English",
+        "title": "How to talk about personal interests in English",
         "credit": "British Council | English"
       },
       "items": [
         {
           "id": "a1-04.video102.q1",
-          "prompt": "What activity do they both do?",
-          "hint": "Listen for the hobby Paul has started",
-          "answer": "They both do meditation"
+          "prompt": "What activity do Paul and Emir both do?",
+          "hint": "Listen to the activity Paul has started and Emir’s reply",
+          "answer": "They both practise meditation"
         },
         {
           "id": "a1-04.video102.q2",
-          "prompt": "When does Emir usually practise?",
+          "prompt": "When does Emir usually meditate?",
           "hint": "Listen for a part of the day",
-          "answer": "Emir usually practises in the mornings"
+          "answer": "Emir usually meditates in the mornings"
         },
         {
           "id": "a1-04.video102.q3",
           "prompt": "How often does Paul meditate?",
-          "hint": "Listen for a number followed by a week",
+          "hint": "Listen for a number and a period of time",
           "answer": "Paul normally meditates once or twice a week"
         },
         {
           "id": "a1-04.video102.q4",
-          "prompt": "What do you do every morning?",
-          "hint": "Use I usually and a morning activity",
-          "answer": "Example: I usually have breakfast at eight"
+          "prompt": "What do you do to relax, and how often? Ask your teacher, too",
+          "hint": "Use I usually … or I … once/twice a week. Then ask How often do you …?",
+          "answer": "Example: I usually go for a walk after work. I do that three times a week. How often do you go for a walk?"
         }
       ]
     },

@@ -1,0 +1,54 @@
+{
+  "sourceBase": "fe82ae5d7facb7730903f259b41d880220853888",
+  "checks": [
+    {
+      "key": "b1-11",
+      "page": "s_mission",
+      "otherContentPreserved": true,
+      "imageStable": true,
+      "cardBaseAndWidthStable": true,
+      "cardGrowsUp": true,
+      "gapToTargetPx": 11.9921875,
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    {
+      "key": "b2-04",
+      "page": "s_mission",
+      "otherContentPreserved": true,
+      "imageStable": true,
+      "cardBaseAndWidthStable": true,
+      "cardGrowsUp": true,
+      "gapToTargetPx": 11.99609375,
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    },
+    {
+      "key": "c1-12",
+      "page": "s_reply",
+      "otherContentPreserved": true,
+      "imageStable": true,
+      "cardBaseAndWidthStable": true,
+      "cardGrowsUp": true,
+      "gapToTargetPx": 11.9921875,
+      "viewport": {
+        "height": 720,
+        "width": 1280
+      }
+    }
+  ],
+  "audioFilesChanged": 0,
+  "canonicalPrefixPreserved": true,
+  "rawPngsPreserved": true,
+  "tests": {
+    "passed": 4,
+    "files": 2
+  },
+  "typecheckExitCode": 0,
+  "publication": "none",
+  "visualGateReview": "pending human"
+}

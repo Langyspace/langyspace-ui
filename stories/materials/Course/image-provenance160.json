@@ -1,0 +1,35 @@
+{
+  "id": "A203-vocabulary160",
+  "provider": "built-in image_gen",
+  "mode": "edit",
+  "calls": 1,
+  "references": 1,
+  "referenceRole": "existing A2.03 atlas, preserve characters and actions while restoring opaque backgrounds",
+  "referencePath": "outputs/course-continuous81-20261123/images/originals/A203-vocabulary.png",
+  "referenceSha256": "61a6ef41f6eb6d10e19cf825d9ef926512167c60909287e7942b30063aa6708a",
+  "canonicalStyle": "docs/materials/prompts/langy-illustration-v1.8.txt",
+  "canonicalStyleSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "prompt": "docs/materials/prompts/a203-contextual-scenes160.txt",
+  "promptSha256": "111606a987b66d5c39148df95d2a48d9c6cda6065de2b8697a9e1e7de0fef47c",
+  "generatedOriginal": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-def11cd6-2da1-48dc-a089-3a4549d1ea9b.png",
+  "generatedOriginalSha256": "d35f9c78cec8485ef9b646b3fb65b762b5fb6a252ab8bfebdc1ab0b0258db3f6",
+  "originalLocalCopy": "/Users/margaridamartins/.codex/worktrees/high-priority156-ui/.local/a203160/original.png",
+  "asset": "stories/materials/Course/assets/a2-03-vocabulary160.webp",
+  "assetSha256": "a3f749cc311e3723379645729ee39e040aa599be3cd4efbaa832571c6c6c64ec",
+  "bytes": 212498,
+  "width": 1536,
+  "height": 1024,
+  "transparentBackground": false,
+  "alphaExtrema": [
+    255,
+    255
+  ],
+  "processing": "full-image RGB WebP export quality92; no background removal, masking or crop",
+  "layout": "six equal square 512x512 cells; corner rounding from existing VocabularyGrid scene/card variant",
+  "preserved": [
+    "vocabulary IDs, wording, examples, audio and order",
+    "old81 atlas kept as historical source",
+    "canonical illustration prompt unchanged"
+  ],
+  "visualEvidence": "new opaque original inspected in native tool output; app layout pending human"
+}

@@ -1,3 +1,5 @@
+import guidedInstructions from '../shared/guidedConversationInstructions.json'
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
@@ -13,6 +15,7 @@ import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { useLessonPage } from '../shared/useLessonPage'
 import { PromptExercise } from '../shared/LessonExercises'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import { characterPortrait } from '../shared/characterPortraits'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
 import * as Shell from '../shared/Lesson.styles'
@@ -115,11 +118,11 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
     },
     {
       id: 'vocabulary',
-      label: 'Your learning toolkit',
+      label: exerciseHeadings.pictureVocabulary,
       content: (
         <SlidePage
           eyebrow="Vocabulary"
-          title="Your learning toolkit"
+          title={exerciseHeadings.pictureVocabulary}
           instruction="Look at each learning situation. Say what you see, then reveal the word and hear an example"
           width={{ vocabularyColumns: 3 }}
         >
@@ -130,12 +133,12 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
     oralPage('study-week'),
     {
       id: 'guided',
-      label: 'Talk about your learning',
+      label: exerciseHeadings.dialogue,
       content: (
         <SlidePage
           eyebrow="Guided conversation"
-          title="Talk about your learning"
-          instruction="Listen to Ana and Kim. Find out what Ana is building and how she plans to practice"
+          title={exerciseHeadings.dialogue}
+          instruction={guidedInstructions.anaKim.questions}
           density="compact"
           titleAudio={{
             context: 'Ana and Kim discuss a practice project',
@@ -218,12 +221,16 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
       id: 'video',
       label: video.title,
       content: (
-        <MaterialVideoPage content={video} active={pageId === 'video'} />
+        <MaterialVideoPage
+          content={video}
+          active={pageId === 'video'}
+          preload={isUpcomingLessonPage(devStudyPageIds, pageId, 'video')}
+        />
       ),
     },
     {
       id: 'free-conversation',
-      label: 'Free conversation',
+      label: exerciseHeadings.freeConversation,
       content: (
         <FreeConversationPage
           instruction={source.freeConversationInstruction}

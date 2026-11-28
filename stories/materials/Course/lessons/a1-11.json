@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "You are buying a drink for someone else",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Clothes and accessories",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -56,10 +56,12 @@
           "imageUrl": "a1-11-vocabulary81",
           "imageAlt": "T-shirt",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1200,
+            "rows": 800,
+            "column": 66,
+            "row": 48,
+            "columnSpan": 330,
+            "rowSpan": 330,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A111-FS81.0",
@@ -73,10 +75,12 @@
           "imageUrl": "a1-11-vocabulary81",
           "imageAlt": "shoes",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1200,
+            "rows": 800,
+            "column": 427,
+            "row": 63,
+            "columnSpan": 330,
+            "rowSpan": 330,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A111-FS81.1",
@@ -90,10 +94,12 @@
           "imageUrl": "a1-11-vocabulary81",
           "imageAlt": "jacket",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1200,
+            "rows": 800,
+            "column": 809,
+            "row": 41,
+            "columnSpan": 330,
+            "rowSpan": 330,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A111-FS81.2",
@@ -107,10 +113,12 @@
           "imageUrl": "a1-11-vocabulary81",
           "imageAlt": "bag",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1200,
+            "rows": 800,
+            "column": 53,
+            "row": 422,
+            "columnSpan": 330,
+            "rowSpan": 330,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A111-FS81.3",
@@ -124,10 +132,12 @@
           "imageUrl": "a1-11-vocabulary81",
           "imageAlt": "glasses",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1200,
+            "rows": 800,
+            "column": 435,
+            "row": 426,
+            "columnSpan": 330,
+            "rowSpan": 330,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A111-FS81.4",
@@ -141,10 +151,12 @@
           "imageUrl": "a1-11-vocabulary81",
           "imageAlt": "dress",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1200,
+            "rows": 800,
+            "column": 809,
+            "row": 416,
+            "columnSpan": 330,
+            "rowSpan": 330,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A111-FS81.5",
@@ -155,8 +167,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Choosing a gift",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 6,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -227,69 +239,52 @@
     },
     {
       "id": "s_personal",
-      "kind": "questions",
-      "title": "Choose your size and colour",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 3,
-      "eyebrow": "Your turn",
-      "items": [
-        {
-          "id": "0",
-          "prompt": "Which one would you like?",
-          "cue": "Choose an item and a colour",
-          "hint": "This … one, please",
-          "answer": "One possible response"
-        },
-        {
-          "id": "1",
-          "prompt": "What size do you need?",
-          "cue": "Say the size on your card",
-          "hint": "Size …, please",
-          "answer": "One possible response"
-        },
-        {
-          "id": "personal.follow-up94",
-          "prompt": "Can you ask me the price?",
-          "cue": "Ask how much your choice costs",
-          "hint": "How much is this …?",
-          "answer": "One possible response"
-        }
-      ],
-      "questionPurpose": "conversation"
+      "kind": "activity",
+      "title": "Let’s go shopping!",
+      "instruction": "Choose what you’d like to buy, then ask me about colours, sizes and prices",
+      "minutes": 4,
+      "eyebrow": "Your turn"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Point to one thing or several things",
-      "instruction": "Point to something near you and something further away as you read",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Choose this, that, these and those",
+      "instruction": "Choose by distance and number, then match is or are",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "One thing near / far",
-          "verb": "this / that",
-          "example": "This T-shirt is green. That jacket is blue"
+          "subject": "One thing near me",
+          "verb": "this + singular noun + is",
+          "example": "This T-shirt is green"
         },
         {
           "id": "1",
-          "subject": "More than one",
-          "verb": "these / those",
-          "example": "These shoes are small. Those glasses are blue"
+          "subject": "One thing farther away",
+          "verb": "that + singular noun + is",
+          "example": "That jacket is blue"
         },
         {
           "id": "2",
-          "subject": "Ask the price",
-          "verb": "How much is / are …?",
-          "example": "How much is this bag? How much are these shoes?"
+          "subject": "Several things near me",
+          "verb": "these + plural noun + are",
+          "example": "These shoes are small"
+        },
+        {
+          "id": "3",
+          "subject": "Several things farther away",
+          "verb": "those + plural noun + are",
+          "example": "Those glasses are blue"
         }
-      ]
+      ],
+      "note": "Price questions follow the same number: How much is this bag? How much are these shoes?"
     },
     {
       "id": "s_mission",
@@ -302,8 +297,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "The green one is right",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "The green one is right. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! Thank you for looking for my gift. I like the green T-shirt. Medium is right for me. I don’t need a jacket. Twelve dollars is OK. Can you bring the T-shirt on Friday? We can meet at the café. Thank you!",
@@ -339,8 +334,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Buy the gift she wants",
-      "instruction": "Use your friend’s message to choose the gift, then check its size and price",
+      "title": "Respond to the message",
+      "instruction": "Buy the gift she wants. Use your friend’s message to choose the gift, then check its size and price",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -348,7 +343,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "This one in another colour",
+      "title": "Watch and answer",
       "instruction": "Watch the customer choose a dress, then ask for an alternative",
       "minutes": 4,
       "video": {
@@ -601,6 +596,130 @@
         "columns": 3,
         "rows": 1,
         "sourceAspectRatio": 3
+      }
+    },
+    "s_personal": {
+      "type": "scene-choice",
+      "title": "Clothes shop",
+      "image": "a1-11-shopping-scene157",
+      "questions": [],
+      "scene": {
+        "alt": "Ana and Kim in a clothes shop: a pink dress, a beige bag and black glasses on the left; blue and green T-shirts, a blue jacket and white shoes on the right",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "dress",
+            "label": "Pink dress",
+            "xPercent": 9.0,
+            "yPercent": 38.5,
+            "targetBounds": {
+              "xPercent": 2,
+              "yPercent": 18,
+              "widthPercent": 14,
+              "heightPercent": 41
+            },
+            "prompt": "",
+            "example": "M · $30",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this pink dress, please. Do you have it in medium? How much is it?"
+          },
+          {
+            "id": "bag",
+            "label": "Beige bag",
+            "xPercent": 6.5,
+            "yPercent": 68.5,
+            "targetBounds": {
+              "xPercent": 1.5,
+              "yPercent": 60,
+              "widthPercent": 10,
+              "heightPercent": 17
+            },
+            "prompt": "",
+            "example": "$18",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this beige bag, please. Do you have it in black? How much is it?"
+          },
+          {
+            "id": "glasses",
+            "label": "Black glasses",
+            "xPercent": 16.5,
+            "yPercent": 73.5,
+            "targetBounds": {
+              "xPercent": 12.5,
+              "yPercent": 68.5,
+              "widthPercent": 8,
+              "heightPercent": 10
+            },
+            "prompt": "",
+            "example": "$10",
+            "hint": "I’d like these … / Do you have them in …? / How much …?",
+            "answer": "I’d like these black glasses, please. Do you have them in blue? How much are they?"
+          },
+          {
+            "id": "blue-large",
+            "label": "Blue T-shirt",
+            "xPercent": 68.25,
+            "yPercent": 34.5,
+            "targetBounds": {
+              "xPercent": 62,
+              "yPercent": 22,
+              "widthPercent": 12.5,
+              "heightPercent": 25
+            },
+            "prompt": "",
+            "example": "L · $12",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this blue T-shirt, please. Do you have it in large? How much is it?"
+          },
+          {
+            "id": "green-medium",
+            "label": "Green T-shirt",
+            "xPercent": 80.75,
+            "yPercent": 34.5,
+            "targetBounds": {
+              "xPercent": 75,
+              "yPercent": 22,
+              "widthPercent": 11.5,
+              "heightPercent": 25
+            },
+            "prompt": "",
+            "example": "M · $12",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this green T-shirt, please. Do you have it in medium? How much is it?"
+          },
+          {
+            "id": "jacket",
+            "label": "Blue jacket",
+            "xPercent": 93.0,
+            "yPercent": 36.0,
+            "targetBounds": {
+              "xPercent": 87,
+              "yPercent": 22,
+              "widthPercent": 12,
+              "heightPercent": 28
+            },
+            "prompt": "",
+            "example": "M · $25",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this blue jacket, please. Do you have it in medium? How much is it?"
+          },
+          {
+            "id": "shoes",
+            "label": "White shoes",
+            "xPercent": 78.0,
+            "yPercent": 65.5,
+            "targetBounds": {
+              "xPercent": 73.5,
+              "yPercent": 61.5,
+              "widthPercent": 9,
+              "heightPercent": 8
+            },
+            "prompt": "",
+            "example": "38 · $35",
+            "hint": "I’d like these … / Do you have them in size …? / How much …?",
+            "answer": "I’d like these white shoes, please. Do you have them in size thirty-eight? How much are they?"
+          }
+        ]
       }
     }
   }

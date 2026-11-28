@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import {
   withLessonOpeningPages,
   withLessonOpeningPageIds,
@@ -19,6 +20,7 @@ import type { TrialA1LessonProps } from './TrialA1.types'
 import { content, order, parkScene } from './TrialA1.data'
 import { GreetingSection, PictureTalkSection } from './TrialA1.sections'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import video from './TrialA1.video.json'
 export function TrialA1Lesson({
   initialPageId,
@@ -78,7 +80,7 @@ export function TrialA1Lesson({
                 const independent = id === 's3-independent'
                 const title = independent
                   ? 'Start a new conversation'
-                  : 'Talk about what you like'
+                  : exerciseHeadings.liveConversation
                 return {
                   id,
                   label: title,
@@ -90,7 +92,7 @@ export function TrialA1Lesson({
                       instruction={
                         independent
                           ? 'Choose a topic. Ask your teacher, answer and ask back'
-                          : 'Answer your teacher about yourself. Ask back when you can.'
+                          : 'Talk about what you like. Answer your teacher, then ask back'
                       }
                     >
                       <TrialA1LiveConversation independent={independent} />
@@ -139,13 +141,14 @@ export function TrialA1Lesson({
                     <MaterialVideoPage
                       content={video}
                       active={activeId === id}
+                      preload={isUpcomingLessonPage(order, activeId, id)}
                     />
                   ),
                 }
               if (id === 'free-conversation')
                 return {
                   id,
-                  label: 'Free conversation',
+                  label: exerciseHeadings.freeConversation,
                   content: (
                     <FreeConversationPage instruction="Talk freely about people you know and things you like. Ask each other questions and share more about yourselves" />
                   ),

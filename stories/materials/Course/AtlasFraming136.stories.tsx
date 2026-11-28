@@ -24,3 +24,39 @@ export const CafeNarrow: Story = {
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['visual-review', 'layout-boundary'],
 }
+export const WeekendPlans: Story = {
+  args: { materialKey: 'a2-04' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const Clothes: Story = {
+  args: { materialKey: 'a1-11' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const WeekendPlansNarrow: Story = {
+  args: { materialKey: 'a2-04' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const ClothesNarrow: Story = {
+  args: { materialKey: 'a1-11' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const PlansGoWrongOpaque: Story = {
+  args: { materialKey: 'a2-03' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const PlansGoWrongOpaqueNarrow: Story = {
+  args: { materialKey: 'a2-03' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const GetTogether: Story = {
+  args: { materialKey: 'a2-12' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const GetTogetherNarrow: Story = {
+  args: { materialKey: 'a2-12' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}

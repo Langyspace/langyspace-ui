@@ -1,3 +1,4 @@
+import directNouns163 from '../assets/a2-07-vocabulary163.webp'
 import data from './a2-07.json'
 import type { PreparedCourseData } from '../Course.types'
 import type { CourseLessonData } from '../Course.types'
@@ -80,6 +81,9 @@ const prepared: PreparedCourseData = {
       src: a14,
     },
   ],
-  images: { 'a2-07-vocabulary81': i0 },
+  images: {
+    'a2-07-vocabulary163': directNouns163,
+    'a2-07-vocabulary81': i0,
+  },
 }
 export default prepared

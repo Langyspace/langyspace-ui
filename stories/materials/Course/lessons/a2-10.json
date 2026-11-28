@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Think about a place you would enjoy staying",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Describing a place",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "cheap",
           "translation": "",
           "example": "This room is cheap for the area",
-          "imageUrl": "a2-10-vocabulary81",
+          "imageUrl": "a2-10-vocabulary161",
           "imageAlt": "cheap",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A210-FS81.0",
@@ -70,13 +72,15 @@
           "word": "expensive",
           "translation": "",
           "example": "That apartment is more expensive",
-          "imageUrl": "a2-10-vocabulary81",
+          "imageUrl": "a2-10-vocabulary161",
           "imageAlt": "expensive",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A210-FS81.1",
@@ -87,13 +91,15 @@
           "word": "spacious",
           "translation": "",
           "example": "The living room is spacious",
-          "imageUrl": "a2-10-vocabulary81",
+          "imageUrl": "a2-10-vocabulary161",
           "imageAlt": "spacious",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A210-FS81.2",
@@ -104,13 +110,15 @@
           "word": "small",
           "translation": "",
           "example": "This bedroom is too small for two beds",
-          "imageUrl": "a2-10-vocabulary81",
+          "imageUrl": "a2-10-vocabulary161",
           "imageAlt": "small",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A210-FS81.3",
@@ -121,13 +129,15 @@
           "word": "quiet",
           "translation": "",
           "example": "We’d like a quiet room",
-          "imageUrl": "a2-10-vocabulary81",
+          "imageUrl": "a2-10-vocabulary161",
           "imageAlt": "quiet",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A210-FS81.4",
@@ -138,13 +148,15 @@
           "word": "noisy",
           "translation": "",
           "example": "The street is noisy at night",
-          "imageUrl": "a2-10-vocabulary81",
+          "imageUrl": "a2-10-vocabulary161",
           "imageAlt": "noisy",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A210-FS81.5",
@@ -155,8 +167,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Comparing the options",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +226,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Agreeing a priority",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -274,48 +286,49 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Compare two places to stay",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "instruction": "Compare both apartments with Teacher. Choose where to stay and explain which differences matter to you",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the option with the need",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare with than, too and enough",
+      "instruction": "Make a comparison, then say whether an option meets a need",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Compare two options",
+          "subject": "Compare two things",
           "verb": "adjective-er / more + adjective + than",
-          "example": "B is cheaper than A. A is more expensive"
+          "example": "B is cheaper than A. A is more expensive than B"
         },
         {
           "id": "1",
-          "subject": "More than you want",
+          "subject": "More than is suitable",
           "verb": "too + adjective",
-          "example": "Twenty minutes is too far for this trip"
+          "example": "The apartment is too far from the centre"
         },
         {
           "id": "2",
-          "subject": "Enough for the need",
+          "subject": "Sufficient for the need",
           "verb": "adjective + enough / enough + noun",
-          "example": "Is it quiet enough? Are there enough beds?"
+          "example": "It’s quiet enough. There are enough beds"
         }
-      ]
+      ],
+      "note": "Enough follows an adjective but precedes a noun. Too describes a problem for a particular need; it does not just mean very."
     },
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Choose our place",
+      "title": "Choose where to stay",
       "instruction": "Compare the two places and tell me which works better",
       "minutes": 5,
       "eyebrow": "Speaking task"
@@ -323,8 +336,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "A detail about the noise",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "A detail about the noise. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! I asked about apartment A. There’s a busy road outside, and it can be noisy at night. The price, two beds and distance are the same. Apartment B is on a quiet street. I still want my own bed, but I also need to sleep well. Does this change your choice? We could ask A about a quieter room before we book",
@@ -364,8 +377,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Reconsider before booking",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Reconsider before booking. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -373,7 +386,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Which home would suit you?",
+      "title": "Watch and answer",
       "instruction": "Watch the comparison of house types, then explain your priorities",
       "minutes": 4,
       "video": {
@@ -508,7 +521,7 @@
           "hint": "It’s closer/further than … Is that too far?"
         }
       ],
-      "image": "a2-10-vocabulary81",
+      "image": "a2-10-vocabulary161",
       "questionPurpose": "response"
     },
     "s_reply": {
@@ -589,12 +602,12 @@
           "hint": "Is there a quieter …?"
         }
       ],
-      "image": "a2-10-vocabulary81",
+      "image": "a2-10-vocabulary161",
       "questionPurpose": "response"
     },
     "s_personal": {
-      "type": "choices",
-      "title": "Situation reference",
+      "type": "facts",
+      "title": "Both apartments",
       "questions": [
         {
           "id": "0",
@@ -618,65 +631,25 @@
           "answer": "One possible response"
         }
       ],
-      "options": [
+      "questionPurpose": "conversation",
+      "referenceLabel": "Both apartments",
+      "facts": [
         {
-          "id": "A",
-          "title": "Apartment A",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Price",
-              "value": " $80 per night"
-            },
-            {
-              "id": "1",
-              "label": "Beds",
-              "value": "Two"
-            },
-            {
-              "id": "2",
-              "label": "Walk to the centre",
-              "value": "Five minutes"
-            }
-          ],
-          "pictures": [
-            {
-              "id": "A",
-              "label": "Apartment A",
-              "index": 2
-            }
-          ]
+          "id": "0",
+          "label": "Price per night",
+          "value": "A: $80 · B: $65"
         },
         {
-          "id": "B",
-          "title": "Apartment B",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Price",
-              "value": "$65 per night"
-            },
-            {
-              "id": "1",
-              "label": "Beds",
-              "value": "One"
-            },
-            {
-              "id": "2",
-              "label": "Walk to the centre",
-              "value": "Twenty minutes"
-            }
-          ],
-          "pictures": [
-            {
-              "id": "B",
-              "label": "Apartment B",
-              "index": 3
-            }
-          ]
+          "id": "1",
+          "label": "Beds",
+          "value": "A: two · B: one"
+        },
+        {
+          "id": "2",
+          "label": "Walk to the centre",
+          "value": "A: five minutes · B: twenty minutes"
         }
-      ],
-      "questionPurpose": "conversation"
+      ]
     }
   }
 }

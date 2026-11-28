@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Make a simple invitation using a day and time",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,12 +38,12 @@
     },
     {
       "id": "s2",
-      "title": "Plans for the weekend",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
-      "surface": "plain",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
+      "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
       "columns": 3,
@@ -53,13 +53,15 @@
           "word": "a food festival",
           "translation": "",
           "example": "There’s a food festival this weekend",
-          "imageUrl": "a2-04-vocabulary81",
+          "imageUrl": "a2-04-vocabulary161",
           "imageAlt": "a food festival",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A204-FS81.0",
@@ -70,13 +72,15 @@
           "word": "a concert",
           "translation": "",
           "example": "We’re going to a concert on Friday",
-          "imageUrl": "a2-04-vocabulary81",
+          "imageUrl": "a2-04-vocabulary161",
           "imageAlt": "a concert",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A204-FS81.1",
@@ -87,13 +91,15 @@
           "word": "a barbecue",
           "translation": "",
           "example": "Would you like to come to a barbecue?",
-          "imageUrl": "a2-04-vocabulary81",
+          "imageUrl": "a2-04-vocabulary161",
           "imageAlt": "a barbecue",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 0,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 1,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A204-FS81.2",
@@ -104,13 +110,15 @@
           "word": "a birthday party",
           "translation": "",
           "example": "I’m going to a birthday party tonight",
-          "imageUrl": "a2-04-vocabulary81",
+          "imageUrl": "a2-04-vocabulary161",
           "imageAlt": "a birthday party",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 0,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A204-FS81.3",
@@ -121,13 +129,15 @@
           "word": "a yoga class",
           "translation": "",
           "example": "My yoga class is at two",
-          "imageUrl": "a2-04-vocabulary81",
+          "imageUrl": "a2-04-vocabulary161",
           "imageAlt": "a yoga class",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 1,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A204-FS81.4",
@@ -138,13 +148,15 @@
           "word": "a picnic",
           "translation": "",
           "example": "How about a picnic on Sunday?",
-          "imageUrl": "a2-04-vocabulary81",
+          "imageUrl": "a2-04-vocabulary161",
           "imageAlt": "a picnic",
           "imageRegion": {
-            "columns": 3,
-            "rows": 2,
-            "column": 2,
-            "row": 1,
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 513,
+            "columnSpan": 510,
+            "rowSpan": 510,
             "sourceAspectRatio": 1.5
           },
           "audioId": "A204-FS81.5",
@@ -155,8 +167,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "An invitation",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation · 1/2",
       "lines": [
@@ -214,8 +226,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Finding a time",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/2",
       "lines": [
@@ -273,7 +285,7 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Make a weekend arrangement",
+      "title": "Make plans together",
       "instruction": "Answer in your own way and ask your teacher a follow-up question",
       "minutes": 3,
       "eyebrow": "Your turn",
@@ -305,36 +317,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "An arrangement or an intention?",
-      "instruction": "Connect the meaning, the form and the example",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Talk about future plans and arrangements",
+      "instruction": "Use going to for an intention and present continuous for an arranged future event",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A confirmed arrangement",
-          "verb": "am / is / are + verb-ing + future time",
-          "example": "I’m going to a yoga class on Saturday"
+          "subject": "An intention",
+          "verb": "am / is / are going to + base verb",
+          "example": "I’m going to try yoga"
         },
         {
           "id": "1",
-          "subject": "An intention",
-          "verb": "am / is / are going to + verb",
-          "example": "I’m going to try something new"
+          "subject": "An arrangement",
+          "verb": "am / is / are + verb-ing + future time",
+          "example": "I’m meeting Ana on Saturday"
         },
         {
           "id": "2",
-          "subject": "Decline and offer an alternative",
-          "verb": "I’d love to, but … How about …?",
-          "example": "I’d love to, but I’m busy. How about Sunday?"
+          "subject": "Negative and question",
+          "verb": "not going to + base / Are you going to + base?",
+          "example": "I’m not going to stay home. Are you going to book it?"
         }
-      ]
+      ],
+      "note": "With present continuous, a future time makes the meaning clear: I’m meeting her tomorrow. Going to needs a following base verb: going to try."
     },
     {
       "id": "s_mission",
@@ -347,8 +360,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "The opening time is later",
-      "instruction": "Listen and answer, then open the video shared in the chat",
+      "title": "Listen and answer",
+      "instruction": "The opening time is later. Listen and answer, then open the video shared in the chat",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana! I checked the food festival. It opens at eleven on Sunday, not ten. Would eleven thirty work for you? We could meet at the main entrance and have lunch there. I’m still free in the afternoon. If Sunday is difficult, the festival is also open on Saturday until six. What do you think?",
@@ -385,8 +398,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Confirm or suggest an alternative",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Confirm or suggest an alternative. Use the message to update your response and agree on the next step",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -394,7 +407,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Find a plan Jack will enjoy",
+      "title": "Watch and answer",
       "instruction": "Watch the friends consider activities, then suggest another plan",
       "minutes": 4,
       "video": {

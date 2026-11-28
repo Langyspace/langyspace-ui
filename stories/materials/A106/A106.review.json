@@ -7,7 +7,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Likes and dislikes",
+      "title": "Review the last lesson",
       "instruction": "Say what you like, then ask about me",
       "minutes": 2,
       "eyebrow": "Review",
@@ -36,8 +36,8 @@
     {
       "id": "s2",
       "kind": "vocabulary",
-      "title": "Pets",
-      "instruction": "Name the animals, then click to check and listen",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "items": [
@@ -108,8 +108,8 @@
     {
       "id": "s41",
       "kind": "vocabulary",
-      "title": "Furniture",
-      "instruction": "Use these words to describe where the animals are",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 2,
       "eyebrow": "Reference",
       "items": [
@@ -143,8 +143,8 @@
     {
       "id": "s4",
       "kind": "vocabulary",
-      "title": "Where is Mia?",
-      "instruction": "Describe each position, then click to check",
+      "title": "Describe the position",
+      "instruction": "Describe where the animal is, then click a picture to check and listen",
       "minutes": 3,
       "eyebrow": "Reference",
       "items": [
@@ -184,8 +184,8 @@
     {
       "id": "s7",
       "kind": "dialogue",
-      "title": "Meet Thor and Mia",
-      "instruction": "Listen for the pets’ names and where Mia is",
+      "title": "Practise the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions",
       "minutes": 4,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -250,7 +250,7 @@
     {
       "id": "s91",
       "kind": "questions",
-      "title": "An animal you know",
+      "title": "Describe an animal",
       "instruction": "Use your own pet, someone else’s pet or the picture",
       "minutes": 2,
       "eyebrow": "Your turn",
@@ -282,42 +282,43 @@
     {
       "id": "s81",
       "kind": "grammar",
-      "title": "Have and has",
-      "instruction": "Talk about your pet or someone else’s pet",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use have and has for possession",
+      "instruction": "Use have with I, you, we and they; use has with he, she and it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Who",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "have",
-          "subject": "I / you",
-          "verb": "have / don’t have",
-          "example": "I have a dog. I don’t have a cat."
+          "id": "0",
+          "subject": "Affirmative",
+          "verb": "I / you / we / they have; he / she / it has",
+          "example": "I have a dog. She has two cats"
         },
         {
-          "id": "has",
-          "subject": "He / she",
-          "verb": "has / doesn’t have",
-          "example": "My sister has two cats."
+          "id": "1",
+          "subject": "Negative",
+          "verb": "don’t / doesn’t + have",
+          "example": "I don’t have a cat. He doesn’t have a dog"
         },
         {
-          "id": "ask",
-          "subject": "Ask",
-          "verb": "Do you have …?",
-          "example": "Do you have a pet?"
+          "id": "2",
+          "subject": "Question",
+          "verb": "Do / Does + subject + have + noun?",
+          "example": "Do you have a pet? Does she have a cat?"
         }
-      ]
+      ],
+      "note": "After does/doesn’t, use have, not has. Short answers: Yes, I do / No, I don’t; Yes, she does / No, she doesn’t."
     },
     {
       "id": "s_gap99",
       "kind": "dialogue",
-      "title": "Complete the pet introduction",
-      "instruction": "Read the conversation aloud. Say the missing words, then click to check",
+      "title": "Complete the conversation",
+      "instruction": "You are Ana and Teacher is Kim. Say the missing words as you practise, then swap roles",
       "minutes": 2,
       "eyebrow": "Complete the conversation",
       "dialogueGroup": "A1.06.practice99",
@@ -419,8 +420,8 @@
     {
       "id": "s10",
       "kind": "listening",
-      "title": "Mia has moved",
-      "instruction": "Listen to Kim and find Mia’s new place",
+      "title": "Listen and answer",
+      "instruction": "Mia has moved. Listen to Kim and find Mia’s new place",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana! I can see Mia now. She isn’t under the bed. She’s on the sofa, next to a cushion. Thor is still next to the sofa. Come and look at them! Do you have a photo of your pets?",
@@ -474,7 +475,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "What rooms does it have?",
+      "title": "Watch and answer",
       "instruction": "Watch the house description, then describe the rooms in your home",
       "minutes": 4,
       "video": {

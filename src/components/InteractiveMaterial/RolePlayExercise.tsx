@@ -16,6 +16,7 @@ export function RolePlayExercise({
   onStepToggle,
   tracker,
   density = 'regular',
+  layout,
   presentation = 'default',
   labels,
   children,
@@ -35,7 +36,7 @@ export function RolePlayExercise({
   const guided = presentation === 'tracker'
   if (presentation === 'instructions')
     return (
-      <Styled.Root as="section" {...props}>
+      <Styled.Root as="section" $layout={layout} {...props}>
         <Styled.Scene
           $plain
           $imageFit={imageFit}
@@ -94,7 +95,7 @@ export function RolePlayExercise({
     </Support>
   ) : null
   return (
-    <Styled.Root as="section" {...props}>
+    <Styled.Root as="section" $layout={layout} {...props}>
       <Styled.Scene
         $plain={guided}
         $imageFit={imageFit}
