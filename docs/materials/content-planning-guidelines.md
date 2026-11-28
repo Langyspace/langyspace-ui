@@ -2,6 +2,15 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Cenas como base da conversa, do A1 ao C1 — revisão159
+
+- Procurar nas missões em fichas de texto uma oportunidade de representar uma situação observável. A imagem precisa fornecer evidências ou escolhas para a conversa; não basta ilustrar o título. Preservar textos, gráficos, áudio e fontes quando forem indispensáveis ao raciocínio.
+- A densidade cresce pelas relações entre pessoas, ações, pistas e interesses. A1 nomeia/escolhe/pede; A2 combina e explica sequências; B1 descreve/compara/justifica; B2 testa hipóteses e negocia; C1 pondera perspectivas, condições e exceções. Não aumentar a dificuldade com objetos minúsculos, muitos rótulos ou uma lista maior de controles.
+- Variar a função da mesma base visual: descrever alguém para a professora identificar, escolher e fazer um pedido, resolver um problema com uma atendente visível, comparar antes/depois, relacionar pistas ou negociar necessidades. A aluna participa com a fala e a observação, sem interação obrigatória no próprio dispositivo.
+- A cena deve fazer sentido antes de abrir qualquer ponto. A professora usa poucos cliques para destacar o que foi dito ou consultar um fato. Dica/modelo são opcionais e não alteram o tamanho da imagem; nunca exigir abrir todos os alvos para descobrir a tarefa.
+- Em níveis altos, separar fato observado, informação fornecida e interpretação. Profissão, intenção, estado técnico, disponibilidade, acesso financeiro e certeza não podem ser deduzidos só de aparência ou expressão facial. Hipóteses e soluções razoáveis podem variar; não criar gabarito secreto.
+- O [mapa de oportunidades159](expansao-cenas-interativas159.md) propõe encaixes nas aulas existentes; ele é planejamento, não comprovação de implementação ou publicação.
+
 ## Cenas de compras — revisão157
 
 - A loja fornece contexto e produtos reconhecíveis; títulos, preços, tamanhos, contornos e ajuda são UI nativa, nunca texto ou botões desenhados na imagem. Manter o prompt canônico literal e a identidade dos personagens.
