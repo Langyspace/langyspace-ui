@@ -46,14 +46,7 @@
         "example": "I’ll bring a raincoat",
         "exampleTranslation": "Vou levar uma capa de chuva",
         "visualLabel": "a raincoat",
-        "imageSrc": "/flashcards-transparent/course-images/80081312d320aa4209466a8619a3303a5c709133048f04f5ad85447687c8edd9/image.webp",
-        "imageRegion": {
-          "columns": 3,
-          "rows": 2,
-          "column": 0,
-          "row": 1,
-          "sourceAspectRatio": 1.5
-        },
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/18facc5c42da2125c3f34ddd0d494bc11f8b7367485e4a96e5615091846e9bef/image.webp",
         "audioId": "course-a2-11-raincoat.front",
         "backAudioId": "course-a2-11-raincoat.back"
       },
@@ -347,18 +340,11 @@
       }
     ]
   },
-  "publishedEnvironments": [
-    "staging",
-    "production"
-  ],
+  "publishedEnvironments": ["staging", "production"],
   "voice": {
     "prompt": "Send me a voice note: agree on a realistic backup plan for a day out",
     "duration": "45–60 seconds",
-    "starters": [
-      "If it…, we’ll…",
-      "We’ll… if…",
-      "If…, we can…"
-    ],
+    "starters": ["If it…, we’ll…", "We’ll… if…", "If…, we can…"],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

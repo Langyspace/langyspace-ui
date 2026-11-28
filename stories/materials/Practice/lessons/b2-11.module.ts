@@ -1,3 +1,22 @@
+import scene173_b2_11_0 from '../assets/native-scene173/5f0a6eea7095e90444bec7d32d025b0c436a3397dc53fb88aab679ba4ba4d840.webp'
+import scene173_b2_11_1 from '../assets/native-scene173/cec167d3c8e1e8734d6cf1d4664616b9351fe7b5b0b863729318cecf8f69608b.webp'
+import scene173_b2_11_2 from '../assets/native-scene173/4c9c3e23412de79d70196783cbb9bb403db9512068ccfd265e4b2a78f6540b7d.webp'
+import scene173_b2_11_3 from '../assets/native-scene173/db780c87f4c63cdff16d6906be9f68630e8f8dfe13e907becdca822f3b09b8cd.webp'
+import scene173_b2_11_4 from '../assets/native-scene173/bb7f403a6d83a7ad14e07e75a24015e1f5dbd56ee77bbd913d7b077ae124c1ae.webp'
+import scene173_b2_11_5 from '../assets/native-scene173/ac98fb8a2668fb558fba9769213265019e21cb212b587e30a63ace61ad1213c3.webp'
+import scene173_c1_06_0 from '../assets/native-scene173/57c4eb6e8fdc8eb1b7431f4cd5fb887dbccc45f2ec6237d4f3668c65c738c13f.webp'
+import scene173_c1_06_4 from '../assets/native-scene173/32861a478ea0806bc4cee4d36a1d62137c0c3293f7573a5009033a8262f6bc6a.webp'
+import scene173_c1_06_5 from '../assets/native-scene173/adaa278dfa9cd360187b2c9bd953556d7f363897c48ed1c39b2e0e3e3fda5b09.webp'
+import scene173_c1_07_1 from '../assets/native-scene173/3e51f43e0d17e407eb36e30e94a24e34660429674d229154562bad9ea1a44d20.webp'
+import scene173_c1_07_2 from '../assets/native-scene173/1acfdb15fac96c8091293b9116576f0c3bc8302cb0bbe8de7818b200540df7bd.webp'
+import scene173_c1_07_3 from '../assets/native-scene173/93b405615f1e5f414e138a87b7fe6782836870ce5e6e803b0190a0f448b82db7.webp'
+import scene173_c1_07_4 from '../assets/native-scene173/b6d765b3f755d180953faa5ea0b021dc4b0807e974e6851b262453776b607ac3.webp'
+import scene173_c1_07_5 from '../assets/native-scene173/0b28877e86fbd16ee932954f89f2a389a5457e3a7f7b73bd791fe221058ad2cc.webp'
+import scene173_c1_08_2 from '../assets/native-scene173/7303a978c362ffbe5ec1892df843deb8d62915953f1ddc03d038457ae2ed43df.webp'
+import scene173_c1_08_3 from '../assets/native-scene173/413b5e4eb562f1256d30b827c0b8a7f4cf448562ea9cfff90d2266ac18e5a1bd.webp'
+import scene173_c1_08_4 from '../assets/native-scene173/b109cbfb48584c778ca89e724cb829fe715c43ed8d6319ae539a1ce79547df87.webp'
+import scene173_c1_08_5 from '../assets/native-scene173/f248e3c7037be8d359529fa89c2713d46c63b2b9155997c5aabe4d33584a61fb.webp'
+import scene173_c1_12_4 from '../assets/native-scene173/773ae9c20f5308a312adb96ced8d0080a00cabc3d110d2dabb20b0831ef29f5f.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-11.json'
 import asset0 from '../../Course/assets/audio/B211-D81.1.mp3'
@@ -26,7 +45,6 @@ import asset22 from '../../Course/assets/audio/B211-V81.5.mp3'
 import asset23 from '../../Course/assets/audio/B211-FE81.5.mp3'
 import asset24 from '../assets/characters/kim.webp'
 import asset25 from '../assets/characters/ana.webp'
-import asset26 from '../../Course/assets/b2-11-vocabulary81.webp'
 import expanded124Asset0 from '../assets/flashcards124/7e278892cf445783c3fc38dd8aaccff9b7bec2360ffe7601e9190a1ff27cc034.mp3'
 import expanded124Asset1 from '../assets/flashcards124/d8ae4d4c0cb2ce1462adf87c508f05eeae48396aedf1b702a6a13cb3e6ab6d3c.mp3'
 import expanded124Asset2 from '../assets/flashcards124/c7ee87777c5d49c4fc9ca21668df068ede9fd1e37e5ba299042951beebcabc9e.mp3'
@@ -46,11 +64,7 @@ import expanded124Asset15 from '../assets/flashcards124/9d9484e2d52f379d44202df2
 import expanded124Asset16 from '../assets/flashcards124/c000c683e8b7a58f971ca72a87b376e218053145187425aa6a65907569a6b6bf.mp3'
 import expanded124Asset17 from '../assets/flashcards124/3faa88106d20dee30e00597879fac1a416715d0a16934ebd128b0a6f711dbe09.mp3'
 import expanded124Asset18 from '../assets/flashcards124/5b5f2c823ecc9eb5e0a9ccf18924afc4c4df3c9b04a306fa98ff49ca6344fe38.mp3'
-import expanded124Asset19 from '../assets/flashcards124/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c.webp'
 import expanded124Asset20 from '../assets/flashcards124/82ad3983780cd59c5bdb8376c0690d0c34a001b4af1391e02f561847d21feca9.webp'
-import expanded124Asset21 from '../assets/flashcards124/4ee65c2f7d887bdc2b0a4a8bc1634311c12f99f3a3f001d9f75d36300793bac2.webp'
-import expanded124Asset22 from '../assets/flashcards124/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f.webp'
-import expanded124Asset23 from '../assets/flashcards124/87c382f072ed1fb19aa4ee86097801903ae06d61aa46f2a7fb2fae2dffe8c877.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -251,20 +265,48 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards-transparent/course-practice/homework-media131/47d8b1308d78b147bd81fe02909bb29efac19e88d4b4ef3dd1d58a289610e31c/image.webp':
-      expanded124Asset19,
+    '/flashcards-transparent/course-practice/native-scene173/0b28877e86fbd16ee932954f89f2a389a5457e3a7f7b73bd791fe221058ad2cc/image.webp':
+      scene173_c1_07_5,
+    '/flashcards-transparent/course-practice/native-scene173/1acfdb15fac96c8091293b9116576f0c3bc8302cb0bbe8de7818b200540df7bd/image.webp':
+      scene173_c1_07_2,
+    '/flashcards-transparent/course-practice/native-scene173/32861a478ea0806bc4cee4d36a1d62137c0c3293f7573a5009033a8262f6bc6a/image.webp':
+      scene173_c1_06_4,
+    '/flashcards-transparent/course-practice/native-scene173/3e51f43e0d17e407eb36e30e94a24e34660429674d229154562bad9ea1a44d20/image.webp':
+      scene173_c1_07_1,
+    '/flashcards-transparent/course-practice/native-scene173/413b5e4eb562f1256d30b827c0b8a7f4cf448562ea9cfff90d2266ac18e5a1bd/image.webp':
+      scene173_c1_08_3,
+    '/flashcards-transparent/course-practice/native-scene173/4c9c3e23412de79d70196783cbb9bb403db9512068ccfd265e4b2a78f6540b7d/image.webp':
+      scene173_b2_11_2,
+    '/flashcards-transparent/course-practice/native-scene173/57c4eb6e8fdc8eb1b7431f4cd5fb887dbccc45f2ec6237d4f3668c65c738c13f/image.webp':
+      scene173_c1_06_0,
+    '/flashcards-transparent/course-practice/native-scene173/5f0a6eea7095e90444bec7d32d025b0c436a3397dc53fb88aab679ba4ba4d840/image.webp':
+      scene173_b2_11_0,
+    '/flashcards-transparent/course-practice/native-scene173/7303a978c362ffbe5ec1892df843deb8d62915953f1ddc03d038457ae2ed43df/image.webp':
+      scene173_c1_08_2,
+    '/flashcards-transparent/course-practice/native-scene173/773ae9c20f5308a312adb96ced8d0080a00cabc3d110d2dabb20b0831ef29f5f/image.webp':
+      scene173_c1_12_4,
+    '/flashcards-transparent/course-practice/native-scene173/93b405615f1e5f414e138a87b7fe6782836870ce5e6e803b0190a0f448b82db7/image.webp':
+      scene173_c1_07_3,
+    '/flashcards-transparent/course-practice/native-scene173/ac98fb8a2668fb558fba9769213265019e21cb212b587e30a63ace61ad1213c3/image.webp':
+      scene173_b2_11_5,
+    '/flashcards-transparent/course-practice/native-scene173/adaa278dfa9cd360187b2c9bd953556d7f363897c48ed1c39b2e0e3e3fda5b09/image.webp':
+      scene173_c1_06_5,
+    '/flashcards-transparent/course-practice/native-scene173/b109cbfb48584c778ca89e724cb829fe715c43ed8d6319ae539a1ce79547df87/image.webp':
+      scene173_c1_08_4,
+    '/flashcards-transparent/course-practice/native-scene173/b6d765b3f755d180953faa5ea0b021dc4b0807e974e6851b262453776b607ac3/image.webp':
+      scene173_c1_07_4,
+    '/flashcards-transparent/course-practice/native-scene173/bb7f403a6d83a7ad14e07e75a24015e1f5dbd56ee77bbd913d7b077ae124c1ae/image.webp':
+      scene173_b2_11_4,
+    '/flashcards-transparent/course-practice/native-scene173/cec167d3c8e1e8734d6cf1d4664616b9351fe7b5b0b863729318cecf8f69608b/image.webp':
+      scene173_b2_11_1,
+    '/flashcards-transparent/course-practice/native-scene173/db780c87f4c63cdff16d6906be9f68630e8f8dfe13e907becdca822f3b09b8cd/image.webp':
+      scene173_b2_11_3,
+    '/flashcards-transparent/course-practice/native-scene173/f248e3c7037be8d359529fa89c2713d46c63b2b9155997c5aabe4d33584a61fb/image.webp':
+      scene173_c1_08_5,
     '/flashcards-transparent/b2/business/priority/image.webp':
       expanded124Asset20,
-    '/flashcards-transparent/course-images/4ee65c2f7d887bdc2b0a4a8bc1634311c12f99f3a3f001d9f75d36300793bac2/image.webp':
-      expanded124Asset21,
-    '/flashcards-transparent/course-practice/homework-media131/ace14dfd4188ad115348d3cbb6f31103b7f412e5981ad55f0d5fa14eac948d6f/image.webp':
-      expanded124Asset22,
-    '/flashcards-transparent/course-practice/homework-media131/87c382f072ed1fb19aa4ee86097801903ae06d61aa46f2a7fb2fae2dffe8c877/image.webp':
-      expanded124Asset23,
     '/flashcards/course-characters/kim/image.webp': asset24,
     '/flashcards/course-characters/ana/image.webp': asset25,
-    '/flashcards-transparent/course-images/0c36eb20b300ad81daf62af4ede5b14d6bada254453e6cbf6805ebaef92796c7/image.webp':
-      asset26,
   },
 }
 export default prepared

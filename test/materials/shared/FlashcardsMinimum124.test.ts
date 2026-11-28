@@ -5,10 +5,29 @@ import { describe, expect, it } from 'vitest'
 import baseline from '../../../docs/epics/flashcards124/preservation.baseline124.json'
 import nativeViews159 from '../../../stories/materials/Practice/native-views159.provenance.json'
 import nativeScenes161 from '../../../stories/materials/Practice/native-scenes161.provenance.json'
+import nativeScenes173 from '../../../stories/materials/Practice/native-scenes173.provenance.json'
 import type { CoursePracticeData } from '../../../stories/materials/Practice/Practice.types'
 
 const directory = resolve('stories/materials/Practice/lessons')
-const nativeViews = [...nativeScenes161.views, ...nativeViews159.views]
+const outputs: Readonly<
+  Record<string, { output: string; outputSha256: string }>
+> = nativeScenes173.views
+const nativeViews = [
+  ...nativeScenes173.bindings.map((binding) => ({
+    lesson: binding.lesson,
+    cardId: binding.cardId,
+    storagePath: binding.imageSrc,
+    output: outputs[binding.view]!.output,
+    outputSha256: outputs[binding.view]!.outputSha256,
+    previousMedia: {
+      imageSrc: binding.previousImageSrc,
+      imageRegion: binding.previousRegion,
+    },
+    previousRegionIndex: binding.previousRegionIndex,
+  })),
+  ...nativeScenes161.views,
+  ...nativeViews159.views,
+]
 const lessons = readdirSync(directory)
   .filter((name) => name.endsWith('.json'))
   .map(

@@ -1,3 +1,12 @@
+import scene173_homework_hw173_012 from '../assets/native-scene173/b70af4db21e193addda814cb3a0489a4d804935849fb5aff0826efc5d623ac29.webp'
+import scene173_homework_hw173_013 from '../assets/native-scene173/8f4fbd75c1912f2a55e718de6288ccd54a2f7dcd9659c268633477c9886fe20a.webp'
+import scene173_homework_hw173_014 from '../assets/native-scene173/6f75c848559103014b24c871c57e40ab5455f976b013098b794cdfba67f2e140.webp'
+import scene173_homework_hw173_015 from '../assets/native-scene173/f8125fde03aec24ab4e826ac7801a3ed612b29025e1e3b9029d4060079325f44.webp'
+import scene173_homework_hw173_016 from '../assets/native-scene173/c03f5486856c993c9af0f5df36323e19de253a1b07b0ae64f77b54524909bc90.webp'
+import scene173_homework_hw173_017 from '../assets/native-scene173/cfe38e5285e2d5916e96b7a5223f408b2a4d21be205d759c3f950813aa5445fa.webp'
+import scene173_homework_hw173_018 from '../assets/native-scene173/50d6a26953fc331b6852999507b83d9be85bdf5890219124b3f11d2f550eac13.webp'
+import scene173_homework_hw173_019 from '../assets/native-scene173/cec17d37772e057a9e4a088644b9e4e77c37069776e2f30c18c2eaef7586c7fa.webp'
+import scene173_homework_hw173_020 from '../assets/native-scene173/840f67aa39aa1bf1ffbc3e87779b81b482542e79c4b992c6e2a5cd9d93e42c49.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-04.json'
 import asset0 from '../assets/audio/53c2c3872a8ddff9a75c9611e3a99504b418b6e4f542be6e794338c831fa9d01.mp3'
@@ -45,17 +54,8 @@ import expanded124Asset8 from '../assets/flashcards124/b3154dac307db4c88f81241a7
 import expanded124Asset9 from '../assets/flashcards124/fa44a92984baf84d62996857be4b2985fa0d8be954e143f50bc31fa981c0b71e.mp3'
 import expanded124Asset10 from '../assets/flashcards124/43c431d508d8fc278ad59161c6e0cf8204d1e8a13be8489d8c3f52725afa3272.mp3'
 import expanded124Asset11 from '../assets/flashcards124/b961e7e33f79ca700b6ce49011cca9aa836d5692742e74e6ea76b0b95cc849e7.mp3'
-import expanded124Asset12 from '../assets/flashcards124/132e3a939153e3b52e4be8f626c66dc44a774ab349b8026ad76d257b9c0c5656.webp'
-import expanded124Asset13 from '../assets/flashcards124/352aff537d3111630e3dd8823f649796f600b6eb645cb9067aee8405bc01c22b.webp'
-import expanded124Asset14 from '../assets/flashcards124/1f55b8824c8c942a1ec6b8dab342b06cdce9c31ae2ab5feb8b74253e57b843d3.webp'
-import expanded124Asset15 from '../assets/flashcards124/8c8360a3ab14425d8d026789ae1d1f72aad591bde7f2d621bbe605af9f16660b.webp'
-import expanded124Asset16 from '../assets/flashcards124/4562c25823dcedf443a71f3e45aadf5e74ddd6058fcda32fa05a5cdb14b5600f.webp'
-import expanded124Asset17 from '../assets/flashcards124/ef3be618cf70ffd96f050b6c55b9ed432eceec73fe4e892103047747c8375899.webp'
-import expanded124Asset18 from '../assets/flashcards124/073dfa46f391bdb54895e797ea6361a58168ea0032685a5cb015a85af6389d24.webp'
 import expanded124Asset19 from '../assets/flashcards124/ae72a43dd8405cfc16cfb3ba976486a6997e28ad83e0e9f32e9993cc5fe3ca7c.webp'
-import expanded124Asset20 from '../assets/flashcards124/6c544ff42b8e1fb8d1d311361eaf87a517d7a6a9dada2d1c01ae72fa2c2f4233.webp'
 import expanded124Asset21 from '../assets/flashcards124/a5550baa035bdc106086102513e46f5f1cef456fc345ddb9fa4ca30d473bdd21.webp'
-import expanded124Asset22 from '../assets/flashcards124/ea4b036d606526b6946a0f4916b3dc85b54719971f59320a9ca08d57be9a7fbb.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -214,19 +214,28 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards-transparent/a1/verbs/brush/image.webp': expanded124Asset12,
-    '/flashcards-transparent/a1/verbs/wash/image.webp': expanded124Asset13,
-    '/flashcards-transparent/a1/verbs/eat/image.webp': expanded124Asset14,
-    '/flashcards-transparent/a1/verbs/drink/image.webp': expanded124Asset15,
-    '/flashcards-transparent/a1/verbs/read/image.webp': expanded124Asset16,
-    '/flashcards-transparent/a1/verbs/watch/image.webp': expanded124Asset17,
-    '/flashcards-transparent/a1/verbs/sleep/image.webp': expanded124Asset18,
+    '/flashcards-transparent/course-practice/native-scene173/50d6a26953fc331b6852999507b83d9be85bdf5890219124b3f11d2f550eac13/image.webp':
+      scene173_homework_hw173_018,
+    '/flashcards-transparent/course-practice/native-scene173/6f75c848559103014b24c871c57e40ab5455f976b013098b794cdfba67f2e140/image.webp':
+      scene173_homework_hw173_014,
+    '/flashcards-transparent/course-practice/native-scene173/840f67aa39aa1bf1ffbc3e87779b81b482542e79c4b992c6e2a5cd9d93e42c49/image.webp':
+      scene173_homework_hw173_020,
+    '/flashcards-transparent/course-practice/native-scene173/8f4fbd75c1912f2a55e718de6288ccd54a2f7dcd9659c268633477c9886fe20a/image.webp':
+      scene173_homework_hw173_013,
+    '/flashcards-transparent/course-practice/native-scene173/b70af4db21e193addda814cb3a0489a4d804935849fb5aff0826efc5d623ac29/image.webp':
+      scene173_homework_hw173_012,
+    '/flashcards-transparent/course-practice/native-scene173/c03f5486856c993c9af0f5df36323e19de253a1b07b0ae64f77b54524909bc90/image.webp':
+      scene173_homework_hw173_016,
+    '/flashcards-transparent/course-practice/native-scene173/cec17d37772e057a9e4a088644b9e4e77c37069776e2f30c18c2eaef7586c7fa/image.webp':
+      scene173_homework_hw173_019,
+    '/flashcards-transparent/course-practice/native-scene173/cfe38e5285e2d5916e96b7a5223f408b2a4d21be205d759c3f950813aa5445fa/image.webp':
+      scene173_homework_hw173_017,
+    '/flashcards-transparent/course-practice/native-scene173/f8125fde03aec24ab4e826ac7801a3ed612b29025e1e3b9029d4060079325f44/image.webp':
+      scene173_homework_hw173_015,
     '/flashcards-transparent/course-images/ae72a43dd8405cfc16cfb3ba976486a6997e28ad83e0e9f32e9993cc5fe3ca7c/image.webp':
       expanded124Asset19,
-    '/flashcards-transparent/a1/verbs/make/image.webp': expanded124Asset20,
     '/flashcards-transparent/course-images/a5550baa035bdc106086102513e46f5f1cef456fc345ddb9fa4ca30d473bdd21/image.webp':
       expanded124Asset21,
-    '/flashcards-transparent/a1/verbs/call/image.webp': expanded124Asset22,
     '/flashcards/course-characters/priya-nair/image.webp': asset22,
     '/flashcards/course-characters/arjun-mehta/image.webp': asset23,
     '/flashcards-transparent/course-images/53a934819e2f31d96e726eca9408dfae4984898f63649ad3bb28f349d9df5caf/image.webp':

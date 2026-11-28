@@ -1,3 +1,4 @@
+import scene173_homework_hw173_171 from '../assets/native-scene173/20b810d603daf4e4c936be88a94da8b3320ee084dbe4830b73ab6d92f584f279.webp'
 import scene161_0 from '../assets/native-scene161/d4d0d21a391e5fb76de67eacda1b23b7b554733fdb7e3c7a104df46714c2c128.webp'
 import scene161_1 from '../assets/native-scene161/84bc70e5520aa29bae7365a1ca6177791bb7ee215c22ce373f3e7048b868a48c.webp'
 import scene161_2 from '../assets/native-scene161/6d112af8268d283a4fbbad612ab0e8474536ad756ecd3c8459f5332d2ff098dd.webp'
@@ -60,7 +61,6 @@ import expanded124Asset23 from '../assets/flashcards124/aaab4b763fdd688379165ead
 import expanded124Asset24 from '../assets/flashcards124/95cfbf4eb0ca501c0121e8c65732db8c51a853ac452bde0f6bee2a1c3fbbd035.webp'
 import expanded124Asset25 from '../assets/flashcards124/d27d319990e57283bfd6007da68055a6a94f44d71bfeb0fa43543a862736fb5a.webp'
 import expanded124Asset26 from '../assets/flashcards124/73e3151a63c074d3dc65065606e202ae0d024b8724b964a0404eec729171870b.webp'
-import expanded124Asset27 from '../assets/flashcards124/d6a8f68cb918c1edd0e1aa34d60f6383a1a13f9b46a990d98a4c57db098a87b9.webp'
 import expanded124Asset28 from '../assets/flashcards124/fa10abc5241b5ff90382f4752fcb8b506afdf3b7dd461db6763fa85c969a2c90.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
@@ -229,6 +229,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/20b810d603daf4e4c936be88a94da8b3320ee084dbe4830b73ab6d92f584f279/image.webp':
+      scene173_homework_hw173_171,
     '/flashcards-transparent/course-practice/native-scene161/d4d0d21a391e5fb76de67eacda1b23b7b554733fdb7e3c7a104df46714c2c128/image.webp':
       scene161_0,
     '/flashcards-transparent/course-practice/native-scene161/84bc70e5520aa29bae7365a1ca6177791bb7ee215c22ce373f3e7048b868a48c/image.webp':
@@ -261,7 +263,6 @@ const prepared: PreparedPractice = {
       expanded124Asset25,
     '/flashcards/a2/clothing-essentials/earrings/image.webp':
       expanded124Asset26,
-    '/flashcards-transparent/a1/verbs/smile/image.webp': expanded124Asset27,
     '/flashcards-transparent/a1/verbs/dance/image.webp': expanded124Asset28,
     '/flashcards/course-characters/zanele-dlamini/image.webp': asset20,
     '/flashcards/course-characters/theo-jacobs/image.webp': asset21,

@@ -1,3 +1,12 @@
+import scene173_a1_08_0 from '../assets/native-scene173/1140d2d518edf125bfce990276e577ebd27490df471b93d047a654f4034c6979.webp'
+import scene173_a1_08_1 from '../assets/native-scene173/6f21e05645ba7a404db2749cf64cdb65707bab82f1debf31f5ac572a1de6f910.webp'
+import scene173_a1_08_2 from '../assets/native-scene173/b8e4350a129c21d8a70383cf1965dc28fec164f168143ad6b4784ab267d86873.webp'
+import scene173_a1_08_3 from '../assets/native-scene173/9a2ead116afaa5a66fa45486bface29e8880eac22f0bcdfdd9487086e612195a.webp'
+import scene173_a1_08_4 from '../assets/native-scene173/7e3dce5fe41178980ccb03b433eb2db2ce74291d6a2b848bebbd4164d75d4f75.webp'
+import scene173_a1_08_5 from '../assets/native-scene173/ea6452c5a08f4e8c6f902b31ee8e5a50fc055dd264e1cd81af0c09f5e96bbd23.webp'
+import scene173_homework_hw173_072 from '../assets/native-scene173/995fce39d4d7c532667fb5e26a98516252483652c00c182f2a25852fbe5b011e.webp'
+import scene173_homework_hw173_073 from '../assets/native-scene173/9c1f8d85a900ef717c8b866add7e51f6d0add518593af28dfa5533fb564746a1.webp'
+import scene173_homework_hw173_079 from '../assets/native-scene173/39ff19403770c1cfb72f80d0229051d5defd2ff12fc1379488091061fb7a6eae.webp'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-08.json'
 import asset0 from '../assets/audio/09e4f9ccae810f3490a5256e81280b413541ad8bdb98849d6f192cf1ccae3521.mp3'
@@ -20,7 +29,6 @@ import asset16 from '../../Course/assets/audio/A108-V81.5.mp3'
 import asset17 from '../../Course/assets/audio/A108-FE81.5.mp3'
 import asset18 from '../assets/characters/evelyn-carter.webp'
 import asset19 from '../assets/characters/owen-harris.webp'
-import asset20 from '../../Course/assets/a1-08-vocabulary81.webp'
 import expanded124Asset0 from '../assets/flashcards124/f979dfa6bc0a69b28f57c333ef666451e7c87cd6f60e030bce792d2a1a942272.mp3'
 import expanded124Asset1 from '../assets/flashcards124/35164302abc1e2f34fe5253db1a77044fef4ff198bdea9b1410993f0bacd90df.mp3'
 import expanded124Asset2 from '../assets/flashcards124/cb1cfb731584cfaea8be5356c875d80e31c8d1fa24b5e5ba47722f682a46595b.mp3'
@@ -39,15 +47,12 @@ import expanded124Asset14 from '../assets/flashcards124/9e7aa9719258560267ee9007
 import expanded124Asset15 from '../assets/flashcards124/79a39a8b347b1aba22062065673f4f6bba286531f3f82b4d36cf3019bd3ab97a.webp'
 import expanded124Asset16 from '../assets/flashcards124/381d4cc7900770be83211055025ca52e1878dd51a8f455b1babb407cea767500.webp'
 import expanded124Asset17 from '../assets/flashcards124/5e30bdabea679657e036560fb024bdf783880f3dbef1b427734608aff512ed16.webp'
-import expanded124Asset18 from '../assets/flashcards124/471b84ba5a66606165a90a6ac3f6cd357501426ac05cd4cd295eb00202abcd3f.webp'
-import expanded124Asset19 from '../assets/flashcards124/718f16c05e1c0b3a344e72b0b1636bf84e198b21ab7d32a52eb8003f37f1a9a7.webp'
 import expanded124Asset20 from '../assets/flashcards124/a8152e8780e16d93685ead729a69648a70e3e06aa26334103270686034ae10fa.webp'
 import expanded124Asset21 from '../assets/flashcards124/8ded125a7b77a5fdf05d94ead7a22c5b3e65f2021720af383a2629aeb318f33f.webp'
 import expanded124Asset22 from '../assets/flashcards124/5d37d141f215ef8d84fa455a603de75fecc00155736a8830937c17539b5e7701.webp'
 import expanded124Asset23 from '../assets/flashcards124/58903dc8e1423f21064eda98e86cc4ebc7e57e18f6399c858a7337432680f776.webp'
 import expanded124Asset24 from '../assets/flashcards124/07bc7a04a95976d7fea6e005d087689637233856868b60867cf1df6aa26863ac.webp'
 import expanded124Asset25 from '../assets/flashcards124/042ca946f47af5815daee2e1f65c89e2deaee1867127fb505026e33e1bfe597a.webp'
-import expanded124Asset26 from '../assets/flashcards124/86a94aedc8c6af631dea9518d037cd688340e7bf3f0ab4fd30a26434b932efe2.webp'
 import expanded124Asset27 from '../assets/flashcards124/f733a2d33b8545d6f933d84c7b9da10ba3378e5fb106050c514e9e8e9fc942a3.webp'
 import expanded124Asset28 from '../assets/flashcards124/82f7638800239a66f08e4bfda794eedee51f93a549cd62fe05a0e6fde095cf54.webp'
 const prepared: PreparedPractice = {
@@ -184,15 +189,30 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/1140d2d518edf125bfce990276e577ebd27490df471b93d047a654f4034c6979/image.webp':
+      scene173_a1_08_0,
+    '/flashcards-transparent/course-practice/native-scene173/39ff19403770c1cfb72f80d0229051d5defd2ff12fc1379488091061fb7a6eae/image.webp':
+      scene173_homework_hw173_079,
+    '/flashcards-transparent/course-practice/native-scene173/6f21e05645ba7a404db2749cf64cdb65707bab82f1debf31f5ac572a1de6f910/image.webp':
+      scene173_a1_08_1,
+    '/flashcards-transparent/course-practice/native-scene173/7e3dce5fe41178980ccb03b433eb2db2ce74291d6a2b848bebbd4164d75d4f75/image.webp':
+      scene173_a1_08_4,
+    '/flashcards-transparent/course-practice/native-scene173/995fce39d4d7c532667fb5e26a98516252483652c00c182f2a25852fbe5b011e/image.webp':
+      scene173_homework_hw173_072,
+    '/flashcards-transparent/course-practice/native-scene173/9a2ead116afaa5a66fa45486bface29e8880eac22f0bcdfdd9487086e612195a/image.webp':
+      scene173_a1_08_3,
+    '/flashcards-transparent/course-practice/native-scene173/9c1f8d85a900ef717c8b866add7e51f6d0add518593af28dfa5533fb564746a1/image.webp':
+      scene173_homework_hw173_073,
+    '/flashcards-transparent/course-practice/native-scene173/b8e4350a129c21d8a70383cf1965dc28fec164f168143ad6b4784ab267d86873/image.webp':
+      scene173_a1_08_2,
+    '/flashcards-transparent/course-practice/native-scene173/ea6452c5a08f4e8c6f902b31ee8e5a50fc055dd264e1cd81af0c09f5e96bbd23/image.webp':
+      scene173_a1_08_5,
     '/flashcards-transparent/a2/travel/reservation/image.webp':
       expanded124Asset15,
     '/flashcards-transparent/a2/travel/single-room/image.webp':
       expanded124Asset16,
     '/flashcards-transparent/a2/travel/double-room/image.webp':
       expanded124Asset17,
-    '/flashcards-transparent/a2/travel/check-in/image.webp': expanded124Asset18,
-    '/flashcards-transparent/a2/travel/check-out/image.webp':
-      expanded124Asset19,
     '/flashcards-transparent/a2/travel/breakfast-included/image.webp':
       expanded124Asset20,
     '/flashcards-transparent/a2/travel/room-service/image.webp':
@@ -203,16 +223,12 @@ const prepared: PreparedPractice = {
     '/flashcards-transparent/a2/travel/floor/image.webp': expanded124Asset24,
     '/flashcards-transparent/a2/travel/wifi-password/image.webp':
       expanded124Asset25,
-    '/flashcards-transparent/a2/travel/receptionist/image.webp':
-      expanded124Asset26,
     '/flashcards-transparent/a2/travel/clean-room/image.webp':
       expanded124Asset27,
     '/flashcards-transparent/a2/travel/cheap-hotel/image.webp':
       expanded124Asset28,
     '/flashcards/course-characters/evelyn-carter/image.webp': asset18,
     '/flashcards/course-characters/owen-harris/image.webp': asset19,
-    '/flashcards-transparent/course-images/a652b1a0158ff4559526802d176054cc879d560dc7a95eb2b079b0b2795f1ba7/image.webp':
-      asset20,
   },
 }
 export default prepared

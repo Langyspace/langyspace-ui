@@ -1,0 +1,935 @@
+{
+  "provider": "built-in image_gen",
+  "imageInputs": 0,
+  "canonicalStyle": "docs/materials/prompts/langy-illustration-v1.8.txt",
+  "canonicalSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "encoding": "Opaque WebP q92, original dimensions. Native flashcards use only documented source windows.",
+  "atlases": [
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+      "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+      "size": [1536, 1024],
+      "originalPngSha256": "09feb82285f3e0f901d3eeddc0f9850f93770e381c447c5f88ef841cebfbf2ec",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-01.txt",
+      "promptSha256": "4fa8434257d08a133fc17a5a97d442a8a8376b604768b29c7eb3037cc3b17d80",
+      "items": [
+        {
+          "id": "hw173-012",
+          "word": "brush",
+          "example": "I brush my teeth.",
+          "translation": "escovar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+          "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+          "pixelBounds": [3, 3, 481, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 478,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-013",
+          "word": "wash",
+          "example": "He washes his hands.",
+          "translation": "lavar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+          "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+          "pixelBounds": [487, 3, 1021, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 487,
+            "row": 3,
+            "columnSpan": 534,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-014",
+          "word": "eat",
+          "example": "I eat bread.",
+          "translation": "comer",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+          "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+          "pixelBounds": [1027, 3, 1533, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1027,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-015",
+          "word": "drink",
+          "example": "She drinks water.",
+          "translation": "beber",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+          "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+          "pixelBounds": [3, 515, 509, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-016",
+          "word": "read",
+          "example": "I read a book.",
+          "translation": "ler",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+          "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+          "pixelBounds": [515, 515, 1021, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 515,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-017",
+          "word": "watch",
+          "example": "She watches TV.",
+          "translation": "assistir",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-01.webp",
+          "assetSha256": "5a40cd35fd65bf47c575d250fdf5fd6170eaadaeaecf839cc4c0c8f6c9dc1c20",
+          "pixelBounds": [1027, 515, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1027,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+      "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+      "size": [1536, 1024],
+      "originalPngSha256": "5de17c520d60592d26fb8fa55cd9f372163f43d8c299e88c417bebf9b9a2dcfc",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-02.txt",
+      "promptSha256": "9de0f0c255ded98806a649bf6acfb13ae45aba615ea6a747c1330d465d2614cc",
+      "items": [
+        {
+          "id": "hw173-018",
+          "word": "sleep",
+          "example": "She sleeps at night.",
+          "translation": "dormir",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+          "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+          "pixelBounds": [3, 3, 509, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-019",
+          "word": "make",
+          "example": "I make a cake.",
+          "translation": "fazer",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+          "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+          "pixelBounds": [515, 3, 1020, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 515,
+            "row": 3,
+            "columnSpan": 505,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-020",
+          "word": "call",
+          "example": "I call my mom.",
+          "translation": "ligar / chamar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+          "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+          "pixelBounds": [1026, 3, 1533, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1026,
+            "row": 3,
+            "columnSpan": 507,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-052",
+          "word": "between",
+          "example": "The café is between two shops.",
+          "translation": "entre",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+          "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+          "pixelBounds": [3, 515, 509, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-068",
+          "word": "customs",
+          "example": "I went through customs.",
+          "translation": "alfândega",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+          "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+          "pixelBounds": [515, 514, 1020, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 515,
+            "row": 514,
+            "columnSpan": 505,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-072",
+          "word": "check in",
+          "example": "I checked in at three.",
+          "translation": "fazer check-in",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-02.webp",
+          "assetSha256": "75b2cdd684820e668a1dca6a70c3f368b5e8fd259df07145de94e6be5ffe509e",
+          "pixelBounds": [1026, 515, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1026,
+            "row": 515,
+            "columnSpan": 507,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+      "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+      "size": [1536, 1024],
+      "originalPngSha256": "13a6f960b0342672c20a6d70d533eb9fab93486dc1fcb57839dbb879d7854764",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-03.txt",
+      "promptSha256": "369f06553b481ac51bac110f9ed061990e08898abdd6c47511ef241806fdcd39",
+      "items": [
+        {
+          "id": "hw173-073",
+          "word": "check out",
+          "example": "I checked out in the morning.",
+          "translation": "fazer check-out",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+          "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+          "pixelBounds": [3, 3, 508, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 505,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-079",
+          "word": "receptionist",
+          "example": "The receptionist was helpful.",
+          "translation": "recepcionista",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+          "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+          "pixelBounds": [514, 3, 1020, 510],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 514,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-110",
+          "word": "I broke my phone.",
+          "example": "I broke my phone yesterday.",
+          "translation": "Eu quebrei meu celular.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+          "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+          "pixelBounds": [1026, 3, 1533, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1026,
+            "row": 3,
+            "columnSpan": 507,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-111",
+          "word": "I couldn't sleep.",
+          "example": "I couldn't sleep last night.",
+          "translation": "Eu não consegui dormir.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+          "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+          "pixelBounds": [3, 514, 510, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 514,
+            "columnSpan": 507,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-112",
+          "word": "I didn't like it.",
+          "example": "A: How was the food? B: I didn't like it.",
+          "translation": "Eu não gostei.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+          "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+          "pixelBounds": [516, 516, 1020, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 516,
+            "row": 516,
+            "columnSpan": 504,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-114",
+          "word": "I had lunch.",
+          "example": "I had lunch at home.",
+          "translation": "Eu almocei.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-03.webp",
+          "assetSha256": "afff301c5b561671d5a17ccf21b2bc4939ffb4c29b70eecd1e2b44dd3fdbf3cc",
+          "pixelBounds": [1026, 514, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1026,
+            "row": 514,
+            "columnSpan": 507,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+      "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+      "size": [1536, 1024],
+      "originalPngSha256": "fe8ccfccebd74c81edc8f3ee06198fc01404e2bb11925a0f54a876c90b6c0c94",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-04.txt",
+      "promptSha256": "dfe5d66944434cc51c0226f65010f995429cce560b79aad5425b5e4149993f6f",
+      "items": [
+        {
+          "id": "hw173-115",
+          "word": "I had a busy day.",
+          "example": "I had a busy day at work.",
+          "translation": "Eu tive um dia cheio.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+          "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+          "pixelBounds": [3, 3, 512, 507],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 509,
+            "rowSpan": 504,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-116",
+          "word": "I went to work.",
+          "example": "I went to work by bus.",
+          "translation": "Eu fui trabalhar.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+          "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+          "pixelBounds": [518, 3, 1018, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 518,
+            "row": 3,
+            "columnSpan": 500,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-117",
+          "word": "I woke up early.",
+          "example": "I woke up early today.",
+          "translation": "Eu acordei cedo.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+          "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+          "pixelBounds": [1024, 3, 1533, 510],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1024,
+            "row": 3,
+            "columnSpan": 509,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-118",
+          "word": "I went to bed late.",
+          "example": "I went to bed late last night.",
+          "translation": "Eu fui dormir tarde.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+          "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+          "pixelBounds": [3, 513, 512, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 513,
+            "columnSpan": 509,
+            "rowSpan": 508,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-119",
+          "word": "I really enjoyed it.",
+          "example": "A: How was the movie? B: I really enjoyed it.",
+          "translation": "Eu gostei muito.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+          "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+          "pixelBounds": [518, 514, 1022, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 518,
+            "row": 514,
+            "columnSpan": 504,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-120",
+          "word": "I was surprised.",
+          "example": "When I saw the price, I was surprised.",
+          "translation": "Eu fiquei surpreso.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-04.webp",
+          "assetSha256": "3db6c8c4baa76c180e3f0cac9efa1b7d6d194dd96b21f126a303964ed0185dda",
+          "pixelBounds": [1028, 516, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1028,
+            "row": 516,
+            "columnSpan": 505,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+      "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+      "size": [1536, 1024],
+      "originalPngSha256": "932e03d452d8da32c78f97ef294821f245ec2a43d16e158159751e9e7ce86962",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-05.txt",
+      "promptSha256": "8ec00bd2d5cd00bc1c8199f3df40bfaeba7013e78217f2f9f9e16a86b2111d5c",
+      "items": [
+        {
+          "id": "hw173-121",
+          "word": "I learned a lot.",
+          "example": "A: How was the course? B: I learned a lot.",
+          "translation": "Eu aprendi muito.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+          "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+          "pixelBounds": [3, 3, 506, 506],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 503,
+            "rowSpan": 503,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-124",
+          "word": "put",
+          "example": "I put the book on the table.",
+          "translation": "colocar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+          "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+          "pixelBounds": [512, 3, 1024, 506],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 512,
+            "row": 3,
+            "columnSpan": 512,
+            "rowSpan": 503,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-126",
+          "word": "pull",
+          "example": "She pulls the rope.",
+          "translation": "puxar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+          "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+          "pixelBounds": [1030, 3, 1533, 506],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1030,
+            "row": 3,
+            "columnSpan": 503,
+            "rowSpan": 503,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-127",
+          "word": "give",
+          "example": "He gives a gift.",
+          "translation": "dar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+          "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+          "pixelBounds": [3, 512, 507, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 512,
+            "columnSpan": 504,
+            "rowSpan": 509,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-128",
+          "word": "fix",
+          "example": "He fixes a toy.",
+          "translation": "consertar",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+          "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+          "pixelBounds": [513, 512, 1019, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 513,
+            "row": 512,
+            "columnSpan": 506,
+            "rowSpan": 509,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-132",
+          "word": "I've been there.",
+          "example": "A: Have you been to London? B: I've been there.",
+          "translation": "Eu já estive lá.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-05.webp",
+          "assetSha256": "640a61f0fd899cb2465dcf6704879b40093371e9f4fca64f33c8efa259918595",
+          "pixelBounds": [1025, 512, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 512,
+            "columnSpan": 508,
+            "rowSpan": 509,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+      "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+      "size": [1536, 1024],
+      "originalPngSha256": "01dbee4d919164c19d12381ab2c3f30f60774a13e370f796a18e0a69e7906635",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-06.txt",
+      "promptSha256": "9af899327d072958e31d1d1f624a95ffd0931c40691ad0dcf5dd51e06462e663",
+      "items": [
+        {
+          "id": "hw173-133",
+          "word": "I've never tried it.",
+          "example": "A: Do you like sushi? B: I've never tried it.",
+          "translation": "Eu nunca experimentei isso.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+          "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+          "pixelBounds": [3, 3, 509, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-134",
+          "word": "How was it?",
+          "example": "A: I had a job interview. B: How was it?",
+          "translation": "Como foi?",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+          "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+          "pixelBounds": [515, 3, 1021, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 515,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-135",
+          "word": "It was fun.",
+          "example": "A: How was the party? B: It was fun.",
+          "translation": "Foi divertido.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+          "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+          "pixelBounds": [1027, 3, 1533, 509],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1027,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-136",
+          "word": "It was too crowded.",
+          "example": "A: How was the mall? B: It was too crowded.",
+          "translation": "Estava lotado demais.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+          "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+          "pixelBounds": [3, 515, 509, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-137",
+          "word": "It was worth it.",
+          "example": "The trip was expensive, but it was worth it.",
+          "translation": "Valeu a pena.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+          "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+          "pixelBounds": [515, 515, 1021, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 515,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-138",
+          "word": "I tried something new.",
+          "example": "I tried something new yesterday.",
+          "translation": "Eu experimentei algo novo.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-06.webp",
+          "assetSha256": "17e0828c82a4b2a690249dd9b301016ae51745aa18e78a46304168e06026ee46",
+          "pixelBounds": [1027, 515, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1027,
+            "row": 515,
+            "columnSpan": 506,
+            "rowSpan": 506,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+      "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+      "size": [1536, 1024],
+      "originalPngSha256": "75a3a28b19f336d385eabec66169445d6c78860327f77018077e63d8ffad4b00",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-07.txt",
+      "promptSha256": "fc3491432699798ccb59de4221342788f2fbe67030c4671ab5921b1aee7f9a9e",
+      "items": [
+        {
+          "id": "hw173-139",
+          "word": "That sounds nice.",
+          "example": "A: I went to the beach. B: That sounds nice.",
+          "translation": "Isso parece legal.",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+          "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+          "pixelBounds": [3, 3, 509, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 506,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-141",
+          "word": "How come?",
+          "example": "A: I'm leaving early today. B: How come?",
+          "translation": "Como assim? / Por quê?",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+          "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+          "pixelBounds": [515, 3, 1020, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 515,
+            "row": 3,
+            "columnSpan": 505,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-142",
+          "word": "What about you?",
+          "example": "I like coffee. What about you?",
+          "translation": "E você?",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+          "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+          "pixelBounds": [1026, 3, 1533, 508],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1026,
+            "row": 3,
+            "columnSpan": 507,
+            "rowSpan": 505,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-143",
+          "word": "How do I get there?",
+          "example": "How do I get there?",
+          "translation": "Como eu chego lá?",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+          "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+          "pixelBounds": [3, 514, 510, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 514,
+            "columnSpan": 507,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-153",
+          "word": "hybrid work",
+          "example": "We follow a hybrid work model.",
+          "translation": "trabalho híbrido",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+          "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+          "pixelBounds": [516, 514, 1019, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 516,
+            "row": 514,
+            "columnSpan": 503,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-161",
+          "word": "team member",
+          "example": "Each team member has a clear role.",
+          "translation": "membro da equipe",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-07.webp",
+          "assetSha256": "848d2edfc1c4acc5bdc6f3fc90769679e029a1b134ffda99c32a2691efb6c5f8",
+          "pixelBounds": [1025, 514, 1533, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1025,
+            "row": 514,
+            "columnSpan": 508,
+            "rowSpan": 507,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    },
+    {
+      "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-08.webp",
+      "assetSha256": "30647f7a1f5b733923406d87e96cff73e6fa7519538c6994142943c5327b6a29",
+      "size": [1536, 1024],
+      "originalPngSha256": "243d286faf5db2978e3cf46428643a989f545074d6e928989c8aae7dfef8bab7",
+      "prompt": "docs/materials/prompts/homework-context173/homework-scenes-08.txt",
+      "promptSha256": "1893d72bc266ac3d9f8e1c3586e4e271259a1236b1d64dd764e5d3edce9f3dff",
+      "items": [
+        {
+          "id": "hw173-162",
+          "word": "role",
+          "example": "What is your role in the company?",
+          "translation": "função / cargo",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-08.webp",
+          "assetSha256": "30647f7a1f5b733923406d87e96cff73e6fa7519538c6994142943c5327b6a29",
+          "pixelBounds": [3, 3, 511, 507],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 3,
+            "columnSpan": 508,
+            "rowSpan": 504,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-165",
+          "word": "witness",
+          "example": "A witness confirmed the story.",
+          "translation": "testemunha",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-08.webp",
+          "assetSha256": "30647f7a1f5b733923406d87e96cff73e6fa7519538c6994142943c5327b6a29",
+          "pixelBounds": [517, 3, 1022, 507],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 517,
+            "row": 3,
+            "columnSpan": 505,
+            "rowSpan": 504,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-171",
+          "word": "smile",
+          "example": "He smiles at the camera.",
+          "translation": "sorrir",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-08.webp",
+          "assetSha256": "30647f7a1f5b733923406d87e96cff73e6fa7519538c6994142943c5327b6a29",
+          "pixelBounds": [1028, 3, 1533, 507],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 1028,
+            "row": 3,
+            "columnSpan": 505,
+            "rowSpan": 504,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-174",
+          "word": "decision",
+          "example": "We need to make a decision today.",
+          "translation": "decisão",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-08.webp",
+          "assetSha256": "30647f7a1f5b733923406d87e96cff73e6fa7519538c6994142943c5327b6a29",
+          "pixelBounds": [3, 513, 511, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 3,
+            "row": 513,
+            "columnSpan": 508,
+            "rowSpan": 508,
+            "sourceAspectRatio": 1.5
+          }
+        },
+        {
+          "id": "hw173-177",
+          "word": "clarify",
+          "example": "Could you clarify the question?",
+          "translation": "esclarecer",
+          "source": "stories/materials/Practice/assets/homework-context173/homework-scenes-08.webp",
+          "assetSha256": "30647f7a1f5b733923406d87e96cff73e6fa7519538c6994142943c5327b6a29",
+          "pixelBounds": [517, 513, 1019, 1021],
+          "imageRegion": {
+            "columns": 1536,
+            "rows": 1024,
+            "column": 517,
+            "row": 513,
+            "columnSpan": 502,
+            "rowSpan": 508,
+            "sourceAspectRatio": 1.5
+          }
+        }
+      ]
+    }
+  ]
+}

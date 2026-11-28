@@ -1,3 +1,4 @@
+import scene173_homework_hw173_068 from '../assets/native-scene173/ddaa0ef9b2cc6923655732fbd6758890960ba9b0ebee1edbf64a926ac66f1aa0.webp'
 import nativeView159_0 from '../assets/native-crop159/b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b.webp'
 import nativeView159_1 from '../assets/native-crop159/22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd.webp'
 import nativeView159_2 from '../assets/native-crop159/6994b7c845a1a8e26feaeed5c9caed8029604407bbd2e22b6f134499ee81f1d0.webp'
@@ -54,7 +55,6 @@ import expanded124Asset23 from '../assets/flashcards124/7028752bc8985e8f57434e94
 import expanded124Asset24 from '../assets/flashcards124/3ed0cab26fb3939656048716de5f1dee5e8c13da6ba2bdc359fdbc920148a3a1.webp'
 import expanded124Asset25 from '../assets/flashcards124/42ea88ca8ce6cd8dc21885a608412750bbe8be222094eeb3680cc0e86bb235d5.webp'
 import expanded124Asset26 from '../assets/flashcards124/3166befa33bd7f03b3197b8bb26f766eb22fbc0eef7455e1baeb0703008407c7.webp'
-import expanded124Asset27 from '../assets/flashcards124/781d5295378b6512f30c30ac3c8701c65fd4f22a29b6ddbf7014ea99ad227f78.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
@@ -192,6 +192,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/ddaa0ef9b2cc6923655732fbd6758890960ba9b0ebee1edbf64a926ac66f1aa0/image.webp':
+      scene173_homework_hw173_068,
     '/flashcards-transparent/course-practice/native-crop159/b43e930a4f5acf925e42004d106f23546c6961ae9e1d2e3435da9aafe880261b/image.webp':
       nativeView159_0,
     '/flashcards-transparent/course-practice/native-crop159/22afdcfe1c6431ecafb8af564d9f996b2e3a0cdef8d1d5dc17084ae5cfcd2edd/image.webp':
@@ -224,7 +226,6 @@ const prepared: PreparedPractice = {
       expanded124Asset25,
     '/flashcards-transparent/a2/travel/security-check/image.webp':
       expanded124Asset26,
-    '/flashcards-transparent/a2/travel/customs/image.webp': expanded124Asset27,
     '/flashcards/course-characters/kim/image.webp': asset18,
     '/flashcards/course-characters/ana/image.webp': asset19,
     '/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp':

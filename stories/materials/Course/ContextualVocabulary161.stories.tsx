@@ -20,7 +20,9 @@ export const A209: Story = { args: { materialKey: 'a2-09' } }
 export const A210: Story = { args: { materialKey: 'a2-10' } }
 export const A211: Story = { args: { materialKey: 'a2-11' } }
 export const A212: Story = { args: { materialKey: 'a2-12' } }
+export const B101: Story = { args: { materialKey: 'b1-01' } }
 export const B102: Story = { args: { materialKey: 'b1-02' } }
+export const B104: Story = { args: { materialKey: 'b1-04' } }
 export const B107: Story = { args: { materialKey: 'b1-07' } }
 export const B108: Story = { args: { materialKey: 'b1-08' } }
 export const B110: Story = { args: { materialKey: 'b1-10' } }
@@ -46,5 +48,10 @@ export const B201Narrow: Story = {
 }
 export const C111Narrow: Story = {
   args: { materialKey: 'c1-11' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+}
+
+export const B101Narrow: Story = {
+  args: { materialKey: 'b1-01' },
   globals: { viewport: { value: 'mobile1', isRotated: false } },
 }

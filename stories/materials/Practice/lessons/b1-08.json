@@ -168,7 +168,7 @@
         "audioId": "flashcard124-keep-in-touch.front",
         "backAudioId": "flashcard124-keep-in-touch.back",
         "visualLabel": "keep in touch",
-        "imageSrc": "/flashcards-transparent/course-practice/homework-media131/ea4b036d606526b6946a0f4916b3dc85b54719971f59320a9ca08d57be9a7fbb/image.webp"
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/840f67aa39aa1bf1ffbc3e87779b81b482542e79c4b992c6e2a5cd9d93e42c49/image.webp"
       },
       {
         "word": "belong",
@@ -340,18 +340,11 @@
       }
     ]
   },
-  "publishedEnvironments": [
-    "staging",
-    "production"
-  ],
+  "publishedEnvironments": ["staging", "production"],
   "voice": {
     "prompt": "Send me a voice note: explain what feels familiar now and what you are still adapting to",
     "duration": "60–90 seconds",
-    "starters": [
-      "I used to…",
-      "I’m used to…",
-      "I’m getting used to…"
-    ],
+    "starters": ["I used to…", "I’m used to…", "I’m getting used to…"],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

@@ -1,3 +1,4 @@
+import scene173_homework_hw173_052 from '../assets/native-scene173/d8d0ac56ad74ba1612e0cd9acc8db21a14e808f924a78cbc3ac40846f22cd51f.webp'
 import { homeworkMediaImages } from '../homeworkMedia131'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-06.json'
@@ -61,7 +62,6 @@ import expanded124Asset9 from '../assets/flashcards124/057fc760e5fb09f8c959767a2
 import expanded124Asset10 from '../assets/flashcards124/718118b45219ecffc27bf271edaa01661ae5954408b3d124e4ee656eeb5da73e.mp3'
 import expanded124Asset11 from '../assets/flashcards124/c66171d06e57377868ea24597f2f8f536243ef67aa8f7f959f44d71e1a6cb6de.webp'
 import expanded124Asset12 from '../assets/flashcards124/04b3d3e22d2901a0fc1dc56fd822397b13a701a84f2cec7df689a111c69a9818.webp'
-import expanded124Asset13 from '../assets/flashcards124/f798fcf073bfcd102c3972febec5c6f62293ccac908291cf9b73d5ff4b2efb0a.webp'
 import region131Asset0 from '../assets/homework131/regionExports/region-db30b627a976290b8e29f2c8b745e4006a1d23d5751ce2e6112ea051b56506db.webp'
 import region131Asset1 from '../assets/homework131/regionExports/region-162d94c7e50329970fbe6174a87effaad9fa762bd9d54ed1a4a553f60cb76935.webp'
 import region131Asset2 from '../assets/homework131/regionExports/region-2a341d175232b68c48692cada9f7f31c25f5a450c3de63a7d951204baced0c01.webp'
@@ -209,6 +209,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/d8d0ac56ad74ba1612e0cd9acc8db21a14e808f924a78cbc3ac40846f22cd51f/image.webp':
+      scene173_homework_hw173_052,
     '/flashcards-transparent/course-practice/homework-media131/47c5597773f0fad03568dd37a543644eccec4e2df529aab129a7701e8e401106/image.webp':
       region131Asset0,
     '/flashcards-transparent/course-practice/homework-media131/d88ac761134375832ffc242a4e232c88731422d1da9f1322ea53dac57bef7488/image.webp':
@@ -219,7 +221,6 @@ const prepared: PreparedPractice = {
     '/flashcards-transparent/a2/travel/behind/image.webp': expanded124Asset11,
     '/flashcards-transparent/a2/travel/in-front-of/image.webp':
       expanded124Asset12,
-    '/flashcards-transparent/a2/travel/between/image.webp': expanded124Asset13,
     '/flashcards/course-characters/kim/image.webp': asset32,
     '/flashcards/course-characters/ana/image.webp': asset33,
     '/flashcards-transparent/course-images/4cab8640207fa0a8e02ecbcebadcddd318cc11d8c0910ace074d2b49c3af5b61/image.webp':

@@ -1,0 +1,96 @@
+{
+  "lesson": "B1.01",
+  "id": "D.2",
+  "speaker": "Ana",
+  "text": "Welcome back! Yeah, I’ve been painting all week.",
+  "pages": ["s_dialogue1", "s_gap99"],
+  "file": "assets/audio/B101-welcome-back173.mp3",
+  "sha256": "12798756b8e23065fdc474ab586e12ffb70f624a387fc79c4e5063bb9fb7a847",
+  "durationSeconds": 2.557234,
+  "bytes": 41838,
+  "sampleRate": 44100,
+  "channels": 1,
+  "provider": "ElevenLabs",
+  "voiceName": "Jessica",
+  "voiceId": "cgSgspJ2msm6clMCkdW9",
+  "sourceRequestId": "a6o8nU05hPK2IWuHB6Nw",
+  "generatedAt": "2026-11-28T15:51:17.712959+00:00",
+  "outputFormat": "mp3_44100_128",
+  "synthesis": {
+    "text": "Welcome back! Yeah, I've been painting all week.",
+    "model_id": "eleven_multilingual_v2",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.1,
+      "use_speaker_boost": true,
+      "speed": 0.92
+    },
+    "previous_text": "Hi, Ana! I'm back! Wow... your living room is blue!",
+    "next_text": "It's great! Have you finished?"
+  },
+  "sourceSha256": "29aee1280b848f83dd63a74cbcabfc4bebfcee20a86d151b8ad1af70b6e163d7",
+  "replacesSha256": "b80a9f6fc00fae5c409dbcb24a3c7d723b1f6f0c25a82cc4291108bf646c1a86",
+  "processing": {
+    "cutFromSample": 40131,
+    "cutUntilSampleExclusive": 72765,
+    "maxRemovedSample16bit": 7,
+    "cutDurationSeconds": 0.74,
+    "processing": "Removed 740 ms of measured silence between “back” and “Yeah” from a single continuous take, then encoded to 128 kbps MP3. No gain, pitch, tempo or speech editing."
+  },
+  "verification": {
+    "transcriber": "ElevenLabs Scribe v2",
+    "languageHint": "en",
+    "promptOrKeyterms": false,
+    "independentTranscript": "Welcome back. Yeah, I've been painting all week",
+    "wordTimings": [
+      {
+        "text": "Welcome",
+        "start": 0.1,
+        "end": 0.34
+      },
+      {
+        "text": "back.",
+        "start": 0.4,
+        "end": 0.72
+      },
+      {
+        "text": "Yeah,",
+        "start": 1.16,
+        "end": 1.32
+      },
+      {
+        "text": "I've",
+        "start": 1.54,
+        "end": 1.62
+      },
+      {
+        "text": "been",
+        "start": 1.64,
+        "end": 1.74
+      },
+      {
+        "text": "painting",
+        "start": 1.8,
+        "end": 2.06
+      },
+      {
+        "text": "all",
+        "start": 2.1,
+        "end": 2.2
+      },
+      {
+        "text": "week",
+        "start": 2.26,
+        "end": 2.5
+      }
+    ],
+    "previousTranscript": "Welcome back. Yeah, I've been painting all week",
+    "audioFormat": "mono MP3 44.1 kHz, 128 kbps",
+    "integratedLoudnessLUFS": -20.4,
+    "truePeakDBTP": -2.6,
+    "originalGapAfterBackSeconds": 1.26,
+    "finalGapAfterBackSeconds": 0.44,
+    "humanListeningReview": "pending"
+  }
+}

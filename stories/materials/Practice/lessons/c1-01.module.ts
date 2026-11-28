@@ -1,3 +1,9 @@
+import scene173_c1_02_3 from '../assets/native-scene173/431b71868300b7c88441915cba403659cc30040bf9f662098abb80e7e766a451.webp'
+import scene173_c1_02_5 from '../assets/native-scene173/079fb524fa3860f28a4f5f4de8dd1ec7bdc07e89bd59b8b8c4d0ef9a3fae1dd4.webp'
+import scene173_c1_10_1 from '../assets/native-scene173/b539314d3f4146fc123103a3ed2fc944bef6d75766f69884a8a6d9bf4c4b7901.webp'
+import scene173_c1_10_2 from '../assets/native-scene173/4ccf8caf81444273022e7e3781d435d56d88a9eeed5756919ab3070a4374075a.webp'
+import scene173_c1_10_3 from '../assets/native-scene173/145f4ab9d4c51e0efd52c58cf89309df9d33ec20c983692da98ec68263c306c4.webp'
+import scene173_c1_10_5 from '../assets/native-scene173/d76f4d876e9e55a409491d31a0a075f7c8d84e15328ef1dc1a3937e891663c9e.webp'
 import scene161_0 from '../assets/native-scene161/74d6f4f5cdee2f3c52c3240665dedb4f519b5c87d227efcb70c2d60e9be7cd24.webp'
 import scene161_1 from '../assets/native-scene161/c3c03b3d5876449f34f93332e54ee286f62a0780e3a2369c176ad2a7f30e00f9.webp'
 import scene161_2 from '../assets/native-scene161/4ec21b62ad1398980efd4796924bb8cea7ec3119032356dc127d307f34012cb1.webp'
@@ -60,9 +66,7 @@ import expanded124Asset16 from '../assets/flashcards124/c47291e9cc88bd443aeb5447
 import expanded124Asset17 from '../assets/flashcards124/7c45a0257224d4bcba75ed56ae94136e2bd045606ac63df665f916b944315d55.mp3'
 import expanded124Asset18 from '../assets/flashcards124/b8298153f3b7b94ee7e5f812023e78814961abf846f00905af023accda75a190.mp3'
 import expanded124Asset19 from '../assets/flashcards124/ae140b37a7154bc7482d92381f7fa19e29de11b54c6b961ae5e1c44a3a8312b3.mp3'
-import expanded124Asset20 from '../assets/flashcards124/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e.webp'
 import expanded124Asset21 from '../assets/flashcards124/7432e9d9d31ef5bce3c8344028154fe4aa9d144d9b02234b80fa6469afa98950.webp'
-import expanded124Asset22 from '../assets/flashcards124/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552.webp'
 import expanded124Asset23 from '../assets/flashcards124/491e9411ed01a85d5a63b172b44fa98b4d21a06607e76dcd1b99587e2f298768.webp'
 import expanded124Asset24 from '../assets/flashcards124/e36eb40175cb97472e5df748c2d39bc60601186371a2d627a7a7e9449fa39d53.webp'
 import expanded124Asset25 from '../assets/flashcards124/33cc65287412ef657ee44ee5afc4aaa4c440bf5172a46e4f8da3a7bdac3532cf.webp'
@@ -285,6 +289,18 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/079fb524fa3860f28a4f5f4de8dd1ec7bdc07e89bd59b8b8c4d0ef9a3fae1dd4/image.webp':
+      scene173_c1_02_5,
+    '/flashcards-transparent/course-practice/native-scene173/145f4ab9d4c51e0efd52c58cf89309df9d33ec20c983692da98ec68263c306c4/image.webp':
+      scene173_c1_10_3,
+    '/flashcards-transparent/course-practice/native-scene173/431b71868300b7c88441915cba403659cc30040bf9f662098abb80e7e766a451/image.webp':
+      scene173_c1_02_3,
+    '/flashcards-transparent/course-practice/native-scene173/4ccf8caf81444273022e7e3781d435d56d88a9eeed5756919ab3070a4374075a/image.webp':
+      scene173_c1_10_2,
+    '/flashcards-transparent/course-practice/native-scene173/b539314d3f4146fc123103a3ed2fc944bef6d75766f69884a8a6d9bf4c4b7901/image.webp':
+      scene173_c1_10_1,
+    '/flashcards-transparent/course-practice/native-scene173/d76f4d876e9e55a409491d31a0a075f7c8d84e15328ef1dc1a3937e891663c9e/image.webp':
+      scene173_c1_10_5,
     '/flashcards-transparent/course-practice/native-scene161/74d6f4f5cdee2f3c52c3240665dedb4f519b5c87d227efcb70c2d60e9be7cd24/image.webp':
       scene161_0,
     '/flashcards-transparent/course-practice/native-scene161/c3c03b3d5876449f34f93332e54ee286f62a0780e3a2369c176ad2a7f30e00f9/image.webp':
@@ -297,12 +313,8 @@ const prepared: PreparedPractice = {
       scene161_4,
     '/flashcards-transparent/course-practice/native-scene161/017a9716b95e2ac49fa0b8c0d7834e4fb753cd124cca7ffe4b608afcecd19b14/image.webp':
       scene161_5,
-    '/flashcards-transparent/course-practice/homework-media131/5037f706134bf69ba6fb9977e35817287306ca8c912e6ce2fc3cd8c8d577b70e/image.webp':
-      expanded124Asset20,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':
       expanded124Asset21,
-    '/flashcards-transparent/course-practice/homework-media131/94bc97a6de0a0e0b46fe8f73be7b171572e3153ebe6d56bf5da5a2c854ff0552/image.webp':
-      expanded124Asset22,
     '/flashcards-transparent/course-images/491e9411ed01a85d5a63b172b44fa98b4d21a06607e76dcd1b99587e2f298768/image.webp':
       expanded124Asset23,
     '/flashcards-transparent/course-images/e36eb40175cb97472e5df748c2d39bc60601186371a2d627a7a7e9449fa39d53/image.webp':
