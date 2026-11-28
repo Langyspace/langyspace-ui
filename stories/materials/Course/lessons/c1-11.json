@@ -372,9 +372,9 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Explain what you meant by “quick”",
-      "instruction": "Teacher read your message as a request for today’s figures. Clear up the misunderstanding and agree on a deadline",
-      "minutes": 2,
+      "title": "Plan a welcome session together",
+      "instruction": "You plan an event for new colleagues. Teacher is your co-organiser. Agree on a plan that meets the client’s brief",
+      "minutes": 4,
       "eyebrow": "Roleplay"
     },
     {
@@ -610,46 +610,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Your request · Teacher’s concern",
+      "title": "Client brief · welcome session",
       "facts": [
         {
           "id": "0",
-          "label": "Your message to Teacher",
-          "value": "“Please send a quick reply so I can plan the next stage”"
+          "label": "Help people connect",
+          "value": "New colleagues should get to know the team"
         },
         {
           "id": "1",
-          "label": "What you mean by “quick”",
-          "value": "Confirmation now · a time for the checked figures"
+          "label": "Explain the project",
+          "value": "Include a short overview · people have different levels of background knowledge"
         },
         {
           "id": "2",
-          "label": "What Teacher understood",
-          "value": "Figures needed today · checking takes until 4 pm tomorrow"
+          "label": "Avoid pressure",
+          "value": "Some people don’t want to speak in front of the whole room"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "Your message says “quick reply”. Do you need all the figures today?",
-          "cue": "Clarify “quick”: confirmation now, figures later",
-          "hint": "By quick, I mean a reply now, not unchecked figures"
+          "prompt": "Let’s start by having everyone introduce themselves to the whole room",
+          "cue": "Explain the client’s aim and suggest a gentler start",
+          "hint": "The aim is to connect, not feel tested. Could we start in pairs?"
         },
         {
           "id": "1",
-          "prompt": "I can send the checked figures by four tomorrow. Would that work?",
-          "cue": "Confirm the deadline and what will be ready",
-          "hint": "Yes. So, you’ll check the figures and reply by four tomorrow"
+          "prompt": "How do we explain the project without turning it into a lecture?",
+          "cue": "Describe a concrete activity that serves both goals",
+          "hint": "Imagine a short project overview, then small-group questions"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What if the checks take longer?",
-          "cue": "Agree how Teacher should report a delay",
-          "hint": "Please send an update if that deadline changes"
+          "prompt": "What plan should I take back to the client?",
+          "cue": "Summarise your proposal and check it meets the brief",
+          "hint": "We could combine a short overview with small groups. Does that work?"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Your request · Teacher’s concern"
+      "referenceLabel": "Client brief · welcome session"
     }
   }
 }

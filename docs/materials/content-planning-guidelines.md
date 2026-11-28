@@ -106,6 +106,12 @@ Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloc
 - Quando a decisão exige comparar duas ofertas ou aplicar regras de vários lugares, mostrar os dados essenciais juntos. Seletores continuam úteis para escolher uma pessoa, destinatário ou imagem, mas não devem esconder a informação exigida pela pergunta atual.
 - As dicas usam a mesma perspectiva e os mesmos fatos da pergunta e da ficha. Não oferecer uma resposta específica de C quando A está selecionado. Apoio de linguagem não é um gabarito único para uma decisão aberta.
 
+### Aplicação com resultado comunicativo — revisão168
+
+- Se uma prática continua confusa após ajustes de copy, reavaliar o desenho pedagógico em vez de insistir na situação original. Preservar a habilidade-alvo, não obrigatoriamente o cenário.
+- Uma aplicação de reformulação/negociação precisa levar a um resultado concreto: proposta, decisão ou acordo. Oferecer necessidades compreensíveis e mais de um aspecto para conciliar. Evitar sustentar toda a atividade na interpretação de uma única palavra quando isso só produz repetição.
+- As falas do interlocutor devem provocar reações diferentes: esclarecer a intenção, construir um exemplo e sintetizar/verificar o acordo. Modelos são possibilidades de linguagem; outras soluções coerentes com o brief continuam válidas.
+
 ## Perguntas conforme a finalidade — revisão94
 
 O pedido de 23/11/2026 manteve as 12 aulas por nível e definiu os balões com intenção de resposta e dica como apoio às perguntas. A revisão de24/11 abaixo distingue conversas pessoais de compreensão factual e tem prioridade sobre a apresentação de perguntas nos [60 planos de exercícios A1–C1](planos-a1-c1/README.md).
