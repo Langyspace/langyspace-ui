@@ -318,36 +318,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Imagine the consequence before advising",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build a second conditional sentence",
+      "instruction": "Imagine an unlikely or hypothetical situation and its result",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An imagined condition",
-          "verb": "If + past simple",
-          "example": "If I took offer B, …"
+          "subject": "Condition and result",
+          "verb": "If + past simple, would + base verb",
+          "example": "If I took the job, I would have a longer commute"
         },
         {
           "id": "1",
-          "subject": "The imagined result",
-          "verb": "would + base verb",
-          "example": "… I’d have a longer commute"
+          "subject": "Negative result",
+          "verb": "If + past simple, wouldn’t + base verb",
+          "example": "If I worked from home, I wouldn’t need the train"
         },
         {
           "id": "2",
-          "subject": "Tentative advice",
-          "verb": "If I were you, I’d …",
-          "example": "If I were you, I’d check the afternoon arrangement first"
+          "subject": "Advice",
+          "verb": "If I were you, I would + base verb",
+          "example": "If I were you, I’d check the schedule first"
         }
-      ]
+      ],
+      "note": "The past form in the if-clause describes an imagined present or future, not necessarily a past event. Would usually belongs in the result clause, not the if-clause."
     },
     {
       "id": "s_mission",

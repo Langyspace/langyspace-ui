@@ -305,36 +305,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Offer now or explain a plan?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Choose will or going to",
+      "instruction": "Use will for an offer or a decision now; use going to for an intention already formed",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An offer or decision now",
-          "verb": "I’ll + base verb",
-          "example": "I’ll open the door for you"
+          "subject": "Offer or decision now",
+          "verb": "will + base verb",
+          "example": "I’ll carry that bag. She’ll open the door"
         },
         {
           "id": "1",
-          "subject": "An intention already decided",
-          "verb": "I’m going to + base verb",
+          "subject": "Intention decided earlier",
+          "verb": "am / is / are going to + base verb",
           "example": "I’m going to paint tomorrow"
         },
         {
           "id": "2",
-          "subject": "Ask and accept help",
-          "verb": "Could you …? / That would be great",
-          "example": "Could you carry this bag? — That would be great"
+          "subject": "Negative and question with will",
+          "verb": "won’t + base / Will + subject + base?",
+          "example": "I won’t leave it here. Will you help me?"
         }
-      ]
+      ],
+      "note": "I will → I’ll; will not → won’t. Will has no -s ending and is followed by a base verb. Both forms can refer to the future; the speaker’s meaning guides the choice."
     },
     {
       "id": "s_mission",

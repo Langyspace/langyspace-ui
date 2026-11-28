@@ -317,36 +317,43 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Experience first, details next",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Ask about experience with the present perfect",
+      "instruction": "Use have or has plus a past participle for experience without a finished past date",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An experience, no finished date",
-          "verb": "Have you ever …? / I’ve …",
-          "example": "Have you ever taken a tram? — Yes, I have"
+          "subject": "Experience",
+          "verb": "subject + have / has + past participle",
+          "example": "I’ve been to Lisbon. She has taken a tram"
         },
         {
           "id": "1",
-          "subject": "Not an experience yet",
-          "verb": "I’ve never … / I haven’t … yet",
-          "example": "I haven’t visited the aquarium yet"
+          "subject": "Negative experience",
+          "verb": "haven’t / hasn’t + participle / have / has never + participle",
+          "example": "I haven’t visited the aquarium yet. I’ve never been there"
         },
         {
           "id": "2",
-          "subject": "Details of one finished occasion",
-          "verb": "When did you …? / past simple",
-          "example": "When did you go? — I went last year"
+          "subject": "Questions and short answers",
+          "verb": "Have / Has + subject + ever + past participle?",
+          "example": "Have you ever taken a tram? — Yes, I have / No, I haven’t"
+        },
+        {
+          "id": "participle",
+          "subject": "The past participle",
+          "verb": "regular: verb-ed / irregular: learn the form",
+          "example": "visit → visited; be → been; go → gone; take → taken"
         }
-      ]
+      ],
+      "note": "I/you/we/they have; he/she/it has. Ask for a finished date with past simple: When did you go? — I went last year."
     },
     {
       "id": "s_mission",

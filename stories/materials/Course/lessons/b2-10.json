@@ -365,36 +365,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Put the most relevant information in focus",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Emphasise information with cleft sentences",
+      "instruction": "Split a sentence to give one piece of information more focus",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Focus on the required solution",
-          "verb": "What + clause + is …",
-          "example": "What I need is a quiet room"
+          "subject": "What-cleft",
+          "verb": "What + subject + verb + is + focus",
+          "example": "I need a quiet room → What I need is a quiet room"
         },
         {
           "id": "1",
-          "subject": "Focus on the cause",
-          "verb": "It was + focus + that …",
-          "example": "It was the lift that woke me"
+          "subject": "It-cleft",
+          "verb": "It + be + focus + that / who + clause",
+          "example": "The lift woke me → It was the lift that woke me"
         },
         {
           "id": "2",
-          "subject": "Emphasise a previous request",
-          "verb": "did + base verb",
-          "example": "I did ask for a change this afternoon"
+          "subject": "Emphatic do",
+          "verb": "do / does / did + base verb",
+          "example": "I asked for a change → I did ask for a change"
         }
-      ]
+      ],
+      "note": "Clefts change the focus, not the underlying facts. Match the tense in the clause; after emphatic did use a base verb, not a past form."
     },
     {
       "id": "s_mission",

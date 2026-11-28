@@ -19,7 +19,7 @@ import { DevInterviewCall } from './DevInterviewCall'
 import { InterviewOralPractice } from './InterviewOralPractice'
 import { InterviewVocabulary } from './InterviewVocabulary'
 import { InterviewGuidedExample } from './InterviewGuidedExample'
-import { InterviewRoleBrief, InterviewReference } from './InterviewReference'
+import { InterviewRoleBrief } from './InterviewReference'
 import { InterviewVoiceNote } from './InterviewVoiceNote'
 import source from './DevInterviews131.content.json'
 import practice from './DevInterviews131.practice.json'
@@ -110,16 +110,16 @@ export function DevInterviews131Lesson({
     },
     {
       id: 'grammar',
-      label: exerciseHeadings.grammar,
+      label: practice.grammarTitle,
       content: (
         <SlidePage
-          eyebrow="Language support"
-          title={exerciseHeadings.grammar}
-          instruction="Compare experience until now, a completed project and a possible approach"
+          eyebrow="Grammar"
+          title={practice.grammarTitle}
+          instruction={practice.grammarInstruction}
         >
           <Common.Stack>
             <GrammarTable
-              title="Experience, actions and approaches"
+              title="Present perfect and past simple"
               captionVisibility="screen-reader"
               layout="patterns"
               columns={{ subject: 'Meaning', verb: 'Form', example: 'Example' }}
@@ -130,7 +130,7 @@ export function DevInterviews131Lesson({
                 example: row.example,
               }))}
             />
-            <InterviewReference />
+            <Common.Hint>{practice.grammarNote}</Common.Hint>
           </Common.Stack>
         </SlidePage>
       ),

@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Make the concession without hiding the limit",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build concessive clauses",
+      "instruction": "Acknowledge one point while showing that a limit still applies",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Recognise value while stating a limit",
-          "verb": "Much as + clause, …",
-          "example": "Much as I’d like to be flexible, I need more notice"
+          "subject": "Neutral concession",
+          "verb": "Although + subject + verb, main clause",
+          "example": "Although I value the sessions, I need more notice"
         },
         {
           "id": "1",
-          "subject": "Concede without withdrawing the concern",
-          "verb": "Even so / However + clause",
-          "example": "Two sessions would help. Even so, the dates need notice"
+          "subject": "A stronger degree of concession",
+          "verb": "Much as + subject + verb, main clause",
+          "example": "Much as I’d like to attend, I can offer only two evenings"
         },
         {
           "id": "2",
-          "subject": "A limit that survives another concession",
-          "verb": "Whatever / however …, …",
-          "example": "Whatever frequency we choose, I still need seven days’ notice"
+          "subject": "Regardless of degree",
+          "verb": "However + adjective / adverb + subject + verb, main clause",
+          "example": "However useful the sessions are, I still need seven days’ notice"
         }
-      ]
+      ],
+      "note": "However useful … means no matter how useful … . It is different from the sentence connector However, … . Keep the complete clause after although and much as."
     },
     {
       "id": "s_mission",

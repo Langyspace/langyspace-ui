@@ -366,40 +366,6 @@
       "eyebrow": "Discuss the situation"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Choose the language the argument actually needs",
-      "minutes": 3,
-      "eyebrow": "Language review",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "Attribute and qualify",
-          "verb": "According to … / The account suggests …",
-          "example": "The manager expects simpler handling; the source does not prove it"
-        },
-        {
-          "id": "1",
-          "subject": "Concede and condition",
-          "verb": "Although … / provided that …",
-          "example": "Although digital payment is convenient, a fallback is needed"
-        },
-        {
-          "id": "2",
-          "subject": "Reformulate and test",
-          "verb": "In other words … / I’d revise this if …",
-          "example": "In other words, digital-first needn’t mean no alternative"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
       "title": "Use the information to respond",

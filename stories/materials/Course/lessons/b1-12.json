@@ -330,36 +330,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Give a reason and recognise a counterpoint",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Connect reasons, results and contrasts",
+      "instruction": "Choose a connector and the correct kind of phrase after it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A reason and its result",
-          "verb": "because + clause / so + clause",
-          "example": "I need quiet because I write reports, so I work at home"
+          "subject": "Reason",
+          "verb": "because + clause / because of + noun phrase",
+          "example": "I work at home because I need quiet. The trip is slow because of traffic"
         },
         {
           "id": "1",
-          "subject": "A reason as a noun phrase",
-          "verb": "because of + noun phrase",
-          "example": "The journey is tiring because of the traffic"
+          "subject": "Result",
+          "verb": "clause + so + clause",
+          "example": "The office is noisy, so I work at home"
         },
         {
           "id": "2",
-          "subject": "A contrast without dismissing a point",
-          "verb": "although + clause / however",
-          "example": "Although I prefer home, I value team contact. However, the days need planning"
+          "subject": "Contrast",
+          "verb": "although + clause / however + new sentence",
+          "example": "Although I prefer home, I value team contact. However, travel takes time"
         }
-      ]
+      ],
+      "note": "Because takes a subject and verb; because of takes a noun phrase. Do not use although and but to join the same two clauses."
     },
     {
       "id": "s_mission",

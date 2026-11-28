@@ -294,36 +294,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Focus on the event and the confirmed update",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build passive sentences",
+      "instruction": "Use be plus a past participle when the event or object matters more than who did it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A past event, focus on the object",
+          "subject": "Past simple passive",
           "verb": "was / were + past participle",
-          "example": "The bike was taken from the rack"
+          "example": "The bike was stolen. Two bikes were found"
         },
         {
           "id": "1",
-          "subject": "A recent update with relevance now",
+          "subject": "Present perfect passive",
           "verb": "has / have been + past participle",
           "example": "A similar bike has been found"
         },
         {
           "id": "2",
-          "subject": "An action not confirmed yet",
-          "verb": "hasn’t been + past participle + yet",
-          "example": "The serial number hasn’t been checked yet"
+          "subject": "Negative and question",
+          "verb": "hasn’t been + participle / Has + subject + been + participle?",
+          "example": "The number hasn’t been checked. Has it been checked?"
         }
-      ]
+      ],
+      "note": "Active: Someone stole the bike. Passive: The bike was stolen. Add by + person only when the agent is known and relevant."
     },
     {
       "id": "s_mission",

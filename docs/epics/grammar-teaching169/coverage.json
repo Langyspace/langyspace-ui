@@ -1,0 +1,912 @@
+{
+  "baseline": "78421cf256feed866f8d94dfc37fe02d7d90beb4",
+  "sourcesChanged": 62,
+  "previousGrammarPages": 63,
+  "resultingGrammarPages": 58,
+  "existingPagesRewritten": 56,
+  "newPages": 2,
+  "removedPages": 7,
+  "removedReasons": {
+    "a1-12": "Only suggestions, weather phrases and meeting details; no focused new grammar rule",
+    "a2-06": "Symptom and appointment phrases review earlier simple-present/past forms without a new grammar focus",
+    "b2-11": "Discourse organisation and response strategies, already practised in the conversation",
+    "c1-10": "Register and message-purpose phrases rather than a focused grammatical structure",
+    "c1-11": "Reformulation and checking meaning are practised through the model and roleplay; this block was not a grammar explanation",
+    "c1-12": "Capstone discussion combines known language without a new grammar focus",
+    "c1-01.s71": "Separate polite-request phrase bank; the retained block teaches the actual seem/tend/might patterns"
+  },
+  "preserved": "All non-grammar pages, recorded utterances, audio/image bindings, questions, roleplays, homework and other source fields",
+  "pages": [
+    {
+      "source": "stories/materials/Course/lessons/a1-07.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Ask questions with what, where and how long"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a1-08.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Make requests with can"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a1-09.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Use there is and there are"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a1-10.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Choose a, an, some and any"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a1-11.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Choose this, that, these and those"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a1-12.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": []
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-01.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Compare present simple and present continuous"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-02.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build past simple statements and questions"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-03.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Combine past continuous and past simple"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-04.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Talk about future plans and arrangements"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-05.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Choose will or going to"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-06.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": []
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-07.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Distinguish have to, don’t have to and mustn’t"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-08.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Ask about experience with the present perfect"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-09.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Use for and since with the present perfect"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-10.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Compare with than, too and enough"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-11.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build a first conditional sentence"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/a2-12.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build suggestions with the right verb form"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-01.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Compare present perfect simple and continuous"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-02.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Describe past habits with used to"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-03.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Show which past event happened first"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-04.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Make present deductions with must, might and can’t"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-05.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Report statements and requests"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-06.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build a second conditional sentence"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-07.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Look back with should have and could have"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-08.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Distinguish used to, be used to and get used to"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-09.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build passive sentences"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-10.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Put indirect questions in statement order"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-11.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Identify people and things with relative clauses"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b1-12.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Connect reasons, results and contrasts"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-01.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Choose the past tense for each part of a story"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-02.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Compare future continuous and future perfect"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-03.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Connect different times with mixed conditionals"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-04.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Make deductions about the past"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-05.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Distinguish needn’t have and didn’t need to"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-06.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Arrange a service with have or get"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-07.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Choose the verb pattern after a reporting verb"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-08.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Distinguish defining and non-defining relative clauses"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-09.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Distinguish remember doing and remember to do"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-10.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Emphasise information with cleft sentences"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-11.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": []
+    },
+    {
+      "source": "stories/materials/Course/lessons/b2-12.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build contrast clauses with although and despite"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-02.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Invert had in a third conditional"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-03.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build passive reporting structures"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-04.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Express preferences with would rather"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-05.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Create emphasis with negative inversion"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-06.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Link changes with the more … the more"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-07.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Use perfect participle clauses"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-08.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Build concessive clauses"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-09.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s_grammar",
+          "Express probability with likely and bound to"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-10.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": []
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-11.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": []
+    },
+    {
+      "source": "stories/materials/Course/lessons/c1-12.json",
+      "before": [
+        [
+          "s_grammar",
+          "Compare the examples"
+        ]
+      ],
+      "after": []
+    },
+    {
+      "source": "stories/materials/A102/A102.review.json",
+      "before": [
+        [
+          "s10",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s10",
+          "Use my and your before a noun"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/A103/A103.review.json",
+      "before": [
+        [
+          "s8",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s8",
+          "Introduce people with this is and these are"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/A104/A104.review.json",
+      "before": [
+        [
+          "s7",
+          "Compare the examples"
+        ],
+        [
+          "s71",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s7",
+          "Build simple present sentences"
+        ],
+        [
+          "s71",
+          "Choose at, on and in for time"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/A105/A105.review.json",
+      "before": [
+        [
+          "s7",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s7",
+          "Use like and likes in the simple present"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/A106/A106.review.json",
+      "before": [
+        [
+          "s81",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s81",
+          "Use have and has for possession"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/C101/C101.review.json",
+      "before": [
+        [
+          "s7",
+          "Compare the examples"
+        ],
+        [
+          "s71",
+          "Compare the examples"
+        ]
+      ],
+      "after": [
+        [
+          "s7",
+          "Build cautious statements with seem, tend and might"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/A101/A101.review.json",
+      "before": [],
+      "after": [
+        [
+          "s_be169",
+          "Use am, is and are"
+        ],
+        [
+          "s_be_questions169",
+          "Make negatives and questions with be"
+        ]
+      ]
+    },
+    {
+      "source": "stories/materials/InfluencerRoutine/InfluencerRoutine.content.json",
+      "before": "existing manual grammar",
+      "after": "Build simple present routines"
+    },
+    {
+      "source": "stories/materials/DevInterviews131/DevInterviews131.practice.json",
+      "before": "existing manual grammar",
+      "after": "Use present perfect and past simple in an interview"
+    }
+  ]
+}

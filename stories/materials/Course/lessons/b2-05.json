@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "An unnecessary action or no obligation?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish needn’t have and didn’t need to",
+      "instruction": "Separate an action that happened unnecessarily from an absence of obligation",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "It happened, but wasn’t necessary",
+          "subject": "It happened unnecessarily",
           "verb": "needn’t have + past participle",
-          "example": "We needn’t have paid for breakfast again"
+          "example": "We needn’t have paid again: breakfast was included"
         },
         {
           "id": "1",
           "subject": "There was no obligation",
           "verb": "didn’t need to + base verb",
-          "example": "We didn’t need to pay in advance; we chose to"
+          "example": "We didn’t need to pay early, so we waited"
         },
         {
           "id": "2",
-          "subject": "Show whether the action happened",
-          "verb": "add the actual context",
-          "example": "We didn’t need to pay then, so we waited until arrival"
+          "subject": "Ask about the obligation",
+          "verb": "Did + subject + need to + base verb?",
+          "example": "Did you need to pay a deposit? — Yes, we did"
         }
-      ]
+      ],
+      "note": "Needn’t have tells us the action happened. Didn’t need to does not by itself say whether it happened: we can add but we did or so we waited."
     },
     {
       "id": "s_mission",

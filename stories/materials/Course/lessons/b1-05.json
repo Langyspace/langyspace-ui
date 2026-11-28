@@ -294,36 +294,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Who said what, and what did they ask?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Report statements and requests",
+      "instruction": "Choose said, told or asked, then build the clause that follows",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Report information",
-          "verb": "said + clause",
-          "example": "He said he’d come on Thursday"
+          "subject": "Report a statement",
+          "verb": "said (that) + clause",
+          "example": "“I’ll come Thursday” → He said he would come Thursday"
         },
         {
           "id": "1",
-          "subject": "Say who received the information",
-          "verb": "told + person + clause",
-          "example": "He told me he’d need to see the tap"
+          "subject": "Name the listener",
+          "verb": "told + person + (that) + clause",
+          "example": "He told me he would check the tap"
         },
         {
           "id": "2",
-          "subject": "Pass on a request",
-          "verb": "asked + person + to + verb",
-          "example": "He asked us to leave a spare key"
+          "subject": "Report a request",
+          "verb": "asked + person + to / not to + base verb",
+          "example": "“Leave a key” → He asked us to leave a key"
         }
-      ]
+      ],
+      "note": "After a past reporting verb, will often changes to would and am/is to was. Tense changes depend on whether the information is still current. Told needs a listener; said does not."
     },
     {
       "id": "s_mission",

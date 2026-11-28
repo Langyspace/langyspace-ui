@@ -365,36 +365,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Identify the option or add a relevant detail",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish defining and non-defining relative clauses",
+      "instruction": "Choose whether the relative clause identifies a noun or adds extra information",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A clause needed to identify",
-          "verb": "noun + who / which / that + clause",
-          "example": "The person who works from home needs a work area"
+          "subject": "Identify which one",
+          "verb": "noun + who / which / that + clause; no commas",
+          "example": "The apartment that has a separate room could suit you"
         },
         {
           "id": "1",
-          "subject": "An extra detail about an identified thing",
-          "verb": "commas + who / which + clause",
-          "example": "C, which has a balcony, is further from the metro than A"
+          "subject": "Add extra information",
+          "verb": "identified noun, who / which + clause, …",
+          "example": "Apartment B, which has a separate room, costs $850"
         },
         {
           "id": "2",
-          "subject": "Comment on the whole previous idea",
-          "verb": "comma + which + clause",
+          "subject": "Comment on an entire idea",
+          "verb": "clause, which + clause",
           "example": "B has a separate room, which may make working easier"
         }
-      ]
+      ],
+      "note": "Use commas for extra information and do not use that in a non-defining clause. For a comment on the whole previous idea, use which."
     },
     {
       "id": "s_mission",

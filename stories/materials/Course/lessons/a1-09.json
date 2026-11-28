@@ -128,36 +128,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Places and directions",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use there is and there are",
+      "instruction": "Use there to say that a place or thing exists, then choose singular or plural",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Ask if a place exists",
-          "verb": "Is there a …?",
-          "example": "Is there a café near the hotel?"
+          "subject": "One place or thing",
+          "verb": "There is / There isn’t + a / an + noun",
+          "example": "There is a café. There isn’t a bank near the hotel"
         },
         {
           "id": "1",
-          "subject": "Say what is there",
-          "verb": "There’s / There are",
-          "example": "There’s a pharmacy. There are two streets on the right"
+          "subject": "Two or more",
+          "verb": "There are / There aren’t + plural noun",
+          "example": "There are two shops. There aren’t any shops on this street"
         },
         {
           "id": "2",
-          "subject": "Give a route",
-          "verb": "Go / Turn + direction",
-          "example": "Go straight. Turn right at the second street"
+          "subject": "Ask whether something exists",
+          "verb": "Is there a …? / Are there any …?",
+          "example": "Is there a pharmacy? Are there any cafés?"
         }
-      ]
+      ],
+      "note": "There is → There’s. Short answers: Yes, there is / No, there isn’t; Yes, there are / No, there aren’t."
     },
     {
       "id": "s_mission",

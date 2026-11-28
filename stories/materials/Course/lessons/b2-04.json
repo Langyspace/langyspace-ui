@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "How strong is the evidence for the past event?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Make deductions about the past",
+      "instruction": "Use a modal plus have plus a past participle for an inference about an earlier event",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Strong past inference",
+          "subject": "Strong positive deduction",
           "verb": "must have + past participle",
           "example": "Someone must have moved the plant"
         },
         {
           "id": "1",
-          "subject": "Possible past explanation",
-          "verb": "might / could have + past participle",
-          "example": "The receipt might have been left earlier"
+          "subject": "Possible explanation",
+          "verb": "might / may / could have + past participle",
+          "example": "The neighbour might have watered the plants"
         },
         {
           "id": "2",
-          "subject": "Rule out only with compatible evidence",
-          "verb": "can’t have + past participle",
-          "example": "If the only key stayed sealed, it can’t have been used then"
+          "subject": "Strong negative deduction",
+          "verb": "can’t / couldn’t have + past participle",
+          "example": "If the key remained sealed, it can’t have been used"
         }
-      ]
+      ],
+      "note": "Have + past participle points back to the event; the modal expresses your present judgement. A strong grammatical form still needs strong evidence."
     },
     {
       "id": "s_mission",

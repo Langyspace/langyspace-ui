@@ -244,65 +244,78 @@
     {
       "id": "s7",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Talk about what you do",
-      "minutes": 2,
       "eyebrow": "Grammar",
+      "title": "Build simple present sentences",
+      "instruction": "Use simple present for routines; change the verb for he, she and it",
+      "minutes": 2,
+      "layout": "patterns",
       "columns": {
-        "subject": "Use",
-        "verb": "Pattern",
-        "example": "Pattern and example"
+        "subject": "Meaning",
+        "verb": "Form",
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "action",
-          "subject": "Activity",
-          "verb": "I + verb",
-          "example": "I work. I study after work."
+          "id": "0",
+          "subject": "Affirmative",
+          "verb": "I / you / we / they + base verb; he / she / it + verb-s",
+          "example": "I work in the morning. She works in the morning"
         },
         {
-          "id": "state",
-          "subject": "State",
-          "verb": "I’m + adjective",
-          "example": "I’m tired. I’m free on Friday."
+          "id": "1",
+          "subject": "Negative",
+          "verb": "don’t / doesn’t + base verb",
+          "example": "I don’t work at night. She doesn’t work at night"
+        },
+        {
+          "id": "2",
+          "subject": "Question",
+          "verb": "Do / Does + subject + base verb?",
+          "example": "Do you work in the morning? Does she work on Friday?"
+        },
+        {
+          "id": "spelling",
+          "subject": "He / she / it: spelling",
+          "verb": "usually -s; -es after -s/-sh/-ch/-x/-z; consonant + y → -ies",
+          "example": "work → works; watch → watches; study → studies; go → goes"
         }
       ],
-      "note": "I + activity: I work. I am + state: I’m free",
-      "layout": "patterns"
+      "note": "After does/doesn’t, keep the base verb. Short answers: Yes, I do / No, I don’t; Yes, she does / No, she doesn’t. For states with be, use I am / she is instead."
     },
     {
       "id": "s71",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Say when it happens",
-      "minutes": 2,
       "eyebrow": "Grammar",
+      "title": "Choose at, on and in for time",
+      "instruction": "Use at for a clock time, on for a day and in for a part of the day",
+      "minutes": 2,
+      "layout": "patterns",
       "columns": {
-        "subject": "Time",
-        "verb": "Word",
-        "example": "Pattern and example"
+        "subject": "Meaning",
+        "verb": "Form",
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "at",
-          "subject": "A time",
-          "verb": "at",
-          "example": "I get up at six."
+          "id": "0",
+          "subject": "Clock time",
+          "verb": "at + time",
+          "example": "I get up at seven. I go to bed at ten"
         },
         {
-          "id": "on",
-          "subject": "A day",
-          "verb": "on",
-          "example": "I study on Monday."
+          "id": "1",
+          "subject": "Day",
+          "verb": "on + day / date",
+          "example": "I study on Monday. I exercise on Friday"
         },
         {
-          "id": "in",
-          "subject": "Part of day",
-          "verb": "in",
-          "example": "I work in the morning. I relax in the afternoon or evening."
+          "id": "2",
+          "subject": "Part of the day",
+          "verb": "in + the morning / afternoon / evening",
+          "example": "I work in the morning. I relax in the evening"
         }
       ],
-      "layout": "patterns"
+      "note": "An important exception is at night. Ask with When …? or What time …? Keep the preposition in the answer: At seven / On Monday."
     },
     {
       "id": "s_gap99",

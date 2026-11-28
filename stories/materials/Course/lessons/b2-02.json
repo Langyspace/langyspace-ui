@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "In progress then, or completed by then?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare future continuous and future perfect",
+      "instruction": "Distinguish an activity in progress at a future time from something complete before it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "In progress at a future moment",
+          "subject": "In progress at a future time",
           "verb": "will be + verb-ing",
-          "example": "At ten, I’ll be handing over the packs"
+          "example": "At ten, I’ll be welcoming the volunteers"
         },
         {
           "id": "1",
-          "subject": "Completed before a future point",
-          "verb": "will have + past participle + by",
-          "example": "By Thursday evening, I’ll have finished the version"
+          "subject": "Complete before a future point",
+          "verb": "will have + past participle",
+          "example": "By Friday, I’ll have finished the pack"
         },
         {
           "id": "2",
-          "subject": "Make the condition explicit",
-          "verb": "provided / as long as + clause",
-          "example": "We’ll meet the deadline provided the brief doesn’t change"
+          "subject": "Negative and question",
+          "verb": "won’t have + participle / Will + subject + have + participle?",
+          "example": "I won’t have finished by Thursday. Will you have finished by Friday?"
         }
-      ]
+      ],
+      "note": "At ten locates an activity; by ten sets a completion limit. Future promises may need a condition: I’ll have finished by Friday if the comments arrive on time."
     },
     {
       "id": "s_mission",

@@ -185,30 +185,37 @@
     {
       "id": "s10",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "My and your",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use my and your before a noun",
+      "instruction": "Choose a possessive adjective to show whose name or number you mean",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "my",
-          "subject": "About me",
-          "verb": "my + name / number",
-          "example": "My name is Ana. My phone number is 984 221 507."
+          "id": "0",
+          "subject": "The speaker",
+          "verb": "I → my + noun",
+          "example": "My name is Ana. My number is 984 221 507"
         },
         {
-          "id": "your",
-          "subject": "About you",
-          "verb": "your + name / number",
+          "id": "1",
+          "subject": "The listener",
+          "verb": "you → your + noun",
+          "example": "Your name is Kim. Your phone number is on the form"
+        },
+        {
+          "id": "2",
+          "subject": "Ask about possession",
+          "verb": "What is / What’s + your + noun?",
           "example": "What’s your name? What’s your phone number?"
         }
-      ]
+      ],
+      "note": "My and your go before a noun and do not change for singular/plural: my name, my details. I and you are subject pronouns; my and your are not."
     },
     {
       "id": "s_gap99",

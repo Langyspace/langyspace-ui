@@ -380,36 +380,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Choose distance and directness for the relationship",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Express preferences with would rather",
+      "instruction": "Use a base verb for your own preference and a past form for someone else’s present or future action",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A specific, softened request",
-          "verb": "Would you mind + -ing?",
-          "example": "Would you mind using headphones after nine?"
+          "subject": "Your own action",
+          "verb": "would rather + base verb",
+          "example": "I’d rather work somewhere quiet"
         },
         {
           "id": "1",
-          "subject": "A preference about another person’s action",
-          "verb": "I’d rather + subject + past form",
-          "example": "I’d rather you let me know about an exception"
+          "subject": "Another person’s action",
+          "verb": "would rather + subject + past form",
+          "example": "I’d rather you took calls in the other room"
         },
         {
           "id": "2",
-          "subject": "A stronger expression of irritation",
-          "verb": "I wish + subject + wouldn’t + verb",
-          "example": "I wish you wouldn’t take calls here — consider whether this tone helps"
+          "subject": "A negative preference",
+          "verb": "would rather + subject + didn’t + base verb",
+          "example": "I’d rather you didn’t take calls in this room"
         }
-      ]
+      ],
+      "note": "The past form after I’d rather you refers to a present/future preference here. Would rather is not followed by to. Explain the practical need instead of treating the form as automatically polite."
     },
     {
       "id": "s_mission",

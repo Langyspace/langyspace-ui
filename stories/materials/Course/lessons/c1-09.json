@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "How much certainty does the language commit you to?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Express probability with likely and bound to",
+      "instruction": "Use be plus an expression and to plus a base verb to show the strength of a prediction",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A probable outcome, with conditions",
-          "verb": "likely / unlikely to + verb",
-          "example": "Demand is likely to rise if conditions continue"
+          "subject": "A probable result",
+          "verb": "be likely / unlikely to + base verb",
+          "example": "Demand is likely to rise. It is unlikely to fall immediately"
         },
         {
           "id": "1",
-          "subject": "A very strong prediction",
-          "verb": "bound to + verb",
-          "example": "“Bound to get worse” needs stronger grounds than this sample"
+          "subject": "A very strong expectation",
+          "verb": "be bound to + base verb",
+          "example": "An extra delay is bound to affect the connection"
         },
         {
           "id": "2",
-          "subject": "A scheduled or expected development",
-          "verb": "set to / was going to",
-          "example": "The service is set to start. We were going to recommend no action"
+          "subject": "An expected or scheduled development",
+          "verb": "be set to + base verb",
+          "example": "The new service is set to start next month"
         }
-      ]
+      ],
+      "note": "Change be for the subject and time: is likely, are likely, was likely. Bound to expresses a much stronger expectation than likely to; the form itself supplies no evidence."
     },
     {
       "id": "s_mission",

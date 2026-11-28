@@ -516,6 +516,76 @@
       ]
     },
     {
+      "id": "s_be169",
+      "kind": "grammar",
+      "eyebrow": "Grammar",
+      "title": "Use am, is and are",
+      "instruction": "Use be to say who people are, where they are from and how they feel",
+      "minutes": 3,
+      "layout": "columns",
+      "columns": {
+        "subject": "Subject",
+        "verb": "Be",
+        "example": "Example · full → short"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "I",
+          "verb": "am",
+          "example": "I am Ana → I’m Ana"
+        },
+        {
+          "id": "1",
+          "subject": "He / she / it",
+          "verb": "is",
+          "example": "She is happy → She’s happy"
+        },
+        {
+          "id": "2",
+          "subject": "You / we / they",
+          "verb": "are",
+          "example": "They are from Brazil → They’re from Brazil"
+        }
+      ],
+      "note": "Short forms are usual in speech: I’m, he’s, she’s, it’s, you’re, we’re, they’re. The subject decides which form of be you use."
+    },
+    {
+      "id": "s_be_questions169",
+      "kind": "grammar",
+      "eyebrow": "Grammar",
+      "title": "Make negatives and questions with be",
+      "instruction": "Add not for a negative; put am, is or are before the subject for a question",
+      "minutes": 3,
+      "layout": "patterns",
+      "columns": {
+        "subject": "Meaning",
+        "verb": "Form",
+        "example": "Pattern and examples"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Negative",
+          "verb": "subject + am / is / are + not",
+          "example": "I’m not tired. She isn’t angry. They aren’t cold"
+        },
+        {
+          "id": "1",
+          "subject": "Question",
+          "verb": "Am / Is / Are + subject + …?",
+          "example": "Are you from Brazil? Is she happy?"
+        },
+        {
+          "id": "2",
+          "subject": "Short answer",
+          "verb": "Yes, subject + be / No, subject + be + not",
+          "example": "Yes, I am / No, I’m not. Yes, she is / No, she isn’t"
+        }
+      ],
+      "note": "Be makes its own questions and negatives without do/does. Positive short answers keep the full verb: Yes, I am; Yes, she is."
+    },
+    {
       "id": "s8",
       "kind": "dialogue",
       "title": "Complete the conversation",

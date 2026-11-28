@@ -384,36 +384,43 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Give each past form a job in the story",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Choose the past tense for each part of a story",
+      "instruction": "Distinguish the main events, an earlier completed action and earlier activity in progress",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A main event",
+          "subject": "Main event",
           "verb": "past simple",
           "example": "My phone died at four"
         },
         {
+          "id": "background",
+          "subject": "In progress at the story time",
+          "verb": "was / were + verb-ing",
+          "example": "I was using my phone as a map when it died"
+        },
+        {
           "id": "1",
-          "subject": "An earlier completed fact",
+          "subject": "Earlier completed action",
           "verb": "had + past participle",
-          "example": "I’d left my charger at the hotel"
+          "example": "I had left my charger at the hotel"
         },
         {
           "id": "2",
-          "subject": "An earlier ongoing activity",
+          "subject": "Earlier activity and duration",
           "verb": "had been + verb-ing",
-          "example": "I’d been using the phone as a map all day"
+          "example": "I had been using my phone as a map all day"
         }
-      ]
+      ],
+      "note": "Tell the main sequence in past simple. Use past perfect forms to look back from that point; the continuous form highlights activity or duration, not a completed count."
     },
     {
       "id": "s_gap99",

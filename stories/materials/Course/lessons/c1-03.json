@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "A reporting structure must preserve attribution",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build passive reporting structures",
+      "instruction": "Use reporting passives to attribute a claim and mark whether its event is earlier",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Report with an identified source",
-          "verb": "It is reported that … / According to …",
-          "example": "According to the café’s notice, the dining area will close for renovation"
+          "subject": "A reported clause",
+          "verb": "It is reported / said that + clause",
+          "example": "It is reported that the dining area is closed"
         },
         {
           "id": "1",
-          "subject": "A passive reporting structure",
-          "verb": "subject + is said to + verb",
-          "example": "The café is said to be closing — but who says so?"
+          "subject": "A current reported situation",
+          "verb": "subject + is reported / said to + base verb",
+          "example": "The dining area is reported to be closed"
         },
         {
           "id": "2",
-          "subject": "An earlier alleged event",
-          "verb": "is thought / reported to have + participle",
-          "example": "It was reported to have closed; the current notice does not support that claim"
+          "subject": "An earlier reported event",
+          "verb": "subject + is reported / said to have + past participle",
+          "example": "The café is reported to have closed its dining area"
         }
-      ]
+      ],
+      "note": "To have + participle places the reported event before the reporting time. A reporting structure attributes a claim; it does not make an unsupported claim true."
     },
     {
       "id": "s_mission",

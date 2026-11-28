@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Make the strength of the comparison match the evidence",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Link changes with the more … the more",
+      "instruction": "Use a comparative in each half to connect two changes",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A linked change in emphasis",
-          "verb": "the more …, the more / less …",
-          "example": "The more I consider the timetable, the more flexibility matters"
+          "subject": "Two increases",
+          "verb": "The more + clause, the more + clause",
+          "example": "The more I practise, the more confident I feel"
         },
         {
           "id": "1",
-          "subject": "State the size of a difference accurately",
-          "verb": "slightly / considerably / much + comparative",
-          "example": "B is considerably more expensive, but price alone doesn’t settle the choice"
+          "subject": "An increase and a decrease",
+          "verb": "The more + clause, the less + clause",
+          "example": "The more time I spend commuting, the less time I have to study"
         },
         {
           "id": "2",
-          "subject": "A decision-changing condition",
-          "verb": "I’d reconsider if …",
-          "example": "I’d reconsider A if the live session conflicted with a fixed commitment"
+          "subject": "Other comparatives",
+          "verb": "The + comparative + clause, the + comparative + clause",
+          "example": "The earlier I finish, the easier it is to attend"
         }
-      ]
+      ],
+      "note": "Both halves need a comparative. The is part of this construction: the more, the less, the earlier. It does not mean that the relationship has been proved in every situation."
     },
     {
       "id": "s_mission",

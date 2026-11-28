@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Emphasis that earns its place in the story",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Create emphasis with negative inversion",
+      "instruction": "Move an auxiliary before the subject after a fronted negative expression",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Signal an unexpected discovery",
-          "verb": "Little did I know + clause",
-          "example": "Little did I know the scarf was still at the café"
+          "subject": "Plain word order",
+          "verb": "subject + auxiliary + verb",
+          "example": "I didn’t know the scarf was still at the café"
         },
         {
           "id": "1",
-          "subject": "Emphasise an exceptional earlier experience",
-          "verb": "Never had + subject + participle",
-          "example": "Never had I been so relieved to recognise a chair"
+          "subject": "Fronted little",
+          "verb": "Little + did + subject + base verb",
+          "example": "Little did I know the scarf was still at the café"
         },
         {
           "id": "2",
-          "subject": "A plain alternative is equally valid",
-          "verb": "I didn’t realise … / I had never …",
-          "example": "I didn’t realise the scarf was still there"
+          "subject": "An earlier experience",
+          "verb": "Never + had + subject + past participle",
+          "example": "Never had I felt so relieved to find a missing scarf"
         }
-      ]
+      ],
+      "note": "Invert the main clause, not the following reported idea. With did, use a base verb; with had, use a past participle. This creates emphasis, not a different sequence of events."
     },
     {
       "id": "s_mission",

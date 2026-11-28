@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "A counterfactual is a choice of register, not proof of cause",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Invert had in a third conditional",
+      "instruction": "Drop if and move had before the subject for a more formal unreal past condition",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A formal past counterfactual",
-          "verb": "Had + subject + participle …",
-          "example": "Had we known the test was incomplete, we could have delayed opening"
+          "subject": "With if",
+          "verb": "If + subject + had + participle, could / would have + participle",
+          "example": "If we had tested earlier, we could have found the problem"
         },
         {
           "id": "1",
-          "subject": "The same meaning, less formal",
-          "verb": "If + subject + had + participle …",
-          "example": "If we’d known, we could have delayed opening"
+          "subject": "Inversion without if",
+          "verb": "Had + subject + participle, could / would have + participle",
+          "example": "Had we tested earlier, we could have found the problem"
         },
         {
           "id": "2",
-          "subject": "A prevention tied to evidence",
-          "verb": "Next time, … / If we do this again, …",
-          "example": "Next time, name an owner for warning acknowledgements"
+          "subject": "Negative inversion",
+          "verb": "Had + subject + not + participle, …",
+          "example": "Had we not checked the sound, we might have missed the problem"
         }
-      ]
+      ],
+      "note": "The meaning remains an unreal past condition. Inversion changes order and register; it does not prove what caused the actual delay."
     },
     {
       "id": "s_mission",

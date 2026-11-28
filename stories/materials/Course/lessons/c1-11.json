@@ -378,40 +378,6 @@
       "eyebrow": "Roleplay"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Make the meaning concrete and check it",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "Check your interpretation",
-          "verb": "So, if I understand you correctly, …",
-          "example": "So, if I understand you correctly, a checked answer tomorrow is acceptable?"
-        },
-        {
-          "id": "1",
-          "subject": "Replace an abstraction with an example",
-          "verb": "To put it another way, imagine …",
-          "example": "Imagine a message saying received, with a checked reply time"
-        },
-        {
-          "id": "2",
-          "subject": "Expand a dense noun phrase",
-          "verb": "person + action + time",
-          "example": "“Verification is ongoing” → “I’m checking the figures and will reply by four”"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
       "title": "Help them understand each other",

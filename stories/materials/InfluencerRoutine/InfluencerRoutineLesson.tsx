@@ -125,7 +125,7 @@ export function InfluencerRoutineLesson({
       label: source.grammar.title,
       content: (
         <SlidePage
-          columns={2}
+          columns={1}
           eyebrow="Simple Present"
           title={source.grammar.title}
           instruction={source.grammar.instruction}
@@ -134,10 +134,11 @@ export function InfluencerRoutineLesson({
             <GrammarTable
               title="Talking about habits"
               captionVisibility="screen-reader"
+              layout="patterns"
               columns={{
-                subject: 'Purpose',
-                verb: 'I / you',
-                example: 'He / she',
+                subject: 'Meaning',
+                verb: 'Form',
+                example: 'Pattern and examples',
               }}
               rows={source.grammar.rows}
             />

@@ -305,36 +305,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "What was happening when something changed?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Combine past continuous and past simple",
+      "instruction": "Describe an action in progress, then the shorter event that interrupted it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An action already in progress",
+          "subject": "Action in progress",
           "verb": "was / were + verb-ing",
-          "example": "I was waiting for the bus"
+          "example": "I was waiting for the bus. They were walking"
         },
         {
           "id": "1",
-          "subject": "An event interrupts it",
+          "subject": "The interrupting event",
           "verb": "when + past simple",
           "example": "I was waiting when it started raining"
         },
         {
           "id": "2",
-          "subject": "Explain and apologise",
-          "verb": "Sorry … + reason",
-          "example": "Sorry I’m late. I missed the bus"
+          "subject": "Negative and question",
+          "verb": "wasn’t / weren’t + -ing / Was / Were + subject + -ing?",
+          "example": "I wasn’t driving. Were you waiting when I called?"
         }
-      ]
+      ],
+      "note": "Use was with I/he/she/it and were with you/we/they. While often introduces the longer activity: While I was waiting, it started raining."
     },
     {
       "id": "s_mission",

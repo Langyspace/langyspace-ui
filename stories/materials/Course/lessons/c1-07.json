@@ -368,36 +368,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Compress information without losing its relationship",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use perfect participle clauses",
+      "instruction": "Use a participle clause for an earlier action when both clauses have the same subject",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An earlier completed action, same subject",
-          "verb": "Having + past participle, subject + clause",
-          "example": "Having checked the quote, we can ask for approval"
+          "subject": "Earlier active action",
+          "verb": "Having + past participle, subject + main verb",
+          "example": "Having checked the quote, we requested a lower price"
         },
         {
           "id": "1",
-          "subject": "A constraint or basis",
-          "verb": "Given + noun phrase / clause",
-          "example": "Given the budget limit, we need a lower quote"
+          "subject": "Earlier passive action",
+          "verb": "Having been + past participle, subject + main verb",
+          "example": "Having been warned about the cost, we requested another quote"
         },
         {
           "id": "2",
-          "subject": "A clear oral alternative",
-          "verb": "After / Because + complete clause",
-          "example": "After we checked the quote, we asked for approval"
+          "subject": "An action not completed",
+          "verb": "Not having + past participle, subject + main verb",
+          "example": "Not having received the date, we couldn’t confirm the event"
         }
-      ]
+      ],
+      "note": "Both clauses refer to the same subject: Having checked the quote, we … = After we checked the quote, we …"
     },
     {
       "id": "s_mission",

@@ -315,36 +315,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "If this happens, what will we do?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build a first conditional sentence",
+      "instruction": "Talk about a real future possibility and the response you plan",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A real possible condition",
-          "verb": "If + present simple",
-          "example": "If it rains, …"
+          "subject": "Condition and result",
+          "verb": "If + present simple, will + base verb",
+          "example": "If it rains, we’ll go to the museum"
         },
         {
           "id": "1",
-          "subject": "The result or decision",
-          "verb": "will + base verb",
-          "example": "… we’ll go to the museum"
+          "subject": "Negative condition or result",
+          "verb": "If + don’t / doesn’t + base, will / won’t + base",
+          "example": "If the bus doesn’t come, we won’t wait outside"
         },
         {
           "id": "2",
-          "subject": "Another possible response",
-          "verb": "can + base verb",
-          "example": "If the bus is late, we can take the next one"
+          "subject": "Ask about the result",
+          "verb": "What will + subject + base + if …?",
+          "example": "What will you do if it rains?"
         }
-      ]
+      ],
+      "note": "Use present simple after if for this future condition. You can reverse the clauses: We’ll go to the museum if it rains. Use a comma when the if-clause comes first."
     },
     {
       "id": "s_mission",

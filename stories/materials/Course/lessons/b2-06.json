@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "The service, its progress and its completed steps",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Arrange a service with have or get",
+      "instruction": "Use have/get plus an object and past participle when someone else does the work",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Arrange for someone else to do it",
+          "subject": "Arrange the service",
           "verb": "have / get + object + past participle",
-          "example": "I need to get my screen fixed"
+          "example": "I need to get my screen fixed. I had my phone repaired"
         },
         {
           "id": "1",
-          "subject": "Service in progress",
-          "verb": "is being + past participle",
+          "subject": "Describe work in progress",
+          "verb": "am / is / are being + past participle",
           "example": "The phone is being tested"
         },
         {
           "id": "2",
-          "subject": "Completed step, not necessarily whole service",
-          "verb": "has been + past participle",
+          "subject": "Describe a completed step",
+          "verb": "has / have been + past participle",
           "example": "The screen has been fitted, but testing isn’t finished"
         }
-      ]
+      ],
+      "note": "The object goes before the participle: get my screen fixed. Compare I repaired it myself with I had it repaired: in the second, someone else did the repair."
     },
     {
       "id": "s_mission",

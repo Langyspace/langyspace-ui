@@ -282,36 +282,37 @@
     {
       "id": "s81",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Have and has",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use have and has for possession",
+      "instruction": "Use have with I, you, we and they; use has with he, she and it",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Who",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "have",
-          "subject": "I / you",
-          "verb": "have / don’t have",
-          "example": "I have a dog. I don’t have a cat."
+          "id": "0",
+          "subject": "Affirmative",
+          "verb": "I / you / we / they have; he / she / it has",
+          "example": "I have a dog. She has two cats"
         },
         {
-          "id": "has",
-          "subject": "He / she",
-          "verb": "has / doesn’t have",
-          "example": "My sister has two cats."
+          "id": "1",
+          "subject": "Negative",
+          "verb": "don’t / doesn’t + have",
+          "example": "I don’t have a cat. He doesn’t have a dog"
         },
         {
-          "id": "ask",
-          "subject": "Ask",
-          "verb": "Do you have …?",
-          "example": "Do you have a pet?"
+          "id": "2",
+          "subject": "Question",
+          "verb": "Do / Does + subject + have + noun?",
+          "example": "Do you have a pet? Does she have a cat?"
         }
-      ]
+      ],
+      "note": "After does/doesn’t, use have, not has. Short answers: Yes, I do / No, I don’t; Yes, she does / No, she doesn’t."
     },
     {
       "id": "s_gap99",

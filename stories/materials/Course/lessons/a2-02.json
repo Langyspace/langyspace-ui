@@ -317,36 +317,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Tell the action and say how it was",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build past simple statements and questions",
+      "instruction": "Use past simple for finished events; choose did for action verbs and was or were for be",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Place or opinion in the past",
-          "verb": "was / were",
-          "example": "The market was busy. We were tired"
+          "subject": "Finished action",
+          "verb": "subject + regular -ed / irregular past verb",
+          "example": "I visited a market. We went to a café"
         },
         {
           "id": "1",
-          "subject": "A finished action",
-          "verb": "went / had / took / stayed",
-          "example": "I went to a market. Then I had coffee"
+          "subject": "Negative action",
+          "verb": "subject + didn’t + base verb",
+          "example": "I didn’t stay at home. She didn’t take photos"
         },
         {
           "id": "2",
-          "subject": "Ask about the action",
+          "subject": "Ask about an action",
           "verb": "Did + subject + base verb?",
-          "example": "Did you take photos? — Yes, I did"
+          "example": "Did you go out? — Yes, I did. What did you do?"
         }
-      ]
+      ],
+      "note": "Common past forms: go → went, have → had, take → took. After did/didn’t, use the base verb. Be is different: I/he/she was; you/we/they were. Was it busy? — Yes, it was."
     },
     {
       "id": "s_mission",

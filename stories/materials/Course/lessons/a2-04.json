@@ -317,36 +317,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "An arrangement or an intention?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Talk about future plans and arrangements",
+      "instruction": "Use going to for an intention and present continuous for an arranged future event",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A confirmed arrangement",
-          "verb": "am / is / are + verb-ing + future time",
-          "example": "I’m going to a yoga class on Saturday"
+          "subject": "An intention",
+          "verb": "am / is / are going to + base verb",
+          "example": "I’m going to try yoga"
         },
         {
           "id": "1",
-          "subject": "An intention",
-          "verb": "am / is / are going to + verb",
-          "example": "I’m going to try something new"
+          "subject": "An arrangement",
+          "verb": "am / is / are + verb-ing + future time",
+          "example": "I’m meeting Ana on Saturday"
         },
         {
           "id": "2",
-          "subject": "Decline and offer an alternative",
-          "verb": "I’d love to, but … How about …?",
-          "example": "I’d love to, but I’m busy. How about Sunday?"
+          "subject": "Negative and question",
+          "verb": "not going to + base / Are you going to + base?",
+          "example": "I’m not going to stay home. Are you going to book it?"
         }
-      ]
+      ],
+      "note": "With present continuous, a future time makes the meaning clear: I’m meeting her tomorrow. Going to needs a following base verb: going to try."
     },
     {
       "id": "s_mission",

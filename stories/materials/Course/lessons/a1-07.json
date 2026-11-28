@@ -272,36 +272,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Ask and check travel details",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Ask questions with what, where and how long",
+      "instruction": "Choose the question word, then put is or are before the subject",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Ask about a place",
-          "verb": "Where …?",
-          "example": "Where are you staying? — At the Park Hotel"
+          "subject": "A thing or detail",
+          "verb": "What + is / are + subject?",
+          "example": "What is your gate number? What are these documents?"
         },
         {
           "id": "1",
-          "subject": "Ask about a duration",
-          "verb": "How long …?",
-          "example": "How long are you staying? — For three days"
+          "subject": "A place",
+          "verb": "Where + is / are + subject?",
+          "example": "Where is the gate? Where are you from?"
         },
         {
           "id": "2",
-          "subject": "Check a detail",
-          "verb": "What / Can you …?",
-          "example": "What gate is it? Can you say that again?"
+          "subject": "A length of time",
+          "verb": "How long + is + subject?",
+          "example": "How long is the flight? — It’s three hours"
         }
-      ]
+      ],
+      "note": "What asks for information, where asks for a place, and how long asks for duration. What is → What’s; where is → where’s."
     },
     {
       "id": "s_mission",

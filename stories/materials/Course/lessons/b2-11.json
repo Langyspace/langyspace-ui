@@ -351,40 +351,6 @@
       "eyebrow": "Discuss the situation"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Guide the response, not every sentence",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "Open with purpose",
-          "verb": "I’d suggest … because …",
-          "example": "I’d suggest a written update because live time is limited"
-        },
-        {
-          "id": "1",
-          "subject": "Acknowledge, then qualify",
-          "verb": "That’s a fair point. Having said that, …",
-          "example": "That’s a fair point. Having said that, longer isn’t always clearer"
-        },
-        {
-          "id": "2",
-          "subject": "Conclude with the compromise",
-          "verb": "Overall / In short + specific change",
-          "example": "Overall, keep a short live slot and add a question channel"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
       "title": "Use the information to respond",

@@ -306,36 +306,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Reflect on the choice, then look forward",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Look back with should have and could have",
+      "instruction": "Use a modal plus have plus a past participle to evaluate past choices",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Evaluate a past decision",
+          "subject": "A better past choice",
           "verb": "should have + past participle",
           "example": "I should have allowed more connection time"
         },
         {
           "id": "1",
-          "subject": "An alternative that was possible",
-          "verb": "could have + past participle",
-          "example": "I could have booked the direct flight"
+          "subject": "A choice to avoid",
+          "verb": "shouldn’t have + past participle",
+          "example": "I shouldn’t have booked such a short connection"
         },
         {
           "id": "2",
-          "subject": "Turn reflection into a future choice",
-          "verb": "Next time, I’d …",
-          "example": "Next time, I’d compare arrival times as well as prices"
+          "subject": "A past alternative",
+          "verb": "could have + past participle",
+          "example": "I could have booked the direct flight, but I didn’t"
         }
-      ]
+      ],
+      "note": "These examples look back at decisions that cannot now be changed. Use the past participle after have: taken, chosen, booked. Could have can have other meanings in other contexts."
     },
     {
       "id": "s_mission",

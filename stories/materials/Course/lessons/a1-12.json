@@ -266,40 +266,6 @@
       "questionPurpose": "conversation"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Suggest a plan and agree on the details",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "Suggest a plan",
-          "verb": "Let’s + verb",
-          "example": "Let’s go to the park"
-        },
-        {
-          "id": "1",
-          "subject": "Describe the weather",
-          "verb": "It’s + weather word",
-          "example": "It’s sunny / rainy / windy"
-        },
-        {
-          "id": "2",
-          "subject": "Agree on a meeting",
-          "verb": "at + time / place",
-          "example": "Let’s meet at ten at the station"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
       "title": "Plan our day out",

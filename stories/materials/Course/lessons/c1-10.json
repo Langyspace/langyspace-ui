@@ -366,40 +366,6 @@
       "eyebrow": "Discuss the situation"
     },
     {
-      "id": "s_grammar",
-      "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Choose the register for its effect, not its complexity",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "layout": "patterns",
-      "columns": {
-        "subject": "Use",
-        "verb": "Form",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "0",
-          "subject": "A clear professional purpose",
-          "verb": "I’m writing to let you know …",
-          "example": "I’m writing to let you know the event date has changed"
-        },
-        {
-          "id": "1",
-          "subject": "A natural shorter update",
-          "verb": "Quick update: … / Just to let you know …",
-          "example": "Quick update: it’s Monday now, same time and room"
-        },
-        {
-          "id": "2",
-          "subject": "An explicit action, not vague acknowledgement",
-          "verb": "Please confirm whether … by …",
-          "example": "Please confirm whether you can attend by Friday 4 December at 5 pm"
-        }
-      ]
-    },
-    {
       "id": "s_mission",
       "kind": "activity",
       "title": "Role-play the situation",

@@ -272,36 +272,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Make and check an order",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Choose a, an, some and any",
+      "instruction": "Use an article for one countable item and some or any for an unspecified amount",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Make a polite order",
-          "verb": "I’d like + food or drink",
-          "example": "I’d like some tea, please"
+          "subject": "One countable item",
+          "verb": "a / an + singular noun",
+          "example": "I’d like a sandwich and an apple"
         },
         {
           "id": "1",
-          "subject": "Ask for one item",
-          "verb": "Can I have a / an …?",
-          "example": "Can I have a sandwich and an orange juice?"
+          "subject": "An amount or several items",
+          "verb": "some + uncountable / plural noun",
+          "example": "I’d like some tea. We have some oranges"
         },
         {
           "id": "2",
-          "subject": "Correct the order",
-          "verb": "Sorry, this is …",
-          "example": "Sorry, this is coffee. I’d like tea"
+          "subject": "Most questions and negatives",
+          "verb": "any + uncountable / plural noun",
+          "example": "Do you have any milk? We don’t have any bananas"
         }
-      ]
+      ],
+      "note": "Use an before a vowel sound. In offers and requests, some is common: Would you like some tea? Can I have some water?"
     },
     {
       "id": "s_mission",

@@ -386,66 +386,37 @@
     {
       "id": "s7",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Separate a pattern from an impression",
+      "eyebrow": "Grammar",
+      "title": "Build cautious statements with seem, tend and might",
+      "instruction": "Use verb patterns and a modal to make a claim less absolute",
       "minutes": 2,
-      "eyebrow": "Grammar",
+      "layout": "patterns",
       "columns": {
-        "subject": "Use",
-        "verb": "Pattern",
-        "example": "Pattern and example"
+        "subject": "Meaning",
+        "verb": "Form",
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "tend",
-          "subject": "A pattern",
-          "verb": "tend to + verb",
-          "example": "The slides tend to have a lot of text."
+          "id": "0",
+          "subject": "An impression",
+          "verb": "seem + adjective / seem to + base verb",
+          "example": "The pace seems rushed. The slides seem to contain a lot of text"
         },
         {
-          "id": "seem",
-          "subject": "A view",
-          "verb": "seem + adjective",
-          "example": "The second half seemed a little rushed."
+          "id": "1",
+          "subject": "A tendency",
+          "verb": "tend to + base verb",
+          "example": "The introduction tends to run long"
         },
         {
-          "id": "effect",
-          "subject": "Possible effect",
-          "verb": "might come across as",
-          "example": "That comment might come across as an attack."
+          "id": "2",
+          "subject": "A possibility",
+          "verb": "might + base verb",
+          "example": "The comment might sound personal. It might be misunderstood"
         }
       ],
-      "note": "Tend to needs evidence of a repeated pattern. This email concerns one presentation; without more evidence, describe an impression rather than a pattern.",
-      "layout": "patterns"
-    },
-    {
-      "id": "s71",
-      "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Invite a response without losing the point",
-      "minutes": 1,
-      "eyebrow": "Grammar",
-      "columns": {
-        "subject": "Use",
-        "verb": "Language choice",
-        "example": "Pattern and example"
-      },
-      "rows": [
-        {
-          "id": "suggest",
-          "subject": "An option",
-          "verb": "might want to + verb",
-          "example": "You might want to cut some text from the slides."
-        },
-        {
-          "id": "request",
-          "subject": "A shared action",
-          "verb": "I wonder if we could …",
-          "example": "I wonder if we could prepare the answers together next time."
-        }
-      ],
-      "note": "A softer opening does not replace a clear request. Relationship, authority and urgency affect the wording.",
-      "layout": "patterns"
+      "note": "Seem and tend take to before another verb; might does not. He/she/it seems or tends, but might has no -s ending. A cautious form still needs a clear reason."
     },
     {
       "id": "s11",

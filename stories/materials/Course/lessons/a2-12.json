@@ -317,36 +317,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Suggest, respond and agree",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build suggestions with the right verb form",
+      "instruction": "Use a base verb after let’s and why don’t we; use -ing after how about",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Suggest a possibility",
-          "verb": "How about + noun / verb-ing?",
-          "example": "How about dinner on Friday?"
+          "subject": "Shared action",
+          "verb": "Let’s + base verb / Let’s not + base verb",
+          "example": "Let’s book a table. Let’s not meet too late"
         },
         {
           "id": "1",
-          "subject": "Propose a shared action",
-          "verb": "Why don’t we + verb? / Let’s + verb",
-          "example": "Why don’t we book a table? Let’s check first"
+          "subject": "A suggestion as a question",
+          "verb": "Why don’t we + base verb?",
+          "example": "Why don’t we try the new café?"
         },
         {
           "id": "2",
-          "subject": "Respond and offer an alternative",
-          "verb": "That sounds … / I’d love to, but …",
-          "example": "I’d love to, but I can’t on Friday. How about Saturday?"
+          "subject": "Another suggestion pattern",
+          "verb": "How about + noun / verb-ing?",
+          "example": "How about Friday? How about meeting at six?"
         }
-      ]
+      ],
+      "note": "Let’s means let us. Keep the base verb after let’s and why don’t we; how about can take a noun or an -ing form."
     },
     {
       "id": "s_mission",

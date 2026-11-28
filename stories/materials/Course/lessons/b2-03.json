@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "A past choice with a consequence now",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Connect different times with mixed conditionals",
+      "instruction": "Use an unreal condition at one time to imagine a result at another",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A past condition, a present result",
-          "verb": "If + had + participle, would + base verb",
-          "example": "If they hadn’t taken the course, they might feel less confident now"
+          "subject": "Past condition → result now",
+          "verb": "If + had + past participle, would + base verb",
+          "example": "If I hadn’t taken the course, I wouldn’t feel so confident now"
         },
         {
           "id": "1",
-          "subject": "Keep uncertainty visible",
-          "verb": "might / could + base verb",
-          "example": "They could have learned another way"
+          "subject": "Present condition → past result",
+          "verb": "If + past form, would have + past participle",
+          "example": "If I were more confident, I would have spoken at the meeting"
         },
         {
           "id": "2",
-          "subject": "Separate evidence and speculation",
-          "verb": "We know … / We can’t know whether …",
-          "example": "We know they met a collaborator; we can’t know every alternative outcome"
+          "subject": "A less certain result now",
+          "verb": "If + had + past participle, might / could + base verb",
+          "example": "If I’d studied elsewhere, I might work in a different team now"
         }
-      ]
+      ],
+      "note": "Make the time relationship clear with context or words such as now. Would states the imagined result; might/could make it less certain. These are hypothetical alternatives, not proven outcomes."
     },
     {
       "id": "s_mission",

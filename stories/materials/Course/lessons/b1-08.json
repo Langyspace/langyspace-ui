@@ -330,36 +330,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "An old habit, a new normal or an ongoing adjustment?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish used to, be used to and get used to",
+      "instruction": "Choose whether you mean an old habit, something familiar or a process of adapting",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An old habit",
+          "subject": "Old habit or state",
           "verb": "used to + base verb",
           "example": "I used to drive everywhere"
         },
         {
           "id": "1",
-          "subject": "Something feels normal now",
-          "verb": "be used to + noun / -ing",
-          "example": "I’m used to taking the bus"
+          "subject": "Already familiar",
+          "verb": "be used to + noun / verb-ing",
+          "example": "I’m used to the cold. I’m used to taking the bus"
         },
         {
           "id": "2",
-          "subject": "The adaptation is still happening",
-          "verb": "get used to + noun / -ing",
+          "subject": "Becoming familiar",
+          "verb": "get used to + noun / verb-ing",
           "example": "I’m getting used to dressing in layers"
         }
-      ]
+      ],
+      "note": "In be/get used to, to is a preposition, so a following verb takes -ing. In used to for a past habit, use the base verb instead."
     },
     {
       "id": "s_mission",

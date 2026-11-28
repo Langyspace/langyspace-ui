@@ -330,36 +330,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Keep statement order inside a polite question",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Put indirect questions in statement order",
+      "instruction": "Keep subject before verb inside a polite indirect question",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
           "subject": "Direct question",
-          "verb": "Where + is + subject?",
-          "example": "Where is the cloakroom?"
+          "verb": "question word + auxiliary / be + subject",
+          "example": "Where is the cloakroom? What time does it close?"
         },
         {
           "id": "1",
-          "subject": "Polite question with statement order",
-          "verb": "Could you tell me where + subject + is?",
-          "example": "Could you tell me where the cloakroom is?"
+          "subject": "Indirect wh-question",
+          "verb": "Could you tell me + question word + subject + verb?",
+          "example": "Could you tell me where the cloakroom is? Do you know what time it closes?"
         },
         {
           "id": "2",
-          "subject": "Check a yes/no detail",
-          "verb": "Do you know if + statement order?",
+          "subject": "Indirect yes/no question",
+          "verb": "Do you know + if / whether + subject + verb?",
           "example": "Do you know if the tour is included?"
         }
-      ]
+      ],
+      "note": "Inside the indirect clause, use statement order and do not add do/does. The opening phrase supplies the question structure."
     },
     {
       "id": "s_mission",

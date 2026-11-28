@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "The verb pattern also carries an intention",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Choose the verb pattern after a reporting verb",
+      "instruction": "Different reporting verbs require -ing, to plus a verb, or a preposition",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
           "subject": "A suggested activity",
-          "verb": "suggest + -ing",
+          "verb": "suggest + verb-ing",
           "example": "She suggested having dinner on Saturday"
         },
         {
           "id": "1",
-          "subject": "A commitment or refusal",
-          "verb": "promise / refuse + to + verb",
-          "example": "They promised to check. A guest refused to pay yet"
+          "subject": "A promise or refusal",
+          "verb": "promise / refuse + to + base verb",
+          "example": "They promised to check. He refused to pay before reading the terms"
         },
         {
           "id": "2",
-          "subject": "Insistence or acknowledgement",
-          "verb": "insist on + -ing / admit that + clause",
-          "example": "She didn’t insist on meeting then. The host admitted that the summary was inaccurate"
+          "subject": "Insistence",
+          "verb": "insist on + verb-ing",
+          "example": "She insisted on reading the conditions first"
         }
-      ]
+      ],
+      "note": "Learn the reporting verb with its pattern. After a preposition such as on, use -ing. Suggest can also take that + clause: She suggested that we check first."
     },
     {
       "id": "s_mission",

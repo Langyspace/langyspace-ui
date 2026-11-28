@@ -381,36 +381,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "An activity, a result, or both?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare present perfect simple and continuous",
+      "instruction": "Use the continuous form to focus on activity and the simple form to focus on a result or amount",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Activity and duration",
+          "subject": "Activity or duration",
           "verb": "have / has been + verb-ing",
           "example": "I’ve been painting all week"
         },
         {
           "id": "1",
-          "subject": "A completed result or number",
+          "subject": "Result or number",
           "verb": "have / has + past participle",
-          "example": "I’ve painted two rooms. I’ve baked three cakes"
+          "example": "I’ve painted two rooms"
         },
         {
           "id": "2",
-          "subject": "A result can coexist with more work",
-          "verb": "result + but + ongoing activity",
-          "example": "I’ve finished the living room, but I’m still painting the bedroom"
+          "subject": "Ask about the focus",
+          "verb": "How long have you been + -ing? / How many have you + participle?",
+          "example": "How long have you been painting? How many rooms have you painted?"
         }
-      ]
+      ],
+      "note": "A simple form can also describe a continuing situation: I’ve known her for years. The continuous form does not itself tell us whether the activity has just stopped or continues."
     },
     {
       "id": "s_gap99",

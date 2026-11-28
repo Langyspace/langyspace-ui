@@ -278,30 +278,37 @@
     {
       "id": "s8",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "One person or more?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Introduce people with this is and these are",
+      "instruction": "Choose singular or plural, then use he, she or they to continue talking about the person",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
-          "id": "one",
-          "subject": "One",
-          "verb": "This is … He’s / She’s …",
-          "example": "This is my brother, Leo. He’s a student."
+          "id": "0",
+          "subject": "One person",
+          "verb": "This is + singular noun / name",
+          "example": "This is my brother, Leo. He is a student"
         },
         {
-          "id": "more",
+          "id": "1",
           "subject": "Two or more",
-          "verb": "These are … They’re …",
-          "example": "These are my parents. They’re from Recife."
+          "verb": "These are + plural noun",
+          "example": "These are my parents. They are from Recife"
+        },
+        {
+          "id": "2",
+          "subject": "Ask who someone is",
+          "verb": "Who is this? / Who are they?",
+          "example": "Who’s this? — This is my sister. Who are they? — They’re my parents"
         }
-      ]
+      ],
+      "note": "This and these introduce people; he/she/they continue the reference. This is → one; these are → two or more. They are → they’re."
     },
     {
       "id": "s72",

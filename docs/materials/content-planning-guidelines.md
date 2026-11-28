@@ -112,6 +112,16 @@ Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloc
 - Uma aplicação de reformulação/negociação precisa levar a um resultado concreto: proposta, decisão ou acordo. Oferecer necessidades compreensíveis e mais de um aspecto para conciliar. Evitar sustentar toda a atividade na interpretação de uma única palavra quando isso só produz repetição.
 - As falas do interlocutor devem provocar reações diferentes: esclarecer a intenção, construir um exemplo e sintetizar/verificar o acordo. Modelos são possibilidades de linguagem; outras soluções coerentes com o brief continuam válidas.
 
+## Gramática que realmente ensina — revisão169
+
+- A página de gramática é opcional. Só entra quando houver uma estrutura gramatical pertinente à aula para explicar; organização de discurso, registro, negociação e frases prontas não justificam automaticamente esse bloco. Se já estão bem trabalhados no modelo e na prática, não criar uma tabela apenas para cumprir o formato.
+- Nomear o tópico real no título: “Use am, is and are”, “Build past simple statements and questions”, “Distinguish defining and non-defining relative clauses”. “Compare the examples” é um recurso para um contraste real, não um substituto do tópico.
+- Mostrar significado/uso em linguagem simples, estrutura explícita e exemplos completos ligados ao tema. Quando fizer sentido, incluir afirmativa, negativa, pergunta e resposta curta. Para outra construção, mostrar seu contraste central e as restrições relevantes, sem forçar o paradigma dos tempos verbais.
+- A professora deve ter o suficiente para explicar: quem muda a forma, qual verbo permanece na base, quando entra auxiliar, uma contração ou exceção importante e o contraste que costuma confundir. Fórmula sem significado é insuficiente; três frases úteis sem explicar a construção também são.
+- Simplificar a apresentação, não a regra a ponto de ficar falsa. Ex.: present perfect simple também pode descrever uma situação que continua; didn’t need to não informa sozinho se a ação ocorreu; a forma de uma dedução não prova a sua conclusão.
+- Usar o componente canônico GrammarTable e separar em páginas coerentes quando necessário. Não encher o espaço com tópicos sem ligação, atividade avaliativa, múltipla escolha ou perguntas extras embaixo da explicação. Um bloco de be pode ter afirmativa em uma página e negativas/perguntas na seguinte.
+- As estruturas devem corresponder à aula que a aluna está tendo. Reaproveitar o vocabulário/contexto nos exemplos, manter a progressão A1–C1 e preservar falas e áudios válidos. Não acrescentar um novo tópico só para dar aparência de profundidade.
+
 ## Perguntas conforme a finalidade — revisão94
 
 O pedido de 23/11/2026 manteve as 12 aulas por nível e definiu os balões com intenção de resposta e dica como apoio às perguntas. A revisão de24/11 abaixo distingue conversas pessoais de compreensão factual e tem prioridade sobre a apresentação de perguntas nos [60 planos de exercícios A1–C1](planos-a1-c1/README.md).

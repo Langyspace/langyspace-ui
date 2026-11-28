@@ -261,36 +261,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Ask for help politely",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Make requests with can",
+      "instruction": "Use can to ask for something or ask someone to help",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Explain the problem",
-          "verb": "The + thing + doesn’t work",
-          "example": "The shower doesn’t work"
+          "subject": "Ask for an item",
+          "verb": "Can I have + noun, please?",
+          "example": "Can I have a towel, please?"
         },
         {
           "id": "1",
-          "subject": "Ask for an item",
-          "verb": "Can I have + item, please?",
-          "example": "Can I have two towels, please?"
+          "subject": "Ask for an action",
+          "verb": "Can you + base verb, please?",
+          "example": "Can you check the shower, please?"
         },
         {
           "id": "2",
-          "subject": "Ask for help",
-          "verb": "Can you + action?",
-          "example": "Can you help me, please?"
+          "subject": "Say something is not possible",
+          "verb": "subject + cannot / can’t + base verb",
+          "example": "I can’t open the window. She can’t turn on the light"
         }
-      ]
+      ],
+      "note": "Can stays the same with every subject. The next verb is the base form: can open, can check. Do not add to or an -s ending."
     },
     {
       "id": "s_mission",

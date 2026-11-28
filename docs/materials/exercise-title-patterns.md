@@ -38,6 +38,10 @@ Registro canônico: `stories/materials/shared/exerciseHeadings.json`. Composiç�
 - Uma conversa com lacunas pessoais aceita informações reais. Não chamar essa dinâmica de exercício com gabarito único. Introdução própria e apresentação de outra pessoa são finalidades distintas.
 - A capa continua identificando a aula. O encerramento continua sinalizando que a aula terminou e direcionando o dever ou a matrícula. Rótulos como Vocabulary, Questions e Guided conversation identificam a seção; não são novas tarefas nem precisam virar frases.
 
+### Gramática — revisão169
+
+O título nomeia a estrutura e a ação: **Use am, is and are**, **Build past simple statements and questions**, **Compare present perfect simple and continuous**. O registro genérico de comparação só se aplica quando houver um contraste real. A página não é obrigatória: frases de comunicação/registro sem uma explicação de forma ficam nos modelos e nas práticas. Ver a regra de gramática na guideline central.
+
 ## Revisão de uma alteração
 
 Manter IDs, ordem, opções, gabaritos, perguntas, fatos, áudios, transcrições, mídias e destinos de dever intactos. Guardar o contexto útil no subtítulo, sem criar instruções soltas no corpo. Conferir o maior subtítulo na composição existente e uma página representativa de cada composição afetada; não reauditar todo o catálogo para uma troca de copy.

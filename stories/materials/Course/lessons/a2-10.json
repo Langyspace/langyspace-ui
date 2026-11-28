@@ -293,36 +293,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Compare the option with the need",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare with than, too and enough",
+      "instruction": "Make a comparison, then say whether an option meets a need",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Compare two options",
+          "subject": "Compare two things",
           "verb": "adjective-er / more + adjective + than",
-          "example": "B is cheaper than A. A is more expensive"
+          "example": "B is cheaper than A. A is more expensive than B"
         },
         {
           "id": "1",
-          "subject": "More than you want",
+          "subject": "More than is suitable",
           "verb": "too + adjective",
-          "example": "Twenty minutes is too far for this trip"
+          "example": "The apartment is too far from the centre"
         },
         {
           "id": "2",
-          "subject": "Enough for the need",
+          "subject": "Sufficient for the need",
           "verb": "adjective + enough / enough + noun",
-          "example": "Is it quiet enough? Are there enough beds?"
+          "example": "It’s quiet enough. There are enough beds"
         }
-      ]
+      ],
+      "note": "Enough follows an adjective but precedes a noun. Too describes a problem for a particular need; it does not just mean very."
     },
     {
       "id": "s_mission",

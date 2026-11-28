@@ -293,36 +293,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Necessary, optional or prohibited?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish have to, don’t have to and mustn’t",
+      "instruction": "Separate an obligation, no obligation and a prohibition",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An obligation",
-          "verb": "have to + verb",
-          "example": "You have to book the grill"
+          "subject": "Obligation",
+          "verb": "have / has to + base verb",
+          "example": "You have to book the grill. She has to book it too"
         },
         {
           "id": "1",
-          "subject": "It is not necessary",
-          "verb": "don’t have to + verb",
+          "subject": "No obligation",
+          "verb": "don’t / doesn’t have to + base verb",
           "example": "You don’t have to bring chairs"
         },
         {
           "id": "2",
-          "subject": "It is prohibited",
-          "verb": "mustn’t + verb",
-          "example": "You mustn’t use the pool after closing"
+          "subject": "Prohibition",
+          "verb": "mustn’t + base verb",
+          "example": "You mustn’t use the pool after eight"
         }
-      ]
+      ],
+      "note": "Don’t have to means it is optional; mustn’t means it is not allowed. Ask about obligation with Do you have to …? / Does she have to …?"
     },
     {
       "id": "s_mission",

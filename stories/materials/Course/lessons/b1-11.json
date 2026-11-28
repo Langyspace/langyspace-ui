@@ -306,36 +306,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Add the detail that identifies the person",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Identify people and things with relative clauses",
+      "instruction": "Use a relative clause immediately after the person, thing or place it identifies",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Identify a person",
+          "subject": "A person",
           "verb": "person + who / that + clause",
-          "example": "The person who’s wearing green is Alex"
+          "example": "The person who is wearing green is Alex"
         },
         {
           "id": "1",
-          "subject": "Identify a thing",
-          "verb": "thing + that + clause",
-          "example": "The table that has the drinks is over there"
+          "subject": "A thing",
+          "verb": "thing + which / that + clause",
+          "example": "The table that has the drinks is by the dance floor"
         },
         {
           "id": "2",
-          "subject": "Identify a place",
+          "subject": "A place",
           "verb": "place + where + clause",
-          "example": "That’s the area where people are dancing"
+          "example": "That’s the room where people are dancing"
         }
-      ]
+      ],
+      "note": "Defining clauses identify which person or thing you mean, so do not separate them with commas. Keep the verb in the relative clause matched to its subject."
     },
     {
       "id": "s_mission",

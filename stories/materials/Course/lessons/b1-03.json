@@ -294,36 +294,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Which past event happened first?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Show which past event happened first",
+      "instruction": "Use had plus a past participle for an event earlier than another past event",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "The earlier past event",
+          "subject": "Earlier event",
           "verb": "had + past participle",
-          "example": "She had forgotten her wristband before she left"
+          "example": "The show had started before we arrived"
         },
         {
           "id": "1",
-          "subject": "The later past event",
-          "verb": "past simple",
-          "example": "They arrived at eight twenty"
+          "subject": "Negative",
+          "verb": "hadn’t + past participle",
+          "example": "I hadn’t brought my wristband"
         },
         {
           "id": "2",
-          "subject": "Show the relationship",
-          "verb": "by the time / when + past event",
-          "example": "By the time they arrived, the show had already started"
+          "subject": "Question",
+          "verb": "Had + subject + past participle?",
+          "example": "Had the show started when you arrived? — Yes, it had"
         }
-      ]
+      ],
+      "note": "Had is the same for every subject. Timeline: show started at 8 → we arrived at 8:20. Use past simple for the later event; had started looks back from it."
     },
     {
       "id": "s_mission",

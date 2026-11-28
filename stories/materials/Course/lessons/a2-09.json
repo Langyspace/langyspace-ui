@@ -317,36 +317,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "A duration, a starting point or a finished date",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Use for and since with the present perfect",
+      "instruction": "Describe a situation that started in the past and continues now",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Duration up to now",
-          "verb": "for + length of time",
+          "subject": "How long",
+          "verb": "have / has + past participle + for + duration",
           "example": "I’ve lived here for three years"
         },
         {
           "id": "1",
-          "subject": "Starting point up to now",
-          "verb": "since + starting point",
+          "subject": "Since when",
+          "verb": "have / has + past participle + since + starting point",
           "example": "I’ve lived here since 2023"
         },
         {
           "id": "2",
-          "subject": "A finished change and date",
-          "verb": "past simple + in",
-          "example": "I moved here in 2023"
+          "subject": "Ask about the duration",
+          "verb": "How long + have / has + subject + past participle?",
+          "example": "How long have you lived here? — Since 2023"
         }
-      ]
+      ],
+      "note": "For introduces a length of time; since introduces its beginning. For a finished move, use past simple: I moved here in 2023."
     },
     {
       "id": "s_mission",

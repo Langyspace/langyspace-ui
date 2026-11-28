@@ -330,36 +330,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "A past habit or a place that has changed",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Describe past habits with used to",
+      "instruction": "Use used to for a repeated action or state that is different now",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "An old habit that is different now",
+          "subject": "Past habit or state",
           "verb": "used to + base verb",
-          "example": "I used to go to the cinema on Saturdays"
+          "example": "I used to visit the cinema. There used to be a cinema here"
         },
         {
           "id": "1",
-          "subject": "A place that no longer exists there",
-          "verb": "there used to be",
-          "example": "There used to be a cinema on this corner"
+          "subject": "Negative",
+          "verb": "didn’t use to + base verb",
+          "example": "It didn’t use to be this busy"
         },
         {
           "id": "2",
-          "subject": "Negative and question",
-          "verb": "didn’t use to / Did … use to?",
-          "example": "Did you use to live here? It didn’t use to be this busy"
+          "subject": "Question",
+          "verb": "Did + subject + use to + base verb?",
+          "example": "Did you use to live here? — Yes, I did"
         }
-      ]
+      ],
+      "note": "After did/didn’t, use use to without -d. Used to is about the past; it is different from be used to, meaning be accustomed to."
     },
     {
       "id": "s_mission",

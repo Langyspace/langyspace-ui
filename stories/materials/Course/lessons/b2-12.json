@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Concede a point without losing the distinction",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Build contrast clauses with although and despite",
+      "instruction": "Concede a point while keeping the grammatical form of the connector clear",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "Concede using a clause",
-          "verb": "although / while + clause",
-          "example": "Although phones can distract, some uses support participation"
+          "subject": "Concession with a clause",
+          "verb": "although / even though + subject + verb",
+          "example": "Although phones can distract, some uses help pupils participate"
         },
         {
           "id": "1",
-          "subject": "Concede using a noun phrase",
-          "verb": "despite + noun / -ing",
-          "example": "Despite the need for consistency, exceptions may be necessary"
+          "subject": "Concession with a noun or -ing",
+          "verb": "despite / in spite of + noun phrase / verb-ing",
+          "example": "Despite the interruptions, some phone use is necessary"
         },
         {
           "id": "2",
           "subject": "Contrast two situations",
-          "verb": "whereas / while",
-          "example": "Social notifications interrupt, whereas an approved reading tool can help"
+          "verb": "whereas / while + subject + verb",
+          "example": "Social notifications interrupt, whereas a reading tool can help"
         }
-      ]
+      ],
+      "note": "Although takes a full clause; despite does not normally take one directly. To follow despite with a clause, use despite the fact that. Despite has no of."
     },
     {
       "id": "s_mission",

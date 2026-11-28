@@ -294,36 +294,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "An observation is not always a conclusion",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Make present deductions with must, might and can’t",
+      "instruction": "Use a modal plus a base verb to show how strongly you interpret the evidence",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A strong inference from evidence",
+          "subject": "Strong deduction",
           "verb": "must + base verb",
-          "example": "The battery indicator is empty; it must need charging"
+          "example": "The indicator is empty. The battery must need charging"
         },
         {
           "id": "1",
-          "subject": "A possibility, not proof",
-          "verb": "might / could + base verb",
-          "example": "The owner might be travelling, but the pass could be old"
+          "subject": "Possible explanation",
+          "verb": "might / may / could + base verb",
+          "example": "The owner might be travelling. The pass could be old"
         },
         {
           "id": "2",
-          "subject": "An incompatible claim",
+          "subject": "Strong negative deduction",
           "verb": "can’t + base verb",
-          "example": "If this is the only bag, it can’t be the all-white bag described"
+          "example": "This blue bag can’t be the all-white bag described"
         }
-      ]
+      ],
+      "note": "These modals express deduction here, not obligation or permission. They have no -s ending and take a base verb without to."
     },
     {
       "id": "s_mission",

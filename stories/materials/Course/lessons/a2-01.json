@@ -256,36 +256,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Usually, or right now?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Compare present simple and present continuous",
+      "instruction": "Use present simple for a routine and present continuous for an activity happening now",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A habit",
-          "verb": "usually + present simple",
-          "example": "I usually go to the gym in the morning"
+          "subject": "Routine",
+          "verb": "subject + base verb / verb-s",
+          "example": "I usually cook at home. She usually cooks at home"
         },
         {
           "id": "1",
           "subject": "Happening now",
-          "verb": "am / is / are + verb-ing",
-          "example": "Today I’m making coffee at home"
+          "verb": "subject + am / is / are + verb-ing",
+          "example": "I’m cooking now. She’s making coffee"
         },
         {
           "id": "2",
-          "subject": "Ask about the difference",
-          "verb": "What do you usually do? / What are you doing?",
-          "example": "I usually order food, but today I’m cooking"
+          "subject": "Questions",
+          "verb": "Do / Does + subject + base? / Am / Is / Are + subject + -ing?",
+          "example": "Do you usually cook? Are you cooking now?"
         }
-      ]
+      ],
+      "note": "Use don’t/doesn’t for routine negatives; use am not/isn’t/aren’t + -ing for actions now. Some verbs, such as know, normally use the simple form."
     },
     {
       "id": "s_gap99",

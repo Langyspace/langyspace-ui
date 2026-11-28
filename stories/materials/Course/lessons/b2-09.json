@@ -353,36 +353,37 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Remember the action, or remember the task?",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Distinguish remember doing and remember to do",
+      "instruction": "Choose whether you are remembering a past action or not forgetting a task",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "A memory of an action",
-          "verb": "remember + -ing",
+          "subject": "Memory of an action",
+          "verb": "remember + verb-ing",
           "example": "I remember turning off the stove"
         },
         {
           "id": "1",
-          "subject": "Not forget a task",
-          "verb": "remember + to + verb",
-          "example": "Did you remember to unplug the iron?"
+          "subject": "Remember a task",
+          "verb": "remember + to + base verb",
+          "example": "Remember to lock the door. Did you remember to lock it?"
         },
         {
           "id": "2",
-          "subject": "A task that wasn’t completed",
-          "verb": "forget + to + verb",
-          "example": "I forgot to close the window; please check it"
+          "subject": "Fail to do a task",
+          "verb": "forget + to + base verb",
+          "example": "I forgot to close the window"
         }
-      ]
+      ],
+      "note": "Remember doing looks back at an action; remember to do looks towards a task. I don’t remember locking it means the memory is uncertain, not proof that the door is unlocked."
     },
     {
       "id": "s_mission",

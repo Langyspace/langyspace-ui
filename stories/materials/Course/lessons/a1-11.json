@@ -272,36 +272,43 @@
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Compare the examples",
-      "instruction": "Point to one thing or several things",
-      "minutes": 3,
       "eyebrow": "Grammar",
+      "title": "Choose this, that, these and those",
+      "instruction": "Choose by distance and number, then match is or are",
+      "minutes": 3,
       "layout": "patterns",
       "columns": {
-        "subject": "Use",
+        "subject": "Meaning",
         "verb": "Form",
-        "example": "Pattern and example"
+        "example": "Pattern and examples"
       },
       "rows": [
         {
           "id": "0",
-          "subject": "One thing near / far",
-          "verb": "this / that",
-          "example": "This T-shirt is green. That jacket is blue"
+          "subject": "One thing near me",
+          "verb": "this + singular noun + is",
+          "example": "This T-shirt is green"
         },
         {
           "id": "1",
-          "subject": "More than one",
-          "verb": "these / those",
-          "example": "These shoes are small. Those glasses are blue"
+          "subject": "One thing farther away",
+          "verb": "that + singular noun + is",
+          "example": "That jacket is blue"
         },
         {
           "id": "2",
-          "subject": "Ask the price",
-          "verb": "How much is / are …?",
-          "example": "How much is this bag? How much are these shoes?"
+          "subject": "Several things near me",
+          "verb": "these + plural noun + are",
+          "example": "These shoes are small"
+        },
+        {
+          "id": "3",
+          "subject": "Several things farther away",
+          "verb": "those + plural noun + are",
+          "example": "Those glasses are blue"
         }
-      ]
+      ],
+      "note": "Price questions follow the same number: How much is this bag? How much are these shoes?"
     },
     {
       "id": "s_mission",
