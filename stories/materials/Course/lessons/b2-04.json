@@ -4,7 +4,7 @@
   "key": "b2-04",
   "title": "Someone must have been here",
   "goal": "Test explanations about a past event using evidence and uncertainty",
-  "freeConversationInstruction": "Discuss surprising situations, compare explanations and show how certain you are",
+  "freeConversationInstruction": "A wet umbrella appears in a room you left empty. What might have happened? Add your own clues and challenge each other’s explanation",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -626,22 +626,22 @@
         {
           "id": "0",
           "prompt": "What might have happened here?",
-          "cue": "Offer a hypothesis and point to the evidence",
-          "hint": "Someone might have … because …",
+          "cue": "Use the spare key or the moved plant to suggest one possible explanation",
+          "hint": "The neighbour might have watered the plant. They had permission to use the spare key",
           "answer": "One possible response"
         },
         {
           "id": "1",
           "prompt": "What would help you confirm that?",
-          "cue": "Identify what is still unknown",
-          "hint": "We’d need to check whether …",
+          "cue": "Ask about a detail that might distinguish a visit from a break-in",
+          "hint": "I’d ask the neighbour whether they were there at five. Who else had a key?",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
           "prompt": "What would change your mind?",
-          "cue": "Name evidence that would strengthen or weaken the explanation",
-          "hint": "I’d be more convinced if … What evidence would you look for?",
+          "cue": "Describe a finding that would change your view. Invite another explanation",
+          "hint": "If the neighbour said they never came in, I’d check whose receipt it was. What would you check first?",
           "answer": "One possible response"
         }
       ],

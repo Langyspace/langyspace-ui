@@ -154,7 +154,7 @@
       "id": "s12",
       "kind": "questions",
       "title": "Share and check contact details",
-      "instruction": "Use a real or made-up name. Ask your teacher for a contact too",
+      "instruction": "Use made-up contact details. Ask for a number, then check what you heard",
       "minutes": 4,
       "eyebrow": "Your turn",
       "items": [
@@ -167,16 +167,16 @@
         },
         {
           "id": "ask",
-          "prompt": "Now ask me for my contact",
-          "cue": "Ask my name and number",
-          "hint": "What’s your name? What’s your phone number?",
+          "prompt": "Would you like my number?",
+          "cue": "Ask for my phone number",
+          "hint": "Yes, please. What’s your number?",
           "answer": "One possible response"
         },
         {
           "id": "confirm-number",
-          "prompt": "What’s my phone number?",
-          "cue": "Repeat the number you heard and check it with me",
-          "hint": "Your number is … Is that right?",
+          "prompt": "My number is 555 0162. Can you check it?",
+          "cue": "Say the number back and check it",
+          "hint": "Five five five, zero one six two. Is that right?",
           "answer": "One possible response"
         }
       ],

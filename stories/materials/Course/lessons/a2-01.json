@@ -4,7 +4,7 @@
   "key": "a2-01",
   "title": "What are you doing?",
   "goal": "Compare your usual routine with what is happening today",
-  "freeConversationInstruction": "Compare your usual routines with today and ask follow-up questions about each other’s day",
+  "freeConversationInstruction": "Is today a normal day for you? Compare your routines with what you’re doing today",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -30,8 +30,8 @@
         {
           "id": "s1.q98.3",
           "prompt": "Is your routine different at the weekend?",
-          "hint": "At the weekend, I … instead",
-          "cue": "Compare it with the weekend"
+          "hint": "It’s the same / At the weekend, I … instead",
+          "cue": "Say if your routine changes"
         }
       ],
       "questionPurpose": "conversation"
@@ -228,7 +228,7 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Talk about yourself",
-      "instruction": "Your routine and today. Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Compare a usual morning with today. Ask me about my day too",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -240,15 +240,15 @@
         },
         {
           "id": "1",
-          "prompt": "What are you doing differently today?",
-          "cue": "Compare today with your usual routine",
-          "hint": "I usually …, but today I’m …"
+          "prompt": "Is today a normal day for you?",
+          "cue": "Say what’s the same or different",
+          "hint": "Yes, I’m working as usual / I usually work, but today I’m studying"
         },
         {
           "id": "routine.questions.3",
-          "prompt": "What is someone in your family doing now?",
-          "cue": "Describe what they are doing and ask about my family",
-          "hint": "My … is … right now. What about your family?"
+          "prompt": "What are you doing right now?",
+          "cue": "Say what you’re doing and ask about me",
+          "hint": "I’m practising English. What are you doing after class?"
         }
       ],
       "questionPurpose": "conversation"

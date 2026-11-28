@@ -4,7 +4,7 @@
   "key": "c1-06",
   "title": "The more I think about it…",
   "goal": "Weigh a trade-off, explain its priority and specify what could change the recommendation",
-  "freeConversationInstruction": "Explore a difficult choice, discuss your priorities and challenge each other’s assumptions",
+  "freeConversationInstruction": "Would you give up a shorter commute for a more interesting job? Compare priorities and explore what might change either person’s mind",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Explain your trade-off",
-      "instruction": "Compare both courses with Teacher. Explain your trade-off and which missing detail could change your choice",
+      "instruction": "You and your teacher are considering two courses. Compare the trade-offs and decide what to check before enrolling",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -581,22 +581,22 @@
         {
           "id": "0",
           "prompt": "Which trade-off matters most to you?",
-          "cue": "Explain a priority and what you would give up",
-          "hint": "The more I consider …, the more … matters to me",
+          "cue": "Pick a course. Explain which cost, timetable or task makes the difference for you",
+          "hint": "I’d choose A. It costs $140 less, and I’d rather practise in class. Which feature matters most to you?",
           "answer": "One possible response"
         },
         {
           "id": "1",
           "prompt": "What would make you reconsider?",
-          "cue": "Name information that could genuinely change your choice",
-          "hint": "I’d reconsider if …",
+          "cue": "Ask about a detail that could change your choice",
+          "hint": "If I miss a Wednesday, can I make up the practical work? That could change my choice",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain your decision to someone who values the other option?",
-          "cue": "Recognise their priority while defending your own",
-          "hint": "I can see the case for … For me, the deciding factor is … What would shift your view?",
+          "prompt": "Do we need the same course, or do our priorities point to different ones?",
+          "cue": "Use one priority your teacher mentioned; explain where you agree or differ",
+          "hint": "If independent study suits you, B might be worth the extra cost. I’d still choose A for the class time",
           "answer": "One possible response"
         }
       ],

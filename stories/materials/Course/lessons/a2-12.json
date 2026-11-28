@@ -4,7 +4,7 @@
   "key": "a2-12",
   "title": "How about Friday?",
   "goal": "Agree on a social plan and update it when someone cannot attend",
-  "freeConversationInstruction": "Plan something together and use questions, reactions and alternatives to keep the conversation going",
+  "freeConversationInstruction": "When could we meet this week? Make a plan together and suggest another time if someone’s busy",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -286,22 +286,22 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Suggest another time",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Plan dinner with me. Choose the day, then agree on a place and time",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "How about dinner on Friday?",
-          "cue": "Accept or give a reason and suggest another option",
-          "hint": "That sounds good / I’d love to, but …",
+          "cue": "Accept or offer another day",
+          "hint": "That sounds good / I can’t on Friday. How about Saturday?",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "Which place should we choose?",
-          "cue": "Compare the options and ask your teacher’s opinion",
-          "hint": "I think … because … What do you think?",
+          "prompt": "Would you prefer the café at seven or the new restaurant at eight?",
+          "cue": "Choose a place and time. Check with me",
+          "hint": "The café at seven works for me. Is that OK?",
           "answer": "One possible response"
         },
         {

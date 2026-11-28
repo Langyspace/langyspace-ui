@@ -4,7 +4,7 @@
   "key": "b2-11",
   "title": "Having said that",
   "goal": "Propose a change, acknowledge an objection and preserve the purpose while adapting the plan",
-  "freeConversationInstruction": "Discuss changes you would like to make and explore each other’s objections and possible compromises",
+  "freeConversationInstruction": "What would you change about the way meetings work? Raise one objection to each other’s idea and see where you can agree",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -577,9 +577,9 @@
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Who would be responsible for replying there?",
-          "cue": "Make the responsibility clear in your proposed trial",
-          "hint": "We could agree who replies each week, then review whether questions are answered"
+          "prompt": "Who would actually answer a question that comes in late?",
+          "cue": "Propose an owner and check that the responsibility is realistic",
+          "hint": "Could we take turns checking the channel? I’ll cover the first week if someone can cover the next"
         }
       ],
       "questionPurpose": "conversation",

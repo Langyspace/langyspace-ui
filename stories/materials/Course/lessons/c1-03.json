@@ -4,34 +4,34 @@
   "key": "c1-03",
   "title": "The company is said to be…",
   "goal": "Attribute a claim responsibly and revise it when the source changes",
-  "freeConversationInstruction": "Discuss how you evaluate information and explain uncertainty when sharing something with others",
+  "freeConversationInstruction": "You hear a company might close. What would you say to a friend who works there? Discuss what would make you trust or question the news",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall how new evidence changes an explanation",
+      "instruction": "A colleague missed the start of an event. Decide with your teacher what you can tell them about the delay",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "What does cautious wording leave unverified?",
-          "hint": "Saying … doesn’t establish …",
-          "cue": "Identify the unverified claim"
+          "prompt": "Our event started late. Someone in the queue blamed the speaker. Can we pass that on?",
+          "hint": "A guest said the speaker was late. We know the event started late, but we haven’t confirmed the cause",
+          "cue": "Attribute the claim and say what you can verify"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "How would you attribute a claim clearly?",
-          "hint": "According to …, …",
-          "cue": "Attribute it to a source"
+          "prompt": "The organiser confirms there was a sound problem. Does that settle the question about the speaker?",
+          "hint": "It confirms the sound problem. It doesn’t tell us when the speaker arrived",
+          "cue": "Separate what the organiser confirms from what is still open"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "What would a useful correction include?",
-          "hint": "I’d correct …, confirm … and leave … open",
-          "cue": "Describe a useful correction"
+          "prompt": "I already mentioned the speaker to our colleague. How should I correct that?",
+          "hint": "I passed on an unconfirmed explanation earlier. The organiser has since confirmed a sound problem",
+          "cue": "Offer a short correction they could actually send"
         }
       ],
       "questionPurpose": "conversation"
@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Check what the source confirms",
-      "instruction": "Compare the café notice with the neighbourhood claim. Tell Teacher what you can responsibly pass on",
+      "instruction": "A neighbour says the café is closing for good. Use the notice to decide with your teacher what to tell others",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -606,23 +606,23 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What can we actually confirm?",
-          "cue": "Separate verified information from the claim",
-          "hint": "The statement confirms …, but … is still unverified",
+          "prompt": "So the café has closed for good?",
+          "cue": "Correct the rumour using what the business actually announced",
+          "hint": "The café says the dining area is closed for renovation. It’s still delivering",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "How would you pass this on responsibly?",
-          "cue": "Attribute the information and preserve its uncertainty",
-          "hint": "According to …, … is reported to …",
+          "prompt": "But the neighbourhood post sounded certain. Should we share it?",
+          "cue": "Explain whose claim it is and whether you would pass it on",
+          "hint": "The post doesn’t name a source. I’d share the café’s notice and leave the reopening date open",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What would you say if someone pressed you for certainty?",
-          "cue": "State the limits of the evidence and offer a useful next step",
-          "hint": "What I can confirm is … What remains unclear is … We could verify that by …",
+          "prompt": "Someone is asking when they can eat there again. What can we tell them?",
+          "cue": "Give an honest reply and propose a way to check",
+          "hint": "We haven’t seen a reopening date. Shall we contact the café before giving anyone a date?",
           "answer": "One possible response"
         }
       ],

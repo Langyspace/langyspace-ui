@@ -2,6 +2,21 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Revisar a conversa com a tela compartilhada
+
+Antes de dar uma prática oral por pronta, imagine duas respostas diferentes à primeira fala. Leia a réplica da professora para cada uma. Esse ensaio costuma revelar problemas que a contagem de perguntas não mostra.
+
+| Durante a revisão | Critério para a aula |
+| --- | --- |
+| A aluna diz “não”, nunca viajou ou prefere não falar de si. | A réplica ainda funciona. Quando a experiência for necessária, ofereça uma situação plausível no subtítulo. Exemplo de viagem: “Have you tried it, or would you like to?” A professora pode acolher qualquer uma das respostas. |
+| A professora tem o material aberto pela primeira vez. | Ela consegue dizer a primeira fala e tem o fato de que precisa para reagir. No café, ela pode ler “A coffee and a sandwich. Is that right?” e a aluna tem motivo para confirmar ou corrigir. |
+| O exercício menciona “this”, “the card” ou “the message”. | Localize a referência na própria tela, antes de clicar em dica. Se o cartão está em outra página, traga a informação indispensável para a fala, o subtítulo ou a imagem. Confira também a versão renderizada na capa quando a revisão usa composição própria. |
+| A aluna sabe o que quer dizer, mas não encontra as palavras. | O apoio oral cabe na boca de quem fala: dá uma expressão útil para esta situação e, na etapa de modelo que o componente já oferece, uma resposta completa e adaptável. Se o exercício usa apenas uma revelação, ela já deve permitir retomar a conversa. Uma opinião pessoal continua aceitando alternativas. |
+| A página vem depois de um áudio ou de uma leitura. | Na compreensão, procure a resposta na fonte. Na conversa seguinte, use essa resposta para fazer algo novo. Se Priya já disse que os slides são dispensáveis, a candidata pode propor o que vai mostrar e combinar um exemplo com ela. |
+| A turma chega à conversa livre. | Use o subtítulo para oferecer uma pergunta de entrada que a professora possa dizer literalmente. A continuação nasce de algo que a outra pessoa disse. No A1 pode ser um nome, gosto ou lugar; no C1, por exemplo, quem ganharia e quem perderia se uma loja parasse de aceitar dinheiro. O encontro permanece aberto, com a imagem, sem acrescentar uma lista de perguntas, gabarito ou rodada obrigatória. |
+
+Os exemplos orientam a autoria. Na tela da aluna entram apenas a situação e a fala úteis naquele momento.
+
 ## Cenas como base da conversa, do A1 ao C1 — revisão159
 
 - Procurar nas missões em fichas de texto uma oportunidade de representar uma situação observável. A imagem precisa fornecer evidências ou escolhas para a conversa; não basta ilustrar o título. Preservar textos, gráficos, áudio e fontes quando forem indispensáveis ao raciocínio.

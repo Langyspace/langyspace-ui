@@ -4,7 +4,7 @@
   "key": "b2-12",
   "title": "Should phones be banned at school?",
   "goal": "Agree on a proportionate phone policy and test it against an omitted case",
-  "freeConversationInstruction": "Debate a policy, explore consequences and respond to each other’s strongest arguments",
+  "freeConversationInstruction": "When, if ever, should a student be allowed to use a phone in class? Test each other’s proposed rule with a real example",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -632,22 +632,22 @@
         {
           "id": "0",
           "prompt": "What problem should the policy solve?",
-          "cue": "Define the issue before choosing a rule",
-          "hint": "The main issue is …, rather than …",
+          "cue": "Start with a classroom problem the rule could change",
+          "hint": "We want fewer interruptions. Turning off social notifications would be a start",
           "answer": "One possible response"
         },
         {
           "id": "1",
           "prompt": "Who might need an exception?",
-          "cue": "Consider a different perspective and justify a condition",
-          "hint": "Although …, we should allow … when …",
+          "cue": "Choose a phone use the rule should protect and explain why",
+          "hint": "A student might use a phone to read. How could they get permission privately?",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain the final policy to someone affected by it?",
-          "cue": "State the aim, boundary and exception in plain language",
-          "hint": "The aim is to … In practice, … We’d make an exception when …",
+          "prompt": "What should a family do if they need to reach a student urgently?",
+          "cue": "Agree on an emergency route and sum up the classroom rule",
+          "hint": "Families could call the office. Could we agree on that and keep approved reading tools available?",
           "answer": "One possible response"
         }
       ],

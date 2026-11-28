@@ -4,33 +4,33 @@
   "key": "a1-08",
   "title": "At the hotel",
   "goal": "Explain a hotel problem and ask for help",
-  "freeConversationInstruction": "Talk about what you need in a hotel and practise asking for help in different situations",
+  "freeConversationInstruction": "What do you need in your hotel room? Compare what matters to you when you travel",
   "freeConversationMinutes": 12,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Use the travel card from our airport lesson",
+      "instruction": "Imagine you’re at the airport. Choose a hotel and a number of days",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "Where are you staying?",
-          "hint": "I’m staying at …",
+          "prompt": "Welcome! Which hotel are you staying at?",
+          "hint": "I’m staying at the Park Hotel",
           "cue": "Name a place to stay"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How long are you staying?",
-          "hint": "For … days",
+          "hint": "For two days",
           "cue": "Say how many days"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "How can you ask someone to repeat a direction?",
-          "hint": "Can you say that again, please?",
+          "prompt": "Your gate is next to the café. Can you ask me to say that again?",
+          "hint": "Sorry, can you say that again?",
           "cue": "Ask me to repeat the direction"
         }
       ],
@@ -230,29 +230,29 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Explain the room problem",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "You’re a hotel guest. Imagine the light or the shower doesn’t work. I’m at reception",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "What’s the problem with your room?",
-          "cue": "Say what doesn’t work",
-          "hint": "The … doesn’t work",
+          "cue": "Tell me what doesn’t work",
+          "hint": "The shower doesn’t work",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "What do you need?",
-          "cue": "Ask for what you need",
-          "hint": "Can I have …, please?",
+          "prompt": "What’s your room number?",
+          "cue": "Choose a room number",
+          "hint": "I’m in room two oh four",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Can you ask me for help?",
-          "cue": "Make a polite request about the room",
-          "hint": "Can I have …, please?",
+          "prompt": "When can I send someone to help?",
+          "cue": "Choose a time and check it with me",
+          "hint": "At six, please. Is that OK?",
           "answer": "One possible response"
         }
       ],

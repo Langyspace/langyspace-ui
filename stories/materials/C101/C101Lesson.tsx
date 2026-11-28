@@ -51,7 +51,7 @@ export function C101Lesson({ initialPageId }: C101LessonProps) {
       initialPageId={initialPageId}
       notesStorageKey="langy-notes:c1-01"
       activities={{ s11: <FeedbackActivity /> }}
-      freeConversationInstruction="Discuss how you give and receive feedback, explore different reactions and adapt your language to the relationship and situation"
+      freeConversationInstruction="How would you tell a colleague that their feedback sounded harsher than they intended? Compare wording and how it might land"
     />
   )
 }

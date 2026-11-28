@@ -7,27 +7,27 @@
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Introduce someone, then ask your teacher",
+      "instruction": "Choose a friend or someone in your family. Tell me about them",
       "minutes": 2,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "review",
-          "prompt": "Who’s in your family?",
-          "hint": "This is my … His/Her name is …",
-          "cue": "Introduce a family member"
+          "prompt": "Who would you like to introduce?",
+          "hint": "This is my friend … / This is my sister …",
+          "cue": "Say their name and how you know them"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What does that person do?",
-          "hint": "He’s/She’s a …",
-          "cue": "Say their job"
+          "hint": "She’s a student / He’s a cook / I’m not sure",
+          "cue": "Say what they do, if you know"
         },
         {
           "id": "s1.q98.3",
           "prompt": "Where is that person from?",
-          "hint": "He’s/She’s from … What about your family?",
-          "cue": "Say where they’re from"
+          "hint": "He’s from … / I’m not sure. Where’s your friend from?",
+          "cue": "Say where they’re from or ask about someone I know"
         }
       ],
       "questionPurpose": "conversation"

@@ -4,7 +4,7 @@
   "key": "b2-03",
   "title": "If I hadn’t gone to Toronto",
   "goal": "Connect a past decision to present consequences without treating a hypothesis as fact",
-  "freeConversationInstruction": "Reflect on turning points, ask about alternatives and discuss what you can and cannot know about them",
+  "freeConversationInstruction": "Which choice might have taken your life in a different direction? Use your own story or imagine one together",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -611,22 +611,22 @@
         {
           "id": "0",
           "prompt": "How has that decision affected your life now?",
-          "cue": "Connect a past decision to a present consequence",
-          "hint": "If I hadn’t …, I wouldn’t … now",
+          "cue": "Link the Toronto course to a skill or responsibility in your profile",
+          "hint": "If I hadn’t taken the course, I might not be leading small projects now",
           "answer": "One possible response"
         },
         {
           "id": "1",
           "prompt": "What might be different in the other scenario?",
-          "cue": "Explore an alternative without pretending to know the outcome",
-          "hint": "I might …, but it’s hard to know whether …",
+          "cue": "Imagine learning the same skills closer to home. Leave the outcome open",
+          "hint": "I could have studied locally, but I don’t know whether I’d be doing the same work today",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain your decision to someone who would have chosen differently?",
-          "cue": "Acknowledge their alternative and defend your choice without claiming certainty",
-          "hint": "I can see why you’d … If I hadn’t …, I might … now, but I can’t know …",
+          "prompt": "I might have stayed closer to home. What would you want to know about my choice?",
+          "cue": "Ask about my reason, then explain one thing that mattered to you",
+          "hint": "Would cost have mattered most to you? For me, the chance to practise was worth the trip",
           "answer": "One possible response"
         }
       ],

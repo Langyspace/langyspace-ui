@@ -4,7 +4,7 @@
   "key": "b2-01",
   "title": "Dead phone, no charger",
   "goal": "Tell a travel story and connect background, earlier events and turning points",
-  "freeConversationInstruction": "Tell a memorable story, ask about the background and explore how events affected the outcome",
+  "freeConversationInstruction": "What would you do if your phone died in a new city? Swap stories, real or imagined, about what led up to it",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -724,20 +724,20 @@
         {
           "id": "0",
           "prompt": "What had been happening before the phone died?",
-          "cue": "Explain the background using the timeline",
-          "hint": "She’d been …, so …"
+          "cue": "Use the map and battery details to explain what Ana had been doing",
+          "hint": "She’d been using her phone as a map when the battery died at four"
         },
         {
           "id": "1",
           "prompt": "What helped her solve the problem?",
-          "cue": "Explain a turning point and why it mattered",
-          "hint": "Eventually, … This helped because …"
+          "cue": "Explain how the woman at the café helped Ana continue her journey",
+          "hint": "A woman lent her a power bank. After that, Ana took a taxi"
         },
         {
           "id": "story.questions.3",
-          "prompt": "How did the problem affect her evening?",
-          "cue": "Connect the earlier delay with the dinner and ask a follow-up question",
-          "hint": "By the time she …, they’d been … What would you have done?"
+          "prompt": "If that happened to us on the way to dinner, what would you do?",
+          "cue": "Use one difficulty from Ana’s evening. Ask what I would try",
+          "hint": "I’d ask for directions while we waited. Would you try to get a taxi instead?"
         }
       ],
       "questionPurpose": "conversation",

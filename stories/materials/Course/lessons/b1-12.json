@@ -4,7 +4,7 @@
   "key": "b1-12",
   "title": "Office or home?",
   "goal": "Defend a preference, acknowledge a drawback and negotiate a routine",
-  "freeConversationInstruction": "Discuss routines, explain your opinions and respond to each other’s reasons without a script",
+  "freeConversationInstruction": "Where do you work or study best? Compare your routines and find one change you’d both like to try",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -298,30 +298,30 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Talk about yourself",
-      "instruction": "Compare where you work best. Answer in your own way and ask your teacher a follow-up question",
+      "title": "Compare places to work or study",
+      "instruction": "Compare where you and your teacher work or study best. Find one thing that would help both of you",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "Where do you work or study best?",
-          "cue": "State a preference and explain why",
-          "hint": "I work/study better … because …",
+          "cue": "Think about noise, interruptions or being around other people",
+          "hint": "I study better at home because it’s quiet. Where do you work best?",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "What’s a disadvantage of your choice?",
-          "cue": "Recognise a limitation without changing your answer automatically",
-          "hint": "Although …, I still think …",
+          "prompt": "Is there anything you miss when you work there?",
+          "cue": "Say what you miss or what already works well",
+          "hint": "I miss talking things through with someone. What about you?",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What would make the other option work better for you?",
-          "cue": "Suggest a condition and ask about my preference",
-          "hint": "I could … if … What would make it work for you?",
+          "prompt": "What could make a work or study day better for both of us?",
+          "cue": "Use something I said and suggest one change we could try",
+          "hint": "How about some quiet time, then a break together? Would that work for you?",
           "answer": "One possible response"
         }
       ],

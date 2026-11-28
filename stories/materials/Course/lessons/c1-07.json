@@ -4,34 +4,34 @@
   "key": "c1-07",
   "title": "Having talked to the team…",
   "goal": "Brief two audiences with the same facts but different priorities",
-  "freeConversationInstruction": "Discuss how you make complicated information clear and practise summarising each other’s ideas",
+  "freeConversationInstruction": "An event has moved across town. What would a guest need to hear first? Compare that with what you’d tell the person setting up the venue",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall purpose-led proposals",
+      "instruction": "Help your teacher propose a change to a study group. Decide what the organiser and the members each need to hear",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "What decision does your listener need to make?",
-          "hint": "This listener needs to decide …",
-          "cue": "Identify the recipient’s decision"
+          "prompt": "I organise our study group. We run out of time for questions. What would you change?",
+          "hint": "I’d collect the questions in one place, so we can see which ones still need an answer",
+          "cue": "Lead with a change that helps people get an answer"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "Which facts should come first for that recipient?",
-          "hint": "I’d lead with … because …",
-          "cue": "Prioritise the relevant facts"
+          "prompt": "Who should check that list? What do you need me to decide?",
+          "hint": "Could you choose someone to check for unanswered questions after each meeting? We could take turns",
+          "cue": "Name the decision for the organiser and suggest a workable arrangement"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "What can be omitted without changing the decision?",
-          "hint": "I’d leave out … while preserving …",
-          "cue": "Omit details without distorting meaning"
+          "prompt": "What should I tell the members when I introduce the idea?",
+          "hint": "They need to know where to post questions and when to expect a reply. Would you ask if that works for them?",
+          "cue": "Give members the information they need and ask for their view"
         }
       ],
       "questionPurpose": "conversation"

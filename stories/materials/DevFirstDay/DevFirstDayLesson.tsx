@@ -272,7 +272,7 @@ export function DevFirstDayLesson({
       id: 'free-conversation',
       label: exerciseHeadings.freeConversation,
       content: (
-        <FreeConversationPage instruction="Talk about joining a team, building screens, solving problems and asking for help. Share real work experiences and follow each other’s ideas" />
+        <FreeConversationPage instruction="What would you want to know on your first day with a new team? Compare what you’d ask in a call and what you’d say if you got stuck" />
       ),
     },
     {

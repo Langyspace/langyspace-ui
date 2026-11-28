@@ -4,7 +4,7 @@
   "key": "b1-08",
   "title": "I’m getting used to the cold",
   "goal": "Explain what feels familiar now and what you are still adapting to",
-  "freeConversationInstruction": "Talk about changes in routine and share how you adapt to unfamiliar situations",
+  "freeConversationInstruction": "What would take some getting used to in a new city? Compare ideas or share something that now feels normal",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -298,30 +298,30 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Talk about yourself",
-      "instruction": "Talk about a new routine. Answer in your own way and ask your teacher a follow-up question",
+      "title": "Compare changing routines",
+      "instruction": "Pick a change in your routine, real or imagined. Compare what helps each of you adjust",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "What are you still getting used to?",
-          "cue": "Describe a real or imagined change",
-          "hint": "I’m still getting used to …",
+          "cue": "Try a new journey, an early start or a different meal time",
+          "hint": "I’m getting used to an earlier bus. What have you had to get used to?",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "What has become easier?",
-          "cue": "Explain something that now feels normal",
-          "hint": "I’m used to … now, but at first …",
+          "prompt": "Is it getting easier, or is part of it still difficult?",
+          "cue": "Tell me about one thing that feels different now",
+          "hint": "I’m used to the route now, but getting up early is still hard",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What advice would you give me if I tried it?",
-          "cue": "Explain one useful habit and invite a follow-up",
-          "hint": "At first, … Now I’m used to … You could …",
+          "prompt": "What could I try if I had the same problem?",
+          "cue": "Suggest a small step and ask whether it would work for me",
+          "hint": "I put my bag by the door at night. Would that help you on an early morning?",
           "answer": "One possible response"
         }
       ],

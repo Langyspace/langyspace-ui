@@ -251,7 +251,7 @@
       "name": "Owen"
     }
   },
-  "freeConversationInstruction": "Talk about learning something new, projects you enjoy and asking for help. Follow each other’s ideas",
+  "freeConversationInstruction": "What would you like to build next? Talk about something you’re learning and where you’d turn if you got stuck",
   "oralPages": [
     {
       "id": "study-week",
@@ -375,30 +375,30 @@
     {
       "id": "mentor-check-in",
       "title": "Check in with your mentor",
-      "instruction": "Look at another small practice project: a Login screen. Ask your teacher to check what should happen and how to test it",
+      "instruction": "Guide your teacher through the practice Login screen. Decide what would help a customer who can’t sign in",
       "minutes": 4,
       "reference": "mentor",
       "turns": [
         {
           "id": "mentor.1",
-          "question": "What should this form do when the details are correct?",
-          "cue": "Explain the purpose of the form and its button",
-          "hint": "The user enters… / The button…",
-          "model": "The user enters an email address and a password. The button should sign them in"
+          "question": "I have an account. Where do I sign in?",
+          "cue": "Tell me which fields to fill in and which button to use",
+          "hint": "Enter your… Then choose…",
+          "model": "Enter your email and password, then choose Sign in"
         },
         {
           "id": "mentor.2",
-          "question": "How could you check the error message safely?",
-          "cue": "Use a test account rather than real personal details",
-          "hint": "I’d use… / I’d try…",
-          "model": "I’d use a test account and try an incorrect password"
+          "question": "The form says “Email or password is incorrect”. What can I try?",
+          "cue": "Suggest a first check. Ask if I remember my password",
+          "hint": "Check your… / Do you remember…?",
+          "model": "Check your email first. Do you remember your password?"
         },
         {
           "id": "mentor.3",
-          "question": "What feedback would help you improve this project?",
-          "cue": "Ask one clear question about the layout or message",
-          "hint": "Could you check…? / Is… clear?",
-          "model": "Could you check the layout? Is the error message clear enough to explain what went wrong?"
+          "question": "I can’t remember it. Which link should I use? What happens next?",
+          "cue": "Point me to the link and explain how I can get back into my account",
+          "hint": "Choose… / Check your email for…",
+          "model": "Choose “Forgot password?”, request the reset link and check your email"
         }
       ]
     },

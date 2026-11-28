@@ -4,7 +4,7 @@
   "key": "c1-10",
   "title": "I’m writing to let you know…",
   "goal": "Keep the same facts while adapting tone and making the recipient’s action clear",
-  "freeConversationInstruction": "Compare communication styles and practise adapting the same idea to different people and situations",
+  "freeConversationInstruction": "A delivery is late. How would you explain it to a friend and to a paying client? Compare what changes in your wording and what must stay accurate",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Adapt the message to its reader",
-      "instruction": "Use the event facts to give Teacher a client version and a friend version. Keep the requested reply clear",
+      "instruction": "Your teacher plays two recipients. Give each the same event update, then check what reply you need",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -545,21 +545,21 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What do you need the client to know and do?",
-          "cue": "State the new date and request an attendance reply",
-          "hint": "The event is now on Monday 7 December. Please confirm attendance by Friday 4 at five"
+          "prompt": "I’m your client. Has the meeting moved?",
+          "cue": "Give the change, keep the meeting details clear and request a reply",
+          "hint": "Yes, it’s now Monday 7 December, still at ten in room 2. Could you confirm by Friday at five whether you can attend?"
         },
         {
           "id": "1",
-          "prompt": "How would you give that same update to a friend?",
-          "cue": "Change the tone while keeping the date and action",
-          "hint": "Quick update: it’s moved to Monday 7. Can you let me know by Friday at five?"
+          "prompt": "Now I’m your friend. What’s happening with the meeting?",
+          "cue": "Give the same change and deadline in a more familiar voice",
+          "hint": "Quick update: Monday the 7th now, same time and room. Can you tell me by five on Friday if you can come?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Does confirming receipt mean they’ve agreed to attend?",
-          "cue": "Clarify the exact reply required",
-          "hint": "No. We need to know whether they can attend, not just that they read the message"
+          "prompt": "I’ll let you know I’ve seen the message. Is that enough?",
+          "cue": "Clarify the reply you need in the voice you just used",
+          "hint": "Thanks! I need to know if you can make it. Can you tell me by Friday at five?"
         }
       ],
       "options": [

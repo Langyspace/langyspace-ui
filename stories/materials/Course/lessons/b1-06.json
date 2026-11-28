@@ -4,7 +4,7 @@
   "key": "b1-06",
   "title": "If I took the job",
   "goal": "Explore a hypothetical choice before giving advice",
-  "freeConversationInstruction": "Discuss hypothetical changes in work, study or daily life and explore the consequences together",
+  "freeConversationInstruction": "Would you take a job in another city? Talk through what might make each of you accept or turn it down",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -286,30 +286,30 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Discuss the options",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Decide whether to take the job",
+      "instruction": "The job offers two days at home and a longer commute on office days. Compare what matters to each of you",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "What would change if you took this job?",
-          "cue": "Describe a consequence using the offer card",
-          "hint": "If I took it, I’d …",
+          "cue": "Think about travel, free time or your mornings",
+          "hint": "If I took it, I’d save time on two days, but I’d get home later on office days",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "What would matter most to you?",
-          "cue": "Explain a priority and ask your teacher’s view",
-          "hint": "I’d care most about … because …",
+          "prompt": "Which part of that change matters most to you?",
+          "cue": "Name your priority and find out whether mine is different",
+          "hint": "I’d care most about getting home early. What would matter most to you?",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What advice would you give someone in that position?",
-          "cue": "Offer a conditional suggestion and invite another view",
-          "hint": "If I were …, I’d … What would you suggest?",
+          "prompt": "For me, it’s the travel time. Would you take the job?",
+          "cue": "Give your decision or name the detail you still need",
+          "hint": "I’d take it if I could choose my days at home. Could I check that first?",
           "answer": "One possible response"
         }
       ],

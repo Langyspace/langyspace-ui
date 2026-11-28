@@ -4,14 +4,14 @@
   "key": "a2-02",
   "title": "How was your weekend?",
   "goal": "Tell a weekend story and react to someone else’s news",
-  "freeConversationInstruction": "Tell each other about a recent weekend and keep the conversation going with questions and reactions",
+  "freeConversationInstruction": "How was your weekend? Tell each other about one moment, even if you stayed home",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Compare one usual activity with yesterday",
+      "instruction": "Tell me about yesterday, at home or somewhere else",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
@@ -23,9 +23,9 @@
         },
         {
           "id": "s1.q98.2",
-          "prompt": "Where did you go?",
-          "hint": "I went to …",
-          "cue": "Say where you went"
+          "prompt": "Where were you?",
+          "hint": "I was at home / I went to the park",
+          "cue": "Say where you spent part of the day"
         },
         {
           "id": "s1.q98.3",
@@ -286,7 +286,7 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Describe what happened",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Tell me about your weekend, even if you stayed home. Then ask about mine",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -306,9 +306,9 @@
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Who did you spend time with?",
-          "cue": "Add who was there, then ask about my weekend",
-          "hint": "I spent time with … Who did you see?",
+          "prompt": "Were you on your own or with someone?",
+          "cue": "Say who was there, then ask about my weekend",
+          "hint": "I was on my own / I was with a friend. How was your weekend?",
           "answer": "One possible response"
         }
       ],

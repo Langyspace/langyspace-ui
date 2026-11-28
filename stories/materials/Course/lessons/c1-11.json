@@ -4,34 +4,34 @@
   "key": "c1-11",
   "title": "To put it another way…",
   "goal": "Reformulate a disagreement and check the intended meaning with a concrete example",
-  "freeConversationInstruction": "Explore ideas, ask for clarification and reformulate until both of you understand the other’s point",
+  "freeConversationInstruction": "A teammate says “Make it more welcoming.” What would that look like to you? Try out each other’s examples until the idea is clear",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall making an action explicit for a recipient",
+      "instruction": "Clarify a booking message with your teacher. Work out what each person is actually agreeing to",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "What response does the person actually need?",
-          "hint": "They need …, rather than …",
-          "cue": "Identify the practical need"
+          "prompt": "I’ve asked the venue to “hold Friday”. What might they think I’m asking for?",
+          "hint": "They might reserve the room briefly, or think you’re ready to book it",
+          "cue": "Compare two possible meanings of “hold”"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "How could one ambiguous word create disagreement?",
-          "hint": "They may interpret … as …",
-          "cue": "Explain the ambiguous interpretation"
+          "prompt": "I can’t confirm until the team replies. How could I make that clear?",
+          "hint": "Could you keep Friday free until tomorrow? I’ll confirm once I’ve heard from the team",
+          "cue": "Explain what the venue can do now and what has to wait"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "How would you check your reformulation?",
-          "hint": "Have I understood correctly that …?",
-          "cue": "Check the other person agrees"
+          "prompt": "So if the venue writes “Friday is yours”, what would you check?",
+          "hint": "Do you mean you’re holding it until tomorrow, or have you already booked us in?",
+          "cue": "Ask a question that distinguishes a temporary hold from a confirmed booking"
         }
       ],
       "questionPurpose": "conversation"

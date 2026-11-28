@@ -7,27 +7,27 @@
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall a change you suggested and a concern you had to answer",
+      "instruction": "Imagine your team is considering a change to its weekly meeting. Help your teacher decide whether to try it",
       "minutes": 2,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "review",
-          "prompt": "What concern might someone have about changing a routine?",
-          "hint": "They might worry about …",
-          "cue": "Make a proposal"
+          "prompt": "I’d like us to send written updates before our weekly meeting. What might worry the team?",
+          "hint": "People might worry they’ll have to write an update and repeat it at the meeting",
+          "cue": "Name a concern someone might raise about the change"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "How could you acknowledge that concern?",
-          "hint": "I can see why …",
-          "cue": "Respond to a concern"
+          "prompt": "How could I show I’ve understood that concern?",
+          "hint": "It sounds as if you’re worried about doing the same work twice. Is that fair?",
+          "cue": "Put the concern into words and give the team a chance to correct you"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "What practical response could you offer?",
-          "hint": "We could …, provided that …",
-          "cue": "Suggest a practical next step"
+          "prompt": "What could we try at our next meeting?",
+          "hint": "We could use meeting time just for questions. Would you be willing to try that once?",
+          "cue": "Suggest one adjustment and ask whether I would try it"
         }
       ],
       "questionPurpose": "conversation"

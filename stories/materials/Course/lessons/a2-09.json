@@ -4,34 +4,34 @@
   "key": "a2-09",
   "title": "Long time no see!",
   "goal": "Talk about changes using a starting point or duration",
-  "freeConversationInstruction": "Catch up on changes in your lives and ask about what has stayed the same",
+  "freeConversationInstruction": "What’s new with you? Catch up on something that’s changed or a habit you’ve had for a long time",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall how experience and a finished date differ",
+      "instruction": "Find out about a hobby. Talk about something you’ve tried or would like to try",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
           "prompt": "Have you ever tried a new hobby?",
-          "hint": "I’ve tried …",
-          "cue": "Share a hobby experience"
+          "hint": "I’ve tried painting / Not yet, but I’d like to try it",
+          "cue": "Say which hobby you’ve tried or would like to try"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "When did you try it?",
-          "hint": "I tried it …",
-          "cue": "Add when it happened"
+          "prompt": "When did you start, or when would you like to try it?",
+          "hint": "I started last year / I’d like to try it this weekend",
+          "cue": "Give a past time or a possible date"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "Would you like to do it again?",
-          "hint": "I’d like to … because …",
-          "cue": "Say if you’d try it again"
+          "prompt": "Would you like to do it with someone?",
+          "hint": "I’d go with a friend / I’d like to try it on my own",
+          "cue": "Say who you’d go with, or say you’d do it alone"
         }
       ],
       "questionPurpose": "conversation"
@@ -299,9 +299,9 @@
         },
         {
           "id": "1",
-          "prompt": "What has changed in your life recently?",
-          "cue": "Choose a change you are comfortable sharing",
-          "hint": "I’ve … I … in …",
+          "prompt": "Has anything changed for you recently?",
+          "cue": "Share a small change or say things are the same",
+          "hint": "I’ve started a course / Things are much the same",
           "answer": "One possible response"
         },
         {
