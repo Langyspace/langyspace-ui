@@ -341,8 +341,8 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Introduce us",
-      "instruction": "Help me find the person and introduce us",
+      "title": "Find and introduce someone",
+      "instruction": "Choose someone for me to meet, describe them clearly and introduce us without interrupting the speech",
       "minutes": 5,
       "eyebrow": "Speaking task"
     },
@@ -453,70 +453,118 @@
   ],
   "activities": {
     "s_mission": {
-      "type": "choices",
-      "title": "Known facts only",
-      "options": [
-        {
-          "id": "alex",
-          "title": "Alex",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Role",
-              "value": "Host"
+      "type": "scene-choice",
+      "title": "People at the celebration",
+      "image": "b1-11-scene160",
+      "questions": [],
+      "scene": {
+        "alt": "Six adults at a celebration: Alex in green by the drinks table, Kim, Leo and Nina dancing, Ana listening and a woman giving a speech",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "alex",
+            "label": "Alex",
+            "summary": "Host",
+            "example": "Green shirt · by the drinks table",
+            "prompt": "",
+            "xPercent": 11.5,
+            "yPercent": 59.5,
+            "targetBounds": {
+              "xPercent": 1,
+              "yPercent": 22,
+              "widthPercent": 21,
+              "heightPercent": 75
             },
-            {
-              "id": "1",
-              "label": "Find",
-              "value": "Green shirt · by drinks table"
+            "hint": "The person who … / Let’s wait until …",
+            "answer": "That’s Alex, the host in green by the drinks table. Shall we meet him after the speech?"
+          },
+          {
+            "id": "kim",
+            "label": "Kim",
+            "summary": "Conversation",
+            "example": "Short black hair · talking to Alex",
+            "prompt": "",
+            "xPercent": 27.0,
+            "yPercent": 61.0,
+            "targetBounds": {
+              "xPercent": 21,
+              "yPercent": 27,
+              "widthPercent": 12,
+              "heightPercent": 68
             },
-            {
-              "id": "2",
-              "label": "Known action",
-              "value": "Welcoming guests"
-            }
-          ]
-        },
-        {
-          "id": "nina",
-          "title": "Nina",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Role",
-              "value": "Guest"
+            "hint": "The woman with … is …",
+            "answer": "The woman with the short black hair is talking to Alex. That’s Kim"
+          },
+          {
+            "id": "leo",
+            "label": "Leo",
+            "summary": "Dancing",
+            "example": "Blue shirt · black jacket · dancing with Nina",
+            "prompt": "",
+            "xPercent": 42.5,
+            "yPercent": 60.5,
+            "targetBounds": {
+              "xPercent": 34,
+              "yPercent": 23,
+              "widthPercent": 17,
+              "heightPercent": 75
             },
-            {
-              "id": "1",
-              "label": "Find",
-              "value": "Near the dance floor"
+            "hint": "The man who’s … / Do you mean …?",
+            "answer": "Do you mean Leo, the man in the black jacket who’s dancing with Nina?"
+          },
+          {
+            "id": "nina",
+            "label": "Nina",
+            "summary": "Guest",
+            "example": "Coral dress · helped organise the music",
+            "prompt": "",
+            "xPercent": 60.5,
+            "yPercent": 62.5,
+            "targetBounds": {
+              "xPercent": 52,
+              "yPercent": 27,
+              "widthPercent": 17,
+              "heightPercent": 71
             },
-            {
-              "id": "2",
-              "label": "Known action",
-              "value": "Organised the music"
-            }
-          ]
-        }
-      ],
-      "questions": [
-        {
-          "id": "person",
-          "prompt": "Which person would you like to meet?",
-          "hint": "I’d like to meet the person who …"
-        },
-        {
-          "id": "@s_mission.q98.2",
-          "prompt": "How can you point them out using known details?",
-          "hint": "They’re the one wearing … / standing …"
-        },
-        {
-          "id": "@s_mission.q98.3",
-          "prompt": "When would be a good moment for an introduction?",
-          "hint": "Let’s wait until …, then …"
-        }
-      ],
-      "questionPurpose": "response"
+            "hint": "She’s the woman who … / This is …",
+            "answer": "The woman dancing with Leo is Nina. She helped organise the music"
+          },
+          {
+            "id": "ana",
+            "label": "Ana",
+            "summary": "Listening",
+            "example": "Pink top · listening to the speech",
+            "prompt": "",
+            "xPercent": 76.5,
+            "yPercent": 62.0,
+            "targetBounds": {
+              "xPercent": 69.5,
+              "yPercent": 26,
+              "widthPercent": 14,
+              "heightPercent": 72
+            },
+            "hint": "The woman in … / We could … afterwards",
+            "answer": "That’s Ana, the woman in pink listening to the speech. We could introduce you afterwards"
+          },
+          {
+            "id": "speaker",
+            "label": "The speaker",
+            "summary": "Speech",
+            "example": "Holding the microphone · speech in progress",
+            "prompt": "",
+            "xPercent": 92.5,
+            "yPercent": 61.5,
+            "targetBounds": {
+              "xPercent": 85.5,
+              "yPercent": 24,
+              "widthPercent": 14,
+              "heightPercent": 75
+            },
+            "hint": "Let’s wait until … before …",
+            "answer": "Let’s wait until the woman holding the microphone finishes, then I’ll introduce you"
+          }
+        ]
+      }
     },
     "s_reply": {
       "type": "facts",

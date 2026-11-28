@@ -47,9 +47,11 @@ function PreparedLesson({
               image: { ...identified.image, src: image(identified.image.src) },
             }
           : identified
-    return activity?.type === 'map' && !activity.questions.length
-      ? { ...media, mediaAspectRatio: 1.5 }
-      : media
+    return activity?.type === 'scene-choice' && activity.scene
+      ? { ...media, mediaAspectRatio: activity.scene.aspectRatio }
+      : activity?.type === 'map' && !activity.questions.length
+        ? { ...media, mediaAspectRatio: 1.5 }
+        : media
   }) as readonly ReviewedPage[]
   const activities = Object.fromEntries(
     Object.entries(data.activities).map(([id, activity]) => [
@@ -57,7 +59,20 @@ function PreparedLesson({
       ({ speech }: ReviewedActivityContext) => (
         <CourseActivity
           key={id}
-          activity={activity}
+          activity={
+            activity.map?.image
+              ? {
+                  ...activity,
+                  map: {
+                    ...activity.map,
+                    image: {
+                      ...activity.map.image,
+                      src: image(activity.map.image.src),
+                    },
+                  },
+                }
+              : activity
+          }
           image={activity.image ? image(activity.image) : undefined}
           onPlayPlace={(clipId, text) => speech.speak([{ id: clipId, text }])}
         />

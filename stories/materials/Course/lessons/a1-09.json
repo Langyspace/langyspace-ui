@@ -39,8 +39,8 @@
     {
       "id": "s2",
       "kind": "activity",
-      "title": "Name the places",
-      "instruction": "Places around town. Name a place, then click to check and listen",
+      "title": "Explore the town",
+      "instruction": "Name the six places, then click each building to check and listen",
       "minutes": 4,
       "eyebrow": "Vocabulary"
     },
@@ -121,7 +121,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Ask about the town",
-      "instruction": "Teacher is visiting the town. Use the map to explain the route from the hotel to the park",
+      "instruction": "Start at the hotel. Ask me how to reach the café, then ask me to repeat one direction",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -289,80 +289,112 @@
             "id": "hotel",
             "label": "hotel",
             "symbol": "🏨",
-            "xPercent": 20,
-            "yPercent": 87
+            "xPercent": 16,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "bank",
             "label": "bank",
             "symbol": "🏦",
-            "xPercent": 20,
-            "yPercent": 12
+            "xPercent": 16,
+            "yPercent": 13,
+            "area": {
+              "widthPercent": 25,
+              "heightPercent": 25
+            }
           },
           {
             "id": "cafe",
             "label": "café",
             "symbol": "☕",
-            "xPercent": 52,
-            "yPercent": 72
+            "xPercent": 48,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           },
           {
             "id": "pharmacy",
             "label": "pharmacy",
             "symbol": "💊",
-            "xPercent": 85,
-            "yPercent": 72
+            "xPercent": 82,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "market",
             "label": "market",
             "symbol": "🛍",
-            "xPercent": 52,
-            "yPercent": 35
+            "xPercent": 48,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 26
+            }
           },
           {
             "id": "park",
             "label": "park",
             "symbol": "🌳",
-            "xPercent": 85,
-            "yPercent": 35
+            "xPercent": 83,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           }
         ],
         "streets": [
           {
             "id": "main",
+            "label": "Main Street",
             "from": {
-              "x": 20,
-              "y": 12
+              "x": 17,
+              "y": 36
             },
             "to": {
-              "x": 20,
-              "y": 87
+              "x": 17,
+              "y": 68
             }
           },
           {
             "id": "first",
+            "label": "First Avenue",
             "from": {
               "x": 20,
-              "y": 72
+              "y": 70
             },
             "to": {
-              "x": 85,
-              "y": 72
+              "x": 96,
+              "y": 70
             }
           },
           {
             "id": "second",
+            "label": "Second Avenue",
             "from": {
               "x": 20,
-              "y": 35
+              "y": 33
             },
             "to": {
-              "x": 85,
-              "y": 35
+              "x": 96,
+              "y": 33
             }
           }
-        ]
+        ],
+        "image": {
+          "src": "a1-09-town-map152",
+          "alt": "Illustrated town seen from above: a hotel south of the bank; café and pharmacy on First Avenue; market and park on Second Avenue",
+          "aspectRatio": 1.5
+        }
       },
       "questions": [
         {
@@ -394,80 +426,112 @@
             "id": "hotel",
             "label": "hotel",
             "symbol": "🏨",
-            "xPercent": 20,
-            "yPercent": 87
+            "xPercent": 16,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "bank",
             "label": "bank",
             "symbol": "🏦",
-            "xPercent": 20,
-            "yPercent": 12
+            "xPercent": 16,
+            "yPercent": 13,
+            "area": {
+              "widthPercent": 25,
+              "heightPercent": 25
+            }
           },
           {
             "id": "cafe",
             "label": "café",
             "symbol": "☕",
-            "xPercent": 52,
-            "yPercent": 72
+            "xPercent": 48,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           },
           {
             "id": "pharmacy",
             "label": "pharmacy",
             "symbol": "💊",
-            "xPercent": 85,
-            "yPercent": 72
+            "xPercent": 82,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "market",
             "label": "market",
             "symbol": "🛍",
-            "xPercent": 52,
-            "yPercent": 35
+            "xPercent": 48,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 26
+            }
           },
           {
             "id": "park",
             "label": "park",
             "symbol": "🌳",
-            "xPercent": 85,
-            "yPercent": 35
+            "xPercent": 83,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           }
         ],
         "streets": [
           {
             "id": "main",
+            "label": "Main Street",
             "from": {
-              "x": 20,
-              "y": 12
+              "x": 17,
+              "y": 36
             },
             "to": {
-              "x": 20,
-              "y": 87
+              "x": 17,
+              "y": 68
             }
           },
           {
             "id": "first",
+            "label": "First Avenue",
             "from": {
               "x": 20,
-              "y": 72
+              "y": 70
             },
             "to": {
-              "x": 85,
-              "y": 72
+              "x": 96,
+              "y": 70
             }
           },
           {
             "id": "second",
+            "label": "Second Avenue",
             "from": {
               "x": 20,
-              "y": 35
+              "y": 33
             },
             "to": {
-              "x": 85,
-              "y": 35
+              "x": 96,
+              "y": 33
             }
           }
-        ]
+        ],
+        "image": {
+          "src": "a1-09-town-map152",
+          "alt": "Illustrated town seen from above: a hotel south of the bank; café and pharmacy on First Avenue; market and park on Second Avenue",
+          "aspectRatio": 1.5
+        }
       },
       "questions": [
         {
@@ -493,87 +557,117 @@
       "title": "Six places",
       "map": {
         "label": "A small town · start at the hotel facing the bank",
-        "startId": "hotel",
         "places": [
           {
             "id": "hotel",
             "label": "hotel",
             "symbol": "🏨",
-            "xPercent": 20,
-            "yPercent": 87
+            "xPercent": 16,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "bank",
             "label": "bank",
             "symbol": "🏦",
-            "xPercent": 20,
-            "yPercent": 12
+            "xPercent": 16,
+            "yPercent": 13,
+            "area": {
+              "widthPercent": 25,
+              "heightPercent": 25
+            }
           },
           {
             "id": "cafe",
             "label": "café",
             "symbol": "☕",
-            "xPercent": 52,
-            "yPercent": 72
+            "xPercent": 48,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           },
           {
             "id": "pharmacy",
             "label": "pharmacy",
             "symbol": "💊",
-            "xPercent": 85,
-            "yPercent": 72
+            "xPercent": 82,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "market",
             "label": "market",
             "symbol": "🛍",
-            "xPercent": 52,
-            "yPercent": 35
+            "xPercent": 48,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 26
+            }
           },
           {
             "id": "park",
             "label": "park",
             "symbol": "🌳",
-            "xPercent": 85,
-            "yPercent": 35
+            "xPercent": 83,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           }
         ],
         "streets": [
           {
             "id": "main",
+            "label": "Main Street",
             "from": {
-              "x": 20,
-              "y": 12
+              "x": 17,
+              "y": 36
             },
             "to": {
-              "x": 20,
-              "y": 87
+              "x": 17,
+              "y": 68
             }
           },
           {
             "id": "first",
+            "label": "First Avenue",
             "from": {
               "x": 20,
-              "y": 72
+              "y": 70
             },
             "to": {
-              "x": 85,
-              "y": 72
+              "x": 96,
+              "y": 70
             }
           },
           {
             "id": "second",
+            "label": "Second Avenue",
             "from": {
               "x": 20,
-              "y": 35
+              "y": 33
             },
             "to": {
-              "x": 85,
-              "y": 35
+              "x": 96,
+              "y": 33
             }
           }
         ],
-        "startLabel": "Start · face the bank"
+        "image": {
+          "src": "a1-09-town-map152",
+          "alt": "Illustrated town seen from above: a hotel south of the bank; café and pharmacy on First Avenue; market and park on Second Avenue",
+          "aspectRatio": 1.5
+        }
       },
       "questions": [],
       "vocabulary": {
@@ -615,101 +709,131 @@
             "id": "hotel",
             "label": "hotel",
             "symbol": "🏨",
-            "xPercent": 20,
-            "yPercent": 87
+            "xPercent": 16,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "bank",
             "label": "bank",
             "symbol": "🏦",
-            "xPercent": 20,
-            "yPercent": 12
+            "xPercent": 16,
+            "yPercent": 13,
+            "area": {
+              "widthPercent": 25,
+              "heightPercent": 25
+            }
           },
           {
             "id": "cafe",
             "label": "café",
             "symbol": "☕",
-            "xPercent": 52,
-            "yPercent": 72
+            "xPercent": 48,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           },
           {
             "id": "pharmacy",
             "label": "pharmacy",
             "symbol": "💊",
-            "xPercent": 85,
-            "yPercent": 72
+            "xPercent": 82,
+            "yPercent": 85,
+            "area": {
+              "widthPercent": 28,
+              "heightPercent": 27
+            }
           },
           {
             "id": "market",
             "label": "market",
             "symbol": "🛍",
-            "xPercent": 52,
-            "yPercent": 35
+            "xPercent": 48,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 26
+            }
           },
           {
             "id": "park",
             "label": "park",
             "symbol": "🌳",
-            "xPercent": 85,
-            "yPercent": 35
+            "xPercent": 83,
+            "yPercent": 14,
+            "area": {
+              "widthPercent": 29,
+              "heightPercent": 27
+            }
           }
         ],
         "streets": [
           {
             "id": "main",
+            "label": "Main Street",
             "from": {
-              "x": 20,
-              "y": 12
+              "x": 17,
+              "y": 36
             },
             "to": {
-              "x": 20,
-              "y": 87
+              "x": 17,
+              "y": 68
             }
           },
           {
             "id": "first",
+            "label": "First Avenue",
             "from": {
               "x": 20,
-              "y": 72
+              "y": 70
             },
             "to": {
-              "x": 85,
-              "y": 72
+              "x": 96,
+              "y": 70
             }
           },
           {
             "id": "second",
+            "label": "Second Avenue",
             "from": {
               "x": 20,
-              "y": 35
+              "y": 33
             },
             "to": {
-              "x": 85,
-              "y": 35
+              "x": 96,
+              "y": 33
             }
           }
-        ]
+        ],
+        "image": {
+          "src": "a1-09-town-map152",
+          "alt": "Illustrated town seen from above: a hotel south of the bank; café and pharmacy on First Avenue; market and park on Second Avenue",
+          "aspectRatio": 1.5
+        }
       },
       "questions": [
         {
           "id": "0",
-          "prompt": "Is there a café near the hotel?",
-          "cue": "Look at the map and answer",
-          "hint": "Yes, there is. It’s …",
-          "answer": "One possible response"
+          "prompt": "Hi! Can I help you?",
+          "cue": "Ask if there’s a café near the hotel",
+          "hint": "Is there a café near the hotel?"
         },
         {
           "id": "1",
-          "prompt": "How do I get to the park?",
-          "cue": "Start at the hotel",
-          "hint": "Go straight, then …",
-          "answer": "One possible response"
+          "prompt": "Yes. There’s a café on First Avenue, next to the pharmacy",
+          "cue": "Ask how to get there from the hotel",
+          "hint": "How do I get there from the hotel?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Sorry, can you say the route again?",
-          "cue": "Repeat the route to the park clearly",
-          "hint": "Go straight and take the second right. The park is at the end"
+          "prompt": "Go straight and turn right at the first street",
+          "cue": "Ask me to repeat the direction",
+          "hint": "Sorry, can you say that again?"
         }
       ],
       "questionPurpose": "conversation"

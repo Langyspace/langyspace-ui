@@ -239,35 +239,11 @@
     },
     {
       "id": "s_personal",
-      "kind": "questions",
-      "title": "Choose your size and colour",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
-      "minutes": 3,
-      "eyebrow": "Your turn",
-      "items": [
-        {
-          "id": "0",
-          "prompt": "Which one would you like?",
-          "cue": "Choose an item and a colour",
-          "hint": "This … one, please",
-          "answer": "One possible response"
-        },
-        {
-          "id": "1",
-          "prompt": "What size do you need?",
-          "cue": "Say the size on your card",
-          "hint": "Size …, please",
-          "answer": "One possible response"
-        },
-        {
-          "id": "personal.follow-up94",
-          "prompt": "Can you ask me the price?",
-          "cue": "Ask how much your choice costs",
-          "hint": "How much is this …?",
-          "answer": "One possible response"
-        }
-      ],
-      "questionPurpose": "conversation"
+      "kind": "activity",
+      "title": "Let’s go shopping!",
+      "instruction": "Choose what you’d like to buy, then ask me about colours, sizes and prices",
+      "minutes": 4,
+      "eyebrow": "Your turn"
     },
     {
       "id": "s_grammar",
@@ -620,6 +596,130 @@
         "columns": 3,
         "rows": 1,
         "sourceAspectRatio": 3
+      }
+    },
+    "s_personal": {
+      "type": "scene-choice",
+      "title": "Clothes shop",
+      "image": "a1-11-shopping-scene157",
+      "questions": [],
+      "scene": {
+        "alt": "Ana and Kim in a clothes shop: a pink dress, a beige bag and black glasses on the left; blue and green T-shirts, a blue jacket and white shoes on the right",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "dress",
+            "label": "Pink dress",
+            "xPercent": 9.0,
+            "yPercent": 38.5,
+            "targetBounds": {
+              "xPercent": 2,
+              "yPercent": 18,
+              "widthPercent": 14,
+              "heightPercent": 41
+            },
+            "prompt": "",
+            "example": "M · $30",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this pink dress, please. Do you have it in medium? How much is it?"
+          },
+          {
+            "id": "bag",
+            "label": "Beige bag",
+            "xPercent": 6.5,
+            "yPercent": 68.5,
+            "targetBounds": {
+              "xPercent": 1.5,
+              "yPercent": 60,
+              "widthPercent": 10,
+              "heightPercent": 17
+            },
+            "prompt": "",
+            "example": "$18",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this beige bag, please. Do you have it in black? How much is it?"
+          },
+          {
+            "id": "glasses",
+            "label": "Black glasses",
+            "xPercent": 16.5,
+            "yPercent": 73.5,
+            "targetBounds": {
+              "xPercent": 12.5,
+              "yPercent": 68.5,
+              "widthPercent": 8,
+              "heightPercent": 10
+            },
+            "prompt": "",
+            "example": "$10",
+            "hint": "I’d like these … / Do you have them in …? / How much …?",
+            "answer": "I’d like these black glasses, please. Do you have them in blue? How much are they?"
+          },
+          {
+            "id": "blue-large",
+            "label": "Blue T-shirt",
+            "xPercent": 68.25,
+            "yPercent": 34.5,
+            "targetBounds": {
+              "xPercent": 62,
+              "yPercent": 22,
+              "widthPercent": 12.5,
+              "heightPercent": 25
+            },
+            "prompt": "",
+            "example": "L · $12",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this blue T-shirt, please. Do you have it in large? How much is it?"
+          },
+          {
+            "id": "green-medium",
+            "label": "Green T-shirt",
+            "xPercent": 80.75,
+            "yPercent": 34.5,
+            "targetBounds": {
+              "xPercent": 75,
+              "yPercent": 22,
+              "widthPercent": 11.5,
+              "heightPercent": 25
+            },
+            "prompt": "",
+            "example": "M · $12",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this green T-shirt, please. Do you have it in medium? How much is it?"
+          },
+          {
+            "id": "jacket",
+            "label": "Blue jacket",
+            "xPercent": 93.0,
+            "yPercent": 36.0,
+            "targetBounds": {
+              "xPercent": 87,
+              "yPercent": 22,
+              "widthPercent": 12,
+              "heightPercent": 28
+            },
+            "prompt": "",
+            "example": "M · $25",
+            "hint": "I’d like this … / Do you have it in …? / How much …?",
+            "answer": "I’d like this blue jacket, please. Do you have it in medium? How much is it?"
+          },
+          {
+            "id": "shoes",
+            "label": "White shoes",
+            "xPercent": 78.0,
+            "yPercent": 65.5,
+            "targetBounds": {
+              "xPercent": 73.5,
+              "yPercent": 61.5,
+              "widthPercent": 9,
+              "heightPercent": 8
+            },
+            "prompt": "",
+            "example": "38 · $35",
+            "hint": "I’d like these … / Do you have them in size …? / How much …?",
+            "answer": "I’d like these white shoes, please. Do you have them in size thirty-eight? How much are they?"
+          }
+        ]
       }
     }
   }

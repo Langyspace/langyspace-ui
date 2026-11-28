@@ -2,6 +2,40 @@
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 
+## Cenas como base da conversa, do A1 ao C1 — revisão159
+
+- Procurar nas missões em fichas de texto uma oportunidade de representar uma situação observável. A imagem precisa fornecer evidências ou escolhas para a conversa; não basta ilustrar o título. Preservar textos, gráficos, áudio e fontes quando forem indispensáveis ao raciocínio.
+- A densidade cresce pelas relações entre pessoas, ações, pistas e interesses. A1 nomeia/escolhe/pede; A2 combina e explica sequências; B1 descreve/compara/justifica; B2 testa hipóteses e negocia; C1 pondera perspectivas, condições e exceções. Não aumentar a dificuldade com objetos minúsculos, muitos rótulos ou uma lista maior de controles.
+- Variar a função da mesma base visual: descrever alguém para a professora identificar, escolher e fazer um pedido, resolver um problema com uma atendente visível, comparar antes/depois, relacionar pistas ou negociar necessidades. A aluna participa com a fala e a observação, sem interação obrigatória no próprio dispositivo.
+- A cena deve fazer sentido antes de abrir qualquer ponto. A professora usa poucos cliques para destacar o que foi dito ou consultar um fato. Dica/modelo são opcionais e não alteram o tamanho da imagem; nunca exigir abrir todos os alvos para descobrir a tarefa.
+- Em níveis altos, separar fato observado, informação fornecida e interpretação. Profissão, intenção, estado técnico, disponibilidade, acesso financeiro e certeza não podem ser deduzidos só de aparência ou expressão facial. Hipóteses e soluções razoáveis podem variar; não criar gabarito secreto.
+- Na ficha, manter a evidência necessária visível quando a dica ou o modelo aparecerem. Só o apoio de linguagem é substituído a cada clique. Se a cena revelar uma experiência que chega pelo áudio, colocá-la depois da escuta; não antecipar a informação para facilitar a nova composição visual.
+- O [mapa de oportunidades159](expansao-cenas-interativas159.md) propõe encaixes nas aulas existentes; ele é planejamento, não comprovação de implementação ou publicação.
+
+## Cenas de compras — revisão157
+
+- A loja fornece contexto e produtos reconhecíveis; títulos, preços, tamanhos, contornos e ajuda são UI nativa, nunca texto ou botões desenhados na imagem. Manter o prompt canônico literal e a identidade dos personagens.
+- Reutilizar `SceneExplorer` com `hotspotInteraction="area"` e os limites de cada objeto para permitir clicar na peça inteira, sem pontos sobrepostos. A professora seleciona a escolha oral da aluna; não exigir digitação na tela compartilhada.
+- A ficha da peça mostra apenas informações úteis para a compra. Uma lâmpada opcional revela dica, depois exemplo completo, substituindo o apoio anterior; trocar ou fechar a peça reinicia a ajuda. A resposta pessoal não tem alternativa correta nem envio simulado.
+- A ficha flutua acima da peça, sem cobri-la e sem alterar o tamanho ou a posição da imagem. Manter largura e base da ficha fixas durante a revelação; conteúdo adicional cresce para cima. Reservar uma faixa superior estável desde o estado inicial e reunir nome, tamanho/preço e controles em um cabeçalho compacto.
+- Cores, tamanhos e preços de itens reutilizados precisam concordar com o modelo, a missão e as mensagens de áudio. Não regenerar gravações válidas para adicionar uma cena visual.
+
+## Mapas de cidade e rotas — revisão152
+
+- Um mapa usado como referência de aula precisa parecer uma cidade acabada, com ruas pavimentadas, cruzamentos, quarteirões e lugares reconhecíveis. Não entregar linhas soltas, emojis sobre traços ou diagramas com aparência de rascunho como se fossem a ilustração final.
+- Usar vista superior legível e uma hierarquia simples: vias, quadras, construções e áreas verdes. Nomes de ruas e lugares ficam como texto nativo acessível, com contraste adequado, sem depender de letras desenhadas na imagem. Não acrescentar controles ou cliques sem função pedagógica.
+- Rótulos não podem encobrir a cena: preferir nomes de ruas sobre a própria via, com texto de contraste suficiente, sem brilho ou halo. Reduzir fundo e padding antes de diminuir a fonte; manter leitura confortável na tela compartilhada. Nomes dos lugares usam etiquetas compactas sem quebrar palavras.
+- No mapa ilustrado, indicar o ponto de partida com um pequeno marcador junto ao nome, sem uma segunda etiqueta “Start” empilhada sobre o prédio. Manter a área clicável do lugar inteira mesmo quando a etiqueta for compacta.
+- Ao compor mapa/cena com conversa, o componente visual mantém a própria proporção: estilos de imagem do contêiner externo não podem atingir imagens internas por seletores genéricos. Usar a composição pareada canônica quando as duas colunas couberem; não empilhar prematuramente e depois encolher toda a página. Em tarefas de pedir direções, conferir quem faz as perguntas: a aluna precisa formular as perguntas, com apoio opcional, e a professora recebe as réplicas prontas.
+- Reutilizar RouteMap com imagem de fundo e áreas clicáveis sobre os prédios. A área do lugar inteiro deve aceitar o clique, não apenas um ponto pequeno; preservar os controles compartilhados de dica, revelar e resetar. Reutilizar a mesma geografia nas diferentes páginas de uma aula.
+- Conferir a coerência entre desenho, pontos de partida, direção inicial, cruzamentos, perguntas e gravações. Uma imagem bonita com uma rota impossível ou um lugar no lado errado não está pronta. Mapas esquemáticos só cabem quando o objetivo explícito for estudar um esquema, não como substitutos rápidos de uma cena de cidade.
+
+## Continuidade de voz em nomes próprios — revisão151
+
+- Uma frase em inglês com cidade ou nome brasileiro precisa soar como uma única pessoa falando. Priorizar uma geração contínua da frase completa, com controle de pronúncia do nome compatível com o modelo. Preservar o texto de exibição e registrar separadamente o input fonético.
+- O mesmo voiceId não garante continuidade perceptiva quando trechos são sintetizados em modelos ou idiomas distintos e depois unidos. Não apresentar essa montagem como voz contínua apenas porque os IDs coincidem. A correção de Recife substitui essa montagem nos quatro bindings afetados, preservando as gravações válidas das demais falas.
+- Guardar modelo, voz, input, request-id e bytes reais. Validar inglês, pronúncia local e continuidade por escuta antes de tratar o resultado como aprovado. Uma transcrição correta ou HTTP200 não comprovam timbre e naturalidade. Pausas pedagógicas entre palavra e exemplo são diferentes de uma emenda no meio da frase.
+
 ## Legibilidade e controles de escuta — revisão136
 
 - Dicas curtas de fala precisam ser legíveis na tela compartilhada sem disputar espaço com a atividade. Reutilizar `SpokenPrompt`: fundo branco, texto preto e tokens de tamanho médio e peso médio, com padding compacto. A revisão substitui o tamanho grande que a dona do curso considerou excessivo em Guess who; não ampliar todos os textos da aula.

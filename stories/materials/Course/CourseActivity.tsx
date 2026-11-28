@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { IconButton } from '../../../src/components/IconButton/IconButton'
+import { SimulationIcon } from '../../../src/components/InteractiveMaterial/SimulationIcon'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { GroupedBarChart } from '../../../src/components/Charts/GroupedBarChart'
 import { VocabularyControls } from '../../../src/components/Exercise/VocabularyControls'
@@ -25,6 +28,7 @@ export function CourseActivity({
   const [assignments, assign] = useState<Record<string, string | undefined>>({})
   const [picture, selectPicture] = useState<string>()
   const [place, setPlace] = useState<string>()
+  const [sceneSupport, setSceneSupport] = useState(0)
   const [drink, chooseDrink] = useState('tea')
   const [food, chooseFood] = useState('cake')
   const [delivered, deliver] = useState(false)
@@ -46,6 +50,63 @@ export function CourseActivity({
   const [allPlaces, showAllPlaces] = useState(false)
   const [initialPlaces, showInitialPlaces] = useState(false)
   const map = selected?.map ?? activity.map
+  if (activity.type === 'scene-choice' && image && activity.scene)
+    return (
+      <SceneExplorer
+        imageSizing="presentation"
+        hotspotInteraction="area"
+        imageUrl={image}
+        imageAlt={activity.scene.alt}
+        selectedId={place}
+        visitedIds={revealed}
+        labels={{ initial: '' }}
+        onSelect={(id) => {
+          setPlace((current) => (current === id ? undefined : id))
+          setSceneSupport(0)
+          reveal((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }}
+        onDismiss={() => {
+          setPlace(undefined)
+          setSceneSupport(0)
+        }}
+        hotspots={activity.scene.hotspots.map((hotspot) => ({
+          ...hotspot,
+          summary: hotspot.summary ?? hotspot.example,
+          example:
+            hotspot.summary !== undefined ? (
+              <Common.Stack as="span">
+                <span>{hotspot.example}</span>
+                {sceneSupport ? (
+                  <span>
+                    {sceneSupport === 1 ? hotspot.hint : hotspot.answer}
+                  </span>
+                ) : null}
+              </Common.Stack>
+            ) : sceneSupport === 1 ? (
+              hotspot.hint
+            ) : sceneSupport === 2 ? (
+              hotspot.answer
+            ) : undefined,
+          actions: (
+            <IconButton
+              variant="neutral"
+              size="sm"
+              feedbackSound="hint"
+              aria-label={
+                sceneSupport === 0
+                  ? 'Show a hint'
+                  : sceneSupport === 1
+                    ? 'Show an example'
+                    : 'Hide support'
+              }
+              onClick={() => setSceneSupport((stage) => (stage + 1) % 3)}
+            >
+              <SimulationIcon name="hint" />
+            </IconButton>
+          ),
+        }))}
+      />
+    )
   if (activity.type === 'sequence' && image && pictures && activity.stages)
     return (
       <ImageSortBoard
@@ -114,6 +175,12 @@ export function CourseActivity({
             showAll={allPlaces}
             onToggleInitial={() => showInitialPlaces(!initialPlaces)}
             onToggleAll={() => showAllPlaces(!allPlaces)}
+            onReset={() => {
+              reveal([])
+              showInitialPlaces(false)
+              showAllPlaces(false)
+              setPlace(undefined)
+            }}
           />
         </Common.Row>
       </Common.Stack>
@@ -121,6 +188,7 @@ export function CourseActivity({
   return (
     <RolePlayExercise
       density="compact"
+      layout={activity.type === 'map' ? 'split' : undefined}
       presentation="instructions"
       situation=""
       steps={[]}

@@ -972,139 +972,41 @@
     },
     {
       "id": "D.4",
-      "text": "These are my parents. They’re from Recife.",
       "file": "assets/audio/D.4.mp3",
       "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "kind": "derived-speech",
-      "isDerived": true,
-      "modelId": null,
-      "sourceModelIds": ["eleven_flash_v2_5", "eleven_multilingual_v2"],
-      "requestId": null,
-      "sourceRequestIds": ["7eiPfwVdZ3v3knBrKZSO", "Q0HLORXKgZwKCBKpseky"],
-      "sources": [
-        {
-          "id": "D.4-prefix.en",
-          "text": "These are my parents. They're from",
-          "file": "segments/D.4-prefix.en.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_multilingual_v2",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "en",
-          "localeIntent": "en-US",
-          "synthesisInput": "These are my parents. They're from",
-          "sha256": "7eed4bd768164e7ece54b3717e94373e13c1ecb4491c4d9da9a011a6cf0c191e",
-          "bytes": 34315,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:30.072732+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "7eiPfwVdZ3v3knBrKZSO",
-            "character-cost": "14",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "7eiPfwVdZ3v3knBrKZSO",
-          "durationSeconds": 2.089796,
-          "sampleRate": 44100,
-          "channels": 1
-        },
-        {
-          "id": "recife.pt-BR",
-          "text": "Recife.",
-          "file": "segments/recife.pt-BR.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_flash_v2_5",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "pt",
-          "localeIntent": "pt-BR",
-          "synthesisInput": "Recife.",
-          "sha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-          "bytes": 15089,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:29.911080+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "Q0HLORXKgZwKCBKpseky",
-            "character-cost": "1",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "Q0HLORXKgZwKCBKpseky",
-          "durationSeconds": 0.882358,
-          "sampleRate": 44100,
-          "channels": 1
-        }
-      ],
-      "sha256": "897fd567e8e14bbd9cec9d045754cb42e6b9bd19128fb235c373fbd5568b6967",
-      "bytes": 46436,
-      "historicalReplacedSha256": "e1cecfe67bbd2a71fd65f004c6ce7678842c400cd95665fd933a9cf86bdab452",
-      "languages": ["en", "pt"],
-      "properNoun": "Recife",
-      "localeIntent": "English sentence, Recife pronounced pt-BR",
-      "derivation": {
-        "method": "Concatenate English prefix and reused Portuguese city, trim conservative edge quiet only; preserve speech interiors; no crossfade, gain or time-stretch",
-        "pcmFrames": 124457,
-        "pcmMasterSha256": "18c152ec1ded2ddc70046b9e5d425e66253e098e43111b93952d8a5f5c670277",
-        "boundaries": [
-          {
-            "leftTrailingQuietFrames": 2646,
-            "rightLeadingQuietFrames": 441,
-            "insertedSilenceFrames": 0,
-            "totalQuietFrames": 3087
-          }
-        ],
-        "sourceTrims": {
-          "D.4-prefix.en": {
-            "sourceSha256": "7eed4bd768164e7ece54b3717e94373e13c1ecb4491c4d9da9a011a6cf0c191e",
-            "sourcePcmFrames": 92160,
-            "leadingQuietFrames": 3969,
-            "trailingQuietFrames": 9261,
-            "trimStartFrames": 0,
-            "trimEndFrames": 6615,
-            "retainedLeadingQuietFrames": 3969,
-            "retainedTrailingQuietFrames": 2646,
-            "trimmedPcmFrames": 85545,
-            "trimmedPcmSha256": "316cdd01257fcf9833ba201d371499b64d94deeac520c27999de477d8c391028"
-          },
-          "recife.pt-BR": {
-            "sourceSha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-            "sourcePcmFrames": 38912,
-            "leadingQuietFrames": 441,
-            "trailingQuietFrames": 1764,
-            "trimStartFrames": 0,
-            "trimEndFrames": 0,
-            "retainedLeadingQuietFrames": 441,
-            "retainedTrailingQuietFrames": 1764,
-            "trimmedPcmFrames": 38912,
-            "trimmedPcmSha256": "e648277851d2ee48bce8ae8df96c779567ceee0c35d02a052203413c8048fb24"
-          }
-        }
+      "modelId": "eleven_v4",
+      "requestId": "FFXwSlav3U66pNo86gyR",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "FFXwSlav3U66pNo86gyR",
+        "character-cost": "19",
+        "content-type": "audio/mpeg"
       },
-      "createdAt": "2026-11-26T23:12:25.986179+00:00",
-      "durationSeconds": 2.82229,
+      "sha256": "fd61dbda5f6f951e7255a08bae863fc40951689231805d0ff539babe35a0199a",
+      "bytes": 49780,
+      "durationSeconds": 3.04,
+      "createdAt": "2026-11-27T14:02:41.666470+00:00",
+      "kind": "speech",
+      "isDerived": false,
+      "processing": "Raw provider bytes; complete utterance; no audio edits",
+      "properNounIPA": "ʁeˈsifi",
+      "localeIntent": "English sentence with Brazilian-Portuguese proper noun",
+      "perceptualReview": "pending human",
+      "text": "These are my parents. They’re from Recife.",
+      "synthesisInput": "These are my parents. They're from \"/ʁeˈsifi/\".",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "historicalReplacedSha256": "897fd567e8e14bbd9cec9d045754cb42e6b9bd19128fb235c373fbd5568b6967",
       "sampleRate": 44100,
-      "channels": 1
+      "channels": 1,
+      "generationAttempts": 1
     },
     {
       "material": "A103",
@@ -1546,139 +1448,41 @@
     },
     {
       "id": "G.6",
-      "text": "She’s from Recife.",
       "file": "assets/audio/G.6.mp3",
       "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "kind": "derived-speech",
-      "isDerived": true,
-      "modelId": null,
-      "sourceModelIds": ["eleven_flash_v2_5", "eleven_multilingual_v2"],
-      "requestId": null,
-      "sourceRequestIds": ["TIqzb5qotJnK4i7r3IFO", "Q0HLORXKgZwKCBKpseky"],
-      "sources": [
-        {
-          "id": "G.6-prefix.en",
-          "text": "She's from",
-          "file": "segments/G.6-prefix.en.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_multilingual_v2",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "en",
-          "localeIntent": "en-US",
-          "synthesisInput": "She's from",
-          "sha256": "7f3fbfd9d938eca2006e893d6f710dcfd435e53bcc2edd4881c549bd70676388",
-          "bytes": 14253,
-          "generationAttempts": 2,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:12:25.663473+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "TIqzb5qotJnK4i7r3IFO",
-            "character-cost": "4",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "TIqzb5qotJnK4i7r3IFO",
-          "durationSeconds": 0.835918,
-          "sampleRate": 44100,
-          "channels": 1
-        },
-        {
-          "id": "recife.pt-BR",
-          "text": "Recife.",
-          "file": "segments/recife.pt-BR.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_flash_v2_5",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "pt",
-          "localeIntent": "pt-BR",
-          "synthesisInput": "Recife.",
-          "sha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-          "bytes": 15089,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:29.911080+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "Q0HLORXKgZwKCBKpseky",
-            "character-cost": "1",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "Q0HLORXKgZwKCBKpseky",
-          "durationSeconds": 0.882358,
-          "sampleRate": 44100,
-          "channels": 1
-        }
-      ],
-      "sha256": "04004048f2ba4a024846e699a90e0380c3cd96fe7633cae343a49534bc5f3545",
-      "bytes": 26374,
-      "historicalReplacedSha256": "07ac111580c6e92f9d943bdf898fc4ec7273f78dc7ee1d980b8147d8766c1410",
-      "languages": ["en", "pt"],
-      "properNoun": "Recife",
-      "localeIntent": "English sentence, Recife pronounced pt-BR",
-      "derivation": {
-        "method": "Concatenate English prefix and reused Portuguese city, trim conservative edge quiet only; preserve speech interiors; no crossfade, gain or time-stretch",
-        "pcmFrames": 69161,
-        "pcmMasterSha256": "38e4c51574dd988cfeeeeb74f1fa6d7825cbeb13af2139dce65393c76e1f747e",
-        "boundaries": [
-          {
-            "leftTrailingQuietFrames": 2646,
-            "rightLeadingQuietFrames": 441,
-            "insertedSilenceFrames": 0,
-            "totalQuietFrames": 3087
-          }
-        ],
-        "sourceTrims": {
-          "G.6-prefix.en": {
-            "sourceSha256": "7f3fbfd9d938eca2006e893d6f710dcfd435e53bcc2edd4881c549bd70676388",
-            "sourcePcmFrames": 36864,
-            "leadingQuietFrames": 3087,
-            "trailingQuietFrames": 9261,
-            "trimStartFrames": 0,
-            "trimEndFrames": 6615,
-            "retainedLeadingQuietFrames": 3087,
-            "retainedTrailingQuietFrames": 2646,
-            "trimmedPcmFrames": 30249,
-            "trimmedPcmSha256": "c148fd920ad31ff26b98538c94df4dc6e6ce3159a4a983f65d61e45c1eedc611"
-          },
-          "recife.pt-BR": {
-            "sourceSha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-            "sourcePcmFrames": 38912,
-            "leadingQuietFrames": 441,
-            "trailingQuietFrames": 1764,
-            "trimStartFrames": 0,
-            "trimEndFrames": 0,
-            "retainedLeadingQuietFrames": 441,
-            "retainedTrailingQuietFrames": 1764,
-            "trimmedPcmFrames": 38912,
-            "trimmedPcmSha256": "e648277851d2ee48bce8ae8df96c779567ceee0c35d02a052203413c8048fb24"
-          }
-        }
+      "modelId": "eleven_v4",
+      "requestId": "SWpZmnWitBthBZbJL9xD",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "SWpZmnWitBthBZbJL9xD",
+        "character-cost": "9",
+        "content-type": "audio/mpeg"
       },
-      "createdAt": "2026-11-26T23:12:26.063649+00:00",
-      "durationSeconds": 1.568413,
+      "sha256": "72b00aa10365454e8f02b6e1b9d9f9e7c5c201aa168ee1f9dd919c69f57c39f6",
+      "bytes": 28046,
+      "durationSeconds": 1.68,
+      "createdAt": "2026-11-27T14:02:41.486916+00:00",
+      "kind": "speech",
+      "isDerived": false,
+      "processing": "Raw provider bytes; complete utterance; no audio edits",
+      "properNounIPA": "ʁeˈsifi",
+      "localeIntent": "English sentence with Brazilian-Portuguese proper noun",
+      "perceptualReview": "pending human",
+      "text": "She’s from Recife.",
+      "synthesisInput": "She's from \"/ʁeˈsifi/\".",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "historicalReplacedSha256": "04004048f2ba4a024846e699a90e0380c3cd96fe7633cae343a49534bc5f3545",
       "sampleRate": 44100,
-      "channels": 1
+      "channels": 1,
+      "generationAttempts": 1
     },
     {
       "material": "A103",
@@ -2196,343 +2000,79 @@
     },
     {
       "id": "FS.1",
-      "text": "father. This is my father. He’s from Recife.",
       "file": "assets/audio/FS.1.mp3",
       "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "kind": "derived-speech",
-      "isDerived": true,
-      "modelId": null,
-      "sourceModelIds": ["eleven_flash_v2_5", "eleven_multilingual_v2"],
-      "requestId": null,
-      "sourceRequestIds": [
-        "fc9Aa4j0LvfsFJ9bF7B6",
-        "3ajDDtD7ZEbgXhO5PHWh",
-        "Q0HLORXKgZwKCBKpseky"
-      ],
-      "sources": [
-        {
-          "id": "F.1",
-          "text": "father",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "modelId": "eleven_multilingual_v2",
-          "requestId": "fc9Aa4j0LvfsFJ9bF7B6",
-          "sha256": "1723781a7d1a3a2fb240a2276adaeb7357f520e09f8d80f324bf7153ce7fc664",
-          "durationSeconds": 1.021678,
-          "file": "sources/F.1.mp3"
-        },
-        {
-          "id": "FE.1-prefix.en",
-          "text": "This is my father. He's from",
-          "file": "segments/FE.1-prefix.en.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_multilingual_v2",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "en",
-          "localeIntent": "en-US",
-          "synthesisInput": "This is my father. He's from",
-          "sha256": "63cee11551c61d8fab87a503e2ce409228c956f134f1c916034cc1548d910110",
-          "bytes": 27628,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:30.048047+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "3ajDDtD7ZEbgXhO5PHWh",
-            "character-cost": "11",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "3ajDDtD7ZEbgXhO5PHWh",
-          "durationSeconds": 1.671837,
-          "sampleRate": 44100,
-          "channels": 1
-        },
-        {
-          "id": "recife.pt-BR",
-          "text": "Recife.",
-          "file": "segments/recife.pt-BR.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_flash_v2_5",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "pt",
-          "localeIntent": "pt-BR",
-          "synthesisInput": "Recife.",
-          "sha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-          "bytes": 15089,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:29.911080+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "Q0HLORXKgZwKCBKpseky",
-            "character-cost": "1",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "Q0HLORXKgZwKCBKpseky",
-          "durationSeconds": 0.882358,
-          "sampleRate": 44100,
-          "channels": 1
-        }
-      ],
-      "sha256": "7534008b63b2e47801001afb6c4540a417d5e35ccd2c7d738f019d11f6262a2d",
-      "bytes": 52705,
-      "historicalReplacedSha256": "83a081d36233866e573f962eb5db2b012bfd284e94ab6668508faf968336cb69",
-      "languages": ["en", "pt"],
-      "properNoun": "Recife",
-      "localeIntent": "English sentence, Recife pronounced pt-BR",
-      "derivation": {
-        "method": "Concatenate English prefix and reused Portuguese city, trim conservative edge quiet only; preserve speech interiors; no crossfade, gain or time-stretch",
-        "pcmFrames": 141820,
-        "pcmMasterSha256": "fecf96d4877b261c3f9156394a897562ae3b9b096e67ec4d87902a3661e4c011",
-        "boundaries": [
-          {
-            "kind": "label-example",
-            "leftTrailingQuietFrames": 2646,
-            "rightLeadingQuietFrames": 3969,
-            "insertedSilenceFrames": 8820,
-            "totalQuietFrames": 15435
-          },
-          {
-            "kind": "english-city",
-            "leftTrailingQuietFrames": 2646,
-            "rightLeadingQuietFrames": 441,
-            "insertedSilenceFrames": 0,
-            "totalQuietFrames": 3087
-          }
-        ],
-        "sourceTrims": {
-          "F.1": {
-            "sourceSha256": "1723781a7d1a3a2fb240a2276adaeb7357f520e09f8d80f324bf7153ce7fc664",
-            "sourcePcmFrames": 45056,
-            "leadingQuietFrames": 7497,
-            "trailingQuietFrames": 14553,
-            "trimStartFrames": 4851,
-            "trimEndFrames": 11907,
-            "retainedLeadingQuietFrames": 2646,
-            "retainedTrailingQuietFrames": 2646,
-            "trimmedPcmFrames": 28298,
-            "trimmedPcmSha256": "fe0d562ac5bc4ecdca444f450a77b81a790bbdc4f26ddd3aea479cbe282030e0"
-          },
-          "FE.1-prefix.en": {
-            "sourceSha256": "63cee11551c61d8fab87a503e2ce409228c956f134f1c916034cc1548d910110",
-            "sourcePcmFrames": 73728,
-            "leadingQuietFrames": 3969,
-            "trailingQuietFrames": 10584,
-            "trimStartFrames": 0,
-            "trimEndFrames": 7938,
-            "retainedLeadingQuietFrames": 3969,
-            "retainedTrailingQuietFrames": 2646,
-            "trimmedPcmFrames": 65790,
-            "trimmedPcmSha256": "2c4baa04b238edbf1300c81b37261fa25a138fbc16b619b28cca66eddd6918de"
-          },
-          "recife.pt-BR": {
-            "sourceSha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-            "sourcePcmFrames": 38912,
-            "leadingQuietFrames": 441,
-            "trailingQuietFrames": 1764,
-            "trimStartFrames": 0,
-            "trimEndFrames": 0,
-            "retainedLeadingQuietFrames": 441,
-            "retainedTrailingQuietFrames": 1764,
-            "trimmedPcmFrames": 38912,
-            "trimmedPcmSha256": "e648277851d2ee48bce8ae8df96c779567ceee0c35d02a052203413c8048fb24"
-          }
-        }
+      "modelId": "eleven_v4",
+      "requestId": "VOXnRmJN9QwY1cleDcIE",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "VOXnRmJN9QwY1cleDcIE",
+        "character-cost": "20",
+        "content-type": "audio/mpeg"
       },
-      "createdAt": "2026-11-26T23:12:26.329017+00:00",
-      "durationSeconds": 3.215873,
+      "sha256": "d1565b47f908722ae8d499aa92e8072b33ee0b767e5ac5cf30908064b2c08e61",
+      "bytes": 62318,
+      "durationSeconds": 3.84,
+      "createdAt": "2026-11-27T14:02:43.317975+00:00",
+      "kind": "speech",
+      "isDerived": false,
+      "processing": "Raw provider bytes; complete utterance; no audio edits",
+      "properNounIPA": "ʁeˈsifi",
+      "localeIntent": "English sentence with Brazilian-Portuguese proper noun",
+      "perceptualReview": "pending human",
+      "text": "father. This is my father. He’s from Recife.",
+      "synthesisInput": "father. This is my father. He's from \"/ʁeˈsifi/\".",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "historicalReplacedSha256": "7534008b63b2e47801001afb6c4540a417d5e35ccd2c7d738f019d11f6262a2d",
       "sampleRate": 44100,
-      "channels": 1
+      "channels": 1,
+      "generationAttempts": 1
     },
     {
       "id": "FS.2",
-      "text": "parents. My parents are from Recife.",
       "file": "assets/audio/FS.2.mp3",
       "provider": "elevenlabs",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
-      "kind": "derived-speech",
-      "isDerived": true,
-      "modelId": null,
-      "sourceModelIds": ["eleven_flash_v2_5", "eleven_multilingual_v2"],
-      "requestId": null,
-      "sourceRequestIds": [
-        "wFQRUa03gNRhRKXtt2AO",
-        "FlALWticmlDUAfLqgcgw",
-        "Q0HLORXKgZwKCBKpseky"
-      ],
-      "sources": [
-        {
-          "id": "F.2",
-          "text": "parents",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "modelId": "eleven_multilingual_v2",
-          "requestId": "wFQRUa03gNRhRKXtt2AO",
-          "sha256": "24e95031b5f521f65643e5a2411dbc5b1fc1022eab9f4d3e7978b6e47e077bf5",
-          "durationSeconds": 0.882358,
-          "file": "sources/F.2.mp3"
-        },
-        {
-          "id": "FE.2-prefix.en",
-          "text": "My parents are from",
-          "file": "segments/FE.2-prefix.en.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_multilingual_v2",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "en",
-          "localeIntent": "en-US",
-          "synthesisInput": "My parents are from",
-          "sha256": "6be06b151dbf31b92abc3b5c34aafc174be20aa7f86bcaefb2bd4a148880fa54",
-          "bytes": 22612,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:30.039156+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "FlALWticmlDUAfLqgcgw",
-            "character-cost": "8",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "FlALWticmlDUAfLqgcgw",
-          "durationSeconds": 1.346757,
-          "sampleRate": 44100,
-          "channels": 1
-        },
-        {
-          "id": "recife.pt-BR",
-          "text": "Recife.",
-          "file": "segments/recife.pt-BR.mp3",
-          "provider": "elevenlabs",
-          "speaker": "ana",
-          "voiceId": "cgSgspJ2msm6clMCkdW9",
-          "voiceName": "Jessica - Playful, Bright, Warm",
-          "modelId": "eleven_flash_v2_5",
-          "voiceSettings": {
-            "stability": 0.5,
-            "similarity_boost": 0.75,
-            "style": 0.1,
-            "use_speaker_boost": true,
-            "speed": 0.92
-          },
-          "languageCode": "pt",
-          "localeIntent": "pt-BR",
-          "synthesisInput": "Recife.",
-          "sha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-          "bytes": 15089,
-          "generationAttempts": 1,
-          "processing": "Raw provider MP3, untouched",
-          "generatedAt": "2026-11-26T23:11:29.911080+00:00",
-          "httpStatus": 200,
-          "providerHeaders": {
-            "request-id": "Q0HLORXKgZwKCBKpseky",
-            "character-cost": "1",
-            "content-type": "audio/mpeg"
-          },
-          "requestId": "Q0HLORXKgZwKCBKpseky",
-          "durationSeconds": 0.882358,
-          "sampleRate": 44100,
-          "channels": 1
-        }
-      ],
-      "sha256": "8f7c3a4073e33ae3a7f70a5bcbebd96ba7a226ce5eae35aec8fe93f9a5bfad09",
-      "bytes": 48944,
-      "historicalReplacedSha256": "c6ea92797e74868fb0d3998e43e733b0cd34cdf6f14358b8369bb00d955cef2b",
-      "languages": ["en", "pt"],
-      "properNoun": "Recife",
-      "localeIntent": "English sentence, Recife pronounced pt-BR",
-      "derivation": {
-        "method": "Concatenate English prefix and reused Portuguese city, trim conservative edge quiet only; preserve speech interiors; no crossfade, gain or time-stretch",
-        "pcmFrames": 131483,
-        "pcmMasterSha256": "ab24dc59cb7407b3f33549c73e9dcdf00034cf270133761e4d5d3c7a40169fe6",
-        "boundaries": [
-          {
-            "kind": "label-example",
-            "leftTrailingQuietFrames": 2646,
-            "rightLeadingQuietFrames": 2205,
-            "insertedSilenceFrames": 10584,
-            "totalQuietFrames": 15435
-          },
-          {
-            "kind": "english-city",
-            "leftTrailingQuietFrames": 2646,
-            "rightLeadingQuietFrames": 441,
-            "insertedSilenceFrames": 0,
-            "totalQuietFrames": 3087
-          }
-        ],
-        "sourceTrims": {
-          "F.2": {
-            "sourceSha256": "24e95031b5f521f65643e5a2411dbc5b1fc1022eab9f4d3e7978b6e47e077bf5",
-            "sourcePcmFrames": 38912,
-            "leadingQuietFrames": 2646,
-            "trailingQuietFrames": 9261,
-            "trimStartFrames": 0,
-            "trimEndFrames": 6615,
-            "retainedLeadingQuietFrames": 2646,
-            "retainedTrailingQuietFrames": 2646,
-            "trimmedPcmFrames": 32297,
-            "trimmedPcmSha256": "b72a5f6d66c598d4b5377d23e4fe7523b0178d2efd3dbf30ac7f339b72513027"
-          },
-          "FE.2-prefix.en": {
-            "sourceSha256": "6be06b151dbf31b92abc3b5c34aafc174be20aa7f86bcaefb2bd4a148880fa54",
-            "sourcePcmFrames": 59392,
-            "leadingQuietFrames": 2205,
-            "trailingQuietFrames": 12348,
-            "trimStartFrames": 0,
-            "trimEndFrames": 9702,
-            "retainedLeadingQuietFrames": 2205,
-            "retainedTrailingQuietFrames": 2646,
-            "trimmedPcmFrames": 49690,
-            "trimmedPcmSha256": "3f70ad3b1733e53f2040820408c135e46a25def305c3224e6f48cade6f4c1947"
-          },
-          "recife.pt-BR": {
-            "sourceSha256": "7bcfd6196cbccf16924c1b8e7733b6b6b1a6a29fa1af31f1800969e429fe99ff",
-            "sourcePcmFrames": 38912,
-            "leadingQuietFrames": 441,
-            "trailingQuietFrames": 1764,
-            "trimStartFrames": 0,
-            "trimEndFrames": 0,
-            "retainedLeadingQuietFrames": 441,
-            "retainedTrailingQuietFrames": 1764,
-            "trimmedPcmFrames": 38912,
-            "trimmedPcmSha256": "e648277851d2ee48bce8ae8df96c779567ceee0c35d02a052203413c8048fb24"
-          }
-        }
+      "modelId": "eleven_v4",
+      "requestId": "fDSbt8li89exDEgQSGgS",
+      "httpStatus": 200,
+      "providerHeaders": {
+        "request-id": "fDSbt8li89exDEgQSGgS",
+        "character-cost": "16",
+        "content-type": "audio/mpeg"
       },
-      "createdAt": "2026-11-26T23:12:26.439630+00:00",
-      "durationSeconds": 2.981474,
+      "sha256": "3871076d8c7c279e2b4f1c13304f0e74397aebcaf9b897b7f0399b14939c67cb",
+      "bytes": 48526,
+      "durationSeconds": 2.96,
+      "createdAt": "2026-11-27T14:02:43.164417+00:00",
+      "kind": "speech",
+      "isDerived": false,
+      "processing": "Raw provider bytes; complete utterance; no audio edits",
+      "properNounIPA": "ʁeˈsifi",
+      "localeIntent": "English sentence with Brazilian-Portuguese proper noun",
+      "perceptualReview": "pending human",
+      "text": "parents. My parents are from Recife.",
+      "synthesisInput": "parents. My parents are from \"/ʁeˈsifi/\".",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "historicalReplacedSha256": "8f7c3a4073e33ae3a7f70a5bcbebd96ba7a226ce5eae35aec8fe93f9a5bfad09",
       "sampleRate": 44100,
-      "channels": 1
+      "channels": 1,
+      "generationAttempts": 1
     },
     {
       "id": "FS.3",
@@ -2882,6 +2422,15 @@
     "sourceUI": "2e2095331f917fa2ce2e02f8feae005273803a76",
     "revision": "A103-Recife136",
     "bindingIds": ["D.4", "G.6", "FS.1", "FS.2"],
-    "note": "Only Recife is Portuguese; English prefixes remain English; derived clips retain actual source request IDs"
+    "note": "Only Recife is Portuguese; English prefixes remain English; derived clips retain actual source request IDs",
+    "status": "Historical derivations superseded by recife151 for these four bindings"
+  },
+  "recife151": {
+    "revision": "Recife151",
+    "bindingIds": ["D.4", "G.6", "FS.1", "FS.2"],
+    "voiceId": "cgSgspJ2msm6clMCkdW9",
+    "modelId": "eleven_v4",
+    "note": "Complete utterances in one provider generation each; Brazilian Portuguese IPA for the city; no cross-model splicing",
+    "perceptualReview": "pending human"
   }
 }

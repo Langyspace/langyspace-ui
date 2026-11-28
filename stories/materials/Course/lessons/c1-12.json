@@ -413,10 +413,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Read and explain the evidence",
-      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
-      "minutes": 4,
-      "eyebrow": "Reading comprehension"
+      "title": "Make this checkout work for everyone",
+      "instruction": "Use the experience you heard to propose a workable fallback, then test it against another customer’s needs",
+      "minutes": 2,
+      "eyebrow": "Your turn"
     },
     {
       "id": "s_video102",
@@ -510,34 +510,101 @@
       ]
     },
     "s_reply": {
-      "type": "facts",
-      "title": "When the digital route fails",
-      "questions": [
-        {
-          "id": "task",
-          "prompt": "Which two failures prevent the normal payment route from working?",
-          "answer": "The phone has no battery, and the payment connection is unavailable.",
-          "hint": "Find both failures in the first sentence."
-        },
-        {
-          "id": "@s_reply.q98.2",
-          "prompt": "What does the customer need when that route fails?",
-          "answer": "The customer needs a usable alternative without public embarrassment.",
-          "hint": "Find the need stated at the end of paragraph one."
-        },
-        {
-          "id": "@s_reply.q98.3",
-          "prompt": "Which two details about the alternative remain unknown?",
-          "answer": "Its possible fee and the way staff explain it remain unknown.",
-          "hint": "Find the two missing details in paragraph two."
-        }
-      ],
-      "questionPurpose": "comprehension",
-      "referenceLabel": "When the digital route fails",
-      "referenceParagraphs": [
-        "In the reported case, the customer’s phone has no battery and the payment connection is unavailable. The customer needs a usable alternative that does not cause public embarrassment.",
-        "The account does not say whether the alternative carries a different fee or how staff explain it. Those two details still need checking before the alternative can be described as equally accessible."
-      ]
+      "type": "scene-choice",
+      "title": "Payment access at the checkout",
+      "image": "c1-12-scene160",
+      "questions": [],
+      "scene": {
+        "alt": "A manager and cashier Kim at a checkout; Ana holds a black-screen phone, one customer holds cash and another holds a payment card; the terminal is visible",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "manager",
+            "label": "Manager",
+            "summary": "Operations",
+            "example": "Aims: simpler checkout, less cash handling",
+            "prompt": "",
+            "xPercent": 12.5,
+            "yPercent": 55.0,
+            "targetBounds": {
+              "xPercent": 1,
+              "yPercent": 26,
+              "widthPercent": 23,
+              "heightPercent": 58
+            },
+            "hint": "I’d support …, provided that …",
+            "answer": "I’d support a trial, provided we check the fees and record whether anyone is unable to complete a purchase"
+          },
+          {
+            "id": "phone",
+            "label": "Phone",
+            "summary": "Battery",
+            "example": "Normally pays digitally; the battery has died",
+            "prompt": "",
+            "xPercent": 44.0,
+            "yPercent": 53.5,
+            "targetBounds": {
+              "xPercent": 39,
+              "yPercent": 45,
+              "widthPercent": 10,
+              "heightPercent": 17
+            },
+            "hint": "Someone whose … still needs …",
+            "answer": "Someone whose battery has died still needs a way to pay. I’d offer an alternative that doesn’t require a phone"
+          },
+          {
+            "id": "cash",
+            "label": "Cash",
+            "summary": "Fallback",
+            "example": "The customer has cash available",
+            "prompt": "",
+            "xPercent": 71.0,
+            "yPercent": 58.5,
+            "targetBounds": {
+              "xPercent": 66.5,
+              "yPercent": 51,
+              "widthPercent": 9,
+              "heightPercent": 15
+            },
+            "hint": "Accepting … would …, but we’d also need …",
+            "answer": "Accepting cash would offer one fallback, but we’d still need clear rules on fees and privacy"
+          },
+          {
+            "id": "card",
+            "label": "Payment card",
+            "summary": "Access",
+            "example": "A card still depends on a working connection",
+            "prompt": "",
+            "xPercent": 89.0,
+            "yPercent": 63.0,
+            "targetBounds": {
+              "xPercent": 84,
+              "yPercent": 57,
+              "widthPercent": 10,
+              "heightPercent": 12
+            },
+            "hint": "Having … doesn’t guarantee …",
+            "answer": "Having a card doesn’t guarantee access during an outage; the fallback must work without the same connection"
+          },
+          {
+            "id": "terminal",
+            "label": "The terminal",
+            "summary": "Outage",
+            "example": "Scenario: the payment connection is unavailable",
+            "prompt": "",
+            "xPercent": 34.5,
+            "yPercent": 74.0,
+            "targetBounds": {
+              "xPercent": 29,
+              "yPercent": 63,
+              "widthPercent": 11,
+              "heightPercent": 22
+            },
+            "hint": "If …, staff should … without …",
+            "answer": "If the connection fails, staff should offer a clear alternative without asking customers to explain private circumstances publicly"
+          }
+        ]
+      }
     },
     "s_personal": {
       "type": "facts",
