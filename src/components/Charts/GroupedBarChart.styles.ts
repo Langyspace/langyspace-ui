@@ -1,6 +1,5 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
-import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-grouped-bar-chart',
@@ -26,16 +25,28 @@ export const Day = styled.div`
   height: 100%;
   gap: 8px;
   small {
-    color: ${alpha(theme.colors.palette.extended.ink, 0.64)};
-    font-size: 12px;
+    color: inherit;
+    font-size: ${theme.typography.fontSize.sm};
     text-align: center;
   }
 `
 
 export const Bar = styled.span<{ $height: number }>`
+  position: relative;
   &&&& {
     height: ${({ $height }) => $height}%;
   }
+`
+
+export const Value = styled.span`
+  position: absolute;
+  bottom: calc(100% + ${theme.spacing[1]});
+  inset-inline: 0;
+  color: inherit;
+  text-align: center;
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1;
 `
 
 export const Bars = styled.div`
@@ -44,11 +55,12 @@ export const Bars = styled.div`
   grid-auto-columns: minmax(0, 1fr);
   align-items: end;
   height: 176px;
+  padding-top: ${theme.spacing[6]};
   gap: 2px;
   ${Bar} {
     min-height: 6px;
     border-radius: 4px 4px 0 0;
-    background: ${theme.colors.palette.extended.ink};
+    background: currentColor;
   }
   ${Bar}:nth-child(2n) {
     background: ${theme.colors.palette.extended.teal700};

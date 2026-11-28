@@ -23,3 +23,30 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
+
+/** Numeric evidence must be legible, not inferred from unlabelled bar heights. */
+export const DailyTrips: Story = {
+  args: {
+    'aria-label': 'Daily trips by month',
+    items: [
+      {
+        id: 'jan',
+        label: 'January',
+        description: 'Trips per day',
+        values: [100],
+      },
+      {
+        id: 'feb',
+        label: 'February',
+        description: 'Trips per day',
+        values: [120],
+      },
+      {
+        id: 'mar',
+        label: 'March',
+        description: 'Trips per day',
+        values: [140],
+      },
+    ],
+  },
+}

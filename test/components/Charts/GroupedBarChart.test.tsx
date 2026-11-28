@@ -29,4 +29,9 @@ it('keeps descriptions and keyboard endpoints', () => {
   expect(screen.getByRole('img').getAttribute('aria-label')).toContain(
     '12 cliques',
   )
+  expect(screen.getByText('12')).toBeVisible()
+  expect(screen.getByText('2')).toBeVisible()
+  expect(screen.getByRole('img')).toHaveAccessibleName(
+    'Seg: 12, 2. Segunda: 12 cliques',
+  )
 })

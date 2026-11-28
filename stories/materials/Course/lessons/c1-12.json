@@ -156,29 +156,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The operational case. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Venue manager · simulated source",
-      "subject": "A digital-first proposal",
+      "subject": "The venue manager’s proposal",
       "paragraphs": [
-        "The venue manager proposes moving towards digital payment to simplify checkout and reduce cash handling. Staff currently reconcile different payment types at the end of each day. The manager expects a more consistent process, but has not supplied trial results showing faster service or lower total costs. Any transaction fees and equipment requirements would still need checking.",
-        "The proposal does not yet define a fallback for connection failure or a customer without a usable device. The manager is open to a trial and wants a recommendation that explains what the normal process should be, what happens when it fails and how staff would communicate an exception. This is a simulated operational perspective, not evidence that digital-only systems always work better."
-      ]
+        "The venue manager proposes digital-first payments to simplify checkout and reconciliation and reduce cash handling. They are willing to discuss a trial and a fallback when the usual payment route is unavailable.",
+        "No trial has yet established savings or faster service. Equipment costs and transaction fees are still unknown, so the expected benefits remain aims rather than measured results."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The access perspective. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Community account · simulated source",
-      "subject": "Participation and temporary failure",
+      "subject": "The customer representative’s concern",
       "paragraphs": [
-        "A community representative asks the venue to consider people who cannot reliably use its proposed digital process. That includes limited access to a suitable account or device, but also temporary problems such as a dead battery or an unavailable payment connection. A person who normally pays digitally may still need another route on a particular day.",
-        "The representative does not claim that cash resolves every access issue. They ask for a practical fallback, clear information about fees and privacy, and a process that does not require a customer to explain private circumstances publicly. Their concern is whether people can complete an ordinary purchase. The recommendation should address that need while recognising the venue’s operational aims, and specify what would make the proposed trial worth revising."
-      ]
+        "The customer representative wants people to be able to pay without a working device, a particular account or a reliable connection. A dead battery or a temporary outage can prevent a customer from using the normal digital route.",
+        "They also want clear information about fees, privacy and a usable fallback. Their concern is whether a customer can complete a purchase when digital payment fails, not whether every customer should always pay in cash."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -368,10 +368,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Use the information to respond",
-      "instruction": "Reach a balanced recommendation. Compare the views and agree on a recommendation with conditions",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -413,10 +413,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Test the fallback in practice and strengthen one condition in the recommendation",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -481,82 +481,63 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Three criteria for the recommendation",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Access",
-          "value": "Who can complete the purchase?"
-        },
-        {
-          "id": "1",
-          "label": "Reliability",
-          "value": "What happens during an outage?"
-        },
-        {
-          "id": "2",
-          "label": "Cost and privacy",
-          "value": "Who pays · what information is required?"
-        }
-      ],
+      "title": "A payment proposal and an access concern",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you balance the two sources in a recommendation?",
-          "hint": "The manager aims to …, while the community account highlights …"
+          "prompt": "What does the manager want to simplify?",
+          "answer": "The manager wants to simplify checkout and reconciliation.",
+          "hint": "Identify the two processes in the first sentence."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "What would your fallback need to make possible?",
-          "hint": "Someone without … must still be able to …"
+          "prompt": "Has a trial demonstrated savings or faster service?",
+          "answer": "No. No trial has yet measured savings or speed.",
+          "hint": "Distinguish the proposal’s aims from measured results."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What review would test access, cost and privacy?",
-          "hint": "I’d examine who …, what … and whether …"
+          "prompt": "Which three access barriers does the customer representative identify?",
+          "answer": "They identify the lack of a working device, a suitable account or a reliable connection.",
+          "hint": "Find the three requirements that some customers cannot meet."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "Three criteria for the recommendation"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "A payment proposal and an access concern",
+      "referenceParagraphs": [
+        "The venue manager proposes digital-first payments to simplify checkout and reconciliation and reduce cash handling. No trial has yet measured savings or speed, and equipment costs and transaction fees remain unknown.",
+        "The customer representative wants a usable way to pay when a customer has no working device, suitable account or reliable connection. They also ask for clear information about fees and privacy."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "Fallback conditions",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Situation",
-          "value": "Dead phone · payment connection unavailable"
-        },
-        {
-          "id": "1",
-          "label": "Need",
-          "value": "A usable alternative without public embarrassment"
-        },
-        {
-          "id": "2",
-          "label": "Check",
-          "value": "Different fee? Clear staff explanation?"
-        }
-      ],
+      "title": "When the digital route fails",
       "questions": [
         {
           "id": "task",
-          "prompt": "What should happen when the usual digital route fails?",
-          "hint": "Staff should offer … without requiring …"
+          "prompt": "Which two failures prevent the normal payment route from working?",
+          "answer": "The phone has no battery, and the payment connection is unavailable.",
+          "hint": "Find both failures in the first sentence."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "How would you check that the fallback doesn’t create another barrier?",
-          "hint": "I’d check the … and how staff …"
+          "prompt": "What does the customer need when that route fails?",
+          "answer": "The customer needs a usable alternative without public embarrassment.",
+          "hint": "Find the need stated at the end of paragraph one."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "How would you keep the recommendation proportionate to this account?",
-          "hint": "This case shows …; it doesn’t prove …, so I’d …"
+          "prompt": "Which two details about the alternative remain unknown?",
+          "answer": "Its possible fee and the way staff explain it remain unknown.",
+          "hint": "Find the two missing details in paragraph two."
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "When the digital route fails",
+      "referenceParagraphs": [
+        "In the reported case, the customer’s phone has no battery and the payment connection is unavailable. The customer needs a usable alternative that does not cause public embarrassment.",
+        "The account does not say whether the alternative carries a different fee or how staff explain it. Those two details still need checking before the alternative can be described as equally accessible."
+      ]
     },
     "s_personal": {
       "type": "facts",

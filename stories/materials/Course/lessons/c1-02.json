@@ -156,29 +156,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The event record. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Operations timeline · simulated source",
-      "subject": "Opening and sound check",
+      "subject": "The late opening",
       "paragraphs": [
-        "The event began twelve minutes after its scheduled start. Some guests had arrived before the doors were due to open. The sound test had not been completed before admission. These three observations appear in the event log, but the log does not identify who knew about the incomplete test or when that information became available.",
-        "One proposed explanation is that the schedule left too little time for preparation. Another is that a warning was not routed to someone who could change the opening decision. The review team has not yet checked the message record. Neither explanation should be described as the established root cause at this stage."
-      ]
+        "Guests arrived before the doors opened, but the sound test had not been completed. The event eventually started twelve minutes late. The opening log records both problems, without identifying who knew about them or when they were told.",
+        "Two explanations remain under review: insufficient preparation time and a warning that may not have reached the right person. The message record has not yet been checked, so the log alone does not establish which explanation caused the delay."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "A participant’s account. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Participant interview · simulated source",
-      "subject": "What the delay felt like",
+      "subject": "A guest’s account",
       "paragraphs": [
-        "A participant remembers waiting near the entrance and hearing different explanations from different volunteers. One person said the programme would begin soon; another said there was a technical check. The participant cannot identify who made the opening decision and does not know whether the volunteers had received the same information.",
-        "From the participant’s perspective, an accurate short update would have helped more than several confident but inconsistent estimates. This account is evidence about the participant’s experience, not proof that anyone deliberately concealed a warning. The review needs to connect the experience with the operational record before assigning responsibility or choosing a prevention."
-      ]
+        "While waiting, one guest heard two different updates. A volunteer said the event would start soon; another said a technical check was still in progress. Neither update explained how long the wait would be.",
+        "The guest wanted a short, accurate update rather than reassurance that kept changing. They could describe what the volunteers said, but they could not identify who controlled the opening decision."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -403,10 +403,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Use the information to respond",
-      "instruction": "Run a useful review. Review what was knowable at the time and agree one change for next time",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -448,10 +448,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Revise the causal claim. Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -516,82 +516,63 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Information available at the time",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Known outcomes",
-          "value": "No sound test · 12-minute late start"
-        },
-        {
-          "id": "1",
-          "label": "Open causal question",
-          "value": "Scheduling, communication or both?"
-        },
-        {
-          "id": "2",
-          "label": "Prevention to discuss",
-          "value": "A checkpoint with a decision owner"
-        }
-      ],
+      "title": "Opening review",
       "questions": [
         {
           "id": "task",
-          "prompt": "What can your review state as fact?",
-          "hint": "The confirmed outcomes were …"
+          "prompt": "Which two problems does the opening log confirm?",
+          "answer": "The sound test was incomplete, and the event started twelve minutes late.",
+          "hint": "Look at the two outcomes in the first sentence."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "Which causal explanations remain open?",
-          "hint": "This may reflect …, … or both"
+          "prompt": "Which two explanations is the review considering?",
+          "answer": "It is considering insufficient preparation time and a warning that failed to reach the right person.",
+          "hint": "Find the two explanations at the start of paragraph two."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What prevention would you link to a specific failure?",
-          "hint": "If … was missing, I’d introduce …"
+          "prompt": "What evidence has not yet been checked?",
+          "answer": "The message record has not yet been checked.",
+          "hint": "Look for the record mentioned in the final sentence."
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Opening review",
+      "referenceParagraphs": [
+        "The opening log records an incomplete sound test and a twelve-minute delay. Guests had already arrived before the doors opened. It does not record when the team first learnt that testing was unfinished.",
+        "The review is considering insufficient preparation time and a warning that failed to reach the right person. The message record has not yet been checked; neither explanation has been confirmed as the cause."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "New evidence, bounded conclusion",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Message record",
-          "value": "Warning sent before opening"
-        },
-        {
-          "id": "1",
-          "label": "Missing process",
-          "value": "Named responder · acknowledgement"
-        },
-        {
-          "id": "2",
-          "label": "Still uncertain",
-          "value": "Who read it · whether testing time was sufficient"
-        }
-      ],
+      "title": "What the message record shows",
       "questions": [
         {
           "id": "task",
-          "prompt": "How does the message record change your assessment?",
-          "hint": "It makes … more plausible because …"
+          "prompt": "When was the warning sent?",
+          "answer": "The warning was sent before the doors opened.",
+          "hint": "Compare the warning with the opening time."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "What claim about an individual would still be unsupported?",
-          "hint": "It would be premature to say …"
+          "prompt": "Which two follow-up details are missing from the record?",
+          "answer": "No responder was named, and there is no recorded acknowledgement.",
+          "hint": "Look for who was responsible and whether receipt was confirmed."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "What accountable prevention would you recommend?",
-          "hint": "I’d assign … to …, with authority to …"
+          "prompt": "Why does the record not establish that someone ignored the warning?",
+          "answer": "It does not identify who read the message.",
+          "hint": "Find the missing evidence about receipt."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "New evidence, bounded conclusion"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "What the message record shows",
+      "referenceParagraphs": [
+        "The message record shows that a warning was sent before the doors opened. However, no responder was named, and there is no recorded acknowledgement of the warning.",
+        "The record does not identify who read the message or whether enough time remained to complete the test. It therefore establishes that a warning was sent, but not that a particular person received and ignored it."
+      ]
     },
     "s_personal": {
       "type": "facts",

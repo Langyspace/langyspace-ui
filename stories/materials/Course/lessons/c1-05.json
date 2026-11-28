@@ -156,29 +156,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The initial account. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Traveller’s account · simulated source",
-      "subject": "Noticed missing on the train",
+      "subject": "The missing scarf",
       "paragraphs": [
-        "The traveller had spent the morning at a café before taking a train. A coat had been left over a chair, then put on in a hurry before departure. During the journey, the traveller noticed that a scarf was missing. An anxious first explanation was that it might have disappeared somewhere between the station and the train.",
-        "The record does not establish theft, an encounter with a stranger or the exact moment the scarf was set down. For a clear retelling, distinguish the moment of noticing the loss from the moment of losing the object. The listener needs the café and coat detail before a later discovery can change the interpretation."
-      ]
+        "The traveller spent the morning in a café and left their coat on a chair. When it was time to leave, they put the coat on in a hurry and went to the station.",
+        "On the train, they noticed that their scarf was missing. They initially thought they had lost it between the station and the train. They had not seen anyone take it."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The later clue. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Café staff’s account · simulated source",
-      "subject": "A photograph and a chair",
+      "subject": "The café’s evidence",
       "paragraphs": [
-        "Café staff later found the scarf on the chair where the coat had been earlier. A photograph taken before the traveller left shows the scarf already there. The staff kept it behind the counter until it could be collected. These are the agreed facts of this fictional story.",
-        "The useful twist is a corrected timeline, not an invented danger. A storyteller can decide when to reveal the photograph, but should not change what it proves. It explains why the initial train explanation was mistaken and gives an ordinary setting new significance. The collection details can be shortened if they distract from that turning point."
-      ]
+        "Café staff found a scarf on the chair the traveller had used. A photograph taken before the traveller’s departure also shows the scarf on that chair.",
+        "The staff kept the scarf behind the counter for collection. The photograph places it in the café before the train journey, contradicting the traveller’s first explanation."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -403,10 +403,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Tell a story worth following",
-      "instruction": "Tell the story so I can follow why the ending matters",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -452,10 +452,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Retell the ending so it matters. Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -520,79 +520,64 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "The factual story, not a theft claim",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Before the train",
-          "value": "Café · coat on a chair"
-        },
-        {
-          "id": "1",
-          "label": "On the train",
-          "value": "Scarf noticed missing"
-        },
-        {
-          "id": "2",
-          "label": "Later clue",
-          "value": "A photograph from before departure"
-        }
-      ],
+      "title": "The scarf’s timeline",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you establish the traveller’s initial expectation?",
-          "hint": "At first, they were convinced …"
+          "prompt": "When did the traveller notice that the scarf was missing?",
+          "answer": "They noticed it on the train.",
+          "hint": "Separate the moment of discovery from the earlier café visit."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "How would you introduce the photograph without claiming theft?",
-          "hint": "A photograph taken … suggested …"
+          "prompt": "Where did the traveller initially think the scarf had been lost?",
+          "answer": "They initially thought it had been lost between the station and the train.",
+          "hint": "Find the explanation introduced by “At first”."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What question about the timeline still needs answering?",
-          "hint": "We still need to know whether …"
+          "prompt": "What does the photograph show, and when was it taken?",
+          "answer": "It shows the scarf on the café chair before the traveller’s departure.",
+          "hint": "Identify both the location and the photograph’s timing."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "The factual story, not a theft claim"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "The scarf’s timeline",
+      "referenceParagraphs": [
+        "The traveller left a coat on a café chair, put it on in a hurry and went to the station. They only noticed that their scarf was missing once they were on the train. At first, they thought it had been lost between the station and the train.",
+        "A photograph taken before their departure shows the scarf on the café chair. The traveller had not seen anyone take it."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "Photograph taken before departure",
-      "facts": [
-        {
-          "id": "1",
-          "label": "What it rules out",
-          "value": "Disappearance during that train journey"
-        },
-        {
-          "id": "2",
-          "label": "Outcome",
-          "value": "Staff kept it · traveller collected it"
-        }
-      ],
+      "title": "The scarf is found",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you reveal what the photograph establishes?",
-          "hint": "What the photograph showed was …"
+          "prompt": "What does the photograph rule out about the train journey?",
+          "answer": "It rules out the scarf disappearing during that train journey.",
+          "hint": "Compare the time of the photograph with the journey."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "How would you explain the surprise accurately?",
-          "hint": "The surprise was …, rather than …"
+          "prompt": "Where did the staff keep the scarf?",
+          "answer": "They kept it behind the counter.",
+          "hint": "Find the place where the staff stored it."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "How would you close the story without adding drama?",
-          "hint": "The staff …, and later …"
+          "prompt": "How did the story end?",
+          "answer": "The traveller collected the scarf from the café.",
+          "hint": "Look for what the traveller did after the staff found it."
         }
       ],
-      "questionPurpose": "response",
+      "questionPurpose": "comprehension",
       "image": "c1-05-scarf-photo123",
-      "referenceLabel": "Photograph taken before departure"
+      "referenceLabel": "The scarf is found",
+      "referenceParagraphs": [
+        "The photograph shows the scarf on the café chair before the traveller left. It had therefore been left behind before the train journey, rather than disappearing during the journey.",
+        "Café staff found it and kept it behind the counter. The traveller later collected it from the café. No theft was reported or witnessed."
+      ]
     },
     "s_personal": {
       "type": "facts",

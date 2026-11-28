@@ -28,7 +28,11 @@ export function GroupedBarChart({
       }}
     >
       {items.map((item) => (
-        <Styled.Day key={item.id} role="img" aria-label={item.description}>
+        <Styled.Day
+          key={item.id}
+          role="img"
+          aria-label={`${item.label}: ${item.values.join(', ')}. ${item.description}`}
+        >
           <Styled.Bars aria-hidden>
             {item.values.map((value, index) => (
               <Styled.Bar
@@ -39,7 +43,9 @@ export function GroupedBarChart({
                   6,
                   ((Number.isFinite(value) ? value : 0) / max) * 100,
                 )}
-              />
+              >
+                <Styled.Value>{value}</Styled.Value>
+              </Styled.Bar>
             ))}
           </Styled.Bars>
           <small aria-hidden>{item.label}</small>

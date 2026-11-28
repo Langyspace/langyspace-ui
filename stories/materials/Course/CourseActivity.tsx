@@ -4,6 +4,7 @@ import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { GroupedBarChart } from '../../../src/components/Charts/GroupedBarChart'
 import { VocabularyControls } from '../../../src/components/Exercise/VocabularyControls'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { PictureStrip } from '../../../src/components/Exercise/PictureStrip'
 import { ImageSortBoard } from '../../../src/components/Exercise/ImageSortBoard'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -214,6 +215,9 @@ export function CourseActivity({
               <Common.Heading>{activity.referenceLabel}</Common.Heading>
             ) : null}
             <GroupedBarChart {...activity.chart} />
+            {activity.referenceParagraphs?.map((paragraph) => (
+              <Common.Paragraph key={paragraph}>{paragraph}</Common.Paragraph>
+            ))}
           </Common.Surface>
         ) : activity.type === 'menu' ? (
           <Common.Surface>
@@ -308,6 +312,16 @@ export function CourseActivity({
               </>
             ) : null}
           </Common.Surface>
+        ) : activity.referenceParagraphs ? (
+          <ExercisePanel
+            variant="reading"
+            role="article"
+            title={activity.referenceLabel ?? activity.title}
+          >
+            {activity.referenceParagraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </ExercisePanel>
         ) : facts.length ? (
           <Common.Surface>
             {selected?.title || activity.referenceLabel ? (

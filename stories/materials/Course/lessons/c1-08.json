@@ -156,29 +156,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The proposal’s purpose. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Group organiser · simulated source",
-      "subject": "More regular contact",
+      "subject": "The organiser’s proposal",
       "paragraphs": [
-        "The organiser proposes four evening sessions per month, announced at least forty-eight hours before each session. The aim is more regular contact and fewer unresolved questions between meetings. The proposal does not yet explain whether all four sessions are essential or how someone unable to attend could contribute.",
-        "For the organiser, a workable alternative should preserve useful contact rather than simply reduce the calendar burden. Written updates and fewer live meetings may be options, but their role would need to be clear. A trial could help establish whether the combination works. These are fictional negotiating positions; neither attendance nor agreement has been recorded as a real commitment."
-      ]
+        "The organiser proposes four evening sessions each month, with at least 48 hours’ notice. The aim is to keep regular contact and leave fewer questions unresolved between meetings.",
+        "Written updates and fewer live meetings are open for discussion. The organiser has not said that every question requires a meeting."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The impact and the limit. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Participant’s position · simulated source",
-      "subject": "Participation requires planning",
+      "subject": "The participant’s constraints",
       "paragraphs": [
-        "The participant supports regular contact but can commit to only two evenings per month. They need at least seven days’ notice to arrange their other responsibilities. A forty-eight-hour announcement makes attendance unreliable even when the session itself would be useful. The participant is willing to discuss updates between live sessions.",
-        "The distinction between preference and constraint matters. Accepting a lower frequency would not, by itself, make the notice period workable. A counterproposal should acknowledge the organiser’s purpose, identify what can be offered and retain the planning condition explicitly. A polite expression of interest should not be summarised as full acceptance of every term."
-      ]
+        "The participant supports regular contact but can attend only two evenings a month. They need at least seven days’ notice to arrange their other responsibilities.",
+        "They are willing to send short written updates between meetings. The obstacle is the proposed frequency and notice period, rather than opposition to keeping in touch."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -403,10 +403,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Negotiate a workable change",
-      "instruction": "Respond to the proposal and negotiate conditions that could work",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -448,10 +448,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Confirm common ground and the remaining condition. Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -516,83 +516,63 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "The proposal and the constraints",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Proposal",
-          "value": "Four evenings per month · 48 hours’ notice"
-        },
-        {
-          "id": "1",
-          "label": "Person’s limit",
-          "value": "Two evenings · seven days’ notice"
-        },
-        {
-          "id": "2",
-          "label": "Shared interest",
-          "value": "Useful, regular contact"
-        }
-      ],
+      "title": "Frequency and notice",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you acknowledge the shared purpose?",
-          "hint": "I can see the value of …"
+          "prompt": "How do the proposed frequency and the participant’s availability differ?",
+          "answer": "The organiser proposes four evenings a month, but the participant can attend only two.",
+          "hint": "Compare the two monthly totals in paragraph one."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "What concession would you offer?",
-          "hint": "I could commit to … rather than …"
+          "prompt": "Why does the participant need seven days’ notice?",
+          "answer": "They need time to arrange their other responsibilities.",
+          "hint": "Find the reason immediately after the notice period."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What condition would you retain?",
-          "hint": "Even with that change, I would still need …"
+          "prompt": "What form of contact is the participant willing to use between meetings?",
+          "answer": "They are willing to use short written updates.",
+          "hint": "Find the alternative to live sessions."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "The proposal and the constraints"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Frequency and notice",
+      "referenceParagraphs": [
+        "The organiser proposes four evening sessions per month with 48 hours’ notice, aiming for useful, regular contact. The participant supports that aim but can attend only two evenings a month.",
+        "The participant needs at least seven days’ notice to arrange other responsibilities. They are willing to use short written updates between live sessions."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "A partial agreement",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Agreed",
-          "value": "Two live sessions · short written updates"
-        },
-        {
-          "id": "1",
-          "label": "Trial",
-          "value": "Four weeks · review usefulness"
-        },
-        {
-          "id": "2",
-          "label": "Condition retained",
-          "value": "Dates at least seven days ahead"
-        }
-      ],
+      "title": "The four-week trial",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you summarise the partial agreement?",
-          "hint": "We’ve agreed … and …"
+          "prompt": "Which two forms of contact have they agreed to use?",
+          "answer": "They have agreed to use live sessions and short written updates.",
+          "hint": "Find both parts of the agreement in the first sentence."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "What would you explicitly confirm before announcing it?",
-          "hint": "Could you confirm that … remains part of the agreement?"
+          "prompt": "How much notice is still required for session dates?",
+          "answer": "At least seven days’ notice is still required.",
+          "hint": "Look for the requirement that remains unchanged."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "How would you evaluate the trial against its purpose?",
-          "hint": "After four weeks, we’d check whether …"
+          "prompt": "When will they review the arrangement, and what will they assess?",
+          "answer": "After four weeks, they will assess whether it provides useful, regular contact.",
+          "hint": "Find both the trial length and the review criterion."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "A partial agreement"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "The four-week trial",
+      "referenceParagraphs": [
+        "The organiser and participant have agreed on two live sessions per month, with short written updates between them. Session dates must still be supplied at least seven days in advance.",
+        "They will try the arrangement for four weeks, then review whether it provides useful, regular contact. The trial changes the frequency of live meetings, not the participant’s notice requirement."
+      ]
     },
     "s_personal": {
       "type": "facts",

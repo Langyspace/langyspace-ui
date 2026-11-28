@@ -24,6 +24,8 @@ export interface CourseActivity {
   title: string
   /** Optional noun/metadata label for the reference, never task instructions. */
   referenceLabel?: string
+  /** Coherent reference prose, kept beside its evidence-based questions. */
+  referenceParagraphs?: readonly string[]
   vocabulary?: Readonly<Record<string, { id: string; text: string }>>
   image?: string
   pictureGrid?: { columns: number; rows: number; sourceAspectRatio: number }

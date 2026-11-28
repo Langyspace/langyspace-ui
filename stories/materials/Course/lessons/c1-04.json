@@ -168,29 +168,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The need for quiet. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Home-working perspective · simulated source",
-      "subject": "Predictability, not silence at all costs",
+      "subject": "The person working at home",
       "paragraphs": [
-        "The person working at home says sound from late calls makes concentrated evening work difficult. The concern is not who the other person contacts; it is not knowing when the shared room will be quiet. A predictable period would make it easier to schedule demanding work. The person is willing to discuss exceptions but does not want every evening to require a new negotiation.",
-        "The account describes an impact, not proof that the caller is inconsiderate. An effective request needs a concrete time, a place or behaviour that can change, and a way to review the arrangement. A judgement about personality is less actionable than a description of when concentration is interrupted."
-      ]
+        "One flatmate needs predictable quiet for concentrated work in the evening. Calls in the shared room make that work difficult. The concern is the noise during work, not who the other person calls.",
+        "The flatmate is willing to discuss exceptions for urgent calls, provided they are told when an exception is needed. A smaller room and headphones are possible ways to reduce the disruption."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The need for contact. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Family-call perspective · simulated source",
-      "subject": "A different time zone",
+      "subject": "The person making calls",
       "paragraphs": [
-        "The other person uses late calls to stay in touch with family in a different time zone. An earlier routine slot is not always available. They are willing to use a smaller room and headphones, but worry that an absolute ban would also prevent an urgent conversation. They want a clear difference between a regular arrangement and an exceptional situation.",
-        "This perspective does not remove the impact of sound in a shared space. It identifies a second need that a workable agreement must address. Both people could benefit from naming an ordinary quiet period and agreeing how to communicate an exception, rather than treating every deviation as proof of bad intentions."
-      ]
+        "The other flatmate calls family members who live in different time zones. An earlier call is not always possible because the family must also be available.",
+        "They are willing to use the smaller room and headphones for regular calls. They also want a way to handle urgent calls outside the usual arrangement, rather than treating every late call as an emergency."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -415,10 +415,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Agree on a boundary",
-      "instruction": "Raise the issue and try to agree on a workable boundary",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -460,10 +460,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Confirm the workable boundary. Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -528,83 +528,63 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Two needs in a shared space",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Person A",
-          "value": "Predictable quiet for evening home work"
-        },
-        {
-          "id": "1",
-          "label": "Person B",
-          "value": "Family calls across time zones"
-        },
-        {
-          "id": "2",
-          "label": "Possible adjustment",
-          "value": "Smaller room · headphones · an exception process"
-        }
-      ],
+      "title": "Two needs in one flat",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you open the discussion without assigning motives?",
-          "hint": "I’ve noticed …, which makes … difficult"
+          "prompt": "What makes quiet important to the first flatmate?",
+          "answer": "They do concentrated work at home in the evening.",
+          "hint": "Identify the activity that the calls interrupt."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "What accommodation would you request?",
-          "hint": "I’d rather we … while still allowing …"
+          "prompt": "Why can’t every family call simply be moved earlier?",
+          "answer": "The family members live in different time zones.",
+          "hint": "Look for the constraint on the other flatmate’s schedule."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What would count as an agreed exception?",
-          "hint": "If …, please … so that …"
+          "prompt": "Which two adjustments are both flatmates willing to discuss?",
+          "answer": "They are willing to discuss using the smaller room and headphones.",
+          "hint": "Find the room and the equipment in paragraph two."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "Two needs in a shared space"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Two needs in one flat",
+      "referenceParagraphs": [
+        "One flatmate does concentrated work at home in the evening and needs predictable quiet. The other calls family members in different time zones, so moving every call earlier is not always possible.",
+        "Both are willing to discuss using the smaller room and headphones. The person working also accepts that urgent calls may need an exception, provided the exception is communicated."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "What is and isn’t agreed",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Regular arrangement",
-          "value": "Small room · headphones · calls before 10:30"
-        },
-        {
-          "id": "1",
-          "label": "Quiet period",
-          "value": "Shared room after 9"
-        },
-        {
-          "id": "2",
-          "label": "Condition",
-          "value": "Urgent exceptions · send a message"
-        }
-      ],
+      "title": "The proposed arrangement",
       "questions": [
         {
           "id": "task",
-          "prompt": "Does the offer protect the concentration time you need?",
-          "hint": "It addresses …, provided …"
+          "prompt": "Where will regular calls take place, and what equipment will the caller use?",
+          "answer": "Regular calls will take place in the smaller room, using headphones.",
+          "hint": "Find the room and equipment in the first sentence."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "How would you confirm the urgent-call exception?",
-          "hint": "For an urgent call, we’d agree to …"
+          "prompt": "When does the shared room’s quiet period begin?",
+          "answer": "The shared room’s quiet period begins at 9 pm.",
+          "hint": "Distinguish the quiet period from the 10:30 pm call deadline."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "What review would you suggest if the arrangement doesn’t work?",
-          "hint": "If sound still …, let’s review … rather than …"
+          "prompt": "What must the caller do when an urgent exception is needed?",
+          "answer": "The caller must send a message.",
+          "hint": "Look for the condition attached to urgent calls."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "What is and isn’t agreed"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "The proposed arrangement",
+      "referenceParagraphs": [
+        "For regular calls, the caller will use the smaller room and headphones and finish before 10:30 pm. The shared room will remain quiet after 9 pm so the other flatmate can work.",
+        "Urgent calls may be exceptions to the regular arrangement, but the caller must send a message when an exception is needed. The proposal does not remove the need to communicate."
+      ]
     },
     "s_personal": {
       "type": "facts",

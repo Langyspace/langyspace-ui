@@ -106,59 +106,43 @@
     {
       "id": "s4",
       "kind": "source",
-      "title": "Read the situation",
-      "instruction": "What went well? Read Laura’s feedback before preparing a reply",
+      "title": "Read Laura’s feedback",
+      "instruction": "Answer the questions using Laura’s email. Find the detail that supports each answer",
       "minutes": 2,
       "eyebrow": "The situation",
-      "author": "Laura Hughes · client",
-      "subject": "Tuesday’s presentation · first part",
+      "subject": "Laura’s email about Tuesday’s presentation",
       "paragraphs": [
-        "Hi Ana,",
-        "Thank you and your team for the presentation Raj delivered on Tuesday. He really knows the project, and he has a friendly style. The slides had a lot of information. To be fair, there was a lot to say in thirty minutes."
-      ]
-    },
-    {
-      "id": "s42",
-      "kind": "source",
-      "title": "Read the situation",
-      "instruction": "What still needs attention? Separate the concern from the request for next week",
-      "minutes": 1,
-      "eyebrow": "The situation",
-      "author": "Laura Hughes · client",
-      "subject": "Tuesday’s presentation · next step",
-      "paragraphs": [
-        "Some of us found the second part a bit hard to understand, and we didn’t get an answer to my question about the deadline. It might be worth meeting again next week, just for the important points. Would Thursday at ten work? It would be great if you could be there too.",
-        "Best regards,\nLaura Hughes"
-      ]
-    },
-    {
-      "id": "s43",
-      "kind": "questions",
-      "title": "Answer the questions",
-      "instruction": "Explain Laura’s message. Use her words as evidence; distinguish facts from your interpretation",
-      "minutes": 2,
-      "eyebrow": "Your turn",
-      "items": [
+        "Hi Ana, Thank you and your team for the presentation Raj delivered on Tuesday. He really knows the project, and he has a friendly style. The slides had a lot of information. To be fair, there was a lot to say in thirty minutes.",
+        "Some of us found the second part a bit hard to understand, and we didn’t get an answer to my question about the deadline.",
+        "It might be worth meeting again next week, just for the important points. Would Thursday at ten work? It would be great if you could be there too."
+      ],
+      "presentation": "article",
+      "questions": [
         {
           "id": "mail1",
-          "prompt": "What does Laura value, and what concerns her?",
-          "hint": "She values …, but …",
-          "answer": "Laura values Raj’s knowledge and style, but found the second part hard to follow"
+          "prompt": "Which two qualities does Laura praise in Raj?",
+          "answer": "She praises his knowledge of the project and his friendly style.",
+          "hint": "Find what Laura says about his knowledge and the way he presents."
         },
         {
           "id": "mail2",
-          "prompt": "When would Laura like to meet again?",
-          "hint": "She suggests … at …",
-          "answer": "Laura suggests meeting on Thursday at ten"
+          "prompt": "Which question was left unanswered?",
+          "answer": "Laura’s question about the deadline was left unanswered.",
+          "hint": "Find the specific question mentioned in paragraph two."
         },
         {
           "id": "s43.q98.3",
-          "prompt": "Who does Laura want to attend as well?",
-          "hint": "She would like … to attend",
-          "answer": "Laura would like Ana to attend too"
+          "prompt": "When does Laura suggest meeting again?",
+          "answer": "She suggests Thursday at ten next week.",
+          "hint": "Look for both the day and the time in the final paragraph."
+        },
+        {
+          "id": "mail4",
+          "prompt": "Besides Raj, whom does Laura ask to attend?",
+          "answer": "She asks Ana, the email’s recipient, to attend as well.",
+          "hint": "Laura is writing to Ana and says, “if you could be there too”."
         }
-      ],
-      "questionPurpose": "comprehension"
+      ]
     },
     {
       "id": "s6",
@@ -354,31 +338,28 @@
     {
       "id": "s8",
       "kind": "questions",
-      "title": "Give constructive feedback",
-      "instruction": "Choose your words and consider how the other person might hear them",
+      "title": "Discuss Laura’s feedback with Raj",
+      "instruction": "You are Ana; Teacher is Raj. Explain Laura’s feedback, invite his perspective and agree on a next step",
       "minutes": 2,
-      "eyebrow": "Your turn",
+      "eyebrow": "Roleplay",
       "items": [
         {
           "id": "p1",
-          "prompt": "How might that message come across?",
-          "cue": "Describe a possible interpretation",
-          "hint": "It might come across as …, especially if …",
-          "answer": "One possible response"
+          "prompt": "What did Laura say about my presentation?",
+          "cue": "Acknowledge what Laura praised, then explain the two specific concerns",
+          "hint": "She valued your knowledge and friendly style. She found the second part hard to follow, and her deadline question wasn’t answered"
         },
         {
           "id": "p2",
-          "prompt": "How would you raise the issue?",
-          "cue": "Offer an observation and a constructive suggestion",
-          "hint": "I’ve noticed … I wonder if we could …",
-          "answer": "One possible response"
+          "prompt": "There was a lot to cover in thirty minutes. What would you like to ask me?",
+          "cue": "Ask Raj about a specific difficulty rather than assume why it happened",
+          "hint": "Which part was hardest to fit into the time? What made the deadline question difficult to answer?"
         },
         {
           "id": "perspective",
-          "prompt": "What would you ask to understand their perspective?",
-          "cue": "Invite their view before proposing a next step",
-          "hint": "How do you see …? What would help us …?",
-          "answer": "One possible response"
+          "prompt": "What could we do before meeting Laura again?",
+          "cue": "Suggest one practical preparation step and check whether Raj agrees",
+          "hint": "Could we choose the key points and prepare the deadline answer together? Would that help?"
         }
       ],
       "questionPurpose": "conversation"

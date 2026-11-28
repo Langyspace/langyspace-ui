@@ -156,29 +156,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "A claim being circulated. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Neighbourhood post · simulated source",
-      "subject": "Permanent closure?",
+      "subject": "The neighbourhood post",
       "paragraphs": [
-        "A neighbourhood post says a familiar café is closing permanently. It links to a photograph of a sign but does not name anyone from the business or reproduce the complete notice. Several replies repeat the permanent-closure claim and add assumptions about the staff and the reasons. None of those additions has a source in the material provided.",
-        "The post may alert readers to a real change, but it does not establish the duration or scope of that change. A responsible summary should not inherit every confident statement in the replies. Before forwarding it, compare the full notice and identify which details the business itself has actually confirmed."
-      ]
+        "A neighbourhood post claims that the café has closed permanently. It includes a photograph of a notice on the door, but it does not quote the owner or identify a staff member as its source.",
+        "A reply suggests that staffing problems caused the closure. The person replying gives no evidence for that explanation. The photograph shows that there is a notice; it does not, on its own, verify the claims in the post."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The narrower notice. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Café notice · simulated source",
-      "subject": "Service during renovation",
+      "subject": "The café’s notice",
       "paragraphs": [
-        "The café’s notice says the dining area will close for renovation. Delivery will continue while work is carried out. It asks customers to follow the café’s own updates for changes in service. The excerpt does not say that the business is permanently closing and does not make claims about staffing.",
-        "This is a simulated notice for source-comparison practice, not a report about a real business. It is more directly connected to the service decision than the neighbourhood replies, but that does not justify adding a reopening date or an explanation that is absent. The practical distinction is between a closed dining area and an entirely closed business."
-      ]
+        "The café’s own notice says that the dining area is closed for renovation. Delivery orders are still being accepted. Customers are directed to the café’s own updates for further information.",
+        "No reopening date is given. The notice does not say that the business is closing permanently, and it makes no statement about staffing."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -403,10 +403,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Decide what to share",
-      "instruction": "Separate confirmed facts, unsupported claims and unknowns, then decide what to share",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -457,10 +457,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Share a corrected update. Use the message to update your response and agree on the next step",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -525,82 +525,63 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "Source categories",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Confirmed",
-          "value": "Dining area renovation · delivery continues"
-        },
-        {
-          "id": "1",
-          "label": "Unsupported claim",
-          "value": "Permanent closure"
-        },
-        {
-          "id": "2",
-          "label": "Unknown",
-          "value": "Reopening date"
-        }
-      ],
+      "title": "Post versus notice",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you distinguish confirmed and unsupported information?",
-          "hint": "The notice confirms …; it doesn’t support …"
+          "prompt": "Which part of the café is closed, and why?",
+          "answer": "The dining area is closed for renovation.",
+          "hint": "Use the café’s notice rather than the neighbourhood post."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "How would you handle the missing reopening date?",
-          "hint": "No date has …, so …"
+          "prompt": "Which service is still available?",
+          "answer": "Delivery orders are still being accepted.",
+          "hint": "Find the service that continues during renovation."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What would you advise a prospective visitor to do?",
-          "hint": "Before travelling, check …"
+          "prompt": "Who suggested that staff shortages caused the closure?",
+          "answer": "Another reader suggested it; the café did not.",
+          "hint": "Check the source of the reply in paragraph two."
         }
       ],
-      "questionPurpose": "response"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "Post versus notice",
+      "referenceParagraphs": [
+        "A neighbourhood post says the café has closed permanently. The café’s own notice says that only the dining area is closed for renovation and that delivery orders are still being accepted.",
+        "The notice gives no reopening date and says nothing about staffing. A reply blaming staff shortages comes from another reader, not from the café."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "A useful correction",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Source",
-          "value": "Café’s own notice"
-        },
-        {
-          "id": "1",
-          "label": "Service",
-          "value": "Dining area closed for renovation · delivery continues"
-        },
-        {
-          "id": "2",
-          "label": "Limit",
-          "value": "No reopening date yet"
-        }
-      ],
+      "title": "The corrected update",
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you correct the permanent-closure claim?",
-          "hint": "My earlier update overstated …; according to …"
+          "prompt": "Which claim did the update correct?",
+          "answer": "It corrected the claim that the café had closed permanently.",
+          "hint": "Find the claim replaced in the first paragraph."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "Which practical service information would you retain?",
-          "hint": "Delivery …, while the dining area …"
+          "prompt": "What can customers still order?",
+          "answer": "Customers can still order delivery.",
+          "hint": "Find the service retained in the corrected update."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "What limit would you state without inventing certainty?",
-          "hint": "We know …, but a … is not yet …"
+          "prompt": "Where should customers check for a reopening announcement?",
+          "answer": "They should check the café’s own updates.",
+          "hint": "Find the source given to customers planning a visit."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "A useful correction"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "The corrected update",
+      "referenceParagraphs": [
+        "The corrected update cites the café’s own notice. It replaces the claim of permanent closure with the confirmed reason: the dining area is closed for renovation. It also states that delivery continues.",
+        "The café has not announced a reopening date. Customers who want to visit the dining area are directed to the café’s own updates before making the journey."
+      ]
     },
     "s_personal": {
       "type": "facts",

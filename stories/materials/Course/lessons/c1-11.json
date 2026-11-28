@@ -168,29 +168,29 @@
       "id": "s_source0",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The sender’s need. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Message A · simulated source",
-      "subject": "A quick reply",
+      "subject": "The sender’s request",
       "paragraphs": [
-        "“Please send a quick reply so I can plan the next stage.” The sender explains that long silence makes scheduling difficult. They want to know whether the request has arrived and when an answer can be expected. The message does not explicitly say whether quick means a receipt acknowledgement or a complete verified response.",
-        "Their underlying need is predictability. A useful reformulation should preserve that without turning it into a demand for unverified figures. The learner should check the intended meaning before assigning an unreasonable position to the sender. The fact that a request feels urgent does not establish that every part of it must be completed immediately."
-      ]
+        "The sender writes, “Please send a quick reply so I can plan the next stage.” They need to know that the request has arrived and when they can expect a complete answer.",
+        "The phrase “quick reply” does not specify whether an acknowledgement is enough. The sender has not explicitly asked for unchecked figures, but the recipient is unsure what level of detail is expected immediately."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_source1",
       "kind": "source",
       "title": "Read the situation",
-      "instruction": "The receiver’s concern. Read for the facts and the different priorities",
+      "instruction": "Read the account and identify what happened and what is still unknown",
       "minutes": 2,
       "eyebrow": "Reading",
-      "author": "Message B · simulated source",
-      "subject": "Time to verify",
+      "subject": "The receiver’s concern",
       "paragraphs": [
-        "“Verification of the requested figures requires additional time. We cannot give a reliable final answer today.” The receiver is concerned that a quick reply will be treated as a completed check. They want enough time to verify the figures before anyone acts on them. They have not rejected sending a receipt acknowledgement or a realistic estimate.",
-        "The dense wording is not inherently incorrect, but it leaves the person and next action less visible. A clearer oral version might say who is checking and when they will respond. The task is to identify the common ground, separate acknowledgement from completion and test a concrete example with both sides before declaring the disagreement resolved."
-      ]
+        "The receiver needs more time to verify the figures before sending a complete answer. They cannot provide checked figures immediately, but they can acknowledge receipt and give a realistic reply time.",
+        "Acknowledging a request and completing the checks are separate actions. The receiver can therefore keep the sender informed without presenting unverified figures as final."
+      ],
+      "presentation": "article"
     },
     {
       "id": "s_dialogue1",
@@ -380,10 +380,10 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Help them understand each other",
-      "instruction": "Explain both views and check that I understood them correctly",
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
       "minutes": 4,
-      "eyebrow": "Speaking task"
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_listening",
@@ -425,10 +425,10 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Respond to the message",
-      "instruction": "Use Kim’s message to explain acknowledgement, checking time and updates, then check your summary with her",
-      "minutes": 2,
-      "eyebrow": "Your turn"
+      "title": "Read and explain the evidence",
+      "instruction": "Answer the questions using the text. Point to the detail that supports each answer",
+      "minutes": 4,
+      "eyebrow": "Reading comprehension"
     },
     {
       "id": "s_video102",
@@ -493,86 +493,63 @@
   "activities": {
     "s_mission": {
       "type": "facts",
-      "title": "The sender and the receiver",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Sender’s request",
-          "value": "“Please send a quick reply so I can plan the next stage”"
-        },
-        {
-          "id": "1",
-          "label": "Receiver’s concern",
-          "value": "“We need more time to verify the figures”"
-        },
-        {
-          "id": "2",
-          "label": "Difference to clarify",
-          "value": "Acknowledging receipt and sending final figures are separate actions"
-        }
-      ],
+      "title": "A request and a misunderstanding",
       "questions": [
         {
           "id": "task",
-          "prompt": "Why does the sender need a quick acknowledgement?",
-          "hint": "They need a prompt … so that …",
-          "cue": "Connect acknowledgement with planning the next stage"
+          "prompt": "Why does the sender need a quick reply?",
+          "answer": "The sender needs it to plan the next stage.",
+          "hint": "Find the reason in the opening sentence."
         },
         {
           "id": "@s_mission.q98.2",
-          "prompt": "Why can’t the receiver promise checked figures immediately?",
-          "hint": "That doesn’t require … before …",
-          "cue": "Preserve the time needed to verify the figures"
+          "prompt": "What does the receiver mistakenly think “quick reply” requires?",
+          "answer": "They think it requires sending final figures immediately.",
+          "hint": "Identify the receiver’s interpretation in paragraph two."
         },
         {
           "id": "@s_mission.q98.3",
-          "prompt": "What short message could respect both needs?",
-          "hint": "Received; I’ll … and reply by …",
-          "cue": "Give an example with acknowledgement and a realistic reply time"
+          "prompt": "Which two things can the sender receive before the figures are checked?",
+          "answer": "The sender can receive acknowledgement and a realistic time for a complete answer.",
+          "hint": "Return to the sender’s two needs in paragraph one."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "The sender and the receiver"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "A request and a misunderstanding",
+      "referenceParagraphs": [
+        "The sender asks for a quick reply because they need to plan the next stage. They need acknowledgement that the request arrived and a realistic time for a complete answer.",
+        "The receiver thinks “quick reply” means sending final figures immediately. Those figures still need verification, so the receiver cannot yet provide a complete, checked answer. An acknowledgement does not require those checks to be finished."
+      ]
     },
     "s_reply": {
       "type": "facts",
-      "title": "A workable distinction",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Now",
-          "value": "Acknowledge receipt"
-        },
-        {
-          "id": "1",
-          "label": "After checking",
-          "value": "Complete answer · by 4 tomorrow if realistic"
-        },
-        {
-          "id": "2",
-          "label": "If timing changes",
-          "value": "Send an update, not silence"
-        }
-      ],
+      "title": "An acknowledgement and a realistic deadline",
       "questions": [
         {
           "id": "task",
-          "prompt": "What should the person checking the figures send now?",
-          "hint": "Acknowledge receipt and give a realistic time for the checked answer"
+          "prompt": "What does Kim suggest sending now?",
+          "answer": "She suggests sending an acknowledgement and a realistic time for the complete answer.",
+          "hint": "Find the two parts of Kim’s suggestion in paragraph one."
         },
         {
           "id": "@s_reply.q98.2",
-          "prompt": "What should that person do if the checks take longer?",
-          "hint": "Send an update rather than leave Kim waiting in silence"
+          "prompt": "When is it acceptable to promise an answer by 4 pm tomorrow?",
+          "answer": "It is acceptable only if that deadline is achievable.",
+          "hint": "Look for the condition attached to the time."
         },
         {
           "id": "@s_reply.q98.3",
-          "prompt": "How would you ask Kim to check your summary?",
-          "hint": "Does that reflect what you need, or have I missed something?"
+          "prompt": "What should happen if the checks take longer than expected?",
+          "answer": "The person checking should send an update with a revised time.",
+          "hint": "Find the action that replaces silence."
         }
       ],
-      "questionPurpose": "response",
-      "referenceLabel": "A workable distinction"
+      "questionPurpose": "comprehension",
+      "referenceLabel": "An acknowledgement and a realistic deadline",
+      "referenceParagraphs": [
+        "Kim suggests acknowledging the request now and giving a realistic time for the complete answer. The person checking the figures can say “by 4 pm tomorrow” only if that deadline is achievable.",
+        "If the checks take longer than expected, they should send an update with a revised time rather than remain silent. Acknowledgement confirms receipt; it does not mean that the figures have already been verified."
+      ]
     },
     "s_personal": {
       "type": "facts",
