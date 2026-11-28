@@ -22,3 +22,7 @@ Proporção contida e centralizada em uma caixa, incluindo recortes horizontais/
 - Cinco pares antes/depois: homework 1280 escuro, segundo card, 1280 claro, 390×844 e renderer com três proporções. Flip, avaliação e reset foram usados de verdade. Os controles de homework foram preservados.
 
 A revisão de vídeos continua isolada no PR71. Este lote tem um PR próprio com base main e não publica novo pacote nem adota em Teacher/Student. O arquivo lógico da imagem está preparado no mesmo mapa usado pela prévia/publicação de atividades. Requer publicação da mídia/atividade e adoção do componente para refletir nos portais hospedados.
+
+## Feedback posterior — tornar at first explícito
+
+A sequência sem rótulos ainda era interpretada principalmente como perdido/encontrado. A referência ativa passa a ser um diagrama temporal: At first na primeira etapa em rosa e Later na segunda etapa neutra, com linha de progressão e contorno na cena inicial. Os rótulos são vetoriais nativos, com fonte/cor do produto; a ilustração anterior fica preservada byte a byte. A vista é exportada para arquivo de imagem compatível com o contrato atual de flashcards, sem nova API ou variante de tela. Texto, exemplos, áudios e correção de proporção permanecem.
