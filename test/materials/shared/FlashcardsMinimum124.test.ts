@@ -39,7 +39,7 @@ function withBaselineMedia(lesson: string, card: Record<string, unknown>) {
   expect(createHash('sha256').update(bytes).digest('hex'), view.cardId).toBe(
     view.outputSha256,
   )
-  const entries = Object.entries({
+  const entries: [string, unknown][] = Object.entries({
     ...card,
     imageSrc: view.previousMedia.imageSrc,
   })
