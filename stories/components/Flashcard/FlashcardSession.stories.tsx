@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardSession } from '../../../src/components/Flashcard/FlashcardSession'
+import atlas from '../../materials/Course/assets/c1-05-vocabulary81.webp'
 const meta = {
   title: 'Flashcard/FlashcardSession',
   component: FlashcardSession,
@@ -57,6 +58,67 @@ export const LongContent: Story = {
       translation: 'arrumar minha bolsa da academia',
       example:
         'Before I leave home, I pack my gym bag with everything I need for my workout',
+    },
+  },
+}
+
+export const SquareRegion: Story = {
+  args: {
+    card: {
+      id: 'square-region',
+      word: 'to my surprise',
+      translation: 'para minha surpresa',
+      image: {
+        src: atlas,
+        alt: 'A traveller reacts to an earlier photograph',
+        region: {
+          columns: 3,
+          rows: 2,
+          column: 1,
+          row: 0,
+          sourceAspectRatio: 1.5,
+        },
+      },
+    },
+  },
+}
+export const LandscapeRegion: Story = {
+  args: {
+    card: {
+      ...SquareRegion.args!.card!,
+      id: 'landscape-region',
+      image: {
+        src: atlas,
+        alt: 'Two moments of a journey',
+        region: {
+          columns: 3,
+          rows: 2,
+          column: 0,
+          row: 0,
+          columnSpan: 2,
+          sourceAspectRatio: 1.5,
+        },
+      },
+    },
+  },
+}
+export const PortraitRegion: Story = {
+  args: {
+    card: {
+      ...SquareRegion.args!.card!,
+      id: 'portrait-region',
+      image: {
+        src: atlas,
+        alt: 'A traveller considering the journey at two moments',
+        region: {
+          columns: 3,
+          rows: 2,
+          column: 0,
+          row: 0,
+          rowSpan: 2,
+          sourceAspectRatio: 1.5,
+        },
+      },
     },
   },
 }

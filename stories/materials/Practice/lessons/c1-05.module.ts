@@ -27,6 +27,7 @@ import asset23 from '../../Course/assets/audio/C105-FE81.5.mp3'
 import asset24 from '../assets/characters/niamh-murphy.webp'
 import asset25 from '../assets/characters/cian-walsh.webp'
 import asset26 from '../../Course/assets/c1-05-vocabulary81.webp'
+import atFirst163 from '../assets/homework163/at-first.webp'
 import expanded124Asset0 from '../assets/flashcards124/2ecf4b534a79e55272af7f32ec380486880f6fd9a5bfee772945405d5eedde6c.mp3'
 import expanded124Asset1 from '../assets/flashcards124/3386e098a55db47af3cac890d72796bfc5ceeb1b7f154f4e55a9067fecfb7e78.mp3'
 import expanded124Asset2 from '../assets/flashcards124/c823af3635d5e11d84ff1e4f4fe2833be038399e811be76a18c0461166cc8b9b.mp3'
@@ -256,6 +257,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/homework-media163/b628c2783624c73b23931fb19c7e8bfd22061d912b9b0bfdef861978f45bc2ad/image.webp':
+      atFirst163,
     '/flashcards-transparent/course-images/b1347b85db089ab5cf7769b1a69c035121ad5fe63cb1fa5d8c5ca9cb64048712/image.webp':
       expanded124Asset19,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':

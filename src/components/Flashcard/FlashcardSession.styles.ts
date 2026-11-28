@@ -54,13 +54,17 @@ export const Picture = styled.img`
 export const RegionPicture = styled.div`
   position: relative;
   z-index: 1;
+  display: grid;
+  place-items: center;
+  container-type: size;
   width: var(--fc-card-image-size);
   height: var(--fc-card-image-size);
   pointer-events: none;
   user-select: none;
   > * {
-    width: 100%;
-    height: 100%;
+    width: min(100cqw, calc(100cqh * var(--picture-region-aspect-ratio, 1)));
+    height: auto;
+    max-height: 100%;
   }
 `
 export const Footer = styled.footer`

@@ -13,14 +13,7 @@
         "example": "At first, I assumed it had disappeared on the train",
         "exampleTranslation": "A princípio, presumi que tivesse desaparecido no trem",
         "visualLabel": "at first",
-        "imageSrc": "/flashcards-transparent/course-images/90e737ed199062d4fed108ae5c309bb83b415e960799760928cdd717631077c6/image.webp",
-        "imageRegion": {
-          "columns": 3,
-          "rows": 2,
-          "column": 0,
-          "row": 0,
-          "sourceAspectRatio": 1.5
-        },
+        "imageSrc": "/flashcards-transparent/course-practice/homework-media163/b628c2783624c73b23931fb19c7e8bfd22061d912b9b0bfdef861978f45bc2ad/image.webp",
         "audioId": "course-c1-05-at-first.front",
         "backAudioId": "course-c1-05-at-first.back"
       },
@@ -455,7 +448,10 @@
       }
     ]
   },
-  "publishedEnvironments": ["staging", "production"],
+  "publishedEnvironments": [
+    "staging",
+    "production"
+  ],
   "voice": {
     "prompt": "Send me a voice note: shape a story so the listener understands why the ending is surprising",
     "duration": "90–120 seconds",

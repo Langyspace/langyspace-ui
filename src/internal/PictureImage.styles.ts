@@ -2,8 +2,9 @@ import { styled } from 'styled-components'
 import type { PictureRegion } from './PictureImage.types'
 
 export const Region = styled.div<{ $src: string; $region: PictureRegion }>`
+  --picture-region-aspect-ratio: ${(p) => (p.$region.sourceAspectRatio * p.$region.rows * (p.$region.columnSpan ?? 1)) / (p.$region.columns * (p.$region.rowSpan ?? 1))};
   width: 100%;
-  aspect-ratio: ${(p) => (p.$region.sourceAspectRatio * p.$region.rows * (p.$region.columnSpan ?? 1)) / (p.$region.columns * (p.$region.rowSpan ?? 1))};
+  aspect-ratio: var(--picture-region-aspect-ratio);
   background-image: ${(p) => `url(${JSON.stringify(p.$src)})`};
   background-repeat: no-repeat;
   background-size: ${(p) => `${(p.$region.columns / (p.$region.columnSpan ?? 1)) * 100}% ${(p.$region.rows / (p.$region.rowSpan ?? 1)) * 100}%`};
