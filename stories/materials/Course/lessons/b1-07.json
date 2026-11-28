@@ -395,40 +395,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Watch and answer",
-      "instruction": "Watch the travel problems, then evaluate a past decision and choose a next step",
-      "minutes": 4,
+      "title": "Before booking the trip",
+      "instruction": "Watch the travel decision and its consequence, then suggest a better plan",
+      "minutes": 5,
       "video": {
-        "videoId": "DUqdQjkvElo",
-        "startSeconds": 182,
-        "endSeconds": 232,
-        "title": "Airport English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "03JcpgONjMY",
+        "startSeconds": 74.3,
+        "endSeconds": 125.0,
+        "title": "Best & Worst Holiday Experiences",
+        "credit": "Learn English by Pocket Passport"
       },
       "items": [
         {
           "id": "b1-07.video102.q1",
-          "prompt": "How does the employee describe the initial delay?",
-          "hint": "Listen for the minimum length",
-          "answer": "The employee says the flight is delayed by at least two hours"
+          "prompt": "Where did the traveller choose to go, and why?",
+          "hint": "Listen for the country and the place he wanted to visit",
+          "answer": "He chose a small French town because he had heard about its art gallery"
         },
         {
           "id": "b1-07.video102.q2",
-          "prompt": "What alternative is offered after the cancellation?",
-          "hint": "Listen for the next available departure",
-          "answer": "A flight the following morning is offered"
+          "prompt": "What happened when he asked for directions?",
+          "hint": "Did anyone manage to help him?",
+          "answer": "He asked for directions, but nobody could help him"
         },
         {
           "id": "b1-07.video102.q3",
-          "prompt": "What does the traveller ask about after accepting?",
-          "hint": "Listen to the final question",
-          "answer": "The traveller asks whether there are hotels near the airport"
+          "prompt": "How did the journey affect his visit to the gallery?",
+          "hint": "Separate the difficult journey from the quality of the gallery",
+          "answer": "The journey was so long and difficult that he did not enjoy the gallery when he finally arrived. He does not say that the gallery itself was bad"
         },
         {
           "id": "b1-07.video102.q4",
-          "prompt": "You missed a flight after leaving home late. What could you say and do?",
-          "hint": "Use should have for the past, then choose a next step",
-          "answer": "Example: I should have left earlier. Now I’ll ask about the next flight"
+          "prompt": "What should he have checked, and what would you do next time?",
+          "hint": "Use should have or could have, then suggest a practical next step",
+          "answer": "Example: He should have checked how to get to the gallery and how long the journey would take. Next time, I would plan the route before booking and save clear directions"
         }
       ]
     },

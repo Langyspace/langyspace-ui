@@ -442,40 +442,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Watch and answer",
-      "instruction": "Watch the hotel offer help, then negotiate a service deadline",
-      "minutes": 4,
+      "title": "Has it really been fixed?",
+      "instruction": "Compare the repair claim with the evidence, then ask for a check",
+      "minutes": 5,
       "video": {
-        "videoId": "FJrRiVjeOMc",
-        "startSeconds": 581,
-        "endSeconds": 625,
-        "title": "Hotel English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "yxSCWHRAmRU",
+        "startSeconds": 5,
+        "endSeconds": 83,
+        "title": "Getting a fake repair job",
+        "credit": "Viva La Dirt League"
       },
       "items": [
         {
           "id": "b2-06.video102.q1",
-          "prompt": "What does the receptionist promise about the heating?",
-          "hint": "Listen for I’ll send",
-          "answer": "The receptionist promises to send somebody to look at it"
+          "prompt": "What problem does the customer report?",
+          "hint": "Listen for what happened after he took it home",
+          "answer": "The computer he bought the previous day does not work, and he needs it for his job"
         },
         {
           "id": "b2-06.video102.q2",
-          "prompt": "Does the excerpt show the heating being repaired?",
-          "hint": "Distinguish the promise from a completed repair",
-          "answer": "No. It shows an offer to investigate, not a completed repair"
+          "prompt": "What does the employee actually do?",
+          "hint": "Compare the customer’s description with the employee’s claim",
+          "answer": "According to the customer, he puts a power tool over the keyboard, then claims the repair is complete"
         },
         {
           "id": "b2-06.video102.q3",
-          "prompt": "Which problem can the receptionist address immediately?",
-          "hint": "Listen to right now",
-          "answer": "The receptionist can make a new key immediately"
+          "prompt": "What evidence of a successful repair is missing?",
+          "hint": "What would show that the original problem has gone away?",
+          "answer": "The dialogue supplies neither a clear diagnosis nor a successful test of the original fault"
         },
         {
           "id": "b2-06.video102.q4",
-          "prompt": "Arrange a phone-screen repair and check the deadline",
-          "hint": "Use get it fixed and ask for a realistic collection time",
-          "answer": "Example: I need to get the screen fixed. Can you confirm whether it will be ready by Thursday?"
+          "prompt": "What would you ask before agreeing to pay?",
+          "hint": "Ask for a practical demonstration",
+          "answer": "Example: Could you show me that the computer has been fixed before I pay?"
         }
       ]
     },

@@ -1,37 +1,37 @@
 {
-  "title": "Watch and answer",
-  "instruction": "Watch the office proposal. Discuss its promises and contradictions, then negotiate a healthier arrangement",
+  "title": "What does the job cost?",
+  "instruction": "Examine the office offer. Challenge its assumptions, then negotiate a workable arrangement",
   "video": {
     "videoId": "LCaMguF7PYY",
-    "startSeconds": 114.7,
-    "endSeconds": 154,
+    "startSeconds": 66.2,
+    "endSeconds": 182.45,
     "title": "The First Guy To Ever Work In An Office",
     "credit": "Ryan George"
   },
   "items": [
     {
       "id": "work-pressure",
-      "prompt": "What is ironic about the suggestion to display a family photograph?",
-      "hint": "Notice what the photograph is supposed to remind the employee of",
-      "answer": "The photograph is presented as decoration, but it reminds the employee that work keeps him away from his family for most of his waking hours"
+      "prompt": "What imbalance does the pay offer create?",
+      "hint": "Compare what he must help the employer earn with what he receives",
+      "answer": "He must help the employer make a lot of money, but the employer promises to give him only a small part of it"
     },
     {
       "id": "work-irony",
-      "prompt": "Why don’t the proposed mornings and evenings resolve his concern?",
-      "hint": "Compare the available time with the energy he expects to have",
-      "answer": "He expects to be tired early in the morning and tired again after working all day, so available hours do not necessarily mean meaningful time with family and friends"
+      "prompt": "Why do mornings, evenings and two days off fail to settle his concern?",
+      "hint": "Distinguish free hours from energy to use them",
+      "answer": "He expects to be tired before and after work, and the weekend is described as enough for one activity followed by recovery for the next week"
     },
     {
       "id": "work-boundary",
-      "prompt": "How does the sketch undermine the promise of two days off?",
-      "hint": "Listen to how much activity and recovery the speaker predicts",
-      "answer": "The speaker suggests he will have energy for about one activity and then need to recover before repeating the working week"
+      "prompt": "What is ironic about the office with a view and the golden years?",
+      "hint": "Compare the positive labels with how much control he has over his time",
+      "answer": "Both are presented as rewards, but they leave the main cost in place: a window lets him see a day he cannot enjoy, and full control of his time is postponed until much later in life"
     },
     {
       "id": "work-response",
-      "prompt": "How would you challenge this proposal constructively and protect time outside work?",
-      "hint": "Name one concern and negotiate a concrete change, such as hours, commuting or availability",
-      "answer": "Example: I’m interested in the role, but the schedule leaves little energy for life outside work. Could we agree on flexible hours and clear limits on availability?"
+      "prompt": "How would you challenge one assumption and negotiate a workable schedule?",
+      "hint": "Name the assumption, acknowledge a work need and propose a specific boundary",
+      "answer": "Example: I can commit to agreed deadlines, but time at a desk does not prove useful output. Could we agree on core hours and keep evenings free except for genuine emergencies?"
     }
   ]
 }

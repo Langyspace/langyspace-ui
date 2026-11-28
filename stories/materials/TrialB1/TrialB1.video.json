@@ -1,37 +1,37 @@
 {
-  "title": "Watch and answer",
-  "instruction": "Watch two friends discuss camping. Explain what changes his mind, then choose your own kind of trip",
+  "title": "Would you try camping?",
+  "instruction": "Watch the plan take shape. Compare the problems and benefits, then choose your kind of trip",
   "video": {
     "videoId": "eYa46Ap49Kk",
-    "startSeconds": 109,
-    "endSeconds": 145.5,
+    "startSeconds": 20,
+    "endSeconds": 146.5,
     "title": "The First Guy To Ever Go Camping",
     "credit": "Ryan George"
   },
   "items": [
     {
       "id": "trip-context",
-      "prompt": "Why does one man suggest staying at home?",
-      "hint": "Compare the camping equipment with what they already have at home",
-      "answer": "He thinks camping gives them a less comfortable version of what they already have at home"
+      "prompt": "How does his friend plan to make a shelter?",
+      "hint": "Listen for the material and the things used to hold it up",
+      "answer": "He plans to make four walls and a roof with fabric, sticks and pegs"
     },
     {
       "id": "trip-offer",
-      "prompt": "What does his friend think they depend on too much?",
-      "hint": "Listen for three things before disconnect",
-      "answer": "His friend thinks they depend too much on their comforts, houses and devices"
+      "prompt": "Why does the hesitant man think staying at home would be easier?",
+      "hint": "Compare the equipment and comfort with what they already have at home",
+      "answer": "Even with lots of equipment, camping seems to give them a less comfortable version of their setup at home"
     },
     {
       "id": "trip-request",
-      "prompt": "What finally makes camping sound nice to the hesitant man?",
-      "hint": "Listen to the suggestion about nature and the stars",
-      "answer": "The idea of disconnecting from their usual comforts, reconnecting with nature and looking at the stars makes it sound nice"
+      "prompt": "What makes him change his mind about camping?",
+      "hint": "Listen to what they could disconnect from and enjoy instead",
+      "answer": "The idea of leaving their comforts and devices behind, reconnecting with nature and looking at the stars makes camping sound appealing"
     },
     {
       "id": "trip-you",
-      "prompt": "Would you choose a camping trip or a comfortable hotel? Explain why and ask your teacher",
-      "hint": "Compare comfort, nature and being away from your devices",
-      "answer": "Example: I’d choose camping because I’d like to switch off and spend time outdoors. What would you choose?"
+      "prompt": "Would you try camping? Explain a benefit and a change, then ask your teacher",
+      "hint": "Use I’d choose… because… and I’d change…",
+      "answer": "Example: I’d try a short camping trip because I’d like to spend time outdoors. I’d choose a campsite with proper facilities and check the weather first. What would you choose?"
     }
   ]
 }

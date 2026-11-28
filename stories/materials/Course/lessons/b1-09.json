@@ -387,40 +387,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Watch and answer",
-      "instruction": "Watch the flight announcements, then report an incident without inventing a result",
-      "minutes": 4,
+      "title": "Report what was taken",
+      "instruction": "Watch the theft report, then report a missing item using only confirmed facts",
+      "minutes": 5,
       "video": {
-        "videoId": "DUqdQjkvElo",
-        "startSeconds": 182,
-        "endSeconds": 211,
-        "title": "Airport English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "H6as-76WGRg",
+        "startSeconds": 17.4,
+        "endSeconds": 77.2,
+        "title": "Reporting a Theft - Learn English Online",
+        "credit": "Twominute English"
       },
       "items": [
         {
           "id": "b1-09.video102.q1",
-          "prompt": "Which announcement uses delayed?",
-          "hint": "Listen to the first travel problem",
-          "answer": "The first announcement says the flight is delayed by at least two hours"
+          "prompt": "Where does Alex say the theft happened?",
+          "hint": "Listen for his location at the start of the call",
+          "answer": "It happened in Alex Mayer’s shop at Fairwood Shopping Complex"
         },
         {
           "id": "b1-09.video102.q2",
-          "prompt": "What is the reason for the cancellation in the next example?",
-          "hint": "Listen for due to",
-          "answer": "The flight is cancelled due to bad weather"
+          "prompt": "What was taken, and when did it happen?",
+          "hint": "Connect the time in the phone call with the items he names later",
+          "answer": "The computers and other machines were taken from his shop during the previous night. He does not know the exact time"
         },
         {
           "id": "b1-09.video102.q3",
-          "prompt": "Does the cancellation statement name a person who cancelled the flight?",
-          "hint": "Notice what the passive sentence focuses on",
-          "answer": "No. It focuses on the flight and the reason"
+          "prompt": "How soon does the officer say the police will arrive?",
+          "hint": "Listen to the end of the first call",
+          "answer": "He says the police will arrive within fifteen minutes. The clip does not show any property being recovered"
         },
         {
           "id": "b1-09.video102.q4",
-          "prompt": "Your bike is missing. Report only what you know",
-          "hint": "Say what happened without claiming it was found",
-          "answer": "Example: My bike was stolen outside the station this morning. It hasn’t been found"
+          "prompt": "Report a missing item: what do you know and what is unconfirmed?",
+          "hint": "Give a description and the last known place and time",
+          "answer": "Example: My blue bike is missing from the station rack. It has a black basket. I last saw it at six, and it hasn’t been found. I don’t know what happened"
         }
       ]
     },

@@ -4,7 +4,11 @@ import { PromptExercise } from './LessonExercises'
 import type { MaterialVideoPageProps } from './MaterialVideoPage.types'
 
 /** Product composition only; the library owns layout, player and question interactions. */
-export function MaterialVideoPage({ content, active }: MaterialVideoPageProps) {
+export function MaterialVideoPage({
+  content,
+  active,
+  preload = false,
+}: MaterialVideoPageProps) {
   return (
     <SlidePage
       density="compact"
@@ -20,6 +24,7 @@ export function MaterialVideoPage({ content, active }: MaterialVideoPageProps) {
         labels={{ replay: 'Recomeçar' }}
         youtube={content.video}
         active={active}
+        preload={preload}
       />
     </SlidePage>
   )

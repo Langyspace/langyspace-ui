@@ -446,40 +446,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Watch and answer",
-      "instruction": "Watch Emir use the machine, then compare a usual habit with today",
+      "title": "Describe what he is doing",
+      "instruction": "Watch the coffee-making, then compare what you are doing now with your usual routine",
       "minutes": 4,
       "video": {
         "videoId": "LLvGYEjutWo",
         "startSeconds": 90,
-        "endSeconds": 130,
-        "title": "Giving instructions — British Council | English",
+        "endSeconds": 132,
+        "title": "How to give instructions in English",
         "credit": "British Council | English"
       },
       "items": [
         {
           "id": "a2-01.video102.q1",
-          "prompt": "What is Emir learning to use?",
-          "hint": "Look at the machine and the drink",
-          "answer": "He’s learning to use a coffee machine"
+          "prompt": "Is the learner doing it correctly? How do you know?",
+          "hint": "Listen to the feedback after he asks “Like this?”",
+          "answer": "Yes. The person helping him says he is doing well"
         },
         {
           "id": "a2-01.video102.q2",
-          "prompt": "Who is helping him?",
-          "hint": "Listen to the person giving instructions",
-          "answer": "Vanya is helping him"
+          "prompt": "What is the next instruction when he asks what to do next?",
+          "hint": "Listen for connect and the machine",
+          "answer": "He is told to connect it to the machine"
         },
         {
           "id": "a2-01.video102.q3",
-          "prompt": "What is he doing before he presses the final button?",
-          "hint": "Follow the instructions about connecting it",
-          "answer": "He’s connecting the coffee holder to the machine"
+          "prompt": "What does he say when he tries the drink?",
+          "hint": "Listen to his response at the end",
+          "answer": "He says it is delicious and thanks the person helping him"
         },
         {
           "id": "a2-01.video102.q4",
-          "prompt": "What do you usually drink, and what are you drinking today?",
-          "hint": "Contrast usually with today",
-          "answer": "Example: I usually drink coffee, but today I’m drinking tea"
+          "prompt": "What are you doing right now? What do you usually do at this time?",
+          "hint": "Use am/is/are + -ing for now, and the SimplePresent for a habit",
+          "answer": "Example: I am studying English now. I usually work at this time, but today I am having a lesson"
         }
       ]
     },

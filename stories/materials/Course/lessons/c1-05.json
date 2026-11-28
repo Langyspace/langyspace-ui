@@ -461,40 +461,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Watch and answer",
-      "instruction": "Watch the contrast between a flat story and a tense one, then reshape an opening",
-      "minutes": 4,
+      "title": "What makes the ending work?",
+      "instruction": "Follow the story and explain how the ending changes its effect",
+      "minutes": 8,
       "video": {
-        "videoId": "m04lQ5BUAn0",
-        "startSeconds": 474,
-        "endSeconds": 565,
-        "title": "How to tell a story in English — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "arj7oStGLkU",
+        "startSeconds": 12.5,
+        "endSeconds": 174.8,
+        "title": "Inside the Mind of a Master Procrastinator | Tim Urban | TED",
+        "credit": "TED"
       },
       "items": [
         {
           "id": "c1-05.video102.q1",
-          "prompt": "Why does the speaker reject the short monster story?",
-          "hint": "Look at how easily the goal is reached",
-          "answer": "The problem is solved immediately, so there is little tension"
+          "prompt": "How did he intend to organise the year?",
+          "hint": "Describe the beginning, middle and end of his original plan",
+          "answer": "He planned a light start, more work in the middle and the greatest effort near the end"
         },
         {
           "id": "c1-05.video102.q2",
-          "prompt": "Which details make the mountain journey difficult before the storm?",
-          "hint": "Listen for physical conditions and what the traveller carries",
-          "answer": "The thin air and heavy pack make it difficult before the weather changes"
+          "prompt": "What actually happened as the deadline approached?",
+          "hint": "Track what changed as the deadline got closer",
+          "answer": "He postponed writing until the last three days, then completed ninety pages and submitted on time"
         },
         {
           "id": "c1-05.video102.q3",
-          "prompt": "What information is withheld after the storm arrives?",
-          "hint": "Notice the questions left open",
-          "answer": "The excerpt leaves open whether the traveller crossed the pass or was hurt"
+          "prompt": "How does he create and then reverse the audience’s expectation?",
+          "hint": "Compare the imagined phone call with his correction after the applause",
+          "answer": "He invents praise from the school, then reveals that the praise never happened and the thesis was poor"
         },
         {
           "id": "c1-05.video102.q4",
-          "prompt": "Recast the turning point using an emphatic opening",
-          "hint": "Use Little did I know without inventing the story’s ending",
-          "answer": "Example: Little did I know that a storm was about to arrive just as I approached the top"
+          "prompt": "Retell the ending more neutrally: what changes in its effect?",
+          "hint": "Keep the events, remove the false happy ending and explain the effect",
+          "answer": "Example: He delayed, submitted on time and produced poor work. A direct account loses the false triumph and surprise"
         }
       ]
     },
