@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Explain your trade-off",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Compare both courses with Teacher. Explain your trade-off and which missing detail could change your choice",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -620,8 +620,8 @@
       "referenceLabel": "New constraints"
     },
     "s_personal": {
-      "type": "choices",
-      "title": "Situation reference",
+      "type": "facts",
+      "title": "Both course offers",
       "questions": [
         {
           "id": "0",
@@ -645,51 +645,25 @@
           "answer": "One possible response"
         }
       ],
-      "options": [
+      "questionPurpose": "conversation",
+      "referenceLabel": "Both course offers",
+      "facts": [
         {
-          "id": "A",
-          "title": "Course A",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Cost and length",
-              "value": "$180 · eight weeks"
-            },
-            {
-              "id": "1",
-              "label": "Schedule",
-              "value": "Wednesday · 7–9 pm"
-            },
-            {
-              "id": "2",
-              "label": "Application",
-              "value": "Practical tasks · feedback during class"
-            }
-          ]
+          "id": "0",
+          "label": "Cost and duration",
+          "value": "A: $180 · eight weeks / B: $320 · twelve weeks"
         },
         {
-          "id": "B",
-          "title": "Course B",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Cost and length",
-              "value": "$320 · twelve weeks"
-            },
-            {
-              "id": "1",
-              "label": "Schedule",
-              "value": "Independent work · Friday 6 pm check-in"
-            },
-            {
-              "id": "2",
-              "label": "Application",
-              "value": "Project · feedback at weekly check-in"
-            }
-          ]
+          "id": "1",
+          "label": "Schedule",
+          "value": "A: Wednesday 7–9 pm / B: independent work · Friday 6 pm check-in"
+        },
+        {
+          "id": "2",
+          "label": "Practice and feedback",
+          "value": "A: practical tasks in class / B: project at weekly check-in"
         }
-      ],
-      "questionPurpose": "conversation"
+      ]
     }
   }
 }

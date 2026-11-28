@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Clarify what was agreed",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Use the group messages to tell Teacher what is only suggested and what still needs confirmation",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -599,28 +599,25 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What did each person actually agree to?",
-          "cue": "Summarise the commitments without adding promises",
-          "hint": "They agreed to …, but … refused to …",
-          "answer": "One possible response"
+          "prompt": "Is Saturday booked, or only suggested?",
+          "cue": "Separate the suggestion from a confirmed booking",
+          "hint": "Saturday was suggested, but the host will book only after everyone confirms"
         },
         {
           "id": "1",
-          "prompt": "Is that the same as what the message says?",
-          "cue": "Correct a change in meaning or intention",
-          "hint": "Not exactly. They suggested …; they didn’t promise …",
-          "answer": "One possible response"
+          "prompt": "Has the other guest agreed to pay before reading the conditions?",
+          "cue": "Preserve the guest’s condition",
+          "hint": "No. They said they wouldn’t pay until they’d read the conditions"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you prevent the same misunderstanding?",
-          "cue": "Clarify the commitment and ask the other person to confirm",
-          "hint": "When you say …, do you mean …? Could we agree on …?",
-          "answer": "One possible response"
+          "prompt": "What should we confirm with the group before booking?",
+          "cue": "Ask for a clear day and payment agreement",
+          "hint": "Can everyone confirm the day and accept the conditions before we book?"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Messages about the group booking"
     }
   }
 }

@@ -360,8 +360,8 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Choose when to reveal a detail",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "title": "Tell the story of the missing scarf",
+      "instruction": "You are the traveller. Use the café and train timeline to tell Teacher how you found your missing scarf",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -595,49 +595,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Your scarf’s timeline",
       "facts": [
         {
           "id": "0",
           "label": "Before the train",
-          "value": "Café · coat on a chair"
+          "value": "Café · coat on a chair · left in a hurry"
         },
         {
           "id": "1",
           "label": "On the train",
-          "value": "Scarf noticed missing"
+          "value": "Noticed the scarf missing · first suspected it was lost on the journey"
         },
         {
           "id": "2",
-          "label": "Later clue",
-          "value": "A photograph from before departure"
+          "label": "Later discovery",
+          "value": "Staff found it on the café chair · earlier photograph shows it there"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "Which detail would you reveal first?",
-          "cue": "Choose what the listener needs before the surprise",
-          "hint": "At first, … What I didn’t realise was …",
-          "answer": "One possible response"
+          "prompt": "Where were you before you noticed the scarf was missing?",
+          "cue": "Set up the café before describing the train journey",
+          "hint": "I’d been at a café. Only on the train did I notice the scarf was missing"
         },
         {
           "id": "1",
-          "prompt": "What changed the way you saw the situation?",
-          "cue": "Explain the turning point and its significance",
-          "hint": "As it turned out, …",
-          "answer": "One possible response"
+          "prompt": "What made you realise it hadn’t gone missing on the train?",
+          "cue": "Reveal the photograph and correct the timeline",
+          "hint": "As it turned out, a photograph showed it on the café chair before I left"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you tell the ending without explaining away its ambiguity?",
-          "cue": "Retain a meaningful uncertainty and invite an interpretation",
-          "hint": "What makes it striking is …, though we never find out … How do you read it?",
-          "answer": "One possible response"
+          "prompt": "How would you end the story now that you know where it was?",
+          "cue": "Resolve the mistake without inventing a theft",
+          "hint": "Little did I know it was safe at the café, waiting to be collected"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your scarf’s timeline"
     }
   }
 }

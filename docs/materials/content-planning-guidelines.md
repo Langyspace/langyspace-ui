@@ -98,6 +98,14 @@ Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloc
 - O título e o subtítulo definem a ação, o papel da aluna e quem a professora representa. Preferir falas diretas do interlocutor a perguntas abstratas como “What does the other person mean?”.
 - A referência mostra as mensagens/fatos, sem antecipar o acordo que a aluna deve construir. Uma lâmpada canônica oferece formulações úteis em ordem; a conversa continua aberta e não tem gabarito único.
 
+### Referência e conversa precisam se conectar — revisão167
+
+- Uma ficha de roleplay identifica os mesmos papéis dos balões: quem é You, quem Teacher representa, o que cada um sabe e o que precisa combinar. Não deixar “Person A/B” ou “the other person” sem ligação explícita com a conversa.
+- A primeira fala retoma um elemento reconhecível da ficha: a mensagem enviada, a cobrança, o horário ou o problema. As falas seguintes respondem à troca anterior. Não perguntar sobre “essa oferta”, “essa preocupação” ou “essa proposta” se ela ainda não apareceu.
+- A referência local contém os fatos necessários para responder: não omitir a condição de um prazo, a necessidade de quem recebe uma recomendação ou a pista que muda uma história. Uma hipótese continua hipótese; não manter uma falsa ambiguidade quando a fonte já resolve o caso.
+- Quando a decisão exige comparar duas ofertas ou aplicar regras de vários lugares, mostrar os dados essenciais juntos. Seletores continuam úteis para escolher uma pessoa, destinatário ou imagem, mas não devem esconder a informação exigida pela pergunta atual.
+- As dicas usam a mesma perspectiva e os mesmos fatos da pergunta e da ficha. Não oferecer uma resposta específica de C quando A está selecionado. Apoio de linguagem não é um gabarito único para uma decisão aberta.
+
 ## Perguntas conforme a finalidade — revisão94
 
 O pedido de 23/11/2026 manteve as 12 aulas por nível e definiu os balões com intenção de resposta e dica como apoio às perguntas. A revisão de24/11 abaixo distingue conversas pessoais de compreensão factual e tem prioridade sobre a apresentação de perguntas nos [60 planos de exercícios A1–C1](planos-a1-c1/README.md).

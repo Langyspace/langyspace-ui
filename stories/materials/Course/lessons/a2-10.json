@@ -286,7 +286,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Compare two places to stay",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Compare both apartments with Teacher. Choose where to stay and explain which differences matter to you",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
@@ -605,8 +605,8 @@
       "questionPurpose": "response"
     },
     "s_personal": {
-      "type": "choices",
-      "title": "Situation reference",
+      "type": "facts",
+      "title": "Both apartments",
       "questions": [
         {
           "id": "0",
@@ -630,65 +630,25 @@
           "answer": "One possible response"
         }
       ],
-      "options": [
+      "questionPurpose": "conversation",
+      "referenceLabel": "Both apartments",
+      "facts": [
         {
-          "id": "A",
-          "title": "Apartment A",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Price",
-              "value": " $80 per night"
-            },
-            {
-              "id": "1",
-              "label": "Beds",
-              "value": "Two"
-            },
-            {
-              "id": "2",
-              "label": "Walk to the centre",
-              "value": "Five minutes"
-            }
-          ],
-          "pictures": [
-            {
-              "id": "A",
-              "label": "Apartment A",
-              "index": 2
-            }
-          ]
+          "id": "0",
+          "label": "Price per night",
+          "value": "A: $80 · B: $65"
         },
         {
-          "id": "B",
-          "title": "Apartment B",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Price",
-              "value": "$65 per night"
-            },
-            {
-              "id": "1",
-              "label": "Beds",
-              "value": "One"
-            },
-            {
-              "id": "2",
-              "label": "Walk to the centre",
-              "value": "Twenty minutes"
-            }
-          ],
-          "pictures": [
-            {
-              "id": "B",
-              "label": "Apartment B",
-              "index": 3
-            }
-          ]
+          "id": "1",
+          "label": "Beds",
+          "value": "A: two · B: one"
+        },
+        {
+          "id": "2",
+          "label": "Walk to the centre",
+          "value": "A: five minutes · B: twenty minutes"
         }
-      ],
-      "questionPurpose": "conversation"
+      ]
     }
   }
 }

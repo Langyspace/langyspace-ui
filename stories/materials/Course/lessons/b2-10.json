@@ -358,7 +358,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Ask for a quieter room",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You are the guest kept awake by lift noise. Teacher is at reception. Explain the problem and discuss a remedy",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -613,28 +613,25 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What is the main problem?",
-          "cue": "Explain the problem and its practical effect",
-          "hint": "What concerns me is … because …",
-          "answer": "One possible response"
+          "prompt": "What has been keeping you awake?",
+          "cue": "Describe the noise and its effect before your presentation",
+          "hint": "What concerns me is the lift noise. I need to sleep before an early presentation"
         },
         {
           "id": "1",
-          "prompt": "Would that solution work for you?",
-          "cue": "Accept or reject the offer and explain what you need",
-          "hint": "Thanks, but what I need is …",
-          "answer": "One possible response"
+          "prompt": "Would another room away from the lift help?",
+          "cue": "Respond to this specific offer and check what is available",
+          "hint": "Yes, a quiet room away from the lift is what I need. Is one available?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What alternative would address the original problem?",
-          "cue": "Explain a practical remedy and ask whether it is acceptable",
-          "hint": "What would help is … Would that be a workable alternative?",
-          "answer": "One possible response"
+          "prompt": "What if no quiet room is available tonight?",
+          "cue": "Suggest an alternative and ask reception to consider it",
+          "hint": "What would help is another quiet place to stay. Could you check the options?"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your room problem"
     }
   }
 }

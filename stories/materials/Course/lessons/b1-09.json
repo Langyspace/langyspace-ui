@@ -287,7 +287,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Report the missing bike",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Your bike is missing. Teacher works at the help desk. Use the photo and report details to describe it",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
@@ -537,24 +537,21 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What happened to the bike?",
-          "cue": "Report the event and add time or place",
-          "hint": "It was … while …",
-          "answer": "One possible response"
+          "prompt": "Where and when did you last see your bike?",
+          "cue": "Use the last-seen detail on the report",
+          "hint": "It was last seen at the station rack at six"
         },
         {
           "id": "1",
-          "prompt": "How can we identify it?",
-          "cue": "Describe two distinctive features from the picture",
-          "hint": "It has … and …",
-          "answer": "One possible response"
+          "prompt": "What does it look like?",
+          "cue": "Use the photo to describe identifying features",
+          "hint": "It has a blue frame, a black basket and a yellow sticker"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check the description before leaving?",
-          "cue": "Confirm a detail without adding a new fact",
-          "hint": "You mean the one that …, right? Is there anything else?",
-          "answer": "One possible response"
+          "prompt": "If we find a similar bike, how can we be sure it’s yours?",
+          "cue": "Explain the final identification check",
+          "hint": "The serial number needs to be checked before it’s confirmed"
         }
       ],
       "questionPurpose": "conversation",

@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Propose a workable change",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You propose changing the study-group meeting. Teacher is another member. Discuss the change and their concerns",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -593,34 +593,31 @@
         {
           "id": "2",
           "label": "Need to protect",
-          "value": "A reliable way to ask and get answers"
+          "value": "Late questions still need an answer · agree who replies"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "What change would you propose?",
-          "cue": "Explain the change and the problem it addresses",
-          "hint": "I’d suggest … because …",
-          "answer": "One possible response"
+          "prompt": "Why replace our hour of spoken updates?",
+          "cue": "Connect your written update and short Q&A to the current meeting",
+          "hint": "I’d suggest written updates so our live time can focus on questions"
         },
         {
           "id": "1",
-          "prompt": "What about this concern?",
-          "cue": "Acknowledge the objection before responding",
-          "hint": "That’s a fair point. Having said that, …",
-          "answer": "One possible response"
+          "prompt": "What if someone has a question after the ten-minute slot?",
+          "cue": "Acknowledge this concern before proposing a route",
+          "hint": "That’s a fair point. Having said that, we could keep a written question channel"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How could you adapt the proposal to address that concern?",
-          "cue": "Acknowledge the objection and propose a specific adjustment",
-          "hint": "I take your point about … What if we …?",
-          "answer": "One possible response"
+          "prompt": "Who would be responsible for replying there?",
+          "cue": "Make the responsibility clear in your proposed trial",
+          "hint": "We could agree who replies each week, then review whether questions are answered"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your study-group proposal"
     }
   }
 }

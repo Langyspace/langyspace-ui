@@ -358,7 +358,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Decide which details matter",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Teacher works from home two days a week and has under $1,000 a month. Recommend a place and check missing details",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -687,29 +687,26 @@
       "referenceLabel": "C now costs $1,100 · A and B unchanged"
     },
     "s_personal": {
-      "type": "choices",
+      "type": "comparison",
       "title": "Situation reference",
       "questions": [
         {
           "id": "0",
-          "prompt": "Which detail changes your opinion?",
-          "cue": "Explain the relevance of one feature",
-          "hint": "The first one, which …, would …",
-          "answer": "One possible response"
+          "prompt": "Which apartment would you recommend for working from home?",
+          "cue": "Match an apartment to the work-space need and budget",
+          "hint": "This apartment could work if its workspace meets your needs"
         },
         {
           "id": "1",
-          "prompt": "What would you ask before deciding?",
-          "cue": "Identify a missing detail and formulate a question",
-          "hint": "I’d want to know whether …",
-          "answer": "One possible response"
+          "prompt": "Which apartment still needs its total cost checked?",
+          "cue": "Identify the unconfirmed fee, then compare it with the budget",
+          "hint": "C is listed at $950, but the unconfirmed fee could change its total"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain your recommendation to that person?",
-          "cue": "Link your choice to their priority, then invite a concern",
-          "hint": "Given that you need …, I’d recommend … What might I be overlooking?",
-          "answer": "One possible response"
+          "prompt": "What else should I check before renting an apartment?",
+          "cue": "Ask about a missing detail that could change your advice",
+          "hint": "I’d check whether the workspace is suitable for your work"
         }
       ],
       "options": [
@@ -726,6 +723,11 @@
               "id": "1",
               "label": "Location",
               "value": "Near the metro"
+            },
+            {
+              "id": "workspace167",
+              "label": "Workspace",
+              "value": "Compact work corner"
             }
           ],
           "pictures": [
@@ -749,6 +751,11 @@
               "id": "1",
               "label": "Location",
               "value": "Twenty-minute walk to metro"
+            },
+            {
+              "id": "workspace167",
+              "label": "Workspace",
+              "value": "Separate room"
             }
           ],
           "pictures": [
@@ -772,6 +779,11 @@
               "id": "1",
               "label": "Location",
               "value": "Ten-minute walk to metro"
+            },
+            {
+              "id": "workspace167",
+              "label": "Workspace",
+              "value": "Balcony and work corner"
             }
           ],
           "pictures": [
@@ -789,7 +801,8 @@
         "columns": 3,
         "rows": 1,
         "sourceAspectRatio": 3
-      }
+      },
+      "referenceLabel": "Apartments for Teacher’s housing search"
     }
   }
 }

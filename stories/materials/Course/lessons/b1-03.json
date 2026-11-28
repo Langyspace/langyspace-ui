@@ -287,7 +287,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Explain what happened first",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Use the concert timeline to explain the order of events to Teacher, then share a similar experience",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
@@ -533,7 +533,7 @@
         {
           "id": "0",
           "label": "7:15 pm",
-          "value": "Left home · wristband stayed there"
+          "value": "Left home · wristband stayed there · digital ticket on phone"
         },
         {
           "id": "1",
@@ -563,14 +563,13 @@
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you explain the delay to your friend?",
-          "cue": "Tell the events in order and check the explanation",
-          "hint": "By the time …, … had already … What would you say?",
-          "answer": "One possible response"
+          "prompt": "How would you explain the wristband problem at the help desk?",
+          "cue": "Say what was left at home and what proof remained",
+          "hint": "I’d left my wristband at home, but I still had my ticket on my phone"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Concert timeline"
     }
   }
 }

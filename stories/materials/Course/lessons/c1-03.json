@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Check what the source confirms",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Compare the café notice with the neighbourhood claim. Tell Teacher what you can responsibly pass on",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -603,22 +603,22 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Café notice and neighbourhood claim",
       "facts": [
         {
           "id": "0",
-          "label": "Confirmed",
-          "value": "Dining area renovation · delivery continues"
+          "label": "Café’s own notice",
+          "value": "Dining area closed for renovation · delivery continues"
         },
         {
           "id": "1",
-          "label": "Unsupported claim",
-          "value": "Permanent closure"
+          "label": "Neighbourhood post",
+          "value": "Claims permanent closure · no named business source"
         },
         {
           "id": "2",
-          "label": "Unknown",
-          "value": "Reopening date"
+          "label": "Not stated in the notice",
+          "value": "Reopening date · staffing changes"
         }
       ],
       "questions": [
@@ -645,7 +645,7 @@
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Café notice and neighbourhood claim"
     }
   }
 }

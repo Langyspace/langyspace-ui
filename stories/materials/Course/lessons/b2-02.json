@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Check what will be ready",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You prepare the event pack. Teacher coordinates the volunteers. Discuss what can be ready by Friday",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -580,49 +580,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Event-pack schedule",
       "facts": [
         {
           "id": "0",
-          "label": "Tuesday",
-          "value": "Draft"
+          "label": "Draft and review",
+          "value": "Draft Tuesday · comments expected Wednesday"
         },
         {
           "id": "1",
-          "label": "Wednesday",
-          "value": "Review · comments needed"
+          "label": "Final preparation",
+          "value": "One working day after review comments"
         },
         {
           "id": "2",
-          "label": "Friday 10 am",
-          "value": "Volunteer handover"
+          "label": "Volunteer arrival",
+          "value": "Friday · 10 am · welcome sheet can be prepared separately"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "What will be ready by Friday?",
-          "cue": "Commit only to what the schedule supports",
-          "hint": "By Friday, I’ll have …",
-          "answer": "One possible response"
+          "prompt": "Will the final pack be ready by Friday?",
+          "cue": "Make a promise that depends on the review",
+          "hint": "We’ll have finished it by Friday if the comments arrive on Wednesday"
         },
         {
           "id": "1",
-          "prompt": "What will you be doing when the others arrive?",
-          "cue": "Describe an activity in progress at that future time",
-          "hint": "I’ll be … when …",
-          "answer": "One possible response"
+          "prompt": "What will you be doing when the volunteers arrive?",
+          "cue": "Describe your plan for welcoming them",
+          "hint": "I’ll be welcoming them and explaining what is ready"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you make the commitment clear to the other person?",
-          "cue": "State the promise and its condition, then check the interpretation",
-          "hint": "We can commit to … provided that … Does that match your understanding?",
-          "answer": "One possible response"
+          "prompt": "What if the review comments arrive late?",
+          "cue": "Explain what needs to change before promising the pack",
+          "hint": "We’ll need to review the deadline if the comments arrive late"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Event-pack schedule"
     }
   }
 }

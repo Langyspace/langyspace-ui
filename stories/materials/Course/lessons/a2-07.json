@@ -286,7 +286,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Check the house rules",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You live in this building. Teacher is a new neighbour. Explain the grill, pool and bike rules",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
@@ -566,97 +566,47 @@
       "referenceLabel": "This weekend only"
     },
     "s_personal": {
-      "type": "choices",
-      "title": "Situation reference",
+      "type": "facts",
+      "title": "Rules for your building",
       "questions": [
         {
           "id": "0",
           "prompt": "Do I have to book the grill?",
-          "cue": "Explain the booking rule shown on the building card",
-          "hint": "Yes, you have to … / No, you don’t have to …",
-          "answer": "One possible response"
+          "cue": "Explain where to book it",
+          "hint": "Yes, you have to book it at reception. It’s free"
         },
         {
           "id": "1",
-          "prompt": "Can we have a party after ten?",
-          "cue": "Explain a restriction and suggest an alternative",
-          "hint": "We can’t …, but we can …",
-          "answer": "One possible response"
+          "prompt": "Can I use the pool after eight?",
+          "cue": "Explain the closing rule",
+          "hint": "No, you mustn’t use it after eight"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What do I need to remember?",
-          "cue": "Explain one rule and invite a question",
-          "hint": "You have to … You don’t have to … Is that clear?",
-          "answer": "One possible response"
+          "prompt": "Can I take my bike in the lift?",
+          "cue": "Explain where to leave the bike",
+          "hint": "No, you can’t. You have to leave it in the garage"
         }
       ],
-      "options": [
+      "questionPurpose": "conversation",
+      "referenceLabel": "Rules for your building",
+      "facts": [
         {
-          "id": "grill",
-          "title": "Grill",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Booking",
-              "value": "Required · reception"
-            },
-            {
-              "id": "1",
-              "label": "Chairs",
-              "value": "Six provided"
-            },
-            {
-              "id": "2",
-              "label": "Cost",
-              "value": "Free"
-            }
-          ]
+          "id": "0",
+          "label": "Grill",
+          "value": "Book at reception · free · six chairs provided"
         },
         {
-          "id": "pool",
-          "title": "Pool",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Hours",
-              "value": "10 am–8 pm"
-            },
-            {
-              "id": "1",
-              "label": "After closing",
-              "value": "No entry"
-            },
-            {
-              "id": "2",
-              "label": "Booking",
-              "value": "Not required"
-            }
-          ]
+          "id": "1",
+          "label": "Pool",
+          "value": "10 am–8 pm · no entry after 8 pm"
         },
         {
-          "id": "garage",
-          "title": "Garage",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Bikes",
-              "value": "Keep them here"
-            },
-            {
-              "id": "1",
-              "label": "Lift",
-              "value": "No bikes"
-            },
-            {
-              "id": "2",
-              "label": "Access",
-              "value": "Residents and guests"
-            }
-          ]
+          "id": "2",
+          "label": "Bikes",
+          "value": "Keep them in the garage · no bikes in the lift"
         }
-      ],
-      "questionPurpose": "conversation"
+      ]
     }
   }
 }

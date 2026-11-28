@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Explain an unnecessary cost",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You are the hotel guest. Teacher is at reception. Explain the extra breakfast charge and ask what happens next",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -601,28 +601,25 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "Which payment was unnecessary?",
-          "cue": "Use the receipt and booking conditions to explain",
-          "hint": "We needn’t have paid for … because …",
-          "answer": "One possible response"
+          "prompt": "The receipt shows $20 for breakfast. What seems wrong?",
+          "cue": "Compare the charge with your booking",
+          "hint": "We needn’t have paid for breakfast. It was included in the room"
         },
         {
           "id": "1",
-          "prompt": "What should we do about it now?",
-          "cue": "Suggest a proportionate solution",
-          "hint": "We could ask whether …",
-          "answer": "One possible response"
+          "prompt": "What would you like me to do about that charge?",
+          "cue": "Ask for the extra breakfast payment to be checked",
+          "hint": "Could you check the extra charge and arrange a refund?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check whether the decision is still fair?",
-          "cue": "Compare the reason with a possible exception",
-          "hint": "That seems reasonable unless … Would you make an exception for …?",
-          "answer": "One possible response"
+          "prompt": "The $50 deposit is assessed after the room check. Is that the same issue?",
+          "cue": "Distinguish the deposit from the extra breakfast charge",
+          "hint": "No. The deposit has a separate condition: the room check at checkout"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your booking and receipt"
     }
   }
 }

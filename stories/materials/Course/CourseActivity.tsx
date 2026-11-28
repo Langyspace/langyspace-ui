@@ -323,7 +323,7 @@ export function CourseActivity({
             />
           </Common.Surface>
         ) : null}
-        {pictures && image && facts.length ? (
+        {activity.type !== 'comparison' && pictures && image && facts.length ? (
           <KeyValueList
             tone="material"
             density="compact"

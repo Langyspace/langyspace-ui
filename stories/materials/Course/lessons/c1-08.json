@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Negotiate what you can accept",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You can attend two evenings with seven days’ notice. Teacher is the organiser. Negotiate their proposal",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -595,49 +595,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Teacher’s proposal and your limits",
       "facts": [
         {
           "id": "0",
-          "label": "Proposal",
-          "value": "Four evenings per month · 48 hours’ notice"
+          "label": "Teacher · organiser",
+          "value": "Four evenings a month · at least 48 hours’ notice"
         },
         {
           "id": "1",
-          "label": "Person’s limit",
-          "value": "Two evenings · seven days’ notice"
+          "label": "You · participant",
+          "value": "Can offer two evenings a month · need seven days’ notice"
         },
         {
           "id": "2",
-          "label": "Shared interest",
-          "value": "Useful, regular contact"
+          "label": "Shared aim",
+          "value": "Useful, regular contact · written updates are open for discussion"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "Which part could you accept?",
-          "cue": "Recognise common ground before stating a limit",
-          "hint": "I can see the value of … Even so, …",
-          "answer": "One possible response"
+          "prompt": "Can you join four evenings a month with 48 hours’ notice?",
+          "cue": "Acknowledge the purpose and state both limits",
+          "hint": "I can see the value, but I can offer two evenings with seven days’ notice"
         },
         {
           "id": "1",
-          "prompt": "What alternative would protect both interests?",
-          "cue": "Make a specific counterproposal",
-          "hint": "Much as I’d like to …, I’d suggest … instead",
-          "answer": "One possible response"
+          "prompt": "How would we keep useful contact between those two sessions?",
+          "cue": "Propose an alternative between live sessions",
+          "hint": "We could use written updates between the two live sessions"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you test whether that common ground is genuine?",
-          "cue": "Check a shared aim and surface a remaining difference",
-          "hint": "We seem to agree on … Where we may still differ is … Is that a fair summary?",
-          "answer": "One possible response"
+          "prompt": "So are you agreeing to the original notice period?",
+          "cue": "Clarify the condition before any agreement",
+          "hint": "Not quite. I’d still need seven days’ notice for the live sessions"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Teacher’s proposal and your limits"
     }
   }
 }

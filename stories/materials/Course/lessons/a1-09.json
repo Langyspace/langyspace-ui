@@ -121,7 +121,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Ask about the town",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Teacher is visiting the town. Use the map to explain the route from the hotel to the park",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -706,10 +706,9 @@
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Can you ask me to repeat one direction?",
-          "cue": "Ask me to repeat the part you didn’t hear",
-          "hint": "Sorry, can you say that again?",
-          "answer": "One possible response"
+          "prompt": "Sorry, can you say the route again?",
+          "cue": "Repeat the route to the park clearly",
+          "hint": "Go straight and take the second right. The park is at the end"
         }
       ],
       "questionPurpose": "conversation"

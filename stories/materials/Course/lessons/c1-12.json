@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Consider who may be excluded",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Teacher manages the venue. You represent customers. Discuss digital payment and a usable fallback",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -594,49 +594,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "The venue’s proposal and your concern",
       "facts": [
         {
           "id": "0",
-          "label": "Access",
-          "value": "Who can complete the purchase?"
+          "label": "Teacher · venue manager",
+          "value": "Wants digital-first payments to simplify checkout"
         },
         {
           "id": "1",
-          "label": "Reliability",
-          "value": "What happens during an outage?"
+          "label": "You · customer representative",
+          "value": "Need a usable payment route without a working device or connection"
         },
         {
           "id": "2",
-          "label": "Cost and privacy",
-          "value": "Who pays · what information is required?"
+          "label": "Still to agree",
+          "value": "Fallback route · fees and privacy · how to assess a trial"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "Whose needs might this proposal overlook?",
-          "cue": "Consider a perspective not yet represented",
-          "hint": "One group we haven’t considered is …",
-          "answer": "One possible response"
+          "prompt": "We want digital-first payments. Who might struggle to buy something?",
+          "cue": "Name a customer need the proposal could overlook",
+          "hint": "One group we haven’t considered is people without a usable device"
         },
         {
           "id": "1",
-          "prompt": "What would make your proposal more workable?",
-          "cue": "Add a condition or exception and justify it",
-          "hint": "I’d support …, provided that …",
-          "answer": "One possible response"
+          "prompt": "What fallback would you recommend?",
+          "cue": "Offer an accessible alternative and explain its condition",
+          "hint": "I’d support a trial provided there is another usable way to pay"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you respond to a credible objection?",
-          "cue": "Acknowledge the affected perspective and refine the proposal",
-          "hint": "That’s a fair concern about … We could address it by … Would that be sufficient?",
-          "answer": "One possible response"
+          "prompt": "Wouldn’t a fallback make checkout more complicated?",
+          "cue": "Acknowledge staff workload and propose a clear process",
+          "hint": "That’s a fair concern. A clear fallback procedure could help staff and customers"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "The venue’s proposal and your concern"
     }
   }
 }

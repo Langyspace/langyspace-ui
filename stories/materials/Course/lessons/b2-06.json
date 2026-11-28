@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Arrange a repair",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You need your phone repaired before a trip. Teacher works at the repair shop. Agree on the repair and timing",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -585,7 +585,7 @@
         {
           "id": "0",
           "label": "Result needed",
-          "value": "Working, tested screen"
+          "value": "Phone screen fitted and tested · needed before a trip"
         },
         {
           "id": "1",
@@ -601,28 +601,25 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What do you need to have done?",
-          "cue": "Describe the service and the expected result",
-          "hint": "I need to get …",
-          "answer": "One possible response"
+          "prompt": "What do you need to have done before your trip?",
+          "cue": "Name the service and the finished result",
+          "hint": "I need to get the phone screen repaired and tested"
         },
         {
           "id": "1",
-          "prompt": "Will it be ready in time?",
-          "cue": "Ask about progress and negotiate a deadline",
-          "hint": "Could you confirm when …?",
-          "answer": "One possible response"
+          "prompt": "The estimate is Friday at five. What would you like me to confirm?",
+          "cue": "Ask whether testing will be complete by collection",
+          "hint": "Could you confirm it will be fitted and tested by Friday at five?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What would make your proposal workable for both sides?",
-          "cue": "Offer a condition and invite a counterproposal",
-          "hint": "I could agree to … as long as … What would you need?",
-          "answer": "One possible response"
+          "prompt": "What if testing isn’t finished by then?",
+          "cue": "Discuss a backup without assuming it is available",
+          "hint": "Could I have a temporary phone while you finish testing?"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your phone-repair request"
     }
   }
 }

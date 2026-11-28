@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Separate clues from guesses",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Compare the flat’s clues with Teacher. Suggest explanations without treating a possibility as a fact",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -581,22 +581,22 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "The flat’s recorded clues",
       "facts": [
         {
           "id": "0",
-          "label": "Record",
-          "value": "Spare key used · 5 pm"
+          "label": "Access",
+          "value": "Spare key used at 5 pm · neighbour allowed to water plants"
         },
         {
           "id": "1",
-          "label": "Object",
-          "value": "Receipt · 5:20 pm · owner unknown"
+          "label": "Objects",
+          "value": "Receipt printed at 5:20 pm · owner unknown · plant moved"
         },
         {
-          "id": "movement",
-          "label": "Reported change",
-          "value": "Plant moved from the windowsill"
+          "id": "2",
+          "label": "Current state",
+          "value": "Window closed · no forced entry confirmed"
         }
       ],
       "questions": [
@@ -624,7 +624,7 @@
       ],
       "questionPurpose": "conversation",
       "image": "b2-04-flat-evidence123",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "The flat’s recorded clues"
     }
   }
 }

@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Brief the next person",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Choose a recipient. Brief Teacher as that person: explain the decision, uncertainty and next action",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -659,24 +659,21 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What does this person need to know first?",
-          "cue": "Prioritise the information for the stated audience",
-          "hint": "The key point is … because they need to decide …",
-          "answer": "One possible response"
+          "prompt": "Why isn’t the original event going ahead?",
+          "cue": "Lead with the decision and its budget reason",
+          "hint": "The key point is that the original quote exceeds our budget"
         },
         {
           "id": "1",
-          "prompt": "What can you leave out without changing the meaning?",
-          "cue": "Remove a detail while preserving the decision and its reason",
-          "hint": "We can leave out …, but we need to keep …",
-          "answer": "One possible response"
+          "prompt": "Is the cheaper supplier already booked?",
+          "cue": "Distinguish an estimate from a confirmed booking",
+          "hint": "No. The estimate is lower, but the supplier’s date isn’t confirmed"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check that the recipient knows what to do next?",
-          "cue": "State the action and check whether the briefing is sufficient",
-          "hint": "The immediate decision is … Is there anything you’d need clarified before proceeding?",
-          "answer": "One possible response"
+          "prompt": "What do you need me to do once the date is confirmed?",
+          "cue": "Use the requested action on the selected recipient’s card",
+          "hint": "Once the supplier confirms the date, could you …?"
         }
       ],
       "options": [
@@ -686,18 +683,18 @@
           "facts": [
             {
               "id": "0",
-              "label": "Needs first",
-              "value": "Budget effect"
+              "label": "Why postponed",
+              "value": "Original $5,400 quote exceeds the $5,000 limit"
             },
             {
               "id": "1",
-              "label": "Known",
-              "value": "Limit $5,000 · initial quote $5,400"
+              "label": "Alternative",
+              "value": "$4,800 estimate · supplier date unconfirmed"
             },
             {
               "id": "2",
-              "label": "Next action",
-              "value": "Review lower quote after date confirmation"
+              "label": "Your requested action",
+              "value": "Review the spend after the date is confirmed"
             }
           ]
         },
@@ -707,18 +704,18 @@
           "facts": [
             {
               "id": "0",
-              "label": "Needs first",
-              "value": "Date and availability"
+              "label": "Why postponed",
+              "value": "Original $5,400 quote exceeds the $5,000 limit"
             },
             {
               "id": "1",
-              "label": "Known",
-              "value": "Supplier date pending"
+              "label": "Alternative",
+              "value": "$4,800 estimate · supplier date unconfirmed"
             },
             {
               "id": "2",
-              "label": "Next action",
-              "value": "Wait, then ask who is available"
+              "label": "Your requested action",
+              "value": "Ask for availability only after the date is confirmed"
             }
           ]
         }

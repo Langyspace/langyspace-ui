@@ -287,7 +287,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Pass on a message",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Pass the repair worker’s message to Teacher, your housemate. Check the appointment and spare-key request",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
@@ -541,28 +541,25 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "What did he ask us to do?",
-          "cue": "Pass on the request accurately",
-          "hint": "He asked us to …",
-          "answer": "One possible response"
+          "prompt": "What did the repair worker ask us to do?",
+          "cue": "Pass on the spare-key request",
+          "hint": "He asked us to leave a spare key at reception"
         },
         {
           "id": "1",
           "prompt": "Did he say Thursday or Friday?",
-          "cue": "Check the message and correct the misunderstanding",
-          "hint": "He said …, not …",
-          "answer": "One possible response"
+          "cue": "Confirm the day and time",
+          "hint": "He said Thursday at ten, not Friday"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check that I understood?",
-          "cue": "Report the key request and ask for confirmation",
-          "hint": "You said … Did I understand correctly?",
-          "answer": "One possible response"
+          "prompt": "So the repair will definitely take an hour?",
+          "cue": "Correct the estimate without promising a result",
+          "hint": "He said about an hour, but he needs to see the tap first"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "The repair worker’s message"
     }
   }
 }

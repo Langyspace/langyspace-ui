@@ -346,7 +346,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Define the policy’s purpose",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Use the three school-phone situations to discuss a rule with Teacher, including a practical exception",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -625,8 +625,8 @@
       "questionPurpose": "response"
     },
     "s_personal": {
-      "type": "choices",
-      "title": "Situation reference",
+      "type": "facts",
+      "title": "Three uses of a phone at school",
       "questions": [
         {
           "id": "0",
@@ -650,72 +650,25 @@
           "answer": "One possible response"
         }
       ],
-      "options": [
+      "questionPurpose": "conversation",
+      "referenceLabel": "Three uses of a phone at school",
+      "facts": [
         {
-          "id": "social",
-          "title": "Social notifications",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Purpose",
-              "value": "Social contact"
-            },
-            {
-              "id": "1",
-              "label": "Classroom effect",
-              "value": "Interruptions in this case"
-            },
-            {
-              "id": "2",
-              "label": "Policy question",
-              "value": "What restriction addresses it?"
-            }
-          ]
+          "id": "0",
+          "label": "Social notifications",
+          "value": "Interrupt lessons in this fictional case"
         },
         {
-          "id": "access",
-          "title": "Accessibility use",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Purpose",
-              "value": "Reading or communication support"
-            },
-            {
-              "id": "1",
-              "label": "Need",
-              "value": "Reliable, private approval"
-            },
-            {
-              "id": "2",
-              "label": "Policy question",
-              "value": "How can participation continue?"
-            }
-          ]
+          "id": "1",
+          "label": "Accessibility tool",
+          "value": "Reading or communication support · private approval"
         },
         {
-          "id": "urgent",
-          "title": "Urgent contact",
-          "facts": [
-            {
-              "id": "0",
-              "label": "Purpose",
-              "value": "Family emergency"
-            },
-            {
-              "id": "1",
-              "label": "Need",
-              "value": "Fast contact route"
-            },
-            {
-              "id": "2",
-              "label": "Policy question",
-              "value": "What works when urgent?"
-            }
-          ]
+          "id": "2",
+          "label": "Family emergency",
+          "value": "Needs a fast contact route"
         }
-      ],
-      "questionPurpose": "conversation"
+      ]
     }
   }
 }

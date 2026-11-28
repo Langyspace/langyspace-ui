@@ -373,7 +373,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Raise a difficult issue",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "You need quiet to work. Teacher needs late family calls. Discuss an arrangement that respects both needs",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -607,49 +607,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Your needs and Teacher’s needs",
       "facts": [
         {
           "id": "0",
-          "label": "Person A",
-          "value": "Predictable quiet for evening home work"
+          "label": "You · working at home",
+          "value": "Need predictable quiet for focused evening work"
         },
         {
           "id": "1",
-          "label": "Person B",
-          "value": "Family calls across time zones"
+          "label": "Teacher · family calls",
+          "value": "Calls across time zones · earlier calls not always possible"
         },
         {
           "id": "2",
-          "label": "Possible adjustment",
-          "value": "Smaller room · headphones · an exception process"
+          "label": "Options to discuss",
+          "value": "Smaller room · headphones · urgent-call exceptions"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "How would you bring this up without making it personal?",
-          "cue": "Describe the impact and make a specific request",
-          "hint": "I’ve been finding … difficult. Would you mind …?",
-          "answer": "One possible response"
+          "prompt": "Are my late calls making it difficult for you to work?",
+          "cue": "Explain the impact and request a quiet period",
+          "hint": "I’ve been finding it hard to concentrate. Could we agree on a quiet period?"
         },
         {
           "id": "1",
-          "prompt": "What could you offer in return?",
-          "cue": "Acknowledge the other person’s need and suggest a compromise",
-          "hint": "I understand … Perhaps we could …",
-          "answer": "One possible response"
+          "prompt": "Those calls are how I stay in touch with my family",
+          "cue": "Acknowledge the need and suggest another place",
+          "hint": "I understand why they matter. Perhaps the smaller room could work"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check whether your offer meets their concern?",
-          "cue": "Invite their perspective and negotiate one concrete adjustment",
-          "hint": "Would that address your concern about …, or is there something I’ve missed?",
-          "answer": "One possible response"
+          "prompt": "What if there’s an urgent family call?",
+          "cue": "Suggest an exception without abandoning the quiet period",
+          "hint": "We could make an exception if we let each other know first"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Your needs and Teacher’s needs"
     }
   }
 }

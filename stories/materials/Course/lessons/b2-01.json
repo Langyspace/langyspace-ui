@@ -377,7 +377,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Reconstruct the evening",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Use Ana’s timeline to explain to Teacher why she arrived late for dinner and how she got there",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -695,22 +695,22 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Ana’s evening",
       "facts": [
         {
           "id": "0",
-          "label": "4 pm",
-          "value": "Phone died · charger at hotel"
+          "label": "Before 4 pm",
+          "value": "Using her phone as a map · battery died at 4 · charger at hotel"
         },
         {
           "id": "1",
-          "label": "Before the dinner",
-          "value": "Got lost · café had no free outlets"
+          "label": "Dinner planned for 7 pm",
+          "value": "Got lost · café had no free outlets · waited twenty minutes"
         },
         {
           "id": "2",
-          "label": "Turning point and result",
-          "value": "After 20 minutes, borrowed power bank · taxi · arrived 8 pm"
+          "label": "Help and arrival",
+          "value": "A woman lent a power bank · Ana took a taxi · arrived at 8 pm"
         }
       ],
       "questions": [
@@ -734,7 +734,7 @@
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Ana’s evening"
     }
   },
   "notesStorageKey": "langy-notes:b2-01"

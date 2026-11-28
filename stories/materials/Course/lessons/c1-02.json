@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Judge what was foreseeable",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "instruction": "Review the event log and guest report with Teacher. Separate what is known from what still needs checking",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
@@ -594,49 +594,46 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Event log and guest report",
       "facts": [
         {
           "id": "0",
-          "label": "Known outcomes",
-          "value": "No sound test · 12-minute late start"
+          "label": "Event log",
+          "value": "No sound test before admission · started twelve minutes late"
         },
         {
           "id": "1",
-          "label": "Open causal question",
-          "value": "Scheduling, communication or both?"
+          "label": "Not established",
+          "value": "Who knew the test was incomplete, or when they knew"
         },
         {
           "id": "2",
-          "label": "Prevention to discuss",
-          "value": "A checkpoint with a decision owner"
+          "label": "Guest report",
+          "value": "Volunteers gave conflicting updates about the delay"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "What could reasonably have been anticipated?",
-          "cue": "Distinguish an available warning from hindsight",
-          "hint": "Had we known …, we could have …",
-          "answer": "One possible response"
+          "prompt": "Can we say the team ignored a warning?",
+          "cue": "Separate the known delay from missing evidence",
+          "hint": "We know the test was incomplete, but not who knew or when"
         },
         {
           "id": "1",
-          "prompt": "What would you change next time?",
-          "cue": "Propose a prevention linked to the actual cause",
-          "hint": "If we do this again, I’d …",
-          "answer": "One possible response"
+          "prompt": "What would you check before changing the opening procedure?",
+          "cue": "Link prevention to evidence rather than assume a cause",
+          "hint": "I’d check the warning record and who could decide to delay admission"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you communicate that change without overstating the lesson?",
-          "cue": "Separate reasonable prevention from hindsight and invite a challenge",
-          "hint": "With what we knew then, … In future, … Would you draw the same conclusion?",
-          "answer": "One possible response"
+          "prompt": "How would you explain a new checkpoint without blaming someone?",
+          "cue": "Recommend a process while preserving the uncertainty",
+          "hint": "A named decision-maker could help, though we haven’t established the cause"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Event log and guest report"
     }
   }
 }
