@@ -4,7 +4,7 @@
   "key": "b1-11",
   "title": "The woman who’s dancing with Leo",
   "goal": "Identify someone clearly and make an introduction using known facts",
-  "freeConversationInstruction": "Talk about people you know, explain who they are and ask about people in your teacher’s life",
+  "freeConversationInstruction": "Who would you like me to meet? Describe someone real or invented and tell me how I’d recognise them at a party",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -299,7 +299,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Describe someone to meet",
-      "instruction": "You and Teacher are at a party. Choose a person’s card, describe them and suggest a question to ask",
+      "instruction": "At a party, help your teacher find someone to meet and start a conversation",
       "minutes": 3,
       "eyebrow": "Discuss the situation"
     },
@@ -613,22 +613,22 @@
         {
           "id": "0",
           "prompt": "Which person would you like to meet?",
-          "cue": "Identify the person using a visible action or detail",
-          "hint": "The person who’s …",
+          "cue": "Choose a card. Help me find the person using a detail I can see",
+          "hint": "Let’s meet Alex. He’s the one in the green shirt by the drinks table",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "How would you introduce them?",
-          "cue": "Use only the facts given on the person’s card",
-          "hint": "This is …, who …",
+          "prompt": "What could you tell me about them?",
+          "cue": "Use the role or action on the card you chose",
+          "hint": "This is Alex, the host who’s welcoming people by the drinks table",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What would you ask them when you meet?",
-          "cue": "Identify the person, then form a genuine question",
-          "hint": "I’d ask the person who …, “...?” What would you ask?",
+          "prompt": "How could we start a conversation with them?",
+          "cue": "Ask a question about the party. Listen to my idea and choose an opening",
+          "hint": "Alex, how do you know everyone here? What would you ask him?",
           "answer": "One possible response"
         }
       ],

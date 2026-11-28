@@ -4,7 +4,7 @@
   "key": "a2-10",
   "title": "It’s too far",
   "goal": "Compare places using your needs and explain a trade-off",
-  "freeConversationInstruction": "Compare places, talk about what matters to you and explain choices without a fixed answer",
+  "freeConversationInstruction": "Would you rather live near shops or near a park? Compare your reasons and suggest a place for each other",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -17,15 +17,15 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What matters to you when choosing a place?",
+          "prompt": "What matters to you when choosing a place to stay?",
           "hint": "I need … I’d like …",
           "cue": "Give a priority for a place"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "What experience of a place could you share?",
-          "hint": "I’ve stayed in … It was …",
-          "cue": "Share an experience"
+          "prompt": "Have you ever stayed somewhere like that?",
+          "hint": "Yes, I stayed in … / Not yet. I’d like to stay near …",
+          "cue": "Describe a stay or say what you’d like to try"
         },
         {
           "id": "s1.q98.3",

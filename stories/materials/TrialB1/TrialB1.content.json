@@ -186,7 +186,7 @@
       }
     ]
   },
-  "freeConversationInstruction": "Talk freely with your teacher in English about trips, days out and changes of plan",
+  "freeConversationInstruction": "Where would you go for a day out? Compare ideas or tell each other about a trip that didn’t go to plan",
   "introduction": {
     "title": "Introduce yourself",
     "instruction": "Get to know your teacher. Share a little about yourself and ask back",
@@ -201,10 +201,10 @@
       },
       {
         "id": "interests",
-        "question": "What do you enjoy doing in your free time?",
-        "cue": "Talk about one interest and ask your teacher what she enjoys",
-        "hint": "Try “I enjoy…” or “I’m really into…”. React to your teacher’s answer and ask a follow-up",
-        "model": "I’m really into … at the moment. How about you — what do you enjoy doing?"
+        "question": "If I visited your area for an afternoon, what would you like to do together?",
+        "cue": "Suggest something you enjoy and find out if your teacher would enjoy it too",
+        "hint": "A walk, a café or a game? Start with an activity you like",
+        "model": "I love walking. There’s a park near my house. Would you like to go there?"
       },
       {
         "id": "english-goal",

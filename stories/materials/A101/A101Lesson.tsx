@@ -90,7 +90,7 @@ export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
           <CountryFeelingRoleplay challenge active={active} />
         ),
       }}
-      freeConversationInstruction="Get to know each other: introduce yourself"
+      freeConversationInstruction="What’s your name? Say hello to each other and talk about where you’re from and how you feel today"
     />
   )
 }

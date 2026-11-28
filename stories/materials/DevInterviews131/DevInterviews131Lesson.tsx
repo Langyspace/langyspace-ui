@@ -227,7 +227,7 @@ export function DevInterviews131Lesson({
         <SlidePage
           eyebrow="Your reply"
           title="Confirm your interview"
-          instruction="Your teacher is Kim. Confirm or change the time, clarify one detail and ask about the team"
+          instruction="Your teacher is Priya. Reply to her invitation and agree on what you’ll show her during the interview"
         >
           <InterviewOralPractice group="transfer" />
         </SlidePage>
@@ -248,7 +248,7 @@ export function DevInterviews131Lesson({
       id: 'free-conversation',
       label: exerciseHeadings.freeConversation,
       content: (
-        <FreeConversationPage instruction="Talk about your projects, job interviews and working abroad. Ask each other questions, explore different approaches and follow each other’s ideas" />
+        <FreeConversationPage instruction="Which project would you mention in an interview? It could be from work, a class or home. Follow up on a decision that interests you" />
       ),
     },
     {

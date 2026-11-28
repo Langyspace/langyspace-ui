@@ -4,7 +4,7 @@
   "key": "a2-04",
   "title": "Are you doing anything on Saturday?",
   "goal": "Invite someone, explain a conflict and find another time",
-  "freeConversationInstruction": "Talk about upcoming plans and make invitations, giving reasons and suggesting alternatives",
+  "freeConversationInstruction": "Are you free this weekend? Invite each other to do something and find a time that works",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -286,7 +286,7 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Make plans together",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Invite each other to the food festival. Agree on a day, time and meeting place",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -299,9 +299,9 @@
         },
         {
           "id": "1",
-          "prompt": "Would you like to go together?",
-          "cue": "Accept or suggest another day",
-          "hint": "I’d love to, but … How about …?",
+          "prompt": "Would you like to go to the food festival together?",
+          "cue": "Accept or offer another day",
+          "hint": "I’d love to / I can’t on Saturday. How about Sunday?",
           "answer": "One possible response"
         },
         {

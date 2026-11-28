@@ -4,14 +4,14 @@
   "key": "a2-08",
   "title": "Have you ever been to Lisbon?",
   "goal": "Ask about an experience and choose a follow-up that fits the answer",
-  "freeConversationInstruction": "Talk about experiences, ask for details and recommend something based on what your teacher tells you",
+  "freeConversationInstruction": "Is there a place you’d love to visit? Share what you’ve already tried or what you’d like to do there",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Describe one finished travel experience",
+      "instruction": "Think of one place you know. Tell me its rules",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
@@ -286,29 +286,29 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Talk about yourself",
-      "instruction": "Compare travel experiences. Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Choose an activity you’ve tried or would like to try, on a trip or near home",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
-          "prompt": "Have you ever tried something new on a trip?",
-          "cue": "Share an experience or something you would like to try",
-          "hint": "Yes, I’ve … / No, but I’d like to …",
+          "prompt": "Have you ever taken a tram or visited a castle?",
+          "cue": "Choose one. Say if you’ve tried it",
+          "hint": "Yes, I’ve taken a tram / No, I haven’t visited a castle",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "Which activity would you recommend to me?",
-          "cue": "Choose an activity and explain why",
-          "hint": "You should … because …",
+          "prompt": "What did you like, or what would you like to do there?",
+          "cue": "Give a detail from your visit or imagine one",
+          "hint": "I liked the view / I’d like to take photos",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "Would you try it again?",
-          "cue": "Explain your choice, then ask about my experiences",
-          "hint": "I’d … again because … Have you ever …?",
+          "prompt": "What would you like to know about my trips?",
+          "cue": "Ask if I’ve tried an activity you chose",
+          "hint": "Have you ever taken a tram?",
           "answer": "One possible response"
         }
       ],

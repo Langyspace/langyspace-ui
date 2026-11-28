@@ -4,7 +4,7 @@
   "key": "b1-01",
   "title": "What have you been doing?",
   "goal": "Catch up on recent activities and distinguish progress from completed results",
-  "freeConversationInstruction": "Catch up on your lives, explain what has kept you busy and ask genuine follow-up questions",
+  "freeConversationInstruction": "What’s been keeping you busy lately? Catch up on something you’re still doing or have just finished",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -352,28 +352,28 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Talk about yourself",
-      "instruction": "Talk about your week. Compare your week with Ana’s, then ask your teacher about theirs",
+      "title": "Catch up on your week",
+      "instruction": "Compare your week with your teacher’s. Ask about something they have been doing",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "What have you been busy with this week?",
-          "cue": "Share an activity you have been working on, then ask me",
-          "hint": "I’ve been … this week. How about you?"
+          "cue": "Tell me about work, study or something you do at home, then ask me",
+          "hint": "I’ve been cooking more this week. What have you been doing?"
         },
         {
           "id": "1",
-          "prompt": "What have you finished, and what are you still working on?",
-          "cue": "Describe one result and something that is still in progress",
-          "hint": "I’ve finished …, but I’m still working on …"
+          "prompt": "Have you finished anything, or are you still working on it?",
+          "cue": "Give me one result or tell me what you still need to do",
+          "hint": "I haven’t finished my book yet. I’ve still got two chapters to read"
         },
         {
           "id": "recent.questions.3",
-          "prompt": "Have you had enough time for yourself lately?",
-          "cue": "Tell me how you take a break, then ask about my week",
-          "hint": "I’ve been quite busy, but I’ve made time for … What about you?"
+          "prompt": "Have you had the kind of week you wanted?",
+          "cue": "Say what you would keep or change. Ask about one thing I mentioned",
+          "hint": "I’d like more time to read. How did you find time for your hobby?"
         }
       ],
       "questionPurpose": "conversation"

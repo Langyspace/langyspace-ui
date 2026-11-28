@@ -47,7 +47,7 @@ export function A104Lesson({ initialPageId, learnerName }: A104LessonProps) {
       initialPageId={initialPageId}
       learnerName={learnerName}
       activities={{ s11: <AvailabilityActivity /> }}
-      freeConversationInstruction="Compare your routines, talk about your free time and arrange something you would both enjoy doing"
+      freeConversationInstruction="What do you do after breakfast? Compare your days and find a time to do something together"
     />
   )
 }

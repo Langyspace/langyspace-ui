@@ -69,22 +69,30 @@ afterEach(() => {
 })
 
 it('splits TrialA1 into model, visible rehearsal and open conversation pages', () => {
+  vi.stubGlobal(
+    'ResizeObserver',
+    class {
+      observe() {}
+      disconnect() {}
+    },
+  )
   const view = render(<TrialA1Lesson initialPageId="s3" />)
   expect(
     Array.from(view.container.querySelectorAll('[data-slide-id]')).map((page) =>
       page.getAttribute('data-slide-id'),
     ),
   ).toEqual([
+    'cover',
     's1',
     's2',
     's3',
     's3-rehearse',
     's3-independent',
-    's41',
-    's42',
-    's43',
+    's4',
     's5',
-    's6',
+    's_video_comedy',
+    'free-conversation',
+    'next-steps',
   ])
   const model = within(
     view.container.querySelector<HTMLElement>('[data-slide-id="s3"]')!,
@@ -98,7 +106,7 @@ it('splits TrialA1 into model, visible rehearsal and open conversation pages', (
     view.container.querySelector<HTMLElement>('[data-slide-id="s3-rehearse"]')!,
   )
   expect(
-    rehearsal.getByText('Talk about what you like', { exact: true }),
+    rehearsal.getByText('Practise the conversation', { exact: true }),
   ).toBeInTheDocument()
   expect(
     rehearsal.getByText('Do you like soccer?', { exact: true }),
@@ -108,7 +116,9 @@ it('splits TrialA1 into model, visible rehearsal and open conversation pages', (
       '[data-slide-id="s3-independent"]',
     )!,
   )
-  expect(open.getByText('Do you like …?', { exact: true })).toBeInTheDocument()
+  expect(
+    open.getByText('Do you like movies?', { exact: true }),
+  ).toBeInTheDocument()
 })
 
 it('composes the seven A1 targets with vocabulary-only callouts and explicit new-label playback', () => {

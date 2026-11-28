@@ -4,34 +4,34 @@
   "key": "a2-11",
   "title": "If it rains, we’ll…",
   "goal": "Agree on a realistic backup plan for a day out",
-  "freeConversationInstruction": "Discuss upcoming plans, possible problems and useful alternatives together",
+  "freeConversationInstruction": "What shall we do if it rains this weekend? Plan something you’d enjoy in either kind of weather",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall a choice between two places",
+      "instruction": "Pick a hotel for our trip and explain your choice",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "Which place would you prefer for a short trip?",
-          "hint": "I’d choose …",
-          "cue": "Choose a place for a trip"
+          "prompt": "For our trip, would you prefer a hotel near the centre or one by the beach?",
+          "hint": "I’d choose the one by the beach",
+          "cue": "Choose one of the two hotels"
         },
         {
           "id": "s1.q98.2",
           "prompt": "What makes it a better option for you?",
-          "hint": "It’s … than …",
-          "cue": "Explain your preference"
+          "hint": "It’s quieter / The other one is closer to the shops",
+          "cue": "Compare them using one detail"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "What would be too far or not comfortable enough?",
-          "hint": "… would be too … / not … enough",
-          "cue": "Describe an unacceptable trade-off"
+          "prompt": "What would make a hotel a bad choice for you?",
+          "hint": "It’s too far from the centre / The rooms aren’t big enough",
+          "cue": "Give one reason you’d choose another hotel"
         }
       ],
       "questionPurpose": "conversation"
@@ -284,7 +284,7 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Make a backup plan",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "We’re taking the bus to go hiking. Make a plan in case the weather or transport changes",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [

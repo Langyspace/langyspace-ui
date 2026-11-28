@@ -4,34 +4,34 @@
   "key": "c1-02",
   "title": "Had we known…",
   "goal": "Review an outcome without confusing hindsight, warnings and established causes",
-  "freeConversationInstruction": "Reflect on outcomes, discuss what was foreseeable and challenge each other’s explanations respectfully",
+  "freeConversationInstruction": "A project finished late. What would count as an early warning for you? Discuss what was knowable at the time and what only seems obvious now",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Recall a past decision with a present consequence",
+      "instruction": "Discuss a missed meeting with your teacher. Work out what you know and what you would need to check",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "How would you separate a fact from a counterfactual?",
-          "hint": "The record confirms …; had …, we might have …",
-          "cue": "Separate fact and alternative"
+          "prompt": "The room changed, and two guests missed the meeting. Does that tell us why?",
+          "hint": "We know two guests missed it. Had they gone to the old room, that might explain why",
+          "cue": "State the confirmed facts and suggest one possible explanation"
         },
         {
           "id": "s1.q98.2",
-          "prompt": "Whose knowledge would matter in that counterfactual?",
-          "hint": "The relevant person would be … because …",
-          "cue": "Identify whose knowledge matters"
+          "prompt": "I emailed the new room number. Would that settle it for you?",
+          "hint": "I’d want to know when they saw the email. Sending it doesn’t tell us that",
+          "cue": "Distinguish sending the email from the guests seeing it in time"
         },
         {
           "id": "s1.q98.3",
-          "prompt": "What evidence would you need before assigning responsibility?",
-          "hint": "I’d need to establish whether …",
-          "cue": "Specify the evidence needed"
+          "prompt": "What should I check before asking someone to take responsibility?",
+          "hint": "Could we ask the guests what directions they received before we draw conclusions?",
+          "cue": "Suggest a fair next step and explain how it would help"
         }
       ],
       "questionPurpose": "conversation"

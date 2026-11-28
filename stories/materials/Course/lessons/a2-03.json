@@ -4,7 +4,7 @@
   "key": "a2-03",
   "title": "Sorry I’m late!",
   "goal": "Explain an interruption and apologise for a delay",
-  "freeConversationInstruction": "Talk about unexpected moments and ask what the other person was doing when something happened",
+  "freeConversationInstruction": "What could make you late for class? Tell each other a real or invented story about what happened",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -274,29 +274,29 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Describe what happened",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Imagine you’re late to meet me. It started raining on the way",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "What were you doing when it started to rain?",
-          "cue": "Describe the action in progress",
-          "hint": "I was … when …",
+          "cue": "Say what you were doing when the rain started",
+          "hint": "I was walking to the bus stop when it started to rain",
           "answer": "One possible response"
         },
         {
           "id": "1",
           "prompt": "Why were you late?",
-          "cue": "Explain the sequence and apologise",
-          "hint": "Sorry I’m late. I was … when …",
+          "cue": "Apologise and explain the delay",
+          "hint": "Sorry I’m late. I missed the bus",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
           "prompt": "What happened next?",
-          "cue": "Finish the story, then ask about a similar experience",
-          "hint": "After that, I … Did you have a similar experience?",
+          "cue": "Finish your story and ask about my trip here",
+          "hint": "I took the next bus. How did you get here?",
           "answer": "One possible response"
         }
       ],

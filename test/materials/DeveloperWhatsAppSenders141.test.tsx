@@ -1,3 +1,4 @@
+import { within } from '@testing-library/react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { expect, it } from 'vitest'
 import { DevStudy131Lesson } from '../../stories/materials/DevStudy131/DevStudy131Lesson'
@@ -24,4 +25,31 @@ it('keeps the manager Kim while Priya owns the technical preparation messages', 
   expect(text).toContain('Priya’s next voice note')
   expect(text).toContain('Listen to Priya’s second note')
   expect(text).toContain('Answer Kim one part at a time')
+})
+
+it('lets the learner start all three exchanges with Priya after her voice notes', () => {
+  const element = document.createElement('div')
+  element.innerHTML = renderToStaticMarkup(<DevInterviews131Lesson />)
+  const reply = element.querySelector<HTMLElement>('[data-slide-id="reply"]')!
+  expect(reply).toHaveTextContent('Your teacher is Priya')
+  const dialogue = reply.querySelector('[class*="lsui-sc-learning-dialogue"]')!
+  const expected = [
+    ['You', 'Name a project you could bring'],
+    ['Teacher', 'Who did you build the project for?'],
+    ['You', 'who the project helps'],
+    ['Teacher', 'see your part in action'],
+    ['You', 'Offer a quick demo'],
+    ['Teacher', 'I’ll send you feedback by Friday'],
+  ] as const
+  const bubbles = dialogue.querySelectorAll<HTMLElement>(
+    ':scope > :not([role="group"])',
+  )
+  expect(bubbles).toHaveLength(expected.length)
+  expected.forEach(([speaker, line], index) => {
+    const bubble = bubbles[index]!
+    expect(bubble).toContainElement(
+      within(bubble).getByText(speaker, { exact: true }),
+    )
+    expect(bubble).toHaveTextContent(line)
+  })
 })

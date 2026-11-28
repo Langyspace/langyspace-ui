@@ -91,7 +91,7 @@ export function TrialA1Lesson({
                       title={title}
                       instruction={
                         independent
-                          ? 'Choose a topic. Ask your teacher, answer and ask back'
+                          ? 'Ask about movies, pets or something else you like. The eye shows an example conversation'
                           : 'Talk about what you like. Answer your teacher, then ask back'
                       }
                     >
@@ -150,7 +150,7 @@ export function TrialA1Lesson({
                   id,
                   label: exerciseHeadings.freeConversation,
                   content: (
-                    <FreeConversationPage instruction="Talk freely about people you know and things you like. Ask each other questions and share more about yourselves" />
+                    <FreeConversationPage instruction="What do you like doing after class? Find something you both enjoy or tell each other about different favourites" />
                   ),
                 }
               if (id === 'next-steps')

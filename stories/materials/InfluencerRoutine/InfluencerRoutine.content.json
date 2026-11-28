@@ -571,32 +571,32 @@
   },
   "reply": {
     "title": "Respond to the message",
-    "instruction": "Reply aloud: share one similarity, one difference and one question",
+    "instruction": "Your teacher is Kim. Compare your evenings and tell her what helps you relax. The lightbulb shows example replies",
     "prompts": [
       {
         "id": "reply.1",
         "speaker": "Kim",
-        "question": "What do our routines have in common?",
-        "cue": "Describe one thing you both do",
-        "hint": "I also… / We both…"
+        "question": "I leave my phone on my desk before bed. Where do you leave yours?",
+        "cue": "Compare your habits and ask why Kim leaves hers there",
+        "hint": "I keep mine by my bed. Why do you leave yours on the desk?"
       },
       {
         "id": "reply.2",
         "speaker": "Kim",
-        "question": "What is different about your day?",
-        "cue": "Explain one difference",
-        "hint": "But I usually… / I don’t…"
+        "question": "I sleep better that way. What helps you relax at night?",
+        "cue": "Share something that works for you. Ask what Kim does after dinner",
+        "hint": "Reading helps me relax. What do you usually do after dinner?"
       },
       {
         "id": "reply.3",
         "speaker": "Kim",
-        "question": "What would you like to ask me?",
-        "cue": "Ask your bestie a question about her routine",
-        "hint": "Do you…? / How often do you…?"
+        "question": "After dinner, I reply to messages and do my skincare. What about you?",
+        "cue": "Tell Kim one thing you do the same way or differently, then say goodnight",
+        "hint": "I do my skincare after dinner too. Then I read for a bit. Goodnight, Kim!"
       }
     ]
   },
-  "freeConversationInstruction": "Have a longer conversation about your morning, getting ready, exercise and evenings. Share what works for you and one habit you’d like to change",
+  "freeConversationInstruction": "What part of your day do you most look forward to? Compare your routines, from getting ready in the morning to winding down at night",
   "homework": {
     "title": "Class complete — your homework",
     "instruction": "Review the flashcards, repeat the shadowing phrases and send your teacher a 45–60 second voice note about your routine",

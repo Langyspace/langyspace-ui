@@ -4,7 +4,7 @@
   "key": "c1-12",
   "title": "A world without cash",
   "goal": "Synthesize two perspectives and recommend a workable policy with conditions",
-  "freeConversationInstruction": "Explore the issue freely, challenge assumptions and work towards a nuanced view without reading a script",
+  "freeConversationInstruction": "What would happen in your neighbourhood if shops stopped taking cash tomorrow? Explore who would benefit, who might struggle and what could work for both",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -636,14 +636,14 @@
         {
           "id": "1",
           "prompt": "What fallback would you recommend?",
-          "cue": "Offer an accessible alternative and explain its condition",
-          "hint": "I’d support a trial provided there is another usable way to pay"
+          "cue": "Name a payment route someone could actually use without a working device",
+          "hint": "I’d keep one till that takes cash. How would customers find it before they queue?"
         },
         {
           "id": "personal.follow-up94",
           "prompt": "Wouldn’t a fallback make checkout more complicated?",
-          "cue": "Acknowledge staff workload and propose a clear process",
-          "hint": "That’s a fair concern. A clear fallback procedure could help staff and customers"
+          "cue": "Respond to the workload concern and agree how to test your proposal",
+          "hint": "Could we signpost that till and track the queues for a week? Then we can hear from staff as well as customers"
         }
       ],
       "questionPurpose": "conversation",

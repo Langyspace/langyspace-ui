@@ -10,6 +10,8 @@ Na trilha dev, nomear o produto e o trabalho de cada pessoa antes de pedir uma a
 
 A aluna acompanha a tela compartilhada da professora. Durante a aula, ela fala, escuta, explica, pede ações e negocia. A professora opera os exemplos visuais; não planejar uma tarefa que dependa de a aluna digitar no computador compartilhado.
 
+Antes de aprovar o roteiro, [ensaie a conversa com duas respostas diferentes](content-planning-guidelines.md#revisar-a-conversa-com-a-tela-compartilhada), incluindo uma negativa. Confira se a professora consegue continuar a partir do que vê naquela página.
+
 ## 2. Escrever um plano que dê para imaginar
 
 Planejar página por página, com o texto exato e a interação, antes de gerar mídia. Usar este formato curto:

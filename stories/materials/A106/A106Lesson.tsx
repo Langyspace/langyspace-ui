@@ -47,7 +47,7 @@ export function A106Lesson({ initialPageId, learnerName }: A106LessonProps) {
       initialPageId={initialPageId}
       learnerName={learnerName}
       activities={{ s12: <FindMia /> }}
-      freeConversationInstruction="Talk about pets and homes, ask about an animal your teacher knows and describe places. Real pets, imaginary pets and the example pictures all work"
+      freeConversationInstruction="Do you have a favourite animal? Talk about a pet you know or imagine one and describe where it lives"
     />
   )
 }

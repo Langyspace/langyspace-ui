@@ -36,23 +36,24 @@ export function InterviewOralPractice({
       }
       lines={turns.flatMap((turn, index) => {
         const level = Math.min(2, Math.max(0, step - index * 2))
-        return [
-          {
-            id: turn.id + '.teacher',
-            speaker: teacher.name,
-            avatarUrl: teacher.avatarUrl,
-            side: 'start' as const,
-            content: turn.question,
-          },
-          {
-            id: turn.id + '.learner',
-            speaker: 'You',
-            participant: 'learner' as const,
-            side: 'end' as const,
-            content:
-              level === 2 ? turn.example : level === 1 ? turn.hint : turn.cue,
-          },
-        ]
+        const teacherLine = {
+          id: turn.id + '.teacher',
+          speaker: teacher.name,
+          avatarUrl: teacher.avatarUrl,
+          side: 'start' as const,
+          content: 'reply' in turn ? turn.reply : turn.question,
+        }
+        const learnerLine = {
+          id: turn.id + '.learner',
+          speaker: 'You',
+          participant: 'learner' as const,
+          side: 'end' as const,
+          content:
+            level === 2 ? turn.example : level === 1 ? turn.hint : turn.cue,
+        }
+        return 'reply' in turn
+          ? [learnerLine, teacherLine]
+          : [teacherLine, learnerLine]
       })}
     />
   )

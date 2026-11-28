@@ -4,7 +4,7 @@
   "key": "b1-10",
   "title": "Could you tell me where it is?",
   "goal": "Ask polite follow-up questions to plan a visit",
-  "freeConversationInstruction": "Talk about places you would like to visit and practise asking useful follow-up questions",
+  "freeConversationInstruction": "If you had an afternoon in my town, what would you ask me? Swap local tips and follow up on a place that interests you",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -298,30 +298,30 @@
     {
       "id": "s_personal",
       "kind": "questions",
-      "title": "Ask for information",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "title": "Ask at the museum desk",
+      "instruction": "You’re visiting a museum. Your teacher works at the desk and answers your questions about an imagined visit",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
-          "prompt": "What would you like to find out?",
-          "cue": "Ask for one piece of information politely",
-          "hint": "Could you tell me where … is?",
+          "prompt": "Welcome! What would you like to know?",
+          "cue": "Ask about a tour, a ticket or a place in the museum",
+          "hint": "Could you tell me where the tour starts?",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "Do you need to check anything else?",
-          "cue": "Ask a follow-up question about time, access or what is included",
-          "hint": "Do you know if …?",
+          "prompt": "What else would help you plan your visit?",
+          "cue": "Use my answer to ask about the time, the price or how to get there",
+          "hint": "Do you know if I need to buy a separate ticket for that tour?",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "How would you check that you understood the answer?",
-          "cue": "Restate the useful detail and confirm it politely",
-          "hint": "So, … Have I understood that correctly?",
+          "prompt": "Before you go, shall we check the details?",
+          "cue": "Repeat something I told you and check you have it right",
+          "hint": "So the tour starts here, is that right?",
           "answer": "One possible response"
         }
       ],

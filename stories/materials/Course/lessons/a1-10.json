@@ -4,34 +4,34 @@
   "key": "a1-10",
   "title": "At the café",
   "goal": "Order a drink and food, then correct a mistake politely",
-  "freeConversationInstruction": "Talk about what you enjoy ordering and ask your teacher about her favourite places",
+  "freeConversationInstruction": "What would you like to order? Imagine you’re at a café together and talk about what you like",
   "freeConversationMinutes": 12,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Imagine you are leaving the hotel to get a drink",
+      "instruction": "Imagine there’s a café near the hotel. Help me find it",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
         {
           "id": "review",
-          "prompt": "Is there a café near here?",
-          "hint": "Yes, there is. / No, there isn’t",
-          "cue": "Say if there’s a café"
+          "prompt": "I’m looking for a café. Is there one near the hotel?",
+          "hint": "Yes, there’s one near here",
+          "cue": "Say there’s one nearby"
         },
         {
           "id": "s1.q98.2",
           "prompt": "How do I get there?",
-          "hint": "Go straight and turn …",
-          "cue": "Give a short direction"
+          "hint": "Go straight and turn left",
+          "cue": "Give one or two directions"
         },
         {
           "id": "s1.q98.3",
           "prompt": "What is next to it?",
-          "hint": "It’s next to …",
-          "cue": "Name a nearby place"
+          "hint": "It’s next to the park",
+          "cue": "Choose a place next to the café"
         }
       ],
       "questionPurpose": "conversation"
@@ -241,7 +241,7 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Place your order",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "You’re at a café. Choose a drink and some food, then check the order I read back",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
@@ -249,14 +249,14 @@
           "id": "0",
           "prompt": "What would you like?",
           "cue": "Choose a drink and some food",
-          "hint": "I’d like … and …, please",
+          "hint": "I’d like tea and a sandwich, please",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "Is your order right?",
-          "cue": "Check the tray. Correct the order",
-          "hint": "Sorry, this is … I’d like …",
+          "prompt": "A coffee and a sandwich. Is that right?",
+          "cue": "Confirm my order or correct one item",
+          "hint": "Yes, that’s right / A sandwich, yes, but tea, please",
           "answer": "One possible response"
         },
         {

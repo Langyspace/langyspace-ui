@@ -4,14 +4,14 @@
   "key": "a2-06",
   "title": "My back hurts",
   "goal": "Describe a fictional symptom and confirm appointment details",
-  "freeConversationInstruction": "Talk about feeling well, everyday habits and asking for help, using fictional situations if you prefer",
+  "freeConversationInstruction": "How do you feel today? You can speak as an imaginary patient and ask each other for help",
   "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
       "kind": "questions",
       "title": "Review the last lesson",
-      "instruction": "Use a past question to find out when something happened",
+      "instruction": "Offer help, talk about your plans and check a time you didn’t hear",
       "minutes": 2,
       "eyebrow": "Review",
       "items": [
@@ -274,29 +274,29 @@
       "id": "s_personal",
       "kind": "questions",
       "title": "Describe your symptoms",
-      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "instruction": "Imagine you have a headache or a sore throat. Tell me about it",
       "minutes": 3,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "0",
           "prompt": "What’s the matter?",
-          "cue": "Describe the symptom on your situation card",
-          "hint": "I have … / My … hurts",
+          "cue": "Choose a symptom",
+          "hint": "I have a headache / My throat hurts",
           "answer": "One possible response"
         },
         {
           "id": "1",
           "prompt": "When did it start?",
-          "cue": "Say when the symptom began",
-          "hint": "It started …",
+          "cue": "Choose a time",
+          "hint": "It started this morning",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
           "prompt": "What are you going to do about it?",
-          "cue": "Explain your next step, then ask me for advice",
-          "hint": "I’m going to … What do you think?",
+          "cue": "Say what you plan to do and ask a question",
+          "hint": "I’m going to call the clinic. Do you have the number?",
           "answer": "One possible response"
         }
       ],

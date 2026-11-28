@@ -48,7 +48,7 @@ export function A102Lesson({ initialPageId, learnerName }: A102LessonProps) {
           <CallPractice active={active} speech={speech} lines={checks} />
         ),
       }}
-      freeConversationInstruction="Exchange contact details, ask your own questions and check what you hear. You can use made-up details"
+      freeConversationInstruction="How do you spell your name? Get to know each other and check the details you hear. You can make up a name or number"
     />
   )
 }

@@ -4,7 +4,7 @@
   "key": "b2-08",
   "title": "The apartment, which has a balcony",
   "goal": "Add relevant details to a recommendation and check the full cost",
-  "freeConversationInstruction": "Talk about places to live, compare priorities and add details that help the other person understand your choice",
+  "freeConversationInstruction": "What would make a cheaper flat cost more in the long run? Compare what you’d ask the landlord before choosing where to live",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -694,8 +694,8 @@
         {
           "id": "0",
           "prompt": "Which apartment would you recommend for working from home?",
-          "cue": "Match an apartment to the work-space need and budget",
-          "hint": "This apartment could work if its workspace meets your needs"
+          "cue": "Recommend one place. Mention its workspace and the listed total",
+          "hint": "I’d suggest B. It has a separate room, and the total is $850. How important is being near the metro?"
         },
         {
           "id": "1",
@@ -705,9 +705,9 @@
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What else should I check before renting an apartment?",
-          "cue": "Ask about a missing detail that could change your advice",
-          "hint": "I’d check whether the workspace is suitable for your work"
+          "prompt": "What should I find out before I arrange a viewing?",
+          "cue": "Ask about a missing detail that matters to my choice",
+          "hint": "Will the work corner in A fit your desk? If it will, being near the metro might make A worth a visit"
         }
       ],
       "options": [

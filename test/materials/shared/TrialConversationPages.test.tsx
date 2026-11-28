@@ -138,7 +138,7 @@ describe('separate TrialA1 conversation stages', () => {
     expect(
       screen.getByText('Give your opinion, then ask back', { exact: true }),
     ).toBeVisible()
-    expect(visibleLayer('Do you like …?')).toHaveAttribute(
+    expect(visibleLayer('Do you like movies?')).toHaveAttribute(
       'aria-hidden',
       'true',
     )
@@ -163,7 +163,7 @@ describe('separate TrialA1 conversation stages', () => {
     fireEvent.click(
       screen.getByRole('button', { name: 'Show next model (1/3)' }),
     )
-    expect(visibleLayer('Do you like …?')).toHaveAttribute(
+    expect(visibleLayer('Do you like movies?')).toHaveAttribute(
       'aria-hidden',
       'false',
     )
@@ -174,7 +174,23 @@ describe('separate TrialA1 conversation stages', () => {
       ),
     ).toHaveAttribute('aria-hidden', 'false')
     expect(
-      visibleLayer('I like … . / I don’t like … . And you?'),
+      visibleLayer('I like pizza. What food do you like?'),
     ).toHaveAttribute('aria-hidden', 'true')
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Show next model (2/3)' }),
+    )
+    expect(visibleLayer('Yes, I do. I like funny movies!')).toHaveAttribute(
+      'aria-hidden',
+      'false',
+    )
+    expect(
+      visibleLayer('I like pizza. What food do you like?'),
+    ).toHaveAttribute('aria-hidden', 'true')
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Show next model (3/3)' }),
+    )
+    expect(
+      visibleLayer('I like pizza. What food do you like?'),
+    ).toHaveAttribute('aria-hidden', 'false')
   })
 })

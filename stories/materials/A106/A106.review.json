@@ -26,9 +26,9 @@
         },
         {
           "id": "s1.q98.3",
-          "prompt": "What fruit does someone in your family like?",
-          "hint": "My … likes …",
-          "cue": "Talk about someone’s favourite fruit"
+          "prompt": "What fruit does a friend or someone in your family like?",
+          "hint": "My friend likes … / I’m not sure. What fruit do you like?",
+          "cue": "Say what they like, or ask me"
         }
       ],
       "questionPurpose": "conversation"
@@ -251,29 +251,29 @@
       "id": "s91",
       "kind": "questions",
       "title": "Describe an animal",
-      "instruction": "Use your own pet, someone else’s pet or the picture",
+      "instruction": "Talk about a pet you know, or imagine a cat or dog. Give it a name and a place",
       "minutes": 2,
       "eyebrow": "Your turn",
       "items": [
         {
           "id": "pet",
           "prompt": "Do you have a pet?",
-          "cue": "Answer about you or an animal you know",
-          "hint": "I have … / I don’t have a pet. My friend has …",
+          "cue": "Say if you have a pet. Choose one to describe",
+          "hint": "I have a cat / I don’t have a pet. Let’s imagine a dog",
           "answer": "One possible response"
         },
         {
           "id": "name",
           "prompt": "What’s the pet’s name?",
-          "cue": "Give a name or use the example",
-          "hint": "His/Her name is …",
+          "cue": "Use a real name or make one up",
+          "hint": "My cat’s name is … / Let’s call the dog Max",
           "answer": "One possible response"
         },
         {
           "id": "pet-location",
-          "prompt": "Where is the pet now?",
-          "cue": "Describe a real or imaginary pet’s location and ask about another animal",
-          "hint": "He’s/She’s on … / in … / under … Where’s …?",
+          "prompt": "Where is the pet?",
+          "cue": "Give a real or imaginary place, then ask about another pet",
+          "hint": "It’s under the table. Do you have a pet?",
           "answer": "One possible response"
         }
       ],

@@ -4,7 +4,7 @@
   "key": "c1-09",
   "title": "It’s bound to get worse",
   "goal": "Match a prediction’s certainty to limited data and test its assumptions",
-  "freeConversationInstruction": "Discuss possible changes in your city or daily life, test assumptions and make careful predictions",
+  "freeConversationInstruction": "Will getting around your city become easier or harder? Compare your predictions and what evidence might change them",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -361,7 +361,7 @@
       "id": "s_personal",
       "kind": "activity",
       "title": "Make a cautious prediction",
-      "instruction": "Discuss with Teacher what the rise from 100 to 140 daily trips does and does not tell you",
+      "instruction": "You advise a transport planner, played by your teacher. Discuss what the figures justify and what to check next",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -624,23 +624,23 @@
       "questions": [
         {
           "id": "0",
-          "prompt": "How certain can we be from these figures?",
-          "cue": "Match your claim to the strength of the evidence",
-          "hint": "The figures suggest …, but they don’t establish …",
+          "prompt": "Daily trips went from 100 to 140. Can I budget for another rise like that?",
+          "cue": "Separate the three observations from a forecast",
+          "hint": "Usage rose in these three months. I wouldn’t assume the same rise will continue",
           "answer": "One possible response"
         },
         {
           "id": "1",
-          "prompt": "What would be a sensible next step?",
-          "cue": "Propose action while acknowledging uncertainty",
-          "hint": "Even if …, it would be worth …",
+          "prompt": "Should I add services straight away?",
+          "cue": "Suggest a limited next step while acknowledging what you don’t know",
+          "hint": "I’d count passengers at peak times before committing to more services. Are travellers being left behind?",
           "answer": "One possible response"
         },
         {
           "id": "personal.follow-up94",
           "prompt": "What further evidence would most affect your recommendation?",
-          "cue": "Name a decision-relevant gap without asking for certainty",
-          "hint": "The most useful thing to establish would be … If it showed …, I’d reconsider …",
+          "cue": "Say what would make you change that advice",
+          "hint": "If buses were regularly leaving people behind, I’d recommend trying an extra service at those times",
           "answer": "One possible response"
         }
       ],

@@ -1,30 +1,13 @@
 import { act, cleanup, fireEvent, render, within } from '@testing-library/react'
 import { afterEach, beforeEach, expect, it, vi } from 'vitest'
-import type { SlideDeckProps } from '../../src/components/Slide/SlideDeck.types'
 import { TrialB2Lesson } from '../../stories/materials/TrialB2/TrialB2Lesson'
 import content from '../../stories/materials/TrialB2/TrialB2.content.json'
 import { createBrowserStorage } from '../helpers/browserStorage'
 
-// Exercise the actual lesson content and native controls; geometry/navigation engines
-// retain their existing coverage. This fixture only selects the next authored page.
-vi.mock('../../src/components/Slide/SlideDeck', () => ({
-  SlideDeck: ({ pages, pageId, onPageChange, label }: SlideDeckProps) => (
-    <div aria-label={label}>
-      {pages.map((page) => (
-        <section
-          key={page.id}
-          data-slide-id={page.id}
-          hidden={page.id !== pageId}
-        >
-          {page.content}
-        </section>
-      ))}
-      <button onClick={() => onPageChange?.('free-conversation')}>
-        Next review page
-      </button>
-    </div>
-  ),
-}))
+vi.mock(
+  '../../src/components/Slide/SlideDeck',
+  () => import('../helpers/reviewSlideDeck'),
+)
 class NativeAudio {
   static all: NativeAudio[] = []
   src = ''
@@ -81,12 +64,10 @@ it('places informal mutual introductions after the C1/C2 cover and preserves the
     'introduce-yourself',
     's2',
     's3',
+    's_video_comedy',
     'free-conversation',
     'next-steps',
   ])
-  expect(
-    page(view.container, 'introduce-yourself').getByText('Introduce yourself'),
-  ).toBeInTheDocument()
   expect(
     page(view.container, 'cover').getByText('C1 / C2 · Trial lesson'),
   ).toBeVisible()
@@ -97,8 +78,15 @@ it('places informal mutual introductions after the C1/C2 cover and preserves the
   ).toBeVisible()
   expect(view.queryByText('Beach or mountains?')).toBeNull()
   expect(view.queryByRole('group', { name: 'Conversation stages' })).toBeNull()
+  fireEvent.click(view.getByText('Open introduce-yourself'))
+  expect(
+    page(view.container, 'introduce-yourself').getByText('Introduce yourself'),
+  ).toBeVisible()
+  fireEvent.click(view.getByText('Open next-steps'))
   const closing = view.container.querySelector('[data-slide-id="next-steps"]')!
-  expect(closing.textContent).toContain('Mande uma mensagem para a Langy')
+  expect(closing.textContent).toContain(
+    'Fale com a equipe da Langy para começar seu curso de inglês',
+  )
   expect(closing.textContent).toContain(
     'Oi! Quero fechar o curso de inglês com vocês 😊',
   )
@@ -124,7 +112,7 @@ it('reveals six illustrated expressions and their examples, plays exact native c
   for (const item of content.vocabulary.items)
     expect(vocabulary.getByText(item.example)).toBeVisible()
   const last = NativeAudio.all.find((media) => media.src.endsWith('V.5.mp3'))!
-  fireEvent.click(view.getByRole('button', { name: 'Next review page' }))
+  fireEvent.click(view.getByText('Open free-conversation'))
   expect(last.pause).toHaveBeenCalled()
   expect(last.currentTime).toBe(0)
 })
@@ -133,7 +121,7 @@ it('plays all eight dialogue turns in order with highlighting, translation and a
   const view = render(<TrialB2Lesson initialPageId="s3" />)
   const dialogue = page(view.container, 's3')
   const play = dialogue.getByRole('button', {
-    name: 'Play dialogue: Always available?',
+    name: `Play dialogue: ${content.dialogue.title}`,
   })
   expect(play).toBeEnabled()
   fireEvent.click(play)
@@ -146,8 +134,7 @@ it('plays all eight dialogue turns in order with highlighting, translation and a
     expect(
       dialogue
         .getByText(content.dialogue.lines[i - 1]!.en)
-        .closest('[data-dialogue-line]') ??
-        dialogue.getByText(content.dialogue.lines[i - 1]!.en),
+        .closest('[aria-current="true"]'),
     ).toBeInTheDocument()
     act(() => audio.onended?.())
   }

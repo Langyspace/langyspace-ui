@@ -4,7 +4,7 @@
   "key": "b2-02",
   "title": "By Friday I’ll have finished it",
   "goal": "Negotiate a deadline using dependencies and realistic commitments",
-  "freeConversationInstruction": "Talk about upcoming projects or personal plans and discuss realistic expectations and trade-offs",
+  "freeConversationInstruction": "What could you realistically finish by next Friday? Discuss what each plan depends on and what might have to wait",
   "freeConversationMinutes": 10,
   "pages": [
     {
@@ -608,15 +608,15 @@
         },
         {
           "id": "1",
-          "prompt": "What will you be doing when the volunteers arrive?",
-          "cue": "Describe your plan for welcoming them",
-          "hint": "I’ll be welcoming them and explaining what is ready"
+          "prompt": "What can I give the volunteers at ten if the pack isn’t ready?",
+          "cue": "Use the separate welcome sheet to offer a realistic backup",
+          "hint": "I’ll have prepared the welcome sheet, so you can give them that first"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What if the review comments arrive late?",
-          "cue": "Explain what needs to change before promising the pack",
-          "hint": "We’ll need to review the deadline if the comments arrive late"
+          "prompt": "When should we decide whether to use the backup?",
+          "cue": "Agree on a check that leaves a full working day for the final pack",
+          "hint": "Let’s check on Wednesday whether the comments are in. Could you update the volunteers if they’re late?"
         }
       ],
       "questionPurpose": "conversation",

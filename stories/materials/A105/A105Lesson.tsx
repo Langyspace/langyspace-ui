@@ -37,7 +37,7 @@ export function A105Lesson({ initialPageId, learnerName }: A105LessonProps) {
       initialPageId={initialPageId}
       learnerName={learnerName}
       activities={{ s11: <MarketCase />, s91: <MarketCase request /> }}
-      freeConversationInstruction="Talk about food you enjoy, ask about your teacher’s tastes and plan a small shopping trip"
+      freeConversationInstruction="What do you like to eat for lunch? Talk about your favourite foods and what you could buy at the market"
     />
   )
 }
