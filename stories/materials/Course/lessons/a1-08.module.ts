@@ -14,7 +14,7 @@ import a9 from '../assets/audio/A108-D81.4.mp3'
 import a10 from '../assets/audio/A108-D81.5.mp3'
 import a11 from '../assets/audio/A108-D81.6.mp3'
 import a12 from '../assets/audio/A108-L81.1.mp3'
-import i0 from '../assets/a1-08-vocabulary81.webp'
+import i0 from '../assets/a1-08-vocabulary173.webp'
 import evidence123 from '../assets/a1-08-hotel-problems123.webp'
 import w141clip0 from '../assets/audio/A108-W141.1.mp3'
 const prepared: PreparedCourseData = {
@@ -51,6 +51,6 @@ const prepared: PreparedCourseData = {
       src: a12,
     },
   ],
-  images: { 'a1-08-hotel-problems123': evidence123, 'a1-08-vocabulary81': i0 },
+  images: { 'a1-08-hotel-problems123': evidence123, 'a1-08-vocabulary173': i0 },
 }
 export default prepared

@@ -9,7 +9,7 @@ import a3 from '../assets/audio/B101-FS81.3.mp3'
 import a4 from '../assets/audio/B101-FS81.4.mp3'
 import a5 from '../assets/audio/B101-FS81.5.mp3'
 import a6 from '../assets/audio/legacy-B101-D.1.mp3'
-import a7 from '../assets/audio/legacy-B101-D.2.mp3'
+import a7 from '../assets/audio/B101-welcome-back173.mp3'
 import a8 from '../assets/audio/legacy-B101-D.3.mp3'
 import a9 from '../assets/audio/legacy-B101-D.4.mp3'
 import a10 from '../assets/audio/legacy-B101-D.5.mp3'
@@ -20,9 +20,7 @@ import a14 from '../assets/audio/legacy-B101-D.9.mp3'
 import a15 from '../assets/audio/legacy-B101-D.10.mp3'
 import a16 from '../assets/audio/legacy-B101-D.11.mp3'
 import a17 from '../assets/audio/B101-L81.1.mp3'
-import i0 from '../assets/b1-01-vocabulary81.webp'
-import workOut136 from '../assets/b1-01-work-out136.webp'
-import decorateRoom143 from '../assets/b1-01-decorate-room143-v2.webp'
+import i0 from '../assets/b1-01-vocabulary173.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
@@ -111,9 +109,7 @@ const prepared: PreparedCourseData = {
     },
   ],
   images: {
-    'b1-01-vocabulary81': i0,
-    'b1-01-work-out136': workOut136,
-    'b1-01-decorate-room143-v2': decorateRoom143,
+    'b1-01-vocabulary173': i0,
   },
 }
 export default prepared

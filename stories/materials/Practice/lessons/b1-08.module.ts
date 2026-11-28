@@ -1,3 +1,4 @@
+import scene173_homework_hw173_020 from '../assets/native-scene173/840f67aa39aa1bf1ffbc3e87779b81b482542e79c4b992c6e2a5cd9d93e42c49.webp'
 import scene161_0 from '../assets/native-scene161/a2fcacf65e60fc6cdb45d69cea3008be2146b68aafa2d8deaa64ee1e73238432.webp'
 import scene161_1 from '../assets/native-scene161/33b0a62e9c4fc7e181d1bd5d704070acd776a70110f57dfaa6cc5f2227ea45bb.webp'
 import scene161_2 from '../assets/native-scene161/793600a3258e27b1c0822ae32b8d9ffcce6e0d915612b1078ea0a0a04f0b3f74.webp'
@@ -295,6 +296,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/840f67aa39aa1bf1ffbc3e87779b81b482542e79c4b992c6e2a5cd9d93e42c49/image.webp':
+      scene173_homework_hw173_020,
     '/flashcards-transparent/course-practice/native-scene161/a2fcacf65e60fc6cdb45d69cea3008be2146b68aafa2d8deaa64ee1e73238432/image.webp':
       scene161_0,
     '/flashcards-transparent/course-practice/native-scene161/33b0a62e9c4fc7e181d1bd5d704070acd776a70110f57dfaa6cc5f2227ea45bb/image.webp':

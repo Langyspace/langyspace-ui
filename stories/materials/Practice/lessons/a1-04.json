@@ -112,7 +112,7 @@
         "translation": "escovar",
         "visualLabel": "B",
         "word": "brush",
-        "imageSrc": "/flashcards-transparent/a1/verbs/brush/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/b70af4db21e193addda814cb3a0489a4d804935849fb5aff0826efc5d623ac29/image.webp",
         "audioId": "deck-a1-verbs-brush.front",
         "backAudioId": "deck-a1-verbs-brush.front"
       },
@@ -123,7 +123,7 @@
         "translation": "lavar",
         "visualLabel": "W",
         "word": "wash",
-        "imageSrc": "/flashcards-transparent/a1/verbs/wash/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/8f4fbd75c1912f2a55e718de6288ccd54a2f7dcd9659c268633477c9886fe20a/image.webp",
         "audioId": "deck-a1-verbs-wash.front",
         "backAudioId": "deck-a1-verbs-wash.front"
       },
@@ -134,7 +134,7 @@
         "translation": "comer",
         "visualLabel": "E",
         "word": "eat",
-        "imageSrc": "/flashcards-transparent/a1/verbs/eat/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/6f75c848559103014b24c871c57e40ab5455f976b013098b794cdfba67f2e140/image.webp",
         "audioId": "deck-a1-verbs-eat.front",
         "backAudioId": "deck-a1-verbs-eat.front"
       },
@@ -145,7 +145,7 @@
         "translation": "beber",
         "visualLabel": "D",
         "word": "drink",
-        "imageSrc": "/flashcards-transparent/a1/verbs/drink/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/f8125fde03aec24ab4e826ac7801a3ed612b29025e1e3b9029d4060079325f44/image.webp",
         "audioId": "deck-a1-verbs-drink.front",
         "backAudioId": "deck-a1-verbs-drink.front"
       },
@@ -156,7 +156,7 @@
         "translation": "ler",
         "visualLabel": "R",
         "word": "read",
-        "imageSrc": "/flashcards-transparent/a1/verbs/read/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/c03f5486856c993c9af0f5df36323e19de253a1b07b0ae64f77b54524909bc90/image.webp",
         "audioId": "deck-a1-verbs-read.front",
         "backAudioId": "deck-a1-verbs-read.front"
       },
@@ -167,7 +167,7 @@
         "translation": "assistir",
         "visualLabel": "W",
         "word": "watch",
-        "imageSrc": "/flashcards-transparent/a1/verbs/watch/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/cfe38e5285e2d5916e96b7a5223f408b2a4d21be205d759c3f950813aa5445fa/image.webp",
         "audioId": "deck-a1-verbs-watch.front",
         "backAudioId": "deck-a1-verbs-watch.front"
       },
@@ -178,7 +178,7 @@
         "translation": "dormir",
         "visualLabel": "S",
         "word": "sleep",
-        "imageSrc": "/flashcards-transparent/a1/verbs/sleep/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/50d6a26953fc331b6852999507b83d9be85bdf5890219124b3f11d2f550eac13/image.webp",
         "audioId": "deck-a1-verbs-sleep.front",
         "backAudioId": "deck-a1-verbs-sleep.front"
       },
@@ -200,7 +200,7 @@
         "translation": "fazer",
         "visualLabel": "M",
         "word": "make",
-        "imageSrc": "/flashcards-transparent/a1/verbs/make/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/cec17d37772e057a9e4a088644b9e4e77c37069776e2f30c18c2eaef7586c7fa/image.webp",
         "audioId": "deck-a1-verbs-make.front",
         "backAudioId": "deck-a1-verbs-make.front"
       },
@@ -222,7 +222,7 @@
         "translation": "ligar / chamar",
         "visualLabel": "C",
         "word": "call",
-        "imageSrc": "/flashcards-transparent/a1/verbs/call/image.webp",
+        "imageSrc": "/flashcards-transparent/course-practice/native-scene173/840f67aa39aa1bf1ffbc3e87779b81b482542e79c4b992c6e2a5cd9d93e42c49/image.webp",
         "audioId": "deck-a1-verbs-call.front",
         "backAudioId": "deck-a1-verbs-call.front"
       }
@@ -286,18 +286,11 @@
       }
     ]
   },
-  "publishedEnvironments": [
-    "staging",
-    "production"
-  ],
+  "publishedEnvironments": ["staging", "production"],
   "voice": {
     "prompt": "Tell me three things you usually do. Include a time and a day",
     "duration": "20–30 seconds",
-    "starters": [
-      "I usually…",
-      "I don’t…",
-      "On Monday, I…"
-    ],
+    "starters": ["I usually…", "I don’t…", "On Monday, I…"],
     "closing": "Finish with one question for your teacher"
   },
   "homeworkCopy": {

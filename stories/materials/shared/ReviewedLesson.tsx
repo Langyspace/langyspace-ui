@@ -76,6 +76,17 @@ const recordingLine = (line: {
   id: line.id,
   text: line.audioText ?? line.text,
 })
+const vocabularyRecording = (
+  item: Extract<ReviewedPage, { kind: 'vocabulary' }>['items'][number],
+) => ({ id: item.audioId ?? item.id, text: item.audioText ?? item.word })
+
+function firstPageRecording(page?: ReviewedPage) {
+  if (page?.kind === 'vocabulary' && page.items[0])
+    return vocabularyRecording(page.items[0])
+  if (page?.kind === 'dialogue' && page.lines[0])
+    return recordingLine(page.lines[0])
+  return page?.titleAudio?.[0]
+}
 function Questions({
   items,
   purpose = 'conversation',
@@ -263,10 +274,7 @@ function PageContent({
         }
         onPlay={(id) => {
           const item = page.items.find((x) => x.id === id)
-          if (item)
-            speech.speak([
-              { id: item.audioId ?? id, text: item.audioText ?? item.word },
-            ])
+          if (item) speech.speak([vocabularyRecording(item)])
         }}
       />
     )
@@ -576,7 +584,10 @@ export function ReviewedLesson({
       pages.map((x) => x.id),
     ),
   )
-  const speech = useRecordedAudio(recordings)
+  const speech = useRecordedAudio(
+    recordings,
+    firstPageRecording(pages.find((page) => page.id === pageId)),
+  )
   const notes = useLessonNotesPopup(notesStorageKey, pageId)
   const activityFor = (id: string) => {
     const activity = activities?.[id]

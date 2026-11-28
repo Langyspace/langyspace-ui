@@ -15,7 +15,7 @@ import a10 from '../assets/audio/legacy-A201-a201.dialogue.anna-ben.05.mp3'
 import a11 from '../assets/audio/legacy-A201-a201.dialogue.anna-ben.06.mp3'
 import a12 from '../assets/audio/legacy-A201-a201.listening.anna.01.mp3'
 import i0 from '../assets/a2-01-usually-today81.webp'
-import i1 from '../assets/a2-01-vocabulary81.webp'
+import i1 from '../assets/a2-01-vocabulary173.webp'
 const prepared: PreparedCourseData = {
   data: data as CourseLessonData,
   recordings: [
@@ -77,6 +77,6 @@ const prepared: PreparedCourseData = {
       src: a12,
     },
   ],
-  images: { 'a2-01-usually-today81': i0, 'a2-01-vocabulary81': i1 },
+  images: { 'a2-01-usually-today81': i0, 'a2-01-vocabulary173': i1 },
 }
 export default prepared

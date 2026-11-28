@@ -89,3 +89,75 @@ it('cancels a recorded request and frees its decoder when the recording scope ch
   act(() => lateEnd?.())
   expect(result.current.playingId).toBeUndefined()
 })
+
+it('lets the first gesture start its clip on a cold lesson and only preloads the next requested turn', () => {
+  const clips = [
+    { id: 'reading', text: 'Long reading', src: '/reading.mp3' },
+    { id: 'first', text: 'First line', src: '/first.mp3' },
+    { id: 'next', text: 'Second line', src: '/next.mp3' },
+    { id: 'gap', text: 'Fill the gap', src: '/gap.mp3' },
+  ]
+  const dialogue = clips.slice(1, 3)
+  const { result } = renderHook(() => useRecordedAudio(clips))
+  expect(Media.all).toHaveLength(0)
+  act(() => result.current.speak(dialogue))
+  expect(Media.all.map((audio) => audio.src)).toEqual([
+    '/first.mp3',
+    '/next.mp3',
+  ])
+  expect(Media.all[0]!.play).toHaveBeenCalledOnce()
+  expect(Media.all[1]!.play).not.toHaveBeenCalled()
+  act(() => Media.all[0]!.onended?.())
+  expect(Media.all[1]!.play).toHaveBeenCalledOnce()
+})
+
+it('keeps the first pending request on a repeated click and allows a different selection to take over', () => {
+  const clips = [
+    { id: 'one', text: 'First', src: '/one.mp3' },
+    { id: 'two', text: 'Second', src: '/two.mp3' },
+  ]
+  class BufferingMedia extends Media {
+    override play = vi.fn(() => {
+      this.paused = false
+      return new Promise<void>(() => {})
+    })
+  }
+  vi.stubGlobal('Audio', BufferingMedia)
+  const { result } = renderHook(() => useRecordedAudio(clips))
+  act(() => result.current.speak(clips))
+  const first = Media.all[0]!
+  const latePlaying = first.onplaying
+  expect(Media.all.map((audio) => audio.src)).toEqual(['/one.mp3'])
+  act(() => result.current.speak(clips.map((line) => ({ ...line }))))
+  expect(first.play).toHaveBeenCalledOnce()
+  expect(first.pause).not.toHaveBeenCalled()
+  act(() => result.current.speak([clips[1]!]))
+  act(() => latePlaying?.())
+  expect(first.pause).toHaveBeenCalledOnce()
+  expect(result.current.playingId).toBeUndefined()
+  expect(Media.all[1]!.play).toHaveBeenCalledOnce()
+  act(() => Media.all[1]!.onplaying?.())
+  expect(result.current.playingId).toBe('two')
+})
+
+it('warms only the active page’s first recording and reuses it for a single click', () => {
+  const clips = [
+    { id: 'vocab', text: 'A word', src: '/vocab.mp3' },
+    { id: 'dialogue', text: 'A turn', src: '/dialogue.mp3' },
+    { id: 'listening', text: 'Long recording', src: '/listening.mp3' },
+  ]
+  const { result, rerender } = renderHook(
+    ({ lead }) => useRecordedAudio(clips, lead),
+    { initialProps: { lead: clips[0] } },
+  )
+  expect(Media.all.map((audio) => audio.src)).toEqual(['/vocab.mp3'])
+  expect(Media.all[0]!.play).not.toHaveBeenCalled()
+  rerender({ lead: clips[1] })
+  act(() => result.current.speak([clips[1]!]))
+  expect(Media.all.map((audio) => audio.src)).toEqual([
+    '/vocab.mp3',
+    '/dialogue.mp3',
+  ])
+  expect(Media.all[1]!.load).toHaveBeenCalledOnce()
+  expect(Media.all[1]!.play).toHaveBeenCalledOnce()
+})

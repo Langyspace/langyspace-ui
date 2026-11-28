@@ -1,3 +1,4 @@
+import scene173_a2_11_3 from '../assets/native-scene173/18facc5c42da2125c3f34ddd0d494bc11f8b7367485e4a96e5615091846e9bef.webp'
 import scene161_0 from '../assets/native-scene161/b5833e6452b4d26b0dcf19d7e031abb94fe366c61af76bb375018e250106bb45.webp'
 import scene161_1 from '../assets/native-scene161/ebeb1dae27e6450609adab5cdf32ca0b3eb3dbe4c168bd6496018d5dffb0ada9.webp'
 import scene161_2 from '../assets/native-scene161/210bc558bbcc5d2024f8aa293373ec3a463dedd82d4ba7c7f07491ecb69d994a.webp'
@@ -31,7 +32,6 @@ import asset18 from '../../Course/assets/audio/A211-V81.5.mp3'
 import asset19 from '../../Course/assets/audio/A211-FE81.5.mp3'
 import asset20 from '../assets/characters/kim.webp'
 import asset21 from '../assets/characters/ana.webp'
-import asset22 from '../../Course/assets/a2-11-vocabulary81.webp'
 import expanded124Asset0 from '../assets/flashcards124/5b281d98d5c91e13defb7f7e4512ab283862b46017ef867896b8992b44ec58d4.mp3'
 import expanded124Asset1 from '../assets/flashcards124/561f3de556a6859c3df86c578e072217e3d3148d6e60cebb3190fe8e3587cd68.mp3'
 import expanded124Asset2 from '../assets/flashcards124/5c210133bf884f1fe8716efe67246cdaab2548a5ccc969217f5850027893790b.mp3'
@@ -252,6 +252,8 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
+    '/flashcards-transparent/course-practice/native-scene173/18facc5c42da2125c3f34ddd0d494bc11f8b7367485e4a96e5615091846e9bef/image.webp':
+      scene173_a2_11_3,
     '/flashcards-transparent/course-practice/native-scene161/b5833e6452b4d26b0dcf19d7e031abb94fe366c61af76bb375018e250106bb45/image.webp':
       scene161_0,
     '/flashcards-transparent/course-practice/native-scene161/ebeb1dae27e6450609adab5cdf32ca0b3eb3dbe4c168bd6496018d5dffb0ada9/image.webp':
@@ -279,8 +281,6 @@ const prepared: PreparedPractice = {
     '/flashcards-transparent/a2/travel/ticket/image.webp': expanded124Asset28,
     '/flashcards/course-characters/kim/image.webp': asset20,
     '/flashcards/course-characters/ana/image.webp': asset21,
-    '/flashcards-transparent/course-images/80081312d320aa4209466a8619a3303a5c709133048f04f5ad85447687c8edd9/image.webp':
-      asset22,
   },
 }
 export default prepared

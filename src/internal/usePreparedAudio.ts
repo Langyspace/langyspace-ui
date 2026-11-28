@@ -12,8 +12,11 @@ export function resetPreparedAudio(audio: HTMLAudioElement) {
   }
 }
 
-/** Load recordings before the gesture and reuse their native decoders on click. */
-export function usePreparedAudio(sources: readonly string[]) {
+/** Reuse native buffers and release them when their sources leave this controller. */
+export function usePreparedAudio(
+  sources: readonly string[],
+  preloadSources: readonly string[] = sources,
+) {
   const pool = useRef(new Map<string, HTMLAudioElement>())
   const prepare = useCallback((src: string) => {
     let audio = pool.current.get(src)
@@ -35,8 +38,10 @@ export function usePreparedAudio(sources: readonly string[]) {
       audio.load()
       pool.current.delete(src)
     }
-    for (const src of owned) prepare(src)
-  }, [sources, prepare])
+    for (const src of preloadSources) {
+      if (owned.has(src)) prepare(src)
+    }
+  }, [sources, prepare, preloadSources])
   useEffect(() => {
     const recordings = pool.current
     return () => {
