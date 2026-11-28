@@ -1,0 +1,1332 @@
+{
+  "revision": 160,
+  "sourceBaseline": "53d7f2f64993e8cb24532d3f20023434b16fdf18",
+  "researchDate": "2026-11-28",
+  "researchPlanSha256": "50309dacfef10bee56551b23429fd3e64253f2c9d38b7446bfa18fc05b9a3628",
+  "status": "applied_locally_pending_review",
+  "preserveUnchanged": [
+    {
+      "materialKey": "a1-01",
+      "sourcePath": "stories/materials/A101/A101.review.json",
+      "pageId": "s_video_intro",
+      "clip": {
+        "videoId": "HooNbcbgi9U",
+        "startSeconds": 59,
+        "endSeconds": 93,
+        "title": "Meeting new people — British Council",
+        "credit": "British Council · 0:59–1:33"
+      },
+      "action": "preserve_unchanged",
+      "reasonPT": "Aprovação explícita: preservar Meet Vanya 59–93s."
+    },
+    {
+      "materialKey": "extra-dev-first-day",
+      "sourcePath": "stories/materials/DevFirstDay/DevFirstDay.video.json",
+      "pageId": "s_video131",
+      "clip": {
+        "videoId": "fQcga26aoL8",
+        "startSeconds": 49,
+        "endSeconds": 107,
+        "title": "Agreeing and disagreeing — British Council | English",
+        "credit": "British Council | English"
+      },
+      "action": "preserve_unchanged",
+      "reasonPT": "Trecho validado anteriormente permanece pertinente ao briefing e à interação com a equipe. Esta pesquisa não repetiu o runtime anterior."
+    }
+  ],
+  "changes": [
+    {
+      "materialKey": "a1-04",
+      "sourcePath": "stories/materials/A104/A104.review.json",
+      "pageId": "s_video102",
+      "sourceSha256": "918f7b03f30d500f6c387fa1feac2a8478666497f2339abaf85b1f6a4facf625",
+      "currentClip": {
+        "videoId": "l1herjZq-4M",
+        "startSeconds": 65,
+        "endSeconds": 104
+      },
+      "clip": {
+        "videoId": "bq6GBbh3uhU",
+        "startSeconds": 18.8,
+        "endSeconds": 59.2,
+        "title": "How to talk about your daily routine: Easy English Conversations 💬 Episode 4",
+        "credit": "BBC Learning English"
+      },
+      "activityMinutesSuggested": 4,
+      "rationalePT": "A sequência explicita ações do dia no present simple e rompe o recorte idêntico compartilhado com InfluencerRoutine. Não se apresenta como entrevista espontânea.",
+      "estimatedInputLevel": "A1",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=bq6GBbh3uhU"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "How often do they do it?",
+        "instruction": "Watch the conversation about meditation, then describe one of your habits",
+        "minutes": 4,
+        "video": {
+          "videoId": "l1herjZq-4M",
+          "startSeconds": 65,
+          "endSeconds": 104,
+          "title": "Talking about personal interests — British Council | English",
+          "credit": "British Council | English"
+        },
+        "items": [
+          {
+            "id": "a1-04.video102.q1",
+            "prompt": "What activity do they both do?",
+            "hint": "Listen for the hobby Paul has started",
+            "answer": "They both do meditation"
+          },
+          {
+            "id": "a1-04.video102.q2",
+            "prompt": "When does Emir usually practise?",
+            "hint": "Listen for a part of the day",
+            "answer": "Emir usually practises in the mornings"
+          },
+          {
+            "id": "a1-04.video102.q3",
+            "prompt": "How often does Paul meditate?",
+            "hint": "Listen for a number followed by a week",
+            "answer": "Paul normally meditates once or twice a week"
+          },
+          {
+            "id": "a1-04.video102.q4",
+            "prompt": "What do you do every morning?",
+            "hint": "Use I usually and a morning activity",
+            "answer": "Example: I usually have breakfast at eight"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What does Sian do in the morning?",
+          "hint": "Think about the first activities before work.",
+          "answer": "She wakes up, eats breakfast and goes jogging before work.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 21.04,
+              "endSeconds": 33.28,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "How does she go to work?",
+          "hint": "Which form of transport does she name?",
+          "answer": "She takes the bus and reads during the journey.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 30.84,
+              "endSeconds": 37.48,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What does she do after work?",
+          "hint": "Start with the activity immediately after work.",
+          "answer": "She swims in the sea, then has dinner, showers and sleeps.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 43.92,
+              "endSeconds": 58.24,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Which activity is also in your day?",
+          "hint": "Choose an activity that is true for you.",
+          "answer": "Example: I also eat breakfast, but I do not swim after work.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 21.04,
+              "endSeconds": 58.24,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "4decca131df5c330cd6f04df2e132b627e929430e40dc7afeded54559e4a8794"
+    },
+    {
+      "materialKey": "a2-01",
+      "sourcePath": "stories/materials/Course/lessons/a2-01.json",
+      "pageId": "s_video102",
+      "sourceSha256": "3ecdeb086f6b2ec67d70f122181782fcf41f0b507b09234c9f718ecbd1dbc6a1",
+      "currentClip": {
+        "videoId": "LLvGYEjutWo",
+        "startSeconds": 90,
+        "endSeconds": 130
+      },
+      "clip": {
+        "videoId": "aiUGN3TDvw4",
+        "startSeconds": 12,
+        "endSeconds": 52.6,
+        "title": "How to talk about activities: Easy English Conversations 💬 Episode 6",
+        "credit": "BBC Learning English"
+      },
+      "activityMinutesSuggested": 4,
+      "rationalePT": "Ações presentes com pessoas identificadas sustentam am/is/are + -ing. O contraste com hábito fica na resposta da aluna, sem atribuir ao vídeo rotinas não declaradas.",
+      "estimatedInputLevel": "A2",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=aiUGN3TDvw4"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "What is he doing now?",
+        "instruction": "Watch Emir use the machine, then compare a usual habit with today",
+        "minutes": 4,
+        "video": {
+          "videoId": "LLvGYEjutWo",
+          "startSeconds": 90,
+          "endSeconds": 130,
+          "title": "Giving instructions — British Council | English",
+          "credit": "British Council | English"
+        },
+        "items": [
+          {
+            "id": "a2-01.video102.q1",
+            "prompt": "What is Emir learning to use?",
+            "hint": "Look at the machine and the drink",
+            "answer": "He’s learning to use a coffee machine"
+          },
+          {
+            "id": "a2-01.video102.q2",
+            "prompt": "Who is helping him?",
+            "hint": "Listen to the person giving instructions",
+            "answer": "Vanya is helping him"
+          },
+          {
+            "id": "a2-01.video102.q3",
+            "prompt": "What is he doing before he presses the final button?",
+            "hint": "Follow the instructions about connecting it",
+            "answer": "He’s connecting the coffee holder to the machine"
+          },
+          {
+            "id": "a2-01.video102.q4",
+            "prompt": "What do you usually drink, and what are you drinking today?",
+            "hint": "Contrast usually with today",
+            "answer": "Example: I usually drink coffee, but today I’m drinking tea"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What is Buli doing at the beginning?",
+          "hint": "Listen to Buli’s first answer.",
+          "answer": "Buli is exercising.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 12.08,
+              "endSeconds": 20.08,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Who is cooking?",
+          "hint": "Listen for the name in the question before the cooking answer.",
+          "answer": "Tim is cooking.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 33.12,
+              "endSeconds": 37.36,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Which language is Georgie studying?",
+          "hint": "Listen for the language after studying.",
+          "answer": "Georgie is studying Spanish.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 48.32,
+              "endSeconds": 52.36,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What are you doing today that is different from your usual routine?",
+          "hint": "Use one sentence about today and one about your usual routine.",
+          "answer": "Example: Today I am studying English. I usually work at this time.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 15.84,
+              "endSeconds": 52.36,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "d263d16013ae54978d1cda72ad4fa5e46730c05fa244561cf3b13549d3a98fce"
+    },
+    {
+      "materialKey": "b1-06",
+      "sourcePath": "stories/materials/Course/lessons/b1-06.json",
+      "pageId": "s_video102",
+      "sourceSha256": "dc873c571d0f018e84b39977e3bc89599254b15b3550f2f8bc374b3d444e45b6",
+      "currentClip": {
+        "videoId": "ZveJWidWxgY",
+        "startSeconds": 91,
+        "endSeconds": 159
+      },
+      "clip": {
+        "videoId": "-WB_SGqeJo8",
+        "startSeconds": 9.5,
+        "endSeconds": 127.6,
+        "title": "What Do You Do For a Job / Living? | Easy English 80",
+        "credit": "Easy English"
+      },
+      "activityMinutesSuggested": 7,
+      "rationalePT": "As tarefas profissionais reais fornecem critérios para a decisão hipotética da aula. A forma if + past / would é praticada na transferência; não se afirma que todo o trecho a ensine.",
+      "estimatedInputLevel": "B1",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=-WB_SGqeJo8"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "If you managed this office…",
+        "instruction": "Watch the trampoline discussion, then give advice about a hypothetical choice",
+        "minutes": 4,
+        "video": {
+          "videoId": "ZveJWidWxgY",
+          "startSeconds": 91,
+          "endSeconds": 159,
+          "title": "Discussing advantages and disadvantages — British Council | English",
+          "credit": "British Council | English"
+        },
+        "items": [
+          {
+            "id": "b1-06.video102.q1",
+            "prompt": "What advantage does Noelia connect with having fun?",
+            "hint": "Listen to her reason for the idea",
+            "answer": "She says having fun helps people be creative"
+          },
+          {
+            "id": "b1-06.video102.q2",
+            "prompt": "What safety concern does Yuna raise?",
+            "hint": "Listen to the question about someone getting hurt",
+            "answer": "She worries that someone could hurt themselves"
+          },
+          {
+            "id": "b1-06.video102.q3",
+            "prompt": "Has Yuna agreed by the end of this excerpt?",
+            "hint": "Listen to I’ll think about it and her final reply",
+            "answer": "No. She says she’ll think about it and that she hasn’t said yes"
+          },
+          {
+            "id": "b1-06.video102.q4",
+            "prompt": "If you managed the office, what would you suggest instead?",
+            "hint": "Use If I were and explain one benefit",
+            "answer": "Example: If I were the manager, I’d create a quiet break area instead"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What does the supermarket worker actually do?",
+          "hint": "Describe his tasks, not only his official job title.",
+          "answer": "He unloads deliveries, stocks fresh-food shelves and helps customers.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=-WB_SGqeJo8",
+              "startSeconds": 9.84,
+              "endSeconds": 50.08,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What did the retired man use to do?",
+          "hint": "Identify the organisation and the place he mentions.",
+          "answer": "He worked for HMRC, the tax office in Brighton.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=-WB_SGqeJo8",
+              "startSeconds": 45.2,
+              "endSeconds": 60.96,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Which different jobs does the music-industry worker combine?",
+          "hint": "List the different roles and one or two tasks he names.",
+          "answer": "He combines music management, promotion, production, touring and photography.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=-WB_SGqeJo8",
+              "startSeconds": 60.96,
+              "endSeconds": 127.6,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Which job would you choose, and what would change in your day?",
+          "hint": "Use if and would; consider one practical condition.",
+          "answer": "Example: If I chose photography, I would do more creative work. I would check the hours before deciding.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=-WB_SGqeJo8",
+              "startSeconds": 9.84,
+              "endSeconds": 127.6,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "d2f67a16d6a9d4c365c29de01a766a2965fccc78bb9a9003e97d4c7f76164731"
+    },
+    {
+      "materialKey": "b1-08",
+      "sourcePath": "stories/materials/Course/lessons/b1-08.json",
+      "pageId": "s_video102",
+      "sourceSha256": "0fccd0a47bda03ce175b6b2fd934d0547a7acbe7e92db90b7a7a1685240cb55f",
+      "currentClip": {
+        "videoId": "x6fIseKzzH0",
+        "startSeconds": 95,
+        "endSeconds": 119
+      },
+      "clip": {
+        "videoId": "JnfBXjWm7hc",
+        "startSeconds": 15.1,
+        "endSeconds": 90.8,
+        "title": "Try something new for 30 days | Matt Cutts",
+        "credit": "TED"
+      },
+      "activityMinutesSuggested": 5,
+      "rationalePT": "Um relato com antes e depois aprofunda o input atual de 24 segundos. A transferência usa getting used to; a afirmação dos trinta dias permanece uma opinião do palestrante, não uma regra científica.",
+      "estimatedInputLevel": "B1",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=JnfBXjWm7hc",
+        "https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "Get used to a different workday",
+        "instruction": "Watch the choices a distributed team can make, then describe a change you are adapting to",
+        "minutes": 4,
+        "video": {
+          "videoId": "x6fIseKzzH0",
+          "startSeconds": 95,
+          "endSeconds": 119,
+          "title": "Matt Mullenweg — Why working from home is good for business — TED",
+          "credit": "TED"
+        },
+        "items": [
+          {
+            "id": "b1-08.video102.q1",
+            "prompt": "Who can choose their own schedule in his example?",
+            "hint": "Listen for the exception about specific hours",
+            "answer": "People whose roles don’t require specific hours can choose their schedule"
+          },
+          {
+            "id": "b1-08.video102.q2",
+            "prompt": "Which two examples affect sound in the work environment?",
+            "hint": "Listen for music and its opposite",
+            "answer": "Workers can choose music or silence"
+          },
+          {
+            "id": "b1-08.video102.q3",
+            "prompt": "What travel time can workers save?",
+            "hint": "Listen to the final sentence",
+            "answer": "They can save commuting time"
+          },
+          {
+            "id": "b1-08.video102.q4",
+            "prompt": "What change are you getting used to, and what is already familiar?",
+            "hint": "Contrast getting used to with used to plus a noun or -ing",
+            "answer": "Example: I’m getting used to starting early, but I’m already used to working from home"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "Why did he decide to try a 30-day challenge?",
+          "hint": "What problem did he describe before deciding to change?",
+          "answer": "He felt trapped in his routine and wanted a change.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=JnfBXjWm7hc",
+              "startSeconds": 15.26,
+              "endSeconds": 46.236,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What did taking a photo every day change for him?",
+          "hint": "What could he remember afterwards?",
+          "answer": "The photos helped him remember the places and events of each day.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=JnfBXjWm7hc",
+              "startSeconds": 49.882,
+              "endSeconds": 65.281,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "How did his confidence and activities change?",
+          "hint": "Give one change in confidence and two examples of activities.",
+          "answer": "He became more confident, started cycling to work and later climbed Kilimanjaro.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=JnfBXjWm7hc",
+              "startSeconds": 66.392,
+              "endSeconds": 90.283,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What are you getting used to, and what would help?",
+          "hint": "Describe a change and one realistic source of support.",
+          "answer": "Example: I am getting used to studying after work. Short daily sessions would help.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=JnfBXjWm7hc",
+              "startSeconds": 28.783,
+              "endSeconds": 90.283,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "472970710dfa4a58b0f08b8304e80dd86e8bdbe986da914bc8222d8f71f9a0d8"
+    },
+    {
+      "materialKey": "b2-06",
+      "sourcePath": "stories/materials/Course/lessons/b2-06.json",
+      "pageId": "s_video102",
+      "sourceSha256": "5a45c045d3afd161f4f6740938021d2cb1d095544e87037c6ff39fc525b4c867",
+      "currentClip": {
+        "videoId": "FJrRiVjeOMc",
+        "startSeconds": 581,
+        "endSeconds": 625
+      },
+      "clip": {
+        "videoId": "yxSCWHRAmRU",
+        "startSeconds": 5,
+        "endSeconds": 83,
+        "title": "Getting a fake repair job",
+        "credit": "Viva La Dirt League"
+      },
+      "activityMinutesSuggested": 5,
+      "rationalePT": "Substitui o mesmo trecho de hotel usado em A1.08 por um serviço questionável. A aluna separa alegação de teste demonstrado e formula confirmação com has been fixed; não se conclui a condição real do computador.",
+      "estimatedInputLevel": "B1/B2",
+      "contentNotesPT": [
+        "Cobrança de serviço sem evidência de reparo."
+      ],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": true,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": true,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true,
+        "runtimeScope": "Observed native playback advancing to 27s, pause, answer reveal and restart in the local lesson; full interval ending and continuous listening not verified"
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=yxSCWHRAmRU"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "Is the repair arranged or finished?",
+        "instruction": "Watch the hotel offer help, then negotiate a service deadline",
+        "minutes": 4,
+        "video": {
+          "videoId": "FJrRiVjeOMc",
+          "startSeconds": 581,
+          "endSeconds": 625,
+          "title": "Hotel English — Oxford Online English",
+          "credit": "Oxford Online English"
+        },
+        "items": [
+          {
+            "id": "b2-06.video102.q1",
+            "prompt": "What does the receptionist promise about the heating?",
+            "hint": "Listen for I’ll send",
+            "answer": "The receptionist promises to send somebody to look at it"
+          },
+          {
+            "id": "b2-06.video102.q2",
+            "prompt": "Does the excerpt show the heating being repaired?",
+            "hint": "Distinguish the promise from a completed repair",
+            "answer": "No. It shows an offer to investigate, not a completed repair"
+          },
+          {
+            "id": "b2-06.video102.q3",
+            "prompt": "Which problem can the receptionist address immediately?",
+            "hint": "Listen to right now",
+            "answer": "The receptionist can make a new key immediately"
+          },
+          {
+            "id": "b2-06.video102.q4",
+            "prompt": "Arrange a phone-screen repair and check the deadline",
+            "hint": "Use get it fixed and ask for a realistic collection time",
+            "answer": "Example: I need to get the screen fixed. Can you confirm whether it will be ready by Thursday?"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What problem does the customer report?",
+          "hint": "Listen for what happened after he took it home.",
+          "answer": "The computer he bought the previous day does not work, and he needs it for his job.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=10s",
+              "startSeconds": 10.54,
+              "endSeconds": 16.36,
+              "purpose": "support_from_existing_timed_captions"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=28s",
+              "startSeconds": 28.48,
+              "endSeconds": 32.68,
+              "purpose": "support_from_existing_timed_captions"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=73s",
+              "startSeconds": 73.96,
+              "endSeconds": 80.56,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "What does the employee actually do?",
+          "hint": "Compare the customer’s description with the employee’s claim.",
+          "answer": "According to the customer, he puts a power tool over the keyboard, then claims the repair is complete.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=46s",
+              "startSeconds": 46.18,
+              "endSeconds": 49.289,
+              "purpose": "support_from_existing_timed_captions"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=49s",
+              "startSeconds": 49.36,
+              "endSeconds": 53.12,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "What evidence of a successful repair is missing?",
+          "hint": "What would show that the original problem has gone away?",
+          "answer": "The dialogue supplies neither a clear diagnosis nor a successful test of the original fault.",
+          "answerKind": "factual_with_scope",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=55s",
+              "startSeconds": 55.12,
+              "endSeconds": 64.198,
+              "purpose": "support_from_existing_timed_captions"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=70s",
+              "startSeconds": 70.04,
+              "endSeconds": 73.46,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "What would you ask before agreeing to pay?",
+          "hint": "Ask for a practical demonstration.",
+          "answer": "Example: Could you show me that the computer has been fixed before I pay?",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=yxSCWHRAmRU&t=49s",
+              "startSeconds": 49.36,
+              "endSeconds": 64.198,
+              "purpose": "context_for_original_example"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "6d851581f0afff13893a033f526594611450f69da82796b2f7551b17a583fb36"
+    },
+    {
+      "materialKey": "b2-11",
+      "sourcePath": "stories/materials/Course/lessons/b2-11.json",
+      "pageId": "s_video102",
+      "sourceSha256": "b10802f387b8159c21fbee60854ae01b278ae62a9eeeef04a24be46a647bb64f",
+      "currentClip": {
+        "videoId": "ZveJWidWxgY",
+        "startSeconds": 91,
+        "endSeconds": 159
+      },
+      "clip": {
+        "videoId": "VyiNW33MpAo",
+        "startSeconds": 0,
+        "endSeconds": 109,
+        "title": "Brainstorming with friends | Chris & Jack",
+        "credit": "Chris and Jack"
+      },
+      "activityMinutesSuggested": 6,
+      "rationalePT": "Diversifica o recorte idêntico da B1.06 sem chamar a fonte B2 atual de fácil. O brainstorm fracassado permite reconhecer uma objeção, qualificar e preservar um propósito com Having said that.",
+      "estimatedInputLevel": "B2/C1",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": true,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=VyiNW33MpAo"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "Keep the aim, change the proposal",
+        "instruction": "Watch the objections, then propose a compromise that preserves the purpose",
+        "minutes": 4,
+        "video": {
+          "videoId": "ZveJWidWxgY",
+          "startSeconds": 91,
+          "endSeconds": 159,
+          "title": "Discussing advantages and disadvantages — British Council | English",
+          "credit": "British Council | English"
+        },
+        "items": [
+          {
+            "id": "b2-11.video102.q1",
+            "prompt": "What purpose is Noelia trying to protect?",
+            "hint": "Listen to her link between fun and the business",
+            "answer": "She wants to encourage creativity at work"
+          },
+          {
+            "id": "b2-11.video102.q2",
+            "prompt": "Which concern involves people outside the team?",
+            "hint": "Listen for clients arriving",
+            "answer": "Yuna worries about clients seeing the staff jumping around"
+          },
+          {
+            "id": "b2-11.video102.q3",
+            "prompt": "What is the difference between thinking about it and saying yes?",
+            "hint": "Listen to Yuna’s last two replies",
+            "answer": "Considering the idea is not the same as approving it"
+          },
+          {
+            "id": "b2-11.video102.q4",
+            "prompt": "Make a counterproposal that keeps the creativity goal",
+            "hint": "Acknowledge the concern and suggest a workable change",
+            "answer": "Example: A break space could help creativity. Having said that, I’d choose quiet activities instead of a trampoline"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What are they trying to decide?",
+          "hint": "The real topic is revealed near the end.",
+          "answer": "They are choosing their coffee, and finally settle on black coffee.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=VyiNW33MpAo&t=91s",
+              "startSeconds": 91.904,
+              "endSeconds": 95.25,
+              "purpose": "support_from_existing_timed_captions"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=VyiNW33MpAo&t=104s",
+              "startSeconds": 104.1,
+              "endSeconds": 109,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "Which two suggestions contradict each other?",
+          "hint": "Compare the temperature suggestions.",
+          "answer": "They propose coffee that is both extremely hot and frozen solid.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=VyiNW33MpAo&t=10s",
+              "startSeconds": 10.83,
+              "endSeconds": 19.41,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "What does “no bad ideas” mean to them?",
+          "hint": "Notice what happens when someone suggests ice cream.",
+          "answer": "They interpret the rule as allowing only good suggestions and reject the ice-cream idea.",
+          "answerKind": "text_supported_interpretation",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=VyiNW33MpAo&t=35s",
+              "startSeconds": 35.343,
+              "endSeconds": 50.73,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "How would you acknowledge one objection and improve the proposal?",
+          "hint": "Recognise the concern, then qualify your proposal.",
+          "answer": "Example: That is a fair point. Having said that, let us keep the coffee simple and choose one temperature.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=VyiNW33MpAo&t=4s",
+              "startSeconds": 4.26,
+              "endSeconds": 8.619,
+              "purpose": "context_for_original_example"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=VyiNW33MpAo&t=91s",
+              "startSeconds": 91.904,
+              "endSeconds": 109,
+              "purpose": "context_for_original_example"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "d3743927ee201de8c3c644ef9f5cb7ee5e63273f42e663e9c41ae75c9f4dd357"
+    },
+    {
+      "materialKey": "c1-05",
+      "sourcePath": "stories/materials/Course/lessons/c1-05.json",
+      "pageId": "s_video102",
+      "sourceSha256": "a92754b23bbac24068a9b0395f2ffe3dd242869116a9167bf990c2726bcc2595",
+      "currentClip": {
+        "videoId": "m04lQ5BUAn0",
+        "startSeconds": 474,
+        "endSeconds": 565
+      },
+      "clip": {
+        "videoId": "arj7oStGLkU",
+        "startSeconds": 12.5,
+        "endSeconds": 174.8,
+        "title": "Inside the Mind of a Master Procrastinator | Tim Urban | TED",
+        "credit": "TED"
+      },
+      "activityMinutesSuggested": 8,
+      "rationalePT": "Mantém plano, atraso e reversão; o desmentido impede tratar a falsa vitória como fato. Trabalha organização e ênfase narrativa, sem inventar que o palestrante usa as inversões da gramática Langy.",
+      "estimatedInputLevel": "C1",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": true,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true,
+        "runtimeScope": "Observed TED playback advancing to 48s and pause in local lesson; full interval ending and continuous listening not verified"
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=arj7oStGLkU",
+        "https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "Let the listener feel the turning point",
+        "instruction": "Watch the contrast between a flat story and a tense one, then reshape an opening",
+        "minutes": 4,
+        "video": {
+          "videoId": "m04lQ5BUAn0",
+          "startSeconds": 474,
+          "endSeconds": 565,
+          "title": "How to tell a story in English — Oxford Online English",
+          "credit": "Oxford Online English"
+        },
+        "items": [
+          {
+            "id": "c1-05.video102.q1",
+            "prompt": "Why does the speaker reject the short monster story?",
+            "hint": "Look at how easily the goal is reached",
+            "answer": "The problem is solved immediately, so there is little tension"
+          },
+          {
+            "id": "c1-05.video102.q2",
+            "prompt": "Which details make the mountain journey difficult before the storm?",
+            "hint": "Listen for physical conditions and what the traveller carries",
+            "answer": "The thin air and heavy pack make it difficult before the weather changes"
+          },
+          {
+            "id": "c1-05.video102.q3",
+            "prompt": "What information is withheld after the storm arrives?",
+            "hint": "Notice the questions left open",
+            "answer": "The excerpt leaves open whether the traveller crossed the pass or was hurt"
+          },
+          {
+            "id": "c1-05.video102.q4",
+            "prompt": "Recast the turning point using an emphatic opening",
+            "hint": "Use Little did I know without inventing the story’s ending",
+            "answer": "Example: Little did I know that a storm was about to arrive just as I approached the top"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "How did he intend to organise the year?",
+          "hint": "Describe the beginning, middle and end of his original plan.",
+          "answer": "He planned a light start, more work in the middle and the greatest effort near the end.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=arj7oStGLkU",
+              "startSeconds": 51.64,
+              "endSeconds": 80.23,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What actually happened as the deadline approached?",
+          "hint": "Track what changed as the deadline got closer.",
+          "answer": "He postponed writing until the last three days, then completed ninety pages and submitted on time.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=arj7oStGLkU",
+              "startSeconds": 83.09,
+              "endSeconds": 131.98,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "How does he create and then reverse the audience’s expectation?",
+          "hint": "Compare the imagined phone call with his correction after the applause.",
+          "answer": "He invents praise from the school, then reveals that the praise never happened and the thesis was poor.",
+          "answerKind": "evidence_based_interpretation",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=arj7oStGLkU",
+              "startSeconds": 134.03,
+              "endSeconds": 174.47,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Retell the ending more neutrally: what changes in its effect?",
+          "hint": "Keep the events, remove the false happy ending and explain the effect.",
+          "answer": "Example: He delayed, submitted on time and produced poor work. A direct account loses the false triumph and surprise.",
+          "answerKind": "open_reformulation_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=arj7oStGLkU",
+              "startSeconds": 51.64,
+              "endSeconds": 174.47,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "df9651c16a9e741eb0434bb90e3eb7cd0689ac20a727a14290a476c455fef9f9"
+    }
+  ],
+  "reserves": [
+    {
+      "candidateId": "work-interruptions",
+      "status": "reserve_not_selected",
+      "title": "Why work doesn't happen at work | Jason Fried",
+      "credit": "TED",
+      "videoId": "5XD2kNopsUs",
+      "startSeconds": 93.7,
+      "endSeconds": 265.5,
+      "evidenceURL": "https://www.youtube.com/watch?v=5XD2kNopsUs",
+      "reasonPT": "171,8s estimados B2 para uma aula B1.12. Boa extensão para B1 forte; não substituir por padrão sem adaptar o apoio.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "better-questions",
+      "status": "reserve_not_selected",
+      "title": "Celeste Headlee: 10 ways to have a better conversation | TED",
+      "credit": "TED",
+      "videoId": "R1vskiVDwl4",
+      "startSeconds": 363.1,
+      "endSeconds": 466.1,
+      "evidenceURL": "https://www.youtube.com/watch?v=R1vskiVDwl4",
+      "reasonPT": "Escuta e perguntas abertas são úteis, mas não demonstram toda a mediação de desacordo de C1.11.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "frontend-backend",
+      "status": "reserve_not_selected",
+      "title": "Stanford Computer Scientist Answers Coding Questions From Twitter | Tech Support | WIRED",
+      "credit": "WIRED",
+      "videoId": "1yyRvyNQ5rQ",
+      "startSeconds": 134.1,
+      "endSeconds": 215.166,
+      "evidenceURL": "https://www.youtube.com/watch?v=1yyRvyNQ5rQ",
+      "reasonPT": "O extra Frontend não integra o catálogo67. DevStudy é A2/B1 e tem input sobre portfólio; usar a explicação técnica B2 só quando o objetivo e a turma justificarem.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "tea-reportage",
+      "status": "reserve_not_selected",
+      "title": "7 Ways to Drink Tea | Around the World",
+      "credit": "Great Big Story",
+      "videoId": "yq4ME1M620I",
+      "startSeconds": 150.6,
+      "endSeconds": 246.319,
+      "evidenceURL": "https://www.youtube.com/watch?v=yq4ME1M620I",
+      "reasonPT": "Reportagem cultural B1 com captions automáticas; não substituir um objetivo A1 ou present perfect de experiências apenas pela palavra chá.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "prosody-in-context-expanded",
+      "status": "reserve_not_selected",
+      "title": "How to Speak So That People Want to Listen | Julian Treasure | TED",
+      "credit": "TED",
+      "videoId": "eIho2S0ZahI",
+      "startSeconds": 339.4,
+      "endSeconds": 441.1,
+      "evidenceURL": "https://www.youtube.com/watch?v=eIho2S0ZahI",
+      "reasonPT": "É expansão de vídeo já usado, sem novo canal; mantém foco em prosódia e não mostra mediação completa.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "QdZ2JIGJFn0",
+      "status": "reserve_not_selected",
+      "title": "Pretending to know how to fix a computer",
+      "credit": "Viva La Dirt League",
+      "videoId": "QdZ2JIGJFn0",
+      "startSeconds": 12,
+      "endSeconds": 118,
+      "evidenceURL": "https://www.youtube.com/watch?v=QdZ2JIGJFn0",
+      "reasonPT": "Longa sequência visual com poucas falas; não cobre por si só future perfect/continuous de B2.02. Reserva para compromisso versus evidência.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "NetRCShwRw0",
+      "status": "reserve_not_selected",
+      "title": "When You Both Don't Want to Drive",
+      "credit": "that's a bad idea",
+      "videoId": "NetRCShwRw0",
+      "startSeconds": 0,
+      "endSeconds": 45.5,
+      "evidenceURL": "https://www.youtube.com/watch?v=NetRCShwRw0",
+      "reasonPT": "Tema menos direto para a escolha profissional B1.06, captions automáticas e limite de45,5s incerto; a seleção Easy English encaixa melhor.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "QNG71xzFxz0",
+      "status": "reserve_not_selected",
+      "title": "Conversation Killers - Foil Arms and Hog",
+      "credit": "Foil Arms and Hog",
+      "videoId": "QNG71xzFxz0",
+      "startSeconds": 0,
+      "endSeconds": 100,
+      "evidenceURL": "https://www.youtube.com/watch?v=QNG71xzFxz0",
+      "reasonPT": "Trabalha empatia e escolha de assunto, mas não apresenta diretamente negociação respeitosa de limite de C1.04.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "FXdS7pBi5Po",
+      "status": "reserve_not_selected",
+      "title": "New Hire Fails Every \"Are You a Robot\" Test",
+      "credit": "Studio C",
+      "videoId": "FXdS7pBi5Po",
+      "startSeconds": 50,
+      "endSeconds": 198,
+      "evidenceURL": "https://www.youtube.com/watch?v=FXdS7pBi5Po",
+      "reasonPT": "Hipóteses sobre identidade têm fit parcial com dedução de acontecimento passado em B2.04; não substituir apenas por haver testes e suspeita.",
+      "iframeRuntimeVerified": false
+    },
+    {
+      "candidateId": "b58J8b_Uo4U",
+      "status": "reserve_not_selected",
+      "title": "English Speakers Can't speak English",
+      "credit": "Foil Arms and Hog",
+      "videoId": "b58J8b_Uo4U",
+      "startSeconds": 0,
+      "endSeconds": 156,
+      "evidenceURL": "https://www.youtube.com/watch?v=b58J8b_Uo4U",
+      "reasonPT": "Boa discussão C1 sobre explicações, mas metalinguagem e correções deliberadas não demonstram toda a mediação de desacordo da C1.11.",
+      "iframeRuntimeVerified": false
+    }
+  ],
+  "notAppliedAfterRuntime": [
+    {
+      "materialKey": "c1-10",
+      "sourcePath": "stories/materials/Course/lessons/c1-10.json",
+      "pageId": "s_video102",
+      "sourceSha256": "f94bdac935509f4783c13c71777022b5f84075a566f5a114bd10518c252a4607",
+      "currentClip": {
+        "videoId": "gCfzeONu3Mo",
+        "startSeconds": 109,
+        "endSeconds": 161
+      },
+      "clip": {
+        "videoId": "sngRrkQayDA",
+        "startSeconds": 26,
+        "endSeconds": 152,
+        "title": "When a Text Conversation Goes Very Wrong - Key & Peele",
+        "credit": "Key & Peele"
+      },
+      "activityMinutesSuggested": 7,
+      "rationalePT": "Duas interpretações das mesmas mensagens dão evidência concreta para discutir tom e explicitar intenção. O desfecho sustenta a ambiguidade de round. Conteúdo adulto sinalizado para seleção da professora.",
+      "estimatedInputLevel": "B2/C1; B1 com apoio",
+      "contentNotesPT": [
+        "Palavrões, vários censurados com bleep nas legendas.",
+        "Ameaça verbal de briga e taco com pregos no desfecho.",
+        "Bar e pedido de bebidas alcoólicas."
+      ],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": true,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeRuntimeResult": "YouTube iframe visibly displayed This video is unavailable at localhost:8863 on 2026-11-28; existing C1.10 source restored"
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=sngRrkQayDA"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "Same words, different interpretations",
+        "instruction": "Watch how wording and relationships affect meaning, then make an update’s action clear",
+        "minutes": 4,
+        "video": {
+          "videoId": "gCfzeONu3Mo",
+          "startSeconds": 109,
+          "endSeconds": 161,
+          "title": "How miscommunication happens — Katherine Hampsten — TED-Ed",
+          "credit": "TED-Ed"
+        },
+        "items": [
+          {
+            "id": "c1-10.video102.q1",
+            "prompt": "Does the receiver get an unfiltered copy of the sender’s meaning?",
+            "hint": "Listen for the two interpretations",
+            "answer": "No. People express and interpret messages through their own subjective filters"
+          },
+          {
+            "id": "c1-10.video102.q2",
+            "prompt": "What does the changing lump of clay illustrate?",
+            "hint": "Connect the visual metaphor with interpretation",
+            "answer": "Each participant reshapes the message through their own perceptions"
+          },
+          {
+            "id": "c1-10.video102.q3",
+            "prompt": "How could a relationship change the way a phrase is understood?",
+            "hint": "Consider a friend and a client reading the same casual wording",
+            "answer": "Example: A brief casual phrase may sound friendly to a close friend but dismissive or overly familiar to a client"
+          },
+          {
+            "id": "c1-10.video102.q4",
+            "prompt": "Make a recipient’s next action explicit in a short event update",
+            "hint": "State what to confirm and give an unambiguous deadline",
+            "answer": "Example: The event is now on Monday 7 December. Please confirm by Friday 4 December at 5 pm whether you can attend"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "Where does Jordan expect to meet Keegan?",
+          "hint": "Listen to the location in the apology message.",
+          "answer": "Jordan expects to meet Keegan at the bar.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA&t=32s",
+              "startSeconds": 32.666,
+              "endSeconds": 42.743,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "How does each man interpret the same messages?",
+          "hint": "Compare the two reactions to identical messages.",
+          "answer": "Jordan reads friendliness and flexibility; Keegan reads indifference and aggression.",
+          "answerKind": "text_supported_interpretation",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA&t=47s",
+              "startSeconds": 47.915,
+              "endSeconds": 70.604,
+              "purpose": "support_from_existing_timed_captions"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA&t=120s",
+              "startSeconds": 120.42,
+              "endSeconds": 126.893,
+              "purpose": "support_from_existing_timed_captions"
+            }
+          ]
+        },
+        {
+          "prompt": "What does Jordan mean by the first round, and what does Keegan hear?",
+          "hint": "Compare the fight interpretation with the order at the bar.",
+          "answer": "Jordan offers to buy drinks; Keegan interprets the words as a challenge to fight.",
+          "answerKind": "text_supported_interpretation",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA",
+              "startSeconds": 120.42,
+              "endSeconds": 126.893,
+              "purpose": "answer_support"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA",
+              "startSeconds": 131.999,
+              "endSeconds": 139.606,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "How would you rewrite one reply to make the tone clear?",
+          "hint": "Make friendliness and flexibility explicit.",
+          "answer": "Example: I would be happy to meet at the bar, and I am flexible about where we go.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA&t=38s",
+              "startSeconds": 38.705,
+              "endSeconds": 42.743,
+              "purpose": "context_for_original_example"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=sngRrkQayDA&t=52s",
+              "startSeconds": 52.386,
+              "endSeconds": 61.895,
+              "purpose": "context_for_original_example"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "64c0556cc5bc1ca26a6d4c7b85aa525d54716a0f441abaf5b6d7712f31764d24",
+      "status": "not_applied_iframe_unavailable"
+    }
+  ]
+}

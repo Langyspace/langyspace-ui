@@ -1,0 +1,59 @@
+{
+  "status": "pass",
+  "appliedChanges": 7,
+  "questions": 28,
+  "checks": [
+    "stable IDs and page order",
+    "four questions, one open example per page",
+    "bounded non-Shorts sources and discussion time",
+    "no unrelated lesson fields changed",
+    "A1.01 and DevFirstDay byte-identical",
+    "C1.10 restored after observed embed failure",
+    "catalog unchanged"
+  ],
+  "results": [
+    {
+      "materialKey": "a1-04",
+      "clipSeconds": 40.4,
+      "activityMinutes": 4,
+      "questions": 4
+    },
+    {
+      "materialKey": "a2-01",
+      "clipSeconds": 40.6,
+      "activityMinutes": 4,
+      "questions": 4
+    },
+    {
+      "materialKey": "b1-06",
+      "clipSeconds": 118.1,
+      "activityMinutes": 7,
+      "questions": 4
+    },
+    {
+      "materialKey": "b1-08",
+      "clipSeconds": 75.7,
+      "activityMinutes": 5,
+      "questions": 4
+    },
+    {
+      "materialKey": "b2-06",
+      "clipSeconds": 78,
+      "activityMinutes": 5,
+      "questions": 4
+    },
+    {
+      "materialKey": "b2-11",
+      "clipSeconds": 109,
+      "activityMinutes": 6,
+      "questions": 4
+    },
+    {
+      "materialKey": "c1-05",
+      "clipSeconds": 162.3,
+      "activityMinutes": 8,
+      "questions": 4
+    }
+  ],
+  "apiCheck": "passed:185 values,312 types,659 declarations"
+}
