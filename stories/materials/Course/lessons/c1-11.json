@@ -372,10 +372,10 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Check your interpretation",
-      "instruction": "Use the information shown to answer Teacher’s questions and ask a follow-up question",
+      "title": "Clarify what “quick” means",
+      "instruction": "You coordinate the request. Teacher is checking the figures. Clarify what you need and agree on a deadline",
       "minutes": 2,
-      "eyebrow": "Discuss the situation"
+      "eyebrow": "Roleplay"
     },
     {
       "id": "s_grammar",
@@ -607,49 +607,41 @@
     },
     "s_personal": {
       "type": "facts",
-      "title": "Situation reference",
+      "title": "Two messages about the same request",
       "facts": [
         {
           "id": "0",
-          "label": "Person A",
-          "value": "A prompt reply to plan the next step"
+          "label": "Planning colleague",
+          "value": "“Please send a quick reply so I can plan the next stage”"
         },
         {
           "id": "1",
-          "label": "Person B",
-          "value": "Time to verify before stating the figures"
-        },
-        {
-          "id": "2",
-          "label": "Potential bridge",
-          "value": "Acknowledge now · give a checked-answer time"
+          "label": "Colleague checking the figures",
+          "value": "“We can’t give reliable figures today. We need more time to check”"
         }
       ],
       "questions": [
         {
           "id": "0",
-          "prompt": "What do you think the other person means?",
-          "cue": "Check your interpretation before responding",
-          "hint": "So, if I understand you correctly, …",
-          "answer": "One possible response"
+          "prompt": "Do you need the checked figures today?",
+          "cue": "Clarify what you need now",
+          "hint": "What I mean is an acknowledgement, so I can plan"
         },
         {
           "id": "1",
-          "prompt": "Can you explain it another way?",
-          "cue": "Use a concrete example rather than repeat the same words",
-          "hint": "To put it another way, imagine …",
-          "answer": "One possible response"
+          "prompt": "Would a checked answer by four tomorrow work?",
+          "cue": "Confirm a realistic deadline",
+          "hint": "So, you’ll send the checked figures by four tomorrow?"
         },
         {
           "id": "personal.follow-up94",
-          "prompt": "What would you agree explicitly before moving on?",
-          "cue": "Turn different interpretations into a checkable shared expectation",
-          "hint": "By …, we mean … Could we confirm … so we’re working to the same expectation?",
-          "answer": "One possible response"
+          "prompt": "What if I need longer to check?",
+          "cue": "Agree how to handle a delay",
+          "hint": "Please update me if you need longer, so I can adjust"
         }
       ],
       "questionPurpose": "conversation",
-      "referenceLabel": "Situation reference"
+      "referenceLabel": "Two messages · one request"
     }
   }
 }

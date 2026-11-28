@@ -92,6 +92,12 @@ Regra de 25/11/2026: cada conjunto de flashcards precisa ter pelo menos 20 palav
 
 Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloco introdutório na aula é uma regra separada. Conjuntos menores já publicados entram no plano de ampliação; não declarar que foram atualizados antes do cadastro e da leitura de confirmação. Ver [inventário e propostas por aula](../epics/dev-first-day95/homework/expansion-plan20.md).
 
+## Situação completa na própria tela — revisão166
+
+- Numa prática baseada em mensagens ou posições diferentes, manter as referências essenciais visíveis ao mesmo tempo que a conversa. Não exigir voltar às leituras anteriores para descobrir quem quer o quê.
+- O título e o subtítulo definem a ação, o papel da aluna e quem a professora representa. Preferir falas diretas do interlocutor a perguntas abstratas como “What does the other person mean?”.
+- A referência mostra as mensagens/fatos, sem antecipar o acordo que a aluna deve construir. Uma lâmpada canônica oferece formulações úteis em ordem; a conversa continua aberta e não tem gabarito único.
+
 ## Perguntas conforme a finalidade — revisão94
 
 O pedido de 23/11/2026 manteve as 12 aulas por nível e definiu os balões com intenção de resposta e dica como apoio às perguntas. A revisão de24/11 abaixo distingue conversas pessoais de compreensão factual e tem prioridade sobre a apresentação de perguntas nos [60 planos de exercícios A1–C1](planos-a1-c1/README.md).
