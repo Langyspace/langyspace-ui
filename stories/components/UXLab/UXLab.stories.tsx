@@ -5,6 +5,12 @@ import townMap152 from '../../materials/Course/assets/a1-09-town-map152.png'
 import townMapData152 from '../../materials/Course/lessons/a1-09.json'
 import shopScene157 from '../../materials/Course/assets/a1-11-shopping-scene157.png'
 import shopData157 from '../../materials/Course/lessons/a1-11.json'
+import partyScene160 from '../../materials/Course/assets/b1-11-scene160.png'
+import partyData160 from '../../materials/Course/lessons/b1-11.json'
+import cluesScene160 from '../../materials/Course/assets/b2-04-flat-evidence123.webp'
+import cluesData160 from '../../materials/Course/lessons/b2-04.json'
+import checkoutScene160 from '../../materials/Course/assets/c1-12-scene160.png'
+import checkoutData160 from '../../materials/Course/lessons/c1-12.json'
 import { CourseActivity } from '../../materials/Course/CourseActivity'
 import airportVocabulary81 from '../../materials/Course/assets/a1-07-vocabulary81.webp'
 import { A102Lesson } from '../../materials/A102/A102Lesson'
@@ -381,6 +387,31 @@ export const ClothesShopScene: Story = {
     <CourseActivity
       activity={{ ...shopData157.activities.s_personal, type: 'scene-choice' }}
       image={shopScene157}
+    />
+  ),
+}
+
+export const CelebrationScene: Story = {
+  render: () => (
+    <CourseActivity
+      activity={{ ...partyData160.activities.s_mission, type: 'scene-choice' }}
+      image={partyScene160}
+    />
+  ),
+}
+export const EvidenceScene: Story = {
+  render: () => (
+    <CourseActivity
+      activity={{ ...cluesData160.activities.s_mission, type: 'scene-choice' }}
+      image={cluesScene160}
+    />
+  ),
+}
+export const PaymentAccessScene: Story = {
+  render: () => (
+    <CourseActivity
+      activity={{ ...checkoutData160.activities.s_reply, type: 'scene-choice' }}
+      image={checkoutScene160}
     />
   ),
 }

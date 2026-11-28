@@ -447,8 +447,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Strengthen one condition in the recommendation",
-      "instruction": "Test the fallback in practice and strengthen one condition in the recommendation",
+      "title": "Make this checkout work for everyone",
+      "instruction": "Use the experience you heard to propose a workable fallback, then test it against another customer’s needs",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -554,43 +554,101 @@
       "referenceLabel": "Three criteria for the recommendation"
     },
     "s_reply": {
-      "type": "facts",
-      "title": "Fallback conditions",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Situation",
-          "value": "Dead phone · payment connection unavailable"
-        },
-        {
-          "id": "1",
-          "label": "Need",
-          "value": "A usable alternative without public embarrassment"
-        },
-        {
-          "id": "2",
-          "label": "Check",
-          "value": "Different fee? Clear staff explanation?"
-        }
-      ],
-      "questions": [
-        {
-          "id": "task",
-          "prompt": "What should happen when the usual digital route fails?",
-          "hint": "Staff should offer … without requiring …"
-        },
-        {
-          "id": "@s_reply.q98.2",
-          "prompt": "How would you check that the fallback doesn’t create another barrier?",
-          "hint": "I’d check the … and how staff …"
-        },
-        {
-          "id": "@s_reply.q98.3",
-          "prompt": "How would you keep the recommendation proportionate to this account?",
-          "hint": "This case shows …; it doesn’t prove …, so I’d …"
-        }
-      ],
-      "questionPurpose": "response"
+      "type": "scene-choice",
+      "title": "Payment access at the checkout",
+      "image": "c1-12-scene160",
+      "questions": [],
+      "scene": {
+        "alt": "A manager and cashier Kim at a checkout; Ana holds a black-screen phone, one customer holds cash and another holds a payment card; the terminal is visible",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "manager",
+            "label": "Manager",
+            "summary": "Operations",
+            "example": "Aims: simpler checkout, less cash handling",
+            "prompt": "",
+            "xPercent": 12.5,
+            "yPercent": 55.0,
+            "targetBounds": {
+              "xPercent": 1,
+              "yPercent": 26,
+              "widthPercent": 23,
+              "heightPercent": 58
+            },
+            "hint": "I’d support …, provided that …",
+            "answer": "I’d support a trial, provided we check the fees and record whether anyone is unable to complete a purchase"
+          },
+          {
+            "id": "phone",
+            "label": "Phone",
+            "summary": "Battery",
+            "example": "Normally pays digitally; the battery has died",
+            "prompt": "",
+            "xPercent": 44.0,
+            "yPercent": 53.5,
+            "targetBounds": {
+              "xPercent": 39,
+              "yPercent": 45,
+              "widthPercent": 10,
+              "heightPercent": 17
+            },
+            "hint": "Someone whose … still needs …",
+            "answer": "Someone whose battery has died still needs a way to pay. I’d offer an alternative that doesn’t require a phone"
+          },
+          {
+            "id": "cash",
+            "label": "Cash",
+            "summary": "Fallback",
+            "example": "The customer has cash available",
+            "prompt": "",
+            "xPercent": 71.0,
+            "yPercent": 58.5,
+            "targetBounds": {
+              "xPercent": 66.5,
+              "yPercent": 51,
+              "widthPercent": 9,
+              "heightPercent": 15
+            },
+            "hint": "Accepting … would …, but we’d also need …",
+            "answer": "Accepting cash would offer one fallback, but we’d still need clear rules on fees and privacy"
+          },
+          {
+            "id": "card",
+            "label": "Payment card",
+            "summary": "Access",
+            "example": "A card still depends on a working connection",
+            "prompt": "",
+            "xPercent": 89.0,
+            "yPercent": 63.0,
+            "targetBounds": {
+              "xPercent": 84,
+              "yPercent": 57,
+              "widthPercent": 10,
+              "heightPercent": 12
+            },
+            "hint": "Having … doesn’t guarantee …",
+            "answer": "Having a card doesn’t guarantee access during an outage; the fallback must work without the same connection"
+          },
+          {
+            "id": "terminal",
+            "label": "The terminal",
+            "summary": "Outage",
+            "example": "Scenario: the payment connection is unavailable",
+            "prompt": "",
+            "xPercent": 34.5,
+            "yPercent": 74.0,
+            "targetBounds": {
+              "xPercent": 29,
+              "yPercent": 63,
+              "widthPercent": 11,
+              "heightPercent": 22
+            },
+            "hint": "If …, staff should … without …",
+            "answer": "If the connection fails, staff should offer a clear alternative without asking customers to explain private circumstances publicly"
+          }
+        ]
+      }
     },
     "s_personal": {
       "type": "facts",

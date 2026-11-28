@@ -70,13 +70,22 @@ export function CourseActivity({
         }}
         hotspots={activity.scene.hotspots.map((hotspot) => ({
           ...hotspot,
-          summary: hotspot.example,
+          summary: hotspot.summary ?? hotspot.example,
           example:
-            sceneSupport === 1
-              ? hotspot.hint
-              : sceneSupport === 2
-                ? hotspot.answer
-                : undefined,
+            hotspot.summary !== undefined ? (
+              <Common.Stack as="span">
+                <span>{hotspot.example}</span>
+                {sceneSupport ? (
+                  <span>
+                    {sceneSupport === 1 ? hotspot.hint : hotspot.answer}
+                  </span>
+                ) : null}
+              </Common.Stack>
+            ) : sceneSupport === 1 ? (
+              hotspot.hint
+            ) : sceneSupport === 2 ? (
+              hotspot.answer
+            ) : undefined,
           actions: (
             <IconButton
               variant="neutral"

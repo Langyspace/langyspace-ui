@@ -387,8 +387,8 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Find the most plausible explanation",
-      "instruction": "Give an explanation and say what evidence would confirm it",
+      "title": "What might have happened here?",
+      "instruction": "Compare the clues, suggest two possible explanations and tell me what you would check next",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
@@ -499,45 +499,67 @@
   ],
   "activities": {
     "s_mission": {
-      "type": "facts",
-      "title": "Evidence before explanation",
-      "facts": [
-        {
-          "id": "0",
-          "label": "Record",
-          "value": "Spare key used · 5 pm"
-        },
-        {
-          "id": "1",
-          "label": "Object",
-          "value": "Receipt · 5:20 pm · owner unknown"
-        },
-        {
-          "id": "movement",
-          "label": "Reported change",
-          "value": "Plant moved from the windowsill"
-        }
-      ],
-      "questions": [
-        {
-          "id": "task",
-          "prompt": "What is your strongest explanation?",
-          "hint": "Someone may have … because …"
-        },
-        {
-          "id": "@s_mission.q98.2",
-          "prompt": "What alternative explanation should stay open?",
-          "hint": "The … could also …"
-        },
-        {
-          "id": "@s_mission.q98.3",
-          "prompt": "What evidence would help you distinguish the explanations?",
-          "hint": "I’d check … to find out whether …"
-        }
-      ],
-      "questionPurpose": "response",
+      "type": "scene-choice",
+      "title": "Clues in the flat",
       "image": "b2-04-flat-evidence123",
-      "referenceLabel": "Evidence before explanation"
+      "questions": [],
+      "scene": {
+        "alt": "A closed window with a visible latch, a plant on a side table and a receipt on the main table; the people responsible are not shown",
+        "aspectRatio": 1.5,
+        "hotspots": [
+          {
+            "id": "window",
+            "label": "Window latch",
+            "summary": "Now",
+            "example": "The window is closed now",
+            "prompt": "",
+            "xPercent": 36.0,
+            "yPercent": 27.0,
+            "targetBounds": {
+              "xPercent": 30,
+              "yPercent": 18,
+              "widthPercent": 12,
+              "heightPercent": 18
+            },
+            "hint": "It could have … / That doesn’t prove …",
+            "answer": "It could have been open earlier; I’d check before ruling that out"
+          },
+          {
+            "id": "plant",
+            "label": "The plant",
+            "summary": "Access record",
+            "example": "Moved from sill; spare key used at 5 pm",
+            "prompt": "",
+            "xPercent": 81.5,
+            "yPercent": 41.0,
+            "targetBounds": {
+              "xPercent": 68,
+              "yPercent": 20,
+              "widthPercent": 27,
+              "heightPercent": 42
+            },
+            "hint": "The neighbour may have … / I’d confirm …",
+            "answer": "The neighbour may have visited. I’d confirm whether she used the key"
+          },
+          {
+            "id": "receipt",
+            "label": "Receipt",
+            "summary": "5:20 pm",
+            "example": "Owner and time of arrival are unknown",
+            "prompt": "",
+            "xPercent": 41.75,
+            "yPercent": 89.5,
+            "targetBounds": {
+              "xPercent": 31.5,
+              "yPercent": 80,
+              "widthPercent": 20.5,
+              "heightPercent": 19
+            },
+            "hint": "It might have … / We still don’t know …",
+            "answer": "It might have been brought in later; we still don’t know who left it"
+          }
+        ]
+      }
     },
     "s_reply": {
       "type": "facts",

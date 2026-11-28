@@ -1,6 +1,6 @@
 # Expansão das cenas interativas — proposta159
 
-Revisão da estrutura e dos objetivos das 60 aulas A1–C1, com os sete extras/experimentais considerados para reaproveitamento. Fonte local após a revisão158; não é auditoria de render nem comprovação de publicação. As propostas abaixo ainda precisam de autoria de mídia e revisão na implementação. Inventário por aula em `outputs/scene-opportunities159/inventory.json` do chat.
+Revisão da estrutura e dos objetivos das 60 aulas A1–C1, com os sete extras/experimentais considerados para reaproveitamento. Fonte local após a revisão158; não é auditoria de render nem comprovação de publicação. As propostas abaixo orientam a expansão. Os três primeiros pilotos foram implementados localmente na revisão160; os demais continuam planejados. Inventário por aula em `outputs/scene-opportunities159/inventory.json` do chat.
 
 ## Dinâmica comum
 
@@ -22,6 +22,7 @@ Em B2/C1, a dificuldade não vem de objetos minúsculos, texto abundante ou adiv
 
 ### 1. B1.11 — Find the person I mean
 
+- **Status160:** implementado localmente como “Find and introduce someone”, em `s_mission`, com seis pessoas selecionáveis. A nova cena aparece neste piloto; a resposta ao áudio mantém seu conteúdo anterior.
 - **Encaixe:** `s_mission`, hoje “Introduce us”, apoiada em duas fichas textuais de pessoas.
 - **Cena:** festa com um grupo legível de convidados, mesa de bebidas, pista de dança e alguém fazendo um discurso. Preservar Alex de camisa verde junto às bebidas e Nina perto da pista; os demais convidados precisam de ações/roupas distinguíveis, sem criar profissões ou parentescos por aparência.
 - **Subtítulo:** “Help me find the right person, describe them clearly, then introduce us when it’s a good moment”
@@ -31,6 +32,7 @@ Em B2/C1, a dificuldade não vem de objetos minúsculos, texto abundante ou adiv
 
 ### 2. B2.04 — What might have happened here?
 
+- **Status160:** implementado localmente em `s_mission`, reutilizando a imagem existente e três áreas de evidência, com fatos persistentes e ajuda opcional.
 - **Encaixe:** enriquecer `s_mission`, “Find the most plausible explanation”. Já existe `b2-04-flat-evidence123`; conferir a arte antes de pedir outra geração.
 - **Cena:** apartamento com pistas conectadas: planta deslocada, janela fechada, recibo e registro de acesso consultáveis. Detalhes grandes, não uma caça a pixels. Reutilizar o horário da chave às 5 e do recibo às 5:20.
 - **Subtítulo:** “Compare the clues, suggest two possible explanations and tell me what you would check next”
@@ -40,6 +42,7 @@ Em B2/C1, a dificuldade não vem de objetos minúsculos, texto abundante ou adiv
 
 ### 3. C1.12 — Make this checkout work for everyone
 
+- **Status160:** implementado localmente em `s_reply`, depois da escuta, para não antecipar a experiência do telefone sem bateria. `s_mission`, as duas fontes e o áudio foram preservados; a cena tem cinco áreas consultáveis.
 - **Encaixe:** `s_mission`, hoje critérios em três linhas de texto. As duas fontes de leitura permanecem disponíveis.
 - **Cena:** um caixa com atendente e clientes em situações diferentes: pagamento disponível, telefone sem bateria e conexão de pagamento indisponível. Dinheiro/cartão e uma alternativa de atendimento são referências concretas para discutir o processo.
 - **Subtítulo:** “Recommend a payment policy that keeps the queue moving and gives each customer a workable fallback”
@@ -126,4 +129,4 @@ Em B2/C1, a dificuldade não vem de objetos minúsculos, texto abundante ou adiv
 
 Começar por **B1.11, B2.04 e C1.12**: identificação/descritivo, investigação com incerteza e decisão entre interesses. São três usos distintos da imagem, em vez de reproduzir a loja em todos os níveis. Em cada piloto, validar a missão oral e as evidências disponíveis antes de ampliar a geração. Reusar áudio e imagens válidos; novos personagens de apoio não recebem biografias permanentes por conveniência da cena.
 
-Status: proposta de expansão e guideline; nenhuma nova cena gerada ou exercício alterado nesta revisão.
+Status159: proposta e guideline. Atualização160: B1.11, B2.04 e C1.12 implementados na prévia local, com duas imagens novas e uma reutilizada; revisão humana pendente. Os outros seis encaixes prioritários e a segunda rodada continuam como propostas. Detalhes em [pilotos160](../epics/scene-expansion160/plan.md); nenhuma publicação nesta etapa.

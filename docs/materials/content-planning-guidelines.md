@@ -9,6 +9,7 @@ Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou rep
 - Variar a função da mesma base visual: descrever alguém para a professora identificar, escolher e fazer um pedido, resolver um problema com uma atendente visível, comparar antes/depois, relacionar pistas ou negociar necessidades. A aluna participa com a fala e a observação, sem interação obrigatória no próprio dispositivo.
 - A cena deve fazer sentido antes de abrir qualquer ponto. A professora usa poucos cliques para destacar o que foi dito ou consultar um fato. Dica/modelo são opcionais e não alteram o tamanho da imagem; nunca exigir abrir todos os alvos para descobrir a tarefa.
 - Em níveis altos, separar fato observado, informação fornecida e interpretação. Profissão, intenção, estado técnico, disponibilidade, acesso financeiro e certeza não podem ser deduzidos só de aparência ou expressão facial. Hipóteses e soluções razoáveis podem variar; não criar gabarito secreto.
+- Na ficha, manter a evidência necessária visível quando a dica ou o modelo aparecerem. Só o apoio de linguagem é substituído a cada clique. Se a cena revelar uma experiência que chega pelo áudio, colocá-la depois da escuta; não antecipar a informação para facilitar a nova composição visual.
 - O [mapa de oportunidades159](expansao-cenas-interativas159.md) propõe encaixes nas aulas existentes; ele é planejamento, não comprovação de implementação ou publicação.
 
 ## Cenas de compras — revisão157
