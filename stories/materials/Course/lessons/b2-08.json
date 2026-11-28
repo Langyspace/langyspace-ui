@@ -441,40 +441,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Add the detail that helps someone choose",
-      "instruction": "Watch the home descriptions, then recommend a place with relevant extra information",
-      "minutes": 4,
+      "title": "Would this apartment suit you?",
+      "instruction": "Weigh the price, shared facilities and limitations before recommending the apartment",
+      "minutes": 7,
       "video": {
-        "videoId": "kzkEGEjkb30",
-        "startSeconds": 190,
-        "endSeconds": 226,
-        "title": "Talking about your home — Oxford Online English",
-        "credit": "Oxford Online English"
+        "videoId": "1MoN5tli3gA",
+        "startSeconds": 185.3,
+        "endSeconds": 287.15,
+        "title": "New York’s Smallest Apartment Has No Bathroom…",
+        "credit": "Cash Jordan"
       },
       "items": [
         {
           "id": "b2-08.video102.q1",
-          "prompt": "Which rooms and outdoor space appear in the first example?",
-          "hint": "Listen before the description becomes more detailed",
-          "answer": "The house has two bedrooms, a kitchen, a living room and a garden"
+          "prompt": "What price and size does the presenter quote?",
+          "hint": "Listen for the amount, then the floor area",
+          "answer": "He quotes 1,300 dollars and says the apartment is 65 square feet, about thirteen feet by five feet"
         },
         {
           "id": "b2-08.video102.q2",
-          "prompt": "What new detail is added about the kitchen?",
-          "hint": "Listen for the furniture in it",
-          "answer": "The kitchen has a dining table"
+          "prompt": "Where is the bathroom, and what does he estimate about sharing?",
+          "hint": "Notice where he walks and the words I think",
+          "answer": "The bathroom is down the hall, outside the apartment. He thinks it is shared with four or six other apartments; he does not give a confirmed exact number"
         },
         {
           "id": "b2-08.video102.q3",
-          "prompt": "What detail is added about the living room?",
-          "hint": "Listen to the description of the windows",
-          "answer": "The living room has big windows"
+          "prompt": "What does he say about cleaning the shared facilities?",
+          "hint": "Listen for the people who do the cleaning",
+          "answer": "Maintenance staff and the superintendent who lives in the building clean the shared facilities, instead of leaving the job to a possibly messy roommate"
         },
         {
           "id": "b2-08.video102.q4",
-          "prompt": "Recommend a flat and add one useful extra detail",
-          "hint": "Use which and explain why the detail matters",
-          "answer": "Example: This flat, which has a balcony, would suit you because you like sitting outside"
+          "prompt": "Would you recommend it? Use which and name one cost to check",
+          "hint": "Use the stated features; do not assume bills are included",
+          "answer": "Example: I would not recommend this apartment, which has no private bathroom, to someone who needs privacy and space to work. Before comparing its price with another flat, I would ask whether utilities and any fees are included"
         }
       ]
     },

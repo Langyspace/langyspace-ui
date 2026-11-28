@@ -1,0 +1,87 @@
+[
+  {
+    "key": "a1-09",
+    "nativePlayClicked": true,
+    "pauseVisible": false,
+    "error": false
+  },
+  {
+    "key": "b1-09",
+    "error": "Error: Error: Timed out after 3000ms waiting for selector internal:role=heading[name=\"Report what was taken\"s]: Playwright selector deadline exceeded\nlocator.waitFor(visible) timed out for selector internal:role=heading[name=\"Report what was taken\"s]\nLocator diagnostics: {\"kind\":\"no_matches\",\"action\":\"waitFor\",\"locator\":\"internal:role=heading[name=\\\"Report what was taken\\\"s]\",\"matchCount\":0,\"matches\":[],\"visibleCount\":0,\"truncated\":false}",
+    "state": "neric: Not checked\n    - strong: Serial number\n    - list:\n      - button \"What can you report as confirmed?\":\n        - generic: \"1\"\n        - generic: What can you report as confirmed?\n      - button \"What is still uncertain?\":\n        - generic: \"2\"\n        - generic: What is still uncertain?\n      - button \"What would you ask before saying it is your bike?\":\n        - generic: \"3\"\n        - generic: What would you ask before saying it is your bike?\n    - button \"Show next hint\":\n  - region \"Watch and talk · Report what was taken\":\n    - generic: ✦ Watch and talk\n    - heading \"Report what was taken\" [level=2]\n    - generic: Watch the theft report, then report a missing item using only confirmed facts\n    - generic \"Reporting a Theft - Learn English Online\":\n      - iframe [id=\"widget2\"]\n    - status: Loading video…\n    - generic: Reporting a Theft - Learn English Online · 0:17–1:17\n    - button \"Recomeçar\" [disabled]:\n    - complementary \"Questions\":\n      - heading \"✦ Questions\" [level=3]\n      - list:\n        - button \"Where does Alex say the theft happened?\":\n          - generic: \"1\"\n          - generic: Where does Alex say the theft happened?\n        - button \"What was taken, and when did it happen?\":\n          - generic: \"2\"\n          - generic: What was taken, and when did it happen?\n        - button \"How soon does the officer say the police will arrive?\":\n          - generic: \"3\"\n          - generic: How soon does the officer say the police will arrive?\n        - 'button \"Report a missing item: what do you know and what is unconfirmed?\"':\n          - generic: \"4\"\n          - generic: \"Report a missing item: what do you know and what is unconfirmed?\"\n      - button \"Show next hint\":\n  - region \"Free conversation\":\n    - generic: ✦ Speaking\n    - heading \"Free conversation\" [level=2]\n    - generic: Discuss how to report problems clearly and talk about situations where you needed help\n    - figure \"Your conversation with your teacher\":\n      - img \"An illustrated teacher smiling and speaking during a relaxed conversation\"\n      - generic: Teacher\n      - img \"An illustrated student smiling and responding during the conversation\"\n      - generic \"Student\"\n  - region \"Class complete — your homework\":\n    - generic: ✦ After class\n    - heading \"Class complete — your homework\" [level=2]\n    - generic: Complete the two activities, then send Teacher a voice note about today’s topic\n    - status: Loading your practice…\n- button \"Voltar à primeira página\":"
+  },
+  {
+    "key": "b2-08",
+    "nativePlayClicked": true,
+    "pauseVisible": false,
+    "error": false
+  },
+  {
+    "key": "b1-09",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "b2-12",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "c1-03",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "b1-07",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "c1-11",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "b2-04",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "trial-b1",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "trial-b2",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "extra-influencer-routine",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "extra-dev-interviews",
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "a1-09",
+    "finalFormatRevision": true,
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "a1-04",
+    "finalFormatRevision": true,
+    "nativePlayClicked": true,
+    "error": false
+  },
+  {
+    "key": "a2-01",
+    "finalFormatRevision": true,
+    "nativePlayClicked": true,
+    "error": false
+  }
+]

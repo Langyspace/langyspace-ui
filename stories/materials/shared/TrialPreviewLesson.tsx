@@ -14,6 +14,7 @@ import {
 import { characterPortrait } from './characterPortraits'
 import { TrialIntroduction } from './TrialIntroduction'
 import { MaterialVideoPage } from './MaterialVideoPage'
+import { isUpcomingLessonPage } from './isUpcomingLessonPage'
 import type {
   TrialPreviewLessonProps,
   TrialPreviewConversationProps,
@@ -116,20 +117,21 @@ export function TrialPreviewLesson({
       }
     : undefined
   const introductionPages = introductionPage ? [introductionPage] : []
+  const pageIds = [
+    ...introductionPages.map((page) => page.id),
+    's2',
+    's3',
+    ...(video ? ['s_video_comedy'] : []),
+    'free-conversation',
+    'next-steps',
+  ]
   return (
     <MaterialTheme>
       <LessonShell
         initialPageId={initialPageId}
         materialKey={storageKey ?? materialKey}
         label={`${level} Trial · ${title}`}
-        pageIds={withLessonOpeningPageIds(materialKey, [
-          ...introductionPages.map((page) => page.id),
-          's2',
-          's3',
-          ...(video ? ['s_video_comedy'] : []),
-          'free-conversation',
-          'next-steps',
-        ])}
+        pageIds={withLessonOpeningPageIds(materialKey, pageIds)}
         pages={(_, activeId) =>
           withLessonOpeningPages(materialKey, [
             ...introductionPages,
@@ -168,6 +170,11 @@ export function TrialPreviewLesson({
                       <MaterialVideoPage
                         content={video}
                         active={activeId === 's_video_comedy'}
+                        preload={isUpcomingLessonPage(
+                          pageIds,
+                          activeId,
+                          's_video_comedy',
+                        )}
                       />
                     ),
                   },

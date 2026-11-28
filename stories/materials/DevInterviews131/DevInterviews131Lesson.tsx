@@ -7,6 +7,7 @@ import { theme } from '../../../src/foundations/theme/theme'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import { LessonHomeworkGallery } from '../shared/LessonHomeworkGallery'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
@@ -235,7 +236,11 @@ export function DevInterviews131Lesson({
       id: 'video',
       label: video.title,
       content: (
-        <MaterialVideoPage content={video} active={pageId === 'video'} />
+        <MaterialVideoPage
+          content={video}
+          active={pageId === 'video'}
+          preload={isUpcomingLessonPage(devInterviewPageIds, pageId, 'video')}
+        />
       ),
     },
     {

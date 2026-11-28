@@ -465,40 +465,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "A claim changes when the source changes",
-      "instruction": "Watch Noelia correct the news, then report it with accurate attribution",
-      "minutes": 4,
+      "title": "When the source changes",
+      "instruction": "Assess the evidence behind Scott’s claim, then give a careful update",
+      "minutes": 7,
       "video": {
-        "videoId": "sFcWuQzA3DQ",
-        "startSeconds": 89,
-        "endSeconds": 123,
-        "title": "Responding to news — British Council | English",
-        "credit": "British Council | English"
+        "videoId": "Wif1EAgEQKI",
+        "startSeconds": 0,
+        "endSeconds": 103.44,
+        "title": "I was wrong (and so was everyone)",
+        "credit": "Tom Scott"
       },
       "items": [
         {
           "id": "c1-03.video102.q1",
-          "prompt": "What source caused Noelia’s initial belief?",
-          "hint": "Listen to her explanation about the email",
-          "answer": "She received an email that led her to think she had won"
+          "prompt": "What did Scott’s earlier video claim about uninsured buildings?",
+          "hint": "Report the story he repeated; do not present it as an established fact",
+          "answer": "His earlier video claimed firefighters would let uninsured buildings burn"
         },
         {
           "id": "c1-03.video102.q2",
-          "prompt": "What correction does she make?",
-          "hint": "Listen for the contrast between herself and another person",
-          "answer": "She says the email was wrong and that someone else won"
+          "prompt": "Which source made the claim seem trustworthy?",
+          "hint": "Listen after the examples from television programmes",
+          "answer": "He had used the history page on the London Fire Brigade Museum’s own website as one of his sources"
         },
         {
           "id": "c1-03.video102.q3",
-          "prompt": "Can the original message still support an unqualified claim that she won?",
-          "hint": "Explain what the correction changes",
-          "answer": "No. The corrected information withdraws the basis for that claim"
+          "prompt": "What does the museum’s revised page change about the evidence?",
+          "hint": "Distinguish a weaker evidence base from proof that every part of the story is false",
+          "answer": "The revised page says there is little real evidence for the story. That weakens the support for presenting it as an established fact and makes further investigation necessary; this excerpt does not settle the whole historical question"
         },
         {
           "id": "c1-03.video102.q4",
-          "prompt": "Report the update responsibly to someone who heard only the first news",
-          "hint": "Attribute the initial claim and make the correction clear",
-          "answer": "Example: Noelia was initially told she’d won, but she later said the email was incorrect and another person had received the award"
+          "prompt": "Update a colleague: name the source and keep the uncertainty clear",
+          "hint": "Use according to, was said to, or is now reported to. Make the correction clear without inventing a final conclusion",
+          "answer": "Example: I repeated the story from the museum’s website. It now says there is little real evidence, so I would qualify the claim rather than present it as settled fact"
         }
       ]
     },

@@ -441,40 +441,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Does phones off work as a policy?",
-      "instruction": "Watch the meeting rule, then test a phone policy against a real exception",
-      "minutes": 4,
+      "title": "One rule, different needs",
+      "instruction": "Compare two school phone policies, then propose a rule and one clear exception",
+      "minutes": 8,
       "video": {
-        "videoId": "dH7LF_bbHu0",
-        "startSeconds": 45,
-        "endSeconds": 66,
-        "title": "Making suggestions — British Council | English",
-        "credit": "British Council | English"
+        "videoId": "BhG_LGBSncA",
+        "startSeconds": 73.96,
+        "endSeconds": 250.48,
+        "title": "Phones are not the problem — Channel 4 News",
+        "credit": "Channel 4 News"
       },
       "items": [
         {
           "id": "b2-12.video102.q1",
-          "prompt": "What restriction do they choose?",
-          "hint": "Listen to the rule before the meeting starts",
-          "answer": "They choose to turn their phones off"
+          "prompt": "How do the schools’ rules differ at break and lunchtime?",
+          "hint": "Compare “not seen or heard” with the student’s description of breaks",
+          "answer": "The headteacher’s school keeps phones out of sight. The student’s school allows them at breaks, but not during lessons"
         },
         {
           "id": "b2-12.video102.q2",
-          "prompt": "What specific setting is the rule for?",
-          "hint": "Look at the activity they are about to start",
-          "answer": "It’s for a focused meeting"
+          "prompt": "Why can a phone distract someone even when it is not being used?",
+          "hint": "Listen for buzzing and wondering what a notification could be",
+          "answer": "The student says the buzzing and the thought of what might be on the phone can keep distracting students, even when they are not actively using it"
         },
         {
           "id": "b2-12.video102.q3",
-          "prompt": "Does this excerpt address emergency calls or accessibility needs?",
-          "hint": "Notice what is and isn’t discussed",
-          "answer": "No. Those exceptions aren’t discussed in the excerpt"
+          "prompt": "Why does the headteacher think device restrictions are not enough?",
+          "hint": "Contrast the phone itself with the content and apps available on it",
+          "answer": "He thinks the policy is well meant, but harmful content, apps and the businesses distributing them are a bigger problem"
         },
         {
           "id": "b2-12.video102.q4",
-          "prompt": "Adapt the rule for a school without ignoring those needs",
-          "hint": "State the rule, an exception and how it would work",
-          "answer": "Example: Phones stay away during lessons, but students can agree an emergency or accessibility exception with staff"
+          "prompt": "Propose a phone rule and one exception. What is the trade-off?",
+          "hint": "Use although or whereas. You may consider an approved learning or medical use; those are your proposed cases",
+          "answer": "Example: Although notifications can distract, a student could use an approved medical app with staff agreement. Other phones would stay silent and out of sight. We would need a clear way to approve the exception fairly"
         }
       ]
     },

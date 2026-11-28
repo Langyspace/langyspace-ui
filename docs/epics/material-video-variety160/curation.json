@@ -3,7 +3,7 @@
   "sourceBaseline": "53d7f2f64993e8cb24532d3f20023434b16fdf18",
   "researchDate": "2026-11-28",
   "researchPlanSha256": "50309dacfef10bee56551b23429fd3e64253f2c9d38b7446bfa18fc05b9a3628",
-  "status": "applied_locally_pending_review",
+  "status": "five_changes_retained_two_superseded_by_revision162",
   "preserveUnchanged": [
     {
       "materialKey": "a1-01",
@@ -35,282 +35,6 @@
     }
   ],
   "changes": [
-    {
-      "materialKey": "a1-04",
-      "sourcePath": "stories/materials/A104/A104.review.json",
-      "pageId": "s_video102",
-      "sourceSha256": "918f7b03f30d500f6c387fa1feac2a8478666497f2339abaf85b1f6a4facf625",
-      "currentClip": {
-        "videoId": "l1herjZq-4M",
-        "startSeconds": 65,
-        "endSeconds": 104
-      },
-      "clip": {
-        "videoId": "bq6GBbh3uhU",
-        "startSeconds": 18.8,
-        "endSeconds": 59.2,
-        "title": "How to talk about your daily routine: Easy English Conversations 💬 Episode 4",
-        "credit": "BBC Learning English"
-      },
-      "activityMinutesSuggested": 4,
-      "rationalePT": "A sequência explicita ações do dia no present simple e rompe o recorte idêntico compartilhado com InfluencerRoutine. Não se apresenta como entrevista espontânea.",
-      "estimatedInputLevel": "A1",
-      "contentNotesPT": [],
-      "verification": {
-        "officialOriginalUpload": true,
-        "shortsSelected": false,
-        "horizontalEncodedAspect": "approximately 16:9",
-        "playableInEmbedMetadata": true,
-        "timingsSupportedBy": "publisher-provided timed English captions",
-        "iframeRuntimeVerified": false,
-        "continuousListeningVerified": false,
-        "horizontalContentSampledFrame": false,
-        "visualFramingFullyVerified": false,
-        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
-        "iframeLoadedWithNativePlayControl": true
-      },
-      "evidenceURLs": [
-        "https://www.youtube.com/watch?v=bq6GBbh3uhU"
-      ],
-      "before": {
-        "id": "s_video102",
-        "kind": "video",
-        "eyebrow": "Watch and talk",
-        "title": "How often do they do it?",
-        "instruction": "Watch the conversation about meditation, then describe one of your habits",
-        "minutes": 4,
-        "video": {
-          "videoId": "l1herjZq-4M",
-          "startSeconds": 65,
-          "endSeconds": 104,
-          "title": "Talking about personal interests — British Council | English",
-          "credit": "British Council | English"
-        },
-        "items": [
-          {
-            "id": "a1-04.video102.q1",
-            "prompt": "What activity do they both do?",
-            "hint": "Listen for the hobby Paul has started",
-            "answer": "They both do meditation"
-          },
-          {
-            "id": "a1-04.video102.q2",
-            "prompt": "When does Emir usually practise?",
-            "hint": "Listen for a part of the day",
-            "answer": "Emir usually practises in the mornings"
-          },
-          {
-            "id": "a1-04.video102.q3",
-            "prompt": "How often does Paul meditate?",
-            "hint": "Listen for a number followed by a week",
-            "answer": "Paul normally meditates once or twice a week"
-          },
-          {
-            "id": "a1-04.video102.q4",
-            "prompt": "What do you do every morning?",
-            "hint": "Use I usually and a morning activity",
-            "answer": "Example: I usually have breakfast at eight"
-          }
-        ]
-      },
-      "questions": [
-        {
-          "prompt": "What does Sian do in the morning?",
-          "hint": "Think about the first activities before work.",
-          "answer": "She wakes up, eats breakfast and goes jogging before work.",
-          "answerKind": "factual",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
-              "startSeconds": 21.04,
-              "endSeconds": 33.28,
-              "purpose": "answer_support"
-            }
-          ]
-        },
-        {
-          "prompt": "How does she go to work?",
-          "hint": "Which form of transport does she name?",
-          "answer": "She takes the bus and reads during the journey.",
-          "answerKind": "factual",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
-              "startSeconds": 30.84,
-              "endSeconds": 37.48,
-              "purpose": "answer_support"
-            }
-          ]
-        },
-        {
-          "prompt": "What does she do after work?",
-          "hint": "Start with the activity immediately after work.",
-          "answer": "She swims in the sea, then has dinner, showers and sleeps.",
-          "answerKind": "factual",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
-              "startSeconds": 43.92,
-              "endSeconds": 58.24,
-              "purpose": "answer_support"
-            }
-          ]
-        },
-        {
-          "prompt": "Which activity is also in your day?",
-          "hint": "Choose an activity that is true for you.",
-          "answer": "Example: I also eat breakfast, but I do not swim after work.",
-          "answerKind": "transfer_example",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
-              "startSeconds": 21.04,
-              "endSeconds": 58.24,
-              "purpose": "task_anchor_only"
-            }
-          ]
-        }
-      ],
-      "captionSha256": "4decca131df5c330cd6f04df2e132b627e929430e40dc7afeded54559e4a8794"
-    },
-    {
-      "materialKey": "a2-01",
-      "sourcePath": "stories/materials/Course/lessons/a2-01.json",
-      "pageId": "s_video102",
-      "sourceSha256": "3ecdeb086f6b2ec67d70f122181782fcf41f0b507b09234c9f718ecbd1dbc6a1",
-      "currentClip": {
-        "videoId": "LLvGYEjutWo",
-        "startSeconds": 90,
-        "endSeconds": 130
-      },
-      "clip": {
-        "videoId": "aiUGN3TDvw4",
-        "startSeconds": 12,
-        "endSeconds": 52.6,
-        "title": "How to talk about activities: Easy English Conversations 💬 Episode 6",
-        "credit": "BBC Learning English"
-      },
-      "activityMinutesSuggested": 4,
-      "rationalePT": "Ações presentes com pessoas identificadas sustentam am/is/are + -ing. O contraste com hábito fica na resposta da aluna, sem atribuir ao vídeo rotinas não declaradas.",
-      "estimatedInputLevel": "A2",
-      "contentNotesPT": [],
-      "verification": {
-        "officialOriginalUpload": true,
-        "shortsSelected": false,
-        "horizontalEncodedAspect": "approximately 16:9",
-        "playableInEmbedMetadata": true,
-        "timingsSupportedBy": "publisher-provided timed English captions",
-        "iframeRuntimeVerified": false,
-        "continuousListeningVerified": false,
-        "horizontalContentSampledFrame": false,
-        "visualFramingFullyVerified": false,
-        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
-        "iframeLoadedWithNativePlayControl": true
-      },
-      "evidenceURLs": [
-        "https://www.youtube.com/watch?v=aiUGN3TDvw4"
-      ],
-      "before": {
-        "id": "s_video102",
-        "kind": "video",
-        "eyebrow": "Watch and talk",
-        "title": "What is he doing now?",
-        "instruction": "Watch Emir use the machine, then compare a usual habit with today",
-        "minutes": 4,
-        "video": {
-          "videoId": "LLvGYEjutWo",
-          "startSeconds": 90,
-          "endSeconds": 130,
-          "title": "Giving instructions — British Council | English",
-          "credit": "British Council | English"
-        },
-        "items": [
-          {
-            "id": "a2-01.video102.q1",
-            "prompt": "What is Emir learning to use?",
-            "hint": "Look at the machine and the drink",
-            "answer": "He’s learning to use a coffee machine"
-          },
-          {
-            "id": "a2-01.video102.q2",
-            "prompt": "Who is helping him?",
-            "hint": "Listen to the person giving instructions",
-            "answer": "Vanya is helping him"
-          },
-          {
-            "id": "a2-01.video102.q3",
-            "prompt": "What is he doing before he presses the final button?",
-            "hint": "Follow the instructions about connecting it",
-            "answer": "He’s connecting the coffee holder to the machine"
-          },
-          {
-            "id": "a2-01.video102.q4",
-            "prompt": "What do you usually drink, and what are you drinking today?",
-            "hint": "Contrast usually with today",
-            "answer": "Example: I usually drink coffee, but today I’m drinking tea"
-          }
-        ]
-      },
-      "questions": [
-        {
-          "prompt": "What is Buli doing at the beginning?",
-          "hint": "Listen to Buli’s first answer.",
-          "answer": "Buli is exercising.",
-          "answerKind": "factual",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
-              "startSeconds": 12.08,
-              "endSeconds": 20.08,
-              "purpose": "answer_support"
-            }
-          ]
-        },
-        {
-          "prompt": "Who is cooking?",
-          "hint": "Listen for the name in the question before the cooking answer.",
-          "answer": "Tim is cooking.",
-          "answerKind": "factual",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
-              "startSeconds": 33.12,
-              "endSeconds": 37.36,
-              "purpose": "answer_support"
-            }
-          ]
-        },
-        {
-          "prompt": "Which language is Georgie studying?",
-          "hint": "Listen for the language after studying.",
-          "answer": "Georgie is studying Spanish.",
-          "answerKind": "factual",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
-              "startSeconds": 48.32,
-              "endSeconds": 52.36,
-              "purpose": "answer_support"
-            }
-          ]
-        },
-        {
-          "prompt": "What are you doing today that is different from your usual routine?",
-          "hint": "Use one sentence about today and one about your usual routine.",
-          "answer": "Example: Today I am studying English. I usually work at this time.",
-          "answerKind": "transfer_example",
-          "evidence": [
-            {
-              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
-              "startSeconds": 15.84,
-              "endSeconds": 52.36,
-              "purpose": "task_anchor_only"
-            }
-          ]
-        }
-      ],
-      "captionSha256": "d263d16013ae54978d1cda72ad4fa5e46730c05fa244561cf3b13549d3a98fce"
-    },
     {
       "materialKey": "b1-06",
       "sourcePath": "stories/materials/Course/lessons/b1-06.json",
@@ -1327,6 +1051,286 @@
       ],
       "captionSha256": "64c0556cc5bc1ca26a6d4c7b85aa525d54716a0f441abaf5b6d7712f31764d24",
       "status": "not_applied_iframe_unavailable"
+    }
+  ],
+  "withdrawnAfterFrameReview": [
+    {
+      "materialKey": "a1-04",
+      "sourcePath": "stories/materials/A104/A104.review.json",
+      "pageId": "s_video102",
+      "sourceSha256": "918f7b03f30d500f6c387fa1feac2a8478666497f2339abaf85b1f6a4facf625",
+      "currentClip": {
+        "videoId": "l1herjZq-4M",
+        "startSeconds": 65,
+        "endSeconds": 104
+      },
+      "clip": {
+        "videoId": "bq6GBbh3uhU",
+        "startSeconds": 18.8,
+        "endSeconds": 59.2,
+        "title": "How to talk about your daily routine: Easy English Conversations 💬 Episode 4",
+        "credit": "BBC Learning English"
+      },
+      "activityMinutesSuggested": 4,
+      "rationalePT": "A sequência explicita ações do dia no present simple e rompe o recorte idêntico compartilhado com InfluencerRoutine. Não se apresenta como entrevista espontânea.",
+      "estimatedInputLevel": "A1",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=bq6GBbh3uhU"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "How often do they do it?",
+        "instruction": "Watch the conversation about meditation, then describe one of your habits",
+        "minutes": 4,
+        "video": {
+          "videoId": "l1herjZq-4M",
+          "startSeconds": 65,
+          "endSeconds": 104,
+          "title": "Talking about personal interests — British Council | English",
+          "credit": "British Council | English"
+        },
+        "items": [
+          {
+            "id": "a1-04.video102.q1",
+            "prompt": "What activity do they both do?",
+            "hint": "Listen for the hobby Paul has started",
+            "answer": "They both do meditation"
+          },
+          {
+            "id": "a1-04.video102.q2",
+            "prompt": "When does Emir usually practise?",
+            "hint": "Listen for a part of the day",
+            "answer": "Emir usually practises in the mornings"
+          },
+          {
+            "id": "a1-04.video102.q3",
+            "prompt": "How often does Paul meditate?",
+            "hint": "Listen for a number followed by a week",
+            "answer": "Paul normally meditates once or twice a week"
+          },
+          {
+            "id": "a1-04.video102.q4",
+            "prompt": "What do you do every morning?",
+            "hint": "Use I usually and a morning activity",
+            "answer": "Example: I usually have breakfast at eight"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What does Sian do in the morning?",
+          "hint": "Think about the first activities before work.",
+          "answer": "She wakes up, eats breakfast and goes jogging before work.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 21.04,
+              "endSeconds": 33.28,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "How does she go to work?",
+          "hint": "Which form of transport does she name?",
+          "answer": "She takes the bus and reads during the journey.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 30.84,
+              "endSeconds": 37.48,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What does she do after work?",
+          "hint": "Start with the activity immediately after work.",
+          "answer": "She swims in the sea, then has dinner, showers and sleeps.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 43.92,
+              "endSeconds": 58.24,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Which activity is also in your day?",
+          "hint": "Choose an activity that is true for you.",
+          "answer": "Example: I also eat breakfast, but I do not swim after work.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+              "startSeconds": 21.04,
+              "endSeconds": 58.24,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "4decca131df5c330cd6f04df2e132b627e929430e40dc7afeded54559e4a8794",
+      "status": "withdrawn_after_actual_frame_review_162"
+    },
+    {
+      "materialKey": "a2-01",
+      "sourcePath": "stories/materials/Course/lessons/a2-01.json",
+      "pageId": "s_video102",
+      "sourceSha256": "3ecdeb086f6b2ec67d70f122181782fcf41f0b507b09234c9f718ecbd1dbc6a1",
+      "currentClip": {
+        "videoId": "LLvGYEjutWo",
+        "startSeconds": 90,
+        "endSeconds": 130
+      },
+      "clip": {
+        "videoId": "aiUGN3TDvw4",
+        "startSeconds": 12,
+        "endSeconds": 52.6,
+        "title": "How to talk about activities: Easy English Conversations 💬 Episode 6",
+        "credit": "BBC Learning English"
+      },
+      "activityMinutesSuggested": 4,
+      "rationalePT": "Ações presentes com pessoas identificadas sustentam am/is/are + -ing. O contraste com hábito fica na resposta da aluna, sem atribuir ao vídeo rotinas não declaradas.",
+      "estimatedInputLevel": "A2",
+      "contentNotesPT": [],
+      "verification": {
+        "officialOriginalUpload": true,
+        "shortsSelected": false,
+        "horizontalEncodedAspect": "approximately 16:9",
+        "playableInEmbedMetadata": true,
+        "timingsSupportedBy": "publisher-provided timed English captions",
+        "iframeRuntimeVerified": false,
+        "continuousListeningVerified": false,
+        "horizontalContentSampledFrame": false,
+        "visualFramingFullyVerified": false,
+        "status": "caption_and_metadata_ready_runtime_and_listening_pending",
+        "iframeLoadedWithNativePlayControl": true
+      },
+      "evidenceURLs": [
+        "https://www.youtube.com/watch?v=aiUGN3TDvw4"
+      ],
+      "before": {
+        "id": "s_video102",
+        "kind": "video",
+        "eyebrow": "Watch and talk",
+        "title": "What is he doing now?",
+        "instruction": "Watch Emir use the machine, then compare a usual habit with today",
+        "minutes": 4,
+        "video": {
+          "videoId": "LLvGYEjutWo",
+          "startSeconds": 90,
+          "endSeconds": 130,
+          "title": "Giving instructions — British Council | English",
+          "credit": "British Council | English"
+        },
+        "items": [
+          {
+            "id": "a2-01.video102.q1",
+            "prompt": "What is Emir learning to use?",
+            "hint": "Look at the machine and the drink",
+            "answer": "He’s learning to use a coffee machine"
+          },
+          {
+            "id": "a2-01.video102.q2",
+            "prompt": "Who is helping him?",
+            "hint": "Listen to the person giving instructions",
+            "answer": "Vanya is helping him"
+          },
+          {
+            "id": "a2-01.video102.q3",
+            "prompt": "What is he doing before he presses the final button?",
+            "hint": "Follow the instructions about connecting it",
+            "answer": "He’s connecting the coffee holder to the machine"
+          },
+          {
+            "id": "a2-01.video102.q4",
+            "prompt": "What do you usually drink, and what are you drinking today?",
+            "hint": "Contrast usually with today",
+            "answer": "Example: I usually drink coffee, but today I’m drinking tea"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "prompt": "What is Buli doing at the beginning?",
+          "hint": "Listen to Buli’s first answer.",
+          "answer": "Buli is exercising.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 12.08,
+              "endSeconds": 20.08,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Who is cooking?",
+          "hint": "Listen for the name in the question before the cooking answer.",
+          "answer": "Tim is cooking.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 33.12,
+              "endSeconds": 37.36,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "Which language is Georgie studying?",
+          "hint": "Listen for the language after studying.",
+          "answer": "Georgie is studying Spanish.",
+          "answerKind": "factual",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 48.32,
+              "endSeconds": 52.36,
+              "purpose": "answer_support"
+            }
+          ]
+        },
+        {
+          "prompt": "What are you doing today that is different from your usual routine?",
+          "hint": "Use one sentence about today and one about your usual routine.",
+          "answer": "Example: Today I am studying English. I usually work at this time.",
+          "answerKind": "transfer_example",
+          "evidence": [
+            {
+              "url": "https://www.youtube.com/watch?v=aiUGN3TDvw4",
+              "startSeconds": 15.84,
+              "endSeconds": 52.36,
+              "purpose": "task_anchor_only"
+            }
+          ]
+        }
+      ],
+      "captionSha256": "d263d16013ae54978d1cda72ad4fa5e46730c05fa244561cf3b13549d3a98fce",
+      "status": "withdrawn_after_actual_frame_review_162"
     }
   ]
 }

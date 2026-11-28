@@ -13,6 +13,7 @@ import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { useLessonPage } from '../shared/useLessonPage'
 import { PromptExercise } from '../shared/LessonExercises'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import { characterPortrait } from '../shared/characterPortraits'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
 import * as Shell from '../shared/Lesson.styles'
@@ -218,7 +219,11 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
       id: 'video',
       label: video.title,
       content: (
-        <MaterialVideoPage content={video} active={pageId === 'video'} />
+        <MaterialVideoPage
+          content={video}
+          active={pageId === 'video'}
+          preload={isUpcomingLessonPage(devStudyPageIds, pageId, 'video')}
+        />
       ),
     },
     {

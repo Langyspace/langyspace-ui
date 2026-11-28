@@ -1,0 +1,311 @@
+{
+  "baseCommit": "1e1dae65306be5945a9ae78b1c96420ea99dbdb1",
+  "prBaseline": "53d7f2f64993e8cb24532d3f20023434b16fdf18",
+  "scope": "authoring/diff review, not another executable test gate",
+  "currentRevision": {
+    "videoActivitiesChanged": 14,
+    "questions": 56,
+    "preloadConsumers": 7
+  },
+  "retainedPriorRevision160Activities": 5,
+  "finalPRVideoActivitiesChanged": 19,
+  "catalogEntries": 67,
+  "stablePageOrderQuestionIdsAndUnrelatedLessonFields": true,
+  "noPublicSrcOrExportsChange": true,
+  "results": [
+    {
+      "materialKey": "a1-09",
+      "sourcePath": "stories/materials/Course/lessons/a1-09.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "a1-09.video102.q1",
+        "a1-09.video102.q2",
+        "a1-09.video102.q3",
+        "a1-09.video102.q4"
+      ],
+      "clipSeconds": 20.1,
+      "activityMinutes": 4,
+      "sourceSha256": "4ca30de8aef5064594ede0143fb3286e945a847209d71c48a9e3862be423c126"
+    },
+    {
+      "materialKey": "b1-09",
+      "sourcePath": "stories/materials/Course/lessons/b1-09.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "b1-09.video102.q1",
+        "b1-09.video102.q2",
+        "b1-09.video102.q3",
+        "b1-09.video102.q4"
+      ],
+      "clipSeconds": 59.8,
+      "activityMinutes": 5,
+      "sourceSha256": "3058bf985ff83fc8a840f8d3b23ff8da5dcc2412be5496ee4d1f4e672c985a7d"
+    },
+    {
+      "materialKey": "b2-08",
+      "sourcePath": "stories/materials/Course/lessons/b2-08.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "b2-08.video102.q1",
+        "b2-08.video102.q2",
+        "b2-08.video102.q3",
+        "b2-08.video102.q4"
+      ],
+      "clipSeconds": 101.85,
+      "activityMinutes": 7,
+      "sourceSha256": "05f52e28b93c3f4a122f647ef052d7b473974dedffda737f0d99c9745c21a91b"
+    },
+    {
+      "materialKey": "b1-07",
+      "sourcePath": "stories/materials/Course/lessons/b1-07.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "b1-07.video102.q1",
+        "b1-07.video102.q2",
+        "b1-07.video102.q3",
+        "b1-07.video102.q4"
+      ],
+      "clipSeconds": 50.7,
+      "activityMinutes": 5,
+      "sourceSha256": "a4d488014a147d7f24c7b6adef0a757f1c0dfe8d6fed08d81fc2097856e16243"
+    },
+    {
+      "materialKey": "b2-12",
+      "sourcePath": "stories/materials/Course/lessons/b2-12.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "b2-12.video102.q1",
+        "b2-12.video102.q2",
+        "b2-12.video102.q3",
+        "b2-12.video102.q4"
+      ],
+      "clipSeconds": 176.52,
+      "activityMinutes": 8,
+      "sourceSha256": "9fa31c2815687bf39e2f861a493eb3dd61f86f924716339633fc9df6b75c51f4"
+    },
+    {
+      "materialKey": "c1-03",
+      "sourcePath": "stories/materials/Course/lessons/c1-03.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "c1-03.video102.q1",
+        "c1-03.video102.q2",
+        "c1-03.video102.q3",
+        "c1-03.video102.q4"
+      ],
+      "clipSeconds": 103.44,
+      "activityMinutes": 7,
+      "sourceSha256": "93e873a108d592fe8ea68de5d70b673fda7b0c288ca22958c022ae55370c3fab"
+    },
+    {
+      "materialKey": "c1-11",
+      "sourcePath": "stories/materials/Course/lessons/c1-11.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "c1-11.video102.q1",
+        "c1-11.video102.q2",
+        "c1-11.video102.q3",
+        "c1-11.video102.q4"
+      ],
+      "clipSeconds": 56.94,
+      "activityMinutes": 5,
+      "sourceSha256": "eac5818eaa1c0e591ba27b85e9e81430d41f1eba5275ef5221a78f4b4511144e"
+    },
+    {
+      "materialKey": "b2-04",
+      "sourcePath": "stories/materials/Course/lessons/b2-04.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "minutes",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "b2-04.video102.q1",
+        "b2-04.video102.q2",
+        "b2-04.video102.q3",
+        "b2-04.video102.q4"
+      ],
+      "clipSeconds": 62.875,
+      "activityMinutes": 5,
+      "sourceSha256": "7256f3c038e17b66c4b809e7328af8d339a9818c563769e0f7b75674ca20eb6f"
+    },
+    {
+      "materialKey": "trial-b1",
+      "sourcePath": "stories/materials/TrialB1/TrialB1.video.json",
+      "pageId": "s_video_comedy",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "trip-context",
+        "trip-offer",
+        "trip-request",
+        "trip-you"
+      ],
+      "clipSeconds": 126.5,
+      "activityMinutes": null,
+      "sourceSha256": "64bfed97de8a0aef53c93c25eaae3ecfa42f5263f440a14a45be7443052c5e0b"
+    },
+    {
+      "materialKey": "trial-b2",
+      "sourcePath": "stories/materials/TrialB2/TrialB2.video.json",
+      "pageId": "s_video_comedy",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "work-pressure",
+        "work-irony",
+        "work-boundary",
+        "work-response"
+      ],
+      "clipSeconds": 116.25,
+      "activityMinutes": null,
+      "sourceSha256": "5c5bd352d35cb1ec92764cfee1eb7889a3c305193f7f5bf5d8417ff99a79c2b8"
+    },
+    {
+      "materialKey": "extra-influencer-routine",
+      "sourcePath": "stories/materials/InfluencerRoutine/InfluencerRoutine.video.json",
+      "pageId": "s_video131",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "influencer-routine.video131.q1",
+        "influencer-routine.video131.q2",
+        "influencer-routine.video131.q3",
+        "influencer-routine.video131.q4"
+      ],
+      "clipSeconds": 102,
+      "activityMinutes": null,
+      "sourceSha256": "9040d0e605a8d95b36787b630730e989681474cc921936d83554f41d5c73cdc8"
+    },
+    {
+      "materialKey": "extra-dev-interviews",
+      "sourcePath": "stories/materials/DevInterviews131/DevInterviews131.video.json",
+      "pageId": "video",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "interviews.video.q1",
+        "interviews.video.q2",
+        "interviews.video.q3",
+        "interviews.video.q4"
+      ],
+      "clipSeconds": 144,
+      "activityMinutes": null,
+      "sourceSha256": "6553fc2de0dcddc5e0b5e36f219f41268ff22ba80f48437307f4da2a4b81524e"
+    },
+    {
+      "materialKey": "a1-04",
+      "sourcePath": "stories/materials/A104/A104.review.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "a1-04.video102.q1",
+        "a1-04.video102.q2",
+        "a1-04.video102.q3",
+        "a1-04.video102.q4"
+      ],
+      "clipSeconds": 39,
+      "activityMinutes": 4,
+      "sourceSha256": "b62ea378ceff7abaeeb735b88981623a4c729bdc951508596dae7b3473edb179"
+    },
+    {
+      "materialKey": "a2-01",
+      "sourcePath": "stories/materials/Course/lessons/a2-01.json",
+      "pageId": "s_video102",
+      "changedFields": [
+        "title",
+        "instruction",
+        "video",
+        "items"
+      ],
+      "questionIds": [
+        "a2-01.video102.q1",
+        "a2-01.video102.q2",
+        "a2-01.video102.q3",
+        "a2-01.video102.q4"
+      ],
+      "clipSeconds": 42,
+      "activityMinutes": 4,
+      "sourceSha256": "f8c656e8f17d577aa271e019a4e32fcb5f24f5570f68cf43eb940764c8f4784e"
+    }
+  ],
+  "validation": {
+    "unit": "VideoExcerpt.test.tsx: 10 passed",
+    "typecheck": "pnpm run typecheck: exit 0",
+    "api": "reuse revision160: 185 values, 312 types, 659 declarations; public source and exports unchanged"
+  },
+  "deployment": "not requested or triggered",
+  "review": "pending human"
+}

@@ -456,40 +456,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Same words, a different message",
-      "instruction": "Watch the pace and pitch examples, then clarify a possible misunderstanding",
-      "minutes": 4,
+      "title": "What do you mean?",
+      "instruction": "Watch the misunderstanding, then clarify a request and its deadline",
+      "minutes": 5,
       "video": {
-        "videoId": "eIho2S0ZahI",
-        "startSeconds": 381,
-        "endSeconds": 416,
-        "title": "Julian Treasure — How to speak so that people want to listen — TED",
-        "credit": "TED"
+        "videoId": "-9CV-aQ45VE",
+        "startSeconds": 3.12,
+        "endSeconds": 60.06,
+        "title": "Never Take an Irish Person Literally - Foil Arms and Hog",
+        "credit": "Foil Arms and Hog"
       },
       "items": [
         {
           "id": "c1-11.video102.q1",
-          "prompt": "How does the speaker use a slower pace?",
-          "hint": "Listen to the demonstration after the fast delivery",
-          "answer": "He slows down to emphasise a point"
+          "prompt": "How is “What’s the story?” clarified?",
+          "hint": "Listen to the simpler question he uses after his colleague asks “The what?”",
+          "answer": "He reformulates it as “What’s happening?”, making clear that he is asking for news rather than asking for a story"
         },
         {
           "id": "c1-11.video102.q2",
-          "prompt": "What sentence does he repeat with a different pitch?",
-          "hint": "Listen to the question about a missing object",
-          "answer": "He repeats, “Where did you leave my keys?”"
+          "prompt": "Why is “now … in a while” unclear?",
+          "hint": "Compare the visitor’s response to “now” with what the Irish colleague adds",
+          "answer": "The visitor understands “now” as immediately, but the colleague then adds “in a while”, suggesting later. They have not agreed on one concrete time"
         },
         {
           "id": "c1-11.video102.q3",
-          "prompt": "Why might a listener understand the second delivery differently?",
-          "hint": "Consider possible urgency without claiming a universal rule",
-          "answer": "Example: The higher pitch may suggest more urgency or frustration, depending on the context"
+          "prompt": "Why is “some genius” criticism rather than praise?",
+          "hint": "Connect the description with the mistake involving the biggest account",
+          "answer": "The person called a “genius” omitted the biggest account. In context, the expression is ironic criticism of the mistake, rather than praise"
         },
         {
           "id": "c1-11.video102.q4",
-          "prompt": "Clarify your meaning after a colleague thinks you were blaming them",
-          "hint": "Reformulate and check with a concrete example",
-          "answer": "Example: To put it another way, I’m asking where to look, not suggesting it’s your fault. Would checking the meeting room be a good first step?"
+          "prompt": "Ask for the sales figures and confirm a concrete deadline",
+          "hint": "Use “So, if I understand you correctly …” and give a specific time or example",
+          "answer": "Example: So, if I understand you correctly, the figures are not ready now. Could you send the totals by two thirty for the three o’clock call?"
         }
       ]
     },

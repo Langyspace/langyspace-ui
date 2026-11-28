@@ -1,5 +1,9 @@
 # Vídeos variados — revisão160
 
+## Situação após revisão162
+
+Documento histórico da revisão160 no commit `1e1dae6`. Cinco das sete seleções permanecem. A1.04 e A2.01 foram retiradas após conferir os quadros reais: mosaicos deixavam a ação pequena. As fontes, perguntas e evidências atuais estão em [revisão162](../material-video-objectives162/plan.md). A tabela abaixo preserva a proposta original, sem apresentá-la como a seleção final.
+
 ## Pedido e resultado
 
 Revisar as67 atividades de vídeo, ampliar canais e gêneros e permitir trechos mais desenvolvidos nos níveis avançados. Preservar fontes horizontais originais, sem Shorts, com poucos controles e perguntas orais.
@@ -35,7 +39,7 @@ C1.10: Key & Peele, `sngRrkQayDA`,26–152s. Metadados permitiam incorporação,
 ## Próximos passos de revisão
 
 1. Rever a seleção local e os gabaritos; confirmar o grau de apoio conforme a turma.
-2. Completar evidências antes/depois das outras seis páginas e a reprodução dos trechos quando a revisão exigir.
+2. Consultar as evidências consolidadas da revisão162; os arquivos antigos continuam históricos.
 3. Somente após aprovação da revisão visual atual, integrar e seguir o fluxo de adoção/publicação pedido pela proprietária.
 
 Outras prioridades editoriais do inventário (como B2.12, B2.08, C1.03 e A1.09) continuam documentadas na pesquisa. Nenhuma reserva foi forçada num tema incompatível.

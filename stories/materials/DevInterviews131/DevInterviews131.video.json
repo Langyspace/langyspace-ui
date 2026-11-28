@@ -1,37 +1,37 @@
 {
-  "title": "Support your answer with an example",
-  "instruction": "Watch Sarah answer interview questions. Explain how her skills and one real example support her application",
+  "title": "Explain a project decision",
+  "instruction": "Watch Sophie’s advice. Explain one project decision, your contribution and the result",
   "video": {
-    "videoId": "NRiaznQevTA",
-    "startSeconds": 36,
-    "endSeconds": 93,
-    "title": "Job Interview Tips 5 — You’re Hired",
-    "credit": "British Council | English"
+    "videoId": "VtsQXHXRmGM",
+    "startSeconds": 348,
+    "endSeconds": 492,
+    "title": "Software Engineer Interview: Proudest Project — Aced",
+    "credit": "Aced (formerly Exponent)"
   },
   "items": [
     {
       "id": "interviews.video.q1",
-      "prompt": "What kind of organisation does Sarah work for?",
-      "hint": "Listen to her current role",
-      "answer": "She works for a group of language schools"
+      "prompt": "What should a candidate explain besides the final solution?",
+      "hint": "Focus on how the candidate reached the solution",
+      "answer": "The candidate should explain the steps taken to discover the solution and clarify their own role in reaching it"
     },
     {
       "id": "interviews.video.q2",
-      "prompt": "Why does Sarah think her experience is relevant to a different product?",
-      "hint": "Focus on her abilities rather than the product",
-      "answer": "She believes her existing skills can transfer to the new work"
+      "prompt": "What does Sophie want to hear about the decision-making?",
+      "hint": "Listen for investigation and other possible approaches",
+      "answer": "She wants to hear what the candidate did to investigate the problem and which alternative approaches were considered, rather than only hearing the final implementation"
     },
     {
       "id": "interviews.video.q3",
-      "prompt": "What is Sarah looking for in her next role?",
-      "hint": "Think about the level of responsibility",
-      "answer": "She wants greater responsibility"
+      "prompt": "Why can saying only “we” make your contribution unclear?",
+      "hint": "Distinguish a team result from the candidate’s own work",
+      "answer": "It can hide what the candidate personally decided or did. The interviewer may not know whether the candidate discovered the solution or only implemented a decision made by someone else"
     },
     {
       "id": "interviews.video.q4",
-      "prompt": "How did Sarah deal with the two colleagues’ conflict, and what changed?",
-      "hint": "Follow her action and the result",
-      "answer": "She brought them together to discuss their differences. They worked together more successfully afterwards"
+      "prompt": "Explain a project decision: what did you do, why, and what changed?",
+      "hint": "Use The problem was… / I checked… / I chose… because… / The result was…",
+      "answer": "Example: Our login form moved on after a wrong password. I checked the API response and kept navigation inside the success condition so the error stayed visible. Invalid details then kept the form open"
     }
   ]
 }

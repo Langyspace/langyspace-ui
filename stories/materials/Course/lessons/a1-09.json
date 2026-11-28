@@ -220,40 +220,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Where is the hammer?",
-      "instruction": "Watch Bob explain the position, then describe where an object is",
+      "title": "Find the pharmacy",
+      "instruction": "Watch the route, then tell your teacher how to get to a nearby place",
       "minutes": 4,
       "video": {
-        "videoId": "K5GJt-CRiFk",
-        "startSeconds": 75,
-        "endSeconds": 105,
-        "title": "Checking understanding — British Council | English",
-        "credit": "British Council | English"
+        "videoId": "DPYJQSA-x50",
+        "startSeconds": 92.8,
+        "endSeconds": 112.9,
+        "title": "Asking for and Giving Directions",
+        "credit": "Easy English (@easyenglish551)"
       },
       "items": [
         {
           "id": "a1-09.video102.q1",
-          "prompt": "What container is the hammer in?",
-          "hint": "Listen for the box Bob names",
-          "answer": "It’s in the toolbox"
+          "prompt": "What place is the woman looking for?",
+          "hint": "Listen to the place in her question",
+          "answer": "She is looking for a pharmacy"
         },
         {
           "id": "a1-09.video102.q2",
-          "prompt": "Is it on the left or on the right?",
-          "hint": "Listen when Bob repeats the position",
-          "answer": "It’s on the left"
+          "prompt": "What should she do at the corner?",
+          "hint": "Listen for the turn and the next action",
+          "answer": "She should turn right at the corner and go straight ahead"
         },
         {
           "id": "a1-09.video102.q3",
-          "prompt": "What is it under?",
-          "hint": "Listen for the other tool",
-          "answer": "It’s under the scissors"
+          "prompt": "What is the pharmacy next to?",
+          "hint": "Listen for the landmark after next to",
+          "answer": "It is next to the bakery, on her right"
         },
         {
           "id": "a1-09.video102.q4",
-          "prompt": "Where is an object near you?",
-          "hint": "Use on, in, under or next to",
-          "answer": "Example: My phone is on the table, next to my notebook"
+          "prompt": "Give a short route to a place near you",
+          "hint": "Use Go straight, Turn and a landmark",
+          "answer": "Example: Go straight and turn left at the corner. The café is next to the bank"
         }
       ]
     },

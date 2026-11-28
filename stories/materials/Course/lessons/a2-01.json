@@ -445,40 +445,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "What are they doing?",
-      "instruction": "Watch their activities, then compare today with your routine",
+      "title": "Describe what he is doing",
+      "instruction": "Watch the coffee-making, then compare what you are doing now with your usual routine",
       "minutes": 4,
       "video": {
-        "videoId": "aiUGN3TDvw4",
-        "startSeconds": 12,
-        "endSeconds": 52.6,
-        "title": "How to talk about activities: Easy English Conversations 💬 Episode 6",
-        "credit": "BBC Learning English"
+        "videoId": "LLvGYEjutWo",
+        "startSeconds": 90,
+        "endSeconds": 132,
+        "title": "How to give instructions in English",
+        "credit": "British Council | English"
       },
       "items": [
         {
           "id": "a2-01.video102.q1",
-          "prompt": "What is Buli doing at the beginning?",
-          "hint": "Listen to Buli’s first answer",
-          "answer": "Buli is exercising"
+          "prompt": "Is the learner doing it correctly? How do you know?",
+          "hint": "Listen to the feedback after he asks “Like this?”",
+          "answer": "Yes. The person helping him says he is doing well"
         },
         {
           "id": "a2-01.video102.q2",
-          "prompt": "Who is cooking?",
-          "hint": "Listen for the name in the question before the cooking answer",
-          "answer": "Tim is cooking"
+          "prompt": "What is the next instruction when he asks what to do next?",
+          "hint": "Listen for connect and the machine",
+          "answer": "He is told to connect it to the machine"
         },
         {
           "id": "a2-01.video102.q3",
-          "prompt": "Which language is Georgie studying?",
-          "hint": "Listen for the language after studying",
-          "answer": "Georgie is studying Spanish"
+          "prompt": "What does he say when he tries the drink?",
+          "hint": "Listen to his response at the end",
+          "answer": "He says it is delicious and thanks the person helping him"
         },
         {
           "id": "a2-01.video102.q4",
-          "prompt": "What are you doing today that is different from your usual routine?",
-          "hint": "Use one sentence about today and one about your usual routine",
-          "answer": "Example: Today I am studying English. I usually work at this time"
+          "prompt": "What are you doing right now? What do you usually do at this time?",
+          "hint": "Use am/is/are + -ing for now, and the SimplePresent for a habit",
+          "answer": "Example: I am studying English now. I usually work at this time, but today I am having a lesson"
         }
       ]
     },

@@ -14,6 +14,8 @@ import type {
   YouTubePlayer,
 } from '../../../src/internal/youtubeApi.types'
 import { ReviewedLesson } from '../../../stories/materials/shared/ReviewedLesson'
+import { MaterialVideoPage } from '../../../stories/materials/shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../../../stories/materials/shared/isUpcomingLessonPage'
 import type { ReviewedPage } from '../../../stories/materials/shared/ReviewedLesson.types'
 import source from '../../../stories/materials/A101/A101.review.json'
 
@@ -275,5 +277,52 @@ it('prepares the next page without autoplay and retains the ready bounded player
   expect(player.destroy).not.toHaveBeenCalled()
   expect(screen.getByRole('button', { name: 'Replay excerpt' })).toBeEnabled()
   rerender(<VideoExercise {...props} active={false} preload={false} />)
+  expect(player.destroy).toHaveBeenCalledOnce()
+})
+
+it('prepares extra lessons from their authored order and keeps the same player when the video becomes active', async () => {
+  const page = source.pages.find(
+    (item) => item.id === 's_video_intro',
+  ) as ReviewedPage
+  if (page.kind !== 'video') throw new Error('Expected a video fixture')
+  const content = {
+    title: page.title,
+    instruction: page.instruction,
+    video: clip,
+    items: page.items,
+  }
+  const order = ['cover', 'reply', 'video', 'free-conversation']
+  const at = (current: string, pageIds = order) => (
+    <MaterialVideoPage
+      content={content}
+      active={current === 'video'}
+      preload={isUpcomingLessonPage(pageIds, current, 'video')}
+    />
+  )
+  const { rerender } = render(at('cover'))
+  expect(loadYouTubeApi).not.toHaveBeenCalled()
+
+  // An inserted activity becomes the preload trigger without a hard-coded old ID.
+  const reordered = [
+    'cover',
+    'reply',
+    'one-more-example',
+    'video',
+    'free-conversation',
+  ]
+  rerender(at('reply', reordered))
+  expect(loadYouTubeApi).not.toHaveBeenCalled()
+  rerender(at('one-more-example', reordered))
+  await ready()
+  expect(options.playerVars.autoplay).toBe(0)
+  expect(player.loadVideoById).not.toHaveBeenCalled()
+  expect(screen.getByRole('button', { name: 'Recomeçar' })).toBeDisabled()
+
+  rerender(at('video', reordered))
+  expect(construct).toHaveBeenCalledOnce()
+  expect(player.destroy).not.toHaveBeenCalled()
+  expect(screen.getByRole('button', { name: 'Recomeçar' })).toBeEnabled()
+  rerender(at('free-conversation', reordered))
+  expect(player.pauseVideo).toHaveBeenCalled()
   expect(player.destroy).toHaveBeenCalledOnce()
 })

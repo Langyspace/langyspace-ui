@@ -11,4 +11,5 @@ export interface MaterialVideoPageContent {
 export interface MaterialVideoPageProps {
   content: MaterialVideoPageContent
   active: boolean
+  preload?: boolean
 }

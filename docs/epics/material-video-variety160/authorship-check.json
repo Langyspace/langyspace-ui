@@ -1,5 +1,5 @@
 {
-  "status": "pass",
+  "status": "historical_pass_at_1e1dae6",
   "appliedChanges": 7,
   "questions": 28,
   "checks": [
@@ -55,5 +55,8 @@
       "questions": 4
     }
   ],
-  "apiCheck": "passed:185 values,312 types,659 declarations"
+  "apiCheck": "passed:185 values,312 types,659 declarations",
+  "supersededBy": "../material-video-objectives162/authorship-receipt.json",
+  "currentRetainedChanges": 5,
+  "historicalScopeNote": "Original seven changes passed authoring checks at 1e1dae6. A1.04/A2.01 source selections were later withdrawn for effective frame composition; their revised selection is recorded in162."
 }

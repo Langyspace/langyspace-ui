@@ -6,6 +6,7 @@ import * as Shell from '../shared/Lesson.styles'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import { LessonHomeworkGallery } from '../shared/LessonHomeworkGallery'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
@@ -259,7 +260,11 @@ export function DevFirstDayLesson({
       id: 's_video131',
       label: video.title,
       content: (
-        <MaterialVideoPage content={video} active={pageId === 's_video131'} />
+        <MaterialVideoPage
+          content={video}
+          active={pageId === 's_video131'}
+          preload={isUpcomingLessonPage(devPageIds, pageId, 's_video131')}
+        />
       ),
     },
     {

@@ -441,40 +441,40 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Which explanation does the evidence support?",
-      "instruction": "Watch the guesses about Sam, then evaluate possible explanations for a past event",
-      "minutes": 4,
+      "title": "Why did the tests fail?",
+      "instruction": "Watch two picture tests fail. Use the clues to explain the failures, then decide what to check",
+      "minutes": 5,
       "video": {
-        "videoId": "u6hEQdGGMuc",
-        "startSeconds": 26,
-        "endSeconds": 48,
-        "title": "Modal verbs of deduction — BBC Learning English",
-        "credit": "BBC Learning English"
+        "videoId": "FXdS7pBi5Po",
+        "startSeconds": 17.209,
+        "endSeconds": 80.084,
+        "title": "New Hire Fails Every \"Are You a Robot\" Test",
+        "credit": "Studio C"
       },
       "items": [
         {
           "id": "b2-04.video102.q1",
-          "prompt": "What do they actually know about Sam?",
-          "hint": "Separate the observation from the guesses",
-          "answer": "They know she is late for work"
+          "prompt": "Why were the tree and stop-sign tests difficult?",
+          "hint": "Listen to his questions about a small branch and a pole",
+          "answer": "He is unsure whether a small part of a branch counts as a tree and whether the pole counts as part of the stop sign"
         },
         {
           "id": "b2-04.video102.q2",
-          "prompt": "Which three possible explanations are offered?",
-          "hint": "Listen for could, might and may",
-          "answer": "Her car could be broken, she might be asleep, or there may be traffic"
+          "prompt": "Why does he ask for help with the letter test?",
+          "hint": "Listen for the two symbols he cannot distinguish",
+          "answer": "He cannot tell whether one symbol is the letter O or the number zero, and asks the interviewer to look at it"
         },
         {
           "id": "b2-04.video102.q3",
-          "prompt": "Is any one explanation confirmed?",
-          "hint": "Notice whether the speaker supplies proof",
-          "answer": "No. The speaker presents them as possibilities"
+          "prompt": "What might have caused the two picture-test failures?",
+          "hint": "Use his branch and pole questions. Separate the observed errors from a possible cause",
+          "answer": "He might have counted partial objects differently from the test. His questions support that possibility, but the clip does not show his exact selections or prove the cause"
         },
         {
           "id": "b2-04.video102.q4",
-          "prompt": "Sam later says she arrived at noon. Give two possible earlier explanations",
-          "hint": "Use might have and say what you would check",
-          "answer": "Example: She might have missed her bus, or her car might have broken down. I’d ask what happened"
+          "prompt": "How would you check a test failure before judging the person?",
+          "hint": "Use might have or could have, then ask for a check of the actual answers",
+          "answer": "Example: I would review the rejected choices. He might have included the pole or excluded a branch. I would try a test with clear rules before deciding"
         }
       ]
     },

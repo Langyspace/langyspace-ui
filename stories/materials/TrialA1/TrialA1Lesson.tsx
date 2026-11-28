@@ -19,6 +19,7 @@ import type { TrialA1LessonProps } from './TrialA1.types'
 import { content, order, parkScene } from './TrialA1.data'
 import { GreetingSection, PictureTalkSection } from './TrialA1.sections'
 import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import { isUpcomingLessonPage } from '../shared/isUpcomingLessonPage'
 import video from './TrialA1.video.json'
 export function TrialA1Lesson({
   initialPageId,
@@ -139,6 +140,7 @@ export function TrialA1Lesson({
                     <MaterialVideoPage
                       content={video}
                       active={activeId === id}
+                      preload={isUpcomingLessonPage(order, activeId, id)}
                     />
                   ),
                 }

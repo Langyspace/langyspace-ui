@@ -1,48 +1,6 @@
 {
   "matrix": [
     {
-      "materialKey": "a1-04",
-      "pageId": "s_video102",
-      "viewport": {
-        "width": 1280,
-        "height": 720
-      },
-      "theme": "dark",
-      "state": "video paused before first play; questions closed",
-      "baselineCommit": "53d7f2f64993e8cb24532d3f20023434b16fdf18",
-      "files": {
-        "before": {
-          "path": "docs/epics/material-video-variety160/evidence/a1-04-before.jpg",
-          "sha256": "5d19e4418c1bebba1cc30e0a7d49e6c4fb3fbceeb4ee8fd08911f7d8f08f927e"
-        },
-        "after": {
-          "path": "docs/epics/material-video-variety160/evidence/a1-04-after.jpg",
-          "sha256": "c1879e2b34a879f6151fa4a943025da1044e5fa66e788eca832d115da50963f6"
-        }
-      }
-    },
-    {
-      "materialKey": "a2-01",
-      "pageId": "s_video102",
-      "viewport": {
-        "width": 1280,
-        "height": 720
-      },
-      "theme": "dark",
-      "state": "video paused before first play; questions closed",
-      "baselineCommit": "53d7f2f64993e8cb24532d3f20023434b16fdf18",
-      "files": {
-        "before": {
-          "path": "docs/epics/material-video-variety160/evidence/a2-01-before.jpg",
-          "sha256": "83ad241528fddddf0531af7e5a217e271359488f366e94119698ef10fcfc6816"
-        },
-        "after": {
-          "path": "docs/epics/material-video-variety160/evidence/a2-01-after.jpg",
-          "sha256": "242541c4226901f314d99db23ce8487797a2585c80a91c421271ca2a6bb7ac5d"
-        }
-      }
-    },
-    {
       "materialKey": "b1-06",
       "pageId": "s_video102",
       "viewport": {
@@ -149,5 +107,6 @@
     }
   ],
   "status": "captured_for_human_review",
-  "limits": "One desktop viewport; no continuous listening or interval-end verification for all clips"
+  "limits": "One desktop viewport; no continuous listening or interval-end verification for all clips",
+  "note": "A1.04/A2.01 after screenshots were superseded by revision162 format corrections"
 }
