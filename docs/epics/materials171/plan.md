@@ -1,0 +1,7 @@
+# Consolidated materials171 publication
+
+Explicit owner request on 28 November 2026: publish everything completed here and in both copies to staging and production. Frozen sources: Orquestrador 11a00f1630ac6142d4d55a179d13e8df06efcac0; copy1 dd0e37bb1fe0e9fc31fbdba05445a16f514558f3; copy2 2ce476adbd4ae678f76b9b48afa40fdbe47379b4. Further uncommitted scene-expansion161 work is excluded until completed.
+
+Merge decisions: preserve all new video pages from copy2 and the grammar/instruction/reference revisions from Orquestrador. A1.09 uses the map owner's completed vocabulary and route task. B1.11 imports both its opaque vocabulary atlas and new speaking scene. C1.12 retains its factual mission text and the approved visual payment roleplay after listening; the latter supersedes the overlapping three factual reply questions from170. The historical70-answer receipt170 is not a claim about this combined67-answer composition.
+
+Preserve all67 catalog keys/covers, prior audio corrections, Notes/participant bridge, critical update lifecycle and canonical component contracts. No new generation, Student Hosting/data, Functions/Rules/IAM, package-registry publication, auth profiles or external messages. Source/contract and focused integration checks, one neutral export, adopt in current Teacher staging, then canonical Hosting staging verification and production from the exact same Teacher source. Keep real provider receipts, qualified immutable package/runtime and source/ref/lease/backend/environment guards. Do not claim perceptual approval.
