@@ -20,7 +20,7 @@ Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revis�
 
 ## Instruções e personalização — revisão114
 
-- Título e subtítulo explicam a ação, não só o assunto: Guess who + quem escolhe/pergunta/adivinha; Introduce someone + quem apresentar. Preservar títulos de contexto úteis quando o subtítulo já explica a tarefa. Evitar instruções vagas ou contraditórias.
+- Título e subtítulo explicam a ação, não só o assunto. O título do exercício é uma instrução e reutiliza o mesmo padrão quando a dinâmica e o objetivo forem os mesmos; contexto, personagens e restrições ficam no subtítulo. Seguir [os padrões de títulos](exercise-title-patterns.md) e o registro `stories/materials/shared/exerciseHeadings.json`. Capas e encerramentos mantêm sua função própria. Evitar instruções vagas ou contraditórias.
 - Em conversa pessoal, a professora tem sua fala pronta; só as respostas da aluna ficam abertas. Cumprimento usa o horário no fuso do perfil, com fallback no dispositivo. Origem declarada tem prioridade; quando ausente, usar o país de cadastro do telefone como apoio de leitura autorizado, sem enviar o número ao material ou inferir uma cidade. Contexto sem país usa frase neutra, sem inventar biografia.
 - Lacunas abertas mantêm traço contínuo e margem interna segura, inclusive vazias, com foco ou com resposta longa. Bandeiras sem moldura, padding ou corte dos cantos; preservar sua proporção e seu branco oficial.
 - Preparar o vídeo na página imediatamente anterior, sem autoplay, e conservar o player pronto ao entrar. Carregamento externo não pode controlar navegação. Agrupar caudas esparsas e pequenos repiques do scroll sem impedir passadas renovadas; testar chegada e saída da página de vídeo separadamente do estado da rede.
@@ -42,7 +42,7 @@ Decisões atuais para lembrar:
 ## Vocabulário seguido de prática visual — revisão107
 
 - **Reconhecimento direto de substantivos — revisão163, 28/11/2026:** se a palavra ensinada é um objeto ou lugar, a imagem deve mostrar esse alvo grande e reconhecível. Não acrescentar personagem, gesto de dúvida, pensamento ou ação apenas para ilustrar a frase de exemplo: isso pode fazer a aluna interpretar uma ação diferente do substantivo. Usar pessoas somente quando forem necessárias ao significado ensinado. Lugares podem ter um contexto mínimo; objetos preservam a apresentação apropriada ao conjunto. Em “Shared spaces”, prédio, piscina, garagem, churrasqueira, lixo e bicicleta são os protagonistas, sem pessoas.
-- **Título como ação:** o tema sozinho não instrui a atividade. Preferir “Name the places and objects” a “Shared spaces”; o subtítulo explica a sequência oral e o clique para conferir/ouvir. A seção “Vocabulary” já identifica o formato, sem exigir outro título temático.
+- **Título como ação e reconhecimento — revisão164:** o tema sozinho não instrui a atividade. No grid de vocabulário, reutilizar “Name the pictures”; numa cena explorável, “Name what you see”. O subtítulo explica a sequência oral e o clique para conferir/ouvir. A seção “Vocabulary” já identifica o formato, sem exigir outro título temático. Não inventar variações de sinônimos por aula apenas para soar diferente.
 
 - Quando o objetivo for reconhecer o vocabulário recém-apresentado, colocar sua sequência de múltipla escolha visual imediatamente depois do respectivo bloco. Reutilizar a mesma imagem e variar a posição correta. Pergunta, nome, pronome e resposta completa precisam corresponder ao personagem da cena.
 - Quando a apresentação pedir apenas a palavra, omitir o exemplo também do áudio acionado pelo card, reutilizando a gravação isolada válida. Essa variação não remove os exemplos das outras atividades.
@@ -561,13 +561,11 @@ O modelo visual e o payload publicado não são intercambiáveis: PictureRegion 
 
 - Na roleta, tema/estado e progresso ficam no mesmo cabeçalho fixo durante o giro e a revelação. Usar um estado curto como “Spinning”, mantendo “Spin” no botão central durante o giro, sem recentralizar o painel. O som do giro acompanha a desaceleração, com volume discreto, usando o mute compartilhado e sem competir com as gravações da aula; não tratar o efeito como benefício cognitivo comprovado.
 
-
 ## Prévias de homework legíveis — feedback156
 
 Não resolver a legibilidade de um Quiz encolhendo todo o documento com transform. Usar o modo application-responsive de MobileFrame e a apresentação preview de QuizSession: mesma superfície canônica, menos espaçamento/chrome auxiliar, texto sem escala. A sessão normal do Student mantém seu comportamento. Depois de responder, a prévia resume a opção selecionada; em tela útil abaixo de22rem, concentra a explicação e Próxima sem repetir enunciado/opções. Preservar explicação completa em português.
 
 Flashcards e Shadowing mantêm application até sua adaptação específica: trocar o viewport global pode cortar os controles. Uma mudança de preview não comprova adoção do renderer pelo Student implantado. Conferir o estado inicial e o de correção, sem afirmar encaixe universal sem revisão visual.
-
 
 **Protótipo A1.08 — legenda compartilhada de vocabulário:** quando a frase no card encobrir a ilustração ou aumentar duas fileiras, usar a variação opcional `examplePlacement="footer"` do VocabularyGrid: etiqueta curta com a palavra na imagem e uma única faixa com palavra/exemplo ao lado dos controles. A faixa acompanha a seleção e mantém os mesmos seis quadros; não criar uma legenda alta por card nem reduzir a frase a texto ilegível. Validar este protótipo antes de adotar em outros materiais.
 

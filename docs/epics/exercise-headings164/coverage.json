@@ -1,0 +1,406 @@
+{
+  "baseline": "bf7e5749703dfe75f19692e91b8e249107323e63",
+  "catalogMaterials": 67,
+  "jsonSourcesVerified": 72,
+  "manualSourcesVerified": 9,
+  "headerFieldChanges": 1186,
+  "longestChangedSubtitle": 134,
+  "proof": "Restoring only journaled header fields yields the complete original JSON. Manual source equals original plus explicit header literals/imports, after project formatting. IDs, answers, questions, utterances, audio text, media, order and destinations preserved.",
+  "coverage": [
+    {
+      "key": "a1-01",
+      "source": "stories/materials/A101/A101.review.json",
+      "modifiedHeaderFields": 40,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-02",
+      "source": "stories/materials/A102/A102.review.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-01",
+      "source": "stories/materials/Course/lessons/a2-01.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-01",
+      "source": "stories/materials/Course/lessons/b1-01.json",
+      "modifiedHeaderFields": 24,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-01",
+      "source": "stories/materials/Course/lessons/b2-01.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-01",
+      "source": "stories/materials/C101/C101.review.json",
+      "modifiedHeaderFields": 26,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "trial-a1-a2",
+      "source": null,
+      "canonicalManualComposition": true
+    },
+    {
+      "key": "trial-b1",
+      "source": null,
+      "canonicalManualComposition": true
+    },
+    {
+      "key": "trial-b2",
+      "source": null,
+      "canonicalManualComposition": true
+    },
+    {
+      "key": "a1-03",
+      "source": "stories/materials/A103/A103.review.json",
+      "modifiedHeaderFields": 21,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-04",
+      "source": "stories/materials/A104/A104.review.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-05",
+      "source": "stories/materials/A105/A105.review.json",
+      "modifiedHeaderFields": 19,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-06",
+      "source": "stories/materials/A106/A106.review.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "extra-influencer-routine",
+      "source": null,
+      "canonicalManualComposition": true
+    },
+    {
+      "key": "a1-07",
+      "source": "stories/materials/Course/lessons/a1-07.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-08",
+      "source": "stories/materials/Course/lessons/a1-08.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-09",
+      "source": "stories/materials/Course/lessons/a1-09.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-10",
+      "source": "stories/materials/Course/lessons/a1-10.json",
+      "modifiedHeaderFields": 14,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-11",
+      "source": "stories/materials/Course/lessons/a1-11.json",
+      "modifiedHeaderFields": 14,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a1-12",
+      "source": "stories/materials/Course/lessons/a1-12.json",
+      "modifiedHeaderFields": 14,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-02",
+      "source": "stories/materials/Course/lessons/a2-02.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-03",
+      "source": "stories/materials/Course/lessons/a2-03.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-04",
+      "source": "stories/materials/Course/lessons/a2-04.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-05",
+      "source": "stories/materials/Course/lessons/a2-05.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-06",
+      "source": "stories/materials/Course/lessons/a2-06.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-07",
+      "source": "stories/materials/Course/lessons/a2-07.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-08",
+      "source": "stories/materials/Course/lessons/a2-08.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-09",
+      "source": "stories/materials/Course/lessons/a2-09.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-10",
+      "source": "stories/materials/Course/lessons/a2-10.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-11",
+      "source": "stories/materials/Course/lessons/a2-11.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "a2-12",
+      "source": "stories/materials/Course/lessons/a2-12.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-02",
+      "source": "stories/materials/Course/lessons/b1-02.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-03",
+      "source": "stories/materials/Course/lessons/b1-03.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-04",
+      "source": "stories/materials/Course/lessons/b1-04.json",
+      "modifiedHeaderFields": 15,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-05",
+      "source": "stories/materials/Course/lessons/b1-05.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-06",
+      "source": "stories/materials/Course/lessons/b1-06.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-07",
+      "source": "stories/materials/Course/lessons/b1-07.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-08",
+      "source": "stories/materials/Course/lessons/b1-08.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-09",
+      "source": "stories/materials/Course/lessons/b1-09.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-10",
+      "source": "stories/materials/Course/lessons/b1-10.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-11",
+      "source": "stories/materials/Course/lessons/b1-11.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b1-12",
+      "source": "stories/materials/Course/lessons/b1-12.json",
+      "modifiedHeaderFields": 16,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-02",
+      "source": "stories/materials/Course/lessons/b2-02.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-03",
+      "source": "stories/materials/Course/lessons/b2-03.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-04",
+      "source": "stories/materials/Course/lessons/b2-04.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-05",
+      "source": "stories/materials/Course/lessons/b2-05.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-06",
+      "source": "stories/materials/Course/lessons/b2-06.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-07",
+      "source": "stories/materials/Course/lessons/b2-07.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-08",
+      "source": "stories/materials/Course/lessons/b2-08.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-09",
+      "source": "stories/materials/Course/lessons/b2-09.json",
+      "modifiedHeaderFields": 18,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-10",
+      "source": "stories/materials/Course/lessons/b2-10.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-11",
+      "source": "stories/materials/Course/lessons/b2-11.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "b2-12",
+      "source": "stories/materials/Course/lessons/b2-12.json",
+      "modifiedHeaderFields": 20,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-02",
+      "source": "stories/materials/Course/lessons/c1-02.json",
+      "modifiedHeaderFields": 24,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-03",
+      "source": "stories/materials/Course/lessons/c1-03.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-04",
+      "source": "stories/materials/Course/lessons/c1-04.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-05",
+      "source": "stories/materials/Course/lessons/c1-05.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-06",
+      "source": "stories/materials/Course/lessons/c1-06.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-07",
+      "source": "stories/materials/Course/lessons/c1-07.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-08",
+      "source": "stories/materials/Course/lessons/c1-08.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-09",
+      "source": "stories/materials/Course/lessons/c1-09.json",
+      "modifiedHeaderFields": 24,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-10",
+      "source": "stories/materials/Course/lessons/c1-10.json",
+      "modifiedHeaderFields": 24,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-11",
+      "source": "stories/materials/Course/lessons/c1-11.json",
+      "modifiedHeaderFields": 22,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "c1-12",
+      "source": "stories/materials/Course/lessons/c1-12.json",
+      "modifiedHeaderFields": 23,
+      "canonicalManualComposition": false
+    },
+    {
+      "key": "extra-dev-study",
+      "source": null,
+      "canonicalManualComposition": true
+    },
+    {
+      "key": "extra-dev-interviews",
+      "source": null,
+      "canonicalManualComposition": true
+    },
+    {
+      "key": "extra-dev-first-day",
+      "source": null,
+      "canonicalManualComposition": true
+    }
+  ]
+}

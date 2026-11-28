@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
@@ -115,11 +116,11 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
     },
     {
       id: 'vocabulary',
-      label: 'Your learning toolkit',
+      label: exerciseHeadings.pictureVocabulary,
       content: (
         <SlidePage
           eyebrow="Vocabulary"
-          title="Your learning toolkit"
+          title={exerciseHeadings.pictureVocabulary}
           instruction="Look at each learning situation. Say what you see, then reveal the word and hear an example"
           width={{ vocabularyColumns: 3 }}
         >
@@ -130,11 +131,11 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
     oralPage('study-week'),
     {
       id: 'guided',
-      label: 'Talk about your learning',
+      label: exerciseHeadings.dialogue,
       content: (
         <SlidePage
           eyebrow="Guided conversation"
-          title="Talk about your learning"
+          title={exerciseHeadings.dialogue}
           instruction="Listen to Ana and Kim. Find out what Ana is building and how she plans to practice"
           density="compact"
           titleAudio={{
@@ -223,7 +224,7 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
     },
     {
       id: 'free-conversation',
-      label: 'Free conversation',
+      label: exerciseHeadings.freeConversation,
       content: (
         <FreeConversationPage
           instruction={source.freeConversationInstruction}

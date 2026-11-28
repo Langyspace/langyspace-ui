@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall an opinion with a counterpoint",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Proposals and compromises",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -168,8 +168,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "The change and its purpose",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "The change and its purpose. Listen for the problem, the response and the next step",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -227,8 +227,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Take the objection seriously",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "Take the objection seriously. Listen for the problem, the response and the next step",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -286,8 +286,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "Make the compromise testable",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "Make the compromise testable. Listen for the problem, the response and the next step",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -345,16 +345,16 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Propose a workable change",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "title": "Discuss the situation",
+      "instruction": "Propose a workable change. Use the case to explain your view and ask a follow-up question",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Guide the response, not every sentence",
-      "instruction": "Connect the meaning, the form and the example",
+      "title": "Compare the examples",
+      "instruction": "Guide the response, not every sentence",
       "minutes": 3,
       "eyebrow": "Grammar",
       "layout": "patterns",
@@ -387,16 +387,16 @@
     {
       "id": "s_mission",
       "kind": "activity",
-      "title": "Pitch a useful change",
-      "instruction": "Explain how your proposed change would work and respond to one objection",
+      "title": "Use the information to respond",
+      "instruction": "Pitch a useful change. Explain how your proposed change would work and respond to one objection",
       "minutes": 4,
       "eyebrow": "Speaking task"
     },
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "A concern about unanswered questions",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "A concern about unanswered questions. Listen for the new information and decide how to respond",
       "minutes": 5,
       "eyebrow": "Listening",
       "message": "Hi, Ana. One group member likes the shorter meeting but is worried about asking questions after the live discussion. They can’t always join at the same time, and they don’t want their questions to disappear in a long message thread. They suggest a separate question channel, with a named person checking it each study day. Could you revise the proposal without bringing back the full sixty-minute status round? Keep its purpose—more useful time—and explain what you would change so people can still get an answer. We should agree how to review the trial before calling it a success",
@@ -432,8 +432,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Revise the proposal and its review",
-      "instruction": "Keep the purpose, adjust the mechanism and agree how to review the change",
+      "title": "Respond to the message",
+      "instruction": "Revise the proposal and its review. Keep the purpose, adjust the mechanism and agree how to review the change",
       "minutes": 3,
       "eyebrow": "Your turn"
     },
@@ -441,7 +441,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Keep the aim, change the proposal",
+      "title": "Watch and answer",
       "instruction": "Watch the objections, then propose a compromise that preserves the purpose",
       "minutes": 4,
       "video": {

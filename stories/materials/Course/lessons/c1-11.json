@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall making an action explicit for a recipient",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Reformulating without distorting",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "card",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -167,8 +167,8 @@
     {
       "id": "s_source0",
       "kind": "source",
-      "title": "The sender’s need",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "The sender’s need. Read for the facts and the different priorities",
       "minutes": 2,
       "eyebrow": "Reading",
       "author": "Message A · simulated source",
@@ -181,8 +181,8 @@
     {
       "id": "s_source1",
       "kind": "source",
-      "title": "The receiver’s concern",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "The receiver’s concern. Read for the facts and the different priorities",
       "minutes": 2,
       "eyebrow": "Reading",
       "author": "Message B · simulated source",
@@ -195,8 +195,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "Check the disputed word",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "Check the disputed word. Listen for the problem, the response and the next step",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -254,8 +254,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "An example makes the meaning testable",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "An example makes the meaning testable. Listen for the problem, the response and the next step",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -313,8 +313,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "Find common ground without assuming agreement",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "Find common ground without assuming agreement. Listen for the problem, the response and the next step",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -372,16 +372,16 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Check your interpretation",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "title": "Discuss the situation",
+      "instruction": "Check your interpretation. Use the case to explain your view and ask a follow-up question",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "Make the meaning concrete and check it",
-      "instruction": "Connect the meaning, the form and the example",
+      "title": "Compare the examples",
+      "instruction": "Make the meaning concrete and check it",
       "minutes": 3,
       "eyebrow": "Grammar",
       "layout": "patterns",
@@ -422,8 +422,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "Quick acknowledgement, not unchecked certainty",
-      "instruction": "Listen for the new information and decide how to respond",
+      "title": "Listen and answer",
+      "instruction": "Quick acknowledgement, not unchecked certainty. Listen for the new information and decide how to respond",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. I think my request for a quick reply has been misunderstood. I wasn’t asking for the checked figures today. I was asking for a prompt acknowledgement and a realistic time for the complete answer. If verification takes until four tomorrow, please say that. What’s difficult is silence, followed by a rushed answer that looks final but hasn’t been checked. Could you explain both positions again so they can see the common ground? One person is protecting accuracy; the other is trying to plan around a response. A useful reformulation should make those needs visible and give an example, rather than repeat the word quick more loudly. Please check that they agree with your summary before treating it as their settled position",
@@ -459,8 +459,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Restate both positions and check them",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Restate both positions and check them. Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -468,7 +468,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Same words, a different message",
+      "title": "Watch and answer",
       "instruction": "Watch the pace and pitch examples, then clarify a possible misunderstanding",
       "minutes": 4,
       "video": {

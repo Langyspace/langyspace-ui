@@ -1,3 +1,4 @@
+import exerciseHeadings from './exerciseHeadings.json'
 import { useEffect, useMemo, useState } from 'react'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
@@ -175,7 +176,7 @@ export function TrialPreviewLesson({
               : []),
             {
               id: 'free-conversation',
-              label: 'Free conversation',
+              label: exerciseHeadings.freeConversation,
               content: (
                 <FreeConversationPage
                   instruction={freeConversationInstruction}

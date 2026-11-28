@@ -8,8 +8,8 @@
     {
       "id": "s_greetings",
       "kind": "vocabulary",
-      "title": "Greetings",
-      "instruction": "Algumas palavras para cumprimentar as pessoas.",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 2,
       "eyebrow": "Vocabulary",
       "alignHeading": true,
@@ -81,8 +81,8 @@
     {
       "id": "s4",
       "kind": "vocabulary",
-      "title": "How do you feel?",
-      "instruction": "Name the feelings, then click to check and listen",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 3,
       "eyebrow": "Vocabulary",
       "items": [
@@ -147,121 +147,97 @@
       "id": "s_visual1",
       "kind": "image-choice",
       "choiceGroup": "feelings",
-      "title": "How is Tom?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose how Tom feels",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · How do you feel?",
       "image": {
         "src": "scene-tired-tom",
         "alt": "A tired person yawning"
       },
-      "options": [
-        "He’s tired.",
-        "He’s cold.",
-        "He’s happy."
-      ],
+      "options": ["He’s tired.", "He’s cold.", "He’s happy."],
       "correctIndex": 0
     },
     {
       "id": "s_visual2",
       "kind": "image-choice",
       "choiceGroup": "feelings",
-      "title": "How is Julia?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose how Julia feels",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · How do you feel?",
       "image": {
         "src": "scene-cold-julia",
         "alt": "Julia wearing warm clothes because she is cold"
       },
-      "options": [
-        "She’s hungry.",
-        "She’s cold.",
-        "She’s happy."
-      ],
+      "options": ["She’s hungry.", "She’s cold.", "She’s happy."],
       "correctIndex": 1
     },
     {
       "id": "s_visual3",
       "kind": "image-choice",
       "choiceGroup": "feelings",
-      "title": "How is Josh?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose how Josh feels",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · How do you feel?",
       "image": {
         "src": "scene-sad-josh",
         "alt": "Josh looking sad"
       },
-      "options": [
-        "He’s happy.",
-        "He’s tired.",
-        "He’s sad."
-      ],
+      "options": ["He’s happy.", "He’s tired.", "He’s sad."],
       "correctIndex": 2
     },
     {
       "id": "s_visual4",
       "kind": "image-choice",
       "choiceGroup": "feelings",
-      "title": "How is Mia?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose how Mia feels",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · How do you feel?",
       "image": {
         "src": "scene-happy-mia",
         "alt": "A smiling person celebrating"
       },
-      "options": [
-        "She’s happy.",
-        "She’s cold.",
-        "She’s tired."
-      ],
+      "options": ["She’s happy.", "She’s cold.", "She’s tired."],
       "correctIndex": 0
     },
     {
       "id": "s_visual5",
       "kind": "image-choice",
       "choiceGroup": "feelings",
-      "title": "How is Ana?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose how Ana feels",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · How do you feel?",
       "image": {
         "src": "scene-hungry-ana",
         "alt": "Ana looking at food because she is hungry"
       },
-      "options": [
-        "She’s cold.",
-        "She’s hungry.",
-        "She’s angry."
-      ],
+      "options": ["She’s cold.", "She’s hungry.", "She’s angry."],
       "correctIndex": 1
     },
     {
       "id": "s_visual6",
       "kind": "image-choice",
       "choiceGroup": "feelings",
-      "title": "How is Leo?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose how Leo feels",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · How do you feel?",
       "image": {
         "src": "scene-angry-leo",
         "alt": "Leo looking angry"
       },
-      "options": [
-        "He’s hungry.",
-        "He’s sad.",
-        "He’s angry."
-      ],
+      "options": ["He’s hungry.", "He’s sad.", "He’s angry."],
       "correctIndex": 2
     },
     {
       "id": "s1",
       "kind": "vocabulary",
-      "title": "Countries",
-      "instruction": "Name the countries, then click to check and listen",
+      "title": "Name the pictures",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "minutes": 2,
       "eyebrow": "Vocabulary",
       "items": [
@@ -333,8 +309,8 @@
       "id": "s_country107_1",
       "kind": "image-choice",
       "choiceGroup": "countries",
-      "title": "Where is Ana from?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose where Ana is from",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · Where are you from?",
       "image": {
@@ -356,8 +332,8 @@
       "id": "s_country107_2",
       "kind": "image-choice",
       "choiceGroup": "countries",
-      "title": "Where is Jiwoo from?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose where Jiwoo is from",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · Where are you from?",
       "image": {
@@ -379,8 +355,8 @@
       "id": "s_country107_3",
       "kind": "image-choice",
       "choiceGroup": "countries",
-      "title": "Where is Hiro from?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose where Hiro is from",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · Where are you from?",
       "image": {
@@ -402,8 +378,8 @@
       "id": "s_country107_4",
       "kind": "image-choice",
       "choiceGroup": "countries",
-      "title": "Where is Lukas from?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose where Lukas is from",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · Where are you from?",
       "image": {
@@ -425,8 +401,8 @@
       "id": "s_country107_5",
       "kind": "image-choice",
       "choiceGroup": "countries",
-      "title": "Where is Chloé from?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose where Chloé is from",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · Where are you from?",
       "image": {
@@ -448,8 +424,8 @@
       "id": "s_country107_6",
       "kind": "image-choice",
       "choiceGroup": "countries",
-      "title": "Where is Jake from?",
-      "instruction": "Choose the correct answer",
+      "title": "Choose where Jake is from",
+      "instruction": "Look at the picture and choose the correct answer",
       "minutes": 0.5,
       "eyebrow": "Warm-up · Where are you from?",
       "image": {
@@ -470,8 +446,8 @@
     {
       "id": "s6",
       "kind": "dialogue",
-      "title": "Nice to meet you!",
-      "instruction": "Listen as Ana and Kim meet, then read together",
+      "title": "Listen and read",
+      "instruction": "Nice to meet you! Listen as Ana and Kim meet, then read together",
       "minutes": 3,
       "eyebrow": "Guided conversation",
       "lines": [
@@ -542,8 +518,8 @@
     {
       "id": "s8",
       "kind": "dialogue",
-      "title": "Nice to meet you!",
-      "instruction": "Read aloud. Complete each gap, then click to check",
+      "title": "Complete the conversation",
+      "instruction": "Nice to meet you! Read aloud. Complete each gap, then click to check",
       "minutes": 2,
       "eyebrow": "Guided conversation · Fill in the blanks",
       "lines": [
@@ -669,7 +645,7 @@
       "id": "s_roleplay_challenge110",
       "kind": "activity",
       "columns": 1,
-      "title": "Introduce your friend",
+      "title": "Introduce someone",
       "eyebrow": "Challenge",
       "instruction": "Look at the photo. Tell Teacher your friend’s name, where they’re from and how they feel",
       "minutes": 3
@@ -677,8 +653,8 @@
     {
       "id": "s9",
       "kind": "listening",
-      "title": "Listen and find out about Mia",
-      "instruction": "Listen to Kim’s message, then answer the questions",
+      "title": "Listen and answer",
+      "instruction": "Listen and find out about Mia. Listen to Kim’s message, then answer the questions",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry",
@@ -710,7 +686,7 @@
       "id": "s_video_intro",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "Meet Vanya",
+      "title": "Watch and answer",
       "instruction": "Watch the introductions, then answer the questions",
       "minutes": 4,
       "video": {

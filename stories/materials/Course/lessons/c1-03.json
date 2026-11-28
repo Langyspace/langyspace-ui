@@ -10,7 +10,7 @@
     {
       "id": "s1",
       "kind": "questions",
-      "title": "Bring one idea back",
+      "title": "Review the last lesson",
       "instruction": "Recall how new evidence changes an explanation",
       "minutes": 2,
       "eyebrow": "Review",
@@ -38,11 +38,11 @@
     },
     {
       "id": "s2",
-      "title": "Claims, sources and verification",
+      "title": "Name the pictures",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "kind": "vocabulary",
-      "instruction": "Name each picture, then click it to check and listen",
+      "instruction": "Say each word or expression in English, then click a picture to check and listen",
       "surface": "plain",
       "alignHeading": true,
       "imageAspectRatio": 1,
@@ -155,8 +155,8 @@
     {
       "id": "s_source0",
       "kind": "source",
-      "title": "A claim being circulated",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "A claim being circulated. Read for the facts and the different priorities",
       "minutes": 2,
       "eyebrow": "Reading",
       "author": "Neighbourhood post · simulated source",
@@ -169,8 +169,8 @@
     {
       "id": "s_source1",
       "kind": "source",
-      "title": "The narrower notice",
-      "instruction": "Read for the facts and the different priorities",
+      "title": "Read the situation",
+      "instruction": "The narrower notice. Read for the facts and the different priorities",
       "minutes": 2,
       "eyebrow": "Reading",
       "author": "Café notice · simulated source",
@@ -183,8 +183,8 @@
     {
       "id": "s_dialogue1",
       "kind": "dialogue",
-      "title": "A cautious phrase is not a source",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "A cautious phrase is not a source. Listen for the problem, the response and the next step",
       "minutes": 3,
       "eyebrow": "Guided conversation · 1/3",
       "lines": [
@@ -242,8 +242,8 @@
     {
       "id": "s_dialogue2",
       "kind": "dialogue",
-      "title": "Compare the actual notices",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "Compare the actual notices. Listen for the problem, the response and the next step",
       "minutes": 3,
       "eyebrow": "Guided conversation · 2/3",
       "lines": [
@@ -301,8 +301,8 @@
     {
       "id": "s_dialogue3",
       "kind": "dialogue",
-      "title": "What would you share?",
-      "instruction": "Listen for the problem, the response and the next step",
+      "title": "Listen and read",
+      "instruction": "What would you share? Listen for the problem, the response and the next step",
       "minutes": 2,
       "eyebrow": "Guided conversation · 3/3",
       "lines": [
@@ -360,16 +360,16 @@
     {
       "id": "s_personal",
       "kind": "activity",
-      "title": "Check what the source confirms",
-      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "title": "Discuss the situation",
+      "instruction": "Check what the source confirms. Use the case to explain your view and ask a follow-up question",
       "minutes": 2,
       "eyebrow": "Discuss the situation"
     },
     {
       "id": "s_grammar",
       "kind": "grammar",
-      "title": "A reporting structure must preserve attribution",
-      "instruction": "Connect the meaning, the form and the example",
+      "title": "Compare the examples",
+      "instruction": "A reporting structure must preserve attribution",
       "minutes": 3,
       "eyebrow": "Grammar",
       "layout": "patterns",
@@ -410,8 +410,8 @@
     {
       "id": "s_listening",
       "kind": "listening",
-      "title": "No reopening date has been set",
-      "instruction": "Listen and answer, then open the video shared in the chat",
+      "title": "Listen and answer",
+      "instruction": "No reopening date has been set. Listen and answer, then open the video shared in the chat",
       "minutes": 4,
       "eyebrow": "Listening",
       "message": "Hi, Ana. The source has clarified the café notice. The dining area is closing for renovation, and delivery will continue, but a reopening date has not been set. The earlier post’s claim of permanent closure is not supported by the official notice. Could you revise the update with that attribution intact?",
@@ -456,8 +456,8 @@
     {
       "id": "s_reply",
       "kind": "activity",
-      "title": "Share a corrected update",
-      "instruction": "Use the message to update your response and agree on the next step",
+      "title": "Respond to the message",
+      "instruction": "Share a corrected update. Use the message to update your response and agree on the next step",
       "minutes": 2,
       "eyebrow": "Your turn"
     },
@@ -465,7 +465,7 @@
       "id": "s_video102",
       "kind": "video",
       "eyebrow": "Watch and talk",
-      "title": "A claim changes when the source changes",
+      "title": "Watch and answer",
       "instruction": "Watch Noelia correct the news, then report it with accurate attribution",
       "minutes": 4,
       "video": {

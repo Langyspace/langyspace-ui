@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -220,7 +221,7 @@ export function InfluencerRoutineLesson({
     },
     {
       id: 'free-conversation',
-      label: 'Free conversation',
+      label: exerciseHeadings.freeConversation,
       content: (
         <FreeConversationPage
           instruction={source.freeConversationInstruction}

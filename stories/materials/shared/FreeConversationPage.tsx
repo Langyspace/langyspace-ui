@@ -1,3 +1,4 @@
+import exerciseHeadings from './exerciseHeadings.json'
 import { MeetingFrame } from '../../../src/components/Device/MeetingFrame'
 import type { FreeConversationPageProps } from './FreeConversationPage.types'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -5,7 +6,7 @@ import teacherScene from './assets/free-conversation-teacher63.webp'
 import learnerScene from './assets/free-conversation-learner63.webp'
 
 export const freeConversationPageId = 'free-conversation'
-export const freeConversationTitle = 'Free conversation'
+export const freeConversationTitle = exerciseHeadings.freeConversation
 export const freeConversationInstruction =
   'Talk freely with your teacher in English. Choose any topic you both want to talk about'
 

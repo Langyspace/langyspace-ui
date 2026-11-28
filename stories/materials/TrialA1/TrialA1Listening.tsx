@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
@@ -9,7 +10,7 @@ import { ana } from '../shared/characterPortraits'
 import { listeningParts } from './TrialA1Listening.data'
 export { listeningParts } from './TrialA1Listening.data'
 
-export const listeningTitle = 'A message from Ana'
+export const listeningTitle = exerciseHeadings.listeningQuestions
 export const listeningInstruction =
   'Listen to both messages. Then answer the questions'
 const listeningLayout = withVoiceMessageLayout({

@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import {
   withLessonOpeningPages,
   withLessonOpeningPageIds,
@@ -78,7 +79,7 @@ export function TrialA1Lesson({
                 const independent = id === 's3-independent'
                 const title = independent
                   ? 'Start a new conversation'
-                  : 'Talk about what you like'
+                  : exerciseHeadings.liveConversation
                 return {
                   id,
                   label: title,
@@ -90,7 +91,7 @@ export function TrialA1Lesson({
                       instruction={
                         independent
                           ? 'Choose a topic. Ask your teacher, answer and ask back'
-                          : 'Answer your teacher about yourself. Ask back when you can.'
+                          : 'Talk about what you like. Answer your teacher, then ask back'
                       }
                     >
                       <TrialA1LiveConversation independent={independent} />
@@ -145,7 +146,7 @@ export function TrialA1Lesson({
               if (id === 'free-conversation')
                 return {
                   id,
-                  label: 'Free conversation',
+                  label: exerciseHeadings.freeConversation,
                   content: (
                     <FreeConversationPage instruction="Talk freely about people you know and things you like. Ask each other questions and share more about yourselves" />
                   ),

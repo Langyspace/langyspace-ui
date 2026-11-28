@@ -1,3 +1,4 @@
+import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -88,11 +89,11 @@ export function DevFirstDayLesson({
     },
     {
       id: 'toolkit',
-      label: 'Your work toolkit',
+      label: exerciseHeadings.sceneVocabulary,
       content: (
         <SlidePage
           eyebrow="Vocabulary"
-          title="Your work toolkit"
+          title={exerciseHeadings.sceneVocabulary}
           instruction="Explore your desk. Click each dot to hear a work word and its example, then use it with your teacher"
           width={{ mediaAspectRatio: 16 / 9 }}
         >
@@ -186,12 +187,12 @@ export function DevFirstDayLesson({
     },
     {
       id: 'feedback',
-      label: 'Respond to feedback on your screen',
+      label: exerciseHeadings.listeningResponse,
       content: (
         <SlidePage
           columns={2}
           eyebrow="After the review"
-          title="Respond to feedback on your screen"
+          title={exerciseHeadings.listeningResponse}
           instruction="Listen to Kim. Tell your teacher how you would reply and what you would change"
         >
           <ThemeProvider theme={lessonVoiceMessageTheme}>
@@ -264,7 +265,7 @@ export function DevFirstDayLesson({
     },
     {
       id: 'free-conversation',
-      label: 'Free conversation',
+      label: exerciseHeadings.freeConversation,
       content: (
         <FreeConversationPage instruction="Talk about joining a team, building screens, solving problems and asking for help. Share real work experiences and follow each other’s ideas" />
       ),
