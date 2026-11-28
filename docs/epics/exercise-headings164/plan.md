@@ -10,7 +10,7 @@ The canonical vocabulary is stories/materials/shared/exerciseHeadings.json. Auth
 | ----------------------------------- | ------------------------- |
 | Vocabulary pictures                 | Name the pictures         |
 | Vocabulary in one scene             | Name what you see         |
-| Recorded conversation               | Listen and read           |
+| Character-role paired conversation  | Practise the conversation |
 | Fixed conversation gaps             | Complete the conversation |
 | Live supported exchange             | Practise the conversation |
 | Personal introduction               | Introduce yourself        |
@@ -56,3 +56,7 @@ Context, character, topic and constraints belong in one concise subtitle. When a
 - PR70 remains draft for the current visual revision. No merge, Hosting deploy or production mutation is included in this delivery.
 
 Visual gate review: pending human
+
+## Superseding semantic correction165
+
+The owner clarified that guided conversation is paired character practice and role reversal before comprehension. The initial Listen and read copy and representative captures are historical. The current contract and additional purpose-specific corrections are in ../exercise-headings165/plan.md.

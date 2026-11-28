@@ -10,7 +10,7 @@ Registro canônico: `stories/materials/shared/exerciseHeadings.json`. Composiç�
 | Identificar itens numa cena com pontos clicáveis        | Name what you see         |
 | Consultar/praticar letras                               | Say the letters           |
 | Praticar números                                        | Say the numbers           |
-| Acompanhar um modelo de diálogo gravado                 | Listen and read           |
+| Interpretar os personagens e conversar em dupla         | Practise the conversation |
 | Completar lacunas com as palavras do modelo             | Complete the conversation |
 | Praticar uma troca apoiada sem respostas fixas          | Practise the conversation |
 | Se apresentar                                           | Introduce yourself        |
@@ -27,6 +27,11 @@ Registro canônico: `stories/materials/shared/exerciseHeadings.json`. Composiç�
 | Conversar livremente sobre o tema no final              | Have a free conversation  |
 
 ## Variantes com finalidade diferente
+
+- **Guided conversation padrão — correção165:** aluna e professora interpretam os personagens, conversam entre si, trocam os papéis e depois respondem às perguntas de compreensão. O modelo escrito e os áudios são apoios; a tarefa principal não é ler em voz alta, ouvir passivamente ou demonstrar apenas compreensão. Para Ana/Kim: “You are Ana and Teacher is Kim. Practise together, swap roles, then answer the questions”. Usar os nomes que realmente aparecem no diálogo; Anna/Ben não viram Ana/Kim. As variantes compartilhadas estão em `stories/materials/shared/guidedConversationInstructions.json`.
+- Nas lacunas, completar oralmente durante a prática dos papéis. Pedir as perguntas de compreensão somente quando elas já fizerem parte daquela atividade. Não inventar perguntas na experimental A1/A2 para corrigir um subtítulo, nem transferir personagens fictícios para a conversa pessoal com Teacher/You.
+- **Padronizar pelo objetivo, não pelo componente:** `questions`, `facts`, `choices`, `comparison` e IDs como `s91` não determinam a dinâmica. Conferir o que a aluna responde, os apoios disponíveis e a posição na sequência. “Talk about yourself” fica para informações pessoais reais; hotel, pedidos, agendamentos e sintomas recebem a ação pertinente. Uma ficha para consultar regras não vira debate de opinião. Se a instrução específica já estava clara, preservá-la.
+- **Finalidade visual:** comparar apartamentos para escolher onde ficar pede “Choose where to stay”; comparar um bairro antes/depois para explicar mudanças pede “Describe what changed”. Olhar um gráfico para formular uma previsão pede “Make a cautious prediction”. Dizer se gosta de cada imagem pede “Say what you like”, sem obrigar escolher uma favorita ou justificar uma preferência.
 
 - Múltipla escolha por imagem mantém o alvo no título, usando um padrão: **Choose how Tom feels** / **Choose how Ana feels**; **Choose where Ana is from** / **Choose where Jiwoo is from**. O subtítulo repete a instrução de olhar e escolher. Não esconder a pergunta numa frase genérica.
 - Missões específicas preservam verbos reconhecíveis e a ação necessária: **Guess who**, **Give directions**, **Tell the story**, **Compare the pictures**, **Put the pictures in order**, **Plan…**, **Explain…**, **Ask…**. Reutilizar o título quando o objetivo também se repetir; não transformar tarefas diferentes em “Discuss” apenas porque usam o mesmo componente.

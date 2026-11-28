@@ -15,7 +15,7 @@ export function TrialA1DialoguePage({ active }: { active: boolean }) {
   return (
     <SlidePage
       columns={1}
-      eyebrow="Dialogue"
+      eyebrow="Guided conversation"
       density="compact"
       title={
         <DialogueTitle
@@ -29,7 +29,7 @@ export function TrialA1DialoguePage({ active }: { active: boolean }) {
           }
         />
       }
-      instruction="Listen, then read with your teacher."
+      instruction={content.p3.ins}
     >
       <ListenTalkSection
         playingId={audio.status === 'playing' ? audio.currentId : undefined}

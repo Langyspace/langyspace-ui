@@ -1,3 +1,4 @@
+import guidedInstructions from '../shared/guidedConversationInstructions.json'
 import exerciseHeadings from '../shared/exerciseHeadings.json'
 import { voiceMessageTranscriptLabels } from '../shared/voiceMessageLabels'
 import { useEffect } from 'react'
@@ -136,7 +137,7 @@ export function DevStudy131Lesson({ initialPageId }: DevStudy131LessonProps) {
         <SlidePage
           eyebrow="Guided conversation"
           title={exerciseHeadings.dialogue}
-          instruction="Listen to Ana and Kim. Find out what Ana is building and how she plans to practice"
+          instruction={guidedInstructions.anaKim.questions}
           density="compact"
           titleAudio={{
             context: 'Ana and Kim discuss a practice project',
