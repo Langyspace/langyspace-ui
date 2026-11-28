@@ -1,0 +1,50 @@
+{
+  "activeAssetPath": "stories/materials/Practice/assets/homework163/at-first-timeline.webp",
+  "activeAssetSha256": "d00a4ca2927b668bfbcaa64863614e2cdde646fcdd00043724498481afa6bd03",
+  "activeDimensions": [
+    720,
+    488
+  ],
+  "logicalImageSrc": "/flashcards-transparent/course-practice/homework-media163/d00a4ca2927b668bfbcaa64863614e2cdde646fcdd00043724498481afa6bd03/image.webp",
+  "method": "Native timeline diagram; labels, arrow, highlighted first stage and Montserrat typography authored in SVG. Existing illustration is embedded unchanged and scaled uniformly at2:1. Browser raster export, thenWebP q95. No new image_gen call.",
+  "editableSource": "docs/epics/homework-flashcard163/at-first-timeline.svg",
+  "editableSourceSha256": "688b5fa9706593fa55751b9e3739aa43ec844b0fdd9568567b7a5bd1910e1156",
+  "rasterExportPath": "/Users/margaridamartins/.codex/visualizations/2026/11/27/01a21c52-633d-7e13-a546-142d6bd62639/homework163/at-first-timeline.png",
+  "rasterExportSha256": "7caada9457f9640c728376ece392d3639c84f9709b8ab2fc4153227ed26c8d70",
+  "sourceIllustration": {
+    "provider": "built-in image_gen",
+    "calls": 1,
+    "references": 0,
+    "transparentBackground": false,
+    "canonicalPrompt": "docs/materials/prompts/langy-illustration-v1.8.txt",
+    "canonicalSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+    "promptPath": "docs/epics/homework-flashcard163/at-first.prompt.txt",
+    "promptSha256": "f82e8dbeb5743345a0f213960a7158bb99cfcdf1b08c2b1c97346eef1c70a0da",
+    "originalPath": "/Users/margaridamartins/.codex/generated_images/01a21c52-633d-7e13-a546-142d6bd62639/exec-d2d16bea-4adf-49c0-b9a6-ce7a3e82655b.png",
+    "originalSha256": "a5dcab6a7dc66ae551c99443cd41df45a269c820a42cd4a17eab19e4cd861f05",
+    "assetPath": "stories/materials/Practice/assets/homework163/at-first.webp",
+    "assetSha256": "b628c2783624c73b23931fb19c7e8bfd22061d912b9b0bfdef861978f45bc2ad",
+    "dimensions": [
+      1774,
+      887
+    ],
+    "processing": "WebP q90 format conversion only; no resize, crop, warp or compositing",
+    "logicalImageSrc": "/flashcards-transparent/course-practice/homework-media163/b628c2783624c73b23931fb19c7e8bfd22061d912b9b0bfdef861978f45bc2ad/image.webp",
+    "replacedBinding": {
+      "imageSrc": "/flashcards-transparent/course-images/90e737ed199062d4fed108ae5c309bb83b415e960799760928cdd717631077c6/image.webp",
+      "imageRegion": {
+        "columns": 3,
+        "rows": 2,
+        "column": 0,
+        "row": 0,
+        "sourceAspectRatio": 1.5
+      }
+    },
+    "meaning": "Initial mistaken assumption on the train, followed by discovery of the scarf at the cafe; temporal expression is supported by the unchanged example, not claimed to be uniquely definable by an isolated object",
+    "scope": "C1.05 at first only; other cards and all audio unchanged"
+  },
+  "typography": "Montserrat700, embedded project font",
+  "colors": "theme brand #CC0F45; neutral600 #6B6B6B; neutral400 #D9D9D6; white",
+  "semantics": "At first explicitly identifies the highlighted initial moment; Later identifies the subsequent discovery. This avoids asking the student to infer a temporal phrase from a lost-and-found illustration alone.",
+  "scope": "Only C1.05 first-card image source changes. All IDs, examples, audio and the proportional renderer remain unchanged."
+}

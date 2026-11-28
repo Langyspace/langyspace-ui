@@ -13,7 +13,7 @@ import asset9 from '../assets/audio/d50118bf5847079e220afd22a1dd5bb28c7843fe6d55
 import asset10 from '../assets/audio/01302b7c11fe98161fe68541d82c0665ccc72e8137190e9c34751e91cadcafc7.mp3'
 import asset11 from '../assets/audio/079dfaf286c92d4debd8a534dcb95c46f048f6eb9f3cd9328c65572bf69608b1.mp3'
 import asset12 from '../../Course/assets/audio/C105-V81.0.mp3'
-import asset13 from '../../Course/assets/audio/C105-FE81.0.mp3'
+import atFirstExample from '../assets/homework163/at-first-example.mp3'
 import asset14 from '../../Course/assets/audio/C105-V81.1.mp3'
 import asset15 from '../../Course/assets/audio/C105-FE81.1.mp3'
 import asset16 from '../../Course/assets/audio/C105-V81.2.mp3'
@@ -27,7 +27,6 @@ import asset23 from '../../Course/assets/audio/C105-FE81.5.mp3'
 import asset24 from '../assets/characters/niamh-murphy.webp'
 import asset25 from '../assets/characters/cian-walsh.webp'
 import asset26 from '../../Course/assets/c1-05-vocabulary81.webp'
-import atFirst163 from '../assets/homework163/at-first-timeline.webp'
 import expanded124Asset0 from '../assets/flashcards124/2ecf4b534a79e55272af7f32ec380486880f6fd9a5bfee772945405d5eedde6c.mp3'
 import expanded124Asset1 from '../assets/flashcards124/3386e098a55db47af3cac890d72796bfc5ceeb1b7f154f4e55a9067fecfb7e78.mp3'
 import expanded124Asset2 from '../assets/flashcards124/c823af3635d5e11d84ff1e4f4fe2833be038399e811be76a18c0461166cc8b9b.mp3'
@@ -202,8 +201,8 @@ const prepared: PreparedPractice = {
     { id: 'course-c1-05-at-first.front', text: 'at first', src: asset12 },
     {
       id: 'course-c1-05-at-first.back',
-      text: 'At first, I assumed it had disappeared on the train.',
-      src: asset13,
+      text: 'At first I thought I’d lost my scarf, but the café had it.',
+      src: atFirstExample,
     },
     {
       id: 'course-c1-05-to-my-surprise.front',
@@ -257,8 +256,6 @@ const prepared: PreparedPractice = {
     },
   ],
   images: {
-    '/flashcards-transparent/course-practice/homework-media163/d00a4ca2927b668bfbcaa64863614e2cdde646fcdd00043724498481afa6bd03/image.webp':
-      atFirst163,
     '/flashcards-transparent/course-images/b1347b85db089ab5cf7769b1a69c035121ad5fe63cb1fa5d8c5ca9cb64048712/image.webp':
       expanded124Asset19,
     '/flashcards/b2/software-development-vocabulary/assumption/image.webp':

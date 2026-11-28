@@ -59,7 +59,7 @@ function expectImage(url: string | undefined, label: string) {
   ).toBe(true)
 }
 
-it('resolves real card imagery and the correct speaker portraits for every current and archived homework, including the two new developer lessons', () => {
+it('resolves homework images and speaker portraits, with a speech bubble for the abstract C1.05 card', () => {
   expect(currentCatalog).toHaveLength(67)
   expect(catalog).toHaveLength(68)
   expect(practices.size).toBe(65)
@@ -84,6 +84,20 @@ it('resolves real card imagery and the correct speaker portraits for every curre
     let imageCount = 0,
       visualLabelCount = 0
     for (const card of cards) {
+      if (material.key === 'c1-05' && card.id === 'course-c1-05-at-first') {
+        expect(card).toEqual({
+          id: 'course-c1-05-at-first',
+          word: 'at first',
+          translation: 'inicialmente',
+          example: 'At first I thought I’d lost my scarf, but the café had it',
+          exampleTranslation:
+            'No começo, achei que tinha perdido meu cachecol, mas ele estava no café',
+          visualLabel: '💬',
+          audioId: 'course-c1-05-at-first.front',
+          backAudioId: 'course-c1-05-at-first.back',
+        })
+        continue
+      }
       const image = resolvePracticeImage(card.imageSrc, images)
       expect(card.imageSrc, `${material.key}/${card.id} signer path`).toMatch(
         /^\/flashcards(?:-transparent)?\/.+\/image\.webp$/,
@@ -143,7 +157,7 @@ it('resolves real card imagery and the correct speaker portraits for every curre
   ).toBeUndefined()
   expect(rows.filter((row) => row.homework)).toHaveLength(65)
   expect(rows.reduce((n, row) => n + (row.cards ?? 0), 0)).toBe(733)
-  expect(rows.reduce((n, row) => n + (row.imageCount ?? 0), 0)).toBe(733)
+  expect(rows.reduce((n, row) => n + (row.imageCount ?? 0), 0)).toBe(732)
   expect(rows.reduce((n, row) => n + (row.visualLabelCount ?? 0), 0)).toBe(36)
   if (process.env.HOMEWORK_MEDIA131_REPORT)
     writeFileSync(

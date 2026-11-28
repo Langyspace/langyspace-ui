@@ -26,3 +26,9 @@ A revisão de vídeos continua isolada no PR71. Este lote tem um PR próprio com
 ## Feedback posterior — tornar at first explícito
 
 A sequência sem rótulos ainda era interpretada principalmente como perdido/encontrado. A referência ativa passa a ser um diagrama temporal: At first na primeira etapa em rosa e Later na segunda etapa neutra, com linha de progressão e contorno na cena inicial. Os rótulos são vetoriais nativos, com fonte/cor do produto; a ilustração anterior fica preservada byte a byte. A vista é exportada para arquivo de imagem compatível com o contrato atual de flashcards, sem nova API ou variante de tela. Texto, exemplos, áudios e correção de proporção permanecem.
+
+## Revisão do cartão com o balão de fala
+
+A professora ainda interpretava a linha do tempo como alguém procurando na bolsa. O primeiro flashcard de C1.05 agora usa o balão padrão 💬 de FlashcardSession. A fala contrasta a impressão inicial da aluna com o que ela descobriu sobre o cachecol. A frente mostra a frase em inglês e o verso traz o exemplo em português. A ilustração e a linha do tempo ficam como histórico dessa escolha.
+
+O ID do cartão e os IDs de áudio continuam estáveis. Para adotar a versão no portal do aluno, a atividade de destino deve remover tanto a imagem quanto a região antiga e adotar o exemplo e a gravação correspondentes. As capturas do primeiro cartão mostram a prévia local do homework.
